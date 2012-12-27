@@ -1,0 +1,67 @@
+<root>
+	<categorys>
+		<!--
+			卡牌类别配置文件
+			swapId:集齐整套后的奖励兑换id
+		-->
+		<category id="1" name="初露峥嵘" swapId="1145"/>
+		<category id="2" name="城西三霸" swapId="1148"/>
+		<category id="3" name="宗族之殇" swapId="1154"/>
+		<category id="4" name="四大金刚" swapId="1155"/>
+		<category id="5" name="倚天梦" swapId="1167"/>
+		<category id="6" name="崖壁桃源" swapId="1168"/>
+		<category id="7" name="壶口劫" swapId="1186"/>
+		<category id="8" name="裂谷黑影" swapId="1199"/>
+		<category id="9" name="赤炎魔影" swapId="1211"/>
+	</categorys>
+	
+	<cards>
+		<!--
+			卡牌配置文件
+			categotyId:所属卡牌集id(和category里的id对应)
+			rare:稀有程度
+			getWay:入手方式
+		-->
+		<card id="10001" costItemId="2100001" categotyId="1" rare="1" getWay="插入卡牌“钢特的铁皮”，产自较高难度机关巷。"/>
+		<card id="10002" costItemId="2100002" categotyId="1" rare="1" getWay="插入卡牌“巴鲁的证件画”，产自较高难度试炼之路。"/>
+		<card id="10003" costItemId="2100003" categotyId="1" rare="1" getWay="插入卡牌“正无的签名画”，产自较高难度矿坑。"/>
+		<card id="10004" costItemId="2100004" categotyId="1" rare="2" getWay="插入卡牌“瑞雄的涂鸦”，产自较高难度矿坑深处。"/>
+		<card id="10005" costItemId="2100005" categotyId="1" rare="2" getWay="插入卡牌“赤峰的英姿”，产自较高难度野猪林。"/>
+		<card id="10006" costItemId="2100006" categotyId="1" rare="2" getWay="插入卡牌“南阳的通缉令”，产自较高难度野猪林后山。"/>
+		<card id="10007" costItemId="2100007" categotyId="1" rare="3" getWay="插入卡牌“脊旋的图鉴”，产自较高难度虫眠墓穴。"/>
+		<card id="10008" costItemId="2100008" categotyId="2" rare="3" getWay="插入卡牌“哈珀的回忆”，产自较高难度神秘下水道。"/>
+		<card id="10009" costItemId="2100009" categotyId="2" rare="3" getWay="插入卡牌“甲刺的午觉”，产自较高难度暗影之森。"/>
+		<card id="10010" costItemId="2100010" categotyId="2" rare="3" getWay="插入卡牌“石影巫的背影”，产自较高难度奇异隧道。"/>
+		<card id="10011" costItemId="2100011" categotyId="3" rare="3" getWay="插入卡牌“戈隆的照片”，产自较高难度虎庙秘道。"/>
+		<card id="10012" costItemId="2100012" categotyId="3" rare="3" getWay="插入卡牌“摩伊的照片”，产自较高难度虎庙。"/>
+		<card id="10013" costItemId="2100013" categotyId="3" rare="3" getWay="插入卡牌“虎奔的照片”，产自较高难度虎丘林。"/>
+		<card id="10014" costItemId="2100014" categotyId="3" rare="3" getWay="插入卡牌“凯门的照片”，产自较高难度湖面密林。"/>
+		<card id="10015" costItemId="2100015" categotyId="3" rare="3" getWay="插入卡牌“沙克的照片”，产自较高难度奇怪的祭坛。"/>
+		<card id="10016" costItemId="2100016" categotyId="4" rare="3" getWay="插入卡牌“古鲁的相片”，产自较高难度铸剑池。"/>
+		<card id="10017" costItemId="2100017" categotyId="4" rare="3" getWay="插入卡牌“希里的相片”，产自较高难度鱼人矿洞。"/>
+		<card id="10018" costItemId="2100018" categotyId="4" rare="3" getWay="插入卡牌“祭潮的相片”，产自较高难度剑裂溪谷。"/>
+		<card id="10019" costItemId="2100019" categotyId="4" rare="3" getWay="插入卡牌“逆水的相片”，产自较高难度加兰神殿。"/>
+		<card id="10020" costItemId="2100020" categotyId="5" rare="3" getWay="插入卡牌“尼斯的画像”，产自较高难度倚天塔一层。"/>
+		<card id="10021" costItemId="2100021" categotyId="5" rare="3" getWay="插入卡牌“鹰啸的画像”，产自较高难度倚天塔二层。"/>
+		<card id="10022" costItemId="2100022" categotyId="5" rare="3" getWay="插入卡牌“浮屠的画像”，产自较高难度倚天塔三层。"/>
+		<card id="10023" costItemId="2100023" categotyId="5" rare="3" getWay="插入卡牌“森冷的画像”，产自较高难度倚天窟。"/>
+		<card id="10024" costItemId="2100024" categotyId="6" rare="3" getWay="插入卡牌“传音的肖像”，产自较高难度岩洞种植园。"/>
+		<card id="10025" costItemId="2100025" categotyId="6" rare="3" getWay="插入卡牌“紫崖的肖像”，产自较高难度废弃山路。"/>
+		<card id="10026" costItemId="2100026" categotyId="6" rare="3" getWay="插入卡牌“盲牙的肖像”，产自较高难度崖壁迷宫。"/>
+		<card id="10027" costItemId="2100027" categotyId="6" rare="3" getWay="插入卡牌“钝爪的肖像”，产自较高难度深渊修炼场。"/>
+		<card id="10028" costItemId="2100028" categotyId="7" rare="3" getWay="插入卡牌“昏符的影像”，产自较高难度乱石码头。"/>
+		<card id="10029" costItemId="2100029" categotyId="7" rare="3" getWay="插入卡牌“怒眼的影像”，产自较高难度迷船甲板。"/>
+		<card id="10030" costItemId="2100030" categotyId="7" rare="3" getWay="插入卡牌“钢棘的影像”，产自较高难度上古迷船船舱。"/>
+		<card id="10031" costItemId="2100031" categotyId="7" rare="3" getWay="插入卡牌“骸骨魔魂的影像”，产自较高难度骸骨漩涡。"/>
+		<card id="10032" costItemId="2100032" categotyId="7" rare="3" getWay="插入卡牌“凿齿的影像”，产自较高难度壶口水牢。"/>
+		<card id="10033" costItemId="2100033" categotyId="7" rare="3" getWay="插入卡牌“黑角的影像”，产自较高难度囚魔堡。"/>
+		<card id="10034" costItemId="2100034" categotyId="8" rare="3" getWay="插入卡牌“吞噬者之影”，产自较高难度晶体采集场。"/>
+		<card id="10035" costItemId="2100035" categotyId="8" rare="3" getWay="插入卡牌“御电魔之影”，产自较高难度电光迷阵。"/>
+		<card id="10036" costItemId="2100036" categotyId="8" rare="3" getWay="插入卡牌“闪光之牙之影”，产自较高难度深海之眼。"/>
+		<card id="10037" costItemId="2100037" categotyId="8" rare="3" getWay="插入卡牌“魔光黑眼之影”，产自较高难度玄书密室。"/>
+		<card id="10038" costItemId="2100038" categotyId="9" rare="3" getWay="插入卡牌“斑纹巨蛤之相”，产自较高难度泡泡谷。"/>
+		<card id="10039" costItemId="2100039" categotyId="9" rare="3" getWay="插入卡牌“狂热之星之相”，产自较高难度温泉矿洞。"/>
+		<card id="10040" costItemId="2100040" categotyId="9" rare="3" getWay="插入卡牌“石破天鲸之相”，产自较高难度怒气山脊。"/>
+		<card id="10041" costItemId="2100041" categotyId="9" rare="3" getWay="插入卡牌“魔之火影之相”，产自较高难度烈焰火山口。"/>
+	</cards>
+</root>

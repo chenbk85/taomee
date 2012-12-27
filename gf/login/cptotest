@@ -1,0 +1,6 @@
+#/bin/bash
+tar -czvf lg.tar ./lib/* ./fonts/* ./data/* ./gf_login
+sshpass -p "gongfu" scp -p22 -o StrictHostKeyChecking=no lg.tar gongfu@10.1.1.64:/home/gongfu/gf_release_version/login_dir/
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "pkill -9 gf_login;cd ~/gf_release_version/login_dir/; tar -xvf lg.tar "
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "cd ~/gf_release_version/login_dir/;./startup.sh;"
+

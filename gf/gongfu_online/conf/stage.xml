@@ -1,0 +1,462 @@
+<!--
+id:关卡ID
+StageDiff:关卡难度，(1,2,...11)只对哪种难度有作用，如不填或0则对所有关卡都有效
+pet:是否允许带宠物 1：允许， 2：不允许
+min_lv：允许进入的最小级别
+max_lv: 允许进入的最大级别
+year: 年份限值【随便填】
+month:月份限制【0 - 11】一月：0
+week: 星期限制【0-6】 周日：0
+day:  天【1-31】
+begin_hour: 时秒 比如：11点30分 -》 1130采用24小时制
+end_hour:同begin_hour，注意end_hour时间一定要晚于begin_hour
+enter_flag: 是否允许进入 1允许，0不允许
+UnlimitedItem: 使用该物品后，进入就没有限制了
+FreeDailyID: 借用dailyactivity.xml，来限制进入次数
+Coins:进入关卡所扣金钱
+举个例子:
+<stage id = "1" min_lv = "1" max_lv ="100" pet ="1">
+   <limit year = "2011" month = "1" week = "1"  begin_hour="0001" end_hour = "2359" enter_flag= "1"/>
+</stage>
+
+关卡1，只能在2011 年的2月份，每周一的0点1分到23点59分之间进入，1-100级别允许进入可以带宠物
+
+-->
+
+
+<root>
+    <!-- 包围比武大会 -->
+	<stage id = "942" min_lv = "0" max_lv ="100"  UnlimitedItem = "1500361 1" pet = "0">
+	</stage>
+	<stage id = "916" pet = "0">
+	</stage>
+
+	<stage id = "801" min_lv="35" pet = "1" >
+	</stage>
+	<stage id = "925" min_lv = "10" max_lv ="100" pet = "0" FreeDailyID="0" UnlimitedItem = "1700063 1" >
+		<limit year = "2011" week = "0"  begin_hour="1200" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1200" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1200" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1200" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1200" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1200" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1200" end_hour = "2100" enter_flag= "1"/>
+	</stage>
+	
+	<stage id = "926" min_lv = "10" max_lv ="100" pet = "1" >
+<!--		<limit year = "2011" week = "0"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>		
+		<limit year = "2011" week = "5"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>
+-->
+	</stage>
+	
+	<stage id = "927" min_lv = "10" max_lv ="100" pet = "0" >
+<!--		<limit year = "2011" week = "0"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>		
+		<limit year = "2011" week = "5"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>-->
+	</stage>	
+	
+	<stage id = "928" min_lv = "10" max_lv ="100" pet = "0" >
+<!--		<limit year = "2011" week = "0"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>		
+		<limit year = "2011" week = "5"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>-->
+	</stage>
+	<stage id = "929" min_lv = "10" max_lv ="100" pet = "0" >
+<!--		<limit year = "2011" week = "0"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>		
+		<limit year = "2011" week = "5"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>-->
+	</stage>	
+	<stage id = "930" min_lv = "10" max_lv ="100" pet = "0" UnlimitedItem = "1500345 5 1500347 3 1500346 5">
+<!--		<limit year = "2011" week = "0"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>		
+		<limit year = "2011" week = "5"  begin_hour="1200" end_hour = "1259" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "1959" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0900" end_hour = "1059" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1559" enter_flag= "1"/>
+		-->
+	</stage>	
+    <stage id = "933" min_lv = "10" max_lv ="100" pet = "0" >
+	</stage>
+
+    <!-- 935-938 比武大会资格赛 -->
+	<stage id = "935" min_lv = "20" max_lv ="100"  Coins="3000" From="2012-05-03 00:00:00" To="2012-05-06 23:59:59" >
+        <limit year = "2011" week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0000" end_hour = "2350" enter_flag= "1"/>
+	</stage>
+	<stage id = "936" min_lv = "20" max_lv ="100"  Coins="3000" From="2012-05-03 00:00:00" To="2012-05-06 23:59:59" >
+        <limit year = "2011" week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</stage>
+	<stage id = "937" min_lv = "20" max_lv ="100"  Coins="3000" From="2012-05-03 00:00:00" To="2012-05-06 23:59:59" >
+        <limit year = "2011" week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</stage>
+	<stage id = "938" min_lv = "20" max_lv ="100"  Coins="3000" From="2012-05-03 00:00:00" To="2012-05-06 23:59:59" >
+        <limit year = "2011" week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</stage>
+
+    <!-- 939 比武大会淘汰赛 -->
+	<stage id = "939" min_lv = "20" max_lv ="100" pet = "0" From="2012-05-03 00:00:00" To="2012-05-06 23:59:59" >
+		<limit year = "2011" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "0"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1300" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="1300" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>
+		<limit year = "2011" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+	</stage>	
+
+	<stage id = "940" min_lv = "20" max_lv ="100" pet = "0" >
+		<limit year = "2011" week = "0"  begin_hour="1200" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "0"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1200" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1200" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "2"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1200" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "3"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1200" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "4"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1200" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1200" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+	</stage>	
+
+    <!-- 941 比武大会总决赛 -->
+	<stage id = "941" min_lv = "20" max_lv ="100" pet = "0" From="2012-05-12 00:00:00" To="2012-05-13 15:00:01" >
+        <limit year = "2011" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>		
+		<limit year = "2011" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</stage>
+	<stage id = "943" min_lv = "10" max_lv ="100" pet = "0" >
+	</stage>
+<stage id = "944" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400206 1">
+	</stage>
+<stage id = "945" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400206 1">
+	</stage>
+<stage id = "946" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400206 1">
+	</stage>
+<stage id = "947" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400206 1">
+	</stage>
+<stage id = "948" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400207 1">
+	</stage>
+<stage id = "949" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400207 1">
+	</stage>
+<stage id = "950" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400207 1">
+	</stage>
+<stage id = "951" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1400207 1">
+	</stage>
+<stage id = "952" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "1500383 1">
+	</stage>
+<stage id = "955" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+<stage id = "956" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+<stage id = "957" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+<stage id = "958" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+<stage id = "959" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+<stage id = "960" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+<stage id = "961" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+<stage id = "962" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem = "4 20">
+	</stage>
+
+    <!-- (964-968) begin 超时空守卫战 pvp -->
+	<stage id = "964" min_lv = "10" max_lv ="100" pet = "1" >
+        <limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1440" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>		
+		<limit year = "2011" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1440" enter_flag= "1"/>
+	</stage>	
+		<stage id = "965" min_lv = "10" max_lv ="100" pet = "1" >
+		<limit year = "2011" week = "5"  begin_hour="1900" end_hour = "1940" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1440" enter_flag= "1"/>
+	</stage>	
+	
+
+	<stage id = "966" min_lv = "10" max_lv ="100" pet = "1" >
+        <limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1440" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>		
+		<limit year = "2011" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1440" enter_flag= "1"/>
+	</stage>	
+	
+	<stage id = "967" min_lv = "10" max_lv ="100" pet = "1" >
+        <limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1440" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>		
+		<limit year = "2011" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>
+		<limit year = "2011" week = "6"  begin_hour="1400" end_hour = "1440" enter_flag= "1"/>
+	</stage>	
+
+	<stage id = "968" min_lv = "10" max_lv ="100" pet = "1" >
+		<limit year = "2011" week = "5"  begin_hour="1940" end_hour = "2000" enter_flag= "1"/>
+		<limit year = "2011" week = "6"  begin_hour="1440" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+    <!-- end 超时空守卫战 pvp -->
+    <!-- (969-973) begin 超时空守卫战 pve -->
+	<stage id = "969" min_lv = "10" max_lv ="100" pet = "1" From="2011-11-04 00:00:00" To="2011-11-11 23:59:59" >
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+	<stage id = "970" min_lv = "10" max_lv ="100" pet = "1" From="2011-11-04 00:00:00" To="2011-11-11 23:59:59" >
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+	<stage id = "971" min_lv = "10" max_lv ="100" pet = "1" From="2011-11-04 00:00:00" To="2011-11-11 23:59:59" >
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+	<stage id = "972" min_lv = "10" max_lv ="100" pet = "1" From="2011-11-04 00:00:00" To="2011-11-11 23:59:59" >
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+	<stage id = "973" min_lv = "10" max_lv ="100" pet = "1" From="2011-11-04 00:00:00" To="2011-11-11 23:59:59" >
+		<limit year = "2011" week = "0"  begin_hour="1400" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+    <!-- end 超时空守卫战 pve -->
+
+	<stage id = "974" min_lv = "0" max_lv ="100"  UnlimitedItem = "1500392 1" pet = "1">
+	</stage>
+	<stage id = "975" min_lv = "0" max_lv ="100"  UnlimitedItem = "1500392 1" pet = "1">
+	</stage>
+	<stage id = "976" min_lv = "0" max_lv ="100"  UnlimitedItem = "1500392 1" pet = "1">
+	</stage>
+
+    <!-- 真假武圣  -->
+	<stage id = "977" min_lv = "35" max_lv ="100" pet = "1" >
+	</stage>	
+	<stage id = "979" min_lv = "30" max_lv ="100" pet = "1" From="2012-05-11 00:00:00" To="2012-05-13 23:59:59" >
+		<limit year = "2012" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "1"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "2"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "3"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+		<stage id = "981" min_lv = "30" max_lv ="100" pet = "1" From="2012-05-11 00:00:00" To="2012-05-13 23:59:59" >
+	<limit year = "2012" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "1"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "2"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "3"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+
+	</stage>	
+	
+	<stage id = "983" min_lv = "30" max_lv ="100" pet = "1" From="2012-05-11 00:00:00" To="2012-05-13 23:59:59" >
+		<limit year = "2012" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "1"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "2"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "3"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+
+	</stage>	
+		<stage id = "984" min_lv = "30" max_lv ="100" pet = "1" From="2012-05-11 00:00:00" To="2012-05-13 23:59:59" >
+			<limit year = "2012" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+			<limit year = "2012" week = "1"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+			<limit year = "2012" week = "2"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+			<limit year = "2012" week = "3"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+			<limit year = "2012" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+			<limit year = "2012" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+			<limit year = "2012" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+	
+	<stage id = "985" min_lv = "30" max_lv ="100" pet = "1" From="2012-05-11 00:00:00" To="2012-05-13 23:59:59" >
+		<limit year = "2012" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "1"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "2"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "3"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+	<stage id = "986" min_lv = "30" max_lv ="100" pet = "1" From="2012-05-11 00:00:00" To="2012-05-13 23:59:59" >
+		<limit year = "2012" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "1"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "2"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "3"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "4"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2012" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</stage>	
+
+
+    <!-- (989-997) 九天连环阵 -->
+	<stage id = "989" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500350 1"/>
+
+	<stage id = "990" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500568 1"/>
+
+	<stage id = "991" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500351 1"/>
+
+	<stage id = "992" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500352 1"/>
+	
+	<stage id = "993" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500566 1"/>
+
+	<stage id = "994" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500567 1"/>
+
+	<stage id = "995" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500903 1"/>
+	
+	<stage id = "996" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500564 1"/>
+
+	<stage id = "997" min_lv = "10" max_lv ="100" pet = "1" UnlimitedItem="1500354 1"/>
+
+    <!-- 财神 -->
+    <stage id = "702" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem="1500580 20" >
+        <limit year = "2012" week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+    </stage>	
+    <!-- 囍神 -->
+	<stage id = "703" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem="1500580 20" >
+	    <limit year = "2012" week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+    </stage>	
+    <!-- 门神 -->
+	<stage id = "704" min_lv = "1" max_lv ="100" pet = "1" UnlimitedItem="1500580 20" >
+	    <limit year = "2012" week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+        <limit year = "2012" week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</stage>	
+    <!-- 屠龙 -->
+	<stage id = "705" min_lv = "1" max_lv ="100" pet = "1" >
+		<limit year = "2012" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>
+		<limit year = "2012" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>
+	</stage> 
+	<stage id = "706" min_lv = "1" max_lv ="100" ConditionItem="1500590 1" UnlimitedItem="1500580 20" pet = "1" >
+		<limit year = "2012" week = "0"  begin_hour="0300" end_hour = "0400" enter_flag= "0"/>
+	</stage>
+	<stage id = "707" min_lv = "1" max_lv ="100" ConditionItem="1500591 1" UnlimitedItem="1500580 20" pet = "1" >
+		<limit year = "2012" week = "0"  begin_hour="0300" end_hour = "0400" enter_flag= "0"/>
+	</stage>
+    <!-- 自私之境 -->
+    <stage id = "708" min_lv = "1" max_lv ="100" pet = "1" >
+		<limit year = "2012" week = "6"  begin_hour="1330" end_hour = "1400" enter_flag= "1"/>
+	</stage> 
+    <!-- 嫉妒之境 -->
+	<stage id = "709" min_lv = "1" max_lv ="100" pet = "1">
+		<limit year = "2012" week = "6"  begin_hour="1330" end_hour = "1400" enter_flag= "1"/>
+	</stage>
+    <!-- 贪婪之境 -->
+	<stage id = "710" min_lv = "1" max_lv ="100" pet = "1" >
+		<limit year = "2012" week = "6"  begin_hour="1330" end_hour = "1400" enter_flag= "1"/>
+	</stage>
+    <!-- 721 比武大会挑战高手 -->
+	<stage id = "721" min_lv = "1" max_lv ="100" pet = "0" From="2012-05-12 00:00:00" To="2012-05-13 15:00:01" >
+        <limit year = "2011" week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit year = "2011" week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "0"/>
+		<limit year = "2011" week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "0"/>		
+		<limit year = "2011" week = "5"  begin_hour="1300" end_hour = "1500" enter_flag= "0"/>
+		<limit year = "2011" week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</stage>
+
+</root>
+

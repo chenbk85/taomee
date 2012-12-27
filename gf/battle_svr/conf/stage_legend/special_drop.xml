@@ -1,0 +1,23 @@
+<!--
+
+	ID:掉落关卡号(0则所有关卡都掉落)
+	Monster:掉落怪物(0则所有怪物都掉落)
+	DropTimeType:掉落时间，详见special_drop_time.xml
+	DropOdds:掉落概率，单位万分之一
+-->
+
+<SpecialDrops>
+<!--
+	<Stage ID="1" Monster="0" DropTimeID="1" ItemID="1200007" DropOdds="10000" />
+	<Stage ID="0" Monster="11001" DropTimeID="2" ItemID="1200008" DropOdds="10000" />
+	<Stage ID="1" Monster="11001" DropTimeID="1" ItemID="1200009" DropOdds="10000" />
+	<Stage ID="0" Monster="0" DropTimeID="2" ItemID="1200010" DropOdds="10000" />
+	-->
+	<Stage ID="934" Monster="19145" DropTimeID="3" ItemID="1500357" DropOdds="3000" />
+	<Stage ID="934" Monster="19145" DropTimeID="3" ItemID="1500360" DropOdds="1000" />
+	<Stage ID="943" Monster="11362" DropTimeID="4" ItemID="1500360" DropOdds="500" />
+	<Stage ID="0" Monster="0" DropTimeID="10" ItemID="1500396" DropOdds="1000" />
+	<Stage ID="0" Monster="0" DropTimeID="10" ItemID="1500587" DropOdds="1000" />
+
+	<Stage ID="0" Monster="0" MonType="1" DropTimeID="11" ItemID="1300336" DropOdds="3000" />
+</SpecialDrops>

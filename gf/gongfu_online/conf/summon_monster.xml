@@ -1,0 +1,887 @@
+<!-- edited with XML Spy v4.0.1 U (http://www.xmlspy.com) by opec (opec) -->
+<SummonMonsters>
+	<!-- needMonster进阶孵化时需要的低级灵兽，默认不配表示不需要 -->
+	<!--
+		rare:稀有度
+		classId:系列id（1：走兽系，2：飞羽系，3：上古系，4：元素系,5：变异系，6：远古系）
+		getWay:获取方式
+		descript：描述
+	-->
+	<!--孵化:HatchItem孵化物品，HatchLv孵化所需玩家等级，SummonID孵化出来的灵兽-->
+	<Hatch HatchItem="1400047" HatchLv="1" SummonID="1001" Desc="白狐之镯->白玉狐"/>
+	<Hatch HatchItem="1400067" HatchLv="25" SummonID="1011" Desc="月魂玉->月灵兔"/>
+	<Hatch HatchItem="1400075" HatchLv="1" SummonID="1021" Desc="流光圈->流光鹿"/>
+	<Hatch HatchItem="1400113" HatchLv="5" SummonID="1031" Desc="铃铛->通铃猫"/>
+	<Hatch HatchItem="1410001" HatchLv="5" SummonID="1041" Desc="羽毛->飞羽雏"/>
+	<Hatch HatchItem="1410002" HatchLv="1" SummonID="1051" Desc="袜子->小雪球"/>
+	<Hatch HatchItem="1410003" HatchLv="1" SummonID="1061" Desc="天锣->天锣雷光兔"/>
+	<Hatch HatchItem="1410004" HatchLv="1" SummonID="1071" Desc="萝卜->粉罗兔"/>
+	<Hatch HatchItem="1410005" HatchLv="1" SummonID="1081" Desc="萝卜->灼热之灵"/>
+	<Hatch HatchItem="1410009" HatchLv="1" SummonID="1091" Desc="暗影鼠->暗影鼠"/>
+	<Hatch HatchItem="1500362" HatchLv="1" SummonID="1111" Desc="千年精魄->千年白玉狐" needMonster="1001"/>
+	<Hatch HatchItem="1700083" HatchLv="1" SummonID="1111" Desc="千年精魄->千年白玉狐" needMonster="1001"/>
+	<Hatch HatchItem="1410010" HatchLv="1" SummonID="1101" Desc="霸王卷轴->霸王虎"/>
+	<Hatch HatchItem="1410014" HatchLv="1" SummonID="1121" Desc="剑云木->机甲兽"/>
+	<Hatch HatchItem="1410020" HatchLv="1" SummonID="1131" Desc="风之芽->木旋风"/>
+	<Hatch HatchItem="1410015" HatchLv="1" SummonID="1141" Desc="风吟龙卵->风吟龙"/>
+	<Hatch HatchItem="1410016" HatchLv="1" SummonID="1151" Desc="笑天狗环->笑天犬"/>
+	<Hatch HatchItem="1410017" HatchLv="1" SummonID="1161" Desc="凤凰火羽->火凤凰"/>
+	<Hatch HatchItem="1410018" HatchLv="1" SummonID="1171" Desc="土鳞碎片->土鳞兽"/>
+	<Hatch HatchItem="1410019" HatchLv="1" SummonID="1181" Desc="彩翎->长舌鹦鹉"/>
+	<Hatch HatchItem="1410021" HatchLv="1" SummonID="1201" Desc="火之逆鳞->火云麒麟"/>
+	<Hatch HatchItem="1410022" HatchLv="1" SummonID="1191" Desc="奥义箭袋->大忍枭"/>
+	<Hatch HatchItem="1410023" HatchLv="1" SummonID="1211" Desc="鬼火符->燃眉小鬼"/>
+	<Hatch HatchItem="1410024" HatchLv="1" SummonID="1221" Desc="菊石化石->远古菊石"/>
+	<Hatch HatchItem="1410025" HatchLv="1" SummonID="1231" Desc="蝎尾毒钩->百战毒蝎"/>
+	<Hatch HatchItem="1410026" HatchLv="1" SummonID="1241" Desc="虎符->噬鬼白虎"/>
+	<Hatch HatchItem="1410028" HatchLv="1" SummonID="1261" Desc="独角龙卵->独角龙"/>
+	<Hatch HatchItem="1410029" HatchLv="1" SummonID="1271" Desc="彩色铃铛->吉祥鹿"/>
+	<Hatch HatchItem="1410030" HatchLv="1" SummonID="1281" Desc="战鼓->奇门鼓龙"/>
+	<Hatch HatchItem="1410031" HatchLv="1" SummonID="1291" Desc="冰原象牙->冰河猛犸"/>
+	<!--BaseAttr基础成长系数默认为100: AttrType宠物属性类型1为中庸型，2为攻击型，3为防御型:默认为1-->
+	
+	<!--灵兽:白玉狐-->
+	<Summon ID="1001" Name="白玉狐" Lv="1" NextLv="1" Type="1001" rare="1" classId="1" getWay="游戏最初赠送">
+		<descript><![CDATA[白玉狐的祖先可能是东部大陆最早的一批灵兽，对于擅入它们领地的外人充满着敌意。]]></descript>
+	</Summon>
+	<Summon ID="1002" BaseAttr="100" Name="白玉狐幼年期" Lv="1" NextLv="20" Type="1001" Renascence="20">
+		<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1003" BaseAttr="100" Name="白玉狐成长期" Lv="20" NextLv="30" Type="1001" Renascence="40">
+		<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020011" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1004" BaseAttr="100" Name="白玉狐成熟期" Lv="30" NextLv="40" Type="1001" Renascence="60">
+		<Skill ID="4020009" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020011" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020012" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1005" BaseAttr="100" Name="白玉狐最终期" Lv="40" NextLv="45" Type="1001" Renascence="60" rageSkill="4020013">
+		<Skill ID="4020010" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020011" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020012" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020013" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1006" BaseAttr="105" Name="白玉狐超灵期" Lv="45" NextLv="99" Type="1001" Renascence="60" IsOver="1" rageSkill="4020186">
+		<Skill ID="4020010" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020011" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020012" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020186" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:月魂玉-->
+	<Summon ID="1011" Name="月灵兔" Lv="1" NextLv="1" Type="1011" rare="1" classId="1" getWay="LV1超灵侠士领取">
+		<descript><![CDATA[月灵兔在野外的每次出现都与月相有关，在满月时尤其容易看到它翩翩如仙子般的身影。]]></descript>
+	</Summon>
+	<Summon ID="1012" BaseAttr="100" Name="月灵兔幼年期" Lv="1" NextLv="25" Type="1011" Renascence="20">
+		<Skill ID="4020014" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1013" BaseAttr="100" Name="月灵兔成长期" Lv="25" NextLv="35" Type="1011" Renascence="40">
+		<Skill ID="4020015" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020018" NeedLv="25" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1014" BaseAttr="100" Name="月灵兔成熟期" Lv="35" NextLv="45" Type="1011" Renascence="60">
+		<Skill ID="4020016" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020018" NeedLv="25" TopSkillLv="10"/>
+		<Skill ID="4020019" NeedLv="35" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1015" BaseAttr="100" Name="月灵兔最终期" Lv="45" NextLv="50" Type="1011" Renascence="60" rageSkill="4020020">
+		<Skill ID="4020017" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020018" NeedLv="25" TopSkillLv="10"/>
+		<Skill ID="4020019" NeedLv="35" TopSkillLv="10"/>
+		<Skill ID="4020020" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1016" BaseAttr="105" Name="月灵兔超灵期" Lv="50" NextLv="99" Type="1011" Renascence="60" IsOver="1" rageSkill="4020187">
+		<Skill ID="4020017" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020018" NeedLv="25" TopSkillLv="10"/>
+		<Skill ID="4020019" NeedLv="35" TopSkillLv="10"/>
+		<Skill ID="4020187" NeedLv="50" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:流光鹿-->
+	<Summon ID="1021" Name="流光鹿" Lv="1" NextLv="1" Type="1021" rare="2" classId="1" getWay="LV3超灵侠士领取">
+		<descript><![CDATA[流光鹿是受到森林之神庇护的灵兽，在战斗中它能比其他灵兽承担更大的伤害，同时也执着于保护自己的主人。]]></descript>
+	</Summon>
+	<Summon ID="1022" BaseAttr="110" AttrType="3" Name="流光鹿幼年期" Lv="1" NextLv="20" Type="1021" Renascence="15">
+		<Skill ID="4020021" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1023" BaseAttr="110" AttrType="3" Name="流光鹿成长期" Lv="20" NextLv="30" Type="1021" Renascence="30">
+		<Skill ID="4020022" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020025" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1024" BaseAttr="110" AttrType="3" Name="流光鹿成熟期" Lv="30" NextLv="40" Type="1021" Renascence="45">
+		<Skill ID="4020023" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020025" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020026" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1025" BaseAttr="110" AttrType="3" Name="流光鹿最终期" Lv="40" NextLv="45" Type="1021" Renascence="45" rageSkill="4020027">
+		<Skill ID="4020024" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020025" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020026" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020027" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1026" BaseAttr="115" AttrType="3" Name="流光鹿超灵期" Lv="45" NextLv="99" Type="1021" Renascence="45" IsOver="1" rageSkill="4020188">
+		<Skill ID="4020024" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020025" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020026" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020188" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:通灵猫-->
+	<Summon ID="1031" Name="通铃猫" Lv="1" NextLv="1" Type="1031" rare="1" classId="1" getWay="在“灵魔洞”关卡内击败“真·通铃猫”后有概率获得">
+		<descript><![CDATA[通铃猫的本体十分乖巧，但偶尔也会调皮地寄居在其他猫形动物体内，并且激发出它们体内的狂性。]]></descript>
+	</Summon>
+	<Summon ID="1032" BaseAttr="100" AttrType="2" Name="通铃猫幼年期" Lv="1" NextLv="20" Type="1031" Renascence="20">
+		<Skill ID="4020028" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1033" BaseAttr="100" AttrType="2" Name="通铃猫成长期" Lv="20" NextLv="30" Type="1031" Renascence="40">
+		<Skill ID="4020029" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020032" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1034" BaseAttr="100" AttrType="2" Name="通铃猫成熟期" Lv="30" NextLv="40" Type="1031" Renascence="60">
+		<Skill ID="4020030" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020032" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020033" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1035" BaseAttr="100" AttrType="2" Name="通铃猫最终期" Lv="40" NextLv="45" Type="1031" Renascence="60" rageSkill="4020034">
+		<Skill ID="4020031" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020032" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020033" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020034" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1036" BaseAttr="105" AttrType="2" Name="通铃猫超灵期" Lv="45" NextLv="99" Type="1031" Renascence="60" IsOver="1" rageSkill="4020053">
+		<Skill ID="4020031" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020032" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020033" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020053" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:飞羽雏-->
+	<Summon ID="1041" Name="飞羽雏" Lv="1" NextLv="1" Type="1041" rare="2" classId="2" getWay="各种抽奖活动及运营活动中有概率获得">
+		<descript><![CDATA[作为一种不会飞的鸟，飞羽雏牺牲了许多才换取自己在战斗力方面的提升。每只飞羽雏都是好斗的战士，不要轻易去招惹它们哟。]]></descript>
+	</Summon>
+	<Summon ID="1042" BaseAttr="110" AttrType="2" Name="飞羽雏幼年期" Lv="1" NextLv="20" Type="1041" Renascence="20">
+		<Skill ID="4020035" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1043" BaseAttr="110" AttrType="2" Name="飞羽雏成长期" Lv="20" NextLv="30" Type="1041" Renascence="40">
+		<Skill ID="4020036" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020040" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1044" BaseAttr="110" AttrType="2" Name="飞羽雏成熟期" Lv="30" NextLv="40" Type="1041" Renascence="60">
+		<Skill ID="4020037" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020040" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020041" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1045" BaseAttr="110" AttrType="2" Name="飞羽雏最终期" Lv="40" NextLv="45" Type="1041" Renascence="60" rageSkill="4020042">
+		<Skill ID="4020038" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020040" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020041" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020042" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1046" BaseAttr="115" AttrType="2" Name="飞羽雏超灵期" Lv="45" NextLv="99" Type="1041" Renascence="60" IsOver="1" rageSkill="4020043">
+		<Skill ID="4020039" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020040" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020041" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020043" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:小雪球-->
+	<Summon ID="1051" Name="小雪球" Lv="1" NextLv="1" Type="1051" rare="1" classId="5" getWay="击败史诗关卡中变坏的小雪球或参加各种抽奖活动获得">
+		<descript><![CDATA[拥有着浓厚的毛皮，小雪球的形态似乎并不符合东部生态环境。但是北部灵兽的特殊作战方式似乎使得某些侠士格外亲睐它。]]></descript>
+	</Summon>
+	<Summon ID="1052" BaseAttr="100" AttrType="3" Name="小雪球幼年期" Lv="1" NextLv="20" Type="1051" Renascence="20">
+		<Skill ID="4020044" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1053" BaseAttr="100" AttrType="3" Name="小雪球成长期" Lv="20" NextLv="30" Type="1051" Renascence="40">
+		<Skill ID="4020045" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020049" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1054" BaseAttr="100" AttrType="3" Name="小雪球成熟期" Lv="30" NextLv="40" Type="1051" Renascence="60">
+		<Skill ID="4020046" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020049" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020050" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1055" BaseAttr="100" AttrType="3" Name="小雪球最终期" Lv="40" NextLv="45" Type="1051" Renascence="60" rageSkill="4020051">
+		<Skill ID="4020047" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020049" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020050" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020051" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1056" BaseAttr="105" AttrType="3" Name="小雪球超灵期" Lv="45" NextLv="99" Type="1051" Renascence="60" IsOver="1" rageSkill="4020052">
+		<Skill ID="4020048" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020049" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020050" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020052" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:天锣雷光兔-->
+	<Summon ID="1061" Name="天锣雷光兔" Lv="1" NextLv="1" Type="1061" rare="3" classId="1" getWay="年费超灵侠士领取">
+		<descript><![CDATA[雷电，火焰！天锣雷光兔对于这些危险力量的操控上展现出了过人的天赋，而这些成就几乎可以全部归功于它的贪玩与好奇。]]></descript>
+	</Summon>
+	<Summon ID="1062" BaseAttr="110" AttrType="2" Name="天锣雷光兔幼年期" Lv="1" NextLv="20" Type="1061" Renascence="15">
+		<Skill ID="4020054" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1063" BaseAttr="110" AttrType="2" Name="天锣雷光兔成长期" Lv="20" NextLv="30" Type="1061" Renascence="30">
+		<Skill ID="4020055" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020059" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1064" BaseAttr="110" AttrType="2" Name="天锣雷光兔成熟期" Lv="30" NextLv="40" Type="1061" Renascence="45">
+		<Skill ID="4020056" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020059" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020060" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1065" BaseAttr="110" AttrType="2" Name="天锣雷光兔最终期" Lv="40" NextLv="45" Type="1061" Renascence="45" rageSkill="4020061">
+		<Skill ID="4020057" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020059" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020060" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020061" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1066" BaseAttr="115" AttrType="2" Name="天锣雷光兔超灵期" Lv="45" NextLv="99" Type="1061" Renascence="45" IsOver="1" rageSkill="4020062">
+		<Skill ID="4020058" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020059" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020060" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020062" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:粉罗兔-->
+	<Summon ID="1071" Name="粉罗兔" Lv="1" NextLv="1" Type="1071" rare="1" classId="1" getWay="击败史诗关卡中变坏的粉罗兔或参加各种抽奖活动获得">
+		<descript><![CDATA[粉罗兔随身携带的武器——一根大号的胡萝卜，同时也是它的战斗武器。这根胡萝卜能长能短，能大能小，还能幻化无数小萝卜，是粉罗兔的称手利器。]]></descript>
+	</Summon>
+	<Summon ID="1072" BaseAttr="100" Name="粉罗兔幼年期" Lv="1" NextLv="20" Type="1071" Renascence="20">
+		<Skill ID="4020063" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1073" BaseAttr="100" Name="粉罗兔成长期" Lv="20" NextLv="30" Type="1071" Renascence="40">
+		<Skill ID="4020064" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020068" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1074" BaseAttr="100" Name="粉罗兔成熟期" Lv="30" NextLv="40" Type="1071" Renascence="60">
+		<Skill ID="4020065" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020068" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020069" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1075" BaseAttr="100" Name="粉罗兔最终期" Lv="40" NextLv="45" Type="1071" Renascence="60" rageSkill="4020070">
+		<Skill ID="4020066" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020068" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020069" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020070" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1076" BaseAttr="105" Name="粉罗兔超灵期" Lv="45" NextLv="99" Type="1071" Renascence="60" IsOver="1" rageSkill="4020071">
+		<Skill ID="4020067" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020068" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020069" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020071" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:灼热之灵-->
+	<Summon ID="1081" Name="灼热之灵" Lv="1" NextLv="1" Type="1081" rare="2" classId="4" getWay="各种抽奖活动及运营活动中有概率获得">
+		<descript><![CDATA[灼热之灵其实是一团初具灵智的火焰，因为最初对于周围事物的好奇，所以尤其喜欢拾取东西。当然对于敌人，它也总是能毫无保留地倾泻怒火。]]></descript>
+	</Summon>
+	<Summon ID="1082" BaseAttr="110" Name="灼热之灵幼年期" Lv="1" NextLv="20" Type="1081" Renascence="15">
+		<Skill ID="4020072" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1083" BaseAttr="110" Name="灼热之灵成长期" Lv="20" NextLv="30" Type="1081" Renascence="30" needItem="1410006">
+		<Skill ID="4020073" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020081" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1084" BaseAttr="110" Name="灼热之灵成熟期" Lv="30" NextLv="40" Type="1081" Renascence="45" needItem="1410007">
+		<Skill ID="4020074" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020081" NeedLv="20" TopSkillLv="1"/>
+		<Skill ID="4020078" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1085" BaseAttr="110" Name="灼热之灵最终期" Lv="40" NextLv="45" Type="1081" Renascence="45" rageSkill="4020079" needItem="1410008">
+		<Skill ID="4020075" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020081" NeedLv="20" TopSkillLv="1"/>
+		<Skill ID="4020078" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020079" NeedLv="40" TopSkillLv="10"/>
+		<!--<Skill ID="4020079" NeedLv="40" TopSkillLv="10"/>-->
+	</Summon>
+	<Summon ID="1086" BaseAttr="115" Name="灼热之灵超灵期" Lv="45" NextLv="99" Type="1081" Renascence="45" IsOver="1" rageSkill="4020080">
+		<Skill ID="4020076" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020081" NeedLv="20" TopSkillLv="1"/>
+		<Skill ID="4020078" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020080" NeedLv="45" TopSkillLv="10"/>
+		<!--<Skill ID="4020080" NeedLv="45" TopSkillLv="10"/>-->
+	</Summon>
+	<!--灵兽:暗影鼠-->
+	<Summon ID="1091" Name="暗影鼠" Lv="1" NextLv="1" Type="1091" rare="2" classId="1" getWay="十字路口猪哥亮处兑换或参加各种抽奖活动获得">
+		<descript><![CDATA[暗影鼠的智慧在所有灵兽中名列前茅，它能够灵活地操作暗影之力，除去它的天赋因素外，善于学习也是重要原因。]]></descript>
+	</Summon>
+	<Summon ID="1092" BaseAttr="110" Name="暗影鼠幼年期" Lv="1" NextLv="20" Type="1091" Renascence="15">
+		<Skill ID="4020082" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1093" BaseAttr="110" Name="暗影鼠成长期" Lv="20" NextLv="30" Type="1091" Renascence="30">
+		<Skill ID="4020083" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020115" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1094" BaseAttr="110" Name="暗影鼠成熟期" Lv="30" NextLv="40" Type="1091" Renascence="45">
+		<Skill ID="4020084" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020115" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020116" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1095" BaseAttr="110" Name="暗影鼠最终期" Lv="40" NextLv="45" Type="1091" Renascence="45" rageSkill="4020117">
+		<Skill ID="4020085" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020115" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020116" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020117" NeedLv="40" TopSkillLv="10"/>
+		<!--<Skill ID="4020079" NeedLv="40" TopSkillLv="10"/>-->
+	</Summon>
+	<Summon ID="1096" BaseAttr="115" Name="暗影鼠超灵期" Lv="45" NextLv="99" Type="1091" Renascence="45" IsOver="1" rageSkill="4020118">
+		<Skill ID="4020086" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020115" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020116" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020118" NeedLv="45" TopSkillLv="10"/>
+		<!--<Skill ID="4020080" NeedLv="45" TopSkillLv="10"/>-->
+	</Summon>
+	<!--灵兽:霸王虎-->
+	<Summon ID="1101" Name="霸王虎" Lv="1" NextLv="1" Type="1101" rare="4" classId="1" getWay="在大型比武大会中获得第一名">
+		<descript><![CDATA[霸王虎是东部大陆森林中当仁不让的主宰，因此极难被驯服。不过万事都有例外，在霸王虎幼年时就与之亲近，可以真正获得它的信任。]]></descript>
+	</Summon>
+	<Summon ID="1102" BaseAttr="120" AttrType="2" Name="霸王虎幼年期" Lv="1" NextLv="20" Type="1101" Renascence="15">
+		<Skill ID="4020119" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1103" BaseAttr="120" AttrType="2" Name="霸王虎成长期" Lv="20" NextLv="30" Type="1101" Renascence="30">
+		<Skill ID="4020120" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020124" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1104" BaseAttr="120" AttrType="2" Name="霸王虎成熟期" Lv="30" NextLv="40" Type="1101" Renascence="45">
+		<Skill ID="4020121" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020124" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020125" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1105" BaseAttr="120" AttrType="2" Name="霸王虎最终期" Lv="40" NextLv="45" Type="1101" Renascence="45" rageSkill="4020126">
+		<Skill ID="4020122" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020124" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020125" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020126" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1106" BaseAttr="125" AttrType="2" Name="霸王虎超灵期" Lv="45" NextLv="99" Type="1101" Renascence="45" IsOver="1" rageSkill="4020127">
+		<Skill ID="4020123" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020124" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020125" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020127" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:千年白玉狐-->
+	<Summon ID="1111" Name="千年白玉狐" Lv="1" NextLv="1" Odds="10" Type="1111" rare="2" classId="3" getWay="通过千年精魄使白玉狐进化而成">
+		<descript><![CDATA[千年白玉狐曾经遍布整个大陆，但在一次变故之后逐渐变少。后世只有血脉纯正的白玉狐才能通过魔法道具进化成为千年白玉狐。]]></descript>
+	</Summon>
+	<Summon ID="1112" BaseAttr="110" AttrType="2" Name="千年白玉狐幼年期" Lv="1" NextLv="20" Type="1111" Renascence="15" >
+		<Skill ID="4020128" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1113" BaseAttr="110" AttrType="2" Name="千年白玉狐成长期" Lv="20" NextLv="30" Type="1111" Renascence="30">
+		<Skill ID="4020129" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020133" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1114" BaseAttr="110" AttrType="2" Name="千年白玉狐成熟期" Lv="30" NextLv="40" Type="1111" Renascence="45">
+		<Skill ID="4020130" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020133" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020134" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1115" BaseAttr="110" AttrType="2" Name="千年白玉狐最终期" Lv="40" NextLv="45" Type="1111" Renascence="45" rageSkill="4020135">
+		<Skill ID="4020131" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020133" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020134" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020135" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1116" BaseAttr="115" AttrType="2" Name="千年白玉狐超灵期" Lv="45" NextLv="99" Type="1111" Renascence="45" IsOver="1" rageSkill="4020136">
+		<Skill ID="4020132" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020133" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020134" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020136" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:机甲兽-->
+	<Summon ID="1121" Name="机甲兽" Lv="1" NextLv="1" Type="1121" rare="1" classId="5" getWay="击败史诗关卡中变坏的机甲兽后获得">
+		<descript><![CDATA[机甲兽是个性格沉稳的家伙，它不太擅长冒险与赌博。由于体格异常地健壮，所以它毫无疑问是个优秀的保镖。]]></descript>
+	</Summon>
+	<Summon ID="1122" BaseAttr="100" AttrType="3" Name="机甲兽幼年期" Lv="1" NextLv="20" Type="1121" Renascence="20">
+		<Skill ID="4020137" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1123" BaseAttr="100" AttrType="3" Name="机甲兽成长期" Lv="20" NextLv="30" Type="1121" Renascence="40">
+		<Skill ID="4020138" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020142" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1124" BaseAttr="100" AttrType="3" Name="机甲兽成熟期" Lv="30" NextLv="40" Type="1121" Renascence="60">
+		<Skill ID="4020139" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020142" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020143" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1125" BaseAttr="100" AttrType="3" Name="机甲兽最终期" Lv="40" NextLv="45" Type="1121" Renascence="60" rageSkill="4020144">
+		<Skill ID="4020140" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020142" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020143" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020144" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1126" BaseAttr="105" AttrType="3" Name="机甲兽超灵期" Lv="45" NextLv="99" Type="1121" Renascence="60" IsOver="1" rageSkill="4020145">
+		<Skill ID="4020141" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020142" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020143" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020145" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:木旋风-->
+	<Summon ID="1131" Name="木旋风" Lv="1" NextLv="1" Type="1131" rare="2" classId="5" getWay="购买正版伏魔塔玩具后刮开武林密码兑换">
+		<descript><![CDATA[性格火爆，嫉恶如仇的木旋风其实和奇面族的领袖之一沙克有着血缘关系。相同的是它们战斗时的狂热，不同的是他们的立场。]]></descript>
+	</Summon>
+	<Summon ID="1132" BaseAttr="110" Name="木旋风幼年期" Lv="1" NextLv="20" Type="1131" Renascence="20">
+		<Skill ID="4020146" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1133" BaseAttr="110" Name="木旋风成长期" Lv="20" NextLv="30" Type="1131" Renascence="40">
+		<Skill ID="4020147" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020151" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1134" BaseAttr="110" Name="木旋风成熟期" Lv="30" NextLv="40" Type="1131" Renascence="60">
+		<Skill ID="4020148" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020151" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020152" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1135" BaseAttr="110" Name="木旋风最终期" Lv="40" NextLv="45" Type="1131" Renascence="60" rageSkill="4020144">
+		<Skill ID="4020149" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020151" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020152" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020153" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1136" BaseAttr="115" Name="木旋风超灵期" Lv="45" NextLv="99" Type="1131" Renascence="60" IsOver="1" rageSkill="4020154">
+		<Skill ID="4020150" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020151" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020152" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020154" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+	<!--灵兽:风吟龙-->
+	<Summon ID="1141" Name="风吟龙" Lv="1" NextLv="1" Type="1141" rare="4" classId="3" getWay="青龙许愿选择“我想拥有一只强大的灵兽”后有概率获得">
+		<descript><![CDATA[细究起来，风吟龙应该与东部大陆的守护者青龙神兽有着一丝远亲关系。而它的珍稀程度，几乎可以与霸王虎相提并论。]]></descript>
+	</Summon>
+	<Summon ID="1142" BaseAttr="120" AttrType="2" Name="风吟龙幼年期" Lv="1" NextLv="20" Type="1141" Renascence="15">
+		<Skill ID="4020155" NeedLv="1" TopSkillLv="1"/>
+	</Summon>
+	<Summon ID="1143" BaseAttr="120" AttrType="2" Name="风吟龙成长期" Lv="20" NextLv="30" Type="1141" Renascence="30">
+		<Skill ID="4020156" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020160" NeedLv="20" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1144" BaseAttr="120" AttrType="2" Name="风吟龙成熟期" Lv="30" NextLv="40" Type="1141" Renascence="45">
+		<Skill ID="4020157" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020160" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020161" NeedLv="30" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1145" BaseAttr="120" AttrType="2" Name="风吟龙最终期" Lv="40" NextLv="45" Type="1141" Renascence="45" rageSkill="4020162">
+		<Skill ID="4020158" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020160" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020161" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020162" NeedLv="40" TopSkillLv="10"/>
+	</Summon>
+	<Summon ID="1146" BaseAttr="125" AttrType="2" Name="风吟龙超灵期" Lv="45" NextLv="99" Type="1141" Renascence="45" IsOver="1" rageSkill="4020163">
+		<Skill ID="4020159" NeedLv="1" TopSkillLv="1"/>
+		<Skill ID="4020160" NeedLv="20" TopSkillLv="10"/>
+		<Skill ID="4020161" NeedLv="30" TopSkillLv="10"/>
+		<Skill ID="4020163" NeedLv="45" TopSkillLv="10"/>
+	</Summon>
+      <!--灵兽:笑天犬-->
+    <Summon ID="1151" Name="笑天犬" Lv="1" NextLv="1" Type="1151" rare="2" classId="1" getWay="在“高级试炼之路”中击败“巴鲁”后有概率获得">
+		<descript><![CDATA[笑天犬是一种体质优秀的灵兽，个性比较搞怪。但在战斗时，往往能一丝不苟。]]></descript>
+	</Summon>
+    <Summon ID="1152" BaseAttr="110" AttrType="3" Name="笑天犬幼年期" Lv="1" NextLv="20" Type="1151" Renascence="15">
+		<Skill ID="4020164" NeedLv="1" TopSkillLv="1"/>
+    </Summon>
+    <Summon ID="1153" BaseAttr="110" AttrType="3" Name="笑天犬成长期" Lv="20" NextLv="30" Type="1151" Renascence="30">
+        <Skill ID="4020165" NeedLv="1" TopSkillLv="1"/>
+        <Skill ID="4020169" NeedLv="20" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1154" BaseAttr="110" AttrType="3" Name="笑天犬成熟期" Lv="30" NextLv="40" Type="1151" Renascence="45">
+               <Skill ID="4020166" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020169" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020170" NeedLv="30" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1155" BaseAttr="110" AttrType="3" Name="笑天犬最终期" Lv="40" NextLv="45" Type="1151" Renascence="45" rageSkill="4020171">
+               <Skill ID="4020167" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020169" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020170" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020171" NeedLv="40" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1156" BaseAttr="115" AttrType="3" Name="笑天犬超灵期" Lv="45" NextLv="99" Type="1151" Renascence="45" IsOver="1" rageSkill="4020172">
+               <Skill ID="4020168" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020169" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020170" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020172" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:火凤凰-->
+    <Summon ID="1161" Name="火凤凰" Lv="1" NextLv="1" Type="1161" rare="3" classId="3" getWay="陆半仙宝库中兑换礼包中有概率获得，现已下线">
+		<descript><![CDATA[火凤凰有着强大的回复能力，同时高傲而好战的它们侵略如火。传承千年依旧没有衰败迹象，是当之无愧的神兽。]]></descript>
+	</Summon>
+    <Summon ID="1162" BaseAttr="115" AttrType="2" Name="火凤凰幼年期" Lv="1" NextLv="20" Type="1161" Renascence="15">
+		<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+    </Summon>
+    <Summon ID="1163" BaseAttr="115" AttrType="2" Name="火凤凰成长期" Lv="20" NextLv="30" Type="1161" Renascence="30">
+        <Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+        <Skill ID="4020178" NeedLv="20" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1164" BaseAttr="115" AttrType="2" Name="火凤凰成熟期" Lv="30" NextLv="40" Type="1161" Renascence="45">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020178" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020179" NeedLv="30" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1165" BaseAttr="115" AttrType="2" Name="火凤凰最终期" Lv="40" NextLv="45" Type="1161" Renascence="45" rageSkill="4020180">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020178" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020179" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020180" NeedLv="40" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1166" BaseAttr="120" AttrType="2" Name="火凤凰超灵期" Lv="45" NextLv="99" Type="1161" Renascence="45" IsOver="1" rageSkill="4020181">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020178" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020179" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020181" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:土鳞兽-->
+		<Summon ID="1171" Name="土鳞兽" Lv="1" NextLv="1" Type="1171" rare="3" classId="1" getWay="LV5超灵侠士领取">
+			<descript><![CDATA[见过土鳞兽的人们都把它形容成一种怕光的灵兽，但其实它们远比寻常灵兽勇敢，常常为了保护朋友而冲锋在最前。]]></descript>
+		</Summon>
+		<Summon ID="1172" BaseAttr="110" AttrType="3" Name="土鳞兽幼年期" Lv="1" NextLv="20" Type="1171" Renascence="10">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1173" BaseAttr="110" AttrType="3" Name="土鳞兽成长期" Lv="20" NextLv="30" Type="1171" Renascence="20">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020182" NeedLv="20" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1174" BaseAttr="110" AttrType="3" Name="土鳞兽成熟期" Lv="30" NextLv="40" Type="1171" Renascence="30">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020182" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020183" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1175" BaseAttr="110" AttrType="3" Name="土鳞兽最终期" Lv="40" NextLv="45" Type="1171" Renascence="30" rageSkill="4020184">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020182" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020183" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020184" NeedLv="40" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1176" BaseAttr="115" AttrType="3" Name="土鳞兽超灵期" Lv="45" NextLv="99" Type="1171" Renascence="30" IsOver="1" rageSkill="4020185">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020182" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020183" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020185" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:长舌鹦鹉-->
+    <Summon ID="1181" Name="长舌鹦鹉" Lv="1" NextLv="1" Type="1181" rare="2" classId="2" getWay="完成神秘孵化后可获得">
+		<descript><![CDATA[长舌鹦鹉来自遥远的热带雨林，它们格外重视自己鲜艳的羽毛，因为无论是战斗还是求偶都少不了它。]]></descript>
+	</Summon>
+    <Summon ID="1182" BaseAttr="110" Name="长舌鹦鹉幼年期" Lv="1" NextLv="20" Type="1181" Renascence="15">
+		<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+    </Summon>
+    <Summon ID="1183" BaseAttr="110" Name="长舌鹦鹉成长期" Lv="20" NextLv="30" Type="1181" Renascence="30">
+        <Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+        <Skill ID="4020189" NeedLv="20" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1184" BaseAttr="110" Name="长舌鹦鹉成熟期" Lv="30" NextLv="40" Type="1181" Renascence="45">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020189" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020190" NeedLv="30" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1185" BaseAttr="110" Name="长舌鹦鹉最终期" Lv="40" NextLv="45" Type="1181" Renascence="45" rageSkill="4020191">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020189" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020190" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020191" NeedLv="40" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1186" BaseAttr="115" Name="长舌鹦鹉超灵期" Lv="45" NextLv="99" Type="1181" Renascence="45" IsOver="1" rageSkill="4020192">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020189" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020190" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020192" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:火云麒麟-->
+    <Summon ID="1201" Name="火云麒麟" Lv="1" NextLv="1" Type="1201" rare="3" classId="3" getWay="陆半仙宝库中兑换获得，现已下线">
+		<descript><![CDATA[火云麒麟曾一度消失在历史的长河中，它的再次到来让人们意识到史籍中所言的火焰异兽绝非虚言。]]></descript>
+	</Summon>
+    <Summon ID="1202" BaseAttr="120" AttrType="2" Name="火云麒麟幼年期" Lv="1" NextLv="20" Type="1201" Renascence="15">
+		<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+    </Summon>
+    <Summon ID="1203" BaseAttr="120" AttrType="2" Name="火云麒麟成长期" Lv="20" NextLv="30" Type="1201" Renascence="30">
+        <Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+        <Skill ID="4020197" NeedLv="20" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1204" BaseAttr="120" AttrType="2" Name="火云麒麟成熟期" Lv="30" NextLv="40" Type="1201" Renascence="45">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020197" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020198" NeedLv="30" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1205" BaseAttr="120" AttrType="2" Name="火云麒麟最终期" Lv="40" NextLv="45" Type="1201" Renascence="45" rageSkill="4020199">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020197" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020198" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020199" NeedLv="40" TopSkillLv="10"/>
+       </Summon>
+       <Summon ID="1206" BaseAttr="125" AttrType="2" Name="火云麒麟超灵期" Lv="45" NextLv="99" Type="1201" Renascence="45" IsOver="1" rageSkill="4020200">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020197" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020198" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020200" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+	   <!-- 大忍枭 -->
+	   <Summon ID="1191" Name="大忍枭" Lv="1" NextLv="1" Type="1191" rare="2" classId="2" getWay="超时空守卫战实战阶段时，在战场中击败变坏的大忍枭后有几率获得">
+		<descript><![CDATA[大忍枭是一种从东洋漂泊过来的奇特鸟类，身上的蓝色羽毛与紫色羽毛各有用途，能够熟练操纵两色羽毛的大忍枭可谓魔武双修。]]></descript>
+		</Summon>
+		<Summon ID="1192" BaseAttr="115" AttrType="1" Name="大忍枭幼年期" Lv="1" NextLv="20" Type="1191" Renascence="15">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1193" BaseAttr="115" AttrType="1" Name="大忍枭成长期" Lv="20" NextLv="30" Type="1191" Renascence="30">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020193" NeedLv="20" TopSkillLv="10"/>
+		   </Summon>
+		<Summon ID="1194" BaseAttr="115" AttrType="1" Name="大忍枭成熟期" Lv="30" NextLv="40" Type="1191" Renascence="45">
+			<Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020193" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020194" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1195" BaseAttr="115" AttrType="1" Name="大忍枭最终期" Lv="40" NextLv="45" Type="1191" Renascence="45" rageSkill="4020195">
+			<Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020193" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020194" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020195" NeedLv="40" TopSkillLv="10"/>
+		 </Summon>
+		 <Summon ID="1196" BaseAttr="120" AttrType="1" Name="大忍枭超灵期" Lv="45" NextLv="99" Type="1191" Renascence="45" IsOver="1" rageSkill="4020196">
+			<Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020193" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020194" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020196" NeedLv="45" TopSkillLv="10"/>
+		 </Summon>
+	   <!-- 燃眉小鬼 -->
+	   <Summon ID="1211" Name="燃眉小鬼" Lv="1" NextLv="1" Type="1211" rare="2" classId="5" getWay="击败万圣杯比赛中倒地的对手身上出现的小鬼后有概率获得">
+		<descript><![CDATA[燃眉小鬼最大的爱好就是寄生在毫无知觉的来往行人身上，虽说本性并不邪恶，但行迹十分难以捉摸。]]></descript>
+		</Summon>
+		<Summon ID="1212" BaseAttr="110" AttrType="1" Name="燃眉小鬼幼年期" Lv="1" NextLv="20" Type="1211" Renascence="10">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1213" BaseAttr="110" AttrType="1" Name="燃眉小鬼成长期" Lv="20" NextLv="30" Type="1211" Renascence="20">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020201" NeedLv="20" TopSkillLv="10"/>
+		   </Summon>
+		<Summon ID="1214" BaseAttr="110" AttrType="1" Name="燃眉小鬼成熟期" Lv="30" NextLv="40" Type="1211" Renascence="30">
+			<Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020201" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020202" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1215" BaseAttr="110" AttrType="1" Name="燃眉小鬼最终期" Lv="40" NextLv="45" Type="1211" Renascence="30" rageSkill="4020203">
+			<Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020201" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020202" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020203" NeedLv="40" TopSkillLv="10"/>
+		 </Summon>
+		 <Summon ID="1216" BaseAttr="115" AttrType="1" Name="燃眉小鬼超灵期" Lv="45" NextLv="99" Type="1211" Renascence="30" IsOver="1" rageSkill="4020204">
+			<Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020201" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020202" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020204" NeedLv="45" TopSkillLv="10"/>
+		 </Summon>
+	   <!-- 远古菊石 -->
+	   <Summon ID="1221" Name="远古菊石" Lv="1" NextLv="1" Type="1221" rare="2" classId="6" getWay="在周末的智力大比拼中答题全对并击败虚幻空间中的文曲星后有几率获得">
+		<descript><![CDATA[远古菊石出现的年代已经无法追溯，但它显然保留着祖先的优良传统，可以用喷出的水柱驱赶敌人。]]></descript>
+		</Summon>
+		<Summon ID="1222" BaseAttr="110" AttrType="2" Name="远古菊石幼年期" Lv="1" NextLv="20" Type="1221" Renascence="15">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1223" BaseAttr="110" AttrType="2" Name="远古菊石成长期" Lv="20" NextLv="30" Type="1221" Renascence="30">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020206" NeedLv="20" TopSkillLv="10"/>
+		   </Summon>
+		<Summon ID="1224" BaseAttr="110" AttrType="2" Name="远古菊石成熟期" Lv="30" NextLv="40" Type="1221" Renascence="45">
+			<Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020206" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020207" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1225" BaseAttr="110" AttrType="2" Name="远古菊石最终期" Lv="40" NextLv="45" Type="1221" Renascence="45" rageSkill="4020208">
+			<Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020206" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020207" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020208" NeedLv="40" TopSkillLv="10"/>
+		 </Summon>
+		 <Summon ID="1226" BaseAttr="115" AttrType="2" Name="远古菊石超灵期" Lv="45" NextLv="99" Type="1221" Renascence="45" IsOver="1" rageSkill="4020209">
+			<Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020206" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020207" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020209" NeedLv="45" TopSkillLv="10"/>
+		 </Summon>
+	   <!-- 噬鬼白虎 -->
+	   <Summon ID="1241" Name="噬鬼白虎" Lv="1" NextLv="1" Type="1241" rare="2" classId="1" getWay="灵兽设计大赛参与者或者进阶成功侠士可获得">
+		<descript><![CDATA[还记得噬鬼白虎的模样么，一闭眼似乎又浮现出它的身影，那种若即若离的感觉非常飘渺。]]></descript>
+		</Summon>
+		<Summon ID="1242" BaseAttr="105" AttrType="1" Name="噬鬼白虎幼年期" Lv="1" NextLv="20" Type="1241" Renascence="20">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1243" BaseAttr="105" AttrType="1" Name="噬鬼白虎成长期" Lv="20" NextLv="30" Type="1241" Renascence="40">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020214" NeedLv="20" TopSkillLv="10"/>
+		   </Summon>
+		<Summon ID="1244" BaseAttr="105" AttrType="1" Name="噬鬼白虎成熟期" Lv="30" NextLv="40" Type="1241" Renascence="60">
+			<Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020214" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020215" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1245" BaseAttr="105" AttrType="1" Name="噬鬼白虎最终期" Lv="40" NextLv="45" Type="1241" Renascence="60" rageSkill="4020216">
+			<Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020214" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020215" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020216" NeedLv="40" TopSkillLv="10"/>
+		 </Summon>
+		 <Summon ID="1246" BaseAttr="110" AttrType="1" Name="噬鬼白虎超灵期" Lv="45" NextLv="99" Type="1241" Renascence="60" IsOver="1" rageSkill="4020217">
+			<Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020214" NeedLv="20" TopSkillLv="10"/>
+			<Skill ID="4020215" NeedLv="30" TopSkillLv="10"/>
+			<Skill ID="4020217" NeedLv="45" TopSkillLv="10"/>
+		 </Summon>
+      <!--灵兽:独角龙-->
+		<Summon ID="1261" Name="独角龙" Lv="1" NextLv="1" Type="1261" rare="3" classId="6" getWay="完成九天连环阵的最终奖励">
+			<descript><![CDATA[每一只独角龙都需要在充满野性的雨林中终日厮杀，所以不难想象为何它身体的每一部分都暗藏杀机。]]></descript>
+		</Summon>
+		<Summon ID="1262" BaseAttr="115" AttrType="1" Name="独角龙幼年期" Lv="1" NextLv="20" Type="1261" Renascence="20">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1263" BaseAttr="115" AttrType="1" Name="独角龙成长期" Lv="20" NextLv="30" Type="1261" Renascence="40">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020229" NeedLv="20" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1264" BaseAttr="115" AttrType="1" Name="独角龙成熟期" Lv="30" NextLv="40" Type="1261" Renascence="60">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020229" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020230" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1265" BaseAttr="115" AttrType="1" Name="独角龙最终期" Lv="40" NextLv="45" Type="1261" Renascence="60" rageSkill="4020231">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020229" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020230" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020231" NeedLv="40" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1266" BaseAttr="120" AttrType="1" Name="独角龙超灵期" Lv="45" NextLv="99" Type="1261" Renascence="60" IsOver="1" rageSkill="4020232">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020229" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020230" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020232" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:吉祥鹿-->
+		<Summon ID="1271" Name="吉祥鹿" Lv="1" NextLv="1" Type="1271" rare="3" classId="1" getWay="在圣蛋老人处用物品兑换">
+			<descript><![CDATA[北国的吉祥鹿对于冰冷天气有极强的适应力，并且能够释放凛冽的寒气刺伤对手。]]></descript>
+		</Summon>
+		<Summon ID="1272" BaseAttr="115" AttrType="3" Name="吉祥鹿幼年期" Lv="1" NextLv="20" Type="1271" Renascence="15">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1273" BaseAttr="115" AttrType="3" Name="吉祥鹿成长期" Lv="20" NextLv="30" Type="1271" Renascence="30">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020233" NeedLv="20" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1274" BaseAttr="115" AttrType="3" Name="吉祥鹿成熟期" Lv="30" NextLv="40" Type="1271" Renascence="45">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020233" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020234" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1275" BaseAttr="115" AttrType="3" Name="吉祥鹿最终期" Lv="40" NextLv="45" Type="1271" Renascence="45" rageSkill="4020235">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020233" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020234" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020235" NeedLv="40" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1276" BaseAttr="120" AttrType="3" Name="吉祥鹿超灵期" Lv="45" NextLv="99" Type="1271" Renascence="45" IsOver="1" rageSkill="4020236">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020233" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020234" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020236" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:奇门鼓龙-->
+		<Summon ID="1281" Name="奇门鼓龙" Lv="1" NextLv="1" Type="1281" rare="3" classId="6" getWay="击败屠龙大会的远古魔龙后有概率获得">
+			<descript><![CDATA[奇门鼓龙与远古魔龙本是同宗同源，它们拥有同样强健的身体和无与伦比的法术天赋，但经历时间的洗涤后它们的秉性已是截然不同。]]></descript>
+		</Summon>
+		<Summon ID="1282" BaseAttr="115" AttrType="2" Name="奇门鼓龙幼年期" Lv="1" NextLv="20" Type="1281" Renascence="15">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1283" BaseAttr="115" AttrType="2" Name="奇门鼓龙成长期" Lv="20" NextLv="30" Type="1281" Renascence="30">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020237" NeedLv="20" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1284" BaseAttr="115" AttrType="2" Name="奇门鼓龙成熟期" Lv="30" NextLv="40" Type="1281" Renascence="45">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020237" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020238" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1285" BaseAttr="115" AttrType="2" Name="奇门鼓龙最终期" Lv="40" NextLv="45" Type="1281" Renascence="45" rageSkill="4020239">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020237" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020238" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020239" NeedLv="40" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1286" BaseAttr="120" AttrType="2" Name="奇门鼓龙超灵期" Lv="45" NextLv="99" Type="1281" Renascence="45" IsOver="1" rageSkill="4020240">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020237" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020238" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020240" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:冰河猛犸-->
+		<Summon ID="1291" Name="冰河猛犸" Lv="1" NextLv="1" Type="1291" rare="3" classId="6" getWay="在南部大陆的冰河小镇上可以见到">
+			<descript><![CDATA[冰河猛犸体格硕大，力大无穷，厚厚的脂肪可抵御百年一遇的严寒。与他们成为敌人或朋友都很简单，不要轻易去碰触它们的底限。]]></descript>
+		</Summon>
+		<Summon ID="1292" BaseAttr="125" AttrType="2" Name="冰河猛犸幼年期" Lv="1" NextLv="20" Type="1291" Renascence="15">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1293" BaseAttr="125" AttrType="2" Name="冰河猛犸成长期" Lv="20" NextLv="30" Type="1291" Renascence="30">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020241" NeedLv="20" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1294" BaseAttr="125" AttrType="2" Name="冰河猛犸成熟期" Lv="30" NextLv="40" Type="1291" Renascence="45">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020241" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020242" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1295" BaseAttr="125" AttrType="2" Name="冰河猛犸最终期" Lv="40" NextLv="45" Type="1291" Renascence="45" rageSkill="4020243">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020241" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020242" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020243" NeedLv="40" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1296" BaseAttr="130" AttrType="2" Name="冰河猛犸超灵期" Lv="45" NextLv="99" Type="1291" Renascence="45" IsOver="1" rageSkill="4020244">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020241" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020242" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020244" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+      <!--灵兽:百战毒蝎-->
+		<Summon ID="1231" Name="百战毒蝎" Lv="1" NextLv="1" Type="1231" rare="3" classId="1" getWay="天下第一比武大会周年庆排名争霸赛期间击败观摩的NPC后有机会获得。">
+			<descript><![CDATA[百战毒蝎善于武装自己，成年后整天在沙漠游荡维护自己的地盘，相对他暴躁的脾气而言它对自己的主人却非常忠诚，让人格外感动。]]></descript>
+		</Summon>
+		<Summon ID="1232" BaseAttr="130" AttrType="1" Name="百战毒蝎幼年期" Lv="1" NextLv="20" Type="1231" Renascence="15">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1233" BaseAttr="130" AttrType="1" Name="百战毒蝎成长期" Lv="20" NextLv="30" Type="1231" Renascence="30">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020246" NeedLv="20" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1234" BaseAttr="130" AttrType="1" Name="百战毒蝎成熟期" Lv="30" NextLv="40" Type="1231" Renascence="45">
+               <Skill ID="4020247" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020210" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020211" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1235" BaseAttr="130" AttrType="1" Name="百战毒蝎最终期" Lv="40" NextLv="45" Type="1231" Renascence="45" rageSkill="4020212">
+               <Skill ID="4020248" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020210" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020211" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020212" NeedLv="40" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1236" BaseAttr="135" AttrType="1" Name="百战毒蝎超灵期" Lv="45" NextLv="99" Type="1231" Renascence="45" IsOver="1" rageSkill="4020213">
+               <Skill ID="4020249" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020210" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020211" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020213" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+       <!--灵兽:史前巨蜥-->
+		<Summon ID="1301" Name="史前巨蜥" Lv="1" NextLv="1" Type="1301" rare="3" classId="6" getWay="参加功夫城重建有机会获得。">
+			<descript><![CDATA[沉睡在功夫城的远古巨兽，不知什么原因突然苏醒，浑身充满神秘的力量。]]></descript>
+		</Summon>
+		<Summon ID="1302" BaseAttr="135" AttrType="3" Name="史前巨蜥幼年期" Lv="1" NextLv="20" Type="1301" Renascence="15">
+			<Skill ID="4020173" NeedLv="1" TopSkillLv="1"/>
+		</Summon>
+		<Summon ID="1303" BaseAttr="135" AttrType="3" Name="史前巨蜥成长期" Lv="20" NextLv="30" Type="1301" Renascence="30">
+			<Skill ID="4020174" NeedLv="1" TopSkillLv="1"/>
+			<Skill ID="4020250" NeedLv="20" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1304" BaseAttr="135" AttrType="3" Name="史前巨蜥成熟期" Lv="30" NextLv="40" Type="1301" Renascence="45">
+               <Skill ID="4020175" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020250" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020251" NeedLv="30" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1305" BaseAttr="135" AttrType="3" Name="史前巨蜥最终期" Lv="40" NextLv="45" Type="1301" Renascence="45" rageSkill="4020252">
+               <Skill ID="4020176" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020250" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020251" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020252" NeedLv="40" TopSkillLv="10"/>
+		</Summon>
+		<Summon ID="1306" BaseAttr="140" AttrType="3" Name="史前巨蜥超灵期" Lv="45" NextLv="99" Type="1301" Renascence="45" IsOver="1" rageSkill="4020253">
+               <Skill ID="4020177" NeedLv="1" TopSkillLv="1"/>
+               <Skill ID="4020250" NeedLv="20" TopSkillLv="10"/>
+               <Skill ID="4020251" NeedLv="30" TopSkillLv="10"/>
+               <Skill ID="4020253" NeedLv="45" TopSkillLv="10"/>
+       </Summon>
+</SummonMonsters>

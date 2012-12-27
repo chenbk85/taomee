@@ -1,0 +1,3 @@
+test:
+1. cp the test.pl to your web server's cgi-bin .
+2. /usr/sbin/ab -c100 -n10000 http://your server/cgi-bin/test.pl

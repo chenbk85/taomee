@@ -1,0 +1,14 @@
+<!-- 小屋植物配置 
+	ID 肥料id，0表示水
+	SpeedPer 成长速度加成百分比 针对指定植物
+	OutputPer 果实数量加成百分比 针对指定植物
+	HomeSpeedPer 成长速度加成百分比 针对小屋里所有植物
+	HomeOutputPer 果实数量加成百分比 针对小屋里所有植物
+-->
+<Ferilizers>
+	<Ferilizer ID="0" name="水" SpeedPer="5" OutputPer="0" />
+	<Ferilizer ID="1900001" Name="初级植物肥料" SpeedPer="0" OutputPer="200" HomeSpeedPer="0" HomeOutputPer="0" />
+	<Ferilizer ID="1900002" Name="中级植物肥料" SpeedPer="0" OutputPer="300" />
+	<Ferilizer ID="1900003" Name="高级植物肥料" SpeedPer="0" OutputPer="400" HomeSpeedPer="0" HomeOutputPer="0" />
+	<Ferilizer ID="1900004" Name="初级小屋肥料" SpeedPer="0" OutputPer="0"  HomeSpeedPer="5" HomeOutputPer="0" />
+</Ferilizers>

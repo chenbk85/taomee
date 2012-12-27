@@ -1,0 +1,362 @@
+<!--
+	master_task节点的task_id 表示大环任务ID
+	slave节点的group表示该大环任务下的子任务组。。。只有该子任务组里面所有的任务完成了，改环任务才算完成
+	slave_task节点下的task_id表示子任务ID
+	factor 子任务奖励系数
+
+-->
+<ring>
+	<masterTask taskId="5001" factor="5">
+		<slave group="1" rate="7">
+			<slaveTask taskId="6001"/>
+			<slaveTask taskId="6021"/>
+			<slaveTask taskId="6041"/>
+			<slaveTask taskId="6002"/>
+			<slaveTask taskId="6022"/>
+		</slave>
+		<slave group="2" rate="7">
+			<slaveTask taskId="6002"/>
+			<slaveTask taskId="6022"/>
+			<slaveTask taskId="6042"/>
+			<slaveTask taskId="6003"/>
+			<slaveTask taskId="6023"/>
+		</slave>
+		<slave group="3" rate="6">
+			<slaveTask taskId="6003"/>
+			<slaveTask taskId="6023"/>
+			<slaveTask taskId="6043"/>
+			<slaveTask taskId="6011"/>
+			<slaveTask taskId="6031"/>
+		</slave>
+		<slave group="4" rate="17">
+			<slaveTask taskId="6021"/>
+			<slaveTask taskId="6022"/>
+			<slaveTask taskId="6001"/>
+			<slaveTask taskId="6002"/>
+			<slaveTask taskId="6003"/>
+		</slave>
+		<slave group="5" rate="17">
+			<slaveTask taskId="6023"/>
+			<slaveTask taskId="6031"/>
+			<slaveTask taskId="6002"/>
+			<slaveTask taskId="6003"/>
+			<slaveTask taskId="6011"/>
+		</slave>
+		<slave group="6" rate="16">
+			<slaveTask taskId="6032"/>
+			<slaveTask taskId="6033"/>
+			<slaveTask taskId="6011"/>
+			<slaveTask taskId="6012"/>
+			<slaveTask taskId="6013"/>
+		</slave>
+		<slave group="7" rate="10">
+			<slaveTask taskId="6021"/>
+			<slaveTask taskId="6022"/>
+			<slaveTask taskId="6001"/>
+			<slaveTask taskId="6002"/>
+			<slaveTask taskId="6003"/>
+		</slave>
+		<slave group="8" rate="10">
+			<slaveTask taskId="6023"/>
+			<slaveTask taskId="6031"/>
+			<slaveTask taskId="6011"/>
+			<slaveTask taskId="6012"/>
+			<slaveTask taskId="6013"/>
+		</slave>
+		<slave group="9" rate="10">
+			<slaveTask taskId="6032"/>
+			<slaveTask taskId="6033"/>
+			<slaveTask taskId="6002"/>
+			<slaveTask taskId="6003"/>
+			<slaveTask taskId="6011"/>
+		</slave>
+	</masterTask>
+	<masterTask taskId="5002" factor="5">
+		<slave group="11" rate="7">
+			<slaveTask taskId="6101"/>
+			<slaveTask taskId="6121"/>
+			<slaveTask taskId="6141"/>
+			<slaveTask taskId="6102"/>
+			<slaveTask taskId="6122"/>
+		</slave>
+		<slave group="12" rate="7">
+			<slaveTask taskId="6102"/>
+			<slaveTask taskId="6122"/>
+			<slaveTask taskId="6142"/>
+			<slaveTask taskId="6103"/>
+			<slaveTask taskId="6123"/>
+		</slave>
+		<slave group="13" rate="6">
+			<slaveTask taskId="6103"/>
+			<slaveTask taskId="6123"/>
+			<slaveTask taskId="6143"/>
+			<slaveTask taskId="6111"/>
+			<slaveTask taskId="6131"/>
+		</slave>
+		<slave group="14" rate="17">
+			<slaveTask taskId="6121"/>
+			<slaveTask taskId="6122"/>
+			<slaveTask taskId="6101"/>
+			<slaveTask taskId="6102"/>
+			<slaveTask taskId="6103"/>
+		</slave>
+		<slave group="15" rate="17">
+			<slaveTask taskId="6123"/>
+			<slaveTask taskId="6131"/>
+			<slaveTask taskId="6102"/>
+			<slaveTask taskId="6103"/>
+			<slaveTask taskId="6111"/>
+		</slave>
+		<slave group="16" rate="16">
+			<slaveTask taskId="6132"/>
+			<slaveTask taskId="6133"/>
+			<slaveTask taskId="6111"/>
+			<slaveTask taskId="6112"/>
+			<slaveTask taskId="6113"/>
+		</slave>
+		<slave group="17" rate="10">
+			<slaveTask taskId="6121"/>
+			<slaveTask taskId="6122"/>
+			<slaveTask taskId="6101"/>
+			<slaveTask taskId="6102"/>
+			<slaveTask taskId="6103"/>
+		</slave>
+		<slave group="18" rate="10">
+			<slaveTask taskId="6123"/>
+			<slaveTask taskId="6131"/>
+			<slaveTask taskId="6111"/>
+			<slaveTask taskId="6112"/>
+			<slaveTask taskId="6113"/>
+		</slave>
+		<slave group="19" rate="10">
+			<slaveTask taskId="6132"/>
+			<slaveTask taskId="6133"/>
+			<slaveTask taskId="6102"/>
+			<slaveTask taskId="6103"/>
+			<slaveTask taskId="6111"/>
+		</slave>
+	</masterTask>
+	<masterTask taskId="5003" factor="5">
+		<slave group="1" rate="20">
+			<slaveTask taskId="6202"/>
+			<slaveTask taskId="6203"/>
+			<slaveTask taskId="6200"/>
+			<slaveTask taskId="6201"/>
+			<slaveTask taskId="6204"/>
+		</slave>
+		<slave group="2" rate="20">
+			<slaveTask taskId="6202"/>
+			<slaveTask taskId="6203"/>
+			<slaveTask taskId="6205"/>
+			<slaveTask taskId="6206"/>
+			<slaveTask taskId="6204"/>
+		</slave>
+		<slave group="3" rate="20">
+			<slaveTask taskId="6208"/>
+			<slaveTask taskId="6207"/>
+			<slaveTask taskId="6203"/>
+			<slaveTask taskId="6209"/>
+			<slaveTask taskId="6204"/>
+		</slave>
+		<slave group="4" rate="20">
+			<slaveTask taskId="6208"/>
+			<slaveTask taskId="6207"/>
+			<slaveTask taskId="6201"/>
+			<slaveTask taskId="6209"/>
+			<slaveTask taskId="6204"/>
+		</slave>
+		<slave group="5" rate="20">
+			<slaveTask taskId="6208"/>
+			<slaveTask taskId="6207"/>
+			<slaveTask taskId="6260"/>
+			<slaveTask taskId="6209"/>
+			<slaveTask taskId="6204"/>
+		</slave>
+	</masterTask>
+	<masterTask taskId="5004" factor="5">
+		<slave group="1" rate="20">
+			<slaveTask taskId="6212"/>
+			<slaveTask taskId="6213"/>
+			<slaveTask taskId="6210"/>
+			<slaveTask taskId="6211"/>
+			<slaveTask taskId="6214"/>
+		</slave>
+		<slave group="2" rate="20">
+			<slaveTask taskId="6212"/>
+			<slaveTask taskId="6213"/>
+			<slaveTask taskId="6215"/>
+			<slaveTask taskId="6216"/>
+			<slaveTask taskId="6214"/>
+		</slave>
+		<slave group="3" rate="20">
+			<slaveTask taskId="6218"/>
+			<slaveTask taskId="6217"/>
+			<slaveTask taskId="6213"/>
+			<slaveTask taskId="6219"/>
+			<slaveTask taskId="6204"/>
+		</slave>
+		<slave group="4" rate="20">
+			<slaveTask taskId="6218"/>
+			<slaveTask taskId="6217"/>
+			<slaveTask taskId="6211"/>
+			<slaveTask taskId="6219"/>
+			<slaveTask taskId="6214"/>
+		</slave>
+		<slave group="5" rate="20">
+			<slaveTask taskId="6218"/>
+			<slaveTask taskId="6217"/>
+			<slaveTask taskId="6261"/>
+			<slaveTask taskId="6219"/>
+			<slaveTask taskId="6214"/>
+		</slave>
+		</masterTask>
+	<masterTask taskId="5005" factor="5">
+		<slave group="1" rate="20">
+			<slaveTask taskId="6222"/>
+			<slaveTask taskId="6223"/>
+			<slaveTask taskId="6220"/>
+			<slaveTask taskId="6221"/>
+			<slaveTask taskId="6224"/>
+		</slave>
+		<slave group="2" rate="20">
+			<slaveTask taskId="6222"/>
+			<slaveTask taskId="6223"/>
+			<slaveTask taskId="6225"/>
+			<slaveTask taskId="6226"/>
+			<slaveTask taskId="6224"/>
+		</slave>
+		<slave group="3" rate="20">
+			<slaveTask taskId="6228"/>
+			<slaveTask taskId="6227"/>
+			<slaveTask taskId="6223"/>
+			<slaveTask taskId="6229"/>
+			<slaveTask taskId="6224"/>
+		</slave>
+		<slave group="4" rate="20">
+			<slaveTask taskId="6228"/>
+			<slaveTask taskId="6227"/>
+			<slaveTask taskId="6221"/>
+			<slaveTask taskId="6229"/>
+			<slaveTask taskId="6224"/>
+		</slave>
+		<slave group="5" rate="20">
+			<slaveTask taskId="6228"/>
+			<slaveTask taskId="6227"/>
+			<slaveTask taskId="6262"/>
+			<slaveTask taskId="6229"/>
+			<slaveTask taskId="6224"/>
+		</slave>
+		</masterTask>
+	<masterTask taskId="5006" factor="5">
+		<slave group="1" rate="20">
+			<slaveTask taskId="6232"/>
+			<slaveTask taskId="6233"/>
+			<slaveTask taskId="6230"/>
+			<slaveTask taskId="6231"/>
+			<slaveTask taskId="6234"/>
+		</slave>
+		<slave group="2" rate="20">
+			<slaveTask taskId="6232"/>
+			<slaveTask taskId="6233"/>
+			<slaveTask taskId="6235"/>
+			<slaveTask taskId="6236"/>
+			<slaveTask taskId="6234"/>
+		</slave>
+		<slave group="3" rate="20">
+			<slaveTask taskId="6238"/>
+			<slaveTask taskId="6237"/>
+			<slaveTask taskId="6233"/>
+			<slaveTask taskId="6239"/>
+			<slaveTask taskId="6234"/>
+		</slave>
+		<slave group="4" rate="20">
+			<slaveTask taskId="6238"/>
+			<slaveTask taskId="6237"/>
+			<slaveTask taskId="6231"/>
+			<slaveTask taskId="6239"/>
+			<slaveTask taskId="6234"/>
+		</slave>
+		<slave group="5" rate="20">
+			<slaveTask taskId="6238"/>
+			<slaveTask taskId="6237"/>
+			<slaveTask taskId="6263"/>
+			<slaveTask taskId="6239"/>
+			<slaveTask taskId="6234"/>
+		</slave>
+	</masterTask>
+	<masterTask taskId="5007" factor="5">
+		<slave group="1" rate="20">
+			<slaveTask taskId="6242"/>
+			<slaveTask taskId="6243"/>
+			<slaveTask taskId="6240"/>
+			<slaveTask taskId="6241"/>
+			<slaveTask taskId="6244"/>
+		</slave>
+		<slave group="2" rate="20">
+			<slaveTask taskId="6242"/>
+			<slaveTask taskId="6243"/>
+			<slaveTask taskId="6245"/>
+			<slaveTask taskId="6246"/>
+			<slaveTask taskId="6244"/>
+		</slave>
+		<slave group="3" rate="20">
+			<slaveTask taskId="6248"/>
+			<slaveTask taskId="6247"/>
+			<slaveTask taskId="6243"/>
+			<slaveTask taskId="6249"/>
+			<slaveTask taskId="6244"/>
+		</slave>
+		<slave group="4" rate="20">
+			<slaveTask taskId="6248"/>
+			<slaveTask taskId="6247"/>
+			<slaveTask taskId="6241"/>
+			<slaveTask taskId="6249"/>
+			<slaveTask taskId="6244"/>
+		</slave>
+		<slave group="5" rate="20">
+			<slaveTask taskId="6248"/>
+			<slaveTask taskId="6247"/>
+			<slaveTask taskId="6264"/>
+			<slaveTask taskId="6249"/>
+			<slaveTask taskId="6244"/>
+		</slave>
+	</masterTask>
+	<masterTask taskId="5008" factor="5">
+		<slave group="1" rate="20">
+			<slaveTask taskId="6252"/>
+			<slaveTask taskId="6253"/>
+			<slaveTask taskId="6250"/>
+			<slaveTask taskId="6251"/>
+			<slaveTask taskId="6254"/>
+		</slave>
+		<slave group="2" rate="20">
+			<slaveTask taskId="6252"/>
+			<slaveTask taskId="6253"/>
+			<slaveTask taskId="6255"/>
+			<slaveTask taskId="6256"/>
+			<slaveTask taskId="6254"/>
+		</slave>
+		<slave group="3" rate="20">
+			<slaveTask taskId="6258"/>
+			<slaveTask taskId="6257"/>
+			<slaveTask taskId="6253"/>
+			<slaveTask taskId="6259"/>
+			<slaveTask taskId="6254"/>
+		</slave>
+		<slave group="4" rate="20">
+			<slaveTask taskId="6258"/>
+			<slaveTask taskId="6257"/>
+			<slaveTask taskId="6251"/>
+			<slaveTask taskId="6259"/>
+			<slaveTask taskId="6254"/>
+		</slave>
+		<slave group="5" rate="20">
+			<slaveTask taskId="6258"/>
+			<slaveTask taskId="6257"/>
+			<slaveTask taskId="6265"/>
+			<slaveTask taskId="6259"/>
+			<slaveTask taskId="6254"/>
+		</slave>
+	</masterTask>
+		
+</ring>

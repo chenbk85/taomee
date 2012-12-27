@@ -1,0 +1,6 @@
+#/bin/bash
+tar -czvf btl.tar ./bin/* ./conf/* ./data/* ./ai/lua/*
+sshpass -p "gongfu" scp -p22 -o StrictHostKeyChecking=no btl.tar gongfu@10.1.1.64:/home/gongfu/gf_release_version/battle_dir
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "pkill -9 btl;cd ~/gf_release_version/battle_dir/; tar -xvf btl.tar "
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "cd ~/gf_release_version/battle_dir/;./startup.sh;"
+

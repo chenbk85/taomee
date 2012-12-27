@@ -1,0 +1,129 @@
+/**
+ *============================================================
+ *  @file      player.hpp
+ *  @brief    player related functions are declared here
+ * 
+ *  compiler   gcc4.1.2
+ *  platform   Linux
+ *
+ *  copyright:  TaoMee, Inc. ShangHai CN. All rights reserved.
+ *
+ *============================================================
+ */
+
+#ifndef KF_PLAYER_HPP_
+#define KF_PLAYER_HPP_
+
+#include <map>
+
+extern "C" {
+#include <libtaomee/list.h>
+#include <libtaomee/timer.h>
+
+#include <libtaomee/project/constants.h>
+#include <libtaomee/project/types.h>
+
+#include <async_serv/dll.h>
+}
+
+#include "fwd_decl.hpp"
+
+#include "cli_proto.hpp"
+
+
+/**
+  * @brief type of map that holds all the players
+  */
+//typedef std::map<userid_t, player_t*> PlayerMap;
+
+/*! number of bytes allocated for each player_t object */
+const int c_player_size			= 4096;
+
+#pragma pack(1)
+
+struct player_clothes_info_t {
+	uint32_t clothes_id;
+	uint32_t get_time;
+	uint16_t duration;
+	uint16_t lv;
+};
+
+/**
+  * @brief Player
+  */
+struct player_t {
+	/*! player's id */
+	userid_t	id;
+	/*! type of a player's role */
+	uint8_t		role_type;
+	/*! player's nick name */
+	char		nick[max_nick_size];
+	/*! vip flag */
+	uint32_t	vip;
+	/*! player's color */
+	uint32_t	color;
+	/*! player's money */
+	uint32_t	coins;
+	/*! number of clothes on */
+	uint32_t	clothes_num;
+	/*! clothes' id */
+	player_clothes_info_t	clothes[max_clothes_on];
+
+	/*! save cmd id that is currently under processing */
+	uint16_t	waitcmd;
+	GQueue*		pkg_queue;
+	/*! hook that is used to link all players whose waitcmd is not 0 together */
+	list_head_t	wait_cmd_player_hook;
+
+	/*! timer list */
+	list_head_t		timer_list;
+
+	/*! save socket fd from parent process */
+	int				fd;
+	/*! fd session */
+	fdsession_t*	fdsess;
+
+	/*! session length */
+	int			sesslen;
+	/*! session for holding some info temporarily */
+	char		session[];
+};
+
+#pragma pack()
+
+/*! number of bytes available for holding temporarily info */
+const int c_avail_sess_len = c_player_size - sizeof(player_t);
+
+/**
+  * @brief allocate and add a player to this server
+  * @return pointer to the newly added player
+  */
+player_t* add_player(userid_t uid, fdsession_t* fdsess);
+/**
+  * @brief delete player
+  * @param p player to be deleted
+  */
+void del_player(player_t* p);
+/**
+  * @brief deallocates a player
+  * @param fd socket fd
+  * @return pointer to the player if found, 0 otherwise
+  */
+void dealloc_player(player_t* p);
+/**
+  * @brief clear players' info whose online server is down
+  * @param fd online fd
+  */
+void clear_players(int fd);
+/**
+  * @brief get player by user id
+  * @param uid user id
+  * @return pointer to the player if found, 0 otherwise
+  */
+player_t* get_player(userid_t uid);
+/**
+  * @brief test a player's lag in each minutes
+  */
+
+#endif // KF_PLAYER_HPP_
+

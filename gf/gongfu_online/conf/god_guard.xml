@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Roots>
+    <Numens>
+        <Numen ID="9001" Name="财神">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="40" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+        </Numen>
+        <Numen ID="9002" Name="喜神">
+            <Quality Hp="1000" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+        </Numen>
+        <Numen ID="9003" Name="门神">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="8" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+        </Numen>
+        <Numen ID="9004" Name="灶神">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="60" AddMp="0" />
+            <GroupQuality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+        </Numen>
+        <Numen ID="9005" Name="土神">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="60" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+        </Numen>
+        <Numen ID="9006" Name="桃花仙子">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="80" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+        </Numen>
+    </Numens>
+    <Summons>
+        <Summon ID="1001" Name="白玉狐">
+            <Quality Hp="3000" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="1" Mp="10" Atk="20" Hit="10" Def="10" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1111" Name="千年白玉狐">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="152" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="25" Mp="10" Atk="10" Hit="1" Def="10" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1101" Name="霸王虎">
+            <Quality Hp="0" Mp="0" Atk="166" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="1" Hit="10" Def="10" Dodge="10" Crit="20" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1011" Name="月灵兔">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="148" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="10" Dodge="10" Crit="10" AddHp="25" AddMp="1" />
+        </Summon>
+        <Summon ID="1021" Name="流光鹿">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="31" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="1" Dodge="10" Crit="10" AddHp="10" AddMp="30" />
+        </Summon>
+        <Summon ID="1031" Name="通铃猫">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="128" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="10" Dodge="10" Crit="1" AddHp="10" AddMp="25" />
+        </Summon>
+        <Summon ID="1041" Name="飞羽雏">
+            <Quality Hp="0" Mp="0" Atk="76" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="1" Hit="10" Def="10" Dodge="10" Crit="10" AddHp="25" AddMp="10" />
+        </Summon>
+        <Summon ID="1051" Name="小雪球">
+            <Quality Hp="3550" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="1" Mp="10" Atk="10" Hit="10" Def="20" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1081" Name="灼热之灵">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="176" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="30" Mp="10" Atk="10" Hit="1" Def="10" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1091" Name="暗影鼠">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="142" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="10" Dodge="1" Crit="20" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1071" Name="粉罗兔">
+            <Quality Hp="0" Mp="2280" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="1" Atk="10" Hit="20" Def="10" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1061" Name="天锣雷光兔">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="186" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="25" Atk="10" Hit="10" Def="10" Dodge="10" Crit="1" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1121" Name="机甲兽">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="28" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="1" Dodge="25" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1141" Name="风吟龙">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="214" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="10" Dodge="10" Crit="1" AddHp="25" AddMp="10" />
+        </Summon>
+        <Summon ID="1151" Name="笑天犬">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="152" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="20" Def="10" Dodge="1" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1161" Name="火凤凰">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="190" AddMp="0" />
+            <GroupQuality Hp="30" Mp="10" Atk="10" Hit="10" Def="10" Dodge="10" Crit="10" AddHp="1" AddMp="10" />
+        </Summon>
+        <Summon ID="1171" Name="土鳞兽">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="38" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="30" Def="1" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1181" Name="长舌鹦鹉">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="166" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="20" Atk="10" Hit="1" Def="10" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1131" Name="木旋风">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="214" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="1" Def="40" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1201" Name="火云麒麟">
+            <Quality Hp="0" Mp="0" Atk="119" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="1" Hit="10" Def="10" Dodge="10" Crit="10" AddHp="25" AddMp="10" />
+        </Summon>
+        <Summon ID="1191" Name="大忍枭">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="166" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="1" Def="10" Dodge="20" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1211" Name="燃眉小鬼">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="166" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="10" Dodge="1" Crit="25" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1221" Name="远古菊石">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="33" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="20" Hit="10" Def="1" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1241" Name="噬鬼白虎">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="152" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="1" Def="10" Dodge="10" Crit="10" AddHp="10" AddMp="25" />
+        </Summon>
+        <Summon ID="1261" Name="独角龙">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="176" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="20" Def="10" Dodge="10" Crit="1" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1271" Name="吉祥鹿">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="176" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="10" Def="10" Dodge="10" Crit="20" AddHp="1" AddMp="10" />
+        </Summon>
+        <Summon ID="1281" Name="奇门鼓龙">
+            <Quality Hp="4750" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="1" Mp="30" Atk="10" Hit="10" Def="10" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1231" Name="百战毒蝎">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="200" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="40" Hit="10" Def="10" Dodge="1" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1291" Name="冰河猛犸">
+            <Quality Hp="5500" Mp="0" Atk="0" Hit="0" Def="0" Dodge="0" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="1" Mp="10" Atk="10" Hit="10" Def="50" Dodge="10" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+        <Summon ID="1301" Name="史前巨蜥">
+            <Quality Hp="0" Mp="0" Atk="0" Hit="0" Def="0" Dodge="200" Crit="0" AddHp="0" AddMp="0" />
+            <GroupQuality Hp="10" Mp="10" Atk="10" Hit="45" Def="10" Dodge="1" Crit="10" AddHp="10" AddMp="10" />
+        </Summon>
+    </Summons>
+</Roots>
+

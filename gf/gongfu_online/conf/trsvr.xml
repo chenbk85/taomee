@@ -1,0 +1,12 @@
+<Servers>
+	<Server SvrName="gf.trade" SvrId="1"/>
+	<Server SvrName="gf.trade" SvrId="2" />
+	<Server SvrName="gf.trade" SvrId="3"/>
+	<Server SvrName="gf.trade" SvrId="4"/>
+	<Server SvrName="gf.trade" SvrId="5"/>
+	<Server SvrName="gf.trade" SvrId="6"/>
+	<Server SvrName="gf.trade" SvrId="7"/>
+	<Server SvrName="gf.trade" SvrId="8"/>
+	<Server SvrName="gf.trade" SvrId="9"/>
+	<Server SvrName="gf.trade" SvrId="10"/>
+</Servers>

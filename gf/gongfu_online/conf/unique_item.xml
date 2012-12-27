@@ -1,0 +1,86 @@
+<!--
+在唯一物品掉落时，避免itemid 和对应的 bit_pos搞错，故建此xml，ID和 Bit_Pos 一一对应固定后不可改变
+ID: 物品ID，Bit_Pos: 用于标识该物品 在 服务器端记录该角色取得物品buf 的 位置；
+-->
+<UniqueItems>
+	<UniqueDrop ID="1200004" Bit_Pos="1" />	   	   
+	<UniqueDrop ID="1200206" Bit_Pos="2" />	   	   
+	<UniqueDrop ID="1200404" Bit_Pos="3" />	
+	<UniqueDrop ID="1200013" Bit_Pos="4" />	   	   
+	<UniqueDrop ID="1200203" Bit_Pos="5" />	   	   
+	<UniqueDrop ID="1200402" Bit_Pos="6" />
+	<UniqueDrop ID="1200012" Bit_Pos="7" />
+	<UniqueDrop ID="1200215" Bit_Pos="8" />	
+	<UniqueDrop ID="1200415" Bit_Pos="9" />		
+	<UniqueDrop ID="36" Bit_Pos="10" />			
+	<UniqueDrop ID="37" Bit_Pos="11" />	
+	<UniqueDrop ID="600" Bit_Pos="12" />
+	<UniqueDrop ID="601" Bit_Pos="13" />	
+	<UniqueDrop ID="602" Bit_Pos="14" />	
+	<UniqueDrop ID="603" Bit_Pos="15" />	
+	<UniqueDrop ID="604" Bit_Pos="16" />
+	<UniqueDrop ID="605" Bit_Pos="17" />
+	<UniqueDrop ID="606" Bit_Pos="18" />
+	<UniqueDrop ID="607" Bit_Pos="19" />
+	<UniqueDrop ID="608" Bit_Pos="20" />
+	<UniqueDrop ID="609" Bit_Pos="21" />
+	<UniqueDrop ID="610" Bit_Pos="22" />
+	<UniqueDrop ID="611" Bit_Pos="23" />
+	<UniqueDrop ID="612" Bit_Pos="24" />
+	<UniqueDrop ID="613" Bit_Pos="25" />
+	<UniqueDrop ID="614" Bit_Pos="26" />
+	<UniqueDrop ID="615" Bit_Pos="27" />
+	<UniqueDrop ID="616" Bit_Pos="28" />
+	<UniqueDrop ID="617" Bit_Pos="29" />
+	<UniqueDrop ID="618" Bit_Pos="30" />
+	<UniqueDrop ID="619" Bit_Pos="31" />
+	<UniqueDrop ID="620" Bit_Pos="32" />
+	<UniqueDrop ID="621" Bit_Pos="33" />
+	<UniqueDrop ID="622" Bit_Pos="34" />
+	<UniqueDrop ID="623" Bit_Pos="35" />
+	<UniqueDrop ID="624" Bit_Pos="36" />
+	<UniqueDrop ID="625" Bit_Pos="37" />
+	<UniqueDrop ID="626" Bit_Pos="38" />
+	<UniqueDrop ID="627" Bit_Pos="39" />
+	<UniqueDrop ID="1200005" Bit_Pos="40" />
+	<UniqueDrop ID="1200208" Bit_Pos="40" />
+	<UniqueDrop ID="1200403" Bit_Pos="40" />
+	<UniqueDrop ID="1400127" Bit_Pos="42" />
+	<UniqueDrop ID="471" Bit_Pos="43" />
+	<UniqueDrop ID="472" Bit_Pos="44" />
+	<UniqueDrop ID="473" Bit_Pos="45" />
+	<UniqueDrop ID="434" Bit_Pos="46" />
+	<UniqueDrop ID="479" Bit_Pos="47" />
+	<UniqueDrop ID="480" Bit_Pos="48" />
+	<UniqueDrop ID="481" Bit_Pos="49" />
+	<UniqueDrop ID="482" Bit_Pos="50" />
+	<UniqueDrop ID="230" Bit_Pos="51" />
+	<UniqueDrop ID="231" Bit_Pos="52" />
+	<UniqueDrop ID="232" Bit_Pos="53" />
+	<UniqueDrop ID="234" Bit_Pos="54" />
+	<UniqueDrop ID="2078" Bit_Pos="55" />
+	<UniqueDrop ID="2079" Bit_Pos="56" />
+	<UniqueDrop ID="2080" Bit_Pos="57" />
+	<UniqueDrop ID="2081" Bit_Pos="58" />
+	<UniqueDrop ID="2082" Bit_Pos="59" />
+
+	<UniqueDrop ID="13091" Bit_Pos="60"/>
+	<UniqueDrop ID="13092" Bit_Pos="61"/>
+	<UniqueDrop ID="13093" Bit_Pos="62"/>
+	<UniqueDrop ID="13094" Bit_Pos="63"/>
+	<UniqueDrop ID="13095" Bit_Pos="64"/>
+	<UniqueDrop ID="13096" Bit_Pos="65"/>
+	<UniqueDrop ID="13097" Bit_Pos="66"/>
+	<UniqueDrop ID="1410016" Bit_Pos="67"/>
+	<UniqueDrop ID="13098" Bit_Pos="68"/>
+    <UniqueDrop ID="3001" Bit_Pos="69"/>
+	<UniqueDrop ID="3002" Bit_Pos="70"/>
+	<UniqueDrop ID="3003" Bit_Pos="71"/>
+	<UniqueDrop ID="3004" Bit_Pos="72"/>
+	<UniqueDrop ID="1400113" Bit_Pos="73" />
+	<!-- 
+			..........
+						
+	 -->
+					 	 
+</UniqueItems>

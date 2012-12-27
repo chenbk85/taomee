@@ -1,0 +1,2101 @@
+<!--
+	Item.ID: 套装ID(从1开始，且连续)
+	Item.Cloths: 该套装所包含的装备id集合
+	Step.Cnt: 以获得属于该套装的装备个数
+	Step.Strength,Agility,...AddMp为到达该数量时增加的属性加成
+	Step.SkillAtk: 对每个技能攻击力(在减去玩家防御前)加成
+	Hit命中值，Dodge闪避值，Crit暴击值，Hp加生命上限，Mp加气力值上限，AddHp生命恢复加成，AddMp气力值恢复加成，Slot孔的个数。
+	Lv装备强化等级，Strength力量，Agility敏捷，BodyQuality体质，Stamina气力，Atk攻击力，Def防御力，Duration耐久值，默认都是0。
+-->
+<root>
+	<Item ID="101" Name="蚀心套装" Cloths="100031,100032,100033,100034,100035,100036">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="60" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="4" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="102" Name="修罗套装" Cloths="100092,100093,100094,100095,100096,100097">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="50" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="5" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="5" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>	
+	<Item ID="103" Name="冥鲲之挑战者套装" Cloths="100225,100226,100227,100228,100229,100230">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="100" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="3" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="104" Name="鲲鹏之征服者套装" Cloths="100249,100250,100251,100252,100253,100254">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="150" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="10" SkillAtk="0" >
+		</Step>
+	</Item>	
+	<Item ID="105" Name="初级战斗套装" Cloths="100272,100273,100274,100275,100276,100277,100278">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="5" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="5" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>		
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="106" Name="中级战斗套装" Cloths="100279,100280,100281,100282,100283,100284,100285">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="13" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="13" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="400" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="9" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="107" Name="天一套装" Cloths="100286,100287,100288,100289,100290,100291,100292">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="23" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="23" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="800" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="15" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="108" Name="六合神将套装" Cloths="100293,100294,100295,100296,100297,100298,100299">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="30" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="30" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1400" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="20" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="109" Name="风魔套装" Cloths="100300,100301,100302,100303,100304,100305,100306">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="65" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="70" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2000" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="30" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="110" Name="灵犀套装" Cloths="100239,100240,100241,100242,100243,100244,100248">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="23" AddMp="0" >
+		</Step>
+		<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="23" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="6" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="5"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="300" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="300" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="20" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="111" Name="神谕套装" Cloths="100307,100308,100309,100310,100311,100312">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="28" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="700" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="45" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="112" Name="伏魔套装" Cloths="100321,100322,100323,100324,100325,100326,100327">
+	 	<Step Cnt="3"
+			Strength="0" Agility="150" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="4800" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="60" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="113" Name="血凤套装" Cloths="100371,100372,100373,100374,100375,100376,100377">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1050" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="35" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="22" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="114" Name="百雷套装" Cloths="100378,100379,100380,100381,100382,100383,100384">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="80" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2400" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="80" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="115" Name="光明套装" Cloths="100565,100567,100569,100571,100573,100575,100577">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="5" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="7" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="4" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="116" Name="光明甲胄" Cloths="100566,100568,100570,100572,100574,100576,100578">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="10" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="14" BodyQuality="0" Stamina="0" 
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="8" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="117" Name="神佑之光明" Cloths="100077,100078,100079,100074,100075,100076,100080">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="100202" CutCD="0" CutMp="15" AttrDmg="0" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="100202" CutCD="0" CutMp="0" AttrDmg="50" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="100202" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1000"/>
+		</Step><!--
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>-->
+	</Item>
+	<Item ID="118" Name="紫耀套装" Cloths="190001,190002,190003,190004,190005,190006,190007">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="90" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="90" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="90" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="119" Name="青龙灵珠" Cloths="100328,100329,100330,100331,100332,100333,100334">
+	 	<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="210" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="225" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="120" Name="神奇的飘雨之力" Cloths="180002,180003,180005,180006">
+	 	<Step Cnt="4"
+			Strength="100" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	</Item>
+	<Item ID="121" Name="天行" Cloths="100701,100702,100703,100704,100705,100706,100707">
+	 	<Step Cnt="3"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="50" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="122" Name="天行者" Cloths="100708,100709,100710,100711,100712,100713,100714">
+	 	<Step Cnt="3"
+			Strength="65" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="65" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="123" Name="逆天行者" Cloths="100715,100716,100717,100718,100719,100720,100721">
+	 	<Step Cnt="3"
+			Strength="120" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="120" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="124" Name="破空" Cloths="100722,100723,100724,100725,100726,100727,100728">
+	 	<Step Cnt="3"
+			Strength="60" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="60" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="35" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="125" Name="始破空" Cloths="100735,100729,100730,100731,100732,100733,100734">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="126" Name="原始破空" Cloths="100742,100736,100737,100738,100739,100740,100741">
+	 	<Step Cnt="3"
+			Strength="140" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="140" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="127" Name="聚贤" Cloths="100427,100428,100429,100430,100431,100432,100433">
+	 	<Step Cnt="3"
+			Strength="70" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="70" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="128" Name="聚众贤" Cloths="100743,100744,100745,100746,100747,100748,100749">
+	 	<Step Cnt="3"
+			Strength="95" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="95" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="129" Name="广聚众贤" Cloths="100750,100751,100752,100753,100754,100755,100756">
+	 	<Step Cnt="2"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="100603" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1500"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="65" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="130" Name="须弥" Cloths="100392,100393,100394,100395,100396,100397,100398">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="131" Name="须弥子" Cloths="100757,100758,100759,100760,100761,100762,100763">
+	 	<Step Cnt="3"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="132" Name="须弥芥子" Cloths="100764,100765,100766,100767,100768,100769,100770">
+	 	<Step Cnt="2"
+			Strength="130" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="100604" CutCD="0" CutMp="0" AttrDmg="110" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="130" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="133" Name="安德鲁之力" Cloths="100406,100407,100408,100409,100410,100411,100412">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="100604" CutCD="0" CutMp="50" AttrDmg="0" ExtraDmg="0"/>
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="100601" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1000"/>
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="100604" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="5000"/>
+		</Step>
+	</Item>
+	<Item ID="201" Name="蓝晶套装" Cloths="200031,200032,200033,200034,200035,200036">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="50" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="5" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="202" Name="琉璃套装" Cloths="200092,200093,200094,200095,200096,200097">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="10" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="5" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>		
+	<Item ID="203" Name="冥鲲之挑战者套装" Cloths="200225,200226,200227,200228,200229,200230">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="100" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="3" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="204" Name="鲲鹏之征服者套装" Cloths="200249,200250,200251,200252,200253,200254">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="150" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="10" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="205" Name="初级战斗套装" Cloths="200272,200273,200274,200275,200276,200277,200278">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="20" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="3" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="20" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="5" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="206" Name="中级战斗套装" Cloths="200279,200280,200281,200282,200283,200284,200285">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="6" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="25" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="435" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="15" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="207" Name="太阴套装" Cloths="200286,200287,200288,200289,200290,200291,200292">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="335" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="26" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="26" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="25" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="208" Name="腾蛇神将套装" Cloths="200293,200294,200295,200296,200297,200298,200299">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="40" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="600" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1000" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="39" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="209" Name="翼神套装" Cloths="200300,200301,200302,200303,200304,200305,200306">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="120" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="1500" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2200" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="50" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="210" Name="圣殿套装" Cloths="200239,200240,200241,200242,200243,200244,200248">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="23" AddMp="0" >
+		</Step>
+		<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="23" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="6" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="5"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="300" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="300" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="20" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="211" Name="断浪套装" Cloths="200307,200308,200309,200310,200311,200312">
+	 	<Step Cnt="2"
+			Strength="28" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1050" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="45" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="212" Name="伏魔套装" Cloths="200321,200322,200323,200324,200325,200326,200327">
+	 	<Step Cnt="3"
+			Strength="150" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="160" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="60" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="213" Name="血凤套装" Cloths="200371,200372,200373,200374,200375,200376,200377">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1050" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="35" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="22" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="214" Name="御剑套装" Cloths="200378,200379,200380,200381,200382,200383,200384">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="80" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2400" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="80" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="215" Name="光魂套装" Cloths="200565,200567,200569,200571,200573,200575,200577">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="5" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="7" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="4" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="216" Name="光魂甲胄" Cloths="200566,200568,200570,200572,200574,200576,200578">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="10" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="14" BodyQuality="0" Stamina="0" 
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="8" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="217" Name="神佑之光魂" Cloths="200077,200078,200079,200074,200075,200076,200081">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="200207" CutCD="0" CutMp="15" AttrDmg="0" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="200207" CutCD="0" CutMp="0" AttrDmg="50" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="200207" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1000"/>
+		</Step><!--
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>-->
+	</Item>
+	<Item ID="218" Name="剑耀套装" Cloths="290001,290002,290003,290004,290005,290006,290007">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="90" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="90" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="90" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="219" Name="青龙毒牙" Cloths="200328,200329,200330,200331,200332,200333,200334">
+	 	<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="210" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="225" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="220" Name="神奇的轻扬之力" Cloths="280002,280003,280005,280006">
+	 	<Step Cnt="4"
+			Strength="100" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	</Item>
+	<Item ID="221" Name="侠骨" Cloths="200701,200702,200703,200704,200705,200706,200707">
+	 	<Step Cnt="3"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="50" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="222" Name="侠骨情" Cloths="200708,200709,200710,200711,200712,200713,200714">
+	 	<Step Cnt="3"
+			Strength="65" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="65" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="223" Name="侠骨柔情" Cloths="200715,200716,200717,200718,200719,200720,200721">
+	 	<Step Cnt="3"
+			Strength="120" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="120" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="224" Name="岐山" Cloths="200722,200723,200724,200725,200726,200727,200728">
+	 	<Step Cnt="3"
+			Strength="60" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="60" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="35" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="225" Name="越岐山" Cloths="200735,200729,200730,200731,200732,200733,200734">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="226" Name="清越岐山" Cloths="200742,200736,200737,200738,200739,200740,200741">
+	 	<Step Cnt="3"
+			Strength="140" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="140" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="227" Name="空音" Cloths="200448,200449,200450,200451,200452,200453,200454">
+	 	<Step Cnt="3"
+			Strength="70" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="70" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="228" Name="空谷音" Cloths="200743,200744,200745,200746,200747,200748,200749">
+	 	<Step Cnt="3"
+			Strength="95" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="95" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="229" Name="空谷余音" Cloths="200750,200751,200752,200753,200754,200755,200756">
+	 	<Step Cnt="2"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="200602" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="300"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="65" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="230" Name="刹那" Cloths="200455,200456,200457,200458,200459,200460,200461">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="231" Name="刹那杀" Cloths="200757,200758,200759,200760,200761,200762,200763">
+	 	<Step Cnt="3"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="232" Name="刹那瞬杀" Cloths="200764,200765,200766,200767,200768,200769,200770">
+	 	<Step Cnt="2"
+			Strength="130" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="200603" CutCD="0" CutMp="0" AttrDmg="110" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="130" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="233" Name="安德鲁之力" Cloths="200350,200351,200352,200353,200354,200355,200356">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="200606" CutCD="0" CutMp="50" AttrDmg="0" ExtraDmg="0"/>
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="200605" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="666"/>
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="200603" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="5000"/>
+		</Step>
+	</Item>
+	<Item ID="301" Name="伏虎套装" Cloths="300031,300032,300033,300034,300035,300036">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="80" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="6" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="302" Name="破甲套装" Cloths="300092,300093,300094,300095,300096,300097">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="100" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="3" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="8" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="303" Name="冥鲲之挑战者套装" Cloths="300225,300226,300227,300228,300229,300230">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="100" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="3" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="304" Name="鲲鹏之征服者套装" Cloths="300249,300250,300251,300252,300253,300254">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="150" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="10" SkillAtk="0" >
+		</Step>
+	</Item>	
+	<Item ID="305" Name="初级战斗套装" Cloths="300272,300273,300274,300275,300276,300277,300278">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="10" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="10" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="10" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="2" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="306" Name="中级战斗套装" Cloths="300279,300280,300281,300282,300283,300284,300285">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="21" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="24" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="25" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="5" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="307" Name="少阳套装" Cloths="300286,300287,300288,300289,300290,300291,300292">
+	 	<Step Cnt="2"
+			Strength="0" Agility="21" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="40" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="40" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="10" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="308" Name="勾阵神将套装" Cloths="300293,300294,300295,300296,300297,300298,300299">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="40" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="82" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="81" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="20" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="309" Name="天王套装" Cloths="300300,300301,300302,300303,300304,300305,300306">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="20" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2000" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="70" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="30" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="310" Name="虎狼套装" Cloths="300239,300240,300241,300242,300243,300244,300248">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="23" AddMp="0" >
+		</Step>
+		<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="23" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="6" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="5"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="300" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="300" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="20" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="311" Name="雀石套装" Cloths="300307,300308,300309,300310,300311,300312">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="28" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="35" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="23" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="312" Name="伏魔套装" Cloths="300321,300322,300323,300324,300325,300326,300327">
+	 	<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="150" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="160" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="313" Name="血凤套装" Cloths="300371,300372,300373,300374,300375,300376,300377">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1050" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="35" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="22" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="314" Name="神意套装" Cloths="300378,300379,300380,300381,300382,300383,300384">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="80" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2400" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="80" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="315" Name="光大套装" Cloths="300565,300567,300569,300571,300573,300575,300577">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="5" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="7" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="4" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="316" Name="光大甲胄" Cloths="300566,300568,300570,300572,300574,300576,300578">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="10" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="14" BodyQuality="0" Stamina="0" 
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="8" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="317" Name="神佑之光大" Cloths="300077,300078,300079,300074,300075,300076,300083">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="300209" CutCD="0" CutMp="15" AttrDmg="0" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="300209" CutCD="0" CutMp="0" AttrDmg="50" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="300209" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1000"/>
+		</Step><!--
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>-->
+	</Item>
+	<Item ID="318" Name="晶耀套装" Cloths="390001,390002,390003,390004,390005,390006,390007">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="90" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="90" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="90" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="319" Name="青龙神力" Cloths="300328,300329,300330,300331,300332,300333,300334">
+	 	<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="210" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="225" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="320" Name="神奇的独步之力" Cloths="380002,380003,380005,380006">
+	 	<Step Cnt="4"
+			Strength="100" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	</Item>
+	<Item ID="321" Name="酒仙" Cloths="300701,300702,300703,300704,300705,300706,300707">
+	 	<Step Cnt="3"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="50" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="322" Name="酒仙谣" Cloths="300708,300709,300710,300711,300712,300713,300714">
+	 	<Step Cnt="3"
+			Strength="65" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="65" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="323" Name="酒仙歌谣" Cloths="300715,300716,300717,300718,300719,300720,300721">
+	 	<Step Cnt="3"
+			Strength="120" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="120" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="324" Name="鬼貌" Cloths="300722,300723,300724,300725,300726,300727,300728">
+	 	<Step Cnt="3"
+			Strength="60" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="60" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="35" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="325" Name="狞鬼貌" Cloths="300735,300729,300730,300731,300732,300733,300734">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="326" Name="狰狞鬼貌" Cloths="300742,300736,300737,300738,300739,300740,300741">
+	 	<Step Cnt="3"
+			Strength="140" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="140" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="327" Name="潮汐" Cloths="300364,300365,300366,300367,300368,300369,300370">
+	 	<Step Cnt="3"
+			Strength="70" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="70" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="328" Name="潮汐洪" Cloths="300743,300744,300745,300746,300747,300748,300749">
+	 	<Step Cnt="3"
+			Strength="95" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="95" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="329" Name="潮汐洪荒" Cloths="300750,300751,300752,300753,300754,300755,300756">
+	 	<Step Cnt="2"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="300601" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1500"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="65" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="330" Name="深渊" Cloths="300406,300407,300408,300409,300410,300411,300412">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="331" Name="深渊劫" Cloths="300757,300758,300759,300760,300761,300762,300763">
+	 	<Step Cnt="3"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="332" Name="深渊厄劫" Cloths="300764,300765,300766,300767,300768,300769,300770">
+	 	<Step Cnt="2"
+			Strength="130" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="300605" CutCD="0" CutMp="0" AttrDmg="110" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="130" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="333" Name="安德鲁之力" Cloths="300413,300414,300415,300416,300417,300418,300419">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="300605" CutCD="0" CutMp="50" AttrDmg="0" ExtraDmg="0"/>
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="300601" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="2000"/>
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="300605" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1000"/>
+		</Step>
+	</Item>
+	<Item ID="402" Name="如兰套装" Cloths="400113,400114,400115,400116,400117,400118">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="150" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="10" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="15" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="403" Name="冥鲲之挑战者套装" Cloths="490064,490065,490066,490067,490068,490069">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="100" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="3" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="404" Name="鲲鹏之征服者套装" Cloths="490036,490037,490038,490039,490040,490041">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="150" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="10" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="405" Name="初级战斗套装" Cloths="490001,490002,490003,490004,490005,490006,490007">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="20" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="3" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="20" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="5" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="406" Name="中级战斗套装" Cloths="490008,490009,490010,490011,490012,490013,490014">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="13" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="13" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="400" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="9" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="407" Name="天空套装" Cloths="490015,490016,490017,490018,490019,490020,490021">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="23" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="23" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="800" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="15" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="408" Name="摩虎神将套装" Cloths="490022,490023,490024,490025,490026,490027,490028">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="30" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="30" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1400" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="20" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="409" Name="斗魁套装" Cloths="490029,490030,490031,490032,490033,490034,490035">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="65" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="70" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2000" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="30" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="410" Name="心魔套装" Cloths="400126,400127,400128,400129,400130,400131,400132">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="23" AddMp="0" >
+		</Step>
+		<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="23" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="6" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="5"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="300" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="300" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="20" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="411" Name="凌锋套装" Cloths="400120,400121,400122,400123,400124,400125">
+	 	<Step Cnt="2"
+			Strength="28" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1050" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="45" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="412" Name="伏魔套装" Cloths="400211,400212,400213,400214,400215,400216,400217">
+	 	<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="150" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="160" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="60" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="413" Name="血凤套装" Cloths="490043,490044,490045,490046,490047,490048,490049">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="1050" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="35" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="22" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="414" Name="星耀套装" Cloths="490057,490058,490059,490060,490061,490062,490063">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="80" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="2400" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="80" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>	
+	<Item ID="415" Name="光芒套装" Cloths="400473,400475,400477,400479,400481,400483,400485">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="100" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="5" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="7" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="4" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="416" Name="光芒甲胄" Cloths="400474,400476,400478,400480,400482,400484,400486">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="200" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="10" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="14" BodyQuality="0" Stamina="0" 
+			Atk="3" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="8" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="417" Name="神佑之光芒" Cloths="400324,400325,400326,400327,400328,400329,400330">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="400403" CutCD="0" CutMp="15" AttrDmg="0" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="400403" CutCD="0" CutMp="0" AttrDmg="50" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="400403" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1000"/>
+		</Step><!--
+		<Step Cnt="7"
+			Strength="40" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>-->
+	</Item>
+	<Item ID="418" Name="龙耀套装" Cloths="490078,490079,490080,490081,490082,490083,490084">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="90" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="90" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="90" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="419" Name="青龙长吟" Cloths="400267,400268,400269,400270,400271,400272,400273">
+	 	<Step Cnt="3"
+			Strength="0" Agility="0" BodyQuality="210" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="225" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="420" Name="神奇的雪剑之力" Cloths="480002,480003,480005,480006">
+	 	<Step Cnt="4"
+			Strength="100" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	</Item>
+	<Item ID="421" Name="吟游" Cloths="400701,400702,400703,400704,400705,400706,400707">
+	 	<Step Cnt="3"
+			Strength="50" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="50" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="422" Name="吟游人" Cloths="400708,400709,400710,400711,400712,400713,400714">
+	 	<Step Cnt="3"
+			Strength="65" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="65" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="30" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="423" Name="吟游诗人" Cloths="400715,400716,400717,400718,400719,400720,400721">
+	 	<Step Cnt="3"
+			Strength="120" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="120" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="424" Name="遥怜" Cloths="400722,400723,400724,400725,400726,400727,400728">
+	 	<Step Cnt="3"
+			Strength="60" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="60" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="35" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="425" Name="遥怜慕" Cloths="400735,400729,400730,400731,400732,400733,400734">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="426" Name="遥怜怨慕" Cloths="400742,400736,400737,400738,400739,400740,400741">
+	 	<Step Cnt="3"
+			Strength="140" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="140" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="427" Name="日照" Cloths="400288,400289,400290,400291,400292,400293,400294">
+	 	<Step Cnt="3"
+			Strength="70" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="70" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="40" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="428" Name="日照炉" Cloths="400743,400744,400745,400746,400747,400748,400749">
+	 	<Step Cnt="3"
+			Strength="95" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="95" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="429" Name="日照香炉" Cloths="400750,400751,400752,400753,400754,400755,400756">
+	 	<Step Cnt="2"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="400601" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1500"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="65" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="430" Name="远岚" Cloths="400302,400303,400304,400305,400306,400307,400308">
+	 	<Step Cnt="3"
+			Strength="80" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="80" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="50" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="431" Name="梦远岚" Cloths="400757,400758,400759,400760,400761,400762,400763">
+	 	<Step Cnt="3"
+			Strength="110" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="110" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="60" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="432" Name="浮梦远岚" Cloths="400764,400765,400766,400767,400768,400769,400770">
+	 	<Step Cnt="2"
+			Strength="130" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="400606" CutCD="0" CutMp="0" AttrDmg="37" ExtraDmg="0"/>
+		</Step>
+		<Step Cnt="6"
+			Strength="0" Agility="0" BodyQuality="130" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="80" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+		</Step>
+	</Item>
+	<Item ID="433" Name="安德鲁之力" Cloths="400309,400310,400311,400312,400313,400314,400315">
+	 	<Step Cnt="2"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="400601" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1000"/>
+		</Step>
+	 	<Step Cnt="4"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0" 
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" >
+			<CpAddition SkillID="400603" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="2000"/>
+		</Step>
+		<Step Cnt="7"
+			Strength="0" Agility="0" BodyQuality="0" Stamina="0"  
+			Atk="0" Def="0" Hit="0" Dodge="0" Crit="0" Hp="0" Mp="0" AddHp="0" AddMp="0" SkillAtk="0" >
+			<CpAddition SkillID="400606" CutCD="0" CutMp="0" AttrDmg="0" ExtraDmg="1666"/>
+		</Step>
+	</Item>
+</root>

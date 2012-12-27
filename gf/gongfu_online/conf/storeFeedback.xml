@@ -1,0 +1,16 @@
+<!-- -->
+
+<Root>
+     <!--消耗品类 -->
+    <Feedback ItemID="" />
+	<!--<Item ID="1540608" FeedbackCount="0"/>
+    <Item ID="1700086" FeedbackCount="80" />
+    <Item ID="1700089" FeedbackCount="110" />
+    <Item ID="1700090" FeedbackCount="170" />
+    <Item ID="1700091" FeedbackCount="300" />
+    <Item ID="1700092" FeedbackCount="600" />
+    <Item ID="1700093" FeedbackCount="1100" />
+    <Item ID="1700094" FeedbackCount="900" />
+    <Item ID="1700095" FeedbackCount="30" />
+    <Item ID="1700096" FeedbackCount="30" /> -->
+</Root>

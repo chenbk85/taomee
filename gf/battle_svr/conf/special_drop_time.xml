@@ -1,0 +1,93 @@
+<!--
+	Type: 1，每天掉落，每周一循环
+	Type: 2，每天掉落，每天一循环(此时 WeekDay 字段没用， Limit可以用行表示n个区间，From和To表示开始结束时间)
+		WeekDay : 0：星期日，1：星期1，2：星期2。。。6：星期6
+	以后有什么新需求可以新加类型
+	同时程序中在 SpecialDropTimeMrg::is_in_time 修改新类型的判断
+-->
+
+<SpecialDropTime>
+	<Time ID="1" Type="1" >
+		<Limit WeekDay="0" From="1000" To="2100"/>
+		<Limit WeekDay="1" From="1000" To="2100"/>
+		<Limit WeekDay="2" From="1000" To="2100"/>
+		<Limit WeekDay="3" From="1000" To="2100"/>
+		<Limit WeekDay="4" From="1000" To="2100"/>
+		<Limit WeekDay="5" From="1000" To="2100"/>
+		<Limit WeekDay="6" From="1000" To="2100"/>
+	</Time>
+	<Time ID="2" Type="2" >
+		<Limit WeekDay="0" From="0000" To="2400"/>
+	</Time>	
+	<Time ID="3" Type="1" >
+		<Limit WeekDay="0" From="0900" To="1100"/>
+		<Limit WeekDay="0" From="1400" To="1600"/>
+		<Limit WeekDay="0" From="1900" To="2100"/>
+		<Limit WeekDay="1" From="1100" To="1300"/>
+		<Limit WeekDay="1" From="1900" To="2100"/>
+		<Limit WeekDay="2" From="1100" To="1300"/>
+		<Limit WeekDay="2" From="1900" To="2100"/>
+		<Limit WeekDay="3" From="1100" To="1300"/>
+		<Limit WeekDay="3" From="1900" To="2100"/>
+		<Limit WeekDay="4" From="1100" To="1300"/>
+		<Limit WeekDay="4" From="1900" To="2100"/>
+		<Limit WeekDay="5" From="0900" To="1100"/>
+		<Limit WeekDay="5" From="1400" To="1600"/>
+		<Limit WeekDay="5" From="1900" To="2100"/>
+		<Limit WeekDay="6" From="0900" To="1100"/>
+		<Limit WeekDay="6" From="1400" To="1600"/>
+		<Limit WeekDay="6" From="1900" To="2100"/>
+	</Time>
+	<Time ID="4" Type="2" >
+		<Limit WeekDay="0" From="1800" To="2200"/>
+	</Time>	
+	<!-- 
+		三倍时间
+	-->
+	<Time ID="5" Type="1" >
+		<Limit WeekDay="0" From="1400" To="1600"/>
+		<Limit WeekDay="0" From="1900" To="2100"/>
+		<Limit WeekDay="5" From="1400" To="1600"/>
+		<Limit WeekDay="5" From="1900" To="2100"/>
+		<Limit WeekDay="6" From="1400" To="1600"/>
+		<Limit WeekDay="6" From="1900" To="2100"/>
+	</Time>
+
+	<!-- 
+		史诗boss 陆班仙宝珠掉落
+	-->
+	<Time ID="6" Type="1" >
+	</Time>
+
+	<!-- 
+	           双倍倍时间，能与双倍道具物品叠加，叠加后为３倍
+   -->
+   <Time ID="7" Type="1" >
+	   <Limit WeekDay="0" From="0000" To="2359"/>
+	   <Limit WeekDay="5" From="0000" To="2359"/>
+	   <Limit WeekDay="6" From="0000" To="2359"/>
+   </Time>
+   <Time ID="8" Type="1" >
+   </Time>
+   <Time ID="9" Type="1" >
+	   <Limit WeekDay="0" From="1200" To="1500"/>
+	   <Limit WeekDay="0" From="1900" To="2100"/>
+	   <Limit WeekDay="1" From="1200" To="1500"/>
+	   <Limit WeekDay="1" From="1900" To="2100"/>
+	   <Limit WeekDay="2" From="1200" To="1500"/>
+	   <Limit WeekDay="2" From="1900" To="2100"/>
+	   <Limit WeekDay="3" From="1200" To="1500"/>
+	   <Limit WeekDay="3" From="1900" To="2100"/>
+	   <Limit WeekDay="4" From="1200" To="1500"/>
+	   <Limit WeekDay="4" From="1900" To="2100"/>
+	   <Limit WeekDay="5" From="1200" To="1500"/>
+	   <Limit WeekDay="5" From="1900" To="2100"/>
+	   <Limit WeekDay="6" From="1200" To="1500"/>
+	   <Limit WeekDay="6" From="1900" To="2100"/>
+   </Time>
+ 	 <Time ID="10" Type="1" >
+	   <Limit WeekDay="0" From="1300" To="1500"/>
+	   <Limit WeekDay="6" From="1300" To="1500"/>
+   </Time>
+
+</SpecialDropTime>

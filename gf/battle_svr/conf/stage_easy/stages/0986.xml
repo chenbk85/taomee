@@ -1,0 +1,15 @@
+<Stage ID="986" Lv="30 100" InitX="667" InitY="372" InitMapID="1098601">
+  <Map ID="1098601">
+    <Monsters>
+      <Monster ID="13132" X="1050" Y="350"/>
+      <Monster ID="13117" X="1030" Y="400" CallFlag="1"/>
+
+	  <Monster ID="13118" X="1030" Y="400" CallFlag="1"/>
+	  <Monster ID="13119" X="1030" Y="400" CallFlag="1"/>
+	  <Monster ID="13106" X="1030" Y="400" CallFlag="1"/>
+	  <Monster ID="13116" X="1030" Y="400" CallFlag="1"/>
+	  <Monster ID="13111" X="1030" Y="400" CallFlag="1"/>
+	  <Monster ID="13108" X="1030" Y="400" CallFlag="1"/>
+    </Monsters>
+  </Map>
+</Stage>

@@ -1,0 +1,16 @@
+<!--
+	Time ID 从1开始 必须连续
+	From 开始时间 必须符合格式 例如："2010-09-19 12:00:05"
+	To   结束时间
+
+	Drop ID 掉的物品ID
+	MonLv 掉该物品的怪物等级 (使用这个限制，可以使得高级怪物掉高级物品)
+	DropOdds 掉率
+-->
+
+<HolIDayDrops>
+	<Time ID="1" From="2010-09-22 00:00:00" To="2020-01-01 00:00:01" >
+		<Drop ID="1500568" MonLv="0 999" DropOdds="1" />
+	</Time>
+	
+</HolIDayDrops>

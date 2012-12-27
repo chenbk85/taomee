@@ -1,0 +1,37 @@
+<!-- event id:事件ID(不能重复，递增) -->
+<!-- name:作为随机事件邮件标题20字符 -->
+<!-- trigger_type 1:时间间隔触发block 2:时间累加触发block -->
+<!-- trigger_time 触发时间数组 最多不能超过10个 -->
+<!-- stage: 关卡id  // diff:关卡难度 -->
+<!-- odds:进入挂卡的随机数 百分位 累加不能大于100-->
+
+<root>
+    <event id="1" name="押运美酒" trigger_type="2" trigger_time="5 10 20 30 40" > 
+        <block stage="728" diff="1" odds="10"/>
+        <block stage="729" diff="1" odds="10"/>
+        <block stage="730" diff="1" odds="25"/>
+        <block stage="731" diff="1" odds="30"/>
+        <block stage="732" diff="1" odds="20"/>
+    </event>
+    <event id="2" name="押运炮仗" trigger_type="1" trigger_time="10 10 10 10 10"> 
+        <block stage="728" diff="1" odds="10"/>
+        <block stage="729" diff="1" odds="10"/>
+        <block stage="730" diff="1" odds="35"/>
+        <block stage="731" diff="1" odds="20"/>
+        <block stage="732" diff="1" odds="20"/>
+    </event>
+    <event id="3" name="押运烟花" trigger_type="2" trigger_time="10 20 30 50 70"> 
+        <block stage="728" diff="1" odds="10"/>
+        <block stage="729" diff="1" odds="10"/>
+        <block stage="730" diff="1" odds="35"/>
+        <block stage="731" diff="1" odds="20"/>
+        <block stage="732" diff="1" odds="20"/>
+    </event>
+    <event id="4" name="押运灯笼" trigger_type="1" trigger_time="20 20 20 20 20"> 
+        <block stage="728" diff="1" odds="10"/>
+        <block stage="729" diff="1" odds="10"/>
+        <block stage="730" diff="1" odds="35"/>
+        <block stage="731" diff="1" odds="20"/>
+        <block stage="732" diff="1" odds="20"/>
+    </event>
+</root>

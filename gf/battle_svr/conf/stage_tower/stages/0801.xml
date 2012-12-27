@@ -1,0 +1,131 @@
+<Stage ID="801" Lv="10 100" InitX="137" InitY="278" InitMapID="1080101">
+  <Map ID="1080101">
+    <ToMaps>
+      <Map ID="1080102" InitX="326" InitY="275"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13003" X="869" Y="350"/>
+      <Monster ID="13001" X="564" Y="379"/>
+      <Monster ID="13002" X="730" Y="520"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080102">
+    <ToMaps>
+      <Map ID="1080101" InitX="1427" InitY="443"/>
+      <Map ID="1080103" InitX="338" InitY="285"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13031" X="805" Y="361"/>
+      <Monster ID="11023" X="782" Y="502"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080103">
+    <ToMaps>
+      <Map ID="1080104" InitX="311" InitY="272"/>
+      <Map ID="1080102" InitX="1396" InitY="477"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13017" X="745" Y="342"/>
+      <Monster ID="11046" X="741" Y="395"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080104">
+    <ToMaps>
+      <Map ID="1080105" InitX="335" InitY="272"/>
+      <Map ID="1080103" InitX="1374" InitY="491"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13043" X="663" Y="364"/>
+      <Monster ID="11049" X="884" Y="349"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080105">
+    <ToMaps>
+      <Map ID="1080104" InitX="1212" InitY="373"/>
+      <Map ID="1080106" InitX="352" InitY="280"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13039" X="762" Y="346"/>
+      <Monster ID="13040" X="897" Y="450"/>
+      <Monster ID="13041" X="893" Y="253"/>
+      <Monster ID="13069" X="1024" Y="877"/>
+      <Monster ID="11044" X="544" Y="347"/>
+      <Monster ID="13009" X="707" Y="474"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080106">
+    <ToMaps>
+      <Map ID="1080105" InitX="1206" InitY="448"/>
+      <Map ID="1080107" InitX="304" InitY="276"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="11244" X="400" Y="400"/>
+      <Monster ID="11245" X="821" Y="848" CallFlag="1"/>
+      <Monster ID="13067" X="2000" Y="2000"/>
+      <Monster ID="13004" X="821" Y="376"/>
+      <Monster ID="11059" X="698" Y="515"/>
+      <Monster ID="11060" X="664" Y="340"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080107">
+    <ToMaps>
+      <Map ID="1080108" InitX="349" InitY="296"/>
+      <Map ID="1080106" InitX="1229" InitY="447"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13034" X="853" Y="385"/>
+      <Monster ID="13016" X="846" Y="514"/>
+      <Monster ID="11152" X="1093" Y="482"/>
+      <Monster ID="11154" X="995" Y="290"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080108">
+    <ToMaps>
+      <Map ID="1080109" InitX="317" InitY="309"/>
+      <Map ID="1080107" InitX="1295" InitY="444"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13051" X="781" Y="388"/>
+      <Monster ID="11063" X="682" Y="348"/>
+      <Monster ID="13005" X="797" Y="462"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080109">
+    <ToMaps>
+      <Map ID="1080108" InitX="1288" InitY="448"/>
+      <Map ID="1080110" InitX="341" InitY="301"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13050" X="776" Y="356"/>
+      <Monster ID="13006" X="740" Y="484"/>
+      <Monster ID="11065" X="629" Y="285"/>
+      <Monster ID="11066" X="915" Y="283"/>
+    </Monsters>
+  </Map>
+  <Map ID="1080110">
+    <ToMaps>
+      <Map ID="1080109" InitX="1262" InitY="419"/>
+      <Map ID="1080111" InitX="337" InitY="283"/>
+    </ToMaps>
+    <Monsters>
+      <Monster ID="13062" X="724" Y="335"/>
+      <Monster ID="13063" X="604" Y="794" CallFlag="1"/>
+      <Monster ID="13064" X="741" Y="861" CallFlag="1"/>
+      <Monster ID="13065" X="960" Y="826" CallFlag="1"/>
+      <Monster ID="11243" X="453" Y="812" CallFlag="1"/>
+      <Monster ID="11067" X="948" Y="353" />
+      <Monster ID="13007" X="727" Y="533" />
+    </Monsters>
+  </Map>
+  <Map ID="1080111">
+    <ToMaps>
+      <Map ID="1080110" InitX="1324" InitY="477"/>
+    </ToMaps>
+    <Monsters>
+	    <Monster ID="13120" X="11776" Y="356" />
+	    <Monster ID="13121" X="11740" Y="484" />
+	    <Monster ID="13122" X="11629" Y="285" />
+	    <Monster ID="13123" X="615" Y="283" />
+    </Monsters>
+  </Map>
+</Stage>

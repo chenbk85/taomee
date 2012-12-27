@@ -1,0 +1,3218 @@
+<!-- StoreId : 物品对应在商城中的id (唯一性,不能重复)-->
+<!-- Priority : 优先级 (该值越大会在商城中优先显示) -->
+<!-- Buylimit : 购买限制该物品玩家(角色)可以购买次数, 0:没有限制 -->
+<!-- Toplimit : 库存上限 0 : 表示没有上限 -->
+<!-- Vip : vip专供标志位 -->
+<!-- IsHot : 1 : in sales-->
+<!-- isBox : 0 和没有该字段表示普通商城道具，1表示为礼包道具-->
+<!-- ID :物品在游戏中的id -->
+<!-- Type=1 : 装备 Type=2 : 物品  Type=3 : 强化材料-->
+<!-- SecType : If Type=2; Then 1:恢复类 2:属性类
+               If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器
+               If Type=3; Then 1:基础材料 2:防暴材料 3:特殊材料
+                                -->
+<!-- Server : 购买该商品可以享受的服务
+              If SerType=1; 该商品可以使用的时间; (单位：天) 0：表示没有时间限制
+              If SerType=2; 该商品包含的物品数量 -->
+<!-- GroupNum : 一组物品数量 -->
+<!-- TimeLag : 商品中物品使用时限 -->
+<!-- Price : 价格,  VipPrice : vip购买价, SalePrice : 促销价格-->
+
+<StoreEdges ExchangeRate="1 米币/ 10 通宝">
+<!-- 恢复与属性类药品 -->
+    <Product Name="次级回血丸" Icon="320100" Priority="901" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303001" Name="次级回血丸" Type="2" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320387" TimeLag="0" GroupNum="1" Price="1" VipPrice="1" SalePrice="1"/>
+            <Store StoreId="320100" TimeLag="0" GroupNum="5" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320198" TimeLag="0" GroupNum="10" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320199" TimeLag="0" GroupNum="99" Price="88" VipPrice="88" SalePrice="88"/>            
+        </ProductStore>
+    </Product>
+    <Product Name="次级回气丸" Icon="320102" Priority="902" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303003" Name="次级回气丸" Type="2" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320389" TimeLag="0" GroupNum="1" Price="1" VipPrice="1" SalePrice="1"/>
+            <Store StoreId="320102" TimeLag="0" GroupNum="5" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320202" TimeLag="0" GroupNum="10" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320203" TimeLag="0" GroupNum="99" Price="88" VipPrice="88" SalePrice="88"/>
+        </ProductStore>
+    </Product>
+    <Product Name="高级回血丸" Icon="320101" Priority="903" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303002" Name="高级回血丸" Type="2" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320388" TimeLag="0" GroupNum="1" Price="2" VipPrice="2" SalePrice="2"/>
+            <Store StoreId="320101" TimeLag="0" GroupNum="5" Price="7" VipPrice="7" SalePrice="7"/>
+            <Store StoreId="320200" TimeLag="0" GroupNum="10" Price="12" VipPrice="12" SalePrice="12"/>
+            <Store StoreId="320201" TimeLag="0" GroupNum="99" Price="112" VipPrice="112" SalePrice="112"/>
+        </ProductStore>
+    </Product>
+    <Product Name="高级回气丸" Icon="320103" Priority="904" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303004" Name="高级回气丸" Type="2" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320390" TimeLag="0" GroupNum="1" Price="2" VipPrice="2" SalePrice="2"/>
+            <Store StoreId="320103" TimeLag="0" GroupNum="5" Price="7" VipPrice="7" SalePrice="7"/>
+            <Store StoreId="320204" TimeLag="0" GroupNum="10" Price="12" VipPrice="12" SalePrice="12"/>
+            <Store StoreId="320205" TimeLag="0" GroupNum="99" Price="112" VipPrice="112" SalePrice="112"/>
+        </ProductStore>
+    </Product>
+    <Product Name="青龙果" Icon="320392" Priority="905" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303005" Name="青龙果" Type="2" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320392" TimeLag="0" GroupNum="1" Price="3" VipPrice="3" SalePrice="3"/>
+            <Store StoreId="320393" TimeLag="0" GroupNum="5" Price="14" VipPrice="14" SalePrice="14"/>
+            <Store StoreId="320394" TimeLag="0" GroupNum="10" Price="22" VipPrice="22" SalePrice="22"/>
+            <Store StoreId="320395" TimeLag="0" GroupNum="99" Price="158" VipPrice="158" SalePrice="158"/>
+        </ProductStore>
+    </Product>
+    <Product Name="金龙果" Icon="320396" Priority="906" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1303006" Name="金龙果" Type="2" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320396" TimeLag="0" GroupNum="1" Price="4" VipPrice="4" SalePrice="4"/>
+            <Store StoreId="320397" TimeLag="0" GroupNum="5" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320398" TimeLag="0" GroupNum="10" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320399" TimeLag="0" GroupNum="99" Price="198" VipPrice="198" SalePrice="198"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神临之体" Icon="320404" Priority="907" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303010" Name="神临之体" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320404" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320405" TimeLag="0" GroupNum="5" Price="40" VipPrice="40" SalePrice="40"/>
+            <Store StoreId="320406" TimeLag="0" GroupNum="10" Price="75" VipPrice="75" SalePrice="75"/>
+        </ProductStore>
+    </Product>
+    <Product Name="武圣附体" Icon="320407" Priority="908" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303011" Name="武圣附体" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320407" TimeLag="0" GroupNum="1" Price="13" VipPrice="13" SalePrice="13"/>
+            <Store StoreId="320408" TimeLag="0" GroupNum="5" Price="48" VipPrice="48" SalePrice="48"/>
+            <Store StoreId="320409" TimeLag="0" GroupNum="10" Price="118" VipPrice="118" SalePrice="118"/>
+        </ProductStore>
+    </Product>
+    <Product Name="起死回生草" Icon="320104" Priority="909" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1302000" Name="起死回生草" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320391" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320104" TimeLag="0" GroupNum="5" Price="49" VipPrice="49" SalePrice="49"/>
+            <Store StoreId="320206" TimeLag="0" GroupNum="10" Price="88" VipPrice="88" SalePrice="88"/>
+        </ProductStore>
+    </Product>
+    <Product Name="双倍经验卡" Icon="320105" Priority="910" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1703002" Name="双倍经验卡" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320105" TimeLag="0" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+        </ProductStore>
+    </Product>
+<!-- <Product Name="忘却琥珀" Icon="320106" Priority="11" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1703001" Name="忘却琥珀" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320106" TimeLag="0" GroupNum="1" Price="255" VipPrice="255" SalePrice="255"/>
+        </ProductStore>
+    </Product> -->
+    <Product Name="修理机关人" Icon="320400" Priority="911" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1703003" Name="修理机关人" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320400" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320401" TimeLag="0" GroupNum="5" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320402" TimeLag="0" GroupNum="10" Price="38" VipPrice="38" SalePrice="38"/>
+            <Store StoreId="320403" TimeLag="0" GroupNum="99" Price="335" VipPrice="335" SalePrice="335"/>
+        </ProductStore>
+    </Product>
+    <Product Name="唤灵液" Icon="320805" Priority="912" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1703004" Name="唤灵液" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320805" TimeLag="0" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+        </ProductStore>
+    </Product>
+    <Product Name="万博号角" Icon="1303015" IsItemIcon="1" Priority="913" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303015" Name="万博号角" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320806" TimeLag="0" GroupNum="1" Price="3" VipPrice="3" SalePrice="3"/>
+            <Store StoreId="320807" TimeLag="0" GroupNum="10" Price="28" VipPrice="28" SalePrice="28"/>
+            <Store StoreId="320808" TimeLag="0" GroupNum="99" Price="235" VipPrice="235" SalePrice="235"/>
+        </ProductStore>
+    </Product>
+    <Product Name="辟邪咒" Icon="1303016" IsItemIcon="1" Priority="914" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1303016" Name="辟邪咒" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320810" TimeLag="0" GroupNum="1" Price="3" VipPrice="3" SalePrice="3"/>
+            <Store StoreId="320811" TimeLag="0" GroupNum="5" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320812" TimeLag="0" GroupNum="10" Price="22" VipPrice="22" SalePrice="22"/>
+        </ProductStore>
+    </Product>
+    <Product Name="功夫圣纹" Icon="1700063" IsItemIcon="1" Priority="915" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1700063" Name="功夫圣纹" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320815" TimeLag="0" GroupNum="1" Price="8" VipPrice="8" SalePrice="8"/>
+            <Store StoreId="320816" TimeLag="0" GroupNum="5" Price="40" VipPrice="40" SalePrice="40"/>
+            <Store StoreId="320817" TimeLag="0" GroupNum="10" Price="80" VipPrice="80" SalePrice="80"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="冲击核桃" Icon="1700065" IsItemIcon="1" Priority="916" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1700065" Name="冲击核桃" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320818" TimeLag="0" GroupNum="1" Price="1" VipPrice="1" SalePrice="1"/>
+            <Store StoreId="320819" TimeLag="0" GroupNum="10" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320820" TimeLag="0" GroupNum="50" Price="50" VipPrice="50" SalePrice="50"/>
+			<Store StoreId="320821" TimeLag="0" GroupNum="99" Price="79" VipPrice="79" SalePrice="79"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="爆破核桃" Icon="1700066" IsItemIcon="1" Priority="917" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1700066" Name="爆破核桃" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320822" TimeLag="0" GroupNum="1" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320823" TimeLag="0" GroupNum="5" Price="45" VipPrice="45" SalePrice="45"/>
+            <Store StoreId="320824" TimeLag="0" GroupNum="10" Price="69" VipPrice="50" SalePrice="69"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="纯净之心" Icon="1700069" IsItemIcon="1" Priority="918" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1700069" Name="纯净之心" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320915" TimeLag="0" GroupNum="1" Price="8" VipPrice="8" SalePrice="8"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="清崖的祝福（小）" Icon="1703009" IsItemIcon="1" Priority="919" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1703009" Name="清崖的祝福（小）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320924" TimeLag="0" GroupNum="1" Price="6" VipPrice="6" SalePrice="6"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="清崖的祝福（中）" Icon="1703010" IsItemIcon="1" Priority="920" Toplimit="0" Buylimit="0" Vip="0">
+        <ProductItem>
+            <Item ID="1703010" Name="清崖的祝福（中）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320925" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="清崖的祝福（大）" Icon="1703011" IsItemIcon="1" Priority="921" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1703011" Name="清崖的祝福（大）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320926" TimeLag="0" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="征服者腰带碎片（商）" Icon="1500910" IsItemIcon="1" Priority="500" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700075" Name="征服者腰带碎片（商）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320928" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="征服者护腕碎片（商）" Icon="1500911" IsItemIcon="1" Priority="501" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700076" Name="征服者护腕碎片（商）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320929" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="征服者鞋子碎片（商）" Icon="1500912" IsItemIcon="1" Priority="502" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700077" Name="征服者鞋子碎片（商）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320930" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="征服者头盔碎片（商）" Icon="1500909" IsItemIcon="1" Priority="503" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700078" Name="征服者头盔碎片（商）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320931" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="征服者上装碎片（商）" Icon="1500907" IsItemIcon="1" Priority="504" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700079" Name="征服者上装碎片（商）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320932" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="征服者下装碎片（商）" Icon="1500908" IsItemIcon="1" Priority="505" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700080" Name="征服者下装碎片（商）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320933" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="征服者武器碎片（商）" Icon="1500913" IsItemIcon="1" Priority="506" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700081" Name="征服者下装碎片（商）" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320934" TimeLag="0" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+        </ProductStore>
+    </Product>
+		
+    <Product Name="鲜花" Icon="1700082" IsItemIcon="1" Priority="1007" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1700082" Name="鲜花" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320935" TimeLag="0" GroupNum="1" Price="2" VipPrice="2" SalePrice="2"/>
+            <Store StoreId="320936" TimeLag="0" GroupNum="10" Price="20" VipPrice="20" SalePrice="20"/>		
+        </ProductStore>
+    </Product>
+
+    <Product Name="千年精魄" Icon="1700083" IsItemIcon="1" Priority="1008" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1700083" Name="千年精魄" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320937" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+        </ProductStore>
+    </Product>	
+
+<!-- 礼包配置 -->
+    <Product Name="复活草优惠包" Icon="1700086" IsItemIcon="1" Priority="1007" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1700086" Name="复活草优惠包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320942" TimeLag="0" GroupNum="1" Price="40" VipPrice="40" SalePrice="40"/>
+        </ProductStore>
+    </Product>
+<!-- 
+   <Product Name="圣诞礼包" Icon="1700087" IsItemIcon="1" Priority="1009" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1700087" Name="圣诞礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320943" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+
+   <Product Name="双节礼包" Icon="1700088" IsItemIcon="1" Priority="1010" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1700088" Name="双节礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320944" TimeLag="0" GroupNum="1" Price="66" VipPrice="66" SalePrice="66"/>
+        </ProductStore>
+    </Product>
+ -->
+
+     <Product Name="火龙珠礼包" Icon="1300308" IsItemIcon="1" Priority="1020" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="1700089" Name="火龙珠礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320949" TimeLag="0" GroupNum="1" Price="55" VipPrice="55" SalePrice="55"/>
+        </ProductStore>
+    </Product>
+    <Product Name="金龙珠礼包" Icon="1300308" IsItemIcon="1" Priority="1021" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="1700090" Name="金龙珠礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320950" TimeLag="0" GroupNum="1" Price="85" VipPrice="85" SalePrice="85"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神冰礼包" Icon="1300308" IsItemIcon="1" Priority="1022" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="1700091" Name="神冰礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320951" TimeLag="0" GroupNum="1" Price="150" VipPrice="150" SalePrice="150"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="迎春特权礼包" Icon="1300308" IsItemIcon="1" Priority="1023" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1700092" Name="迎春特权礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320952" TimeLag="0" GroupNum="1" Price="300" VipPrice="300" SalePrice="300"/>
+        </ProductStore>
+    </Product>
+    <Product Name="功夫畅玩礼包" Icon="1300308" IsItemIcon="1" Priority="1024" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1700093" Name="功夫畅玩礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320953" TimeLag="0" GroupNum="1" Price="550" VipPrice="550" SalePrice="550"/>
+        </ProductStore>
+    </Product>
+	  <Product Name="灵兽孵化礼包" Icon="1300308" IsItemIcon="1" Priority="1024" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1700094" Name="灵兽孵化礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320954" TimeLag="0" GroupNum="1" Price="450" VipPrice="450" SalePrice="450"/>
+        </ProductStore>
+    </Product>    
+	<Product Name="万博会交易包" Icon="1300308" IsItemIcon="1" Priority="1024" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1700095" Name="万博会交易包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320955" TimeLag="0" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+        </ProductStore>
+    </Product>
+		<Product Name="精灵药品包" Icon="1300308" IsItemIcon="1" Priority="1024" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1700096" Name="精良药品包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320956" TimeLag="0" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+        </ProductStore>
+    </Product>
+		<Product Name="灵兽成长礼包" Icon="1300308" IsItemIcon="1" Priority="1025" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="1700099" Name="灵兽成长礼包" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320957" TimeLag="0" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+        </ProductStore>
+    </Product>
+<!--  
+    <Product Name="开学加油包" Icon="1700074" IsItemIcon="1" Priority="1007" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1302000" Name="起死回生草" Type="2" SecType="2" count="10"/>
+            <Item ID="1303002" Name="高级回血丸" Type="2" SecType="2" count="10"/>
+            <Item ID="1303004" Name="高级回气丸" Type="2" SecType="2" count="10"/>
+            <Item ID="1703002" Name="双倍经验卡" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320927" TimeLag="0" GroupNum="1" Price="88" VipPrice="88" SalePrice="88"/>
+        </ProductStore>
+    </Product>
+-->	
+    <Product Name="精英大礼包" Icon="320410" Priority="922" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1303005" Name="青龙果" Type="2" SecType="1" count="10"/>
+            <Item ID="1303006" Name="金龙果" Type="2" SecType="1" count="10"/>
+            <Item ID="1303010" Name="神临之体" Type="2" SecType="2" count="10"/>
+            <Item ID="1303011" Name="武圣附体" Type="2" SecType="2" count="10"/>
+            <Item ID="1703003" Name="修理机关人" Type="2" SecType="2" count="10"/>
+            <Item ID="1703002" Name="双倍经验卡" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320410" TimeLag="0" GroupNum="1" Price="220" VipPrice="220" SalePrice="220"/>
+        </ProductStore>
+    </Product>
+<!--
+    <Product Name="限量一元礼包" Icon="320107" Priority="1007" Toplimit="0" Buylimit="1" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1303005" Name="青龙果" Type="2" SecType="1" count="10"/>
+            <Item ID="1303011" Name="武圣附体" Type="2" SecType="2" count="5"/>
+            <Item ID="1740003" Name="五轮离火" Type="3" SecType="1" count="5"/>
+            <Item ID="1740004" Name="焚天离火" Type="3" SecType="1" count="5"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320551" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+        </ProductStore>
+    </Product>
+    <Product Name="蓝色强化包" Icon="320567" Priority="1005" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1740000" Name="青莲地心焰" Type="3" SecType="1" count="5"/>
+            <Item ID="1740010" Name="高能魂石" Type="3" SecType="2" count="5"/>
+            <Item ID="1740011" Name="风暴魂石" Type="3" SecType="2" count="3"/>
+            <Item ID="1740007" Name="5级天降神炎" Type="3" SecType="3" count="3"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320567" TimeLag="0" GroupNum="1" Price="380" VipPrice="380" SalePrice="380"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紫色强化包" Icon="320568" Priority="1004" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="1740001" Name="惊雷劫天焰" Type="3" SecType="1" count="5"/>
+            <Item ID="1740011" Name="风暴魂石" Type="3" SecType="2" count="3"/>
+            <Item ID="1740005" Name="金乌冰焰" Type="3" SecType="3" count="3"/>
+            <Item ID="1740006" Name="4级天降神炎" Type="3" SecType="3" count="1"/>
+            <Item ID="1740007" Name="5级天降神炎" Type="3" SecType="3" count="1"/>
+            <Item ID="1700043" Name="强化空间葫芦" Type="2" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320568" TimeLag="0" GroupNum="1" Price="480" VipPrice="480" SalePrice="480"/>
+        </ProductStore>
+    </Product>
+-->
+    <Product Name="功夫药品包" Icon="320603" Priority="923" Toplimit="0" Buylimit="0" Vip="0" IsHot="0" isBox="1">
+        <ProductItem>
+            <Item ID="1303002" Name="高级回血丸" Type="2" SecType="1" count="20"/>
+            <Item ID="1303004" Name="高级回气丸" Type="2" SecType="1" count="20"/>
+            <Item ID="1703003" Name="机关修理人" Type="2" SecType="2" count="10"/>
+            <Item ID="1303011" Name="武圣附体" Type="2" SecType="2" count="10"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320603" TimeLag="0" GroupNum="1" Price="99" VipPrice="99" SalePrice="99"/>
+        </ProductStore>
+    </Product>
+    <Product Name="不稳定的空间葫芦" Icon="1700059" IsItemIcon="1" Priority="924" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1700059" Name="不稳定的空间葫芦" Type="2" SecType="2" count="20"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320809" TimeLag="0" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+        </ProductStore>
+    </Product>	
+
+<!-- 装备15-55级礼包配置 -->
+    <Product Name="15级猴子永久套装包" Icon="320552" Priority="700" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="100272" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="100273" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="100274" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="100275" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="100276" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="100277" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="100278" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100027" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320552" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+    <Product Name="15级兔子永久套装包" Icon="320552" Priority="700" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="200272" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="200273" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="200274" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="200275" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="200276" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="200277" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="200278" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100027" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320553" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+    <Product Name="15级熊猫永久套装包" Icon="320552" Priority="700" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="300272" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="300273" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="300274" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="300275" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="300276" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="300277" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="300278" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100027" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320554" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="25级猴子永久套装包" Icon="320555" Priority="699" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="100279" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="100280" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="100281" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="100282" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="100283" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="100284" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="100285" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100030" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320555" TimeLag="0" GroupNum="1" Price="120" VipPrice="120" SalePrice="120"/>
+        </ProductStore>
+    </Product>
+    <Product Name="25级兔子永久套装包" Icon="320555" Priority="699" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="200279" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="200280" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="200281" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="200282" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="200283" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="200284" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="200285" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100030" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320556" TimeLag="0" GroupNum="1" Price="120" VipPrice="120" SalePrice="120"/>
+        </ProductStore>
+    </Product>
+    <Product Name="25级熊猫永久套装包" Icon="320555" Priority="699" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="300279" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="300280" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="300281" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="300282" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="300283" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="300284" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="300285" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100030" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320557" TimeLag="0" GroupNum="1" Price="120" VipPrice="120" SalePrice="120"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="35级猴子永久套装包" Icon="320558" Priority="698" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="100286" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="100287" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="100288" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="100289" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="100290" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="100291" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="100292" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100033" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320558" TimeLag="0" GroupNum="1" Price="180" VipPrice="180" SalePrice="180"/>
+        </ProductStore>
+    </Product>
+    <Product Name="35级兔子永久套装包" Icon="320558" Priority="698" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="200286" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="200287" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="200288" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="200289" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="200290" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="200291" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="200292" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100033" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320559" TimeLag="0" GroupNum="1" Price="180" VipPrice="180" SalePrice="180"/>
+        </ProductStore>
+    </Product>
+    <Product Name="35级熊猫永久套装包" Icon="320558" Priority="698" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="300286" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="300287" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="300288" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="300289" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="300290" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="300291" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="300292" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100033" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320560" TimeLag="0" GroupNum="1" Price="180" VipPrice="180" SalePrice="180"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="45级猴子永久套装包" Icon="320561" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="100293" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="100294" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="100295" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="100296" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="100297" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="100298" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="100299" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100036" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320561" TimeLag="0" GroupNum="1" Price="280" VipPrice="280" SalePrice="280"/>
+        </ProductStore>
+    </Product>
+    <Product Name="45级兔子永久套装包" Icon="320561" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="200293" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="200294" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="200295" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="200296" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="200297" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="200298" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="200299" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100036" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320562" TimeLag="0" GroupNum="1" Price="280" VipPrice="280" SalePrice="280"/>
+        </ProductStore>
+    </Product>
+    <Product Name="45级熊猫永久套装包" Icon="320561" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="300293" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="300294" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="300295" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="300296" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="300297" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="300298" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="300299" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100036" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320563" TimeLag="0" GroupNum="1" Price="280" VipPrice="280" SalePrice="280"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="55级猴子永久套装包" Icon="320564" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="100300" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="100301" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="100302" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="100303" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="100304" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="100305" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="100306" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100039" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320564" TimeLag="0" GroupNum="1" Price="400" VipPrice="400" SalePrice="400"/>
+        </ProductStore>
+    </Product>
+    <Product Name="55级兔子永久套装包" Icon="320564" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="200300" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="200301" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="200302" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="200303" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="200304" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="200305" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="200306" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100039" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320565" TimeLag="0" GroupNum="1" Price="400" VipPrice="400" SalePrice="400"/>
+        </ProductStore>
+    </Product>
+    <Product Name="55级熊猫永久套装包" Icon="320564" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="300300" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="300301" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="300302" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="300303" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="300304" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="300305" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="300306" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100039" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320566" TimeLag="0" GroupNum="1" Price="400" VipPrice="400" SalePrice="400"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="15级龙人永久套装包" Icon="320552" Priority="700" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="490001" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="490002" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="490003" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="490004" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="490005" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="490006" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="490007" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100027" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320910" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+    <Product Name="25级龙人永久套装包" Icon="320552" Priority="699" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="490008" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="490009" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="490010" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="490011" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="490012" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="490013" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="490014" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100030" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320911" TimeLag="0" GroupNum="1" Price="120" VipPrice="120" SalePrice="120"/>
+        </ProductStore>
+    </Product>
+    <Product Name="35级龙人永久套装包" Icon="320552" Priority="698" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="490015" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="490016" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="490017" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="490018" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="490019" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="490020" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="490021" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100033" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320912" TimeLag="0" GroupNum="1" Price="180" VipPrice="180" SalePrice="180"/>
+        </ProductStore>
+    </Product>
+    <Product Name="45级龙人永久套装包" Icon="320552" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="490022" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="490023" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="490024" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="490025" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="490026" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="490027" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="490028" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100036" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320913" TimeLag="0" GroupNum="1" Price="280" VipPrice="280" SalePrice="280"/>
+        </ProductStore>
+    </Product>
+    <Product Name="55级龙人永久套装包" Icon="320552" Priority="697" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="490029" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="490030" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="490031" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="490032" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="490033" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="490034" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="490035" Name="武器" Type="1" SecType="8" count="1"/>
+            <Item ID="1100039" Name="饰品" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320914" TimeLag="0" GroupNum="1" Price="400" VipPrice="400" SalePrice="400"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="65级龙人永久套装包" Icon="320552" Priority="695" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="490078" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="490079" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="490080" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="490081" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="490082" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="490083" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="490084" Name="武器" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320938" TimeLag="0" GroupNum="1" Price="550" VipPrice="550" SalePrice="550"/>
+        </ProductStore>
+    </Product>
+	
+	    <Product Name="65级猴子永久套装包" Icon="320552" Priority="695" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="190001" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="190002" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="190003" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="190004" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="190005" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="190006" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="190007" Name="武器" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320939" TimeLag="0" GroupNum="1" Price="550" VipPrice="550" SalePrice="550"/>
+        </ProductStore>
+    </Product>
+
+	    <Product Name="65级兔子永久套装包" Icon="320552" Priority="695" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="290001" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="290002" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="290003" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="290004" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="290005" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="290006" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="290007" Name="武器" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320940" TimeLag="0" GroupNum="1" Price="550" VipPrice="550" SalePrice="550"/>
+        </ProductStore>
+    </Product>
+
+	    <Product Name="65级熊猫永久套装包" Icon="320552" Priority="695" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+        <ProductItem>
+            <Item ID="390001" Name="头部" Type="1" SecType="1" count="1"/>
+            <Item ID="390002" Name="上装" Type="1" SecType="2" count="1"/>
+            <Item ID="390003" Name="下装" Type="1" SecType="3" count="1"/>
+            <Item ID="390004" Name="护手" Type="1" SecType="4" count="1"/>
+            <Item ID="390005" Name="腰带" Type="1" SecType="5" count="1"/>
+            <Item ID="390006" Name="鞋子" Type="1" SecType="6" count="1"/>
+            <Item ID="390007" Name="武器" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320941" TimeLag="0" GroupNum="1" Price="550" VipPrice="550" SalePrice="550"/>
+        </ProductStore>
+    </Product>
+	<Product Name="60级龙人永久套装包" Icon="320552" Priority="696" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+		<ProductItem>
+			<Item ID="490057" Name="星耀护额" Type="1" SecType="1" count="1"/>
+			<Item ID="490058" Name="星耀胸甲" Type="1" SecType="2" count="1"/>
+			<Item ID="490059" Name="星耀裤腿" Type="1" SecType="3" count="1"/>
+			<Item ID="490060" Name="星耀护手" Type="1" SecType="4" count="1"/>
+			<Item ID="490061" Name="星耀皮带" Type="1" SecType="5" count="1"/>
+			<Item ID="490062" Name="星耀龙靴" Type="1" SecType="6" count="1"/>
+			<Item ID="490063" Name="星耀扇" Type="1" SecType="8" count="1"/>
+		</ProductItem>
+		<ProductStore>
+			<Store StoreId="320945" TimeLag="0" GroupNum="1" Price="480" VipPrice="480" SalePrice="480"/>
+		</ProductStore>
+	</Product>
+	<Product Name="60级猴子永久套装包" Icon="320552" Priority="696" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+		<ProductItem>
+			<Item ID="100378" Name="百雷头甲" Type="1" SecType="1" count="1"/>
+			<Item ID="100379" Name="百雷战甲" Type="1" SecType="2" count="1"/>
+			<Item ID="100380" Name="百雷腿甲" Type="1" SecType="3" count="1"/>
+			<Item ID="100381" Name="百雷手甲" Type="1" SecType="4" count="1"/>
+			<Item ID="100382" Name="百雷护腰" Type="1" SecType="5" count="1"/>
+			<Item ID="100383" Name="百雷皮靴" Type="1" SecType="6" count="1"/>
+			<Item ID="100384" Name="定海神猴棍" Type="1" SecType="8" count="1"/>
+		</ProductItem>
+		<ProductStore>
+			<Store StoreId="320946" TimeLag="0" GroupNum="1" Price="480" VipPrice="480" SalePrice="480"/>
+		</ProductStore>
+	</Product>
+	<Product Name="60级兔子永久套装包" Icon="320552" Priority="696" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+		<ProductItem>
+			<Item ID="200378" Name="御剑头带" Type="1" SecType="1" count="1"/>
+			<Item ID="200379" Name="御剑护胸" Type="1" SecType="2" count="1"/>
+			<Item ID="200380" Name="御剑护腿" Type="1" SecType="3" count="1"/>
+			<Item ID="200381" Name="御剑护手" Type="1" SecType="4" count="1"/>
+			<Item ID="200382" Name="御剑束腰" Type="1" SecType="5" count="1"/>
+			<Item ID="200383" Name="御剑长靴" Type="1" SecType="6" count="1"/>
+			<Item ID="200384" Name="六莲阎火刃" Type="1" SecType="8" count="1"/>
+		</ProductItem>
+		<ProductStore>
+			<Store StoreId="320947" TimeLag="0" GroupNum="1" Price="480" VipPrice="480" SalePrice="480"/>
+		</ProductStore>
+	</Product>
+	<Product Name="60级熊猫永久套装包" Icon="320552" Priority="696" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" isBox="1">
+		<ProductItem>
+			<Item ID="300378" Name="神意头盔" Type="1" SecType="1" count="1"/>
+			<Item ID="300379" Name="神意铠甲" Type="1" SecType="2" count="1"/>
+			<Item ID="300380" Name="神意腿铠" Type="1" SecType="3" count="1"/>
+			<Item ID="300381" Name="神意钢腕" Type="1" SecType="4" count="1"/>
+			<Item ID="300382" Name="神意腰带" Type="1" SecType="5" count="1"/>
+			<Item ID="300383" Name="神意战靴" Type="1" SecType="6" count="1"/>
+			<Item ID="300384" Name="五曜星尘锤" Type="1" SecType="8" count="1"/>
+		</ProductItem>
+		<ProductStore>
+			<Store StoreId="320948" TimeLag="0" GroupNum="1" Price="480" VipPrice="480" SalePrice="480"/>
+		</ProductStore>
+	</Product>
+<!-- 装备道具 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+         <!-- 猴子 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+<!--
+    <Product Name="初心者头甲" Icon="320108" Priority="40" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100272" Name="初心者头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320108" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320207" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320213" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者战甲" Icon="320109" Priority="39" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100273" Name="初心者战甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320109" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320208" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320214" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者腿甲" Icon="320110" Priority="38" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100274" Name="初心者腿甲" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320110" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320209" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320215" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者手甲" Icon="320111" Priority="37" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100275" Name="初心者手甲" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320111" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320210" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320216" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者护腰" Icon="320112" Priority="36" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100276" Name="初心者护腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320112" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320211" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320217" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者皮靴" Icon="320113" Priority="35" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100277" Name="初心者皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320113" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320212" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320218" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="黑钢" Icon="320506" Priority="34" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100278" Name="黑钢" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320506" TimeLag="3" GroupNum="1" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320507" TimeLag="30" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320508" TimeLag="0" GroupNum="1" Price="36" VipPrice="36" SalePrice="36"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="好战者的头甲" Icon="320114" Priority="33" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100279" Name="好战者的头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320114" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320219" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320225" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的战甲" Icon="320115" Priority="32" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100280" Name="好战者的战甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320115" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320220" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320226" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的腿甲" Icon="320116" Priority="31" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100281" Name="好战者的腿甲" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320116" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320221" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320227" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的手甲" Icon="320117" Priority="30" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100282" Name="好战者手甲" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320117" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320222" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320228" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的护腰" Icon="320118" Priority="29" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100283" Name="好战者的护腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320118" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320223" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320229" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的皮靴" Icon="320119" Priority="28" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100284" Name="好战者的皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320119" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320224" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320230" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="龙钢" Icon="320509" Priority="27" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100285" Name="龙钢" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320509" TimeLag="3" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320510" TimeLag="30" GroupNum="1" Price="33" VipPrice="33" SalePrice="33"/>
+            <Store StoreId="320511" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="天一头甲" Icon="320120" Priority="26" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100286" Name="天一头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320120" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320231" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320237" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天一战甲" Icon="320121" Priority="25" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100287" Name="天一战甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320121" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320232" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320238" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天一腿甲" Icon="320122" Priority="24" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100288" Name="天一腿甲" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320122" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320233" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320239" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天一手甲" Icon="320123" Priority="23" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100289" Name="天一手甲" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320123" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320234" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320240" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天一护腰" Icon="320124" Priority="22" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100290" Name="天一护腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320124" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320235" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320241" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天一皮靴" Icon="320125" Priority="21" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100291" Name="天一皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320125" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320236" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320242" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="荆棘之枪" Icon="320512" Priority="20" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100292" Name="荆棘之枪" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320512" TimeLag="3" GroupNum="1" Price="48" VipPrice="48" SalePrice="48"/>
+            <Store StoreId="320513" TimeLag="30" GroupNum="1" Price="88" VipPrice="88" SalePrice="88"/>
+            <Store StoreId="320514" TimeLag="0" GroupNum="1" Price="138" VipPrice="138" SalePrice="138"/>
+        </ProductStore>
+    </Product>
+-->
+<!-- 猴子45-55 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+    <Product Name="六合神将头甲" Icon="320126" Priority="19" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100293" Name="六合神将头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320126" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320243" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320297" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="六合神将战甲" Icon="320127" Priority="18" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100294" Name="六合神将战甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320127" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320244" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320298" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="六合神将腿甲" Icon="320128" Priority="17" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100295" Name="六合神将腿甲" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320128" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320245" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320299" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="六合神将手甲" Icon="320129" Priority="16" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100296" Name="六合神将手甲" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320129" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320246" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320300" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="六合神将护腰" Icon="320130" Priority="15" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100297" Name="六合神将护腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320130" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320247" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320301" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="六合神将皮靴" Icon="320131" Priority="14" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100298" Name="六合神将皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320131" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320248" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320302" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="龙虎八卦棍" Icon="320515" Priority="13" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100299" Name="龙虎八卦棍" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320515" TimeLag="3" GroupNum="1" Price="98" VipPrice="98" SalePrice="98"/>
+            <Store StoreId="320516" TimeLag="30" GroupNum="1" Price="178" VipPrice="178" SalePrice="178"/>
+            <Store StoreId="320517" TimeLag="0" GroupNum="1" Price="388" VipPrice="388" SalePrice="388"/>
+        </ProductStore>
+    </Product>
+
+   <Product Name="风魔头甲" Icon="320132" Priority="12" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100300" Name="风魔头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320132" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320249" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320255" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="风魔战甲" Icon="320133" Priority="11" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100301" Name="风魔战甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320133" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320250" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320256" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="风魔腿甲" Icon="320134" Priority="10" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100302" Name="风魔腿甲" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320134" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320251" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320257" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="风魔手甲" Icon="320135" Priority="9" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100303" Name="风魔手甲" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320135" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320252" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320258" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="风魔护腰" Icon="320136" Priority="8" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100304" Name="风魔护腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320136" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320253" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320259" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="风魔皮靴" Icon="320137" Priority="7" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100305" Name="风魔皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320137" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320254" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320260" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="昊天惊神棍" Icon="320518" Priority="6" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100306" Name="昊天惊神棍" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320518" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320519" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320520" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+<!-- 猴子 60-65  If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+    <Product Name="百雷头甲" Icon="320742" Priority="51" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100378" Name="百雷头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320742" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320743" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320744" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="百雷战甲" Icon="320745" Priority="52" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100379" Name="百雷战甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320745" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320746" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320747" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="百雷腿甲" Icon="320748" Priority="53" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100380" Name="百雷腿甲" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320748" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320749" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320750" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="百雷手甲" Icon="320751" Priority="54" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100381" Name="百雷手甲" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320751" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320752" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320753" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="百雷护腰" Icon="320754" Priority="55" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100382" Name="百雷护腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320754" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320755" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320756" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="百雷皮靴" Icon="320757" Priority="56" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100383" Name="百雷皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320757" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320758" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320759" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="定海神猴棍" Icon="320733" Priority="57" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="100384" Name="昊天惊神棍" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320733" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320734" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320735" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="紫耀头甲" Icon="190001" IsItemIcon="1" Priority="810" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="190001" Name="紫耀头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320825" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320826" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320827" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紫耀胸甲" Icon="190002" IsItemIcon="1" Priority="809" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="190002" Name="紫耀胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320828" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320829" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320830" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紫耀护腿" Icon="190003" IsItemIcon="1" Priority="808" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="190003" Name="紫耀护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320831" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320832" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320833" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紫耀护手" Icon="190004" IsItemIcon="1" Priority="807" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="190004" Name="紫耀护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320834" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320835" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320836" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紫耀腰带" Icon="190005" IsItemIcon="1" Priority="806" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="190005" Name="紫耀腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320837" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320838" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320839" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紫耀战靴" Icon="190006" IsItemIcon="1" Priority="805" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="190006" Name="紫耀战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320840" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320841" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320842" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紫金破狼棍" Icon="190007" IsItemIcon="1" Priority="804" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="190007" Name="紫金破狼棍" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320843" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320844" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320845" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+
+
+
+
+<!-- 兔子 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+
+<!--
+    <Product Name="初心者头带" Icon="320138" Priority="40" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200272" Name="初心者头带" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320138" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320261" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320267" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者护胸" Icon="320139" Priority="39" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200273" Name="初心者护胸" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320139" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320262" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320268" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者护腿" Icon="320140" Priority="38" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200274" Name="初心者护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320140" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320263" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320269" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者护手" Icon="320141" Priority="37" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200275" Name="初心者护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320141" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320264" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320270" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者束腰" Icon="320142" Priority="36" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200276" Name="初心者束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320142" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320265" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320271" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者长靴" Icon="320143" Priority="35" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200277" Name="初心者皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320143" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320266" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320272" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="折风刃" Icon="320521" Priority="34" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200278" Name="折风刃" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320521" TimeLag="3" GroupNum="1" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320522" TimeLag="30" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320523" TimeLag="0" GroupNum="1" Price="36" VipPrice="36" SalePrice="36"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的头带" Icon="320144" Priority="33" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200279" Name="好战者的头带" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320144" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320273" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320279" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的护胸" Icon="320145" Priority="32" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200280" Name="好战者的护胸" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320145" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320274" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320280" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的护腿" Icon="320146" Priority="31" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200281" Name="好战者的护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320146" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320275" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320281" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的护手" Icon="320147" Priority="30" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200282" Name="好战者护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320147" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320276" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320282" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的束腰" Icon="320148" Priority="29" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200283" Name="好战者的束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320148" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320277" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320283" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的长靴" Icon="320149" Priority="28" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200284" Name="好战者的长靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320149" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320278" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320284" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="紅姬刃" Icon="320524" Priority="27" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200285" Name="紅姬刃" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320524" TimeLag="3" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320525" TimeLag="30" GroupNum="1" Price="33" VipPrice="33" SalePrice="33"/>
+            <Store StoreId="320526" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="太阴头带" Icon="320150" Priority="26" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200286" Name="太阴头带" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320150" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320285" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320291" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="太阴护胸" Icon="320151" Priority="25" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200287" Name="太阴护胸" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320151" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320286" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320292" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="太阴护腿" Icon="320152" Priority="24" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200288" Name="太阴护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320152" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320287" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320293" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="太阴护手" Icon="320153" Priority="23" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200289" Name="太阴护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320153" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320288" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320294" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="太阴束腰" Icon="320154" Priority="22" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200290" Name="太阴束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320154" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320289" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320295" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="太阴长靴" Icon="320155" Priority="21" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200291" Name="太阴长靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320155" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320290" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320296" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="飞梅刃" Icon="320527" Priority="20" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200292" Name="飞梅刃" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320527" TimeLag="3" GroupNum="1" Price="48" VipPrice="48" SalePrice="48"/>
+            <Store StoreId="320528" TimeLag="30" GroupNum="1" Price="88" VipPrice="88" SalePrice="88"/>
+            <Store StoreId="320529" TimeLag="0" GroupNum="1" Price="138" VipPrice="138" SalePrice="138"/>
+        </ProductStore>
+    </Product>
+-->
+
+<!-- 兔子45-55 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+    <Product Name="腾蛇神将头带" Icon="320156" Priority="19" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200293" Name="腾蛇神将头带" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320156" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320303" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320309" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="腾蛇神将护胸" Icon="320157" Priority="18" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200294" Name="腾蛇神将护胸" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320157" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320304" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320310" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="腾蛇神将护腿" Icon="320158" Priority="17" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200295" Name="腾蛇神将护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320158" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320305" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320311" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="腾蛇神将护手" Icon="320159" Priority="16" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200296" Name="腾蛇神将护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320159" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320306" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320312" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="腾蛇神将束腰" Icon="320160" Priority="15" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200297" Name="腾蛇神将束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320160" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320307" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320313" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="腾蛇神将长靴" Icon="320161" Priority="14" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200298" Name="腾蛇神将长靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320161" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320308" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320314" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="狂骨刃" Icon="320530" Priority="13" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200299" Name="狂骨刃" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320530" TimeLag="3" GroupNum="1" Price="98" VipPrice="98" SalePrice="98"/>
+            <Store StoreId="320531" TimeLag="30" GroupNum="1" Price="178" VipPrice="178" SalePrice="178"/>
+            <Store StoreId="320532" TimeLag="0" GroupNum="1" Price="388" VipPrice="388" SalePrice="388"/>
+        </ProductStore>
+    </Product>
+
+   <Product Name="翼神头带" Icon="320162" Priority="12" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200300" Name="翼神头带" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320162" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320315" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320321" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="翼神护胸" Icon="320163" Priority="11" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200301" Name="翼神护胸" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320163" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320316" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320322" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="翼神护腿" Icon="320164" Priority="10" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200302" Name="翼神护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320164" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320317" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320323" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="翼神护手" Icon="320165" Priority="9" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200303" Name="翼神护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320165" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320318" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320324" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="翼神束腰" Icon="320166" Priority="8" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200304" Name="翼神束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320166" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320319" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320325" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="翼神长靴" Icon="320167" Priority="7" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200305" Name="翼神长靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320167" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320320" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320326" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="红莲双杀刃" Icon="320533" Priority="6" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200306" Name="红莲双杀刃" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320533" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320534" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320535" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+
+<!-- 兔子 60-65  If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+   <Product Name="御剑头带" Icon="320760" Priority="51" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200378" Name="御剑头带" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320760" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320761" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320762" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="御剑护胸" Icon="320763" Priority="52" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200379" Name="御剑护胸" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320763" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320764" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320765" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="御剑护腿" Icon="320766" Priority="53" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200380" Name="御剑护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320766" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320767" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320768" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="御剑护手" Icon="320769" Priority="54" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200381" Name="御剑护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320769" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320770" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320771" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="御剑束腰" Icon="320772" Priority="55" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200382" Name="御剑束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320772" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320773" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320774" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="御剑长靴" Icon="320775" Priority="56" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200383" Name="御剑长靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320775" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320776" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320777" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="六莲阎火刃" Icon="320736" Priority="57" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="200384" Name="六莲阎火刃" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320736" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320737" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320738" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="剑耀头甲" Icon="290001" IsItemIcon="1" Priority="810" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="290001" Name="剑耀头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320846" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320847" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320848" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="剑耀胸甲" Icon="290002" IsItemIcon="1" Priority="809" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="290002" Name="剑耀胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320849" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320850" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320851" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="剑耀护腿" Icon="290003" IsItemIcon="1" Priority="808" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="290003" Name="剑耀护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320852" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320853" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320854" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="剑耀护手" Icon="290004" IsItemIcon="1" Priority="807" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="290004" Name="剑耀护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320855" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320856" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320857" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="剑耀腰带" Icon="290005" IsItemIcon="1" Priority="806" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="290005" Name="剑耀腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320858" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320859" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320860" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="剑耀战靴" Icon="290006" IsItemIcon="1" Priority="805" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="290006" Name="剑耀战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320861" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320862" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320863" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="剑耀暗血刃" Icon="290007" IsItemIcon="1" Priority="804" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="290007" Name="剑耀暗血刃" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320864" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320865" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320866" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>	
+
+<!-- 熊猫 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+<!--
+    <Product Name="初心者头盔" Icon="320168" Priority="40" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300272" Name="初心者头盔" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320168" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320327" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320333" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者铠甲" Icon="320169" Priority="39" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300273" Name="初心者铠甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320169" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320328" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320334" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者腿铠" Icon="320170" Priority="38" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300274" Name="初心者腿铠" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320170" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320329" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320335" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者钢腕" Icon="320171" Priority="37" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300275" Name="初心者钢腕" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320171" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320330" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320336" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者腰带" Icon="320172" Priority="36" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300276" Name="初心者束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320172" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320331" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320337" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者战靴" Icon="320173" Priority="35" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300277" Name="初心者皮靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320173" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320332" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320338" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="混灵锤" Icon="320536" Priority="34" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300278" Name="混灵锤" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320536" TimeLag="3" GroupNum="1" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320537" TimeLag="30" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320538" TimeLag="0" GroupNum="1" Price="36" VipPrice="36" SalePrice="36"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的头盔" Icon="320174" Priority="33" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300279" Name="好战者的头盔" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320174" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320339" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320345" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的铠甲" Icon="320175" Priority="32" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300280" Name="好战者的铠甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320175" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320340" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320346" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的腿铠" Icon="320176" Priority="31" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300281" Name="好战者的腿铠" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320176" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320341" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320347" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的钢腕" Icon="320177" Priority="30" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300282" Name="好战者钢腕" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320177" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320342" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320348" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的腰带" Icon="320178" Priority="29" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300283" Name="好战者的束腰" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320178" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320343" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320349" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者的战靴" Icon="320179" Priority="28" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300284" Name="好战者的战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320179" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320344" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320350" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="狂灵锤" Icon="320539" Priority="27" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300285" Name="狂灵锤" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320539" TimeLag="3" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320540" TimeLag="30" GroupNum="1" Price="33" VipPrice="33" SalePrice="33"/>
+            <Store StoreId="320541" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+    <Product Name="少阳头盔" Icon="320180" Priority="26" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300286" Name="少阳头盔" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320180" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320351" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320357" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="少阳铠甲" Icon="320181" Priority="25" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300287" Name="少阳铠甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320181" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320352" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320358" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="少阳腿铠" Icon="320182" Priority="24" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300288" Name="少阳腿铠" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320182" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320353" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320359" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="少阳钢腕" Icon="320183" Priority="23" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300289" Name="少阳钢腕" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320183" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320354" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320360" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="少阳腰带" Icon="320184" Priority="22" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300290" Name="少阳腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320184" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320355" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320361" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="少阳战靴" Icon="320185" Priority="21" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300291" Name="少阳战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320185" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320356" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320362" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="雷王镇天锤" Icon="320542" Priority="20" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300292" Name="雷王镇天锤" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320542" TimeLag="3" GroupNum="1" Price="48" VipPrice="48" SalePrice="48"/>
+            <Store StoreId="320543" TimeLag="30" GroupNum="1" Price="88" VipPrice="88" SalePrice="88"/>
+            <Store StoreId="320544" TimeLag="0" GroupNum="1" Price="138" VipPrice="138" SalePrice="138"/>
+        </ProductStore>
+    </Product>
+-->
+<!-- 熊猫45-55 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+    <Product Name="勾阵神将头盔" Icon="320186" Priority="19" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300293" Name="勾阵神将头盔" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320186" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320363" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320369" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="勾阵神将铠甲" Icon="320187" Priority="18" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300294" Name="勾阵神将铠甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320187" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320364" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320370" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="勾阵神将腿铠" Icon="320188" Priority="17" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300295" Name="勾阵神将腿铠" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320188" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320365" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320371" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="勾阵神将钢腕" Icon="320189" Priority="16" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300296" Name="勾阵神将钢腕" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320189" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320366" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320372" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="勾阵神将腰带" Icon="320190" Priority="15" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300297" Name="勾阵神将腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320190" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320367" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320373" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="勾阵神将战靴" Icon="320191" Priority="14" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300298" Name="勾阵神将战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320191" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320368" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320374" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="裂空百斩锤" Icon="320545" Priority="13" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300299" Name="裂空百斩锤" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320545" TimeLag="3" GroupNum="1" Price="98" VipPrice="98" SalePrice="98"/>
+            <Store StoreId="320546" TimeLag="30" GroupNum="1" Price="178" VipPrice="178" SalePrice="178"/>
+            <Store StoreId="320547" TimeLag="0" GroupNum="1" Price="388" VipPrice="388" SalePrice="388"/>
+        </ProductStore>
+    </Product>
+
+   <Product Name="天王头盔" Icon="320192" Priority="12" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300300" Name="天王头盔" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320192" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320375" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320381" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天王铠甲" Icon="320193" Priority="11" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300301" Name="天王铠甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320193" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320376" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320382" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天王腿铠" Icon="320194" Priority="10" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300302" Name="天王腿铠" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320194" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320377" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320383" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天王钢腕" Icon="320195" Priority="9" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300303" Name="天王钢腕" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320195" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320378" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320384" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天王腰带" Icon="320196" Priority="8" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300304" Name="天王腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320196" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320379" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320385" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天王战靴" Icon="320197" Priority="7" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300305" Name="天王战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320197" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320380" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320386" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天煌圣力锤" Icon="320548" Priority="6" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300306" Name="天煌圣力锤" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320548" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320549" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320550" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+
+<!-- 熊猫 60-65  If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+   <Product Name="神意头盔" Icon="320778" Priority="51" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300378" Name="神意头盔" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320778" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320779" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320780" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神意铠甲" Icon="320781" Priority="52" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300379" Name="神意铠甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320781" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320782" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320783" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神意腿铠" Icon="320784" Priority="53" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300380" Name="神意腿铠" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320784" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320785" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320786" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神意钢腕" Icon="320787" Priority="54" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300381" Name="神意钢腕" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320787" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320788" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320789" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神意腰带" Icon="320790" Priority="55" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300382" Name="神意腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320790" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320791" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320792" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神意战靴" Icon="320793" Priority="56" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300383" Name="神意战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320793" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320794" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320795" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="五曜星尘锤" Icon="320739" Priority="57" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="300384" Name="天煌圣力锤" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320739" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320740" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320741" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+    <Product Name="晶耀头甲" Icon="390001" IsItemIcon="1" Priority="810" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="390001" Name="晶耀头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320867" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320868" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320869" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="晶耀胸甲" Icon="390002" IsItemIcon="1" Priority="809" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="390002" Name="晶耀胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320870" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320871" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320872" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="晶耀护腿" Icon="390003" IsItemIcon="1" Priority="808" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="390003" Name="晶耀护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320873" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320874" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320875" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="晶耀护手" Icon="390004" IsItemIcon="1" Priority="807" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="390004" Name="晶耀护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320876" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320877" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320878" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="晶耀腰带" Icon="390005" IsItemIcon="1" Priority="806" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="390005" Name="晶耀腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320879" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320880" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320881" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="晶耀战靴" Icon="390006" IsItemIcon="1" Priority="805" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="390006" Name="晶耀战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320882" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320883" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320884" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="晶耀星尘锤" Icon="390007" IsItemIcon="1" Priority="804" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="390007" Name="晶耀星尘锤" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320885" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320886" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320887" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>	
+
+
+<!-- 龙人 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+<!--
+    <Product Name="初心者护额" Icon="320607" Priority="40" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="490001" Name="初心者护额" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320607" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320608" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320609" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者胸甲" Icon="320610" Priority="39" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="490002" Name="初心者胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320610" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320611" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320612" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者裤腿" Icon="320613" Priority="38" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="490003" Name="初心者裤腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320613" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320614" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320615" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者护手" Icon="320616" Priority="37" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="490004" Name="初心者护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320616" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320617" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320618" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者皮带" Icon="320619" Priority="36" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="490005" Name="初心者皮带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320619" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320620" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320621" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="初心者龙靴" Icon="320622" Priority="35" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="490006" Name="初心者龙靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320622" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320623" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320624" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="流缨扇" Icon="320715" Priority="34" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="490007" Name="流缨扇" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320715" TimeLag="3" GroupNum="1" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320716" TimeLag="30" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320717" TimeLag="0" GroupNum="1" Price="36" VipPrice="36" SalePrice="36"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者护额" Icon="320625" Priority="33" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490008" Name="好战者护额" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320625" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320626" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320627" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者胸甲" Icon="320628" Priority="32" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490009" Name="好战者胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320628" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320629" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320630" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者裤腿" Icon="320631" Priority="31" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490010" Name="好战者裤腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320631" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320632" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320633" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者护手" Icon="320634" Priority="30" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490011" Name="好战者护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320634" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320635" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320636" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者皮带" Icon="320637" Priority="29" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490012" Name="好战者皮带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320637" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320638" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320639" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="好战者龙靴" Icon="320640" Priority="28" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490013" Name="好战者龙靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320640" TimeLag="3" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320641" TimeLag="30" GroupNum="1" Price="20" VipPrice="20" SalePrice="20"/>
+            <Store StoreId="320642" TimeLag="0" GroupNum="1" Price="45" VipPrice="45" SalePrice="45"/>
+        </ProductStore>
+    </Product>
+    <Product Name="魔血扇" Icon="320718" Priority="27" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490014" Name="魔血扇" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320718" TimeLag="3" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320719" TimeLag="30" GroupNum="1" Price="33" VipPrice="33" SalePrice="33"/>
+            <Store StoreId="320720" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天空护额" Icon="320643" Priority="26" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490015" Name="天空护额" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320643" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320644" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320645" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天空胸甲" Icon="320646" Priority="25" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490016" Name="天空胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320646" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320647" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320648" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天空裤腿" Icon="320649" Priority="24" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490017" Name="天空裤腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320649" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320650" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320651" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天空护手" Icon="320652" Priority="23" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490018" Name="天空护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320652" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320653" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320654" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天空皮带" Icon="320655" Priority="22" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490019" Name="天空皮带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320655" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320656" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320657" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="天空龙靴" Icon="320658" Priority="21" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490020" Name="天空龙靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320658" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320659" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320660" TimeLag="0" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+        </ProductStore>
+    </Product>
+    <Product Name="神泣扇" Icon="320721" Priority="20" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490021" Name="神泣扇" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320721" TimeLag="3" GroupNum="1" Price="48" VipPrice="48" SalePrice="48"/>
+            <Store StoreId="320722" TimeLag="30" GroupNum="1" Price="88" VipPrice="88" SalePrice="88"/>
+            <Store StoreId="320723" TimeLag="0" GroupNum="1" Price="138" VipPrice="138" SalePrice="138"/>
+        </ProductStore>
+     </Product>
+-->
+
+<!-- 龙人 45-65 If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+    <Product Name="摩虎神将护额" Icon="320661" Priority="19" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490022" Name="摩虎神将护额" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320661" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320662" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320663" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="摩虎神将胸甲" Icon="320664" Priority="18" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490023" Name="摩虎神将胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320664" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320665" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320666" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="摩虎神将裤腿" Icon="320667" Priority="17" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490024" Name="摩虎神将裤腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320667" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320668" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320669" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="摩虎神将护手" Icon="320670" Priority="16" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490025" Name="摩虎神将护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320670" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320671" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320672" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="摩虎神将皮带" Icon="320673" Priority="15" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490026" Name="摩虎神将皮带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320673" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320674" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320675" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="摩虎神将龙靴" Icon="320676" Priority="14" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490027" Name="摩虎神将龙靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320676" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320677" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320678" TimeLag="0" GroupNum="1" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+    <Product Name="白金龙骨扇" Icon="320724" Priority="13" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490028" Name="白金龙骨扇" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320724" TimeLag="3" GroupNum="1" Price="98" VipPrice="98" SalePrice="98"/>
+            <Store StoreId="320725" TimeLag="30" GroupNum="1" Price="178" VipPrice="178" SalePrice="178"/>
+            <Store StoreId="320726" TimeLag="0" GroupNum="1" Price="388" VipPrice="388" SalePrice="388"/>
+        </ProductStore>
+    </Product>
+
+   <Product Name="斗魁护额" Icon="320679" Priority="12" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490029" Name="斗魁护额" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320679" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320680" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320681" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="斗魁胸甲" Icon="320682" Priority="11" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490030" Name="斗魁胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320682" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320683" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320684" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="斗魁裤腿" Icon="320685" Priority="10" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490031" Name="斗魁裤腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320685" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320686" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320687" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="斗魁护手" Icon="320688" Priority="9" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490032" Name="斗魁护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320688" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320689" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320690" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="斗魁皮带" Icon="320691" Priority="8" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490033" Name="斗魁皮带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320691" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320692" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320693" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="斗魁龙靴" Icon="320694" Priority="7" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490034" Name="斗魁龙靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320694" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320695" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320696" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="耀金天龙扇" Icon="320727" Priority="6" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490035" Name="耀金天龙扇" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320727" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320728" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320729" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+   <Product Name="星耀护额" Icon="490057" IsItemIcon="1" Priority="51" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490057" Name="星耀护额" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320697" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320698" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320699" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="星耀胸甲" Icon="490058" IsItemIcon="1" Priority="52" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490058" Name="星耀胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320700" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320701" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320702" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="星耀裤腿" Icon="490059" IsItemIcon="1" Priority="53" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490059" Name="星耀裤腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320703" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320704" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320705" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="星耀护手" Icon="490060" IsItemIcon="1" Priority="54" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490060" Name="星耀护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320706" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320707" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320708" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="星耀皮带" Icon="490061" IsItemIcon="1" Priority="55" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490061" Name="星耀皮带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320709" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320710" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320711" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="星耀龙靴" Icon="490062" IsItemIcon="1" Priority="56" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490062" Name="星耀龙靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320712" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320713" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320714" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="星耀扇" Icon="490063" IsItemIcon="1" Priority="57" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490063" Name="星耀扇" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320730" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320731" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320732" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>
+
+
+    <Product Name="龙耀头甲" Icon="490078" IsItemIcon="1" Priority="810" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490078" Name="龙耀头甲" Type="1" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320888" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320889" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320890" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="龙耀胸甲" Icon="490079" IsItemIcon="1" Priority="809" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490079" Name="龙耀胸甲" Type="1" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320891" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320892" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320893" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="龙耀护腿" Icon="490080" IsItemIcon="1" Priority="808" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490080" Name="龙耀护腿" Type="1" SecType="3" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320894" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320895" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320896" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>
+    <Product Name="龙耀护手" Icon="490081" IsItemIcon="1" Priority="807" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490081" Name="龙耀护手" Type="1" SecType="4" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320897" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320898" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320899" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="龙耀腰带" Icon="490082" IsItemIcon="1" Priority="806" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490082" Name="龙耀腰带" Type="1" SecType="5" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320900" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320901" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320902" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="龙耀战靴" Icon="490083" IsItemIcon="1" Priority="805" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490083" Name="龙耀战靴" Type="1" SecType="6" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320903" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320904" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320905" TimeLag="0" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+        </ProductStore>
+    </Product>	
+    <Product Name="龙耀神莲扇" Icon="490084" IsItemIcon="1" Priority="804" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="490084" Name="龙耀神莲扇" Type="1" SecType="8" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320906" TimeLag="3" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+            <Store StoreId="320907" TimeLag="30" GroupNum="1" Price="200" VipPrice="200" SalePrice="200"/>
+            <Store StoreId="320908" TimeLag="0" GroupNum="1" Price="418" VipPrice="418" SalePrice="418"/>
+        </ProductStore>
+    </Product>	
+
+
+
+<!-- 配件（包含戒指、项链、饰品） If Type=1; Then 1:头部 2:上装 3:下装 4:手部 5:腰带 6:鞋子 7:配件 8:武器 -->
+    <Product Name="南风之弦（戒指）" Icon="320464" Priority="41" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100026" Name="南风之弦" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320464" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320465" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320466" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="东风之环（项链）" Icon="320461" Priority="42" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100025" Name="东风之环" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320461" TimeLag="3" GroupNum="1" Price="5" VipPrice="5" SalePrice="5"/>
+            <Store StoreId="320462" TimeLag="30" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320463" TimeLag="0" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+        </ProductStore>
+    </Product>
+    <Product Name="碧水之弦（戒指）" Icon="320473" Priority="43" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100029" Name="碧水之弦" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320473" TimeLag="3" GroupNum="1" Price="12" VipPrice="12" SalePrice="12"/>
+            <Store StoreId="320474" TimeLag="30" GroupNum="1" Price="24" VipPrice="24" SalePrice="24"/>
+            <Store StoreId="320475" TimeLag="0" GroupNum="1" Price="48" VipPrice="48" SalePrice="48"/>
+        </ProductStore>
+    </Product>
+    <Product Name="烈焰之环（项链）" Icon="320470" Priority="44" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100028" Name="烈焰之环" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320470" TimeLag="3" GroupNum="1" Price="12" VipPrice="12" SalePrice="12"/>
+            <Store StoreId="320471" TimeLag="30" GroupNum="1" Price="24" VipPrice="24" SalePrice="24"/>
+            <Store StoreId="320472" TimeLag="0" GroupNum="1" Price="48" VipPrice="48" SalePrice="48"/>
+        </ProductStore>
+    </Product>
+    <Product Name="战栗之刻（戒指）" Icon="320482" Priority="45" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100032" Name="战栗之刻" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320482" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320483" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320484" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+    <Product Name="艾露之心（项链）" Icon="320479" Priority="46" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100031" Name="艾露之心" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320479" TimeLag="3" GroupNum="1" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320480" TimeLag="30" GroupNum="1" Price="30" VipPrice="30" SalePrice="30"/>
+            <Store StoreId="320481" TimeLag="0" GroupNum="1" Price="60" VipPrice="60" SalePrice="60"/>
+        </ProductStore>
+    </Product>
+    <Product Name="修罗戒指（戒指）" Icon="320491" Priority="47" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100035" Name="修罗戒指" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320491" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320492" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320493" TimeLag="0" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+        </ProductStore>
+    </Product>
+    <Product Name="秘罗项链（项链）" Icon="320488" Priority="48" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100034" Name="秘罗项链" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320488" TimeLag="3" GroupNum="1" Price="25" VipPrice="25" SalePrice="25"/>
+            <Store StoreId="320489" TimeLag="30" GroupNum="1" Price="50" VipPrice="50" SalePrice="50"/>
+            <Store StoreId="320490" TimeLag="0" GroupNum="1" Price="108" VipPrice="108" SalePrice="108"/>
+        </ProductStore>
+    </Product>
+    <Product Name="北斗之弦（戒指）" Icon="320500" Priority="49" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100038" Name="北斗之弦" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320500" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320501" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320502" TimeLag="0" GroupNum="1" Price="208" VipPrice="208" SalePrice="208"/>
+        </ProductStore>
+    </Product>
+    <Product Name="西耀之环（项链）" Icon="320497" Priority="50" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100037" Name="西耀之环" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320497" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320498" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320499" TimeLag="0" GroupNum="1" Price="208" VipPrice="208" SalePrice="208"/>
+        </ProductStore>
+    </Product>
+    <Product Name="三环封魔戒（戒指）" Icon="320799" Priority="51" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100051" Name="三环封魔戒" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320799" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320800" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320801" TimeLag="0" GroupNum="1" Price="208" VipPrice="208" SalePrice="208"/>
+        </ProductStore>
+    </Product>
+    <Product Name="战族项链（项链）" Icon="320796" Priority="52" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1100050" Name="西耀之环" Type="1" SecType="7" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320796" TimeLag="3" GroupNum="1" Price="35" VipPrice="35" SalePrice="35"/>
+            <Store StoreId="320797" TimeLag="30" GroupNum="1" Price="70" VipPrice="70" SalePrice="70"/>
+            <Store StoreId="320798" TimeLag="0" GroupNum="1" Price="208" VipPrice="208" SalePrice="208"/>
+        </ProductStore>
+    </Product>
+
+<!-- 强化材料 -->
+    <Product Name="绿色天火" Icon="1740025" Priority="801" Toplimit="0" Buylimit="0" Vip="0" IsItemIcon="1">
+        <ProductItem>
+            <Item ID="1740025" Name="绿色天火" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320916" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320917" TimeLag="0" GroupNum="10" Price="100" VipPrice="100" SalePrice="100"/>
+           <!-- <Store StoreId="320414" TimeLag="0" GroupNum="99" Price="208" VipPrice="208" SalePrice="208"/> -->           
+        </ProductStore>
+    </Product>
+    <Product Name="蓝色天火" Icon="1740026" Priority="802" Toplimit="0" Buylimit="0" Vip="0" IsItemIcon="1">
+        <ProductItem>
+            <Item ID="1740026" Name="蓝色天火" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320918" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320919" TimeLag="0" GroupNum="10" Price="100" VipPrice="100" SalePrice="100"/>
+           <!-- <Store StoreId="320414" TimeLag="0" GroupNum="99" Price="208" VipPrice="208" SalePrice="208"/> -->           
+        </ProductStore>
+    </Product>
+    <Product Name="紫色天火" Icon="1740027" Priority="803" Toplimit="0" Buylimit="0" Vip="0" IsItemIcon="1">
+        <ProductItem>
+            <Item ID="1740027" Name="蓝色天火" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320920" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320921" TimeLag="0" GroupNum="10" Price="100" VipPrice="100" SalePrice="100"/>
+           <!-- <Store StoreId="320414" TimeLag="0" GroupNum="99" Price="208" VipPrice="208" SalePrice="208"/> -->           
+        </ProductStore>
+    </Product>
+    <Product Name="圣光魂石" Icon="1740028" Priority="804" Toplimit="0" Buylimit="0" Vip="0" IsHot="1" IsItemIcon="1">
+        <ProductItem>
+            <Item ID="1740028" Name="圣光魂石" Type="3" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320922" TimeLag="0" GroupNum="1" Price="10" VipPrice="10" SalePrice="10"/>
+            <Store StoreId="320923" TimeLag="0" GroupNum="10" Price="100" VipPrice="100" SalePrice="100"/>
+        </ProductStore>
+    </Product>
+
+<!--
+    <Product Name="青莲地心焰" Icon="320411" Priority="59" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1740000" Name="青莲地心焰" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320411" TimeLag="0" GroupNum="1" Price="3" VipPrice="3" SalePrice="3"/>
+            <Store StoreId="320412" TimeLag="0" GroupNum="5" Price="15" VipPrice="15" SalePrice="15"/>
+            <Store StoreId="320413" TimeLag="0" GroupNum="10" Price="22" VipPrice="22" SalePrice="22"/>       
+        </ProductStore>
+    </Product>
+    <Product Name="惊雷劫天焰" Icon="320415" Priority="58" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1740001" Name="惊雷劫天焰" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320415" TimeLag="0" GroupNum="1" Price="8" VipPrice="8" SalePrice="8"/>
+            <Store StoreId="320416" TimeLag="0" GroupNum="5" Price="40" VipPrice="40" SalePrice="40"/>
+            <Store StoreId="320417" TimeLag="0" GroupNum="10" Price="68" VipPrice="68" SalePrice="68"/>        
+        </ProductStore>
+    </Product>
+    <Product Name="星辰神炎" Icon="320419" Priority="57" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1740002" Name="星辰神炎" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320419" TimeLag="0" GroupNum="1" Price="22" VipPrice="22" SalePrice="22"/>
+            <Store StoreId="320420" TimeLag="0" GroupNum="5" Price="110" VipPrice="110" SalePrice="110"/>
+            <Store StoreId="320421" TimeLag="0" GroupNum="10" Price="199" VipPrice="199" SalePrice="199"/>          
+        </ProductStore>
+    </Product>
+-->
+    <Product Name="五轮离火" Icon="320423" Priority="805" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1740003" Name="五轮离火" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320423" TimeLag="0" GroupNum="1" Price="11" VipPrice="11" SalePrice="11"/>
+            <Store StoreId="320424" TimeLag="0" GroupNum="5" Price="55" VipPrice="55" SalePrice="55"/>
+            <Store StoreId="320425" TimeLag="0" GroupNum="10" Price="99" VipPrice="99" SalePrice="99"/>         
+        </ProductStore>
+    </Product>
+    <Product Name="焚天离火" Icon="320427" Priority="806" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1740004" Name="焚天离火" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320427" TimeLag="0" GroupNum="1" Price="18" VipPrice="18" SalePrice="18"/>
+            <Store StoreId="320428" TimeLag="0" GroupNum="5" Price="90" VipPrice="90" SalePrice="90"/>
+            <Store StoreId="320429" TimeLag="0" GroupNum="10" Price="168" VipPrice="168" SalePrice="168"/>          
+        </ProductStore>
+    </Product>
+    <Product Name="金乌冰炎" Icon="320431" Priority="807" Toplimit="0" Buylimit="0" Vip="0" >
+        <ProductItem>
+            <Item ID="1740005" Name="金乌冰炎" Type="3" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320431" TimeLag="0" GroupNum="1" Price="24" VipPrice="24" SalePrice="24"/>
+            <Store StoreId="320432" TimeLag="0" GroupNum="5" Price="120" VipPrice="120" SalePrice="120"/>
+            <Store StoreId="320433" TimeLag="0" GroupNum="10" Price="228" VipPrice="228" SalePrice="228"/>         
+        </ProductStore>
+    </Product>
+<!--
+    <Product Name="高能魂石" Icon="320447" Priority="53" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1740010" Name="高能魂石" Type="3" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320447" TimeLag="0" GroupNum="1" Price="9" VipPrice="9" SalePrice="9"/>
+            <Store StoreId="320448" TimeLag="0" GroupNum="3" Price="27" VipPrice="27" SalePrice="27"/>
+            <Store StoreId="320449" TimeLag="0" GroupNum="5" Price="38" VipPrice="38" SalePrice="38"/>
+        </ProductStore>
+    </Product>
+    <Product Name="风暴魂石" Icon="320450" Priority="52" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1740011" Name="风暴魂石" Type="3" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320450" TimeLag="0" GroupNum="1" Price="21" VipPrice="21" SalePrice="21"/>
+            <Store StoreId="320451" TimeLag="0" GroupNum="3" Price="63" VipPrice="63" SalePrice="63"/>
+            <Store StoreId="320452" TimeLag="0" GroupNum="5" Price="99" VipPrice="99" SalePrice="99"/>
+        </ProductStore>
+    </Product>
+    <Product Name="秘法魂石" Icon="320453" Priority="51" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1740012" Name="秘法魂石" Type="3" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320453" TimeLag="0" GroupNum="1" Price="32" VipPrice="32" SalePrice="32"/>
+            <Store StoreId="320454" TimeLag="0" GroupNum="3" Price="96" VipPrice="96" SalePrice="96"/>
+            <Store StoreId="320455" TimeLag="0" GroupNum="5" Price="148" VipPrice="148" SalePrice="148"/>
+        </ProductStore>
+    </Product>
+    <Product Name="光辉魂石" Icon="320456" Priority="50" Toplimit="0" Buylimit="0" Vip="0" IsHot="0">
+        <ProductItem>
+            <Item ID="1740013" Name="光辉魂石" Type="3" SecType="2" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320456" TimeLag="0" GroupNum="1" Price="42" VipPrice="42" SalePrice="42"/>
+            <Store StoreId="320457" TimeLag="0" GroupNum="3" Price="126" VipPrice="126" SalePrice="126"/>
+            <Store StoreId="320458" TimeLag="0" GroupNum="5" Price="198" VipPrice="198" SalePrice="198"/>
+        </ProductStore>
+    </Product>
+-->
+
+<!-- 功夫通宝 -->
+    <Product Name="功夫通宝" Icon="320000" Priority="1200" Toplimit="0" Buylimit="0" Vip="0" IsHot="1">
+        <ProductItem>
+            <Item ID="320000" Name="功夫通宝" Type="999" SecType="1" count="1"/>
+        </ProductItem>
+        <ProductStore>
+            <Store StoreId="320001" TimeLag="0" GroupNum="10" Price="1" VipPrice="1" SalePrice="1"/>     
+            <Store StoreId="320002" TimeLag="0" GroupNum="50" Price="5" VipPrice="5" SalePrice="5"/> 
+            <Store StoreId="320000" TimeLag="0" GroupNum="100" Price="10" VipPrice="10" SalePrice="10"/> 
+            <Store StoreId="320003" TimeLag="0" GroupNum="300" Price="30" VipPrice="30" SalePrice="30"/> 
+        </ProductStore>
+    </Product>
+   
+    <!-- 新物品:IconID为相应商品的Icon的id -->
+    <NewItems IconID="1700086|1700089"/>
+
+
+
+</StoreEdges>

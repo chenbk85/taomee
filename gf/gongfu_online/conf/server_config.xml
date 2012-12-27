@@ -1,0 +1,7 @@
+<root>
+	<Config ID="1" Name="外挂踢人开关：0关，1开" Value="1" />
+	<Config ID="2" Name="二级支付密码开关：0关，1开" Value="1" />
+	<Config ID="3" Name="旁路外挂检测系统：0关，1开" Value="0" />
+	<Config ID="4" Name="武林盛典报名: 0关， 1开" Value="1" />
+	<Config ID="5" Name="神灯广播" Value="1" />
+</root>

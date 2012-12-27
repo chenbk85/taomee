@@ -1,0 +1,2219 @@
+<!-- 根据Cat ID不同，Item ID的起始也不同。例如Cat ID="2"，则Item ID从200001开始 -->
+<!-- ItemID可以不连续，但目前限制了ItemID和起始ID之差不能超过2000。建议套装装扮连号，建议vip专属道具从101001开始 -->
+<!-- Cat Max用于限制用户能够拥有该Cat下每种Item的个数，如果需要对某Item做特殊处理，可以定义Item Max="x" -->
+<!-- Tradability限制普通会员对物品的买卖性，0不可买卖，1不可卖，2不可买，3可买卖，默认是3 -->
+<!-- VipTradability限制VIP对物品的买卖性，0不可买卖，1不可卖，2不可买，3可买卖，默认是3 -->
+<!-- 对于不打算出售的物品，需要配置成 Tradability="0" VipTradability="0" -->
+<!-- VipOnly用于限制只有VIP才能装扮的物品，如果不是VIP了，则会把物品脱下。默认是0，即所有人都能装扮 -->
+<!-- IMPORTANT! DbCatID发生改变时(比如增加) 要先要求DB增加对新的DbCatID的支持，确认DB支持以后，才可用新的配置重启online -->
+<!-- LifeTime物品寿命，单位是天，如果不配置该项，则表明物品永不过期 -->
+<!-- Price购买价格；SellPrice回收价格；RepairPrice维修价格；这几个参数如果不配，则默认为0 -->
+<!--
+	UseLv使用等级，如果不配，则不限使用等级。
+	Hit命中值，Dodge闪避值，Crit暴击值，Hp加生命上限，Mp加气力值上限，AddHp生命恢复加成，AddMp气力值恢复加成，Slot孔的个数。
+	Lv装备强化等级，Strength力量，Agility敏捷，BodyQuality体质，Stamina气力，Atk攻击力，Def防御力，Duration耐久值，默认都是0。
+	EquipPart装备部位(1帽子，2项链，3护手，4武器，5戒指，6衣服，7腰带，8护腿，9鞋子，10护符)
+	DropLv掉落等级
+	QualityLevel品质(稀有度1白，2绿，3蓝，4紫，5银，6金，7神圣)
+	SetID装备所属的套装ID
+	decompose：不可分解选项，1是不可分解，默认可分解
+	
+	buff药品的属性:
+			BufType：1：ATK；2：DEF；3:命中率，4暴击率，5躲避率，6血上限，7魔上限，8加满血，9加满魔，10驻足
+			PerTrim：百分比的提升
+			RealTrim：实际的提升
+-->
+<Items>
+	<Cat ID="0" DbCatID="0" Name="玩家属性" Max="4000000000" >
+		<Item ID="1" Name="派豆" Price="10" Tradability="0" VipTradability="0" />
+	</Cat>
+	<!-- 技能书 -->
+	<Cat ID="12" DbCatID="2" Name="技能书" Max="99" >
+		<Item ID="1200001" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="10" 
+			SkillID="100203" Tradability="0" VipTradability="0"/>
+		<Item ID="1200002" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="100204" Tradability="0" VipTradability="0"/>
+		<Item ID="1200003" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="8" 
+			SkillID="100208" Tradability="0" VipTradability="0"/>
+		<Item ID="1200004" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="22" 
+			SkillID="100201" Tradability="0" VipTradability="0"/>
+		<Item ID="1200005" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="100202" Tradability="0" VipTradability="0"/>
+		<Item ID="1200006" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="20" 
+			SkillID="100205" Tradability="0" VipTradability="0"/>
+		<Item ID="1200007" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="13" 
+			SkillID="100206" Tradability="0" VipTradability="0"/>
+		<Item ID="1200008" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="5" 
+			SkillID="100207" Tradability="0" VipTradability="0"/>
+		<Item ID="1200009" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="3" 
+			SkillID="100209" Tradability="0" VipTradability="0"/>
+		<Item ID="1200010" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="28" 
+			SkillID="100210" Tradability="0" VipTradability="0"/>
+		<Item ID="1200011" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="15" 
+			SkillID="100211" Tradability="0" VipTradability="0"/>
+		<Item ID="1200012" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="40" 
+			SkillID="100212" Tradability="0" VipTradability="0"/>
+		<Item ID="1200013" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="30" 
+			SkillID="100213" Tradability="0" VipTradability="0"/>
+		<Item ID="1200014" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="25" 
+			SkillID="100214" Tradability="0" VipTradability="0"/>
+		<Item ID="1200015" Name="派派的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="100215" Tradability="0" VipTradability="0"/>
+		<Item ID="1200201" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="15" 
+			SkillID="200205" Tradability="0" VipTradability="0"/>
+		<Item ID="1200202" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="25" 
+			SkillID="200206" Tradability="0" VipTradability="0"/>
+		<Item ID="1200203" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="30" 
+			SkillID="200208" Tradability="0" VipTradability="0"/>
+		<Item ID="1200204" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="200201" Tradability="0" VipTradability="0"/>
+		<Item ID="1200205" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="13" 
+			SkillID="200202" Tradability="0" VipTradability="0"/>
+		<Item ID="1200206" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="22" 
+			SkillID="200203" Tradability="0" VipTradability="0"/>
+		<Item ID="1200207" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="5" 
+			SkillID="200204" Tradability="0" VipTradability="0"/>
+		<Item ID="1200208" Name="伊尔的谜之琥珀 " Price="10" SellPrice="20" UseLv="1" 
+			SkillID="200207" Tradability="0" VipTradability="0"/>
+		<Item ID="1200209" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="8" 
+			SkillID="200209" Tradability="0" VipTradability="0"/>
+		<Item ID="1200210" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="20" 
+			SkillID="200210" Tradability="0" VipTradability="0"/>
+		<Item ID="1200211" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="3" 
+			SkillID="200211" Tradability="0" VipTradability="0"/>
+		<Item ID="1200212" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="10" 
+			SkillID="200212" Tradability="0" VipTradability="0"/>
+		<Item ID="1200213" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="200213" Tradability="0" VipTradability="0"/>
+		<Item ID="1200214" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="28" 
+			SkillID="200214" Tradability="0" VipTradability="0"/>
+		<Item ID="1200215" Name="伊尔的谜之琥珀" Price="10" SellPrice="20" UseLv="40" 
+			SkillID="200215" Tradability="0" VipTradability="0"/>
+		<Item ID="1200401" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="3" 
+			SkillID="300201" Tradability="0" VipTradability="0"/>
+		<Item ID="1200402" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="30" 
+			SkillID="300207" Tradability="0" VipTradability="0"/>
+		<Item ID="1200403" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="300210" Tradability="0" VipTradability="0"/>
+		<Item ID="1200404" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="22" 
+			SkillID="300202" Tradability="0" VipTradability="0"/>
+		<Item ID="1200405" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="20" 
+			SkillID="300203" Tradability="0" VipTradability="0"/>
+		<Item ID="1200406" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="5" 
+			SkillID="300204" Tradability="0" VipTradability="0"/>
+		<Item ID="1200407" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="13" 
+			SkillID="300205" Tradability="0" VipTradability="0"/>
+		<Item ID="1200408" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="25" 
+			SkillID="300206" Tradability="0" VipTradability="0"/>
+		<Item ID="1200409" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="28" 
+			SkillID="300208" Tradability="0" VipTradability="0"/>
+		<Item ID="1200410" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="300209" Tradability="0" VipTradability="0"/>
+		<Item ID="1200411" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="8" 
+			SkillID="300211" Tradability="0" VipTradability="0"/>
+		<Item ID="1200412" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="10" 
+			SkillID="300212" Tradability="0" VipTradability="0"/>
+		<Item ID="1200413" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="1" 
+			SkillID="300213" Tradability="0" VipTradability="0"/>
+		<Item ID="1200414" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="15" 
+			SkillID="300214" Tradability="0" VipTradability="0"/>
+		<Item ID="1200415" Name="大竹的谜之琥珀" Price="10" SellPrice="20" UseLv="40" 
+			SkillID="300215" Tradability="0" VipTradability="0"/>		
+	</Cat>
+	<!-- 补药
+			AddHp补血量；AddMp补气量；Duration持续时间（秒），如果不填，则瞬间补充；interval间隔时间
+			Atk增加攻击力；Def防御；Hit命中；Dodge闪避；Crit暴击；Spawn：1复活道具，不配则不是复活道具；
+			PvpAvailable为是否能在PVP使用药物，0为不可使用，1为可以使用
+	-->
+	<Cat ID="13" DbCatID="2" Name="药品" Max="999" >
+		<!-- 补血 -->
+		<!-- 每秒补血20，持续7秒 -->
+		<Item ID="1300001" Name="馒头" DropLv="1" Price="45" SellPrice="22" 
+			UseLv="1" AddHp="20" Duration="7" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[最常见的食物，每秒补血20点，持续7秒.]]></descript>
+		</Item>
+		<!-- 每秒补血30，持续12秒 -->
+		<Item ID="1300002" Name="红枣" DropLv="2" Price="130" SellPrice="65" 
+			UseLv="5" AddHp="30" Duration="12" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[富有营养的食物，每秒补血30点，持续12秒.]]></descript>
+		</Item>
+		<!-- 每秒补血50，持续10秒 -->
+		<Item ID="1300003" Name="八宝粽" DropLv="3" Price="200" SellPrice="100" 
+			UseLv="10" AddHp="50" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[用八种食材精心制作的粽子，每秒补血50点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血70，持续11秒 -->
+		<Item ID="1300004" Name="奇异果" DropLv="4" Price="500" SellPrice="170" 
+			UseLv="15" AddHp="70" interval="1" Duration="11" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[清香鲜美，来自异域的果实，每秒补血70点，持续11秒.]]></descript>
+		</Item>
+		<!-- 每秒补血90，持续10秒 -->
+		<Item ID="1300005" Name="核桃" DropLv="5" Price="900" SellPrice="225" 
+			UseLv="20" AddHp="90" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[味苦且甘，促生新血，每秒补血90点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血60，持续10秒 -->
+		<Item ID="1300006" Name="碧露丸" DropLv="100" Price="450" SellPrice="25" 
+			UseLv="10" AddHp="60" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[碧露果制成的药丸，每秒补血60点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血80，持续10秒 -->
+		<Item ID="1300007" Name="万灵散" DropLv="100" Price="450" SellPrice="50" 
+			UseLv="15" AddHp="80" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[万灵果皮研磨制成的散，每秒补血80点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血100，持续10秒 -->
+		<Item ID="1300008" Name="天霜粉" DropLv="100" Price="450" SellPrice="100" 
+			UseLv="20" AddHp="100" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[天霜果制成的粉末，每秒补血100点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血140，持续10秒 -->
+		<Item ID="1300009" Name="逍遥丸" DropLv="100" Price="450" SellPrice="125" 
+			UseLv="25" AddHp="140" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202"  Shortcut="1">
+			<descript><![CDATA[逍遥果做成的药丸，每秒补血140点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血160，持续10秒 -->
+		<Item ID="1300010" Name="万花丹" DropLv="100" Price="450" SellPrice="150" 
+			UseLv="30" AddHp="160" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[万花果炼制成的丹药，每秒补血160点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血180，持续10秒 -->
+		<Item ID="1300011" Name="混元膏" DropLv="100" Price="450" SellPrice="175" 
+			UseLv="35" AddHp="180" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[混元果制成的药膏，每秒补血180点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补血210，持续10秒 -->
+		<Item ID="1300012" Name="玉露丹" DropLv="100" Price="450" SellPrice="200" 
+			UseLv="45" AddHp="210" interval="1" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[玉露果制成的珍贵药材，每秒补血210点，持续10秒.]]></descript>
+		</Item>
+		<!-- 补气 -->
+		<!-- 每秒补气15，持续8秒 -->
+		<Item ID="1300101" Name="甘露" DropLv="1" Price="45" SellPrice="22" 
+			UseLv="1" AddMp="15" Duration="8" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[清晨甜蜜的露水，每秒补气15点，持续8秒.]]></descript>
+		</Item>
+		<!-- 每秒补气20，持续10秒 -->
+		<Item ID="1300102" Name="枸杞" DropLv="3" Price="80" SellPrice="40" 
+			UseLv="10" AddMp="20" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[一味常用的药材，其色鲜红，其味香甜，每秒补气20点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补气30，持续10秒 -->
+		<Item ID="1300103" Name="魔芋膏" DropLv="5" Price="140" SellPrice="70" 
+			UseLv="20" AddMp="30" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[清香的魔芋磨成的膏，每秒补气30点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补气40，持续10秒 -->
+		<Item ID="1300104" Name="鲫鱼汤" DropLv="7" Price="400" SellPrice="100" 
+			UseLv="30" AddMp="40" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[可口的鲫鱼汤，每秒补气40点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补气50，持续10秒 -->
+		<Item ID="1300105" Name="长生丸" DropLv="100" Price="999999999" SellPrice="10" 
+			UseLv="10" AddMp="50" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[长生果皮制成的廉价的药丸，每秒补气50点，持续10秒.]]></descript>
+		</Item>
+		<!-- 每秒补气60，持续10秒 -->
+		<Item ID="1300106" Name="凝神丸" DropLv="100" Price="999999999" SellPrice="20" 
+			UseLv="15" AddMp="60" Duration="10" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[用凝神清水制成的药丸，每秒补气60点，持续10秒.]]></descript>
+		</Item>
+		<!-- 增加玩家普通攻击30%持续50秒，只能在关卡中使用 -->
+		<Item ID="1300107" Name="展凤散" DropLv="100" Price="999999999" SellPrice="30" 
+			UseLv="20" AddMp="0" Duration="50" Tradability="3" BuffID="301"
+			VipTradability="3" publicCD="5" cd="130" AvailableMap="202" Shortcut="1">
+			<descript><![CDATA[在副本中使用，增加玩家普通攻击30%，持续50秒.]]></descript>
+		</Item>
+		<!-- 每秒补气120，持续10秒 -->
+		<Item ID="1300108" Name="亢龙丸" DropLv="100" Price="999999999" SellPrice="70" 
+			UseLv="25" AddMp="0" Duration="120" Tradability="3" BuffID="302"
+			VipTradability="3" publicCD="5" cd="200" AvailableMap="202" Shortcut="1">
+			<descript><![CDATA[在副本中使用，增加玩家防御50%，持续2分钟.]]></descript>
+		</Item>
+		<!-- 每秒补气150，持续10秒 -->
+		<Item ID="1300109" Name="长生散" DropLv="100" Price="999999999" SellPrice="80" 
+			UseLv="30" AddMp="0" Duration="180" Tradability="3" BuffID="303"
+			VipTradability="3" publicCD="5" cd="360" AvailableMap="202" Shortcut="1">
+			<descript><![CDATA[在副本中使用，增加玩家移动速度50%，持续3分钟.]]></descript>
+		</Item>
+		<!-- 每秒补气180，持续10秒 -->
+		<Item ID="1300110" Name="聚魂散" DropLv="100" Price="999999999" SellPrice="100" 
+			UseLv="35" AddMp="0" Duration="180" Tradability="3" BuffID="304"
+			VipTradability="3" publicCD="5" cd="360" AvailableMap="202" Shortcut="1">
+			<descript><![CDATA[在副本中使用，增加玩家暴击率40%，持续3分钟.]]></descript>
+		</Item>
+		<!-- 每秒补气200，持续10秒 -->
+		<Item ID="1300111" Name="太白丹" DropLv="100" Price="999999999" SellPrice="120" 
+			UseLv="40" AddMp="0" Duration="300" Tradability="3" BuffID="305"
+			VipTradability="3" publicCD="5" cd="400" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[在副本中使用，提升玩家闪避率速度30%，持续5分钟.]]></descript>
+		</Item>
+		
+		<!-- 瞬间补血300，补气300 -->
+		<Item ID="1300201" Name="回天水" DropLv="100" Price="999999999" SellPrice="20" 
+			UseLv="20" AddHp="300" AddMp="300" Tradability="3" 
+			VipTradability="3" publicCD="5" cd="8" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[稀有的疗伤圣药，瞬间恢复300HP和300MP.]]></descript>
+		</Item>
+		<!-- 每秒补血20，补气5，持续20秒 -->
+		<Item ID="1300211" Name="初级龙涎香" DropLv="100" Price="500" 
+			SellPrice="100" UseLv="10" AddHp="20" AddMp="5" Duration="20" 
+			Tradability="3" VipTradability="3" publicCD="5" cd="20" 
+			AvailableMap="201" Shortcut="1" PvpAvailable="1">
+			<descript><![CDATA[珍贵的药材，能行气活血，每秒补血20点，补气5点，持续20秒.]]></descript>
+		</Item>
+		<!-- 每秒补血40，补气10，持续20秒  -->
+		<Item ID="1300212" Name="中级龙涎香" DropLv="100" Price="700" 
+			SellPrice="140" UseLv="20" AddHp="40" AddMp="10" Duration="20" 
+			Tradability="3" VipTradability="3" publicCD="5" cd="25" 
+			AvailableMap="201" Shortcut="1" PvpAvailable="1">
+			<descript><![CDATA[珍贵的药材，能行气活血，每秒补血40点，补气10点，持续20秒.]]></descript>
+		</Item>
+		<!-- 每秒补血60，补气15，持续20秒 -->
+		<Item ID="1300213" Name="高级龙涎香" DropLv="100" Price="900" 
+			SellPrice="180" UseLv="30" AddHp="60" AddMp="15" Duration="20" 
+			Tradability="3" VipTradability="3" publicCD="5" cd="30" 
+			AvailableMap="201" Shortcut="1" PvpAvailable="1">
+			<descript><![CDATA[珍贵的药材，能行气活血，每秒补血60点，补气15点，持续20秒.]]></descript>
+		</Item>
+		
+		<!-- 去异常 -->
+		<!-- <Item ID="1300301" Name="去异常1" DropLv="5" Price="10" SellPrice="20" AddMp="10" Duration="20" Tradability="3" VipTradability="3" publicCD="5" cd="8" /> -->
+		<!-- 增加角色属性 -->
+		<!-- 瞬间补血100点，补气100点 -->
+		<Item ID="1300301" Name="豆沙月饼" SellPrice="200" AddHp="100" AddMp="100" Tradability="2" VipTradability="2" publicCD="5" cd="8" Shortcut="1">
+		    <descript><![CDATA[中秋礼品，瞬间补血100点，补气100点.]]></descript>
+		</Item>
+		<!-- 瞬间补血200点，补气200点 -->
+		<Item ID="1300302" Name="莲蓉月饼" SellPrice="200" AddHp="200" AddMp="200" Tradability="2" VipTradability="2" publicCD="5" cd="8" Shortcut="1">
+		    <descript><![CDATA[中秋礼品，瞬间补血200点，补气200点.]]></descript>
+		</Item>
+		<!-- 瞬间补血400点，补气400点 -->
+		<Item ID="1300303" Name="蛋黄月饼" SellPrice="200" AddHp="400" AddMp="400" Tradability="2" VipTradability="2" publicCD="5" cd="8" Shortcut="1">
+		    <descript><![CDATA[中秋礼品，瞬间补血400点，补气400点.]]></descript>
+		</Item>
+		<!-- 瞬间补血600点，补气600点 -->
+		<Item ID="1300304" Name="冰皮月饼" SellPrice="200" AddHp="600" AddMp="600" Tradability="2" VipTradability="2" publicCD="5" cd="8" Shortcut="1">
+		    <descript><![CDATA[中秋礼品，瞬间补血600点，补气600点.]]></descript>
+		</Item>
+		<!-- 瞬间补血800点，补气800点 -->
+		<Item ID="1300305" Name="雪月饼" SellPrice="200" AddHp="800" AddMp="800" Tradability="2" VipTradability="2" publicCD="5" cd="8" Shortcut="1">
+		    <descript><![CDATA[中秋礼品，瞬间补血800点，补气800点.]]></descript>
+		</Item>
+		<!-- 瞬间补充血/蓝各1000点 -->
+		<Item ID="1300306" Name="琼浆月饼" SellPrice="500" AddHp="1000" AddMp="1000" Tradability="2" VipTradability="2" publicCD="5" cd="8" Shortcut="1">
+		    <descript><![CDATA[中秋礼品，瞬间补血1000点，补气1000点.]]></descript>
+		</Item>
+		<!-- 加经验100点 -->
+		<Item ID="1300307" Name="夜月锦囊" SellPrice="200" Tradability="2" VipTradability="2" publicCD="0" cd="0" Shortcut="0">
+		    <descript><![CDATA[中秋礼品，使用后增加经验值300点.]]></descript>
+		</Item>
+		<!-- 国庆变身BUFF -->
+		<Item ID="1300401" Name="凝霜符石" SellPrice="100" Tradability="2" VipTradability="2" BuffID="201" PerTrim="10" Duration="300" publicCD="0" cd="8" ExID1="13012" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[国庆礼品，使用后在社区场景中<font color='#FF0000'>变身为凝霜</font>，持续20秒；在副本中<font color="#FF0000">增加防御率10%</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300402" Name="虎奔符石" SellPrice="100" Tradability="2" VipTradability="2" BuffID="202" PerTrim="10" Duration="300" publicCD="0" cd="8" ExID1="13013" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[国庆礼品，使用后在社区场景中<font color='#FF0000'>变身为虎奔</font>，持续20秒；在副本中<font color="#FF0000">增加攻击力10%</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300407" Name="正无符石" SellPrice="100" Tradability="2" VipTradability="2" BuffID="203" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13009" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[国庆礼品，使用后在社区场景中<font color='#FF0000'>变身为正无</font>，持续20秒；在副本中<font color="#FF0000">增加命中率5%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!-- 复活药品 -->
+		<Item ID="1302000" Name="起死回生草" DropLv="100" Price="999999999" SellPrice="20" 
+			Spawn="1" Tradability="3" VipTradability="3" publicCD="5" cd="8" Shortcut="0">
+			<descript><![CDATA[珍贵的药材，使用后原地满状态复活.]]></descript>
+		</Item>
+		<!-- 药师变身符 无BUFF效果-->	
+		<Item ID="1300408" Name="狂暴黑熊变身符" SellPrice="40" Tradability="2" VipTradability="2" publicCD="0" cd="8" ExID1="11066" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[使用后在社区场景中<font color='#FF0000'>变身为狂暴黑熊</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300409" Name="暴爪蜥蜴变身符" SellPrice="40" Tradability="2" VipTradability="2" publicCD="0" cd="8" ExID1="11023" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[使用后在社区场景中<font color='#FF0000'>变身为暴爪蜥蜴</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300410" Name="小鼹鼠变身符" SellPrice="40" Tradability="2" VipTradability="2" publicCD="0" cd="8" ExID1="11046" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[使用后在社区场景中<font color='#FF0000'>变身为小鼹鼠</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300411" Name="赤眼猴变身符" SellPrice="40" Tradability="2" VipTradability="2" publicCD="0" cd="8" ExID1="11049" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[使用后在社区场景中<font color='#FF0000'>变身为赤眼猴</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300412" Name="牛魔战士变身符" SellPrice="40" Tradability="2" VipTradability="2" publicCD="0" cd="8" ExID1="11067" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[使用后在社区场景中<font color='#FF0000'>变身为牛魔战士</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300413" Name="扬子鳄变身符" SellPrice="40" Tradability="2" VipTradability="2" publicCD="0" cd="8" ExID1="11071" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[使用后在社区场景中<font color='#FF0000'>变身为扬子鳄</font>，持续5分钟.]]></descript>
+		</Item>
+		<Item ID="1300414" Name="大刀螳螂变身符" SellPrice="40" Tradability="2" VipTradability="2" publicCD="0" cd="8" ExID1="11074" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[使用后在社区场景中<font color='#FF0000'>变身为大刀螳螂</font>，持续5分钟.]]></descript>
+		</Item>
+		<!-- 攻击力+10%，持续5分钟 -->
+		<Item ID="1300801" Name="瑞雄变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="202" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13004" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[瑞雄变身符，使用后在社区场景中<font color='#FF0000'>变身为瑞雄</font>，持续5分钟；在副本中<font color="#FF0000">增加攻击力10%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!-- 攻击力+20%，持续5分钟 -->
+		<Item ID="1300802" Name="赤峰变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="205" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13005" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[赤峰变身符，使用后在社区场景中<font color='#FF0000'>变身为赤峰</font>，持续5分钟；在副本中<font color="#FF0000">增加攻击力20%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!-- 防御率+10%，持续5分钟 -->
+		<Item ID="1300803" Name="南阳变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="201" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13006" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[南阳变身符，使用后在社区场景中<font color='#FF0000'>变身为南阳</font>，持续5分钟；在副本中<font color="#FF0000">增加防御率10%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!--  防御率+20%，持续5分钟 -->
+		<Item ID="1300804" Name="脊旋变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="204" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13007" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[脊旋变身符，使用后在社区场景中<font color='#FF0000'>变身为脊旋</font>，持续5分钟；在副本中<font color="#FF0000">增加防御率20%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!-- 暴击+10%，持续5分钟 -->
+		<Item ID="1300805" Name="巴鲁变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="206" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13008" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[巴鲁变身符，使用后在社区场景中<font color='#FF0000'>变身为巴鲁</font>，持续5分钟；在副本中<font color="#FF0000">增加暴击率10%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!-- 命中+10%，持续5分钟 -->
+		<Item ID="1300806" Name="正无变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="207" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13009" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[正无变身符，使用后在社区场景中<font color='#FF0000'>变身为正无</font>，持续5分钟；在副本中<font color="#FF0000">增加命中率10%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!--  闪避+10%，持续5分钟 -->
+		<Item ID="1300807" Name="哈珀变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="208" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13010" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[哈珀变身符，使用后在社区场景中<font color='#FF0000'>变身为哈珀</font>，持续5分钟；在副本中<font color="#FF0000">增加闪避率10%</font>，持续5分钟.]]></descript>
+		</Item>
+		<!--  速度+50%，持续5分钟 -->
+		<Item ID="1300808" Name="甲刺变身符" SellPrice="40" Tradability="2" VipTradability="2" BuffID="209" PerTrim="5" Duration="300" publicCD="0" cd="8" ExID1="13011" KeepTm="300" AvailableMap="0" Shortcut="0">
+		    <descript><![CDATA[甲刺变身符，使用后在社区场景中<font color='#FF0000'>变身为甲刺</font>，持续5分钟；在副本中<font color="#FF0000">增加速度50%</font>，持续5分钟.]]></descript>
+		</Item>
+	</Cat>
+
+
+
+
+
+
+
+
+	<!-- 任务物品 -->
+	<Cat ID="14" DbCatID="2" Name="任务物品" Max="999" >
+		<Item ID="1400001" Name="回天水" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，武圣爷爷的药品，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400002" Name="冬虫夏草" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，药师爷爷的药材，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400003" Name="奇灵丹" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，武圣爷爷的药品，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400004" Name="奇灵散" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，武圣爷爷的药品，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400005" Name="磨碎的药材" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，武圣爷爷的药品，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400006" Name="肉片" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，触发狼头吐出奇灵丹，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400007" Name="解毒剂" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，净化十字路口被污染的水源，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400008" Name="被偷走的宝石" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，被白毛鼠偷走的猪谷立的宝石，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400009" Name="凝霜的头钗" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，凝霜丢失的头钗，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400010" Name="奇怪的生锈钥匙" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，用来打开虫眠墓穴的封印，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400012" Name="凝霜的绣花鞋" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，从怪物身上得到的失踪的凝霜的物品，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400013" Name="磨具" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，牛角的磨具，无法出售.]]></descript>
+		</Item>
+		<Item ID="1400014" Name="矿坑矿石" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，矿山镇长老需要的矿坑矿石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400015" Name="萤火虫" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，柴二送给女儿的礼物，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400016" Name="羊皮纸" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，送给石猛将军的兵器图纸，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400017" Name="神器的副器" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，摩伊的神器副器，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400018" Name="金叉狼的毛发" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，金叉狼的毛发，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400019" Name="四足蚁的触角" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，四足蚁的触角，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400020" Name="尖嘴蜂的虫卵" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，尖嘴蜂的虫卵，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400021" Name="蛇皮" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，蛇类褪下的皮，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400022" Name="石斧猪的腰带" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，石斧猪的腰带，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400024" Name="红蝙蝠的翅膀" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，红蝙蝠的翅膀，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400025" Name="山猪的牙齿" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，山猪的牙齿，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400026" Name="尖兵卫的头盔" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，尖兵卫的头盔，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400027" Name="吸血蝙蝠的唾液" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，吸血蝙蝠的唾液，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400028" Name="红棕豺狼的指甲" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，红棕豺狼的指甲，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400029" Name="山猫牙齿" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，山猫的牙齿，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400030" Name="黑熊项圈" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，黑熊的项圈，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400031" Name="南瓜勇士的帽子" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，南瓜勇士的帽子，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400032" Name="弹弓狒狒的护腕" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，弹弓狒狒的护腕，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400033" Name="兵蚁的腰带" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，兵蚁的腰带，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400034" Name="矛手的面具" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，矛手的面具，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400035" Name="绿头蝇的兵器" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，绿头蝇的兵器，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400036" Name="两栖食人鱼的鱼鳞" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，两栖食人鱼的鱼鳞，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400037" Name="奇面稻草人的面具" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，奇面稻草人的面具，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400038" Name="奇面射手的面具" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，奇面射手的面具，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400039" Name="奇面拳手的面具 " Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，奇面拳手的面具 ，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400040" Name="厚重的灰狼皮" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，厚重的灰狼皮，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400041" Name="掘地鼠的果子" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，掘地鼠的果子，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400042" Name="有毒的刺针" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，有毒的刺针，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400043" Name="利爪猫鼬的面罩" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，利爪猫鼬的面罩，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400044" Name="奇面祭司的面具" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，奇面祭司的面具，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400045" Name="奇面法师的面具" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，奇面法师的面具，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400046" Name="奇面棒手的面具" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，奇面棒手的面具，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400048" Name="特酿蜂蜜" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，特酿蜂蜜，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400049" Name="绿色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，绿色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400050" Name="红色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，红色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400051" Name="黄色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，黄色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400052" Name="黑色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，黑色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400053" Name="青色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，青色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400054" Name="蓝色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，蓝色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400055" Name="白色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，白色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400056" Name="灰色晶体" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，灰色晶体，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400057" Name="紫色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，紫色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400058" Name="褐色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，褐色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400059" Name="厚壳龙虾的武器" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，厚壳龙虾的武器，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400060" Name="白斑蟒蛇的武器" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，白斑蟒蛇的武器，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400061" Name="橙色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，橙色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400062" Name="湖蓝色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，湖蓝色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400063" Name="金色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，金色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400064" Name="银色泽之晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，银色泽之晶，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400065" Name="深水鮟鱇的武器" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，深水鮟鱇的武器，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400066" Name="祭潮的武器" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，祭潮的武器，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400068" Name="苦工护手" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，鱼人苦工的护手，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400069" Name="巡逻护卫的心火" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，巡逻护卫的心火，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400070" Name="双刀护卫的心火" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，双刀护卫的心火，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400071" Name="加兰铁卫的心火" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，加兰铁卫的心火，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400072" Name="先锋护卫的心火" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，先锋护卫的心火，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400073" Name="火灵神的心火" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，火灵神的心火，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400074" Name="逆水的心火" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，逆水的心火，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400076" Name="天图碎片一" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，天图碎片一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400077" Name="天图碎片二" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，天图碎片一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400078" Name="天图碎片三" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，天图碎片一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400079" Name="天图碎片四" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，天图碎片一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400080" Name="天图碎片五" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，天图碎片一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400081" Name="天图碎片六" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，天图碎片一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400082" Name="天图碎片七" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，天图碎片一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400083" Name="艾尔大陆地图一" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，艾尔大陆地图一，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400084" Name="艾尔大陆地图二" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，艾尔大陆地图二，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400085" Name="艾尔大陆地图三" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，艾尔大陆地图三，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400086" Name="艾尔大陆地图四" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，艾尔大陆地图四，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400087" Name="艾尔大陆地图五" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，艾尔大陆地图五，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400088" Name="艾尔大陆地图六" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，艾尔大陆地图六，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400089" Name="钵钵蛛的腿" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，钵钵蛛的腿，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400090" Name="铁扇牛头人的牛角" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，铁扇牛头人的牛角，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400091" Name="夜鸦的羽毛" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，夜鸦的羽毛，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400092" Name="钵钵蛛的唾液" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，钵钵蛛的唾液，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400093" Name="地灵图碎片1" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，地灵图碎片，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400094" Name="地灵图碎片2" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，地灵图碎片，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400095" Name="地灵图碎片3" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，地灵图碎片，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400096" Name="地灵图碎片4" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，地灵图碎片，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400097" Name="地灵图碎片5" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，地灵图碎片，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400098" Name="地灵图碎片6" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，地灵图碎片，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400099" Name="地灵图碎片7" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，地灵图碎片，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400100" Name="食骨蝎触角" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，食骨蝎的触角，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400101" Name="道士八卦镜" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，风干道士的八卦镜，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400102" Name="飞蛾硬翅" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，剧毒飞蛾的硬翅，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400103" Name="骷髅吹箭" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，骷髅吹箭手的吹箭，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400104" Name="死亡镰刀" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，幽灵猴子的死亡镰刀，无法出售。]]></descript>
+		</Item>
+		<!-- 万圣节活动物品 -->
+		<Item ID="1400105" Name="玉埙" Tradability="0" VipTradability="0">
+			<descript><![CDATA[黑白婆婆的玉埙，用来吸取变成南瓜的居民身体里的毒素，该物品无法出售。]]></descript>
+		</Item>
+		<Item ID="1400106" Name="南瓜毒素" Tradability="3" VipTradability="3" SellPrice="5">
+			<descript><![CDATA[南瓜怪人释放的毒素，能将居民变成不能动弹的南瓜，集齐5个，可以从黑白婆婆处换取除灵散，该物品无法出售。]]></descript>
+		</Item>
+		<Item ID="1400107" Name="除灵散" Tradability="0" VipTradability="0">
+			<descript><![CDATA[打开南瓜密室结界的药剂，结界打开之后，只能在特定的时间进入，该物品无法出售。]]></descript>
+		</Item>
+		
+		<Item ID="1400108" Name="翠玉种子" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，大剪园丁的翠玉种子，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400109" Name="花匠锄头" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，花洒匠的花匠锄头，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400110" Name="园丁土壤" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，大剪园丁的土壤，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400111" Name="花匠肥料" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，花洒匠的肥料，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400112" Name="传音的绿色精华" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，传音的绿色精华，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400114" Name="青龙密石" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，青龙密石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400115" Name="武圣密石" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，武圣密石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400116" Name="灵兽密石" Tradability="1" VipTradability="1">
+			<descript><![CDATA[任务物品，灵兽密石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400117" Name="药锄" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，村民丢失的药锄，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400118" Name="猴儿果" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，猕猴的猴儿果，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400119" Name="紫色妖力" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，一团幽幽的紫色妖力，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400120" Name="生锈的药锄" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，可能是王大有父亲留下的药锄，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400121" Name="家传玉坠" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，王家的家传玉坠，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400129" Name="初等时光之沙" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，初等时光之沙，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400130" Name="初等时光之石" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，初等时光之石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400131" Name="隐身密石" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，息土潜伏者的隐身密石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400132" Name="邪血石" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，邪眼收藏家的邪血石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400133" Name="时光之锤" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，盲眼的时光之锤，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400134" Name="青色元素精神石" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，青色元素精神石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400135" Name="黄色元素精神石" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，黄色元素精神石，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400136" Name="元素遗骨" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，涡流的元素遗骨，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400137" Name="破碎的元素水晶" Tradability="0" VipTradability="0">
+			<descript><![CDATA[任务物品，钝爪破碎的元素水晶，无法出售。]]></descript>
+		</Item>
+		
+		<!-- 组队运营活动 -->
+		<Item ID="1400122" Name="大半月符石" Tradability="1" VipTradability="1">
+			<descript><![CDATA[能与小半月符石的持有者拼合，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400123" Name="小半月符石" Tradability="1" VipTradability="1">
+			<descript><![CDATA[能与大半月符石持有者拼合，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400125" Name="符石之光" Tradability="1" VipTradability="1">
+			<descript><![CDATA[大半月符石与小半月符石持有者进入任意关卡击败BOSS后获得，得到后找武圣爷爷拼合符石。无法出售。]]></descript>
+		</Item>
+		<!-- 三牙运营活动 -->
+		<Item ID="1400126" Name="兔兄弟的贴身武器" Tradability="1" VipTradability="1">
+			<descript><![CDATA[兔家三兄弟的贴身武器，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400127" Name="义字普通风云令牌" Tradability="1" VipTradability="1" QualityLevel="3">
+			<descript><![CDATA[义字普通风云令牌，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400128" Name="义字金色风云令牌" Tradability="1" VipTradability="1" QualityLevel="4">
+			<descript><![CDATA[义字金色风云令牌，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400138" Name="仁字普通风云令牌" Tradability="1" VipTradability="1" QualityLevel="3">
+			<descript><![CDATA[仁字普通风云令牌，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400139" Name="仁字金色风云令牌" Tradability="1" VipTradability="1" QualityLevel="4">
+			<descript><![CDATA[仁字金色风云令牌，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400140" Name="右奇的贴身信物" Tradability="1" VipTradability="1">
+			<descript><![CDATA[右奇的贴身信物，无法出售。]]></descript>
+		</Item>
+		<!-- 战魂原石 -->	
+		<Item ID="1400047" Name="白狐之镯" SummonID="1002" UseLv="1" Tradability="0" VipTradability="0">
+			<descript><![CDATA[开启灵兽白玉狐的物品，无法出售。]]></descript>
+		</Item>
+		<Item ID="1400067" Name="月魂玉" SummonID="1012" UseLv="25" Tradability="0" VipTradability="0">
+			<descript><![CDATA[珍贵的中秋特礼，每个角色限换一个，<font color='#CC5100'>特权：超灵侠士拥有时光倒转技能，可以直接领取。</font>到达25级时进入一气学院溪涧洞，将会开启灵兽月灵兔。]]></descript>
+		</Item>
+		<Item ID="1400075" Name="流光圈" SummonID="1022" UseLv="1" Tradability="0" VipTradability="0">
+			<descript><![CDATA[VIP专属，只要是VIP3及其以上等级的小侠士均可免费获得，立刻前往溪涧洞孵化身份的象征——流光鹿吧！]]></descript>
+		</Item>
+		<Item ID="1400113" Name="通铃猫铃铛" SummonID="1032" UseLv="1" Tradability="0" VipTradability="0">
+			<descript><![CDATA[开启灵兽通铃猫的物品，无法出售。]]></descript>
+		</Item>
+		<Item ID="1410001" Name="飞雏羽毛" SummonID="1042" UseLv="5" Tradability="0" VipTradability="0">
+			<descript><![CDATA[开启灵兽飞羽雏的物品。无法出售。]]></descript>
+		</Item>
+	</Cat>
+	<!-- 怪物掉落卖钱物品、合成材料 -->
+	<Cat ID="15" DbCatID="2" Name="材料" Max="9999" >
+		<Item ID="1500001" Name="木人轴承" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[木人身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500002" Name="木桩" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[木人身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500003" Name="木王之心" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[木王身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500004" Name="铜人轴承" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[铜人身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500005" Name="铜桩" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[铜人身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500006" Name="铜王之心" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[铜王身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500007" Name="铁人轴承" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[铁人身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500008" Name="铁桩" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[铁人身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500009" Name="铁王之心" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[铁王身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500010" Name="黏黏舌" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[黏黏巫的舌头，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500011" Name="犬牙" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[犬齿锋利的前牙，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500012" Name="狼毫" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[苍狼尾巴上的狼毛，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500013" Name="火炬" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[火炬狮的火炬，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500014" Name="金叉" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[金叉狼的金叉，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500015" Name="石斧" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[石斧猪的石斧，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500016" Name="瑞雄之掌" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[矿坑深处瑞雄的前掌，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500017" Name="响尾" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[响尾蛇的尾巴，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500018" Name="织网蛛丝" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[织网蛛的丝，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500019" Name="蝙蝠翼翅" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[吸血蝠的翅膀，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500020" Name="赤峰狼牙棒" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[赤峰的狼牙棒，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500021" Name="长臂猿手镯" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[长臂猿的手镯，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500022" Name="忍者眼罩" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[忍者鼬的眼罩，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500023" Name="尖牙铠甲" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[尖牙猪的铠甲，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500024" Name="南阳獠牙" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[南阳的獠牙，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500025" Name="花斑毒液" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[花斑蜘蛛的毒液，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500026" Name="毒牙" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[虫眠墓穴里毒牙王蛇的毒牙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500027" Name="暴爪蜥皮" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[试炼之路里暴爪蜥蜴的皮，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500028" Name="蛤蟆眼球" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[墓穴蛤蟆的眼球，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500029" Name="水泡毒囊" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[水泡蜘蛛的毒囊，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500030" Name="地洞鼠尾" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[地洞老鼠的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500031" Name="宝石蝎尾" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[宝石蝎闪闪发亮的尾巴，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500032" Name="赤炎触角" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[闪耀着红光的赤炎蚤触角，可出售给商人换取功夫豆。]]></descript>
+		</Item>
+		<Item ID="1500033" Name="脊旋复翅" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[脊旋宽大的翅膀，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500034" Name="布偶人滚轮" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[布偶人身上的零件，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500035" Name="布偶人面具" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[布偶人身上的零件，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500036" Name="哈珀半月" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[哈珀的武器，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500037" Name="甲刺针刺" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[甲刺身上锋利的刺，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500038" Name="凝霜头饰" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[凝霜的头饰，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500039" Name="虎奔头甲" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[虎奔的头甲，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500040" Name="皮皮虎爪" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[皮皮虎的爪子，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500041" Name="摩伊巨石" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[摩伊巨大的武器，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500042" Name="狂蜗牛壳" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[狂蜗牛的壳，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500043" Name="大黄蜂盾牌" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[矿坑里大黄蜂战士的盾牌，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500044" Name="戈隆面巾" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[戈隆的面巾，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500045" Name="小树精枝条" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[小树精的枝条，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500046" Name="鼹鼠牙齿" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[试炼之路里瓜皮鼹鼠的牙齿，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500047" Name="胡图护心镜" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[胡图的护心镜，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500048" Name="祭司魔杖" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[祭司魔杖，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500049" Name="法师法杖" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[法师法杖，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500050" Name="沙克头饰" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[沙克头饰，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500051" Name="赤眼" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[赤眼猴子的眼球，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500052" Name="定身符" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[僵硬猴子的道符，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500053" Name="破碎的木枷" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[尼斯身上破碎的木枷，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500054" Name="钵钵" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[钵钵蛛的罐子，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500055" Name="铁扇" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[铁扇牛头人的铁扇，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500056" Name="鹰啸之嘴" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[鹰啸的喙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500057" Name="食骨蝎尾" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[食骨蝎的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500058" Name="幽灵镰刀" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[幽灵猴子的镰刀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500059" Name="浮屠结晶" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[浮屠的结晶，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500060" Name="骷髅之剑" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[骷髅山羊的剑，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500061" Name="融化的蜡烛" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[祭祀龟的蜡烛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500062" Name="破碎的灭昆巨刃" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[灭昆破碎的武器，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500063" Name="巴鲁的徽章" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[巴鲁的徽章，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500064" Name="镇长的官帽" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[镇长的官帽，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500065" Name="白毛" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[白毛鼠的白毛，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500066" Name="四足蚁腿" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[四足蚁的腿，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500067" Name="尖嘴" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[尖嘴蜂的白毛，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500068" Name="山猪的盔甲" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[山猪的盔甲，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500069" Name="长矛" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[尖兵卫的长矛，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500070" Name="五灵脂" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[红蝙蝠的分泌物，是优质的药材，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500071" Name="红鬃" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[红鬃豺狼人的红鬃，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500072" Name="山猫牙" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[山猫的牙齿，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500073" Name="黑熊掌" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[黑熊的熊掌，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500077" Name="利齿徽记" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[从利齿军团身上得到的徽记，记录了你击败黑暗势力的荣耀.]]></descript>
+		</Item>
+		<Item ID="1500078" Name="蛮牛之颅" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[虫眠墓穴里牛魔战士的头颅，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500079" Name="圣甲虫壳" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[虫眠墓穴里圣甲虫的壳，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500080" Name="黑蝙蝠爪" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[黑蝙蝠的爪子，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500081" Name="仙人角" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[独角仙的角，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500082" Name="鳄鱼皮" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[功夫城下水道里鳄鱼的皮，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500083" Name="达口帽" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[功夫城下水道里达口鸭的帽子，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500084" Name="飞矛" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[功夫城下水道里长矛鼠的飞矛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500085" Name="大刀" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[功夫城下水道里大刀螳螂的大刀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500086" Name="贤者之石" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[充满着特殊能量的石头，任务物品，用来打开虫眠墓穴的封印.]]></descript>
+		</Item>
+		<Item ID="1500087" Name="鱼人的眼泪" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[暗影鱼人的眼泪，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500088" Name="食人花种子" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[暗影食人花的种子，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500089" Name="腐烂的树根" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[暗影树人腐烂的树根，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500090" Name="剧毒毒液" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[暗影魅蚊的剧毒毒液，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500091" Name="混沌石眼" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[石眼魔的混沌石眼，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500092" Name="岩石结晶" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[巨岩魔的岩石结晶，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500093" Name="水晶碎片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[水晶蜘蛛的碎片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500094" Name="刚硬石" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[蛮石行者的石头，收集物品，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500095" Name="秘术沉香" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[秘术陀螺的碎片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500096" Name="石甲" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[石甲兽的甲壳，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500097" Name="石影之灵" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[石影巫的灵气结晶，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500098" Name="丛林镰刀" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[丛林猫的镰刀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500099" Name="密林大刀" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[密林豺狼人的大刀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500100" Name="山豹斧头" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[掷斧山豹的斧头，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500101" Name="利爪" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[利爪猫鼬的利爪，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500102" Name="豪猪尖刺" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[豪猪猎人的尖刺，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500103" Name="香烛碎块" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[香烛猫的香烛碎块，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500104" Name="弹弓" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[弹弓狒狒的弹弓，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500105" Name="大门钥匙" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[白虎门神的大门钥匙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500106" Name="大鲵尾巴" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[大鲵武士的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500107" Name="粮袋" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[白眼鼠的粮袋，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500108" Name="超声尖牙" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[超声蝙蝠的尖牙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500109" Name="毒泡" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[水泡蛙的毒泡，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500110" Name="断裂的尾巴" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[壁虎武士断裂的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500111" Name="南瓜头饰" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[南瓜勇士的头饰，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500112" Name="大刀脚" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[隧道蟑螂的脚，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500113" Name="兵蚁之刃" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[兵蚁的刀刃，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500114" Name="人鱼断刃" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[食人鱼断裂的刀刃，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500115" Name="奇面长矛" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[奇面矛手的长矛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500116" Name="青色薄翅" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[绿头蝇的青色薄翅，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500117" Name="水獭肩甲" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[湖边密林里水獭的肩甲，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500118" Name="凯门之冠" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[凯门的头冠，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500120" Name="奇面断箭" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[奇面射手的断箭，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500121" Name="鲶鱼鳞片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[洞穴鲶鱼的鳞片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500122" Name="力士拳套" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[奇怪的祭坛里奇面力士的拳套，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500123" Name="奇面毒箭" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[奇面吹箭手的毒箭，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500124" Name="妖异狐尾" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[妖异狐的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500125" Name="剑士宝剑" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[假面剑士的宝剑，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500126" Name="狼人绷带" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[狼人的绷带，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500127" Name="鬼火碎块" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[鬼火的碎块，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500128" Name="怪人獠牙" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[塔楼怪人的獠牙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500129" Name="雨衣马鬃" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[雨衣马面的鬃毛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500130" Name="小鬼灯" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[吹灯小鬼的灯具，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500131" Name="稻草" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[稻草人的稻草，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500132" Name="奇面面具" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[奇面族的通用面具，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500133" Name="火之精元" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[鬼火的火之精元，上好的打造材料，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500134" Name="木人滚轴" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[木人滚轴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500135" Name="木王核心" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[木王核心，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500136" Name="铜人滚轴" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[铜人滚轴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500137" Name="铜王核心" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[铜王核心，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500138" Name="铁人滚轴" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[铁人滚轴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500139" Name="铁王核心" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[铁王核心，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500140" Name="卷卷舌" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[黏黏巫的卷卷舌，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500141" Name="利牙" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[犬齿的利牙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500142" Name="狼鬃" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[苍狼的狼鬃，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500143" Name="火把" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[火炬狮的火把，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500144" Name="红樱叉" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[金叉狼的红樱叉，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500145" Name="响尾蛇尾" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[响尾蛇的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500146" Name="蛛丝" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[织网蛛的蛛丝，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500147" Name="吸血蝠翅膀" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[吸血蝠的翅膀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500148" Name="赤峰牙棒" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[赤峰的牙棒，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500149" Name="猿人手镯" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[猿人的手镯，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500150" Name="南阳利齿" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[南阳的利齿，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500151" Name="蜘蛛毒液" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[蜘蛛的毒液，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500152" Name="蛤蟆暴眼" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[蛤蟆暴出的眼球，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500153" Name="蜘蛛毒囊" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[蜘蛛的毒囊，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500154" Name="蝎子尾巴" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[暗影之森里宝石蝎的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500155" Name="脊璇翼翅" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[脊璇的翼翅，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500156" Name="布偶人假面" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[布偶人的假面，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500157" Name="哈珀武器" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[哈珀的武器，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500158" Name="甲刺护肩" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[甲刺的护肩，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500159" Name="鼠尾白毛" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[白毛鼠的鼠尾白毛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500160" Name="蚂蚁前足" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[蚂蚁的前足，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500161" Name="尖刺" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[尖嘴蜂的尖刺，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500162" Name="山猪背甲" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[山猪的背甲，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500163" Name="石矛" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[尖兵卫的石矛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500164" Name="五灵散" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[红蝙蝠的五灵散，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500165" Name="豺狼鬃毛" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[豺狼人的鬃毛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500166" Name="山猫齿" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[山猫的利齿，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500167" Name="黑熊爪" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[黑熊的爪子，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500168" Name="蝙蝠利爪" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[黑蝙蝠的利爪，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500169" Name="仙人硬角" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[独角仙的硬角，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500170" Name="鱼人泪珠" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[鱼人的泪珠，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500171" Name="食人幼苗" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[食人花的幼苗，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500172" Name="树人树根" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[暗影之森里暗影树人的树根，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500173" Name="蚊血毒液" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[蚊血毒液，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500174" Name="土岩石眼" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[石眼魔的土岩石眼，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500175" Name="巨岩结晶" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[巨岩结晶，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500176" Name="宝石碎片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[宝石碎片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500177" Name="夜鸦尖喙" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[夜鸦的尖喙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500178" Name="完整的独眼" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[独眼巨人完整的独眼，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500179" Name="撕裂的帽子" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[风干道士撕裂的帽子，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500180" Name="飞蛾翅膀" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[剧毒飞蛾的翅膀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500181" Name="吹箭" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[骷髅吹箭手的吹箭，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500182" Name="秃鹫羽毛" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[食腐秃鹫的羽毛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500183" Name="长舌" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[长舌猩猩的长舌，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500184" Name="无影翼" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[无影猫的羽翼，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500185" Name="蛞蝓粘液" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[七彩蛞蝓的粘液，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500186" Name="豺狼血瞳" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[豺狼人的血瞳，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500187" Name="鱼人木镐" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[鱼人矿工的木镐，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500188" Name="巨大的恶魔角" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[森冷的恶魔角，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500189" Name="监工的武器" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[监工的武器，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500190" Name="螃蟹大螯" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[螃蟹大螯，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500191" Name="石泥" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[石泥，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500192" Name="匠师石锤" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[铸剑池里蛇行匠师的石锤，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500193" Name="灰狼牙" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[灰狼的牙齿，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500194" Name="掘地镐" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[掘地鼠的镐，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500195" Name="马蜂圆盾" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[马蜂的圆盾，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500196" Name="刺针薄翼" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[刺针蜂的薄翼，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500197" Name="波涛长戟" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[古鲁的波涛长戟，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500198" Name="斥候战戟" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[鱼人斥候的战戟，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500199" Name="水藻种子" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[神秘藻的种子，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500200" Name="捕虫囊" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[猪笼草的捕虫囊，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500201" Name="河豚毒素" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[芦苇河豚的毒素，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500202" Name="鱼人毒胆" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[鱼人的毒胆，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500203" Name="希里尖锤" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[希里的尖锤，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500204" Name="加兰之铠" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[加兰勇士的铠甲，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500205" Name="龙虾厚壳" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[龙虾的厚壳，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500206" Name="蟒蛇皮" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[白斑蟒蛇的蛇皮，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500207" Name="守卫腰带" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[加兰守卫的腰带，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500208" Name="加兰血刺" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[加兰刺客的血刺，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500209" Name="石灵残片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[小石灵的残片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500210" Name="鮟鱇触须" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[鮟鱇的触须，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500211" Name="鲜艳的祭潮之角" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[鲜艳的祭潮之角，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500214" Name="苦工工具" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[鱼人苦工的工具，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500215" Name="巡逻护卫的令牌" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[巡逻护卫的令牌，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500216" Name="双刀" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[双刀护卫的双刀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500217" Name="先锋护卫的盾牌" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[先锋护卫的盾牌，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500218" Name="铁卫连弩" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[加兰铁卫的连弩，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500219" Name="大火精" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[火灵神的大火精，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500220" Name="避水珠" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[逆水的避水珠，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500221" Name="碧露果" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[一种绿色的果实，可以用来做碧露丸，产自一气学院]]></descript>
+		</Item>
+		<Item ID="1500222" Name="万灵果" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[千灵树结出的果实，粉末可以用来做万灵散，产自矿山镇]]></descript>
+		</Item>
+		<Item ID="1500223" Name="天霜果" Tradability="2" VipTradability="2" 
+			SellPrice="15">
+			<descript><![CDATA[天霜树的果实，坚硬质地，粉末可以做补药，产自十字路口]]></descript>
+		</Item>
+		<Item ID="1500224" Name="逍遥果" Tradability="2" VipTradability="2" 
+			SellPrice="20">
+			<descript><![CDATA[奇特的水果，据说可以逍遥一下，产自功夫城西]]></descript>
+		</Item>
+		<Item ID="1500225" Name="万花果" Tradability="2" VipTradability="2" 
+			SellPrice="30">
+			<descript><![CDATA[花中之王产生的果实，产自虎丘]]></descript>
+		</Item>
+		<Item ID="1500226" Name="混元果" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[拥有三种颜色的果实，产自倚天塔]]></descript>
+		</Item>
+		<Item ID="1500227" Name="玉露果" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[具有巨大灵气的果实，产于铸剑谷]]></descript>
+		</Item>
+		<Item ID="1500228" Name="长生果皮" Tradability="2" VipTradability="2" 
+			SellPrice="15">
+			<descript><![CDATA[长生果地果皮，可以制作长生丸，产自一气学院]]></descript>
+		</Item>
+		<Item ID="1500229" Name="凝神清水" Tradability="2" VipTradability="2" 
+			SellPrice="20">
+			<descript><![CDATA[一种具有灵气的清水，沉淀物可以做凝神丸，产自矿山镇]]></descript>
+		</Item>
+		<Item ID="1500230" Name="展凤翅" Tradability="2" VipTradability="2" 
+			SellPrice="25">
+			<descript><![CDATA[飞禽展凤的翅膀，产自十字路口]]></descript>
+		</Item>
+		<Item ID="1500231" Name="亢龙之眼" Tradability="2" VipTradability="2" 
+			SellPrice="30">
+			<descript><![CDATA[亢龙果地种子，产自功夫城西]]></descript>
+		</Item>
+		<Item ID="1500232" Name="长生罗恩" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[长生树的根，产自虎丘]]></descript>
+		</Item>
+		<Item ID="1500233" Name="聚魂魄石" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[沉睡溪涧的聚魂苔藓生长过的石头，产自倚天塔]]></descript>
+		</Item>
+		<Item ID="1500234" Name="太白果" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[太白树的果实，异常珍贵，产于铸剑谷]]></descript>
+		</Item>
+		<Item ID="1500235" Name="清水" Tradability="2" VipTradability="2" 
+			SellPrice="0">
+			<descript><![CDATA[一气学院龙潭里面打上来的水]]></descript>
+		</Item>
+		<Item ID="1500236" Name="壁虎尾巴" Tradability="2" VipTradability="2" 
+			SellPrice="0">
+			<descript><![CDATA[练功房里面的捉壁虎获得的尾巴]]></descript>
+		</Item>
+		<Item ID="1500238" Name="园丁剪刀" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[大剪园丁的园丁剪刀，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500239" Name="花洒露珠" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[花洒匠的花洒露珠，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500240" Name="葛藤藤蔓" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[葛藤怪人的藤蔓，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500241" Name="变色断尾" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[石肤变色龙的断尾，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500242" Name="搬山工背篓" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[搬山工的背篓，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500243" Name="猕猴石块" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[猕猴的石块，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500244" Name="隐居者斗篷" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[密道隐居者的斗篷，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500245" Name="隐面帽" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[隐面向导的隐面帽，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500246" Name="山羊角" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[山羊的角，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500247" Name="引路牌" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[引路者的引路牌，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500248" Name="传音耳环" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[传音的耳环，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500249" Name="紫崖衣角" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[紫崖的衣角，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500250" Name="狂暴黑熊战魂" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[合成狂暴黑熊变身符的材料，产自野猪林后山]]></descript>
+		</Item>
+		<Item ID="1500251" Name="暴爪蜥蜴战魂" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[合成暴爪蜥蜴变身符的材料，产自试炼之路]]></descript>
+		</Item>
+		<Item ID="1500252" Name="小鼹鼠战魂" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[合成小鼹鼠变身符的材料，产自试炼之路]]></descript>
+		</Item>
+		<Item ID="1500253" Name="赤眼猴战魂" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[合成赤眼猴变身符的材料，产自试炼之路]]></descript>
+		</Item>
+		<Item ID="1500254" Name="牛魔战士战魂" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[合成牛魔战士变身符的材料，产自虫眠墓穴]]></descript>
+		</Item>
+		<Item ID="1500255" Name="扬子鳄战魂" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[合成扬子鳄变身符的材料，产自神秘下水道]]></descript>
+		</Item>
+		<Item ID="1500256" Name="大刀螳螂战魂" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[合成大刀螳螂变身符的材料，产自神秘下水道]]></descript>
+		</Item>
+		<Item ID="1500257" Name="南瓜灵珠" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[南瓜怪人的南瓜灵珠，根据黑白婆婆的要求，可换取不同等级的南瓜帽.]]></descript>
+		</Item>
+		<Item ID="1500259" Name="破碎的铃铛" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[通铃猫破碎的铃铛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500260" Name="护卫的镰刀" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[镰刀护卫的武器，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500261" Name="狮鬃" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[火舞狮头的狮鬃，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500262" Name="有毒的羽箭" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[吹箭猎手有毒的羽箭，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500263" Name="锤斧" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[嗜睡之锤的锤斧，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500264" Name="飞羽雏的信物" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[飞羽雏的信物，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500265" Name="飞羽雏的羽毛" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[飞羽雏的羽毛，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500266" Name="裂痕之刃" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[息土潜伏者的裂痕之刃，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500267" Name="邪眼" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[邪眼收藏家的邪眼，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500268" Name="锋利的尖牙" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[盲牙锋利的尖牙，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500269" Name="青古石" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[青石眼的青古石，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500270" Name="火焰晶体碎片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[燃烧水晶的火焰晶体碎片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500271" Name="残存的碎骨" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[涡流残存的碎骨，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500272" Name="血狐之尾" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[玄冥血狐的尾巴，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500273" Name="石化之爪" Tradability="2" VipTradability="2" 
+			SellPrice="60">
+			<descript><![CDATA[钝爪的石化之爪，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500277" Name="伪装者的面巾" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[伪装者的面巾，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<!-- 万圣节活动物品 -->
+		<Item ID="1500258" Name="南瓜毒素" Tradability="3" VipTradability="3" SellPrice="5">
+			<descript><![CDATA[南瓜怪人释放的毒素，能将居民变成不能动弹的南瓜，集齐5个，可以从黑白婆婆处换取除灵散，该物品无法出售。]]></descript>
+		</Item>
+		<!-- 运营活动物品 -->
+		<Item ID="1500274" Name="纯白的通铃长毛" Tradability="2" VipTradability="2" QualityLevel="4"
+			SellPrice="60">
+			<descript><![CDATA[通铃猫纯白的长毛，稀有材料，用于合成紫色装备.]]></descript>
+		</Item>
+		<Item ID="1500275" Name="五彩的飞羽" Tradability="2" VipTradability="2" QualityLevel="4"
+			SellPrice="60">
+			<descript><![CDATA[飞羽雏的五彩飞羽，稀有材料，用于合成紫色装备.]]></descript>
+		</Item>
+		<Item ID="1500276" Name="金色的南瓜籽" Tradability="2" VipTradability="2" QualityLevel="4"
+			SellPrice="60">
+			<descript><![CDATA[南瓜怪人金色的南瓜籽，稀有材料，用于合成紫色装备.]]></descript>
+		</Item>
+		<Item ID="1500278" Name="灵犀棍碎片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[灵犀棍碎片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500279" Name="圣殿短刃碎片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[圣殿短刃碎片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		<Item ID="1500280" Name="虎狼锤碎片" Tradability="2" VipTradability="2" 
+			SellPrice="40">
+			<descript><![CDATA[虎狼锤碎片，可出售给商人换取功夫豆.]]></descript>
+		</Item>
+		
+		
+		
+		
+		
+		<!-- 中秋活动物品 -->
+		<Item ID="1500212" Name="月桂枝" Tradability="2" VipTradability="2" 
+			SellPrice="100">
+			<descript><![CDATA[只有中秋期间才能获得的物品，集齐不同的数量，可以去功夫城剑仙占星大仙处换取不同奖励.]]></descript>
+		</Item>
+		<Item ID="1500213" Name="光之月桂枝" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[只有中秋期间每天上午9点到11点，下午2点到4点才能获得的物品，集齐100个，可以去功夫城剑仙占星大仙处换取月魂玉.]]></descript>
+		</Item>
+		<!-- 国庆活动物品 -->
+		<Item ID="1500237" Name="龙珠神鼎碎片" Tradability="2" VipTradability="2" 
+			SellPrice="50">
+			<descript><![CDATA[只有<font color='#FF0000'>9月30日18:00-20:00</font>，国庆期间每天<font color='#FF0000'>上午9点到11点</font>，<font color='#FF0000'>下午2点到4点</font>才能获得的物品，集齐25个，可以前往青甲龙石窟兑换国庆礼品哦。]]></descript>
+		</Item>
+		<!-- 30级主线任务物品 -->
+		<Item ID="1500119" Name="神器的副器" Tradability="2" VipTradability="2" 
+			SellPrice="5">
+			<descript><![CDATA[神器副器，带上它才能击败摩伊，可出售给商人换取功夫豆。]]></descript>
+		</Item>
+		
+		<!-- 装备分解产物 -->
+		<Item ID="1500901" Name="绿色碎片" Tradability="0" VipTradability="0" QualityLevel="2"
+			SellPrice="50">
+			<descript><![CDATA[由装备所分解出来的精华，通体呈绿色。]]></descript>
+		</Item>
+		<Item ID="1500902" Name="蓝色碎片" Tradability="0" VipTradability="0" QualityLevel="3"
+			SellPrice="50">
+			<descript><![CDATA[由装备所分解出来的精华，通体呈蓝色。]]></descript>
+		</Item>
+		<Item ID="1500903" Name="紫色碎片" Tradability="0" VipTradability="0" QualityLevel="4"
+			SellPrice="50">
+			<descript><![CDATA[由装备所分解出来的精华，通体呈紫色。]]></descript>
+		</Item>
+		<Item ID="1500904" Name="橙色碎片" Tradability="0" VipTradability="0" QualityLevel="5"
+			SellPrice="50">
+			<descript><![CDATA[由装备所分解出来的精华，通体呈橙色。]]></descript>
+		</Item>
+		<Item ID="1500905" Name="金色碎片" Tradability="0" VipTradability="0" QualityLevel="6"
+			SellPrice="50">
+			<descript><![CDATA[由装备所分解出来的精华，通体呈金色。]]></descript>
+		</Item>
+		<Item ID="1500906" Name="红色碎片" Tradability="0" VipTradability="0" QualityLevel="7"
+			SellPrice="50">
+			<descript><![CDATA[由装备所分解出来的精华，通体呈红色。]]></descript>
+		</Item>
+		<Item ID="1500907" Name="征服者的上装碎片" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[冥鲲套装升级为九天鲲鹏套装所需要的上装碎片，集齐3个上装碎片可升级上装。]]></descript>
+		</Item>
+		<Item ID="1500908" Name="征服者的下装碎片" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[冥鲲套装升级为九天鲲鹏套装所需要的下装碎片，集齐3个下装碎片可升级下装。]]></descript>
+		</Item>
+		<Item ID="1500909" Name="征服者的头盔碎片" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[冥鲲套装升级为九天鲲鹏套装所需要的头盔碎片，集齐3个头盔碎片可升级头盔。]]></descript>
+		</Item>
+		<Item ID="1500910" Name="征服者的腰带碎片" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[冥鲲套装升级为九天鲲鹏套装所需要的腰带碎片，集齐3个腰带碎片可升级腰带。]]></descript>
+		</Item>
+		<Item ID="1500911" Name="征服者的护腕碎片" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[冥鲲套装升级为九天鲲鹏套装所需要的护腕碎片，集齐3个护腕碎片可升级护腕。]]></descript>
+		</Item>
+		<Item ID="1500912" Name="征服者的鞋子碎片" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[冥鲲套装升级为九天鲲鹏套装所需要的鞋子碎片，集齐3个鞋子碎片可升级鞋子。]]></descript>
+		</Item>
+		<Item ID="1500913" Name="征服者的武器碎片" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[冥鲲套装升级为九天鲲鹏套装所需要的武器碎片，集齐3个武器碎片可升级武器。]]></descript>
+		</Item>
+
+		<!-- 装备打造图纸 -->
+		<Item ID="1550000" Name="图纸：白金战锤" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="925">
+			<descript><![CDATA[打造白金战锤所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550001" Name="图纸：巨蜥热裤" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="235">
+			<descript><![CDATA[打造巨蜥热裤所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550002" Name="图纸：幽灵靴" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="480">
+			<descript><![CDATA[打造幽灵靴所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550003" Name="图纸：星辰护腕" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="625">
+			<descript><![CDATA[打造星辰护腕所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550004" Name="图纸：聚神冠" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="575">
+			<descript><![CDATA[打造聚神冠所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550005" Name="图纸：三寸霜刃" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="925">
+			<descript><![CDATA[打造三寸霜刃所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550006" Name="图纸：锦鲤下装" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="235">
+			<descript><![CDATA[打造锦鲤下装所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550007" Name="图纸：一跃靴" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="480">
+			<descript><![CDATA[打造一跃靴所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550008" Name="图纸：白银护手" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="625">
+			<descript><![CDATA[打造白银护手所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550009" Name="图纸：流火冠" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="575">
+			<descript><![CDATA[打造流火冠所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550010" Name="图纸：槐木长棍" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="925">
+			<descript><![CDATA[打造槐木长棍所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550011" Name="图纸：多彩长裤" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="235">
+			<descript><![CDATA[打造多彩长裤所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550012" Name="图纸：草上飞靴" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="480">
+			<descript><![CDATA[打造草上飞靴所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550013" Name="图纸：精钢护手" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="625">
+			<descript><![CDATA[打造精钢护手所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550014" Name="图纸：千浪冠" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="575">
+			<descript><![CDATA[打造千浪冠所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550015" Name="图纸：古铜皮带" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="435">
+			<descript><![CDATA[打造古铜皮带所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550016" Name="图纸：脉冲护腕" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="800">
+			<descript><![CDATA[打造脉冲护腕所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550017" Name="图纸：棘钢腰带" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="435">
+			<descript><![CDATA[打造棘钢腰带所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550018" Name="图纸：巧力护手" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="800">
+			<descript><![CDATA[打造巧力护手所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550019" Name="图纸：赤焰腰带" QualityLevel="2" Tradability="2" VipTradability="2" 
+			SellPrice="435">
+			<descript><![CDATA[打造赤焰腰带所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550020" Name="图纸：巨力护手" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="800">
+			<descript><![CDATA[打造巨力护手所需的图纸。]]></descript>
+		</Item>
+        <Item ID="1550021" Name="图纸：碧影腰带" Role="1" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造41级蓝色装备碧影腰带所需的图纸。需要材料：蓝色碎片*15-分解蓝装所得，绿色碎片*5-分解绿装所得，传音耳环*3-出自关卡岩洞种植园，山豹斧头*5-出自关卡虎丘林]]></descript>
+		</Item>		
+		<Item ID="1550022" Name="图纸：乌金腰带" Role="2" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造41级蓝色装备乌金腰带所需的图纸。需要材料：蓝色碎片*15-分解蓝装所得，绿色碎片*5-分解绿装所得，传音耳环*3-出自关卡岩洞种植园，铁卫连弩*5-出自关卡加兰神殿]]></descript>
+		</Item>		
+		<Item ID="1550023" Name="图纸：冰纹铠腰带" Role="3" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造41级蓝色装备冰纹铠腰带所需的图纸。需要材料：蓝色碎片*15-分解蓝装所得，绿色碎片*5-分解绿装所得，传音耳环*3-出自关卡岩洞种植园，鮟鱇触须*5-出自关卡剑裂溪谷]]></descript>
+		</Item>			
+		<Item ID="1550024" Name="图纸：宁心护手" Role="1" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造40级蓝色装备宁心护手所需的图纸。需要材料：蓝色碎片*15-分解蓝装所得，绿色碎片*5-分解绿装所得，花洒露珠*10-出自关卡岩洞种植园，葛藤藤蔓*10-出自关卡岩洞种植园]]></descript>
+		</Item>		
+		<Item ID="1550025" Name="图纸：铁线护手" Role="2" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造40级蓝色装备铁线护手所需的图纸。需要材料：蓝色碎片*15-分解蓝装所得，绿色碎片*5-分解绿装所得，变色断尾*10-出自关卡岩洞种植园，葛藤藤蔓*10-出自关卡岩洞种植园]]></descript>
+		</Item>			
+		<Item ID="1550026" Name="图纸：勾玉护手" Role="3" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造40级蓝色装备勾玉护手所需的图纸。需要材料：蓝色碎片*15-分解蓝装所得，绿色碎片*5-分解绿装所得，园丁剪刀*10-出自关卡岩洞种植园，葛藤藤蔓*10-出自关卡岩洞种植园]]></descript>
+		</Item>
+		<Item ID="1550027" Name="图纸：灵犀棍" QualityLevel="4" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造45级紫色装备灵犀棍所需的图纸。需要材料：紫色碎片*20,纯白的通铃长毛*1，五彩的飞羽*1，金色的南瓜籽*1]]></descript>
+		</Item>
+		<Item ID="1550028" Name="图纸：圣殿短刃" QualityLevel="4" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造45级紫色装备圣殿短刃所需的图纸。需要材料：紫色碎片*20,纯白的通铃长毛*1，五彩的飞羽*1，金色的南瓜籽*1]]></descript>
+		</Item>
+		<Item ID="1550029" Name="图纸：虎狼锤" QualityLevel="4" Tradability="2" VipTradability="2" 
+			SellPrice="10">
+			<descript><![CDATA[打造45级紫色装备虎狼锤所需的图纸。需要材料：紫色碎片*20,纯白的通铃长毛*1，五彩的飞羽*1，金色的南瓜籽*1]]></descript>
+		</Item>
+		<Item ID="1550030" Name="图纸：蓝色碎片" QualityLevel="3" Tradability="2" VipTradability="2" 
+			SellPrice="5">
+			<descript><![CDATA[将绿色碎片合成蓝色碎片所需的图纸。]]></descript>
+		</Item>
+		<Item ID="1550031" Name="图纸：紫色碎片" QualityLevel="4" Tradability="2" VipTradability="2" 
+			SellPrice="5">
+			<descript><![CDATA[将蓝色碎片合成紫色碎片所需的图纸。]]></descript>
+		</Item>		
+	</Cat>
+	
+	<!-- 灵兽喂养 -->
+	<Cat ID="16" DbCatID="2" Name="灵晶" Max="99" >
+		<Item ID="1600001" Name="灵晶碎片" DropLv="100" Price="500" 
+			SellPrice="250" FightValue="10" Tradability="3" VipTradability="3"  
+			AvailableMap="0,202">
+			<descript><![CDATA[灵晶的碎片，回复10点灵兽值.]]></descript>
+		</Item>
+		<Item ID="1600002" Name="灵晶" DropLv="100" Price="1000" 
+			SellPrice="500" FightValue="30" Tradability="3" VipTradability="3"  
+			AvailableMap="0,202">
+			<descript><![CDATA[完整的灵晶，回复30点灵兽值.]]></descript>
+		</Item>
+		<Item ID="1600003" Name="大灵晶" DropLv="100" Price="2000" 
+			SellPrice="1000" FightValue="60" Tradability="3" VipTradability="3"  
+			AvailableMap="0,202">
+			<descript><![CDATA[大号的灵晶，回复60点灵兽值.]]></descript>
+		</Item>
+		<Item ID="1600004" Name="超级灵晶" DropLv="100" Price="4000" 
+			SellPrice="2000" FightValue="90" Tradability="3" VipTradability="3"  
+			AvailableMap="0,202">
+			<descript><![CDATA[超级品质的灵晶，回复90点灵兽值.]]></descript>
+		</Item>
+	</Cat>
+	
+	<!-- 国庆活动道具 -->
+	<Cat ID="17" DbCatID="2" Name="其它属性" Max="99" >
+		<Item ID="1700001" Name="风云令牌锦盒" Tradability="1" VipTradability="1">
+			<descript><![CDATA[证明侠士品行道德的锦盒，收集满5个金色风云令牌时，即可交给武圣爷爷，无法出售。]]></descript>
+		</Item>
+		<Item ID="1700008" Name="超级护符" DropLv="100" SellPrice="50" Tradability="2" VipTradability="2"  
+			AvailableMap="0,202">
+			<descript><![CDATA[<font color='#FF0000'>双倍经验符</font>，使用增加半小时双倍经验时间.每天限用一个.]]></descript>
+		</Item>
+		<!-- 传世布袋 -->
+		<Item ID="1700009" Name="5级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="5" DailyId="201">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>5级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700010" Name="10级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="10" DailyId="202">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>10级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700011" Name="15级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="15" DailyId="203">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>15级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700012" Name="20级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="20" DailyId="204">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>20级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700013" Name="25级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="25" DailyId="205">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>25级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700014" Name="30级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="30" DailyId="206">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>30级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700015" Name="35级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="35" DailyId="207">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>35级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700016" Name="40级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="40" DailyId="208">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>40级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700017" Name="45级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="45">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>45级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700018" Name="50级布袋" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="50">
+			<descript><![CDATA[武圣爷爷的传世布袋，当你的功力精进之后，即可开启获得丰盛礼物.<font color='#CC5100'>50级开启</font>.]]></descript>
+		</Item>
+		<Item ID="1700040" Name="幸运小宝箱" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="1">
+			<descript><![CDATA[受幸运祝福的小宝箱，在线<font color='#CC5100'>两小时内</font>可以获得，打开有惊喜哦.]]></descript>
+		</Item>
+		<Item ID="1700041" Name="幸运大宝箱" DropLv="100" Tradability="0" VipTradability="0" UnDrop="1"  
+			AvailableMap="0" UseLv="1">
+			<descript><![CDATA[受幸运祝福的大宝箱，周末在线<font color='#CC5100'>两小时以上</font>可以获得，惊喜不断，幸运不断.]]></descript>
+		</Item>
+
+	</Cat>
+</Items>

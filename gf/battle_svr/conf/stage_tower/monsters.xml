@@ -1,0 +1,1376 @@
+<!--
+	ID怪物ID，1-100用户角色，10001-11000 NPC，11001-19000怪物，19001-20000宝箱、木桶等；Mp可以不填，默认为0；
+	Type怪物类型：1、BOSS；2、低级小怪；3、中级小怪；4、小怪首领；5、特殊小怪
+	LRA远程攻击能力：默认0；1为具有远程攻击能力
+	YieldingExp输出经验，默认0；Atk攻击力，默认为0；DefRate防御率，默认为0；HitRate命中率，默认为0；
+	DodgeRate闪避率，默认为0；SkillPoint技能点，默认为0；Speed速度（像素/秒），默认为0；
+	AtkDuration攻击速度（ms）
+	VisualField视野（像素），表示玩家在怪物的多少像素以内时，怪物开始向玩家移动，默认是0；
+	Length长度；Width宽度；Height高度；SkillID怪物所用的技能ID；
+	MaterialDrop材料；LuckyDrop幸运；ClothesDrop装备；ItemsDrop杂货
+	UniqueDrop唯一物品：DropOdds概率；RoleType角色，表示对哪种角色才掉落，0是对所有角色掉落，默认0；
+-->
+
+<Monsters>
+	<Monster ID="1" Name="猴子" Lv="1" Hp="180" Speed="130" Length="70" Width="30" Height="120"/>
+	<Monster ID="2" Name="兔子" Lv="1" Hp="160" Speed="130" Length="50" Width="30" Height="120"/>
+	<Monster ID="3" Name="熊猫" Lv="1" Hp="200" Speed="130" Length="100" Width="40" Height="140"/>
+	<Monster ID="4" Name="龙女" Lv="1" Hp="200" Speed="130" Length="100" Width="40" Height="140"/>
+	
+	
+
+	<!--唯一掉落物品示例
+	< Monster ID="0" Name="test" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="100" Length="80" Width="30" Height="130" VisualField="450">
+		<Skill ID="0" Lv="1" />
+		<ItemDrop>
+			<UniqueDrop ItemID="1900007" DropOdds="40" RoleType="1" />
+			<MaterialDrop ItemID="0" DropOdds="40" />
+			<LuckyDrop ItemID="0" DropOdds="0" />
+			<ClothesDrop DropLv="1" DropOdds="1" />
+			<ItemsDrop DropLv="1" DropOdds="3" />
+		</ItemDrop>
+	</Monster-->
+	
+	<!--灵兽-->
+	<Monster ID="1002" Name="白玉狐幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020007" Lv="1"/>
+	</Monster>
+	<Monster ID="1003" Name="白玉狐成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020008" Lv="1"/>
+		<Skill ID="4020011" Lv="1"/>
+	</Monster>
+	<Monster ID="1004" Name="白玉狐成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020009" Lv="1"/>
+		<Skill ID="4020011" Lv="1"/>
+		<Skill ID="4020012" Lv="1"/>
+	</Monster>
+	<Monster ID="1005" Name="白玉狐最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020010" Lv="1"/>
+		<Skill ID="4020011" Lv="1"/>
+		<Skill ID="4020012" Lv="1"/>
+		<Skill ID="4020013" Lv="1"/>
+	</Monster>
+	<Monster ID="1012" Name="月灵兔幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="50" Height="55" VisualField="300">
+		<Skill ID="4020014" UseLv="1" Lv="1"/>
+	</Monster>
+	<Monster ID="1013" Name="月灵兔成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="78" Height="64" VisualField="300">
+		<Skill ID="4020015" UseLv="25" Lv="1"/>
+		<Skill ID="4020018" UseLv="25" Lv="1"/>
+	</Monster>
+	<Monster ID="1014" Name="月灵兔成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="100" Height="80" VisualField="300">
+		<Skill ID="4020016" UseLv="35" Lv="1"/>
+		<Skill ID="4020018" UseLv="25" Lv="1"/>
+		<Skill ID="4020019" UseLv="35" Lv="1"/>
+	</Monster>
+	<Monster ID="1015" Name="月灵兔最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="180" Height="120" VisualField="300">
+		<Skill ID="4020017" UseLv="45" Lv="1"/>
+		<Skill ID="4020018" UseLv="25" Lv="1"/>
+		<Skill ID="4020019" UseLv="35" Lv="1"/>
+		<Skill ID="4020020" UseLv="45" Lv="1"/>
+	</Monster>
+	<Monster ID="1022" Name="流光鹿幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020021" Lv="1"/>
+	</Monster>
+	<Monster ID="1023" Name="流光鹿成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020022" Lv="1"/>
+		<Skill ID="4020025" Lv="1"/>
+	</Monster>
+	<Monster ID="1024" Name="流光鹿成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020023" Lv="1"/>
+		<Skill ID="4020025" Lv="1"/>
+		<Skill ID="4020026" Lv="1"/>
+	</Monster>
+	<Monster ID="1025" Name="流光鹿最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020024" Lv="1"/>
+		<Skill ID="4020025" Lv="1"/>
+		<Skill ID="4020026" Lv="1"/>
+		<Skill ID="4020027" Lv="1"/>
+	</Monster>
+	<Monster ID="1032" Name="通灵猫幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020028" Lv="1"/>
+	</Monster>
+	<Monster ID="1033" Name="通灵猫成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020029" Lv="1"/>
+		<Skill ID="4020032" Lv="1"/>
+	</Monster>
+	<Monster ID="1034" Name="通灵猫成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020030" Lv="1"/>
+		<Skill ID="4020032" Lv="1"/>
+		<Skill ID="4020033" Lv="1"/>
+	</Monster>
+	<Monster ID="1035" Name="通铃猫最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020031" Lv="1"/>
+		<Skill ID="4020032" Lv="1"/>
+		<Skill ID="4020033" Lv="1"/>
+		<Skill ID="4020034" Lv="1"/>
+	</Monster>
+	<Monster ID="1036" Name="通铃猫最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020031" Lv="1"/>
+		<Skill ID="4020032" Lv="1"/>
+		<Skill ID="4020033" Lv="1"/>
+		<Skill ID="4020053" Lv="1"/>
+	</Monster>
+	<Monster ID="1042" Name="飞羽雏幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020035" Lv="1"/>
+	</Monster>
+	<Monster ID="1043" Name="飞羽雏成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020036" Lv="1"/>
+		<Skill ID="4020040" Lv="1"/>
+	</Monster>
+	<Monster ID="1044" Name="飞羽雏成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020037" Lv="1"/>
+		<Skill ID="4020040" Lv="1"/>
+		<Skill ID="4020041" Lv="1"/>
+	</Monster>
+	<Monster ID="1045" Name="飞羽雏最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020038" Lv="1"/>
+		<Skill ID="4020040" Lv="1"/>
+		<Skill ID="4020041" Lv="1"/>
+		<Skill ID="4020042" Lv="1"/>
+	</Monster>
+	<Monster ID="1046" Name="飞羽雏超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020039" Lv="1"/>
+		<Skill ID="4020040" Lv="1"/>
+		<Skill ID="4020041" Lv="1"/>
+		<Skill ID="4020043" Lv="1"/>
+	</Monster>
+	<Monster ID="1052" Name="小雪球幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020044" Lv="1"/>
+	</Monster>
+	<Monster ID="1053" Name="小雪球成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020045" Lv="1"/>
+		<Skill ID="4020049" Lv="1"/>
+	</Monster>
+	<Monster ID="1054" Name="小雪球成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020046" Lv="1"/>
+		<Skill ID="4020049" Lv="1"/>
+		<Skill ID="4020050" Lv="1"/>
+	</Monster>
+	<Monster ID="1055" Name="小雪球最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020047" Lv="1"/>
+		<Skill ID="4020049" Lv="1"/>
+		<Skill ID="4020050" Lv="1"/>
+		<Skill ID="4020051" Lv="1"/>
+	</Monster>
+	<Monster ID="1056" Name="小雪球超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020048" Lv="1"/>
+		<Skill ID="4020049" Lv="1"/>
+		<Skill ID="4020050" Lv="1"/>
+		<Skill ID="4020052" Lv="1"/>
+	</Monster>
+	<Monster ID="1062" Name="天锣雷光兔幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020054" Lv="1"/>
+	</Monster>
+	<Monster ID="1063" Name="天锣雷光兔成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020055" Lv="1"/>
+		<Skill ID="4020059" Lv="1"/>
+	</Monster>
+	<Monster ID="1064" Name="天锣雷光兔成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020056" Lv="1"/>
+		<Skill ID="4020059" Lv="1"/>
+		<Skill ID="4020060" Lv="1"/>
+	</Monster>
+	<Monster ID="1065" Name="天锣雷光兔最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020057" Lv="1"/>
+		<Skill ID="4020059" Lv="1"/>
+		<Skill ID="4020060" Lv="1"/>
+		<Skill ID="4020061" Lv="1"/>
+	</Monster>
+	<Monster ID="1066" Name="天锣雷光兔超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020058" Lv="1"/>
+		<Skill ID="4020059" Lv="1"/>
+		<Skill ID="4020060" Lv="1"/>
+		<Skill ID="4020062" Lv="1"/>
+	</Monster>
+	<Monster ID="1072" Name="粉罗兔幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020063" Lv="1"/>
+	</Monster>
+	<Monster ID="1073" Name="粉罗兔成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020064" Lv="1"/>
+		<Skill ID="4020068" Lv="1"/>
+	</Monster>
+	<Monster ID="1074" Name="粉罗兔成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020065" Lv="1"/>
+		<Skill ID="4020068" Lv="1"/>
+		<Skill ID="4020069" Lv="1"/>
+	</Monster>
+	<Monster ID="1075" Name="粉罗兔最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020066" Lv="1"/>
+		<Skill ID="4020068" Lv="1"/>
+		<Skill ID="4020069" Lv="1"/>
+		<Skill ID="4020070" Lv="1"/>
+	</Monster>
+	<Monster ID="1076" Name="粉罗兔超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020067" Lv="1"/>
+		<Skill ID="4020068" Lv="1"/>
+		<Skill ID="4020069" Lv="1"/>
+		<Skill ID="4020071" Lv="1"/>
+	</Monster>
+	<Monster ID="1082" Name="灼热之灵幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020072" Lv="1"/>
+	</Monster>
+	<Monster ID="1083" Name="灼热之灵成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="2" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020073" Lv="1"/>
+		<Skill ID="4020081" Lv="1"/>
+	</Monster>
+	<Monster ID="1084" Name="灼热之灵成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="3" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020074" Lv="1"/>
+		<Skill ID="4020081" Lv="1"/>
+		<Skill ID="4020078" Lv="1"/>
+	</Monster>
+	<Monster ID="1085" Name="灼热之灵最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="4" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020075" Lv="1"/>
+		<Skill ID="4020081" Lv="1"/>
+		<Skill ID="4020078" Lv="1"/>
+		<Skill ID="4020079" Lv="1"/>
+	</Monster>
+	<Monster ID="1086" Name="灼热之灵超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="4" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020076" Lv="1"/>
+		<Skill ID="4020081" Lv="1"/>
+		<Skill ID="4020078" Lv="1"/>
+		<Skill ID="4020080" Lv="1"/>
+	</Monster>
+	<Monster ID="1092" Name="暗影鼠幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020082" Lv="1"/>
+	</Monster>
+	<Monster ID="1093" Name="暗影鼠成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020083" Lv="1"/>
+		<Skill ID="4020115" Lv="1"/>
+	</Monster>
+	<Monster ID="1094" Name="暗影鼠成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020084" Lv="1"/>
+		<Skill ID="4020115" Lv="1"/>
+		<Skill ID="4020116" Lv="1"/>
+	</Monster>
+	<Monster ID="1095" Name="暗影鼠最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020085" Lv="1"/>
+		<Skill ID="4020115" Lv="1"/>
+		<Skill ID="4020116" Lv="1"/>
+		<Skill ID="4020117" Lv="1"/>
+	</Monster>
+	<Monster ID="1096" Name="暗影鼠超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020086" Lv="1"/>
+		<Skill ID="4020115" Lv="1"/>
+		<Skill ID="4020116" Lv="1"/>
+		<Skill ID="4020118" Lv="1"/>
+	</Monster>
+	<Monster ID="1102" Name="霸王虎幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020119" Lv="1"/>
+	</Monster>
+	<Monster ID="1103" Name="霸王虎成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020120" Lv="1"/>
+		<Skill ID="4020124" Lv="1"/>
+	</Monster>
+	<Monster ID="1104" Name="霸王虎成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020121" Lv="1"/>
+		<Skill ID="4020124" Lv="1"/>
+		<Skill ID="4020125" Lv="1"/>
+	</Monster>
+	<Monster ID="1105" Name="霸王虎最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020122" Lv="1"/>
+		<Skill ID="4020124" Lv="1"/>
+		<Skill ID="4020125" Lv="1"/>
+		<Skill ID="4020126" Lv="1"/>
+	</Monster>
+	<Monster ID="1106" Name="霸王虎超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020123" Lv="1"/>
+		<Skill ID="4020124" Lv="1"/>
+		<Skill ID="4020125" Lv="1"/>
+		<Skill ID="4020127" Lv="1"/>
+	</Monster>
+	<Monster ID="1112" Name="千年白玉狐幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020128" Lv="1"/>
+	</Monster>
+	<Monster ID="1113" Name="千年白玉狐成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020129" Lv="1"/>
+		<Skill ID="4020133" Lv="1"/>
+	</Monster>
+	<Monster ID="1114" Name="千年白玉狐成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020130" Lv="1"/>
+		<Skill ID="4020133" Lv="1"/>
+		<Skill ID="4020134" Lv="1"/>
+	</Monster>
+	<Monster ID="1115" Name="千年白玉狐最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020131" Lv="1"/>
+		<Skill ID="4020133" Lv="1"/>
+		<Skill ID="4020134" Lv="1"/>
+		<Skill ID="4020135" Lv="1"/>
+	</Monster>
+	<Monster ID="1116" Name="千年白玉狐超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020132" Lv="1"/>
+		<Skill ID="4020133" Lv="1"/>
+		<Skill ID="4020134" Lv="1"/>
+		<Skill ID="4020136" Lv="1"/>
+	</Monster>
+	<Monster ID="1122" Name="机甲兽幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020137" Lv="1"/>
+	</Monster>
+	<Monster ID="1123" Name="机甲兽成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020138" Lv="1"/>
+		<Skill ID="4020142" Lv="1"/>
+	</Monster>
+	<Monster ID="1124" Name="机甲兽成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020139" Lv="1"/>
+		<Skill ID="4020142" Lv="1"/>
+		<Skill ID="4020143" Lv="1"/>
+	</Monster>
+	<Monster ID="1125" Name="机甲兽最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020140" Lv="1"/>
+		<Skill ID="4020142" Lv="1"/>
+		<Skill ID="4020143" Lv="1"/>
+		<Skill ID="4020144" Lv="1"/>
+	</Monster>
+	<Monster ID="1126" Name="机甲兽超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020141" Lv="1"/>
+		<Skill ID="4020142" Lv="1"/>
+		<Skill ID="4020143" Lv="1"/>
+		<Skill ID="4020145" Lv="1"/>
+	</Monster>
+	<Monster ID="1132" Name="木旋风幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020146" Lv="1"/>
+	</Monster>
+	<Monster ID="1133" Name="木旋风成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020147" Lv="1"/>
+		<Skill ID="4020151" Lv="1"/>
+	</Monster>
+	<Monster ID="1134" Name="木旋风成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020148" Lv="1"/>
+		<Skill ID="4020151" Lv="1"/>
+		<Skill ID="4020152" Lv="1"/>
+	</Monster>
+	<Monster ID="1135" Name="木旋风最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020149" Lv="1"/>
+		<Skill ID="4020151" Lv="1"/>
+		<Skill ID="4020152" Lv="1"/>
+		<Skill ID="4020153" Lv="1"/>
+	</Monster>
+	<Monster ID="1136" Name="木旋风超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020150" Lv="1"/>
+		<Skill ID="4020151" Lv="1"/>
+		<Skill ID="4020152" Lv="1"/>
+		<Skill ID="4020154" Lv="1"/>
+	</Monster>
+	<Monster ID="1142" Name="风吟龙幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020155" Lv="1"/>
+	</Monster>
+	<Monster ID="1143" Name="风吟龙成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020156" Lv="1"/>
+		<Skill ID="4020160" Lv="1"/>
+	</Monster>
+	<Monster ID="1144" Name="风吟龙成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020157" Lv="1"/>
+		<Skill ID="4020160" Lv="1"/>
+		<Skill ID="4020161" Lv="1"/>
+	</Monster>
+	<Monster ID="1145" Name="风吟龙最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020158" Lv="1"/>
+		<Skill ID="4020160" Lv="1"/>
+		<Skill ID="4020161" Lv="1"/>
+		<Skill ID="4020162" Lv="1"/>
+	</Monster>
+	<Monster ID="1146" Name="风吟龙超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020159" Lv="1"/>
+		<Skill ID="4020160" Lv="1"/>
+		<Skill ID="4020161" Lv="1"/>
+		<Skill ID="4020163" Lv="1"/>
+	</Monster>
+	<Monster ID="1152" Name="笑天犬幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020164" Lv="1"/>
+	</Monster>
+	<Monster ID="1153" Name="笑天犬成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020165" Lv="1"/>
+		<Skill ID="4020169" Lv="1"/>
+	</Monster>
+	<Monster ID="1154" Name="笑天犬成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020166" Lv="1"/>
+		<Skill ID="4020169" Lv="1"/>
+		<Skill ID="4020170" Lv="1"/>
+	</Monster>
+	<Monster ID="1155" Name="笑天犬最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020167" Lv="1"/>
+		<Skill ID="4020169" Lv="1"/>
+		<Skill ID="4020170" Lv="1"/>
+		<Skill ID="4020171" Lv="1"/>
+	</Monster>
+	<Monster ID="1156" Name="笑天犬超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020168" Lv="1"/>
+		<Skill ID="4020169" Lv="1"/>
+		<Skill ID="4020170" Lv="1"/>
+		<Skill ID="4020172" Lv="1"/>
+	</Monster>
+	<Monster ID="1162" Name="火凤凰幼年期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020173" Lv="1"/>
+	</Monster>
+	<Monster ID="1163" Name="火凤凰成长期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020174" Lv="1"/>
+		<Skill ID="4020178" Lv="1"/>
+	</Monster>
+	<Monster ID="1164" Name="火凤凰成熟期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020175" Lv="1"/>
+		<Skill ID="4020178" Lv="1"/>
+		<Skill ID="4020179" Lv="1"/>
+	</Monster>
+	<Monster ID="1165" Name="火凤凰最终期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020176" Lv="1"/>
+		<Skill ID="4020169" Lv="1"/>
+		<Skill ID="4020179" Lv="1"/>
+		<Skill ID="4020180" Lv="1"/>
+	</Monster>
+	<Monster ID="1166" Name="火凤凰超灵期" Type="2" Lv="1" Hp=" 70" Mp="5" Atk="10" AtkDuration="200" DefRate="0.05" HitRate="0.9" YieldingExp="100" SkillPoint="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020177" Lv="1"/>
+		<Skill ID="4020178" Lv="1"/>
+		<Skill ID="4020179" Lv="1"/>
+		<Skill ID="4020181" Lv="1"/>
+	</Monster>
+	<Monster ID="1172" Name="土鳞兽幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="80" VisualField="300"/>
+	<Monster ID="1173" Name="土鳞兽成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="100" VisualField="300"/>
+	<Monster ID="1174" Name="土鳞兽成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="135" VisualField="300"/>
+	<Monster ID="1175" Name="土鳞兽最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1176" Name="土鳞兽超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1182" Name="长舌鹦鹉幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020173" Lv="1"/>
+	</Monster>
+	<Monster ID="1183" Name="长舌鹦鹉成长期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020174" Lv="1"/>
+		<Skill ID="4020189" Lv="1"/>
+	</Monster>
+	<Monster ID="1184" Name="长舌鹦鹉成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020175" Lv="1"/>
+		<Skill ID="4020189" Lv="1"/>
+		<Skill ID="4020190" Lv="1"/>
+	</Monster>
+	<Monster ID="1185" Name="长舌鹦鹉最终期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020176" Lv="1"/>
+		<Skill ID="4020189" Lv="1"/>
+		<Skill ID="4020190" Lv="1"/>
+		<Skill ID="4020191" Lv="1"/>
+	</Monster>
+	<Monster ID="1186" Name="长舌鹦鹉超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020177" Lv="1"/>
+		<Skill ID="4020189" Lv="1"/>
+		<Skill ID="4020190" Lv="1"/>
+		<Skill ID="4020192" Lv="1"/>
+	</Monster>
+	<Monster ID="1192" Name="大忍枭幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020173" Lv="1"/>
+	</Monster>
+	<Monster ID="1193" Name="大忍枭成长期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020174" Lv="1"/>
+		<Skill ID="4020193" Lv="1"/>
+	</Monster>
+	<Monster ID="1194" Name="大忍枭成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020175" Lv="1"/>
+		<Skill ID="4020193" Lv="1"/>
+		<Skill ID="4020194" Lv="1"/>
+	</Monster>
+	<Monster ID="1195" Name="大忍枭最终期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020176" Lv="1"/>
+		<Skill ID="4020193" Lv="1"/>
+		<Skill ID="4020194" Lv="1"/>
+		<Skill ID="4020195" Lv="1"/>
+	</Monster>
+	<Monster ID="1196" Name="大忍枭超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020177" Lv="1"/>
+		<Skill ID="4020193" Lv="1"/>
+		<Skill ID="4020194" Lv="1"/>
+		<Skill ID="4020196" Lv="1"/>
+	</Monster>
+	<Monster ID="1202" Name="火云麒麟幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020173" Lv="1"/>
+	</Monster>
+	<Monster ID="1203" Name="火云麒麟成长期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020174" Lv="1"/>
+		<Skill ID="4020197" Lv="1"/>
+	</Monster>
+	<Monster ID="1204" Name="火云麒麟成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020175" Lv="1"/>
+		<Skill ID="4020197" Lv="1"/>
+		<Skill ID="4020198" Lv="1"/>
+	</Monster>
+	<Monster ID="1205" Name="火云麒麟最终期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020176" Lv="1"/>
+		<Skill ID="4020197" Lv="1"/>
+		<Skill ID="4020198" Lv="1"/>
+		<Skill ID="4020199" Lv="1"/>
+	</Monster>
+	<Monster ID="1206" Name="火云麒麟超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="30" Height="155" VisualField="300">
+		<Skill ID="4020177" Lv="1"/>
+		<Skill ID="4020197" Lv="1"/>
+		<Skill ID="4020198" Lv="1"/>
+		<Skill ID="4020200" Lv="1"/>
+	</Monster>
+	<Monster ID="1212" Name="燃眉小鬼幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="80" VisualField="300"/>
+	<Monster ID="1213" Name="燃眉小鬼成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="100" VisualField="300"/>
+	<Monster ID="1214" Name="燃眉小鬼成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="135" VisualField="300"/>
+	<Monster ID="1215" Name="燃眉小鬼最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1216" Name="燃眉小鬼超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1222" Name="远古菊石幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="80" VisualField="300"/>
+	<Monster ID="1223" Name="远古菊石成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="100" VisualField="300"/>
+	<Monster ID="1224" Name="远古菊石成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="135" VisualField="300"/>
+	<Monster ID="1225" Name="远古菊石最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1226" Name="远古菊石超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1232" Name="百战毒蝎幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="80" VisualField="300"/>
+	<Monster ID="1233" Name="百战毒蝎成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="100" VisualField="300"/>
+	<Monster ID="1234" Name="百战毒蝎成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="135" VisualField="300"/>
+	<Monster ID="1235" Name="百战毒蝎最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1236" Name="百战毒蝎超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1242" Name="噬鬼白虎幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="80" VisualField="300"/>
+	<Monster ID="1243" Name="噬鬼白虎成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="100" VisualField="300"/>
+	<Monster ID="1244" Name="噬鬼白虎成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="135" VisualField="300"/>
+	<Monster ID="1245" Name="噬鬼白虎最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1246" Name="噬鬼白虎超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="150" VisualField="300"/>
+	<Monster ID="1262" Name="独角龙幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="55" VisualField="300"/>
+	<Monster ID="1263" Name="独角龙成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="64" VisualField="300"/>
+	<Monster ID="1264" Name="独角龙成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="80" VisualField="300"/>
+	<Monster ID="1265" Name="独角龙最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="120" VisualField="300"/>
+	<Monster ID="1266" Name="独角龙超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="120" VisualField="300"/>
+	<Monster ID="1272" Name="吉祥鹿幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="55" VisualField="300"/>
+	<Monster ID="1273" Name="吉祥鹿成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="64" VisualField="300"/>
+	<Monster ID="1274" Name="吉祥鹿成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="80" VisualField="300"/>
+	<Monster ID="1275" Name="吉祥鹿最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="120" VisualField="300"/>
+	<Monster ID="1276" Name="吉祥鹿超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="120" VisualField="300"/>
+	<Monster ID="1282" Name="奇门鼓龙幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="55" VisualField="300"/>
+	<Monster ID="1283" Name="奇门鼓龙成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="80" VisualField="300"/>
+	<Monster ID="1284" Name="奇门鼓龙成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="120" VisualField="300"/>
+	<Monster ID="1285" Name="奇门鼓龙最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="160" VisualField="300"/>
+	<Monster ID="1286" Name="奇门鼓龙超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="195" VisualField="300"/>
+	<Monster ID="1292" Name="冰河猛犸幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="45" VisualField="300"/>
+	<Monster ID="1293" Name="冰河猛犸成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="60" VisualField="300"/>
+	<Monster ID="1294" Name="冰河猛犸成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="75" VisualField="300"/>
+	<Monster ID="1295" Name="冰河猛犸最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="115" VisualField="300"/>
+	<Monster ID="1296" Name="冰河猛犸超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="140" VisualField="300"/>
+	<Monster ID="1302" Name="史前巨蜥幼年期" Type="2" Lv="1" Speed="224" Length="80" Width="50" Height="45" VisualField="300"/>
+	<Monster ID="1303" Name="史前巨蜥成长期" Type="2" Lv="1" Speed="224" Length="80" Width="78" Height="60" VisualField="300"/>
+	<Monster ID="1304" Name="史前巨蜥成熟期" Type="2" Lv="1" Speed="224" Length="80" Width="100" Height="75" VisualField="300"/>
+	<Monster ID="1305" Name="史前巨蜥最终期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="115" VisualField="300"/>
+	<Monster ID="1306" Name="史前巨蜥超灵期" Type="2" Lv="1" Speed="224" Length="80" Width="180" Height="130" VisualField="300"/>
+	<!--1层-->
+	<Monster ID="13001" Name="木人最终型" Flag="2" Type="4" Lv="25" AttrType="3" DefThreshold="98" AtkDuration="400" DefRate="0" HitRate="0.9" YieldingExp="150" SkillPoint="2" Speed="140" Length="80" Width="30" Height="130" VisualField="300" >
+	   <Skill ID="4020003" Lv="1" />
+     <ItemDrop>
+			<MaterialDrop ItemID="1500135" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<ClothesDrop DropLv="1" DropID="3" DropOdds="30" />
+			<ItemsDrop DropLv="1" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13002" Name="铜人最终型" Flag="2" Type="4" Lv="25" AttrType="3" DefThreshold="98" AtkDuration="300" DefRate="0" HitRate="0.9" YieldingExp="150" SkillPoint="2" Speed="140" Length="80" Width="30" Height="190" VisualField="300">
+	   <Skill ID="4020003" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500137" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="3" DropID="3" DropOdds="1" />
+			<ClothesDrop DropLv="1" DropID="3" DropOdds="30" />
+			<ItemsDrop DropLv="1" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13003" Name="铁人最终型" Flag="1" Type="1"  Lv="25" AttrType="3" DefThreshold="98" AtkDuration="300" DefRate="0" HitRate="0.9" YieldingExp="250" SkillPoint="4" Speed="140" Length="80" Width="30" Height="180" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />
+	   <Skill ID="4120004" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500139" DropOdds="100" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropID="3" DropOdds="100" />
+			<ItemsDrop DropLv="2" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<!--2层-->
+	<Monster ID="11023" Name="敏捷蜥蜴" Flag="2" Type="4" Lv="20" AttrType="3" DefThreshold="98" AtkDuration="300" DefRate="0" DodgeRate="0.4" HitRate="0.9" YieldingExp="77" SkillPoint="2" Speed="100" Length="100" Width="40" Height="130" VisualField="450">
+	   <Skill ID="4020002" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500027" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500251" DropOdds="100" />
+ 			<ClothesDrop DropLv="4" DropID="3" DropOdds="40" />
+			<ItemsDrop DropLv="2" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11208" Name="传音" Flag="2" Type="3" Lv="30" AttrType="3" DefThreshold="98"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="244" SkillPoint="4" Speed="140" Length="70" Width="30" Height="215" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120018" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500248" DropOdds="0" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="0" />
+		</ItemDrop>
+	</Monster>
+
+
+	<Monster ID="11302" Name="虫卵" Flag="2" Type="5" Lv="1" LRA="8" Hp="1" AttrType="1" AtkDuration="500" DefRate="0" HitRate="0.9"	YieldingExp="1040" SkillPoint="1" Speed="140" Length="110" Width="30" Height="125" VisualField="0" >
+	        <Skill ID="4120090" Lv="1" />
+			<Skill ID="4120091" Lv="1" />
+	</Monster>
+
+
+	 <Monster ID="11303" Name="自爆甲虫" Flag="2" Type="5" Lv="20" LRA="8"  AttrType="3" AtkDuration="500" DefRate="0" HitRate="0.9"	YieldingExp="1040"  Speed="140" Length="110" Width="30" Height="220" VisualField="900" DeadCallSummon = "8">
+	       <Skill ID="4020002" Lv="1" />
+	</Monster>
+
+
+	<Monster ID="11304" Name="自爆甲虫" Flag="2" Type="5" Lv="20" LRA="8"  AttrType="3"  Team="1" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="1040"  Speed="140" Length="110" Width="30" Height="220" VisualField="900" DeadCallSummon = "8">
+	      <Skill ID="4020002" Lv="1" />
+	</Monster>
+
+
+
+	<Monster ID="13031" Name="幻影传音" Flag="1" Type="1" Lv="30" AttrType="4" DefThreshold="98" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="2800" SkillPoint="4" Speed="140" Length="70" Width="30" Height="215" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120018" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500248" DropOdds="100" />
+			
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<!--3层-->
+	<Monster ID="11046" Name="厚皮鼹鼠" Flag="1" Type="1" Lv="20" StageDiff="1" AttrType="3" DefThreshold="98" AtkDuration="400" DefRate="0" HitRate="0.9" YieldingExp="140" SkillPoint="2" Speed="125" Length="70" Width="30" Height="120" VisualField="450">
+	   <Skill ID="4020001" Lv="1" />
+	</Monster>
+	<Monster ID="13017" Name="幻影沙克" Flag="1" Type="1" Lv="35" StageDiff="1" AttrType="4" DefThreshold="98" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="2250" SkillPoint="4" Speed="140" Length="70" Width="30" Height="200" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120037" Lv="1" />
+	   <Skill ID="4120038" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />		   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500050" DropOdds="100" />
+			<LuckyDrop ItemID="1550020" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="11" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<!--4层-->
+	<Monster ID="11049" Name="胆小猴" Flag="2" Type="4" Lv="30" StageDiff="2" AttrType="4" DefThreshold="164" AtkDuration="400" DefRate="0" HitRate="0.9" YieldingExp="140" SkillPoint="2" Speed="100" Length="70" Width="30" Height="110" VisualField="450">   
+	   <Skill ID="4020004" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500051" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500253" DropOdds="100" />
+ 			<ClothesDrop DropLv="3" DropID="3" DropOdds="40" />
+			<ItemsDrop DropLv="2" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13043" Name="幻影昏符" Flag="1" Type="1" Lv="40" StageDiff="2" AttrType="4" DefThreshold="164"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="2240" SkillPoint="4" Speed="140" Length="70" Width="30" Height="185" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120051" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500287" DropOdds="70" />
+			
+ 			<ClothesDrop DropLv="15" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<!--5层-->
+	<Monster ID="11044" Name="黄蜂卫士" Flag="3" Type="3" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="300" DefRate="0" HitRate="0.9" YieldingExp="95" SkillPoint="1" Speed="120" Length="70" Width="30" Height="110" VisualField="450">
+	   <Skill ID="4020003" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500043" DropOdds="90" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="5" DropOdds="1" />
+			<ItemsDrop DropLv="3" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13009" Name="公正审判官" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="300" DefRate="0" HitRate="0.9" YieldingExp="450" SkillPoint="4" Speed="140" Length="120" Width="30" Height="120" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />
+	   <Skill ID="4120008" Lv="1" />
+	   <Skill ID="4120007" Lv="1" />	   
+	   <ItemDrop>
+		    <MaterialDrop ItemID="1500064" DropOdds="100" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="5" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="3" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13039" Name="幻影宗大牙" Flag="1" Type="1" Lv="45"  StageDiff="2" AttrType="4"  DefThreshold="230"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="5440" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120016" Lv="1" />
+	   
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500259" DropOdds="0" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="10" />
+			<ItemsDrop DropLv="5" DropOdds="50" />
+		 </ItemDrop>
+	</Monster>
+	<Monster ID="13040" Name="幻影花二牙" Flag="1" Type="1" Lv="45" StageDiff="2"  AttrType="4"  DefThreshold="230"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="5440" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4120014" Lv="1" />
+	   
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500259" DropOdds="0" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="10" />
+			<ItemsDrop DropLv="5" DropOdds="50" />
+		 </ItemDrop>
+	</Monster>
+	<Monster ID="13041" Name="幻影灰三牙" Flag="1" Type="1" Lv="45"  StageDiff="2" AttrType="4"  DefThreshold="230"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="5440" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4120012" Lv="1" />
+	  
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500259" DropOdds="0" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="10" />
+			<ItemsDrop DropLv="5" DropOdds="50" />
+		 </ItemDrop>
+	</Monster>
+	<Monster ID="13069" Name="幻影金刚牙" Flag="1" Type="1" Lv="45"   AttrType="4"  DefThreshold="230"   AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="5440" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4035003" Lv="1" />
+	   <Skill ID="4120017" Lv="1" />
+	   <Skill ID="4120013" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />
+	</Monster>
+	<!--6层-->
+	<Monster ID="11059" Name="毒蚂蚁" Flag="3" Type="3" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="600" DefRate="0" HitRate="0.9" YieldingExp="102" SkillPoint="1" Speed="100" Length="100" Width="30" Height="110" VisualField="450" >
+	   <Skill ID="4020003" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500160" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="6" DropOdds="1" />
+			<ItemsDrop DropLv="3" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11060" Name="杀人蜂" Flag="3" Type="3" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="600" DefRate="0" HitRate="0.9" YieldingExp="102" SkillPoint="1" Speed="110" Length="100" Width="30" Height="110" VisualField="450" >
+	   <Skill ID="4020003" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500161" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="6" DropOdds="10" />
+			<ItemsDrop DropLv="3" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13004" Name="大熊" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="550" SkillPoint="4" Speed="140" Length="70" Width="30" Height="150" VisualField="450">
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120010" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500016" DropOdds="100" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="6" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="3" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11244" Name="幻影通铃猫" Flag="1" Type="4" Lv="50" StageDiff="3" AttrType="4"  DefThreshold="260"  AtkThreshold="45"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="5440" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4020006" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500259" DropOdds="100" />
+			<LuckyDrop ItemID="1500274" DropOdds="30" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="10" />
+			<ItemsDrop DropLv="5" DropOdds="50" />
+		 </ItemDrop>
+	</Monster>
+	<Monster ID="11245" Name="幻影通铃猫" Flag="1" Type="4"  Lv="40"  StageDiff="4" AttrType="4" DefThreshold="260"  AtkThreshold="45"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="5440" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4020006" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+	    <UniqueDrop ItemID="1200005" DropOdds="30" RoleType="1" />	   	   
+	    <UniqueDrop ItemID="1200208" DropOdds="30" RoleType="2" />	   	   
+	    <UniqueDrop ItemID="1200403" DropOdds="30" RoleType="3" />
+		    <LuckyDrop ItemID="1500274" DropOdds="30" />
+			<UniqueDrop ItemID="1400113" DropOdds="100" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="10" />
+			<ItemsDrop DropLv="5" DropOdds="50" />
+		 </ItemDrop>
+	</Monster>	
+	<Monster ID="13067" Name="幻影通铃猫" Flag="1" Type="1"  Lv="40" StageDiff="3" AttrType="4" DefThreshold="260" AtkThreshold="45" AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="5440" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4020006" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500259" DropOdds="100" />
+			<LuckyDrop ItemID="1500274" DropOdds="30" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="10" />
+			<ItemsDrop DropLv="5" DropOdds="50" />
+		 </ItemDrop>
+	</Monster>
+	<!--7层-->
+	<Monster ID="13016" Name="狂暴熊" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" RigidityFactor="50" Hp="1340" Mp="5" Atk="87" AtkDuration="500" DefRate="0" HitRate="0.9"  YieldingExp="715" SkillPoint="4" Speed="140" Length="70" Width="30" Height="165" VisualField="600" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120078" Lv="1" />
+	   <Skill ID="4120081" Lv="1" />
+	   <Skill ID="4120082" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />
+	</Monster>
+	<Monster ID="11152" Name="狼人" Flag="3" Type="3" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="102" SkillPoint="1" Speed="140" Length="100" Width="30" Height="130" VisualField="450">
+	   <Skill ID="4020002" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500193" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="6" DropOdds="1" />
+			<ItemsDrop DropLv="3" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11154" Name="土蜂" Flag="3" Type="3" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="105" SkillPoint="1" Speed="130" Length="60" Width="30" Height="140" VisualField="450" >
+	   <Skill ID="4020002" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500195" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="7" DropOdds="1" />
+			<ItemsDrop DropLv="3" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13034" Name="幻影钝爪" Flag="1" Type="1" Lv="55"  AttrType="4" DefThreshold="296" AtkThreshold="50" AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="2048" SkillPoint="4" Speed="140" Length="70" Width="30" Height="185" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120031" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500273" DropOdds="100" />
+			
+ 			<ClothesDrop DropLv="14" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<!--8层-->
+	<Monster ID="13005" Name="白狼" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="400" DefRate="0" HitRate="0.9" YieldingExp="750" SkillPoint="4" Speed="140" Length="120" Width="30" Height="130" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120011" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500148" DropOdds="100" />
+			<LuckyDrop ItemID="1100004" DropOdds="10" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="7" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="4" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11063" Name="嗜血蝙蝠" Flag="3" Type="3" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="300" DefRate="0" HitRate="0.9" YieldingExp="115" SkillPoint="1" Speed="100" Length="60" Width="30" Height="90" VisualField="450" >
+	   <Skill ID="4020002" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500164" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="7" DropOdds="1" />
+			<ItemsDrop DropLv="4" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13051" Name="幻影魂师" Flag="1" Type="1" Lv="60"   AttrType="4" DefThreshold="362" AtkThreshold="55" AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="1880" SkillPoint="4" Speed="140" Length="70" Width="30" Height="200" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120034" Lv="1" />
+	   <Skill ID="4120035" Lv="1" />
+	   <Skill ID="4030035" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+			<LuckyDrop ItemID="1540002" DropOdds="1" />
+			<LuckyDrop ItemID="1540000" DropOdds="20" />
+			<LuckyDrop ItemID="1540001" DropOdds="10" />
+			<LuckyDrop ItemID="1500282" DropOdds="69" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="0" />
+		 </ItemDrop>
+	</Monster>
+	<!--9层-->
+	<Monster ID="11065" Name="大山猫" Flag="3" Type="3" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="117" SkillPoint="1" Speed="150" Length="80" Width="30" Height="120" VisualField="450" >
+	   <Skill ID="4020003" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500166" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="8" DropOdds="1" />
+			<ItemsDrop DropLv="4" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11066" Name="熊瞎子" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="117" SkillPoint="1" Speed="130" Length="80" Width="30" Height="140" VisualField="450" >
+	   <Skill ID="4020003" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500167" DropOdds="70" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500250" DropOdds="100" />
+ 			<ClothesDrop DropLv="8" DropOdds="1" />
+			<ItemsDrop DropLv="4" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13006" Name="黑狼" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="1250" SkillPoint="4" Speed="140" Length="80" Width="30" Height="140" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120023" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500150" DropOdds="100" />
+			<LuckyDrop ItemID="1100004" DropOdds="10" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="8" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13050" Name="幻影右奇" Flag="1" Type="1" Lv="65"  AttrType="4" DefThreshold="428" AtkThreshold="60" AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="1880" SkillPoint="4" Speed="140" Length="70" Width="30" Height="175" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120029" Lv="1" />
+	   <Skill ID="4120030" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   	   
+	   <ItemDrop>
+			<LuckyDrop ItemID="100244" DropOdds="1" />
+			<LuckyDrop ItemID="200244" DropOdds="1" />
+			<LuckyDrop ItemID="300244" DropOdds="1" />
+			<LuckyDrop ItemID="1500278" DropOdds="50" />
+			<LuckyDrop ItemID="1500279" DropOdds="50" />
+			<LuckyDrop ItemID="1500280" DropOdds="50" />
+ 			<ClothesDrop DropLv="13" DropID="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="0" />
+		 </ItemDrop>
+	</Monster>
+	<!--10层-->
+	<Monster ID="11067" Name="牛魔海盗" Flag="2" Type="4" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="600" DefRate="0" HitRate="0.9" YieldingExp="240" SkillPoint="2" Speed="110" Length="80" Width="30" Height="120" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500078" DropOdds="70" />
+			<LuckyDrop ItemID="1550004" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+			<LuckyDrop ItemID="1500254" DropOdds="100" />
+ 			<ClothesDrop DropLv="8" DropID="2" DropOdds="30" />
+			<ItemsDrop DropLv="4" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11243" Name="幻影小怪" Flag="3" Type="3" Lv="65" AttrType="3"  DefThreshold="428" AtkThreshold="65"  AtkDuration="500" DefRate="0.19" HitRate="0.9" YieldingExp="320" SkillPoint="1" Speed="135" Length="70" Width="30" Height="190" VisualField="450" >
+	   <Skill ID="4020002" Lv="1" />
+	   <ItemDrop>
+ 			<ClothesDrop DropLv="15" DropOdds="5" />
+			<ItemsDrop DropLv="5" DropOdds="1" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="11214" Name="利齿爪牙" Flag="2" Type="3" Lv="65"  AttrType="4" DefThreshold="428" AtkThreshold="65"  AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="256" SkillPoint="1" Speed="100" Length="110" Width="30" Height="130" VisualField="450" >
+	   <Skill ID="4020003" Lv="1" />
+	   <Skill ID="4120043" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500077" DropOdds="30" />
+	   </ItemDrop>
+	</Monster>
+	<Monster ID="13007" Name="巨型天牛" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="3" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="1275" SkillPoint="4" Speed="140" Length="100" Width="30" Height="250" VisualField="2000" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />
+	   <Skill ID="4120022" Lv="1" />
+	   <Skill ID="4035001" Lv="1" />
+	   <Skill ID="4120089" Lv="1" />
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500155" DropOdds="100" />
+			<LuckyDrop ItemID="1550009" DropOdds="0" />
+			<LuckyDrop ItemID="1500012" DropOdds="0" />
+ 			<ClothesDrop DropLv="9" DropID="2" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13062" Name="幻影魔王" Flag="1" Type="1" Lv="65" AttrType="4"  DefThreshold="428" AtkThreshold="65" AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="2120" SkillPoint="4" Speed="140" Length="70" Width="30" Height="225" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120053" Lv="1" />
+	   <Skill ID="4120054" Lv="1" />
+	   <Skill ID="4120055" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500502" DropOdds="100" />
+			
+ 			<ClothesDrop DropLv="15" DropID="3" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13063" Name="幻影猴子" Flag="1" Type="1" Lv="60" AttrType="4"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="2120" SkillPoint="4" Speed="140" Length="70" Width="30" Height="225" VisualField="450" >
+	   <Skill ID="4120052" Lv="1" />
+	   
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500502" DropOdds="100" />
+			
+ 			<ClothesDrop DropLv="15" DropID="3" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13064" Name="幻影兔子" Flag="1" Type="1" Lv="60" AttrType="4"  AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="2120" SkillPoint="4" Speed="140" Length="70" Width="30" Height="225" VisualField="450" >
+	   <Skill ID="4120052" Lv="1" />
+	   
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500502" DropOdds="100" />
+ 			<ClothesDrop DropLv="15" DropID="3" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13065" Name="幻影熊猫" Flag="1" Type="1" Lv="60" AttrType="4" AtkDuration="500" DefRate="0.24" HitRate="0.9" YieldingExp="2120" SkillPoint="4" Speed="140" Length="70" Width="30" Height="225" VisualField="450" >
+	   <Skill ID="4120052" Lv="1" />
+	   
+	   <Skill ID="4029999" Lv="1" />	   
+	   <ItemDrop>
+			<MaterialDrop ItemID="1500502" DropOdds="100" />
+			
+ 			<ClothesDrop DropLv="15" DropID="3" DropOdds="100" />
+			<ItemsDrop DropLv="5" DropOdds="100" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13013" Name="虎王" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="4" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="2250" SkillPoint="4" Speed="150" Length="70" Width="30" Height="180" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4020005" Lv="1" />	   
+	   <Skill ID="4029999" Lv="1" />
+	</Monster>
+	<Monster ID="13015" Name="刺杀者" Flag="1" Type="1" Lv="30" StageDiff="2" AttrType="4" DefThreshold="164" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="1800" SkillPoint="4" Speed="140" Length="70" Width="30" Height="170" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />
+	</Monster>
+	<Monster ID="13011" Name="穿山甲" Flag="1" Type="1" Lv="25" StageDiff="1" AttrType="4" DefThreshold="98" AtkDuration="500" DefRate="0" HitRate="0.9" YieldingExp="1500" SkillPoint="4" Speed="140" Length="80" Width="30" Height="150" VisualField="450" >
+	   <Skill ID="4020004" Lv="1" />
+	   <Skill ID="4120019" Lv="1" />
+	   <Skill ID="4120006" Lv="1" />
+	   <Skill ID="4029999" Lv="1" />
+	</Monster>
+	<!--兔子领悟技能召唤物-->
+	<Monster ID="11521" Flag="1" Aura_Id="8" NoWorldDrop="1" Type="5" Atk="130" AtkDuration="500" AttrType="3" StageDiff="3" DefRate="0" HitRate="0.8" SuicideCallSummon="52" RigidityFactor="80" YieldingExp="2539" SkillPoint="0" Speed="90" Length="70" Width="60" Height="195" VisualField="3000" Name="兔子炸弹" Lv="7">
+	</Monster>
+	<Monster ID="19001" Name="宝箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="6" DropOdds="30" />
+			<ItemsDrop DropLv="3" DropOdds="20" />
+		</ItemDrop>
+	</Monster>
+    <Monster ID="19002" Name="空矿车" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="10" DropOdds="0" />
+			<ItemsDrop DropLv="2" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19003" Name="木箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="2" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19004" Name="宝石矿车" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="2" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19005" Name="木桶" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="2" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19006" Name="竹箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="10" DropOdds="0" />
+			<ItemsDrop DropLv="3" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19007" Name="竹排" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="10" DropOdds="0" />
+			<ItemsDrop DropLv="3" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19008" Name="竹架" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="10" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19009" Name="石箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="10" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19010" Name="枯木" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="10" DropOdds="0" />
+			<ItemsDrop DropLv="3" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19011" Name="木柴" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300102" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+ 			<ClothesDrop DropLv="10" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19022" Name="木轮" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="1" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19023" Name="铁刺宝箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="1" DropOdds="5" />
+		</ItemDrop>
+	</Monster>	
+	<Monster ID="19025" Name="铁浮屠" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="1" DropOdds="5" />
+		</ItemDrop>
+	</Monster>		
+	<Monster ID="19027" Name="铜机" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="1" DropOdds="5" />
+		</ItemDrop>
+	</Monster>		
+	<Monster ID="19028" Name="铜杼" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="5" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="1" DropOdds="5" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19029" Name="勇气竞技场宝箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <BuffDrop>
+			<BuffDrop BuffID="3" DropLv="3"  DropOdds="25" />
+			<BuffDrop BuffID="5" DropLv="10"  DropOdds="25" />
+			<BuffDrop BuffID="6" DropLv="2"  DropOdds="25" />
+			<BuffDrop BuffID="7" DropLv="1"  DropOdds="25" />
+		</BuffDrop>
+	</Monster>
+	<Monster ID="19043" Name="暗影宝箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19044" Name="暗影石柱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19045" Name="暗影莲花" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19046" Name="奇异宝箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19047" Name="紫玉石" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19048" Name="石掌" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19013" Name="石佛头" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19049" Name="虎丘宝箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19050" Name="虎丘图腾" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="4" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19051" Name="石剑" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19052" Name="蘑菇石" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19053" Name="孢子" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19054" Name="花苞" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19055" Name="石笋" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19056" Name="海族宝石" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="5" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<Monster ID="19059" Name="宝箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="3" DropOdds="10" />
+		</ItemDrop>
+	</Monster>	
+	<Monster ID="19060" Name="木桶" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="3" DropOdds="10" />
+		</ItemDrop>
+	</Monster>	
+	<Monster ID="19061" Name="木箱" Lv="1" Hp="1" Length="80" Width="30" Height="90" >
+	   <ItemDrop>
+			<MaterialDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300002" DropOdds="0" />
+			<LuckyDrop ItemID="1300102" DropOdds="0" />
+			<ClothesDrop DropLv="2" DropOdds="0" />
+			<ItemsDrop DropLv="3" DropOdds="10" />
+		</ItemDrop>
+	</Monster>
+	<!--11层-->
+	<Monster ID="13120" resID="13091" Flag="1" Type="1"  Atk="230" NoWorldDrop="1" DefThreshold="428" AtkThreshold="65" AtkDuration="500" Aura_Id="9" AttrType="4" StageDiff="11" DefRate="0" HitRate="0.8" RigidityFactor="30" YieldingExp="2539" SkillPoint="4" Speed="110" Length="70" Width="50" Height="195" VisualField="650" Name="玉面飞兔" Lv="60">
+		<Skill ID="4020111" Lv="1"/>
+		<Skill ID="4020093" Lv="1"/>
+		<Skill ID="4020097" Lv="1"/>
+		<Skill ID="4020098" Lv="1"/>
+		<ItemDrop>
+			<LuckyDrop ItemID="1500567" DropOdds="1"/>
+		</ItemDrop>
+	</Monster>
+	<Monster ID="13121" resID="13092" Flag="1" Type="1" Atk="230" NoWorldDrop="1" DefThreshold="428" AtkThreshold="65" AtkDuration="500" Aura_Id="9" AttrType="4" StageDiff="4" DefRate="0" HitRate="0.7" RigidityFactor="60" YieldingExp="2539" SkillPoint="4" Speed="110" Length="70" Width="50" Height="195" VisualField="750" Name="飞龙侠士" Lv="60">
+		<Skill ID="4020114" Lv="1"/>
+		<Skill ID="4020105" Lv="1"/>
+		<Skill ID="4020108" Lv="1"/>
+		<Skill ID="4020110" Lv="1"/>
+	</Monster>
+	<Monster ID="13122" resID="13093" Flag="1" Type="1"  Atk="230" NoWorldDrop="1" DefThreshold="428" AtkThreshold="65" AtkDuration="500" Aura_Id="10" AttrType="4" StageDiff="3" DefRate="0" HitRate="0.8" YRigidityFactor="70" ieldingExp="2539" SkillPoint="4" Speed="110" Length="70" Width="50" Height="195" VisualField="650" Name="奇猴侠客" Lv="60">
+		<Skill ID="4020112" Lv="1"/>
+		<Skill ID="4020087" Lv="1"/>
+		<Skill ID="4020091" Lv="1"/>
+		<Skill ID="4020092" Lv="1"/>
+	</Monster>
+	<Monster ID="13123" resID="13094" Flag="1" Type="1"  Atk="230" NoWorldDrop="1" DefThreshold="428" AtkThreshold="65" AtkDuration="500" Aura_Id="10" AttrType="4" StageDiff="2" DefRate="0" HitRate="0.8" RigidityFactor="80" YieldingExp="2539" SkillPoint="4" Speed="110" Length="70" Width="60" Height="195" VisualField="650" Name="熊猫大侠" Lv="60">
+		<Skill ID="4020113" Lv="1"/>
+		<Skill ID="4020099" Lv="1"/>
+		<Skill ID="4020103" Lv="1"/>
+		<Skill ID="4020104" Lv="1"/>
+	</Monster>
+</Monsters>
+

@@ -1,0 +1,20 @@
+<!--
+	ID；掉落等级
+	White=白装 Green=绿装 Blue=蓝装 Purple=紫装 Silvery=银装 Gold=金装，其对应数值为百分比%
+-->
+
+<ItemQuality>
+	<Drop ID="1" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="2" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="3" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="4" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="5" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="6" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="7" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="8" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="9" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="10" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="11" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="12" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="13" White="80" Green="17" Blue="3" Purple="0" Silvery="0" Gold="0"/>	
+</ItemQuality>

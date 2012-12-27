@@ -1,0 +1,1771 @@
+<!-- MethodID 图纸ＩＤ
+　　 Coins 消耗的功夫豆
+　　　NeedVitality　消耗活力值
+　　　NeedSecondProLv　需要副职登记
+　　　SecondProExp　增加副职经验
+　　　Broadcast　是否需要广博
+ -->
+<Methods>
+<!--
+    <Method MethodID="0" Coins="0" NeedVitality="0" NeedSecondProLv="0" SecondProExp="0" Name="" RoleType="0" Broadcast="0" Profession="2" />
+ -->
+    <Method MethodID="1500635" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="聚贤冠" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100722" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="100427" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100743" Odds="27 0 0 0 0 4 8" />
+        <OutItem ID="100750" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500636" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="聚贤战甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100723" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="100428" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100744" Odds="28 0 0 0 0 4 8" />
+        <OutItem ID="100751" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500637" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="聚贤下装" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100724" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="100429" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100745" Odds="29 0 0 0 0 4 8" />
+        <OutItem ID="100752" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500638" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="聚贤手甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100725" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="100430" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100746" Odds="30 0 0 0 0 4 8" />
+        <OutItem ID="100753" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500639" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="聚贤腰带" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100726" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="100431" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100747" Odds="31 0 0 0 0 4 8" />
+        <OutItem ID="100754" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500640" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="聚贤胫甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100727" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="100432" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100748" Odds="32 0 0 0 0 4 8" />
+        <OutItem ID="100755" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500641" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="破晓聚贤" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100728" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="100433" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100749" Odds="33 0 0 0 0 4 8" />
+        <OutItem ID="100756" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500642" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="空音之盔" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200722" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="200448" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200743" Odds="34 0 0 0 0 4 8" />
+        <OutItem ID="200750" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500643" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="空音上衣" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200723" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="200449" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200744" Odds="35 0 0 0 0 4 8" />
+        <OutItem ID="200751" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500644" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="空音下装" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200724" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="200450" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200745" Odds="36 0 0 0 0 4 8" />
+        <OutItem ID="200752" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500645" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="空音护手" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200725" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="200451" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200746" Odds="37 0 0 0 0 4 8" />
+        <OutItem ID="200753" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500646" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="空音腰带" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200726" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="200452" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200747" Odds="38 0 0 0 0 4 8" />
+        <OutItem ID="200754" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500647" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="空音靴" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200727" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="200453" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200748" Odds="39 0 0 0 0 4 8" />
+        <OutItem ID="200755" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500648" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="琴瑟空音" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200728" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="200454" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200749" Odds="40 0 0 0 0 4 8" />
+        <OutItem ID="200756" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500649" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="潮汐帽" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300722" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="300364" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300743" Odds="41 0 0 0 0 4 8" />
+        <OutItem ID="300750" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500650" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="潮汐袍" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300723" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="300365" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300744" Odds="42 0 0 0 0 4 8" />
+        <OutItem ID="300751" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500651" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="潮汐裤" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300724" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="300366" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300745" Odds="43 0 0 0 0 4 8" />
+        <OutItem ID="300752" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500652" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="潮汐手套" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300725" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="300367" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300746" Odds="44 0 0 0 0 4 8" />
+        <OutItem ID="300753" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500653" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="潮汐腰带" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300726" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="300368" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300747" Odds="45 0 0 0 0 4 8" />
+        <OutItem ID="300754" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500654" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="潮汐鞋" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300727" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="300369" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300748" Odds="46 0 0 0 0 4 8" />
+        <OutItem ID="300755" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500655" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="碧落潮汐" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300728" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="300370" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300749" Odds="47 0 0 0 0 4 8" />
+        <OutItem ID="300756" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500656" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="日照冠" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400722" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="400288" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400743" Odds="48 0 0 0 0 4 8" />
+        <OutItem ID="400750" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500657" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="日照衣" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400723" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="400289" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400744" Odds="49 0 0 0 0 4 8" />
+        <OutItem ID="400751" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500658" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="日照护腿" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400724" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="400290" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400745" Odds="50 0 0 0 0 4 8" />
+        <OutItem ID="400752" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500659" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="日照裹手" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400725" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="400291" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400746" Odds="51 0 0 0 0 4 8" />
+        <OutItem ID="400753" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500660" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="日照腰带" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400726" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="400292" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400747" Odds="52 0 0 0 0 4 8" />
+        <OutItem ID="400754" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500661" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="日照鞋" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400727" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="400293" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400748" Odds="53 0 0 0 0 4 8" />
+        <OutItem ID="400755" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500662" Coins="5000" NeedVitality="65" NeedSecondProLv="6" SecondProExp="90" Name="烟云日照" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400728" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="5" />
+        <OutItem ID="400294" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400749" Odds="54 0 0 0 0 4 8" />
+        <OutItem ID="400756" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1500663" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="须弥冠" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100427" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="100392" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="100757" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="100764" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500664" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="须弥战甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100428" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="100393" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="100758" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="100765" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500665" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="须弥下装" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100429" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="100394" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="100759" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="100766" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500666" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="须弥手甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100430" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="100395" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="100760" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="100767" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500667" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="须弥腰带" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100431" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="100396" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="100761" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="100768" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500668" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="须弥胫甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100432" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="100397" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="100762" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="100769" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500669" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="三千须弥" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100433" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="100398" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="100763" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="100770" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500670" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="刹那之盔" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200448" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="200455" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="200757" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="200764" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500671" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="刹那上衣" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200449" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="200456" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="200758" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="200765" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500672" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="刹那下装" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200450" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="200457" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="200759" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="200766" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500673" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="刹那护手" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200451" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="200458" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="200760" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="200767" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500674" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="刹那腰带" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200452" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="200459" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="200761" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="200768" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500675" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="刹那靴" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200453" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="200460" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="200762" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="200769" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500676" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="亘古刹那" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200454" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="200461" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="200763" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="200770" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500677" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="深渊帽" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300364" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="300406" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="300757" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="300764" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500678" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="深渊袍" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300365" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="300407" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="300758" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="300765" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500679" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="深渊裤" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300366" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="300408" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="300759" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="300766" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500680" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="深渊手套" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300367" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="300409" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="300760" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="300767" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500681" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="深渊腰带" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300368" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="300410" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="300761" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="300768" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500682" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="深渊鞋" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300369" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="300411" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="300762" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="300769" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500683" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="黄泉深渊" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300370" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="300412" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="300763" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="300770" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500684" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="远岚冠" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400288" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="400302" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="400757" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="400764" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500685" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="远岚衣" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400289" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="400303" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="400758" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="400765" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500686" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="远岚护腿" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400290" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="400304" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="400759" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="400766" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500687" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="远岚裹手" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400291" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="400305" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="400760" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="400767" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500688" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="远岚腰带" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400292" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="400306" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="400761" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="400768" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500689" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="远岚鞋" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400293" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="400307" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="400762" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="400769" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1500690" Coins="6000" NeedVitality="70" NeedSecondProLv="7" SecondProExp="100" Name="肃杀远岚" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400294" Cnt="1" />
+        <InItem ID="1500903" Cnt="15" />
+        <InItem ID="1500579" Cnt="10" />
+        <OutItem ID="400308" Odds="0 0 0 0 0 0 94" />
+        <OutItem ID="400763" Odds="0 0 0 0 0 0 4" />
+        <OutItem ID="400770" Odds="0 0 0 0 0 0 2" />
+    </Method>
+    <Method MethodID="1550100" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="蓝色碎片" RoleType="0" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="20" />
+        <OutItem ID="1500902" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550101" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="紫色碎片" RoleType="0" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="20" />
+        <OutItem ID="1500903" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550102" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="草上飞靴" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500150" Cnt="2" />
+        <OutItem ID="100102" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550103" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="精钢护手" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500150" Cnt="4" />
+        <OutItem ID="100103" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550104" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="多彩长裤" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500016" Cnt="2" />
+        <OutItem ID="100101" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550105" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="千浪冠" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500016" Cnt="3" />
+        <OutItem ID="100105" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550106" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="槐木长棍" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500155" Cnt="3" />
+        <OutItem ID="100100" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550107" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="古铜皮带" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500157" Cnt="2" />
+        <OutItem ID="100110" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550108" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="一跃靴" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500150" Cnt="2" />
+        <OutItem ID="200102" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550109" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="白银护手" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500150" Cnt="3" />
+        <OutItem ID="200103" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550110" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="锦鲤下装" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500016" Cnt="2" />
+        <OutItem ID="200101" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550111" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="流火冠" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500016" Cnt="2" />
+        <OutItem ID="200105" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550112" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="三寸霜刃" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500155" Cnt="3" />
+        <OutItem ID="200100" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550113" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="棘钢腰带" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500157" Cnt="2" />
+        <OutItem ID="200110" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550114" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="幽灵靴" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500150" Cnt="2" />
+        <OutItem ID="300102" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550115" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="星辰护腕" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500150" Cnt="2" />
+        <OutItem ID="300103" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550116" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="巨蜥热裤" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500016" Cnt="2" />
+        <OutItem ID="300101" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550117" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="聚神冠" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500016" Cnt="3" />
+        <OutItem ID="300105" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550118" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="白金战锤" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500155" Cnt="3" />
+        <OutItem ID="300100" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550119" Coins="500" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="赤焰腰带" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500157" Cnt="2" />
+        <OutItem ID="300110" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550200" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光明甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100569" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="100570" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550201" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光明护带" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100571" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="100572" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550202" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光明冠" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100565" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="100566" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550203" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光明护手" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100567" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="100568" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550204" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光明甲下装" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100573" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="100574" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550205" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光明之靴" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100575" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="100576" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550206" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光明棍" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100577" Cnt="1" />
+        <InItem ID="1500350" Cnt="4" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="100578" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550207" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="脉冲护腕" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500118" Cnt="2" />
+        <InItem ID="1500902" Cnt="3" />
+        <OutItem ID="100116" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550208" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光魂甲" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200569" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="200570" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550209" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光魂护带" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200571" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="200572" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550210" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光魂冠" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200565" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="200566" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550211" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光魂护手" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200567" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="200568" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550212" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光魂甲下装" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200573" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="200574" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550213" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光魂之靴" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200575" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="200576" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550214" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光魂刃" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200577" Cnt="1" />
+        <InItem ID="1500350" Cnt="4" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="200578" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550215" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="巧力护手" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500118" Cnt="2" />
+        <InItem ID="1500902" Cnt="3" />
+        <OutItem ID="200116" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550216" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光大甲" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300569" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="300570" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550217" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光大护带" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300571" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="300572" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550218" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光大盔" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300565" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="300566" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550219" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光大护手" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300567" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="300568" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550220" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光大甲下装" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300573" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="300574" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550221" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光大之靴" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300575" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="300576" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550222" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光大斧" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300577" Cnt="1" />
+        <InItem ID="1500350" Cnt="4" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="300578" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550223" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="巨力护手" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500118" Cnt="2" />
+        <InItem ID="1500902" Cnt="3" />
+        <OutItem ID="300116" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550224" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光芒之冠" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400473" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="400474" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550225" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光芒手甲" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400475" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="400476" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550226" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光芒护体" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400477" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="400478" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550227" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光芒腿铠" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400479" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="400480" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550228" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光芒缠带" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400481" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="400482" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550229" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光芒利足" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400483" Cnt="1" />
+        <InItem ID="1500902" Cnt="3" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="400484" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550230" Coins="1000" NeedVitality="20" NeedSecondProLv="2" SecondProExp="20" Name="光芒扇" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400485" Cnt="1" />
+        <InItem ID="1500350" Cnt="4" />
+        <InItem ID="1500344" Cnt="1" />
+        <InItem ID="1500609" Cnt="2" />
+        <OutItem ID="400486" Odds="0 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550300" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="宁心护手" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500188" Cnt="2" />
+        <OutItem ID="100686" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="100200" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="100687" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550301" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="碧影腰带" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500197" Cnt="2" />
+        <OutItem ID="100684" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="100071" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="100685" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550302" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="灵犀棍" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500274" Cnt="3" />
+        <InItem ID="1500275" Cnt="3" />
+        <InItem ID="1500276" Cnt="3" />
+        <OutItem ID="100248" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550303" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="神谕之盔" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500211" Cnt="2" />
+        <OutItem ID="100307" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550304" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="神谕铠甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500220" Cnt="3" />
+        <OutItem ID="100308" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550305" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="神谕护腿" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500248" Cnt="2" />
+        <OutItem ID="100309" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550306" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="神谕手甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500249" Cnt="2" />
+        <OutItem ID="100310" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550307" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="神谕系带" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500268" Cnt="2" />
+        <OutItem ID="100311" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550308" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="神谕利足" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500273" Cnt="2" />
+        <OutItem ID="100312" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550309" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="铁线护手" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500188" Cnt="3" />
+        <OutItem ID="200686" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="200200" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="200687" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550310" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="乌金腰带" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500197" Cnt="2" />
+        <OutItem ID="200684" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="200068" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="200685" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550311" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="圣殿短刃" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500274" Cnt="3" />
+        <InItem ID="1500275" Cnt="3" />
+        <InItem ID="1500276" Cnt="3" />
+        <OutItem ID="200248" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550312" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="断浪头盔" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500211" Cnt="2" />
+        <OutItem ID="200307" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550313" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="断浪战甲" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500220" Cnt="3" />
+        <OutItem ID="200308" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550314" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="断浪长裤" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500248" Cnt="2" />
+        <OutItem ID="200309" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550315" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="断浪护手" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500249" Cnt="2" />
+        <OutItem ID="200310" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550316" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="断浪腰带" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500268" Cnt="2" />
+        <OutItem ID="200311" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550317" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="断浪便靴" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500273" Cnt="2" />
+        <OutItem ID="200312" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550318" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="勾玉护手" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500188" Cnt="2" />
+        <OutItem ID="300686" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="300200" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="300687" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550319" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="冰纹铠腰带" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500197" Cnt="2" />
+        <OutItem ID="300684" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="300071" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="300685" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550320" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="虎狼锤" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500274" Cnt="3" />
+        <InItem ID="1500275" Cnt="3" />
+        <InItem ID="1500276" Cnt="3" />
+        <OutItem ID="300248" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550321" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="雀石头甲" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500211" Cnt="2" />
+        <OutItem ID="300307" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550322" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="雀石护甲" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500220" Cnt="3" />
+        <OutItem ID="300308" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550323" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="雀石下装" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500248" Cnt="2" />
+        <OutItem ID="300309" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550324" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="雀石腕甲" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500249" Cnt="2" />
+        <OutItem ID="300310" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550325" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="雀石护腰" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500268" Cnt="2" />
+        <OutItem ID="300311" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550326" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="雀石之足" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500273" Cnt="2" />
+        <OutItem ID="300312" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550327" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="萨隆护手" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500188" Cnt="2" />
+        <OutItem ID="400684" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="400137" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="400685" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550328" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="萨隆护腰" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500197" Cnt="2" />
+        <OutItem ID="400686" Odds="0 0 65 50 30 10 5" />
+        <OutItem ID="400138" Odds="0 0 30 40 50 60 60 " />
+        <OutItem ID="400687" Odds="0 0 5 10 20 30 35" />
+    </Method>
+    <Method MethodID="1550329" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="凌锋护额" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500203" Cnt="2" />
+        <OutItem ID="400120" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550330" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="凌锋铁衣" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500211" Cnt="3" />
+        <OutItem ID="400121" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550331" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="凌锋长裤" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500220" Cnt="2" />
+        <OutItem ID="400122" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550332" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="凌锋护手" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500248" Cnt="2" />
+        <OutItem ID="400123" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550333" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="凌锋腰带" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500249" Cnt="2" />
+        <OutItem ID="400124" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550334" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="凌锋铁靴" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500268" Cnt="2" />
+        <OutItem ID="400125" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550335" Coins="1500" NeedVitality="30" NeedSecondProLv="3" SecondProExp="30" Name="心魔扇" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500274" Cnt="3" />
+        <InItem ID="1500275" Cnt="3" />
+        <InItem ID="1500276" Cnt="3" />
+        <OutItem ID="400126" Odds="0 0 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550400" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天魂头冠" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500502" Cnt="2" />
+        <OutItem ID="100314" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550401" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天魂鳞甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500506" Cnt="3" />
+        <OutItem ID="100315" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550402" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="冷血裤甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500508" Cnt="2" />
+        <OutItem ID="100499" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550403" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天魂头冠" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100314" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500533" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="100563" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550404" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天魂鳞甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100315" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500538" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="100564" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550405" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的冷血裤甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100499" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500542" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="100082" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550406" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天泯头冠" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500502" Cnt="2" />
+        <OutItem ID="200314" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550407" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天泯鳞甲" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500506" Cnt="3" />
+        <OutItem ID="200315" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550408" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="伏天腿甲" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500508" Cnt="2" />
+        <OutItem ID="200499" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550409" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的伏天腿甲" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200499" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500533" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="200083" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550410" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天泯头冠" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200314" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500538" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="200563" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550411" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天泯鳞甲" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200315" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500542" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="200564" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550412" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="百炼腿铠" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500502" Cnt="2" />
+        <OutItem ID="300499" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550413" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天浩头冠" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500506" Cnt="2" />
+        <OutItem ID="300314" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550414" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天浩鳞甲" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500508" Cnt="3" />
+        <OutItem ID="300315" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550415" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天浩头冠" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300314" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500533" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="300563" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550416" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天浩鳞甲" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300315" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500538" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="300564" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550417" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的百炼腿铠" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300499" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500542" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="300082" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550418" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="赤晶裤腿" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500502" Cnt="2" />
+        <OutItem ID="400323" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550419" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天辰头冠" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500506" Cnt="2" />
+        <OutItem ID="400260" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550420" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="天辰鳞甲" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500902" Cnt="10" />
+        <InItem ID="1500508" Cnt="3" />
+        <OutItem ID="400261" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550421" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天辰头冠" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400260" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500533" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="400471" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550422" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的天辰鳞甲" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400261" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500538" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="400472" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550423" Coins="2000" NeedVitality="40" NeedSecondProLv="4" SecondProExp="40" Name="战戟的赤晶裤腿" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400323" Cnt="1" />
+        <InItem ID="1500903" Cnt="10" />
+        <InItem ID="1500542" Cnt="1" />
+        <InItem ID="1500600" Cnt="1" />
+        <OutItem ID="400192" Odds="0 0 0 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550500" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光明甲" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100570" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="100074" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550501" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光明护带" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100572" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="100075" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550502" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光明冠" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100566" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="100079" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550503" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光明护手" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100568" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="100076" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550504" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光明甲下装" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100574" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="100077" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550505" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光明之靴" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100576" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="100078" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550506" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光明棍" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="100578" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="100080" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550507" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光魂甲" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200570" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="200074" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550508" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光魂护带" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200572" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="200075" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550509" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光魂冠" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200566" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="200079" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550510" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光魂护手" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200568" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="200076" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550511" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光魂甲下装" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200574" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="200077" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550512" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光魂之靴" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200576" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="200078" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550513" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光魂刃" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="200578" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="200081" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550514" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光大甲" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300570" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="300074" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550515" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光大护带" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300572" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="300075" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550516" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光大盔" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300566" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="300079" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550517" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光大护手" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300568" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="300076" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550518" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光大甲下装" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300574" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="300077" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550519" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光大之靴" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300576" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="300078" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550520" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光大斧" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="300578" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="300083" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550521" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光芒之冠" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400474" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="400324" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550522" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光芒手甲" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400476" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="400327" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550523" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光芒护体" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400478" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="400325" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550524" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光芒腿铠" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400480" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="400326" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550525" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光芒缠带" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400482" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="400328" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550526" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光芒利足" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400484" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="400329" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550527" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="光芒扇" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="400486" Cnt="1" />
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500344" Cnt="3" />
+        <InItem ID="1500610" Cnt="10" />
+        <OutItem ID="400330" Odds="0 0 0 0 100 100 100" />
+    </Method>
+    <Method MethodID="1550528" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="天行冠" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="100701" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="100708" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="100715" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550529" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="天行战甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="100702" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="100709" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="100716" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550530" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="天行下装" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="100703" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="100710" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="100717" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550531" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="天行手甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="2" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="100704" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="100711" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="100718" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550532" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="天行腰带" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="1" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="100705" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="100712" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="100719" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550533" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="天行胫甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="2" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="100706" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="100713" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="100720" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550534" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="武断天行" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500561" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="100707" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="100714" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="100721" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550535" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="侠骨之盔" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="200701" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="200708" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="200715" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550536" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="侠骨上衣" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="200702" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="200709" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="200716" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550537" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="侠骨下装" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="200703" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="200710" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="200717" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550538" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="侠骨护手" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="2" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="200704" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="200711" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="200718" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550539" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="侠骨腰带" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="1" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="200705" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="200712" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="200719" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550540" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="侠骨靴" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="2" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="200706" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="200713" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="200720" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550541" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="风霜侠骨" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500561" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="200707" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="200714" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="200721" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550542" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="酒仙帽" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="300701" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="300708" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="300715" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550543" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="酒仙袍" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="300702" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="300709" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="300716" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550544" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="酒仙裤" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="300703" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="300710" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="300717" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550545" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="酒仙手套" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="2" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="300704" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="300711" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="300718" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550546" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="酒仙腰带" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="1" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="300705" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="300712" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="300719" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550547" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="酒仙鞋" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="2" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="300706" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="300713" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="300720" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550548" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="逍遥酒仙" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500561" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="300707" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="300714" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="300721" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550549" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="吟游冠" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="400701" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="400708" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="400715" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550550" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="吟游衣" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="400702" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="400709" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="400716" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550551" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="吟游护腿" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="1" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="400703" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="400710" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="400717" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550552" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="吟游裹手" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500551" Cnt="2" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="400704" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="400711" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="400718" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550553" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="吟游腰带" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500556" Cnt="1" />
+        <InItem ID="1500566" Cnt="5" />
+        <OutItem ID="400705" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="400712" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="400719" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550554" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="吟游鞋" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500559" Cnt="2" />
+        <InItem ID="1500567" Cnt="1" />
+        <OutItem ID="400706" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="400713" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="400720" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550555" Coins="3000" NeedVitality="50" NeedSecondProLv="5" SecondProExp="60" Name="慢歌吟游" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="1500903" Cnt="20" />
+        <InItem ID="1500561" Cnt="2" />
+        <InItem ID="1500564" Cnt="1" />
+        <OutItem ID="400707" Odds="0 0 0 0 94 89 82" />
+        <OutItem ID="400714" Odds="0 0 0 0 4 8 14" />
+        <OutItem ID="400721" Odds="0 0 0 0 2 3 4" />
+    </Method>
+    <Method MethodID="1550601" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="破空冠" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100701" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="100722" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100729" Odds="0 0 0 0 0 4 8" />
+        <OutItem ID="100736" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550602" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="破空战甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100702" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="100723" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100730" Odds="0 0 0 0 0 4 8" />
+        <OutItem ID="100737" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550603" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="破空下装" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100703" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="100724" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100731" Odds="1 0 0 0 0 4 8" />
+        <OutItem ID="100738" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550604" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="破空手甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100704" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="100725" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100732" Odds="2 0 0 0 0 4 8" />
+        <OutItem ID="100739" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550605" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="破空腰带" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100705" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="100726" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100733" Odds="3 0 0 0 0 4 8" />
+        <OutItem ID="100740" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550606" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="破空胫甲" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100706" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="100727" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100734" Odds="4 0 0 0 0 4 8" />
+        <OutItem ID="100741" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550607" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="银梭破空" RoleType="1" Broadcast="1" Profession="2">
+        <InItem ID="100707" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="100728" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="100735" Odds="5 0 0 0 0 4 8" />
+        <OutItem ID="100742" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550608" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="岐山之盔" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200701" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="200722" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200729" Odds="6 0 0 0 0 4 8" />
+        <OutItem ID="200736" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550609" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="岐山上衣" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200702" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="200723" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200730" Odds="7 0 0 0 0 4 8" />
+        <OutItem ID="200737" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550610" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="岐山下装" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200703" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="200724" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200731" Odds="8 0 0 0 0 4 8" />
+        <OutItem ID="200738" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550611" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="岐山护手" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200704" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="200725" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200732" Odds="9 0 0 0 0 4 8" />
+        <OutItem ID="200739" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550612" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="岐山腰带" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200705" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="200726" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200733" Odds="10 0 0 0 0 4 8" />
+        <OutItem ID="200740" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550613" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="岐山靴" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200706" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="200727" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200734" Odds="11 0 0 0 0 4 8" />
+        <OutItem ID="200741" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550614" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="凤鸣岐山" RoleType="2" Broadcast="1" Profession="2">
+        <InItem ID="200707" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="200728" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="200735" Odds="12 0 0 0 0 4 8" />
+        <OutItem ID="200742" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550615" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="鬼貌帽" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300701" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="300722" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300729" Odds="13 0 0 0 0 4 8" />
+        <OutItem ID="300736" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550616" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="鬼貌袍" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300702" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="300723" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300730" Odds="14 0 0 0 0 4 8" />
+        <OutItem ID="300737" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550617" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="鬼貌裤" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300703" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="300724" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300731" Odds="15 0 0 0 0 4 8" />
+        <OutItem ID="300738" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550618" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="鬼貌手套" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300704" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="300725" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300732" Odds="16 0 0 0 0 4 8" />
+        <OutItem ID="300739" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550619" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="鬼貌腰带" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300705" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="300726" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300733" Odds="17 0 0 0 0 4 8" />
+        <OutItem ID="300740" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550620" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="鬼貌鞋" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300706" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="300727" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300734" Odds="18 0 0 0 0 4 8" />
+        <OutItem ID="300741" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550621" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="无端鬼貌" RoleType="3" Broadcast="1" Profession="2">
+        <InItem ID="300707" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="300728" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="300735" Odds="19 0 0 0 0 4 8" />
+        <OutItem ID="300742" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550622" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="遥怜冠" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400701" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="400722" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400729" Odds="20 0 0 0 0 4 8" />
+        <OutItem ID="400736" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550623" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="遥怜衣" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400702" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="400723" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400730" Odds="21 0 0 0 0 4 8" />
+        <OutItem ID="400737" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550624" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="遥怜护腿" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400703" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="400724" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400731" Odds="22 0 0 0 0 4 8" />
+        <OutItem ID="400738" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550625" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="遥怜裹手" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400704" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="400725" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400732" Odds="23 0 0 0 0 4 8" />
+        <OutItem ID="400739" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550626" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="遥怜腰带" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400705" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="400726" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400733" Odds="24 0 0 0 0 4 8" />
+        <OutItem ID="400740" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550627" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="遥怜鞋" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400706" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="400727" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400734" Odds="25 0 0 0 0 4 8" />
+        <OutItem ID="400741" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550628" Coins="4000" NeedVitality="60" NeedSecondProLv="6" SecondProExp="80" Name="青峰遥怜" RoleType="4" Broadcast="1" Profession="2">
+        <InItem ID="400707" Cnt="1" />
+        <InItem ID="1500903" Cnt="25" />
+        <OutItem ID="400728" Odds="0 0 0 0 0 94 89" />
+        <OutItem ID="400735" Odds="26 0 0 0 0 4 8" />
+        <OutItem ID="400742" Odds="0 0 0 0 0 2 3" />
+    </Method>
+    <Method MethodID="1550629" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="蓝色火焰" RoleType="0" Broadcast="0" Profession="2">
+        <InItem ID="1540005" Cnt="10" />
+        <OutItem ID="1540006" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550630" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="紫色火焰" RoleType="0" Broadcast="0" Profession="2">
+        <InItem ID="1540006" Cnt="10" />
+        <OutItem ID="1540007" Odds="100 100 100 100 100 100 100" />
+    </Method>
+<!--
+    <Method MethodID="1550631" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="风雪帽" RoleType="1" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500575" Cnt="2" />
+        <InItem ID="1500568" Cnt="2" />
+        <InItem ID="1500274" Cnt="1" />
+        <OutItem ID="100400" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550632" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="风雪帽" RoleType="2" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500575" Cnt="2" />
+        <InItem ID="1500568" Cnt="2" />
+        <InItem ID="1500274" Cnt="1" />
+        <OutItem ID="200400" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550633" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="风雪帽" RoleType="3" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500575" Cnt="2" />
+        <InItem ID="1500568" Cnt="2" />
+        <InItem ID="1500274" Cnt="1" />
+        <OutItem ID="300400" Odds="100 100 100 100 100 100 100" />
+    </Method>
+    <Method MethodID="1550634" Coins="300" NeedVitality="10" NeedSecondProLv="1" SecondProExp="10" Name="风雪帽" RoleType="4" Broadcast="0" Profession="2">
+        <InItem ID="1500901" Cnt="5" />
+        <InItem ID="1500575" Cnt="2" />
+        <InItem ID="1500568" Cnt="2" />
+        <InItem ID="1500274" Cnt="1" />
+        <OutItem ID="400400" Odds="100 100 100 100 100 100 100" />
+    </Method>
+ -->
+</Methods>

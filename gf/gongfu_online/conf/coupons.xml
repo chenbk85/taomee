@@ -1,0 +1,123 @@
+	<!-- Type indicates the type of periodical action  -->
+	<!-- Restr_Flag 0 for daily action, 1 for weekly action 2 for monthly action -->
+	<!-- Toplimit is the upper limit for "exchange" count in one day, one week or one month, default to 999999-->
+	<!-- UseLv 使用等级，如果不配，则不限使用等级。 -->
+	<!-- UseLv="0 100" Vip 1 means only UseLv="0 100" Vip can do this operation, default to 0 -->
+    <!-- Costs 物品的价值-->
+    <!-- Price 物品的售价 默认值取Costs-->
+    <!-- IsBroadcast 1:表示需要广播;默认值 0-->
+    <!-- LimitSeq  默认值 0 (10000 + ID)-->
+	
+	<!-- Restr_Flag 0 for 每日活动, 1 for 每周活动 ， 2 for 每月活动 -->
+	<!-- give_type：1、装备； 2、物品； 3、经验金钱等; 4、技能 -->
+	<!-- give_id：当give_type=1和2时为物品ID； 
+        				当give_type=3时：give_id=1是金钱、2是经验、3是技能点、4伏魔点、5武勋、6双倍经验时间、7荣誉值
+                                                 8是药师经验，9是宠物经验
+        				当give_type=4时：give_id=技能ID -->
+
+<ExchangeRoot>	
+     <!--消耗品类 -->
+    <Exchange ID="1" Name="灵兽经验包（小）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="3000" Price="2400">
+		<Rewards>
+			<Reward give_type="2" give_id="1303017" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="2" Name="高级回气丸（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="300" Price="240">
+		<Rewards>
+			<Reward give_type="2" give_id="1300901" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="3" Name="高级回血丸（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="300" Price="240">
+		<Rewards>
+			<Reward give_type="2" give_id="1300902" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="4" Name="青龙果（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="450" Price="360">
+		<Rewards>
+			<Reward give_type="2" give_id="1300903" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="5" Name="起死回生草（赠）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="1500" Price="1200">
+		<Rewards>
+			<Reward give_type="2" give_id="1302001" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="6" Name="万博号角（赠）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="450" Price="360">
+		<Rewards>
+			<Reward give_type="2" give_id="1560004" count="1"/>
+		</Rewards>
+	</Exchange>
+    <Exchange ID="7" Name=" " Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="450" >
+	</Exchange>
+
+	<Exchange ID="8" Name="5级天降神炎（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="12000" Price="9600">
+		<Rewards>
+			<Reward give_type="2" give_id="1540907" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="9" Name="五轮离火（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="1100" >
+		<Rewards>
+			<Reward give_type="2" give_id="1540608" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="10" Name="6级天降神炎（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="15000" Price="12000">
+		<Rewards>
+			<Reward give_type="2" give_id="1540909" count="1"/>
+		</Rewards>
+	</Exchange>
+    <Exchange ID="11" Name="7级天降神炎（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="22500" Price="18000">
+		<Rewards>
+			<Reward give_type="2" give_id="1540910" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="12" Name="金乌冰炎（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="3600" Price="2880">
+		<Rewards>
+			<Reward give_type="2" give_id="1540911" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="13" Name="唤灵液（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="3750" Price="3000">
+		<Rewards>
+			<Reward give_type="2" give_id="1700904" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="14" Name="双倍经验卡（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="3750" Price="3000">
+		<Rewards>
+			<Reward give_type="2" give_id="1700906" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="15" Name="4级天降神炎（普）" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="4500" Price="3600">
+		<Rewards>
+			<Reward give_type="2" give_id="1740016" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="16" Name="火龙珠" Restr_Flag="4" Toplimit="1" LimitSeq="0" UseLv="0 100" Vip="0" Costs="4500" Price="3600">
+		<Rewards>
+			<Reward give_type="2" give_id="1500567" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="17" Name="火焰石" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="6000" Price="4800">
+		<Rewards>
+			<Reward give_type="2" give_id="1410006" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="18" Name="流火石" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="9000" Price="7200">
+		<Rewards>
+			<Reward give_type="2" give_id="1410007" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="19" Name="天火石" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="15000" Price="12000">
+		<Rewards>
+			<Reward give_type="2" give_id="1410008" count="1"/>
+		</Rewards>
+	</Exchange>	
+	<Exchange ID="20" Name="寒假特惠礼包" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="6000" Price="4800">
+		<Rewards>
+			<Reward give_type="2" give_id="2500020" count="1"/>
+		</Rewards>
+	</Exchange>
+	<Exchange ID="21" Name="春节特惠礼包" Restr_Flag="0" Toplimit="0" UseLv="0 100" Vip="0" Costs="8000" Price="6400">
+		<Rewards>
+			<Reward give_type="2" give_id="2500021" count="1"/>
+		</Rewards>
+	</Exchange>	
+</ExchangeRoot>

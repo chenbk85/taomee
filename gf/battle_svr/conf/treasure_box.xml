@@ -1,0 +1,714 @@
+<!--
+	<Box>: Quality: 宝箱品质：1=黑铁， 2=青铜， 3=白银， 4=黄金， 5=紫金
+													  10=普通宝箱
+				 
+				 <Item>:give_type：1、装备； 2、物品； 3、经验金钱等; 4、技能
+				        give_id：当give_type=1和：装备的品质(稀有度1白，2绿，3蓝，4紫，5银，6金，7神圣)； 
+				        				 当give_type=2时：物品ID；
+                         当give_type=3时：give_id=1是金钱、2是经验、3是技能点、4伏魔点
+                         当give_type=4时：give_id=技能ID
+                odds:获得概率，每个box加起来不能超过100
+                equip_part:装备部位(1帽子，2项链，3护手，4武器，5戒指，6衣服，7腰带，8护腿，9鞋子，10护符)
+-->
+<TreasureBoxs>
+	<!-- 具体宝箱的配置-->
+	<!--normal stage BOX-->
+	<Box ID="1" Quality="10">
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="20"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="20"/>		
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3000" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="10" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="1" odds="20"/>
+		
+	</Box>		
+	<Box ID="2" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="1000" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="1" odds="20"/>
+		<Item give_type="2" name="小钱袋" give_id="1500569" cnt="1" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="2" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="1" odds="10"/>
+		
+	</Box>	
+	<Box ID="3" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="1500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="1" odds="20"/>
+		<Item give_type="2" name="小钱袋" give_id="1500569" cnt="1" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="2" odds="20"/>
+	    <Item give_type="2" name="绿色碎片" give_id="1500901" cnt="1" odds="10"/>
+		
+	</Box>	
+	<Box ID="4" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="2000" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="小钱袋" give_id="1500569" cnt="2" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="3" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="1" odds="10"/>
+			
+	</Box>		
+	<Box ID="5" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="2500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="小钱袋" give_id="1500569" cnt="2" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="3" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="1" odds="10"/>
+			
+	</Box>	
+	<Box ID="6" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="2500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="中钱袋" give_id="1500570" cnt="1" odds="20"/>
+		<Item give_type="2" name="绿色火焰" give_id="1540005" cnt="1" odds="20"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="1" odds="10"/>
+			
+	</Box>	
+	<Box ID="7" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="2500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="中钱袋" give_id="1500570" cnt="1" odds="20"/>
+		<Item give_type="2" name="绿色火焰" give_id="1540005" cnt="1" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="5" odds="10"/>
+		
+	</Box>	
+	<Box ID="8" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3000" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="中钱袋" give_id="1500570" cnt="2" odds="20"/>
+		<Item give_type="2" name="绿色火焰" give_id="1540005" cnt="2" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="5" odds="10"/>
+		
+	</Box>
+	<Box ID="9" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="中钱袋" give_id="1500570" cnt="2" odds="20"/>
+		<Item give_type="2" name="绿色火焰" give_id="1540005" cnt="2" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="5" odds="10"/>
+		
+	</Box>
+    <Box ID="10" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="大钱袋" give_id="1500571" cnt="1" odds="20"/>
+		<Item give_type="2" name="蓝色火焰" give_id="1540006" cnt="1" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="5" odds="10"/>
+		
+	</Box>
+	<Box ID="11" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="大钱袋" give_id="1500571" cnt="1" odds="20"/>
+		<Item give_type="2" name="蓝色火焰" give_id="1540006" cnt="1" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="5" odds="10"/>
+		
+	</Box>
+	<Box ID="12" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="大钱袋" give_id="1500571" cnt="2" odds="20"/>
+		<Item give_type="2" name="蓝色火焰" give_id="1540006" cnt="2" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="5" odds="10"/>
+		
+	</Box>
+	<Box ID="13" Quality="10">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3500" odds="30"/>
+		<Item give_type="2" name="灵晶碎片" give_id="1600001" cnt="2" odds="20"/>
+		<Item give_type="2" name="大钱袋" give_id="1500571" cnt="2" odds="20"/>
+		<Item give_type="2" name="蓝色火焰" give_id="1540006" cnt="2" odds="20"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="10" odds="10"/>
+		
+	</Box>
+
+
+
+	
+	<!--VIP BOX-->
+	<Box ID="81" Quality="1">
+		<Item give_type="2" name="灵晶" give_id="1600002" cnt="1" odds="17"/>
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="17"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="17"/>		
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="7" odds="17"/>
+		<Item give_type="2" name="蓝色碎片" give_id="1500902" cnt="1" odds="16"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="3" odds="16"/>
+	</Box>
+	<Box ID="82" Quality="2">
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="16"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="4000" odds="14"/>
+		<Item give_type="2" name="大灵晶" give_id="1600003" cnt="1" odds="14"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="10" odds="14"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="5" cnt="1" odds="14"/>
+		<Item give_type="2" name="蓝色碎片" give_id="1500902" cnt="3" odds="14"/>
+		<Item give_type="2" name="绿色碎片" give_id="1500901" cnt="5" odds="14"/>
+	</Box>
+	<Box ID="83" Quality="3">
+		<Item give_type="1" name="装备" give_id="2" equip_part="10" cnt="1" odds="14"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="4500" odds="14"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="20" odds="24"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="5" cnt="1" odds="14"/>
+		<Item give_type="1" name="装备" give_id="3" equip_part="5" cnt="1" odds="6"/>
+		<Item give_type="2" name="蓝色粉末" give_id="1500902" cnt="1" odds="14"/>
+	    <Item give_type="2" name="绿色碎片" give_id="1500901" cnt="5" odds="14"/>
+	</Box>
+	<Box ID="84" Quality="4">
+		<Item give_type="1" name="装备" give_id="2" equip_part="10" cnt="1" odds="13"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="5000" odds="13"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="25" odds="20"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="5" cnt="1" odds="12"/>
+		<Item give_type="1" name="装备" give_id="3" equip_part="10" cnt="1" odds="6"/>
+		<Item give_type="1" name="装备" give_id="3" equip_part="5" cnt="1" odds="12"/>
+		<Item give_type="2" name="蓝色粉末" give_id="1500902" cnt="1" odds="12"/>
+	    <Item give_type="2" name="绿色碎片" give_id="1500901" cnt="5" odds="12"/>
+
+	</Box>
+	<Box ID="85" Quality="5">
+		<Item give_type="1" name="装备" give_id="2" equip_part="10" cnt="1" odds="12"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="5500" odds="11"/>
+		<Item give_type="3" name="伏魔点" give_id="4" cnt="30" odds="22"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="5" cnt="1" odds="11"/>
+		<Item give_type="1" name="装备" give_id="3" equip_part="10" cnt="1" odds="11"/>
+		<Item give_type="1" name="装备" give_id="3" equip_part="5" cnt="1" odds="11"/>
+		<Item give_type="2" name="蓝色粉末" give_id="1500902" cnt="1" odds="11"/>
+	    <Item give_type="2" name="绿色碎片" give_id="1500901" cnt="5" odds="11"/>
+
+	</Box>
+
+
+	<!--fumo BOX-->
+	<Box ID="91" Quality="1">
+		<Item give_type="3" name="经验" give_id="2" cnt="2000" odds="40"/>
+		<Item give_type="3" name="经验" give_id="2" cnt="3000" odds="10"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="1500" odds="10"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="1000" odds="40"/>
+	</Box>	
+	<Box ID="92" Quality="2">
+		<Item give_type="3" name="经验" give_id="2" cnt="4000" odds="25"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="2000" odds="25"/>
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="35"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="15"/>
+	</Box>
+	<Box ID="93" Quality="3">
+		<Item give_type="3" name="经验" give_id="2" cnt="5000" odds="25"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3000" odds="25"/>
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="25"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="25"/>
+	</Box>
+	<Box ID="94" Quality="4">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="4000" odds="35"/>
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="35"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="25"/>
+		<Item give_type="1" name="装备" give_id="3" equip_part="0" cnt="1" odds="5"/>
+	</Box>
+	<Box ID="95" Quality="5">
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="45"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="45"/>
+		<Item give_type="1" name="装备" give_id="3" equip_part="0" cnt="1" odds="9"/>
+		<Item give_type="1" name="装备" give_id="4" equip_part="0" cnt="1" odds="1"/>
+	</Box>	
+	<Box ID="96" Quality="1">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="1500" odds="50"/>
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="1000" odds="50"/>
+	</Box>	
+	<Box ID="97" Quality="2">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="2000" odds="50"/>
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="35"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="15"/>
+	</Box>
+	<Box ID="98" Quality="3">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="3000" odds="50"/>
+		<Item give_type="1" name="装备" give_id="1" equip_part="0" cnt="1" odds="25"/>
+		<Item give_type="1" name="装备" give_id="2" equip_part="0" cnt="1" odds="25"/>
+	</Box>
+
+
+
+	
+	<!-- 每个关卡拥有的宝箱 -->
+	<StagesBox ID="1" DropLv="3">
+		<Score name="S" ID="1" Boxs="2 2 1 1"/>
+		<Score name="A" ID="2" Boxs="2 2 2 1"/>
+		<Score name="B" ID="3" Boxs="2 2 2 2"/>
+		<Score name="C" ID="4" Boxs="2 2 2 2"/>
+		<Score name="D" ID="5" Boxs="2 2 2 2"/>
+		<Score name="E" ID="6" Boxs="2 2 2 2"/>
+	</StagesBox>
+	<StagesBox ID="2" DropLv="7">
+		<Score name="S" ID="1" Boxs="3 3 1 1"/>
+		<Score name="A" ID="2" Boxs="3 3 3 1"/>
+		<Score name="B" ID="3" Boxs="3 3 3 3"/>
+		<Score name="C" ID="4" Boxs="3 3 3 3"/>
+		<Score name="D" ID="5" Boxs="3 3 3 3"/>
+		<Score name="E" ID="6" Boxs="3 3 3 3"/>
+	</StagesBox>
+	<StagesBox ID="4" DropLv="4">
+		<Score name="S" ID="1" Boxs="2 2 1 1"/>
+		<Score name="A" ID="2" Boxs="2 2 2 1"/>
+		<Score name="B" ID="3" Boxs="2 2 2 2"/>
+		<Score name="C" ID="4" Boxs="2 2 2 2"/>
+		<Score name="D" ID="5" Boxs="2 2 2 2"/>
+		<Score name="E" ID="6" Boxs="2 2 2 2"/>
+	</StagesBox>
+	<StagesBox ID="5" DropLv="5">
+		<Score name="S" ID="1" Boxs="2 2 1 1"/>
+		<Score name="A" ID="2" Boxs="2 2 2 1"/>
+		<Score name="B" ID="3" Boxs="2 2 2 2"/>
+		<Score name="C" ID="4" Boxs="2 2 2 2"/>
+		<Score name="D" ID="5" Boxs="2 2 2 2"/>
+		<Score name="E" ID="6" Boxs="2 2 2 2"/>
+	</StagesBox>
+	<StagesBox ID="6" DropLv="6">
+		<Score name="S" ID="1" Boxs="3 3 1 1"/>
+		<Score name="A" ID="2" Boxs="3 3 3 1"/>
+		<Score name="B" ID="3" Boxs="3 3 3 3"/>
+		<Score name="C" ID="4" Boxs="3 3 3 3"/>
+		<Score name="D" ID="5" Boxs="3 3 3 3"/>
+		<Score name="E" ID="6" Boxs="3 3 3 3"/>
+	</StagesBox>
+	<StagesBox ID="7" DropLv="7">
+		<Score name="S" ID="1" Boxs="3 3 1 1"/>
+		<Score name="A" ID="2" Boxs="3 3 3 1"/>
+		<Score name="B" ID="3" Boxs="3 3 3 3"/>
+		<Score name="C" ID="4" Boxs="3 3 3 3"/>
+		<Score name="D" ID="5" Boxs="3 3 3 3"/>
+		<Score name="E" ID="6" Boxs="3 3 3 3"/>
+	</StagesBox>
+	<StagesBox ID="8" DropLv="7">
+		<Score name="S" ID="1" Boxs="3 3 1 1"/>
+		<Score name="A" ID="2" Boxs="3 3 3 1"/>
+		<Score name="B" ID="3" Boxs="3 3 3 3"/>
+		<Score name="C" ID="4" Boxs="3 3 3 3"/>
+		<Score name="D" ID="5" Boxs="3 3 3 3"/>
+		<Score name="E" ID="6" Boxs="3 3 3 3"/>
+	</StagesBox>
+	<StagesBox ID="9" DropLv="8">
+		<Score name="S" ID="1" Boxs="3 3 1 1"/>
+		<Score name="A" ID="2" Boxs="3 3 3 1"/>
+		<Score name="B" ID="3" Boxs="3 3 3 3"/>
+		<Score name="C" ID="4" Boxs="3 3 3 3"/>
+		<Score name="D" ID="5" Boxs="3 3 3 3"/>
+		<Score name="E" ID="6" Boxs="3 3 3 3"/>
+	</StagesBox>
+	<StagesBox ID="10" DropLv="8">
+		<Score name="S" ID="1" Boxs="4 4 1 1"/>
+		<Score name="A" ID="2" Boxs="4 4 4 1"/>
+		<Score name="B" ID="3" Boxs="4 4 4 4"/>
+		<Score name="C" ID="4" Boxs="4 4 4 4"/>
+		<Score name="D" ID="5" Boxs="4 4 4 4"/>
+		<Score name="E" ID="6" Boxs="4 4 4 4"/>
+	</StagesBox>
+	<StagesBox ID="11" DropLv="9">
+		<Score name="S" ID="1" Boxs="4 4 1 1"/>
+		<Score name="A" ID="2" Boxs="4 4 4 1"/>
+		<Score name="B" ID="3" Boxs="4 4 4 4"/>
+		<Score name="C" ID="4" Boxs="4 4 4 4"/>
+		<Score name="D" ID="5" Boxs="4 4 4 4"/>
+		<Score name="E" ID="6" Boxs="4 4 4 4"/>
+	</StagesBox>
+	<StagesBox ID="12" DropLv="9">
+		<Score name="S" ID="1" Boxs="4 4 1 1"/>
+		<Score name="A" ID="2" Boxs="4 4 4 1"/>
+		<Score name="B" ID="3" Boxs="4 4 4 4"/>
+		<Score name="C" ID="4" Boxs="4 4 4 4"/>
+		<Score name="D" ID="5" Boxs="4 4 4 4"/>
+		<Score name="E" ID="6" Boxs="4 4 4 4"/>
+	</StagesBox>
+	<StagesBox ID="13" DropLv="10">
+		<Score name="S" ID="1" Boxs="4 4 1 1"/>
+		<Score name="A" ID="2" Boxs="4 4 4 1"/>
+		<Score name="B" ID="3" Boxs="4 4 4 4"/>
+		<Score name="C" ID="4" Boxs="4 4 4 4"/>
+		<Score name="D" ID="5" Boxs="4 4 4 4"/>
+		<Score name="E" ID="6" Boxs="4 4 4 4"/>
+	</StagesBox>
+	<StagesBox ID="14" DropLv="10">
+		<Score name="S" ID="1" Boxs="5 5 1 1"/>
+		<Score name="A" ID="2" Boxs="5 5 4 1"/>
+		<Score name="B" ID="3" Boxs="5 5 4 4"/>
+		<Score name="C" ID="4" Boxs="5 5 5 5"/>
+		<Score name="D" ID="5" Boxs="5 5 5 5"/>
+		<Score name="E" ID="6" Boxs="5 5 5 5"/>
+	</StagesBox>
+	<StagesBox ID="15" DropLv="10">
+		<Score name="S" ID="1" Boxs="5 5 1 1"/>
+		<Score name="A" ID="2" Boxs="5 5 4 1"/>
+		<Score name="B" ID="3" Boxs="5 5 5 5"/>
+		<Score name="C" ID="4" Boxs="5 5 5 5"/>
+		<Score name="D" ID="5" Boxs="5 5 5 5"/>
+		<Score name="E" ID="6" Boxs="5 5 5 5"/>
+	</StagesBox>
+	<StagesBox ID="16" DropLv="10">
+		<Score name="S" ID="1" Boxs="5 5 1 1"/>
+		<Score name="A" ID="2" Boxs="5 5 5 1"/>
+		<Score name="B" ID="3" Boxs="5 5 5 5"/>
+		<Score name="C" ID="4" Boxs="5 5 5 5"/>
+		<Score name="D" ID="5" Boxs="5 5 5 5"/>
+		<Score name="E" ID="6" Boxs="5 5 5 5"/>
+	</StagesBox>
+	<StagesBox ID="17" DropLv="11">
+		<Score name="S" ID="1" Boxs="5 5 1 1"/>
+		<Score name="A" ID="2" Boxs="5 5 5 1"/>
+		<Score name="B" ID="3" Boxs="5 5 5 5"/>
+		<Score name="C" ID="4" Boxs="5 5 5 5"/>
+		<Score name="D" ID="5" Boxs="5 5 5 5"/>
+		<Score name="E" ID="6" Boxs="5 5 5 5"/>
+	</StagesBox>
+	<StagesBox ID="18" DropLv="12">
+		<Score name="S" ID="1" Boxs="6 6 1 1"/>
+		<Score name="A" ID="2" Boxs="6 6 6 1"/>
+		<Score name="B" ID="3" Boxs="6 6 6 6"/>
+		<Score name="C" ID="4" Boxs="6 6 6 6"/>
+		<Score name="D" ID="5" Boxs="6 6 6 6"/>
+		<Score name="E" ID="6" Boxs="6 6 6 6"/>
+	</StagesBox>
+	<StagesBox ID="19" DropLv="12">
+		<Score name="S" ID="1" Boxs="6 6 1 1"/>
+		<Score name="A" ID="2" Boxs="6 6 6 1"/>
+		<Score name="B" ID="3" Boxs="6 6 6 6"/>
+		<Score name="C" ID="4" Boxs="6 6 6 6"/>
+		<Score name="D" ID="5" Boxs="6 6 6 6"/>
+		<Score name="E" ID="6" Boxs="6 6 6 6"/>
+	</StagesBox>
+	<StagesBox ID="20" DropLv="13">
+		<Score name="S" ID="1" Boxs="7 7 1 1"/>
+		<Score name="A" ID="2" Boxs="7 7 7 1"/>
+		<Score name="B" ID="3" Boxs="7 7 7 7"/>
+		<Score name="C" ID="4" Boxs="7 7 7 7"/>
+		<Score name="D" ID="5" Boxs="7 7 7 7"/>
+		<Score name="E" ID="6" Boxs="7 7 7 7"/>
+	</StagesBox>	
+	<StagesBox ID="21" DropLv="12">
+		<Score name="S" ID="1" Boxs="6 6 1 1"/>
+		<Score name="A" ID="2" Boxs="6 6 6 1"/>
+		<Score name="B" ID="3" Boxs="6 6 6 6"/>
+		<Score name="C" ID="4" Boxs="6 6 6 6"/>
+		<Score name="D" ID="5" Boxs="6 6 6 6"/>
+		<Score name="E" ID="6" Boxs="6 6 6 6"/>
+	</StagesBox>	
+	<StagesBox ID="22" DropLv="11">
+		<Score name="S" ID="1" Boxs="5 5 1 1"/>
+		<Score name="A" ID="2" Boxs="5 5 5 1"/>
+		<Score name="B" ID="3" Boxs="5 5 5 5"/>
+		<Score name="C" ID="4" Boxs="5 5 5 5"/>
+		<Score name="D" ID="5" Boxs="5 5 5 5"/>
+		<Score name="E" ID="6" Boxs="5 5 5 5"/>
+	</StagesBox>
+	<StagesBox ID="23" DropLv="12">
+		<Score name="S" ID="1" Boxs="5 5 1 1"/>
+		<Score name="A" ID="2" Boxs="5 5 5 1"/>
+		<Score name="B" ID="3" Boxs="5 5 5 5"/>
+		<Score name="C" ID="4" Boxs="5 5 5 5"/>
+		<Score name="D" ID="5" Boxs="5 5 5 5"/>
+		<Score name="E" ID="6" Boxs="5 5 5 5"/>
+	</StagesBox>
+	<StagesBox ID="24" DropLv="12">
+		<Score name="S" ID="1" Boxs="5 5 1 1"/>
+		<Score name="A" ID="2" Boxs="5 5 5 1"/>
+		<Score name="B" ID="3" Boxs="5 5 5 5"/>
+		<Score name="C" ID="4" Boxs="5 5 5 5"/>
+		<Score name="D" ID="5" Boxs="5 5 5 5"/>
+		<Score name="E" ID="6" Boxs="5 5 5 5"/>
+	</StagesBox>
+	<StagesBox ID="25" DropLv="12">
+		<Score name="S" ID="1" Boxs="6 6 1 1"/>
+		<Score name="A" ID="2" Boxs="6 6 6 1"/>
+		<Score name="B" ID="3" Boxs="6 6 6 5"/>
+		<Score name="C" ID="4" Boxs="6 6 6 5"/>
+		<Score name="D" ID="5" Boxs="6 6 6 6"/>
+		<Score name="E" ID="6" Boxs="6 6 6 6"/>
+	</StagesBox>
+	<StagesBox ID="26" DropLv="13">
+		<Score name="S" ID="1" Boxs="7 7 1 1"/>
+		<Score name="A" ID="2" Boxs="7 7 7 1"/>
+		<Score name="B" ID="3" Boxs="7 7 7 7"/>
+		<Score name="C" ID="4" Boxs="7 7 7 7"/>
+		<Score name="D" ID="5" Boxs="7 7 7 7"/>
+		<Score name="E" ID="6" Boxs="7 7 7 7"/>
+	</StagesBox>	
+	<StagesBox ID="27" DropLv="13">
+		<Score name="S" ID="1" Boxs="7 7 1 1"/>
+		<Score name="A" ID="2" Boxs="7 7 7 1"/>
+		<Score name="B" ID="3" Boxs="7 7 7 7"/>
+		<Score name="C" ID="4" Boxs="7 7 7 7"/>
+		<Score name="D" ID="5" Boxs="7 7 7 7"/>
+		<Score name="E" ID="6" Boxs="7 7 7 7"/>
+	</StagesBox>	
+	<StagesBox ID="28" DropLv="13">
+		<Score name="S" ID="1" Boxs="7 7 1 1"/>
+		<Score name="A" ID="2" Boxs="7 7 7 1"/>
+		<Score name="B" ID="3" Boxs="7 7 7 7"/>
+		<Score name="C" ID="4" Boxs="7 7 7 7"/>
+		<Score name="D" ID="5" Boxs="7 7 7 7"/>
+		<Score name="E" ID="6" Boxs="7 7 7 7"/>
+	</StagesBox>	
+	<StagesBox ID="29" DropLv="14">
+		<Score name="S" ID="1" Boxs="8 8 1 1"/>
+		<Score name="A" ID="2" Boxs="8 8 8 8"/>
+		<Score name="B" ID="3" Boxs="8 8 8 8"/>
+		<Score name="C" ID="4" Boxs="8 8 8 8"/>
+		<Score name="D" ID="5" Boxs="8 8 8 8"/>
+		<Score name="E" ID="6" Boxs="8 8 8 8"/>
+	</StagesBox>	
+	<StagesBox ID="30" DropLv="15">
+		<Score name="S" ID="1" Boxs="8 8 1 1"/>
+		<Score name="A" ID="2" Boxs="8 8 8 8"/>
+		<Score name="B" ID="3" Boxs="8 8 8 8"/>
+		<Score name="C" ID="4" Boxs="8 8 8 8"/>
+		<Score name="D" ID="5" Boxs="8 8 8 8"/>
+		<Score name="E" ID="6" Boxs="8 8 8 8"/>
+	</StagesBox>
+	<StagesBox ID="31" DropLv="15">
+		<Score name="S" ID="1" Boxs="8 8 1 1"/>
+		<Score name="A" ID="2" Boxs="8 8 8 8"/>
+		<Score name="B" ID="3" Boxs="8 8 8 8"/>
+		<Score name="C" ID="4" Boxs="8 8 8 8"/>
+		<Score name="D" ID="5" Boxs="8 8 8 8"/>
+		<Score name="E" ID="6" Boxs="8 8 8 8"/>
+	</StagesBox>
+	<StagesBox ID="32" DropLv="15">
+		<Score name="S" ID="1" Boxs="9 9 1 1"/>
+		<Score name="A" ID="2" Boxs="9 9 9 9"/>
+		<Score name="B" ID="3" Boxs="9 9 9 9"/>
+		<Score name="C" ID="4" Boxs="9 9 9 9"/>
+		<Score name="D" ID="5" Boxs="9 9 9 9"/>
+		<Score name="E" ID="6" Boxs="9 9 9 9"/>
+	</StagesBox>
+	<StagesBox ID="33" DropLv="15">
+		<Score name="S" ID="1" Boxs="9 9 1 1"/>
+		<Score name="A" ID="2" Boxs="9 9 9 9"/>
+		<Score name="B" ID="3" Boxs="9 9 9 9"/>
+		<Score name="C" ID="4" Boxs="9 9 9 9"/>
+		<Score name="D" ID="5" Boxs="9 9 9 9"/>
+		<Score name="E" ID="6" Boxs="9 9 9 9"/>
+	</StagesBox>
+	<StagesBox ID="34" DropLv="15">
+		<Score name="S" ID="1" Boxs="9 9 1 1"/>
+		<Score name="A" ID="2" Boxs="9 9 9 9"/>
+		<Score name="B" ID="3" Boxs="9 9 9 9"/>
+		<Score name="C" ID="4" Boxs="9 9 9 9"/>
+		<Score name="D" ID="5" Boxs="9 9 9 9"/>
+		<Score name="E" ID="6" Boxs="9 9 9 9"/>
+	</StagesBox>
+	<StagesBox ID="35" DropLv="15">
+		<Score name="S" ID="1" Boxs="9 9 1 1"/>
+		<Score name="A" ID="2" Boxs="9 9 9 9"/>
+		<Score name="B" ID="3" Boxs="9 9 9 9"/>
+		<Score name="C" ID="4" Boxs="9 9 9 9"/>
+		<Score name="D" ID="5" Boxs="9 9 9 9"/>
+		<Score name="E" ID="6" Boxs="9 9 9 9"/>
+	</StagesBox>
+
+    <StagesBox ID="36" DropLv="3">
+		<Score name="S" ID="1" Boxs="10 10 1 1"/>
+		<Score name="A" ID="2" Boxs="10 10 10 10"/>
+		<Score name="B" ID="3" Boxs="10 10 10 10"/>
+		<Score name="C" ID="4" Boxs="10 10 10 10"/>
+		<Score name="D" ID="5" Boxs="10 10 10 10"/>
+		<Score name="E" ID="6" Boxs="10 10 10 10"/>
+	</StagesBox>
+	<StagesBox ID="37" DropLv="4">
+		<Score name="S" ID="1" Boxs="10 10 1 1"/>
+		<Score name="A" ID="2" Boxs="10 10 10 10"/>
+		<Score name="B" ID="3" Boxs="10 10 10 10"/>
+		<Score name="C" ID="4" Boxs="10 10 10 10"/>
+		<Score name="D" ID="5" Boxs="10 10 10 10"/>
+		<Score name="E" ID="6" Boxs="10 10 10 10"/>
+	</StagesBox>
+	<StagesBox ID="38" DropLv="5">
+		<Score name="S" ID="1" Boxs="10 10 1 1"/>
+		<Score name="A" ID="2" Boxs="10 10 10 10"/>
+		<Score name="B" ID="3" Boxs="10 10 10 10"/>
+		<Score name="C" ID="4" Boxs="10 10 10 10"/>
+		<Score name="D" ID="5" Boxs="10 10 10 10"/>
+		<Score name="E" ID="6" Boxs="10 10 10 10"/>
+	</StagesBox>
+	<StagesBox ID="39" DropLv="15">
+		<Score name="S" ID="1" Boxs="11 11 1 1"/>
+		<Score name="A" ID="2" Boxs="11 11 11 11"/>
+		<Score name="B" ID="3" Boxs="11 11 11 11"/>
+		<Score name="C" ID="4" Boxs="11 11 11 11"/>
+		<Score name="D" ID="5" Boxs="11 11 11 11"/>
+		<Score name="E" ID="6" Boxs="11 11 11 11"/>
+	</StagesBox>
+	<StagesBox ID="40" DropLv="15">
+		<Score name="S" ID="1" Boxs="11 11 1 1"/>
+		<Score name="A" ID="2" Boxs="11 11 11 11"/>
+		<Score name="B" ID="3" Boxs="11 11 11 11"/>
+		<Score name="C" ID="4" Boxs="11 11 11 11"/>
+		<Score name="D" ID="5" Boxs="11 11 11 11"/>
+		<Score name="E" ID="6" Boxs="11 11 11 11"/>
+	</StagesBox>
+	<StagesBox ID="41" DropLv="15">
+		<Score name="S" ID="1" Boxs="11 11 1 1"/>
+		<Score name="A" ID="2" Boxs="11 11 11 11"/>
+		<Score name="B" ID="3" Boxs="11 11 11 11"/>
+		<Score name="C" ID="4" Boxs="11 11 11 11"/>
+		<Score name="D" ID="5" Boxs="11 11 11 11"/>
+		<Score name="E" ID="6" Boxs="11 11 11 11"/>
+	</StagesBox>
+	<StagesBox ID="42" DropLv="16">
+		<Score name="S" ID="1" Boxs="12 12 1 1"/>
+		<Score name="A" ID="2" Boxs="12 12 12 12"/>
+		<Score name="B" ID="3" Boxs="12 12 12 12"/>
+		<Score name="C" ID="4" Boxs="12 12 12 12"/>
+		<Score name="D" ID="5" Boxs="12 12 12 12"/>
+		<Score name="E" ID="6" Boxs="12 12 12 12"/>
+	</StagesBox>
+	<StagesBox ID="43" DropLv="16">
+		<Score name="S" ID="1" Boxs="12 12 1 1"/>
+		<Score name="A" ID="2" Boxs="12 12 12 12"/>
+		<Score name="B" ID="3" Boxs="12 12 12 12"/>
+		<Score name="C" ID="4" Boxs="12 12 12 12"/>
+		<Score name="D" ID="5" Boxs="12 12 12 12"/>
+		<Score name="E" ID="6" Boxs="12 12 12 12"/>
+	</StagesBox>
+	<StagesBox ID="44" DropLv="17">
+		<Score name="S" ID="1" Boxs="12 12 1 1"/>
+		<Score name="A" ID="2" Boxs="12 12 12 12"/>
+		<Score name="B" ID="3" Boxs="12 12 12 12"/>
+		<Score name="C" ID="4" Boxs="12 12 12 12"/>
+		<Score name="D" ID="5" Boxs="12 12 12 12"/>
+		<Score name="E" ID="6" Boxs="12 12 12 12"/>
+	</StagesBox>
+	<StagesBox ID="45" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="46" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="47" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="48" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="49" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+    <StagesBox ID="50" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="51" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="52" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="53" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="54" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="55" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+	<StagesBox ID="56" DropLv="17">
+		<Score name="S" ID="1" Boxs="13 13 1 1"/>
+		<Score name="A" ID="2" Boxs="13 13 13 13"/>
+		<Score name="B" ID="3" Boxs="13 13 13 13"/>
+		<Score name="C" ID="4" Boxs="13 13 13 13"/>
+		<Score name="D" ID="5" Boxs="13 13 13 13"/>
+		<Score name="E" ID="6" Boxs="13 13 13 13"/>
+	</StagesBox>
+
+
+
+
+
+			
+	<StagesBox ID="801" DropLv="9">
+		<Score name="S" ID="1" Boxs="96 96 97 98"/>
+		<Score name="A" ID="2" Boxs="96 96 97 97"/>
+		<Score name="B" ID="3" Boxs="96 96 96 97"/>
+		<Score name="C" ID="4" Boxs="96 96 96 97"/>
+	</StagesBox>	
+	<StagesBox ID="802" DropLv="10">
+		<Score name="S" ID="1" Boxs="91 92 93 94"/>
+		<Score name="A" ID="2" Boxs="91 91 92 93"/>
+		<Score name="B" ID="3" Boxs="91 91 92 92"/>
+		<Score name="C" ID="4" Boxs="91 91 92 92"/>
+	</StagesBox>
+	<StagesBox ID="803" DropLv="11">
+		<Score name="S" ID="1" Boxs="92 93 93 94"/>
+		<Score name="A" ID="2" Boxs="91 92 93 94"/>
+		<Score name="B" ID="3" Boxs="91 91 92 93"/>
+		<Score name="C" ID="4" Boxs="91 91 92 93"/>
+	</StagesBox>
+	<StagesBox ID="804" DropLv="12">
+		<Score name="S" ID="1" Boxs="92 93 94 95"/>
+		<Score name="A" ID="2" Boxs="92 93 93 94"/>
+		<Score name="B" ID="3" Boxs="91 92 93 94"/>
+		<Score name="C" ID="4" Boxs="91 92 93 94"/>
+	</StagesBox>
+	
+
+
+	<!-- VIP用户拥有的宝箱 -->
+	<VipBox Lv="1" Boxs="81"/>
+	<VipBox Lv="2" Boxs="81 82"/>
+	<VipBox Lv="3" Boxs="81 82 83"/>
+	<VipBox Lv="4" Boxs="82 83 83 84"/>
+	<VipBox Lv="5" Boxs="83 83 83 84 85"/>
+	<VipBox Lv="6" Boxs="83 84 84 85 85"/>
+	<VipBox Lv="7" Boxs="83 84 84 85 85"/>
+	<VipBox Lv="8" Boxs="83 84 84 85 85"/>
+	<VipBox Lv="9" Boxs="83 84 84 85 85"/>
+	<VipBox Lv="10" Boxs="83 84 84 85 85"/>
+		
+</TreasureBoxs>
+
+
+

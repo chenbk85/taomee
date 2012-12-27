@@ -1,0 +1,39 @@
+<!-- edited with XML Spy v4.0.1 U (http://www.xmlspy.com) by opec (opec) -->
+<NumenMonsters>
+	<!--
+		rare:稀有度
+		classId:系列id（1：走兽系，2：飞羽系，3：上古系，4：元素系,5：变异系，6：远古系）
+		getWay:获取方式
+		descript：描述
+	-->
+	<CallNumen ItemID="1500581" Name="财神召唤符" GodID="9001"/>
+	<CallNumen ItemID="1500583" Name="喜神召唤符" GodID="9002"/>
+	<CallNumen ItemID="1500582" Name="门神召唤符" GodID="9003"/>
+	<CallNumen ItemID="1500592" Name="灶神召唤符" GodID="9004"/>
+	<CallNumen ItemID="1500593" Name="土神召唤符" GodID="9005"/>
+	<CallNumen ItemID="1500606" Name="桃花仙子召唤符" GodID="9006"/>
+	<Numen ID="9001" Name="财神" Odds="" rare="1" classId="1" getWay=" ">
+		<descript><![CDATA[ ]]></descript>
+		<Skill ID="4029051" NeedLv="1"/>
+	</Numen>
+	<Numen ID="9003" Name="门神" Odds="" rare="1" classId="1" getWay=" ">
+		<descript><![CDATA[ ]]></descript>
+		<Skill ID="4029052" NeedLv="1"/>
+	</Numen>
+	<Numen ID="9002" Name="喜神" Odds="" rare="1" classId="1" getWay=" ">
+		<descript><![CDATA[ ]]></descript>
+		<Skill ID="4029054" NeedLv="1"/>
+	</Numen>
+	<Numen ID="9004" Name="灶神" Odds="" rare="1" classId="1" getWay=" ">
+		<descript><![CDATA[旧俗供于灶上的神。传说灶神于农历腊月二十三日至除夕上天陈报人家善恶。]]></descript>
+		<Skill ID="4029055" NeedLv="1"/>
+	</Numen>
+	<Numen ID="9005" Name="土神" Odds="" rare="1" classId="1" getWay=" ">
+		<descript><![CDATA[ ]]></descript>
+		<Skill ID="4029056" NeedLv="1"/>
+	</Numen>
+	<Numen ID="9006" Name="桃花仙子" Odds="" rare="1" classId="1" getWay=" ">
+		<descript><![CDATA[ ]]></descript>
+		<Skill ID="4029057" NeedLv="1"/>
+	</Numen>
+</NumenMonsters>

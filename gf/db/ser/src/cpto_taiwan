@@ -1,0 +1,6 @@
+#!/bin/bash
+#scp ../bin/libgfser.so gongfu@10.1.1.64:~/gf_release_version/dbser_dir/bin/
+sshpass -p "gongfu" scp -P22 -o StrictHostKeyChecking=no ../bin/libgfser.so gongfu@10.1.1.64:~/gf_taiwan/dbser_dir/bin/libgfser.so-bak
+#sshpass -p "gongfu" ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64 "/home/gongfu/gf_release_version/dbser_dir/bin/startup.sh"
+
+

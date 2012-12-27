@@ -1,0 +1,271 @@
+<!--
+id:活动ID(不能重复，递增)
+min_lv：允许进入的最小级别
+max_lv: 允许进入的最大级别
+is_team: 是否为团队活动
+team_member：团队成员个数
+team_coins：参加活动所扣团队资金
+coins:参加活动所扣金钱
+week: 星期限制【0-6】 周日：0
+begin_hour: 时秒 比如：11点30分 -》 1130采用24小时制
+end_hour:同begin_hour，注意end_hour时间一定要晚于begin_hour
+enter_flag: 是否允许进入 1允许，0不允许
+
+broadcast:是否需要在活动开始前预报 1需要 0不需要(默认值)
+word1:提前10分钟的话
+word2:提前5分钟的话
+
+-->
+
+
+<root>
+    <active id = "1" name="楼兰杯侠士团挑战赛报名" min_lv = "10" max_lv ="100" is_team="1" team_member="10" team_coins="100000" coins="0" from="2011/10/21 00:00:00" to="2011/10/23 15:00:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "1500" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="1200" end_hour = "1500" enter_flag= "0"/>
+		<limit week = "2"  begin_hour="1200" end_hour = "1500" enter_flag= "0"/>
+		<limit week = "3"  begin_hour="1200" end_hour = "2300" enter_flag= "0"/>
+		<limit week = "4"  begin_hour="1200" end_hour = "2300" enter_flag= "0"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>	
+    <active id = "2" name="楼兰杯侠士团挑战赛积分" min_lv = "10" max_lv ="100" is_team="1" team_member="1" team_coins="0" coins="0" from="2011/10/21 00:00:00" to="2011/10/23 15:00:00" >
+		<limit week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="1300" end_hour = "2300" enter_flag= "0"/>
+		<limit week = "4"  begin_hour="1300" end_hour = "2300" enter_flag= "0"/>
+		<limit week = "5"  begin_hour="1300" end_hour = "2300" enter_flag= "0"/>
+		<limit week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</active>	
+    <active id = "3" name="智力大比拼 报名时间" min_lv = "10" max_lv ="100" from="2012/02/02 00:00:00" to="2021/10/10 23:00:00" >
+		<limit week = "5"  begin_hour="1745" end_hour = "1800" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="1845" end_hour = "1900" enter_flag= "1"/>
+	</active>
+
+	<active id = "4" name="智力大比拼比赛时间" min_lv = "10" max_lv ="100" broadcast="1" from="2012/02/02 00:00:00" to="2022/02/10 23:00:00" word1="智力大比拼将于10分钟后开启，请侠士们找一气学院兰娅报名参加" word2="智力大比拼将于5分钟后开启，请侠士们找一气学院兰娅报名参加" >
+		 <limit week = "5"  begin_hour="1800" end_hour = "1825" enter_flag= "1"/>
+		 <limit week = "5"  begin_hour="1900" end_hour = "1925" enter_flag= "1"/>
+	</active>	
+    <active id = "5" name="灵兽每日孵化" min_lv = "1" max_lv ="100" from="2011/08/22 00:00:00" to="2011/08/23 23:00:00" >
+		<limit week = "0"  begin_hour="1300" end_hour = "1320" enter_flag= "1"/>
+		<limit week = "0"  begin_hour="1400" end_hour = "1420" enter_flag= "1"/>
+		<limit week = "0"  begin_hour="2000" end_hour = "2220" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1300" end_hour = "1320" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1400" end_hour = "1420" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="2000" end_hour = "2220" enter_flag= "1"/>
+	</active>	
+    <active id = "6" name="艾尔大陆保卫战报名随机队伍" min_lv = "1" max_lv ="100" from="2011/11/04 00:00:00" to="2011/11/05 23:00:00" >
+		<limit week = "5"  begin_hour="1800" end_hour = "1930" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1300" end_hour = "1430" enter_flag= "1"/>
+	</active>	
+
+    <active id = "7" name="艾尔大陆保卫战领奖时间" min_lv = "1" max_lv ="100" from="2011/11/04 00:00:00" to="2011/11/05 23:59:00" >
+		<limit week = "5"  begin_hour="2000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1500" end_hour = "2359" enter_flag= "1"/>
+	</active>	
+
+    <active id = "8" name="艾尔大陆保卫战活动" min_lv = "1" max_lv ="100" from="2011/11/04 00:00:00" to="2011/11/05 23:00:00" >
+		<limit week = "5"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1400" end_hour = "1500" enter_flag= "1"/>
+	</active>	
+
+	<active id = "9" name="上古仪式领取奖励时间" min_lv = "30" max_lv ="100" from="2012/05/14 00:00:00" to="2012/05/17 23:00:00" >
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>	
+    <active id = "10" name="冰雪狂欢节伏魔阵活动" min_lv = "30" max_lv ="100" from="2011/12/17 00:00:00" to="2011/12/30 23:00:00" >
+		<limit week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "1500" enter_flag= "0"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "1500" enter_flag= "0"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "1500" enter_flag= "0"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "1500" enter_flag= "0"/>
+		<limit week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</active>	
+	<active id = "11" name="众神关卡时间" min_lv = "1" max_lv ="100" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>	
+    <active id = "13" name="16强预选赛" min_lv = "10" max_lv ="100" >
+		<limit week = "0"  begin_hour="1200" end_hour = "1400" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="1800" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1200" end_hour = "1400" enter_flag= "1"/>
+	</active>	
+    <active id = "12" name="100万修炼资金登陆发邮件" min_lv = "1" max_lv ="100" from="2012/03/08 00:00:00" to="2012/03/15 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+    <active id = "14" name="16强赛" min_lv = "10" max_lv ="100" broadcast="1" word1="武林盛典十六强争霸赛将于10分钟后在比武会场举办，请准备参赛侠士做好准备" word2="武林盛典十六强争霸赛将于5分钟后在比武会场举办，请准备参赛侠士做好准备">
+		<limit week = "0"  begin_hour="1200" end_hour = "1400" enter_flag= "1"/>
+	</active>	
+    <active id = "15" name="10亿功夫豆邮件" min_lv = "30" max_lv ="100" from="2012/02/10 00:00:00" to="2012/12/16 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+    <active id = "16" name="限时3倍经验活动" min_lv = "1" max_lv ="100" broadcast="1" word1="快速升级，10分钟后将开启三倍经验" word2="快速升级，5分钟后将开启三倍经验">
+		<limit week = "0"  begin_hour="1400" end_hour = "1600" enter_flag= "1"/>
+		<limit week = "0"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1400" end_hour = "1600" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1900" end_hour = "2100" enter_flag= "1"/>
+	</active>	
+    <active id = "17" name="陆半仙宝库开放和刷新" min_lv = "1" max_lv ="100" broadcast="1" word1="开业大吉，陆半仙宝库将于10分钟后开启，欢迎小侠士们惠顾" word2="开业大吉，陆半仙宝库将于5分钟后开启，欢迎小侠士们惠顾">
+		<limit week = "0"  begin_hour="1100" end_hour = "2200" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="1100" end_hour = "2200" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1100" end_hour = "2200" enter_flag= "1"/>
+	</active>	
+    <active id = "18" name="派瑞处请神" min_lv = "1" max_lv ="100" broadcast="1" word1="请已经获得灶神和土神挑战资格的侠士做好准备，10分钟后开始接受挑战" word2="请已经获得灶神和土神挑战资格的侠士做好准备，5分钟后开始接受挑战">
+		<limit week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</active>	
+	<active id = "19" name="众神关卡时间" min_lv = "1" max_lv ="100" >
+	</active>	
+	<active id = "20" name="神魔井事件" min_lv = "1" max_lv ="100" from="2012/03/10 00:00:00" to="2012/03/10 23:59:00" >
+		<limit week = "6"  begin_hour="1400" end_hour = "1401" enter_flag= "1"/>
+	</active>	
+	<active id = "21" name="押旗" min_lv = "1" max_lv ="100" >
+		<limit week = "0"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1300" end_hour = "1500" enter_flag= "1"/>
+	</active>	
+    <active id = "22" name="vip领取报名" min_lv = "1" max_lv ="100" from="2012/03/17 00:00:00" to="2012/03/17 23:59:00" >
+		<limit week = "6"  begin_hour="1330" end_hour = "1400" enter_flag= "1"/>
+	</active>
+    <active id = "23" name="购买通宝商城赠送金币" min_lv = "1" max_lv ="100" from="2012/03/23 00:00:00" to="2032/04/05 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+	<active id = "24" name="抓小鬼乾坤盘" min_lv = "1" max_lv ="100" from="2012/03/23 00:00:00" to="2012/04/15 23:59:00"  broadcast="1" word1="乾坤盘将于10分钟后可以转动" word2="乾坤盘将于5分钟后可以转动">
+		<limit week = "0"  begin_hour="0000" end_hour = "2300" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2300" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2300" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2333" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2300" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2300" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2300" enter_flag= "1"/>
+	</active>	
+
+	<active id = "25" name="侠士团积分赛" min_lv = "1" max_lv ="100" broadcast="1" word1="侠士团积分赛10分钟后开始, 请小侠士们做好准备" word2="侠士团积分赛5分钟后开始，请小侠士们做好准备">
+		<limit week = "0"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1900" end_hour = "2000" enter_flag= "1"/>
+	</active>	
+    <active id = "26" name="限时送金宝箱" min_lv = "1" max_lv ="100" from="2012/04/20 00:00:00" to="2012/04/21 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+
+	<active id = "27" name="陆半仙宝库" min_lv = "1" max_lv ="100" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+	<active id = "28" name="侠士团比赛报名时间" min_lv = "1" max_lv ="100" from="2012/06/16 00:00:00" to="2012/06/17 23:59:00" >
+		<limit week = "0"  begin_hour="1200" end_hour = "1330" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1200" end_hour = "1330" enter_flag= "1"/>
+	</active>
+
+	<active id = "29" name="侠士团比赛进入时间" min_lv = "1" max_lv ="100" from="2012/06/16 00:00:00" to="2012/06/17 23:59:00" >
+		<limit week = "0"  begin_hour="1330" end_hour = "1333" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1330" end_hour = "1333" enter_flag= "1"/>
+	</active>
+
+    <active id = "30" name="侠士团大比拼" min_lv = "1" max_lv ="100" from="2012/06/16 00:00:00" to="2012/06/17 23:59:00" >
+		<limit week = "0"  begin_hour="1333" end_hour = "1401" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1333" end_hour = "1401" enter_flag= "1"/>
+	</active>
+    <active id = "31" name="赌博" min_lv = "1" max_lv ="100" from="2012/05/01 00:00:00" to="2012/05/01 23:59:00">
+		<limit week = "2"  begin_hour="1400" end_hour = "1430" enter_flag= "1"/>
+	</active>
+
+    <active id = "32" name="侠士团大比拼奖励时间段" min_lv = "1" max_lv ="100" from="2012/06/16 00:00:00" to="2012/06/17 23:59:00" >
+		<limit week = "0"  begin_hour="1401" end_hour = "1500" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1401" end_hour = "1500" enter_flag= "1"/>
+	</active>
+    <active id = "33" name="vip活动" min_lv = "1" max_lv ="100" from="2012/05/14 00:00:00" to="2012/05/30 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+    <active id = "34" name="双倍侠士团经验" min_lv = "1" max_lv ="100" from="2012/06/01 00:00:00" to="2012/06/07 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+
+    <active id = "35" name="排名争霸赛领取奖励时间短" min_lv = "1" max_lv ="100" from="2012/05/01 00:00:00" to="2012/05/19 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+    <active id = "36" name="2v2精英值不限上限时间段" min_lv = "1" max_lv ="100" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+
+    <active id = "37" name="普天同庆时间段" min_lv = "1" max_lv ="100" from="2012/06/12 00:00:00" to="2012/06/21 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+    <active id = "38" name="端午强化装备时间段" min_lv = "1" max_lv ="100" from="2012/06/22 00:00:00" to="2012/06/24 23:59:00" >
+		<limit week = "0"  begin_hour="1400" end_hour = "1430" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="1400" end_hour = "1430" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="1400" end_hour = "1430" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="1400" end_hour = "1430" enter_flag= "1"/>
+	</active>
+
+    <active id = "39" name="荣誉之战排行榜奖励时间" min_lv = "1" max_lv ="100" from="2012/06/22 00:00:00" to="2012/06/28 23:59:00" >
+		<limit week = "0"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "1"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "2"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "3"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "4"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "5"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+		<limit week = "6"  begin_hour="0000" end_hour = "2359" enter_flag= "1"/>
+	</active>
+
+</root>
+

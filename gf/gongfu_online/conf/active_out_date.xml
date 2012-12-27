@@ -1,0 +1,7 @@
+<!--reset_type : 1 reset every day, 2 reset every week , 3 reset every month , 4 reset after to date-->
+<Actives>
+	<active id="9" name="red-blue-master" reset_type="1" out_date="2012-04-05"/>
+	<active id="1" name="每日运势" reset_type="1" out_date="2022-12-30"/>
+</Actives>
+
+

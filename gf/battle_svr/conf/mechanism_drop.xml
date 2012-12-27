@@ -1,0 +1,288 @@
+<!--
+	drop属性节点
+	    id 唯一流水号不能重复
+	    repeat 重复产出次数，默认为1
+    item属性节点	
+		id:物品ID
+		drop_odds:掉落率1-1000
+	monster属性节点
+	    id:怪物ID
+		drop_odds:掉落率1-1000
+
+-->
+
+
+
+<drops>
+	<!--挖宝任务宝箱掉落集合-->
+	<drop id = "1" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300327" drop_odds = "100"/>
+		<item id="1300001" drop_odds = "380"/>
+		<item id="1540005" drop_odds = "100"/>
+		<item id="1500372" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>		
+		<monster id = "11401" drop_odds = "100"/> 
+	</drop>
+	<drop id = "2" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300327" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540005" drop_odds = "200"/>
+		<item id="1500373" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>	
+		<monster id = "11402" drop_odds = "50"/> 
+	</drop>
+	<drop id = "3" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300328" drop_odds = "100"/>
+		<item id="1300001" drop_odds = "380"/>
+		<item id="1540006" drop_odds = "100"/>
+		<item id="1500374" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>	
+		<monster id = "11403" drop_odds = "100"/> 
+	</drop>
+	<drop id = "4" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300328" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540006" drop_odds = "200"/>
+		<item id="1500375" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11404" drop_odds = "50"/> 
+	</drop>
+	<drop id = "5" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300329" drop_odds = "100"/>
+		<item id="1300001" drop_odds = "380"/>
+		<item id="1540007" drop_odds = "100"/>
+		<item id="1500376" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11405" drop_odds = "100"/> 
+	</drop>
+	<drop id = "6" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300329" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "380"/>
+		<item id="1540007" drop_odds = "100"/>
+		<item id="1500377" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11406" drop_odds = "50"/> 
+	</drop>
+	<drop id = "7" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "100"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11407" drop_odds = "100"/> 
+	</drop>
+	<drop id = "8" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11408" drop_odds = "50"/> 
+	</drop>
+	<drop id = "17" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11449" drop_odds = "50"/> 
+	</drop>
+	<drop id = "21" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<item id="1500902" drop_odds = "50"/>
+		<item id="1500902" drop_odds = "50"/>
+		<item id="1500902" drop_odds = "50"/>
+		<item id="1500902" drop_odds = "50"/>
+		<item id="1500902" drop_odds = "50"/>
+		<item id="1500902" drop_odds = "50"/>
+		<item id="1500902" drop_odds = "50"/>
+		<item id="1500902" drop_odds = "50"/>
+		<monster id = "11449" drop_odds = "50"/> 
+	</drop>
+	<drop id = "22" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11485" drop_odds = "50"/> 
+	</drop>
+	<drop id = "23" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11482" drop_odds = "50"/> 
+	</drop>
+	<drop id = "24" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11497" drop_odds = "50"/> 
+	</drop>
+	<drop id = "25" repeat= "6">
+		<item id="1540005" drop_odds = "50"/>
+		<item id="1540006" drop_odds = "50"/>
+		<item id="1540007" drop_odds = "50"/>
+		<item id="1540608" drop_odds = "50"/>
+		<item id="1740017" drop_odds = "50"/>
+		<item id="1540911" drop_odds = "1"/>
+		<item id="1300330" drop_odds = "150"/>
+		<item id="1300001" drop_odds = "280"/>
+		<item id="1540007" drop_odds = "200"/>
+		<item id="1500378" drop_odds = "5"/>
+		<item id="1500566" drop_odds = "15"/>
+		<monster id = "11502" drop_odds = "50"/> 
+	</drop>
+	<!--灵兽收集道具C的产出概率-->
+	<drop id = "9" repeat= "1">
+		<item id="1410014" drop_odds = "150"/>
+		<item id="1410002" drop_odds = "15"/>
+		<item id="1410004" drop_odds = "2"/>
+		<item id="1540005" drop_odds = "683"/>
+		<item id="1540006" drop_odds = "150"/>
+	</drop>
+	<drop id = "10" repeat= "1">
+		<item id="1410005" drop_odds = "5"/>
+		<item id="1410001" drop_odds = "2"/>
+		<item id="1410003" drop_odds = "1"/>
+		<item id="1540005" drop_odds = "632"/>
+		<item id="1540006" drop_odds = "360"/>
+	</drop>
+    <drop id = "11" repeat= "1">
+		<item id="1410013" drop_odds = "10"/>
+		<item id="1500094" drop_odds = "990"/>
+		<item id="1410006" drop_odds = "5"/>
+	</drop>
+    <drop id = "12" repeat= "1">
+		<item id="1410012" drop_odds = "50"/>
+		<item id="1300012" drop_odds = "900"/>
+		<item id="1500565" drop_odds = "50"/>
+	</drop>
+	<!--瑶瑶经验包掉落-->
+    <drop id = "13" repeat= "1">
+		<item id="1300321" drop_odds = "1000"/>
+		<item id="1300321" drop_odds = "500"/>
+		<item id="1300321" drop_odds = "200"/>
+		<item id="1300321" drop_odds = "100"/>
+	</drop>
+	<!--火云替代品掉落-->
+    <drop id = "14" repeat= "1"><!--黄色火云-->
+		<item id="1410014" drop_odds = "350"/>
+		<item id="1410002" drop_odds = "15"/>
+		<item id="1410004" drop_odds = "2"/>
+		<item id="1540007" drop_odds = "483"/>		
+		<item id="1540006" drop_odds = "150"/>
+	</drop>
+    <drop id = "15" repeat= "1"><!--紫色火云-->
+		<item id="1410001" drop_odds = "2"/>
+		<item id="1410005" drop_odds = "5"/>
+		<item id="1410003" drop_odds = "1"/>
+		<item id="1540007" drop_odds = "632"/>		
+		<item id="1540006" drop_odds = "360"/>
+	</drop>	
+	<!--勇士营寨稀有掉落（饰品类）-->
+    <drop id = "16" repeat= "1">
+		<item id="1100054" drop_odds = "166"/>
+		<item id="1100055" drop_odds = "166"/>
+		<item id="1100056" drop_odds = "166"/>
+	</drop>
+	<!--真假宝箱，假宝箱出boss-->
+	<drop id = "18" repeat= "1">
+		<monster id = "11473" drop_odds = "1000"/> 
+	</drop>
+	<drop id = "19" repeat= "1">
+		<item id="2500002" drop_odds = "1000"/>
+	</drop>
+	<drop id = "20" repeat= "1">
+		<item id="2500003" drop_odds = "1000"/>
+	</drop>
+
+
+
+</drops>

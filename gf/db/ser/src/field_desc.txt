@@ -1,0 +1,372 @@
+Ol_count	  在线总次数	
+Ol_last	   最后一次登陆的时间	
+Ol_time     在线总时长
+Ol_today	今天的登入时长 
+access_time 访问时间
+add_duetime 增加到到期时间（秒）从当前时间 
+add_succ_flag  是否添加成功(0:false,1:true)	
+add_value	调整数值(+/-)	
+addcharm    调整魅力(+/-) 	  		
+addcount 增加个数
+adddamee 	调整大米(+/-) 	  		
+addexp		调整经验(+/-) 	  
+addiq		调整智慧(+/-) 	  
+addr	    地址	
+addr_city	 城市编号	
+addr_province	省份编号	
+addr_type	    地址类型	
+addstrong	调整力量(+/-)	
+addxiaomee		调整小米(+/-)	
+adminid	  管理员编号	
+allcount   总数
+amdinid		管理员编号	
+answer	 答案	
+atk  攻击 
+attire_endid	查询终止ID(包括)
+attire_startid	查找时开始的装扮ID(包括)	
+attire_usedflag  0:未使用,1:已使用,2:未使用+已使用
+attireid 物品ID		
+attiretype  物品类型(0：属性(attireid 1:小米, 2:电量,3:精灵经验池), 1:装扮 ,2:小屋)
+attrid		物品ID		
+automonthed		
+regtime 注册时间
+dd_get_info_out.flag 0x01:性别 
+birthday	生日	
+boardid	 面板ID	0:记者社 1:音乐 2:涂鸦
+bool_value  1:是 ,0:否
+buf		 
+buy_attireid   购买的装扮ID
+buy_count  购买的个数
+c			字符
+cachedate		 
+cardid	 	
+cardid   卡片ID
+cards        卡片列表
+cardtype		
+catch_level 捕获时的等级
+catch_map  捕获时的地图ID
+catch_region 捕获时的区域
+catchtime  捕获时间(和userid组合确定是那一只宠物)  
+change_gold  调整金元宝(+/-) 
+change_silver 调整银元宝(+/-) 
+change_type     1:摩尔豆,2:密码
+change_v1 		摩尔豆:当前摩尔豆.<br />密码:1.登入密码. 2.支付密码
+change_v2 		摩尔豆:物品ID.<br />密码:无
+change_value    (+/-)<br />调整多少
+changeflag	
+changvalue  修改value(+/-) 	 		
+charm	 魅力值	
+childcount	新的大使多少个下线	 
+childid		下线ID 
+color	   颜色	
+count	   个数	
+count_all	  总共个数	
+count_in_db		
+confirm		确认
+creategroup_count 创建群的个数=3
+creategroup_id1 创建群id1
+creategroup_id2 创建群id2
+creategroup_id3 创建群id3
+creategroupid 创建的群的ID
+cup1		
+cup2		
+cup3		
+cup_item		
+cup_list		
+cup_type		
+cur_count   当前次数
+damee		
+damee_item		
+date	 	日期 		
+deal_date		
+deal_hour		
+deal_minute		
+deal_type		
+dealflag		
+def  防御 
+def_flag	 	预定义的flag
+def_usetime	 预定义的usetime
+desc		
+diarydate   日记日期（例如20090101）
+duetime 到期时间
+dv 个体 
+email	 邮箱	
+email_noread   邮箱未读个数 		
+email_unread	邮箱未读个数 			
+emailid	 邮件ID
+endattireid 装扮结束ID
+end_taskid		
+end_type		
+enddate	          终止时间	
+endtime		 终止时间	
+energy 电量值
+evlist  努力值列表 
+exp				经验	
+feeling     心情描述
+fiend_list		
+flag		 标志
+flag1		 标志1
+flag2		标志2
+flower		
+friendcount		 好友个数
+frienditem		
+friend_type 1:好友; 2:黑名单; 3:师傅;4:徒弟;5:丈夫;6:妻子;
+gameid	     游戏ID	
+gold  金元宝
+group_item		
+groupcount		
+groupid		
+groupid	    群组ID
+groupmsg 群公告
+groupname 群名称 
+groupownerid 群主
+hopedate     许愿时间		
+hot				小屋热度	
+hp  体力 
+hungry	    饥饿值	
+id			米米号或者编号
+index		编号	
+info		
+info_ex		
+init_lowercard_count 初始几张是有效的
+interest	 兴趣	
+ip		    IP地址			
+iq			智慧	
+is_add_group  (0,1),1:创建群并且是群主.
+is_add_xiaomee_day 加小米时是否要加当天的得到小米总数(0:false,1:true)	
+is_existed	0:不存在,1:存在
+is_first_set     是否是首次设置：1:true,0:false
+is_inited	0:没有初始化,1:已经初始化
+is_seted  是否已经设置过：1:true,0:false
+is_succ     操作是否成功： 0:NO , 1:YES
+item		
+item_msgboard		
+itemlen	     	
+key		
+leave_damee		
+leavedamee		
+left_duetime 还有多少时间到期
+left_xiaomee  剩余小米
+left_energy  剩余电量
+use_energy 使用电量
+len	        长度	
+level 等级
+list		
+logdate	    时间	
+logtime      记录时间
+lose_count  输的次数
+lower_count  低级卡片的个数
+mail_number  邮编		
+map		
+mapid	    地图编号	
+mapname     地图名字
+max_count   最多允许拿的个数 get_count   已经拿的个数 
+max_hp  最大体力值
+maxcount	 最大允许值	
+maxvalue		最大允许值	
+membercount	 成员个数
+memberid    成员米米号
+memberlist 成员列表
+mms_type 		类型:1:果果树,2:向导,3:送祝福
+mobile	  手机	
+month_duedate		
+month_enabledate		
+month_nexterrcount		
+month_paytype		
+month_used		
+monthcount		
+months		
+move_id 技能ID
+move_item 技能项
+movelist 技能列表 
+msg	    消息 
+msgid	 消息ID
+msglen 消息长度	
+msglist	 消息列表	
+mud	        泥巴
+nature 性格 
+new_email	新邮箱	
+newcount    要换多少个
+newnick		新昵称
+newpasswd   新密码
+next_startdate		
+next_startindex		
+nick	 昵称	
+noread_count	未读个数
+nousedcount	 未使用个数	
+objuserid	 要举报的米米号
+old_childcount  PP大使原有的下线
+old_email	 原有的邮箱名
+oldcount	 要原有的多少个来换
+oldpasswd	 原有的密码	
+one_count	 	
+online_time 在线时长（秒）
+onlinetime	 本次在线时间	
+operatetype	  类型:0:减少总个数.<br />1:增加总个数..<br />2:已使用转成未使用<br />3:未使用转成已使用.<br />4:已使用转成未使用并将减少总个数
+opt_count   当天投票数
+opt_type   操作类型：0-4: 对v1-v5中的值加1
+out_transid	 	
+ownercolor  主人颜色 
+ownerflag   主人flag
+ownerid     主人米米号
+ownernick   主人昵称
+pagecount   每页最多多少个
+pageid	      每几页   	
+parent_email  父母邮箱		
+parentid		PP大使中的上线
+partytime   派对时间
+partytype   派对类型
+passwd	     密码	
+paypasswd	 支付密码	
+paytype	       	
+pet_groupid  拉姆队伍ID
+pet_item  宠物数据
+pet_usedcount 	带在身上的宠物个数
+petbirthday	 注册时间	
+petcolor	 PP颜色	
+petid	 	宠物类型	
+pos_x	     拉姆位置X	
+pos_y		  拉姆位置Y
+pp_add_blackuser_out.id  加入的黑名单的米米号
+pp_add_offline_msg_in_header.msglen 消息长度<br />包括msglen自身的4个字节长度
+pp_attire_set_used_clothes_list_in_item 穿上的衣服结构
+pp_attire_set_used_clothes_list_out_item 穿上的衣服结构
+pp_buy_attire_in.add_duetime 增加到到期时间（秒）从当前时间加 ，如果为0 则设置为最大值(0xFFFFFFFF)
+pp_get_info_out_header.item1_count 离线消息长度
+pp_get_info_out_header.item2_count 带在身上的宠物个数
+pp_get_info_out_header.item3_count 穿在身上的衣服件数 
+pp_get_info_out_item  带在身上的宠物数据
+pp_get_info_out_item_1  离线消息:totalen(4)+count(4)+count个消息包
+pp_get_info_out_item_2   带在身上的宠物
+pp_get_info_out_item_3  穿在身上的衣服ID
+pp_get_pet_out.catchtime  宠物的获得时间 
+pp_get_simple_info_out_header.count 穿上的衣服的个数
+pp_get_simple_info_out_item 穿上的衣服结构
+pp_info 个人信息
+pp_swap_list_in_item_1  要交换的旧物品
+pp_swap_list_in_item_2  交换成的新物品
+price	    	
+private_msg		
+public_flag 公开标志0：no,1:yes
+question	   问题	
+read_count	      实际的个数	
+real_add_value	 实际增加的个数 	
+reason	          原因  	
+reason_ex	原因_ex
+recv_id	      接收者ID     	
+recv_type		许愿类型	
+recv_type_name	许愿类型名称
+reg_addr_type	  注册渠道类型	
+register_serial_id		
+reportlen	  	
+reportmsg		
+sanitary	清洁值	
+score		 分数
+send_id	   发送者ID	
+send_nick	 发送者昵称	
+senderid	 发送者ID		
+sendernick		 发送者昵称	
+sendtime	 发送时间	
+serial_str		
+serialid		
+serverid    服务器ID
+servername   服务器名字
+sex	         性别	
+sicktime  生病时间 		
+signature  个性签名	 	
+silver 银元宝
+skill	    技巧 	
+sort_index	 排序类型	
+sp_atk  sp攻击 
+sp_def  sp攻击 
+speed  速度 
+spirit	      心情  	
+sportstype   运动项目类型 1:马拉松,2:游泳,3:跳高
+spring_msg  春联
+srcuserid	 	
+stamp	      时戳	
+startattireid  装扮开始ID
+start_taskid		
+start_type		
+startime	  开始时间			
+startindex	 	
+startindex  开始ID
+starttime   开始时间		
+strong	 力量值	
+super_count  高级卡片的个数
+task	   任务ID	
+taskid	   任务ID	
+tasklist	 任务列表	
+taskvalue  任务数据
+telephone	 电话	
+thirsty 	口渴值	  	
+transid	 	
+type	  类型	
+usedamee		
+usedcount 		
+usedcount   使用中的个数
+useflag	0:未使用.1:已使用.2:所有	
+user_get_info_ex_out_item_1  用户穿在身上的装扮
+user_get_info_ex_out_item_2  宠物的相关信息 
+user_get_info_ex_out_item_3  宠物穿在身上的装扮
+userid	    米米号
+usetime		
+usexiaomee  使用多少小米
+value	 数值 	
+vip	 	VIP标志
+vip_flag	VIP标志  	
+vipflag	VIP标志
+vip_is VIP标志，0：销户，1：首次开通VIP，2：销户后重新开通，3：续时, 4:取消自动续费,此时auto_incr应为0 9:年费vip
+vip_type vip类型标志，0:非vip；bit0置1:普通vip；bit1置1:年费vip, bit7置1：首次开通年费vip
+end_tm   VIP结束时间
+start_tm VIP开始时间
+water    浇水
+win_count   赢的次数
+win_lose_flag   0:输 1:赢
+xiaomee	 小米	
+xiaomee_max	 	
+taskid_start 起始任务ID
+taskid_end 终止任务ID(包括)
+old_first_atk_catchtime 原首发的捕获时间（为0时则没有表示没有原首发）
+new_first_atk_catchtime 新首发的捕获时间（为0时则没有表示没有新首发）
+atk_frist 是否首发 （1:是，0:不是)
+pp_pet_set_used_flag_in.useflag 0:不在身上，1：在身上，2：首发
+pp_pet_set_used_flag_out.useflag 0:不在身上，1：在身上，2：首发
+texturize 纹理
+pp_pet_index_encounter_time_in.is_catched 0:将看见的次数加1 <br/> 1:将已捕获的标志设置为1
+is_catched 0:未捕获,1:已捕获
+see_count 看到的次数
+petid_end (包括自身)
+petid_start (包括自身)
+home_id  小屋编号
+pp_submit_questionnaire_add_in_item.value 0x01:A,0x02:B,0x04:C,0x08:D,0x10:E,....
+pp_submit_questionnaire_add_in_item.questionnaireid 问题ID
+masterid 师傅ID
+discipleid 徒弟ID
+disciplecount 徒弟中成为师傅的个数 
+can_be_master 是否能成为师傅(0：fasle;1:true)
+isswap_flag  是否已经交换过(0,1)
+maxlevel 最高等级
+exp_pool 经验池中的数值
+pp_other_msg_attime_add_in_header.date		(0:每天，1－7：周一－－周日)
+pp_other_msg_attime_get_out.date			(0:每天，1－7：周一－－周日)
+pp_other_msg_attime_get_by_date_out.date	(0:每天，1－7：周一－－周日)
+mon_king_wins   精灵王之战羸的次数
+mon_king_losses 精灵王之战输的次数
+cur_stages      精灵王之战当前关卡
+time 时间
+flag_bit 应该设置哪一位，0X00800000封号14天，0X01000000封号7天，0x04000000永久封号，0x02000000离线24小时
+bool_set 设置为1还是0
+max_stages      精灵王之战最高关卡
+pet_exp_pool 精灵经验池
+begin 获取开始位置（0开始）
+getcount 获取个数
+all_count 总个数
+score_c 挑战者分数
+userid_c 挑战者ID
+win 获胜次数
+lost 失败次数
+read_flag 0:未读，1 ：已读 :2:全部
+dd_login_out.flag &0x01:0，未同步，1：已同步  
+login_date_from  开始时间  
+login_date_to  结束时间  

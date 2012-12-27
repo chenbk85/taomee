@@ -1,0 +1,61 @@
+<!--
+	Time ID 从1开始 必须连续
+	From 开始时间 必须符合格式 例如："2010-09-19 12:00:05"
+	To   结束时间
+
+	Drop ID 掉的物品ID
+	MonLv 掉该物品的怪物等级 (使用这个限制，可以使得高级怪物掉高级物品)
+	DropOdds 掉率 (千分率)
+-->
+
+<HolIDayDrops>
+	<Time ID="1" From="2010-09-22 00:00:00" To="2020-01-01 00:00:01" >
+		<Drop ID="1500568" MonLv="0 999" DropOdds="10" />
+	</Time>
+	<Time ID="2" From="2010-09-22 00:00:00" To="2020-01-01 00:00:01" >
+		<Drop ID="1500569" MonLv="0 999" DropOdds="10" />
+	</Time>
+	<Time ID="3" From="2010-09-22 00:00:00" To="2020-01-01 00:00:01" >
+		<Drop ID="1500570" MonLv="0 999" DropOdds="10" />
+	</Time>
+	<Time ID="4" From="2010-09-22 00:00:00" To="2020-01-01 00:00:01" >
+		<Drop ID="1500571" MonLv="0 999" DropOdds="10" />
+	</Time>
+	<Time ID="5" From="2011-09-06 00:00:00" To="2011-09-16 00:00:00" >
+		<Drop ID="1500397 " MonLv="0 999" DropOdds="30" />
+	</Time>
+	<Time ID="6" From="2011-09-06 00:00:00" To="2011-09-16 00:00:00" >
+		<Drop ID="1500398 " MonLv="0 999" DropOdds="30" />
+	</Time>
+	<Time ID="7" From="2011-09-06 00:00:00" To="2011-09-16 00:00:00" >
+		<Drop ID="1500399 " MonLv="0 999" DropOdds="20" />
+	</Time>
+	<Time ID="8" From="2011-09-06 00:00:00" To="2011-09-16 00:00:00" >
+		<Drop ID="1500400 " MonLv="0 999" DropOdds="30" />
+	</Time>
+	<Time ID="9" From="2011-09-06 00:00:00" To="2011-09-16 00:00:00" >
+		<Drop ID="1500401 " MonLv="0 999" DropOdds="20" />
+	</Time>
+    <Time ID="10" From="2011-12-23 00:00:00" To="2011-12-25 21:00:01" >
+		<Drop ID="2500016" MonLv="0 999" DropOdds="30" />
+	</Time>
+    <Time ID="11" From="2011-12-30 00:00:00" To="2012-02-03 00:00:01" >
+		<Drop ID="1300810" MonLv="0 999" DropOdds="10" />
+	</Time>
+	<Time ID="12" From="2012-01-01 00:00:00" To="2021-01-30 00:00:01" >
+		<Drop ID="1500580" MonLv="0 999" DropOdds="10" />
+	</Time>
+    <Time ID="13" From="2012-06-01 00:00:00" To="2012-06-08 00:00:01" >
+		<Drop ID="1400219" MonLv="0 999" DropOdds="50" />
+		<Drop ID="1400220" MonLv="0 999" DropOdds="50" />
+		<Drop ID="1400221" MonLv="0 999" DropOdds="20" />
+		<Drop ID="1400222" MonLv="0 999" DropOdds="10" />
+	</Time>
+    <Time ID="14" From="2012-06-22 00:00:00" To="2012-06-25 00:00:01" >
+		<Drop ID="1400233" MonLv="0 999" DropOdds="20" />
+		<Drop ID="1400234" MonLv="0 999" DropOdds="20" />
+		<Drop ID="1400235" MonLv="0 999" DropOdds="20" />
+		<Drop ID="1400236" MonLv="0 999" DropOdds="10" />
+	</Time>
+
+</HolIDayDrops>

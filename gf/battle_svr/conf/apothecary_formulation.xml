@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- id  流水号唯一 -->
+<!-- level_limit 使用该配方的副职级别限制 -->
+<!-- add_exp 每次做该药品所增加的熟练度或者经验-->
+<!-- item_id 产出的物品-->
+<!-- item_count 产出的物品数量-->
+<!-- item_type 产出的物品类型1.装备 2 普通物品-->
+<formulations>
+	<formulation id = "1" level_limit = "1" add_exp = "1" item_id = "1" item_count = "1" item_type = "2">
+		<material id = "1" item_id = "1" item_count = "1"></material>
+		<material id = "2" item_id = "1" item_count = "1"></material>
+	</formulation>
+					
+	<formulation id = "2" level_limit = "2" add_exp = "1" item_id = "1" item_count = "1" item_type = "2">
+		<material id = "1" item_id = "1" item_count = "1"></material>
+		<material id = "2" item_id = "1" item_count = "1"></material>
+	</formulation>
+		
+	<formulation id = "3" level_limit = "3" add_exp = "1" item_id = "1" item_count = "1" item_type = "2">
+		<material id = "1" item_id = "1" item_count = "1"></material>
+		<material id = "2" item_id = "1" item_count = "1"></material>
+	</formulation>
+</formulations>

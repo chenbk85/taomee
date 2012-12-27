@@ -1,0 +1,36 @@
+<root>
+	<Type id="1">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="5000"/>
+		<Item give_type="3" name="经验" give_id="2" cnt="5000"/>
+		<Item give_type="2" name="五彩的飞羽" give_id="1500275"  cnt="2"/>
+		<Item give_type="2" name="蓝色碎片" give_id="1500902"  cnt="5"/>
+	</Type>
+	<Type id="2">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="10000"/>
+		<Item give_type="3" name="经验" give_id="2" cnt="15000"/>
+		<Item give_type="2" name="纯白的通铃长毛" give_id="1500274"  cnt="2"/>
+		<Item give_type="2" name="蓝色碎片" give_id="1500902"  cnt="5"/>
+	</Type>
+	<Type id="3">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="30000"/>
+		<Item give_type="3" name="经验" give_id="2" cnt="50000"/>
+		<Item give_type="2" name="金色的南瓜籽" give_id="1500276"  cnt="2"/>
+		<Item give_type="2" name="蓝色碎片" give_id="1500902"  cnt="5"/>
+		<Item give_type="1" name="紫色饰品A" give_id="1100047" cnt="1"/>
+	</Type>
+	<Type id="4">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="70000"/>
+		<Item give_type="3" name="经验" give_id="2" cnt="100000"/>
+		<Item give_type="2" name="紫色碎片" give_id="1500903"  cnt="5"/>
+		<Item give_type="2" name="6级天降神炎（普）" give_id="1540909"  cnt="1"/>
+		<Item give_type="1" name="紫色饰品B" give_id="1100048" cnt="1"/>
+	</Type>
+	<Type id="5">
+		<Item give_type="3" name="功夫豆" give_id="1" cnt="150000"/>
+		<Item give_type="3" name="经验" give_id="2" cnt="500000"/>
+		<Item give_type="2" name="紫色碎片" give_id="1500903"  cnt="5"/>
+		<Item give_type="2" name="6级天降神炎（普）" give_id="1540909"  cnt="2"/>
+		<Item give_type="1" name="紫色饰品C" give_id="1100049" cnt="1"/>
+	</Type>
+</root>
+

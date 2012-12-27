@@ -1,0 +1,6 @@
+#/bin/bash
+tar -czvf onlinetest.tar ./Online ./bin/* ./conf/* ./data/* --exclude ./conf/btlsvr.xml
+sshpass -p "gongfu" scp -p22 -o StrictHostKeyChecking=no onlinetest.tar gongfu@10.1.1.64:/home/gongfu/gf_release_version/online_dir/
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "pkill -9 Online;cd ~/gf_release_version/online_dir/; tar -xvf onlinetest.tar "
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "cd ~/gf_release_version/online_dir/;./startup.sh;"
+

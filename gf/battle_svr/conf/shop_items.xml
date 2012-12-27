@@ -1,0 +1,97 @@
+<!-- 根据Cat ID不同，Item ID的起始也不同。例如Cat ID="2"，则Item ID从200001开始 -->
+<!-- ItemID可以不连续，但目前限制了ItemID和起始ID之差不能超过2000。建议套装装扮连号，建议vip专属道具从101001开始 -->
+<!-- Cat Max用于限制用户能够拥有该Cat下每种Item的个数，如果需要对某Item做特殊处理，可以定义Item Max="x" -->
+<!-- Tradability限制普通会员对物品的买卖性，0不可买卖，1不可卖，2不可买，3可买卖，默认是3 -->
+<!-- VipTradability限制VIP对物品的买卖性，0不可买卖，1不可卖，2不可买，3可买卖，默认是3 -->
+<!-- 对于不打算出售的物品，需要配置成 Tradability="0" VipTradability="0" -->
+<!-- VipOnly用于限制只有VIP才能装扮的物品，如果不是VIP了，则会把物品脱下。默认是0，即所有人都能装扮 -->
+<!-- IMPORTANT! DbCatID发生改变时(比如增加) 要先要求DB增加对新的DbCatID的支持，确认DB支持以后，才可用新的配置重启online -->
+<!-- LifeTime物品寿命，单位是天，如果不配置该项，则表明物品永不过期 -->
+<!-- Price购买价格；SellPrice回收价格；RepairPrice维修价格；这几个参数如果不配，则默认为0 -->
+<!--
+	UseLv使用等级，如果不配，则不限使用等级。
+	Hit命中值，Dodge闪避值，Crit暴击值，Hp加生命上限，Mp加气力值上限，AddHp生命恢复加成，AddMp气力值恢复加成，Slot孔的个数。
+	Lv装备强化等级，Strength力量，Agility敏捷，BodyQuality体质，Stamina气力，Atk攻击力，Def防御力，Duration耐久值，默认都是0。
+	EquipPart装备部位(1帽子，2项链，3护手，4武器，5戒指，6衣服，7腰带，8护腿，9鞋子，10护符)
+	DropLv掉落等级
+	QualityLevel品质(稀有度1白，2绿，3蓝，4紫，5银，6金，7神圣)
+	SetID装备所属的套装ID
+	decompose：不可分解选项，1是不可分解，默认可分解
+	
+	buff药品的属性:
+			BufType：1：ATK；2：DEF；3:命中率，4暴击率，5躲避率，6血上限，7魔上限，8加满血，9加满魔，10驻足
+			PerTrim：百分比的提升
+			RealTrim：实际的提升
+	2010年12月1日以后的商城装备ID，猴子从170001开始，兔子从270001开始，熊猫从370001开始
+-->
+<Items>
+	<Cat ID="13" DbCatID="2" Name="药品" Max="999" >
+		<!-- 商城消耗道具 -->
+		<Item ID="1303001" Name="次级回血丸" AddPerHp="30" Shop="1" DropLv="100" Tradability="0" UseEffect="9003" 
+		VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[点击使用，立刻回复最大血量的30%点血量.]]></descript>
+		</Item>
+		<Item ID="1303002" Name="高级回血丸" AddPerHp="70" Shop="1" DropLv="100" Tradability="0" UseEffect="9003" 
+		VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[点击使用，立刻回复最大血量的70%点血量.]]></descript>
+		</Item>
+		<Item ID="1303003" Name="次级回气丸" AddPerMp="30" Shop="1" DropLv="100" Tradability="0" UseEffect="9004" 
+		VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[点击使用，立刻回复最大气力值的30%点气力.]]></descript>
+		</Item>
+		<Item ID="1303004" Name="高级回气丸" AddPerMp="70" Shop="1" DropLv="100" Tradability="0" UseEffect="9004" 
+		VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[点击使用，立刻回复最大气力值的70%点气力.]]></descript>
+		</Item>
+		<Item ID="1303010" Name="神临之体" Shop="1" DropLv="100" Tradability="0" VipTradability="0" UseEffect="9012" publicCD="5" cd="8" 
+		AvailableMap="202" Shortcut="1" BuffID="604" Duration="1200" PerTrim="30">
+			<descript><![CDATA[点击使用，将HP值上限提高30%，持续20分钟，离开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item>
+		<Item ID="1303011" Name="武圣附体" Shop="1" DropLv="100" Tradability="0" VipTradability="0" UseEffect="9013" publicCD="5" cd="8" 
+		AvailableMap="202" Shortcut="1" BuffID="605" Duration="1200" PerTrim="30">
+			<descript><![CDATA[点击使用，将HP上限与MP上限分别提高30%，持续20分钟，离开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item>	
+        <Item ID="1303005" Name="青龙果" AddPerHp="30" AddPerMp="30" Shop="1" DropLv="100" Tradability="0" UseEffect="9014" 
+        VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[点击使用，立刻回复最大血量和最大气力值的30%.]]></descript>
+		</Item>
+		<Item ID="1303006" Name="金龙果"  AddPerHp="70" AddPerMp="70" Shop="1" DropLv="100" Tradability="0" UseEffect="9014" 
+			VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[点击使用，立刻回复最大血量、最大气力值的70%.]]></descript>
+		</Item>	
+	
+  <!-- 	<Item ID="1303007" Name="药圣的急救箱" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，立刻为小队内所有成员回复最大血量、最大气力值的30%点血量与气力.]]></descript>
+		</Item>
+		<Item ID="1303008" Name="药圣的急救箱" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，立刻为小队内所有成员回复最大血量、最大气力值的70%点血量与气力.]]></descript>
+		</Item>
+		<Item ID="1303012" Name="石猛庇护" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，将攻击力提高30%，只在当前关卡有效，离开关卡或重开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item>
+		<Item ID="1303013" Name="瑶瑶之佑" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，将闪避值提高30%，只在当前关卡有效，离开关卡或重开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item>
+		<Item ID="1303014" Name="石猛祝福" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，将防御力提高30%，只在当前关卡有效，离开关卡或重开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item> -->
+	</Cat>
+
+	<Cat ID="17" DbCatID="2" Name="其它属性" Max="99" >
+	<!-- 商城道具-其他类别 -->
+		<Item ID="1703001" Name="忘却琥珀" Shop="1" DropLv="100" Tradability="0" VipTradability="0"  publicCD="0" cd="0" AvailableMap="0" Shortcut="0">
+			<descript><![CDATA[点击使用，可将所有技能重置为1级，并返还已消耗的琥珀之力.]]></descript>
+		</Item>
+		<Item ID="1703002" Name="双倍经验卡" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" BuffID="1001" Duration="3600" PerTrim="200">
+			<descript><![CDATA[点击使用，在1小时内获得的经验加倍，可与领取的双倍经验叠加使用，只叠加倍数不增加时间，每次限用一张.]]></descript>
+		</Item>
+		<Item ID="1703003" Name="修理机关人" Shop="1" DropLv="100" Tradability="0" VipTradability="0" UseEffect="9015" AvailableMap="0,202" Shortcut="1">
+			<descript><![CDATA[点击使用，立刻将全身装备耐久度修复为100%，可以在关卡中使用，但不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item>
+	</Cat>
+</Items>

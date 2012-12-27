@@ -1,0 +1,242 @@
+<!-- (InitX, InitY)玩家登陆时出现在地图上的坐标 -->
+
+<Maps>
+	<Map ID="1" Name="一气学院" InitX="303" InitY="950">
+	</Map>
+	<Map ID="2" Name="武圣大殿" InitX="1459" InitY="388">
+	</Map>
+	<Map ID="3" Name="练功房"  InitX="150" InitY="450">
+	</Map>
+	<Map ID="4" Name="正气书院" InitX="754" InitY="525">
+	</Map>
+	<Map ID="5" Name="药店" InitX="470" InitY="350">
+	</Map>
+	<Map ID="6" Name="矿山镇" InitX="150" InitY="450">
+	</Map>
+	<Map ID="7" Name="功夫城" InitX="150" InitY="450">
+	</Map>
+	<Map ID="8" Name="宝石楼一层" InitX="246" InitY="450">
+	</Map>
+	<Map ID="9" Name="宝石楼二层" InitX="808" InitY="369">
+	</Map>
+	<Map ID="10" Name="功夫城防具店" InitX="808" InitY="369">
+	</Map>
+	<Map ID="11" Name="功夫城武器店" InitX="246" InitY="450">
+	</Map>
+	<Map ID="12" Name="功夫城万国商会" InitX="808" InitY="369">
+	</Map>
+	<Map ID="13" Name="镇长家" InitX="155" InitY="675">
+	</Map>
+	<Map ID="14" Name="十字路口" InitX="52" InitY="76">
+	</Map>
+	<Map ID="15" Name="虎丘" InitX="350" InitY="400">
+	</Map>
+	<Map ID="16" Name="奇面族营地" InitX="241" InitY="433">
+	</Map>
+	<Map ID="17" Name="药房二楼" InitX="228" InitY="445">
+	</Map>
+	<Map ID="18" Name="功夫城城西" InitX="1558" InitY="1059">
+	</Map> 
+	<Map ID="19" Name="倚天塔主城" InitX="223" InitY="150">
+	</Map> 
+	<Map ID="20" Name="小破屋" InitX="211" InitY="434">
+	</Map>
+	<Map ID="21" Name="功夫城药店" InitX="554" InitY="565">
+	</Map>
+	<Map ID="22"  Name="铸剑谷" InitX="311" InitY="512">
+	</Map>
+	<Map ID="23"  Name="溪涧洞" InitX="149" InitY="480">
+	</Map>
+	<Map ID="24"  Name="剑裂溪" InitX="237" InitY="520">
+	</Map> 
+  <Map ID="25"  Name="青甲龙阁" InitX="237" InitY="520">
+  </Map> 
+  <Map ID="26"  Name="凝翠崖" InitX="310" InitY="1400">
+	</Map>
+	<Map ID="27"  Name="壶口关" InitX="711" InitY="650">
+	</Map>
+	<Map ID="28"  Name="试炼崖" InitX="561" InitY="385">
+	</Map>
+	<Map ID="30"  Name="功夫大擂台" InitX="786" InitY="413">
+	</Map>	
+	<Map ID="31"  Name="小龙人出生点" InitX="1000" InitY="225">
+	</Map>	
+	<Map ID="32"  Name="小龙人相关2地图" InitX="590" InitY="261">
+	</Map>	
+	<Map ID="33"  Name="赤岩海山" InitX="353" InitY="522">
+	</Map>	
+	<Map ID="34"  Name="遗迹之海" InitX="764" InitY="1177">
+	</Map>	
+	<Map ID="35"  Name="人偶武馆" InitX="178" InitY="439">
+	</Map>	
+	<Map ID="36"  Name="古墓密室" InitX="480" InitY="350">
+	</Map>
+	<Map ID="37" Name="古墓机关阵" InitX="445" InitY="338">
+	</Map>
+	<Map ID="38" Name="天下第一武道会" InitX="445" InitY="338">
+	</Map>
+	<Map ID="39" Name="禁忌墓穴" InitX="451" InitY="402">
+	</Map>
+	<Map ID="40" Name="功夫家园" InitX="250" InitY="431">
+	</Map>
+	<Map ID="41" Name="陀王镇" InitX="226" InitY="768">
+	</Map>
+    <Map ID="42" Name="楼兰宝藏入口" InitX="473" InitY="432">
+	</Map>
+
+    <Map ID="43" Name="智力比拼1" InitX="1300" InitY="750">
+	</Map>
+
+    <Map ID="44" Name="智力比拼2" InitX="1300" InitY="750">
+	</Map>
+
+     <Map ID="45" Name="智力比拼3" InitX="1300" InitY="750">
+	</Map>
+
+    <Map ID="46" Name="智力比拼4" InitX="1300" InitY="750">
+	</Map>
+
+	 <Map ID="47" Name="智力比拼5" InitX="1300" InitY="750">
+	</Map>
+
+
+    <Map ID="48" Name="智力比拼6" InitX="1300" InitY="750">
+	</Map>
+
+    <Map ID="49" Name="智力比拼7" InitX="1300" InitY="750">
+	</Map>
+
+     <Map ID="50" Name="智力比拼8" InitX="1300" InitY="750">
+	</Map>
+
+    <Map ID="51" Name="智力比拼9" InitX="1300" InitY="750">
+	</Map>
+
+	 <Map ID="52" Name="智力比拼10" InitX="1300" InitY="750">
+	</Map>
+	<Map ID="53" Name="敦煌戈壁" InitX="447" InitY="762" >
+	</Map>
+	<Map ID="54" Name="空中花园" InitX="240" InitY="880" >
+	</Map>
+	<Map ID="55" Name="冰封城" InitX="342" InitY="1109" >
+	</Map>
+	<Map ID="56" Name="风之雪域" InitX="1397" InitY="138" >
+	</Map>
+    <Map ID="57" Name="冰河小镇" InitX="397" InitY="338" >
+	</Map>
+    <Map ID="58" Name="功夫城活动区" InitX="397" InitY="338" >
+	</Map>
+    <Map ID="59" Name="功夫城功能区" InitX="397" InitY="338" >
+	</Map>
+
+
+
+	<Map ID="999" Name="万国商会" InitX="363" InitY="364">
+	</Map>
+	<Map ID="1001" Name="九天连环阵" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1002" Name="守护神阵地" InitX="160" InitY="431">
+	</Map>
+	
+	<Map ID="1003" Name="守护神阵地" InitX="160" InitY="431">
+
+	</Map>
+
+	<Map ID="1004" Name="侠士团比赛地图1" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1005" Name="侠士团比赛地图2" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1006" Name="侠士团比赛地图3" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1007" Name="侠士团比赛地图4" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1008" Name="侠士团比赛地图5" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1009" Name="侠士团比赛地图6" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1010" Name="侠士团比赛地图7" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1011" Name="侠士团比赛地图8" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1012" Name="侠士团比赛地图9" InitX="364" InitY="343">
+	</Map>
+	<Map ID="1013" Name="侠士团比赛地图10" InitX="364" InitY="343">
+	</Map>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--对战地图-->
+	<Map ID="1001001" Name="神秘下水道1" InitX="363" InitY="364">
+  </Map> 
+	<Map ID="1001002" Name="神秘下水道2" InitX="1770" InitY="426">
+  </Map> 
+	<Map ID="1001003" Name="神秘下水道3" InitX="272" InitY="421">
+  </Map> 
+	<Map ID="1001004" Name="神秘下水道4" InitX="1719" InitY="409">
+  </Map> 
+	<Map ID="1001005" Name="神秘下水道5" InitX="282" InitY="340">
+  </Map> 
+	<Map ID="1001006" Name="神秘下水道6" InitX="1614" InitY="413">
+  </Map>  
+  <Map ID="1001007" Name="神秘下水道7" InitX="1587" InitY="429">
+  </Map>
+	<Map ID="1000501" Name="矿坑关卡1" InitX="125" InitY="325">
+  </Map>
+	<Map ID="1000502" Name="矿坑关卡2" InitX="100" InitY="400">
+  </Map>
+	<Map ID="1000503" Name="矿坑关卡3" InitX="100" InitY="325">
+  </Map>
+	<Map ID="1000504" Name="矿坑关卡4" InitX="100" InitY="350">
+  </Map>
+	<Map ID="1000505" Name="矿坑关卡5" InitX="150" InitY="300">
+  </Map>
+	<Map ID="1000506" Name="矿坑关卡6" InitX="200" InitY="400">
+  </Map>
+	<Map ID="1000507" Name="矿坑关卡7" InitX="125" InitY="325">
+  </Map>
+	<Map ID="1000508" Name="矿坑关卡8" InitX="125" InitY="400">
+  </Map>
+	<Map ID="1000509" Name="矿坑关卡9" InitX="100" InitY="340">
+  </Map>
+	<Map ID="1000510" Name="矿坑关卡10" InitX="100" InitY="425">
+	</Map>	
+	<Map ID="1000601" Name="关卡" InitX="86" InitY="554">
+	</Map>	
+	<Map ID="1000602" Name="关卡" InitX="168" InitY="519">
+	</Map>	
+	<Map ID="1000603" Name="关卡" InitX="1516" InitY="396">
+	</Map>	
+	<Map ID="1000604" Name="关卡" InitX="213" InitY="462">
+	</Map>	
+	<Map ID="1000605" Name="关卡" InitX="330" InitY="427">
+	</Map>	
+	<Map ID="1000606" Name="关卡" InitX="228" InitY="476">
+	</Map>	
+	<Map ID="1000607" Name="关卡" InitX="250" InitY="505">
+	</Map>	
+	<Map ID="1000701" Name="野猪林管卡1" InitX="150" InitY="400">
+  </Map>
+	<Map ID="1000702" Name="野猪林管卡2" InitX="250" InitY="375">
+  </Map>
+	<Map ID="1000703" Name="野猪林管卡3" InitX="200" InitY="375">
+  </Map>
+	<Map ID="1000704" Name="野猪林管卡4" InitX="250" InitY="400">
+  </Map>
+	<Map ID="1000705" Name="野猪林管卡5" InitX="1897" InitY="351">
+  </Map>
+	<Map ID="1000706" Name="野猪林管卡6" InitX="283" InitY="394">
+  </Map>
+	<Map ID="1000707" Name="野猪林管卡7" InitX="316" InitY="400">
+  </Map>
+ 
+</Maps>

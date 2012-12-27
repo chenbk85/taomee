@@ -1,0 +1,864 @@
+
+<!--aura 是一种没有持续时间的BUFF -->
+<!--
+	aura_id   光环ID
+	aura_type 光环的类型 1：不能被感染的光环 2：可以被感染的光环
+	aura_radius 光环的半径
+	aura_icon   光环的ICON
+
+	effect_type:光环自带的效果类型
+	effect_id： 光环自带的效果ID
+
+	buff_id:光环感染的BUFFID
+	target：光环感染的目标1：友方，2：敌方 3:友方中立单位
+
+	注意BUFF_ID必须从20000开始起，每个光环携带的BUFF_ID必须不能重复，是唯一的，各个光环所携带的BUFFID也不能重复
+	BUFF必须配置成死亡后删除
+-->
+
+<root>
+        <aura aura_id = "1" show_client = "1" name = "回春光环" aura_type = "2" aura_icon = "39" aura_radius = "400">
+              <effect effect_type = "3" effect_id = "12"></effect>
+	      <buff buff_id = "200001" target = "1"></buff>
+	      <buff buff_id = "200001" target = "3"></buff>
+	  </aura>
+	    <aura aura_id = "91" name = "体质+20" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "44"></effect>
+		</aura>
+	    <aura aura_id = "92" name = "体质+40" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "45"></effect>
+		</aura>
+	    <aura aura_id = "93" name = "体质+60" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "46"></effect>
+		</aura>
+	    <aura aura_id = "94" name = "体质+80" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "47"></effect>
+		</aura>
+	    <aura aura_id = "95" name = "体质+100" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "48"></effect>
+		</aura>
+	    <aura aura_id = "96" name = "体质+120" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "49"></effect>
+		</aura>
+	    <aura aura_id = "97" name = "体质+140" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "50"></effect>
+		</aura>
+	    <aura aura_id = "98" name = "体质+160" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "51"></effect>
+		</aura>
+	    <aura aura_id = "99" name = "体质+180" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "52"></effect>
+		</aura>
+	    <aura aura_id = "100" name = "体质+200" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "53"></effect>
+		</aura>
+        <aura aura_id = "71" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+			  <effect effect_type="3" effect_id="31"/>
+			  <effect effect_type="2" effect_id="11"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200011" target = "1"></buff>
+        </aura>
+        <aura aura_id = "72" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="32"/>
+			  <effect effect_type="2" effect_id="12"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200012" target = "1"></buff>
+        </aura>
+        <aura aura_id = "73" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="33"/>
+			  <effect effect_type="2" effect_id="13"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200013" target = "1"></buff>
+        </aura>
+        <aura aura_id = "74" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="34"/>
+			  <effect effect_type="2" effect_id="14"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200014" target = "1"></buff>
+        </aura>
+        <aura aura_id = "75" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="35"/>
+			  <effect effect_type="2" effect_id="15"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200015" target = "1"></buff>
+        </aura>
+        <aura aura_id = "76" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="36"/>
+			  <effect effect_type="2" effect_id="16"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200016" target = "1"></buff>
+        </aura>
+        <aura aura_id = "77" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="37"/>
+			  <effect effect_type="2" effect_id="17"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200017" target = "1"></buff>
+        </aura>
+        <aura aura_id = "78" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="38"/>
+			  <effect effect_type="2" effect_id="18"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200018" target = "1"></buff>
+        </aura>
+        <aura aura_id = "79" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="39"/>
+			  <effect effect_type="2" effect_id="19"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200019" target = "1"></buff>
+        </aura>
+        <aura aura_id = "80" show_client = "1" name = "回血回蓝回灵力光环" aura_type = "2" aura_icon = "64" aura_radius = "400">
+              <effect effect_type="3" effect_id="40"/>
+			  <effect effect_type="2" effect_id="20"/>
+			  <effect effect_type="119" effect_id="5"/>
+			  <buff buff_id = "200020" target = "1"></buff>
+        </aura>
+        <aura aura_id = "81" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200021" target = "2"></buff>
+        </aura>
+        <aura aura_id = "82" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200022" target = "2"></buff>
+        </aura>
+        <aura aura_id = "83" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200023" target = "2"></buff>
+        </aura>
+        <aura aura_id = "84" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200024" target = "2"></buff>
+        </aura>
+        <aura aura_id = "85" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200025" target = "2"></buff>
+        </aura>
+        <aura aura_id = "86" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200026" target = "2"></buff>
+        </aura>
+        <aura aura_id = "87" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200027" target = "2"></buff>
+        </aura>
+        <aura aura_id = "88" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200028" target = "2"></buff>
+        </aura>
+        <aura aura_id = "89" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200029" target = "2"></buff>
+        </aura>
+        <aura aura_id = "90" show_client = "1" name = "灼烧" aura_type = "2" aura_icon = "66" aura_radius = "400">
+			  <buff buff_id = "200030" target = "2"></buff>
+        </aura>
+
+
+		<aura aura_id = "2" show_client = "1" name = "免疫DEBUFF的光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "112" effect_id = "1"></effect>
+		</aura>
+
+		<aura aura_id = "3" show_client = "1" name = "免疫DEBUFF同时承受伤害减少80%光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">
+		      <effect effect_type = "112" effect_id = "1"></effect>
+			  <effect effect_type = "115" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "4" show_client = "1" name = "减少80%伤害光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "115" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "5" show_client = "1" name = "减少95%伤害光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "115" effect_id = "2"></effect>
+		</aura>
+		<aura aura_id = "6" show_client = "1" name = "免疫DEBUFF同时承受伤害减少95%光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">
+		      <effect effect_type = "112" effect_id = "1"></effect>
+			  <effect effect_type = "115" effect_id = "2"></effect>
+		</aura>
+		<aura aura_id = "7" show_client = "1" name = "减少33%伤害光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "115" effect_id = "3"></effect>
+		</aura>
+        <aura aura_id = "8" show_client = "1" name = "无敌光环" aura_type = "1" aura_icon = "0" aura_radius = "10">	
+			<effect effect_type = "109" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "9" show_client = "1" name = "减少20%伤害光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "115" effect_id = "4"></effect>
+		</aura>
+		<aura aura_id = "10" show_client = "1" name = "减少10%伤害光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "115" effect_id = "4"></effect>
+		</aura>
+	
+		<aura aura_id = "11" name="防止击飞击退僵直" aura_type = "1" aura_radius ="100000">
+			<effect effect_type = "118" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "12" show_client = "1" name = "免疫DEBUFF同时承受伤害减少50%光环" aura_type = "1" aura_icon = "0" aura_radius = "100000">
+		      <effect effect_type = "112" effect_id = "1"></effect>
+			  <effect effect_type = "115" effect_id = "6"></effect>
+		</aura>
+		<aura aura_id = "13" show_client = "1" name = "减少66%伤害光环并魔免" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "115" effect_id = "7"></effect>
+			<effect effect_type = "112" effect_id = "1"></effect>
+		</aura>
+	<aura aura_id = "14" show_client = "1" name = "反弹" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "101" effect_id = "33"></effect>
+		</aura>
+	<aura aura_id = "15" show_client = "1" name = "空效果" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+			<effect effect_type = "10000" effect_id = "1"></effect>
+		</aura>
+	<aura aura_id="21" name="附加吸血功能" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="120" effect_id="1"/>
+        </aura>
+	<aura aura_id="22" name="附加吸血功能" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="120" effect_id="2"/>
+        </aura>
+	<aura aura_id="23" name="附加吸血功能" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="120" effect_id="3"/>
+        </aura>
+	<aura aura_id="24" name="附加吸血功能" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="120" effect_id="4"/>
+        </aura>
+	<aura aura_id="25" name="附加吸血功能" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="120" effect_id="5"/>
+        </aura>
+		<aura aura_id = "26" name = "防止击飞" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "118" effect_id = "1"></effect>
+		</aura>
+	<aura aura_id = "27" name = "增加闪避率 清明术 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "1">
+		<effect effect_type = "14" effect_id = "42"></effect>
+	</aura>
+
+
+        <aura aura_id="31" name="灵兽的灵力值上限提升X%" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="19" effect_id="1"/>
+        </aura>
+        <aura aura_id="32" name="灵兽的灵力值上限提升X%" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="19" effect_id="2"/>
+        </aura>
+        <aura aura_id="33" name="灵兽的灵力值上限提升X%" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="19" effect_id="3"/>
+        </aura>
+
+        <aura aura_id="41" name="对玩家技能有着X%的抗性" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="122" effect_id="1"/>
+        </aura>
+        <aura aura_id="42" name="对玩家技能有着X%的抗性" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="122" effect_id="2"/>
+        </aura>
+        <aura aura_id="43" name="对玩家技能有着X%的抗性" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="122" effect_id="3"/>
+        </aura>
+
+        <aura aura_id="51" name="灵兽有X%的几率施放技能时不消耗灵力" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="123" effect_id="1"/>
+        </aura>
+        <aura aura_id="52" name="灵兽有X%的几率施放技能时不消耗灵力" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="123" effect_id="2"/>
+        </aura>
+        <aura aura_id="53" name="灵兽有X%的几率施放技能时不消耗灵力" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="123" effect_id="3"/>
+        </aura>
+
+        <aura aura_id="61" name="有X%的概率对敌人造成x倍伤害" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="121" effect_id="1"/>
+        </aura>
+        <aura aura_id="62" name="有X%的概率对敌人造成x倍伤害" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="121" effect_id="2"/>
+        </aura>
+        <aura aura_id="63" name="有X%的概率对敌人造成x倍伤害" aura_type="1" aura_icon = "0" aura_radius = "1" show_client = "1" >
+                <effect effect_type="121" effect_id="3"/>
+        </aura>
+	<aura aura_id="64" name="10s回复1%的HP" aura_type="1" aura_icon="0" aura_radius="1000" >
+		<effect effect_type="3" effect_id="51"/>
+	</aura>	
+	<aura aura_id = "65" name = "防御增加50%" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+		<effect effect_type = "4" effect_id = "14"></effect>
+	</aura>
+	<aura aura_id = "66" name = "药师反弹100%且魔法免疫" aura_type = "1" aura_icon = "0" aura_radius = "100000">	
+		<effect effect_type = "101" effect_id = "32"></effect>
+		<effect effect_type = "112" effect_id = "1"></effect>
+	</aura>
+
+
+
+      <aura aura_id = "1001" name = "增加闪避率 清明术 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "21"></effect>
+	</aura>
+	<aura aura_id = "1002" name = "增加闪避率 清明术 2级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "22"></effect>
+	</aura>
+	<aura aura_id = "1003" name = "增加闪避率 清明术 3级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "23"></effect>
+	</aura>
+	<aura aura_id = "1004" name = "增加闪避率 清明术 4级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "24"></effect>
+	</aura>
+	<aura aura_id = "1005" name = "增加闪避率 清明术 5级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "25"></effect>
+	</aura>
+	<aura aura_id = "1006" name = "增加闪避率 清明术 6级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "26"></effect>
+	</aura>
+	<aura aura_id = "1007" name = "增加闪避率 清明术 7级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "27"></effect>
+	</aura>
+	<aura aura_id = "1008" name = "增加闪避率 清明术 8级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "28"></effect>
+	</aura>
+	<aura aura_id = "1009" name = "增加闪避率 清明术 9级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "29"></effect>
+	</aura>
+	<aura aura_id = "1010" name = "增加闪避率 清明术 10级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "30"></effect>
+	</aura>
+	<aura aura_id = "1011" name = "增加闪避率 清明术 11级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "31"></effect>
+	</aura>
+	<aura aura_id = "1012" name = "增加闪避率 清明术 12级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "32"></effect>
+	</aura>
+	<aura aura_id = "1013" name = "增加闪避率 清明术 13级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "33"></effect>
+	</aura>
+	<aura aura_id = "1014" name = "增加闪避率 清明术 14级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "34"></effect>
+	</aura>
+	<aura aura_id = "1015" name = "增加闪避率 清明术 15级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "35"></effect>
+	</aura>
+	<aura aura_id = "101/6" name = "增加闪避率 清明术 16级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "36"></effect>
+	</aura>
+	<aura aura_id = "1017" name = "增加闪避率 清明术 17级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "37"></effect>
+	</aura>
+	<aura aura_id = "1018" name = "增加闪避率 清明术 18级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "38"></effect>
+	</aura>
+	<aura aura_id = "1019" name = "增加闪避率 清明术 19级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "39"></effect>
+	</aura>
+	<aura aura_id = "1020" name = "增加闪避率 清明术 20级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "14" effect_id = "40"></effect>
+	</aura>
+
+	<aura aura_id = "1101" name = "增加移动速度 迷踪步 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "11"></effect>
+	</aura>
+	<aura aura_id = "1102" name = "增加移动速度 迷踪步 2级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "12"></effect>
+	</aura>
+	<aura aura_id = "1103" name = "增加移动速度 迷踪步 3级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "13"></effect>
+	</aura>
+	<aura aura_id = "1104" name = "增加移动速度 迷踪步 4级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "14"></effect>
+	</aura>
+	<aura aura_id = "1105" name = "增加移动速度 迷踪步 5级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "15"></effect>
+	</aura>
+	<aura aura_id = "1106" name = "增加移动速度 迷踪步 6级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "16"></effect>
+	</aura>
+	<aura aura_id = "1107" name = "增加移动速度 迷踪步 7级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "17"></effect>
+	</aura>
+	<aura aura_id = "1108" name = "增加移动速度 迷踪步 8级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "18"></effect>
+	</aura>
+	<aura aura_id = "1109" name = "增加移动速度 迷踪步 9级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "19"></effect>
+	</aura>
+	<aura aura_id = "1110" name = "增加移动速度 迷踪步 10级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "20"></effect>
+	</aura>
+	<aura aura_id = "1111" name = "增加移动速度 迷踪步 11级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "21"></effect>
+	</aura>
+	<aura aura_id = "1112" name = "增加移动速度 迷踪步 12级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "22"></effect>
+	</aura>
+	<aura aura_id = "1113" name = "增加移动速度 迷踪步 13级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "23"></effect>
+	</aura>
+	<aura aura_id = "1114" name = "增加移动速度 迷踪步 14级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "24"></effect>
+	</aura>
+	<aura aura_id = "1115" name = "增加移动速度 迷踪步 15级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "25"></effect>
+	</aura>
+	<aura aura_id = "1116" name = "增加移动速度 迷踪步 16级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "26"></effect>
+	</aura>
+	<aura aura_id = "1117" name = "增加移动速度 迷踪步 17级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "27"></effect>
+	</aura>
+	<aura aura_id = "1118" name = "增加移动速度 迷踪步 18级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "28"></effect>
+	</aura>
+	<aura aura_id = "1119" name = "增加移动速度 迷踪步 19级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "29"></effect>
+	</aura>
+	<aura aura_id = "1120" name = "增加移动速度 迷踪步 20级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "10" effect_id = "30"></effect>
+	</aura>
+	
+	<aura aura_id = "1201" name = "增加命中率 全神贯注 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "21"></effect>
+	</aura>
+	<aura aura_id = "1202" name = "增加命中率 全神贯注 2级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "22"></effect>
+	</aura>
+	<aura aura_id = "1203" name = "增加命中率 全神贯注 3级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "23"></effect>
+	</aura>
+	<aura aura_id = "1204" name = "增加命中率 全神贯注 4级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "24"></effect>
+	</aura>
+	<aura aura_id = "1205" name = "增加命中率 全神贯注 5级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "25"></effect>
+	</aura>
+	<aura aura_id = "1206" name = "增加命中率 全神贯注 6级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "26"></effect>
+	</aura>
+	<aura aura_id = "1207" name = "增加命中率 全神贯注 7级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "27"></effect>
+	</aura>
+	<aura aura_id = "1208" name = "增加命中率 全神贯注 8级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "28"></effect>
+	</aura>
+	<aura aura_id = "1209" name = "增加命中率 全神贯注 9级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "29"></effect>
+	</aura>
+	<aura aura_id = "1210" name = "增加命中率 全神贯注 10级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "30"></effect>
+	</aura>
+	<aura aura_id = "1211" name = "增加命中率 全神贯注 11级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "31"></effect>
+	</aura>
+	<aura aura_id = "1212" name = "增加命中率 全神贯注 12级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "32"></effect>
+	</aura>
+	<aura aura_id = "1213" name = "增加命中率 全神贯注 13级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "33"></effect>
+	</aura>
+	<aura aura_id = "1214" name = "增加命中率 全神贯注 14级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "34"></effect>
+	</aura>
+	<aura aura_id = "1215" name = "增加命中率 全神贯注 15级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "35"></effect>
+	</aura>
+	<aura aura_id = "1216" name = "增加命中率 全神贯注 16级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "36"></effect>
+	</aura>
+	<aura aura_id = "1217" name = "增加命中率 全神贯注 17级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "37"></effect>
+	</aura>
+	<aura aura_id = "1218" name = "增加命中率 全神贯注 18级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "38"></effect>
+	</aura>
+	<aura aura_id = "1219" name = "增加命中率 全神贯注 19级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "39"></effect>
+	</aura>
+	<aura aura_id = "1220" name = "增加命中率 全神贯注 20级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "12" effect_id = "40"></effect>
+	</aura>
+	
+        <aura aura_id = "2001" name = "增加攻击力 强力术 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "51"></effect>
+	</aura>
+        <aura aura_id = "2002" name = "增加攻击力 强力术 2级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "52"></effect>
+	</aura>
+        <aura aura_id = "2003" name = "增加攻击力 强力术 3级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "53"></effect>
+	</aura>
+        <aura aura_id = "2004" name = "增加攻击力 强力术 4级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "54"></effect>
+	</aura>
+        <aura aura_id = "2005" name = "增加攻击力 强力术 5级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "55"></effect>
+	</aura>
+        <aura aura_id = "2006" name = "增加攻击力 强力术 6级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "56"></effect>
+	</aura>
+        <aura aura_id = "2007" name = "增加攻击力 强力术 7级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "57"></effect>
+	</aura>
+        <aura aura_id = "2008" name = "增加攻击力 强力术 8级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "58"></effect>
+	</aura>
+        <aura aura_id = "2009" name = "增加攻击力 强力术 9级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "59"></effect>
+	</aura>
+        <aura aura_id = "2010" name = "增加攻击力 强力术 10级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "60"></effect>
+	</aura>
+        <aura aura_id = "2011" name = "增加攻击力 强力术 11级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "61"></effect>
+	</aura>
+        <aura aura_id = "2012" name = "增加攻击力 强力术 12级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "62"></effect>
+	</aura>
+        <aura aura_id = "2013" name = "增加攻击力 强力术 13级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "63"></effect>
+	</aura>
+        <aura aura_id = "2014" name = "增加攻击力 强力术 14级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "64"></effect>
+	</aura>
+        <aura aura_id = "2015" name = "增加攻击力 强力术 15级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "65"></effect>
+	</aura>
+        <aura aura_id = "2016" name = "增加攻击力 强力术 16级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "66"></effect>
+	</aura>
+        <aura aura_id = "2017" name = "增加攻击力 强力术 17级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "67"></effect>
+	</aura>
+        <aura aura_id = "2018" name = "增加攻击力 强力术 18级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "68"></effect>
+	</aura>
+        <aura aura_id = "2019" name = "增加攻击力 强力术 19级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "69"></effect>
+	</aura>
+        <aura aura_id = "2020" name = "增加攻击力 强力术 20级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "6" effect_id = "70"></effect>
+	</aura>
+    <aura aura_id = "2101" name = "增加MP 暮雨诀 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "11"></effect>
+	</aura>
+	<aura aura_id = "2102" name = "增加MP 暮雨诀 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "12"></effect>
+	</aura>
+	<aura aura_id = "2103" name = "增加MP 暮雨诀 2级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "13"></effect>
+	</aura>
+	<aura aura_id = "2104" name = "增加MP 暮雨诀 3级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "14"></effect>
+	</aura>
+	<aura aura_id = "2105" name = "增加MP 暮雨诀 4级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "15"></effect>
+	</aura>
+	<aura aura_id = "2106" name = "增加MP 暮雨诀 5级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "16"></effect>
+	</aura>
+	<aura aura_id = "2107" name = "增加MP 暮雨诀 6级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "17"></effect>
+	</aura>
+	<aura aura_id = "2108" name = "增加MP 暮雨诀 7级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "18"></effect>
+	</aura>
+	<aura aura_id = "2109" name = "增加MP 暮雨诀 8级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "19"></effect>
+	</aura>
+	<aura aura_id = "2110" name = "增加MP 暮雨诀 9级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "20"></effect>
+	</aura>
+	<aura aura_id = "2111" name = "增加MP 暮雨诀 10级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "21"></effect>
+	</aura>
+	<aura aura_id = "2112" name = "增加MP 暮雨诀 11级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "22"></effect>
+	</aura>
+	<aura aura_id = "2113" name = "增加MP 暮雨诀 12级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "23"></effect>
+	</aura>
+	<aura aura_id = "2114" name = "增加MP 暮雨诀 13级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "24"></effect>
+	</aura>
+	<aura aura_id = "2115" name = "增加MP 暮雨诀 14级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "25"></effect>
+	</aura>
+	<aura aura_id = "2116" name = "增加MP 暮雨诀 15级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "26"></effect>
+	</aura>
+	<aura aura_id = "2117" name = "增加MP 暮雨诀 16级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "27"></effect>
+	</aura>
+	<aura aura_id = "2118" name = "增加MP 暮雨诀 17级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "28"></effect>
+	</aura>
+	<aura aura_id = "2119" name = "增加MP 暮雨诀 18级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "29"></effect>
+	</aura>
+	<aura aura_id = "2120" name = "增加MP 暮雨诀 20级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "19" effect_id = "30"></effect>
+	</aura>
+	
+
+        <aura aura_id = "2201" name = "增加致命一击率 致命一击 1级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "11"></effect>
+	</aura>
+        <aura aura_id = "2202" name = "增加致命一击率 致命一击 2级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "12"></effect>
+	</aura>
+        <aura aura_id = "2203" name = "增加致命一击率 致命一击 3级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "13"></effect>
+	</aura>
+        <aura aura_id = "2204" name = "增加致命一击率 致命一击 4级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "14"></effect>
+	</aura>
+        <aura aura_id = "2205" name = "增加致命一击率 致命一击 5级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "15"></effect>
+	</aura>
+         <aura aura_id = "2206" name = "增加致命一击率 致命一击 6级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "16"></effect>
+	</aura>
+        <aura aura_id = "2207" name = "增加致命一击率 致命一击 7级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "17"></effect>
+	</aura>
+        <aura aura_id = "2208" name = "增加致命一击率 致命一击 8级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "18"></effect>
+	</aura>
+        <aura aura_id = "2209" name = "增加致命一击率 致命一击 9级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "19"></effect>
+	</aura>
+        <aura aura_id = "2210" name = "增加致命一击率 致命一击 10级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "20"></effect>
+	</aura>
+        <aura aura_id = "2211" name = "增加致命一击率 致命一击 11级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "21"></effect>
+	</aura>
+        <aura aura_id = "2212" name = "增加致命一击率 致命一击 12级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "22"></effect>
+	</aura>
+        <aura aura_id = "2213" name = "增加致命一击率 致命一击 13级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "23"></effect>
+	</aura>
+        <aura aura_id = "2214" name = "增加致命一击率 致命一击 14级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "24"></effect>
+	</aura>
+        <aura aura_id = "2215" name = "增加致命一击率 致命一击 15级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "25"></effect>
+	</aura>
+        <aura aura_id = "2216" name = "增加致命一击率 致命一击 16级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "26"></effect>
+	</aura>
+        <aura aura_id = "2217" name = "增加致命一击率 致命一击 17级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "27"></effect>
+	</aura>
+        <aura aura_id = "2218" name = "增加致命一击率 致命一击 18级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "28"></effect>
+	</aura>
+        <aura aura_id = "2219" name = "增加致命一击率 致命一击 19级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "29"></effect>
+	</aura>
+        <aura aura_id = "2220" name = "增加致命一击率 致命一击 20级光环" aura_type = "1" aura_icon = "0" aura_radius = "100">
+		<effect effect_type = "8" effect_id = "30"></effect>
+	</aura>
+
+        <aura aura_id = "3001" name = "太虚心法 1级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "21"></effect>
+		</aura>
+        <aura aura_id = "3002" name = "太虚心法 2级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "22"></effect>
+		</aura>
+        <aura aura_id = "3003" name = "太虚心法 3级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "23"></effect>
+		</aura>
+        <aura aura_id = "3004" name = "太虚心法 4级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "24"></effect>
+		</aura>
+        <aura aura_id = "3005" name = "太虚心法 5级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "25"></effect>
+		</aura>
+        <aura aura_id = "3006" name = "太虚心法 6级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "26"></effect>
+		</aura>
+        <aura aura_id = "3007" name = "太虚心法 7级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "27"></effect>
+		</aura>
+        <aura aura_id = "3008" name = "太虚心法 8级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "28"></effect>
+		</aura>
+        <aura aura_id = "3009" name = "太虚心法 9级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "29"></effect>
+		</aura>
+        <aura aura_id = "3010" name = "太虚心法 10级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "30"></effect>
+		</aura>
+        <aura aura_id = "3011" name = "太虚心法 11级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "31"></effect>
+		</aura>
+        <aura aura_id = "3012" name = "太虚心法 12级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "32"></effect>
+		</aura>
+        <aura aura_id = "3013" name = "太虚心法 13级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "33"></effect>
+		</aura>
+        <aura aura_id = "3014" name = "太虚心法 14级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "34"></effect>
+		</aura>
+        <aura aura_id = "3015" name = "太虚心法 15级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "35"></effect>
+		</aura>
+        <aura aura_id = "3016" name = "太虚心法 16级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "36"></effect>
+		</aura>
+        <aura aura_id = "3017" name = "太虚心法 17级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "37"></effect>
+		</aura>
+        <aura aura_id = "3018" name = "太虚心法 18级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "38"></effect>
+		</aura>
+        <aura aura_id = "3019" name = "太虚心法 19级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "39"></effect>
+		</aura>
+        <aura aura_id = "3020" name = "太虚心法 20级 增加血量 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "40"></effect>
+		</aura>
+
+        <aura aura_id = "3101" name = "强体术 1级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "21"></effect>
+		</aura>
+        <aura aura_id = "3102" name = "强体术 2级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "22"></effect>
+		</aura>
+        <aura aura_id = "3103" name = "强体术 3级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "23"></effect>
+		</aura>
+        <aura aura_id = "3104" name = "强体术 4级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "24"></effect>
+		</aura>
+        <aura aura_id = "3105" name = "强体术 5级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "25"></effect>
+		</aura>
+        <aura aura_id = "3106" name = "强体术 6级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "26"></effect>
+		</aura>
+        <aura aura_id = "3107" name = "强体术 7级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "27"></effect>
+		</aura>
+        <aura aura_id = "3108" name = "强体术 8级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "28"></effect>
+		</aura>
+        <aura aura_id = "3109" name = "强体术 9级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "29"></effect>
+		</aura>
+        <aura aura_id = "3110" name = "强体术 10级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "30"></effect>
+		</aura>
+        <aura aura_id = "3111" name = "强体术 11级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "31"></effect>
+		</aura>
+        <aura aura_id = "3112" name = "强体术 12级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "32"></effect>
+		</aura>
+        <aura aura_id = "3113" name = "强体术 13级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "33"></effect>
+		</aura>
+        <aura aura_id = "3114" name = "强体术 14级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "34"></effect>
+		</aura>
+        <aura aura_id = "3115" name = "强体术 15级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "35"></effect>
+		</aura>
+        <aura aura_id = "3116" name = "强体术 16级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "36"></effect>
+		</aura>
+        <aura aura_id = "3117" name = "强体术 17级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "37"></effect>
+		</aura>
+        <aura aura_id = "3118" name = "强体术 18级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "38"></effect>
+		</aura>
+        <aura aura_id = "3119" name = "强体术 19级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "39"></effect>
+		</aura>
+        <aura aura_id = "3120" name = "强体术 20级 增加防御 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "40"></effect>
+		</aura>
+
+        <aura aura_id = "4201" name = "荆棘术 1级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "11"></effect>
+		</aura>
+        <aura aura_id = "4202" name = "荆棘术 2级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "12"></effect>
+		</aura>
+        <aura aura_id = "4203" name = "荆棘术 3级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "13"></effect>
+		</aura>
+        <aura aura_id = "4204" name = "荆棘术 4级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "14"></effect>
+		</aura>
+        <aura aura_id = "4205" name = "荆棘术 5级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "15"></effect>
+		</aura>
+        <aura aura_id = "4206" name = "荆棘术 6级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "16"></effect>
+		</aura>
+        <aura aura_id = "4207" name = "荆棘术 7级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "17"></effect>
+		</aura>
+        <aura aura_id = "4208" name = "荆棘术 8级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "18"></effect>
+		</aura>
+        <aura aura_id = "4209" name = "荆棘术 9级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "19"></effect>
+		</aura>
+        <aura aura_id = "4210" name = "荆棘术 10级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "20"></effect>
+		</aura>
+        <aura aura_id = "4211" name = "荆棘术 11级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "21"></effect>
+		</aura>
+        <aura aura_id = "4212" name = "荆棘术 12级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "22"></effect>
+		</aura>
+        <aura aura_id = "4213" name = "荆棘术 13级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "23"></effect>
+		</aura>
+        <aura aura_id = "4214" name = "荆棘术 14级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "24"></effect>
+		</aura>
+        <aura aura_id = "4215" name = "荆棘术 15级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "25"></effect>
+		</aura>
+        <aura aura_id = "4216" name = "荆棘术 16级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "26"></effect>
+		</aura>
+        <aura aura_id = "4217" name = "荆棘术 17级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "27"></effect>
+		</aura>
+        <aura aura_id = "4218" name = "荆棘术 18级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "28"></effect>
+		</aura>
+        <aura aura_id = "4219" name = "荆棘术 19级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "29"></effect>
+		</aura>
+        <aura aura_id = "4220" name = "荆棘术 20级 反弹部分伤害 %2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "101" effect_id = "30"></effect>
+		</aura>
+
+	    <aura aura_id = "5001" name = "基础敏捷+10%" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "127" effect_id = "1"></effect>
+		</aura>
+	    <aura aura_id = "5002" name = "基础闪避值+10%" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "14" effect_id = "5"></effect>
+		</aura>
+	    <aura aura_id = "5003" name = "基础暴击值+10%" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "8" effect_id = "1"></effect>
+		</aura>
+	    <aura aura_id = "5004" name = "体质+10" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "128" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "5005" name = "防御力+10%" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "24" effect_id = "3"></effect>
+		</aura>
+		<aura aura_id = "5006" name = "HP上限100" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "18" effect_id = "42"></effect>
+		</aura>
+		<aura aura_id = "5007" name = "HP回复每秒10" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "3" effect_id = "52"></effect>
+		</aura>
+		<aura aura_id = "5008" name = "MP回复每秒2" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "2" effect_id = "22"></effect>
+		</aura>
+		<aura aura_id = "5009" name = "副本内杀怪获得的功夫豆+20%" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "125" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "5010" name = "受到的伤害值-50" aura_type = "2" aura_icon = "0" aura_radius = "500">	
+			<effect effect_type = "129" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "5011" name = "暴击上限30%" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "130" effect_id = "1"></effect>
+		</aura>
+		<aura aura_id = "5012" name = "掉宝率+50%" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "126" effect_id = "2"></effect>
+		</aura>
+		<aura aura_id = "5013" name = "HP回复每5秒+100" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "3" effect_id = "56"></effect>
+		</aura>
+		<aura aura_id = "5014" name = "闪避值+100" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "14" effect_id = "41"></effect>
+		</aura>
+		<aura aura_id = "5015" name = "攻击力+80" aura_type = "1" aura_icon = "0" aura_radius = "1">	
+			<effect effect_type = "6" effect_id = "37"></effect>
+		</aura>
+	</root>

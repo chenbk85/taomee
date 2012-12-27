@@ -1,0 +1,46 @@
+<!--动态试炼之路关卡-->
+<!--CD_Dec 技能缩短的百分比 1 - 100 -->
+<!--Lv_ADD 相对玩家 怪物等级增加-->
+<!--Drop_odds 掉落提升倍率 600 是6倍-->
+<!--Atk_Add 攻击增加比例-->
+<!--Hp_Add 血量攻击比例-->
+<!--LowAI 低AI怪物数量 百分比-->
+<!--MiddleAI 中等AI怪物数量百分比-->
+<!--HighAI 高等级AI 白分比-->
+<!--BoosAI BossAI怪物数量， 必须有霸体技能否则和HighAI一样-->
+
+<DStages>
+	<Challenge Stage="954" >
+		<Diff Diff="1" CD_Dec="0" HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="0" LowAI="60" MiddleAI="20" HighAI="20" BossAI="0" />
+		<Diff Diff="2" CD_Dec="10" HP_Add="20" Atk_Add="5" Lv_Add="0" Drop_odds="5" LowAI="47" MiddleAI="27" HighAI="27" BossAI="0" />
+		<Diff Diff="3" CD_Dec="10" HP_Add="30" Atk_Add="10" Lv_Add="1" Drop_odds="5" LowAI="33" MiddleAI="33" HighAI="27" BossAI="7" />
+		<Diff Diff="4" CD_Dec="20" HP_Add="45" Atk_Add="15" Lv_Add="1" Drop_odds="5" LowAI="20" MiddleAI="40" HighAI="33" BossAI="7" />
+		<Diff Diff="5" CD_Dec="20" HP_Add="60" Atk_Add="20" Lv_Add="2" Drop_odds="5" LowAI="7" MiddleAI="47" HighAI="33" BossAI="13" />
+		<Diff Diff="6" CD_Dec="30" HP_Add="90" Atk_Add="25" Lv_Add="2" Drop_odds="100" LowAI="0" MiddleAI="47" HighAI="40" BossAI="13" />
+		<Diff Diff="7" CD_Dec="30" HP_Add="120" Atk_Add="30" Lv_Add="3" Drop_odds="100" LowAI="7" MiddleAI="33" HighAI="40" BossAI="13" />
+		<Diff Diff="8" CD_Dec="40" HP_Add="160" Atk_Add="40" Lv_Add="3" Drop_odds="100" LowAI="0" MiddleAI="27" HighAI="47" BossAI="27" />
+		<Diff Diff="9" CD_Dec="40" HP_Add="210" Atk_Add="50" Lv_Add="3" Drop_odds="3000" LowAI="0" MiddleAI="20" HighAI="47" BossAI="33" />
+		<Diff Diff="10" CD_Dec="50" HP_Add="280" Atk_Add="60" Lv_Add="4" Drop_odds="6000" LowAI="0" MiddleAI="7" HighAI="53" BossAI="40" />
+	</Challenge>
+	<Challenge Stage="49">
+		<Diff Diff="1" CD_Dec="0"  HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="0"/>
+		<Diff Diff="2" CD_Dec="10" HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="5"/>
+		<Diff Diff="3" CD_Dec="15" HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="5"/>
+		<Diff Diff="4" CD_Dec="20" HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="10"/>
+		<Diff Diff="5" CD_Dec="30" HP_Add="30" Atk_Add="10" Lv_Add="0" Drop_odds="10"/>
+		<Diff Diff="6" CD_Dec="40" HP_Add="50" Atk_Add="25" Lv_Add="0" Drop_odds="10"/>
+	</Challenge>
+	<Challenge Stage="13">
+		<Diff Diff="1" CD_Dec="0"  HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="0"/>
+		<Diff Diff="2" CD_Dec="10" HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="5"/>
+		<Diff Diff="3" CD_Dec="15" HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="5"/>
+		<Diff Diff="4" CD_Dec="20" HP_Add="0" Atk_Add="0" Lv_Add="0" Drop_odds="10"/>
+		<Diff Diff="5" CD_Dec="30" HP_Add="30" Atk_Add="10" Lv_Add="0" Drop_odds="10"/>
+		<Diff Diff="6" CD_Dec="40" HP_Add="50" Atk_Add="25" Lv_Add="0" Drop_odds="10"/>
+	</Challenge>
+
+</DStages>
+
+
+
+	

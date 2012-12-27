@@ -1,0 +1,136 @@
+<!-- 小屋植物配置 
+	ID:植物类型ID
+	ResID:类型ID对于的资源ID
+	SeedID：种子ID
+	Homelv: 需要的小屋等级
+	Duration : 阶段持续时间， 0，表示不会主动更改
+	Water: 浇水的间隔时间， 0，表示不能浇水
+	Fruit: 产出物品的ID
+	Count: 产出物品的基础总数
+	e_item: 采集果实时额外产出item
+	d_odds: 额外物品产出概率 1 - 1000
+-->
+<Plants>
+	<Plant ID="90006" SeedID="1800005" ResID="90006" Name="初级炎魔草" e_item="1500565" d_odds="50" HomeLv="1 99">
+		<Step ID="1" Duration="300" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="600" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600013" Count="4" />
+	</Plant>
+
+	<Plant ID="90007" SeedID="1800009" ResID="90006" Name="初级炎灵草" e_item="1500565" d_odds="50" HomeLv="2 99">
+		<Step ID="1" Duration="300" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="600" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600018" Count="4" />
+	</Plant>
+
+	<Plant ID="90008" SeedID="1800010" ResID="90006" Name="二阶灵溪花" e_item="1500565" d_odds="50" HomeLv="4 99">
+		<Step ID="1" Duration="1200" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="2400" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1500381" Count="4" />
+	</Plant>
+
+	<Plant ID="90009" SeedID="1800014" ResID="90006" Name="中阶炎魔草" e_item="1500565" d_odds="50" HomeLv="3 99">
+		<Step ID="1" Duration="400" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="800" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600023" Count="4" />
+	</Plant>
+
+	<Plant ID="90010" SeedID="1800015" ResID="90006" Name="三阶灵溪花" e_item="1500565" d_odds="50" HomeLv="6 99">
+		<Step ID="1" Duration="1200" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="2400" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1500381" Count="6" />
+	</Plant>
+
+	<Plant ID="90011" SeedID="1800018" ResID="90006" Name="中阶炎灵草" e_item="1500565" d_odds="50" HomeLv="4 99">
+		<Step ID="1" Duration="400" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="800" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600027" Count="4" />
+	</Plant>
+
+	<Plant ID="90012" SeedID="1800019" ResID="90006" Name="四阶灵溪花" e_item="1500565" d_odds="50" HomeLv="8 99">
+		<Step ID="1" Duration="1200" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="2400" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1500381" Count="8" />
+	</Plant>
+
+	<Plant ID="90013" SeedID="1800022" ResID="90006" Name="高级炎魔草" e_item="1500565" d_odds="50" HomeLv="5 99">
+		<Step ID="1" Duration="500" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="1000" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600031" Count="4" />
+	</Plant>
+
+	<Plant ID="90014" SeedID="1800023" ResID="90006" Name="五阶灵溪花" e_item="1500565" d_odds="50" HomeLv="10 99">
+		<Step ID="1" Duration="1200" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="2400" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1500381" Count="10" />
+	</Plant>
+	
+	<Plant ID="90015" SeedID="1800024" ResID="90006" Name="仙灵草" e_item="1500565" d_odds="50" HomeLv="1 99">
+		<Step ID="1" Duration="600" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="1200" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600011" Count="2" />
+	</Plant>
+	
+	<Plant ID="90016" SeedID="1800004" ResID="90006" Name="一阶灵溪花" e_item="1500565" d_odds="50" HomeLv="1 99">
+		<Step ID="1" Duration="1200" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="2400" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1500381" Count="2" />
+	</Plant>
+	<Plant ID="90025" SeedID="1800025" ResID="90006" Name="一阶灵晶花" e_item="1500565" d_odds="50" HomeLv="1 99">
+		<Step ID="1" Duration="300" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="600" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600001" Count="4" />
+	</Plant>
+	<Plant ID="90026" SeedID="1800026" ResID="90006" Name="二阶灵晶花" e_item="1500565" d_odds="50" HomeLv="3 99">
+		<Step ID="1" Duration="600" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="1200" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600002" Count="4" />
+	</Plant>
+	<Plant ID="90027" SeedID="1800027" ResID="90006" Name="三阶灵晶花" e_item="1500565" d_odds="50" HomeLv="4 99">
+		<Step ID="1" Duration="900" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="1800" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600003" Count="4" />
+	</Plant>
+	<Plant ID="90028" SeedID="1800028" ResID="90006" Name="四阶灵晶花" e_item="1500565" d_odds="50" HomeLv="5 99">
+		<Step ID="1" Duration="1200" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="2400" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600004" Count="4" />
+	</Plant>
+	<Plant ID="90029" SeedID="1800029" ResID="90006" Name="一阶慢性草" e_item="1500565" d_odds="50" HomeLv="1 99">
+		<Step ID="1" Duration="300" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="600" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600033" Count="4" />
+	</Plant>
+	<Plant ID="90030" SeedID="1800030" ResID="90006" Name="二阶慢性草" e_item="1500565" d_odds="50" HomeLv="3 99">
+		<Step ID="1" Duration="600" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="1200" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600034" Count="4" />
+	</Plant>
+	<Plant ID="90031" SeedID="1800031" ResID="90006" Name="一阶速效草" e_item="1500565" d_odds="50" HomeLv="4 99">
+		<Step ID="1" Duration="900" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="1800" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600035" Count="4" />
+	</Plant>
+	<Plant ID="90032" SeedID="1800032" ResID="90006" Name="二阶速效草" e_item="1500565" d_odds="50" HomeLv="5 99">
+		<Step ID="1" Duration="1200" Desc="种子期" Water="100" />
+		<Step ID="2" Duration="2400" Desc="开花期" Water="0" />
+		<Step ID="3" Duration="0" Desc="成熟期可以采果实了" Water="0" Fruit="1600036" Count="4" />
+	</Plant>
+	<!--
+	<Plant ID="90005" ResID="90005" Name="地灵树" Count="1" Fruit="1410012" UserLv="20" Odds="15" UniquePos="8" func="3_tollgate_953">
+		<Cost give_type="3" give_id="4" count="20"/>
+		<Step ID="1" Duration="0" Desc="种子期" UserActive="1" />
+		<Step ID="2" Duration="4800" Desc="开花期" />
+		<Step ID="3" Endflg="1" Desc="成熟期可以采果实了"/>
+	</Plant>
+	-->
+	<!--地块坐标-->
+	<Pos ID="1" Value="452,320" />
+	<Pos ID="2" Value="526,306" />
+	<Pos ID="3" Value="593,292" />
+	<Pos ID="4" Value="664,278" />
+	<Pos ID="5" Value="481,360" />
+	<Pos ID="6" Value="556,350" />
+	<Pos ID="7" Value="630,335" />
+	<Pos ID="8" Value="700,323" />
+</Plants>

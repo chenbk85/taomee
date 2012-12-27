@@ -1,0 +1,32 @@
+程序用途：
+	负责PP_DB部分的相关操作
+	
+1. 开启程序：startup.sh
+2. 结束程序：pkill -9 ./ser 
+3. 监控程序：ServerBench 自行支持
+4. 主配置文件bench.conf的各项含义：
+	#记者投稿所用的共享内存的KEY
+	MSGBOARD_KEY        11023
+	
+	#论坛同步
+	SYNC_DV_MSGLIST_KEY 11008
+	
+	#连接mysql数据时验正
+	DB_IP           localhost
+	DB_USER         jim
+	DB_PASSWD       xxxxxx
+	
+	#proxy  连接设置
+	ROUTEDB_IP      10.1.1.5
+	ROUTEDB_PORT    21001
+	
+	#switch server 连接设置
+	SWITCH_IP           10.1.1.5
+	SWITCH_PORT         4431
+	
+	#是否将所有执行的SQL记录日志（debug 时用）
+	IS_LOG_DEBUG_SQL    0
+	
+	#注册初始设定
+	INIT_XIAOMEE    2000 #摩尔豆
+	INIT_USERFLAG   1   #已激活

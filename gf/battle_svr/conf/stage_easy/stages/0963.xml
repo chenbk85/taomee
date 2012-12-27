@@ -1,0 +1,22 @@
+<Stage ID="963" Lv="15 100" InitX="1808" InitY="487" InitMapID="1096301">
+  <Map ID="1096301">
+    <Monsters>
+	<Monster ID="11451" X="1855" Y="486"/>
+      <Monster ID="11432" X="1605" Y="486"/>
+      <Monster ID="11432" X="1539" Y="608"/>
+      <Monster ID="11432" X="1503" Y="352"/>
+      <Monster ID="11432" X="1199" Y="512"/>
+      <Monster ID="11432" X="1285" Y="876"/>
+      <Monster ID="11432" X="1102" Y="726"/>
+      <Monster ID="11432" X="1182" Y="746"/>
+      <Monster ID="11432" X="828" Y="788"/>
+      <Monster ID="11432" X="773" Y="739"/>
+      <Monster ID="11432" X="812" Y="682"/>
+      <Monster ID="11432" X="583" Y="817"/>
+      <Monster ID="11432" X="542" Y="857"/>
+      <Monster ID="11432" X="320" Y="670"/>
+      <Monster ID="11432" X="390" Y="614"/>
+      <Monster ID="13125" X="559" Y="659"/>
+    </Monsters>
+  </Map>
+</Stage>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf8"?>
+
+<Formulations>
+	<!-- 活动 -->
+	<!--
+	<Activity ID = "1001" LevelLimit = "1" AddExp = "15" ProductID = "1300422" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "4">
+		<Material ItemID = "1500397" Cnt = "1"></Material>
+		<Material ItemID = "1500399" Cnt = "1"></Material>
+		<RandomProduct ItemID = "1300415" Cnt = "1" Odds = "10"></RandomProduct>
+		<RandomProduct ItemID = "1300416" Cnt = "1" Odds = "10"></RandomProduct>
+	</Activity>
+	<Activity ID = "1002" LevelLimit = "1" AddExp = "10" ProductID = "1300417" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "2">
+		<Material ItemID = "1500397" Cnt = "1"></Material>
+		<Material ItemID = "1500400" Cnt = "1"></Material>
+		<RandomProduct ItemID = "1300415" Cnt = "1" Odds = "10"></RandomProduct>
+		<RandomProduct ItemID = "1300416" Cnt = "1" Odds = "10"></RandomProduct>
+	</Activity>
+	<Activity ID = "1003" LevelLimit = "1" AddExp = "20" ProductID = "1300418" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "5">
+		<Material ItemID = "1500397" Cnt = "1"></Material>
+		<Material ItemID = "1500400" Cnt = "1"></Material>
+		<Material ItemID = "1500401" Cnt = "1"></Material>
+		<RandomProduct ItemID = "1300415" Cnt = "1" Odds = "10"></RandomProduct>
+		<RandomProduct ItemID = "1300416" Cnt = "1" Odds = "10"></RandomProduct>
+	</Activity>
+	<Activity ID = "1004" LevelLimit = "1" AddExp = "10" ProductID = "1300419" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "2">
+		<Material ItemID = "1500398" Cnt = "1"></Material>
+		<Material ItemID = "1500400" Cnt = "1"></Material>
+		<RandomProduct ItemID = "1300415" Cnt = "1" Odds = "10"></RandomProduct>
+		<RandomProduct ItemID = "1300416" Cnt = "1" Odds = "10"></RandomProduct>
+	</Activity>
+	<Activity ID = "1005" LevelLimit = "1" AddExp = "15" ProductID = "1300420" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "4">
+		<Material ItemID = "1500398" Cnt = "1"></Material>
+		<Material ItemID = "1500400" Cnt = "1"></Material>
+		<Material ItemID = "1300002" Cnt = "1"></Material>
+		<Material ItemID = "1300102" Cnt = "1"></Material>
+		<RandomProduct ItemID = "1300415" Cnt = "1" Odds = "10"></RandomProduct>
+		<RandomProduct ItemID = "1300416" Cnt = "1" Odds = "10"></RandomProduct>
+	</Activity>
+	<Activity ID = "1006" LevelLimit = "1" AddExp = "20" ProductID = "1300421" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "5">
+		<Material ItemID = "1500398" Cnt = "1"></Material>
+		<Material ItemID = "1500400" Cnt = "1"></Material>
+		<Material ItemID = "1300002" Cnt = "1"></Material>
+		<Material ItemID = "1300102" Cnt = "1"></Material>
+		<Material ItemID = "1500401" Cnt = "1"></Material>
+		<Material ItemID = "1500399" Cnt = "1"></Material>
+		<RandomProduct ItemID = "1300415" Cnt = "1" Odds = "10"></RandomProduct>
+		<RandomProduct ItemID = "1300416" Cnt = "1" Odds = "10"></RandomProduct>
+	</Activity>
+	-->
+	<!-- 制药 -->
+	<Formulation FormulationID = "1" LevelLimit = "1" AddExp = "2" ProductID = "1300006" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "10" MedicineType = "1">
+		<Material ItemID = "1500221" Cnt = "5"></Material>
+		<Material ItemID = "1500235" Cnt = "5"></Material>
+	</Formulation>
+	<Formulation FormulationID = "2" LevelLimit = "2" AddExp = "6" ProductID = "1300007" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "20" MedicineType = "1">
+		<Material ItemID = "1500222" Cnt = "5"></Material>
+		<Material ItemID = "1500235" Cnt = "10"></Material>
+	</Formulation>
+	<Formulation FormulationID = "3" LevelLimit = "3" AddExp = "15" ProductID = "1300008" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "30" MedicineType = "1">
+		<Material ItemID = "1500223" Cnt = "10"></Material>
+		<Material ItemID = "1500235" Cnt = "5"></Material>
+	</Formulation>
+	<Formulation FormulationID = "4" LevelLimit = "4" AddExp = "20" ProductID = "1300009" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "40" MedicineType = "1">
+		<Material ItemID = "1500224" Cnt = "5"></Material>
+		<Material ItemID = "1500235" Cnt = "25"></Material>
+	</Formulation>
+	<Formulation FormulationID = "5" LevelLimit = "5" AddExp = "25" ProductID = "1300010" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "50" MedicineType = "1">
+		<Material ItemID = "1500225" Cnt = "15"></Material>
+		<Material ItemID = "1500235" Cnt = "35"></Material>
+	</Formulation>
+	<Formulation FormulationID = "6" LevelLimit = "6" AddExp = "30" ProductID = "1300011" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "60" MedicineType = "1">
+		<Material ItemID = "1500226" Cnt = "15"></Material>
+		<Material ItemID = "1500235" Cnt = "35"></Material>
+	</Formulation>
+	<Formulation FormulationID = "7" LevelLimit = "7" AddExp = "35" ProductID = "1300012" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "70" MedicineType = "1">
+		<Material ItemID = "1500227" Cnt = "15"></Material>
+		<Material ItemID = "1500235" Cnt = "50"></Material>
+	</Formulation>
+	<Formulation FormulationID = "51" LevelLimit = "1" AddExp = "5" ProductID = "1300105" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "10" MedicineType = "2">
+		<Material ItemID = "1500228" Cnt = "5"></Material>
+		<Material ItemID = "1500235" Cnt = "5"></Material>
+	</Formulation>
+	<Formulation FormulationID = "52" LevelLimit = "2" AddExp = "10" ProductID = "1300106" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "20" MedicineType = "2">
+		<Material ItemID = "1500229" Cnt = "5"></Material>
+		<Material ItemID = "1500235" Cnt = "10"></Material>
+	</Formulation>
+	<Formulation FormulationID = "53" LevelLimit = "3" AddExp = "15" ProductID = "1300107" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "30" MedicineType = "4">
+		<Material ItemID = "1500230" Cnt = "10"></Material>
+		<Material ItemID = "1500235" Cnt = "5"></Material>
+	</Formulation>
+	<Formulation FormulationID = "54" LevelLimit = "4" AddExp = "20" ProductID = "1300108" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "40" MedicineType = "4">
+		<Material ItemID = "1500231" Cnt = "5"></Material>
+		<Material ItemID = "1500235" Cnt = "25"></Material>
+	</Formulation>
+	<Formulation FormulationID = "55" LevelLimit = "5" AddExp = "25" ProductID = "1300109" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "50" MedicineType = "4">
+		<Material ItemID = "1500232" Cnt = "15"></Material>
+		<Material ItemID = "1500235" Cnt = "35"></Material>
+	</Formulation>
+	<Formulation FormulationID = "56" LevelLimit = "6" AddExp = "30" ProductID = "1300110" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "60" MedicineType = "4">
+		<Material ItemID = "1500233" Cnt = "15"></Material>
+		<Material ItemID = "1500235" Cnt = "35"></Material>
+	</Formulation>
+	<Formulation FormulationID = "57" LevelLimit = "7" AddExp = "35" ProductID = "1300111" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "70" MedicineType = "4">
+		<Material ItemID = "1500234" Cnt = "15"></Material>
+		<Material ItemID = "1500235" Cnt = "50"></Material>
+	</Formulation>
+	<Formulation FormulationID = "58" LevelLimit = "1" AddExp = "10" ProductID = "1300408" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "10" MedicineType = "3">
+		<Material ItemID = "1500221" Cnt = "5"></Material>
+		<Material ItemID = "1500250" Cnt = "5"></Material>
+	</Formulation>
+	<Formulation FormulationID = "59" LevelLimit = "2" AddExp = "15" ProductID = "1300409" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "20" MedicineType = "3">
+		<Material ItemID = "1500222" Cnt = "5"></Material>
+		<Material ItemID = "1500251" Cnt = "1"></Material>
+	</Formulation>
+	<Formulation FormulationID = "60" LevelLimit = "3" AddExp = "20" ProductID = "1300410" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "30" MedicineType = "3">
+		<Material ItemID = "1500223" Cnt = "5"></Material>
+		<Material ItemID = "1500252" Cnt = "1"></Material>
+	</Formulation>
+	<Formulation FormulationID = "61" LevelLimit = "4" AddExp = "25" ProductID = "1300411" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "40" MedicineType = "3">
+		<Material ItemID = "1500224" Cnt = "5"></Material>
+		<Material ItemID = "1500253" Cnt = "1"></Material>
+	</Formulation>
+	<Formulation FormulationID = "62" LevelLimit = "5" AddExp = "10" ProductID = "1300412" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "50" MedicineType = "3">
+		<Material ItemID = "1500225" Cnt = "5"></Material>
+		<Material ItemID = "1500254" Cnt = "1"></Material>
+	</Formulation>
+	<Formulation FormulationID = "63" LevelLimit = "6" AddExp = "10" ProductID = "1300413" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "60" MedicineType = "3">
+		<Material ItemID = "1500226" Cnt = "5"></Material>
+		<Material ItemID = "1500255" Cnt = "1"></Material>
+	</Formulation>
+	<Formulation FormulationID = "64" LevelLimit = "7" AddExp = "10" ProductID = "1300414" ProductCount = "5" ItemType = "2" Profession = "1" VitalityPoint = "70" MedicineType = "3">
+		<Material ItemID = "1500227" Cnt = "5"></Material>
+		<Material ItemID = "1500256" Cnt = "1"></Material>
+	</Formulation>
+	<Formulation FormulationID = "65" LevelLimit = "1" AddExp = "10" ProductID = "1300809" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "10" MedicineType = "3">
+		<Material ItemID = "1500575" Cnt = "2"></Material>
+		<Material ItemID = "1300002" Cnt = "1"></Material>
+		<Material ItemID = "1300005" Cnt = "2"></Material>
+		<Material ItemID = "1302001" Cnt = "1"></Material>
+	</Formulation>
+	<Formulation FormulationID = "66" LevelLimit = "1" AddExp = "10" ProductID = "1300811" ProductCount = "1" ItemType = "2" Profession = "1" VitalityPoint = "10" MedicineType = "3">
+		<Material ItemID = "1400233" Cnt = "1"></Material>
+		<Material ItemID = "1400234" Cnt = "1"></Material>
+		<Material ItemID = "1400235" Cnt = "1"></Material>
+	</Formulation>
+
+</Formulations>

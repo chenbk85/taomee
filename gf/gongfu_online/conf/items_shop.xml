@@ -1,0 +1,548 @@
+<!-- 根据Cat ID不同，Item ID的起始也不同。例如Cat ID="2"，则Item ID从200001开始 -->
+<!-- ItemID可以不连续，但目前限制了ItemID和起始ID之差不能超过2000。建议套装装扮连号，建议vip专属道具从101001开始 -->
+<!-- Cat Max用于限制用户能够拥有该Cat下每种Item的个数，如果需要对某Item做特殊处理，可以定义Item Max="x" -->
+<!-- Tradability限制普通会员对物品的买卖性，0不可买卖，1不可卖，2不可买，3可买卖，默认是3 -->
+<!-- VipTradability限制VIP对物品的买卖性，0不可买卖，1不可卖，2不可买，3可买卖，默认是3 -->
+<!-- 对于不打算出售的物品，需要配置成 Tradability="0" VipTradability="0" -->
+<!-- VipOnly用于限制只有VIP才能装扮的物品，如果不是VIP了，则会把物品脱下。默认是0，即所有人都能装扮 -->
+<!-- IMPORTANT! DbCatID发生改变时(比如增加) 要先要求DB增加对新的DbCatID的支持，确认DB支持以后，才可用新的配置重启online -->
+<!-- LifeTime物品寿命，单位是天，如果不配置该项，则表明物品永不过期 -->
+<!-- Price购买价格；SellPrice回收价格；RepairPrice维修价格；这几个参数如果不配，则默认为0 -->
+<!--
+	UseLv使用等级，如果不配，则不限使用等级。
+	Hit命中值，Dodge闪避值，Crit暴击值，Hp加生命上限，Mp加气力值上限，AddHp生命恢复加成，AddMp气力值恢复加成，Slot孔的个数。
+	Lv装备强化等级，Strength力量，Agility敏捷，BodyQuality体质，Stamina气力，Atk攻击力，Def防御力，Duration耐久值，默认都是0。
+	EquipPart装备部位(1帽子，2项链，3护手，4武器，5戒指，6衣服，7腰带，8护腿，9鞋子，10护符)
+	DropLv掉落等级
+	QualityLevel品质(稀有度1白，2绿，3蓝，4紫，5银，6金，7神圣)
+	SetID装备所属的套装ID
+	decompose：不可分解选项，1是不可分解，默认可分解
+	
+	buff药品的属性:
+			BufType：1：ATK；2：DEF；3:命中率，4暴击率，5躲避率，6血上限，7魔上限，8加满血，9加满魔，10驻足
+			PerTrim：百分比的提升
+			RealTrim：实际的提升
+	2010年12月1日以后的商城装备ID，猴子从170001开始，兔子从270001开始，熊猫从370001开始
+	 UnStorage="1"不可放入仓库
+-->
+<Items>
+	<Cat ID="13" DbCatID="2" Name="药品" Max="999">
+		<!-- 商城消耗道具 -->
+		<Item ID="1303022" resID="1303001" Name="小型回血丸" AddPerHp="15" Shop="1" DropLv="100" Tradability="0" UseEffect="9003" 
+		VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大血量的15%点血量.]]></descript>
+		</Item>
+		<Item ID="1303023" resID="1303003" Name="小型回气丸" AddPerMp="15" Shop="1" DropLv="100" Tradability="0" UseEffect="9004" 
+		VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大气力值的15%点气力.]]></descript>
+		</Item>
+		<Item ID="1303001" Name="次级回血丸" AddPerHp="30" Shop="1" DropLv="100" 
+			Tradability="0" UseEffect="9003" VipTradability="0" publicCD="0" 
+			cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大血量的30%点血量.]]></descript>
+		</Item>
+		<Item ID="1303002" Name="高级回血丸" AddPerHp="70" Shop="1" DropLv="100" 
+			Tradability="0" UseEffect="9003" VipTradability="0" publicCD="0" 
+			cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大血量的70%点血量.]]></descript>
+		</Item>
+		<Item ID="1303003" Name="次级回气丸" AddPerMp="30" Shop="1" DropLv="100" 
+			Tradability="0" UseEffect="9004" VipTradability="0" publicCD="0" 
+			cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大气力值的30%点气力.]]></descript>
+		</Item>
+		<Item ID="1303004" Name="高级回气丸" AddPerMp="70" Shop="1" DropLv="100" 
+			Tradability="0" UseEffect="9004" VipTradability="0" publicCD="0" 
+			cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大气力值的70%点气力.]]></descript>
+		</Item>
+		<Item ID="1303010" Name="神临之体" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0" UseEffect="9012" publicCD="5" cd="8" 
+			AvailableMap="202" Shortcut="1" BuffID="604" Duration="1200" 
+			PerTrim="30" Tradable="0">
+			<descript><![CDATA[点击使用，将HP值上限提高30%，持续20分钟，离开关卡后失效，不能在伏魔塔与竞技场中使用.]]>
+				</descript>
+		</Item>
+		<Item ID="1303011" Name="武圣附体" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0" UseEffect="9013" publicCD="5" cd="8" 
+			AvailableMap="202" Shortcut="1" BuffID="605" Duration="1200" 
+			PerTrim="30" Tradable="0">
+			<descript><![CDATA[点击使用，将HP上限与MP上限分别提高30%，持续20分钟，离开关卡后失效，不能在伏魔塔与竞技场中使用.]]>
+				</descript>
+		</Item>
+		<Item ID="1303005" Name="青龙果" AddPerHp="30" AddPerMp="30" Shop="1" 
+			DropLv="100" Tradability="0" UseEffect="9014" VipTradability="0" 
+			publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大血量和最大气力值的30%.]]></descript>
+		</Item>
+		<Item ID="1303006" Name="金龙果" AddPerHp="70" AddPerMp="70" Shop="1" 
+			DropLv="100" Tradability="0" UseEffect="9014" VipTradability="0" 
+			publicCD="0" cd="0" AvailableMap="0,202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻回复最大血量、最大气力值的70%.]]></descript>
+		</Item>
+		<Item ID="1303016" Name="辟邪咒" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" UseEffect="9014" VipTradability="0" publicCD="0" 
+			cd="0" AvailableMap="202" Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，可以随机驱散一个减益状态.]]></descript>
+		</Item>
+		<Item ID="1303015" Name="万博号角" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[可以在万博会中以天地之气为你传达话语，喊出的话可以在所有的万博会场景中看到.]]></descript>
+		</Item>
+		<Item ID="1303017" resID="1303017" Name="灵兽经验包（小）" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" DailyId="2072">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加30000点经验.]]></descript>
+		</Item>
+		<Item ID="1303018" resID="1303017" Name="灵兽经验包（中）" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" DailyId="2073">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加80000点经验.]]></descript>
+		</Item>
+		<Item ID="1303019" resID="1303017" Name="灵兽经验包（大）" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" DailyId="2074">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加100000点经验.]]></descript>
+		</Item>
+		<Item ID="1303020" resID="1303017" Name="灵兽经验包（特）" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" DailyId="2075">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加150000点经验.]]></descript>
+		</Item>
+		<Item ID="1303021" resID="1303017" Name="灵兽经验体验包" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" DailyId="241">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加2000点经验.]]></descript>
+		</Item>	
+		<Item ID="1303024" resID="1303017" Name="灵兽经验包（特）" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" DailyId="2075">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加150000点经验.]]></descript>
+		</Item>
+		<Item ID="1303025" resID="1303017" Name="灵兽经验包（高级）" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" DailyId="335">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加80000点经验.]]></descript>
+		</Item>
+		<Item ID="1303026" resID="1303017" Name="灵兽经验包（特级）" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" DailyId="336">
+			<descript><![CDATA[使用后可以为灵兽经验分配器增加180000点经验.]]></descript>
+		</Item>
+		<!-- 	<Item ID="1303007" Name="药圣的急救箱" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，立刻为小队内所有成员回复最大血量、最大气力值的30%点血量与气力.]]></descript>
+		</Item>
+		<Item ID="1303008" Name="药圣的急救箱" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，立刻为小队内所有成员回复最大血量、最大气力值的70%点血量与气力.]]></descript>
+		</Item>
+		<Item ID="1303012" Name="石猛庇护" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，将攻击力提高30%，只在当前关卡有效，离开关卡或重开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item>
+		<Item ID="1303013" Name="瑶瑶之佑" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，将闪避值提高30%，只在当前关卡有效，离开关卡或重开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item>
+		<Item ID="1303014" Name="石猛祝福" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0">
+			<descript><![CDATA[点击使用，将防御力提高30%，只在当前关卡有效，离开关卡或重开关卡后失效，不能在伏魔塔与竞技场中使用.]]></descript>
+		</Item> -->
+	</Cat>
+	<Cat ID="17" DbCatID="2" Name="其它属性" Max="99">
+		<!-- 商城道具-其他类别 -->
+		<Item ID="1703001" Name="忘却琥珀" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0" publicCD="0" cd="0" AvailableMap="0" 
+			Shortcut="0" Tradable="1">
+			<descript><![CDATA[点击使用，可将所有技能重置为0级，并返还已消耗的琥珀之力.]]></descript>
+		</Item>
+		<Item ID="1703002" Name="双倍经验卡" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" 
+			BuffID="1001" Duration="3600" PerTrim="200" Tradable="0">
+			<descript><![CDATA[使用后，1小时内玩家在简单关卡内获得的经验增加100%。不能与其他经验道具叠加使用。]]>
+				</descript>
+		</Item>
+		<Item ID="1703003" Name="修理机关人" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0" UseEffect="9015" AvailableMap="0,202" 
+			Shortcut="1" Tradable="0">
+			<descript><![CDATA[点击使用，立刻将全身装备耐久度修复为100%，可以在关卡中使用，但不能在伏魔塔与竞技场中使用.]]>
+				</descript>
+		</Item>
+		<Item ID="1700049" Name="功夫材料包" Shop="1" DropLv="100" Tradability="0" VipTradability="0" AvailableMap="0" Shortcut="0" publicCD="0" cd="0" QualityLevel="4" Tradable="0" DailyId="2925">
+			<descript><![CDATA[点击使用，可获得紫色碎片*5、五彩的飞羽*2、纯白的通铃长毛*2、金色的南瓜籽*2、金乌冰炎*5、风暴魂石*3.]]></descript>
+		</Item>	
+		<Item ID="1703004" Name="唤灵液" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0" publicCD="0" cd="0" AvailableMap="0,202" 
+			BuffID="1006" Duration="3600" PerTrim="200" Tradable="0">
+			<descript><![CDATA[使用后，1小时内灵兽在简单关卡内获得的经验增加100%。不能与其他经验道具叠加使用。]]></descript>
+		</Item>
+		<Item ID="1700061" Name="功夫券" Shop="1" QualityLevel="4" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[功夫券，可以在商城的免费专区购买道具.]]></descript>
+		</Item>	
+		<Item ID="1703005" resID="1700019" Name="个人经验1.5倍符咒" MutexType="1" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" BuffID="1008" Duration="1800" PerTrim="150" SellPrice="40" Tradable="0">
+			<descript><![CDATA[使用后，半小时内玩家在简单关卡内获得的经验增加50%。不能与其他经验道具叠加使用。]]></descript>
+		</Item>
+		<Item ID="1703006" resID="1700020" Name="灵兽经验1.5倍符咒" MutexType="2" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" BuffID="1007" Duration="1800" PerTrim="150" SellPrice="40" Tradable="0">
+			<descript><![CDATA[使用后，半小时内灵兽在简单关卡内获得的经验增加50%。不能与其他经验道具叠加使用。]]></descript>
+		</Item>	
+		<Item ID="1700021" Name="千里传音" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0" UnStorage="1" Tradable="0">
+			<descript><![CDATA[用强大内力发出的声音，可以传播到世界所有的角落。]]></descript>
+		</Item>
+        <Item ID="1700063" Name="功夫圣纹" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0" UnStorage="1" Tradable="0">
+			<descript><![CDATA[稀有物品，交与药师爷爷即可进入关卡“药师后花园”.]]></descript>
+		</Item>
+        <Item ID="1700065" Name="冲击核桃" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="10" AvailableMap="202" Shortcut="0" UnStorage="1" Tradable="0">
+			<descript><![CDATA[强力的核桃，提高攻击力，每次使用持续10秒，只能在关卡“药师后花园”中使用.]]></descript>
+		</Item>
+        <Item ID="1700066" Name="爆破核桃" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="4" AvailableMap="202" Shortcut="0" UnStorage="1" Tradable="0">
+			<descript><![CDATA[超级强力的核桃，可以将除boss以外的小怪秒杀，只能在关卡“药师后花园”中使用.]]></descript>
+		</Item>
+        <Item ID="1700069" Name="纯净之心" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="" Shortcut="0" UnStorage="1" Tradable="0">
+			<descript><![CDATA[8通宝从猪哥亮处购买，可兑换稀有的装备道具。]]></descript>
+		</Item>
+		<Item ID="1700072" resID="1400010" Name="试炼之钥" Tradability="2" VipTradability="2" 
+			SellPrice="40" Tradable="0">
+			<descript><![CDATA[进入仁义智试炼崖所需的钥匙，每人每天可在在线礼包中领取三个.功夫商城中也有出售。]]></descript>
+		</Item>
+		<Item ID="1700073" Name="邀请函" Tradability="2" VipTradability="2" 
+			SellPrice="40" Tradable="1">
+			<descript><![CDATA[邀请朋友参加比武大会的信函，拿此信函前往比武会场参加资格赛，获胜后即可进入淘汰赛。邀请函可以去万博博览会交易，比武大会结束后自动消失。]]></descript>
+		</Item>
+		<Item ID="1700074" Name="比武大会加油包" Tradability="2" VipTradability="2" 
+			SellPrice="40" Tradable="0" DailyId="373" AvailableMap="0">
+			<descript><![CDATA[比武大会特许礼包，助小侠士一臂之力。]]></descript>
+		</Item>
+		<Item ID="1700075" resID="1500910" Name="征服者的腰带碎片（商）" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[超灵侠士升级专属套装所需要的腰带碎片，集齐足够的腰带碎片可升级腰带。碎片在“一锤定乾坤”游戏中也有大量产出]]>
+				</descript>
+		</Item>
+		<Item ID="1700076" resID="1500911" Name="征服者的护腕碎片（商）" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[超灵侠士升级专属套装所需要的护腕碎片，集齐足够的护腕碎片可升级护腕。碎片在“一锤定乾坤”游戏中也有大量产出]]>
+				</descript>
+		</Item>
+		<Item ID="1700077" resID="1500912" Name="征服者的鞋子碎片（商）" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[超灵侠士升级专属套装所需要的鞋子碎片，集齐足够的鞋子碎片可升级鞋子。碎片在“一锤定乾坤”游戏中也有大量产出]]>
+				</descript>
+		</Item>
+		<Item ID="1700078" resID="1500909" Name="征服者的头盔碎片（商）" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[超灵侠士升级专属套装所需要的头盔碎片，集齐足够的头盔碎片可升级头盔。碎片在“一锤定乾坤”游戏中也有大量产出]]>
+				</descript>
+		</Item>
+		<Item ID="1700079" resID="1500907" Name="征服者的上装碎片（商）" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[超灵侠士升级专属套装所需要的上装碎片，集齐足够的上装碎片可升级上装。碎片在“一锤定乾坤”游戏中也有大量产出]]>
+				</descript>
+		</Item>
+		<Item ID="1700080" resID="1500908" Name="征服者的下装碎片（商）" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[超灵侠士升级专属套装所需要的下装碎片，集齐足够的下装碎片可升级下装。碎片在“一锤定乾坤”游戏中也有大量产出]]>
+				</descript>
+		</Item>
+		<Item ID="1700081" resID="1500913" Name="征服者的武器碎片（商）" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[超灵侠士升级专属套装所需要的武器碎片，集齐足够的武器碎片可升级武器。碎片在“一锤定乾坤”游戏中也有大量产出]]>
+				</descript>
+		</Item>
+		<Item ID="1700082" Name="鲜花" Tradability="2" VipTradability="2" 
+			SellPrice="10" Tradable="0">
+			<descript><![CDATA[天下第一比武大会观看比赛时可以将鲜花送给自己助威的选手，可以通过商城获得。]]>
+				</descript>
+		</Item>
+		<Item ID="1700083" resID="1500362" Name="千年精魄" PetAttrID="2200002" SummonID="1112" UseLv="1" Tradability="2" VipTradability="2" QualityLevel="3"
+			SellPrice="40" UnStorage="0" Tradable="0">
+			<descript><![CDATA[使用后可召唤出灵兽"千年白玉狐"，前往溪涧洞祭台点击孵化，每次孵化成功率10%。]]>
+				</descript>
+		</Item>
+		<Item ID="1700086" Name="复活草优惠包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1225">
+			<descript><![CDATA[最新商城优惠礼包，购买后在背包中打开可获得5棵起死回生草。]]>
+				</descript>
+		</Item>		
+		<Item ID="1700087" Name="圣诞礼包" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1273">
+			<descript><![CDATA[圣诞节商城优惠礼包，购买后在背包中打开可获得起死回生草*5、火龙珠*1、圣光魂石*1、紫色火焰*5、超级护符*1。]]>
+				</descript>
+		</Item>
+		<Item ID="1700088" Name="双节礼包" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1274">
+			<descript><![CDATA[圣诞元旦商城优惠礼包，购买后在背包中打开可获得起死回生草*6、金龙珠*1、圣光魂石*1、紫色火焰*6、超级护符*1。]]>
+				</descript>
+		</Item>	
+		<Item ID="1700089" Name="火龙珠礼包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1310">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得火龙珠*1 起死回生草*6 紫色火焰*5、烟花*10。]]>
+				</descript>
+		</Item>
+		<Item ID="1700090" Name="金龙珠礼包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1303">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得金龙珠*1 起死回生草*8 紫色火焰*6、烟花*10。]]>
+				</descript>
+		</Item>	
+		<Item ID="1700091" Name="神冰礼包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1304">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得神之光明碎片*1、冰魄魂石*1、 起死回生草*12、蓝色碎片*10、烟花*10。]]>
+				</descript>
+		</Item>
+		<Item ID="1700092" Name="迎春特权礼包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1305">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得冰魄魂石*5 起死回生草*20、紫色碎片*5 烟花*10。]]>
+				</descript>
+		</Item>			
+		<Item ID="1700093" Name="功夫畅玩礼包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1306">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得起死回生草*30、金木水火土龙珠各一颗、风火雷电神光明碎片各一个、冰魄魂石*5、龙鳞*1、紫色碎片*10、二阶混元丹*1。]]>
+				</descript>
+		</Item>
+		<Item ID="1700094" Name="灵兽孵化包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1370">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得蓝色灵兽技能卷轴×2、红色灵兽技能卷轴×2、一阶炼化丹×1、长舌鹦鹉孵化道具彩翎×1]]>
+				</descript>
+		</Item>
+		<Item ID="1700095" Name="万博会交易包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1371">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得万博号角8个]]>
+				</descript>				
+		</Item>
+		<Item ID="1700096" Name="精良药品包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1372">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得起死回生草×1、高级回血丸×5、高级回气丸×1]]>
+				</descript>				
+		</Item>	
+		<Item ID="1700099" Name="灵兽成长礼包" resID="1300308" Tradability="2" VipTradability="2" SellPrice="10" Tradable="0" swapId="1441">
+			<descript><![CDATA[商城优惠礼包，购买后在背包中打开可获得一阶炼化丹1颗，二阶炼化丹1颗，起死回生草2棵。]]>
+				</descript>				
+		</Item>
+		<Item ID="1703008" Name="清崖的祝福小（赠）" MutexType="3" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" SellPrice="40" Tradable="0" BuffID="1012">
+			<descript><![CDATA[清崖给挑战人偶馆侠士的特别祝福，使用后可以在人偶馆的非掉落时间正常掉落。时效为15分钟。]]></descript>
+		</Item>	
+		<Item ID="1703009" Name="清崖的祝福（小）" MutexType="3" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" SellPrice="40" Tradable="0" BuffID="1012">
+			<descript><![CDATA[清崖给挑战人偶馆侠士的特别祝福，使用后可以在人偶馆的非掉落时间正常掉落。时效为15分钟。]]></descript>
+		</Item>	
+		<Item ID="1703010" Name="清崖的祝福（中）" MutexType="3" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" SellPrice="40" Tradable="0" BuffID="1013">
+			<descript><![CDATA[清崖给挑战人偶馆侠士的特别祝福，使用后可以在人偶馆的非掉落时间正常掉落。时效为30分钟。]]></descript>
+		</Item>	
+		<Item ID="1703011" Name="清崖的祝福（大）" MutexType="3" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" SellPrice="40" Tradable="0" BuffID="1014">
+			<descript><![CDATA[清崖给挑战人偶馆侠士的特别祝福，使用后可以在人偶馆的非掉落时间正常掉落。时效为1小时。]]></descript>
+		</Item>	
+		<Item ID="1703012" Name="清崖的祝福锦囊" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" SellPrice="40" Tradable="0" DailyId="362">
+			<descript><![CDATA[清崖的祝福锦囊，有概率获得各种稀有珍宝。]]></descript>
+		</Item>	
+		<Item ID="1703013"  resID="1703010" Name="清崖的祝福中（赠）" MutexType="3" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" SellPrice="40" Tradable="0" BuffID="1013">
+			<descript><![CDATA[清崖给挑战人偶馆侠士的特别祝福，使用后可以在人偶馆的非掉落时间正常掉落。时效为30分钟。]]></descript>
+		</Item>	
+		<Item ID="1703014" resID="1703011" Name="清崖的祝福大（赠）" MutexType="3" DropLv="100" Tradability="2" VipTradability="2" UnDrop="1"  
+			AvailableMap="0" UseLv="1" SellPrice="40" Tradable="0" BuffID="1014">
+			<descript><![CDATA[清崖给挑战人偶馆侠士的特别祝福，使用后可以在人偶馆的非掉落时间正常掉落。时效为1小时。]]></descript>
+		</Item>
+
+
+
+		<!-- 商城道具-强化材料 -->
+		<Item ID="1740025" Name="绿色天火" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[发出绿色火焰的天火，能与白色和绿色品质的装备共鸣，可提升白色和绿色品质装备的能力，最高可强化至+12]]>
+				</descript>
+		</Item>
+		<Item ID="1740026" Name="蓝色天火" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[发出蓝色火焰的天火，能与蓝色品质的装备共鸣，可提升蓝色品质装备的能力，最高可强化至+12]]>
+				</descript>
+		</Item>
+		<Item ID="1740027" Name="紫色天火" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[发出紫色火焰的天火，能与紫色品质的装备共鸣，可提升紫色品质装备的能力，最高可强化至+12]]>
+				</descript>
+		</Item>
+		<Item ID="1740028" Name="圣光魂石" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[具有神秘圣光的魂石，在强化装备时可防止失败造成的强化等级降低，装备等级越高，强化保护需要的圣光魂石越多。]]>
+				</descript>
+		</Item>
+		<Item ID="1740029" Name="金币" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[可以在金币商城购买金币道具，通过花费通宝以及消费丢弃通宝道具来获得。]]>
+				</descript>
+		</Item>					
+		<!--<Item ID="1740030" Name="银票" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="1" VipTradability="1" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[功夫豆的保存凭证，可以买卖或者通过担保交易转移。]]>
+				</descript>
+		</Item>-->
+		<Item ID="1740000" Name="青莲地心焰" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[来自地心的火焰，燃烧时会形成莲花状，强化等级在3级以内时成功率较高，最高可强化到6级，可强化蓝色品质的装备.]]>
+				</descript>
+		</Item>
+		<Item ID="1740001" Name="惊雷劫天焰" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[天劫之雷引发的天火，强化等级在3级以内时成功率较高，最高可强化到6级，可强化紫色品质的装备.]]>
+				</descript>
+		</Item>
+		<Item ID="1740002" Name="星辰神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[古老星辰诞生时伴生的火焰，具有强大的力量，只能对强化等级5以上的紫色装备使用，最高可强化到12.]]>
+				</descript>
+		</Item>
+		<Item ID="1740003" Name="五轮离火" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[陆半仙将五种兽火融合起来形成的火焰，强化时会在强化等级0~4级内随机强化，只能对强化等级4级（含）以下的蓝色品质装备使用.]]>
+				</descript>
+		</Item>
+		<Item ID="1740004" Name="焚天离火" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[陆半仙将五种地火融合起来形成的火焰，强化时会在强化等级0~4级内随机强化，只能对强化等级4级（含）以下的紫色品质装备使用.]]>
+				</descript>
+		</Item>
+		<Item ID="1740017" resID="1740004" Name="焚天离火" Tradable="0" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0">
+			<descript><![CDATA[强化时会在强化等级0~4级内随机强化，只能对强化等级4级（含）以下的紫色品质装备使用.]]></descript>
+		</Item>
+		<Item ID="1740005" Name="金乌冰炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[三足金乌，传说中的神鸟所用的火焰，强化时会在强化等级0~8级内随机强化，只能对强化等级8级（含）以下的紫色品质装备使用.]]>
+				</descript>
+		</Item>
+		<Item ID="1740006" Name="4级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到4级，只能对蓝、紫色品质的装备使用，且该装备强化等级不能高于4级.]]>
+				</descript>
+		</Item>
+		<Item ID="1740016" resID="1740006" Name="4级天降神炎（普）" Tradable="0" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0">
+			<descript><![CDATA[能够将强化等级直接强化到4级，只能对蓝、紫色品质的装备使用，且被强化装备的强化等级不能高于4级.]]></descript>
+		</Item>
+		<Item ID="1740007" Name="5级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到5级，只能对蓝、紫色品质的装备使用，且该装备强化等级不能高于5级.]]>
+				</descript>
+		</Item>
+		<Item ID="1740008" Name="6级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到6级，只能对蓝、紫色品质的装备使用，且该装备强化等级不能高于6级.]]>
+				</descript>
+		</Item>
+		<Item ID="1740009" Name="7级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到7级，只能对紫色品质的装备使用，且该装备强化等级不能高于7级.]]>
+				</descript>
+		</Item>
+		<Item ID="1740010" Name="高能魂石" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[具有极寒能量的石头，强化到+1~+4装备时使用，当强化失败时能防止强化等级降低。对强化等级+4以上的装备无效，适用于绿色（含）品质以上的装备.]]>
+				</descript>
+		</Item>
+		<Item ID="1740011" Name="风暴魂石" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[具有狂暴能量的石头，强化到+5~+8装备时使用，当强化失败时能防止强化等级降低。对强化等级+8以上的装备无效，适用于蓝色（含）品质以上的装备.]]>
+				</descript>
+		</Item>
+		<Item ID="1740012" Name="秘法魂石" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[陆半仙特质的的石头，强化到+9~+10装备时使用，当强化失败时能防止强化等级降低。对强化等级+10以上的装备无效。适用于紫色品质的装备.]]>
+				</descript>
+		</Item>
+		<Item ID="1740013" Name="光辉魂石" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[具有月亮力量的石头，强化到+11~+12装备时使用，当强化失败时能防止强化等级降低。适用于紫色品质、强化等级+10以上的装备.]]>
+				</descript>
+		</Item>
+		<Item ID="1740014" Name="辉煌圣石" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[稀有的圣魂石，即使陆半仙也不知道是那里来的，能够让装备强化等级100%成功升一级。不会失败.]]>
+				</descript>
+		</Item>
+		<Item ID="1740015" Name="10级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+		Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+		AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到10级，只能对紫色品质的装备使用，且该装备强化等级不能高于10级.]]></descript>
+		</Item>
+		<Item ID="1740018" resID="1540002" Name="五行真火（普）" Tradable="0" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0">
+			<descript><![CDATA[由五行之力激发的火焰，可以淬炼紫色品质的装备，最高可强化到3级。]]></descript>
+		</Item>
+		<Item ID="1740019" resID="1540003" Name="雷罡火（普）" Tradable="0" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0">
+			<descript><![CDATA[罡-北斗星的星柄，陆半仙借北斗之力引发天雷而形成的火焰，可以淬炼蓝色品质的装备，最高可强化到6级。]]></descript>
+		</Item>
+		<Item ID="1740020" resID="1540004" Name="广寒火（普）" Tradable="0" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0">
+			<descript><![CDATA[传说从广寒宫流传出来的火焰，神仙级别的火焰能够淬炼紫色装备，最高可强化到6级。]]></descript>
+		</Item>
+		<Item ID="1740021" resID="1740006" Name="8级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到8级，只能对紫色品质的装备使用.]]></descript>
+		</Item>
+		<Item ID="1740022" resID="1740006" Name="9级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到9级，只能对紫色品质的装备使用级.]]></descript>
+		</Item>
+		<Item ID="1740023" resID="1740006" Name="11级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到11级，只能对紫色品质的装备使用.]]></descript>
+		</Item>
+		<Item ID="1740024" resID="1740006" Name="12级天降神炎" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0">
+			<descript><![CDATA[虚天鼎出世时所带着的火焰，能够将强化等级直接强化到12级，只能对紫色品质的装备使用.]]></descript>
+		</Item>
+
+
+		<!-- 商城非买宝箱类道具 -->
+		<Item ID="1700043" Name="强化空间葫芦" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" UnStorage="1">
+			<descript><![CDATA[异界的神奇葫芦，内部有巨大的神秘空间蕴藏着神奇的宝物，只有使用粘取棒才能从异空间中拿取宝物.]]>
+				</descript>
+		</Item>
+		<Item ID="1700045" Name="神秘的粘取棒" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="999" Shortcut="0" Tradable="0" UnStorage="1">
+			<descript><![CDATA[具有能够识别宝物好坏的粘取棒，能够从空间葫芦中粘到好东西，虽然偶尔会失灵.]]> 
+				</descript>
+		</Item>
+		<Item ID="1700048" Name="粘取棒" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" Tradable="0" UnStorage="1">
+			<descript><![CDATA[能够从空间葫芦中粘到东西，只是不知道会粘到神马东西.]]></descript>
+		</Item>
+		<Item ID="1700068" Name="超级翻翻" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="" Shortcut="0" Tradable="0" UnStorage="1">
+			<descript><![CDATA[能够从翻翻中中粘到东西，只是不知道会粘到神马东西.]]></descript>
+		</Item>	
+		<Item ID="1700057" resID="1700043" Name="甲壳虫地葫芦" QualityLevel="3" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0" Tradable="0" UnStorage="1">
+			<descript><![CDATA[由功夫派的甲壳虫卡牌中获得，可以抽取功夫豆等游戏道具.]]></descript>
+		</Item>	
+		<Item ID="1700058" resID="1700043" Name="甲壳虫天葫芦" QualityLevel="4" Shop="1" DropLv="100"
+			 Tradability="0" VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0" Tradable="0" UnStorage="1">
+			<descript><![CDATA[由功夫派的甲壳虫卡牌中获得，可以抽取商城道具.]]></descript>
+		</Item>	
+		<Item ID="1700059" resID="1700043" Name="不稳定的空间葫芦" QualityLevel="4" Shop="1" DropLv="100" Tradability="0" 
+			VipTradability="0" publicCD="0" cd="0" AvailableMap="0" Shortcut="0" Tradable="0" UnStorage="1">
+			<descript><![CDATA[陆半仙无意中发现的空间葫芦，里面是一个破碎的空间，有很多神奇的物品，只有使用粘取棒才能从异空间中拿取宝物.]]></descript>
+		</Item>
+		<Item ID="1700060" Name="精致寒冰桶" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="0" Shortcut="0" UnStorage="1" Tradable="0">
+			<descript><![CDATA[猪谷立特制的寒冰桶，可以额外获得一次获取寒冰水的机会.]]></descript>
+		</Item>
+		<!--<Item ID="1700062" Name="女儿红" QualityLevel="4" Shop="1" DropLv="100" 
+			Tradability="0" VipTradability="0" publicCD="0" cd="0" 
+			AvailableMap="" Shortcut="0" UnStorage="1" Tradable="0">
+			<descript><![CDATA[佳酿女儿红，用它可以让仙剑再给你一次猜拳的机会.]]></descript>
+		</Item>-->
+	</Cat>
+</Items>

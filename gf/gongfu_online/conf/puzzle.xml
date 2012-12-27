@@ -1,0 +1,663 @@
+<!--gfp益智类题目-->
+<Puzzle>
+	<Question ID="1" Name="世界四大洋中面积最小的是？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="太平洋"/>
+		<Option Index="2" Lable="大西洋"/>
+		<Option Index="3" Lable="印度洋"/>
+		<Option Index="4" Lable="北冰洋"/>
+	</Question>
+	<Question ID="2" Name="世界上海拔最高的山峰是哪一座?" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="乔戈里峰"/>
+		<Option Index="2" Lable="珠穆朗玛峰"/>
+		<Option Index="3" Lable="干城章嘉峰"/>
+		<Option Index="4" Lable="公格尔山峰"/>
+	</Question>
+	<Question ID="3" Name="下列名关哪一座被称为“天下第一关”?" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="居庸关"/>
+		<Option Index="2" Lable="娘子关"/>
+		<Option Index="3" Lable="潼门关"/>
+		<Option Index="4" Lable="山海关"/>
+	</Question>
+	<Question ID="4" Name="遇到说自己是官方人员要你的米米号密码和支付密码的？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="不给"/>
+		<Option Index="2" Lable="给对方"/>
+		<Option Index="3" Lable="狠狠骂他"/>
+		<Option Index="4" Lable="狠狠打他"/>
+	</Question>
+	<Question ID="5" Name="下列哪次古代著名战役确立了三国鼎立局面?" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="官渡之战"/>
+		<Option Index="2" Lable="赤壁之战"/>
+		<Option Index="3" Lable="夷陵之战"/>
+		<Option Index="4" Lable="长平之战"/>
+	</Question>
+	<Question ID="6" Name="水到多少度会结成冰？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="5°"/>
+		<Option Index="2" Lable="0°"/>
+		<Option Index="3" Lable="-5°"/>
+		<Option Index="4" Lable="不会结冰"/>
+	</Question>
+	<Question ID="7" Name="下列哪位僧人是小说“西游记”中唐僧的形象？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="鸠摩罗什"/>
+		<Option Index="2" Lable="不空"/>
+		<Option Index="3" Lable="玄奘"/>
+		<Option Index="4" Lable="鉴真"/>
+	</Question>
+	<Question ID="8" Name="下列戏曲角色行当中哪种只指“女性”？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="生"/>
+		<Option Index="2" Lable="旦"/>
+		<Option Index="3" Lable="净"/>
+		<Option Index="4" Lable="丑"/>
+	</Question>
+	<Question ID="9" Name="一次性开通3个月超灵侠士需要多少米币？？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="10"/>
+		<Option Index="2" Lable="20"/>
+		<Option Index="3" Lable="30"/>
+		<Option Index="4" Lable="50"/>
+	</Question>
+	<Question ID="10" Name="下列哪种动物不属于鱼类？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="鲢鱼"/>
+		<Option Index="2" Lable="甲鱼"/>
+		<Option Index="3" Lable="草鱼"/>
+		<Option Index="4" Lable="青鱼"/>
+	</Question>
+	<Question ID="11" Name="下列哪种食物不是食用菌类？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="香菇"/>
+		<Option Index="2" Lable="芝麻"/>
+		<Option Index="3" Lable="草菇"/>
+		<Option Index="4" Lable="木耳"/>
+	</Question>
+	<Question ID="12" Name="冬天倒开水时，容易爆破的杯子是？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="很薄的玻璃杯"/>
+		<Option Index="2" Lable="很厚的玻璃杯"/>
+		<Option Index="3" Lable="越高的"/>
+		<Option Index="4" Lable="没区别"/>
+	</Question>
+	<Question ID="13" Name="机甲兽属于哪个系的灵兽？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="走兽"/>
+		<Option Index="2" Lable="飞羽"/>
+		<Option Index="3" Lable="元素"/>
+		<Option Index="4" Lable="变异"/>
+	</Question>
+	<Question ID="14" Name="下列海洋中哪一个是我国最大的海?" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="南海"/>
+		<Option Index="2" Lable="东海"/>
+		<Option Index="3" Lable="黄海"/>
+		<Option Index="4" Lable="渤海"/>
+	</Question>
+	<Question ID="15" Name="峨眉山位于我国哪个省份?" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="四川"/>
+		<Option Index="2" Lable="云南"/>
+		<Option Index="3" Lable="贵州"/>
+		<Option Index="4" Lable="西藏"/>
+	</Question>
+	<Question ID="16" Name="成语填空：（ ）然大悟" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="慌"/>
+		<Option Index="2" Lable="晃"/>
+		<Option Index="3" Lable="恍"/>
+		<Option Index="4" Lable="偟"/>
+	</Question>
+	<Question ID="17" Name="成语填空：巍然（ ）立" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="毅"/>
+		<Option Index="2" Lable="屹"/>
+		<Option Index="3" Lable="倚"/>
+		<Option Index="4" Lable="弈"/>
+	</Question>
+	<Question ID="18" Name="成语填空：孤（ ）难鸣" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="掌"/>
+		<Option Index="2" Lable="拳"/>
+		<Option Index="3" Lable="手"/>
+		<Option Index="4" Lable="身"/>
+	</Question>
+	<Question ID="19" Name="成语填空：身体（ ）行" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="力"/>
+		<Option Index="2" Lable="立"/>
+		<Option Index="3" Lable="厉"/>
+		<Option Index="4" Lable="利"/>
+	</Question>
+	<Question ID="20" Name="成语填空：胜券在（ ）" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="手"/>
+		<Option Index="2" Lable="胸"/>
+		<Option Index="3" Lable="握"/>
+		<Option Index="4" Lable="心"/>
+	</Question>
+	<Question ID="21" Name="功夫派里可以选几种角色？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="1种"/>
+		<Option Index="2" Lable="2种"/>
+		<Option Index="3" Lable="3种"/>
+		<Option Index="4" Lable="4种"/>
+	</Question>
+	<Question ID="22" Name="在天下第一比武大会资格赛中打败四大侠士可以获得什么成就？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="功夫奇才"/>
+		<Option Index="2" Lable="学院新秀"/>
+		<Option Index="3" Lable="盖世英雄"/>
+		<Option Index="4" Lable="战队队长"/>
+	</Question>
+	<Question ID="23" Name="多少级可以开始学习铁匠副职？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="5级	"/>
+		<Option Index="2" Lable="10级"/>
+		<Option Index="3" Lable="15级"/>
+		<Option Index="4" Lable="20级"/>
+	</Question>
+	<Question ID="24" Name="在礼字试炼崖要接受谁的考验？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="瑶瑶"/>
+		<Option Index="2" Lable="巴鲁"/>
+		<Option Index="3" Lable="刀郎"/>
+		<Option Index="4" Lable="右奇"/>
+	</Question>
+	<Question ID="25" Name="画龙点睛”的传说中被点睛的龙会？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="飞走"/>
+		<Option Index="2" Lable="咬人"/>
+		<Option Index="3" Lable="撒泼"/>
+		<Option Index="4" Lable="骂人"/>
+	</Question>
+	<Question ID="26" Name="谁不是兔子三兄弟的成员？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="兔小牙"/>
+		<Option Index="2" Lable="灰三牙"/>
+		<Option Index="3" Lable="花二牙"/>
+		<Option Index="4" Lable="宗大牙"/>
+	</Question>
+	<Question ID="27" Name="以下那首诗是李白写的？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="《早发白帝城》"/>
+		<Option Index="2" Lable="《少年中国说》"/>
+		<Option Index="3" Lable="《诗经》"/>
+		<Option Index="4" Lable="《咏鹅》"/>
+	</Question>
+	<Question ID="28" Name="背包里有装备要修理应该找谁？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="牛角"/>
+		<Option Index="2" Lable="熊震"/>
+		<Option Index="3" Lable="张三金"/>
+		<Option Index="4" Lable="陆半仙"/>
+	</Question>
+	<Question ID="29" Name="在万博会里开店需要多少功夫豆？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="200"/>
+		<Option Index="2" Lable="300"/>
+		<Option Index="3" Lable="500"/>
+		<Option Index="4" Lable="1000"/>
+	</Question>
+	<Question ID="30" Name="大诗人杜甫被称为什么？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="诗仙"/>
+		<Option Index="2" Lable="诗圣"/>
+		<Option Index="3" Lable="诗神"/>
+		<Option Index="4" Lable="诗鬼"/>
+	</Question>
+	<Question ID="31" Name="兑换神奇密码和武林密码的兔鸣在哪个场景里？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="功夫城"/>
+		<Option Index="2" Lable="功夫城西"/>
+		<Option Index="3" Lable="功夫城万国商会"/>
+		<Option Index="4" Lable="一气学院"/>
+	</Question>
+	<Question ID="32" Name="一气学院里有多少个狸猫商人？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="1"/>
+		<Option Index="2" Lable="2"/>
+		<Option Index="3" Lable="3"/>
+		<Option Index="4" Lable="4"/>
+	</Question>
+	<Question ID="33" Name="香槟酒属于？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="白酒"/>
+		<Option Index="2" Lable="葡萄酒"/>
+		<Option Index="3" Lable="米酒"/>
+		<Option Index="4" Lable="啤酒"/>
+	</Question>
+	<Question ID="34" Name="世界上的“风车之国”是指？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="荷兰"/>
+		<Option Index="2" Lable="河南"/>
+		<Option Index="3" Lable="日本"/>
+		<Option Index="4" Lable="海地"/>
+	</Question>
+	<Question ID="35" Name="武圣大殿武圣爷爷面前站的两个门徒是谁？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="石猛和刀郎"/>
+		<Option Index="2" Lable="刀郎和瑶瑶"/>
+		<Option Index="3" Lable="右奇和巴鲁"/>
+		<Option Index="4" Lable="石猛和瑶瑶"/>
+	</Question>
+	<Question ID="36" Name="伏魔塔每周四关服时前几名能获得橙装奖励？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="3"/>
+		<Option Index="2" Lable="5"/>
+		<Option Index="3" Lable="10"/>
+		<Option Index="4" Lable="20"/>
+	</Question>
+	<Question ID="37" Name="以下哪些不属于伏魔塔的规定？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="不能带灵兽"/>
+		<Option Index="2" Lable="不能使用药品"/>
+		<Option Index="3" Lable="不能获得经验"/>
+		<Option Index="4" Lable="时间累积计算"/>
+	</Question>
+	<Question ID="38" Name="清崖的人偶武馆有几个关卡？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="2"/>
+		<Option Index="2" Lable="3"/>
+		<Option Index="3" Lable="4"/>
+		<Option Index="4" Lable="5"/>
+	</Question>
+	<Question ID="39" Name="在一气学院梅花桩上练功的是谁？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="莫呼"/>
+		<Option Index="2" Lable="兰娅"/>
+		<Option Index="3" Lable="贝阿"/>
+		<Option Index="4" Lable="丘芒"/>
+	</Question>
+	<Question ID="40" Name="每人最多可以同时参加几个侠士团？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="1"/>
+		<Option Index="2" Lable="2"/>
+		<Option Index="3" Lable="3"/>
+		<Option Index="4" Lable="4"/>
+	</Question>
+	<Question ID="41" Name="天下第一比武大会分几个阶段进行？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="1"/>
+		<Option Index="2" Lable="2"/>
+		<Option Index="3" Lable="3"/>
+		<Option Index="4" Lable="4"/>
+	</Question>
+	<Question ID="42" Name="武圣大殿的黑将军石猛和以下那个形象属于同类？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="金刚"/>
+		<Option Index="2" Lable="赤木刚宪"/>
+		<Option Index="3" Lable="派派"/>
+		<Option Index="4" Lable="瑶瑶"/>
+	</Question>
+	<Question ID="43" Name="虎丘林的头目是以什么动物为原型的？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="老虎	"/>
+		<Option Index="2" Lable="鸭嘴兽"/>
+		<Option Index="3" Lable="河马"/>
+		<Option Index="4" Lable="蜥蜴"/>
+	</Question>
+	<Question ID="44" Name="以下哪种神兽还未出现在上古系的灵兽中？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="凤凰"/>
+		<Option Index="2" Lable="龙"/>
+		<Option Index="3" Lable="羊驼"/>
+		<Option Index="4" Lable="麒麟"/>
+	</Question>
+	<Question ID="45" Name="选出下列武士称号中最高级的一个？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="新手武士"/>
+		<Option Index="2" Lable="初阶武士"/>
+		<Option Index="3" Lable="中阶武士"/>
+		<Option Index="4" Lable="高阶武士"/>
+	</Question>
+	<Question ID="46" Name="神秘下水道中的扬子鳄攻击方式为？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="头顶"/>
+		<Option Index="2" Lable="脚踢"/>
+		<Option Index="3" Lable="牙咬"/>
+		<Option Index="4" Lable="拳击"/>
+	</Question>
+	<Question ID="47" Name="伏魔塔目前总共有几层？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="5"/>
+		<Option Index="2" Lable="10"/>
+		<Option Index="3" Lable="11"/>
+		<Option Index="4" Lable="15"/>
+	</Question>
+	<Question ID="48" Name="吸烟有害，烟草中毒性最大的物质是？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="薄荷"/>
+		<Option Index="2" Lable="草珊瑚精华"/>
+		<Option Index="3" Lable="维生素C"/>
+		<Option Index="4" Lable="尼古丁"/>
+	</Question>
+	<Question ID="49" Name="以下哪样武器是龙人敖天的常用武器？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="斧"/>
+		<Option Index="2" Lable="扇"/>
+		<Option Index="3" Lable="钺"/>
+		<Option Index="4" Lable="伞"/>
+	</Question>
+	<Question ID="50" Name="以下哪只灵兽不会喷火？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="霸王虎"/>
+		<Option Index="2" Lable="火云麒麟"/>
+		<Option Index="3" Lable="火凤凰"/>
+		<Option Index="4" Lable="千年白玉狐"/>
+	</Question>
+	<Question ID="51" Name="通铃猫从哪个阶段开始可以用两条腿走路？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="成长期"/>
+		<Option Index="2" Lable="成熟期"/>
+		<Option Index="3" Lable="最终期"/>
+		<Option Index="4" Lable="超灵期"/>
+	</Question>
+	<Question ID="52" Name="大珠小珠落玉盘”所形容的是什么乐器的弹奏声？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="琵琶"/>
+		<Option Index="2" Lable="钢琴"/>
+		<Option Index="3" Lable="吉他"/>
+		<Option Index="4" Lable="竹笛"/>
+	</Question>
+	<Question ID="53" Name="十字路口的池涵和颜刀是什么关系？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="兄妹"/>
+		<Option Index="2" Lable="师兄妹"/>
+		<Option Index="3" Lable="网友"/>
+		<Option Index="4" Lable="天敌"/>
+	</Question>
+	<Question ID="54" Name="十字路口的柴二为什么一直站在那里？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="守候他的女儿"/>
+		<Option Index="2" Lable="等人组队下野猪林"/>
+		<Option Index="3" Lable="发呆"/>
+		<Option Index="4" Lable="等吃饭"/>
+	</Question>
+	<Question ID="55" Name="楼兰城的辛巴达身后站着哪只动物？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="狒狒"/>
+		<Option Index="2" Lable="长颈鹿"/>
+		<Option Index="3" Lable="斑马"/>
+		<Option Index="4" Lable="骆驼"/>
+	</Question>
+	<Question ID="56" Name="“光年”是什么单位？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="国有单位"/>
+		<Option Index="2" Lable="长度单位"/>
+		<Option Index="3" Lable="时间单位"/>
+		<Option Index="4" Lable="重量单位"/>
+	</Question>
+	<Question ID="57" Name="功夫城武器店里的玄天炉造型像什么？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="葫芦"/>
+		<Option Index="2" Lable="花瓶"/>
+		<Option Index="3" Lable="飞机	"/>
+		<Option Index="4" Lable="海星"/>
+	</Question>
+	<Question ID="58" Name="以下哪个龙珠是召唤青龙所必须的？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="炎龙珠"/>
+		<Option Index="2" Lable="地龙珠"/>
+		<Option Index="3" Lable="冰龙珠"/>
+		<Option Index="4" Lable="土龙珠"/>
+	</Question>
+	<Question ID="59" Name="以下哪个是凝翠崖场景的头目？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="钝瓜"/>
+		<Option Index="2" Lable="肓牙"/>
+		<Option Index="3" Lable="抟音"/>
+		<Option Index="4" Lable="紫崖"/>
+	</Question>
+	<Question ID="60" Name="赤炎海山的烈焰火山口中没有以下哪种口味的火山岩？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="草莓味"/>
+		<Option Index="2" Lable="胡椒味"/>
+		<Option Index="3" Lable="大蒜味"/>
+		<Option Index="4" Lable="咖喱味"/>
+	</Question>	
+	<Question ID="61" Name="挖宝需要寻找功夫城万博商会的谁?" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="乌孙"/>
+		<Option Index="2" Lable="高昌"/>
+		<Option Index="3" Lable="库车"/>
+		<Option Index="4" Lable="尚鲁"/>
+	</Question>
+	<Question ID="62" Name="10级光芒武器找谁用光明碎片换取？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="陆半仙"/>
+		<Option Index="2" Lable="张三金"/>
+		<Option Index="3" Lable="武圣爷爷"/>
+		<Option Index="4" Lable="清崖"/>
+	</Question>
+	<Question ID="63" Name="万花果在哪里采摘？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="十字路口"/>
+		<Option Index="2" Lable="铸剑谷"/>
+		<Option Index="3" Lable="虎丘"/>
+		<Option Index="4" Lable="倚天塔"/>
+	</Question>
+	<Question ID="64" Name="遇到别人要求和你换号玩，怎么办？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="不同意换号"/>
+		<Option Index="2" Lable="同意换号"/>
+		<Option Index="3" Lable="狠狠骂他"/>
+		<Option Index="4" Lable="狠狠打他"/>
+	</Question>
+	<Question ID="65" Name="找辛巴达可以做什么？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="拜师学艺"/>
+		<Option Index="2" Lable="创建侠士团"/>
+		<Option Index="3" Lable="交易物品"/>
+		<Option Index="4" Lable="领取灵兽"/>
+	</Question>
+	<Question ID="66" Name="陆半仙宝库周五和周日开放时间？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="10点～24点"/>
+		<Option Index="2" Lable="15点～22点"/>
+		<Option Index="3" Lable="12点～20点"/>
+		<Option Index="4" Lable="11点～22点"/>
+	</Question>
+	<Question ID="67" Name="王勃写了著名的《滕王阁序》，王勃是（）之一呢？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="四大美男"/>
+		<Option Index="2" Lable="四大名捕"/>
+		<Option Index="3" Lable="F4"/>
+		<Option Index="4" Lable="初唐四杰"/>
+	</Question>
+	<Question ID="68" Name="发现有侠士可能使用第三方软件作弊，怎么办？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="举报给客服"/>
+		<Option Index="2" Lable="不管他"/>
+		<Option Index="3" Lable="狠狠骂他"/>
+		<Option Index="4" Lable="我也作弊"/>
+	</Question>
+	<Question ID="69" Name="功夫派每周的更新时间是？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="每周一"/>
+		<Option Index="2" Lable="每周三"/>
+		<Option Index="3" Lable="每周四"/>
+		<Option Index="4" Lable="每周五"/>
+	</Question>
+	<Question ID="70" Name="金龙珠和火龙珠的获得地点是？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="简单级副本"/>
+		<Option Index="2" Lable="普通级副本"/>
+		<Option Index="3" Lable="精英级副本"/>
+		<Option Index="4" Lable="史诗级副本"/>
+	</Question>
+	<Question ID="71" Name="混元果在哪里采摘?" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="十字路口"/>
+		<Option Index="2" Lable="铸剑谷"/>
+		<Option Index="3" Lable="虎丘"/>
+		<Option Index="4" Lable="倚天塔"/>
+	</Question>
+	<Question ID="72" Name="在哪里可以交易物品？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="功夫城万博会"/>
+		<Option Index="2" Lable="一气学院"/>
+		<Option Index="3" Lable="伏魔塔"/>
+		<Option Index="4" Lable="矿山镇"/>
+	</Question>
+	<Question ID="73" Name="购买通宝商城物品，除了通宝还需要什么？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="支付密码"/>
+		<Option Index="2" Lable="登陆密码"/>
+		<Option Index="3" Lable="米米号"/>
+		<Option Index="4" Lable="金币"/>
+	</Question>
+	<Question ID="74" Name="冥鲲套装在哪里领取？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="超灵侠士"/>
+		<Option Index="2" Lable="陆半仙"/>
+		<Option Index="3" Lable="武圣爷爷"/>
+		<Option Index="4" Lable="苏必"/>
+	</Question>
+	<Question ID="75" Name="70级紫色装备如何获得？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="怪物掉落"/>
+		<Option Index="2" Lable="铁匠合成"/>
+		<Option Index="3" Lable="任务领取"/>
+		<Option Index="4" Lable="商店购买"/>
+	</Question>
+	<Question ID="76" Name="100个紫色天火，强化12次武器和15次上衣，还剩多少？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="75"/>
+		<Option Index="2" Lable="66"/>
+		<Option Index="3" Lable="49"/>
+		<Option Index="4" Lable="73"/>
+	</Question>
+	<Question ID="77" Name="开启功夫家园伏魔阵修炼一只47级灵兽，修炼13小时耗费多少伏魔点？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="47"/>
+		<Option Index="2" Lable="65"/>
+		<Option Index="3" Lable="470"/>
+		<Option Index="4" Lable="611"/>
+	</Question>
+	<Question ID="78" Name="一名侠士拥有100通宝，购买了5个圣光魂石，一次性又购买了10个万博号角后，还剩多少通宝？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="20"/>
+		<Option Index="2" Lable="22"/>
+		<Option Index="3" Lable="30"/>
+		<Option Index="4" Lable="35"/>
+	</Question>
+	<Question ID="79" Name="药师的后花园副本没有下列哪种机关？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="冰冻机关"/>
+		<Option Index="2" Lable="破坏机关"/>
+		<Option Index="3" Lable="火焰机关"/>
+		<Option Index="4" Lable="沼泽机关"/>
+	</Question>
+	<Question ID="80" Name="风之光明碎片在哪里产出？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="红人堂"/>
+		<Option Index="2" Lable="蓝人堂"/>
+		<Option Index="3" Lable="元素炼狱"/>
+		<Option Index="4" Lable="金人堂"/>
+	</Question>	
+    <Question ID="81" Name="水龙珠的获得方式是？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="boss掉落"/>
+		<Option Index="2" Lable="任务奖励"/>
+		<Option Index="3" Lable="药师合成"/>
+		<Option Index="4" Lable="挖宝"/>
+	</Question>	
+	<Question ID="82" Name="超灵期灵兽成长值自动增加多少？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="2"/>
+		<Option Index="2" Lable="3"/>
+		<Option Index="3" Lable="5"/>
+		<Option Index="4" Lable="10"/>
+	</Question>
+	<Question ID="83" Name="每名侠士团最多可以有多少名侠士？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="20"/>
+		<Option Index="2" Lable="25"/>
+		<Option Index="3" Lable="30"/>
+		<Option Index="4" Lable="35"/>
+	</Question>
+	<Question ID="84" Name="万博会摆摊交易每次需支付多少功夫豆？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="100"/>
+		<Option Index="2" Lable="300"/>
+		<Option Index="3" Lable="500"/>
+		<Option Index="4" Lable="800"/>
+	</Question>
+	<Question ID="85" Name="兔子三兄弟没有的技能是？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="加血"/>
+		<Option Index="2" Lable="放萝卜"/>
+		<Option Index="3" Lable="旋风"/>
+		<Option Index="4" Lable="火焰"/>
+	</Question>
+	<Question ID="86" Name="合成蓝色碎片需要多少个绿色碎片" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="10"/>
+		<Option Index="2" Lable="15"/>
+		<Option Index="3" Lable="20"/>
+		<Option Index="4" Lable="25"/>
+	</Question>
+	<Question ID="87" Name="金色的南瓜籽从哪里获得？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="灵魔洞"/>
+		<Option Index="2" Lable="伏魔塔"/>
+		<Option Index="3" Lable="南瓜密室"/>
+		<Option Index="4" Lable="倚天窟"/>
+	</Question>
+	<Question ID="88" Name="南部大陆泽之国的守护神兽是什么？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="青龙"/>
+		<Option Index="2" Lable="朱雀"/>
+		<Option Index="3" Lable="玄武"/>
+		<Option Index="4" Lable="白虎"/>
+	</Question>
+	<Question ID="89" Name="龙人的父亲叫什么名字？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="敖清"/>
+		<Option Index="2" Lable="敖济"/>
+		<Option Index="3" Lable="敖广"/>
+		<Option Index="4" Lable="敖润"/>
+	</Question>
+	<Question ID="90" Name="药师爷爷和武圣爷爷是什么关系？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="师兄弟"/>
+		<Option Index="2" Lable="亲兄弟"/>
+		<Option Index="3" Lable="师徒"/>
+		<Option Index="4" Lable="好朋友"/>
+	</Question>	
+    <Question ID="91" Name="白玉狐升级为千年白玉狐需要什么道具？" QuestionTime="20"  Answer="4">
+		<Option Index="1" Lable="功夫豆"/>
+		<Option Index="2" Lable="火龙珠"/>
+		<Option Index="3" Lable="火之光明碎片"/>
+		<Option Index="4" Lable="千年精魄"/>
+	</Question>	
+	<Question ID="92" Name="风云令牌包括哪五块？" QuestionTime="20"  Answer="2">
+		<Option Index="1" Lable="风雨雷电神"/>
+		<Option Index="2" Lable="仁义礼智信"/>
+		<Option Index="3" Lable="金木水火土"/>
+		<Option Index="4" Lable="东南西北中"/>
+	</Question>
+	<Question ID="93" Name="万圣山上有什么石头？" QuestionTime="20"  Answer="1">
+		<Option Index="1" Lable="万圣灵石"/>
+		<Option Index="2" Lable="鸡血石"/>
+		<Option Index="3" Lable="岩石"/>
+		<Option Index="4" Lable="火山石"/>
+	</Question>
+	<Question ID="94" Name="高级试炼之路是和谁对话进入的？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="武圣爷爷"/>
+		<Option Index="2" Lable="药师爷爷"/>
+		<Option Index="3" Lable="石猛"/>
+		<Option Index="4" Lable="右奇"/>
+	</Question>
+	<Question ID="95" Name="8个人同时吃8份快餐需要10分钟，16个人同时吃16份快餐需要几分钟？" QuestionTime="20"  Answer="1">
+		<Option Index="1" Lable="10分钟"/>
+		<Option Index="2" Lable="16分钟"/>
+		<Option Index="3" Lable="20分钟"/>
+		<Option Index="4" Lable="不知道"/>
+	</Question>
+	<Question ID="96" Name="鱼缸里有10条鱼，死了一条还有几条？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="9"/>
+		<Option Index="2" Lable="0"/>
+		<Option Index="3" Lable="1"/>
+		<Option Index="4" Lable="10"/>
+	</Question>
+	<Question ID="97" Name="一个米米号可以在功夫派建立几个角色？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="1"/>
+		<Option Index="2" Lable="2"/>
+		<Option Index="3" Lable="3"/>
+		<Option Index="4" Lable="4"/>
+	</Question>
+	<Question ID="98" Name="功夫家园丫鬟小桃那里可以开启什么功能？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="管家系统"/>
+		<Option Index="2" Lable="进入伏魔塔"/>
+		<Option Index="3" Lable="开启伏魔阵"/>
+		<Option Index="4" Lable="进入五人堂"/>
+	</Question>
+	<Question ID="99" Name="功夫家园可种植的土地目前有几块？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="5"/>
+		<Option Index="2" Lable="6"/>
+		<Option Index="3" Lable="7"/>
+		<Option Index="4" Lable="8"/>
+	</Question>
+	<Question ID="100" Name="功夫家园共可放入多少灵兽？" QuestionTime="20" Answer="4">
+		<Option Index="1" Lable="5"/>
+		<Option Index="2" Lable="10"/>
+		<Option Index="3" Lable="15"/>
+		<Option Index="4" Lable="无限制"/>
+	</Question>	
+	<Question ID="101" Name="可以摆摊交易的万博商会位于何处？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="一气学院"/>
+		<Option Index="2" Lable="楼兰城"/>
+		<Option Index="3" Lable="功夫城"/>
+		<Option Index="4" Lable="南部大陆"/>
+	</Question>	
+	<Question ID="102" Name="金币的作用是？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="修理装备"/>
+		<Option Index="2" Lable="买馒头"/>
+		<Option Index="3" Lable="购买金币商城区的物品"/>
+		<Option Index="4" Lable="给陆半仙换酒喝"/>
+	</Question>
+	<Question ID="103" Name="青龙许愿不需要的是哪个物品？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="火龙珠"/>
+		<Option Index="2" Lable="风龙珠"/>
+		<Option Index="3" Lable="土龙珠"/>
+		<Option Index="4" Lable="水龙珠"/>
+	</Question>
+	<Question ID="104" Name="功夫大擂台分为哪两个武斗场？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="新手武斗场和高手武斗场"/>
+		<Option Index="2" Lable="新手武斗场和勇气武斗场"/>
+		<Option Index="3" Lable="新手武斗场和实力武斗场"/>
+		<Option Index="4" Lable="勇气武斗场和高手武斗场"/>
+	</Question>
+	<Question ID="105" Name="陆半仙旁边站的是谁？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="黑白婆婆"/>
+		<Option Index="2" Lable="张三金"/>
+		<Option Index="3" Lable="兰娅"/>
+		<Option Index="4" Lable="武圣爷爷"/>
+	</Question>
+	<Question ID="106" Name="目前灵兽最多可以学习几个辅助技能？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="1"/>
+		<Option Index="2" Lable="2"/>
+		<Option Index="3" Lable="3"/>
+		<Option Index="4" Lable="4"/>
+	</Question>
+	<Question ID="107" Name="分解装备的玄天炉在什么位置？" QuestionTime="20" Answer="2">
+		<Option Index="1" Lable="万博商会中"/>
+		<Option Index="2" Lable="武器店里"/>
+		<Option Index="3" Lable="药材铺"/>
+		<Option Index="4" Lable="武圣大殿"/>
+	</Question>
+	<Question ID="108" Name="杰西卡的外形是什么？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="龙"/>
+		<Option Index="2" Lable="猴子"/>
+		<Option Index="3" Lable="兔子"/>
+		<Option Index="4" Lable="熊猫"/>
+	</Question>
+	<Question ID="109" Name="楼兰城中心水池里是什么形状的雕塑？" QuestionTime="20" Answer="1">
+		<Option Index="1" Lable="神灯"/>
+		<Option Index="2" Lable="武圣爷爷"/>
+		<Option Index="3" Lable="圣人"/>
+		<Option Index="4" Lable="花瓶"/>
+	</Question>
+	<Question ID="110" Name="在哪里可以打到清水？" QuestionTime="20" Answer="3">
+		<Option Index="1" Lable="功夫城"/>
+		<Option Index="2" Lable="矿山镇"/>
+		<Option Index="3" Lable="一气学院"/>
+		<Option Index="4" Lable="楼兰城"/>
+	</Question>	
+</Puzzle>

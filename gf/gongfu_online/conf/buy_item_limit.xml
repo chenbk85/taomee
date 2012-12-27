@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf8"?>
+<!--
+	item_id 购买的物品ID：这里的物品包括了装备和物品
+	limit_type
+	1:天限制
+	2:周限制
+	3:月限制
+
+	limit_count:购买的上限数量
+-->
+
+
+<root>
+	<limit item_id = "1500324" limit_type = "1"  limit_count = "20"/>
+</root>

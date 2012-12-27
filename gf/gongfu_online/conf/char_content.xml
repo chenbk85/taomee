@@ -1,0 +1,61 @@
+<root>
+	<content	id="1" char="在虚空中发现你的物品" name="压驻包裹满了的 邮件提示" />
+	<content	id="2" char="我们在虚空中发现一些应该是你的物品,请查收附件!" name="压驻包裹满了的 邮件提示" />
+	<content	id="3" char="参加" name="" />
+	<content	id="4" char="幸运的获得了" name="" />
+	<content	id="5" char="终于召唤出了神龙！ 大家赶紧去领奖吧！" name="" />
+	<content	id="6" char="在英雄或史诗级获得金龙珠！" name="" />
+	<content	id="7" char="成功合成了紫色品质的" name="" />
+	<content	id="8" char="成立了编号为" name="" />
+	<content	id="9" char="的侠士团" name="" />
+	<content	id="10" char="带领" name="" />
+	<content	id="11" char="侠士团参加楼兰杯挑战赛" name="" />
+	<content	id="12" char="的灵兽在修炼中发现了" name="" />
+	<content	id="13" char="[系统]" name="" />
+	<content	id="14" char="智力大比拼15分钟后开始,速至兰娅处报名!" name=""/>
+	<content	id="15" char="智力大比拼5分钟后开始,速至兰娅处报名!" name=""/>
+	<content	id="16" char="成功进阶!获得称号" name=""/>
+
+	<content	id="17" char="导师团邮件" name=""/>
+	<content	id="18" char="已经拜你为师,要记得多多带你的徒弟练级哦! 徒弟升级你也能获得丰厚的奖励呢!" name=""/>
+	<content	id="19" char="已经成为你的导师,和导师一起练级可以更快升级哦!" name=""/>
+	<content	id="20" char="已经和你解除师徒关系,徒弟多多益善,再去收别的小侠士为徒吧!" name=""/>
+	<content	id="21" char="已和你解除师徒关系,和导师一起练级可以更快升级,还不快去拜一个!" name=""/>
+	<content	id="22" char="升到30/40级,你真是一位可靠的师傅,赶紧去领取师徒奖励啦!" name=""/>
+	<content	id="23" char="已经带领你升到30/40级,可以去武圣大殿的瑶瑶那里领取师徒奖励啦!" name=""/>
+	<content	id="24" char="已经进阶出师啦!快去领取师徒奖励吧!祝你徒弟满天下哦!" name=""/>
+	<content	id="25" char="已经带领你进阶出师啦!快去领取师徒奖励吧!后面还有很长的功夫之旅等着你呢!" name=""/>
+	<content	id="26" char="登录送米币大抽奖" name=""/>
+	<content	id="27" char="恭喜你获得了10米币的奖励。奖励将于2月中旬发放，具体请关注功夫快报及功夫派博客。" name=""/>
+	<content	id="28" char="冰雪至尊大礼包" name=""/>
+	<content	id="29" char="烟花之夜即将开始,请有庆典烟花的侠士前去功夫城参与." name=""/>
+	<content	id="30" char="圣蛋老人已出现，有丰雪帽的玩家可去寻找并获得圣蛋" name=""/>
+	<content	id="31" char="花费" name=""/>
+	<content	id="32" char="金币在金币商城购买了" name=""/>
+	<content	id="33" char="一气学院邀请函" name=""/>
+	<content	id="34" char="魔尊血剑准备派出六魔将协助黑暗军团，黑暗的力量将会大大增强，请侠士们找“飞天猫瑶瑶”了解情况商讨对策。武圣爷爷为了表彰你努力的修炼，特送你一颗火龙珠作为奖励，拯救世界的重任就交给你了。" name=""/>
+
+	<content	id="35" char="慧眼识英雄" name="慧眼识英雄"/>
+
+	<content	id="36" char="恭喜您所支持的侠士获得了武林盛典十六强争霸赛的冠军" name="技冠群雄"/>
+
+	<content	id="37" char="武林盛典技冠群雄" name=""/>
+	<content	id="38" char="恭喜您获得了武林盛典十六强争霸赛的比武冠军" name="冠军"/>
+
+	<content	id="39" char="竞猜冠军看走眼了" name=""/>
+	<content	id="40" char="十六强争霸赛竞猜冠军没有猜对啊。老江湖也有看走眼的时候，下次可要好好掂量哦!" name="眼拙"/>
+	<content	id="41" char="功夫豆超过上限要丢失!!" name=""/>
+	<content	id="42" char="为了防止异常发生。3月2日起，所有侠士携带功夫豆上限不能超过十亿，请超额侠士找羊元尽快完成兑换银票操作。" name=""/>
+	<content	id="43" char="神魔井之战奖励" name=""/>
+	<content	id="44" char="亲爱的小侠士，感谢你为本次神魔井事件作出的的努力，在这里我代表广大守护神给予你由衷的赞美和奖励。" name=""/>
+	<content	id="44" char="百万修炼资金大放送" name=""/>
+	<content	id="45" char="所有等级高于35级且背包中功夫豆少于500万的小侠士, 只要累计在线超过1个小时即可到小桃处领取（每个米米号限一次)100万的修炼资金!" name=""/>
+	<content	id="46" char="强大的 " name=""/>
+	<content	id="47" char=" 在守护神灯时，英勇的顶住了50波攻击。" name=""/>
+	<content	id="48" char="感谢小侠士的参与，庆祝物资全部集齐。请所有在线玩家到功夫城领取奖励。奖励会通过邮件的形式发放，请注意领取哦!" name=""/>
+	
+	<content	id="49" char="很遗憾，庆祝物资没有集齐。庆祝仪式已经取消。普天同庆大礼包也不再发放，再次感谢小侠士们的努力！" name=""/>
+    <content	id="50" char="普天同庆大礼包" name=""/>
+	<content	id="51" char=" 请小侠士点击接收附件获得大礼包哦" name=""/>
+
+</root>

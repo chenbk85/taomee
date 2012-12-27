@@ -1,0 +1,69 @@
+<!--ID 就是材料在item中的id  -->
+<!--Quality 可使用的装备品质:(稀有度1白，2绿，3蓝，4紫，5银，6金，7神圣)  -->
+<!--lucky: 常规材料都填0， 特殊材料（随机）填1  -->
+<!--StrengthenLevel:可使用的等级范围  -->
+<!--Probability：成功率 0-12级的 -->
+<!--Type：1基础必须的材料，2是防暴材料，3是必然成功的材料,4是随机和指定材料（有了4就不需要2、3） -->
+<!--Name：道具名称  -->
+
+
+<strengthenMaterial>
+    <!-- 强化失败时等级降级, 概率为万分之几 -->
+    <CutLevelRate RateArray="0 0 5000 8000 9000 9000 10000 10000 10000 10000 10000 10000" />
+	<!-- 强化时等级复位为000 , 概率为万分之几 -->
+	<ResetLevelRate RateArray="0 0 0 8000 8000 10000 10000 10000 10000 10000 10000 10000" /> 
+<!-- 免费材料 -->
+    <Material ID="1540000" Name="化灵兽火" Quality="1 2" StrengthenLevel="0 3" Lucky="0" Type="1" Probability="0 10000 7000 5000 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1540001" Name="阴阳真火" Quality="3 3" StrengthenLevel="0 3" Lucky="0" Type="1" Probability="0 10000 7000 1500 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1540002" Name="五行真火" Quality="4 4" StrengthenLevel="0 3" Lucky="0" Type="1" Probability="0 10000 7000 1500 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1540003" Name="雷罡火" Quality="3 3" StrengthenLevel="0 6" Lucky="0" Type="1" Probability="0 10000 7000 2000 500 300 100 0 0 0 0 0 0"/>
+    <Material ID="1540004" Name="广寒火" Quality="4 4" StrengthenLevel="0 6" Lucky="0" Type="1" Probability="0 10000 7000 2000 500 300 100 0 0 0 0 0 0"/>
+    <Material ID="1740018" Name="五行真火（普）" Quality="4 4" StrengthenLevel="0 3" Lucky="0" Type="1" Probability="0 10000 7000 1500 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740019" Name="雷罡火（普）" Quality="3 3" StrengthenLevel="0 6" Lucky="0" Type="1" Probability="0 10000 7000 2000 500 300 100 0 0 0 0 0 0"/>
+    <Material ID="1740020" Name="广寒火（普）" Quality="4 4" StrengthenLevel="0 6" Lucky="0" Type="1" Probability="0 10000 7000 2000 500 300 100 0 0 0 0 0 0"/>
+	<Material ID="1540005" Name="绿色火焰" Quality="1 2" StrengthenLevel="0 12" Lucky="0" Type="1" Probability="0 10000 8000 4000 1000 800 500 400 100 5 5 5 5"/>
+    <Material ID="1540006" Name="蓝色火焰" Quality="3 3" StrengthenLevel="0 12" Lucky="0" Type="1" Probability="0 8000 6000 3000 800 600 400 300 100 5 5 5 5"/>
+    <Material ID="1540007" Name="紫色火焰" Quality="4 4" StrengthenLevel="0 12" Lucky="0" Type="1" Probability="0 8000 3000 1000 500 400 100 100 1 1 1 1 1"/>
+	
+
+<!-- 付费材料 -->
+    <Material ID="1740000" Name="青莲地心焰" Quality="3 3" StrengthenLevel="0 6" Lucky="0" Type="1" Probability="0 10000 10000 10000 5000 2000 800 0 0 0 0 0 0"/>
+    <Material ID="1740001" Name="惊雷劫天焰" Quality="4 4" StrengthenLevel="0 6" Lucky="0" Type="1" Probability="0 10000 10000 10000 5000 2000 800 0 0 0 0 0 0"/>
+    <Material ID="1740002" Name="星辰神炎" Quality="4 4" StrengthenLevel="5 12" Lucky="0" Type="1" Probability="0 0 0 0 0 0 5500 1500 700 900 100 100 100"/>
+    <Material ID="1540905" Name="惊雷劫天焰(普)" Quality="4 4" StrengthenLevel="0 6" Lucky="0" Type="1" Probability="0 10000 10000 10000 5000 2000 800 0 0 0 0 0 0"/>
+    <Material ID="1740025" Name="绿色天火" Quality="1 2" StrengthenLevel="0 12" Lucky="0" Type="1" Probability="0 10000 10000 8000 2000 1000 1000 1000 800 500 400 250 50"/>
+    <Material ID="1740026" Name="蓝色天火" Quality="3 3" StrengthenLevel="0 12" Lucky="0" Type="1" Probability="0 10000 10000 8000 2000 1000 1000  800 500 400 300 100 30"/>
+    <Material ID="1740027" Name="紫色天火" Quality="4 4" StrengthenLevel="0 12" Lucky="0" Type="1" Probability="0 10000 10000 8000 2000 1000 500 300 200 100 100 50 10"/>
+	
+
+
+<!-- 特殊-随机材料 -->
+    <Material ID="1740003" Name="五轮离火" Quality="3 3" StrengthenLevel="0 4" Lucky="1" Type="4" Probability="2000 2000 2000 2000 2000 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740004" Name="焚天离火" Quality="4 4" StrengthenLevel="0 4" Lucky="1" Type="4" Probability="2000 2000 2000 2000 2000 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740005" Name="金乌冰炎" Quality="4 4" StrengthenLevel="0 8" Lucky="1" Type="4" Probability="1800 1800 1800 1800 1800 400 300 200 100 0 0 0 0"/>
+    <Material ID="1540608" Name="五轮离火（普）" Quality="3 3" StrengthenLevel="0 4" Lucky="1" Type="4" Probability="2000 2000 2000 2000 2000 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740017" Name="焚天离火（普）" Quality="4 4" StrengthenLevel="0 4" Lucky="1" Type="4" Probability="2000 2000 2000 2000 2000 0 0 0 0 0 0 0 0"/>
+
+<!-- 特殊-直接强化材料 -->
+    <Material ID="1740006" Name="4层天降神炎" Quality="3 4" StrengthenLevel="0 4" Lucky="1" Type="4" Probability="0 0 0 0 10000 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740007" Name="5层天降神炎" Quality="3 4" StrengthenLevel="0 5" Lucky="1" Type="4" Probability="0 0 0 0 0 10000 0 0 0 0 0 0 0"/>
+    <Material ID="1740008" Name="6层天降神炎" Quality="3 4" StrengthenLevel="0 6" Lucky="1" Type="4" Probability="0 0 0 0 0 0 10000 0 0 0 0 0 0"/>
+    <Material ID="1740009" Name="7层天降神炎" Quality="4 4" StrengthenLevel="0 7" Lucky="1" Type="4" Probability="0 0 0 0 0 0 0 10000 0 0 0 0 0"/>
+    <Material ID="1740015" Name="10层天降神炎" Quality="4 4" StrengthenLevel="0 10" Lucky="1" Type="4" Probability="0 0 0 0 0 0 0 0 0 0 10000 0 0"/>
+    <Material ID="1540907" Name="5层天降神炎（普）" Quality="3 4" StrengthenLevel="0 5" Lucky="1" Type="4" Probability="0 0 0 0 0 10000 0 0 0 0 0 0 0"/>
+    <Material ID="1740016" Name="4层天降神炎（普）" Quality="3 4" StrengthenLevel="0 4" Lucky="1" Type="4" Probability="0 0 0 0 10000 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740021" Name="8层天降神炎" Quality="4 4" StrengthenLevel="0 8" Lucky="1" Type="4" Probability="0 0 0 0 0 0 0 0 10000 0 0 0 0"/>
+    <Material ID="1740022" Name="9层天降神炎" Quality="4 4" StrengthenLevel="0 9" Lucky="1" Type="4" Probability="0 0 0 0 0 0 0 0 0 10000 0 0 0"/>
+    <Material ID="1740023" Name="11层天降神炎" Quality="4 4" StrengthenLevel="0 11" Lucky="1" Type="4" Probability="0 0 0 0 0 0 0 0 0 0 0 10000 0"/>
+    <Material ID="1740024" Name="12层天降神炎" Quality="4 4" StrengthenLevel="0 12" Lucky="1" Type="4" Probability="0 0 0 0 0 0 0 0 0 0 0 0 10000"/>
+
+
+<!-- 特殊-防暴材料 -->
+    <Material ID="1740010" Name="高能魂石" Quality="2 4" StrengthenLevel="1 4" Lucky="0" Type="2" Probability="0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740011" Name="风暴魂石" Quality="3 4" StrengthenLevel="4 8" Lucky="0" Type="2" Probability="0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740012" Name="秘法魂石" Quality="4 4" StrengthenLevel="8 10" Lucky="0" Type="2" Probability="0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740013" Name="光辉魂石" Quality="4 4" StrengthenLevel="10 12" Lucky="0" Type="2" Probability="0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740028" Name="圣光魂石" Quality="1 4" StrengthenLevel="1 12" Lucky="0" Type="2" Probability="0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+    <Material ID="1740014" Name="辉煌圣石" Quality="1 4" StrengthenLevel="0 12" Lucky="1" Type="3" Probability="10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000 10000"/>
+
+</strengthenMaterial>

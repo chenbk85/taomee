@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf8"?>
+<!--id:BUFF流水号，必须唯一不能重复 -->
+<!--duration_time: BUFF 持续时间，单位秒 -->
+<!--sys_time: 记录系统时间 ，默认为关卡计时-->
+
+<root>
+	<buff buff_id="1003" duration_time="18000" name="宠物1.5倍经验" >
+	</buff>
+
+    <buff buff_id="1012" sys_time="1" duration_time="900" name="清崖的祝福1" >
+    </buff>
+
+    <buff buff_id="1013" sys_time="1" duration_time="1800" name="清崖的祝福2" >
+    </buff>
+    <buff buff_id="1014" sys_time="1" duration_time="3600" name="清崖的祝福3" >
+    </buff>
+	<buff buff_id="900005" sys_time="0" duration_time="7200" name="撒谎">
+	</buff>
+    <buff buff_id="1400" sys_time="1"  duration_time="604800" name="邀请码激活3倍buff" >
+    </buff>
+
+</root>

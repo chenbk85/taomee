@@ -1,0 +1,1040 @@
+<!--
+	VipLv vip等级
+	Odds 升级成功概率 单位百分之一
+	SourceItems 待升级的装备，升级失败时不消失
+	MaterialItems 升级所需的物品，升级失败时消失
+	DestItems 目标装备
+		 type id count 字段意义和 dailyactivity.xml表意思相同
+ -->
+<!--
+<root>
+	<Index ID="1" Odds="10000">
+		<SourceItems>
+			<Item type="1" id="100182" count="1">
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1550026" count="5">
+			<Item type="2" id="1550025" count="10">
+			<Item type="3" id="1" count="10000">
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300182" count="1">
+		</DestItems>
+	</Index>
+</root>
+-->
+
+<root>
+	<!--猴子-->
+	<Index ID="1001" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="100371" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="190001" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1002" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="100372" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="190002" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1003" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="100373" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="190003" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1004" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="100374" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="190004" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1005" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="100375" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="190005" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1006" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="100376" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="190006" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1007" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="100377" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="190007" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1008" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="100227" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100251" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1009" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="100225" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100249" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1010" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="100226" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100250" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1011" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="100229" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100253" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1012" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="100228" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100252" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1013" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="100230" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100254" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1014" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="100217" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100255" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1015" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="100251" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100371" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1016" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="100249" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100372" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1017" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="100250" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100373" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1018" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="100253" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100374" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1019" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="100252" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100375" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1020" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="100254" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100376" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="1021" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="100255" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="100377" count="1"/>
+		</DestItems>
+	</Index>
+	<!--兔子-->
+	<Index ID="2001" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="200371" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="290001" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2002" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="200372" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="290002" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2003" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="200373" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="290003" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2004" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="200374" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="290004" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2005" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="200375" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="290005" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2006" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="200376" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="290006" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2007" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="200377" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="290007" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2008" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="200227" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200251" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2009" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="200225" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200249" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2010" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="200226" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200250" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2011" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="200229" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200253" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2012" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="200228" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200252" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2013" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="200230" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200254" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2014" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="200217" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200255" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2015" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="200251" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200371" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2016" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="200249" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200372" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2017" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="200250" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200373" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2018" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="200253" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200374" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2019" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="200252" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200375" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2020" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="200254" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200376" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="2021" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="200255" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="200377" count="1"/>
+		</DestItems>
+	</Index>
+	<!--熊猫-->
+	<Index ID="3001" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="300371" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="390001" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3002" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="300372" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="390002" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3003" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="300373" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="390003" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3004" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="300374" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="390004" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3005" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="300375" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="390005" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3006" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="300376" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="390006" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3007" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="300377" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="390007" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3008" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="300227" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300251" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3009" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="300225" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300249" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3010" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="300226" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300250" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3011" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="300229" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300253" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3012" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="300228" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300252" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3013" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="300230" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300254" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3014" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="300217" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300255" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3015" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="300251" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300371" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3016" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="300249" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300372" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3017" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="300250" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300373" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3018" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="300253" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300374" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3019" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="300252" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300375" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3020" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="300254" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300376" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="3021" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="300255" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="300377" count="1"/>
+		</DestItems>
+	</Index>
+	<!--龙人-->
+	<Index ID="4001" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="490043" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490078" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4002" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="490044" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490079" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4003" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="490045" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490080" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4004" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="490046" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490081" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4005" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="490047" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490082" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4006" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="490048" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490083" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4007" Odds="35" VipLv="7">
+		<SourceItems>
+			<Item type="1" id="490049" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="18"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490084" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4008" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="490064" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490036" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4009" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="490065" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490037" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4010" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="490066" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490038" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4011" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="490067" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490039" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4012" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="490068" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490040" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4013" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="490069" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490041" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4014" Odds="100" VipLv="3">
+		<SourceItems>
+			<Item type="1" id="490070" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="3"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490042" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4015" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="490036" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500909 1700078" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490043" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4016" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="490037" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500907 1700079" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490044" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4017" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="490038" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500908 1700080" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490045" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4018" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="490039" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500911 1700076" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490046" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4019" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="490040" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500910 1700075" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490047" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4020" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="490041" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500912 1700077" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490048" count="1"/>
+		</DestItems>
+	</Index>
+	<Index ID="4021" Odds="90" VipLv="5">
+		<SourceItems>
+			<Item type="1" id="490042" count="1"/>
+		</SourceItems>
+		<MaterialItems>
+			<Item type="2" id="1500913 1700081" count="6"/>
+			<Item type="3" id="1" count="0"/>
+		</MaterialItems>
+		<DestItems>
+			<Item type="1" id="490049" count="1"/>
+		</DestItems>
+	</Index>
+</root>

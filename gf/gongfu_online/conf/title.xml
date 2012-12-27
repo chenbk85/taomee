@@ -1,0 +1,71 @@
+<!--
+ID:称号对应的编号(不能重复)
+StageId:得到称号需要通关的关卡 (eg: "1|2|4-7" ==> "1 2 4 5 6 7") MAX = 50
+AchieveId:得到称号需要完成的成就 - (default: 0)
+World:广播给世界玩家(1: world 2: not) - (default: 0)
+StageDifficulty:各个关卡对应的难度要求(1:easy 2:normal 3:hard 4:hell) - (默认为1)
+StageScore:各个关卡对应的得分要求(1:S 2:A 3:B 4:C 5:D 6:E) - (默认为6)
+-->
+
+
+<root>
+    <PveTitle Note1="获得称号" Note2="(系统)" >
+        <Title ID="1" Name="东部护卫者" World="0" StageId="1|4-35" StageDifficulty="1 1 1" StageScore="6"/>
+        <Title ID="2" Name="东部裁决者" World="0" StageId="1|4-35" StageDifficulty="4" StageScore="6"/>
+        <!-- <Title ID="3" Name="学院毕业生" World="0" StageId="1|4"/>
+        <Title ID="4" Name="代理镇长" World="0" StageId="5|6"/>
+        <Title ID="5" Name="功夫城城管" World="0" StageId="10-12" StageDifficulty="4"/>
+        <Title ID="6" Name="虎丘征服者" World="0" StageId="13-15" StageDifficulty="4"/>
+        <Title ID="7" Name="一层又一层" World="0" StageId="18-21" StageDifficulty="1"/>
+        <Title ID="8" Name="铸剑天下" World="0" StageId="22-25" StageDifficulty="1"/>
+        <Title ID="9" Name="大副我爱你" World="0" StageId="30-35" StageDifficulty="1"/>
+        <Title ID="10" Name="耀眼小王子" World="0" StageId="36-38" StageDifficulty="1"/>
+        <Title ID="11" Name="裂谷大镖客" World="0" StageId="39-42" StageDifficulty="1"/>
+        <Title ID="12" Name="烈焰喷射者" World="0" StageId="43-46" StageDifficulty="1"/>
+        <Title ID="13" Name="徽章爱好者" World="0" StageId="0" AchieveId="32"/>
+        <Title ID="14" Name="徽章狂热分子" World="0" StageId="0" AchieveId="33"/>
+        <Title ID="15" Name="徽章之王" World="0" StageId="0" AchieveId="34"/> -->
+        <Title ID="17" Name="虎丘领主" World="1" StageId="13" StageDifficulty="4" StageScore="1"/>
+        <Title ID="18" Name="倚天领主" World="1" StageId="21" StageDifficulty="4" StageScore="1"/>
+        <Title ID="19" Name="营寨勇士" World="1" StageId="49" StageDifficulty="4" StageScore="1"/>
+        <Title ID="20" Name="断戟勇士" World="1" StageId="50" StageDifficulty="4" StageScore="1"/>
+        <Title ID="100" Name="学院新秀" World="0" StageId="935-938" StageDifficulty="1"/>      
+    </PveTitle>
+    <AchieveTitle>
+        <!--<Title ID="15" Name="徽章之王" World="0" StageId="0" AchieveId="34"/> -->
+    </AchieveTitle>
+    <PvpTitle>
+    </PvpTitle>
+    <CollectTitle>
+        <Title ID="13" Name="" World="0" CollecId="1-10" Count="10" />
+    </CollectTitle>
+	<OtherTitle>
+        <Title ID="101" Name="功夫奇才" World="1" />
+        <Title ID="105" Name="战队队长" World="1" />
+        <Title ID="102" Name="盖世英雄" World="1" />
+        <Title ID="104" Name="天下第一" World="1" />
+        <Title ID="106" Name="优秀队长" World="1" />
+        <Title ID="103" Name="百大侠士" World="1" />
+        <Title ID="111" Name="帝星" World="1" />
+        <Title ID="112" Name="天王" World="1" />
+        <Title ID="113" Name="尊者" World="0" />
+        <Title ID="114" Name="精英" World="0" />
+        <Title ID="115" Name="壮士" World="0" />
+        <Title ID="116" Name="独步武林" World="1" />
+		<Title ID="21" Name="伏魔圣手" World="1"/>
+        
+        <Title ID="1001" Name="欢乐之星" World="0" />
+        <Title ID="1002" Name="小医仙" World="0" />
+        <Title ID="1003" Name="小铁匠" World="0" />
+        <Title ID="1004" Name="小有所成" World="0" />
+        <Title ID="1005" Name="齐天大侠" World="0" />
+        <Title ID="1006" Name="玉兔英侠" World="0" />
+        <Title ID="1007" Name="熊猫大侠" World="0" />
+        <Title ID="1008" Name="飞龙大侠" World="0" />
+        <Title ID="1009" Name="全副武装" World="1" />
+
+
+    </OtherTitle>
+
+</root>
+

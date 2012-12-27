@@ -1,0 +1,64 @@
+<Stage ID="4" Lv="2 100" InitX="261" InitY="406" InitMapID="1000401">  
+	<Map ID="1000401">    
+		<ToMaps>      
+			<Map ID="1000403" InitX="216" InitY="388"/>    
+		</ToMaps>    
+			<Monsters>      
+				<Monster ID="11040" X="366" Y="690"/>      
+				<Monster ID="11040" X="833" Y="422"/>      
+				<Monster ID="11040" X="1141" Y="425"/>      
+				<Monster ID="11040" X="1468" Y="721"/>      
+				<Monster ID="11040" X="1152" Y="689"/>      
+				<Monster ID="11046" X="984" Y="532"/>      
+				<Monster ID="11040" X="468" Y="421"/>      
+				<Monster ID="11040" X="1481" Y="424"/>      
+				<Monster ID="11041" X="824" Y="699"/>      
+				<Monster ID="11041" X="1728" Y="699"/>      
+				<Monster ID="11041" X="1715" Y="522"/>      
+				<Monster ID="11049" X="1509" Y="568"/>    
+			</Monsters>  
+	</Map>  
+	
+	<Map ID="1000402"/>  
+	
+	<Map ID="1000403">    
+		<ToMaps>      
+			<Map ID="1000401" InitX="1702" InitY="390"/>      
+			<Map ID="1000404" InitX="216" InitY="398"/>    
+		</ToMaps>    
+			<Monsters>      
+				<Monster ID="11041" X="835" Y="546"/>      
+				<Monster ID="11040" X="1172" Y="420"/>      
+				<Monster ID="11040" X="1169" Y="706"/>      
+				<Monster ID="11041" X="1611" Y="696"/>      
+				<Monster ID="11040" X="644" Y="703"/>      
+				<Monster ID="11041" X="571" Y="706"/>      
+				<Monster ID="11041" X="1071" Y="434"/>      
+				<Monster ID="11041" X="1070" Y="712"/>      
+				<Monster ID="11041" X="633" Y="402"/>      
+				<Monster ID="11041" X="1564" Y="420"/>      
+				<Monster ID="11023" X="1423" Y="559"/>      
+				<Monster ID="11040" X="708" Y="394"/>    
+			</Monsters>  
+	</Map>  
+	
+	<Map ID="1000404">    
+		<ToMaps>      
+			<Map ID="1000403" InitX="1702" InitY="390"/>    
+		</ToMaps>    
+			<Monsters>      
+				<Monster ID="11040" X="1400" Y="423"/>      
+				<Monster ID="11040" X="704" Y="419"/>      
+				<Monster ID="11041" X="777" Y="421"/>      
+				<Monster ID="11041" X="512" Y="428"/>      
+				<Monster ID="11040" X="1199" Y="568"/>      
+				<Monster ID="11040" X="675" Y="708"/>      
+				<Monster ID="11041" X="1025" Y="736"/>      
+				<Monster ID="11041" X="440" Y="714"/>      
+				<Monster ID="11041" X="755" Y="703"/>      
+				<Monster ID="11041" X="1066" Y="411"/>      
+				<Monster ID="11041" X="1443" Y="731"/>      
+				<Monster ID="13008" X="1668" Y="577"/>    
+			</Monsters>  
+	</Map>
+</Stage>

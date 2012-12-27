@@ -1,0 +1,1655 @@
+<!-- edited with XML Spy v4.0.1 U (http://www.xmlspy.com) by opec (opec) -->
+<!--
+	id:BUFF流水号，必须唯一不能重复 范围【1- 20000】
+	buff_id > 900000 < 1000000 的为兑换的buffID
+	buff_id > 1000000 的为使用物品buffID
+    duration_time: BUFF 持续时间，单位秒 
+    dead_delete: 死亡后是否删除1：删除，0：保留 2:关卡重开的时候删除, 以上值进行&操作
+    effect id: 包含的效果ID，不能重复
+    buff_type: 1:buff, 2:debuff(可以被药物清理掉，可以被免疫) 3：debuff(可以被药物清理掉，但是不能免疫) 默认为1
+    buff_category: 自定义种类，同类之间根据优先级别产生互斥
+    buff_priority: 优先级别，数字大的替换数字小的
+    buff_trigger_times: buff的最大触发次数限制
+    buff_finish_type: 结束类型1：时间到了结束，2：次数到了结束 每种类型可以做&操作，默认为1 
+	
+	备注：1&2 = 3，表示时间到了，次数到了都会让BUFF消失
+	改BUFF包含的effect项所对应trigger_type = 3, 4的时候才会让buff_trigger_times起作用
+	如果有不明白请咨询马龙		
+-->
+<root>
+	<buff buff_id="9003" duration_time="60" name="伤害加成(测试用)" icon="9003">
+		<effect effect_type="110" effect_id="1"/>
+	</buff>
+	<buff buff_id="9000" duration_time="600" name="被攻击回蓝(测试用)" icon="9000" buff_trigger_times="100" buff_finish_type="3">
+		<effect effect_type="2" effect_id="1"/>
+	</buff>
+	<buff buff_id="9001" duration_time="30" name="技能CD时间减少(测试用)" icon="9001" buff_finish_type="1">
+		<effect effect_type="107" effect_id="1"/>
+	</buff>
+	<buff buff_id="9002" duration_time="30" name="技能耗蓝减少(测试用)" icon="9001" buff_finish_type="1">
+		<effect effect_type="108" effect_id="1"/>
+	</buff>
+	<buff buff_id="200001" duration_time="5" name="回春光环带的BUFF" buff_finish_type="1" >
+		<effect effect_type="3" effect_id="12"/>
+	</buff>
+	<buff buff_id="200011" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1" >
+		<effect effect_type="3" effect_id="31"/>
+		<effect effect_type="2" effect_id="11"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200012" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="32"/>
+		<effect effect_type="2" effect_id="12"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200013" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="33"/>
+		<effect effect_type="2" effect_id="13"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200014" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="34"/>
+		<effect effect_type="2" effect_id="14"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200015" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="35"/>
+		<effect effect_type="2" effect_id="15"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200016" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="36"/>
+		<effect effect_type="2" effect_id="16"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200017" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="37"/>
+		<effect effect_type="2" effect_id="17"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200018" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="38"/>
+		<effect effect_type="2" effect_id="18"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200019" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="39"/>
+		<effect effect_type="2" effect_id="19"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200020" duration_time="5" name="火云麒麟回复光环" buff_finish_type="1">
+		<effect effect_type="3" effect_id="40"/>
+		<effect effect_type="2" effect_id="20"/>
+		<effect effect_type="119" effect_id="5"/>
+	</buff>
+	<buff buff_id="200021" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="21"/>
+	</buff>
+	<buff buff_id="200022" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="22"/>
+	</buff>
+	<buff buff_id="200023" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="23"/>
+	</buff>
+	<buff buff_id="200024" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="24"/>
+	</buff>
+	<buff buff_id="200025" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="25"/>
+	</buff>
+	<buff buff_id="200026" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="26"/>
+	</buff>
+	<buff buff_id="200027" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="27"/>
+	</buff>
+	<buff buff_id="200028" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="28"/>
+	</buff>
+	<buff buff_id="200029" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="29"/>
+	</buff>
+	<buff buff_id="200030" duration_time="60" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="30"/>
+	</buff>
+	<buff buff_id="1" duration_time="14" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="2"/>
+	</buff>
+	<buff buff_id="2" duration_time="14" name="ATK下降" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="2"/>
+	</buff>
+	<buff buff_id="3" duration_time="14" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="3"/>
+	</buff>
+	<buff buff_id="4" duration_time="14" name="ATK下降" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="3"/>
+	</buff>
+	<buff buff_id="5" duration_time="14" name="驻足" buff_type="2" icon="11">
+		<effect effect_type="11" effect_id="1"/>
+	</buff>
+	<buff buff_id="6" duration_time="14" name="潮湿" buff_category="6" buff_priority="1" icon="33" buff_type="2">
+		<effect effect_type="11" effect_id="2"/>
+		<effect effect_type="21" effect_id="2"/>
+	</buff>
+	<buff buff_id="7" duration_time="6" name="冻伤" buff_category="7" buff_priority="1" icon="34" buff_type="2">
+		<effect effect_type="114" effect_id="1"/>
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="8" duration_time="3000" name="干燥" buff_category="6" buff_priority="2" icon="35" dead_delete="3">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="9" duration_time="3000" name="热力" buff_category="7" buff_priority="2" icon="36" dead_delete="3">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="21" duration_time="9999" name="（反）暗流" buff_category="21" buff_priority="2" icon="0" dead_delete="3">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="22" duration_time="8" name="脆弱" buff_category="21" buff_type="2" buff_priority="1" icon="41" dead_delete="3">
+		<effect effect_type="114" effect_id="1"/>
+	</buff>
+	<buff buff_id="23" duration_time="8" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="10"/>
+	</buff>
+	<buff buff_id="24" duration_time="8" name="驻足" buff_category="21" buff_type="2" buff_priority="1" icon="11" dead_delete="3">
+		<effect effect_type="11" effect_id="2"/>
+	</buff>
+	<buff buff_id="26" duration_time="9999" name="暗流" icon="40" dead_delete="2">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="25" duration_time="1800" name="抵御DEBUFF" dead_delete="3">
+		<effect effect_type="112" effect_id="1"/>
+	</buff>
+	<buff buff_id="27" duration_time="7" name="浴火焚身" icon="43">
+		<effect effect_type="100" effect_id="10"/>
+	</buff>
+	<buff buff_id="29" duration_time="8" name="火结(伤害）" buff_category="21" buff_type="3" buff_priority="1" icon="46" dead_delete="1">
+		<effect effect_type="21" effect_id="11"/>
+	</buff>
+	<buff buff_id="30" duration_time="8" name="冰焰(伤害）" buff_category="22" buff_type="3" buff_priority="1" icon="47" dead_delete="1">
+		<effect effect_type="21" effect_id="11"/>
+	</buff>
+	<buff buff_id="31" duration_time="10" name="火足" buff_type="1" icon="44" dead_delete="1">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="32" duration_time="10" name="冰迹" buff_type="1" icon="45" dead_delete="1">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="33" duration_time="6000" name="火抗" buff_category="21" buff_type="1" buff_priority="4" icon="48" dead_delete="1">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="34" duration_time="6000" name="冰抗" buff_category="22" buff_type="1" buff_priority="4" icon="49" dead_delete="1">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="35" duration_time="14" name="ATK下降80%" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="8"/>
+	</buff>
+	<buff buff_id="36" duration_time="20" name="迅足" buff_type="1" buff_category="36" buff_priority="1" icon="10" dead_delete="1">
+		<effect effect_type="10" effect_id="1"/>
+	</buff>
+	<buff buff_id="37" duration_time="5" name="中毒" buff_type="2" icon="24">
+		<effect effect_type="21" effect_id="15"/>
+	</buff>
+	<buff buff_id="38" duration_time="15" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="4"/>
+	</buff>
+	<buff buff_id="39" duration_time="15" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="5"/>
+	</buff>
+	<buff buff_id="40" duration_time="15" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="6"/>
+	</buff>
+	<buff buff_id="41" duration_time="15" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="7"/>
+	</buff>
+	<buff buff_id="42" duration_time="15" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="8"/>
+	</buff>
+	<buff buff_id="43" duration_time="15" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="9"/>
+	</buff>
+	<buff buff_id="44" duration_time="15" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="10"/>
+	</buff>
+	<!-- 流光盾 -->
+	<buff buff_id="11" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="5"/>
+	</buff>
+	<buff buff_id="12" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="5"/>
+	</buff>
+	<buff buff_id="13" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="6"/>
+	</buff>
+	<buff buff_id="14" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="6"/>
+	</buff>
+	<buff buff_id="15" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="7"/>
+	</buff>
+	<buff buff_id="16" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="7"/>
+	</buff>
+	<buff buff_id="17" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="8"/>
+	</buff>
+	<buff buff_id="18" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="8"/>
+	</buff>
+	<buff buff_id="19" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="9"/>
+	</buff>
+	<buff buff_id="20" duration_time="60" name="流光盾" icon="4">
+		<effect effect_type="4" effect_id="9"/>
+	</buff>
+	<buff buff_id="28" duration_time="100000" buff_type="1" name="无敌" icon="50">
+		<effect effect_type="109" effect_id="1"/>
+	</buff>
+	<!-- 勇气竞技场宝箱 -->
+	<buff buff_id="101" duration_time="20" name="勇气竞技场宝箱" icon="6">
+		<effect effect_type="6" effect_id="5"/>
+	</buff>
+	<buff buff_id="102" duration_time="20" name="勇气竞技场宝箱" icon="4">
+		<effect effect_type="4" effect_id="9"/>
+	</buff>
+	<buff buff_id="103" duration_time="20" name="勇气竞技场宝箱" buff_category="36" buff_priority="1" icon="10">
+		<effect effect_type="10" effect_id="1"/>
+	</buff>
+	<buff buff_id="104" duration_time="20" name="勇气竞技场宝箱" icon="8">
+		<effect effect_type="8" effect_id="3"/>
+	</buff>
+	<!-- 变身BUFF -->
+	<buff buff_id="201" duration_time="300" name="增加防御率10%" icon="4">
+		<effect effect_type="4" effect_id="1"/>
+	</buff>
+	<buff buff_id="202" duration_time="300" name="增加攻击力10%" icon="6">
+		<effect effect_type="6" effect_id="1"/>
+	</buff>
+	<buff buff_id="203" duration_time="300" name="增加命中率5%" icon="12">
+		<effect effect_type="12" effect_id="1"/>
+	</buff>
+	<buff buff_id="204" duration_time="300" name="增加防御率20%" icon="4">
+		<effect effect_type="4" effect_id="2"/>
+	</buff>
+	<buff buff_id="205" duration_time="300" name="增加攻击力20%" icon="6">
+		<effect effect_type="6" effect_id="2"/>
+	</buff>
+	<buff buff_id="206" duration_time="300" name="增加暴击率10%" icon="8">
+		<effect effect_type="8" effect_id="1"/>
+	</buff>
+	<buff buff_id="207" duration_time="300" name="增加命中率10%" icon="12">
+		<effect effect_type="12" effect_id="2"/>
+	</buff>
+	<buff buff_id="208" duration_time="300" name="增加闪避率10%" icon="14">
+		<effect effect_type="14" effect_id="1"/>
+	</buff>
+	<buff buff_id="209" duration_time="300" name="增加移动速度30%" buff_category="36" buff_priority="1" icon="10">
+		<effect effect_type="10" effect_id="1"/>
+	</buff>
+	<buff buff_id="210" duration_time="300" name="增加移动速度30%攻击力+5%" buff_category="36" buff_priority="2" icon="10">
+		<effect effect_type="10" effect_id="1"/>
+		<effect effect_type="6" effect_id="31"/>
+	</buff>
+	<buff buff_id="211" duration_time="300" name="血量+8%攻击力+8%" icon="10">
+		<effect effect_type="18" effect_id="2"/>
+		<effect effect_type="6" effect_id="35"/>
+	</buff>
+	<buff buff_id="212" duration_time="300" name="增加防御率20%、增加血量10%" icon="4">
+		<effect effect_type="4" effect_id="2"/>
+		<effect effect_type="18" effect_id="25"/>
+	</buff>
+	<buff buff_id="213" duration_time="300" name="增加防御50%、增加血量50%" icon="4">
+		<effect effect_type="4" effect_id="14"/>
+		<effect effect_type="18" effect_id="43"/>
+	</buff>
+	<buff buff_id="214" duration_time="300" name="增加血量50%, 速度减少50%" icon="20">
+		<effect effect_type="11" effect_id="2"/>
+		<effect effect_type="18" effect_id="43"/>
+	</buff>
+	<buff buff_id="215" duration_time="300" name="增加速度50%, 血量减少50%" icon="10">
+		<effect effect_type="10" effect_id="32"/>
+	</buff>
+
+	<!-- 药品BUFF -->
+	<buff buff_id="301" duration_time="50" name="增加攻击30%" icon="6">
+		<effect effect_type="6" effect_id="3"/>
+	</buff>
+	<buff buff_id="302" duration_time="120" name="增加防御50%" icon="4">
+		<effect effect_type="4" effect_id="5"/>
+	</buff>
+	<buff buff_id="303" duration_time="180" name="增加移动速度30%" buff_category="36" buff_priority="1" icon="10">
+		<effect effect_type="10" effect_id="1"/>
+	</buff>
+	<buff buff_id="304" duration_time="180" name="增加暴击率40%" icon="8">
+		<effect effect_type="8" effect_id="4"/>
+	</buff>
+	<buff buff_id="305" duration_time="300" name="增加闪避率30%" icon="14">
+		<effect effect_type="14" effect_id="3"/>
+	</buff>
+	<!-- 灵兽必杀技BUFF -->
+	<buff buff_id="501" duration_time="50" name="增加攻击99%" icon="6">
+		<effect effect_type="6" effect_id="10"/>
+	</buff>
+	<buff buff_id="502" duration_time="50" name="增加攻击110%" icon="6">
+		<effect effect_type="6" effect_id="11"/>
+	</buff>
+	<buff buff_id="503" duration_time="50" name="增加攻击120%" icon="6">
+		<effect effect_type="6" effect_id="12"/>
+	</buff>
+	<buff buff_id="504" duration_time="50" name="增加攻击130%" icon="6">
+		<effect effect_type="6" effect_id="13"/>
+	</buff>
+	<buff buff_id="505" duration_time="50" name="增加攻击140%" icon="6">
+		<effect effect_type="6" effect_id="14"/>
+	</buff>
+	<buff buff_id="506" duration_time="50" name="增加攻击150%" icon="6">
+		<effect effect_type="6" effect_id="15"/>
+	</buff>
+	<buff buff_id="507" duration_time="50" name="增加攻击160%" icon="6">
+		<effect effect_type="6" effect_id="16"/>
+	</buff>
+	<buff buff_id="508" duration_time="50" name="增加攻击170%" icon="6">
+		<effect effect_type="6" effect_id="17"/>
+	</buff>
+	<buff buff_id="509" duration_time="50" name="增加攻击180%" icon="6">
+		<effect effect_type="6" effect_id="18"/>
+	</buff>
+	<buff buff_id="510" duration_time="50" name="增加攻击190%" icon="6">
+		<effect effect_type="6" effect_id="19"/>
+	</buff>
+	<buff buff_id="511" duration_time="60" name="增加暴击10%" icon="8">
+		<effect effect_type="8" effect_id="1"/>
+	</buff>
+	<buff buff_id="512" duration_time="60" name="增加暴击20%" icon="8">
+		<effect effect_type="8" effect_id="2"/>
+	</buff>
+	<buff buff_id="513" duration_time="60" name="增加暴击30%" icon="8">
+		<effect effect_type="8" effect_id="3"/>
+	</buff>
+	<buff buff_id="514" duration_time="60" name="增加暴击40%" icon="8">
+		<effect effect_type="8" effect_id="4"/>
+	</buff>
+	<buff buff_id="515" duration_time="60" name="增加暴击50%" icon="8">
+		<effect effect_type="8" effect_id="5"/>
+	</buff>
+	<buff buff_id="516" duration_time="60" name="增加暴击60%" icon="8">
+		<effect effect_type="8" effect_id="6"/>
+	</buff>
+	<buff buff_id="517" duration_time="60" name="增加暴击70%" icon="8">
+		<effect effect_type="8" effect_id="7"/>
+	</buff>
+	<buff buff_id="518" duration_time="60" name="增加暴击80%" icon="8">
+		<effect effect_type="8" effect_id="8"/>
+	</buff>
+	<buff buff_id="519" duration_time="60" name="增加暴击90%" icon="8">
+		<effect effect_type="8" effect_id="9"/>
+	</buff>
+	<buff buff_id="520" duration_time="60" name="增加暴击99%" icon="8">
+		<effect effect_type="8" effect_id="10"/>
+	</buff>
+	<buff buff_id="521" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="1"/>
+	</buff>
+	<buff buff_id="522" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="2"/>
+	</buff>
+	<buff buff_id="523" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="3"/>
+	</buff>
+	<buff buff_id="524" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="4"/>
+	</buff>
+	<buff buff_id="525" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="5"/>
+	</buff>
+	<buff buff_id="526" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="6"/>
+	</buff>
+	<buff buff_id="527" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="7"/>
+	</buff>
+	<buff buff_id="528" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="8"/>
+	</buff>
+	<buff buff_id="529" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="9"/>
+	</buff>
+	<buff buff_id="530" duration_time="30" name="阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="10"/>
+	</buff>
+	<buff buff_id="531" duration_time="30" name="蜂群" icon="18">
+		<effect effect_type="100" effect_id="4"/>
+	</buff>
+	<buff buff_id="532" duration_time="15" name="绝对防御" icon="4">
+		<effect effect_type="101" effect_id="1"/>
+	</buff>
+	<buff buff_id="533" duration_time="60" name="狂暴状态" icon="22">
+		<effect effect_type="6" effect_id="15"/>
+		<effect effect_type="3" effect_id="1"/>
+	</buff>
+	<buff buff_id="534" duration_time="4" name="眩晕" buff_type="2" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="535" duration_time="5" name="乌鸦防御" icon="19">
+		<effect effect_type="101" effect_id="1"/>
+	</buff>
+	<buff buff_id="536" duration_time="8" name="中毒" buff_type="2" icon="24">
+		<effect effect_type="21" effect_id="1"/>
+	</buff>
+	<buff buff_id="537" duration_time="100" name="恢复图腾" icon="3">
+		<effect effect_type="102" effect_id="21"/>
+	</buff>
+	<buff buff_id="538" duration_time="13" name="眩晕" buff_type="2" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="539" duration_time="60" name="魔伊护甲" icon="4">
+		<effect effect_type="4" effect_id="9"/>
+	</buff>
+	<!-- 小雪球BUFF -->
+	<buff buff_id="541" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="5"/>
+		<effect effect_type="14" effect_id="1"/>
+	</buff>
+	<buff buff_id="542" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="5"/>
+		<effect effect_type="14" effect_id="2"/>
+	</buff>
+	<buff buff_id="543" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="6"/>
+		<effect effect_type="14" effect_id="3"/>
+	</buff>
+	<buff buff_id="544" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="6"/>
+		<effect effect_type="14" effect_id="4"/>
+	</buff>
+	<buff buff_id="545" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="7"/>
+		<effect effect_type="14" effect_id="5"/>
+	</buff>
+	<buff buff_id="546" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="7"/>
+		<effect effect_type="14" effect_id="6"/>
+	</buff>
+	<buff buff_id="547" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="8"/>
+		<effect effect_type="14" effect_id="7"/>
+	</buff>
+	<buff buff_id="548" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="8"/>
+		<effect effect_type="14" effect_id="8"/>
+	</buff>
+	<buff buff_id="549" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="9"/>
+		<effect effect_type="14" effect_id="9"/>
+	</buff>
+	<buff buff_id="550" duration_time="60" name="冰霜护盾" icon="25">
+		<effect effect_type="4" effect_id="9"/>
+		<effect effect_type="14" effect_id="10"/>
+	</buff>
+	<buff buff_id="551" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="2"/>
+	</buff>
+	<buff buff_id="552" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="3"/>
+	</buff>
+	<buff buff_id="553" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="4"/>
+	</buff>
+	<buff buff_id="554" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="5"/>
+	</buff>
+	<buff buff_id="555" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="6"/>
+	</buff>
+	<buff buff_id="556" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="7"/>
+	</buff>
+	<buff buff_id="557" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="8"/>
+	</buff>
+	<buff buff_id="558" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="9"/>
+	</buff>
+	<buff buff_id="559" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="10"/>
+	</buff>
+	<buff buff_id="560" duration_time="20" name="冰雪之心" icon="3">
+		<effect effect_type="3" effect_id="11"/>
+	</buff>
+	<buff buff_id="561" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="11"/>
+	</buff>
+	<buff buff_id="562" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="12"/>
+	</buff>
+	<buff buff_id="563" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="13"/>
+	</buff>
+	<buff buff_id="564" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="14"/>
+	</buff>
+	<buff buff_id="565" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="15"/>
+	</buff>
+	<buff buff_id="566" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="16"/>
+	</buff>
+	<buff buff_id="567" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="17"/>
+	</buff>
+	<buff buff_id="568" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="18"/>
+	</buff>
+	<buff buff_id="569" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="19"/>
+	</buff>
+	<buff buff_id="570" duration_time="2" name="冰雪之心" icon="3">
+		<effect effect_type="102" effect_id="20"/>
+	</buff>
+	<buff buff_id="571" duration_time="10" buff_type="2" name="眩晕" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="572" duration_time="8" buff_type="2" name="眩晕" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="573" duration_time="21000" name="净身">
+		<effect effect_type="105" effect_id="1"/>
+	</buff>
+	<buff buff_id="574" duration_time="5" name="眩晕" buff_type="2" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="575" duration_time="8" name="眩晕" buff_type="2" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="576" duration_time="10" name="古鲁护盾" icon="19">
+		<effect effect_type="101" effect_id="2"/>
+	</buff>
+	<buff buff_id="577" dead_delete="1" duration_time="10" buff_type="2" name="超级驻足" icon="11">
+		<effect effect_type="11" effect_id="1"/>
+	</buff>
+	<buff buff_id="578" duration_time="2" name="粘稠" buff_type="2" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="579" duration_time="90000" name="伤害" icon="6">
+		<effect effect_type="6" effect_id="20"/>
+	</buff>
+	<buff buff_id="580" duration_time="30" name="狂暴状态" icon="22">
+		<effect effect_type="6" effect_id="4"/>
+		<effect effect_type="3" effect_id="1"/>
+	</buff>
+	<buff buff_id="581" duration_time="2" name="麻痹" buff_type="2" icon="31">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="582" duration_time="2" name="诱惑" buff_type="2" icon="32">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="2"/>
+	</buff>
+	<buff buff_id="583" duration_time="3" name="舔棒棒糖" icon="3">
+		<effect effect_type="3" effect_id="13"/>
+	</buff>
+	<buff buff_id="584" duration_time="5" name="粘稠" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="585" duration_time="60" name="增加闪避2%" icon="14">
+		<effect effect_type="14" effect_id="1"/>
+	</buff>
+	<buff buff_id="586" duration_time="60" name="增加闪避4%" icon="14">
+		<effect effect_type="14" effect_id="2"/>
+	</buff>
+	<buff buff_id="587" duration_time="60" name="增加闪避6%" icon="14">
+		<effect effect_type="14" effect_id="3"/>
+	</buff>
+	<buff buff_id="588" duration_time="60" name="增加闪避8%" icon="14">
+		<effect effect_type="14" effect_id="4"/>
+	</buff>
+	<buff buff_id="589" duration_time="60" name="增加闪避10%" icon="14">
+		<effect effect_type="14" effect_id="5"/>
+	</buff>
+	<buff buff_id="590" duration_time="60" name="增加闪避12%" icon="14">
+		<effect effect_type="14" effect_id="6"/>
+	</buff>
+	<buff buff_id="591" duration_time="60" name="增加闪避14%" icon="14">
+		<effect effect_type="14" effect_id="7"/>
+	</buff>
+	<buff buff_id="592" duration_time="60" name="增加闪避16%" icon="14">
+		<effect effect_type="14" effect_id="8"/>
+	</buff>
+	<buff buff_id="593" duration_time="60" name="增加闪避18%" icon="14">
+		<effect effect_type="14" effect_id="9"/>
+	</buff>
+	<buff buff_id="594" duration_time="60" name="增加闪避20%" icon="14">
+		<effect effect_type="14" effect_id="10"/>
+	</buff>
+	<buff buff_id="611" duration_time="5" name="每秒造成10点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="17"/>
+	</buff>
+	<buff buff_id="612" duration_time="5" name="每秒造成20点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="18"/>
+	</buff>
+	<buff buff_id="613" duration_time="5" name="每秒造成30点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="19"/>
+	</buff>
+	<buff buff_id="614" duration_time="5" name="每秒造成40点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="20"/>
+	</buff>
+	<buff buff_id="615" duration_time="5" name="每秒造成50点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="21"/>
+	</buff>
+	<buff buff_id="616" duration_time="5" name="每秒造成120点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="22"/>
+	</buff>
+	<buff buff_id="617" duration_time="5" name="每秒造成140点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="23"/>
+	</buff>
+	<buff buff_id="618" duration_time="5" name="每秒造成160点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="24"/>
+	</buff>
+	<buff buff_id="619" duration_time="5" name="每秒造成180点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="25"/>
+	</buff>
+	<buff buff_id="620" duration_time="5" name="每秒造成300点伤害，持续5秒" icon="24">
+		<effect effect_type="21" effect_id="26"/>
+	</buff>
+	<buff buff_id="621" duration_time="3" name="定身" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="622" duration_time="4" name="定身" icon="27">
+		<effect effect_type="104" effect_id="22"/>
+	</buff>
+	<buff buff_id="623" duration_time="5" name="定身" icon="27">
+		<effect effect_type="104" effect_id="23"/>
+	</buff>
+	<buff buff_id="624" duration_time="6" name="定身" icon="27">
+		<effect effect_type="104" effect_id="24"/>
+	</buff>
+	<buff buff_id="625" duration_time="7" name="定身" icon="27">
+		<effect effect_type="104" effect_id="25"/>
+	</buff>
+	<buff buff_id="626" duration_time="8" name="定身" icon="27">
+		<effect effect_type="104" effect_id="26"/>
+	</buff>
+	<buff buff_id="627" duration_time="9" name="定身" icon="27">
+		<effect effect_type="104" effect_id="27"/>
+	</buff>
+	<buff buff_id="628" duration_time="10" name="定身" icon="27">
+		<effect effect_type="104" effect_id="28"/>
+	</buff>
+	<buff buff_id="629" duration_time="11" name="定身" icon="27">
+		<effect effect_type="104" effect_id="29"/>
+	</buff>
+	<buff buff_id="630" duration_time="8" name="定身" icon="27">
+		<effect effect_type="104" effect_id="30"/>
+	</buff>
+	<buff buff_id="631" duration_time="6" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="21"/>
+		<effect effect_type="114" effect_id="11"/>
+	</buff>
+	<buff buff_id="632" duration_time="7" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="12"/>
+	</buff>
+	<buff buff_id="633" duration_time="8" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="13"/>
+	</buff>
+	<buff buff_id="634" duration_time="9" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="14"/>
+	</buff>
+	<buff buff_id="635" duration_time="10" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="15"/>
+	</buff>
+	<buff buff_id="636" duration_time="11" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="16"/>
+	</buff>
+	<buff buff_id="637" duration_time="12" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="17"/>
+	</buff>
+	<buff buff_id="638" duration_time="13" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="18"/>
+	</buff>
+	<buff buff_id="639" duration_time="14" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="19"/>
+	</buff>
+	<buff buff_id="640" duration_time="15" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="20"/>
+	</buff>
+	<buff buff_id="641" duration_time="10" name="定身并脆弱" icon="27">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="20"/>
+	</buff>
+	<!-- 额外BUFF -->
+	<buff buff_id="601" duration_time="10000" name="增加攻击20%" icon="6">
+		<effect effect_type="6" effect_id="2"/>
+	</buff>
+	<buff buff_id="602" duration_time="10000" name="增加防御率20%" icon="4">
+		<effect effect_type="4" effect_id="2"/>
+	</buff>
+	<buff buff_id="603" duration_time="15" name="伤害反射" icon="0">
+		<effect effect_type="101" effect_id="1"/>
+	</buff>
+	<buff buff_id="604" duration_time="1200" name="提高HP上限 30%" icon="20">
+		<effect effect_type="18" effect_id="1"/>
+	</buff>
+	<buff buff_id="605" buff_category="99" duration_time="1200" name="提高HP/MP上限 30%" icon="21">
+		<effect effect_type="19" effect_id="1"/>
+		<effect effect_type="18" effect_id="1"/>
+	</buff>
+	<buff buff_id="607" buff_category="99" name="提高HP/MP上限 30%" icon="21" dead_delete="2">
+		<effect effect_type="19" effect_id="1"/>
+		<effect effect_type="18" effect_id="1"/>
+	</buff>
+	<!-- 龙人技能buff -->
+	<buff buff_id="701" duration_time="4" name="冰霜 " buff_type="2" icon="29" dead_delete="1">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="702" duration_time="5" name="灼伤" buff_type="2" icon="30" dead_delete="1">
+		<effect effect_type="21" effect_id="1"/>
+	</buff>
+	<buff buff_id="703" duration_time="5" name="中毒" buff_type="2" icon="24" dead_delete="1">
+		<effect effect_type="21" effect_id="1"/>
+	</buff>
+	<buff buff_id="704" duration_time="10" name="大灼伤" buff_type="2" icon="30" dead_delete="1">
+		<effect effect_type="21" effect_id="1"/>
+	</buff>
+	<buff buff_id="705" duration_time="1" name="冰霜 " buff_type="2" icon="29" dead_delete="1">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="706" duration_time="2" name="冰霜 " buff_type="2" icon="29" dead_delete="1">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="707" duration_time="3" name="冰霜 " buff_type="2" icon="29" dead_delete="1">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<!-- id不能变的BUFF -->
+	<buff buff_id="1001" duration_time="3600" name="双倍经验加成" buff_category="1001" buff_priority="2" icon="17">
+		<effect effect_type="17" effect_id="1"/>
+	</buff>
+	<buff buff_id="1002" duration_time="3600" name="马蜂窝" icon="18">
+		<effect effect_type="100" effect_id="1"/>
+	</buff>
+	<buff buff_id="1003" duration_time="18000" name="灵兽1.5倍经验 " buff_category="1003" buff_priority="1" icon="26">
+		<effect effect_type="20" effect_id="1"/>
+	</buff>
+	<buff buff_id="1004" duration_time="600" name="灵兽经验加成 " buff_category="1003" buff_priority="2" icon="28">
+		<effect effect_type="20" effect_id="2"/>
+	</buff>
+	<buff buff_id="1005" duration_time="600" name="人物经验加成 " buff_category="1001" buff_priority="2" icon="17">
+		<effect effect_type="22" effect_id="1"/>
+	</buff>
+	<buff buff_id="1006" duration_time="3600" name="灵兽经验加成 " buff_category="1003" buff_priority="2" icon="28">
+		<effect effect_type="20" effect_id="2"/>
+	</buff>
+	<buff buff_id="1007" duration_time="1800" name="灵兽1.5倍经验 " buff_category="1003" buff_priority="1" icon="37">
+		<effect effect_type="20" effect_id="1"/>
+	</buff>
+	<buff buff_id="1008" duration_time="1800" name="人物1.5倍经验 " buff_category="1001" buff_priority="1" icon="38">
+		<effect effect_type="22" effect_id="2"/>
+	</buff>
+	<buff buff_id="1009" duration_time="3" name="自杀BUFF">
+		<effect effect_type="117" effect_id="1"/>
+	</buff>
+	<buff buff_id="1010" duration_time="2" name="自杀BUFF">
+		<effect effect_type="117" effect_id="1"/>
+	</buff>
+	<buff buff_id="1011" duration_time="2" name="自杀BUFF">
+		<effect effect_type="117" effect_id="1"/>
+	</buff>
+	<buff buff_id="1012" duration_time="900" name="清崖的祝福1" icon="51">
+		<effect effect_type="23" effect_id="1"/>
+	</buff>
+	<buff buff_id="1013" duration_time="1800" name="清崖的祝福1" icon="51">
+		<effect effect_type="23" effect_id="1"/>
+	</buff>
+	<buff buff_id="1014" duration_time="3600" name="清崖的祝福1" icon="51">
+		<effect effect_type="23" effect_id="1"/>
+	</buff>
+	<buff buff_id="1201" duration_time="5" buff_type="2" name="火舌1" icon="53">
+		<effect effect_type="114" effect_id="2"/>
+	</buff>
+	<buff buff_id="1202" duration_time="5" buff_type="2" name="火舌2" icon="53">
+		<effect effect_type="114" effect_id="3"/>
+	</buff>
+	<buff buff_id="1203" duration_time="5" buff_type="2" name="火舌3" icon="53">
+		<effect effect_type="114" effect_id="4"/>
+	</buff>
+	<buff buff_id="1204" duration_time="5" buff_type="2" name="火舌4" icon="53">
+		<effect effect_type="114" effect_id="5"/>
+	</buff>
+	<buff buff_id="1205" duration_time="5" buff_type="2" name="火舌5" icon="53">
+		<effect effect_type="114" effect_id="6"/>
+	</buff>
+	<buff buff_id="1211" duration_time="10" buff_type="2" name="燃尽" icon="11">
+		<effect effect_type="11" effect_id="3"/>
+	</buff>
+	<buff buff_id="1212" duration_time="20" buff_type="2" name="超灵燃尽2" icon="52">
+		<effect effect_type="11" effect_id="4"/>
+		<effect effect_type="7" effect_id="8"/>
+	</buff>
+	<buff buff_id="1213" duration_time="9999" buff_type="1" name="红方" icon="54">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="1214" duration_time="9999" buff_type="1" name="蓝方" icon="55">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="1215" duration_time="3" name="冰焰(不能移动）" buff_category="23" buff_type="3" buff_priority="1" icon="29" dead_delete="1">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="1216" duration_time="3" name="火焰(3秒每秒扣20%血),有冰直接死" buff_category="24" buff_type="3" buff_priority="1" icon="46" dead_delete="1">
+		<effect effect_type="21" effect_id="6"/>
+	</buff>
+	<buff buff_id="1217" duration_time="7" name="毒(7秒每秒扣5%血)" buff_category="25" buff_type="3" buff_priority="1" icon="24" dead_delete="1">
+		<effect effect_type="21" effect_id="64"/>
+	</buff>
+	<buff buff_id="1218" duration_time="10" name="水(伤害40%，冰伤害+3秒钟）" buff_category="26" buff_type="3" buff_priority="1" icon="0" dead_delete="1" buff_finish_type="2" buff_trigger_times="1" >
+		<effect effect_type="21" effect_id="63" buff_finish_type="2" buff_trigger_times="1"/>
+	</buff>
+
+	<buff buff_id="1219" duration_time="10000" name="免疫冰焰(不能移动）" buff_category="23" buff_type="3" buff_priority="1" icon="79" >
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="1220" duration_time="10000" name="免疫火焰(3秒每秒扣20%血),有冰直接死" buff_category="24" buff_type="3" buff_priority="1" icon="81" >
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="1221" duration_time="10000" name="免疫毒(7秒每秒扣10%血)" buff_category="25" buff_type="3" buff_priority="1" icon="82" >
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="1222" duration_time="10000" name="免疫水(伤害40%，冰伤害+3秒钟）" buff_category="26" buff_type="3" buff_priority="1" icon="80" >
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+
+
+	<buff buff_id="800" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="21"/>
+	</buff>
+	<buff buff_id="801" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="22"/>
+	</buff>
+	<buff buff_id="802" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="23"/>
+	</buff>
+	<buff buff_id="803" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="24"/>
+	</buff>
+	<buff buff_id="804" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="25"/>
+	</buff>
+	<buff buff_id="805" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="26"/>
+	</buff>
+	<buff buff_id="806" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="27"/>
+	</buff>
+	<buff buff_id="807" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="28"/>
+	</buff>
+	<buff buff_id="808" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="29"/>
+	</buff>
+	<buff buff_id="809" duration_time="40" name="ATK上升" icon="6">
+		<effect effect_type="6" effect_id="30"/>
+	</buff>
+	<buff buff_id="810" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="32"/>
+	</buff>
+	<buff buff_id="811" duration_time="300" name="ATK上升5%" icon="6">
+		<effect effect_type="6" effect_id="31"/>
+	</buff>
+	<buff buff_id="812" duration_time="300" name="ATK上升15%" icon="6">
+		<effect effect_type="6" effect_id="32"/>
+	</buff>
+	<buff buff_id="813" duration_time="300" name="ATK上升25%" icon="6">
+		<effect effect_type="6" effect_id="33"/>
+	</buff>
+	<buff buff_id="814" duration_time="120" name="增加防御10%" icon="4">
+		<effect effect_type="4" effect_id="12"/>
+	</buff>
+	<buff buff_id="815" duration_time="120" name="增加防御20%" icon="4">
+		<effect effect_type="4" effect_id="13"/>
+	</buff>
+	<buff buff_id="816" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="33"/>
+	</buff>
+	<buff buff_id="817" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="34"/>
+	</buff>
+	<buff buff_id="818" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="35"/>
+	</buff>
+	<buff buff_id="819" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="36"/>
+	</buff>
+	<buff buff_id="820" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="37"/>
+	</buff>
+	<buff buff_id="821" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="38"/>
+	</buff>
+	<buff buff_id="822" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="39"/>
+	</buff>
+	<buff buff_id="823" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="40"/>
+	</buff>
+	<buff buff_id="824" duration_time="6" name="全屏冻伤" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="41"/>
+	</buff>
+	<buff buff_id="825" duration_time="20" name="1点灵力，20秒" icon="2" buff_type="1">
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="826" duration_time="40" name="2点灵力，40秒" icon="2" buff_type="1">
+		<effect effect_type="119" effect_id="2"/>
+	</buff>
+	<buff buff_id="827" duration_time="40" name="4点灵力，40秒" icon="2" buff_type="1">
+		<effect effect_type="119" effect_id="3"/>
+	</buff>
+	<buff buff_id="828" duration_time="80" name="5点灵力，80秒" icon="2" buff_type="1">
+		<effect effect_type="119" effect_id="4"/>
+	</buff>
+	<buff buff_id="829" duration_time="120" name="15点HP，120秒" icon="3" buff_type="1">
+		<effect effect_type="3" effect_id="14"/>
+	</buff>
+	<buff buff_id="830" duration_time="120" name="30点HP，120秒" icon="3" buff_type="1">
+		<effect effect_type="3" effect_id="15"/>
+	</buff>
+	<buff buff_id="831" duration_time="10" name="250点HP，10秒" icon="3" buff_type="1">
+		<effect effect_type="3" effect_id="16"/>
+	</buff>
+	<buff buff_id="832" duration_time="10" name="500点HP，10秒" icon="3" buff_type="1">
+		<effect effect_type="3" effect_id="17"/>
+	</buff>
+	<buff buff_id="833" duration_time="15" name="降低32%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="11"/>
+	</buff>
+	<buff buff_id="834" duration_time="15" name="降低34%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="12"/>
+	</buff>
+	<buff buff_id="835" duration_time="15" name="降低36%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="13"/>
+	</buff>
+	<buff buff_id="836" duration_time="15" name="降低38%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="14"/>
+	</buff>
+	<buff buff_id="837" duration_time="15" name="降低40%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="15"/>
+	</buff>
+	<buff buff_id="838" duration_time="15" name="降低42%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="16"/>
+	</buff>
+	<buff buff_id="839" duration_time="15" name="降低44%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="17"/>
+	</buff>
+	<buff buff_id="840" duration_time="15" name="降低46%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="18"/>
+	</buff>
+	<buff buff_id="841" duration_time="15" name="降低48%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="19"/>
+	</buff>
+	<buff buff_id="842" duration_time="15" name="降低50%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="7" effect_id="20"/>
+	</buff>
+	<buff buff_id="843" duration_time="6" name="回复1200生命和6灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="844" duration_time="7" name="回复1400生命和7灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="845" duration_time="8" name="回复1600生命和8灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="846" duration_time="9" name="回复1800生命和9灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="847" duration_time="10" name="回复2000生命和10灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="848" duration_time="11" name="回复2200生命和11灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="849" duration_time="12" name="回复2400生命和12灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="850" duration_time="13" name="回复2600生命和13灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="851" duration_time="14" name="回复2800生命和14灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="852" duration_time="15" name="回复3000生命和15灵力" icon="3">
+		<effect effect_type="3" effect_id="18"/>
+		<effect effect_type="119" effect_id="1"/>
+	</buff>
+	<buff buff_id="853" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="32"/>
+	</buff>
+	<buff buff_id="854" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="33"/>
+	</buff>
+	<buff buff_id="855" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="34"/>
+	</buff>
+	<buff buff_id="856" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="35"/>
+	</buff>
+	<buff buff_id="857" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="36"/>
+	</buff>
+	<buff buff_id="858" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="37"/>
+	</buff>
+	<buff buff_id="859" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="38"/>
+	</buff>
+	<buff buff_id="860" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="39"/>
+	</buff>
+	<buff buff_id="861" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="40"/>
+	</buff>
+	<buff buff_id="862" duration_time="6" name="全屏烧伤" icon="57" buff_type="2">
+		<effect effect_type="21" effect_id="41"/>
+	</buff>
+	<buff buff_id="863" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="32"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="864" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="33"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="865" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="34"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="866" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="35"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="867" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="36"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="868" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="37"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="869" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="38"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="870" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="39"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="871" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="40"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="872" duration_time="14" name="全屏烧伤+减速" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="41"/>
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="873" duration_time="30" name="增加攻击350%" icon="6">
+		<effect effect_type="6" effect_id="34"/>
+	</buff>
+	<buff buff_id="874" duration_time="30" name="超威阴阳袋" icon="16">
+		<effect effect_type="100" effect_id="11"/>
+	</buff>
+	<buff buff_id="875" duration_time="15" name="命中率下降" icon="59" buff_type="2">
+		<effect effect_type="13" effect_id="11"/>
+	</buff>
+	<buff buff_id="876" duration_time="15" name="命中率下降" icon="59" buff_type="2">
+		<effect effect_type="13" effect_id="12"/>
+	</buff>
+	<buff buff_id="877" duration_time="15" name="命中率下降" icon="59" buff_type="2">
+		<effect effect_type="13" effect_id="13"/>
+	</buff>
+	<buff buff_id="878" duration_time="15" name="命中率下降" icon="59" buff_type="2">
+		<effect effect_type="13" effect_id="14"/>
+	</buff>
+	<buff buff_id="879" duration_time="15" name="命中率下降" icon="59" buff_type="2">
+		<effect effect_type="13" effect_id="15"/>
+	</buff>
+	<buff buff_id="880" duration_time="15" name="定身" icon="60" buff_type="2">
+		<effect effect_type="11" effect_id="5"/>
+	</buff>
+	<buff buff_id="881" duration_time="6" name="三龙炎杀阵" icon="63">
+		<effect effect_type="100" effect_id="11"/>
+	</buff>
+	<buff buff_id="882" duration_time="15" name="脆弱+50%伤害" buff_type="2" icon="41" dead_delete="3">
+		<effect effect_type="114" effect_id="21"/>
+	</buff>
+	<buff buff_id="883" duration_time="15" name="降低32%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="11"/>
+	</buff>
+	<buff buff_id="884" duration_time="15" name="降低34%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="12"/>
+	</buff>
+	<buff buff_id="885" duration_time="15" name="降低36%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="13"/>
+	</buff>
+	<buff buff_id="886" duration_time="15" name="降低38%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="14"/>
+	</buff>
+	<buff buff_id="887" duration_time="15" name="降低40%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="15"/>
+	</buff>
+	<buff buff_id="888" duration_time="15" name="降低42%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="16"/>
+	</buff>
+	<buff buff_id="889" duration_time="15" name="降低44%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="17"/>
+	</buff>
+	<buff buff_id="890" duration_time="15" name="降低46%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="18"/>
+	</buff>
+	<buff buff_id="891" duration_time="15" name="降低48%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="19"/>
+	</buff>
+	<buff buff_id="892" duration_time="15" name="降低50%攻击15秒" buff_type="2" icon="7">
+		<effect effect_type="11" effect_id="1"/>
+		<effect effect_type="7" effect_id="20"/>
+	</buff>
+	<buff buff_id="893" duration_time="10" name="miss45%" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="5"/>
+	</buff>
+	<buff buff_id="894" duration_time="10" name="miss55%" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="6"/>
+	</buff>
+	<buff buff_id="895" duration_time="10" name="miss65%" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="7"/>
+	</buff>
+	<buff buff_id="896" duration_time="10" name="miss75%" buff_category="21" buff_type="2" buff_priority="1" icon="42" dead_delete="3">
+		<effect effect_type="13" effect_id="8"/>
+	</buff>
+	<buff buff_id="897" duration_time="5" name="灼伤5%生命" buff_type="2" icon="30" dead_delete="1">
+		<effect effect_type="21" effect_id="2"/>
+	</buff>
+	<buff buff_id="898" duration_time="10" name="脆弱+30%伤害" buff_type="2" icon="41" dead_delete="3">
+		<effect effect_type="114" effect_id="20"/>
+	</buff>
+	<buff buff_id="899" duration_time="30" name="增加攻击80%" icon="6">
+		<effect effect_type="6" effect_id="34"/>
+	</buff>
+	<buff buff_id="900" duration_time="4" name="冰霜" icon="29">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="901" duration_time="60" name="受伤回100HP" icon="65">
+		<effect effect_type="3" effect_id="41"/>
+	</buff>
+	<buff buff_id="902" duration_time="60" name="受伤回120HP" icon="65">
+		<effect effect_type="3" effect_id="42"/>
+	</buff>
+	<buff buff_id="903" duration_time="60" name="受伤回140HP" icon="65">
+		<effect effect_type="3" effect_id="43"/>
+	</buff>
+	<buff buff_id="904" duration_time="60" name="受伤回160HP" icon="65">
+		<effect effect_type="3" effect_id="44"/>
+	</buff>
+	<buff buff_id="905" duration_time="60" name="受伤回180HP" icon="65">
+		<effect effect_type="3" effect_id="45"/>
+	</buff>
+	<buff buff_id="906" duration_time="60" name="受伤回200HP" icon="65">
+		<effect effect_type="3" effect_id="46"/>
+	</buff>
+	<buff buff_id="907" duration_time="60" name="受伤回220HP" icon="65">
+		<effect effect_type="3" effect_id="47"/>
+	</buff>
+	<buff buff_id="908" duration_time="60" name="受伤回240HP" icon="65">
+		<effect effect_type="3" effect_id="48"/>
+	</buff>
+	<buff buff_id="909" duration_time="60" name="受伤回260HP" icon="65">
+		<effect effect_type="3" effect_id="49"/>
+	</buff>
+	<buff buff_id="910" duration_time="60" name="受伤回280HP" icon="65">
+		<effect effect_type="3" effect_id="50"/>
+	</buff>
+	<buff buff_id="911" duration_time="30" name="增加攻击150%+减少80%伤害" icon="6">
+		<effect effect_type="6" effect_id="36"/>
+		<effect effect_type="115" effect_id="1"/>
+	</buff>
+	<buff buff_id="912" duration_time="5" name="减速30%" buff_type="2" icon="11">
+		<effect effect_type="11" effect_id="6"/>
+	</buff>
+	<buff buff_id="913" duration_time="45" name="减少攻击70%+增加99%防御" icon="69">
+		<effect effect_type="7" effect_id="7"/>
+		<effect effect_type="4" effect_id="15"/>
+	</buff>
+	<buff buff_id="914" duration_time="120" name="减少攻击30%+增加999%防御" icon="69">
+		<effect effect_type="7" effect_id="3"/>
+		<effect effect_type="4" effect_id="16"/>
+	</buff>
+	<buff buff_id="915" duration_time="60" name="+10%命中率" icon="12">
+		<effect effect_type="12" effect_id="11"/>
+	</buff>
+	<buff buff_id="916" duration_time="20" name="20秒无敌" icon="68">
+		<effect effect_type="109" effect_id="1"/>
+	</buff>
+	<buff buff_id="917" duration_time="25" name="25秒无敌" icon="68">
+		<effect effect_type="109" effect_id="1"/>
+	</buff>
+	<buff buff_id="918" duration_time="5" name="定身" icon="11">
+		<effect effect_type="11" effect_id="5"/>
+	</buff>
+	<buff buff_id="919" duration_time="4" name="回血400并反弹2倍" icon="4">
+		<effect effect_type="3" effect_id="53"/>
+		<effect effect_type="101" effect_id="31"/>
+	</buff>
+	<buff buff_id="920" duration_time="7" name="加攻并加速" icon="6">
+		<effect effect_type="10" effect_id="1"/>
+		<effect effect_type="6" effect_id="1"/>
+	</buff>
+	<buff buff_id="921" duration_time="2" name="冻住+减血" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="37"/>
+	</buff>
+	<buff buff_id="922" duration_time="3" name="中毒+18%miss" buff_type="2" icon="24">
+		<effect effect_type="21" effect_id="39"/>
+		<effect effect_type="13" effect_id="13"/>
+	</buff>
+	<buff buff_id="923" duration_time="3" name="灼烧+减攻40%" buff_type="2" icon="30">
+		<effect effect_type="21" effect_id="41"/>
+		<effect effect_type="7" effect_id="4"/>
+	</buff>
+	<buff buff_id="924" duration_time="3" name="定身" icon="11">
+		<effect effect_type="11" effect_id="5"/>
+	</buff>
+	<buff buff_id="925" duration_time="4" name="回血700并反弹2倍" icon="4">
+		<effect effect_type="3" effect_id="54"/>
+		<effect effect_type="101" effect_id="31"/>
+	</buff>
+	<buff buff_id="926" duration_time="4" name="回血1000并反弹2倍" icon="4">
+		<effect effect_type="3" effect_id="55"/>
+		<effect effect_type="101" effect_id="31"/>
+	</buff>
+	<buff buff_id="927" duration_time="7" name="加攻并加速" icon="6">
+		<effect effect_type="10" effect_id="1"/>
+		<effect effect_type="6" effect_id="3"/>
+	</buff>
+	<buff buff_id="928" duration_time="7" name="加攻并加速" icon="6">
+		<effect effect_type="10" effect_id="1"/>
+		<effect effect_type="6" effect_id="5"/>
+	</buff>
+	<buff buff_id="929" duration_time="5" name="命中率下降" icon="59" buff_type="2">
+		<effect effect_type="13" effect_id="15"/>
+	</buff>
+	<buff buff_id="930" duration_time="2" name="眩晕" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="931" duration_time="5" name="冻住+减血" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="37"/>
+	</buff>
+	<buff buff_id="932" duration_time="60" name="减少80%伤害" icon="70">
+		<effect effect_type="115" effect_id="1"/>
+	</buff>
+	<buff buff_id="933" duration_time="60" name="减少80%伤害+320伤害/s" icon="71">
+		<effect effect_type="115" effect_id="1"/>
+		<effect effect_type="100" effect_id="6"/>
+	</buff>
+	<buff buff_id="934" duration_time="30" name="5次伤害减少66%" buff_trigger_times="5" buff_finish_type="3" icon="0">
+		<effect effect_type="115" effect_id="8"/>
+	</buff>
+	<buff buff_id="935" duration_time="10" name="增加50%攻击力" icon="6">
+		<effect effect_type="6" effect_id="5"/>
+	</buff>
+	<buff buff_id="936" duration_time="8" name="冰冻+脆弱" icon="29" buff_type="2">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="114" effect_id="21"/>
+	</buff>
+	<buff buff_id="937" duration_time="10" name="狂暴，速度、攻击力、命中都提升100%，焚烧5%" icon="77">
+		<effect effect_type="6" effect_id="10"/>
+		<effect effect_type="10" effect_id="31"/>
+		<effect effect_type="12" effect_id="10"/>
+		<effect effect_type="100" effect_id="31"/>
+	</buff>
+	<buff buff_id="938" duration_time="30" name="攻击力加60%" icon="6">
+		<effect effect_type="6" effect_id="6"/>
+	</buff>
+	<buff buff_id="939" duration_time="20" name="攻击力加60%" icon="6">
+		<effect effect_type="6" effect_id="6"/>
+	</buff>
+	<buff buff_id="940" duration_time="20" name="增加移动速度30%" buff_category="36" buff_priority="1" icon="10">
+		<effect effect_type="10" effect_id="1"/>
+	</buff>
+	<buff buff_id="941" duration_time="5" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="30"/>
+	</buff>
+	<buff buff_id="942" duration_time="10" name="中毒+减速" buff_type="2" icon="24">
+		<effect effect_type="21" effect_id="39"/>
+		<effect effect_type="11" effect_id="1"/>
+	</buff>
+	<buff buff_id="943" duration_time="5" name="灼烧" buff_finish_type="1">
+		<effect effect_type="100" effect_id="11"/>
+	</buff>
+	<buff buff_id="944" duration_time="60" name="5次反弹2倍" icon="58" buff_trigger_times="5" buff_finish_type="3">
+		<effect effect_type="101" effect_id="34"/>
+	</buff>
+	<buff buff_id="946" duration_time="30" name="5次伤害减少80%" buff_trigger_times="5" buff_finish_type="3">
+		<effect effect_type="115" effect_id="11"/>
+	</buff>
+	<buff buff_id="945" duration_time="120" name="10次反弹2倍" icon="58" buff_trigger_times="10" buff_finish_type="3">
+		<effect effect_type="101" effect_id="34"/>
+	</buff>
+	<buff buff_id="947" duration_time="30" name="10次伤害减少80%" buff_trigger_times="10" buff_finish_type="3">
+		<effect effect_type="115" effect_id="11"/>
+	</buff>
+	<buff buff_id="948" duration_time="14" name="全屏烧伤+减命中" icon="56" buff_type="2">
+		<effect effect_type="21" effect_id="41"/>
+		<effect effect_type="13" effect_id="10"/>
+	</buff>
+	<buff buff_id="949" duration_time="10" name="中毒+减速" buff_type="2" icon="24">
+		<effect effect_type="21" effect_id="33"/>
+		<effect effect_type="11" effect_id="6"/>
+	</buff>
+	<buff buff_id="950" duration_time="10" name="中毒+减速" buff_type="2" icon="24">
+		<effect effect_type="21" effect_id="35"/>
+		<effect effect_type="11" effect_id="6"/>
+	</buff>
+	<buff buff_id="951" duration_time="10" name="中毒+减速" buff_type="2" icon="24">
+		<effect effect_type="21" effect_id="39"/>
+		<effect effect_type="11" effect_id="6"/>
+	</buff>
+	<buff buff_id="952" duration_time="45" name="攻击力加150%" icon="6">
+		<effect effect_type="6" effect_id="15"/>
+	</buff>
+	<buff buff_id="953" duration_time="15" name="命中率下降" icon="59" buff_type="2">
+		<effect effect_type="13" effect_id="10"/>
+	</buff>
+	<buff buff_id="1000" duration_time="10" name="攻击力下降" icon="7">
+		<effect effect_type="7" effect_id="5"/>
+	</buff>
+	<buff buff_id="1101" duration_time="250" name="护住状态buff" icon="0">
+		<effect effect_type="6" effect_id="32"/>
+		<effect effect_type="4" effect_id="5" />
+	</buff>
+	<buff buff_id="1102" duration_time="250" name="狂暴状态buff" icon="6">
+		<effect effect_type="6" effect_id="3"/>
+	</buff>
+	<buff buff_id="1103" duration_time="250" name="木桩状态buff" icon="4">
+		<effect effect_type="4" effect_id="10"/>
+	</buff>
+
+	<buff buff_id="1104" duration_time="3" name="荆棘之壳回血buff" icon="3">
+		<effect effect_type="102" effect_id="22"/>
+	</buff>
+
+	<buff buff_id="1105" duration_time="3" name="荆棘反弹buff" icon="58">
+		<effect effect_type="101" effect_id="3"/>
+	</buff>
+
+	<buff buff_id="1106" duration_time="3" name="眩晕" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+
+	<buff buff_id="1107" duration_time="3" name="Ice_Curse" icon="29">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+
+	<buff buff_id="1108" duration_time="5" name="fury_Curse" icon="6">
+		<effect effect_type="6" effect_id="3"/>
+	</buff>
+
+	<buff buff_id="1109" duration_time="4" name="眩晕" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+
+	<buff buff_id="1110" duration_time="5" name="虚弱攻击减80%" icon="7">
+		<effect effect_type="7" effect_id="8"/>
+	</buff>
+
+	<buff buff_id="1111" duration_time="5" name="诅咒印记效果buff" icon="24">
+		<effect effect_type="21" effect_id="42"/>
+	</buff>
+
+	<buff buff_id="1112" duration_time="3" name="魔牙绝对力场效果" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+
+	<buff buff_id="1113" duration_time="5" name="魔牙变身加速效果" buff_category="36" buff_priority="1" icon="10">
+		<effect effect_type="10" effect_id="2"/>
+	</buff>
+
+	<buff buff_id="1114" duration_time="5" name="魔牙变身减速效果" icon="11">
+		<effect effect_type="11" effect_id="4"/>
+	</buff>
+	<buff buff_id="1115" duration_time="1800" name="月兔变身效果" buff_category="36" buff_priority="2" icon="61">
+		<effect effect_type="6" effect_id="31"/>
+		<effect effect_type="10" effect_id="1"/>
+	</buff>
+	<buff buff_id="1116" duration_time="1800" name="滚滚变身效果" icon="62">
+		<effect effect_type="6" effect_id="1"/>
+		<effect effect_type="18" effect_id="2"/>
+	</buff>
+
+	<buff buff_id="1121" duration_time="4" name="眩晕" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+    <buff buff_id="1122" duration_time="10" name="ATK+100% and speed +30%" icon="6">
+		<effect effect_type="6" effect_id="10"/>
+        <effect effect_type="10" effect_id="1"/>
+	</buff>
+    <buff buff_id="1123" duration_time="3" name="捆绑" icon="31">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+    <buff buff_id="1124" duration_time="3" name="增加50000HP上限" icon="76">
+		<effect effect_type="18" effect_id="41"/>
+		<effect effect_type="102" effect_id="28"/>
+	</buff>
+    <buff buff_id="1125" duration_time="3" name="回复50%HP" icon="3">
+		<effect effect_type="102" effect_id="34"/>
+	</buff>
+
+
+	<!-- 灵兽辅助技能 -->
+	<buff buff_id="2001" duration_time="5" name="治疗100HP" buff_category="2001" buff_priority="1" icon="3">
+		<effect effect_type="3" effect_id="21"/>
+	</buff>
+	<buff buff_id="2002" duration_time="5" name="治疗200HP" buff_category="2001" buff_priority="2" icon="3">
+		<effect effect_type="3" effect_id="22"/>
+	</buff>
+	<buff buff_id="2003" duration_time="5" name="治疗300HP" buff_category="2001" buff_priority="3" icon="3">
+		<effect effect_type="3" effect_id="23"/>
+	</buff>
+	<buff buff_id="2011" duration_time="60" name="hp上限+300" buff_category="2011" buff_priority="1" icon="20">
+		<effect effect_type="18" effect_id="11"/>
+	</buff>
+	<buff buff_id="2012" duration_time="60" name="hp上限+600" buff_category="2011" buff_priority="2" icon="20">
+		<effect effect_type="18" effect_id="12"/>
+	</buff>
+	<buff buff_id="2013" duration_time="60" name="hp上限+900" buff_category="2011" buff_priority="3" icon="20">
+		<effect effect_type="18" effect_id="13"/>
+	</buff>
+	<buff buff_id="2021" duration_time="60" name="攻击力+25" buff_category="2021" buff_priority="1" icon="6">
+		<effect effect_type="6" effect_id="41"/>
+	</buff>
+	<buff buff_id="2022" duration_time="60" name="攻击力+50" buff_category="2021" buff_priority="2" icon="6">
+		<effect effect_type="6" effect_id="42"/>
+	</buff>
+	<buff buff_id="2023" duration_time="60" name="攻击力+75" buff_category="2021" buff_priority="3" icon="6">
+		<effect effect_type="6" effect_id="43"/>
+	</buff>
+
+	<buff buff_id="2031" duration_time="10" name="攻击力加10%" icon="6">
+		<effect effect_type="6" effect_id="1"/>
+	</buff>
+
+	<buff buff_id="2032" duration_time="10" name="防御10%" icon="4" >
+		<effect effect_type="4" effect_id="12"/>
+	</buff>
+
+	<buff buff_id="2033" duration_time="6" name="速度10%" icon="10" >
+		<effect effect_type="10" effect_id="3"/>
+	</buff>
+
+	<buff buff_id="2034" duration_time="4" name="Hp" icon="3" >
+		<effect effect_type="102" effect_id="23"/>
+	</buff>
+
+	<buff buff_id="2035" duration_time="6" name="Mp" icon="2" >
+		<effect effect_type="2" effect_id="21"/>
+	</buff>
+	<buff buff_id="2036" duration_time="3" name="Hp" icon="3" >
+		<effect effect_type="102" effect_id="24"/>
+	</buff>
+	<buff buff_id="2037" duration_time="3" name="Hp" icon="3" >
+		<effect effect_type="102" effect_id="25"/>
+	</buff>
+	<buff buff_id="2038" duration_time="3" name="Hp" icon="3" >
+		<effect effect_type="102" effect_id="26"/>
+	</buff>
+	<buff buff_id="1311" duration_time="10" name="反弹2倍" icon="4">
+		<effect effect_type="101" effect_id="31"/>
+	</buff>
+
+	<buff buff_id="1312" duration_time="7200" name="盲眼" buff_category="21" buff_type="2" buff_priority="1" icon="42">
+		<effect effect_type="13" effect_id="10"/>
+	</buff>
+	<buff buff_id="1313" duration_time="5" name="混乱" buff_type="2" icon="29">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="61"/>
+	</buff>
+	<buff buff_id="1314" duration_time="4" name="眩晕" buff_type="2" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="1315" duration_time="400" name="冰龙冰冻" buff_type="2" icon="34">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21" effect_id="61"/>
+	</buff>
+	<buff buff_id="1316" duration_time="30" name="冰龙冰盾" buff_type="2" icon="25">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<buff buff_id="1317" duration_time="5" name="电龙水池" buff_type="2" icon="31">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="21"  effect_id="62"/>
+	</buff>
+
+	<buff buff_id="1318" duration_time="5" name="荆棘反弹buff" icon="58">
+		<effect effect_type="101" effect_id="3"/>
+		<effect effect_type="102" effect_id="29"/>
+	</buff>
+	<buff buff_id="1319" duration_time="5" name="风龙减速" icon="11">
+		<effect effect_type="11" effect_id="6"/>
+	</buff>
+	<buff buff_id="1320" duration_time="5" name="减伤反弹" buff_type="2" icon="4">
+		<effect effect_type="115" effect_id="6"/>
+		<effect effect_type="101" effect_id="3"/>
+	</buff>
+	<buff buff_id="1321" duration_time="5" name="敌人减速" buff_type="2" icon="11">
+		<effect effect_type="11" effect_id="1"/>
+	</buff>
+	<buff buff_id="1322" duration_time="3" name="吸血"  icon="78">
+		<effect effect_type="10000" effect_id="1"/>
+	</buff>
+	<!-- 众神降临关卡boss buff -->
+	<buff buff_id="1323" duration_time="3" name="减少伤害值"  icon="11">
+		<effect effect_type="129" effect_id="2"/>
+	</buff>
+	<buff buff_id="1324" duration_time="5" name="金钟罩" icon="11">
+		<effect effect_type="115" effect_id="10"/>
+	</buff>
+	<!-- 中部boss buff -->
+	<buff buff_id="1326" duration_time="3" name="紊乱" buff_type="2" icon="29">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="1327" duration_time="3" name="回10%生命" buff_type="1" icon="30" dead_delete="1">
+		<effect effect_type="102" effect_id="27"/>
+	</buff>
+	<buff buff_id="1328" duration_time="3" name="扣敌人10%生命" buff_type="2" icon="30" dead_delete="1">
+		<effect effect_type="21" effect_id="12"/>
+	</buff>
+	<buff buff_id="1329" duration_time="5" name="全屏敌人虚弱5秒，攻防均降为10%" buff_type="2" icon="30" dead_delete="1">
+		<effect effect_type="5" effect_id="9"/>
+		<effect effect_type="7" effect_id="9"/>
+	</buff>
+
+	<!-- 能量井boss buff -->
+
+	<buff buff_id="1325" duration_time="3" name="3秒无敌" icon="68">
+		<effect effect_type="109" effect_id="1"/>
+	</buff>
+
+	<buff buff_id="1330" duration_time="4" name="范围敌人沉默2秒" buff_type="2" icon="83" dead_delete="1">
+		<effect effect_type="131" effect_id="1"/>
+	</buff>
+
+	<buff buff_id="1331" duration_time="10" name="定身并回血" icon="84">
+		<effect effect_type="104" effect_id="1"/>
+		<effect effect_type="102" effect_id="22"/>
+	</buff>
+    <buff buff_id="1332" duration_time="2" name="扣50%生命" dead_delete="1">
+		<effect effect_type="21" effect_id="65"/>
+	</buff>
+	<buff buff_id="1333" duration_time="100" name="ATK上升40%命中率减少55%" icon="85">
+		<effect effect_type="6" effect_id="30"/>
+        <effect effect_type="13" effect_id="6"/>
+	</buff>
+	<buff buff_id="1334" duration_time="2" name="扣5%生命" dead_delete="1">
+		<effect effect_type="21" effect_id="2"/>
+	</buff>
+    <buff buff_id="1335" duration_time="100" name="ATK上升150%" icon="86">
+		<effect effect_type="6" effect_id="15"/>
+	</buff>
+    <buff buff_id="1336" duration_time="100" name="ATK下降50%" icon="87">
+        <effect effect_type="7" effect_id="20"/>
+	</buff>
+	<buff buff_id="1337" duration_time="11" name="定身">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="1338" duration_time="1200" name="增加防御10% 功夫豆翻倍" icon="4">
+		<effect effect_type="4" effect_id="12"/>
+		<effect effect_type="125" effect_id="2"/>
+	</buff>
+	<!-- 冰河蒸汽房boss buff -->
+	<buff buff_id="1339" duration_time="1200" name="速度、攻击、命中提高150%" icon="88">
+		<effect effect_type="6" effect_id="15"/>
+		<effect effect_type="10" effect_id="31"/>
+		<effect effect_type="12" effect_id="41"/>
+	</buff>
+	<buff buff_id="1340" duration_time="500" name="龙舟加速" icon="10">
+		<effect effect_type="10" effect_id="30"/>
+	</buff>
+	<buff buff_id="1341" duration_time="3" name="pve3秒无敌" icon="50">
+		<effect effect_type="109" effect_id="1"/>
+	</buff>
+	<buff buff_id="1342" duration_time="1" name="眩晕" buff_type="2" icon="23">
+		<effect effect_type="104" effect_id="1"/>
+	</buff>
+	<buff buff_id="1400" duration_time="50" name="邀请码3倍经验" icon="17">
+		<effect effect_type="22" effect_id="3"/>
+	</buff>
+
+</root>

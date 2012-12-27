@@ -1,0 +1,126 @@
+#include <cstdio>
+#include <map>
+
+#include <libtaomee++/inet/pdumanip.hpp>
+
+using namespace std;
+using namespace taomee;
+
+extern "C" {
+#include <glib.h>
+
+#include <libtaomee/log.h>
+#include <libtaomee/timer.h>
+#include <libtaomee/project/utilities.h>
+}
+
+#include "player.hpp"
+
+/*! hold all the players */
+static PlayerMap all_players;
+
+//-----------------------------------------------------------
+// inline function definations
+//-----------------------------------------------------------
+/**
+  * @brief allocate memory for a player object and initialize it
+  * @param uid user id
+  * @param fdsess fd session
+  * @return pointer to the player if found, 0 otherwise
+  */
+inline player_t* alloc_player(userid_t uid, fdsession_t* fdsess)
+{
+	player_t* p = reinterpret_cast<player_t*>(g_slice_alloc0(c_player_size));
+
+	p->fd         = fdsess->fd;
+	p->fdsess     = fdsess;
+	p->id         = uid;
+	p->pkg_queue  = g_queue_new();
+
+	INIT_LIST_HEAD(&p->wait_cmd_player_hook);
+	INIT_LIST_HEAD(&p->timer_list);
+
+	all_players[uid] = p;
+
+	TRACE_LOG("alloc player %u", p->id);
+	return p;
+}
+
+/**
+  * @brief deallocates a player
+  * @param fd socket fd
+  * @return pointer to the player if found, 0 otherwise
+  */
+void dealloc_player(player_t* p)
+{
+	TRACE_LOG("dealloc player %u", p->id);
+
+	cached_pkg_t* pkg = reinterpret_cast<cached_pkg_t*>(g_queue_pop_head(p->pkg_queue));
+	while (pkg) {
+		g_slice_free1(pkg->len, pkg);
+		pkg = reinterpret_cast<cached_pkg_t*>(g_queue_pop_head(p->pkg_queue));
+	}
+	list_del_init(&(p->wait_cmd_player_hook));
+	g_queue_free(p->pkg_queue);
+
+	REMOVE_TIMERS(p);
+
+	all_players.erase(p->id);
+	g_slice_free1(c_player_size, p);
+}
+
+//--------------------------------------------------------------------
+
+/**
+  * @brief allocate and add a player to this server
+  * @return pointer to the newly added player
+  */
+player_t* add_player(userid_t uid, fdsession_t* fdsess)
+{
+	return alloc_player(uid, fdsess);
+}
+
+/**
+  * @brief delete player
+  * @param p player to be deleted
+  */
+void del_player(player_t* p)
+{
+	DEBUG_LOG("D U\t[uid=%u fd=%d]", p->id, p->fd);
+
+
+	dealloc_player(p);
+}
+
+/**
+  * @brief clear players' info whose online server is down
+  * @param fd online fd
+  */
+void clear_players(int fd)
+{
+	
+}
+
+/**
+  * @brief get player by user id
+  * @param uid user id
+  * @return pointer to the player if found, 0 otherwise
+  */
+player_t* get_player(userid_t uid)
+{
+	PlayerMap::iterator it = all_players.find(uid);
+	if (it != all_players.end()) {
+		return it->second;
+	}
+
+	return 0;
+}
+
+/**
+  * @brief traverse all the players and call 'action' on each player
+  * @note you should not remove any player in 'action'
+  */
+void traverse_players(void (*action)(void* key, void* player, void* userdata), void* data)
+{
+//	g_hash_table_foreach(all_players, action, data);
+}

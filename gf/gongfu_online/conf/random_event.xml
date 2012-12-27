@@ -1,0 +1,334 @@
+<!-- event id:事件ID(不能重复，递增) -->
+<!-- is_vip:事件vip玩家限制 1:vip玩家0:没有限制 -->
+<!-- min_lv/max_lv: 玩家等级的下限和上限 -->
+<!-- name:作为随机事件邮件标题20字符 -->
+<!-- desc:作为随机事件邮件内容80字符 -->
+
+<!-- give_type：1、装备； 2、物品；mail 只能支持这些-->
+<!-- give_id：当give_type=1和2时为物品ID；--> 
+
+<!-- summon_id:该种灵兽的任意形态即可 -->
+<!-- odds:随机数 千分位 -->
+
+<root>
+    <Event>
+        <event id="1" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="主人要学会保护自己的米米号安全，记得别告诉别人你的米米号密码，同时开启支付密码保护哦">
+        </event>
+        <event id="2" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="如果想升级但是时间不够的话，可以选择离线修炼,来功夫家园找小桃开启伏魔阵就可以了哦.">
+        </event>
+        <event id="3" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="灵兽分天生，被动，辅助技能，被动和辅助技能可以通过技能卷轴学习的哦">
+        </event>
+        <event id="4" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="我虽然来自西部，脾气有时候也不太好，但是我绝对值得信赖，江湖人称玉树临风诚实可靠小郎君。">
+        </event>
+        <event id="5" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="经过我的研究,灵兽的成长值是个很重要的属性,一定要重视.">
+        </event>
+        <event id="6" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="我听说了一个小道消息,马上会有很厉害的灵兽出现，究竟是什么呢？我也不清楚，呵呵.">
+        </event>
+        <event id="7" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="听说白玉狐可以进化成为千年白玉狐，好像是需要千年精魄这个道具，不知道哪里有卖呢！">
+        </event>
+        <event id="8" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="为什么我和小桃说话，没说上两三句她就脸红了啊，现在天已经开始凉了，难道小桃生病了？">
+        </event>
+        <event id="9" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="现在一共有多少灵兽了呢？您什么时候帮我配个助理啊，我都要管不过来了，悲催的人生不解释。">
+        </event>
+        <event id="10" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="什么时候功夫家园还能有新的活动内容呢,不会被遗忘了吧，不要这样啊~.">
+        </event>
+        <event id="11" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="刚出炉香喷喷的馒头哦，您的灵兽真为您着想，这个可是隔壁厨娘刚送给它的呢.">
+            <item give_type="2" give_id="1300001" name="馒头" count="10" />
+        </event>
+        <event id="12" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="红枣可是个好东西，可以补中益气、养血生津.……我又罗嗦了，这个是您灵兽的一片心意啊。">
+            <item give_type="2" give_id="1300002" name="红枣" count="10" />
+        </event>
+        <event id="13" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="这是我从西部带来的特产奇异果，把皮剥去就可以食用了，不剥的话嘿嘿……肯定吃得满嘴毛！.">
+            <item give_type="2" give_id="1300004" name="奇异果" count="10" />
+        </event>
+        <event id="14" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽发现了一些野生核桃,俗话说牙好胃口就好，练牙第一步就是咬核桃！">
+            <item give_type="2" give_id="1300005" name="核桃" count="10" />
+        </event>
+        <event id="15" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="冬令进补枸杞必不可少哦,为了您的身体，我一定要把管家这个责任做到最好，摇尾求表扬……">
+            <item give_type="2" give_id="1300102" name="枸杞" count="10" />
+        </event>
+        <event id="16" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽真是彻底的守财奴，竟然已经存了那么多零用钱，我觉得这些还是都交给您保管吧.">
+            <item give_type="2" Name="大钱袋" give_id="1500571" count="1" />
+        </event>
+        <event id="17" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽真是彻底的守财奴，竟然已经存了那么多零用钱，我觉得这些还是都交给您保管吧.">
+            <item give_type="2" Name="大钱袋" give_id="1500571" count="2" />
+        </event>
+        <event id="18" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽真是彻底的守财奴，竟然已经存了那么多零用钱，我觉得这些还是都交给您保管吧.">
+            <item give_type="2" Name="大钱袋" give_id="1500571" count="5" />
+        </event>
+        <event id="19" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="1" />
+        </event>
+        <event id="20" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="2" />
+        </event>
+        <event id="21" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="3" />
+        </event>
+        <event id="22" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="4" />
+        </event>
+        <event id="23" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="5" />
+        </event>
+        <event id="24" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="6" />
+        </event>
+        <event id="25" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="7" />
+        </event>
+        <event id="26" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="8" />
+        </event>
+        <event id="27" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="9" />
+        </event>
+        <event id="28" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500901" name="绿色碎片" count="10" />
+        </event>
+        <event id="29" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500902" name="蓝色碎片" count="1" />
+        </event>
+        <event id="30" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500902" name="蓝色碎片" count="2" />
+        </event>
+        <event id="31" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500902" name="蓝色碎片" count="3" />
+        </event>
+        <event id="32" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500902" name="蓝色碎片" count="4" />
+        </event>
+        <event id="33" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500902" name="蓝色碎片" count="5" />
+        </event>
+        <event id="34" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500903" name="紫色碎片" count="1" />
+        </event>
+        <event id="35" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500903" name="紫色碎片" count="2" />
+        </event>
+        <event id="36" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500903" name="紫色碎片" count="3" />
+        </event>
+        <event id="37" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1500600" name="战戟的印记" count="1" />
+        </event>
+        <event id="38" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="您的灵兽实战经验丰富，单挑群殴无可匹敌，简直是灵兽中的战斗机！这个是它赢回来的奖励.">
+            <item give_type="2" give_id="1302001" name="起死回生草（赠）" count="1" />
+        </event>
+        <event id="39" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="俗话说聪明伶俐的灵兽人人爱，您看它又收到了礼物，虽然礼轻情意重，但是有个那么受欢迎的灵兽主人您不觉得很有面子么？">
+            <item give_type="2" give_id="1500569" name="小钱袋" count="1" />
+        </event>    
+        <event id="40" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="俗话说聪明伶俐的灵兽人人爱，您看它又收到了礼物，虽然礼轻情意重，但是有个那么受欢迎的灵兽主人您不觉得很有面子么？">
+            <item give_type="2" give_id="1500570" name="中钱袋" count="1" />
+        </event>
+        <event id="41" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="俗话说聪明伶俐的灵兽人人爱，您看它又收到了礼物，虽然礼轻情意重，但是有个那么受欢迎的灵兽主人您不觉得很有面子么？">
+            <item give_type="2" give_id="1303017" name="灵兽经验包（小）" count="1" />
+        </event>
+        <event id="42" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="0" 
+        desc="俗话说聪明伶俐的灵兽人人爱，您看它又收到了礼物，虽然礼轻情意重，但是有个那么受欢迎的灵兽主人您不觉得很有面子么？">
+            <item give_type="2" give_id="1500568" name="土龙珠" count="1" />
+        </event> 
+        <event id="43" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="1" 
+        desc="金龙珠！这是货真价实的金龙珠啊！这一颗起码可以抵我十年的工资呢！您的灵兽，真是摇钱树啊！">
+            <item give_type="2" give_id="1500564" name="金龙珠" count="1" />
+        </event> 
+        <event id="44" name="功夫家园管家贴心信息" is_vip="0" min_lv="20" max_lv="100" broadcast="1" 
+        desc="你的灵兽只身连闯全部英雄史诗级的副本，击败黑暗军团无数，终于获得了一颗火龙珠.">
+            <item give_type="2" give_id="1500567" name="火龙珠" count="1" />
+        </event>            
+    </Event>
+    <Summon>
+        <limit summon_id="1002" summon_name="白玉狐" priority="220">
+            <event id="1" odds="100" />
+            <event id="11" odds="150" />
+            <event id="19" odds="20" />
+            <event id="39" odds="50" />
+        </limit>
+        <limit summon_id="1012" summon_name="月灵兔" priority="210">
+            <event id="2" odds="100" />
+            <event id="11" odds="150" />
+            <event id="20" odds="20" />
+            <event id="39" odds="50" />
+        </limit>
+        <limit summon_id="1022" summon_name="流光鹿" priority="200">
+            <event id="3" odds="100" />
+            <event id="11" odds="150" />
+            <event id="21" odds="20" />
+            <event id="39" odds="50" />
+        </limit>
+        <limit summon_id="1032" summon_name="通铃猫" priority="90">
+            <event id="4" odds="100" />
+            <event id="15" odds="150" />
+            <event id="29" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+        <limit summon_id="1042" summon_name="飞羽雏" priority="80">
+            <event id="5" odds="100" />
+            <event id="15" odds="150" />
+            <event id="32" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+        <limit summon_id="1052" summon_name="小雪球" priority="190">
+            <event id="6" odds="100" />
+            <event id="12" odds="150" />
+            <event id="22" odds="20" />
+            <event id="39" odds="50" />
+        </limit>
+        <limit summon_id="1062" summon_name="天锣雷光兔" priority="60">
+            <event id="7" odds="100" />
+            <event id="16" odds="150" />
+            <event id="34" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+        <limit summon_id="1072" summon_name="粉罗兔" priority="180">
+            <event id="8" odds="100" />
+            <event id="12" odds="150" />
+            <event id="23" odds="20" />
+            <event id="39" odds="50" />
+        </limit>
+         <limit summon_id="1082" summon_name="灼热之灵" priority="70">
+            <event id="9" odds="100" />
+            <event id="16" odds="150" />
+            <event id="33" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+        <limit summon_id="1092" summon_name="暗影鼠" priority="1700">
+            <event id="10" odds="100" />
+            <event id="12" odds="150" />
+            <event id="24" odds="20" />
+            <event id="40" odds="50" />
+        </limit>
+        <limit summon_id="1102" summon_name="霸王虎" priority="10">
+            <event id="1" odds="100" />
+            <event id="18" odds="150" />
+            <event id="37" odds="19" />
+            <event id="42" odds="50" />
+            <event id="43" odds="1" />
+        </limit>
+        <limit summon_id="1112" summon_name="千年白玉狐" priority="40">
+            <event id="2" odds="100" />
+            <event id="17" odds="150" />
+            <event id="36" odds="19" />
+            <event id="41" odds="50" />
+            <event id="44" odds="1" />
+        </limit>
+        <limit summon_id="1122" summon_name="机甲兽" priority="160">
+            <event id="3" odds="100" />
+            <event id="13" odds="150" />
+            <event id="25" odds="20" />
+            <event id="40" odds="50" />
+        </limit>
+        <limit summon_id="1132" summon_name="木旋风" priority="150">
+            <event id="4" odds="100" />
+            <event id="13" odds="150" />
+            <event id="26" odds="20" />
+            <event id="40" odds="50" />
+        </limit>
+        <limit summon_id="1142" summon_name="风吟龙" priority="30">
+            <event id="5" odds="100" />
+            <event id="17" odds="150" />
+            <event id="37" odds="19" />
+            <event id="41" odds="50" />
+            <event id="43" odds="1" />
+        </limit>
+        <limit summon_id="1152" summon_name="笑天犬" priority="140">
+            <event id="6" odds="100" />
+            <event id="13" odds="150" />
+            <event id="38" odds="20" />
+            <event id="40" odds="50" />
+        </limit>
+        <limit summon_id="1162" summon_name="火凤凰" priority="50">
+            <event id="7" odds="100" />
+            <event id="16" odds="150" />
+            <event id="35" odds="19" />
+            <event id="41" odds="50" />
+            <event id="44" odds="1" />
+        </limit>
+         <limit summon_id="1182" summon_name="长舌鹦鹉" priority="130">
+            <event id="8" odds="100" />
+            <event id="14" odds="150" />
+            <event id="27" odds="20" />
+            <event id="40" odds="50" />
+        </limit>
+        <limit summon_id="1192" summon_name="大忍枭" priority="120">
+            <event id="9" odds="100" />
+            <event id="14" odds="150" />
+            <event id="28" odds="20" />
+            <event id="40" odds="50" />
+        </limit>
+        <limit summon_id="1202" summon_name="火云麒麟" priority="20">
+            <event id="10" odds="100" />
+            <event id="18" odds="150" />
+            <event id="37" odds="19" />
+            <event id="41" odds="50" />
+            <event id="43" odds="1" />
+        </limit>
+        <limit summon_id="1212" summon_name="燃眉小鬼" priority="110">
+            <event id="1" odds="100" />
+            <event id="14" odds="150" />
+            <event id="30" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+        <limit summon_id="1222" summon_name="远古菊石" priority="100">
+            <event id="2" odds="100" />
+            <event id="15" odds="150" />
+            <event id="31" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+        <limit summon_id="1172" summon_name="土鳞兽" priority="101">
+            <event id="2" odds="100" />
+            <event id="15" odds="150" />
+            <event id="31" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+        <limit summon_id="1242" summon_name="噬鬼白虎" priority="102">
+            <event id="2" odds="100" />
+            <event id="15" odds="150" />
+            <event id="31" odds="20" />
+            <event id="41" odds="50" />
+        </limit>
+    </Summon>
+</root>
+

@@ -1,0 +1,7 @@
+<Stage ID="977" Lv="20 100" InitX="438" InitY="370" InitMapID="1097701">
+  <Map ID="1097701">
+    <Monsters>
+        <Monster ID="13129" X="30000" Y="35000"/>
+    </Monsters>
+  </Map>
+</Stage>

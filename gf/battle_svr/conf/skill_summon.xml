@@ -1,0 +1,104 @@
+<!--xml version="1.0" encoding="utf8"-->
+
+<!--
+	id:				唯一标识符
+	delay_time      时间延后(毫秒)
+	type:			暂时无用待定
+	model:			客户端显示的模型
+	action_radius:  作用距离(圆形范围)
+	action_x:       作用距离的X(矩形范围)
+	action_y:       作用距离的Y(矩形范围)
+
+	action_type:    作用方式(1:持续触发  2:特定条件次数触发  3:对象本身消失前触发 4：无条件次数触发)
+	action_target:  作用对象(1:敌人 2：友方, 3:所有对象)
+	action_times:   触发次数
+	duration_time:  持续时间(秒)
+	show_id:        触发后客户端表现的动画索引
+	call_show_id: 	召唤物在召唤的时候播放的动画索引
+-->
+
+<root>
+	<summon id = "1" type = "1" name ="萝卜" model = "19086" action_radius ="10" action_type = "2" action_target = "1" action_times ="1" duration_time = "20" show_id = "9007" effect_id = "1" effect_type = "16" />
+
+	<summon id = "2" type = "1" name ="毒雾" model = "19087" action_radius ="10"  buff_id="536" action_type = "2" action_target = "1" action_times ="1" duration_time = "0" show_id = "9006"  />
+    <summon id = "3" type = "1" name ="陷阱" model = "19088" action_radius ="15"  buff_id="536" action_type = "2" action_target = "1" action_times ="1" duration_time = "0" show_id = "9006"  />	
+	<summon id = "4" type = "1" name ="2秒后爆炸" model = "19133" action_radius ="200" action_type = "3" action_target ="3" action_times ="0" duration_time = "2" call_show_id = "9901" effect_id = "1" effect_type = "116" />	 
+    <summon id = "5" type = "1" name ="原地焚烧" model = "19134" action_radius ="100" action_type = "1" action_target ="3" action_times="0" duration_time = "10" call_show_id = "9902" effect_id = "2" effect_type = "21" />
+	<summon id = "6" type = "1" delay_time = "3000" name="黏住单位"  model = "19135" action_radius = "100" action_type = "1" buff_id = "584" action_target="3" action_times="0"  duration_time = "4" call_show_id ="9903"/>
+    <summon id = "7" type = "1" name ="火焰喷泉" action_radius ="10" action_type = "1" action_target = "1"  duration_time = "10"  effect_id = "5" effect_type = "21" />
+	<summon id = "8" type = "1" name = "死亡后爆炸" action_radius = "200" action_type = "4" action_target = "1" action_times = "1" 	effect_id = "1" effect_type = "116" />	
+
+	<summon id = "9" type = "1" name = "高爆核桃爆炸" action_radius = "1000" action_type = "4" action_target = "1" action_times = "1" call_show_id="9908" effect_id = "9" effect_type = "21" />	
+
+	<summon id = "10" type = "1" name = "火焰装置效果"  action_radius = "70" action_type = "1" action_target = "1" duration_time = "5" call_show_id ="9905" effect_id = "10" effect_type = "21" />	
+
+	<summon id = "11" type = "1" name = "沼泽装置效果"  action_radius = "70" action_type = "1" action_target = "1"  buff_id ="584" duration_time="5" call_show_id="9906"  />	
+
+	<summon id = "12" type = "1" name = "破坏装置效果"  action_radius = "70" action_type = "4" action_target = "1" action_times = "1" call_show_id="9907" effect_id = "8" effect_type = "21" />	
+
+	<summon id = "13" type = "1" name = "死亡后爆炸" action_radius = "1000" action_type = "4" action_target = "1" action_times = "1" effect_id = "3" effect_type = "21" />
+	
+	<summon id = "14" type = "1" name = "火焰效果"  action_radius = "50" action_type = "1" action_target = "1" action_times = "1"  call_show_id="9911" buff_id="29" duration_time="5" />	
+
+	<summon id = "15" type = "1" name = "冰焰效果"  action_radius = "50" action_type = "1" action_target = "1" action_times = "1" call_show_id="9910" buff_id="30" duration_time="5" />	
+
+	<summon id = "16" type = "1" name = "钉板"  action_radius = "70" action_type = "4" action_target = "1" action_times = "1" delay_time="1200" call_show_id="9912" effect_id = "10" effect_type = "21" />	
+	<summon id = "17" type = "1" name = "钉板"  action_radius = "150" action_type = "1" action_target = "1" delay_time="1000"   duration_time = "5" call_show_id="9913" effect_id = "1" effect_type = "21" />	
+	<summon id = "18" type = "1" name = "钉板"  action_radius = "80" action_type = "1" action_target = "1" delay_time="2000"   duration_time = "4" call_show_id="9913" effect_id = "13" effect_type = "21" />	
+	<summon id = "19" type = "1" name = "爆破" action_radius = "350" action_type = "4" action_target="1" action_times="1" call_show_id="9915" effect_id="14" effect_type="21" />
+	<summon id = "20" type = "1" name = "僵尸自爆" action_radius = "100" action_type = "4" action_target="1" action_times="1" effect_id ="16" effect_type="21" />
+
+	<summon id = "21" type = "1" name ="立即爆炸" action_radius ="20" action_type = "2" action_target = "1" action_times ="1" effect_id = "3" effect_type = "116" /> 
+
+	<summon id = "22" type = "1" name = "黑水" model = "11347" action_radius = "500" action_type = "1" action_target= "1" duration_time = "3" buff_id ="630"/>	
+
+	<summon id = "23" type = "1" name = "黑水" modle = "11347" action_radius = "500" action_type = "1" action_target= "1" duration_time = "3" buff_id= "641"/>
+
+	<summon id = "24" type = "1" name = "钉板"  action_radius = "80" action_type = "1" action_target = "1" delay_time="2000"   duration_time = "4" call_show_id="9913" effect_id = "5" effect_type = "21" />
+
+	<summon id = "25" type = "1" name = "地刺" action_radius = "50" action_type ="2" action_target = "1" action_times = "1" 
+	   call_show_id="9907" effect_id = "30" effect_type = "21"/>
+
+	<summon id = "26" type = "1" name = "火焰" action_radius = "50" action_type = "2" action_target = "1" action_times = "1"
+	   call_show_id="9917" effect_id = "31" effect_type = "21" />
+
+	<summon id = "27" type = "1" name = "爆炸" action_radius ="200" action_type = "1" action_target = "1" duration_time = "2"
+	call_show_id = "9916" effect_id = "31" effect_type = "21"/>
+
+	<summon id = "28" type = "1" name = "死亡后爆炸" action_radius = "200" action_type = "4" action_target = "1" action_times = "1"
+	 effect_id = "4" effect_type = "21" />
+
+     <summon id = "29" type = "1" name = "死亡后爆炸" action_radius = "120" action_type = "4" action_target = "1" action_times = "1" 	effect_id = "4" effect_type = "116" />	
+
+	<summon id = "30" type = "1" name = "随机关卡 甲虫死亡后爆炸" action_radius = "200" action_type = "4" action_target = "1" action_times = "1" 	 effect_id = "5" effect_type = "116" />
+
+     <summon id = "31" type = "1" name = "随机关卡 滚石 死亡后爆炸" action_radius = "200" action_type = "4" action_target = "1" action_times = "1" 	effect_id = "5" effect_type = "116" />	
+
+	<summon id = "32" type = "1" delay_time="1000" name ="诅咒印记" model = "19087" action_radius ="200"  buff_id="1111" action_type = "1" action_target = "1" action_times ="0" duration_time = "5" call_show_id = "9006"  />
+	
+	<summon id = "33" type = "1" name = "爆炸" action_radius ="2000" action_type = "1" action_target = "3" duration_time = "2"
+	call_show_id = "9908" effect_id = "31" effect_type = "21"/>
+	<summon id = "34" type = "1" name ="萝卜爆炸" model = "19086" action_radius ="10" action_type = "2" action_target = "1" action_times ="1" duration_time = "30" show_id = "9007" effect_id = "6" effect_type = "116" />
+	<summon id = "35" type = "1" name ="萝卜爆炸" model = "19086" action_radius ="10" action_type = "2" action_target = "1" action_times ="1" duration_time = "30" show_id = "9007" effect_id = "7" effect_type = "116" />
+	<summon id = "36" type = "1" name ="萝卜爆炸" model = "19086" action_radius ="10" action_type = "2" action_target = "1" action_times ="1" duration_time = "30" show_id = "9007" effect_id = "8" effect_type = "116" />
+	<summon id = "37" type = "1" name ="萝卜爆炸" model = "19086" action_radius ="10" action_type = "2" action_target = "1" action_times ="1" duration_time = "30" show_id = "9007" effect_id = "9" effect_type = "116" />
+	<summon id = "38" type = "1" name ="萝卜爆炸" model = "19086" action_radius ="10" action_type = "2" action_target = "1" action_times ="1" duration_time = "30" show_id = "9007" effect_id = "10" effect_type = "116" />
+
+	<summon id = "39" type = "1" name ="土龙沼泽" action_radius ="125" action_type = "1" action_target = "1" action_times ="1" duration_time = "4" call_show_id="9010" buff_id="37" />
+
+	<summon id = "40" type = "1" name ="雷龙水池35" action_radius ="35" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317" delay_time="1000" />
+	<summon id = "41" type = "1" name ="雷龙水池40" action_radius ="40" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317" delay_time="1000"/>
+	<summon id = "42" type = "1" name ="雷龙水池60" action_radius ="60" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317" delay_time="1000"/>
+	<summon id = "43" type = "1" name ="雷龙水池70" action_radius ="70" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317" delay_time="1000" />
+	<summon id = "44" type = "1" name ="雷龙水池75" action_radius ="75" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317"  delay_time="1000"/>
+	<summon id = "45" type = "1" name ="雷龙水池80" action_radius ="80" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317" delay_time="1000" />
+	<summon id = "46" type = "1" name ="雷龙水池85" action_radius ="85" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317" delay_time="1000" />
+	<summon id = "47" type = "1" name ="雷龙水池100" action_radius ="100" action_type = "4" action_target = "1" action_times ="1" duration_time = "2" buff_id="1317" delay_time="1000"/>
+	<summon id = "48" type = "1" name = "随机闪电"  action_radius = "70" action_type = "1" action_target = "1" active_times="2" duration_time="3" delay_time="1000" call_show_id="9920" effect_id = "61" effect_type = "21" />	
+
+	<summon id = "49" type = "1" name = "钉板"  action_radius = "70" action_type = "4" action_target = "1" action_times = "1" delay_time="1200" call_show_id="9912" effect_id = "10" effect_type = "116" />	
+
+	<summon id = "50" type = "1" name = "随机陨石"  action_radius = "70" action_type = "1" action_target = "1" active_times="1" duration_time="2" delay_time="1400" call_show_id="9904" effect_id = "61" effect_type = "21" />	
+	<summon id = "51" type = "1" name = "狂龙自爆"  action_radius = "150" action_type = "1" action_target = "1" active_times="1" duration_time="2"  effect_id = "12" effect_type = "116" />	
+	<summon id = "52" type = "1" name = "死亡后爆炸" action_radius = "200" action_type = "4" action_target = "1" action_times = "1" effect_id = "13" effect_type = "116" buff_id="1321"/>	
+</root>

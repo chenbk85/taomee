@@ -1,0 +1,200 @@
+Array
+(
+    [proto_len] => 458
+    [proto_id] => 0
+    [commandid] => 15873
+    [result] => 0
+    [userid] => 56436588
+    [out] => su_mole2_get_tasks_out Object
+        (
+            [tasks_doing] => Array
+                (
+                )
+
+            [tasks_done] => Array
+                (
+                    [0] => stru_task_done Object
+                        (
+                            [taskid] => 1
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [1] => stru_task_done Object
+                        (
+                            [taskid] => 2
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [2] => stru_task_done Object
+                        (
+                            [taskid] => 3
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [3] => stru_task_done Object
+                        (
+                            [taskid] => 4
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [4] => stru_task_done Object
+                        (
+                            [taskid] => 5
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [5] => stru_task_done Object
+                        (
+                            [taskid] => 6
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [6] => stru_task_done Object
+                        (
+                            [taskid] => 7
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [7] => stru_task_done Object
+                        (
+                            [taskid] => 8
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [8] => stru_task_done Object
+                        (
+                            [taskid] => 9
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [9] => stru_task_done Object
+                        (
+                            [taskid] => 10
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [10] => stru_task_done Object
+                        (
+                            [taskid] => 11
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [11] => stru_task_done Object
+                        (
+                            [taskid] => 12
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [12] => stru_task_done Object
+                        (
+                            [taskid] => 13
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [13] => stru_task_done Object
+                        (
+                            [taskid] => 14
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [14] => stru_task_done Object
+                        (
+                            [taskid] => 16
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [15] => stru_task_done Object
+                        (
+                            [taskid] => 17
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [16] => stru_task_done Object
+                        (
+                            [taskid] => 18
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                    [17] => stru_task_done Object
+                        (
+                            [taskid] => 19
+                            [node] => 2
+                            [state] => 2
+                            [optdate] => 0
+                            [fin_time] => 0
+                            [fin_num] => 1
+                        )
+
+                )
+
+        )
+
+)

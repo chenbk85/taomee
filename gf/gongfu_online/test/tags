@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+again	online_util_module.pm	/^again:	$/;"	l
+again	seer_online_util_module.pm	/^again:	$/;"	l
+create_role	online_util_module.pm	/^sub create_role $/;"	s
+enter_map_cmd_test	seer_monitor_online_cli.pl	/^sub enter_map_cmd_test$/;"	s
+enter_map_cmd_test	seer_monitor_online_cli.pl	/^sub enter_map_cmd_test;$/;"	s
+get_10_online	seer_monitor_online_cli.pl	/^sub get_10_online $/;"	s
+get_10_online	seer_monitor_online_cli.pl	/^sub get_10_online;$/;"	s
+get_dudu_ranged_svr_list	online_util_module.pm	/^sub get_dudu_ranged_svr_list$/;"	s
+get_dudu_ranged_svr_list	online_util_module.pm	/^sub get_dudu_ranged_svr_list;$/;"	s
+get_dudu_recommended_svr_list	online_util_module.pm	/^sub get_dudu_recommended_svr_list$/;"	s
+get_dudu_recommended_svr_list	online_util_module.pm	/^sub get_dudu_recommended_svr_list;$/;"	s
+get_item_cmd_test	seer_monitor_online_cli.pl	/^sub get_item_cmd_test$/;"	s
+get_item_cmd_test	seer_monitor_online_cli.pl	/^sub get_item_cmd_test;$/;"	s
+get_seer_ranged_svr_list	seer_online_util_module.pm	/^sub get_seer_ranged_svr_list$/;"	s
+get_seer_ranged_svr_list	seer_online_util_module.pm	/^sub get_seer_ranged_svr_list;$/;"	s
+get_seer_recommended_svr_list	seer_online_util_module.pm	/^sub get_seer_recommended_svr_list$/;"	s
+get_seer_recommended_svr_list	seer_online_util_module.pm	/^sub get_seer_recommended_svr_list;$/;"	s
+init_dudu_login_sock	online_util_module.pm	/^sub init_dudu_login_sock$/;"	s
+init_dudu_login_sock	online_util_module.pm	/^sub init_dudu_login_sock;$/;"	s
+init_main_login_sock	online_util_module.pm	/^sub init_main_login_sock$/;"	s
+init_main_login_sock	online_util_module.pm	/^sub init_main_login_sock;$/;"	s
+init_main_login_sock	seer_online_util_module.pm	/^sub init_main_login_sock$/;"	s
+init_main_login_sock	seer_online_util_module.pm	/^sub init_main_login_sock;$/;"	s
+init_monitor_server	seer_monitor_online_cli.pl	/^sub init_monitor_server$/;"	s
+init_online_sock	online_util_module.pm	/^sub init_online_sock$/;"	s
+init_online_sock	online_util_module.pm	/^sub init_online_sock; $/;"	s
+init_online_sock	seer_online_util_module.pm	/^sub init_online_sock$/;"	s
+init_online_sock	seer_online_util_module.pm	/^sub init_online_sock; $/;"	s
+init_seer_login_sock	seer_online_util_module.pm	/^sub init_seer_login_sock$/;"	s
+init_seer_login_sock	seer_online_util_module.pm	/^sub init_seer_login_sock;$/;"	s
+login_main_loginSvr	online_util_module.pm	/^sub login_main_loginSvr$/;"	s
+login_main_loginSvr	online_util_module.pm	/^sub login_main_loginSvr;$/;"	s
+login_main_loginSvr	seer_online_util_module.pm	/^sub login_main_loginSvr$/;"	s
+login_main_loginSvr	seer_online_util_module.pm	/^sub login_main_loginSvr;$/;"	s
+login_onlineSvr	online_util_module.pm	/^sub login_onlineSvr$/;"	s
+login_onlineSvr	online_util_module.pm	/^sub login_onlineSvr;$/;"	s
+login_onlineSvr	seer_online_util_module.pm	/^sub login_onlineSvr$/;"	s
+login_onlineSvr	seer_online_util_module.pm	/^sub login_onlineSvr;$/;"	s
+next_loop	seer_monitor_online_cli.pl	/^next_loop:$/;"	l
+recv_respond_by_cmd	online_util_module.pm	/^sub recv_respond_by_cmd$/;"	s
+recv_respond_by_cmd	online_util_module.pm	/^sub recv_respond_by_cmd;$/;"	s
+recv_respond_by_cmd	seer_online_util_module.pm	/^sub recv_respond_by_cmd$/;"	s
+recv_respond_by_cmd	seer_online_util_module.pm	/^sub recv_respond_by_cmd;$/;"	s
+send_data	seer_monitor_online_cli.pl	/^sub send_data$/;"	s
+send_to_monitor_server	seer_monitor_online_cli.pl	/^sub send_to_monitor_server $/;"	s
+send_to_monitor_server	seer_monitor_online_cli.pl	/^sub send_to_monitor_server;$/;"	s
+traverse_online	seer_monitor_online_cli.pl	/^sub traverse_online$/;"	s
+walk_cmd_test	seer_monitor_online_cli.pl	/^sub walk_cmd_test$/;"	s
+walk_cmd_test	seer_monitor_online_cli.pl	/^sub walk_cmd_test;$/;"	s

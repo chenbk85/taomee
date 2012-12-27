@@ -1,0 +1,28 @@
+<!--
+	Lv；掉落等级
+	White=白装 Green=绿装 Blue=蓝装 Purple=紫装 Silvery=银装 Gold=金装，其对应数值为百分比%
+	Drop Lv>50时，代表该Drop Lv（假设为N）为BOSS的掉落，并对应（N-50）Drop Lv的小怪掉落
+-->
+
+<ItemQuality>
+	<Drop ID="1" White="0" Green="0" Blue="0" Purple="0" Silvery="0" Gold="0"/><!--所有普通怪物-->
+	<Drop ID="2" White="10" Green="90" Blue="0" Purple="0" Silvery="0" Gold="0"/><!--35级及以上精英-->
+	<Drop ID="3" White="20" Green="80" Blue="0" Purple="0" Silvery="0" Gold="0"/><!--20级到34级精英-->
+	<Drop ID="4" White="30" Green="70" Blue="0" Purple="0" Silvery="0" Gold="0"/><!--9级到19级BOSS和精英-->
+	<Drop ID="5" White="60" Green="0" Blue="0" Purple="0" Silvery="0" Gold="0"/><!--1级到8级BOSS和精英-->
+	<Drop ID="6" White="0" Green="60" Blue="40" Purple="0" Silvery="0" Gold="0"/><!--35级及以上BOSS-->
+	<Drop ID="7" White="0" Green="60" Blue="40" Purple="0" Silvery="0" Gold="0"/><!--20级到34级BOSS-->
+	<Drop ID="8" White="30" Green="60" Blue="10" Purple="0" Silvery="0" Gold="0"/><!--特殊宝箱专用-->
+	<Drop ID="81" White="10" Green="8" Blue="0" Purple="0.34" Silvery="0" Gold="0"/><!--新版1-10小怪-->
+	<Drop ID="86" White="0" Green="0" Blue="100" Purple="0" Silvery="0" Gold="0"/><!--新版BOSS-->
+	<Drop ID="82" White="3.3" Green="5.3" Blue="0" Purple="0.34" Silvery="0" Gold="0"/><!--新版11-15小怪-->
+	<Drop ID="83" White="0" Green="6.7" Blue="0" Purple="0.34" Silvery="0" Gold="0"/><!--新版16-20小怪-->
+	<Drop ID="84" White="0" Green="1.7" Blue="0" Purple="0.34" Silvery="0" Gold="0"/><!--新版21-25小怪-->
+	<Drop ID="85" White="0" Green="0.48" Blue="0" Purple="0.34" Silvery="0" Gold="0"/><!--新版26-30小怪-->
+	<Drop ID="87" White="0" Green="100" Blue="0" Purple="0" Silvery="0" Gold="0"/><!--新版低等级BOSS-->
+	<Drop ID="11" White="72" Green="20" Blue="8" Purple="0" Silvery="0" Gold="0"/>
+	<Drop ID="12" White="71" Green="20" Blue="8" Purple="1" Silvery="0" Gold="0"/>
+	<Drop ID="13" White="71" Green="20" Blue="8" Purple="1" Silvery="0" Gold="0"/>	
+	<Drop ID="14" White="71" Green="20" Blue="8" Purple="1" Silvery="0" Gold="0"/>		
+	<Drop ID="15" White="71" Green="20" Blue="8" Purple="1" Silvery="0" Gold="0"/>
+</ItemQuality>

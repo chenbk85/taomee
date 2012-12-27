@@ -1,0 +1,96 @@
+<!--ID 就是材料在item中的id  -->
+<!--Type 默认值0; 1:表示只能神可用的卷轴  -->
+<!--id 技能的id -->
+<!--odds：成功率 千分率-->
+
+
+<skillScroll>
+	<!-- 被动技能 -->
+    <scroll ID="2300001">
+        <skills id="4029001" Lv="1" odds="330"/>
+        <skills id="4029011" Lv="1" odds="330"/>
+        <skills id="4029021" Lv="1" odds="340"/>
+    </scroll>
+    <scroll ID="2300002">
+        <skills id="4029031" Lv="1" odds="330"/>
+        <skills id="4029011" Lv="1" odds="330"/>
+        <skills id="4029021" Lv="1" odds="340"/>
+    </scroll>
+    <scroll ID="2300003">
+        <skills id="4029031" Lv="1" odds="330"/>
+        <skills id="4029041" Lv="1" odds="330"/>
+        <skills id="4029021" Lv="1" odds="340"/>
+    </scroll>
+    <scroll ID="2300004">
+        <skills id="4029001" Lv="1" odds="330"/>
+        <skills id="4029031" Lv="1" odds="330"/>
+        <skills id="4029041" Lv="1" odds="340"/>
+    </scroll>
+    <scroll ID="2300005">
+        <skills id="4029001" Lv="1" odds="330"/>
+        <skills id="4029011" Lv="1" odds="330"/>
+        <skills id="4029041" Lv="1" odds="340"/>
+    </scroll>
+    <scroll ID="2300009">
+        <skills id="4029001" Lv="1" odds="1000"/>
+    </scroll>
+    <scroll ID="2300010">
+        <skills id="4029011" Lv="1" odds="1000"/>
+    </scroll>
+    <scroll ID="2300011">
+        <skills id="4029021" Lv="1" odds="1000"/>
+    </scroll>
+    <scroll ID="2300012">
+        <skills id="4029031" Lv="1" odds="1000"/>
+    </scroll>
+    <scroll ID="2300013">
+        <skills id="4029041" Lv="1" odds="1000"/>
+    </scroll>
+	<!-- 辅助技能 -->
+    <scroll ID="2300006">
+        <skills id="4029301" Lv="1" odds="220"/>
+        <skills id="4029311" Lv="1" odds="330"/>
+        <skills id="4029321" Lv="1" odds="450"/>
+    </scroll>
+    <scroll ID="2300007">
+        <skills id="4029301" Lv="1" odds="330"/>
+        <skills id="4029311" Lv="1" odds="450"/>
+        <skills id="4029321" Lv="1" odds="220"/>
+    </scroll>
+    <scroll ID="2300008">
+        <skills id="4029301" Lv="1" odds="450"/>
+        <skills id="4029311" Lv="1" odds="220"/>
+        <skills id="4029321" Lv="1" odds="330"/>
+    </scroll>
+    <scroll ID="2300014">
+        <skills id="4029301" Lv="1" odds="1000"/>
+    </scroll>
+    <scroll ID="2300015">
+        <skills id="4029311" Lv="1" odds="1000"/>
+    </scroll>
+    <scroll ID="2300016">
+        <skills id="4029321" Lv="1" odds="1000"/>
+    </scroll>
+    <scroll ID="2300017">
+        <skills id="4029001" Lv="2" odds="80"/>
+        <skills id="4029011" Lv="2" odds="230"/>
+        <skills id="4029021" Lv="2" odds="230"/>
+        <skills id="4029031" Lv="2" odds="230"/>
+        <skills id="4029041" Lv="2" odds="230"/>
+    </scroll>
+    <!-- 神的技能卷轴 -->
+    <!-- example:
+    <scroll ID="2300017" Type="1">
+        <skills id="4029007" Lv="1" odds="220"/>
+        <skills id="4029008" Lv="1" odds="330"/>
+        <skills id="4029009" Lv="1" odds="450"/>
+    </scroll>
+    -->
+    <scroll ID="2600001" Type="1">
+        <skills id="4029002" Lv="1" odds="220"/>
+        <skills id="4029003" Lv="1" odds="330"/>
+        <skills id="4029004" Lv="1" odds="450"/>
+    </scroll>
+
+
+</skillScroll>

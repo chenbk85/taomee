@@ -1,0 +1,196 @@
+<!-- edited with XML Spy v4.0.1 U (http://www.xmlspy.com) by opec (opec) -->
+<!-- 
+	@新声望系统描述
+	type(声望类型)  1-冒险 2-竞技 3-特殊
+	badgeID(声望对应徽章名)  1-铁龙符 2-铜龙符 3-银龙符 4-金龙符
+						11-铁虎符 12-铜虎符 13-银虎符 14-金虎符
+						21-铁凤符 22-铜凤符 23-银凤符 24-金凤符
+
+	StatId 声望需要的统计项ID , 1表示杀怪数量，2表示PVE组队通关次数, 3表示使用复活草数量，4,徒弟进阶数量
+						5购买道具数量，6竞技场获胜数量， 7，2V2获胜次数
+
+	StatNeed 声望需要的统计数量
+
+	titleID(声望对于的称号)  
+	propType(对应附加属性) 
+	1 力量
+	2 体质
+	3 敏捷
+	4 气力
+	5 生命
+	6 精力
+	7 攻击
+	8 命中
+	9 防御
+	10 闪避
+	11 致命一击
+
+-->
+<Glory>
+	<!--冒险声望-->
+	<Honor type="1" name="冒险">
+		<Item id="1" name="东部主宰" honorPoint="100" badgeID="2">
+			<describe><![CDATA[通关所有东部大陆关卡（不限难度）]]></describe>
+		</Item>
+		<Item id="2" name="泽之国主宰" honorPoint="100" badgeID="2">
+			<describe><![CDATA[通关所有泽之国关卡（不限难度）]]></describe>
+		</Item>
+		<Item id="5" name="披荆斩棘" honorPoint="1000" badgeID="3">
+			<describe><![CDATA[通关所有史诗级难度关卡]]></describe>
+		</Item>
+		<Item id="6" name="伏魔圣手" honorPoint="10000" badgeID="4" titleID="21" propType="1|20,3|20">
+			<describe><![CDATA[伏魔英雄榜排名第一]]></describe>
+		</Item>
+		<Item id="7" name="百尺竿头" honorPoint="100" badgeID="2">
+			<describe><![CDATA[完成80级及以下所有主线任务]]></describe>
+		</Item>
+		<Item id="8" name="巅峰绝杀" honorPoint="100" badgeID="2">
+			<describe><![CDATA[第一次完成关卡获得S级评分]]></describe>
+		</Item>
+		<Item id="9" name="金兰之义" honorPoint="10" badgeID="1">
+			<describe><![CDATA[组队完成一次关卡]]></describe>
+		</Item>
+		<Item id="11" name="手起刀落" honorPoint="10" badgeID="1">
+			<describe><![CDATA[只用普通攻击完成1次关卡（不限难度）]]></describe>
+		</Item>
+		<Item id="12" name="凛然正气" honorPoint="1000" badgeID="3" StatId="1" StatNeed="10000">
+			<describe><![CDATA[累积杀死10000只怪物]]></describe>
+		</Item>
+		<Item id="13" name="莫逆之交" honorPoint="1000" badgeID="3" StatId="2" StatNeed="100">
+			<describe><![CDATA[累积组队完成100次关卡]]></describe>
+		</Item>
+		<Item id="14" name="破釜沉舟" honorPoint="10" badgeID="1">
+			<describe><![CDATA[不穿装备完成1次关卡（不限难度）]]></describe>
+		</Item>
+	</Honor>
+
+	<!--竞技声望-->
+	<Honor type="2" name="竞技">
+		<Item id="101" name="独步武林" honorPoint="10000" badgeID="14" titleID="116" propType="1|20,11|20">
+			<describe><![CDATA[在天下第一比武大会排名争霸赛中获得第一名]]></describe>
+		</Item>
+		<Item id="102" name="一战成名" honorPoint="1000" badgeID="13">
+			<describe><![CDATA[在天下第一比武大会排名争霸赛中进入前100名排行榜]]></describe>
+		</Item>
+		<Item id="103" name="小试牛刀" honorPoint="100" badgeID="12">
+			<describe><![CDATA[在天下第一比武大会排名争霸赛中获胜一次]]></describe>
+		</Item>
+		<Item id="104" name="胜利之师" honorPoint="100" badgeID="12">
+			<describe><![CDATA[侠士团积分赛获得一次胜利]]></describe>
+		</Item>
+		<Item id="105" name="崭露头角" honorPoint="10" badgeID="11">
+			<describe><![CDATA[在勇气武斗场获得一次胜利]]></describe>
+		</Item>
+		<Item id="106" name="团结之力" honorPoint="10" badgeID="11">
+			<describe><![CDATA[在精英武斗场获得一次胜利]]></describe>
+		</Item>
+		<Item id="107" name="小菜一碟" honorPoint="10" badgeID="11">
+			<describe><![CDATA[只用普通攻击在比武中获胜]]></describe>
+		</Item>
+		<Item id="108" name="百战不殆" honorPoint="1000" badgeID="13" StatId="6" StatNeed="100">
+			<describe><![CDATA[累积完成100个武斗场并取得胜利]]></describe>
+		</Item>
+		<Item id="109" name="齐力断金" honorPoint="100" badgeID="12" StatId="7" StatNeed="10">
+			<describe><![CDATA[累积完成10个精英武斗场并获得胜利]]></describe>
+		</Item>
+		<Item id="110" name="毫发未伤" honorPoint="10" badgeID="11">
+			<describe><![CDATA[与人切磋未获得一次伤害且胜利]]></describe>
+		</Item>
+	</Honor>
+
+	<!--特殊声望-->
+	<Honor type="3" name="特殊">
+		<Item id="201" name="九死一生" honorPoint="100" badgeID="22" StatId="3" StatNeed="99">
+			<describe><![CDATA[使用了99颗起死回生草]]></describe>
+		</Item>
+		<Item id="202" name="以物换物" honorPoint="10" badgeID="21">
+			<describe><![CDATA[找羊元兑换一张银票]]></describe>
+		</Item>
+		<Item id="203" name="春风化雨" honorPoint="1000" badgeID="23" StatId="4" StatNeed="100">
+			<describe><![CDATA[收徒且徒弟有100名进阶成功]]></describe>
+		</Item>
+		<Item id="204" name="家大业大" honorPoint="1000" badgeID="23">
+			<describe><![CDATA[共拥有10种不同的灵兽]]></describe>
+		</Item>
+		<Item id="205" name="全副武装" honorPoint="10000" badgeID="24" titleID="1009" propType="1|20,2|20">
+			<describe><![CDATA[装备栏装备全套橙色装备]]></describe>
+		</Item>
+		<Item id="206" name="绝世利器" honorPoint="1000" badgeID="23">
+			<describe><![CDATA[获得一把+12的武器]]></describe>
+		</Item>
+		<Item id="207" name="投桃报李" honorPoint="100" badgeID="22" StatId="5" StatNeed="100">
+			<describe><![CDATA[累积购买100个收费道具]]></describe>
+		</Item>
+		<Item id="208" name="训导有方" honorPoint="100" badgeID="22">
+			<describe><![CDATA[拥有3种不同灵兽并全部进入超灵期]]></describe>
+		</Item>
+		<Item id="209" name="闻达天下" honorPoint="1000" badgeID="23">
+			<describe><![CDATA[所在的侠士团达到七级]]></describe>
+		</Item>
+		<Item id="210" name="一掷千金" honorPoint="10" badgeID="21">
+			<describe><![CDATA[对所在侠士团捐献资金累积达到100万]]></describe>
+		</Item>
+		<Item id="211" name="群策群力" honorPoint="10" badgeID="21">
+			<describe><![CDATA[对所在侠士团贡献经验累积达到10000]]></describe>
+		</Item>
+		<Item id="212" name="一技之长" honorPoint="10" badgeID="21">
+			<describe><![CDATA[用技能卷轴让灵兽学会一种技能]]></describe>
+		</Item>
+		<Item id="213" name="龙牙之战" honorPoint="10" badgeID="21">
+			<describe><![CDATA[帮受伤的无名侠士夺回遗失的“龙牙”]]></describe>
+		</Item>
+		<Item id="214" name="大粽子" honorPoint="100" badgeID="22">
+			<describe><![CDATA[使用端午活动道具变身成为粽子]]></describe>
+		</Item>
+	</Honor>
+
+	<!--称号
+		type代表称号所属的大类，1代表副本称号，2代表竞技称号，4代表其他称号
+		-->
+	<Title id="1" name="东部护卫者" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关东部大陆所有简单难度关卡"/>
+	<Title id="2" name="东部裁决者" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关东部大陆所有精英难度关卡"/>
+	<!--<Title id="3" name="学院毕业生" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关一气学院所有简单难度关卡"/>
+	<Title id="4" name="代理镇长" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关矿山镇所有简单难度关卡"/>
+	<Title id="5" name="功夫城城管" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关功夫城城西所有精英难度关卡"/>
+	<Title id="6" name="虎丘征服者" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关虎丘所有精英难度关卡"/>
+	<Title id="7" name="一层又一层" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关倚天塔所有简单难度关卡"/>
+	<Title id="8" name="铸剑天下" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关铸剑池所有简单难度关卡"/>
+	<Title id="9" name="大副我爱你" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关壶口关所有简单难度关卡"/>
+	<Title id="10" name="耀眼小王子" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关静谧之海所有简单难度关卡"/>
+	<Title id="11" name="裂谷大镖客" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关碧影裂谷所有简单难度关卡"/>
+	<Title id="12" name="烈焰喷射者" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关赤岩海山所有简单难度关卡"/>
+	<Title id="13" name="徽章爱好者" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关任意10个中低等级的精英难度关卡"/>
+	<Title id="14" name="徽章狂热分子" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关任意20个中低等级的精英难度关卡"/>
+	<Title id="15" name="徽章之王" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="通关所有中低等级的精英难度关卡"/>-->
+	<!--<Title id="16" name="宝官人" type="1" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="无伤战斗获得b"/>-->
+	<Title id="17" name="虎丘领主" type="1" Strength="2" Agility="0" BodyQuality="2" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="虎丘林前四个难度都获得S评分"/>
+	<Title id="18" name="倚天领主" type="1" Strength="2" Agility="0" BodyQuality="0" Stamina="2" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="倚天窟前四个难度都获得S评分"/>
+	<Title id="19" name="营寨勇士" type="1" Strength="2" Agility="2" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="勇士营寨前四个难度都获得S评分"/>
+	<Title id="20" name="断戟勇士" type="1" Strength="2" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="2" desc="断戟之墙前四个难度都获得S评分"/>
+	<Title id="21" name="伏魔圣手" type="1" Strength="20" Agility="20" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="伏魔英雄榜排名第一（声望称号）"/>
+	<!--竞技称号-->
+	<Title id="0" name="武士称号" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="在武斗场与其他玩家对战。随着战斗经验增加，称号会逐渐变化。"/>
+	<Title id="100" name="学院新秀" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="在天下第一比武大会资格赛中打败四名侠士。（下届将重置该称号）"/>
+	<Title id="101" name="功夫奇才" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="在天下第一比武大会淘汰赛中积分达到6分。（下届将重置该称号）"/>
+	<Title id="102" name="盖世英雄" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="在天下第一比武大会进阶赛中积分达到4分。（下届将重置该称号）"/>
+	<Title id="103" name="百大侠士" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="在天下第一比武大会排名争霸赛中进入前100名。（下届将重置该称号）"/>
+	<Title id="104" name="天下第一" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="在天下第一比武大会排名争霸赛中排名第一名。（下届将重置该称号）"/>
+	<Title id="105" name="战队队长" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="成为捐献起死回生草数量最多队伍的队长。（下届将重置该称号）"/>
+	<Title id="106" name="优秀队长" type="2" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="本队队员在天下第一比武大会获得天下第一后，该队队长获得。（下届将重置该称号）"/>
+	<Title id="111" name="帝星" type="2" Strength="50" Agility="0" BodyQuality="50" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="获得精英武斗场月冠军后奖励的头衔"/>
+	<Title id="112" name="天王" type="2" Strength="35" Agility="0" BodyQuality="35" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="获得精英武斗场月亚军、季军后奖励的头衔"/>
+	<Title id="113" name="尊者" type="2" Strength="20" Agility="0" BodyQuality="20" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="获得精英武斗场每月排行第4~10名后奖励的头衔"/>
+	<Title id="114" name="精英" type="2" Strength="15" Agility="0" BodyQuality="15" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="获得精英武斗场每月排行第11~20名后奖励的头衔"/>
+	<Title id="115" name="壮士" type="2" Strength="10" Agility="0" BodyQuality="10" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" desc="获得精英武斗场每月排行第21~50名后奖励的头衔"/>
+	<Title id="116" name="独步武林" type="2" Strength="20" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="20" desc="在天下第一比武大会排名争霸赛中获得第一名（声望称号）"/>
+	<!--其他称号-->
+	<Title id="1001" name="欢乐之星" type="4" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="参加六一活动获得"/>
+	<Title id="1002" name="小医仙" type="4" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="3" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="副职药师等级到达7"/>
+	<Title id="1003" name="小铁匠" type="4" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="3" Hit="0" Dodge="0" Crit="0" desc="副职铁匠等级到达6"/>
+	<Title id="1004" name="小有所成" type="4" Strength="0" Agility="0" BodyQuality="0" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="2" AddMp="2" Hit="0" Dodge="0" Crit="0" desc="副职药师等级到达7同时铁匠等级到达6"/>
+	<Title id="1005" name="齐天大侠" type="4" Strength="2" Agility="2" BodyQuality="2" Stamina="2" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="进阶称号"/>
+	<Title id="1006" name="玉兔英侠" type="4" Strength="2" Agility="2" BodyQuality="2" Stamina="2" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="进阶称号"/>
+	<Title id="1007" name="熊猫大侠" type="4" Strength="2" Agility="2" BodyQuality="2" Stamina="2" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="进阶称号"/>
+	<Title id="1008" name="飞龙大侠" type="4" Strength="2" Agility="2" BodyQuality="2" Stamina="2" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="进阶称号"/>
+	<Title id="1009" name="全副武装" type="4" Strength="20" Agility="0" BodyQuality="20" Stamina="0" Atk="0" Def="0" Hp="0" Mp="0" AddHp="0" AddMp="0" Hit="0" Dodge="0" Crit="0" desc="装备栏装备全套橙色装备（声望称号）"/>
+</Glory>

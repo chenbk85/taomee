@@ -1,0 +1,69 @@
+<!--
+	agility:  		敏捷
+	strength: 		力量
+	stamina:  		耐力
+	body_quality:	体质
+	accurate：      精准
+	hp:             血量         
+	attack：        攻击力
+	crit_value：    暴击值
+	def_value：     防御值
+	dodge_value：   躲闪值
+
+-->
+
+<root>
+	<!-- 中庸型 成长=1 -->
+	<Attr Type="1" name="中庸型">
+		<base_attr lv = "1" hp = "80" attack = "80" crit_value = "12" hit_value = "20" def_value ="120" dodge_value = "80"
+		 body_quality = "32" strength = "32" agility = "8" accurate = "4" stamina = "0"/>
+	    <step_attr  hp = "40" attack = "20" crit_value = "3" hit_value = "5" def_value = "30" dodge_value = "0"
+		 body_quality = "10" strength = "6" agility = "2" accurate = "1" stamina = "0" />
+ 	</Attr>
+
+	<Attr Type="2" name="进攻型">
+		<base_attr lv = "1" hp = "80" attack = "80" crit_value = "12" hit_value = "20" def_value ="120" dodge_value = "80"
+		 body_quality = "32" strength = "32" agility = "8" accurate = "4" stamina = "0"/>
+	    <step_attr  hp = "30" attack = "30" crit_value = "3" hit_value = "0" def_value = "25" dodge_value = "0"
+		 body_quality = "9" strength = "9" agility = "1" accurate = "1" stamina = "0" />
+ 	</Attr>
+ 	
+	<Attr Type="3" name="防御型">
+		<base_attr lv = "1" hp = "80" attack = "80" crit_value = "12" hit_value = "20" def_value ="120" dodge_value = "80"
+		 body_quality = "32" strength = "32" agility = "8" accurate = "4" stamina = "0"/>
+	    <step_attr  hp = "50" attack = "10" crit_value = "0" hit_value = "0" def_value = "48" dodge_value = "0"
+		 body_quality = "12" strength = "4" agility = "1" accurate = "1" stamina = "0" />
+ 	</Attr>
+
+	<Item_Attr ID="2200001" name="一阶炼化丹">
+		<Add_Attr Add_per="1" Odds="10"/>
+		<Add_Attr Add_per="4" Odds="15"/>
+		<Add_Attr Add_per="7" Odds="50"/>
+		<Add_Attr Add_per="10" Odds="15"/>
+		<Add_Attr Add_per="13" Odds="10"/>
+	</Item_Attr>
+	<Item_Attr ID="2200002" name="二阶炼化丹">
+		<Add_Attr Add_per="7" Odds="10"/>
+		<Add_Attr Add_per="11" Odds="15"/>
+		<Add_Attr Add_per="15" Odds="50"/>
+		<Add_Attr Add_per="19" Odds="15"/>
+		<Add_Attr Add_per="23" Odds="10"/>
+	</Item_Attr>
+	<Item_Attr ID="2200003" name="三阶炼化丹">
+		<Add_Attr Add_per="14" Odds="10"/>
+		<Add_Attr Add_per="18" Odds="15"/>
+		<Add_Attr Add_per="22" Odds="50"/>
+		<Add_Attr Add_per="26" Odds="15"/>
+		<Add_Attr Add_per="30" Odds="10"/>
+	</Item_Attr>
+	<Item_Attr ID="2200004" name="一阶混元丹">
+		<Add_Attr Add_per="9" Odds="100"/>
+	</Item_Attr>
+	<Item_Attr ID="2200005" name="二阶混元丹">
+		<Add_Attr Add_per="18" Odds="100"/>	
+	</Item_Attr>
+	<Item_Attr ID="2200006" name="三阶混元丹">
+		<Add_Attr Add_per="27" Odds="100"/>
+	</Item_Attr>
+ </root>
+ 	

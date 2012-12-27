@@ -1,0 +1,6 @@
+#/bin/bash
+tar -czvf battletest.tar ./bin/* ./conf/* ./data/*  --exclude ./conf/.svn --exclude ./conf/stage_normal/stages/.svn --exclude ./conf/stage_easy/stages/.svn  --exclude ./conf/stage_hard/stages/.svn --exclude ./conf/stage_hell/stages/.svn --exclude ./data/maps/.svn
+sshpass -p "gongfu" scp -p22 -o StrictHostKeyChecking=no battletest.tar gongfu@10.1.1.64:/home/gongfu/gf_taiwan/battle_dir/
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "pkill -9 btltw;cd ~/gf_taiwan/battle_dir/; tar -xvf battletest.tar "
+sshpass -p 'gongfu' ssh -p22 -o StrictHostKeyChecking=no -lgongfu 10.1.1.64  "cd ~/gf_taiwan/battle_dir/;./startup.sh;"
+

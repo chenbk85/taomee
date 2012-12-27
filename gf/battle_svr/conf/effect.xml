@@ -1,0 +1,918 @@
+<!--
+effect_id: 效果流水号，唯一，不得重复
+
+type:效果类型,由程序枚举出所有效果，唯一，每个效果也有固定的含义
+  type = 10000 空效果
+  type = 1 每X秒回蓝回血
+  type = 2 每X秒回蓝
+  type = 3 每X秒回血
+  
+  type = 4 防御率上升
+  type = 5 防御率下降
+  
+  type = 6 攻击力上升
+  type = 7 攻击力下降
+  
+
+  type = 8 暴击率增加
+  type = 9 暴击率减少
+
+  type = 10 速度增加
+  type = 11 速度减少
+  
+  type = 12 命中率增加
+  type = 13 命中率减少
+  
+  type = 14 闪避率增加
+  type = 15 闪避率减少	
+  type = 16 玩家倒地
+  type = 17 玩家获得额外的EXP系数，如果填10就是表示获得10%填到trigger_percent字段 
+  type = 18 修改玩家HP上限  
+  type = 19 修改玩家MP上限
+  type = 20 修改灵兽经验获得系数
+  type = 21 每X秒给玩家减血
+  type = 22 人物经验加成
+  type = 23 关卡掉落不受时间限制
+  type = 24 防御率上升
+  type = 25 防御率下降
+  type = 100 给周围敌方造成伤害
+  type = 101 伤害反射  trigger_percent填写反射伤害的%比
+  type = 102 给玩家回血x% 
+  type = 103 同时扣除玩家的血和蓝
+  type = 104 眩晕，不能做任何的动作
+  type = 105 BUFF免疫
+  type = 106 减少技能公共CD trigger_percent填写为当前的百分比
+  type = 107 减少所有技能的CD时间，trigger_percent填写为当前百分比
+  type = 108 减少技能所消耗的蓝，trigger_percent填写为当前百分比
+  type = 109 无敌
+  type = 110 攻击伤害增加原来的x%, trigger_percent填写为当前的百分比 
+  type = 112 抵抗一切DEBUFF(2)的效果  
+  type = 113 对周围所有对象造成伤害
+  type = 114 承受伤害增加原来的x%, trigger_percent填写为当前的百分比 
+  type = 115 承受伤害减少原来的x%, trigger_percent填写为当前的百分比 
+  type = 116 扣血并且被击飞同21
+  type = 117 自杀效果
+  type = 118 不会被击飞，不会被击退
+  type = 119 增加灵力值
+  type = 120 普通攻击时，附加吸血功能
+  type = 121 有X%的概率对敌人造成1.5倍伤害
+  type = 122 对玩家技能有着X%的抗性
+  type = 123 灵兽有X%的几率施放技能时不消耗灵力
+
+  type = 125 额外获取工夫豆
+  type = 126 额外寻宝掉率
+  type = 127 增加基本敏捷值
+  type = 128 增加基本体力值
+  type = 129 减少伤害值
+  type = 130 增加爆击上限
+  type = 131 沉默,不能使用技能
+
+name:效果描述，可以不填 
+
+trigger_type: 效果触发方式
+  trigger_type = 1 正常触发，总是触发 
+  trigger_type = 2 按时间触发，每隔一段时间触发
+  trigger_type = 3 被攻击触发
+  trigger_type = 4 受伤触发
+trigger_time:效果触发时间间隔,单位秒
+
+trigger_rate:效果触发概率 
+
+trigger_value: 额外参数
+
+trigger_percent: 额外参数
+
+-->
+
+ 
+<root>
+	<effect effect_type = "118" effect_name="防击飞_击退_僵直">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="0"/>
+	</effect>
+
+
+	<effect effect_type = "117" effect_name = "自杀">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="0"/>
+	</effect>
+
+	<effect effect_type = "109" effect_name = "无敌">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="1"/>
+		<trigger effect_id ="2" trigger_type = "3" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="1"/>
+	</effect>
+
+	<effect effect_type = "112" effect_name ="免疫DEBUFF">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="1"/>
+	</effect>
+
+	<effect effect_type = "114" effect_name = "承受伤害加深">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="200"/>
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4"/>
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8"/>
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12"/>
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16"/>
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20"/>
+		<trigger effect_id ="11" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="3"/>
+		<trigger effect_id ="12" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="6"/>
+		<trigger effect_id ="13" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="9"/>
+		<trigger effect_id ="14" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="12"/>
+		<trigger effect_id ="15" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="15"/>
+		<trigger effect_id ="16" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="18"/>
+		<trigger effect_id ="17" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="21"/>
+		<trigger effect_id ="18" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="24"/>
+		<trigger effect_id ="19" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="27"/>
+		<trigger effect_id ="20" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="30"/>
+		<trigger effect_id ="21" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+
+	<effect effect_type = "115" effect_name = "承受伤害减少">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="80"/>
+		<trigger effect_id ="2" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="95"/>
+		<trigger effect_id ="3" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="33"/>
+		<trigger effect_id ="4" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20"/>
+		<trigger effect_id ="5" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10"/>
+		<trigger effect_id ="6" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50"/>
+		<trigger effect_id ="7" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="66"/>
+		<trigger effect_id ="8" trigger_type = "4" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="66"/>
+		<trigger effect_id ="9" trigger_type = "4" trigger_time="0" trigger_rate="100" trigger_value ="50" trigger_percent="0"/>
+		<trigger effect_id ="10" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="99"/>
+		<trigger effect_id ="11" trigger_type = "4" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="80"/>
+	
+	</effect>
+
+	<effect effect_type = "110" effect_name = "攻击伤害修改为原来的x%">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="200"/>
+	</effect>
+
+	<effect effect_type = "108" effect_name = "减少技能消耗的蓝">
+		 <trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>	
+	</effect>
+
+	<effect effect_type = "107" effect_name = "减少技能CD时间">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+		<trigger effect_id ="2" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="100"/>
+	</effect>
+
+	<effect effect_type = "16" effect_name = "倒地">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="2" trigger_percent="0"/>	
+	</effect>
+
+	<effect effect_type="1" effect_name="每X秒回复血和蓝">
+		<!--每2秒回蓝回血20点,触发概率100% -->
+		<trigger effect_id="1" trigger_type="2" trigger_time="2" trigger_rate="100" trigger_value="20" trigger_percent="0" />
+		<trigger effect_id="2" trigger_type="2" trigger_time="2" trigger_rate="100" trigger_value="70" trigger_percent="0" />
+	</effect>
+	
+	<effect effect_type = "2" effect_name= "回蓝">
+		<trigger effect_id="1" trigger_type="3" trigger_time="1" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="11" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="2" trigger_percent="0" />
+		<trigger effect_id="12" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="4" trigger_percent="0" />
+		<trigger effect_id="13" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="6" trigger_percent="0" />
+		<trigger effect_id="14" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="8" trigger_percent="0" />
+		<trigger effect_id="15" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="10" trigger_percent="0" />
+		<trigger effect_id="16" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="12" trigger_percent="0" />
+		<trigger effect_id="17" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="14" trigger_percent="0" />
+		<trigger effect_id="18" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="16" trigger_percent="0" />
+		<trigger effect_id="19" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="18" trigger_percent="0" />
+		<trigger effect_id="20" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="20" trigger_percent="0" />
+		<trigger effect_id="21" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="350" trigger_percent="0" />
+		<trigger effect_id="22" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="2" trigger_percent="0" />
+	
+	</effect>
+
+	<effect effect_type="3" effect_name="每X秒回复血">
+		<trigger effect_id="1" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="50" trigger_percent="0" />
+		<trigger effect_id="2" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="3" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="130" trigger_percent="0" />
+		<trigger effect_id="4" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="160" trigger_percent="0" />
+		<trigger effect_id="5" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="190" trigger_percent="0" />
+		<trigger effect_id="6" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="220" trigger_percent="0" />
+		<trigger effect_id="7" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="250" trigger_percent="0" />
+		<trigger effect_id="8" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="280" trigger_percent="0" />
+		<trigger effect_id="9" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="310" trigger_percent="0" />
+		<trigger effect_id="10" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="340" trigger_percent="0" />
+		<trigger effect_id="11" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="370" trigger_percent="0" />
+		<trigger effect_id="12" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="2" trigger_percent="0" />
+		<trigger effect_id="13" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="70" trigger_percent="0" />
+		<trigger effect_id="14" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="15" trigger_percent="0" />
+		<trigger effect_id="15" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="30" trigger_percent="0" />
+		<trigger effect_id="16" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="250" trigger_percent="0" />
+		<trigger effect_id="17" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="500" trigger_percent="0" />
+		<trigger effect_id="18" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="200" trigger_percent="0" />
+		<trigger effect_id="19" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0"   trigger_percent="5" />
+		<trigger effect_id="21" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="22" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="200" trigger_percent="0" />
+		<trigger effect_id="23" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="300" trigger_percent="0" />
+		<trigger effect_id="31" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="5" trigger_percent="0" />
+		<trigger effect_id="32" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="10" trigger_percent="0" />
+		<trigger effect_id="33" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="15" trigger_percent="0" />
+		<trigger effect_id="34" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="20" trigger_percent="0" />
+		<trigger effect_id="35" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="25" trigger_percent="0" />
+		<trigger effect_id="36" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="30" trigger_percent="0" />
+		<trigger effect_id="37" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="35" trigger_percent="0" />
+		<trigger effect_id="38" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="40" trigger_percent="0" />
+		<trigger effect_id="39" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="45" trigger_percent="0" />
+		<trigger effect_id="40" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="50" trigger_percent="0" />
+		<trigger effect_id="41" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="42" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="120" trigger_percent="0" />
+		<trigger effect_id="43" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="140" trigger_percent="0" />
+		<trigger effect_id="44" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="160" trigger_percent="0" />
+		<trigger effect_id="45" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="180" trigger_percent="0" />
+		<trigger effect_id="46" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="200" trigger_percent="0" />
+		<trigger effect_id="47" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="220" trigger_percent="0" />
+		<trigger effect_id="48" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="240" trigger_percent="0" />
+		<trigger effect_id="49" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="260" trigger_percent="0" />
+		<trigger effect_id="50" trigger_type="4" trigger_time="1" trigger_rate="100" trigger_value="280" trigger_percent="0" />
+		<trigger effect_id="51" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+		<trigger effect_id="52" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="10" trigger_percent="0" />
+		<trigger effect_id="53" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="54" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="175" trigger_percent="0" />
+		<trigger effect_id="55" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="250" trigger_percent="0" />
+		<trigger effect_id="56" trigger_type="2" trigger_time="5" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+	
+	</effect>
+
+	<effect effect_type="4" effect_name="防御力上升">
+	    <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="3" />
+	    <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+	    <trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="9" />
+	    <trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+	    <trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+	    <trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+	    <trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="21" />
+	    <trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="24" />
+	    <trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="27" />
+	    <trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="10000" trigger_percent="30" />
+	    <trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		 <trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		 <trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="99" />
+		 <trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="999" />
+	    <trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+	    <trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />
+	    <trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+	    <trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+	    <trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+	    <trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />
+	    <trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />
+	    <trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+	    <trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+	    <trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="22" />
+	    <trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="24" />
+	    <trigger effect_id="33" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="26" />
+	    <trigger effect_id="34" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="28" />
+	    <trigger effect_id="35" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="36" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="32" />
+	    <trigger effect_id="37" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="34" />
+	    <trigger effect_id="38" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="36" />
+	    <trigger effect_id="39" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="38" />
+	    <trigger effect_id="40" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+	</effect>
+	
+	<effect effect_type="5" effect_name="防御力下降">
+	    <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+	    <trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+	    <trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+	    <trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="60" />
+	    <trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="70" />
+	    <trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="80" />
+	    <trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="90" />
+	    <trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="99" />
+	</effect>
+	
+	<effect effect_type="6" effect_name="攻击力上升">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="60" />
+		<trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="70" />
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="80" />
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="90" />
+		<trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="99" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="110" />
+        <trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="120" />
+	    <trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="130" />
+        <trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="140" />	
+        <trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="150" />	
+        <trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="160" />	
+        <trigger effect_id="17" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="170" />	
+        <trigger effect_id="18" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="180" />	
+        <trigger effect_id="19" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="190" />	
+		<trigger effect_id="20" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2000" />	
+		<trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="22" />
+		<trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="24" />
+		<trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="26" />
+		<trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="28" />
+		<trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="32" />
+		<trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="34" />
+		<trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="36" />
+		<trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+		<trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+		<trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+		<trigger effect_id="33" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="25" />
+		<trigger effect_id="34" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="80" />
+		<trigger effect_id="35" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+		<trigger effect_id="36" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="150" />
+		<trigger effect_id="37" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="80" trigger_percent="0" />
+		<trigger effect_id="41" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="25" trigger_percent="0" />
+		<trigger effect_id="42" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="50" trigger_percent="0" />
+		<trigger effect_id="43" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="75" trigger_percent="0" />
+		<trigger effect_id="51" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="15" trigger_percent="0" />
+		<trigger effect_id="52" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="30" trigger_percent="0" />
+		<trigger effect_id="53" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="45" trigger_percent="0" />
+		<trigger effect_id="54" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="60" trigger_percent="0" />
+		<trigger effect_id="55" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="75" trigger_percent="0" />
+		<trigger effect_id="56" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="90" trigger_percent="0" />
+		<trigger effect_id="57" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="105" trigger_percent="0" />
+		<trigger effect_id="58" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="120" trigger_percent="0" />
+		<trigger effect_id="59" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="135" trigger_percent="0" />
+		<trigger effect_id="60" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="150" trigger_percent="0" />
+		<trigger effect_id="61" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="165" trigger_percent="0" />
+		<trigger effect_id="62" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="180" trigger_percent="0" />
+		<trigger effect_id="63" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="195" trigger_percent="0" />
+		<trigger effect_id="64" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="210" trigger_percent="0" />
+		<trigger effect_id="65" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="225" trigger_percent="0" />
+		<trigger effect_id="66" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="240" trigger_percent="0" />
+		<trigger effect_id="67" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="255" trigger_percent="0" />
+		<trigger effect_id="68" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="270" trigger_percent="0" />
+		<trigger effect_id="69" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="285" trigger_percent="0" />
+		<trigger effect_id="70" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="300" trigger_percent="0" />
+	</effect>
+	
+	<effect effect_type="7" effect_name="攻击力下降">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="60" />
+		<trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="70" />
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="80" />
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="90" />
+		<trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="99" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="32" />
+		<trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="34" />
+		<trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="36" />
+		<trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="38" />
+		<trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+		<trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="42" />
+		<trigger effect_id="17" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="44" />
+		<trigger effect_id="18" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="46" />
+		<trigger effect_id="19" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="48" />
+		<trigger effect_id="20" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+	
+	</effect>
+
+	<effect effect_type="8" effect_name="暴击率增加">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />	
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />	
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />	
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />	
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="60" />	
+		<trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="70" />	
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="80" />	
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="90" />	
+		<trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="99" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="1" />	
+		<trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+		<trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="3" />	
+		<trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />	
+		<trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />	
+		<trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />	
+		<trigger effect_id="17" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="7" />	
+		<trigger effect_id="18" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />	
+		<trigger effect_id="19" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="9" />	
+		<trigger effect_id="20" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />	
+		<trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="11" />	
+		<trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="13" />	
+		<trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />	
+		<trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />	
+		<trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />	
+		<trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="17" />	
+		<trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />	
+		<trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="19" />	
+		<trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />	
+	</effect>
+
+	<effect effect_type="10" effect_name="速度增加">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="1" />
+		<trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+		<trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="3" />
+		<trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />
+		<trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+		<trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+		<trigger effect_id="17" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="7" />
+		<trigger effect_id="18" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+		<trigger effect_id="19" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="9" />
+		<trigger effect_id="20" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+		<trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="11" />
+		<trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="13" />
+		<trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />
+		<trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+		<trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />
+		<trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="17" />
+		<trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+		<trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="19" />
+		<trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="100" />
+		<trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+	
+
+	</effect>
+	
+	<effect effect_type="11" effect_name="速度减少">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="80"/>
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="100"/>
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30"/>
+	</effect>
+	
+	<effect effect_type="12" effect_name="命中率增加">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="25" />
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="35" />
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="45" />
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="55" />
+		<trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="65" />
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="75" />
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="85" />
+		<trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="95" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+		<trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="1" />
+		<trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+		<trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="3" />
+		<trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />
+		<trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+		<trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+		<trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="7" />
+		<trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+		<trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="9" />
+		<trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+		<trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="11" />
+		<trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="33" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="13" />
+		<trigger effect_id="34" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />
+		<trigger effect_id="35" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+		<trigger effect_id="36" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />
+		<trigger effect_id="37" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="17" />
+		<trigger effect_id="38" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+		<trigger effect_id="39" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="19" />
+		<trigger effect_id="40" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="41" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="100" />
+	</effect>
+	
+	<effect effect_type="13" effect_name="命中率减少">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="25" />
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="35" />
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="45" />
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="55" />
+		<trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="65" />
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="75" />
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="85" />
+		<trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="95" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+		<trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+		<trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="24" />
+		<trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	</effect>
+	
+	<effect effect_type="14" effect_name="闪避率增加">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />	
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />	
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />	
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />	
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />	
+		<trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />	
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />	
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />	
+		<trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />	
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="70"/>
+		<trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="1" />	
+		<trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+		<trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="3" />	
+		<trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />	
+		<trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />	
+		<trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />	
+		<trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="7" />	
+		<trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />	
+		<trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="9" />	
+		<trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />	
+		<trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="11" />	
+		<trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="33" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="13" />	
+		<trigger effect_id="34" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />	
+		<trigger effect_id="35" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />	
+		<trigger effect_id="36" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />
+		<trigger effect_id="37" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="17" />
+		<trigger effect_id="38" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+		<trigger effect_id="39" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="19" />
+		<trigger effect_id="40" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="41" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="42" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="1800" trigger_percent="0" />
+	</effect>
+	<effect effect_type="100" effect_name="每X秒对敌方伤害">
+		
+		<trigger effect_id="1" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="120" trigger_percent="0" />
+		<trigger effect_id="2" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="160" trigger_percent="0" />
+		<trigger effect_id="3" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="200" trigger_percent="0" />
+		<trigger effect_id="4" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="240" trigger_percent="0" />
+		<trigger effect_id="5" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="280" trigger_percent="0" />
+		<trigger effect_id="6" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="320" trigger_percent="0" />
+		<trigger effect_id="7" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="360" trigger_percent="0" />
+		<trigger effect_id="8" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="400" trigger_percent="0" />
+		<trigger effect_id="9" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="440" trigger_percent="0" />
+	    <trigger effect_id="10" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="480" trigger_percent="0" />
+	    <trigger effect_id="11" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="1000" trigger_percent="0" />
+	    <trigger effect_id="21" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="50" trigger_percent="0" />
+		<trigger effect_id="22" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="80" trigger_percent="0" />
+		<trigger effect_id="23" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="110" trigger_percent="0" />
+		<trigger effect_id="24" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="140" trigger_percent="0" />
+		<trigger effect_id="25" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="170" trigger_percent="0" />
+		<trigger effect_id="26" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="200" trigger_percent="0" />
+		<trigger effect_id="27" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="230" trigger_percent="0" />
+		<trigger effect_id="28" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="260" trigger_percent="0" />
+		<trigger effect_id="29" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="290" trigger_percent="0" />
+	    <trigger effect_id="30" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="320" trigger_percent="0" />
+	    <trigger effect_id="31" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+	</effect>
+
+	<effect effect_type="17" effect_name="商城经验加成">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="200" />
+	</effect>
+
+	<effect effect_type="116" effect_name="扣血并且击飞">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="2" trigger_type="2" trigger_time="3" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="1" />
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="25" />
+		<trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="500" trigger_percent="0" />
+		<trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="1000" trigger_percent="0" />
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="1500" trigger_percent="0" />
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="2000" trigger_percent="0" />
+		<trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="2500" trigger_percent="0" />
+		<trigger effect_id="11" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="12" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+		<trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="3500" trigger_percent="0" />
+	
+	</effect>
+
+	<effect effect_type="101" effect_name="绝对防御">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="0" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="40" trigger_value="0" trigger_percent="0" />
+		<trigger effect_id="3" trigger_type="2" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50"/>
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="7" />
+		<trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="15" />
+		<trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="22"/>
+		<trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="37" />
+		<trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="45"/>
+		<trigger effect_id="17" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="52" />
+		<trigger effect_id="18" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="60" />
+		<trigger effect_id="19" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="67"/>
+		<trigger effect_id="20" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="75"/>
+		<trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="82" />
+		<trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="90" />
+		<trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="97"/>
+		<trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="105" />
+		<trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="112" />
+		<trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="120"/>
+		<trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="127" />
+		<trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="135" />
+		<trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="142"/>
+		<trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="20" trigger_value="0" trigger_percent="150"/>
+		<trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="200"/>
+		<trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="100"/>
+		<trigger effect_id="33" trigger_type="1" trigger_time="0" trigger_rate="30" trigger_value="0" trigger_percent="100"/>
+		<trigger effect_id="34" trigger_type="4" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="200"/>
+	</effect>
+
+	<effect effect_type="102" effect_name="马上回血X%">
+	    <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="100" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="11" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		<trigger effect_id="12" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="55" />
+		<trigger effect_id="13" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="60" />
+		<trigger effect_id="14" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="65" />
+		<trigger effect_id="15" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="70" />
+		<trigger effect_id="16" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="75" />
+		<trigger effect_id="17" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="80" />
+		<trigger effect_id="18" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="90" />
+		<trigger effect_id="19" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="95" />
+		<trigger effect_id="20" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="100" />
+		<trigger effect_id="21" trigger_type="2" trigger_time="3" trigger_rate="100" trigger_value="0" trigger_percent="1" />
+		<trigger effect_id="22" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="5"/>
+		<trigger effect_id="23" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="13"/>
+		<trigger effect_id="24" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="700" trigger_percent="2"/>
+		<trigger effect_id="25" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="1800" trigger_percent="4"/>
+		<trigger effect_id="26" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="2000" trigger_percent="6"/>
+		<trigger effect_id="27" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="1400" trigger_percent="10"/>
+		<trigger effect_id="28" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="50000" trigger_percent="11"/>
+		<trigger effect_id="29" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="2"/>
+		<trigger effect_id="30" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="10" trigger_percent="12"/>
+		<trigger effect_id="31" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="400" trigger_percent="13"/>
+		<trigger effect_id="32" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="700" trigger_percent="14"/>
+		<trigger effect_id="33" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="1000" trigger_percent="15"/>
+		<trigger effect_id="34" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="25"/>
+	</effect>
+
+    <effect effect_type="18" effect_name="修改玩家HP上限">
+	    <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+	    <trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="300" trigger_percent="0" />
+	    <trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="600" trigger_percent="0" />
+	    <trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="900" trigger_percent="0" />
+	    <trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+	    <trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />
+	    <trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+	    <trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+	    <trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+	    <trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />
+	    <trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />
+	    <trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+	    <trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+	    <trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="22" />
+	    <trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="24" />
+	    <trigger effect_id="33" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="26" />
+	    <trigger effect_id="34" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="28" />
+	    <trigger effect_id="35" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="36" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="32" />
+	    <trigger effect_id="37" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="34" />
+	    <trigger effect_id="38" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="36" />
+	    <trigger effect_id="39" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="38" />
+	    <trigger effect_id="40" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+	    <trigger effect_id="41" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="50000" trigger_percent="0" />
+	    <trigger effect_id="42" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="1000" trigger_percent="0" />
+	    <trigger effect_id="43" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		
+		<trigger effect_id="44" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="500" trigger_percent="0" />
+	    <trigger effect_id="45" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="1000" trigger_percent="0" />
+	    <trigger effect_id="46" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="1500" trigger_percent="0" />
+	    <trigger effect_id="47" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="2000" trigger_percent="0" />
+	    <trigger effect_id="48" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="2500" trigger_percent="0" />
+	    <trigger effect_id="49" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="3000" trigger_percent="0" />
+	    <trigger effect_id="50" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="3500" trigger_percent="0" />
+	    <trigger effect_id="51" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="4000" trigger_percent="0" />
+	    <trigger effect_id="52" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="4500" trigger_percent="0" />
+	    <trigger effect_id="53" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="5000" trigger_percent="0" />
+	</effect>
+    <effect effect_type="19" effect_name="修改玩家MP上限">
+	    <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+	    <trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+	    <trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+	    <trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="7" />
+	    <trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+	    <trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+	    <trigger effect_id="17" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="17" />
+	    <trigger effect_id="18" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+	    <trigger effect_id="19" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="22" />
+	    <trigger effect_id="20" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="25" />
+	    <trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="27" />
+	    <trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="32" />
+	    <trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="35" />
+	    <trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="37" />
+	    <trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+	    <trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="42" />
+	    <trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="45" />
+	    <trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="47" />
+	    <trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+	</effect>
+	<effect effect_type="20" effect_name="宠物经验加成">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="150" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="200" />
+	</effect>
+	<effect effect_type="21" effect_name="中毒">
+		<trigger effect_id="1" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="1" />
+		<trigger effect_id="2" trigger_type="2" trigger_time="2" trigger_rate="100" trigger_value="0" trigger_percent="5" />
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		<trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="5" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="4" />
+		<trigger effect_id="6" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="20" />		
+		<trigger effect_id="7" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="300" trigger_percent="0" />		
+		<trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="1200" trigger_percent="0" />		
+		<trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="10000" trigger_percent="0" />	
+		<trigger effect_id="10" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+		<trigger effect_id="11" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="500" trigger_percent="0" />	
+		<trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" triger_value="0" trigger_percent="10"/>
+		<trigger effect_id="13" trigger_type="2" trigger_time="1" trigger_rate="100" triger_value="0" trigger_percent="2"/>
+		<trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="100"/>
+		<trigger effect_id="15" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="3"/>
+		<trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" triger_value="0" trigger_percent="5"/>
+		<trigger effect_id="17" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="10" trigger_percent="0" />
+		<trigger effect_id="18" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="20" trigger_percent="0" />
+		<trigger effect_id="19" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="30" trigger_percent="0" />
+		<trigger effect_id="20" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="40" trigger_percent="0" />
+		<trigger effect_id="21" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="50" trigger_percent="0" />
+		<trigger effect_id="22" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="120" trigger_percent="0" />
+		<trigger effect_id="23" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="140" trigger_percent="0" />
+		<trigger effect_id="24" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="160" trigger_percent="0" />
+		<trigger effect_id="25" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="180" trigger_percent="0" />
+		<trigger effect_id="26" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="300" trigger_percent="0" />
+		<trigger effect_id="27" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+
+		<trigger effect_id="30" trigger_type="1" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="31" trigger_type="1" trigger_time="1" trigger_rate="100" trigger_value="100000" trigger_percent="0" />
+		
+		<trigger effect_id="32" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="50" trigger_percent="0" />
+		<trigger effect_id="33" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="100" trigger_percent="0" />
+		<trigger effect_id="34" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="150" trigger_percent="0" />
+		<trigger effect_id="35" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="200" trigger_percent="0" />
+		<trigger effect_id="36" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="250" trigger_percent="0" />
+		<trigger effect_id="37" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="300" trigger_percent="0" />
+		<trigger effect_id="38" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="350" trigger_percent="0" />
+		<trigger effect_id="39" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="400" trigger_percent="0" />
+		<trigger effect_id="40" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="450" trigger_percent="0" />
+		<trigger effect_id="41" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="500" trigger_percent="0" />
+		<trigger effect_id="42" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+		<trigger effect_id="51" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="50" trigger_percent="0" />
+		<trigger effect_id="52" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="80" trigger_percent="0" />
+		<trigger effect_id="53" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="110" trigger_percent="0" />
+		<trigger effect_id="54" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="140" trigger_percent="0" />
+		<trigger effect_id="55" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="170" trigger_percent="0" />
+		<trigger effect_id="56" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="200" trigger_percent="0" />
+		<trigger effect_id="57" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="230" trigger_percent="0" />
+		<trigger effect_id="58" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="260" trigger_percent="0" />
+		<trigger effect_id="59" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="290" trigger_percent="0" />
+		<trigger effect_id="60" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="320" trigger_percent="0" />
+		<trigger effect_id="61" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="25" />
+		<trigger effect_id="62" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+		<trigger effect_id="63" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="64" trigger_type="2" trigger_time="1" trigger_rate="100" trigger_value="0" trigger_percent="5" />		
+		<trigger effect_id="65" trigger_type="2" trigger_time="1" trigger_rate="100" triger_value="0" trigger_percent="50"/>
+
+	
+	</effect>
+	<effect effect_type="22" effect_name="人物(only)经验加成">
+		<trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="200" />
+		<trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="150"/>
+		<trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="200"/>
+	</effect>
+    <effect effect_type="23" effect_name="关卡掉落不受时间限制">
+        <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_stage="930 932" />
+    </effect>
+	<effect effect_type="24" effect_name="防御力上升">
+	    <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="3" />
+	    <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+	    <trigger effect_id="3" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="9" />
+	    <trigger effect_id="4" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+	    <trigger effect_id="5" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="15" />
+	    <trigger effect_id="6" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+	    <trigger effect_id="7" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="21" />
+	    <trigger effect_id="8" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="24" />
+	    <trigger effect_id="9" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="27" />
+	    <trigger effect_id="10" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+		<trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="10000" trigger_percent="30" />
+	    <trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+		 <trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="50" />
+		 <trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="99" />
+		 <trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="999" />
+	    <trigger effect_id="21" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="2" />
+	    <trigger effect_id="22" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="4" />
+	    <trigger effect_id="23" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="6" />
+	    <trigger effect_id="24" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="8" />
+	    <trigger effect_id="25" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="10" />
+	    <trigger effect_id="26" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="12" />
+	    <trigger effect_id="27" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="14" />
+	    <trigger effect_id="28" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="16" />
+	    <trigger effect_id="29" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="18" />
+	    <trigger effect_id="30" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="20" />
+	    <trigger effect_id="31" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="22" />
+	    <trigger effect_id="32" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="24" />
+	    <trigger effect_id="33" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="26" />
+	    <trigger effect_id="34" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="28" />
+	    <trigger effect_id="35" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="30" />
+	    <trigger effect_id="36" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="32" />
+	    <trigger effect_id="37" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="34" />
+	    <trigger effect_id="38" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="36" />
+	    <trigger effect_id="39" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="38" />
+	    <trigger effect_id="40" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="40" />
+	</effect>
+	
+
+
+
+    <effect effect_type = "103" effect_name = "耗蓝">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="100" trigger_percent="0"/>	
+	</effect>
+	<effect effect_type = "104" effect_name = "眩晕">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="100" trigger_percent="0"/>	
+	</effect>
+	<effect effect_type = "105" effect_name = "净身">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="100" trigger_percent="0"/>	
+	</effect>
+	<effect effect_type = "119" effect_name = "灵兽回复灵力">
+		<trigger effect_id ="1" trigger_type = "2" trigger_time="1" trigger_rate="100" trigger_value ="1" trigger_percent="0"/>
+		<trigger effect_id ="2" trigger_type = "2" trigger_time="1" trigger_rate="100" trigger_value ="2" trigger_percent="0"/>
+		<trigger effect_id ="3" trigger_type = "2" trigger_time="1" trigger_rate="100" trigger_value ="4" trigger_percent="0"/>
+		<trigger effect_id ="4" trigger_type = "2" trigger_time="1" trigger_rate="100" trigger_value ="5" trigger_percent="0"/>
+		<trigger effect_id ="5" trigger_type = "2" trigger_time="2" trigger_rate="100" trigger_value ="1" trigger_percent="0"/>
+	</effect>
+	<effect effect_type = "120" effect_name = "普通攻击时，附加吸血功能">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="2"/>
+		<trigger effect_id ="2" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="4"/>
+		<trigger effect_id ="3" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="6"/>
+		<trigger effect_id ="4" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="8"/>
+		<trigger effect_id ="5" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="10"/>
+	</effect>
+	<effect effect_type = "121" effect_name = "有X%的概率对敌人造成1.5倍伤害">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="10" trigger_value ="0" trigger_percent="100"/>
+		<trigger effect_id ="2" trigger_type = "1" trigger_time="0" trigger_rate="20" trigger_value ="0" trigger_percent="100"/>
+		<trigger effect_id ="3" trigger_type = "1" trigger_time="0" trigger_rate="30" trigger_value ="0" trigger_percent="100"/>
+	</effect>
+	<effect effect_type = "122" effect_name = "对玩家技能有着X%的抗性">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="10"/>
+		<trigger effect_id ="2" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="20"/>
+		<trigger effect_id ="3" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="30"/>
+	</effect>
+	<effect effect_type = "123" effect_name = "灵兽有X%的几率施放技能时不消耗灵力">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="5" trigger_value ="0" trigger_percent="0"/>
+		<trigger effect_id ="2" trigger_type = "1" trigger_time="0" trigger_rate="10" trigger_value ="0" trigger_percent="0"/>
+		<trigger effect_id ="3" trigger_type = "1" trigger_time="0" trigger_rate="15" trigger_value ="0" trigger_percent="0"/>
+	</effect>
+
+	<effect effect_type = "10000" effect_name = "空效果">
+		<trigger effect_id ="1" trigger_type = "0" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="0"/>	
+	</effect>
+	<!-- 额外获取功夫豆-->
+	<effect effect_type="125" effect_name ="额外获取工夫豆">
+	  <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" 
+		   trigger_percent="20"/>
+	  <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0" trigger_percent="100"/>
+	</effect>
+	<effect effect_type="126" effect_name="额外寻宝掉率">
+	  <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0"
+		   trigger_percent="20"/>
+	  <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0"
+		   trigger_percent="50"/>
+   </effect>
+	<effect effect_type="127" effect_name="增加基本敏捷值">
+	  <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0"
+		   trigger_percent="10"/>
+	</effect>
+	<effect effect_type="128" effect_name="增加体质">
+	  <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="10"
+		   trigger_percent="0"/>
+	  <trigger effect_id="11" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="20"
+		   trigger_percent="0"/>
+	  <trigger effect_id="12" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="40"
+		   trigger_percent="0"/>
+	  <trigger effect_id="13" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="60"
+		   trigger_percent="0"/>
+	  <trigger effect_id="14" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="80"
+		   trigger_percent="0"/>
+	  <trigger effect_id="15" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="100"
+		   trigger_percent="0"/>
+	  <trigger effect_id="16" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="120"
+		   trigger_percent="0"/>
+	  <trigger effect_id="17" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="140"
+		   trigger_percent="0"/>
+	  <trigger effect_id="18" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="160"
+		   trigger_percent="0"/>
+	  <trigger effect_id="19" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="180"
+		   trigger_percent="0"/>
+	  <trigger effect_id="20" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="200"
+		   trigger_percent="0"/>
+	</effect>
+	<effect effect_type="129" effect_name="减少伤害值">
+	  <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="50" trigger_percent="0"/>
+	  <trigger effect_id="2" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="5000" trigger_percent="0"/>
+	</effect>
+	<effect effect_type="130" effect_name="增加爆击上限">
+	  <trigger effect_id="1" trigger_type="1" trigger_time="0" trigger_rate="100" trigger_value="0"
+		   trigger_percent="10"/>
+	</effect>
+
+	<effect effect_type = "131" effect_name = "沉默">
+		<trigger effect_id ="1" trigger_type = "1" trigger_time="0" trigger_rate="100" trigger_value ="0" trigger_percent="0"/>	
+	</effect>
+</root>
+
+
+
