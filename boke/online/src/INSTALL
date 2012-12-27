@@ -1,0 +1,34 @@
+#!/bin/bash
+function cp_and_start_test {
+	mv  -f ../../bin/libonline.so  ../../bin/libonline.so.`date +"%Y%m%d_%H%M%S"`
+	mv  -f ../../bin/libonline_data.so ../../bin/libonline_data.so.`date +"%Y%m%d_%H%M%S"`
+	cp libonline.so ../../bin/	
+	cp libonline_data.so ../../bin/	
+	if [ "$1"  == "startup" ]; then
+		../../bin/startup.sh
+	else 
+		../../bin/rso.sh
+	fi
+
+}
+touch  ./version.cpp
+
+[ -d  ./build  ] ||  mkdir ./build
+cd build
+cmake ../  
+
+if  [ "$?" != "0" ]   ;then
+    rm -rf ../build
+else
+    make -j 4
+
+	if [ "$1" == "1" ]; then
+		cp_and_start_test   
+	fi
+
+	if [ "$1" == "2" ]; then
+		cp_and_start_test  startup 
+	fi
+fi
+
+

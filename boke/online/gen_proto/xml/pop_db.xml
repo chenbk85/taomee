@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="pop_db" cmdid_mode="db" create_time="2012年12月27日 星期4 12:04:27">
+  <struct_list>
+    <struct name="get_server_version_out" struct_from="self">
+      <field mode="array" name="version" type="char" size="255" desc=""/>
+    </struct>
+    <struct name="pop_add_game_info_in" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc="项目编号"/>
+      <field mode="single" name="win_flag" type="uint32" desc="胜负标志0：负 1：胜 2：平"/>
+    </struct>
+    <struct name="pop_copy_user_in" struct_from="self">
+      <field mode="single" name="dsc_userid" type="uint32" desc="目标userid"/>
+    </struct>
+    <struct name="item_exchange_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc="1:任务，2:xiaomee"/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+      <field mode="single" name="max_count" type="uint32" desc=""/>
+      <field mode="single" name="day_add_cnt" type="uint32" desc="今日增加数量"/>
+    </struct>
+    <struct name="pop_exchange_in" struct_from="self">
+      <field mode="single" name="opt_flag" type="uint32" desc="未使用"/>
+      <field mode="varlist" name="add_item_list" type="item_exchange_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="del_item_list" type="item_exchange_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="pop_find_map_add_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="mapid" type="uint32" desc=""/>
+    </struct>
+    <struct name="user_base_info_t" struct_from="self">
+      <field mode="single" name="register_time" type="uint32" desc=""/>
+      <field mode="single" name="flag" type="uint32" desc="0x01:用户是否注册过"/>
+      <field mode="single" name="xiaomee" type="uint32" desc=""/>
+      <field mode="single" name="color" type="uint32" desc=""/>
+      <field mode="single" name="age" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="single" name="last_islandid" type="uint32" desc=""/>
+      <field mode="single" name="last_mapid" type="uint32" desc=""/>
+      <field mode="single" name="last_x" type="uint32" desc=""/>
+      <field mode="single" name="last_y" type="uint32" desc=""/>
+      <field mode="single" name="last_login" type="uint32" desc=""/>
+      <field mode="single" name="online_time" type="uint32" desc=""/>
+    </struct>
+    <struct name="item_ex_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="use_count" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="item_day_limit_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc="物品ID（3战斗积分4在线时长）"/>
+      <field mode="single" name="total" type="uint32" desc="总数"/>
+      <field mode="single" name="daycnt" type="uint32" desc="当日获得次数"/>
+    </struct>
+    <struct name="task_t" struct_from="pub">
+      <field mode="single" name="taskid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="find_map_t" struct_from="pub">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="mapid" type="uint32" desc=""/>
+    </struct>
+    <struct name="user_log_t" struct_from="pub">
+      <field mode="single" name="logtime" type="uint32" desc="记录时间"/>
+      <field mode="single" name="v1" type="uint32" desc="1:注册 ，2：完成岛:(v2:岛id)"/>
+      <field mode="single" name="v2" type="uint32" desc=""/>
+    </struct>
+    <struct name="game_info_t" struct_from="pub">
+      <field mode="single" name="gameid" type="uint32" desc="项目编号"/>
+      <field mode="single" name="win_time" type="uint32" desc="胜利次数"/>
+      <field mode="single" name="lose_time" type="uint32" desc="输的次数"/>
+      <field mode="single" name="draw_time" type="uint32" desc="平的次数"/>
+    </struct>
+    <struct name="pop_get_all_info_out" struct_from="self">
+      <field mode="single" name="user_base_info" type="user_base_info_t" desc=""/>
+      <field mode="varlist" name="item_list" type="item_ex_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="item_day_list" type="item_day_limit_t" max_size="9999" desc="每日获取物品列表"/>
+      <field mode="varlist" name="task_list" type="task_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="find_map_list" type="find_map_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="user_log_list" type="user_log_t" max_size="9999" desc="用户足迹列表"/>
+      <field mode="varlist" name="game_info_list" type="game_info_t" max_size="9999" desc="小游戏统计信息"/>
+    </struct>
+    <struct name="pop_get_base_info_out" struct_from="self">
+      <field mode="single" name="last_online_id" type="uint32" desc="最后一次登录的服务器"/>
+    </struct>
+    <struct name="pop_login_out" struct_from="self">
+      <field mode="single" name="user_base_info" type="user_base_info_t" desc=""/>
+      <field mode="varlist" name="item_list" type="item_ex_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="item_day_list" type="item_day_limit_t" max_size="9999" desc="每日获取物品列表"/>
+      <field mode="varlist" name="task_list" type="task_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="find_map_list" type="find_map_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="user_log_list" type="user_log_t" max_size="9999" desc="用户足迹列表"/>
+      <field mode="varlist" name="game_info_list" type="game_info_t" max_size="9999" desc="小游戏统计信息"/>
+    </struct>
+    <struct name="pop_logout_in" struct_from="self">
+      <field mode="single" name="last_islandid" type="uint32" desc=""/>
+      <field mode="single" name="last_mapid" type="uint32" desc=""/>
+      <field mode="single" name="last_x" type="uint32" desc=""/>
+      <field mode="single" name="last_y" type="uint32" desc=""/>
+      <field mode="single" name="last_login" type="uint32" desc=""/>
+      <field mode="single" name="online_time" type="uint32" desc=""/>
+      <field mode="single" name="last_online_id" type="uint32" desc="最后一次登录的服务器"/>
+    </struct>
+    <struct name="pop_opt_in" struct_from="self">
+      <field mode="single" name="opt_groupid" type="uint32" desc="1:物品;2任务,3find_map"/>
+      <field mode="single" name="opt_type" type="uint32" desc="1:增加/减少,2:设置"/>
+      <field mode="single" name="optid" type="uint32" desc="操作物的id（如ItemID）"/>
+      <field mode="single" name="count" type="int32" desc="改变的数量"/>
+      <field mode="single" name="v1" type="uint32" desc=""/>
+      <field mode="single" name="v2" type="uint32" desc=""/>
+    </struct>
+    <struct name="pop_reg_in" struct_from="self">
+      <field mode="single" name="color" type="uint32" desc=""/>
+      <field mode="single" name="age" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="single" name="flag" type="uint32" desc="0x01:用户是否注册过 0x02是否新米米号"/>
+      <field mode="varlist" name="add_item_list" type="item_exchange_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="pop_set_color_in" struct_from="self">
+      <field mode="single" name="color" type="uint32" desc=""/>
+    </struct>
+    <struct name="pop_set_flag_in" struct_from="self">
+      <field mode="single" name="flag" type="uint32" desc="0x01:用户是否注册过 0x02是否新米米号"/>
+      <field mode="single" name="mask" type="uint32" desc="掩码"/>
+    </struct>
+    <struct name="pop_set_item_used_list_in" struct_from="self">
+      <field mode="varlist" name="del_can_change_list" type="uint32" max_size="9999" desc=""/>
+      <field mode="varlist" name="set_noused_list" type="uint32" max_size="9999" desc=""/>
+      <field mode="varlist" name="add_can_change_list" type="uint32" max_size="9999" desc=""/>
+      <field mode="varlist" name="set_used_list" type="uint32" max_size="9999" desc=""/>
+    </struct>
+    <struct name="pop_set_nick_in" struct_from="self">
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+    </struct>
+    <struct name="pop_task_complete_node_in" struct_from="self">
+      <field mode="single" name="taskid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="pop_task_del_in" struct_from="self">
+      <field mode="single" name="taskid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="pop_user_log_add_in" struct_from="self">
+      <field mode="single" name="user_log" type="user_log_t" desc=""/>
+    </struct>
+    <struct name="pop_user_set_field_value_in" struct_from="self">
+      <field mode="array" name="field_name" type="char" size="64" desc="字段名"/>
+      <field mode="array" name="field_value" type="char" size="255" desc="字段值"/>
+    </struct>
+    <struct name="udp_post_msg_in" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc="项目编号"/>
+      <field mode="single" name="nouse" type="uint32" desc="无效填0"/>
+      <field mode="single" name="type" type="uint32" desc="投稿类型"/>
+      <field mode="array" name="nick" type="char" size="16" desc="昵称"/>
+      <field mode="array" name="title" type="char" size="60" desc="主题"/>
+      <field mode="varlist" name="msg" type="char" max_size="4096" desc="投稿内容"/>
+    </struct>
+    <struct name="item_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="online_item_t" struct_from="pub">
+      <field mode="single" name="online_id" type="uint32" desc=""/>
+      <field mode="single" name="user_num" type="uint32" desc=""/>
+      <field mode="array" name="online_ip" type="char" size="16" desc=""/>
+      <field mode="single" name="online_port" type="uint16" desc=""/>
+      <field mode="single" name="friend_count" type="uint32" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="0x1000" name="get_server_version" struct_in="" struct_out="get_server_version_out" desc="得到版本信息" md5_tag="0xe3716819" bind_bitmap="0"/>
+    <protocol cmd="0x7401" name="pop_login" struct_in="" struct_out="pop_login_out" desc="登入" md5_tag="0x02822bfc" bind_bitmap="1">
+      <error id="1105"/>
+    </protocol>
+    <protocol cmd="0x7402" name="pop_reg" struct_in="pop_reg_in" struct_out="" desc="注册" md5_tag="0xb792ae08" bind_bitmap="0">
+      <error id="1104"/>
+    </protocol>
+    <protocol cmd="0x7403" name="pop_set_nick" struct_in="pop_set_nick_in" struct_out="" desc="设置昵称" md5_tag="0x874eb534" bind_bitmap="0"/>
+    <protocol cmd="0x7404" name="pop_copy_user" struct_in="pop_copy_user_in" struct_out="" desc="复制用户" md5_tag="0x5394bd57" bind_bitmap="0"/>
+    <protocol cmd="0x7405" name="pop_get_base_info" struct_in="" struct_out="pop_get_base_info_out" desc="" md5_tag="0xd9a8fc35" bind_bitmap="2"/>
+    <protocol cmd="0x7406" name="pop_set_flag" struct_in="pop_set_flag_in" struct_out="" desc="设置用户标识" md5_tag="0x13813167" bind_bitmap="0"/>
+    <protocol cmd="0x7407" name="pop_set_color" struct_in="pop_set_color_in" struct_out="" desc="" md5_tag="0x941960fe" bind_bitmap="0"/>
+    <protocol cmd="0x740A" name="pop_exchange" struct_in="pop_exchange_in" struct_out="" desc="交换协议，物品，任务，钱" md5_tag="0x79a82f26" bind_bitmap="0">
+      <error id="1009"/>
+      <error id="5120"/>
+      <error id="5121"/>
+      <error id="5122"/>
+      <error id="5123"/>
+      <error id="5131"/>
+    </protocol>
+    <protocol cmd="0x740C" name="pop_set_item_used_list" struct_in="pop_set_item_used_list_in" struct_out="" desc="设置使用列表，会将原有使用的设置为未使用" md5_tag="0xc71f127c" bind_bitmap="0"/>
+    <protocol cmd="0x7410" name="pop_task_complete_node" struct_in="pop_task_complete_node_in" struct_out="" desc="完成子节点任务" md5_tag="0x18cc6534" bind_bitmap="0">
+      <error id="5131"/>
+    </protocol>
+    <protocol cmd="0x7411" name="pop_task_del" struct_in="pop_task_del_in" struct_out="" desc="删除任务" md5_tag="0x4f39999d" bind_bitmap="0"/>
+    <protocol cmd="0x741A" name="pop_find_map_add" struct_in="pop_find_map_add_in" struct_out="" desc="找到哪个地图" md5_tag="0x4d028768" bind_bitmap="0"/>
+    <protocol cmd="0x741B" name="pop_logout" struct_in="pop_logout_in" struct_out="" desc="退出" md5_tag="0x4d68721b" bind_bitmap="0"/>
+    <protocol cmd="0x741C" name="pop_user_log_add" struct_in="pop_user_log_add_in" struct_out="" desc="用户足迹" md5_tag="0xb2be2b7b" bind_bitmap="0"/>
+    <protocol cmd="0x74A0" name="pop_get_all_info" struct_in="" struct_out="pop_get_all_info_out" desc="得到用户的所有信息" md5_tag="0x151b1b12" bind_bitmap="2097152"/>
+    <protocol cmd="0x74A1" name="pop_user_set_field_value" struct_in="pop_user_set_field_value_in" struct_out="" desc="设置user表某一字段的值" md5_tag="0x50ea630f" bind_bitmap="2097152"/>
+    <protocol cmd="0x74A2" name="pop_opt" struct_in="pop_opt_in" struct_out="" desc="设置相关的值" md5_tag="0x392d057e" bind_bitmap="2097152"/>
+    <protocol cmd="0x74A4" name="pop_add_game_info" struct_in="pop_add_game_info_in" struct_out="" desc="增加小游戏统计" md5_tag="0x95f2cb99" bind_bitmap="0"/>
+    <protocol cmd="0xF130" name="udp_post_msg" struct_in="udp_post_msg_in" struct_out="" desc="udp 投稿" md5_tag="0xbe74ec43" bind_bitmap="0"/>
+  </protocol_list>
+  <error_list>
+    <error id="1000" name="NO_DEFINE_ERR" desc="没有定义"/>
+    <error id="1001" name="SYS_ERR" desc="系统出错 一般是内存出错"/>
+    <error id="1002" name="DB_ERR" desc="数据库出错"/>
+    <error id="1003" name="NET_ERR" desc="NET出错"/>
+    <error id="1004" name="CMDID_NODEFINE_ERR" desc="命令ID没有定义"/>
+    <error id="1005" name="PROTO_LEN_ERR" desc="协议长度不符合"/>
+    <error id="1006" name="VALUE_OUT_OF_RANGE_ERR" desc="数值越界"/>
+    <error id="1007" name="FLAY_ALREADY_SET_ERR" desc="要设置的flag和原有一致"/>
+    <error id="1008" name="VALUE_ISNOT_FULL_ERR" desc="数据不完整"/>
+    <error id="1009" name="ENUM_OUT_OF_RANGE_ERR" desc="枚举越界:不在类型的限定范围.(如某一字段只允许[0,1],却填了2)"/>
+    <error id="1010" name="PROTO_RETURN_LEN_ERR" desc="返回报文长度有问题"/>
+    <error id="1011" name="DB_DATA_ERR" desc="数据库中数据有误"/>
+    <error id="1012" name="NET_SEND_ERR" desc="无"/>
+    <error id="1013" name="NET_RECV_ERR" desc="无"/>
+    <error id="1014" name="KEY_EXISTED_ERR" desc="KEY 已经存在了"/>
+    <error id="1015" name="KEY_NOFIND_ERR" desc="KEY 不存在"/>
+    <error id="1016" name="DB_CANNOT_UPDATE_ERR" desc="DB不允许更新"/>
+    <error id="1017" name="NET_TIMEOUT_ERR" desc="网络超时"/>
+    <error id="1018" name="CMD_EXEC_MAX_PER_MINUTE_ERR" desc="当然命令号每分钟超过最大限制"/>
+    <error id="1021" name="CMD_MD5_TAG_ERR" desc="当然命令的md5_tags检查失败"/>
+    <error id="1103" name="CHECK_PASSWD_ERR" desc="登入时，检查用户名和密码出错"/>
+    <error id="1104" name="USER_ID_EXISTED_ERR" desc="在insert，米米号已存在"/>
+    <error id="1105" name="USER_ID_NOFIND_ERR" desc="在select update, delete 时，米米号不存在"/>
+    <error id="5120" name="ITEM_IS_EXISTED_ERR" desc="物品已经存在"/>
+    <error id="5121" name="ITEM_NOFIND_ERR" desc="物品不存在"/>
+    <error id="5122" name="ITEM_NOENOUGH_ERR" desc="物品不足"/>
+    <error id="5123" name="ITEM_MAX_ERR" desc="物品太多"/>
+    <error id="5131" name="TASK_IS_EXISTED_ERR" desc="任务已经存在"/>
+  </error_list>
+  <desc_list>
+    <field_desc key="userid" desc="米米号"/>
+  </desc_list>
+  <bind_list>
+    <bind bindid="0" bind_name="for_online" bind_desc=""/>
+    <bind bindid="1" bind_name="for_switch" bind_desc=""/>
+    <bind bindid="21" bind_name="for_kefu" bind_desc=""/>
+  </bind_list>
+</taomee_proto>

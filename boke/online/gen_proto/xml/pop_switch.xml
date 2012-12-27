@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="pop_switch" cmdid_mode="int" create_time="2012年12月27日 星期4 12:04:27">
+  <struct_list>
+    <struct name="sw_get_ranged_svrlist_in" struct_from="self">
+      <field mode="single" name="start_id" type="uint32" desc=""/>
+      <field mode="single" name="end_id" type="uint32" desc=""/>
+      <field mode="varlist" name="friend_list" type="uint32" max_size="1000" desc=""/>
+    </struct>
+    <struct name="online_item_t" struct_from="pub">
+      <field mode="single" name="online_id" type="uint32" desc=""/>
+      <field mode="single" name="user_num" type="uint32" desc=""/>
+      <field mode="array" name="online_ip" type="char" size="16" desc=""/>
+      <field mode="single" name="online_port" type="uint16" desc=""/>
+      <field mode="single" name="friend_count" type="uint32" desc=""/>
+    </struct>
+    <struct name="sw_get_ranged_svrlist_out" struct_from="self">
+      <field mode="single" name="max_online_id" type="uint32" desc=""/>
+      <field mode="varlist" name="online_list" type="online_item_t" max_size="1000" desc=""/>
+    </struct>
+    <struct name="sw_get_recommend_svr_list_out" struct_from="self">
+      <field mode="single" name="max_online_id" type="uint32" desc=""/>
+      <field mode="varlist" name="online_list" type="online_item_t" max_size="1000" desc=""/>
+    </struct>
+    <struct name="sw_get_user_count_out" struct_from="self">
+      <field mode="single" name="online_count" type="uint32" desc=""/>
+    </struct>
+    <struct name="sw_noti_across_svr_in" struct_from="self">
+      <field mode="single" name="cmdid" type="uint32" desc=""/>
+      <field mode="varlist" name="buflist" type="char" max_size="999" desc=""/>
+    </struct>
+    <struct name="sw_noti_across_svr_out" struct_from="self">
+      <field mode="single" name="cmdid" type="uint32" desc=""/>
+      <field mode="varlist" name="buflist" type="char" max_size="999" desc=""/>
+    </struct>
+    <struct name="sw_report_online_info_in" struct_from="self">
+      <field mode="single" name="domain_id" type="uint16" desc=""/>
+      <field mode="single" name="online_id" type="uint32" desc=""/>
+      <field mode="array" name="online_name" type="char" size="16" desc=""/>
+      <field mode="array" name="online_ip" type="uint16" size="16" desc=""/>
+      <field mode="single" name="online_port" type="uint16" desc=""/>
+      <field mode="single" name="user_num" type="uint32" desc=""/>
+      <field mode="single" name="seqno" type="uint32" desc=""/>
+      <field mode="varlist" name="userid_list" type="uint32" max_size="999999" desc="在线的用户列表"/>
+    </struct>
+    <struct name="sw_report_user_onoff_in" struct_from="self">
+      <field mode="single" name="is_on_online" type="uint32" desc=""/>
+    </struct>
+    <struct name="find_map_t" struct_from="pub">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="mapid" type="uint32" desc=""/>
+    </struct>
+    <struct name="game_info_t" struct_from="pub">
+      <field mode="single" name="gameid" type="uint32" desc="项目编号"/>
+      <field mode="single" name="win_time" type="uint32" desc="胜利次数"/>
+      <field mode="single" name="lose_time" type="uint32" desc="输的次数"/>
+      <field mode="single" name="draw_time" type="uint32" desc="平的次数"/>
+    </struct>
+    <struct name="item_day_limit_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc="物品ID（3战斗积分4在线时长）"/>
+      <field mode="single" name="total" type="uint32" desc="总数"/>
+      <field mode="single" name="daycnt" type="uint32" desc="当日获得次数"/>
+    </struct>
+    <struct name="item_exchange_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc="1:任务，2:xiaomee"/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+      <field mode="single" name="max_count" type="uint32" desc=""/>
+      <field mode="single" name="day_add_cnt" type="uint32" desc="今日增加数量"/>
+    </struct>
+    <struct name="item_ex_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="use_count" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="item_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="task_t" struct_from="pub">
+      <field mode="single" name="taskid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="user_log_t" struct_from="pub">
+      <field mode="single" name="logtime" type="uint32" desc="记录时间"/>
+      <field mode="single" name="v1" type="uint32" desc="1:注册 ，2：完成岛:(v2:岛id)"/>
+      <field mode="single" name="v2" type="uint32" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="61001" name="sw_get_user_count" struct_in="" struct_out="sw_get_user_count_out" desc="得到在线人数" md5_tag="0x945b505b" bind_bitmap="1"/>
+    <protocol cmd="62001" name="sw_report_online_info" struct_in="sw_report_online_info_in" struct_out="" desc="online 上报启动信息" md5_tag="0x9d002133" bind_bitmap="1"/>
+    <protocol cmd="62002" name="sw_report_user_onoff" struct_in="sw_report_user_onoff_in" struct_out="" desc="上报用户上下线" md5_tag="0xa23fe386" bind_bitmap="1"/>
+    <protocol cmd="62003" name="sw_set_user_offline" struct_in="" struct_out="" desc="请求用户离线" md5_tag="0xe2948cb2" bind_bitmap="2"/>
+    <protocol cmd="62004" name="sw_noti_across_svr" struct_in="sw_noti_across_svr_in" struct_out="sw_noti_across_svr_out" desc="" md5_tag="0xf55ca111" bind_bitmap="3"/>
+    <protocol cmd="62006" name="sw_get_recommend_svr_list" struct_in="" struct_out="sw_get_recommend_svr_list_out" desc="得到推荐服务器列表" md5_tag="0x4940b505" bind_bitmap="1"/>
+    <protocol cmd="64002" name="sw_get_ranged_svrlist" struct_in="sw_get_ranged_svrlist_in" struct_out="sw_get_ranged_svrlist_out" desc="得到范围列表" md5_tag="0xe107fe35" bind_bitmap="5"/>
+  </protocol_list>
+  <error_list>
+    <error id="0" name="__SUCC__" desc="成功"/>
+  </error_list>
+  <desc_list>
+    <field_desc key="userid" desc="米米号"/>
+  </desc_list>
+  <bind_list>
+    <bind bindid="0" bind_name="for_cli" bind_desc=""/>
+    <bind bindid="1" bind_name="for_online" bind_desc=""/>
+    <bind bindid="2" bind_name="for_login" bind_desc=""/>
+  </bind_list>
+</taomee_proto>

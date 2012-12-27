@@ -1,0 +1,284 @@
+<?xml version="1.0" ?>
+<root>
+<cmd_err_list>
+<item errno="3122" func_name="mole2_user_user_del_blackuser"/>
+<item errno="3122" func_name="user_task_reward_set_cp"/>
+<item errno="3108" func_name="user_task_reward_set_cp"/>
+<item errno="3121" func_name="user_task_reward_set_cp"/>
+<item errno="4331" func_name="user_task_reward_set_cp"/>
+<item errno="3107" func_name="user_attire_list_duration_set"/>
+<item errno="1105" func_name="home_info_get"/>
+<item errno="1104" func_name="home_info_get"/>
+<item errno="1105" func_name="mole2_user_item_add"/>
+<item errno="3122" func_name="mole2_user_item_add"/>
+<item errno="3121" func_name="mole2_user_item_add"/>
+<item errno="4331" func_name="mole2_user_item_add"/>
+<item errno="3132" func_name="mole2_user_item_add"/>
+<item errno="1105" func_name="mole2_user_attire_add"/>
+<item errno="3108" func_name="mole2_user_attire_add"/>
+<item errno="1105" func_name="user_user_injury_state_get"/>
+<item errno="1105" func_name="mail_get_post_items"/>
+<item errno="3122" func_name="mail_get_post_items"/>
+<item errno="3121" func_name="mail_get_post_items"/>
+<item errno="4350" func_name="mail_get_post_items"/>
+<item errno="4331" func_name="mail_get_post_items"/>
+<item errno="1105" func_name="user_attire_sell_set"/>
+<item errno="3107" func_name="user_attire_sell_set"/>
+<item errno="4348" func_name="user_item_storage_set"/>
+<item errno="3121" func_name="user_item_storage_set"/>
+<item errno="1105" func_name="user_user_levelup_set"/>
+<item errno="1105" func_name="user_user_note_dream_set"/>
+<item errno="1104" func_name="mole2_user_user_create_role"/>
+<item errno="1105" func_name="user_exp_info_set"/>
+<item errno="1105" func_name="mole2_user_item_buy"/>
+<item errno="3122" func_name="mole2_user_item_buy"/>
+<item errno="3121" func_name="mole2_user_item_buy"/>
+<item errno="4331" func_name="mole2_user_item_buy"/>
+<item errno="1105" func_name="mole2_user_user_login"/>
+<item errno="1120" func_name="mole2_user_user_login"/>
+<item errno="1121" func_name="mole2_user_user_login"/>
+<item errno="2542" func_name="mole2_user_user_login"/>
+<item errno="2541" func_name="mole2_user_user_login"/>
+<item errno="3107" func_name="user_attire_attrib_set"/>
+<item errno="1105" func_name="user_honor_set"/>
+<item errno="1105" func_name="mole2_user_user_update_color"/>
+<item errno="1105" func_name="mole2_user_user_set_hp_mp"/>
+<item errno="4350" func_name="user_mail_content_get"/>
+<item errno="1105" func_name="mole2_user_user_add_exp"/>
+<item errno="3114" func_name="mole2_task_delete"/>
+<item errno="1105" func_name="set_ban_flag"/>
+<item errno="4336" func_name="mole2_user_map_flight_check"/>
+<item errno="1105" func_name="user_user_medicine_cure"/>
+<item errno="3122" func_name="user_user_medicine_cure"/>
+<item errno="3121" func_name="user_user_medicine_cure"/>
+<item errno="4331" func_name="user_user_medicine_cure"/>
+<item errno="3107" func_name="mole2_user_attire_del"/>
+<item errno="1105" func_name="mole2_user_add_invited"/>
+<item errno="1105" func_name="mole2_user_pet_cure"/>
+<item errno="1105" func_name="mole2_user_attire_update_gridid_list"/>
+<item errno="1105" func_name="user_create_role_set"/>
+<item errno="3108" func_name="user_create_role_set"/>
+<item errno="1105" func_name="mole2_user_user_cure"/>
+<item errno="4353" func_name="rand_item_present_set"/>
+<item errno="4355" func_name="rand_item_present_set"/>
+<item errno="3127" func_name="rand_item_info_check"/>
+<item errno="3128" func_name="rand_item_info_check"/>
+<item errno="3130" func_name="rand_item_info_check"/>
+<item errno="1105" func_name="mole2_user_user_update_offline_msg"/>
+<item errno="1105" func_name="mole2_user_other_user_info"/>
+<item errno="1000" func_name="mole2_user_other_user_info"/>
+<item errno="1105" func_name="mole2_user_pet_injury_cure"/>
+<item errno="3132" func_name="add_item_type_counter"/>
+<item errno="1006" func_name="add_item_type_counter"/>
+<item errno="4362" func_name="add_item_type_counter"/>
+<item errno="3131" func_name="add_item_type_counter"/>
+<item errno="1105" func_name="mole2_user_user_update_nick"/>
+<item errno="4351" func_name="user_mail_send_set"/>
+<item errno="4350" func_name="user_mail_send_set"/>
+<item errno="4349" func_name="user_mail_send_set"/>
+<item errno="1105" func_name="mole2_user_user_login_ex"/>
+<item errno="1000" func_name="mole2_user_user_login_ex"/>
+<item errno="1105" func_name="mole2_user_user_add_base_attr"/>
+<item errno="1105" func_name="user_attire_list_mend_set"/>
+<item errno="3107" func_name="user_attire_list_mend_set"/>
+<item errno="4361" func_name="day_add_ssid_count"/>
+<item errno="3132" func_name="day_add_ssid_count"/>
+<item errno="3131" func_name="day_add_ssid_count"/>
+<item errno="1105" func_name="mole2_user_user_check_is_friend"/>
+<item errno="1105" func_name="mole2_login"/>
+<item errno="1000" func_name="mole2_user_user_get_black_list"/>
+<item errno="1011" func_name="mole2_user_user_get_black_list"/>
+<item errno="1105" func_name="proto_get_expbox"/>
+<item errno="1105" func_name="mole2_user_user_injury_cure"/>
+<item errno="3113" func_name="mole2_task_set"/>
+<item errno="3114" func_name="mole2_task_set"/>
+<item errno="1105" func_name="mole2_user_user_add_friend"/>
+<item errno="3103" func_name="mole2_user_user_add_friend"/>
+<item errno="3105" func_name="mole2_user_user_add_friend"/>
+<item errno="1105" func_name="mole2_user_user_update_professtion"/>
+<item errno="1105" func_name="mole2_user_user_set_pos"/>
+<item errno="1105" func_name="item_storage_add"/>
+<item errno="3122" func_name="item_storage_add"/>
+<item errno="3121" func_name="item_storage_add"/>
+<item errno="4331" func_name="item_storage_add"/>
+<item errno="3107" func_name="user_attire_info_get"/>
+<item errno="1105" func_name="mole2_user_user_get_offline_msg"/>
+<item errno="1105" func_name="proto_set_expbox"/>
+<item errno="3107" func_name="mole2_user_attire_get"/>
+<item errno="1000" func_name="mole2_user_user_get_friend_list"/>
+<item errno="1011" func_name="mole2_user_user_get_friend_list"/>
+<item errno="4350" func_name="user_mail_flag_set"/>
+<item errno="1105" func_name="mole2_user_user_update_signature"/>
+<item errno="3132" func_name="get_item_type_counter"/>
+<item errno="1000" func_name="mole2_user_attire_get_list"/>
+<item errno="1105" func_name="user_logout_position_set"/>
+<item errno="1105" func_name="mole2_user_skill_buy"/>
+<item errno="1105" func_name="day_sub_ssid_total"/>
+<item errno="4362" func_name="day_sub_ssid_total"/>
+<item errno="1105" func_name="set_winbossid"/>
+<item errno="4350" func_name="user_mail_list_del"/>
+<item errno="4341" func_name="monster_handbook_state_set"/>
+<item errno="1105" func_name="monster_handbook_state_set"/>
+<item errno="4343" func_name="monster_handbook_state_set"/>
+<item errno="3122" func_name="monster_handbook_state_set"/>
+<item errno="3121" func_name="monster_handbook_state_set"/>
+<item errno="4340" func_name="monster_handbook_state_set"/>
+<item errno="4331" func_name="monster_handbook_state_set"/>
+<item errno="3119" func_name="mole2_task_ser_buf_set"/>
+<item errno="1105" func_name="user_user_injury_state_set"/>
+<item errno="1000" func_name="mole2_user_attire_get_list_ex"/>
+<item errno="4341" func_name="monster_handbook_count_list_add"/>
+<item errno="4340" func_name="monster_handbook_count_list_add"/>
+<item errno="3114" func_name="user_task_optdate_get"/>
+<item errno="4339" func_name="item_handbook_state_get"/>
+<item errno="1105" func_name="mole2_home_flag_set"/>
+<item errno="1006" func_name="mole2_home_flag_set"/>
+<item errno="1105" func_name="mole2_user_item_add_list"/>
+<item errno="3122" func_name="mole2_user_item_add_list"/>
+<item errno="3132" func_name="mole2_user_item_add_list"/>
+<item errno="3121" func_name="mole2_user_item_add_list"/>
+<item errno="4331" func_name="mole2_user_item_add_list"/>
+<item errno="1105" func_name="item_handbook_state_set"/>
+<item errno="3122" func_name="item_handbook_state_set"/>
+<item errno="4338" func_name="item_handbook_state_set"/>
+<item errno="4339" func_name="item_handbook_state_set"/>
+<item errno="4342" func_name="item_handbook_state_set"/>
+<item errno="3121" func_name="item_handbook_state_set"/>
+<item errno="4331" func_name="item_handbook_state_set"/>
+<item errno="3132" func_name="day_get_ssid_info"/>
+<item errno="3128" func_name="rand_item_info_set"/>
+<item errno="1105" func_name="mole2_user_user_add_xiaomee"/>
+<item errno="1000" func_name="user_attire_in_storage_list_get"/>
+<item errno="1105" func_name="mole2_user_user_del_friend"/>
+<item errno="3104" func_name="mole2_user_user_del_friend"/>
+<item errno="3127" func_name="rand_item_activation_set"/>
+<item errno="3128" func_name="rand_item_activation_set"/>
+<item errno="4359" func_name="rand_item_activation_set"/>
+<item errno="4358" func_name="rand_item_activation_set"/>
+<item errno="4356" func_name="rand_item_activation_set"/>
+<item errno="4360" func_name="rand_item_activation_set"/>
+<item errno="3114" func_name="mole2_task_info_get"/>
+<item errno="1105" func_name="set_title_and_job_level"/>
+<item errno="1105" func_name="user_task_reward_set"/>
+<item errno="3122" func_name="user_task_reward_set"/>
+<item errno="3108" func_name="user_task_reward_set"/>
+<item errno="3121" func_name="user_task_reward_set"/>
+<item errno="4331" func_name="user_task_reward_set"/>
+<item errno="3107" func_name="mole2_user_attire_update_gridid"/>
+<item errno="4338" func_name="item_handbook_count_add"/>
+<item errno="4339" func_name="item_handbook_count_add"/>
+<item errno="1105" func_name="mole2_user_pet_skill_buy"/>
+<item errno="4346" func_name="user_map_boss_position_set"/>
+<item errno="3105" func_name="mole2_user_user_add_blackuser"/>
+<item errno="1105" func_name="mole2_user_user_add_blackuser"/>
+<item errno="3103" func_name="mole2_user_user_add_blackuser"/>
+<item errno="1105" func_name="mole2_user_user_add_offline_msg"/>
+<item errno="3101" func_name="mole2_user_user_add_offline_msg"/>
+<item errno="1120" func_name="user_get_ban_flag"/>
+<item errno="1105" func_name="user_get_ban_flag"/>
+<item errno="1121" func_name="user_get_ban_flag"/>
+<item errno="2541" func_name="user_get_ban_flag"/>
+<item errno="2542" func_name="user_get_ban_flag"/>
+<item errno="1105" func_name="mole2_user_user_add_attr_addition"/>
+<item errno="1105" func_name="user_energy_set"/>
+<item errno="1105" func_name="user_user_flag_set"/>
+</cmd_err_list>
+<err_list>
+<item err_desc="任务不在进行中" err_name="MOLE2_TASK_NOT_ONGOING_ERR" errno="3119"/>
+<item err_desc="枚举越界:不在类型的限定范围.(如某一字段只允许[0,1],却填了2)" err_name="ENUM_OUT_OF_RANGE_ERR" errno="1009"/>
+<item err_desc="该类任务同时接受达到上限" err_name="MOLE2_TASK_PER_TYPE_MAX_ERR" errno="3117"/>
+<item err_desc="用户称号已经存在" err_name="USER_TITLE_TITLEID_EXISTED_ERR" errno="4344"/>
+<item err_desc="黑名单用户已经存在" err_name="MOLE2_BLACKID_EXISTED_ERR" errno="3103"/>
+<item err_desc="神奇密码卡不存在" err_name="MOLE2_PRESENT_ID_NOFIND_ERR" errno="4352"/>
+<item err_desc="在select update, delete 时，米米号不存在" err_name="USER_ID_NOFIND_ERR" errno="1105"/>
+<item err_desc="协议长度不符合" err_name="PROTO_LEN_ERR" errno="1005"/>
+<item err_desc="激活码-用户账户已经被激活" err_name="MOLE2_USER_HAS_ACTIVED_ERR" errno="4332"/>
+<item err_desc="数据不完整" err_name="VALUE_ISNOT_FULL_ERR" errno="1008"/>
+<item err_desc="无" err_name="MOLE2_KEY_NOT_EXIST_ERR" errno="3132"/>
+<item err_desc="数值已超过上限" err_name="VALUE_MORE_THAN_LIMIT_ERR" errno="4361"/>
+<item err_desc="物品图鉴中id未找到" err_name="ITEM_HANDBOOK_ID_NOFIND_ERR" errno="4339"/>
+<item err_desc="NET出错" err_name="NET_ERR" errno="1003"/>
+<item err_desc="怪物图鉴中id已经存在" err_name="MONSTER_HANDBOOK_ID_EXISTED_ERR" errno="4340"/>
+<item err_desc="数据库中数据有误" err_name="DB_DATA_ERR" errno="1011"/>
+<item err_desc="指定任务不存在" err_name="MOLE2_TASK_NOFIND_ERR" errno="3114"/>
+<item err_desc="被封号7天" err_name="BAN_7DAYS_ERR" errno="2542"/>
+<item err_desc="当然命令号每分钟超过最大限制" err_name="CMD_EXEC_MAX_PER_MINUTE_ERR" errno="1018"/>
+<item err_desc="指定技能ID已经存在" err_name="MOLE2_SKILLID_EXISTED_ERR" errno="3111"/>
+<item err_desc="DB不允许更新" err_name="DB_CANNOT_UPDATE_ERR" errno="1016"/>
+<item err_desc="KEY 不存在" err_name="KEY_NOFIND_ERR" errno="1015"/>
+<item err_desc="用户id未找到" err_name="MOLE2_PRESENT_UID_NOFIND_ERR" errno="4354"/>
+<item err_desc="接已完成任务错误" err_name="MOLE2_TASK_FINISHED_ERR" errno="3116"/>
+<item err_desc="KEY 已经存在了" err_name="KEY_EXISTED_ERR" errno="1014"/>
+<item err_desc="地图id已经存在" err_name="USER_MAP_MAPID_EXISTED_ERR" errno="4337"/>
+<item err_desc="系统出错 一般是内存出错" err_name="SYS_ERR" errno="1001"/>
+<item err_desc="人物属性点不够" err_name="MOLE2_ATTR_ADD_NOT_ENOUGH_ERR" errno="3125"/>
+<item err_desc="宠物ID已经存在" err_name="MOLE2_PETID_EXISTED_ERR" errno="3110"/>
+<item err_desc="主键重复" err_name="MOLE2_KEY_EXIST_ERR" errno="3131"/>
+<item err_desc="数量不足" err_name="VALUE_NOT_ENOUGH_ERR" errno="4362"/>
+<item err_desc="无" err_name="NET_SEND_ERR" errno="1012"/>
+<item err_desc="返回报文长度有问题" err_name="PROTO_RETURN_LEN_ERR" errno="1010"/>
+<item err_desc="物品图鉴中id已经存在" err_name="ITEM_HANDBOOK_ID_EXISTED_ERR" errno="4338"/>
+<item err_desc="命令ID没有定义" err_name="CMDID_NODEFINE_ERR" errno="1004"/>
+<item err_desc="获取随机物品重复次数上限" err_name="MOLE2_RAND_REPEAT_MAX_ERR" errno="3129"/>
+<item err_desc="任务未完成" err_name="TASK_NO_FINISH_ERR" errno="4347"/>
+<item err_desc="激活码-激活码已经被使用" err_name="MOLE2_ACTIVATION_HAS_USED_ERR" errno="4333"/>
+<item err_desc="无" err_name="NET_RECV_ERR" errno="1013"/>
+<item err_desc="激活码不存在" err_name="MOLE2_ACTIVATION_ID_NOFIND_ERR" errno="4356"/>
+<item err_desc="指定宠物不存在" err_name="MOLE2_PETID_NOFIND_ERR" errno="3109"/>
+<item err_desc="打开文件失败" err_name="LOGIN_INFO_OPEN_ERR" errno="4330"/>
+<item err_desc="包裹里的物品不够减少" err_name="MOLE2_ITEM_NOT_ENOUGH_ERR" errno="3124"/>
+<item err_desc="怪物图鉴信息已经开启" err_name="MONSTER_HANDBOOK_STATE_IS_ON_ERR" errno="4343"/>
+<item err_desc="登入时，检查用户名和密码出错" err_name="CHECK_PASSWD_ERR" errno="1103"/>
+<item err_desc="没飞行点权限" err_name="USER_MAP_FLIGHT_PATH_ERR" errno="4336"/>
+<item err_desc="boss点已经激活" err_name="UER_MAP_BOSS_POSITION_ON_ERR" errno="4346"/>
+<item err_desc="邮件达到上限" err_name="MAIL_COUNT_MAX_ERR" errno="4351"/>
+<item err_desc="在insert，米米号已存在" err_name="USER_ID_EXISTED_ERR" errno="1104"/>
+<item err_desc="地图ID未找到" err_name="USER_MAP_MAPID_NOFIND_ERR" errno="4335"/>
+<item err_desc="用户称号不存在" err_name="USER_TITLE_TITLEID_NOFIND_ERR" errno="4345"/>
+<item err_desc="背包中没有对应ID的物品" err_name="MOLE2_ITEM_ID_NOFIND_ERR" errno="3121"/>
+<item err_desc="邮件ID已存在" err_name="MAILID_EXISTED_ERR" errno="4349"/>
+<item err_desc="邮件ID找不到" err_name="MAILID_NOFIND_ERR" errno="4350"/>
+<item err_desc="黑名单用户账号不存在" err_name="MOLE2_BLACKID_NOFIND_ERR" errno="3104"/>
+<item err_desc="当然命令的md5_tags检查失败" err_name="CMD_MD5_TAG_ERR" errno="1021"/>
+<item err_desc="要设置的flag和原有一致" err_name="FLAY_ALREADY_SET_ERR" errno="1007"/>
+<item err_desc="用户存在" err_name="MOLE2_ACTIVATION_UID_EXISTS_ERR" errno="4357"/>
+<item err_desc="获得活动物品达到上限" err_name="RAND_ITEM_COUNT_FULL_ERR" errno="3130"/>
+<item err_desc="读出登录信息错误" err_name="LOGIN_INFO_READ_ERR" errno="4329"/>
+<item err_desc="好友个数越过限制" err_name="MOLE2_FRIEND_MAX_ERR" errno="3105"/>
+<item err_desc="网络超时" err_name="NET_TIMEOUT_ERR" errno="1017"/>
+<item err_desc="物品图鉴信息已经开启" err_name="ITEM_HANDBOOK_STATE_IS_ON_ERR" errno="4342"/>
+<item err_desc="存取物品错误" err_name="ITEM_STORAGE_COUNT_ERR" errno="4348"/>
+<item err_desc="神奇密码卡已经使用了" err_name="MOLE2_PRESENT_ID_USED_ERR" errno="4355"/>
+<item err_desc="重复任务次数已达上限" err_name="MOLE2_TASK_REPEAT_MAX_ERR" errno="3118"/>
+<item err_desc="激活码尝试次数到达上限" err_name="MOLE2_ACTIVATION_TRY_ERR" errno="4360"/>
+<item err_desc="数据库出错" err_name="DB_ERR" errno="1002"/>
+<item err_desc="随机信息不存在" err_name="MOLE2_RAND_INFO_NOFIND_ERR" errno="3128"/>
+<item err_desc="怪物图鉴中id未找到" err_name="MONSTER_HANDBOOK_ID_NOFIND_ERR" errno="4341"/>
+<item err_desc="没有指定的装扮信息（装备不存在）" err_name="MOLE2_ATTIRE_KEY_NOFIND_ERR" errno="3107"/>
+<item err_desc="被封号14天" err_name="BAN_14DAYS_ERR" errno="2541"/>
+<item err_desc="update 时数据库中无相应数据" err_name="USER_LOGIN_NOFIND_ERR" errno="4327"/>
+<item err_desc="离线消息太长了" err_name="MOLE2_OFFLINE_MSG_MAX_ERR" errno="3101"/>
+<item err_desc="已被封号" err_name="BAN_FOREVER_ERR" errno="1120"/>
+<item err_desc="好友已经存在" err_name="MOLE2_FRIENDID_EXISTED_ERR" errno="3103"/>
+<item err_desc="写入登录信息错误" err_name="LOGIN_INFO_WRITE_ERR" errno="4328"/>
+<item err_desc="相同关键字的装备已经存在" err_name="MOLE2_ATTIRE_KEY_EXISTED_ERR" errno="3108"/>
+<item err_desc="黑名单个数越过限制" err_name="MOLE2_BLACKID_MAX_ERR" errno="3105"/>
+<item err_desc="依赖的父任务没有完成" err_name="MOLE2_TASK_PARENT_NOT_FIN_ERR" errno="3120"/>
+<item err_desc="激活码-激活码未找到" err_name="MOLE2_ACTIVATION_NOFIND_ERR" errno="4334"/>
+<item err_desc="被封号24小时" err_name="BAN_24HOURS_ERR" errno="1121"/>
+<item err_desc="神奇密码卡用户存在" err_name="MOLE2_PRESENT_UID_EXISTS_ERR" errno="4353"/>
+<item err_desc="好友不存在" err_name="MOLE2_FRIENDID_NOFIND_ERR" errno="3104"/>
+<item err_desc="随机信息已存在" err_name="MOLE2_RAND_INFO_EXISTED_ERR" errno="3127"/>
+<item err_desc="用户id未找到" err_name="MOLE2_ACTIVATION_UID_NOFIND_ERR" errno="4358"/>
+<item err_desc="任务重复接收错误" err_name="MOLE2_TASK_RECVED_ERR" errno="3115"/>
+<item err_desc="包裹物品携带数量达到上限" err_name="MOLE2_ITEM_COUNT_MAX_ERR" errno="4331"/>
+<item err_desc="指定技能ID不存在" err_name="MOLE2_SKILLID_NOFIND_ERR" errno="3112"/>
+<item err_desc="数值越界" err_name="VALUE_OUT_OF_RANGE_ERR" errno="1006"/>
+<item err_desc="激活码已经使用了" err_name="MOLE2_ACTIVATION_ID_USED_ERR" errno="4359"/>
+<item err_desc="没有定义" err_name="NO_DEFINE_ERR" errno="1000"/>
+<item err_desc="物品包裹已满" err_name="MOLE2_ITEM_BAG_FULL_ERR" errno="3123"/>
+<item err_desc="指定任务已存在" err_name="MOLE2_TASK_EXISTED_ERR" errno="3113"/>
+<item err_desc="人物属性达到上限" err_name="MOLE2_ATTR_MAX_ERR" errno="3126"/>
+<item err_desc="物品ID已在列表中" err_name="MOLE2_ITEM_ID_EXISTED_ERR" errno="3122"/>
+</err_list>
+</root>

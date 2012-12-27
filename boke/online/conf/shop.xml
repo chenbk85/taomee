@@ -1,0 +1,45 @@
+﻿<?xmlversion="1.0"encoding="UTF-8"?>
+<!--服装卡片：new——1、最新物品  0、非-->
+
+<items>
+	<kind id="1" name="道具卡片">
+			<item id="400007"/>
+			<item id="400006"/>
+			<item id="400002"/>
+			<item id="400004"/>
+			<item id="400005"/>
+	</kind>
+	<kind id="2" name="服装卡片">
+			<item id="300070" new="0" hot="0" recommend="0"/>
+			<item id="300071" new="0" hot="0" recommend="0"/>
+			<item id="300072" new="0" hot="0" recommend="0"/>
+			<item id="300073" new="0" hot="0" recommend="0"/>
+			<item id="300074" new="0" hot="0" recommend="0"/>
+			<item id="300075" new="0" hot="0" recommend="0"/>
+			<item id="300038" new="0" hot="0" recommend="0"/>
+			<item id="300039" new="0" hot="0" recommend="0"/>
+			<item id="300040" new="0" hot="0" recommend="0"/>
+			<item id="300041" new="0" hot="0" recommend="0"/>
+			<item id="300042" new="0" hot="0" recommend="0"/>
+			<item id="300043" new="0" hot="0" recommend="0"/>
+			<item id="300021" new="0" hot="0" recommend="0"/>
+			<item id="300022" new="0" hot="0" recommend="0"/>
+			<item id="300023" new="0" hot="0" recommend="0"/>
+			<item id="300016" new="0" hot="0" recommend="0"/>
+			<item id="300018" new="0" hot="0" recommend="0"/>
+			<item id="300019" new="0" hot="0" recommend="0"/>
+			<item id="300001" new="0" hot="0" recommend="0"/>
+			<item id="300002" new="0" hot="0" recommend="0"/>
+			<item id="300003" new="0" hot="0" recommend="0"/>
+			<item id="300004" new="0" hot="0" recommend="0"/>
+			<item id="300005" new="0" hot="0" recommend="0"/>
+			<item id="300006" new="0" hot="0" recommend="0"/>
+			<item id="300007" new="0" hot="0" recommend="0"/>
+			<item id="300008" new="0" hot="0" recommend="0"/>
+			<item id="300010" new="0" hot="0" recommend="0"/>
+			<item id="300013" new="0" hot="0" recommend="0"/>
+			<item id="300014" new="0" hot="0" recommend="0"/>
+			<item id="300015" new="0" hot="0" recommend="0"/>
+
+	</kind>
+</items>

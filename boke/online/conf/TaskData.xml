@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--over_type:1  碰撞拾取一个物品  这个为物品ID-->
+<!--2  和NPC说话完成任务，这个为npcID      10001 到19999-->
+<!--3  场景内的交互 如推箱子     (进哪个地图  到哪个位置 自动触发)ID=20001-29999-->
+<!--4  弹出来的是游戏 ID=30001-39999-->
+<!--5  这个为npcID_说完哪句话 才触发一个交互（游戏）需要完成这个游戏才能完成这个任务-->
+<!--6  穿戴服饰 服饰ID-->
+<!--7  使用物品  卡片ID-->
+<!--8  拾取卡片材料-->
+<!--9  说话后播放动画（动画id用NPCid+第几句话：10001_3）-->
+<tastdatas>
+	<island id="0" name="新手岛">
+		<tastdata id="1" name="聊天第一句" req_id="0" req_item="0" over_type="3" over_id="30013" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="2" name="聊天第二句" req_id="0" req_item="0" over_type="3" over_id="30014" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="3" name="聊天第三句" req_id="0" req_item="0" over_type="3" over_id="30015" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="4" name="点击地图" req_id="0" req_item="0" over_type="3" over_id="30016" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="5" name="关闭地图" req_id="0" req_item="0" over_type="3" over_id="30017" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="6" name="拾取小刀" req_id="0" req_item="0" over_type="3" over_id="30018" over_kind="0" recycle_item="0" reward_item="200042"/>
+		<tastdata id="7" name="点击背包" req_id="0" req_item="0" over_type="3" over_id="30019" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="8" name="关闭背包" req_id="0" req_item="0" over_type="3" over_id="30020" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="9" name="回到上一个场景" req_id="0" req_item="0" over_type="3" over_id="30021" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="10" name="点击背包" req_id="0" req_item="0" over_type="3" over_id="30022" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="11" name="使用卡片" req_id="0" req_item="0" over_type="3" over_id="30023" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="12" name="点击换装" req_id="0" req_item="0" over_type="3" over_id="30024" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="13" name="确认或者换装" req_id="0" req_item="0" over_type="3" over_id="30025" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="14" name="关闭四格漫画" req_id="0" req_item="0" over_type="3" over_id="30026" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="15" name="和卜卜说话" req_id="0" req_item="0" over_type="3" over_id="30027" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="16" name="登上热气球" req_id="0" req_item="0" over_type="3" over_id="30028" over_kind="0" recycle_item="0" reward_item="0"/>
+	</island>
+	<island id="1" name="土豆岛">
+		<tastdata id="1" name="拾取空盆子" req_id="0" req_item="0" over_type="1" over_id="200002" over_kind="0" recycle_item="0" reward_item="200002"/>
+		<tastdata id="2" name="给空盆子灌水" req_id="1" req_item="200002" over_type="2" over_id="10003_6" over_kind="0" recycle_item="200002" reward_item="200003"/>
+		<tastdata id="3" name="放下牛奶盆子" req_id="2" req_item="200003" over_type="3" over_id="20005" over_kind="0" recycle_item="200003" reward_item="0"/>
+		<tastdata id="4" name="打开冰箱" req_id="3" req_item="0" over_type="3" over_id="20001" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="5" name="兑换撬棍" req_id="19" req_item="200004" over_type="2" over_id="10006_6" over_kind="10006" recycle_item="200004" reward_item="200001"/>
+		<tastdata id="6" name="打开下水道" req_id="5" req_item="200001" over_type="3" over_id="20002" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="7" name="拾取排气管线路图" req_id="0" req_item="0" over_type="1" over_id="200007" over_kind="0" recycle_item="0" reward_item="200007"/>
+		<tastdata id="8" name="拾取土豆传送仪" req_id="6" req_item="0" over_type="1" over_id="200009" over_kind="0" recycle_item="0" reward_item="200009"/>
+		<tastdata id="9" name="拾取老虎钳" req_id="18" req_item="0" over_type="1" over_id="200005" over_kind="0" recycle_item="0" reward_item="200005"/>
+		<tastdata id="10" name="剪断电源线" req_id="9" req_item="200005" over_type="4" over_id="30001" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="11" name="解脱被控制的甲" req_id="8" req_item="0" over_type="5" over_id="10008_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="12" name="拾取密码纸" req_id="11" req_item="0" over_type="1" over_id="200008" over_kind="0" recycle_item="0" reward_item="200008"/>
+		<tastdata id="13" name="解脱被控制的乙" req_id="9" req_item="0" over_type="5" over_id="10009_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="14" name="解脱被控制的丙" req_id="9" req_item="0" over_type="5" over_id="10010_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="15" name="拾取土豆帽" req_id="0" req_item="0" over_type="1" over_id="200006" over_kind="0" recycle_item="0" reward_item="200006"/>
+		<tastdata id="16" name="解脱被控制的丁" req_id="15" req_item="0" over_type="5" over_id="10011_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="17" name="发射、控制火箭" req_id="16" req_item="0" over_type="4" over_id="30002" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="18" name="开启引擎室电源" req_id="0" req_item="0" over_type="3" over_id="20003" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="19" name="拾取铲子" req_id="4" req_item="0" over_type="1" over_id="200004" over_kind="0" recycle_item="0" reward_item="200004"/>
+		<tastdata id="20" name="和女老板说话" req_id="0" req_item="0" over_type="2" over_id="10006_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="99999" name="回到村长附近" req_id="17" req_item="0" over_type="2" over_id="10020_1" over_kind="0" recycle_item="0" reward_item="200010"/>
+	</island>
+	<island id="2" name="章鱼岛">
+		<tastdata id="1" name="和章鱼小贩说话得章鱼帽" req_id="0" req_item="0" over_type="2" over_id="10021_1" over_kind="0" recycle_item="0" reward_item="200011"/>
+		<tastdata id="2" name="和汽水老板说话得汽水" req_id="0" req_item="0" over_type="2" over_id="10022_1" over_kind="0" recycle_item="0" reward_item="200012"/>
+		<tastdata id="3" name="拾取密码纸" req_id="0" req_item="0" over_type="1" over_id="200013" over_kind="0" recycle_item="0" reward_item="200013"/>
+		<tastdata id="4" name="打开神庙的门" req_id="12" req_item="0" over_type="4" over_id="30003" over_kind="0" recycle_item="200019" reward_item="0"/>
+		<tastdata id="5" name="拾取鱼骨" req_id="4" req_item="0" over_type="1" over_id="200014" over_kind="0" recycle_item="0" reward_item="200014"/>
+		<tastdata id="6" name="拾取神秘草药" req_id="4" req_item="0" over_type="1" over_id="200015" over_kind="0" recycle_item="0" reward_item="200015"/>
+		<tastdata id="7" name="制作解毒剂" req_id="2,5,6" req_item="0" over_type="2" over_id="10027_7" over_kind="10027" recycle_item="200012,200014,200015" reward_item="200017"/>
+		<tastdata id="8" name="解救卜拉拉" req_id="7" req_item="0" over_type="3" over_id="20007" over_kind="0" recycle_item="200017" reward_item="0"/>
+		<tastdata id="9" name="和被困的哥哥说话" req_id="8" req_item="0" over_type="2" over_id="10031_1" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="10" name="和被困的弟弟说话" req_id="8" req_item="0" over_type="2" over_id="10032_1" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="11" name="获得草裙" req_id="0" req_item="0" over_type="2" over_id="10028_1" over_kind="0" recycle_item="0" reward_item="200016"/>
+		<tastdata id="12" name="拾取钥匙" req_id="0" req_item="0" over_type="1" over_id="200019" over_kind="0" recycle_item="0" reward_item="200019"/>
+		<tastdata id="13" name="穿上草裙" req_id="11" req_item="0" over_type="6" over_id="100191" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="99999" name="和妈妈说话" req_id="9" req_item="0" over_type="2" over_id="10057_1" over_kind="0" recycle_item="0" reward_item="200018"/>
+	</island>
+	<island id="3" name="卜克岛">
+		<tastdata id="1" name="拾取荧光棒" req_id="0" req_item="0" over_type="1" over_id="200020" over_kind="0" recycle_item="0" reward_item="200020"/>
+		<tastdata id="2" name="拾取豌豆种子" req_id="0" req_item="0" over_type="1" over_id="200021" over_kind="0" recycle_item="0" reward_item="200021"/>
+		<tastdata id="3" name="获得一桶水" req_id="0" req_item="0" over_type="3" over_id="20008" over_kind="0" recycle_item="0" reward_item="200022"/>
+		<tastdata id="4" name="拾取金蛋" req_id="1" req_item="0" over_type="1" over_id="200023" over_kind="0" recycle_item="0" reward_item="200023"/>
+		<tastdata id="5" name="种下豌豆种子" req_id="0" req_item="0" over_type="7" over_id="200021" over_kind="0" recycle_item="200021" reward_item="0"/>
+		<tastdata id="6" name="给豌豆种子浇水" req_id="3,5" req_item="0" over_type="7" over_id="200022" over_kind="0" recycle_item="200022" reward_item="0"/>
+		<tastdata id="7" name="把金蛋给鸡" req_id="4" req_item="0" over_type="7" over_id="200023" over_kind="0" recycle_item="200023" reward_item="0"/>
+		<tastdata id="8" name="和巨人说话获得小乌云" req_id="7" req_item="0" over_type="3" over_id="20009" over_kind="0" recycle_item="0" reward_item="200024"/>
+		<tastdata id="9" name="使用小乌云" req_id="8" req_item="0" over_type="7" over_id="200024" over_kind="0" recycle_item="200024" reward_item="0"/>
+		<tastdata id="10" name="摘取10个金豌豆" req_id="9" req_item="0" over_type="3" over_id="20010" over_kind="0" recycle_item="0" reward_item="200025"/>
+		<tastdata id="11" name="和巨人说话获得大大金豆" req_id="10" req_item="0" over_type="3" over_id="20011" over_kind="0" recycle_item="200025" reward_item="200026"/>
+		<tastdata id="12" name="拾取小小金豆碎片1" req_id="0" req_item="0" over_type="8" over_id="600001" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="13" name="拾取小小金豆碎片2" req_id="0" req_item="0" over_type="8" over_id="600002" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="14" name="拾取小小金豆碎片3" req_id="0" req_item="0" over_type="8" over_id="600003" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="15" name="拾取小小金豆碎片4" req_id="0" req_item="0" over_type="8" over_id="600004" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="16" name="拾取小小金豆碎片5" req_id="0" req_item="0" over_type="8" over_id="600005" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="17" name="拾取小小金豆碎片6" req_id="0" req_item="0" over_type="8" over_id="600006" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="18" name="拾取小小金豆碎片7" req_id="0" req_item="0" over_type="8" over_id="600007" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="19" name="拾取小小金豆碎片8" req_id="0" req_item="0" over_type="8" over_id="600008" over_kind="0" recycle_item="0" reward_item="200028"/>
+		<tastdata id="20" name="兑换小小金豆" req_id="12,13,14,15,16,17,18,19" req_item="0" over_type="3" over_id="30004" over_kind="0" recycle_item="600001,600002,600003,600004,600005,600006,600007,600008,200028" reward_item="200029"/>
+		<tastdata id="21" name="领取超能力认证卡" req_id="0" req_item="0" over_type="3" over_id="39999" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="22" name="兑换超人装扮" req_id="0" req_item="0" over_type="3" over_id="39999" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="23" name="卜克动画" req_id="0" req_item="0" over_type="9" over_id="10093_1" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="24" name="和奶牛妈妈说话" req_id="0" req_item="0" over_type="2" over_id="10042_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="25" name="和小女孩说话" req_id="0" req_item="0" over_type="2" over_id="10044_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="26" name="和老人说话" req_id="0" req_item="0" over_type="2" over_id="10045_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="27" name="和市区旅行者说话" req_id="0" req_item="0" over_type="2" over_id="10047_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="28" name="与卜克吧左边的卜斯特博士对话" req_id="0" req_item="0" over_type="2" over_id="10108_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="29" name="使用传送门进入实验室" req_id="28" req_item="0" over_type="3" over_id="30032" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="30" name="和市区老人说话" req_id="0" req_item="0" over_type="2" over_id="10046_1" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="31" name="和母鸡说话" req_id="0" req_item="0" over_type="3" over_id="30034" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="32" name="赢取游戏王套装" req_id="0" req_item="0" over_type="3" over_id="30035" over_kind="0" recycle_item="0" reward_item="300026"/>
+		<tastdata id="99999" name="使用大大金豆" req_id="11" req_item="0" over_type="7" over_id="200026" over_kind="0" recycle_item="200026" reward_item="200027"/>
+		<tastdata id="33" name="赢得游戏王套装1" req_id="0" req_item="0" over_type="3" over_id="30059" over_kind="0" recycle_item="0" reward_item="300044"/>
+		<tastdata id="34" name="赢得游戏王套装2" req_id="0" req_item="0" over_type="3" over_id="30060" over_kind="0" recycle_item="0" reward_item="300045"/>
+		<tastdata id="35" name="赢得游戏王套装3" req_id="0" req_item="0" over_type="3" over_id="30061" over_kind="0" recycle_item="0" reward_item="300046"/>
+		<tastdata id="36" name="赢得游戏王套装4" req_id="0" req_item="0" over_type="3" over_id="30062" over_kind="0" recycle_item="0" reward_item="300047"/>
+		<tastdata id="37" name="赢得游戏王套装5" req_id="0" req_item="0" over_type="3" over_id="30063" over_kind="0" recycle_item="0" reward_item="300048"/>
+	</island>
+	<island id="4" name="超人岛">
+		<tastdata id="1" name="和服装店老板说话得超级英雄id" req_id="0" req_item="0" over_type="2" over_id="10073_1" over_kind="0" recycle_item="0" reward_item="200031"/>
+		<tastdata id="2" name="和书店老板说话得书店老板的笔记" req_id="0" req_item="0" over_type="2" over_id="10072_3" over_kind="0" recycle_item="0" reward_item="200032"/>
+		<tastdata id="3" name="和居民说话播动画" req_id="0" req_item="0" over_type="9" over_id="10068_1" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="4" name="和监狱狱警说话" req_id="1" req_item="0" over_type="3" over_id="10067_4" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="5" name="和典狱长说话得到罪犯资料" req_id="1" req_item="0" over_type="2" over_id="10074_3" over_kind="0" recycle_item="0" reward_item="200033"/>
+		<tastdata id="6" name="和监狱科学家说话得能量吸收手铐" req_id="1" req_item="0" over_type="2" over_id="10075_2" over_kind="0" recycle_item="0" reward_item="200034"/>
+		<tastdata id="7" name="抓住克隆凯特" req_id="5,6" req_item="0" over_type="3" over_id="30006" over_kind="0" recycle_item="0" reward_item="200036"/>
+		<tastdata id="8" name="抓住极速比尔" req_id="5,6" req_item="0" over_type="3" over_id="30007" over_kind="0" recycle_item="0" reward_item="200037"/>
+		<tastdata id="9" name="抓住天神麦克" req_id="5,6" req_item="0" over_type="3" over_id="30008" over_kind="0" recycle_item="0" reward_item="200038"/>
+		<tastdata id="10" name="抓住蝇王哈利" req_id="5,6" req_item="0" over_type="3" over_id="30009" over_kind="0" recycle_item="0" reward_item="200039"/>
+		<tastdata id="11" name="抓住大力凡斯" req_id="5,6" req_item="0" over_type="3" over_id="30010" over_kind="0" recycle_item="0" reward_item="200040"/>
+		<tastdata id="12" name="接起电话获得飞行能力" req_id="7,8,9,10,11" req_item="0" over_type="3" over_id="30011" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="13" name="打败飞天贝蒂" req_id="12" req_item="0" over_type="3" over_id="30012" over_kind="0" recycle_item="0" reward_item="200041"/>
+		<tastdata id="99999" name="和典狱长聊天得奖牌" req_id="13" req_item="0" over_type="2" over_id="10074_7" over_kind="0" recycle_item="0" reward_item="200035"/>
+	</island>
+	<island id="5" name="时空岛">
+		<tastdata id="1001" name="点击打开急救箱" req_id="0" req_item="0" over_type="3" over_id="30034" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="1002" name="获得机密文件" req_id="1001" req_item="0" over_type="1" over_id="200065" over_kind="0" recycle_item="0" reward_item="200065"/>
+		<tastdata id="1003" name="拾取能量探测器" req_id="0" req_item="0" over_type="1" over_id="200066" over_kind="0" recycle_item="0" reward_item="200066"/>
+		<tastdata id="1004" name="放好机密文件" req_id="1002" req_item="0" over_type="3" over_id="30029" over_kind="0" recycle_item="200065" reward_item="0"/>
+		<tastdata id="1005" name="与卜拉东卜拉西对话播放动画" req_id="1004" req_item="0" over_type="3" over_id="30030" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="1006" name="回去查看机密文件" req_id="1005" req_item="0" over_type="3" over_id="30031" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="1007" name="使用能量探测器" req_id="1006" req_item="0" over_type="7" over_id="200066" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="1008" name="拯救卜拉东" req_id="1007" req_item="0" over_type="3" over_id="30033" over_kind="0" recycle_item="200066" reward_item="200067"/>
+		<tastdata id="1" name="和门口的助手说话" req_id="0" req_item="0" over_type="2" over_id="10112_1" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="2" name="和助手对话得任务单" req_id="0" req_item="0" over_type="2" over_id="10185_1" over_kind="0" recycle_item="0" reward_item="200044"/>
+		<tastdata id="3" name="和过去的自己说话得时光机" req_id="0" req_item="0" over_type="2" over_id="10114_3" over_kind="0" recycle_item="0" reward_item="200045"/>
+		<tastdata id="4" name="长城拾取炸药" req_id="0" req_item="0" over_type="1" over_id="200049" over_kind="0" recycle_item="0" reward_item="200049"/>
+		<tastdata id="5" name="炸药炸开石洞" req_id="4" req_item="0" over_type="3" over_id="30036" over_kind="0" recycle_item="200049" reward_item="0"/>
+		<tastdata id="6" name="拾取金花瓶" req_id="0" req_item="0" over_type="1" over_id="200051" over_kind="0" recycle_item="0" reward_item="200051"/>
+		<tastdata id="7" name="交还花瓶" req_id="6" req_item="0" over_type="2" over_id="10115_5" over_kind="10115" recycle_item="200051" reward_item="0"/>
+		<tastdata id="8" name="游戏赢取吊坠" req_id="0" req_item="0" over_type="5" over_id="10146_1" over_kind="0" recycle_item="0" reward_item="200050"/>
+		<tastdata id="9" name="交还吊坠" req_id="8" req_item="0" over_type="2" over_id="10121_6" over_kind="10121" recycle_item="200050" reward_item="0"/>
+		<tastdata id="10" name="拾取盐岩石" req_id="0" req_item="0" over_type="1" over_id="200052" over_kind="0" recycle_item="0" reward_item="200052"/>
+		<tastdata id="11" name="交还盐岩石" req_id="10" req_item="0" over_type="2" over_id="10125_5" over_kind="10125" recycle_item="200052" reward_item="0"/>
+		<tastdata id="12" name="拾取笔记本" req_id="0" req_item="0" over_type="1" over_id="200054" over_kind="0" recycle_item="0" reward_item="200054"/>
+		<tastdata id="13" name="交还笔记本" req_id="12" req_item="0" over_type="2" over_id="10133_6" over_kind="10133" recycle_item="200054" reward_item="0"/>
+		<tastdata id="14" name="拾取太阳石碎片" req_id="0" req_item="0" over_type="1" over_id="200053" over_kind="0" recycle_item="0" reward_item="200053"/>
+		<tastdata id="15" name="交还太阳石碎片" req_id="14" req_item="0" over_type="2" over_id="10143_6" over_kind="10143" recycle_item="200053" reward_item="0"/>
+		<tastdata id="16" name="拾取勇气石碗" req_id="0" req_item="0" over_type="1" over_id="200058" over_kind="0" recycle_item="0" reward_item="200058"/>
+		<tastdata id="17" name="交还勇气石碗" req_id="16" req_item="0" over_type="2" over_id="10147_6" over_kind="10147" recycle_item="200058" reward_item="0"/>
+		<tastdata id="18" name="游戏获得独立宣言" req_id="0" req_item="0" over_type="5" over_id="10129_1" over_kind="0" recycle_item="0" reward_item="200047"/>
+		<tastdata id="19" name="交还独立宣言" req_id="18" req_item="0" over_type="2" over_id="10150_6" over_kind="10150" recycle_item="200047" reward_item="0"/>
+		<tastdata id="20" name="拾取令牌" req_id="0" req_item="0" over_type="1" over_id="200060" over_kind="0" recycle_item="0" reward_item="200060"/>
+		<tastdata id="21" name="交还令牌" req_id="20" req_item="0" over_type="2" over_id="10169_6" over_kind="10169" recycle_item="200060" reward_item="0"/>
+		<tastdata id="22" name="拾取告示" req_id="0" req_item="0" over_type="1" over_id="200061" over_kind="0" recycle_item="0" reward_item="200061"/>
+		<tastdata id="23" name="交还告示" req_id="22" req_item="0" over_type="2" over_id="10164_6" over_kind="10164" recycle_item="200061" reward_item="0"/>
+		<tastdata id="24" name="拾取留声机" req_id="0" req_item="0" over_type="1" over_id="200046" over_kind="0" recycle_item="0" reward_item="200046"/>
+		<tastdata id="25" name="交还留声机" req_id="24" req_item="0" over_type="2" over_id="10158_6" over_kind="10158" recycle_item="200046" reward_item="0"/>
+		<tastdata id="26" name="拾取航海图" req_id="0" req_item="0" over_type="1" over_id="200062" over_kind="0" recycle_item="0" reward_item="200062"/>
+		<tastdata id="27" name="交还航海图" req_id="26" req_item="0" over_type="2" over_id="10177_6" over_kind="10177" recycle_item="200062" reward_item="0"/>
+		<tastdata id="28" name="拾取雕像" req_id="0" req_item="0" over_type="1" over_id="200057" over_kind="0" recycle_item="0" reward_item="200057"/>
+		<tastdata id="29" name="交还雕像" req_id="28" req_item="0" over_type="2" over_id="10163_6" over_kind="10163" recycle_item="200057" reward_item="0"/>
+		<tastdata id="30" name="对话拿到勇士面罩" req_id="0" req_item="0" over_type="2" over_id="10139_1" over_kind="0" recycle_item="0" reward_item="200048"/>
+		<tastdata id="31" name="对话拿到羽扇" req_id="30" req_item="0" over_type="2" over_id="10140_1" over_kind="0" recycle_item="0" reward_item="200059"/>
+		<tastdata id="32" name="交还羽扇" req_id="31" req_item="0" over_type="2" over_id="10173_6" over_kind="10173" recycle_item="200059" reward_item="0"/>
+		<tastdata id="33" name="和恢复后的助手对话" req_id="0" req_item="0" over_type="2" over_id="10185_7" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="34" name="穿上勇士面罩" req_id="30" req_item="0" over_type="6" over_id="101315" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="99999" name="和恢复后的未来自己对话" req_id="0" req_item="0" over_type="2" over_id="10184_1" over_kind="0" recycle_item="0" reward_item="200063"/>
+	</island>
+	<island id="6" name="鬼堡岛">
+		<tastdata id="1" name="从蝙蝠手中取得地下室钥匙" req_id="0" req_item="0" over_type="1" over_id="200069" over_kind="0" recycle_item="0" reward_item="200069"/>
+		<tastdata id="2" name="打开地下室的门" req_id="1" req_item="0" over_type="3" over_id="30035" over_kind="0" recycle_item="200069" reward_item="0"/>
+		<tastdata id="3" name="转动管道完成蒸汽炉游戏" req_id="0" req_item="0" over_type="3" over_id="30036" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="4" name="获得毒酒" req_id="3" req_item="0" over_type="1" over_id="200070" over_kind="0" recycle_item="0" reward_item="200070"/>
+		<tastdata id="5" name="拾取冰锄" req_id="0" req_item="0" over_type="1" over_id="200071" over_kind="0" recycle_item="0" reward_item="200071"/>
+		<tastdata id="6" name="获得冰块" req_id="5" req_item="0" over_type="3" over_id="200072" over_kind="0" recycle_item="200071" reward_item="200072"/>
+		<tastdata id="7" name="点击闹钟玩小游戏" req_id="0" req_item="0" over_type="4" over_id="30039" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="8" name="拾取油灯" req_id="7" req_item="0" over_type="1" over_id="200074" over_kind="0" recycle_item="0" reward_item="200074"/>
+		<tastdata id="9" name="拼图游戏打开宝箱" req_id="0" req_item="0" over_type="4" over_id="30040" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="10" name="拾取圣杯" req_id="9" req_item="0" over_type="1" over_id="200073" over_kind="0" recycle_item="0" reward_item="200073"/>
+		<tastdata id="11" name="点击煤油获得发光的油灯" req_id="8" req_item="0" over_type="3" over_id="30041" over_kind="0" recycle_item="200074" reward_item="200075"/>
+		<tastdata id="12" name="与猫对话" req_id="4,6,10,11" req_item="0" over_type="3" over_id="30042" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="99999" name="获得勋章" req_id="23" req_item="0" over_type="3" over_id="30043" over_kind="0" recycle_item="0" reward_item="200076"/>
+		<tastdata id="13" name="拾取宝石1" req_id="0" req_item="0" over_type="1" over_id="200077" over_kind="0" recycle_item="0" reward_item="200077"/>
+		<tastdata id="14" name="拾取宝石2" req_id="0" req_item="0" over_type="1" over_id="200078" over_kind="0" recycle_item="0" reward_item="200078"/>
+		<tastdata id="15" name="拾取宝石3" req_id="0" req_item="0" over_type="1" over_id="200079" over_kind="0" recycle_item="0" reward_item="200079"/>
+		<tastdata id="16" name="拾取宝石4" req_id="0" req_item="0" over_type="1" over_id="200080" over_kind="0" recycle_item="0" reward_item="200080"/>
+		<tastdata id="17" name="拾取宝石5" req_id="0" req_item="0" over_type="1" over_id="200081" over_kind="0" recycle_item="0" reward_item="200081"/>
+		<tastdata id="18" name="拾取宝石6" req_id="0" req_item="0" over_type="1" over_id="200082" over_kind="0" recycle_item="0" reward_item="200082"/>
+		<tastdata id="19" name="拾取宝石7" req_id="0" req_item="0" over_type="1" over_id="200083" over_kind="0" recycle_item="0" reward_item="200083"/>
+		<tastdata id="20" name="拾取宝石8" req_id="0" req_item="0" over_type="1" over_id="200084" over_kind="0" recycle_item="0" reward_item="200084"/>
+		<tastdata id="21" name="开启魔法阵" req_id="13,14,15,16,17,18,19,20" req_item="0" over_type="3" over_id="30044" over_kind="0" recycle_item="200077,200078,200079,200080,200081,200082,200083,200084" reward_item="0"/>
+		<tastdata id="22" name="获得宠物蛋" req_id="21" req_item="0" over_type="3" over_id="30045" over_kind="0" recycle_item="0" reward_item="400010"/>
+		<tastdata id="23" name="与卜娜加对话回收卡片" req_id="12" req_item="0" over_type="3" over_id="30046" over_kind="0" recycle_item="200070,200072,200073,200075" reward_item="0"/>
+	</island>
+	<island id="7" name="钻石岛">
+		<tastdata id="1" name="拾取碎片1" req_id="0" req_item="0" over_type="8" over_id="600009" over_kind="0" recycle_item="0" reward_item="200086"/>
+		<tastdata id="2" name="拾取碎片2" req_id="0" req_item="0" over_type="8" over_id="600010" over_kind="0" recycle_item="0" reward_item="200086"/>
+		<tastdata id="3" name="拾取碎片3" req_id="0" req_item="0" over_type="8" over_id="600011" over_kind="0" recycle_item="0" reward_item="200086"/>
+		<tastdata id="4" name="拾取碎片4" req_id="0" req_item="0" over_type="8" over_id="600012" over_kind="0" recycle_item="0" reward_item="200086"/>
+		<tastdata id="5" name="拾取碎片5" req_id="0" req_item="0" over_type="8" over_id="600013" over_kind="0" recycle_item="0" reward_item="200086"/>
+		<tastdata id="6" name="拾取碎片6" req_id="18" req_item="0" over_type="8" over_id="600014" over_kind="0" recycle_item="0" reward_item="200086"/>
+		<tastdata id="7" name="与风筝姐姐对话获得法语纸条" req_id="0" req_item="0" over_type="2" over_id="10211_2" over_kind="0" recycle_item="0" reward_item="200090"/>
+		<tastdata id="8" name="与咖啡厅老板对话获得中文纸条" req_id="7" req_item="0" over_type="2" over_id="10204_4" over_kind="0" recycle_item="200090" reward_item="200091"/>
+		<tastdata id="9" name="拿到彩虹风筝" req_id="0" req_item="0" over_type="6" over_id="101480" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="10" name="与大厦内部警卫对话" req_id="18" req_item="0" over_type="3" over_id="30075" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="11" name="拿到笔记本" req_id="0" req_item="0" over_type="3" over_id="30048" over_kind="0" recycle_item="0" reward_item="200087"/>
+		<tastdata id="12" name="给弟弟风筝" req_id="9" req_item="0" over_type="2" over_id="10212_4" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="13" name="交还笔记本获得100卜克币" req_id="11,12" req_item="0" over_type="2" over_id="10205_9" over_kind="0" recycle_item="200087" reward_item="200088"/>
+		<tastdata id="14" name="使用卜克币获得安全帽" req_id="13" req_item="0" over_type="2" over_id="10213_5" over_kind="0" recycle_item="200088" reward_item="200089"/>
+		<tastdata id="15" name="与秘密警察聊天" req_id="0" req_item="0" over_type="2" over_id="10221_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="16" name="完成换钻石游戏" req_id="37" req_item="0" over_type="3" over_id="30050" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="17" name="完成找钻石游戏" req_id="16" req_item="0" over_type="4" over_id="30051" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="18" name="与迪卜卜对话获得钥匙" req_id="16,17" req_item="0" over_type="2" over_id="10223_7" over_kind="0" recycle_item="0" reward_item="200092"/>
+		<tastdata id="19" name="打开矿洞通往大厦的门" req_id="18" req_item="0" over_type="3" over_id="30068" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="20" name="完成测谎游戏" req_id="0" req_item="0" over_type="3" over_id="30074" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="21" name="藏在天空遗迹背后" req_id="19" req_item="0" over_type="3" over_id="30065" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="22" name="与警卫对话获得工作表" req_id="21" req_item="0" over_type="2" over_id="10220_3" over_kind="0" recycle_item="0" reward_item="200095"/>
+		<tastdata id="23" name="监控室获得截图" req_id="22" req_item="0" over_type="3" over_id="30053" over_kind="0" recycle_item="0" reward_item="200093"/>
+		<tastdata id="24" name="与假警卫对话" req_id="0" req_item="0" over_type="2" over_id="10222_1" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="25" name="获得门禁卡" req_id="24" req_item="0" over_type="1" over_id="200094" over_kind="0" recycle_item="0" reward_item="200094"/>
+		<tastdata id="26" name="与迪卜卜对话获得万能钥匙" req_id="25" req_item="0" over_type="2" over_id="10237_3" over_kind="0" recycle_item="0" reward_item="200096"/>
+		<tastdata id="27" name="打开石屋" req_id="26" req_item="0" over_type="3" over_id="30056" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="28" name="打开迷宫的门" req_id="27" req_item="0" over_type="3" over_id="30057" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="29" name="使用监控照片" req_id="23" req_item="0" over_type="3" over_id="30072" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="30" name="获得完整拼图" req_id="1,2,3,4,5,6" req_item="0" over_type="3" over_id="30073" over_kind="0" recycle_item="200086" reward_item="200097"/>
+		<tastdata id="31" name="找迪卜卜对话" req_id="16" req_item="0" over_type="2" over_id="10214_7" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="32" name="迪卜卜对话玩找钻石游戏" req_id="31" req_item="0" over_type="2" over_id="10223_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="33" name="解开被绑着的自己" req_id="35" req_item="0" over_type="3" over_id="30076" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="34" name="完成地下战斗游戏" req_id="28" req_item="0" over_type="3" over_id="30077" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="35" name="石屋内点击钻石" req_id="27" req_item="0" over_type="3" over_id="30078" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="36" name="完成摩托车游戏" req_id="24" req_item="0" over_type="3" over_id="30079" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="37" name="和迪卜卜说话开启移动钻石任务" req_id="15" req_item="0" over_type="2" over_id="10214_3" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="38" name="绑绳子前的自动动画" req_id="35" req_item="0" over_type="3" over_id="30080" over_kind="0" recycle_item="0" reward_item="0"/>
+		<tastdata id="99999" name="获得岛屿勋章" req_id="34" req_item="0" over_type="2" over_id="10237_4" over_kind="0" recycle_item="0" reward_item="200085"/>
+	</island>
+	<island id="8" name="多人岛">
+		<tastdata id="1" name="聊天第一句" req_id="0" req_item="0" over_type="3" over_id="30081" over_kind="0" recycle_item="0" reward_item="0"/>
+	</island>
+</tastdatas>

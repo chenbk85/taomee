@@ -1,0 +1,8 @@
+#!/bin/bash
+LOCALPATH=`pwd`
+cd ${LOCALPATH}
+file_name=new_db
+./html.py >/tmp/${file_name}.html
+#./xls.py >/tmp/${file_name}.xls
+scp -2 /tmp/${file_name}.html  jim@10.1.1.5:/var/www/
+#scp -2 /tmp/${file_name}.xls  mole@10.1.1.5:/var/www/

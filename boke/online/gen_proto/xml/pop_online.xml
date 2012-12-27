@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="pop_online" cmdid_mode="int" create_time="2012年12月27日 星期4 12:04:26">
+  <struct_list>
+    <struct name="cli_buy_item_in" struct_from="self">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_buy_item_out" struct_from="self">
+      <field mode="single" name="left_xiaomee" type="uint32" desc="剩余多少钱"/>
+    </struct>
+    <struct name="cli_buy_item_use_gamept_in" struct_from="self">
+      <field mode="single" name="itemid" type="uint32" desc="物品ID"/>
+    </struct>
+    <struct name="cli_buy_item_use_gamept_out" struct_from="self">
+      <field mode="single" name="left_gamept" type="uint32" desc="剩余可用游戏积分"/>
+    </struct>
+    <struct name="cli_click_stat_in" struct_from="self">
+      <field mode="single" name="type" type="uint32" desc="点击类型（1蜘蛛 2石碑）"/>
+    </struct>
+    <struct name="cli_cur_game_end_in" struct_from="self">
+      <field mode="single" name="win_flag" type="uint32" desc="自己是不是羸了 :0:不是,1:是,2:平局"/>
+    </struct>
+    <struct name="item_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_del_item_in" struct_from="self">
+      <field mode="varlist" name="itemlist" type="item_t" max_size="999" desc="要删除的物品列表"/>
+    </struct>
+    <struct name="cli_draw_lottery_out" struct_from="self">
+      <field mode="single" name="item_get" type="item_t" desc="获取的物品（2卜克豆）"/>
+    </struct>
+    <struct name="cli_find_map_add_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="mapid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_game_opt_in" struct_from="self">
+      <field mode="varlist" name="gamemsg" type="char" max_size="9999" desc="游戏操作信息"/>
+    </struct>
+    <struct name="cli_game_play_with_other_in" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="array" name="request_session" type="char" size="32" desc="该请求的key, 在 确认时将之一起发出"/>
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="single" name="is_start" type="uint32" desc="是否开始,0:否(终止游戏), 1:是"/>
+      <field mode="single" name="why_not_start_flag" type="uint32" desc="为什么不玩, 1:自己关，2：在换装，3：购物"/>
+    </struct>
+    <struct name="cli_game_play_with_other_out" struct_from="self">
+      <field mode="single" name="obj_user_stat" type="uint32" desc="1:不存地图，2:已经在其它游戏中"/>
+    </struct>
+    <struct name="cli_game_request_in" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+    </struct>
+    <struct name="cli_game_request_out" struct_from="self">
+      <field mode="single" name="obj_user_stat" type="uint32" desc="1:不存地图，2:已经在其它游戏中"/>
+    </struct>
+    <struct name="online_user_info_t" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="single" name="color" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="single" name="xiaomee" type="uint32" desc="卜克豆"/>
+      <field mode="single" name="level" type="uint32" desc="等级"/>
+      <field mode="single" name="experience" type="uint32" desc="经验值"/>
+      <field mode="single" name="x" type="int32" desc=""/>
+      <field mode="single" name="y" type="int32" desc=""/>
+      <field mode="varlist" name="medal_list" type="uint32" max_size="100" desc="勋章个数"/>
+      <field mode="single" name="game_point" type="uint32" desc="小游戏积分"/>
+      <field mode="varlist" name="use_clothes_list" type="uint32" max_size="9999" desc=""/>
+      <field mode="varlist" name="effect_list" type="uint32" max_size="999" desc="使用中的特效卡片列表"/>
+    </struct>
+    <struct name="cli_get_all_user_info_from_cur_map_out" struct_from="self">
+      <field mode="varlist" name="online_user_info_list" type="online_user_info_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_get_card_list_by_islandid_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_get_card_list_by_islandid_out" struct_from="self">
+      <field mode="varlist" name="cardid_list" type="item_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="game_user_t" struct_from="self">
+      <field mode="single" name="src_userid" type="uint32" desc="发起的userid"/>
+      <field mode="single" name="gameid" type="uint32" desc="项目编号"/>
+      <field mode="varlist" name="userlist" type="uint32" max_size="10" desc="游戏中的其他玩家列表"/>
+    </struct>
+    <struct name="cli_get_game_user_out" struct_from="self">
+      <field mode="varlist" name="game_user_list" type="game_user_t" max_size="999" desc="游戏中的用户列表"/>
+    </struct>
+    <struct name="island_time_t" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc="岛屿ID"/>
+      <field mode="single" name="is_open" type="uint32" desc="当前是否开放"/>
+      <field mode="single" name="next_state_time" type="uint32" desc="下次状态改变时间"/>
+    </struct>
+    <struct name="cli_get_island_time_out" struct_from="self">
+      <field mode="single" name="svr_time" type="uint32" desc="当前服务器时间"/>
+      <field mode="varlist" name="islandlist" type="island_time_t" max_size="100" desc="岛屿开放时间列表"/>
+    </struct>
+    <struct name="cli_get_item_list_in" struct_from="self">
+      <field mode="single" name="startid" type="uint32" desc=""/>
+      <field mode="single" name="endid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_get_item_list_out" struct_from="self">
+      <field mode="varlist" name="item_list" type="item_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_get_login_chest_out" struct_from="self">
+      <field mode="single" name="item_get" type="item_t" desc="获取的物品（2卜克豆）"/>
+    </struct>
+    <struct name="cli_get_login_reward_in" struct_from="self">
+      <field mode="single" name="index" type="uint32" desc="序号（0~6）"/>
+    </struct>
+    <struct name="cli_get_login_reward_out" struct_from="self">
+      <field mode="single" name="item_get" type="item_t" desc="获取的物品（2卜克豆）"/>
+    </struct>
+    <struct name="cli_get_lottery_count_out" struct_from="self">
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_get_spec_item_in" struct_from="self">
+      <field mode="single" name="itemid" type="uint32" desc="物品ID（3战斗积分4在线时长5打工次数8圣诞礼券）"/>
+    </struct>
+    <struct name="cli_get_spec_item_list_in" struct_from="self">
+      <field mode="single" name="startid" type="uint32" desc=""/>
+      <field mode="single" name="endid" type="uint32" desc=""/>
+    </struct>
+    <struct name="item_day_limit_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc="物品ID（3战斗积分4在线时长）"/>
+      <field mode="single" name="total" type="uint32" desc="总数"/>
+      <field mode="single" name="daycnt" type="uint32" desc="当日获得次数"/>
+    </struct>
+    <struct name="cli_get_spec_item_list_out" struct_from="self">
+      <field mode="varlist" name="spec_item_list" type="item_day_limit_t" max_size="1000" desc=""/>
+    </struct>
+    <struct name="cli_get_spec_item_out" struct_from="self">
+      <field mode="single" name="item" type="item_day_limit_t" desc="物品数量"/>
+    </struct>
+    <struct name="cli_get_user_game_stat_in" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+    </struct>
+    <struct name="game_info_t" struct_from="pub">
+      <field mode="single" name="gameid" type="uint32" desc="项目编号"/>
+      <field mode="single" name="win_time" type="uint32" desc="胜利次数"/>
+      <field mode="single" name="lose_time" type="uint32" desc="输的次数"/>
+      <field mode="single" name="draw_time" type="uint32" desc="平的次数"/>
+    </struct>
+    <struct name="cli_get_user_game_stat_out" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="varlist" name="game_stat_list" type="game_info_t" max_size="9999" desc="小游戏统计信息"/>
+    </struct>
+    <struct name="cli_get_user_info_in" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+    </struct>
+    <struct name="user_log_t" struct_from="pub">
+      <field mode="single" name="logtime" type="uint32" desc="记录时间"/>
+      <field mode="single" name="v1" type="uint32" desc="1:注册 ，2：完成岛:(v2:岛id)"/>
+      <field mode="single" name="v2" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_get_user_info_out" struct_from="self">
+      <field mode="single" name="regtime" type="uint32" desc=""/>
+      <field mode="single" name="color" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="single" name="left_xiaomee" type="uint32" desc="剩余多少钱"/>
+      <field mode="single" name="level" type="uint32" desc="等级"/>
+      <field mode="single" name="experience" type="uint32" desc="经验值"/>
+      <field mode="single" name="game_point" type="uint32" desc="小游戏积分"/>
+      <field mode="varlist" name="use_clothes_list" type="uint32" max_size="9999" desc=""/>
+      <field mode="varlist" name="effect_list" type="uint32" max_size="999" desc="使用中的特效卡片列表"/>
+      <field mode="varlist" name="user_log_list" type="user_log_t" max_size="9999" desc="用户足迹列表"/>
+      <field mode="varlist" name="complete_islandid_list" type="uint32" max_size="9999" desc="完成 岛的列表"/>
+    </struct>
+    <struct name="cli_get_user_island_find_map_info_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_get_user_island_find_map_info_out" struct_from="self">
+      <field mode="varlist" name="find_map_list" type="uint32" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_get_user_island_task_info_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_get_user_island_task_info_out" struct_from="self">
+      <field mode="varlist" name="task_nodeid_list" type="uint32" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_get_valid_gamept_out" struct_from="self">
+      <field mode="single" name="left_gamept" type="uint32" desc="剩余可用游戏积分"/>
+    </struct>
+    <struct name="cli_hang_bell_get_item_in" struct_from="self">
+      <field mode="single" name="bell_type" type="uint32" desc="铃铛类型(0五彩1金色2银色)"/>
+      <field mode="single" name="zone_type" type="uint32" desc="投中区域(0蓝1绿2红3没投中)"/>
+    </struct>
+    <struct name="cli_hang_bell_get_item_out" struct_from="self">
+      <field mode="single" name="item_get" type="item_t" desc="获取的物品（2卜克豆）"/>
+    </struct>
+    <struct name="cli_login_in" struct_from="self">
+      <field mode="single" name="server_id" type="uint32" desc="服务器编号"/>
+      <field mode="single" name="login_userid" type="uint32" desc="米米号"/>
+      <field mode="array" name="session" type="char" size="32" desc=""/>
+    </struct>
+    <struct name="cli_login_out" struct_from="self">
+      <field mode="single" name="regflag" type="uint32" desc="按位标记：0-》注册 1-》新注册米米号 2-》聊天样本 3-》点击过指引"/>
+      <field mode="single" name="left_xiaomee" type="uint32" desc="剩余多少钱"/>
+      <field mode="single" name="color" type="uint32" desc=""/>
+      <field mode="single" name="age" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="single" name="last_islandid" type="uint32" desc=""/>
+      <field mode="single" name="last_mapid" type="uint32" desc=""/>
+      <field mode="single" name="last_x" type="uint32" desc=""/>
+      <field mode="single" name="last_y" type="uint32" desc=""/>
+      <field mode="varlist" name="task_nodeid_list" type="uint32" max_size="9999" desc=""/>
+      <field mode="varlist" name="use_clothes_list" type="uint32" max_size="9999" desc=""/>
+      <field mode="varlist" name="effect_list" type="uint32" max_size="999" desc="使用中的特效卡片列表"/>
+      <field mode="varlist" name="find_map_list" type="uint32" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_noti_effect_used_out" struct_from="self">
+      <field mode="single" name="src_userid" type="uint32" desc="发起的userid"/>
+      <field mode="single" name="itemid" type="uint32" desc="物品ID"/>
+      <field mode="single" name="unset_itemid" type="uint32" desc="要取消的特效卡片ID（没有为0）"/>
+    </struct>
+    <struct name="cli_noti_first_enter_island_out" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="xiaomee" type="uint32" desc="获得卜克豆"/>
+      <field mode="single" name="is_newid" type="uint32" desc="是否新注册的米米号"/>
+    </struct>
+    <struct name="user_game_win_t" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="single" name="win_flag" type="uint32" desc="输羸 :0:不是,1:是,2:平局"/>
+      <field mode="single" name="get_point" type="int32" desc="正数得到负数减去"/>
+    </struct>
+    <struct name="cli_noti_game_end_out" struct_from="self">
+      <field mode="varlist" name="user_win_list" type="user_game_win_t" max_size="10" desc=""/>
+    </struct>
+    <struct name="cli_noti_game_is_start_out" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="single" name="is_start" type="uint32" desc="是否开始,0:否(终止游戏), 1:是"/>
+      <field mode="single" name="why_not_start_flag" type="uint32" desc="为什么不玩, 1:自己关，2：在换装，3：购物"/>
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+    </struct>
+    <struct name="cli_noti_game_opt_out" struct_from="self">
+      <field mode="single" name="src_userid" type="uint32" desc="发起的userid"/>
+      <field mode="varlist" name="gamemsg" type="char" max_size="9999" desc="游戏操作信息"/>
+    </struct>
+    <struct name="cli_noti_game_request_out" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="single" name="src_userid" type="uint32" desc="发起的userid"/>
+      <field mode="array" name="request_session" type="char" size="32" desc="该请求的key, 在 确认时将之一起发出"/>
+    </struct>
+    <struct name="game_seat_t" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc="项目编号"/>
+      <field mode="single" name="side" type="uint32" desc="0左1右"/>
+      <field mode="single" name="userid" type="uint32" desc="在座位上的米米号"/>
+    </struct>
+    <struct name="cli_noti_game_seat_out" struct_from="self">
+      <field mode="varlist" name="gamelist" type="game_seat_t" max_size="100" desc="小游戏列表"/>
+    </struct>
+    <struct name="cli_noti_game_start_out" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="varlist" name="userid_list" type="uint32" max_size="100" desc="一起玩的userid列表"/>
+      <field mode="single" name="start_userid" type="uint32" desc="第一步的用户,如果为0，则没有限定"/>
+      <field mode="single" name="step_timeout" type="uint32" desc="每一步超时时间 ,0：不限定"/>
+    </struct>
+    <struct name="cli_noti_game_user_left_game_out" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+    </struct>
+    <struct name="cli_noti_game_user_out" struct_from="self">
+      <field mode="single" name="state" type="uint32" desc="状态（1开始2结束）"/>
+      <field mode="single" name="game_user" type="game_user_t" desc=""/>
+    </struct>
+    <struct name="cli_noti_get_invitation_out" struct_from="self">
+      <field mode="single" name="itemid" type="uint32" desc="物品邀请函ID"/>
+    </struct>
+    <struct name="cli_noti_get_item_list_out" struct_from="self">
+      <field mode="varlist" name="item_list" type="item_t" max_size="9999" desc="得到的物品列表"/>
+    </struct>
+    <struct name="cli_noti_island_complete_out" struct_from="self">
+      <field mode="single" name="userid" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_noti_leave_island_out" struct_from="self">
+      <field mode="single" name="cur_island" type="uint32" desc="当前岛ID"/>
+      <field mode="single" name="cur_mapid" type="uint32" desc="当前地图ID"/>
+      <field mode="single" name="islandid" type="uint32" desc="前往的岛屿ID"/>
+      <field mode="single" name="mapid" type="uint32" desc="前往的地图ID"/>
+    </struct>
+    <struct name="cli_noti_one_user_info_out" struct_from="self">
+      <field mode="single" name="user_info" type="online_user_info_t" desc=""/>
+    </struct>
+    <struct name="cli_noti_set_color_out" struct_from="self">
+      <field mode="single" name="userid" type="uint32" desc=""/>
+      <field mode="single" name="color" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_noti_show_out" struct_from="self">
+      <field mode="single" name="src_userid" type="uint32" desc="发起的userid"/>
+      <field mode="single" name="expression_id" type="uint32" desc="表情ID"/>
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid（0：场景 1游戏中）"/>
+    </struct>
+    <struct name="cli_noti_svr_time_out" struct_from="self">
+      <field mode="single" name="timestamp" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_noti_talk_out" struct_from="self">
+      <field mode="single" name="src_userid" type="uint32" desc="发起的userid"/>
+      <field mode="array" name="src_nick" type="char" size="16" desc=""/>
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="varlist" name="msg" type="char" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_noti_user_left_map_out" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+    </struct>
+    <struct name="cli_noti_user_level_up_out" struct_from="self">
+      <field mode="single" name="src_userid" type="uint32" desc="发起的userid"/>
+      <field mode="single" name="level" type="uint32" desc="等级"/>
+      <field mode="single" name="experience" type="uint32" desc="经验值"/>
+      <field mode="single" name="addexp" type="uint32" desc="此次得到的经验"/>
+      <field mode="single" name="is_level_up" type="uint32" desc="是否升级"/>
+      <field mode="single" name="itemid" type="uint32" desc="升级获得的奖励物品"/>
+    </struct>
+    <struct name="cli_noti_user_move_out" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="single" name="start_x" type="uint32" desc=""/>
+      <field mode="single" name="start_y" type="uint32" desc=""/>
+      <field mode="single" name="mouse_x" type="uint32" desc=""/>
+      <field mode="single" name="mouse_y" type="uint32" desc=""/>
+      <field mode="single" name="type" type="uint32" desc="移动模式"/>
+    </struct>
+    <struct name="cli_noti_user_online_time_out" struct_from="self">
+      <field mode="single" name="type" type="uint32" desc="计时类型（0连续 1累计）"/>
+      <field mode="single" name="time" type="uint32" desc="在线时间（分钟）"/>
+    </struct>
+    <struct name="cli_noti_user_use_clothes_list_out" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="varlist" name="use_clothes_list" type="uint32" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_post_msg_in" struct_from="self">
+      <field mode="single" name="type" type="uint32" desc="投稿类型"/>
+      <field mode="array" name="title" type="char" size="60" desc="主题"/>
+      <field mode="varlist" name="msg" type="char" max_size="4096" desc="投稿内容"/>
+    </struct>
+    <struct name="cli_proto_header_in" struct_from="self">
+      <field mode="single" name="proto_length" type="uint32" desc=""/>
+      <field mode="single" name="cmdid" type="uint16" desc=""/>
+      <field mode="single" name="timestamp" type="uint32" desc=""/>
+      <field mode="single" name="seq" type="uint32" desc=""/>
+      <field mode="single" name="result" type="uint16" desc=""/>
+      <field mode="single" name="useSever" type="uint16" desc=""/>
+    </struct>
+    <struct name="cli_reg_in" struct_from="self">
+      <field mode="single" name="channelid" type="uint32" desc="渠道id(填0)"/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="single" name="age" type="uint32" desc=""/>
+      <field mode="single" name="color" type="uint32" desc=""/>
+      <field mode="varlist" name="item_list" type="item_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_reg_out" struct_from="self">
+      <field mode="single" name="left_xiaomee" type="uint32" desc="剩余多少钱"/>
+      <field mode="array" name="nick" type="char" size="16" desc="昵称"/>
+    </struct>
+    <struct name="cli_set_busy_state_in" struct_from="self">
+      <field mode="single" name="state" type="uint32" desc="忙状态"/>
+    </struct>
+    <struct name="cli_set_color_in" struct_from="self">
+      <field mode="single" name="color" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_set_effect_used_in" struct_from="self">
+      <field mode="single" name="itemid" type="uint32" desc="物品ID"/>
+      <field mode="single" name="type" type="uint32" desc="（1穿上 0去掉）"/>
+    </struct>
+    <struct name="cli_set_item_used_list_in" struct_from="self">
+      <field mode="varlist" name="itemid_list" type="uint32" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_set_nick_in" struct_from="self">
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+    </struct>
+    <struct name="cli_show_in" struct_from="self">
+      <field mode="single" name="expression_id" type="uint32" desc="表情ID"/>
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid（0：场景 1：游戏中）"/>
+    </struct>
+    <struct name="cli_talk_in" struct_from="self">
+      <field mode="single" name="obj_userid" type="uint32" desc="目标userid"/>
+      <field mode="varlist" name="msg" type="char" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_talk_npc_in" struct_from="self">
+      <field mode="single" name="npc_id" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_task_complete_node_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_task_complete_node_out" struct_from="self">
+      <field mode="varlist" name="task_nodeid_list" type="uint32" max_size="9999" desc=""/>
+    </struct>
+    <struct name="cli_task_del_node_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_user_move_in" struct_from="self">
+      <field mode="single" name="start_x" type="uint32" desc=""/>
+      <field mode="single" name="start_y" type="uint32" desc=""/>
+      <field mode="single" name="mouse_x" type="uint32" desc=""/>
+      <field mode="single" name="mouse_y" type="uint32" desc=""/>
+      <field mode="single" name="type" type="uint32" desc="移动模式"/>
+    </struct>
+    <struct name="cli_walk_in" struct_from="self">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="mapid" type="uint32" desc=""/>
+      <field mode="single" name="x" type="uint32" desc=""/>
+      <field mode="single" name="y" type="uint32" desc=""/>
+    </struct>
+    <struct name="cli_work_get_lottery_out" struct_from="self">
+      <field mode="single" name="get_count" type="uint32" desc="今天获得的次数"/>
+    </struct>
+    <struct name="login_activate_game_in" struct_from="self">
+      <field mode="single" name="which_game" type="uint32" desc="项目id (填12)"/>
+      <field mode="array" name="active_code" type="char" size="10" desc="激活码：6-8个0-9、A-Z、a-z字符，没有用到的字节填0"/>
+      <field mode="array" name="imgid" type="char" size="16" desc="验证码ID"/>
+      <field mode="array" name="verif_code" type="char" size="6" desc="验证码 (空)"/>
+    </struct>
+    <struct name="login_activate_game_out" struct_from="self">
+      <field mode="single" name="flag" type="uint32" desc="0表示激活成功，不会发送蓝色部分的内容 1激活码错误次数过多，需要输入验证码后再激活 2验证码输入错误"/>
+      <field mode="array" name="img_id" type="char" size="16" desc="验证图片id(空）"/>
+      <field mode="varlist" name="img" type="char" max_size="1000" desc="验证图片"/>
+    </struct>
+    <struct name="login_check_game_activate_in" struct_from="self">
+      <field mode="single" name="which_game" type="uint32" desc="项目id (填12)"/>
+    </struct>
+    <struct name="login_check_game_activate_out" struct_from="self">
+      <field mode="single" name="flag" type="uint32" desc="0未激活1已激活"/>
+    </struct>
+    <struct name="login_get_ranged_svr_list_in" struct_from="self">
+      <field mode="single" name="startid" type="uint32" desc=""/>
+      <field mode="single" name="endid" type="uint32" desc=""/>
+    </struct>
+    <struct name="online_item_t" struct_from="pub">
+      <field mode="single" name="online_id" type="uint32" desc=""/>
+      <field mode="single" name="user_num" type="uint32" desc=""/>
+      <field mode="array" name="online_ip" type="char" size="16" desc=""/>
+      <field mode="single" name="online_port" type="uint16" desc=""/>
+      <field mode="single" name="friend_count" type="uint32" desc=""/>
+    </struct>
+    <struct name="login_get_ranged_svr_list_out" struct_from="self">
+      <field mode="varlist" name="online_list" type="online_item_t" max_size="1000" desc=""/>
+    </struct>
+    <struct name="login_get_recommeded_list_in" struct_from="self">
+      <field mode="array" name="session" type="char" size="32" desc=""/>
+    </struct>
+    <struct name="login_get_recommeded_list_out" struct_from="self">
+      <field mode="single" name="max_online_id" type="uint32" desc=""/>
+      <field mode="single" name="vip" type="uint32" desc=""/>
+      <field mode="varlist" name="online_list" type="online_item_t" max_size="1000" desc=""/>
+    </struct>
+    <struct name="login_login_in" struct_from="self">
+      <field mode="array" name="passwd_md5_two" type="char" size="32" desc="密码的两次md5值"/>
+      <field mode="single" name="channelid" type="uint32" desc="渠道id(填0)"/>
+      <field mode="single" name="which_game" type="uint32" desc="项目id (填12)"/>
+      <field mode="single" name="user_ip" type="uint32" desc="ip 地址"/>
+      <field mode="array" name="img_id" type="char" size="16" desc="验证图片id(空）"/>
+      <field mode="array" name="verif_code" type="char" size="6" desc="验证码 (空)"/>
+    </struct>
+    <struct name="login_login_out" struct_from="self">
+      <field mode="single" name="verif_flag" type="uint32" desc=""/>
+      <field mode="array" name="session" type="char" size="16" desc=""/>
+      <field mode="single" name="create_role_flag" type="uint32" desc=""/>
+    </struct>
+    <struct name="login_refresh_img_in" struct_from="self">
+      <field mode="single" name="flag" type="uint32" desc="0正常登录； 1使用激活码时（可以不发送，兼容旧版本即正常登录）"/>
+    </struct>
+    <struct name="login_refresh_img_out" struct_from="self">
+      <field mode="single" name="flag" type="uint32" desc="0不需要输入验证码，1需要输入验证（为1时才有验证码)）"/>
+      <field mode="array" name="imgid" type="char" size="16" desc="图片ID。发送验证码时，需要把这个ID带上"/>
+      <field mode="varlist" name="img" type="char" max_size="1000" desc="验证图片"/>
+    </struct>
+    <struct name="noti_cli_leave_out" struct_from="self">
+      <field mode="single" name="reason" type="uint32" desc="离线原因 （1午夜休息）"/>
+    </struct>
+    <struct name="find_map_t" struct_from="pub">
+      <field mode="single" name="islandid" type="uint32" desc=""/>
+      <field mode="single" name="mapid" type="uint32" desc=""/>
+    </struct>
+    <struct name="item_exchange_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc="1:任务，2:xiaomee"/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+      <field mode="single" name="max_count" type="uint32" desc=""/>
+      <field mode="single" name="day_add_cnt" type="uint32" desc="今日增加数量"/>
+    </struct>
+    <struct name="item_ex_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="use_count" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="task_t" struct_from="pub">
+      <field mode="single" name="taskid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="1" name="cli_proto_header" struct_in="cli_proto_header_in" struct_out="" desc="报文头部&lt;font color=red &gt;小端字节序&lt;/font&gt;" md5_tag="0x2e14bf71" bind_bitmap="0"/>
+    <protocol cmd="101" name="login_refresh_img" struct_in="login_refresh_img_in" struct_out="login_refresh_img_out" desc="重新获取验证码" md5_tag="0xed66049a" bind_bitmap="0"/>
+    <protocol cmd="102" name="login_check_game_activate" struct_in="login_check_game_activate_in" struct_out="login_check_game_activate_out" desc="检查游戏是否激活" md5_tag="0x68dbed7e" bind_bitmap="0"/>
+    <protocol cmd="103" name="login_login" struct_in="login_login_in" struct_out="login_login_out" desc="登录" md5_tag="0xc0774b87" bind_bitmap="0"/>
+    <protocol cmd="104" name="login_activate_game" struct_in="login_activate_game_in" struct_out="login_activate_game_out" desc="激活游戏" md5_tag="0xec256cd8" bind_bitmap="0"/>
+    <protocol cmd="105" name="login_get_recommeded_list" struct_in="login_get_recommeded_list_in" struct_out="login_get_recommeded_list_out" desc="得到推荐服务器列表" md5_tag="0x842984ca" bind_bitmap="0"/>
+    <protocol cmd="106" name="login_get_ranged_svr_list" struct_in="login_get_ranged_svr_list_in" struct_out="login_get_ranged_svr_list_out" desc="得到服务器范围列表" md5_tag="0xb38d89ee" bind_bitmap="0"/>
+    <protocol cmd="1001" name="cli_login" struct_in="cli_login_in" struct_out="cli_login_out" desc="登入" md5_tag="0x0a410403" bind_bitmap="1"/>
+    <protocol cmd="1002" name="cli_reg" struct_in="cli_reg_in" struct_out="cli_reg_out" desc="用户注册" md5_tag="0xc558bcb8" bind_bitmap="1"/>
+    <protocol cmd="1003" name="noti_cli_leave" struct_in="" struct_out="noti_cli_leave_out" desc="通知用户离线" md5_tag="0x8154f01d" bind_bitmap="0"/>
+    <protocol cmd="1004" name="cli_noti_island_complete" struct_in="" struct_out="cli_noti_island_complete_out" desc="通知用户某人岛屿完成" md5_tag="0x5117b356" bind_bitmap="0"/>
+    <protocol cmd="1011" name="cli_task_complete_node" struct_in="cli_task_complete_node_in" struct_out="cli_task_complete_node_out" desc="完成任务节点" md5_tag="0xb9a905ba" bind_bitmap="1"/>
+    <protocol cmd="1012" name="cli_get_item_list" struct_in="cli_get_item_list_in" struct_out="cli_get_item_list_out" desc="得到物品列表" md5_tag="0xedc9abd8" bind_bitmap="1"/>
+    <protocol cmd="1013" name="cli_get_spec_item" struct_in="cli_get_spec_item_in" struct_out="cli_get_spec_item_out" desc="获取特殊物品数量" md5_tag="0xd8099850" bind_bitmap="1"/>
+    <protocol cmd="1014" name="cli_walk" struct_in="cli_walk_in" struct_out="" desc="进入场景" md5_tag="0x23916811" bind_bitmap="1">
+      <error id="20025"/>
+    </protocol>
+    <protocol cmd="1015" name="cli_get_user_island_task_info" struct_in="cli_get_user_island_task_info_in" struct_out="cli_get_user_island_task_info_out" desc="得到用户在该岛上的任务信息" md5_tag="0xffd0451d" bind_bitmap="1"/>
+    <protocol cmd="1016" name="cli_find_map_add" struct_in="cli_find_map_add_in" struct_out="" desc="增加找到的地图" md5_tag="0x200d7500" bind_bitmap="1"/>
+    <protocol cmd="1017" name="cli_set_nick" struct_in="cli_set_nick_in" struct_out="" desc="设置昵称" md5_tag="0x52ac0fda" bind_bitmap="1"/>
+    <protocol cmd="1018" name="cli_set_item_used_list" struct_in="cli_set_item_used_list_in" struct_out="" desc="设置使用物品列表" md5_tag="0xccc87448" bind_bitmap="1"/>
+    <protocol cmd="1019" name="cli_task_del_node" struct_in="cli_task_del_node_in" struct_out="" desc="删除任务" md5_tag="0xa80dbeed" bind_bitmap="1"/>
+    <protocol cmd="1020" name="cli_get_user_island_find_map_info" struct_in="cli_get_user_island_find_map_info_in" struct_out="cli_get_user_island_find_map_info_out" desc="得到岛上的找到地图的信息" md5_tag="0xa91abb1c" bind_bitmap="1"/>
+    <protocol cmd="1021" name="cli_get_card_list_by_islandid" struct_in="cli_get_card_list_by_islandid_in" struct_out="cli_get_card_list_by_islandid_out" desc="" md5_tag="0x3d8e05fa" bind_bitmap="1"/>
+    <protocol cmd="1022" name="cli_talk_npc" struct_in="cli_talk_npc_in" struct_out="" desc="和npc聊天" md5_tag="0x3c2927f4" bind_bitmap="1"/>
+    <protocol cmd="1023" name="cli_get_user_info" struct_in="cli_get_user_info_in" struct_out="cli_get_user_info_out" desc="得到用户信息" md5_tag="0x7e293ceb" bind_bitmap="1"/>
+    <protocol cmd="1024" name="cli_get_user_game_stat" struct_in="cli_get_user_game_stat_in" struct_out="cli_get_user_game_stat_out" desc="获取用户的小游戏统计" md5_tag="0xc11a3f99" bind_bitmap="1"/>
+    <protocol cmd="1025" name="cli_noti_user_online_time" struct_in="" struct_out="cli_noti_user_online_time_out" desc="通知客户端用户在线时间（分钟）" md5_tag="0x94941e35" bind_bitmap="0"/>
+    <protocol cmd="1026" name="cli_noti_first_enter_island" struct_in="" struct_out="cli_noti_first_enter_island_out" desc="通知用户第一次进某岛" md5_tag="0xc775a40e" bind_bitmap="0"/>
+    <protocol cmd="1028" name="cli_set_effect_used" struct_in="cli_set_effect_used_in" struct_out="" desc="使用特效卡片" md5_tag="0xf86b3c0a" bind_bitmap="1"/>
+    <protocol cmd="1029" name="cli_noti_effect_used" struct_in="" struct_out="cli_noti_effect_used_out" desc="通知有人使用特效卡片" md5_tag="0xffd34345" bind_bitmap="0"/>
+    <protocol cmd="1030" name="cli_noti_get_item_list" struct_in="" struct_out="cli_noti_get_item_list_out" desc="通知客户端得到一些物品" md5_tag="0xc0680138" bind_bitmap="0"/>
+    <protocol cmd="1031" name="cli_del_item" struct_in="cli_del_item_in" struct_out="" desc="删除一些物品" md5_tag="0x53797358" bind_bitmap="1"/>
+    <protocol cmd="1032" name="cli_get_island_time" struct_in="" struct_out="cli_get_island_time_out" desc="获取限时岛屿的开放时间" md5_tag="0xca1743b9" bind_bitmap="1"/>
+    <protocol cmd="1033" name="cli_noti_leave_island" struct_in="" struct_out="cli_noti_leave_island_out" desc="通知用户离开限时岛屿" md5_tag="0x9b5762ff" bind_bitmap="0"/>
+    <protocol cmd="1034" name="cli_get_spec_item_list" struct_in="cli_get_spec_item_list_in" struct_out="cli_get_spec_item_list_out" desc="拉取范围的特殊物品" md5_tag="0xfdf51e9a" bind_bitmap="1"/>
+    <protocol cmd="1035" name="cli_set_color" struct_in="cli_set_color_in" struct_out="" desc="换肤" md5_tag="0x2dfde07c" bind_bitmap="1"/>
+    <protocol cmd="1036" name="cli_noti_set_color" struct_in="" struct_out="cli_noti_set_color_out" desc="" md5_tag="0xfcdf2bf3" bind_bitmap="0"/>
+    <protocol cmd="1100" name="cli_noti_one_user_info" struct_in="" struct_out="cli_noti_one_user_info_out" desc="通知单个用户在线信息(别人进来了)" md5_tag="0x4854c772" bind_bitmap="0"/>
+    <protocol cmd="1101" name="cli_get_all_user_info_from_cur_map" struct_in="" struct_out="cli_get_all_user_info_from_cur_map_out" desc="得到当前地图的所有人信息" md5_tag="0x5b4b845a" bind_bitmap="1"/>
+    <protocol cmd="1102" name="cli_user_move" struct_in="cli_user_move_in" struct_out="" desc="用户移动 多人模式下" md5_tag="0x20304753" bind_bitmap="1"/>
+    <protocol cmd="1103" name="cli_noti_user_move" struct_in="" struct_out="cli_noti_user_move_out" desc="通知用户移动" md5_tag="0x55ccb12f" bind_bitmap="0"/>
+    <protocol cmd="1104" name="cli_noti_user_left_map" struct_in="" struct_out="cli_noti_user_left_map_out" desc="通知用户离开地图" md5_tag="0x9e97ab66" bind_bitmap="0"/>
+    <protocol cmd="1105" name="cli_talk" struct_in="cli_talk_in" struct_out="" desc="聊天" md5_tag="0x0e444aef" bind_bitmap="1">
+      <error id="20021"/>
+    </protocol>
+    <protocol cmd="1106" name="cli_noti_user_use_clothes_list" struct_in="" struct_out="cli_noti_user_use_clothes_list_out" desc="通知用户更换装扮" md5_tag="0xaf464111" bind_bitmap="0"/>
+    <protocol cmd="1107" name="cli_noti_talk" struct_in="" struct_out="cli_noti_talk_out" desc="通知聊天" md5_tag="0x52b6ada9" bind_bitmap="0"/>
+    <protocol cmd="1108" name="cli_show" struct_in="cli_show_in" struct_out="" desc="发表情" md5_tag="0xe8810497" bind_bitmap="1"/>
+    <protocol cmd="1109" name="cli_noti_show" struct_in="" struct_out="cli_noti_show_out" desc="通知某用户做表情" md5_tag="0x33e74a5e" bind_bitmap="0"/>
+    <protocol cmd="1110" name="cli_set_busy_state" struct_in="cli_set_busy_state_in" struct_out="" desc="设置忙状态" md5_tag="0x43f7232d" bind_bitmap="1"/>
+    <protocol cmd="1111" name="cli_noti_user_level_up" struct_in="" struct_out="cli_noti_user_level_up_out" desc="通知有人升级" md5_tag="0x01d4492a" bind_bitmap="0"/>
+    <protocol cmd="1201" name="cli_game_request" struct_in="cli_game_request_in" struct_out="cli_game_request_out" desc="请求和某人玩游戏" md5_tag="0xba487b08" bind_bitmap="1"/>
+    <protocol cmd="1202" name="cli_noti_game_request" struct_in="" struct_out="cli_noti_game_request_out" desc="通知游戏请求" md5_tag="0xddb60a52" bind_bitmap="0"/>
+    <protocol cmd="1203" name="cli_game_play_with_other" struct_in="cli_game_play_with_other_in" struct_out="cli_game_play_with_other_out" desc="确认请求" md5_tag="0x5fb58c09" bind_bitmap="1"/>
+    <protocol cmd="1204" name="cli_noti_game_is_start" struct_in="" struct_out="cli_noti_game_is_start_out" desc="通知请求游戏是否开始,如果is_start=1,（发给双方)，is_start=0(发给请求方)" md5_tag="0xaf7927e5" bind_bitmap="0"/>
+    <protocol cmd="1205" name="cli_game_can_start" struct_in="" struct_out="" desc="客户端确认游戏可以开始了( 1204 返回is_start=1 时，在加载游戏完成时发)" md5_tag="0x511673c0" bind_bitmap="1"/>
+    <protocol cmd="1206" name="cli_noti_game_start" struct_in="" struct_out="cli_noti_game_start_out" desc="通知游戏开始" md5_tag="0x81759933" bind_bitmap="0"/>
+    <protocol cmd="1207" name="cli_game_opt" struct_in="cli_game_opt_in" struct_out="" desc="用户游戏操作" md5_tag="0xe2b1aad9" bind_bitmap="1"/>
+    <protocol cmd="1208" name="cli_noti_game_opt" struct_in="" struct_out="cli_noti_game_opt_out" desc="通知用户游戏操作" md5_tag="0x0d347d17" bind_bitmap="0"/>
+    <protocol cmd="1209" name="cli_cur_game_end" struct_in="cli_cur_game_end_in" struct_out="" desc="当前一局游戏结束" md5_tag="0xf944db64" bind_bitmap="1"/>
+    <protocol cmd="1210" name="cli_noti_game_end" struct_in="" struct_out="cli_noti_game_end_out" desc="通知游戏结束" md5_tag="0xf86ab508" bind_bitmap="0"/>
+    <protocol cmd="1211" name="cli_game_user_left_game" struct_in="" struct_out="" desc="离开游戏" md5_tag="0x5b5a3ffd" bind_bitmap="1"/>
+    <protocol cmd="1212" name="cli_noti_game_user_left_game" struct_in="" struct_out="cli_noti_game_user_left_game_out" desc="用户离开游戏通知" md5_tag="0xbb260459" bind_bitmap="0"/>
+    <protocol cmd="1213" name="cli_buy_item" struct_in="cli_buy_item_in" struct_out="cli_buy_item_out" desc="购买物品" md5_tag="0x98174eba" bind_bitmap="1"/>
+    <protocol cmd="1214" name="cli_noti_game_user" struct_in="" struct_out="cli_noti_game_user_out" desc="通知场景中的所有玩家有人进入游戏" md5_tag="0x0ba31f2c" bind_bitmap="0"/>
+    <protocol cmd="1215" name="cli_get_game_user" struct_in="" struct_out="cli_get_game_user_out" desc="获取当前场景正在游戏的玩家" md5_tag="0xcdb47db1" bind_bitmap="1"/>
+    <protocol cmd="1216" name="cli_buy_item_use_gamept" struct_in="cli_buy_item_use_gamept_in" struct_out="cli_buy_item_use_gamept_out" desc="使用游戏积分购买物品" md5_tag="0x937ad5bd" bind_bitmap="1"/>
+    <protocol cmd="1217" name="cli_noti_game_seat" struct_in="" struct_out="cli_noti_game_seat_out" desc="获取游戏座位信息" md5_tag="0xbac528d8" bind_bitmap="0"/>
+    <protocol cmd="1218" name="cli_get_valid_gamept" struct_in="" struct_out="cli_get_valid_gamept_out" desc="拉取有效的小游戏积分" md5_tag="0x459682e3" bind_bitmap="1"/>
+    <protocol cmd="1301" name="cli_post_msg" struct_in="cli_post_msg_in" struct_out="" desc="投稿投诉" md5_tag="0xedc17e31" bind_bitmap="1"/>
+    <protocol cmd="1401" name="cli_work_get_lottery" struct_in="" struct_out="cli_work_get_lottery_out" desc="打工获得抽奖机会" md5_tag="0x491f80bf" bind_bitmap="1">
+      <error id="20023"/>
+    </protocol>
+    <protocol cmd="1402" name="cli_draw_lottery" struct_in="" struct_out="cli_draw_lottery_out" desc="抽奖" md5_tag="0x4983d8c5" bind_bitmap="1">
+      <error id="20024"/>
+    </protocol>
+    <protocol cmd="1403" name="cli_get_lottery_count" struct_in="" struct_out="cli_get_lottery_count_out" desc="获取剩余抽奖机会" md5_tag="0x51b8de2e" bind_bitmap="1"/>
+    <protocol cmd="1404" name="cli_hang_bell_get_item" struct_in="cli_hang_bell_get_item_in" struct_out="cli_hang_bell_get_item_out" desc="挂铃铛赢奖励" md5_tag="0xd39e6602" bind_bitmap="1"/>
+    <protocol cmd="1405" name="cli_click_chris_tree" struct_in="" struct_out="" desc="点击圣诞树统计" md5_tag="0xcf1c12cc" bind_bitmap="1"/>
+    <protocol cmd="1406" name="cli_click_guide" struct_in="" struct_out="" desc="点击新手指引" md5_tag="0x9f0e3ad1" bind_bitmap="1"/>
+    <protocol cmd="1407" name="cli_click_stat" struct_in="cli_click_stat_in" struct_out="" desc="点击统计" md5_tag="0x6997c174" bind_bitmap="1"/>
+    <protocol cmd="1408" name="cli_click_game_notice" struct_in="" struct_out="" desc="点击游戏王公告" md5_tag="0x73830881" bind_bitmap="1"/>
+    <protocol cmd="1409" name="cli_noti_get_invitation" struct_in="" struct_out="cli_noti_get_invitation_out" desc="通知用户得到邀请函" md5_tag="0xb33f420b" bind_bitmap="0"/>
+    <protocol cmd="1410" name="cli_noti_svr_time" struct_in="" struct_out="cli_noti_svr_time_out" desc="通知客户端系统时间" md5_tag="0xd317b23a" bind_bitmap="0"/>
+    <protocol cmd="1411" name="cli_click_pet_egg" struct_in="" struct_out="" desc="点击宠物蛋" md5_tag="0x3de04bd1" bind_bitmap="1"/>
+    <protocol cmd="1412" name="cli_get_login_chest" struct_in="" struct_out="cli_get_login_chest_out" desc="获取登录宝箱" md5_tag="0x50943a28" bind_bitmap="1"/>
+    <protocol cmd="1413" name="cli_get_login_reward" struct_in="cli_get_login_reward_in" struct_out="cli_get_login_reward_out" desc="获取登录奖励" md5_tag="0x10d92a72" bind_bitmap="1"/>
+  </protocol_list>
+  <error_list>
+    <error id="5001" name="clierr_system_error" desc="系统出错"/>
+    <error id="5002" name="clierr_user_is_banned" desc="号码被禁用了"/>
+    <error id="5003" name="clierr_wrong_password" desc="密码错误"/>
+    <error id="5005" name="clierr_userid_not_found" desc="系统用户不存在"/>
+    <error id="5009" name="clierr_wrong_password_too_much" desc="用户被暂时禁止登录，密码出错太多"/>
+    <error id="11105" name="cli_userid_nofind_err" desc="用户不存在"/>
+    <error id="20006" name="cli_err_system_error" desc="系统繁忙"/>
+    <error id="20007" name="cli_request_arg_err" desc="请求参数不合法"/>
+    <error id="20008" name="cli_login_other_online_err" desc="在其它地方登入了"/>
+    <error id="20010" name="cli_task_node_existed_err" desc="已经交过任务了"/>
+    <error id="20011" name="cli_task_node_nofind_err" desc="任务id不存在"/>
+    <error id="20012" name="cli_task_node_need_item_nofind_err" desc="需要的物品还没存在"/>
+    <error id="20013" name="cli_task_node_req_task_err" desc="前置任务还没有完成"/>
+    <error id="20014" name="cli_mapid_existed_err" desc="地图id已经存在"/>
+    <error id="20015" name="cli_nick_err" desc="昵称非法"/>
+    <error id="20016" name="cli_user_no_in_map_err" desc="用户已不在地图中"/>
+    <error id="20017" name="cli_user_in_game_err" desc="用户已经在游戏中了"/>
+    <error id="20018" name="cli_xiaomee_max_err" desc="钱到达上限"/>
+    <error id="20019" name="cli_xiaomee_no_enough_err" desc="钱不够"/>
+    <error id="20020" name="cli_itemid_existed_err" desc="物品已经存在"/>
+    <error id="20021" name="cli_dirty_word_err" desc="有脏词"/>
+    <error id="20022" name="cli_item_ever_get_err" desc="已经领过物品了"/>
+    <error id="20023" name="cli_work_today_err" desc="今天已经打过工了"/>
+    <error id="20024" name="cli_lottery_no_enough_err" desc="抽奖次数不足"/>
+    <error id="20025" name="cli_island_no_open_err" desc="岛屿没开放"/>
+  </error_list>
+  <desc_list>
+    <field_desc key="color" desc="肤色"/>
+    <field_desc key="itemid" desc="物品id"/>
+    <field_desc key="session" desc="用于跳转时无需密码"/>
+    <field_desc key="taskid" desc="主任务id"/>
+    <field_desc key="task_list" desc="任务列表"/>
+    <field_desc key="task_nodeid" desc="子任务id"/>
+  </desc_list>
+  <bind_list>
+    <bind bindid="0" bind_name="for_cli_request" bind_desc=""/>
+  </bind_list>
+</taomee_proto>

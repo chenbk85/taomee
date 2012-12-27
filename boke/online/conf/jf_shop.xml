@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--服装卡片：new——1、最新物品  0、非-->
+
+<items>
+			<item id="300067" pay="250"/>
+			<item id="300068" pay="250"/>
+			<item id="300069" pay="200"/>
+			<item id="300076" pay="200"/>
+			<item id="300077" pay="200"/>
+			<item id="300078" pay="250"/>
+			<item id="300079" pay="200"/>
+			<item id="300080" pay="200"/>
+			<item id="300081" pay="400"/>
+			<item id="300082" pay="400"/>
+			<item id="300083" pay="350"/>
+			<item id="300084" pay="400"/>
+			<item id="300085" pay="300"/>
+			<item id="300086" pay="350"/>
+			<item id="300087" pay="400"/>
+			<item id="300088" pay="400"/>
+			<item id="300089" pay="200"/>
+			<item id="300090" pay="200"/>
+			<item id="300091" pay="200"/>
+
+			<item id="300049" pay="200"/>
+			<item id="300050" pay="200"/>
+			<item id="300051" pay="200"/>
+			<item id="300052" pay="200"/>
+			<item id="300053" pay="200"/>
+			<item id="300054" pay="200"/>
+			<item id="300055" pay="200"/>
+			<item id="300056" pay="200"/>
+			<item id="300057" pay="200"/>
+			<item id="300058" pay="200"/>
+			<item id="300059" pay="200"/>
+			<item id="300060" pay="200"/>
+			<item id="300061" pay="200"/>
+			<item id="300062" pay="200"/>
+			<item id="300063" pay="200"/>
+			<item id="300064" pay="200"/>
+			<item id="300065" pay="200"/>
+			<item id="300066" pay="200"/>
+</items>

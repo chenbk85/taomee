@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<Maps>
+	<island id="0" name="土豆岛">
+		<Map id="1" name="注册场景" condition="0" multi="0" from="0" pos="200_200" belong="0"/>
+		<Map id="2" name="阳光沙滩" condition="0" multi="0" from="1" pos="248_741" belong="0"/>
+		<Map id="3" name="小海湾" condition="0" multi="0" from="2" pos="126_724" belong="0"/>
+	</island>
+	<island id="1" name="土豆岛" medal="200010">
+		<Map id="1" name="主干道" condition="0" multi="0" from="0,2,3,4,6,15" pos="453_747,2516_980,88_980,1132_980,3380_980,1779_980" belong="0"/>
+		<Map id="2" name="五金店" condition="0" multi="0" from="1" pos="575_615" belong="1"/>
+		<Map id="3" name="土豆农场" condition="0" multi="0" from="1,5" pos="2283_811,751_260 " belong="0"/>
+		<Map id="4" name="土豆餐厅" condition="0" multi="0" from="1" pos="611_579" belong="1"/>
+		<Map id="5" name="农场小屋" condition="0" multi="0" from="3" pos="359_990" belong="3"/>
+		<Map id="6" name="工厂" condition="0" multi="0" from="1,7,14" pos="131_1130,2292_1130,1159_1198" belong="0"/>
+		<Map id="7" name="下水道" condition="0" multi="0" from="6,8" pos="2508_124,515_123" belong="0"/>
+		<Map id="8" name="引擎室" condition="0" multi="0" from="7,9" pos="2624_1523,631_555" belong="0"/>
+		<Map id="9" name="排气系统" condition="0" multi="0" from="8,10,11,12" pos="2776_279,324_1192,2709_2562,1811_2562" belong="0"/>
+		<Map id="10" name="打印室" condition="0" multi="0" from="9" pos="1796_432" belong="0"/>
+		<Map id="11" name="冷冻室" condition="0" multi="0" from="9,12" pos="641_217,901_821" belong="0"/>
+		<Map id="12" name="加工室" condition="0" multi="0" from="9,13,14" pos="2879_336,2203_1244,311_1524" belong="0"/>
+		<Map id="13" name="熔炉室" condition="0" multi="0" from="12" pos="1376_200" belong="0"/>
+		<Map id="14" name="控制室" condition="0" multi="0" from="12" pos="2288_1995" belong="0"/>
+		<Map id="15" name="土豆KTV吧" condition="0" multi="1" from="1" pos="392_738" belong="1"/>
+	</island>
+	<island id="2" name="章鱼岛" medal="200018">
+		<Map id="1" name="主街道" condition="0" multi="0" from="0,2,3,4,10,11" pos="712_734,1640_1047,3168_990,4013_1079,2043_1098,2413_1098" belong="0"/>
+		<Map id="2" name="章鱼博物馆" condition="0" multi="0" from="1" pos="71_343" belong="1"/>
+		<Map id="3" name="农家" condition="0" multi="0" from="1" pos="497_785" belong="1"/>
+		<Map id="4" name="古代遗迹" condition="0" multi="0" from="1,5,6,8" pos="48_1109,2173_56,2814_1096,1408_822" belong="1"/>
+		<Map id="5" name="椰子树顶" condition="0" multi="0" from="4" pos="613_1046" belong="0"/>
+		<Map id="6" name="卜拉拉海湾" condition="0" multi="0" from="4,7" pos="59_956,4057_939" belong="0"/>
+		<Map id="7" name="漂流岛" condition="0" multi="0" from="6" pos="67_719" belong="0"/>
+		<Map id="8" name="遗迹入口" condition="0" multi="0" from="4,9" pos="2640_88,84_307" belong="0"/>
+		<Map id="9" name="神庙地牢" condition="0" multi="0" from="8,10" pos="3755_341,78_296" belong="0"/>
+		<Map id="10" name="神庙宝藏库" condition="0" multi="0" from="1,9" pos="180_62,2353_261" belong="0"/>
+		<Map id="11" name="冷饮店" condition="0" multi="1" from="1" pos="478_549" belong="1"/>
+	</island>
+	<island id="3" name="卜克岛" medal="200027">
+		<Map id="1" name="卜克大道" condition="0" multi="0" from="0,2,3,6,8,10" pos="1773_1228,860_1272,68_1494,3765_1494,1542_1469,2221_1494" belong="0"/>
+		<Map id="2" name="艺术博物馆" condition="0" multi="0" from="1" pos="1100_478" belong="1"/>
+		<Map id="3" name="卜克居民区" condition="0" multi="0" from="1,4,9,11" pos="4036_1734,491_318,1497_1734,3599_1613" belong="0"/>
+		<Map id="4" name="豌豆藤蔓" condition="0" multi="0" from="3,5" pos="511_1527,500_113" belong="0"/>
+		<Map id="5" name="云端" condition="0" multi="0" from="4" pos="296_1046" belong="0"/>
+		<Map id="6" name="卜克镇" condition="0" multi="0" from="1,7" pos="98_788,2646_728" belong="0"/>
+		<Map id="7" name="卜克镇地下" condition="0" multi="0" from="6" pos="2263_67" belong="0"/>
+		<Map id="8" name="主街道地下" condition="0" multi="0" from="4,9" pos="474_73,188_1653" belong="0"/>
+		<Map id="9" name="高楼地下" condition="0" multi="0" from="3,8" pos="268_117,2305_2077" belong="0"/>
+		<Map id="10" name="卜克吧" condition="0" multi="1" from="1" pos="555_441" belong="1"/>
+		<Map id="11" name="卜克市政厅" condition="0" multi="1" from="3" pos="823_956" belong="3"/>
+	</island>
+	
+	<island id="4" name="超人岛" medal="200035">
+		<Map id="1" name="超人街" condition="0" multi="0" from="0,5,6,2,13,3,4,7,10,11,12" pos="2725_1564,3200_1818,3714_1818,6122_1824,4729_1705,958_1852,958_1852,958_1852,958_1852,958_1852,958_1852" belong="0"/>
+		<Map id="2" name="金融街" condition="0" multi="0" from="1,7,9,3,12" pos="59_2297,803_2134,2274_2297,4099_2297,3234_299" belong="0"/>
+		<Map id="3" name="中心花园" condition="0" multi="0" from="2,8,4" pos="54_917,1767_916,2041_915" belong="0"/>
+		<Map id="4" name="垃圾处理厂" condition="0" multi="0" from="3" pos="110_2131" belong="0"/>
+		<Map id="5" name="书店" condition="0" multi="0" from="1" pos="1123_485" belong="1"/>
+		<Map id="6" name="衣服店" condition="0" multi="0" from="1" pos="329_398" belong="1"/>
+		<Map id="7" name="银行" condition="0" multi="0" from="2" pos="1478_1256" belong="2"/>
+		<Map id="8" name="地下道" condition="0" multi="0" from="3,11" pos="2542_382,293_856" belong="0"/>
+		<Map id="9" name="地铁站" condition="0" multi="0" from="2,10" pos="124_150,1731_583" belong="0"/>
+		<Map id="10" name="地铁车" condition="0" multi="0" from="9" pos="652_300" belong="9"/>
+		<Map id="11" name="下水道房间" condition="0" multi="0" from="8" pos="193_1230" belong="0"/>
+		<Map id="12" name="摩天大楼" condition="0" multi="0" from="2" pos="1129_3186" belong="0"/>
+		<Map id="13" name="日报社" condition="0" multi="1" from="1" pos="732_1099" belong="1"/>
+	</island>
+	<island id="5" name="时空岛" medal="200063">
+		<Map id="1" name="主街道" condition="0" multi="0" from="0,27,2" pos="305_1908,872_2037,3252_2037" belong="0"/>
+		<Map id="2" name="时间实验室" condition="0" multi="0" from="0,1" pos="1235_1570,1831_1570" belong="1"/>
+		<Map id="3" name="可能的未来" condition="0" multi="0" from="0" pos="3148_2236" belong="0"/>
+		<Map id="4" name="古希腊" condition="0" multi="0" from="0,5" pos="71_2283,1436_851" belong="0"/>
+		<Map id="5" name="阿波罗神庙" condition="0" multi="0" from="4" pos="1933_1164" belong="0"/>
+		<Map id="6" name="北欧海盗" condition="0" multi="0" from="0,7" pos="429_1527,1215_675" belong="0"/>
+		<Map id="7" name="石洞" condition="0" multi="0" from="6" pos="344_1282" belong="6"/>
+		<Map id="8" name="马里帝国" condition="0" multi="0" from="0,9" pos="137_1709,3649_1709" belong="0"/>
+		<Map id="9" name="延巴克图客栈" condition="0" multi="0" from="8" pos="1072_915" belong="8"/>
+		<Map id="10" name="达芬奇" condition="0" multi="0" from="0,11" pos="3194_3235,1053_1650" belong="0"/>
+		<Map id="11" name="工作室室内" condition="0" multi="0" from="10" pos="496_1105" belong="10"/>
+		<Map id="12" name="阿兹特克帝国" condition="0" multi="0" from="0" pos="489_2058" belong="0"/>
+		<Map id="13" name="长城" condition="0" multi="0" from="0" pos="178_1973" belong="0"/>
+		<Map id="14" name="郊外" condition="0" multi="0" from="0,15" pos="177_1550,2674_1453" belong="0"/>
+		<Map id="15" name="葛拉夫的家内" condition="0" multi="0" from="14" pos="589_880" belong="14"/>
+		<Map id="16" name="刘家湾码头" condition="0" multi="0" from="0" pos="186_1100" belong="0"/>
+		<Map id="17" name="工作室外" condition="0" multi="0" from="0,18" pos="2620_1663,1372_1660" belong="0"/>
+		<Map id="18" name="爱迪生的工作室内" condition="0" multi="0" from="17" pos="1191_733" belong="17"/>
+		<Map id="19" name="自由女神像" condition="0" multi="0" from="0,20" pos="474_2240,2895_2273" belong="0"/>
+		<Map id="20" name="工作室" condition="0" multi="19" from="0" pos="419_643" belong="19"/>
+		<Map id="21" name="赤壁" condition="0" multi="0" from="0" pos="3305_988" belong="0"/>
+		<Map id="22" name="恢复的未来" condition="0" multi="0" from="0,26" pos="3105_2786,1406_623" belong="0"/>
+		<Map id="23" name="秦国" condition="0" multi="0" from="0" pos="138_796" belong="0"/>
+		<Map id="24" name="蒙古" condition="0" multi="0" from="0,25" pos="93_1038,2416_707" belong="0"/>
+		<Map id="25" name="将军大帐" condition="0" multi="0" from="24" pos="278_566" belong="24"/>
+		<Map id="26" name="未来的家" condition="0" multi="0" from="22" pos="220_768" belong="0"/>
+		<Map id="27" name="派对大楼" condition="0" multi="1" from="0" pos="422_953" belong="1"/>
+		<Map id="28" name="未来实验室" condition="0" multi="0" from="0" pos="1170_1577" belong="0"/>
+	</island>
+	<island id="6" name="鬼堡岛" medal="200076" time="18:00-20:00">
+		<Map id="1" name="鬼堡室外" condition="0" multi="0" from="0,2" pos="2774_1393,349_1640" belong="0"/>
+		<Map id="2" name="鬼堡地下室" condition="0" multi="0" from="1,3" pos="46_315,1540_663" belong="0"/>
+		<Map id="3" name="鬼堡" condition="0" multi="0" from="2,4" pos="2357_1937,1189_1437" belong="0"/>
+		<Map id="4" name="鬼堡密室" condition="0" multi="0" from="3" pos="269_519" belong="0"/>
+	</island>
+	<island id="7" name="钻石岛" medal="200085">
+		<Map id="1" name="主街道" condition="0" multi="0" from="0,2,5,6,8" pos="3524_757,1739_909,4856_1007,39_1021,5908_998" belong="0"/>
+		<Map id="2" name="帆船大厦" condition="0" multi="0" from="1,4,19,20" pos="1371_1607,2417_671,365_681,2474_1603" belong="1"/>
+		<Map id="3" name="主街道夜景" condition="0" multi="0" from="0,2,5,7,9" pos="3524_757,1739_909,4856_1007,39_1021,5908_998" belong="0"/>
+		<Map id="4" name="副展厅" condition="0" multi="0" from="2,21" pos="1781_589,295_589" belong="2"/>
+		<Map id="5" name="帆船KTV" condition="0" multi="1" from="1" pos="623_867" belong="1"/>
+		<Map id="6" name="海滩" condition="0" multi="0" from="1,16" pos="3994_923,350_895" belong="0"/>
+		<Map id="7" name="海滩夜景" condition="0" multi="0" from="3,16," pos="3994_923,350_895" belong="0"/>
+		<Map id="8" name="市区" condition="0" multi="0" from="1,10,11,12,13" pos="131_1266,1663_1266,5377_1187,3822_1266,6197_1266" belong="0"/>
+		<Map id="9" name="市区夜景" condition="0" multi="0" from="3,10,11,12,14" pos="131_1266,1663_1266,5377_1187,3822_1266,6197_1266" belong="0"/>
+		<Map id="10" name="风筝店" condition="0" multi="0" from="8" pos="627_523" belong="8"/>
+		<Map id="11" name="警察局" condition="0" multi="0" from="8,24" pos="893_967,441_446" belong="8"/>
+		<Map id="12" name="摇滚乐酒吧" condition="0" multi="0" from="8" pos="935_583" belong="8"/>
+		<Map id="13" name="乡间" condition="0" multi="0" from="8,15,16" pos="106_1219,1789_1075,807_1219," belong="0"/>
+		<Map id="14" name="乡间夜景" condition="0" multi="0" from="9,16" pos="106_1219,807_1219" belong="0"/>
+		<Map id="15" name="石头屋" condition="0" multi="0" from="13,17" pos="811_643,1179_763" belong="13"/>
+		<Map id="16" name="矿洞迷宫" condition="0" multi="0" from="7,13,6,25" pos="2164_2120,3472_368,2164_2120,660_340" belong="13"/>
+		<Map id="17" name="地窖" condition="0" multi="0" from="15,22" pos="879_588,2353_487" belong="13"/>
+		<Map id="18" name="保安室" condition="0" multi="0" from="21" pos="1223_551" belong="2"/>
+		<Map id="19" name="实验室" condition="0" multi="0" from="2" pos="1595_537" belong="2"/>
+		<Map id="20" name="迪卜卜办公室" condition="0" multi="0" from="2,23" pos="3102_483,1958_492" belong="2"/>
+		<Map id="21" name="仓库" condition="0" multi="0" from="18,4" pos="1034_579,1942_579" belong="2"/>
+		<Map id="22" name="地下迷宫" condition="0" multi="0" from="17,23" pos="2135_1551,981_341" belong="13"/>
+		<Map id="23" name="地下战斗" condition="0" multi="0" from="22" pos="291_729" belong="13"/>
+		<Map id="24" name="帆船大厦夜景" condition="0" multi="0" from="26" pos="2417_671" belong="0"/>
+		<Map id="25" name="仓库夜景" condition="0" multi="0" from="16,26" pos="183_555,1941_587" belong="24"/>
+		<Map id="26" name="副展厅夜景" condition="0" multi="0" from="25,24" pos="295_589,1793_589" belong="24"/>
+	</island>
+		<island id="8" name="游戏岛" medal="209999">
+		<Map id="1" name="首场景" condition="0" multi="1" from="0" pos="212_1028" belong="0"/>
+	</island>
+
+</Maps>

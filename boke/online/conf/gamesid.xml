@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<games>
+	<game id="1" name="海陆连通" win="5" lose="2" time="40"/>
+	<game id="2" name="篮球对决" win="5" lose="2" time="60"/>
+	<game id="3" name="涂料大战" win="5" lose="2" time="30"/>
+	<game id="4" name="高空跳伞" win="3" lose="1" time="5"/>
+	<game id="5" name="西部射击" win="3" lose="1" time="30"/>
+</games>

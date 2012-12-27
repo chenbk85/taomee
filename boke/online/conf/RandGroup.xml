@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- randbase : 随机基数（百分比还是千分比等），默认100 -->
+<!-- idlist: 获得的物品列表,格式为(id:count) -->
+<!-- proability: 获得该组物品的概率，
+		如果加起来的和超过randbase，则可能只随机到前面的物品
+		如果加起来的和小于randbase，则剩余的表示什么也得不到的概率
+		另外也可以配置idlist=""表示什么也得不到
+-->	
+<!-- 对于一些特殊物品如卜克豆，其ID定义如下：
+		2：卜克豆
+		3：小游戏积分
+-->
+
+<groups>
+	<group id="1" name="道具卡片" randbase="100">
+		<item idlist="2:50" proability="1" />
+		<item idlist="2:10" proability="10" />
+		<item idlist="2:5" proability="17" />
+		<item idlist="2:3" proability="21" />
+		<item idlist="2:2" proability="21" />
+		<item idlist="400008:3" proability="5" />
+		<item idlist="400008:1" proability="10" />
+		<item idlist="400009:3" proability="5" />
+		<item idlist="400009:1" proability="10" />
+	</group>
+</groups>

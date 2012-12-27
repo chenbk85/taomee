@@ -1,0 +1,21 @@
+#!/bin/bash
+function cp_and_start_test {
+	rm  -f ../../bin/liblogin.so
+	cp liblogin.so ../../bin/	
+	../../bin/startup.sh
+
+}
+
+[ -d  ./build  ] ||  mkdir ./build
+cd build
+cmake ../  
+
+if  [ "$?" != "0" ]   ;then
+    rm -rf ../build
+else
+    make
+	if [ "$1" == "1" ]; then
+		cp_and_start_test  
+	fi
+fi
+

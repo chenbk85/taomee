@@ -1,0 +1,347 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import proto_pub
+
+
+
+import sys 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+from pprint import pprint
+#--------------------C++------------------
+def get_py_type( typestr):
+	if proto_pub.g_type_conf.has_key(typestr ) :  
+		return proto_pub.g_type_conf[typestr]  ;
+	else:
+		return typestr;
+
+def get_field_desc( field_name,field_desc="" ):
+	global g_desc_list;
+	if (field_desc=="" ):
+		if g_desc_map.has_key(field_name):
+			return g_desc_map[field_name];
+		else: 
+			return  ""
+	else:
+		return field_desc;
+#------------------------------------READ------------------------------------
+def get_read_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tself.%s=ba.read_%s();\n\t\tif ( self.%s== None): return False;\n"%(
+				field_name,field_type,field_name);
+	else:
+		return "\t\tself.%s=%s();\n\t\tif ( not self.%s.read_from_buf(ba)) :return False;\n"%(
+				field_name, field_type, field_name);
+
+def get_read_arr_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\t\tself.%s.append(ba.read_%s());\n\t\t\tif ( self.%s[i]== None): return False;\n"%(
+				field_name,field_type,field_name);
+	else:
+		return "\t\t\tself.%s.append(%s());\n\t\t\tif ( not self.%s[i].read_from_buf(ba)):return False;\n"%( 
+				field_name,field_type,field_name);
+
+
+
+
+def get_write_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tif ( not ba.write_%s(self.%s)):return False;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\tif ( not isinstance(self.%s,%s)): return False; \n\t\tif ( not self.%s.write_to_buf(ba)): return False;\n"%(field_name,field_type,field_name);
+
+def get_write_arr_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\t\tif ( not ba.write_%s(self.%s[i])):return False;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\t\tif (  not  isinstance(self.%s[i] ,%s) ):return False; \n\t\t\tif ( not self.%s[i].write_to_buf(ba)): return False;\n"%( field_name,field_type, field_name);
+
+def get_echo_field_str(field_name,field_type,desc ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return '\t\tprint tabs+"""/* %s */"""\n\t\tprint tabs+"[%s]=%%s"%%(str(self.%s))\n'%(
+				 get_field_desc(field_name, desc ),	field_name,  field_name
+				);
+	else:
+		return '\t\tprint tabs+"""/* %s */""";\n\t\tprint tabs+"[%s]=>{";\n\t\tself.%s.echo(print_hex,tabs+"    ");\n\t\tprint tabs+"}";\n'%( 
+				 get_field_desc(field_name, desc ),	field_name,  field_name
+				);
+		pass;
+def get_echo_arr_field_str(field_name,field_type,desc ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return '\t\t\tprint tabs+"    [%%d]="%%(i)+str(self.%s[i]); \n'%(field_name );
+	else:
+		return  '\t\t\tprint tabs+"    [%d]=>{"%(i) \n'+'\t\t\tself.%s[i].echo(print_hex,tabs+"    "*2);\n\t\t\tprint tabs+"    }\\n"\n'%(field_name);
+		pass;
+
+
+
+
+def frm_array_str(field_type):
+	if field_type == "char":
+		return ""
+	else:
+		return "=array()"
+
+def get_py_struct_field_str(field ):
+	mode=field.mode;
+	field_str="";
+	read_buf_str="";
+	write_buf_str="";
+	init_str="";
+	echo_str="";
+	if (mode=="single"):
+		#get_field_desc(field.name,field.desc ),  
+		field_str="\t/* %s */\n\t#类型:%s\n\tpublic %s;\n\n"%(
+				get_field_desc(field.name,field.desc ),  
+				field.type ,
+				field.name 
+				)
+		read_buf_str=read_buf_str+get_read_field_str(field.name,field.type);
+		write_buf_str=write_buf_str+get_write_field_str(field.name,field.type);
+		echo_str=echo_str+get_echo_field_str(field.name,field.type,field.desc);
+
+
+	elif (mode=="array"):
+		field_str="\t/* %s */\n\t#定长数组,长度:%s, 类型:%s \n\tpublic %s %s;\n\n"%(
+				get_field_desc(field.name,field.desc ),  
+				field.size,
+				get_py_type(field.type), 
+				field.name ,
+				frm_array_str(field.type)
+				)
+		if (field.type=="char"):
+			read_buf_str=read_buf_str+"\t\tself.%s=ba.read_buf(%s);\n\t\tif( self.%s==None ): return False;\n"%(field.name, field.size,field.name  )
+			write_buf_str=write_buf_str+"\t\tba.write_buf(self.%s,%s);\n"%(field.name, field.size  )
+			echo_str=echo_str+'\t\tprint tabs+"""/* %s */"""\n\t\ttmp_str=str(self.%s);\n\t\tif(print_hex):tmp_str=bin2hex(tmp_str)\n\t\tprint tabs+"[%s]=%%s"%%(tmp_str)\n'%(
+					get_field_desc(field.name,field.desc ),  field.name,  field.name);
+
+		else:
+			read_buf_str=read_buf_str+"""\t\tself.%s=[];\n\t\tfor i in range(%s):\n%s\n"""%( field.name,field.size, get_read_arr_field_str(field.name,field.type ) )
+			write_buf_str=write_buf_str+"\t\tif(len(self.%s)<>%s):return False; \n\t\tfor i in range(%s):\n%s\n"%(field.name,field.size ,field.size, get_write_arr_field_str(field.name,field.type ) )
+			echo_str=echo_str+'\t\tprint tabs+"""#%s"""\n\t\tprint tabs+"[%s]=>{";\n\t\tfor i in range(%s):\n%s\n\t\tprint tabs+"}"\n'%( get_field_desc(field.name,field.desc ), field.name,field.size, get_echo_arr_field_str(field.name,field.type,field.desc ) )
+
+	elif (mode=="varlist"):
+		field_str="\t/*%s*/\n\t#变长数组,最大长度:%s, 类型:%s\n\tpublic %s %s;\n\n"%(
+				get_field_desc(field.name,field.desc ),  
+				field.max_size,
+				get_py_type(field.type), 
+				field.name,
+				frm_array_str(field.type)
+				);
+
+		read_buf_str=read_buf_str+"""
+		%s_count= ba.read_uint32();
+		if ( %s_count==None ): return False;
+		if (%s_count>%s):return False;\n"""%(field.name, field.name,field.name,field.max_size)
+		if (field.type=="char"):
+			read_buf_str=read_buf_str+"\t\tself.%s=ba.read_buf(%s_count);\n\t\tif( self.%s==None ):return False;\n"%(field.name,field.name,field.name   )
+			write_buf_str=write_buf_str+"""\t\t%s_count=len(self.%s);
+		if (%s_count>%s ):return False; 
+		ba.write_uint32(%s_count);
+		ba.write_buf(self.%s,%s_count);\n""" %(field.name,field.name,field.name,field.max_size, 
+				field.name,field.name,field.name  )
+			echo_str=echo_str+'\t\tprint tabs+"""/* %s */"""\n\t\tprint tabs+"[%s]=%%s"%%(str(self.%s))\n'%(
+					get_field_desc(field.name,field.desc ),  field.name,  field.name);
+					
+		else:
+			read_buf_str=read_buf_str+"\t\tself.%s=[];\n\t\tfor i in range(%s_count):\n%s\n"%( field.name ,field.name ,get_read_arr_field_str(field.name,field.type ) )
+			write_buf_str=write_buf_str+"""\t\t%s_count=len(self.%s);
+		if (%s_count>%s ): return False; 
+		ba.write_uint32(%s_count);
+		for i in range(%s_count):\n%s\n"""%( field.name,field.name,field.name,
+			field.max_size, field.name,field.name , get_write_arr_field_str(field.name,field.type ) )
+
+			echo_str=echo_str+"""\t\tprint tabs+"#%s"\n\t\tprint tabs+"[%s]=>{";\n\t\tfor i in range(len(self.%s)):\n%s\n\t\tprint tabs+'}'\n"""%( get_field_desc(field.name,field.desc ), field.name,field.name, get_echo_arr_field_str(field.name,field.type,field.desc ) )
+			
+
+	else:
+	 	sys.stdout.write("error field type:%s"%(mode));
+		sys.exit(1);
+	return field_str,read_buf_str,write_buf_str,init_str,echo_str;
+
+#结构体的函数构造
+struct_func_src_map={ }
+#生成结构体代码
+def get_py_struct_src(struct):
+	global struct_func_src_map
+	field_str=""
+	read_buf_str=""
+	write_buf_str=""
+	init_str=""
+	echo_str=""
+	field_name_list=""
+	cp_name_list=""
+	for field in  struct.field:
+		field_name=field.name;
+		field_name_list=field_name_list+","+field_name;
+		cp_name_list=cp_name_list +"\n\t\tpri_in.%s=%s"%(field_name,field_name);
+		#---------------------------------
+		tmp_field_str,tmp_read_buf_str,tmp_write_buf_str,tmp_init_str,tmp_echo_str=get_py_struct_field_str(field)
+		field_str=field_str+tmp_field_str
+		read_buf_str=read_buf_str+tmp_read_buf_str
+		write_buf_str=write_buf_str+tmp_write_buf_str
+		init_str=init_str+tmp_init_str
+		echo_str=echo_str+tmp_echo_str
+	struct_func_src_map[struct.name]={ "field_name_list":field_name_list ,"cp_name_list":cp_name_list,"field_list_desc":tmp_field_str }	
+
+	return """
+class %s :
+	\"\"\"
+参数列表:
+%s
+	\"\"\"
+
+	def read_from_buf(self, ba ):
+%s
+		return True;
+
+
+	def write_to_buf(self,ba):
+%s		return True;
+	
+ 
+	def echo(self, print_hex=False,tabs="" ):
+%s		
+		pass;
+	
+
+
+
+"""%( struct.name,field_str,read_buf_str,write_buf_str ,echo_str);
+
+#----------------------------------------
+def get_message_type(msg_type ):
+	if (msg_type=="" ) : return "Cmessage";
+	else: return msg_type;
+#----------------------------------------
+
+import sys 
+import optparse
+
+#得到配置项
+p = optparse.OptionParser(
+		description='gen proto  code  ',
+		prog="py_proto",
+		version='%prog 0.1',
+		usage='%prog [ -o output_dir ] [-p project_name ]  proxy.xml' )
+
+p.add_option('-o', '--output_dir', default="./python/", help='文件输出位置'  );
+p.add_option('-p', '--project_name', default="", help='项目名,如果不写,由xml中得到'  );
+
+options, arguments = p.parse_args()	
+project_name=options.project_name;
+
+
+if len(arguments) != 1 :
+	p.print_help();
+	sys.exit();
+config_xml=arguments[0];  
+
+fp=open(config_xml,"r" )
+xml_str=fp.read();
+pro=proto_pub.xml2obj(xml_str)
+e_list=pro.error_list;
+s_list=pro.struct_list;
+p_list=pro.protocol_list;
+d_list=pro.desc_list;
+if project_name=="" :
+	project_name=pro.project_name;
+
+g_desc_map={ }
+for field in d_list.field_desc :
+	g_desc_map[field.key]=field.desc;
+
+
+
+pro_file_name="%s/%s_proto.py"%(options.output_dir, project_name)
+pro_fd=open(pro_file_name,"w" );
+pro_fd.write("# -*- coding: utf-8 -*-\n");
+pro_fd.write("""
+hexchars="0123456789ABCDEF"
+def dit2hex(ch):
+	i=ord(ch) # get its integral value.
+	leftnib=i>>4
+	rightnib=i & 0xf
+	leftchar=hexchars[leftnib]
+	rightchar=hexchars[rightnib]
+	return leftchar+rightchar+" "
+	
+def bin2hex(str):
+	retvalue=""  # return value is empty until we add to it...
+	for s in str:
+		hexchars=dit2hex(s)
+		retvalue=retvalue+hexchars
+		pass
+	return retvalue
+
+		""");
+
+for struct in s_list.struct:
+	if struct.same_as_struct:
+		pro_fd.write("""class %s (%s) : pass\n"""%(struct.name ,struct.same_as_struct));
+	else:	
+		struct_str=get_py_struct_src(struct);
+		pro_fd.write(struct_str);
+cmd_str=""
+function_list_str=""
+for item in p_list.protocol:
+
+	in_str="None"
+	if (item.struct_in):	
+		in_str=item.struct_in
+	pri_in_type_str="None";
+	func_arg_list="";
+	cp_name_list="";
+	field_list_desc=""
+	if in_str<>"None":
+		pri_in_type_str=in_str+"()";
+		func_arg_list=struct_func_src_map[in_str]["field_name_list"];
+		cp_name_list=struct_func_src_map[in_str]["cp_name_list"];
+		field_list_desc=struct_func_src_map[in_str]["field_list_desc"];
+
+
+	out_str="None"
+	if (item.struct_out):	
+		out_str=item.struct_out
+
+	function_list_str=function_list_str+"""
+	def %s(self %s ):
+		\"\"\"
+%s:
+%s
+	\"\"\"
+		pri_in=%s;
+%s
+		self.sendmsg(%s, pri_in );
+		pass
+"""%(item.name, func_arg_list ,item.desc,field_list_desc,pri_in_type_str,  cp_name_list,item.cmd )
+
+	cmd_str=cmd_str+"""cmd_map[%s]=(%s,'%s',%s,%s,%s)\n"""%(item.cmd, item.cmd ,item.name,  in_str,out_str,item.md5_tag)
+	 
+
+pro_fd.write( """
+create_time='%s'
+cmd_map={ }
+%s	
+def init_cmd_map():
+	pass
+
+try:
+	import %s_proto_base
+	base_type=%s_proto_base.C%s_proto_base
+except:
+	base_type=object
+	pass
+
+
+class C%s_proto (base_type):
+	def __init__(self,ip,port):
+		%s_proto_base.C%s_proto_base.__init__(self,ip,port)
+%s
+
+"""%(pro.create_time ,cmd_str, project_name,project_name,project_name, project_name,project_name  ,project_name, function_list_str ));
+

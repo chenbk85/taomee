@@ -1,0 +1,7 @@
+<Games>
+	<Game ID="1" Name="摩尔" IP="10.1.1.145" Port="4433" />
+	<Game ID="12" Name="卜克" IP="10.1.1.101" Port="4418" />
+	<!--
+	<Game ID="1" Name="摩尔" IP="192.168.0.90" Port="4431" />
+	-->
+</Games>

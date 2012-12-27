@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $(dirname $0 )
+
+project_name=userinfo
+source_dir=~/userinfo/trunk/
+./gendoc.sh $project_name  $source_dir
+
+

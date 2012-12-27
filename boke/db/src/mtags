@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $(dirname $0)
+[ -d ./.pchdir ] || mkdir ./.pchdir
+rm tags
+find . -name "*.h" -o -name "*.c" -o -name "*.cpp" > cscope.files
+cscope -bkq -i cscope.files
+ctags -R  --languages=c,c++ --c++-kinds=+p --fields=+iaS --extra=+q . 
+

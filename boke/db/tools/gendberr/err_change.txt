@@ -1,0 +1,5 @@
+#由于错误码从代码中生成会和实际不一致,可以编辑该文件
+#错误码生成修正
+#命令名称  +要增加错误码   -要去掉的错误码
+#user_task_reward_set_cp +USER_ID_NOFIND_ERR -USER_ID_EXTISTED_ERR
+#则生成的user_task_reward_set_cp 里将会加上USER_ID_NOFIND_ERR，去掉USER_ID_EXTISTED_ERR

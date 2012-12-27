@@ -1,0 +1,1830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--装扮clothType：1头部装饰,2头发,3眼前装饰,4眼睛,5嘴巴,6脸部装饰,7手持道具,8上衣,9胸前装饰,10腰带,11裤子,12背部装饰-->
+<!--change：0不能换，1可以换-->
+<!--specialKind：1长裤，2长袍，3头部装饰穿戴后去掉头发，4脸部装饰穿戴后去掉头发,5眼睛装饰去掉头发-->
+<!--解谜卡片type：1信息类卡片,2收集品类卡片,3自动使用类卡片，4自动使用类装扮 5碎片类卡片 6不显示的信息 7读取信息卡片 8计数卡片-->
+<!--11非自动使用类卡片,12书籍类卡片,13数据信息类卡片,14整套装扮类-->
+<!--21装扮道具类-->
+<!--道具卡片type：(1 button / use)101使用后场景效果 102对他人使用的效果卡片  103访问场景  104系统功能卡片-->
+<!--(2 button / open close / key)111自身效果 112口香糖-->
+<!--(2 button / open close)113跟随物 114持续全屏效果道具 115特殊功能卡片  116人物变身效果-->
+<!--(2 button / wear off / key)121手部人物动画道具 122手部场景动画道具  123手部场景改变道具-->
+<!--服装卡片、道具卡片source:0、未开放 1、在售 2、下架 3、vip购买 4、运营活动-->
+<!--type:1、套装加载人物形象   2、单件不加载人物形象-->
+<!--游戏卡片 type：1单人游戏  2对战游戏  3即单人也对战-->
+<items>
+	<kind id="1" name="装扮" start="100001" end="199999" max="1" path="resource/cloth/icon/">
+		<item id="100001" name="男眼睛" change="0" clothtype="4" specialkind="0"/>
+		<item id="100002" name="女眼睛" change="1" clothtype="4" specialkind="0"/>
+		<item id="100003" name="男嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100004" name="女嘴巴" change="1" clothtype="5" specialkind="2"/>
+		<item id="100005" name="黒德拉怪博士头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100006" name="黒德拉怪博士眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100007" name="黒德拉怪博士嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100008" name="土豆乞丐头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100009" name="土豆乞丐上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100010" name="土豆乞丐裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100011" name="土豆乞丐脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100012" name="土豆乞丐嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100013" name="阳光男孩裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100014" name="阳光男孩脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100015" name="阳光男孩上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100016" name="阳光男孩头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100017" name="阳光男孩腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100018" name="阳光男孩嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100019" name="睡衣装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100020" name="睡衣装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100021" name="睡衣装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100022" name="睡衣装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100023" name="睡衣装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100024" name="睡衣装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100025" name="睡衣装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100026" name="黑超酷炫装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100027" name="黑超酷炫装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100028" name="黑超酷炫装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100029" name="黑超酷炫装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100030" name="黑超酷炫装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100031" name="黑超酷炫装腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100032" name="黑超酷炫装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100033" name="红帽子裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100034" name="红帽子脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100035" name="红帽子上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100036" name="红帽子头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100037" name="红帽子腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100038" name="红帽子嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100039" name="萝莉装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100040" name="萝莉装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100041" name="萝莉装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100042" name="萝莉装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100043" name="萝莉装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100044" name="萝莉装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100045" name="黒德拉怪博士头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100046" name="黒德拉怪博士眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100047" name="黒德拉怪博士嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100048" name="黒德拉怪博士裙子" change="1" clothtype="8" specialkind="0"/>
+		<item id="100049" name="黒德拉怪博士脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100050" name="黒德拉怪博士道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100051" name="厨师道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100052" name="厨师前层头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100053" name="厨师上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100054" name="厨师头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="100055" name="厨师嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100056" name="村长道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100057" name="村长裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100058" name="村长脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100059" name="村长上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100060" name="村长头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100061" name="农夫道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100062" name="农夫脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100063" name="农夫上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100064" name="农夫头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100065" name="女服务员裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100066" name="女服务员头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100067" name="女服务员上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100068" name="女服务员头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="100069" name="女服务员眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100070" name="女服务员嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100071" name="五金店老板娘脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100072" name="五金店老板娘前层头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100073" name="五金店老板娘上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100074" name="五金店老板娘眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100075" name="五金店老板娘嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100076" name="撬棍" change="0" clothtype="7" specialkind="0"/>
+		<item id="100077" name="女服务员手持道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100078" name="土豆岛勋章" change="0" clothtype="9" specialkind="0"/>
+		<item id="100079" name="章鱼岛草裙" change="0" clothtype="11" specialkind="0"/>
+		<item id="100080" name="章鱼岛勋章" change="0" clothtype="9" specialkind="0"/>
+		<item id="100081" name="章鱼头套" change="0" clothtype="1" specialkind="3"/>
+		<item id="100082" name="被控制的人-头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100083" name="被控制的人-眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100084" name="被控制的人-甲裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100085" name="被控制的人-甲前层头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100086" name="被控制的人-甲上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100087" name="被控制的人-甲嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100088" name="被控制的人-乙头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100089" name="被控制的人-乙裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100090" name="被控制的人-乙后上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100091" name="被控制的人-乙嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100092" name="被控制的人-丙头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100093" name="被控制的人-丙裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100094" name="被控制的人-丙上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100095" name="被控制的人-丙嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100096" name="被控制的人-丁头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100097" name="被控制的人-丁裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100098" name="被控制的人-丁上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100099" name="被控制的人-丁嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100100" name="埃及法老装背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="100101" name="埃及法老装道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100102" name="埃及法老装裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100103" name="埃及法老装脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100104" name="埃及法老装头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100105" name="埃及法老装胸前装饰" change="1" clothtype="9" specialkind="0"/>
+		<item id="100106" name="埃及法老装眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100107" name="爱因斯坦装头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100108" name="爱因斯坦装裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100109" name="爱因斯坦装脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100110" name="爱因斯坦装上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100111" name="哈利波特装背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="100112" name="哈利波特装道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100113" name="哈利波特装头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100114" name="哈利波特装裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100115" name="哈利波特装上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100116" name="哈利波特装眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100117" name="哈利波特装嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100118" name="兔子装脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100119" name="兔子装嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100120" name="兔子装上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100121" name="兔子装头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100122" name="小丑装头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100123" name="小丑装上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100124" name="小丑装头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100125" name="小丑装胸前装饰" change="1" clothtype="9" specialkind="0"/>
+		<item id="100126" name="小丑装眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100127" name="小丑装嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100128" name="暂无道具" change="0" clothtype="0" specialkind="0"/>
+		<item id="100129" name="卜克岛金牌" change="0" clothtype="9" specialkind="0"/>
+		<item id="100130" name="蝙蝠人背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="100131" name="蝙蝠人道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100132" name="蝙蝠人裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100133" name="蝙蝠人上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100134" name="蝙蝠人头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100135" name="蝙蝠人嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100136" name="博物馆游客头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100137" name="博物馆游客裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100138" name="博物馆游客上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100139" name="博物馆游客头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="100140" name="博物馆游客眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100141" name="博物馆游客嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100142" name="岛民道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100143" name="岛民头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100144" name="岛民裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100145" name="岛民上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100146" name="岛民眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100147" name="岛民嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100148" name="钓鱼者道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100149" name="钓鱼者裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100150" name="钓鱼者脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100151" name="钓鱼者上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100152" name="钓鱼者头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100153" name="钓鱼者嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100154" name="密码门口的旅行者背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="100155" name="密码门口的旅行者道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100156" name="密码门口的旅行者头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100157" name="密码门口的旅行者裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100158" name="密码门口的旅行者脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100159" name="密码门口的旅行者上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100160" name="密码门口的旅行者嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100161" name="丢密码的旅行者背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="100162" name="丢密码的旅行者道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100163" name="丢密码的旅行者头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100164" name="丢密码的旅行者裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100165" name="丢密码的旅行者上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100166" name="丢密码的旅行者眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100167" name="丢密码的旅行者腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100168" name="丢密码的旅行者嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100169" name="卖草裙的人头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100170" name="卖草裙的人裤子" change="0" clothtype="10" specialkind="0"/>
+		<item id="100171" name="卖草裙的人脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100172" name="卖草裙的人上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100173" name="卖草裙的人眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100174" name="卖草裙的人嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100175" name="卖椰汁的小贩道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100176" name="卖椰汁的小贩头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100177" name="卖椰汁的小贩脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100178" name="卖椰汁的小贩裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100179" name="卖椰汁的小贩胸前装扮" change="1" clothtype="9" specialkind="0"/>
+		<item id="100180" name="卖椰汁的小贩嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100181" name="失败的探索者裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100182" name="失败的探索者头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100183" name="失败的探索者上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100184" name="失败的探索者眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100185" name="失败的探索者嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100186" name="送章鱼帽的人裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100187" name="送章鱼帽的人上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100188" name="送章鱼帽的人头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100189" name="送章鱼帽的人嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100190" name="土著神医道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100191" name="土著神医裤子" change="0" clothtype="10" specialkind="0"/>
+		<item id="100192" name="土著神医上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100193" name="土著神医头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="100194" name="兄弟A道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100195" name="兄弟A头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100196" name="兄弟A裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100197" name="兄弟A脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100198" name="兄弟A上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100199" name="兄弟A嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100200" name="兄弟B道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100201" name="兄弟B头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100202" name="兄弟B裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100203" name="兄弟B脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100204" name="兄弟B上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100205" name="兄弟B嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100206" name="一个妈妈道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100207" name="一个妈妈头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100208" name="一个妈妈裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100209" name="一个妈妈上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100210" name="一个妈妈眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100211" name="一个妈妈嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100212" name="中年人裤子" change="1" clothtype="11" specialkind="1"/>
+		<item id="100213" name="中年人脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100214" name="中年人头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100215" name="中年人眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100216" name="中年人嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100217" name="超人装背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="100218" name="超人装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100219" name="超人装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100220" name="超人装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100221" name="超人装腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100222" name="超人装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100223" name="汉堡装脸部装饰" change="0" clothtype="6" specialkind="3"/>
+		<item id="100224" name="剪刀手爱德华装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100225" name="剪刀手爱德华装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100226" name="剪刀手爱德华装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100227" name="剪刀手爱德华装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100228" name="剪刀手爱德华上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100229" name="剪刀手爱德华装腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100230" name="剪刀手爱德华装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100231" name="猫耳女装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100232" name="猫耳女装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100233" name="猫耳女装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100234" name="猫耳女装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100235" name="猫耳女装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100236" name="猫耳女装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100237" name="猫耳女装胸前装饰" change="0" clothtype="9" specialkind="0"/>
+		<item id="100238" name="猫耳女装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100239" name="蘑菇装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100240" name="蘑菇装脸部装饰" change="0" clothtype="6" specialkind="4"/>
+		<item id="100241" name="朋克女装背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="100242" name="朋克女装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100243" name="朋克女装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100244" name="朋克女装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100245" name="朋克女装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100246" name="朋克女装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100247" name="朋克女装胸前装饰" change="0" clothtype="9" specialkind="0"/>
+		<item id="100248" name="朋克女装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100249" name="朋克女装腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100250" name="朋克女装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100251" name="老虎装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100252" name="老虎装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100253" name="老虎装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100254" name="老虎装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100255" name="吸血鬼装背后装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="100256" name="吸血鬼装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100257" name="吸血鬼装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100258" name="吸血鬼装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100259" name="吸血鬼装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100260" name="吸血鬼装腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100261" name="小恐龙装头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100262" name="小恐龙装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100263" name="熊装脸部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100264" name="熊装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100265" name="熊装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100266" name="椰子装脸部装饰" change="0" clothtype="6" specialkind="4"/>
+		<item id="100267" name="海盗装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100268" name="海盗装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100269" name="海盗装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100270" name="海盗装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100271" name="海盗装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100272" name="海盗装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100273" name="海盗装胸前装饰" change="0" clothtype="9" specialkind="0"/>
+		<item id="100274" name="海盗装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100275" name="海盗装腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100276" name="海盗装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100277" name="巴西队服装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100278" name="巴西队服装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100279" name="巴西队服装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100280" name="巴西队服装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100281" name="棒球装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100282" name="棒球装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100283" name="棒球装头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100284" name="棒球装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100285" name="冰激凌装脸部装饰" change="0" clothtype="6" specialkind="4"/>
+		<item id="100286" name="冰激凌装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100287" name="冰激凌装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100288" name="公主装头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100289" name="公主装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100290" name="公主装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100291" name="公主装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100292" name="鸡装头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100293" name="鸡装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100294" name="鸡装胸前装饰" change="0" clothtype="9" specialkind="0"/>
+		<item id="100295" name="鸡装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100296" name="鸡装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100297" name="猫装脸部装饰" change="0" clothtype="6" specialkind="4"/>
+		<item id="100298" name="猫装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100299" name="猫装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100300" name="中年人上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100301" name="大力水手装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100302" name="大力水手装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100303" name="大力水手装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100304" name="大力水手装头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100305" name="大力水手装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100306" name="达芬奇道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100307" name="达芬奇头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100308" name="达芬奇脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100309" name="达芬奇上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100310" name="达芬奇头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100311" name="达芬奇嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100312" name="地下的人1道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100313" name="地下的人1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100314" name="地下的人1裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100315" name="地下的人1脸部" change="0" clothtype="6" specialkind="0"/>
+		<item id="100316" name="地下的人1上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100317" name="地下的人1眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100318" name="地下的人2头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100319" name="地下的人2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100320" name="地下的人2上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100321" name="地下的人2头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="100322" name="地下的人2眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100323" name="地下的人2嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100324" name="梵高道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100325" name="梵高裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100326" name="梵高脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100327" name="梵高上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100328" name="梵高头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100329" name="卖气球的小丑裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100330" name="卖气球的小丑脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100331" name="卖气球的小丑上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100332" name="卖气球的小丑头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="100333" name="卖气球的小丑嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100334" name="市区里的老居民裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100335" name="市区里的老居民脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100336" name="市区里的老居民上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100337" name="市区里的老居民头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100338" name="市区里的老居民眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100339" name="市区里的老居民腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100340" name="市区里的老居民嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100341" name="乡镇居民甲道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100342" name="乡镇居民甲头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100343" name="乡镇居民甲裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100344" name="乡镇居民甲脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100345" name="乡镇居民甲上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100346" name="乡镇居民甲嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100347" name="乡镇居民乙裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100348" name="乡镇居民乙脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100349" name="乡镇居民乙上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100350" name="乡镇居民乙头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="100351" name="乡镇居民乙眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100352" name="乡镇居民乙嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100353" name="乡镇老人道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100354" name="乡镇老人头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100355" name="乡镇老人裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100356" name="乡镇老人脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100357" name="乡镇老人上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100358" name="乡镇老人嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100359" name="想拯救乡镇的人头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100360" name="想拯救乡镇的人裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100361" name="想拯救乡镇的人脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100362" name="想拯救乡镇的人上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100363" name="想拯救乡镇的人嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100364" name="徐悲鸿道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100365" name="徐悲鸿头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100366" name="徐悲鸿上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100367" name="徐悲鸿嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100368" name="养奶牛妇女的孩子头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100369" name="养奶牛妇女的孩子裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100370" name="养奶牛妇女的孩子上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100371" name="养奶牛妇女的孩子眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100372" name="养奶牛妇女的孩子嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100373" name="一般居民背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="100374" name="一般居民头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100375" name="一般居民裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100376" name="一般居民上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100377" name="一般居民胸前装饰" change="1" clothtype="9" specialkind="0"/>
+		<item id="100378" name="一般居民眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100379" name="一般居民嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100380" name="一般居民2头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100381" name="一般居民2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100382" name="一般居民2上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100383" name="一般居民2眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100384" name="一般居民2腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100385" name="一般居民2嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100386" name="一般居民3头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100387" name="一般居民3裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100388" name="一般居民3脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100389" name="一般居民3上衣眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100390" name="一般居民3嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100391" name="一个乡镇妇女头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100392" name="一个乡镇妇女脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100393" name="一个乡镇妇女上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100394" name="一个乡镇妇女头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="100395" name="一个乡镇妇女眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="100396" name="一个乡镇妇女嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100397" name="张大千道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100398" name="张大千头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100399" name="张大千脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100400" name="张大千上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100401" name="张大千眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100402" name="张大千嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100403" name="一般居民3上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100404" name="新手男头发1" change="1" clothtype="2" specialkind="0"/>
+		<item id="100405" name="新手男头发2" change="1" clothtype="2" specialkind="0"/>
+		<item id="100406" name="新手男头发3" change="1" clothtype="2" specialkind="0"/>
+		<item id="100407" name="新手男头发4" change="1" clothtype="2" specialkind="0"/>
+		<item id="100408" name="新手男头发5" change="1" clothtype="2" specialkind="0"/>
+		<item id="100409" name="新手男头发6" change="1" clothtype="2" specialkind="0"/>
+		<item id="100410" name="新手男头发7" change="1" clothtype="2" specialkind="0"/>
+		<item id="100411" name="新手男头发8" change="1" clothtype="2" specialkind="0"/>
+		<item id="100412" name="新手男头发9" change="1" clothtype="2" specialkind="0"/>
+		<item id="100413" name="新手男头发10" change="1" clothtype="2" specialkind="0"/>
+		<item id="100414" name="新手女头发1" change="1" clothtype="2" specialkind="0"/>
+		<item id="100415" name="新手女头发2" change="1" clothtype="2" specialkind="0"/>
+		<item id="100416" name="新手女头发3" change="1" clothtype="2" specialkind="0"/>
+		<item id="100417" name="新手女头发4" change="1" clothtype="2" specialkind="0"/>
+		<item id="100418" name="新手女头发5" change="1" clothtype="2" specialkind="0"/>
+		<item id="100419" name="新手女头发6" change="1" clothtype="2" specialkind="0"/>
+		<item id="100420" name="新手女头发7" change="1" clothtype="2" specialkind="0"/>
+		<item id="100421" name="新手女头发8" change="1" clothtype="2" specialkind="0"/>
+		<item id="100422" name="新手女头发9" change="1" clothtype="2" specialkind="0"/>
+		<item id="100423" name="新手女头发10" change="1" clothtype="2" specialkind="0"/>
+		<item id="100424" name="新手男上衣1" change="1" clothtype="8" specialkind="0"/>
+		<item id="100425" name="新手男上衣2" change="1" clothtype="8" specialkind="0"/>
+		<item id="100426" name="新手男上衣3" change="1" clothtype="8" specialkind="0"/>
+		<item id="100427" name="新手男上衣4" change="1" clothtype="8" specialkind="0"/>
+		<item id="100428" name="新手男上衣5" change="1" clothtype="8" specialkind="0"/>
+		<item id="100429" name="新手男上衣6" change="1" clothtype="8" specialkind="0"/>
+		<item id="100430" name="新手男上衣7" change="1" clothtype="8" specialkind="0"/>
+		<item id="100431" name="新手男上衣8" change="1" clothtype="8" specialkind="0"/>
+		<item id="100432" name="新手男上衣9" change="1" clothtype="8" specialkind="0"/>
+		<item id="100433" name="新手男上衣10" change="1" clothtype="8" specialkind="0"/>
+		<item id="100434" name="新手女上衣1" change="1" clothtype="8" specialkind="0"/>
+		<item id="100435" name="新手女上衣2" change="1" clothtype="8" specialkind="0"/>
+		<item id="100436" name="新手女上衣3" change="1" clothtype="8" specialkind="0"/>
+		<item id="100437" name="新手女上衣4" change="1" clothtype="8" specialkind="0"/>
+		<item id="100438" name="新手女上衣5" change="1" clothtype="8" specialkind="0"/>
+		<item id="100439" name="新手女上衣6" change="1" clothtype="8" specialkind="0"/>
+		<item id="100440" name="新手女上衣7" change="1" clothtype="8" specialkind="0"/>
+		<item id="100441" name="新手女上衣8" change="1" clothtype="8" specialkind="0"/>
+		<item id="100442" name="新手女上衣9" change="1" clothtype="8" specialkind="0"/>
+		<item id="100443" name="新手女上衣10" change="1" clothtype="8" specialkind="0"/>
+		<item id="100444" name="新手男裤子1" change="1" clothtype="11" specialkind="0"/>
+		<item id="100445" name="新手男裤子2" change="1" clothtype="11" specialkind="0"/>
+		<item id="100446" name="新手男裤子3" change="1" clothtype="11" specialkind="0"/>
+		<item id="100447" name="新手男裤子4" change="1" clothtype="11" specialkind="0"/>
+		<item id="100448" name="新手男裤子5" change="1" clothtype="11" specialkind="0"/>
+		<item id="100449" name="新手男裤子6" change="1" clothtype="11" specialkind="0"/>
+		<item id="100450" name="新手男裤子7" change="1" clothtype="11" specialkind="0"/>
+		<item id="100451" name="新手男裤子8" change="1" clothtype="11" specialkind="0"/>
+		<item id="100452" name="新手男裤子9" change="1" clothtype="11" specialkind="0"/>
+		<item id="100453" name="新手男裤子10" change="1" clothtype="11" specialkind="0"/>
+		<item id="100454" name="新手女裤子1" change="1" clothtype="11" specialkind="0"/>
+		<item id="100455" name="新手女裤子2" change="1" clothtype="11" specialkind="0"/>
+		<item id="100456" name="新手女裤子3" change="1" clothtype="11" specialkind="0"/>
+		<item id="100457" name="新手女裤子4" change="1" clothtype="11" specialkind="0"/>
+		<item id="100458" name="新手女裤子5" change="1" clothtype="11" specialkind="0"/>
+		<item id="100459" name="新手女裤子6" change="1" clothtype="11" specialkind="0"/>
+		<item id="100460" name="新手女裤子7" change="1" clothtype="11" specialkind="0"/>
+		<item id="100461" name="新手女裤子8" change="1" clothtype="11" specialkind="0"/>
+		<item id="100462" name="新手女裤子9" change="1" clothtype="11" specialkind="0"/>
+		<item id="100463" name="新手女裤子10" change="1" clothtype="11" specialkind="0"/>
+		<item id="100464" name="落雷手杖" change="0" clothtype="7" specialkind="0"/>
+		<item id="100465" name="吸血鬼装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100466" name="小恐龙嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100467" name="法老装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100468" name="绚丽烟花" change="0" clothtype="7" specialkind="0"/>
+		<item id="100469" name="陨石手杖" change="0" clothtype="7" specialkind="0"/>
+		<item id="100470" name="公主装裙子" change="0" clothtype="11" specialkind="2"/>
+		<item id="100471" name="宝宝装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100472" name="宝宝装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100473" name="宝宝装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100474" name="无此道具2" change="0" clothtype="2" specialkind="0"/>
+		<item id="100475" name="宝宝装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100476" name="宝宝装头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="100477" name="宝宝装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100478" name="宝宝装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100479" name="兔装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100480" name="兔少女装头发" change="0" clothtype="2" specialkind="3"/>
+		<item id="100481" name="兔少女装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100482" name="兔少女装上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100483" name="兔少女装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100484" name="兔少女装眼部装饰" change="0" clothtype="4" specialkind="0"/>
+		<item id="100485" name="兔少女装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100486" name="卜克市市长头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100487" name="卜克市市长脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100488" name="卜克市市长上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100489" name="卜克市市长头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100490" name="卜克市市长眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100491" name="卜克市市长嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100492" name="藤原千雪道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100493" name="藤原千雪头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100494" name="藤原千雪上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100495" name="藤原千雪眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100496" name="藤原千雪嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100497" name="橄榄球装裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100498" name="女祭司头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100499" name="女祭司上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100500" name="女祭司腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100501" name="女祭司道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100502" name="女祭司眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100503" name="女祭司嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100504" name="维京海盗1头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100505" name="维京海盗1头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100506" name="维京海盗1嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100507" name="维京海盗1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100508" name="维京海盗1的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100509" name="维京海盗1披风" change="1" clothtype="12" specialkind="0"/>
+		<item id="100510" name="维京海盗1道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100511" name="维京海盗1腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100512" name="维京海盗2头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100513" name="维京海盗2胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100514" name="维京海盗2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100515" name="维京海盗2上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100516" name="维京海盗2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100517" name="维京海盗2道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100518" name="维京海盗2披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="100519" name="维京海盗3头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100520" name="维京海盗3胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100521" name="维京海盗3衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100522" name="维京海盗3裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100523" name="维京海盗3头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100524" name="维京海盗3道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100525" name="维京海盗3披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="100526" name="维京海盗3嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100527" name="维京海盗2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100528" name="维京海盗3腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100529" name="阿兹特克国王头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100530" name="无此物品" change="0" clothtype="8" specialkind="0"/>
+		<item id="100531" name="阿兹特克国王脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100532" name="阿兹特克国王衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100533" name="阿兹特克国王裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100534" name="阿兹特克国王头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100535" name="阿兹特克国王腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100536" name="阿兹特克巫师头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100537" name="阿兹特克巫师头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100538" name="阿兹特克国王嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100539" name="阿兹特克巫师衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100540" name="阿兹特克巫师裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100541" name="阿兹特克巫师道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100542" name="阿兹特克巫师嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100543" name="爱迪生的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100544" name="爱迪生的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100545" name="爱迪生的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100546" name="爱迪生的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100547" name="长城卫兵的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100548" name="长城卫兵的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100549" name="长城卫兵的脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="100550" name="长城卫兵的上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="100551" name="长城卫兵的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100552" name="长城卫兵的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100553" name="长城卫兵的嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100554" name="长城卫兵的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100555" name="长城修理者头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100556" name="长城修理者1嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100557" name="长城修理者1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100558" name="长城修理者1道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100559" name="长城修理者1的腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100560" name="长城修理者2头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100561" name="长城修理者2帽子" change="1" clothtype="1" specialkind="0"/>
+		<item id="100562" name="长城修理者2胡子" change="1" clothtype="6" specialkind="0"/>
+		<item id="100563" name="长城修理者2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100564" name="长城修理者2铲子" change="1" clothtype="7" specialkind="0"/>
+		<item id="100565" name="长城修理者2腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100566" name="长城修理者2嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100567" name="长城修理者工头头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100568" name="长城修理者工头头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100569" name="长城修理者工头胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100570" name="长城修理者工头衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100571" name="长城修理者工头腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100572" name="长城修理者工头道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100573" name="长城修理者工头嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100574" name="雕塑工匠1的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100575" name="雕塑工匠1的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100576" name="雕塑工匠1的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100577" name="雕塑工匠1的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100578" name="雕塑工匠1的嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100579" name="雕塑工匠1的工具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100580" name="雕塑工匠2的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100581" name="雕塑工匠2的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100582" name="雕塑工匠2的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100583" name="雕塑工匠2的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100584" name="雕塑工匠2的嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100585" name="雕塑工匠2的工具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100586" name="雕塑工匠2的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100587" name="雕塑工匠3的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100588" name="雕塑工匠3的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100589" name="雕塑工匠3的帽子" change="1" clothtype="1" specialkind="0"/>
+		<item id="100590" name="雕塑工匠3的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100591" name="雕塑工匠3的道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100592" name="雕塑工匠3的嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100593" name="雕塑工匠3的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100594" name="华盛顿的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100595" name="华盛顿的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100596" name="华盛顿的的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100597" name="间谍的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100598" name="华盛顿的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100599" name="华盛顿的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100600" name="间谍的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100601" name="间谍的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100602" name="间谍的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100603" name="间谍的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100604" name="间谍的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100605" name="间谍的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100606" name="间谍的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100607" name="杰弗逊的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100608" name="杰弗逊的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100609" name="杰弗逊的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100610" name="杰弗逊的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100611" name="超人岛勋章" change="0" clothtype="9" specialkind="0"/>
+		<item id="100612" name="老居民的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100613" name="老居民的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100614" name="老居民的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100615" name="老居民的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100616" name="老居民的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100617" name="亚历山大的埃菲尔的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100618" name="亚历山大的埃菲尔的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100619" name="亚历山大的埃菲尔的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100620" name="亚历山大的埃菲尔的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100621" name="亚历山大的埃菲尔的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100622" name="研究员1的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100623" name="研究员1的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100624" name="研究员1的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100625" name="研究员1的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100626" name="研究员1的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100627" name="研究员1的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100628" name="研究员2的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100629" name="研究员2的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100630" name="研究员2的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100631" name="研究员2的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100632" name="研究员2的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100633" name="女祭司头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100634" name="研究员2的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100635" name="研究员2的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100636" name="研究员2的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100637" name="研究员3的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100638" name="研究员3的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100639" name="研究员3的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100640" name="研究员3的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100641" name="研究员3的上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="100642" name="约翰亚当斯的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100643" name="约翰亚当斯的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100644" name="约翰亚当斯的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100645" name="海军士兵头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100646" name="海军士兵嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100647" name="海军士兵武器" change="1" clothtype="7" specialkind="0"/>
+		<item id="100648" name="海军士兵衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100649" name="海军士兵头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100650" name="三国士兵头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100651" name="三国士兵头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100652" name="三国士兵衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100653" name="三国士兵武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="100654" name="三国士兵嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100655" name="哲别的头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100656" name="哲别的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100657" name="哲别的武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="100658" name="哲别的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100659" name="哲别的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100660" name="哲别的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100661" name="郑和的头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100662" name="郑和的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100663" name="郑和的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100664" name="郑和的披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="100665" name="郑和的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100666" name="周瑜的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100667" name="周瑜的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100668" name="周瑜的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100669" name="周瑜的武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="100670" name="周瑜的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100671" name="周瑜的衣服2" change="0" clothtype="8" specialkind="0"/>
+		<item id="100672" name="周瑜的鞋子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100673" name="诸葛亮的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100674" name="诸葛亮的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100675" name="诸葛亮的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100676" name="诸葛亮的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100677" name="诸葛亮的鞋子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100678" name="诸葛亮的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100679" name="诸葛亮的袖子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100680" name="诸葛亮的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100681" name="诸葛亮的嘴巴" change="0" clothtype="1" specialkind="0"/>
+		<item id="100682" name="巴里居民1头盔" change="1" clothtype="1" specialkind="0"/>
+		<item id="100683" name="巴里居民1头发" change="1" clothtype="1" specialkind="0"/>
+		<item id="100684" name="巴里居民1睫毛" change="1" clothtype="3" specialkind="0"/>
+		<item id="100685" name="巴里居民1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100686" name="巴里居民1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100687" name="巴里居民2头盔" change="1" clothtype="1" specialkind="0"/>
+		<item id="100688" name="巴里居民3头盔" change="1" clothtype="1" specialkind="0"/>
+		<item id="100689" name="巴里居民4头盔" change="1" clothtype="1" specialkind="0"/>
+		<item id="100690" name="巴里文件商人5头盔" change="1" clothtype="1" specialkind="0"/>
+		<item id="100691" name="巴里居民2耳环" change="1" clothtype="6" specialkind="0"/>
+		<item id="100692" name="巴里居民3耳环" change="1" clothtype="6" specialkind="0"/>
+		<item id="100693" name="巴里居民2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100694" name="巴里居民2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100695" name="巴里居民2嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100696" name="无此物品42342" change="0" clothtype="2" specialkind="0"/>
+		<item id="100697" name="无此物品423425" change="0" clothtype="3" specialkind="0"/>
+		<item id="100698" name="无此物品423426" change="0" clothtype="3" specialkind="0"/>
+		<item id="100699" name="巴里文件商人5头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100700" name="巴里居民2睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100701" name="巴里居民3睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100702" name="巴里居民3衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100703" name="巴里居民3的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100704" name="巴里蛇夫4的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100705" name="巴里蛇夫4的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100706" name="巴里居民5的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100707" name="巴里居民5的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100708" name="巴里居民4的胡子" change="1" clothtype="6" specialkind="0"/>
+		<item id="100709" name="巴里居民4的道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100710" name="巴里居民5的胡子" change="1" clothtype="6" specialkind="0"/>
+		<item id="100711" name="巴里居民5的道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100712" name="庄园居民1帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100713" name="庄园居民2帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100714" name="庄园居民3帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100715" name="庄园居民1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100716" name="庄园居民2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100717" name="庄园居民3衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100718" name="庄园居民1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100719" name="庄园居民2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100720" name="庄园居民3裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100721" name="庄园居民1睫毛" change="0" clothtype="11" specialkind="0"/>
+		<item id="100722" name="庄园居民2睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100723" name="庄园居民3睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100724" name="巴里居民4睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100725" name="巴里居民5睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100726" name="庄园居民1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100727" name="庄园居民2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100728" name="庄园居民1嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100729" name="庄园居民2嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100730" name="庄园居民2胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100731" name="庄园居民3胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100732" name="庄园居民3头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100733" name="阿兹特克居民1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100734" name="阿兹特克居民1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100735" name="阿兹特克居民1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100736" name="阿兹特克居民1睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100737" name="阿兹特克居民1嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100738" name="阿兹特克公主的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100739" name="阿兹特克公主的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100740" name="阿兹特克公主的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100741" name="阿兹特克公主的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100742" name="阿兹特克居民2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100743" name="阿兹特克居民2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100744" name="阿兹特克居民2睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100745" name="阿兹特克居民2衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100746" name="阿兹特克居民3的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100747" name="阿兹特克居民3的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100748" name="阿兹特克居民3的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100749" name="阿兹特克居民3的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100750" name="阿兹特克居民3的嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100751" name="阿兹特克老居民的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100752" name="阿兹特克老居民的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100753" name="阿兹特克居民3的道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100754" name="阿兹特克老居民的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100755" name="阿兹特克老居民的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100756" name="阿兹特克老居民的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100757" name="阿兹特克卫士1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100758" name="阿兹特克卫士2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100759" name="阿兹特克卫士1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100760" name="阿兹特克卫士2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100761" name="阿兹特克卫士1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100762" name="阿兹特克卫士2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100763" name="阿兹特克卫士1睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100764" name="阿兹特克卫士2睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="100765" name="阿兹特克卫士1道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100766" name="阿兹特克卫士2道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100767" name="阿兹特克卫士1嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100768" name="阿兹特克卫士2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100769" name="商鞅的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100770" name="商鞅的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100771" name="商鞅的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100772" name="商鞅的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100773" name="秦国居民1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100774" name="秦国居民1胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100775" name="秦国居民1衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100776" name="秦国居民2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100777" name="秦国居民2胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100778" name="秦国居民2衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100779" name="大帐卫兵1头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100780" name="大帐卫兵1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100781" name="大帐卫兵1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100782" name="大帐卫兵1胡子" change="1" clothtype="6" specialkind="0"/>
+		<item id="100783" name="大帐卫兵1武器" change="1" clothtype="7" specialkind="0"/>
+		<item id="100784" name="大帐卫兵2头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="100785" name="大帐卫兵2头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100786" name="大帐卫兵2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100787" name="大帐卫兵2武器" change="1" clothtype="7" specialkind="0"/>
+		<item id="100788" name="未来NPC1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100789" name="未来NPC1衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100790" name="未来NPC1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100791" name="未来NPC2头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100792" name="未来NPC2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100793" name="未来NPC2裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100794" name="未来NPC3头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100795" name="未来NPC3衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100796" name="未来NPC3裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100797" name="未来NPC4头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100798" name="未来NPC4衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100799" name="未来nPC裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100800" name="未来的自己脸部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100801" name="未来的自己头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100802" name="秦国卫兵1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100803" name="秦国卫兵1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100804" name="秦国卫兵1武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="100805" name="秦国卫兵2头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100806" name="秦国卫兵2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100807" name="秦国卫兵2武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="100808" name="超人岛书店老板头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100809" name="书店老板的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100810" name="书店老板的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100811" name="书店老板的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100812" name="书店老板的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100813" name="书店老板嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100814" name="银行职员衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100815" name="银行职员眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100816" name="银行职员的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100817" name="银行职员的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100818" name="银行职员的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100819" name="银行职员的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100820" name="路人1的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100821" name="路人1的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100822" name="路人1的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100823" name="路人1的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100824" name="路人1的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100825" name="路人1的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100826" name="路人1的耳环" change="0" clothtype="6" specialkind="0"/>
+		<item id="100827" name="路人2的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100828" name="路人2的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100829" name="路人2的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100830" name="路人2的钱包" change="1" clothtype="7" specialkind="0"/>
+		<item id="100831" name="路人2的耳环" change="0" clothtype="6" specialkind="0"/>
+		<item id="100832" name="典狱官的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100833" name="典狱官的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100834" name="典狱官的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100835" name="典狱官的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100836" name="典狱官的腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100837" name="典狱官的手枪" change="0" clothtype="7" specialkind="0"/>
+		<item id="100838" name="典狱官的脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100839" name="老超人头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100840" name="老超人衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100841" name="老超人裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100842" name="老超人披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="100843" name="老超人嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100844" name="老超人的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100845" name="老超人的脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="100846" name="老科学家的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100847" name="老科学家的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100848" name="老科学家的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100849" name="老科学家的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100850" name="服装店老板头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100851" name="服装店老板衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100852" name="服装店老板嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100853" name="服装店老板裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100854" name="服装店老板腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100855" name="大力凡斯的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100856" name="大力凡斯的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100857" name="大力凡斯的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100858" name="大力凡斯的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100859" name="大力凡斯的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100860" name="飞天贝蒂的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100861" name="飞天贝蒂的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100862" name="飞天贝蒂的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100863" name="飞天贝蒂的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100864" name="飞天贝蒂的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100865" name="飞天贝蒂的眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100866" name="飞天贝蒂的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100867" name="飞天贝蒂的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100868" name="急速比尔的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100869" name="急速比尔的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100870" name="急速比尔的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100871" name="急速比尔的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100872" name="急速比尔的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100873" name="急速比尔的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100874" name="急速比尔的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100875" name="天神麦克的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100876" name="天神麦克的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100877" name="天神麦克的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100878" name="天神麦克的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100879" name="天神麦克的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100880" name="天神麦克的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100881" name="天神麦克的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100882" name="蝇王哈利的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100883" name="蝇王哈利的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100884" name="蝇王哈利的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100885" name="蝇王哈利的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100886" name="蝇王哈利的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100887" name="蝇王哈利的帽子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100888" name="蝇王哈利的脸部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="100889" name="地铁里的警员1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100890" name="地铁里的警员1帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100891" name="地铁里的警员1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100892" name="地铁里的警员1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100893" name="地铁里的警员1腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100894" name="地铁里的警员1手铐" change="0" clothtype="7" specialkind="0"/>
+		<item id="100895" name="公园里的警察头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100896" name="公园里的警察帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100897" name="公园里的警察衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100898" name="公园里的警察裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100899" name="地铁里警察2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100900" name="公园里的警察道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100901" name="公园里警察嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="100902" name="地铁里警员1嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100903" name="公园里警察胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100904" name="公园里警察腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100905" name="地铁里警察2帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100906" name="地铁里警察2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100907" name="地铁里警察2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100908" name="地铁里警察2腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100909" name="地铁里警察2头发" change="0" clothtype="1" specialkind="0"/>
+		<item id="100910" name="监狱狱警帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="100911" name="监狱狱警衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100912" name="监狱狱警头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100913" name="监狱狱警裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100914" name="监狱狱警腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="100915" name="监狱狱警嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100916" name="克隆凯特的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100917" name="克隆凯特的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100918" name="克隆凯特的眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100919" name="克隆凯特的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100920" name="克隆凯特的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="100921" name="克隆凯特的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100922" name="垃圾场警察1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100923" name="垃圾场警察1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100924" name="垃圾场警察1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100925" name="垃圾场警察1腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100926" name="垃圾场警察1道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="100927" name="垃圾场警察1帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100928" name="垃圾场警察1胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100929" name="垃圾场警察1嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100930" name="垃圾场警察2帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100931" name="垃圾场警察2眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100932" name="垃圾场警察2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100933" name="垃圾场警察2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100934" name="垃圾场警察2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100935" name="垃圾场警察2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100936" name="垃圾场警察2腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100937" name="垃圾场警察2道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100938" name="主干道右侧的警察头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100939" name="主干道右侧的警察帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100940" name="主干道右侧的警察胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="100941" name="主干道右侧的警察嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100942" name="主干道右侧的警察衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100943" name="主干道右侧的警察腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100944" name="主干道右侧的警察裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100945" name="主干道右侧的警察道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100946" name="一般居民头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100947" name="一般居民眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="100948" name="一般居民衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100949" name="一般居民嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100950" name="一般居民裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100951" name="银行门口的警员1帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100952" name="银行门口的警员1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100953" name="银行门口的警员1嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100954" name="银行门口的警员1痘痘" change="0" clothtype="6" specialkind="0"/>
+		<item id="100955" name="银行门口的警员1衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100956" name="银行门口的警员1腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100957" name="银行门口的警员1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100958" name="银行门口的警员1道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="100959" name="银行门口的警员2帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100960" name="银行门口的警员2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100961" name="银行门口的警员2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100962" name="银行门口的警员2衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100963" name="银行门口的警员2腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100964" name="银行门口的警员2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100965" name="主干道上的警察帽子" change="1" clothtype="1" specialkind="3"/>
+		<item id="100966" name="主干道上的警察头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100967" name="主干道上的警察嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100968" name="主干道上的警察衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100969" name="主干道上的警察腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="100970" name="主干道上的警察裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100971" name="蓝色天使套超人服头盔" change="1" clothtype="1" specialkind="3"/>
+		<item id="100972" name="蓝色天使套超人服衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100973" name="蓝色天使套超人服披风" change="1" clothtype="12" specialkind="0"/>
+		<item id="100974" name="红色超人套超人头盔" change="1" clothtype="1" specialkind="3"/>
+		<item id="100975" name="红色超人套超人衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100976" name="摩尔超人套鼻子" change="1" clothtype="3" specialkind="0"/>
+		<item id="100977" name="红色超人套超人披风" change="1" clothtype="12" specialkind="0"/>
+		<item id="100978" name="摩尔超人套超人头盔" change="1" clothtype="1" specialkind="3"/>
+		<item id="100979" name="摩尔超人套超人衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100980" name="摩尔超人套超人披风" change="1" clothtype="12" specialkind="0"/>
+		<item id="100981" name="灰色超人套超人头盔" change="1" clothtype="1" specialkind="3"/>
+		<item id="100982" name="灰色超人套超人衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100983" name="灰色超人套超人披风" change="1" clothtype="12" specialkind="0"/>
+		<item id="100984" name="蝙蝠侠套超人头盔" change="1" clothtype="1" specialkind="3"/>
+		<item id="100985" name="蝙蝠侠套超人衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100986" name="蝙蝠侠套超人披风" change="1" clothtype="12" specialkind="0"/>
+		<item id="100987" name="迪卜卜的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100988" name="迪卜卜的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100989" name="迪卜卜的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100990" name="迪卜卜的包" change="0" clothtype="7" specialkind="0"/>
+		<item id="100991" name="迪卜卜的脸部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="100992" name="黑德拉变得警卫头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="100993" name="黑德拉变得警卫衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="100994" name="黑德拉变得警卫嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="100995" name="黑德拉变得警卫耳环" change="0" clothtype="6" specialkind="0"/>
+		<item id="100996" name="帆船大厦室内警卫头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="100997" name="帆船大厦室内警卫衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="100998" name="帆船大厦室内警卫裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="100999" name="帆船大厦室内警卫嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101000" name="帆船大厦室内警卫腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101001" name="放风筝的弟弟头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101002" name="放风筝弟弟衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101003" name="放风筝弟弟裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101004" name="放风筝的姐姐的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101005" name="放风筝的姐姐的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101006" name="放风筝的姐姐的裙子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101007" name="放风筝姐姐的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101008" name="放风筝姐姐的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101009" name="风筝店老板头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101010" name="风筝店老板衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101011" name="风筝店老板裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101012" name="风筝店老板嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101013" name="风筝店老板脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101014" name="海边晒太阳的女孩头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101015" name="海边晒太阳的女孩头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101016" name="海边晒太阳的女孩脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101017" name="海边晒太阳的女孩嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101018" name="海边晒太阳的女孩衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101019" name="海边晒太阳的女孩裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101020" name="监控室的警卫头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101021" name="监控室的警卫衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101022" name="监控室的警卫裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101023" name="监控室的警卫嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101024" name="监控室的警卫睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101025" name="监控室的警卫的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101026" name="警察局的警员头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101027" name="警察局的警员衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101028" name="警察局的警员裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101029" name="警察局的警员腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101030" name="警察局警员胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101031" name="警察局警员的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101032" name="露天咖啡厅老板的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101033" name="露天咖啡厅老板的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101034" name="露天咖啡厅老板的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101035" name="露天咖啡厅老板的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101036" name="路人丙的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101037" name="路人丙的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101038" name="路人丙的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101039" name="路人丙的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101040" name="路人丁的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101041" name="路人丁的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101042" name="路人丁的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101043" name="路人丁的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101044" name="路人甲的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101045" name="我们是害虫aaa" change="0" clothtype="1" specialkind="0"/>
+		<item id="101046" name="路人甲的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101047" name="路人甲的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101048" name="路人甲的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101049" name="路人甲的裙子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101050" name="路人乙的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101051" name="路人乙的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101052" name="路人乙的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101053" name="路人乙的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101054" name="路人乙的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101055" name="目击者的头发" change="0" clothtype="1" specialkind="0"/>
+		<item id="101056" name="目击者的眼镜" change="0" clothtype="1" specialkind="0"/>
+		<item id="101057" name="目击者的嘴巴" change="0" clothtype="1" specialkind="0"/>
+		<item id="101058" name="目击者的衣服" change="0" clothtype="1" specialkind="0"/>
+		<item id="101059" name="目击者的裤子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101060" name="海边晒太阳男孩的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101061" name="海边晒太阳男孩的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101062" name="海边晒太阳男孩的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101063" name="海边晒太阳男孩的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101064" name="海边晒太阳男孩的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="101065" name="凶神恶煞的守卫1头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101066" name="凶神恶煞守卫1衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101067" name="凶神恶煞守卫1脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101068" name="凶神恶煞守卫1裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101069" name="凶神恶煞守卫1腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101070" name="凶神恶煞守卫1嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101071" name="凶神恶煞守卫2的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101072" name="凶神恶煞的守卫2衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101073" name="凶神恶煞守卫2裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101074" name="凶神恶煞守卫2腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101075" name="凶神恶煞守卫2脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101076" name="凶神恶煞守卫2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101077" name="凶神恶煞守卫3的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101078" name="凶神恶煞守卫3的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101079" name="凶神恶煞守卫3的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101080" name="凶神恶煞守卫3的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101081" name="凶神恶煞守卫3的脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101082" name="凶神恶煞守卫3的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101083" name="凶神恶煞守卫4头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101084" name="凶神恶煞守卫4衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101085" name="凶神恶煞守卫4裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101086" name="凶神恶煞守卫4腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101087" name="凶神恶煞守卫4嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101088" name="凶神恶煞守卫4脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101089" name="摇滚乐酒吧老板头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101090" name="摇滚乐酒吧老板衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101091" name="摇滚乐酒吧老板睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101092" name="摇滚乐酒吧老板裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101093" name="摇滚乐酒吧老板嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101094" name="游客的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101095" name="游客的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101096" name="游客的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101097" name="游客的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101098" name="游客的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101099" name="游客的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101100" name="游客的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101101" name="矿洞矿工头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="101102" name="矿洞矿工胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101103" name="矿洞矿工嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101104" name="矿洞矿工衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101105" name="矿洞矿工裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101106" name="矿洞矿工的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101107" name="骷髅泡泡嘴型" change="0" clothtype="5" specialkind="0"/>
+		<item id="101108" name="摩天大楼下的警察头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101109" name="摩天大楼下的警察嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101110" name="摩天大楼下的警察帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101111" name="摩天大楼下的警察的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101112" name="摩天大楼下的警察的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101113" name="摩天大楼下的警察的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101114" name="摩天大楼下的警察的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101115" name="英雄联盟蝙蝠侠道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101116" name="英雄联盟蝙蝠侠裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101117" name="英雄联盟蝙蝠侠披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101118" name="英雄联盟蝙蝠侠上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101119" name="英雄联盟蝙蝠侠头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="101120" name="英雄联盟蝙蝠侠腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101121" name="英雄联盟蝙蝠侠嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101122" name="英雄联盟钢铁侠裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101123" name="英雄联盟钢铁侠上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101124" name="英雄联盟钢铁侠头部装饰" change="0" clothtype="3" specialkind="5"/>
+		<item id="101125" name="英雄联盟绿灯侠道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101126" name="英雄联盟绿灯侠裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101127" name="英雄联盟绿灯侠上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101128" name="英雄联盟绿灯侠眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101129" name="英雄联盟绿灯侠嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101130" name="英雄联盟绿灯侠头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101131" name="海军士兵2头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="101132" name="海军士兵2衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101133" name="无此衣服222" change="0" clothtype="1" specialkind="0"/>
+		<item id="101134" name="海军士兵2武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="101135" name="海军士兵2胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101136" name="海军士兵2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101137" name="三国士兵2的头盔" change="0" clothtype="1" specialkind="0"/>
+		<item id="101138" name="三国士兵2的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101139" name="三国士兵2的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101140" name="三国士兵2的武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="101141" name="三国士兵2的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101142" name="巴托尔德的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101143" name="巴托尔德的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101144" name="成吉思汗的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101145" name="成吉思汗的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101146" name="成吉思汗的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101147" name="成吉思汗的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101148" name="成吉思汗的披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101149" name="黑人爆炸头头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101150" name="黑人爆炸头衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101151" name="黑人爆炸头嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101152" name="黑人爆炸头裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101153" name="黑人爆炸头的眼镜" change="0" clothtype="4" specialkind="0"/>
+		<item id="101154" name="魔术师的帽子" change="0" clothtype="2" specialkind="0"/>
+		<item id="101155" name="魔术师的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101156" name="魔术师的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101157" name="魔术师的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101158" name="魔术师的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101159" name="魔术师的披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101160" name="魔术师的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101161" name="平民吸血鬼的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101162" name="平民吸血鬼的眼镜" change="0" clothtype="3" specialkind="0"/>
+		<item id="101163" name="平民吸血鬼的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101164" name="平民吸血鬼的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101165" name="牛仔警长的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101166" name="牛仔警长的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101167" name="牛仔警长的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101168" name="牛仔警长的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101169" name="牛仔警长的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101170" name="牛仔警长的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101171" name="公主的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101172" name="公主的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101173" name="公主的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101174" name="公主的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101175" name="旗袍妹妹的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101176" name="旗袍妹妹的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101177" name="旗袍妹妹的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101178" name="旗袍妹妹的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101179" name="小女生的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101180" name="小女生的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101181" name="小女生的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101182" name="小女生的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101183" name="小女生的裙子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101184" name="和服阿姨的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101185" name="和服阿姨的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101186" name="和服阿姨的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101187" name="和服阿姨的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101188" name="和服阿姨的扇子" change="0" clothtype="7" specialkind="0"/>
+		<item id="101189" name="博士的助手2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101190" name="博士的助手2上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101191" name="博士的助手2眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101192" name="博士的助手2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101193" name="博士的助手头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101194" name="博士的助手上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101195" name="博士的助手眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101196" name="博士的助手嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101197" name="德尔菲居民头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101198" name="德尔菲居民裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101199" name="德尔菲居民上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101200" name="德尔菲居民头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101201" name="德尔菲居民嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101202" name="德尔菲居民2头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101203" name="德尔菲居民2裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101204" name="德尔菲居民2上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101205" name="德尔菲居民2头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="101206" name="德尔菲居民2嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101207" name="德尔菲老居民道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101208" name="德尔菲老居民头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101209" name="德尔菲老居民裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101210" name="德尔菲老居民脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="101211" name="德尔菲老居民上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101212" name="德尔菲老居民头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="101213" name="德尔菲老居民嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101214" name="德尔菲守卫1背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101215" name="德尔菲守卫1道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101216" name="德尔菲守卫1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101217" name="德尔菲守卫1脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="101218" name="德尔菲守卫1上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101219" name="德尔菲守卫1头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101220" name="德尔菲守卫2背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101221" name="德尔菲守卫2道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101222" name="德尔菲守卫2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101223" name="德尔菲守卫2上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101224" name="德尔菲守卫2头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101225" name="德尔菲守卫2嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101226" name="进入后碰到的城市中居民头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101227" name="进入后碰到的城市中居民裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101228" name="进入后碰到的城市中居民上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101229" name="进入后碰到的城市中居民头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="101230" name="进入后碰到的城市中居民眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="101231" name="进入后碰到的城市中居民嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101232" name="老鼠装扮头部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101233" name="老鼠装扮衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101234" name="老鼠装扮道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101235" name="异域风情头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101236" name="异域风情脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101237" name="异域风情衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101238" name="异域风情嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101239" name="侠盗牛仔的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101240" name="侠盗牛仔的眼罩" change="0" clothtype="3" specialkind="0"/>
+		<item id="101241" name="侠盗牛仔的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101242" name="侠盗牛仔的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101243" name="侠盗牛仔的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101244" name="侠盗牛仔的腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101245" name="侠盗牛仔的手枪" change="0" clothtype="7" specialkind="0"/>
+		<item id="101246" name="白羊座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101247" name="白羊座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101248" name="白羊座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101249" name="白羊座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101250" name="白羊座背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101251" name="处女座的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101252" name="处女座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101253" name="处女座的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101254" name="处女座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101255" name="处女座的翅膀" change="0" clothtype="12" specialkind="0"/>
+		<item id="101256" name="处女座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101257" name="巨蟹座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101258" name="巨蟹座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101259" name="巨蟹座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101260" name="巨蟹座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101261" name="金牛座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101262" name="金牛座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101263" name="金牛座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101264" name="金牛座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101265" name="摩羯座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101266" name="摩羯座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101267" name="摩羯座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101268" name="摩羯座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101269" name="摩羯座的尾巴" change="0" clothtype="12" specialkind="0"/>
+		<item id="101270" name="射手座的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101271" name="射手座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101272" name="射手座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101273" name="射手座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101274" name="射手座的背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101275" name="射手座的弓" change="0" clothtype="7" specialkind="0"/>
+		<item id="101276" name="狮子座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101277" name="狮子座的眼睛装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101278" name="狮子座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101279" name="狮子座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101280" name="狮子座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101281" name="双鱼座的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101282" name="双鱼座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101283" name="双鱼座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101284" name="双鱼座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101285" name="水瓶座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101286" name="水瓶座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101287" name="水瓶座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101288" name="水瓶座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101289" name="双子座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101290" name="双子座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101291" name="双子座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101292" name="双子座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101293" name="天秤座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101294" name="天秤座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101295" name="天秤座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101296" name="天秤座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101297" name="天蝎座的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101298" name="天蝎座的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101299" name="天蝎座的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101300" name="天蝎座的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101301" name="桃心使徒的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101302" name="桃心使徒的睫毛" change="0" clothtype="3" specialkind="0"/>
+		<item id="101303" name="桃心使徒的头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101304" name="桃心使徒的衣服" change="0" clothtype="10" specialkind="0"/>
+		<item id="101305" name="桃心使徒的背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101306" name="桃心使者的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101307" name="无此道具22223" change="0" clothtype="1" specialkind="0"/>
+		<item id="101308" name="桃心精灵的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101309" name="桃心精灵的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101310" name="桃心精灵的背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101311" name="桃心精灵的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101312" name="海盗服道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101313" name="海盗服上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101314" name="海盗服头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="101315" name="勇士面罩" change="0" clothtype="3" specialkind="5"/>
+		<item id="101316" name="研究员4的头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101317" name="研究员4的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101318" name="研究员4的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101319" name="研究员4的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101320" name="研究员5的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101321" name="研究员5的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101322" name="研究员5的嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101323" name="研究员5的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101324" name="研究员5的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101325" name="研究员5的胡子" change="1" clothtype="6" specialkind="0"/>
+		<item id="101326" name="错乱未来NPC的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101327" name="错乱未来NPC的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101328" name="错乱未来NPC的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101329" name="错乱未来NPC的背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101330" name="黑色眼睛" change="1" clothtype="4" specialkind="0"/>
+		<item id="101331" name="棕色眼睛" change="1" clothtype="4" specialkind="0"/>
+		<item id="101332" name="圣诞装扮帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101333" name="圣诞装扮套装帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101334" name="圣诞装扮套装衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101335" name="圣诞装扮套装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101336" name="糖果鹿头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101337" name="糖果鹿套装衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101338" name="糖果鹿套装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101339" name="糖果鹿套装道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101340" name="圣诞老人的帽子" change="0" clothtype="1" specialkind="3"/>
+		<item id="101341" name="圣诞老人的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101342" name="圣诞老人的道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101343" name="圣诞老人的胡子" change="0" clothtype="6" specialkind="0"/>
+		<item id="101344" name="卜斯特博士头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101345" name="卜斯特博士脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101346" name="卜斯特博士上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101347" name="卜斯特博士眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101348" name="时空穿梭帽" change="0" clothtype="3" specialkind="5"/>
+		<item id="101349" name="妖怪1道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="101350" name="妖怪1裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101351" name="妖怪1脸部装饰" change="1" clothtype="6" specialkind="0"/>
+		<item id="101352" name="妖怪1头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101353" name="妖怪1上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101354" name="妖怪1眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="101355" name="妖怪1嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101356" name="妖怪2道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="101357" name="妖怪2裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101358" name="妖怪2上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101359" name="妖怪2头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="101360" name="妖怪2腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="101361" name="妖怪2嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101362" name="妖怪3道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="101363" name="妖怪3裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101364" name="妖怪3脸部装饰" change="1" clothtype="6" specialkind="4"/>
+		<item id="101365" name="妖怪3上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101366" name="妖怪3头部装饰" change="1" clothtype="1" specialkind="0"/>
+		<item id="101367" name="妖怪3腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="101368" name="妖怪3嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101369" name="妖怪4背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="101370" name="妖怪4头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101371" name="妖怪4裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101372" name="妖怪4上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101373" name="妖怪4嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101374" name="妖怪5背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="101375" name="妖怪5道具" change="1" clothtype="7" specialkind="0"/>
+		<item id="101376" name="妖怪5头发" change="1" clothtype="2" specialkind="3"/>
+		<item id="101377" name="妖怪5上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101378" name="妖怪5眼部装饰" change="1" clothtype="3" specialkind="0"/>
+		<item id="101379" name="妖怪5腰带" change="1" clothtype="10" specialkind="0"/>
+		<item id="101380" name="妖怪5嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101381" name="妖怪6背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101382" name="妖怪6头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101383" name="妖怪6上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101384" name="妖怪6嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101385" name="妖怪7道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101386" name="妖怪7裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101387" name="妖怪7脸部装饰" change="0" clothtype="6" specialkind="4"/>
+		<item id="101388" name="妖怪7上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101389" name="妖怪7腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101390" name="妖怪7嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101391" name="妖怪8嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101392" name="妖怪8上衣" change="1" clothtype="10" specialkind="0"/>
+		<item id="101393" name="阿斯顿飞99998" change="1" clothtype="1" specialkind="1"/>
+		<item id="101394" name="妖怪8眼前装饰" change="1" clothtype="3" specialkind="5"/>
+		<item id="101395" name="妖怪8头发" change="1" clothtype="2" specialkind="0"/>
+		<item id="101396" name="妖怪9背部装饰" change="1" clothtype="12" specialkind="0"/>
+		<item id="101397" name="妖怪9道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101398" name="妖怪9上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101399" name="妖怪9头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="101400" name="妖怪10背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101401" name="妖怪10道具" change="0" clothtype="7" specialkind="0"/>
+		<item id="101402" name="妖怪10上衣" change="1" clothtype="8" specialkind="0"/>
+		<item id="101403" name="妖怪10头部装饰" change="1" clothtype="1" specialkind="3"/>
+		<item id="101404" name="妖怪10嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101405" name="游戏王背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101406" name="游戏王裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101407" name="游戏王上衣" change="0" clothtype="8" specialkind="0"/>
+		<item id="101408" name="游戏王眼部装饰" change="0" clothtype="3" specialkind="5"/>
+		<item id="101409" name="巴里盐商的帽子" change="1" clothtype="1" specialkind="0"/>
+		<item id="101410" name="巴里盐商的衣服" change="1" clothtype="8" specialkind="0"/>
+		<item id="101411" name="巴里盐商的裤子" change="1" clothtype="11" specialkind="0"/>
+		<item id="101412" name="巴里盐商的嘴巴" change="1" clothtype="5" specialkind="0"/>
+		<item id="101413" name="时光勋章" change="0" clothtype="9" specialkind="0"/>
+		<item id="101414" name="冒险使者套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101415" name="冒险使者套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101416" name="侦察骑士套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101417" name="侦察骑士套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101418" name="解谜高手套装1" change="0" clothtype="3" specialkind="0"/>
+		<item id="101419" name="解谜高手套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101420" name="聪明奇侠套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101421" name="聪明奇侠套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101422" name="反恐精英套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101423" name="反恐精英套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101424" name="悬疑专家套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101425" name="悬疑专家套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101426" name="探险大师套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101427" name="探险大师套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101428" name="冒险王者套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101429" name="冒险王者套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101430" name="大智天下套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101431" name="大智天下套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101432" name="智慧之神套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101433" name="智慧之神套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101434" name="巅峰卜克王套装1" change="0" clothtype="1" specialkind="3"/>
+		<item id="101435" name="巅峰卜克王套装2" change="0" clothtype="12" specialkind="0"/>
+		<item id="101436" name="火把" change="1" clothtype="7" specialkind="0"/>
+		<item id="101437" name="头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101438" name="未来自己NPC衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101439" name="未来自己NPC裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101440" name="格格装头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="101441" name="格格装衣服" change="0" clothtype="10" specialkind="0"/>
+		<item id="101442" name="格格装脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101443" name="艾玛套装头部装饰" change="0" clothtype="1" specialkind="3"/>
+		<item id="101444" name="艾玛套装衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101445" name="艾玛套装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101446" name="天使侍从头发" change="0" clothtype="2" specialkind="3"/>
+		<item id="101447" name="天使侍从裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101448" name="天使侍从翅膀" change="0" clothtype="12" specialkind="0"/>
+		<item id="101449" name="天使侍从竖琴" change="0" clothtype="7" specialkind="0"/>
+		<item id="101450" name="天使侍从头部光环" change="0" clothtype="1" specialkind="0"/>
+		<item id="101451" name="天使侍从耳环" change="0" clothtype="6" specialkind="0"/>
+		<item id="101452" name="小恶魔套装头顶的恶魔" change="0" clothtype="3" specialkind="3"/>
+		<item id="101453" name="小恶魔套装的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101454" name="小恶魔套装的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101455" name="小恶魔套装的武器" change="0" clothtype="7" specialkind="0"/>
+		<item id="101456" name="鬼堡岛勋章" change="0" clothtype="9" specialkind="0"/>
+		<item id="101457" name="小恶魔装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101458" name="格格装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101459" name="天使侍从嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101460" name="不不不不u" change="0" clothtype="1" specialkind="0"/>
+		<item id="101461" name="钻石岛勋章" change="0" clothtype="9" specialkind="0"/>
+		<item id="101462" name="竞技场套装1头部" change="0" clothtype="3" specialkind="0"/>
+		<item id="101463" name="竞技场套装1披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101464" name="竞技场套装2头部" change="0" clothtype="3" specialkind="0"/>
+		<item id="101465" name="竞技场套装2披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101466" name="竞技场套装3头部" change="0" clothtype="3" specialkind="0"/>
+		<item id="101467" name="竞技场套装3披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101468" name="竞技场套装4头部" change="0" clothtype="3" specialkind="0"/>
+		<item id="101469" name="竞技场套装4披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101470" name="竞技场套装5头部" change="0" clothtype="3" specialkind="0"/>
+		<item id="101471" name="竞技场套装5披风" change="0" clothtype="12" specialkind="0"/>
+		<item id="101472" name="蓝色隐形眼镜" change="0" clothtype="4" specialkind="0"/>
+		<item id="101473" name="绿色隐形眼镜" change="0" clothtype="4" specialkind="0"/>
+		<item id="101474" name="紫色隐形眼镜" change="0" clothtype="4" specialkind="0"/>
+		<item id="101475" name="黑德拉的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101476" name="黑德拉的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101477" name="黑德拉的眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101478" name="黑德拉的衣服" change="0" clothtype="10" specialkind="0"/>
+		<item id="101479" name="蝙蝠风筝" change="1" clothtype="7" specialkind="0"/>
+		<item id="101480" name="大伯风筝" change="1" clothtype="7" specialkind="0"/>
+		<item id="101481" name="蝴蝶风筝" change="1" clothtype="7" specialkind="0"/>
+		<item id="101482" name="萝卜风筝" change="1" clothtype="7" specialkind="0"/>
+		<item id="101483" name="正方形风筝" change="1" clothtype="7" specialkind="0"/>
+		<item id="101484" name="猪风筝" change="1" clothtype="7" specialkind="0"/>
+		<item id="101485" name="气场女神may头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101486" name="气场女神may头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101487" name="气场女神may裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101488" name="气场女神may手持" change="0" clothtype="7" specialkind="0"/>
+		<item id="101489" name="气场女神may眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101490" name="气场女神may脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101491" name="气场女神may嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101492" name="气场女神may背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101493" name="女沙滩客头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101494" name="女沙滩客眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101495" name="女沙滩客头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101496" name="女沙滩客脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101497" name="女沙滩客衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101498" name="女沙滩客裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101499" name="女沙滩客手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101500" name="女沙滩客嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101501" name="琉璃淑女斯尔特的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101502" name="琉璃淑女斯尔特的衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101503" name="糖家小公主头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101504" name="琉璃淑女斯尔特的裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101505" name="琉璃淑女斯尔特的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101506" name="琉璃淑女司尔特的背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101507" name="琉璃淑女司尔特的眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101508" name="琉璃淑女司尔特的脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101509" name="糖家小公主眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101510" name="糖家小公主头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101511" name="糖家小公主的裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101512" name="糖家小公主背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101513" name="糖家小公主脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101514" name="糖家小公主嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101515" name="tifa的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101516" name="tifa的帽子" change="0" clothtype="1" specialkind="0"/>
+		<item id="101517" name="tifa的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101518" name="tifa的眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101519" name="tifa的裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101520" name="tifa的脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101521" name="糖家小仙女的头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101522" name="糖家小仙女的眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101523" name="糖家小仙女的脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101524" name="糖家小仙女的嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101525" name="糖家小仙女的裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101526" name="糖家小仙女的手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101527" name="糖家小仙女的背部装饰" change="0" clothtype="12" specialkind="0"/>
+		<item id="101528" name="方糖moon头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101529" name="方糖moon裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101530" name="方糖moon眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101531" name="方糖moon嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101532" name="方糖moon手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101533" name="方糖moon头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101534" name="糖家小奶妈头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101535" name="糖家小奶妈眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101536" name="糖家小奶妈脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101537" name="糖家小奶妈嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101538" name="糖家小奶妈的裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101539" name="男冲浪手头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101540" name="男冲浪手胸前装饰" change="0" clothtype="9" specialkind="0"/>
+		<item id="101541" name="男冲浪手眼前装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101542" name="男冲浪手嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101543" name="男冲浪手裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101544" name="男冲浪手手部装饰" change="0" clothtype="7" specialkind="0"/>
+		<item id="101545" name="女冲浪手头发" change="0" clothtype="2" specialkind="0"/>
+		<item id="101546" name="女冲浪手眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101547" name="女冲浪手嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101548" name="女冲浪手脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101549" name="女冲浪手衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101550" name="女冲浪手裤子" change="0" clothtype="11" specialkind="0"/>
+		<item id="101551" name="女冲浪手手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101552" name="emma奶牛装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101553" name="emma奶牛装衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101554" name="enma奶牛装手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101555" name="青蛙装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101556" name="青蛙装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101557" name="青蛙装衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101558" name="熊猫装眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101559" name="熊猫装衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101560" name="熊猫装嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101561" name="熊猫装手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101562" name="熊猫装衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101563" name="老爷装裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101564" name="老爷装头部装饰" change="0" clothtype="1" specialkind="0"/>
+		<item id="101565" name="街头霸王头部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101566" name="街头霸王裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101567" name="街头霸王手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101568" name="007眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101569" name="007衣服" change="0" clothtype="8" specialkind="0"/>
+		<item id="101570" name="007腰带" change="0" clothtype="10" specialkind="0"/>
+		<item id="101571" name="007嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101572" name="慵懒大吗眼部装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101573" name="慵懒大妈嘴巴" change="0" clothtype="5" specialkind="0"/>
+		<item id="101574" name="慵懒大妈裙子" change="0" clothtype="10" specialkind="0"/>
+		<item id="101575" name="慵懒大妈的手持装扮" change="0" clothtype="7" specialkind="0"/>
+		<item id="101576" name="学生装小清新眼前装饰" change="0" clothtype="3" specialkind="0"/>
+		<item id="101577" name="学生装小清新衣服" change="0" clothtype="10" specialkind="0"/>
+		<item id="101578" name="学生装小清新脸部装饰" change="0" clothtype="6" specialkind="0"/>
+		<item id="101579" name="小丑鼻子" change="0" clothtype="3" specialkind="0"/>
+	</kind>
+	<kind id="2" name="解密卡片" start="200001" end="299999" max="1" path="resource/card/icon/">
+		<item id="200001" name="撬棍" type="3" contain="100076" island="1" useful="0" comprise="0"/>
+		<item id="200002" name="空玻璃盆" type="2" contain="0" island="1" useful="0" comprise="0"/>
+		<item id="200003" name="一碗牛奶" type="2" contain="0" island="1" useful="0" comprise="0"/>
+		<item id="200004" name="短铁铲" type="2" contain="0" island="1" useful="0" comprise="0"/>
+		<item id="200005" name="老虎钳" type="3" contain="0" island="1" useful="0" comprise="0"/>
+		<item id="200006" name="金属土豆帽" type="21" contain="100082" island="1" useful="0" comprise="0"/>
+		<item id="200007" name="排气管线路图" type="13" contain="0" island="1" useful="0" comprise="0"/>
+		<item id="200008" name="系统密码" type="1" contain="0" island="1" useful="0" comprise="0"/>
+		<item id="200009" name="土豆传送机" type="11" contain="0" island="1" useful="0" comprise="0"/>
+		<item id="200010" name="土豆岛屿勋章" type="21" contain="100078" island="1" useful="1" comprise="0"/>
+		<item id="200011" name="章鱼帽" type="21" contain="100081" island="2" useful="1" comprise="0"/>
+		<item id="200012" name="椰子味汽水" type="2" contain="0" island="2" useful="0" comprise="0"/>
+		<item id="200013" name="密码纸" type="1" contain="0" island="2" useful="0" comprise="0"/>
+		<item id="200014" name="鱼骨" type="2" contain="0" island="2" useful="0" comprise="0"/>
+		<item id="200015" name="神秘草药" type="2" contain="0" island="2" useful="0" comprise="0"/>
+		<item id="200016" name="草裙" type="21" contain="100191" island="2" useful="1" comprise="0"/>
+		<item id="200017" name="解毒剂" type="2" contain="0" island="2" useful="0" comprise="0"/>
+		<item id="200018" name="章鱼岛勋章" type="21" contain="100080" island="2" useful="1" comprise="0"/>
+		<item id="200019" name="金钥匙" type="1" contain="0" island="2" useful="0" comprise="0"/>
+		<item id="200020" name="荧光棒" type="4" contain="100312" island="3" useful="0" comprise="0"/>
+		<item id="200021" name="神奇豌豆种子" type="11" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200022" name="一桶水" type="11" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200023" name="金蛋" type="11" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200024" name="小乌云" type="11" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200025" name="10个金豌豆" type="2" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200026" name="大大金豆" type="11" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200027" name="卜克岛勋章" type="21" contain="100129" island="3" useful="1" comprise="0"/>
+		<item id="200028" name="小小金豆" type="5" contain="0" island="3" useful="0" comprise="600001,600002,600003,600004,600005,600006,600007,600008"/>
+		<item id="200029" name="小小金豆" type="116" contain="0" island="3" useful="1" comprise="0"/>
+		<item id="200030" name="超能力认证卡" type="2" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200031" name="超级英雄ID" type="7" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200032" name="超级英雄手册" type="13" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200033" name="超级罪犯档案" type="13" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200034" name="能量吸收手铐" type="1" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200035" name="超能力岛勋章" type="21" contain="100611" island="4" useful="1" comprise="0"/>
+		<item id="200036" name="超人时报1" type="6" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200037" name="超人时报2" type="6" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200038" name="超人时报3" type="6" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200039" name="超人时报4" type="6" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200040" name="超人时报5" type="6" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200041" name="超人时报6" type="6" contain="0" island="4" useful="0" comprise="0"/>
+		<item id="200042" name="小剪刀" type="11" contain="0" island="0" useful="0" comprise="0"/>
+		<item id="200043" name="圣诞礼券" type="8" contain="0" island="3" useful="0" comprise="0"/>
+		<item id="200044" name="任务信息" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200045" name="时间机器" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200046" name="留声机" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200047" name="独立宣言" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200048" name="勇士面罩" type="21" contain="101315" island="5" useful="1" comprise="0"/>
+		<item id="200049" name="炸药" type="4" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200050" name="护身符" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200051" name="金花瓶" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200052" name="盐岩石" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200053" name="石块" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200054" name="笔记本" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200055" name="滑翔机" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200056" name="海盗服" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200057" name="自由女神小雕塑" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200058" name="石钵" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200059" name="羽扇" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200060" name="帅印" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200061" name="告示" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200062" name="航海图" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200063" name="时光岛屿勋章" type="21" contain="101413" island="5" useful="0" comprise="0"/>
+		<item id="200064" name="圣诞帽子" type="21" contain="101332" island="3" useful="1" comprise="0"/>
+		<item id="200065" name="机密文件" type="1" contain="0" island="5" useful="0" comprise="0"/>
+		<item id="200066" name="能量探测器" type="11" contain="0" island="5" useful="2" comprise="0"/>
+		<item id="200067" name="时空穿梭帽" type="21" contain="101348" island="5" useful="2" comprise="0"/>
+		<item id="200068" name="末日排队邀请函" type="13" contain="0" island="1,2,3,4,5" useful="1" comprise="0"/>
+		<item id="200069" name="地下室钥匙" type="3" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200070" name="毒酒" type="2" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200071" name="冰锄" type="3" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200072" name="冰块" type="2" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200073" name="圣杯" type="2" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200074" name="油灯" type="2" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200075" name="发光的油灯" type="2" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200076" name="鬼堡岛勋章" type="21" contain="101456" island="6" useful="0" comprise="0"/>
+		<item id="200077" name="宝石钥匙1" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200078" name="宝石钥匙2" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200079" name="宝石钥匙3" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200080" name="宝石钥匙4" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200081" name="宝石钥匙5" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200082" name="宝石钥匙6" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200083" name="宝石钥匙7" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200084" name="宝石钥匙8" type="1" contain="0" island="6" useful="0" comprise="0"/>
+		<item id="200085" name="钻石岛勋章" type="21" contain="101461" island="7" useful="0" comprise="0"/>
+		<item id="200086" name="拼图" type="5" contain="0" island="7" useful="0" comprise="600009,600010,600011,600012,600013,600014"/>
+		<item id="200087" name="破旧的笔记本" type="1" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200088" name="100卜克币" type="1" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200089" name="安全帽" type="21" contain="101101" island="7" useful="1" comprise="0"/>
+		<item id="200090" name="法语纸条" type="1" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200091" name="中午纸条" type="1" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200092" name="仓库钥匙" type="11" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200093" name="监控截图" type="11" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200094" name="门禁卡" type="11" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200095" name="工作时间表" type="1" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200096" name="万能钥匙" type="11" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200097" name="完整拼图" type="1" contain="0" island="7" useful="0" comprise="0"/>
+		<item id="200098" name="对战岛勋章" type="21" contain="101579" island="8" useful="0" comprise="0"/>
+	</kind>
+	<kind id="3" name="服装卡片" start="300001" end="399999" max="1" path="resource/clothcard/icon/">
+		<item id="300001" name="吸血鬼" type="1" source="1" contain="100255,100256,100257,100258,100259,100260,100465" pay="75" special="0" island="0"/>
+		<item id="300002" name="小恐龙" type="1" source="1" contain="100261,100262,100466" pay="95" special="1" island="0"/>
+		<item id="300003" name="鸡装" type="1" source="1" contain="100292,100293,100294,100295,100296" pay="75" special="0" island="0"/>
+		<item id="300004" name="埃及法老" type="1" source="1" contain="100100,100101,100102,100103,100104,100105,100106,100467" pay="75" special="0" island="0"/>
+		<item id="300005" name="大力水手" type="1" source="1" contain="100301,100302,100303,100304,100305" pay="95" special="1" island="0"/>
+		<item id="300006" name="汉堡装" type="1" source="1" contain="100223,100280" pay="75" special="0" island="0"/>
+		<item id="300007" name="海盗" type="1" source="1" contain="100267,100268,100269,100270,100271,100272,100273,100274,100275,100276" pay="95" special="1" island="0"/>
+		<item id="300008" name="萝莉" type="1" source="1" contain="100039,100040,100041,100042,100043,100044,100038" pay="75" special="0" island="0"/>
+		<item id="300009" name="朋克" type="1" source="0" contain="100241,100242,100243,100244,100245,100246,100247,100248,100249,100250" pay="75" special="0" island="0"/>
+		<item id="300010" name="爱德华" type="1" source="1" contain="100224,100225,100226,100227,100228,100229,100230" pay="75" special="0" island="0"/>
+		<item id="300011" name="公主装" type="1" source="0" contain="100288,100289,100290,100291,100470" pay="75" special="0" island="0"/>
+		<item id="300012" name="宝宝装" type="1" source="0" contain="100471,100472,100473,100475,100476,100477,100478" pay="0" special="0" island="0"/>
+		<item id="300013" name="萌小虎" type="1" source="1" contain="100251,100252,100253,100254" pay="95" special="0" island="0"/>
+		<item id="300014" name="猫耳少女" type="1" source="1" contain="100231,100232,100233,100234,100235,100236,100237,100238" pay="95" special="0" island="0"/>
+		<item id="300015" name="兔小乖" type="1" source="1" contain="100479,100480,100481,100482,100483,100484,100485" pay="95" special="0" island="0"/>
+		<item id="300016" name="泰迪熊" type="1" source="1" contain="100263,100264,100265" pay="75" special="0" island="0"/>
+		<item id="300017" name="藤原千雪" type="1" source="1" contain="100492,100493,100494,100495,100496" pay="75" special="0" island="0"/>
+		<item id="300018" name="橄榄球手" type="1" source="1" contain="100281,100282,100283,100284,100497" pay="95" special="1" island="0"/>
+		<item id="300019" name="粉红小淑女" type="1" source="1" contain="100020,100021,100022,100023,100024,100025" pay="75" special="0" island="0"/>
+		<item id="300020" name="超人装扮" type="1" source="4" contain="100217,100218,100219,100220,100221,100222" pay="0" special="0" island="3"/>
+		<item id="300021" name="蝙蝠侠" type="1" source="1" contain="101115,101116,101117,101118,101119,101120,101121" pay="95" special="0" island="0"/>
+		<item id="300022" name="钢铁侠" type="1" source="1" contain="101122,101123,101124" pay="75" special="0" island="0"/>
+		<item id="300023" name="绿灯侠" type="1" source="1" contain="101125,101126,101127,101128,101129,101130" pay="75" special="0" island="0"/>
+		<item id="300024" name="卜卜兔子装" type="1" source="0" contain="100121,100119,100118,100120" pay="0" special="0" island="0"/>
+		<item id="300025" name="圣诞套装" type="1" source="4" contain="101333,101334,101335,100018" pay="0" special="0" island="3"/>
+		<item id="300026" name="游戏王套装" type="1" source="4" contain="101405,101406,101407,101408,100018" pay="0" special="0" island="3"/>
+		<item id="300027" name="冒险使者套装" type="2" source="4" contain="101414,101415" pay="0" special="0" island="0"/>
+		<item id="300028" name="侦察骑士套装" type="2" source="4" contain="101416,101417" pay="0" special="0" island="0"/>
+		<item id="300029" name="解谜高手套装" type="2" source="4" contain="101418,101419,101460" pay="0" special="0" island="0"/>
+		<item id="300030" name="聪明奇侠套装" type="2" source="4" contain="101420,101421" pay="0" special="0" island="0"/>
+		<item id="300031" name="反恐精英套装" type="2" source="4" contain="101422,101423" pay="0" special="0" island="0"/>
+		<item id="300032" name="悬疑专家套装" type="2" source="4" contain="101424,101425" pay="0" special="0" island="0"/>
+		<item id="300033" name="探险大师套装" type="2" source="4" contain="101426,101427" pay="0" special="0" island="0"/>
+		<item id="300034" name="冒险王者套装" type="2" source="4" contain="101428,101429" pay="0" special="0" island="0"/>
+		<item id="300035" name="大智天下套装" type="2" source="4" contain="101430,101431" pay="0" special="0" island="0"/>
+		<item id="300036" name="智慧之神套装" type="2" source="4" contain="101432,101433" pay="0" special="0" island="0"/>
+		<item id="300037" name="巅峰卜克王套装" type="2" source="4" contain="101434,101435" pay="0" special="0" island="0"/>
+		<item id="300038" name="格格装" type="1" source="1" contain="101440,101441,101442,101458" pay="95" special="0" island="0"/>
+		<item id="300039" name="艾玛套装" type="1" source="1" contain="101443,101444,101445" pay="75" special="0" island="0"/>
+		<item id="300040" name="天使侍从" type="1" source="1" contain="101446,101447,101448,101449,101450,101451,101459" pay="95" special="0" island="0"/>
+		<item id="300041" name="小恶魔装" type="1" source="1" contain="101452,101453,101454,101455,101457" pay="95" special="0" island="0"/>
+		<item id="300042" name="黑暗精灵装" type="1" source="1" contain="101381,101382,101383,101384" pay="75" special="0" island="0"/>
+		<item id="300043" name="地狱男爵装" type="1" source="1" contain="101385,101386,101387,101388,101389,101390" pay="75" special="0" island="0"/>
+		<item id="300044" name="游戏王套装1" type="2" source="4" contain="101462,101463" pay="0" special="0" island="3"/>
+		<item id="300045" name="游戏王套装2" type="2" source="4" contain="101464,101465" pay="0" special="0" island="3"/>
+		<item id="300046" name="游戏王套装3" type="2" source="4" contain="101466,101467" pay="0" special="0" island="3"/>
+		<item id="300047" name="游戏王套装4" type="2" source="4" contain="101468,101469" pay="0" special="0" island="3"/>
+		<item id="300048" name="游戏王套装5" type="2" source="4" contain="101470,101471" pay="0" special="0" island="3"/>
+		<item id="300049" name="巨蟹座" type="1" source="1" contain="101257,101258,101259,101260" pay="0" special="0" island="0"/>
+		<item id="300050" name="摩羯座" type="1" source="1" contain="101265,101266,101267,101268,101269" pay="0" special="0" island="0"/>
+		<item id="300051" name="白羊座" type="1" source="1" contain="101246,101247,101248,101249,101250" pay="0" special="0" island="0"/>
+		<item id="300052" name="狮子座" type="1" source="1" contain="101276,101277,101278,101279,101280" pay="0" special="0" island="0"/>
+		<item id="300053" name="处女座" type="1" source="1" contain="101251,101252,101253,101254,101255,101256" pay="0" special="0" island="0"/>
+		<item id="300054" name="双子座" type="1" source="1" contain="101289,101290,101291,101292" pay="0" special="0" island="0"/>
+		<item id="300055" name="双鱼座" type="1" source="1" contain="101281,101282,101283,101284" pay="0" special="0" island="0"/>
+		<item id="300056" name="天秤座" type="1" source="1" contain="101293,101294,101295,101296" pay="0" special="0" island="0"/>
+		<item id="300057" name="金牛座" type="1" source="1" contain="101261,101262,101263,101264" pay="0" special="0" island="0"/>
+		<item id="300058" name="射手座" type="1" source="1" contain="101270,101271,101272,101273,101274,101275" pay="0" special="0" island="0"/>
+		<item id="300059" name="水瓶座" type="1" source="1" contain="101285,101286,101287,101288" pay="0" special="0" island="0"/>
+		<item id="300060" name="天蝎座" type="1" source="1" contain="101297,101298,101299,101300" pay="0" special="0" island="0"/>
+		<item id="300061" name="公主装" type="1" source="1" contain="101171,101172,101173,101174" pay="0" special="0" island="0"/>
+		<item id="300062" name="藤原美雪" type="1" source="1" contain="101184,101185,101186,101187,101188" pay="0" special="0" island="0"/>
+		<item id="300063" name="吱吱天王" type="1" source="1" contain="101232,101233,101234,100018" pay="0" special="0" island="0"/>
+		<item id="300064" name="中国旗袍" type="1" source="1" contain="101175,101176,101177,101178" pay="0" special="0" island="0"/>
+		<item id="300065" name="可爱小女生" type="1" source="1" contain="101179,101180,101181,101182,101183" pay="0" special="0" island="0"/>
+		<item id="300066" name="萨美亚的梦" type="1" source="1" contain="101235,101236,101237,101238" pay="0" special="0" island="0"/>
+		<item id="300067" name="绿林侦探" type="1" source="1" contain="101568,101569,101570,101571" pay="0" special="0" island="0"/>
+		<item id="300068" name="街头霸王" type="1" source="1" contain="101565,101566,101567,100018" pay="0" special="0" island="0"/>
+		<item id="300069" name="唐朝状元" type="1" source="1" contain="101563,101564,100018" pay="0" special="0" island="0"/>
+		<item id="300070" name="可爱小奶牛" type="1" source="1" contain="101552,101553,101554,100018" pay="75" special="0" island="0"/>
+		<item id="300071" name="青蛙王子" type="1" source="1" contain="101555,101556,101557" pay="80" special="0" island="0"/>
+		<item id="300072" name="清纯学生装" type="1" source="1" contain="101576,101577,101578,100018" pay="75" special="0" island="0"/>
+		<item id="300073" name="盼盼爱竹子" type="1" source="1" contain="101558,101559,101560,101561,101562" pay="75" special="0" island="0"/>
+		<item id="300074" name="非主流的我" type="1" source="1" contain="101572,101573,101574,101575" pay="75" special="0" island="0"/>
+		<item id="300075" name="爆炸头" type="1" source="1" contain="101149,101150,101151,101152,101153" pay="75" special="0" island="0"/>
+		<item id="300076" name="魔术师" type="1" source="1" contain="101155,101156,101157,101158,101159,101160,101154" pay="0" special="0" island="0"/>
+		<item id="300077" name="牛仔警长" type="1" source="1" contain="101165,101166,101167,101168,101169,101170" pay="0" special="0" island="0"/>
+		<item id="300078" name="侠盗牛仔" type="1" source="1" contain="101239,101240,101241,101242,101243,101244,101245" pay="0" special="0" island="0"/>
+		<item id="300079" name="吸血鬼绅士" type="1" source="1" contain="101161,101162,101163,101164" pay="0" special="0" island="0"/>
+		<item id="300080" name="武士的天下" type="1" source="1" contain="101308,101309,101310,101311" pay="0" special="0" island="0"/>
+		<item id="300081" name="桃心使者" type="1" source="1" contain="101301,101302,101303,101304,101305,101306" pay="0" special="0" island="0"/>
+		<item id="300082" name="梅梅公主装" type="1" source="1" contain="101485,101486,101487,101488,101489,101490,101491,101492" pay="0" special="0" island="0"/>
+		<item id="300083" name="印度公主" type="1" source="1" contain="101515,101516,101517,101518,101519,101520" pay="0" special="0" island="0"/>
+		<item id="300084" name="琉璃淑女" type="1" source="1" contain="101501,101502,101503,101504,101505,101506,101507,101508" pay="0" special="0" island="0"/>
+		<item id="300085" name="方糖哥哥" type="1" source="1" contain="101528,101529,101530,101531,101532,101533" pay="0" special="0" island="0"/>
+		<item id="300086" name="甜心龙七七" type="1" source="1" contain="101509,101510,101511,101512,101513,101514" pay="0" special="0" island="0"/>
+		<item id="300087" name="蜜糖小甜心" type="1" source="1" contain="101534,101535,101536,101537,101538" pay="0" special="0" island="0"/>
+		<item id="300088" name="爱的羽翼" type="1" source="1" contain="101521,101522,101523,101524,101525,101526,101527" pay="0" special="0" island="0"/>
+		<item id="300089" name="女冲浪手" type="1" source="1" contain="101545,101546,101547,101548,101549,101550,101551" pay="0" special="0" island="0"/>
+		<item id="300090" name="男冲浪手" type="1" source="1" contain="101539,101540,101541,101542,101543,101544" pay="0" special="0" island="0"/>
+		<item id="300091" name="super冲浪手" type="1" source="1" contain="101493,101494,101495,101496,101497,101498,101499,101500" pay="0" special="0" island="0"/>
+	</kind>
+	<kind id="4" name="道具卡片" start="400001" end="499999" max="1" path="resource/clothcard/icon/">
+		<item id="400001" name="冰雪泡泡糖" type="112" source="1" pay="250" contain="0"/>
+		<item id="400002" name="落雷手杖" type="122" source="1" pay="250" contain="100464"/>
+		<item id="400003" name="黄色飞龙跟随" type="113" source="1" pay="250" contain="0"/>
+		<item id="400004" name="陨石手杖" type="122" source="1" pay="250" contain="100469"/>
+		<item id="400005" name="绚丽烟花" type="122" source="1" pay="250" contain="100468"/>
+		<item id="400006" name="骷髅泡泡糖" type="112" source="1" pay="250" contain="101107"/>
+		<item id="400007" name="免费眼睛卡" type="104" source="1" pay="0" contain="101330,101331"/>
+		<item id="400008" name="雪花飘落" type="101" source="4" pay="0" contain="0"/>
+		<item id="400009" name="召唤陨石" type="101" source="4" pay="0" contain="0"/>
+		<item id="400010" name="宠物跟随—小红龙" type="117" source="4" pay="0" contain="0"/>
+		<item id="400011" name="蓝色隐形眼镜" type="104" source="1" pay="0" contain="101472"/>
+		<item id="400012" name="紫色隐形眼镜" type="104" source="1" pay="0" contain="101474"/>
+		<item id="400013" name="绿色隐形眼镜" type="104" source="1" pay="0" contain="101473"/>
+		<item id="400014" name="宠物卜丘丘" type="117" source="4" pay="0" contain="0"/>
+		<item id="400015" name="宠物跟随-小尼莫" type="117" source="1" pay="0" contain="0"/>
+	</kind>
+	<kind id="5" name="游戏卡片" start="500001" end="599999" max="1" path="resource/clothcard/icon/">
+		<item id="500001" name="海陆联通" type="2"/>
+		<item id="500002" name="篮球对决" type="2"/>
+		<item id="500003" name="涂鸦战争" type="2"/>
+		<item id="500004" name="高空跳伞" type="2"/>
+		<item id="500005" name="西部对决" type="2"/>
+	</kind>
+	<kind id="6" name="卡片材料" start="600001" end="699999" max="1" path="resource/clothcard/icon/">
+		<item id="600001" name="小小金豆碎片1"/>
+		<item id="600002" name="小小金豆碎片2"/>
+		<item id="600003" name="小小金豆碎片3"/>
+		<item id="600004" name="小小金豆碎片4"/>
+		<item id="600005" name="小小金豆碎片5"/>
+		<item id="600006" name="小小金豆碎片6"/>
+		<item id="600007" name="小小金豆碎片7"/>
+		<item id="600008" name="小小金豆碎片8"/>
+		<item id="600009" name="拼图碎片1"/>
+		<item id="600010" name="拼图碎片2"/>
+		<item id="600011" name="拼图碎片3"/>
+		<item id="600012" name="拼图碎片4"/>
+		<item id="600013" name="拼图碎片5"/>
+		<item id="600014" name="拼图碎片6"/>
+	</kind>
+</items>

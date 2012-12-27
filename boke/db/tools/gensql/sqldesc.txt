@@ -1,0 +1,748 @@
+addcharm    调整魅力(+/-) 	  		
+adddamee 	调整大米(+/-) 	  		
+addexp		调整经验(+/-) 	  
+addiq		调整智慧(+/-) 	  
+addr_city	 城市编号	
+addr_province	省份编号	
+addr_type	    地址类型	
+addr	    地址	
+addstrong	调整力量(+/-)	
+add_succ_flag  是否添加成功(0:false,1:true)	
+add_value	调整数值(+/-)	
+addxiaomee		调整小米(+/-)	
+admin_db 权限管理
+adminid	  管理员编号	
+albumid  相册号
+allcount   总数
+amdinid		管理员编号	
+animalid 动物幼崽的ID号
+animal_type 是水生还是陆生动物
+answer	 答案	
+atk	攻击力范围
+attire_id 物品ID		
+attire_rank  物品等级
+attiretype  物品类型(0:装扮,1:小屋)
+attire_usedflag  0:未使用,1:已使用,2:未使用+已使用
+attr_addition	 剩余属性点
+attrid		物品ID		
+attried 物品id
+automonthed		
+base_svalue._init_ 0
+base_svalue 积累值
+benefactor_list 为班级捐赠物品的列表
+birthday	生日	
+birth 生日
+blacklist 黑名单 4+ 4*200
+boardid	 面板ID	0:记者社 1:音乐 2:涂鸦
+bool_value  1:是 ,0:否
+buf		 
+buffer._init_ 0x00000000
+buy_attireid   购买的装扮ID
+buy_count  购买的个数
+cachedate		 
+cal_value_time 属性更新时间
+cardid	 	
+cardid   卡片ID
+card_id 吉吉乐卡牌的ID号
+cardlist 卡牌列表
+card_num 拥有的吉吉乐卡牌的数目
+cards        卡片列表
+cardtype		
+catch_level 扑捉等级
+catch_map 扑捉地图
+catch_region 扑捉区域
+centerattirelist 总部
+changeflag	
+change_gold  调整金元宝(+/-) 
+change_silver 调整银元宝(+/-) 
+change_type     1:摩尔豆,2:密码
+change_v1 		摩尔豆:当前摩尔豆.<br />密码:1.登入密码. 2.支付密码
+change_v2 		摩尔豆:物品ID.<br />密码:无
+change_value    (+/-)<br />摩尔豆:调整多少.<br />密码:1
+changvalue  修改value(+/-) 	 		
+charm	 魅力值	
+chest 衣柜里物品数量
+childcount	新的大使多少个下线	 
+childid		下线ID 
+childlist 下线列表
+class_access_flag 班级的是否可访问标志
+class_color  班级图标的颜色
+class_firstid 用户佩戴的班级徽章的班级号
+classid 班级号（米米号）
+class_jion_flag 班级是否可以加入标志
+classlist._init_ 0x00000000 
+classlist 参加班级的列表
+class_logo 班级选择的logo
+class_medal 记录班级领的奖杯（主要用于防刷）
+class_name 班级的名称
+class_slogan 班级口号
+class_word 班级图标里选择的字
+client_flag._init_ 0
+client_flag 为客户端保存的标志
+client 有前端填写，控制考核的进程
+close_stamp 获取亲密度时间
+close_value._init_ 0
+close_value 亲密度
+color._init_ 0
+color	   颜色	
+content 日记的内容
+contribute_attire._init_ 0
+contribute_attire 物资贡献度
+contribute_degree._init_ 0
+contribute_degree 贡献度 
+contribute_equip._init_ 0
+contribute_equip 装备贡献度
+contribute_score._init_ 0
+contribute_score 战队积分贡献度
+contribute_team_exp._init_ 0
+contribute_team_exp 战队经验贡献度
+count_all	  总共个数	
+count_in_db		
+count 总数
+count 总数量
+creategroup_count 创建群的个数=3
+creategroup_id1 创建群id1
+creategroup_id2 创建群id2
+creategroup_id3 创建群id3
+creategroupid 创建的群的ID
+create_time 创建时间
+cup1		
+cup2		
+cup3		
+cup_item		
+cup_list		
+cup_type		
+cur_count   当前次数
+curdate_energy._init_ 0
+curdate_energy 当前能量的改变时间
+cur_stages 目前等级
+c			字符
+damee		
+damee_item		
+date	 	日期 		
+day_copper 今天得到的铜牌数·
+dayexp  当天的经验值
+day_gold 今天得到的金牌数
+dayhot  每天的热度
+day_silver 今天得到的银牌数
+deal_date		
+dealflag		
+deal_hour		
+deal_minute		
+deal_type		
+def_flag	 	预定义的flag
+def_usetime	 预定义的usetime
+desc		
+diarydate   日记日期（例如20090101）
+diary_lock 整个笔记本的锁标志
+disciplecount 徒弟个数
+discipleid  徒弟id
+double_exp._init_ 0
+double_exp 双倍经验
+drinktime 喝水时间
+duetime  到期时间
+dv 努力值
+earth	地
+eattime 喂养时间
+edit_time 编写时间
+email_db_0   通过 email 找userid
+emailid	 邮件ID
+email_noread   邮箱未读个数 		
+email_sys_0   明信片系统 
+email_unread	邮箱未读个数 			
+email	 邮箱	
+endattireid	   查询终止ID(不包括)	
+enddate	          终止时间	
+end_taskid		
+endtime		 终止时间	
+end_type		
+enduranceinit	耐力初值
+enduranceparam	耐力成长值
+endurance_add	耐力用户配点
+endurance	耐力
+energy_curdate._init_ 0
+energy_curdate 目前的能量
+energy._init_ 0
+energy_stamp 获取能量时间
+energy_value 能量值
+energy 能量
+equal_times._init_ 0
+equal_times_week._init_ 0
+equal_times_week 每周战队和局的次数
+equal_times 战队和局的次数
+equip_buy_time 设施购买时间
+equip_id 设施id
+equit_attireid1._init_ 0
+equit_attireid1 设施成长所需的物品1
+equit_attireid2._init_ 0
+equit_attireid2 设施成长所需的物品2
+equit_attireid3._init_ 0
+equit_attireid3 设施成长所需的物品3
+equit_attireid4._init_ 0
+equit_attireid4 设施成长所需的物品4
+equit_hp._init_ 0
+equit_hp 设施体力值
+equit_isshow._init_ 0
+equit_isshow 设施是否展现 0：未展现，1：展现
+equit_nums_per_day._init_ 0
+equit_nums_per_day 每天贡献的设施数
+equit_stat 设施状态
+equit_times_per_day._init_ 0
+equit_times_per_day 每天为设施贡献的次数
+experience	经验
+exp_pool 经验池
+exp				经验	
+farm_accesslist 农场访问列表
+farmattirelist 农场使用物品的信息
+farm_state  农场的锁定状态
+feeling     心情描述
+fiend_list		
+fileid  文件名
+fire	火
+first_time 拉姆魔法课第一阶段完成时的时间
+flag		 标志
+flower		
+fortattirelist 要塞
+framattirelist 农场已使用物品
+freetime  放生时间
+friendcount		 好友个数
+frienditem		
+friendlist 好友列表 4+ 4*200
+fruitnum  果实数量
+funclist 功能列表
+gameflag._init_  0x00000000 
+gameflag 第一位表示  1：摩尔庄园；2：赛尔号；3：大玩国； 4：嘟嘟；5小花仙；6功夫派； 21：帕拉巫
+gameid	     游戏ID	
+game_score_db 游戏排名
+game  项目Id : 1:摩尔, 2:PP, 3:大玩国,4,DUDU, 5:小花仙, 6,功夫, 21:帕拉巫: 注意: 当game＝0时表示所有项目， ip1为最后一次ip,ip2:为最后一次时间.
+gentime  产生时间
+gold  金元宝
+group_0 群组 
+groupcount		
+groupid		
+groupid	    群组ID
+group_item		
+groupmsg 群公告
+groupname 群名称 
+groupownerid 群主
+growth 成长值
+guest_id   留言人的米米号
+guest_nick   留言人的昵称
+homeattirelist_1 小窝1的使用物品
+homeattirelist_2 小窝2的使用物品
+homeattirelist_3 小窝3的使用物品
+homeattirelist 小屋使用中的列表 和jyattirelist一致
+homeattirelist 小屋使用中的装扮
+honor	荣誉值
+hopedate     许愿时间		
+hope_db  许愿
+hot				小屋热度	
+hp	生命值
+hungry	    饥饿值	
+id			编号	
+index		编号	
+info		
+info_ex		
+init_lowercard_count 初始几张是有效的
+intelligence	智力
+interest	 兴趣	
+ip		    IP地址			
+iqinit			智力初值
+iqparam			智力成长值
+iq_add	智力用户配点
+iq			智慧	
+is_add_group  (0,1),1:创建群并且是群主.
+is_existed	0:不存在,1:存在
+is_first_set     是否是首次设置：1:true,0:false
+is_inited	0:没有初始化,1:已经初始化
+is_seted  是否已经设置过：1:true,0:false
+is_succ     操作是否成功： 0:NO , 1:YES
+item		
+itemlen	     	
+item_msgboard		
+jyattirelist 家园 使用中的列表 4+ 16*100 (16:attireid(4)+相关参数(12))
+key		
+kill_bug_time 除虫时间
+lamu 拉姆心情内容
+lastcal_time 上次计算成长值时间
+lastip 最后登入的IP
+leave_damee		
+leavedamee		
+leave_xiaomee  剩余小米
+len	        长度	
+level 等级
+list		
+logdate	    时间	
+logtime      记录时间
+losecnt 输的次数
+lose_count  输的次数
+lost_times._init_ 0
+lost_times_week._init_ 0
+lost_times_week 每周战队输的次数
+lost_times 战队输的次数
+lowercnt 低级卡牌的个数
+lower_count  低级卡片的个数
+mail_number  邮编		
+maintype 题目ID
+map		
+mapid	    地图编号	
+mapname     地图名字
+masterid  师傅id
+mature_time 种子成熟时间
+mature 成熟时间
+max_count   最多允许拿的个数 get_count   已经拿的个数 
+maxcount	 最大允许值	
+max_hp 最大体力值
+max_stages 最大等级
+maxvalue		最大允许值	
+membercount	 成员个数
+member_donation_nums_per_day 每天贡献值
+member_id 成员id
+memberid    成员米米号
+memberlist 成员列表
+member_list 班级成员
+member_prmt_time 成员加入时间
+member_prmt_time成员加入时间
+member_rank 成员职位
+member_work_date._init_ 0
+member_work_date 打工的时间
+member_work_times._init_ 0
+member_work_times 每天打工的次数
+mms_0     保存 1:果果树,2:向导,3:送祝福 之类任务数据
+mms_type 		类型:1:果果树,2:向导,3:送祝福
+mobile	  手机	
+money  摩尔豆
+mon_king_losses 精灵王输的次数
+mon_king_wins 精灵王胜的次数
+monthcount		
+month_duedate		
+month_enabledate		
+month_nexterrcount		
+month_paytype		
+months		
+month_used		
+mood 日记选择的心情
+mp	魔法值
+msg_buf 留言
+msg_id  消息ID
+msgid	 消息ID
+msglen 消息长度	
+msglist	 消息列表	
+msgstore 0：未回复。1：已回复。2 ：垃圾箱
+msg	    消息 
+mud	        泥巴
+mvp._init_ 0
+mvp_week._init_ 0
+mvp 本场最佳
+nature 性格
+newcount    要换多少个
+new_email	新邮箱	
+newnick		新昵称
+newpasswd   新密码
+next_startdate		
+next_startindex		
+nick	 昵称	
+noread_count	未读个数
+nousedcount	 未使用个数	
+noused_farmattirelist  农场未使用物品
+noused_feedstuffattirelist 饲料房的物品
+noused_homeattirelist 小屋未使用物品的列表  和noused_jyattirelist一致
+noused_homeattirelist 小屋未使用的装扮
+noused_jyattirelist 家园 未使用物品的列表 4+ 8*400 (8:attireid(4)+个数(4))
+objuserid	 要举报的米米号
+Ol_count	  在线总次数	
+old_childcount  摩尔大使原有的下线
+oldchildcount 旧的大使任务完成次数
+oldcount	 要原有的多少个来换
+old_email	 原有的邮箱名
+oldpasswd	 原有的密码	
+Ol_last	   最后一次登陆的时间	
+Ol_time    在线总时长
+Ol_today	 最后一次登陆的那天在线时长	
+one_count	 	
+onlinetime	 本次在线时间	
+operatetype	  类型:0:减少总个数.<br />1:增加总个数..<br />2:已使用转成未使用<br />3:未使用转成已使用.<br />4:已使用转成未使用并将减少总个数
+opt_count   当天投票数
+opt_type   操作类型：0-4: 对v1-v5中的值加1
+output_time 上次产出时间
+out_transid	 	
+ownercolor  主人颜色 
+ownerflag   主人flag
+ownerid     主人米米号
+ownernick   主人昵称
+pagecount   每页最多多少个
+pageid	      每几页   	
+parent_email  父母邮箱		
+parentid		摩尔大使中的上线
+party_db 派对 
+partytime   派对时间
+partytype   派对类型
+passwdemail 密保邮箱
+passwd	     密码	
+paypasswd	 支付密码	
+paytype	       	
+petbirthday	 注册时间	
+petcolor	 摩尔颜色	
+pet_exp_pool 精灵经验池
+pet_groupid  拉姆队伍ID
+petid	 	 宠物ID
+pet_isswap_map 精灵交换地图
+pet_sports_db  拉姆运行会
+pettype	宠物类型
+physiqueinit	体力初值
+physiqueparam	体力成长值
+physique_add	体力用户配点
+physique	体力
+picture_00  图片记录
+pk_equip_times._init_ 0
+pk_equip_times_week._init_ 0
+pk_equip_times_week 每周战胜装备次数
+pk_equip_times 战胜装备次数
+pk_list  保存好友的PK记录
+pk_medal_nums._init_ 0
+pk_medal_nums 奖牌获得数目
+pk_person_times._init_ 0
+pk_person_times_week._init_ 0
+pk_person_times_week 每周打败赛尔数目
+pk_person_times 打败赛尔数目
+pk_team_board 公告板
+pk_team_exp._init_ 0
+pk_team_exp 战队经验
+pk_team_grp_id 战队所在的组id
+pk_team_id 所在战队id
+pk_team_join_method 允许加入战队方式
+pk_team_logo_color 队徽颜色
+pk_team_logo_id 队徽
+pk_team_logo_name 队徽名字
+pk_team_name 队名
+pk_team_nature 爱好
+pk_team_slogan 口号
+pk_team_visited_flag  战队可见标志
+pk_times._ex_  0-100
+pk_times  队战次数
+pos_x	     拉姆位置X	
+pos_y		  拉姆位置Y
+pp_get_pet_out.gentime  宠物的获得时间 
+prctlist._init_ 0x00000000
+prctlist 精灵训练列表
+presentlist 谁赠送礼物的列表
+present_num  赠送的礼物的数目
+price	    	
+private_msg		
+professionlist  职业标志位，4个字节表示一个职业
+professtion	职业 0：无 1：弓箭手 2：魔法师 3：传教士 4：剑士
+public_flag 公开标志0：no,1:yes
+question_count 一周答的题目数
+question_id  问题的题号
+question	   问题	
+quickinit		速度初值
+quickparam		速度成长值
+quick_add	速度用户配点
+quick	速度
+race	种族
+read_count	      实际的个数	
+real_add_value	 实际增加的个数 	
+reason1_count		
+reason2_count		
+reason3_count		
+reason4_count		
+reason_ex	原因_ex
+reason	          原因  	
+recv_id	      接收者ID     	
+recv_type_name	许愿类型名称
+recv_type		许愿类型	
+reg_addr_type	  注册渠道类型	
+regflag 注册渠道
+register_serial_id		
+register_time	 注册时间
+regtime 注册时间
+reportlen	  	
+reportmsg		
+res_buf 回复
+right_count 一周答对的题目数
+room_bug   泥巴
+room_flag  标志
+room_flower  鲜花
+room_hot 热度
+room_id      米米号
+roominfo_0   小屋
+roommsg_0	 小屋留言
+room_neighbor  邻居（未启用）
+room_puglist 访问列表
+sanitary	清洁值	
+score._init_ 0
+score_week._init_ 0
+score_week 每周积分
+score		 分数
+senderid	 发送者ID		
+sendernick		 发送者昵称	
+send_id	   发送者ID	
+send_nick	 发送者昵称	
+sendtime	 发送时间	
+serial_db 神奇密码
+serialid		
+serialid  序列号
+serial_str		
+serverid    服务器ID
+servername   服务器名字
+sex	         性别	
+sickflag  1,表示干旱，2表示虫害，3表示既虫害又干旱
+sicktime  生病时间 		
+sick_type 拉姆得的病的总类
+signature  个性签名	 	
+silver 银元宝
+skill	    技巧 	
+skillid		技能ID
+sort_index	 排序类型	
+sp_atk 
+spirit	      精神  	
+sportstype   运动项目类型 1:马拉松,2:游泳,3:跳高
+spring_msg  春联
+srcuserid	 	
+stamp	      时戳	
+startattireid	查找时开始的装扮ID
+startdate		  开始时间
+startime	  开始时间			
+startindex	 	
+startindex  开始ID
+start_taskid		
+start_time._init_ 0
+start_time 开始时间
+starttime   开始时间		
+start_type		
+state  处于的状态
+stat 状态
+step 保存魔法课上到哪一步
+strengthinit	力量初值
+strengthparam	力量成长值
+strength_add	力量用户配点
+strength	力量
+strong	 力量值	
+submit_db 用户提交(_xx:表示是哪个项目:如_05：为小花仙的 )
+subtype 选项ID 
+su_change_db 定时信息
+super_count  高级卡片的个数
+super_flag._init_ 0
+super_flag 超no标志
+super_nono_contribute._init_ 0
+super_nono_contribute 适合贡献的超能核心 0:未贡献，1:贡献
+swap_flag 是否处于交换状态
+swap_id 要交换的卡牌的ID号
+t_admin_all.flag 禁用与否
+t_admin_all 管理员配置
+t_admin_power 权限列表
+taskid	   任务ID	
+tasklist	 任务列表	
+tasklist 每两个bit一个任务总共有200个任务
+taskvalue 由前端填写
+task	   任务ID	
+t_attire_0	用户装扮
+t_changelist 客服修改历史
+t_chatlog_history 处分聊天记录
+t_day 每天(每周)任务
+team 对名
+telephone	 电话	
+texturize._init_ 0
+texturize 文理
+t_group_0 群组  
+t_group_main 用于产生群组ID
+thieve_list 偷取果实的列表
+thiever_list 偷钓鱼的列表
+thiever_time  上次钓鱼时间,以判断今天是否偷钓过
+third_exp._init_ 0
+third_exp 三倍经验
+thirsty 	口渴值	  	
+t_hope_history  许愿记录
+timelimit 存款期限
+time_nick nick打工的次数
+time_start._init_ 0
+time_start 训练开始时间
+time_tom tom打工的次数
+title 日记标题
+t_mms_0.opt_time 哪一天的(与opt_count一起来控制每天的操作次数限制 )
+t_month_task_00 每月任务
+tmp_flag 活动：标志
+tmp_value 活动：跑步次数
+t_msg_attime  定时信息 
+t_npc_task_0	NPC任务
+tool_add_hp 道具增加体力值
+total	总量
+total_copper 总共的铜牌数
+total_gold 总共得到的金牌数
+total_output 总共的产出
+total_question 总共答的题目数
+total_right 总共答对的题目数
+total_silver 总共的银牌数
+t_paipai_0 用户基础数据
+t_party 派对 
+t_pet_00.flag._ex_	0x02:宠物是否出战
+t_pet_00.flag	标志
+t_pet_00.userid._ex_	引用MOLE2_USER_XX.t_user_x.userid
+t_pet_00		用户宠物信息
+t_pet_max_score 全体最好成绩
+t_pet_sports_00 宠物的成绩列表
+t_attire_00.duetime._init_  0xFFFFFFFF    
+t_attire_00.duetime  到期时间
+t_attire_00	装扮表
+t_item_00	普通物品表
+t_questionnaire_00 投票／选择题
+t_questionnaire 未使用
+transid	 	
+t_report_00 用户的举报记录
+t_report_deal_history_00 举报处理记录
+t_roominfo_0  小屋信息
+t_roommsg_0	 小屋留言
+t_serial_00.useflag 使用了没
+t_skill_00	用户技能表
+t_sports_count 每一队总数
+t_sys_arg 数值:保存如有多少拉姆在托管.多少在学习之类数据
+t_task_day 每天任务
+t_team_main 管理战队号表
+t_temp_cup_00 奖杯表
+t_temp_pet_usecount 精灵使用数量
+t_user_0.birthday 么么公主生日飞艇中的生日
+t_user_0.flag._ex_  0x000000001:是否VIP
+t_user_0.ban_flag._ex_  0x00800000:封停14天<br />0x01000000:封停7天<br />0x02000000:封停24小时<br />0x04000000封号
+t_user_0         用户信息 
+t_user_animal_0 牧场动物
+t_user_attire_00 用户装扮 
+t_user_bank_0.time  存款时间
+t_user_bank_0   银行
+t_user_card_0   骑士卡牌
+t_user_class_0 班级
+t_user_connect_0  大使任务
+t_user_email_0 明信片
+t_user_ex_0.flag  0x01 当前是否是VIP , 0x02 曾经是否是VIP  
+t_user_ex_0 用户信息
+t_user_farm_0 牧场
+t_user_group_0.creategrouplist  4+((userid 4+ flag 4)*3)
+t_user_group_0.creategrouplist._init_  0x00000000 
+t_user_group_0.grouplist  4+((userid 4+ flag 4)*50)
+t_user_group_0   用户所在的组
+t_user_info_00.flag1  0x08000000:己发出修改密码的邮件<br />0x04000000:已设置过了父母邮箱<br/>0x02000000:已设置过支付密码<br/>0x00100000:已确认过了支付密码<br />0x00200000:己设置过了密保邮箱
+t_user_info_00.flag2 目前不使用 
+t_user_info_00    用户基础信息
+t_user_info_ex_00.flag  标示：0x01:性别
+t_user_info_ex_00    用户扩展的基础信息
+t_user_jy_0.attireid 种子类型
+t_user_jy_0.status 种子健康状态标志
+t_user_jy_0.value 成长值
+t_user_jy_0 种子数据
+t_user_lamu_diary_0.flower 给日记的投花数量
+t_user_lamu_diary_0.state 1表示单篇日记未加锁，2表示单篇加锁
+t_user_login_00 淘米妈妈（用户的每天登入情况）
+t_user_pet_0.petid 	拉姆ID 
+t_user_pet_0 		宠物
+t_user_pet_attire_0  宠物装扮
+t_user_picture_0 图片记录
+t_user_task_00 		 用户任务
+t_user_task_00.optdate	任务状态变更时间
+t_user_task_00.ser_value	供后台使用的任务数据数据
+t_user_task_00.as_value	供前端使用的任务相关数据
+t_user_writing.flag 存放位置：(0：未回复, 2：垃圾箱，>20000: 谁回复) 
+t_user_writing.logdate 用户提交时间
+t_user_writing.msg 用户提交的文章
+t_user_writing.reportdate  回复时间 
+t_user_writing.report 回复数据
+t_user_writing.type 投稿分类
+t_user_writing.userid 用户ID
+t_user_writing.value  序列号 
+t_writing_00  投稿
+t_writing_day_count_00.day 是哪一天的(如20090101)
+t_writing_day_count_00 记录每个人当天投了几次稿
+type	  类型	
+used	使用标志
+usedamee		
+usedcount 		
+usedcount   使用中的个数
+usedcount 使用数量
+usedflag 使用标志	
+used_homeattirelist_1  使用的小屋1
+used_homeattirelist_2  使用的小屋2
+used_homeattirelist_3  使用的小屋3
+used_homeattirelist_4  使用的小屋4
+used_homeattirelist_5  使用的小屋5
+useflag._ex_  0:未使用.1:已使用.2:所有
+user_00 摩尔庄园数据库 
+user_attire 用户的基本信息
+user_get_info_ex_out_item_1  用户穿在身上的装扮
+user_get_info_ex_out_item_2  宠物的相关信息 
+user_get_info_ex_out_item_3  宠物穿在身上的装扮
+userid	    米米号 
+USER_INFO_00.t_user_info_00.flag1._init_ 0x01:已经激活
+user_info_00  用户基础数据库
+user_serial_db 保存序列号，在找回密码时使用
+usetime 已经使用时间
+value	 数值 	
+vin_times 赢的次数
+vip._ex_  &01:当前是vip &02:之前是Vip &03:不是vip 
+vip_flag	VIP标志  	
+vipflag	VIP标志
+vip._init_  0 
+vip_month_count._init_ 0
+vip_month_count vip月数
+vip_rank._init_ 0
+vip_rank vip等级
+water_time 浇水时间
+water	水	
+weekhot 每周的热度
+week_id 哪一周
+whisper 悄悄话的内容
+wincnt 赢的次数
+win_count   赢的次数
+wind	风
+win_lose_flag   0:输 1:赢
+win_times._init_ 0
+win_times_week._init_ 0
+win_times_week 每周战队赢的次数
+win_times 战队赢的次数
+wisdom_value._init_ 0
+wisdom_value 智慧值
+work_date 贡献的时间
+work_time tom和nick总的打工的次数
+work  tom和nick打工的工程师的等级
+xiaomee_changetime  更新赛尔豆时间
+xiaomee_max	 	
+xiaomee_max  当天的得到多少个摩尔豆
+xiaomee	 小米	
+x 植物的x坐标 
+y 植物的y坐标
+npc_id	NPC标识
+task_id	任务ID
+num	数量
+task_type	任务类型
+recv_time	接受时间
+client_data	用户数据
+gettime	获取时间
+grid_id	格子ID
+t_attire_00.grid_id._ex_	背包ID从1开始，装备格子ID从10001开始
+t_attire_00.level	装备强化等级
+duration	耐久值
+hpmax	生命值上限增加
+mpmax	魔法值上限增加
+matk	魔法攻击力范围	
+def		防御力范围	
+mdef	魔法防御力范围
+speed	速度值
+resume	恢复
+hit		命中
+dodge	闪躲
+crit	必杀
+fightback	反击
+rpoison	抗毒
+rlithification	抗石化
+rlethargy	抗昏睡
+rinebriation	抗酒醉
+rconfusion	抗混乱
+roblivion	抗遗忘
+itemid		物品ID
+gridid		背包位置
+t_task_item_00	任务物品表
+injury_state	受伤状态
+fini_num		完成次数
+in_front		前后排
+joblevel		职业等级
+max_attire		最大装扮数
+max_medicine	最大药品数
+max_stuff		最大物品数
+randid			活动id号

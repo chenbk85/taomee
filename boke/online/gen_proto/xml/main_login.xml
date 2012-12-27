@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="main_login" cmdid_mode="db" create_time="2012年12月27日 星期4 12:04:28">
+  <struct_list>
+    <struct name="main_login_add_game_in" struct_from="self">
+      <field mode="single" name="channel_id" type="uint16" desc="渠道id"/>
+      <field mode="array" name="verify_code" type="char" size="32" desc=""/>
+      <field mode="single" name="idczone" type="uint32" desc=""/>
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+    </struct>
+    <struct name="main_login_add_game_with_chanel_in" struct_from="self">
+      <field mode="single" name="channel_code" type="uint16" desc="服务器验证渠道码"/>
+      <field mode="array" name="verify_code" type="char" size="32" desc=""/>
+      <field mode="single" name="idczone" type="uint32" desc=""/>
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="single" name="channel_id" type="uint16" desc="渠道id"/>
+    </struct>
+    <struct name="main_login_add_session_in" struct_from="self">
+      <field mode="single" name="channel_id" type="uint16" desc="渠道id"/>
+      <field mode="array" name="verify_code" type="char" size="32" desc=""/>
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="single" name="ip" type="uint32" desc="网络序"/>
+    </struct>
+    <struct name="main_login_add_session_out" struct_from="self">
+      <field mode="array" name="session" type="char" size="16" desc=""/>
+    </struct>
+    <struct name="main_login_check_session_in" struct_from="self">
+      <field mode="single" name="gameid" type="uint32" desc=""/>
+      <field mode="array" name="session" type="char" size="16" desc=""/>
+      <field mode="single" name="del_session_flag" type="uint32" desc=""/>
+    </struct>
+    <struct name="main_login_check_session_new_in" struct_from="self">
+      <field mode="single" name="from_game" type="uint32" desc="代签的起始产品，从from_game代签到to_game"/>
+      <field mode="array" name="session" type="char" size="16" desc="session内容"/>
+      <field mode="single" name="del_session_flag" type="uint32" desc="删除此session标示,0验证通过后session仍然有效，1验证通过后session失效"/>
+      <field mode="single" name="to_game" type="uint32" desc="代签的目标产品，从from_game代签到to_game，用于统计代签登录的人数"/>
+      <field mode="single" name="ip" type="uint32" desc="客户端ip，网络字节序"/>
+      <field mode="single" name="region" type="uint16" desc="游戏分区信息：0=电信，1=网通"/>
+      <field mode="single" name="enter_game" type="uint8" desc="是否进入游戏，1表示进入online服务器"/>
+      <field mode="array" name="tad" type="uint8" size="128" desc="登录渠道推广广告位，用于统计广告位带来的登录统计，如果没有推广全部填’\0’,如:media.4399.top.left等， 该字段目前为变长字符串，最长128个字节，以’\0’作为字符串结尾。"/>
+    </struct>
+    <struct name="main_login_login_in" struct_from="self">
+      <field mode="array" name="email" type="char" size="64" desc=""/>
+      <field mode="array" name="passwd_md5_two" type="char" size="16" desc=""/>
+      <field mode="single" name="channel_id" type="uint16" desc="渠道id"/>
+      <field mode="single" name="region" type="uint16" desc=""/>
+      <field mode="single" name="gameid" type="uint16" desc=""/>
+      <field mode="single" name="ip" type="uint32" desc="网络序"/>
+    </struct>
+    <struct name="main_login_login_out" struct_from="self">
+      <field mode="array" name="session" type="char" size="16" desc=""/>
+      <field mode="single" name="gameflag" type="uint32" desc=""/>
+    </struct>
+    <struct name="main_login_with_verif_img_in" struct_from="self">
+      <field mode="array" name="email" type="char" size="64" desc=""/>
+      <field mode="array" name="passwd_md5_two" type="char" size="16" desc=""/>
+      <field mode="single" name="channel_id" type="uint16" desc="渠道id"/>
+      <field mode="single" name="region" type="uint16" desc=""/>
+      <field mode="single" name="gameid" type="uint16" desc=""/>
+      <field mode="single" name="ip" type="uint32" desc="网络序"/>
+      <field mode="array" name="verif_session" type="char" size="16" desc="验证码session"/>
+      <field mode="array" name="verif_code" type="char" size="6" desc="验证码"/>
+      <field mode="single" name="channel_code" type="uint16" desc="渠道码"/>
+    </struct>
+    <struct name="pay_become_vip_in" struct_from="self">
+      <field mode="single" name="channel_id" type="uint16" desc="渠道id"/>
+      <field mode="array" name="verify_code" type="char" size="32" desc="安全码"/>
+      <field mode="single" name="is_auto_charge" type="uint8" desc="0：非自动续费 1：自动续费"/>
+      <field mode="single" name="use_coupon" type="uint8" desc="0：不使用优惠券 1：使用优惠码 2：使用抵用券或折扣券"/>
+      <field mode="array" name="coupon" type="char" size="9" desc="9字节优惠码，当use_coupon=1时有效"/>
+      <field mode="single" name="voucher" type="uint16" desc="抵用券或折扣券类型，当use_coupon=2时有效 （11：摩尔2元 12：摩尔5元 13：摩尔20元 61：赛尔二7折 62：赛尔二8折 63：赛尔二9折）"/>
+      <field mode="single" name="which_line" type="uint8" desc="0：电信 1：网通"/>
+      <field mode="array" name="extend" type="char" size="19" desc="扩展字段，暂时用不到，填NULL"/>
+    </struct>
+    <struct name="pay_become_vip_out" struct_from="self">
+      <field mode="single" name="mb_consumed" type="uint32" desc="扣取米币数（100倍；比如用户剩余1米币，该字段返回值为100）"/>
+      <field mode="single" name="mb_balance" type="uint32" desc="米币账户余额（100倍；比如用户剩余1米币，该字段返回值为100）"/>
+    </struct>
+    <struct name="pay_get_become_vip_price_out" struct_from="self">
+      <field mode="single" name="month1_price" type="uint32" desc="开通一个月VIP花费米币数（100倍）"/>
+      <field mode="single" name="month3_price" type="uint32" desc="开通三个月VIP花费米币数（100倍）"/>
+      <field mode="single" name="month6_price" type="uint32" desc="开通六个月VIP花费米币数（100倍）"/>
+      <field mode="single" name="month12_price" type="uint32" desc="开通十二个月VIP花费米币数（100倍）"/>
+    </struct>
+    <struct name="pay_get_mb_left_out" struct_from="self">
+      <field mode="single" name="mb_balance" type="uint32" desc="米币账户余额（100倍；比如用户剩余1米币，该字段返回值为100）"/>
+    </struct>
+    <struct name="userinfo_check_pay_password_in" struct_from="self">
+      <field mode="array" name="password" type="uint8" size="16" desc="支付密码"/>
+    </struct>
+    <struct name="userinfo_get_gameflag_in" struct_from="self">
+      <field mode="single" name="region" type="uint32" desc="忽略字段，添0"/>
+    </struct>
+    <struct name="userinfo_get_gameflag_out" struct_from="self">
+      <field mode="single" name="mee_fans" type="uint32" desc="0非米饭，1米饭"/>
+      <field mode="single" name="game_act_flag" type="uint32" desc="电信激活flag"/>
+      <field mode="single" name="dx_gameflag" type="uint32" desc="电信gameid或运算结果"/>
+      <field mode="single" name="wt_gameflag" type="uint32" desc="网通gameid或运算结果"/>
+    </struct>
+    <struct name="userinfo_isset_pay_password_out" struct_from="self">
+      <field mode="single" name="is_seted" type="uint32" desc="0没有设置，非0设置过"/>
+    </struct>
+    <struct name="userinfo_set_pay_password_in" struct_from="self">
+      <field mode="array" name="password" type="uint8" size="16" desc="支付密码"/>
+    </struct>
+    <struct name="vip_add_days_in" struct_from="self">
+      <field mode="single" name="days" type="uint32" desc=""/>
+      <field mode="single" name="add_flag" type="uint32" desc=""/>
+      <field mode="single" name="channel_id" type="uint32" desc=""/>
+      <field mode="array" name="trade_id" type="char" size="20" desc=""/>
+    </struct>
+    <struct name="vip_add_days_out" struct_from="self">
+      <field mode="single" name="op_id" type="uint32" desc=""/>
+      <field mode="single" name="vip_ret" type="uint32" desc=""/>
+    </struct>
+    <struct name="vip_get_info_out" struct_from="self">
+      <field mode="single" name="vip_result" type="uint32" desc=""/>
+      <field mode="single" name="vip_is_auto_charge" type="uint32" desc="0：非自动续费 1：自动续费"/>
+      <field mode="single" name="vip_begin_time" type="uint32" desc=""/>
+      <field mode="single" name="vip_end_time" type="uint32" desc=""/>
+      <field mode="single" name="vip_channel_id" type="uint32" desc="渠道id"/>
+    </struct>
+    <struct name="vip_sub_days_in" struct_from="self">
+      <field mode="single" name="days" type="uint32" desc=""/>
+      <field mode="single" name="channel_id" type="uint32" desc=""/>
+      <field mode="array" name="trade_id" type="char" size="20" desc=""/>
+    </struct>
+    <struct name="vip_sub_days_out" struct_from="self">
+      <field mode="single" name="op_id" type="uint32" desc=""/>
+      <field mode="single" name="vip_ret" type="uint32" desc=""/>
+      <field mode="single" name="vip_endtime" type="uint32" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="0x008B" name="userinfo_check_pay_password" struct_in="userinfo_check_pay_password_in" struct_out="" desc="" md5_tag="0xa96a11a6" bind_bitmap="16"/>
+    <protocol cmd="0x008C" name="userinfo_set_pay_password" struct_in="userinfo_set_pay_password_in" struct_out="" desc="" md5_tag="0x3a111adc" bind_bitmap="16"/>
+    <protocol cmd="0x008D" name="userinfo_isset_pay_password" struct_in="" struct_out="userinfo_isset_pay_password_out" desc="用户是否设置过支付密码" md5_tag="0xcc3fa251" bind_bitmap="16"/>
+    <protocol cmd="0x009B" name="userinfo_get_gameflag" struct_in="userinfo_get_gameflag_in" struct_out="userinfo_get_gameflag_out" desc="检查用户的游戏激活标识" md5_tag="0xaa54b631" bind_bitmap="4"/>
+    <protocol cmd="0x2001" name="vip_add_days" struct_in="vip_add_days_in" struct_out="vip_add_days_out" desc="" md5_tag="0x78b82792" bind_bitmap="0"/>
+    <protocol cmd="0x2002" name="vip_sub_days" struct_in="vip_sub_days_in" struct_out="vip_sub_days_out" desc="" md5_tag="0xbf0c5334" bind_bitmap="0"/>
+    <protocol cmd="0x2004" name="vip_get_info" struct_in="" struct_out="vip_get_info_out" desc="" md5_tag="0x71ac0042" bind_bitmap="0"/>
+    <protocol cmd="0x7601" name="pay_get_mb_left" struct_in="" struct_out="pay_get_mb_left_out" desc="查询米币余额" md5_tag="0xf2c4efe9" bind_bitmap="8"/>
+    <protocol cmd="0x7602" name="pay_become_vip" struct_in="pay_become_vip_in" struct_out="pay_become_vip_out" desc="游戏内用米币直接开通VIP" md5_tag="0xd8165379" bind_bitmap="8"/>
+    <protocol cmd="0x7603" name="pay_get_become_vip_price" struct_in="" struct_out="pay_get_become_vip_price_out" desc="获取VIP开通价格" md5_tag="0x02701dc7" bind_bitmap="8"/>
+    <protocol cmd="0xA021" name="main_login_login" struct_in="main_login_login_in" struct_out="main_login_login_out" desc="主登录" md5_tag="0xa59348f6" bind_bitmap="0"/>
+    <protocol cmd="0xA024" name="main_login_check_session" struct_in="main_login_check_session_in" struct_out="" desc="检查session" md5_tag="0x372301cc" bind_bitmap="0">
+      <error id="4331"/>
+    </protocol>
+    <protocol cmd="0xA032" name="main_login_with_verif_img" struct_in="main_login_with_verif_img_in" struct_out="" desc="" md5_tag="0x72adf6bd" bind_bitmap="0"/>
+    <protocol cmd="0xA03A" name="main_login_check_session_new" struct_in="main_login_check_session_new_in" struct_out="" desc="验证session" md5_tag="0xab75005c" bind_bitmap="2"/>
+    <protocol cmd="0xA122" name="main_login_add_session" struct_in="main_login_add_session_in" struct_out="main_login_add_session_out" desc="加session" md5_tag="0xc0d5347b" bind_bitmap="1"/>
+    <protocol cmd="0xA123" name="main_login_add_game" struct_in="main_login_add_game_in" struct_out="" desc="增加项目" md5_tag="0xfa9feb85" bind_bitmap="0"/>
+    <protocol cmd="0xA134" name="main_login_add_game_with_chanel" struct_in="main_login_add_game_with_chanel_in" struct_out="" desc="增加游戏项目（带渠道号）" md5_tag="0x581caa2d" bind_bitmap="0"/>
+  </protocol_list>
+  <error_list>
+    <error id="4331" name="SESSION_CHECK_ERR" desc=""/>
+  </error_list>
+  <desc_list>
+    <field_desc key="userid" desc="米米号"/>
+  </desc_list>
+  <bind_list>
+    <bind bindid="0" bind_name="for_add_session" bind_desc=""/>
+    <bind bindid="1" bind_name="for_check_session" bind_desc=""/>
+    <bind bindid="2" bind_name="get_gameflag" bind_desc=""/>
+    <bind bindid="3" bind_name="for_pay" bind_desc=""/>
+    <bind bindid="4" bind_name="for_pay_passwd" bind_desc=""/>
+  </bind_list>
+</taomee_proto>

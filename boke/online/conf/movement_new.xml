@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<movements>
+	<movement  id="1" cloth="100464" name="落雷手杖" cardid="400002" math="0" type="1"/>
+	<movement  id="2" cloth="100469" name="陨石手杖" cardid="400004" math="0" type="1"/>
+	<movement  id="3" cloth="100468" name="绚丽烟花" cardid="400005" math="0" type="1"/>
+	<movement  id="4" cloth="100261,100262,100466" name="小恐龙" cardid="0" math="0" type="2"/>
+	<movement  id="5" cloth="100301,100302,100303,100304,100305" name="大力水手" cardid="0" math="0" type="2"/>
+	<movement  id="6" cloth="100267,100268,100269,100270,100271,100272,100273,100274" name="海盗" cardid="0" math="0" type="2"/>
+	<movement  id="7" cloth="100281,100282,100283" name="橄榄球手" cardid="0" math="0" type="2"/>
+	<movement  id="8" cloth="101107" name="骷髅泡泡糖" cardid="400006" math="0" type="3"/>
+	<movement  id="9" cloth="0" name="雪花飘落" cardid="400008" math="1" type="4"/>
+	<movement  id="10" cloth="0" name="陨石攻击" cardid="400009" math="1" type="4"/>
+	<movement  id="11" cloth="0" name="小红龙" cardid="400010" math="0" type="5"/>
+	<movement  id="12" cloth="0" name="卜牙牙" cardid="400014" math="0" type="5"/>
+	<movement  id="13" cloth="0" name="水泡泡" cardid="400015" math="0" type="5"/>
+</movements>

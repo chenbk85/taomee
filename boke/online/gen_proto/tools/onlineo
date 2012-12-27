@@ -1,0 +1,4 @@
+#!/bin/bash
+cd `dirname $0` 
+
+../gen_proto_app/bin/cat_proto   -f"userid,L,6,4|seqid,L,10,4|result,l,14,4" -c4 -p../python/pop_online_proto.py   $* 

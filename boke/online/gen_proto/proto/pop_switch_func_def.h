@@ -1,0 +1,7 @@
+	PROTO_FUNC_DEF(sw_get_user_count)
+	PROTO_FUNC_DEF(sw_report_online_info)
+	PROTO_FUNC_DEF(sw_report_user_onoff)
+	PROTO_FUNC_DEF(sw_set_user_offline)
+	PROTO_FUNC_DEF(sw_noti_across_svr)
+	PROTO_FUNC_DEF(sw_get_recommend_svr_list)
+	PROTO_FUNC_DEF(sw_get_ranged_svrlist)

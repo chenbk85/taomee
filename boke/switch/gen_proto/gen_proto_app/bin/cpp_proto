@@ -1,0 +1,404 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import sys 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+import os 
+import re
+sys.path.append( "../"); 
+import  proto_pub
+#--------------------C++------------------
+def get_cpp_type( typestr):
+	if proto_pub.g_type_conf.has_key(typestr ) :  
+		return proto_pub.g_type_conf[typestr]  ;
+	else:
+		return "%s%s"%(g_struct_fix_name, typestr) ;
+
+def get_field_desc( field_name,field_desc="" ):
+	global g_desc_list;
+	if (field_desc=="" ):
+		if g_desc_map.has_key(field_name):
+			return g_desc_map[field_name];
+		else: 
+			return  ""
+	else:
+		return field_desc;
+#------------------------------------READ------------------------------------
+def get_read_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\tif (!ba.read_%s(this->%s)) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\tif (!this->%s.read_from_buf(ba)) return false;\n"%( field_name);
+
+def get_read_arr_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tif (!ba.read_%s(this->%s[i])) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\tif (!this->%s[i].read_from_buf(ba)) return false;\n"%( field_name);
+
+def get_read_varlist_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tif (!ba.read_%s(%s_item)) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\tif (!%s_item.read_from_buf(ba)) return false;\n"%( field_name);
+
+
+
+def get_write_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\tif (!ba.write_%s(this->%s)) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\tif (!this->%s.write_to_buf(ba)) return false;\n"%( field_name);
+
+def get_init_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\tthis->%s=0;\n"%( field_name);
+	else:
+		return "\tthis->%s.init();\n"%( field_name);
+
+
+
+def get_write_arr_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tif (!ba.write_%s(this->%s[i])) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\tif (!this->%s[i].write_to_buf(ba)) return false;\n"%( field_name);
+
+def get_init_arr_field_str(field_name,field_type ):
+	if  proto_pub.g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tthis->%s[i]=0;\n"%( field_name);
+	else:
+		return "\t\tthis->%s[i].init();\n"%( field_name);
+
+
+
+def get_cpp_struct_field_str(field ):
+	mode=field.mode;
+	field_str="";
+	read_buf_str="";
+	write_buf_str="";
+	init_str="";
+	if (mode=="single"):
+		field_str="\t\t/*%s*/\n\t\t%s\t\t%s;\n"%(
+				get_field_desc(field.name,field.desc ),  
+				get_cpp_type(field.type), 
+				field.name 
+				)
+		read_buf_str=read_buf_str+get_read_field_str(field.name,field.type);
+		write_buf_str=write_buf_str+get_write_field_str(field.name,field.type);
+		init_str=init_str+get_init_field_str(field.name,field.type);
+
+	elif (mode=="array"):
+		field_str="\t\t/*%s*/\n\t\t%s\t\t%s[%s]; \n"%(
+				get_field_desc(field.name,field.desc ),  
+				get_cpp_type(field.type), 
+				field.name ,
+				field.size
+				)
+		if (field.type=="char") :#字符特殊处理
+			read_buf_str=read_buf_str+"\tif(!ba.read_buf(this->%s,%s)) return false;\n"%( 
+					field.name,field.size);
+			write_buf_str=write_buf_str+"\tif(!ba.write_buf(this->%s,%s)) return false;\n"%( 
+					field.name,field.size);
+	
+		else:  
+			read_buf_str=read_buf_str+"\t{for(uint32_t i=0; i<%s;i++){\n%s\t}}\n"%(field.size, get_read_arr_field_str(field.name,field.type ) )
+			write_buf_str=write_buf_str+"\t{for(uint32_t i=0; i<%s;i++){\n%s\t}}\n"%(field.size, get_write_arr_field_str(field.name,field.type ) )
+			init_str=init_str+"\t{for(uint32_t i=0; i<%s;i++){\n%s\t}}\n"%(field.size, get_init_arr_field_str(field.name,field.type ) )
+
+	elif (mode=="varlist"):
+		if (field.type=="char") :#字符特殊处理
+			field_str="\t\t//%s\n\t\tuint32_t _%s_len;\n\t\t%s\t\t%s[%s];\n"%(
+				get_field_desc(field.name,field.desc ),  
+				field.name,
+				get_cpp_type(field.type), 
+				field.name,
+				field.max_size
+				)
+			init_str=init_str+"\tthis->_%s_len=0;\n"%(field.name)
+		else:
+			field_str="\t\t//%s\n\t\tstd::vector<%s>\t\t%s;\n"%(
+				get_field_desc(field.name,field.desc ),  
+				get_cpp_type(field.type), 
+				field.name
+				)
+			init_str=init_str+"\tthis->%s.clear();\n"%(field.name)
+
+
+		if (field.type=="char") :#字符特殊处理
+
+			read_buf_str=read_buf_str+"""
+	if (!ba.read_uint32(this->_%s_len )) return false;
+	if (this->_%s_len>%s) return false;\n"""%( field.name,field.name,field.max_size)
+
+
+			read_buf_str=read_buf_str+" \tif (!ba.read_buf(this->%s,this->_%s_len)) return false;\n"%( field.name,field.name)
+			write_buf_str=write_buf_str+"\tif (this->_%s_len>%s) return false;\n\tif (!ba.write_uint32(this->_%s_len))return false;\n\tif (!ba.write_buf(this->%s,this->_%s_len)) return false;\n"%( field.name,field.max_size, field.name,field.name,field.name)
+
+
+			pass
+		else:
+
+			read_buf_str=read_buf_str+"""
+	uint32_t %s_count ;
+	if (!ba.read_uint32( %s_count )) return false;
+	if (%s_count>%s) return false;\n"""%(field.name, field.name,field.name,field.max_size)
+
+
+			read_buf_str=read_buf_str+"""\t%s  %s_item;
+	this->%s.clear();
+	{for(uint32_t i=0; i<%s_count;i++){
+%s		this->%s.push_back(%s_item);
+	}}\n"""%( get_cpp_type(field.type),	field.name, field.name, field.name,
+				get_read_varlist_field_str(field.name,field.type ), 
+				field.name ,field.name  )
+
+			write_buf_str=write_buf_str+"""\tif (this->%s.size()>%s ) return false;\n\tif (!ba.write_uint32(this->%s.size())) return false;\n\t{for(uint32_t i=0; i<this->%s.size() ;i++){\n%s\t}}\n"""%( 
+					field.name,field.max_size, field.name,field.name, 
+					get_write_arr_field_str(field.name,field.type ) )
+				
+	else:
+	 	sys.stdout.write("error field type:%s"%(mode));
+		sys.exit(1);
+	return field_str,read_buf_str,write_buf_str,init_str;
+
+#生成结构体代码 
+def get_cpp_struct_src(struct):
+	#是否要调整结构名称,名称前加缀
+	struct_name=struct.name;
+	if not (re.search("_in$",struct_name) or re.search("_out$",struct_name)): 
+		#是自己定义的结构
+		struct_name="%s%s"%(g_struct_fix_name,struct_name );
+		
+
+	field_str=""
+	read_buf_str=""
+	write_buf_str=""
+	init_str=""
+	for field in  struct.field:
+		tmp_field_str,tmp_read_buf_str,tmp_write_buf_str,tmp_init_str=get_cpp_struct_field_str(field)
+		field_str=field_str+tmp_field_str
+		read_buf_str=read_buf_str+tmp_read_buf_str
+		write_buf_str=write_buf_str+tmp_write_buf_str
+		init_str=init_str+tmp_init_str
+	h_code="""
+class %s: public Cmessage {
+	public:
+%s
+		%s();
+		void init();
+		bool read_from_buf(byte_array_t & ba );
+		bool write_to_buf(byte_array_t & ba );
+};
+
+	"""%( struct_name,field_str,struct.name);
+	cpp_code="""
+%s::%s(){
+	this->init();
+}
+void %s::init(){
+%s
+}
+bool  %s::read_from_buf(byte_array_t & ba ){
+%s	return true;
+}
+
+bool %s::write_to_buf(byte_array_t & ba ){
+%s	return true;
+}
+	"""%(struct_name,struct_name,struct_name,init_str,struct_name,read_buf_str,struct_name,write_buf_str)
+	return (struct.struct_from ,cpp_code,h_code)
+
+#----------------------------------------
+def get_message_type(msg_type ):
+	if (msg_type=="" ) : return "Cmessage";
+	else: return msg_type;
+#----------------------------------------
+#--------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------
+
+import sys 
+import optparse
+
+
+#得到配置项
+p = optparse.OptionParser(
+		description='gen proto  code  ',
+		prog='cpp_proto',
+		version='%prog 0.1',
+		usage='%prog [ -o output_dir ] [-p project_name ]  proxy.xml' )
+
+p.add_option('-o', '--output_dir', default="./proto/", help='文件输出位置'  );
+p.add_option('-p', '--project_name', default="", help='项目名,如果不写,由xml中得到'  );
+p.add_option('-s', '--struct_fix_name', default="", help='设置结构体名字的前缀,如果你发现多个项目中都存在同一个结构体时，可以设置它' );
+p.add_option('-P', '--plugin_name_list', default="", help='插件名称列表用","分开,如"/home/jim/gen_proto/pub_plugin/gen_db_bind_func.py,./plugin/xxxx.py" ' );
+
+
+options, arguments = p.parse_args()	
+project_name=options.project_name;
+g_plugin_list=proto_pub.get_plugin_list(options.plugin_name_list );
+g_struct_fix_name=options.struct_fix_name;
+if g_struct_fix_name<>"":
+	g_struct_fix_name="%s_"%g_struct_fix_name;
+
+if len(arguments) != 1 :
+	p.print_help();
+	sys.exit();
+config_xml=arguments[0];  
+
+fp=open( config_xml ,"r" )
+
+xml_str=fp.read();
+pro=proto_pub.xml2obj(xml_str)
+e_list=pro.error_list;
+s_list=pro.struct_list;
+p_list=pro.protocol_list;
+d_list=pro.desc_list;
+bind_list=pro.bind_list;
+
+if project_name=="" :
+	project_name=pro.project_name;
+import pprint
+#pprint.pprint(pro)
+g_desc_map={ }
+for field in d_list.field_desc :
+	g_desc_map[field.key]=field.desc;
+
+
+file_config_arr=(options.output_dir,project_name )
+pro_file_name="%s/%s.h"%file_config_arr
+pro_src_file_name="%s/%s.cpp"%file_config_arr
+pro_bind_file_name="%s/%s_bind.h"%file_config_arr
+pro_func_def_name="%s/%s_func_def.h"%file_config_arr
+pro_enum_name="%s/%s_enum.h"%file_config_arr
+
+pub_file_name=project_name.split("_")[0];
+
+pro_pub_file_name="%s/%s.h"%(options.output_dir,pub_file_name )
+pro_pub_src_file_name="%s/%s.cpp"%(options.output_dir,pub_file_name)
+
+bind_map={ }
+enum_bind_str=""
+if bind_list  and bind_list.bind:
+	for item in bind_list.bind:
+		bind_map[int(item.bindid)]=open( "%s/%s_bind_%s.h"%(options.output_dir,project_name ,item.bind_name ),"w"  ) ;
+		bind_map[int(item.bindid)].write("/*%s-%s-%s*/\n"%(item.bindid,item.bind_name,item.bind_desc ));
+		enum_bind_str=enum_bind_str+"\t/* %s */\n\tbind_%s\t\t= (1<<%s),\n"%(item.bind_desc, item.bind_name, item.bindid);
+	
+
+pro_fd=open(pro_file_name,"w" );
+pro_src_fd=open( pro_src_file_name ,"w" );
+pro_bind_fd=open(pro_bind_file_name,"w" );
+pro_func_def_fd=open(pro_func_def_name,"w" );
+pro_enum_fd=open(pro_enum_name,"w" );
+
+
+pro_pub_fd=open(pro_pub_file_name,"w" );
+pro_pub_src_fd=open( pro_pub_src_file_name ,"w" );
+
+
+
+pro_fd.write( "#ifndef  %s_H\n"% project_name.upper()  );
+pro_fd.write( "#define  %s_H\n"% project_name.upper()  );
+pro_fd.write( "#include \"%s.h\"\n"%pub_file_name );
+pro_src_fd.write( "#include \"%s.h\"\n"%(project_name)  );
+
+pro_pub_fd.write( "#ifndef  %s_H\n"% pub_file_name.upper()  );
+pro_pub_fd.write( "#define  %s_H\n"% pub_file_name.upper()  );
+pro_pub_fd.write( "#include <libtaomee++/proto/proto_base.h>\n");
+pro_pub_fd.write( "#include <stdio.h>\n" );
+pro_pub_src_fd.write( "#include \"%s.h\"\n"%(pub_file_name)  );
+
+
+
+for struct in s_list.struct:
+	struct_info=get_cpp_struct_src(struct);
+	if struct_info[0]=="self" :
+		pro_src_fd.write(struct_info [1]);
+		pro_fd.write(struct_info[2]);
+	else:
+		pro_pub_src_fd.write(struct_info [1]);
+		pro_pub_fd.write(struct_info[2]);
+	
+enum_cmdid_str=""
+
+
+#插件 init
+for  plugin_item in g_plugin_list:
+	plugin_item["init"]( options.output_dir,project_name );
+
+
+for item in p_list.protocol:
+	bind_str= "\tBIND_PROTO_CMD(%s,%s,%s,%s,%s,%s)\n"%(item.cmd,item.name,
+			get_message_type(item.struct_in),
+			get_message_type(item.struct_out),item.md5_tag,item.bind_bitmap );
+	pro_func_def_fd. write ( "\tPROTO_FUNC_DEF(%s)\n"%(item.name));
+
+	
+	pro_bind_fd.write(bind_str );
+
+	enum_cmdid_str=enum_cmdid_str+"\t %s_cmd\t\t=\t%s, /*%s*/\n"%( item.name,item.cmd,item.desc )
+	bind_bitmap=int(item.bind_bitmap);
+
+	i=0;
+	while bind_bitmap>0:
+		flag_value=(1<<i);
+		if (bind_bitmap & flag_value ==flag_value  ):
+			if bind_map.has_key(i):
+				bind_map[i].write(bind_str);
+			bind_bitmap=bind_bitmap-flag_value;
+
+		i=i+1
+	#插件 deal 
+	for  plugin_item in g_plugin_list:
+		plugin_item["deal"](  
+			item.cmd,item.name,
+			item.struct_in,
+			item.struct_out,item.md5_tag,item.bind_bitmap,
+			item.desc );
+
+#插件 fini 
+for  plugin_item in g_plugin_list:
+	plugin_item["fini"]( ); 
+
+
+
+pro_fd.write( "\n#endif // %s_H\n"% project_name.upper()  );
+pro_pub_fd.write( "\n#endif // %s_H\n"% pub_file_name.upper() );
+enum_err_str=""
+if e_list.error :
+	for item in e_list.error:
+		enum_err_str=enum_err_str+"\t %s\t\t=\t%s, /*%s*/\n"%( item.name,item.id,item.desc )
+	
+
+
+pro_enum_fd.write( "#ifndef  %s_ENUM_H\n"% project_name.upper()  );
+pro_enum_fd.write( "#define  %s_ENUM_H\n"% project_name.upper()  );
+pro_enum_fd.write( """
+/*命令定义*/	
+enum  enum_%s_cmd{
+%s
+};
+
+/*错误码定义*/	
+enum  enum_%s_error{
+%s
+};
+
+
+"""%(project_name,enum_cmdid_str, project_name,enum_err_str ));
+pro_enum_fd.write( "\n#endif // %s_ENUM_H\n"% project_name.upper());
