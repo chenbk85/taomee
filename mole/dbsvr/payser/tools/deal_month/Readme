@@ -1,0 +1,3 @@
+deal_month.sh 		: 当月要处理的包月数据导入到 t_deal_month_history
+get_month_list.sh	: 得到要处理的包月数据 从t_deal_month_history 条件：类型 
+deal_month_damee.sh	:   

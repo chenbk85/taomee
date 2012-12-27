@@ -1,0 +1,27 @@
+安装说明
+
+一.所需环境要求
+	Linux debian 2.6.18-6-amd64 	
+	MySQL 5.0 以上
+
+
+二.程序目录结构
+	DB:
+		ser:
+			bin:
+				daemon.sh  #启动/终止脚本
+				libser.so
+				ser 
+			etc:
+				bench.conf  #参数配置文件
+				bind.conf   #服务端口绑定文件
+			log: #程序日志
+									
+	protolog: #统计日志
+		log
+		bak
+		err	
+三:安装
+	tar xvf install.tar
+	./install.sh
+

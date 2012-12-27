@@ -1,0 +1,21 @@
+<SKILL>
+<!-- fire, water, wood-->
+<Item ID="1" ItemID="190590 190591 190592" VIPLimit="10" PLLimit="10" SUB="-1" AddChange="1" NeedChange="0"/> 
+<Item ID="2" ItemID="190623 190624 190625" VIPLimit="10" PLLimit="10" SUB="-1" AddChange="1" NeedChange="0"/> 
+<Item ID="3" ItemID="190610 190611 190612" VIPLimit="7"  PLLimit="7"  SUB="-1" AddChange="1"  NeedChange="0"/> 
+<Item ID="4" ItemID="190640" VIPLimit="10"  PLLimit="10"  SUB="-2" AddChange="2"  NeedChange="180"/> 
+<Item ID="5" ItemID="190641" VIPLimit="10"  PLLimit="10"  SUB="-2" AddChange="2"  NeedChange="180"/> 
+<Item ID="6" ItemID="190642" VIPLimit="10"  PLLimit="10"  SUB="-2" AddChange="2"  NeedChange="180"/> 
+<Item ID="7" ItemID="190657" VIPLimit="10"  PLLimit="10"  SUB="-2" AddChange="3"  NeedChange="1340"/> 
+<Item ID="8" ItemID="190655" VIPLimit="10"  PLLimit="10"  SUB="-2" AddChange="3"  NeedChange="1340"/> 
+<Item ID="9" ItemID="190656" VIPLimit="10"  PLLimit="10"  SUB="-2" AddChange="3"  NeedChange="1340"/> 
+<Item ID="10" ItemID="1230022" VIPLimit="10"  PLLimit="10"  SUB="-3" AddChange="4"  NeedChange="4280"/> 
+<Item ID="11" ItemID="1230046" VIPLimit="10"  PLLimit="10"  SUB="-3" AddChange="4"  NeedChange="4280"/> 
+<Item ID="12" ItemID="1230045" VIPLimit="10"  PLLimit="10"  SUB="-3" AddChange="4"  NeedChange="4280"/> 
+<Item ID="13" ItemID="190673 190674 190672 190688" VIPLimit="10"  PLLimit="10"  SUB="-5" AddChange="5"  NeedChange="9800"/> 
+<Item ID="14" ItemID="190673 190674 190672 190688" VIPLimit="10"  PLLimit="10"  SUB="-5" AddChange="5"  NeedChange="9800"/> 
+<Item ID="15" ItemID="190673 190674 190672 190688" VIPLimit="10"  PLLimit="10"  SUB="-5" AddChange="5"  NeedChange="9800"/> 
+<Item ID="16" ItemID="190751 190752 190753" VIPLimit="10"  PLLimit="10"  SUB="-5" AddChange="5"  NeedChange="18700"/> 
+<Item ID="17" ItemID="190751 190752 190753" VIPLimit="10"  PLLimit="10"  SUB="-5" AddChange="5"  NeedChange="18700"/> 
+<Item ID="18" ItemID="190751 190752 190753" VIPLimit="10"  PLLimit="10"  SUB="-5" AddChange="5"  NeedChange="18700"/> 
+</SKILL>

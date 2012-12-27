@@ -1,0 +1,24 @@
+#!/bin/bash
+
+user="root"
+password="ta0mee"
+host="localhost"
+tmp_file="table.sql"
+if [ "$1" = "" ]; then
+	echo "need userid"
+	exit
+fi
+userid=$1
+let "db_id=$userid%100 "
+let "table_id=($userid/100)%100 "
+
+dbx=`printf "%02d" $db_id`
+tbx=`printf "%02d" $table_id`
+
+create_sql() {
+cat <<EOF >$tmp_file
+	select userid from   USER_$dbx.t_user_$tbx ;
+EOF
+}
+create_sql 
+cat $tmp_file | mysql -u $user --password="$password" -h $host  

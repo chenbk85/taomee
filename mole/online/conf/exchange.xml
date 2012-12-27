@@ -1,0 +1,4050 @@
+<Exchange>
+	<!-- Task For Becoming A Guide -->
+	<Entry ID="0" >
+		<ItemIn>
+			<Item ID="190001" Count="1" />
+			<Item ID="190002" Count="1" />
+			<Item ID="190003" Count="1" />
+			<Item ID="190004" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12060" Count="1" />
+			<Item ID="12061" Count="1" />
+			<Item ID="12062" Count="1" />
+			<Item ID="12063" Count="1" />
+			<Item ID="1" Count="50" />
+		</ItemOut>
+	</Entry>
+	<!-- Task For Becoming A Super Guide-->
+	<Entry ID="1" NOT_LIMIT="1" QUIT_TASK="1">
+		<ItemOut>
+			<Item ID="14031" Count="1" />
+			<Item ID="14032" Count="1" />
+			<Item ID="14033" Count="1" />
+			<Item ID="1351131" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Task For Becoming A Policeman -->
+	<Entry ID="8" >
+		<ItemIn>
+			<Item ID="190014" Count="1" />
+			<Item ID="190015" Count="1" />
+			<Item ID="190016" Count="1" />
+			<Item ID="190017" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12057" Count="1" />
+			<Item ID="12058" Count="1" />
+			<Item ID="12059" Count="1" />
+			<Item ID="1" Count="50" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="9" >
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+		</ItemOut>
+	</Entry>
+	
+	<!-- Task 10 used For Di Yi Shi Jiao -->
+	
+	<!-- Task For reporter -->
+	<Entry ID="16" >
+		<ItemIn>
+			<Item ID="190036" Count="1" />
+			<Item ID="190037" Count="1" />
+			<Item ID="190038" Count="1" />
+		</ItemIn>
+	</Entry>
+
+	<!-- Task For reporter -->
+	<Entry ID="17" >
+		<ItemIn>
+			<Item ID="190039" Count="1" />
+			<Item ID="190040" Count="1" />
+			<Item ID="190041" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12150" Count="1" />
+			<Item ID="12151" Count="1" />
+			<Item ID="12152" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For New comers -->
+	<Entry ID="24" >
+	</Entry>
+	<!--new comer task -->
+	<Entry ID="25" >
+	</Entry>
+	<!--new comer task -->
+	<Entry ID="26" >
+	</Entry>
+	<!--new comer task -->
+	<Entry ID="27" >
+	</Entry>
+	<!-- Task For Making Bed - off -->
+	<Entry ID="28" >
+		<ItemIn>
+			<Item ID="190005" Count="1" />
+			<Item ID="190006" Count="1" />
+			<Item ID="190007" Count="1" />
+		</ItemIn>
+	</Entry>
+	<!-- 29 already used -->
+
+	<!-- Task For Making Clothes - off -->
+	<Entry ID="31" SetFlag="28 29 30 31 32" >
+		<ItemIn>
+			<Item ID="16001" Count="1" />
+			<Item ID="16003" Count="1" />
+			<Item ID="16005" Count="1" />
+			<Item ID="16009" Count="1" />
+			<Item ID="16010" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12156" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="12157" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="12158" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="12159" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="12160" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For Making Red Flag -->
+	<Entry ID="32" >
+		<ItemIn>
+			<Item ID="190034" Count="5" />
+			<Item ID="190035" Count="1" />
+		</ItemIn>
+	</Entry>
+
+	<!-- IDs That Are Less Than 48 Should Not Be Used For Some Good Reasons -->
+
+	<!-- Task To exchange the  guaiguai dress-->
+	<Entry ID="48" >
+		<ItemIn>
+			<Item ID="190046" Count="1" />
+			<Item ID="190047" Count="1" />
+			<Item ID="190048" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12248" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task To exchange the  pumpkin lamp-->
+	<Entry ID="49" >
+		<ItemIn>
+			<Item ID="190042" Count="1" />
+			<Item ID="190043" Count="1" />
+			<Item ID="190044" Count="1" />
+		</ItemIn>
+	</Entry>
+
+	<!-- Task To exchange the  magnifying glass-->
+	<Entry ID="50" >
+		<ItemIn>
+			<Item ID="190054" Count="1" />
+			<Item ID="190055" Count="1" />
+			<Item ID="190056" Count="1" />
+			<Item ID="190057" Count="1" />
+			<Item ID="190058" Count="1" />
+			<Item ID="190059" Count="1" />
+			<Item ID="190060" Count="1" />
+			<Item ID="190061" Count="1" />
+			<Item ID="190062" Count="1" />
+			<Item ID="190063" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12226" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task id 51,52 have revoked, but now can't reuse the ID, maybe in the future -->
+
+	<!-- Task id 53, To exchange the  FU, but now can't reuse the ID, maybe in the future -->
+
+	<!-- Task To exchange the  LongZhu -->
+	<Entry ID="54" >
+		<ItemIn>
+			<Item ID="190053" Count="1" />
+			<Item ID="190029" Count="5" />
+			<Item ID="190025" Count="2" />
+			<Item ID="190125" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12401" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For Pao Bu Ji-->
+	<Entry ID="55" >
+	</Entry>
+
+	<!-- Task For 3.8 festval-->
+	<Entry ID="56" >
+		<ItemIn>
+			<Item ID="190128" Count="1" />
+			<Item ID="190129" Count="1" />
+			<Item ID="190130" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12451" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For environmental protection-->
+	<Entry ID="57" >
+		<ItemIn>
+			<Item ID="190131" Count="1" />
+			<Item ID="190132" Count="1" />
+			<Item ID="190133" Count="1" />
+			<Item ID="190134" Count="1" />
+			<Item ID="190135" Count="1" />
+			<Item ID="190136" Count="1" />
+			<Item ID="190138" Count="1" />
+			<Item ID="190139" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12455" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For environmental protection-->
+	<Entry ID="58" >
+		<ItemIn>
+			<Item ID="190143" Count="1" />
+			<Item ID="190144" Count="1" />
+			<Item ID="190145" Count="1" />
+			<Item ID="190146" Count="1" />
+			<Item ID="190147" Count="1" />
+			<Item ID="190148" Count="1" />
+			<Item ID="190149" Count="1" />
+			<Item ID="190150" Count="1" />
+			<Item ID="190151" Count="1" />
+			<Item ID="190152" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220010" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For environmental protection-->
+	<Entry ID="59" >
+		<ItemIn>
+			<Item ID="190161" Count="1" />
+			<Item ID="190162" Count="1" />
+			<Item ID="190163" Count="1" />
+			<Item ID="190164" Count="1" />
+			<Item ID="190165" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12504" Count="1" />
+		</ItemOut>
+
+	</Entry>
+
+	<!-- Task 60 For Zhou Nian Kan-->
+
+	<!-- Task 61 For farmstead birth greeting card-->
+	<Entry ID="61" >
+		<ItemIn>
+			<Item ID="190168" Count="1" />
+			<Item ID="190169" Count="1" />
+			<Item ID="190170" Count="1" />
+			<Item ID="190171" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220021" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task 62 For making Man Tou-->
+
+	<!-- Task to get maomaoguai interpret toutao-->
+	<Entry ID="63" >
+		<ItemIn>
+			<Item ID="190192" Count="1" />
+			<Item ID="190193" Count="1" />
+			<Item ID="190194" Count="1" />
+			<Item ID="190195" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12543" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task to kill fire-->
+	<Entry ID="64" >
+		<ItemIn>
+			<Item ID="190197" Count="1" />
+			<Item ID="190198" Count="1" />
+			<Item ID="190199" Count="1" />
+			<Item ID="190200" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160266" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task to Become Xiaohuzi Moshushi-->
+	<Entry ID="66" >
+		<ItemIn>
+			<Item ID="190204" Count="1" />
+			<Item ID="190205" Count="1" />
+			<Item ID="190206" Count="1" />
+			<Item ID="190207" Count="1" />
+			<Item ID="190208" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12616" Count="1" />
+			<Item ID="12617" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task to be back  Puti Dabo-->
+	<Entry ID="67" >
+		<ItemIn>
+			<Item ID="190214" Count="1" />
+			<Item ID="190215" Count="1" />
+		</ItemIn>
+	</Entry>
+	<!-- Prepare to enter HeiSenLin-->
+<!--	<Entry ID="68" >
+		<ItemIn>
+			<Item ID="190217" Count="1" />
+			<Item ID="190218" Count="1" />
+			<Item ID="190219" Count="1" />
+			<Item ID="190236" Count="1" />
+			<Item ID="190237" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12647" Count="1" />
+		</ItemOut>
+	</Entry>-->
+	<!-- Xiao MaoMao Tou visit mole farmstead-->
+	<Entry ID="69" >
+		<ItemOut>
+			<Item ID="12730" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- save QianNian RongShu-->
+	<Entry ID="70" >
+		<ItemOut>
+			<Item ID="12732" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="71" >
+		<ItemIn>
+			<Item ID="190363" Count="1" />
+			<Item ID="190364" Count="1" />
+			<Item ID="190365" Count="1" />
+			<Item ID="190366" Count="1" />
+			<Item ID="190367" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12733" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="72" >
+	</Entry>
+
+	<Entry ID="73" >
+	</Entry>
+
+	<Entry ID="74" >
+		<ItemOut>
+			<Item ID="1220071" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="75" >
+	</Entry>
+	<Entry ID="76" >
+		<ItemOut>
+			<Item ID="160410" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Task For Xiao CaiFeng -->
+	<Entry ID="77">
+	</Entry>
+	<!-- Task For little teacher-->
+	<Entry ID="78" >
+		<ItemOut>
+			<Item ID="12898" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For test lahm king -->
+	<Entry ID="79" >
+		<ItemIn>
+			<Item ID="190397" Count="1" />
+			<Item ID="190398" Count="1" />
+			<Item ID="190399" Count="1" />
+			<Item ID="190400" Count="1" />
+			<Item ID="190401" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12906" Count="1" />
+		</ItemOut>
+	</Entry>
+	
+	<!-- Task For Tian Wai Lai Ke -->
+	<Entry ID="80" >
+		<ItemOut>
+			<Item ID="12908" Count="1" />
+		</ItemOut>
+	</Entry>
+	
+	<!-- Task For lahm king print -->
+	<Entry ID="81" >
+		<ItemOut>
+			<Item ID="12909" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For repair FeiTing-->
+	<Entry ID="82" >
+		<ItemOut>
+			<Item ID="1220094" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For WanShengJie HeiMao jack-->
+	<Entry ID="83" >
+		<ItemOut>
+			<Item ID="13008" Count="1" />
+		</ItemOut>
+	</Entry>
+	
+	<!-- Task For the requirement of HeiMao jack-->
+	<Entry ID="84" >
+	</Entry>
+	<!--Task for Jack coming back-->
+	<Entry ID="85" >
+		<ItemIn>
+			<Item ID="190450" Count="1" />
+			<Item ID="190451" Count="1" />
+			<Item ID="190452" Count="1" />
+			<Item ID="190453" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13048" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--Task for -->
+	<Entry ID="86" >
+		<ItemIn>
+			<Item ID="190455" Count="1" />
+			<Item ID="190456" Count="1" />
+			<Item ID="190457" Count="1" />
+		</ItemIn>
+	</Entry>
+	<Entry ID="87" >
+        <ItemIn>
+            <Item ID="190468" Count="1" />
+			<Item ID="190469" Count="1" />
+         	<Item ID="190470" Count="1" />
+		</ItemIn>
+	</Entry>
+	<Entry ID="88" >
+	</Entry>
+	<Entry ID="89" >
+		<ItemOut>
+			<Item ID="160540" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="90" >
+		<ItemOut>
+			<Item ID="160602" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="91" >
+		<ItemOut>
+			<Item ID="13119" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="92" >
+		<ItemOut>
+			<Item ID="13120" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="93" >
+	</Entry>
+	<Entry ID="94" >
+		<ItemOut>
+			<Item ID="13166" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="95" PRE_ID="94" >
+		<ItemOut>
+			<Item ID="13167" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="96" PRE_ID="95" >
+		<ItemOut>
+			<Item ID="13216" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="97" PRE_ID="96" >
+		<ItemOut>
+			<Item ID="190579" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="98" >
+		<ItemOut>
+			<Item ID="13308" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="99">
+        <ItemIn>
+            <Item ID="190597" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190596" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="100">
+        <ItemIn>
+            <Item ID="190615" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190616" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="101">
+		<ItemOut>
+			<Item ID="190617" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="102">
+		<ItemIn>
+			<Item ID="190629" Count="1" />
+			<Item ID="190630" Count="1" />
+			<Item ID="190631" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190632" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="103">
+		<ItemIn>
+			<Item ID="16003" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="200" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="104">
+		<ItemOut>
+			<Item ID="1230039" Count="3" />
+			<Item ID="1220096" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="105">
+		<ItemOut>
+			<Item ID="13355" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="106">
+		<ItemOut>
+			<Item ID="13366" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="107">
+		<ItemOut>
+			<Item ID="13367" Count="1" />
+			<Item ID="180072" Count="10" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="108">
+		<ItemOut>
+			<Item ID="13371" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="109">
+		<ItemIn>
+			<Item ID="190664" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13374" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="110">
+		<ItemOut>
+			<Item ID="13400" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="111">
+	</Entry>
+
+	<Entry ID="112">
+		<ItemOut>
+			<Item ID="13403" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="113">
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="190196" Count="20" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="114">
+	</Entry>
+	<Entry ID="115">
+	</Entry>
+
+	<Entry ID="117">
+		<ItemOut>
+			<Item ID="190653" Count="10" />
+			<Item ID="190654" Count="10" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="118">
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="180073" Count="5" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="119">
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="190653" Count="10" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="120">
+		<ItemOut>
+			<Item ID="0" Count="500" />
+			<Item ID="13467" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--Entry ID="121">
+		<ItemOut>
+			<Item ID="6" Count="500" />
+		</ItemOut>
+	</Entry-->
+	<Entry ID="122">
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="190660" Count="10" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="123">
+		<ItemOut>
+			<Item ID="0" Count="500" />
+			<Item ID="13469" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="124">
+		<ItemOut>
+			<Item ID="0" Count="2000" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="125">
+		<ItemOut>
+			<Item ID="0" Count="500" />
+			<Item ID="13470" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--new comer task -->
+	<Entry ID="127" >
+		<ItemOut>
+			<Item ID="12101" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--new comer task -->
+	<Entry ID="128" >
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+		</ItemOut>
+	</Entry>
+	<!--new comer task -->
+	<Entry ID="129" >
+		<ItemIn>
+			<Item ID="12018" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190440" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--new comer task -->
+	<Entry ID="130" >
+		<ItemOut>
+			<Item ID="13011" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Task For Becoming A Fireman -->
+	<Entry ID="131" >
+		<ItemIn>
+			<Item ID="190191" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12560" Count="1" />
+			<Item ID="12561" Count="1" />
+			<Item ID="12562" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="132" >
+		<ItemOut>
+			<Item ID="190671" Count="5" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="133" >
+		<ItemOut>
+			<Item ID="0" Count="2000" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task to Become JiaShiYuan-->
+	<Entry ID="141" >
+		<ItemOut>
+			<Item ID="1220097" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--拉姆小导师第一课-->
+	<Entry ID="144">
+		<ItemOut>
+			<Item ID="0" Count="500" />
+		</ItemOut>
+	</Entry>
+
+	<!--smc task 拉姆小导师-->
+	<Entry ID="145" QUIT_TASK="1">
+		<ItemOut>
+			<Item ID="13570" Count="1" />
+			<Item ID="13571" Count="1" />
+			<Item ID="13572" Count="1" />
+		</ItemOut>
+	</Entry>
+
+
+	<!-- Task to Become Jianxi Qishi-->
+	<Entry ID="151" NOT_RECV="1">
+		<ItemOut>
+			<Item ID="12365" Count="1" />
+			<Item ID="12366" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task To advance knight-->
+	<Entry ID="152" >
+	</Entry>
+	<!--森林骑士-->
+	<Entry ID="153"  NOT_LIMIT = "1" NOT_RECV="1" QUIT_TASK="1">
+		<ItemOut>
+		    <Item ID="1" Count="1000" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task To Doctor-->
+	<Entry ID="161" >
+		<ItemIn>
+			<Item ID="190353" Count="1" />
+		</ItemIn>
+        <ItemOut>
+            <Item ID="12736" Count="1" />
+            <Item ID="12737" Count="1" />
+            <Item ID="12738" Count="1" />
+        </ItemOut>
+	</Entry>
+
+	<!-- Task To exchange the  disguised cloth-->
+	<Entry ID="171" >
+		<ItemIn>
+			<Item ID="190053" Count="3" />
+			<Item ID="190029" Count="5" />
+			<Item ID="190038" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12273" Count="1" />
+		</ItemOut>
+	</Entry>
+	
+	<!-- Task For Xuan Cai Xing -->
+	<Entry ID="172" >
+		<ItemIn>
+			<Item ID="190210" Count="1" />
+			<Item ID="190211" Count="1" />
+			<Item ID="190213" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12619" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="173" >
+		<ItemIn>
+			<Item ID="190369" Count="1" />
+			<Item ID="190370" Count="1" />
+			<Item ID="190371" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12734" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Task For You Yi Zhi Hua -->
+	<Entry ID="174" >
+		<ItemIn>
+			<Item ID="190383" Count="1" />
+			<Item ID="190384" Count="1" />
+			<Item ID="190385" Count="1" />
+			<Item ID="190386" Count="1" />
+			<Item ID="190387" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12847" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="175" >
+		<ItemIn>
+			<Item ID="190391" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160426" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="176" >
+		<ItemOut>
+			<Item ID="190518" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="177" >
+		<ItemIn>
+			<Item ID="190578" Count="1" />
+		</ItemIn>
+	</Entry>
+
+	<!-- 送哼哼小野猪 -->
+	<Entry ID="178" >
+		<ItemOut>
+			<Item ID="0" Count="100" />
+			<Item ID="1270052" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--流浪风铃的秘密-->
+	<!--Entry ID="179" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="1" Count="1000" />
+		<Item ID="190688" Count="2" />
+		<Item ID="190685" Count="2" />
+	</ItemOut>
+	</Entry-->
+
+	<!--神秘黑龙 下掉-->
+	<!--Entry ID="180" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1" />
+	</ItemOut>
+	</Entry-->
+	
+	<!-- 麽麽的礼物 -->
+	<!--Entry ID="182" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="16012" Count="5" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 超拉的故事-->
+	<Entry ID="183" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="16012" Count="10" />
+	</ItemOut>
+	</Entry>
+
+	<!--啊！我的天使-->
+    <!--Entry ID="184" NOT_LIMIT = "1">
+    <ItemOut>
+		<Item ID="1352003" Count="1" />
+        <Item ID="1353204" Count="1" />
+        <Item ID="16012" Count="30" />
+    </ItemOut>
+    </Entry-->
+
+	<!--命运交响-->
+    <Entry ID="185" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="13877" Count="1" />
+    </ItemOut>
+    </Entry>
+
+	<!-- 不可思议的画册-->
+    <Entry ID="186" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="160965" Count="1" />
+    </ItemOut>
+    </Entry>
+
+	<!-- 三只拉姆的故事-->
+    <Entry ID="187" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="160965" Count="1" />
+    </ItemOut>
+    </Entry>
+
+	<!-- 假面舞会的序章-->
+    <Entry ID="188" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1593000" Count="1" />
+        <Item ID="1613102" Count="3" />
+    </ItemOut>
+    </Entry>
+
+	<!-- 旋转的假面 20111111下架-->
+    <!--Entry ID="189" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1613103" Count="2" />
+    </ItemOut>
+    </Entry-->
+
+	<!-- 舞台下的黑影 20111111下架-->
+    <!--Entry ID="190" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1593035" Count="1" />
+        <Item ID="1353300" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!-- 白雪与六只小矮猪 20111125下架-->
+    <!--Entry ID="191" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1351132" Count="3" />
+        <Item ID="1351138" Count="3" />
+        <Item ID="1351144" Count="3" />
+    </ItemOut>
+    </Entry-->
+
+	<Entry ID="221" >
+	<ItemIn>
+		<Item ID="190643" Count="1" />
+		<Item ID="190644" Count="1" />
+		<Item ID="190645" Count="1" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="13310" Count="1" />
+		<Item ID="13311" Count="1" />
+		<Item ID="13312" Count="1" />
+		<Item ID="13313" Count="1" />
+	</ItemOut>
+	</Entry>
+	<Entry ID="231" >
+		<ItemOut>
+			<Item ID="0" Count="2500" />
+			<Item ID="1" Count="100" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="232" >
+	<ItemOut>
+		<Item ID="0" Count="3000" />
+		<Item ID="1" Count="6000" />
+	</ItemOut>
+	</Entry>
+	
+	<Entry ID="233" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="1" Count="3000" />
+	</ItemOut>
+	</Entry>
+	<Entry ID="234" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="1" Count="3000" />
+	</ItemOut>
+	</Entry>
+
+	<!--白白的偶像-->
+	<!--Entry ID="235" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1" Count="1000" />
+	</ItemOut>
+	</Entry-->
+
+	<!--卢拉斯的伟大计划-->
+	<!--Entry ID="236" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1" Count="1000" />
+	</ItemOut>
+	</Entry-->
+
+	<!--迎接火神-->
+	<Entry ID="237" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="1" Count="2000" />
+		<Item ID="13534" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--火神队运动会-->
+	<!--Entry ID="238" >
+	</Entry-->
+
+	<!--超级小猪 导游-->
+	<Entry ID="239" >
+	<ItemOut>
+		<Item ID="0" Count="1500" />
+		<Item ID="1" Count="1500" />
+		<Item ID="190671" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!--火神的赐福 -->
+	<!--Entry ID="240" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="1" Count="2000" />
+		<Item ID="190688" Count="5" />
+	</ItemOut>
+	</Entry-->
+
+	<!--秘密工作室-->
+	<!--Entry ID="241" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="1" Count="2000" />
+		<Item ID="13522" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--进攻奥林波斯策划案-->
+	<!--Entry ID="242" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="3000" />
+		<Item ID="1" Count="3000" />
+		<Item ID="190675" Count="2" />
+	</ItemOut>
+	</Entry-->
+
+	<!--菩提大伯的心病-->
+	<!--Entry ID="243" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1500" />
+		<Item ID="1" Count="1500" />
+		<Item ID="180071" Count="5" />
+	</ItemOut>
+	</Entry-->
+
+	<!--走失的小毛毛头-->
+	<!--Entry ID="244" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1500" />
+		<Item ID="1" Count="1500" />
+		<Item ID="190688" Count="3" />
+	</ItemOut>
+	</Entry-->
+
+	<!--进攻-->
+	<!--Entry ID="245" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="5000" />
+		<Item ID="1" Count="5000" />
+		<Item ID="190675" Count="3" />
+	</ItemOut>
+	</Entry-->
+
+	<!--汉青的大木箱-->
+	<!--Entry ID="246" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1" Count="1000" />
+		<Item ID="180071" Count="3" />
+	</ItemOut>
+	</Entry-->
+
+	<!--孵蛋机-->
+	<!--Entry ID="247" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="800" />
+		<Item ID="1270042" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--粗心大意的小笨生-->
+	<!--Entry ID="248" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1" Count="1000" />
+	</ItemOut>
+	</Entry-->
+
+	<!--最后的道别-->
+	<!--Entry ID="249" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1" Count="1000" />
+		<Item ID="190675" Count="3" />
+		<Item ID="190740" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--神奇大机器-->
+	<!--Entry ID="250" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="13561" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--摩尔派对月-->
+	<!--Entry ID="251" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="800" />
+		<Item ID="13562" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--花婶大计划-->
+	<!--Entry ID="252" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="400" />
+		<Item ID="150004" Count="4" />
+		<Item ID="1230035" Count="3" />
+	</ItemOut>
+	</Entry-->
+
+	<!--启动学习机-->
+	<!--Entry ID="253" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="160814" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--超级小猪新学期计划-->
+	<!--Entry ID="254" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="800" />
+		<Item ID="190028" Count="10" />
+		<Item ID="190671" Count="5" />
+	</ItemOut>
+	</Entry-->
+
+	<!--拉姆小导师准备-->
+	<!--Entry ID="255" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="180067" Count="10" />
+	</ItemOut>
+	</Entry-->
+
+	<!--给嫦娥姐姐做月饼-->
+	<!--Entry ID="258" NOT_LIMIT = "1" >
+	<ItemIn>
+		<Item ID="1340061" Count="50" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="6" Count="800" />
+		<Item ID="13594" Count="1" />
+	</ItemOut>
+	</Entry-->
+	<!--么么公主秋天丰收派-->
+	<!--Entry ID="260" NOT_LIMIT = "1" >
+	<ItemIn>
+		<Item ID="1351020" Count="1" />
+		<Item ID="1351021" Count="1" />
+		<Item ID="1351022" Count="1" />
+		<Item ID="1351023" Count="1" />
+		<Item ID="1351024" Count="1" />
+		<Item ID="1351025" Count="1" />
+		<Item ID="1351026" Count="1" />
+		<Item ID="1351027" Count="1" />
+		<Item ID="1351028" Count="1" />
+		<Item ID="1351029" Count="1" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="13598" Count="1" />
+		<Item ID="16012" Count="10" />
+	</ItemOut>
+	</Entry-->
+
+	<!--玛丽的烦恼-->
+	<!--Entry ID="261" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="900" />
+		<Item ID="190752" Count="2" />
+		<Item ID="190750" Count="2" />
+	</ItemOut>
+	</Entry-->
+
+	<!--皇家骑士派对-->
+	<!--Entry ID="262" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="16012" Count="10" />
+		<Item ID="13599" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--救出坏坏-->
+	<!--Entry ID="263" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="2500" />
+		<Item ID="16012" Count="5" />
+		<Item ID="160835" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--保卫庄园-->
+	<!--Entry ID="264" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="16012" Count="5" />
+		<Item ID="160834" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--揭秘南瓜迷宫-->
+	<!--Entry ID="265" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="3000" />
+		<Item ID="13623" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--依莲的邀请-->
+	<!--Entry ID="266" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="3000" />
+		<Item ID="13622" Count="1" />
+	</ItemOut>
+	</Entry-->
+	<!--克劳的邀请-->
+	<!--Entry ID="267" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+	</ItemOut>
+	</Entry-->
+
+	<!--小仔的失学危机-->
+	<!--Entry ID="268" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="300" />
+		<Item ID="190751" Count="1" />
+		<Item ID="190757" Count="5" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 克劳的担忧-->
+	<!--Entry ID="269" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="3000" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- RK的神秘礼物 -->
+	<!--Entry ID="270" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="160848" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 时尚是这样炼成的 -->
+	<!--Entry ID="271" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+		<Item ID="13627" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 祝福的传递 -->
+	<!--Entry ID="272" NOT_LIMIT = "1" >
+	</Entry-->
+	
+	<!-- 摩尔大使任务 -->
+	<Entry ID="273" QUIT_TASK="1">
+	</Entry>
+
+	<!-- smc健康营养师任务 -->
+	<Entry ID="274" NOT_LIMIT = "1" QUIT_TASK="1">
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+	</ItemOut>
+	</Entry>
+
+	<!-- smc 拉姆联谊 -->
+	<Entry ID="275" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="190751" Count="1" />
+		<Item ID="190756" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!-- 关于冬季温情 -->
+	<Entry ID="276" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="17007" Count="5" />
+		<Item ID="190755" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!-- 水和牛奶 -->
+	<Entry ID="277" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="190028" Count="10" />
+		<Item ID="11" Count="20" />
+	</ItemOut>
+	</Entry>
+	
+	<!-- 深度报道雪球大战 -->
+	<Entry ID="278" NOT_LIMIT = "1" >
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="190809" Count="5" />
+		<Item ID="17008" Count="10" />
+	</ItemOut>
+	</Entry>
+
+	<!-- 新鲜的牛奶任务 -->
+	<Entry ID="279" NOT_LIMIT = "1" QUIT_TASK="1">
+	<ItemOut>
+		<Item ID="11" Count="60" />
+		<Item ID="1270044" Count="1" />
+		<Item ID="13652" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!-- 圣诞大巡游 -->
+	<!--Entry ID="280" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="16012" Count="10" />
+		<Item ID="17008" Count="10" />
+	</ItemOut>
+	</Entry-->
+	
+	<!-- 天外来客 -->
+	<!--Entry ID="281" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1230038" Count="3" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 神奇的种子-->
+	<!--Entry ID="282" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1230038" Count="5" />
+		<Item ID="1352000" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 嘻哈纪念册任务-->
+	<!--Entry ID="283" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="13670" Count="1" />
+		<Item ID="1352000" Count="1" />
+	</ItemOut>
+	</Entry-->
+	
+	<!-- 捍卫我们的爆豆-->
+	<!--Entry ID="284" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1352000" Count="1" />
+		<Item ID="1230036" Count="3" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 爆豆机与章鱼哥-->
+	<!--Entry ID="285" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="500" />
+		<Item ID="1230036" Count="2" />
+		<Item ID="1352000" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 为麽麽公主送行-->
+	<!--Entry ID="286" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1230068" Count="2" />
+		<Item ID="1352000" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 明星拉票-->
+	<!--Entry ID="287" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1230036" Count="1" />
+		<Item ID="1352000" Count="1" />
+	</ItemOut>
+	</Entry-->
+	<!-- 丫丽的秘密计划-->
+	<!--Entry ID="288" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="1230068" Count="2" />
+		<Item ID="190602" Count="20" />
+		<Item ID="1352000" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--明星颁奖-->
+	<!--Entry ID="289" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="0" Count="1000" />
+		<Item ID="1230036" Count="2" />
+		<Item ID="1352000" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--RK -->
+	<!--Entry ID="290" NOT_LIMIT = "1">
+	<ItemOut>
+		<Item ID="16012" Count="10" />
+	</ItemOut>
+	</Entry-->
+
+	<!--追查神秘黑影-->
+    <!--Entry ID="291" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1352001" Count="1" />
+        <Item ID="1270077" Count="1" />
+        <Item ID="190840" Count="5" />
+    </ItemOut>
+    </Entry-->
+
+	<!--灯展迷踪-->
+    <!--Entry ID="292" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1352001" Count="1" />
+        <Item ID="1270076" Count="1" />
+    </ItemOut>
+    </Entry-->
+	
+	<!--拯救天使蛋-->
+    <!--Entry ID="293" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="0" Count="500" />
+        <Item ID="1270076" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--畅游元宵灯会-->
+    <!--Entry ID="294" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="0" Count="1000" />
+        <Item ID="190602" Count="5" />
+        <Item ID="1352001" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--杰拉德的挑战-->
+    <Entry ID="295" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="0" Count="1000" />
+        <Item ID="1352001" Count="1" />
+    </ItemOut>
+    </Entry>
+
+	<!--毫无征兆的异动-->
+    <!--Entry ID="296" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="0" Count="1000" />
+        <Item ID="1353201" Count="1" />
+        <Item ID="1352001" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--与杰拉德的初次交锋-->
+    <!--Entry ID="297" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1270078" Count="1" />
+        <Item ID="1352002" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--麽麽公主的焦虑-->
+    <!--Entry ID="298" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="0" Count="500" />
+        <Item ID="1352002" Count="1" />
+        <Item ID="1270077" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--光明与黑暗的较量-->
+    <!--Entry ID="299" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1220181" Count="1" />
+        <Item ID="1352002" Count="1" />
+        <Item ID="1270078" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<Entry ID="300" >
+	<ItemOut>
+		<Item ID="13756" Count="1" />
+		<Item ID="13757" Count="1" />
+		<Item ID="13758" Count="1" />
+		<Item ID="1" Count="30" />
+		<Item ID="1353208" Count="2" />
+		<Item ID="1353205" Count="2" />
+		<Item ID="1593010" Count="2" />
+		<Item ID="1593012" Count="2" />
+	</ItemOut>
+	</Entry>
+
+	<Entry ID="301" >
+	<ItemOut>
+		<Item ID="0" Count="2000" />
+	</ItemOut>
+	</Entry>
+
+	<!--送别汗青-->
+    <!--Entry ID="302" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="13717" Count="1" />
+        <Item ID="1352002" Count="1" />
+        <Item ID="1270078" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--摩罗岛的秘密-->
+    <!--Entry ID="303" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1352002" Count="1" />
+        <Item ID="1270079" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--真相到底是什么-->
+    <!--Entry ID="304" NOT_LIMIT = "1">
+    <ItemOut>
+		<Item ID="12" Count="140" />
+        <Item ID="1352002" Count="1" />
+        <Item ID="1270078" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--神奇的失踪-->
+    <!--Entry ID="305" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1352002" Count="1" />
+        <Item ID="1353101" Count="2" />
+    </ItemOut>
+    </Entry-->
+
+	<!--用爱心拯救天使-->
+    <!--Entry ID="306" NOT_LIMIT = "1">
+    <ItemOut>
+		<Item ID="13745" Count="1" />
+        <Item ID="1352002" Count="1" />
+        <Item ID="1353213" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--火线营救-->
+    <!--Entry ID="307" NOT_LIMIT = "1">
+    <ItemOut>
+		<Item ID="1353216" Count="1" />
+        <Item ID="1352003" Count="1" />
+        <Item ID="1353104" Count="3" />
+    </ItemOut>
+    </Entry-->
+	
+	<!--用爱心拯救天使-->
+    <!--Entry ID="309" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1352003" Count="1" />
+        <Item ID="13748" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--顺利的庆典-->
+    <!--Entry ID="310" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1353217" Count="1" />
+        <Item ID="1352003" Count="1" />
+        <Item ID="1353103" Count="5" />
+    </ItemOut>
+    </Entry-->
+
+	<!--迷雾重重-->
+    <!--Entry ID="311" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1353221" Count="1" />
+        <Item ID="1352003" Count="1" />
+        <Item ID="1353103" Count="5" />
+    </ItemOut>
+    </Entry-->
+
+	<!--危险的尼尔拉塔-->
+    <!--Entry ID="312" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1352003" Count="2" />
+        <Item ID="1353212" Count="1" />
+        <Item ID="1353228" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--天使的秘密-->
+    <!--Entry ID="313" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1353107" Count="5" />
+    </ItemOut>
+    </Entry-->
+
+	<!--远古地下城-->
+    <!--Entry ID="314" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1353228" Count="1" />
+        <Item ID="1353229" Count="1" />
+        <Item ID="1353203" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--阳光奶牛-->
+	<Entry ID="330" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="0" Count="1000" />
+    </ItemOut>
+    </Entry>
+
+	<!--伯爵再临-->
+	<Entry ID="332" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1353101" Count="3" />
+    </ItemOut>
+    </Entry>
+
+	<!--果蔬新食法-->
+	<Entry ID="333" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="0" Count="200" />
+        <Item ID="180096" Count="2" />
+        <Item ID="1352005" Count="1" />
+    </ItemOut>
+    </Entry>
+
+	<!--拉姆们的下午茶-->
+	<Entry ID="344" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="180094" Count="5" />
+        <Item ID="1352006" Count="1" />
+    </ItemOut>
+    </Entry>
+
+	<!--真正的幕后黑手 下架20110922-->
+	<!--Entry ID="363" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="160962" Count="1" />
+        <Item ID="1301002" Count="2" />
+        <Item ID="1352008" Count="1" />
+    </ItemOut>
+    </Entry-->
+
+	<!--坏坏的噩梦-->
+	<Entry ID="364" NOT_LIMIT = "1">
+    <ItemOut>
+        <Item ID="1301006" Count="2" />
+        <Item ID="1301002" Count="2" />
+        <Item ID="1352008" Count="1" />
+    </ItemOut>
+    </Entry>
+
+	<!--SMC小猎人-->
+	<Entry ID="365" NOT_LIMIT="1" QUIT_TASK="1">
+	<ItemOut>
+        <Item ID="13967" Count="1" />
+        <Item ID="13968" Count="1" />
+        <Item ID="13969" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--肥肥总动员-->
+	<Entry ID="368" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613114" Count="1" />
+        <Item ID="1613100" Count="1" />
+        <Item ID="1593020" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--神秘的黑猪巴罗-->
+	<Entry ID="369" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="20" />
+        <Item ID="1613101" Count="2" />
+        <Item ID="1352009" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--天上来的小福星-->
+	<!--Entry ID="370" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="20" />
+        <Item ID="1613102" Count="2" />
+        <Item ID="1352009" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--庄园的危机-->
+	<Entry ID="371" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613128" Count="2" />
+        <Item ID="1613129" Count="2" />
+        <Item ID="1352009" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--七彩乐章-->
+	<Entry ID="372" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613130" Count="2" />
+        <Item ID="1613131" Count="2" />
+        <Item ID="1352009" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--叽里咕噜猪猪变 20111104下架-->
+	<!--Entry ID="373" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1352009" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!-- 王子变身的真相 20111111下架-->
+	<!-- Entry ID="374" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="5" />
+        <Item ID="1613101" Count="5" />
+        <Item ID="1352010" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--麽麽公主的漂流瓶 20111111下架-->
+	<!--Entry ID="375" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="5" />
+        <Item ID="1613101" Count="5" />
+        <Item ID="1352010" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--臭臭的养猪秘笈 20111111下架-->
+	<!--Entry ID="376" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1352010" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--神秘的礼盒 -->
+	<Entry ID="377" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="5" />
+        <Item ID="1613101" Count="5" />
+        <Item ID="1352010" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--小猪也有梦想 20111121 下架-->
+	<!--Entry ID="378" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613102" Count="10" />
+        <Item ID="1353109" Count="1" />
+        <Item ID="1352009" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--熊博士的爱心糖果 20111121下架-->
+	<!--Entry ID="379" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="20" />
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+	</ItemOut>
+	</Entry-->
+
+	<!--密室里的不速之客 20111125下架-->
+	<!--Entry ID="380" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1352010" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--麽麽公主的生日惊喜 20111202下架-->
+	<!--Entry ID="381" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1352010" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--新手任务 -->
+	<Entry ID="382" NOT_LIMIT="1" >
+	<ItemOut>
+	</ItemOut>
+	</Entry>
+
+	<!--乐乐奇遇记 20111209下架 -->
+	<Entry ID="383" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1352011" Count="1" />
+	</ItemOut>
+	</Entry>
+	
+	<!--圣诞老人见习期 -->
+	<Entry ID="384" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14053" Count="1" />
+        <Item ID="1351173" Count="20" />
+        <Item ID="1352011" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--臭臭的考验 -->
+	<!--Entry ID="385" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1352011" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--欢乐永远在身边 -->
+	<Entry ID="386" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="10" />
+        <Item ID="1613102" Count="10" />
+        <Item ID="1613103" Count="2" />
+	</ItemOut>
+	</Entry>
+
+	<!--奇怪的森诞老人 -->
+	<!--Entry ID="387" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14050" Count="1" />
+        <Item ID="1613100" Count="20" />
+        <Item ID="1352011" Count="1" />
+	</ItemOut>
+	</Entry-->
+
+	<!--网的奇迹 -->
+	<Entry ID="388" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14049" Count="1" />
+        <Item ID="1352011" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--超级蘑菇向导大行动-->
+	<Entry ID="389" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613100" Count="5" />
+        <Item ID="1351131" Count="2" />
+	</ItemOut>
+	</Entry>
+
+	<!--新手一日游-->
+	<Entry ID="390" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1270078" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--千万别说圣诞快乐-->
+	<Entry ID="391" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14082" Count="1" />
+        <Item ID="14083" Count="1" />
+        <Item ID="14084" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--网的奇迹-->
+	<Entry ID="392" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14087" Count="1" />
+        <Item ID="0" Count="500" />
+	</ItemOut>
+	</Entry>
+
+	<!--破损的回忆-->
+	<Entry ID="393" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14081" Count="1" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1352011" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--灰灰与小舞-->
+	<Entry ID="394" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14048" Count="1" />
+        <Item ID="180043" Count="1" />
+        <Item ID="180044" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--奇奇的邀请-->
+	<Entry ID="395" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="0" Count="2000" />
+	</ItemOut>
+	</Entry>
+
+	<!--会飞的帽子-->
+	<Entry ID="396" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14093" Count="1" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1613100" Count="20" />
+	</ItemOut>
+	</Entry>
+
+	<!--庄园来了新客人-->
+	<Entry ID="397" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14099" Count="1" />
+        <Item ID="1613108" Count="2" />
+        <Item ID="1613100" Count="20" />
+	</ItemOut>
+	</Entry>
+
+	<!--汗青的求助-->
+	<Entry ID="398" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14089" Count="1" />
+        <Item ID="190909" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!--雪孩子的命运-->
+	<Entry ID="399" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14100" Count="1" />
+        <Item ID="1613108" Count="2" />
+        <Item ID="190909" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!--400到449为摩尔的等级任务-->
+	<!--头痒痒的坏坏 -->
+	<Entry ID="400" NOT_LIMIT = "1" MOLE_LEVEL = "0">
+		<ItemOut>
+			<Item ID="0" Count="500" />
+			<Item ID="1" Count="40" />
+			<Item ID="180065" Count="3" />
+		</ItemOut>
+	</Entry>
+	<!--秋季菜谱-->
+	<Entry ID="401" NOT_LIMIT = "1" MOLE_LEVEL = "5">
+		<ItemOut>
+			<Item ID="0" Count="500" />
+			<Item ID="16011" Count="3" />
+		</ItemOut>
+	</Entry>
+	<!--洛克小贴士 -->
+	<Entry ID="403" NOT_LIMIT = "1" MOLE_LEVEL = "1">
+		<ItemOut>
+			<Item ID="0" Count="100" />
+			<Item ID="1" Count="10" />
+		</ItemOut>
+	</Entry>
+	<!--小拉姆的食盐 -->
+	<Entry ID="404" NOT_LIMIT = "1" MOLE_LEVEL = "2">
+		<ItemOut>
+			<Item ID="0" Count="110" />
+			<Item ID="1" Count="10" />
+			<Item ID="160089" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--运动最健康 -->
+	<Entry ID="405" NOT_LIMIT = "1" MOLE_LEVEL = "3">
+		<ItemOut>
+			<Item ID="0" Count="150" />
+			<Item ID="1" Count="15" />
+		</ItemOut>
+	</Entry>
+	<!--皇宫一日游-->
+	<Entry ID="406" NOT_LIMIT = "1" MOLE_LEVEL = "4">
+		<ItemOut>
+			<Item ID="0" Count="170" />
+			<Item ID="1" Count="15" />
+		</ItemOut>
+	</Entry>
+
+	<!--漂亮的新装-->
+	<Entry ID="407" NOT_LIMIT = "1" MOLE_LEVEL = "5">
+		<ItemIn>
+			<Item ID="12003" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="170" />
+			<Item ID="1" Count="15" />
+		</ItemOut>
+	</Entry>
+	<!--自己动手风衣足食-->
+	<Entry ID="408" NOT_LIMIT = "1" MOLE_LEVEL = "4">
+		<ItemOut>
+			<Item ID="0" Count="200" />
+			<Item ID="1" Count="15" />
+		</ItemOut>
+	</Entry>
+	<!--试验种子-->
+	<Entry ID="409" NOT_LIMIT = "1" MOLE_LEVEL = "4">
+		<ItemIn>
+			<Item ID="1230013" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="250" />
+			<Item ID="1" Count="40" />
+		</ItemOut>
+	</Entry>
+	<!--新课程的诞生-->
+	<Entry ID="410" NOT_LIMIT = "1" MOLE_LEVEL = "10">
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="190751" Count="3" />
+		</ItemOut>
+	</Entry>
+	<!--我的牧场我做主-->
+	<Entry ID="411" NOT_LIMIT = "1" MOLE_LEVEL = "5">
+		<ItemIn>
+			<Item ID="190337" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="300" />
+			<Item ID="1" Count="40" />
+		</ItemOut>
+	</Entry>
+	<!--400到449为摩尔的等级任务-->
+
+
+	<!--雪孩子？春天-->
+	<Entry ID="450" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14101" Count="1" />
+        <Item ID="1613108" Count="2" />
+        <Item ID="1613103" Count="2" />
+	</ItemOut>
+	</Entry>
+
+	<!--风的魔术-->
+	<Entry ID="451" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14092" Count="1" />
+        <Item ID="1613108" Count="2" />
+        <Item ID="1351301" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!--送别汗青-->
+	<Entry ID="452" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1230092" Count="5" />
+        <Item ID="1613108" Count="2" />
+        <Item ID="0" Count="2000" />
+	</ItemOut>
+	</Entry>
+
+	<!--移动的不明能量-->
+	<Entry ID="453" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14026" Count="1" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1351303" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!--粒粒的求助-->
+	<Entry ID="454" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613108" Count="2" />
+        <Item ID="0" Count="2000" />
+	</ItemOut>
+	</Entry>
+
+	<!--奇怪的迷你库拉-->
+	<Entry ID="455" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14160" Count="1" />
+        <Item ID="1613103" Count="2" />
+        <Item ID="1351303" Count="5" />
+	</ItemOut>
+	</Entry>
+
+	<!--做一天明星-->
+	<Entry ID="456" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613108" Count="2" />
+        <Item ID="0" Count="1000" />
+	</ItemOut>
+	</Entry>
+
+	<!--学习与梦想-->
+	<Entry ID="457" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613108" Count="2" />
+        <Item ID="0" Count="1000" />
+	</ItemOut>
+	</Entry>
+
+	<!--意外的能量接受者-->
+	<Entry ID="458" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14163" Count="1" />
+        <Item ID="1613108" Count="2" />
+        <Item ID="1613100" Count="20" />
+	</ItemOut>
+	</Entry>
+
+	<!--那些年我们一起做好事-->
+	<Entry ID="459" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14173" Count="1" />
+        <Item ID="0" Count="1000" />
+	</ItemOut>
+	</Entry>
+
+	<!--摩尔大剧院案中案-->
+	<Entry ID="460" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1613108" Count="2" />
+        <Item ID="0" Count="1000" />
+	</ItemOut>
+	</Entry>
+
+	<!--制造能量灌输仪-->
+	<Entry ID="461" NOT_LIMIT="1" >
+	<ItemOut>
+	</ItemOut>
+	</Entry>
+
+	<!--机械工坊剪彩仪式-->
+	<Entry ID="462" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="190914" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--乐乐的秘密武器-->
+	<Entry ID="463" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="14161" Count="1" />
+        <Item ID="1613401" Count="100" />
+        <Item ID="1613902" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--神秘的天外来客-->
+	<Entry ID="464" NOT_LIMIT="1" >
+	<ItemOut>
+        <Item ID="1614002" Count="3" />
+        <Item ID="1614000" Count="3" />
+        <Item ID="1613908" Count="1" />
+	</ItemOut>
+	</Entry>
+
+	<!--飞船里的黑影-->
+  	<Entry ID="465" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+      	<Item ID="1613908" Count="1" />
+    </ItemOut>
+  	</Entry>
+
+  	<!--幻彩蝴蝶的秘密-->
+  	<Entry ID="466" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="0" Count="2000" />
+      	<Item ID="1220269" Count="1" />
+    </ItemOut>
+  	</Entry>
+
+	<!--加油，拉姆向前冲-->
+  	<Entry ID="467" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+      	<Item ID="1613916" Count="1" />
+    </ItemOut>
+  	</Entry>
+
+	<!--陌生的老朋友-->
+  	<Entry ID="468" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="13960" Count="1" />
+      	<Item ID="0" Count="2000" />
+    </ItemOut>
+  	</Entry>
+
+	<!--第三类接触-->
+  	<Entry ID="469" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="14208" Count="1" />
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--乐乐的生日祝福-->
+  	<Entry ID="470" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614000" Count="3" />
+      	<Item ID="0" Count="2000" />
+    </ItemOut>
+  	</Entry>
+
+	<!--岔路口的抉择-->
+  	<Entry ID="471" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="14209" Count="1" />
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--寻找神秘礼盒-->
+  	<Entry ID="472" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="0" Count="2000" />
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--最后的决战-->
+  	<Entry ID="473" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="14210" Count="1" />
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--周年庆的邀请-->
+  	<Entry ID="474" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614000" Count="3" />
+      	<Item ID="0" Count="2000" />
+    </ItemOut>
+  	</Entry>
+
+	<!--周年庆的颠倒童话-->
+  	<Entry ID="475" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="14211" Count="1" />
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--海边的图腾-->
+  	<Entry ID="476" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1351328" Count="5" />
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--杰克的宝盒-->
+  	<Entry ID="477" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--夜幕下的隐形客-->
+  	<Entry ID="478" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="14250" Count="1" />
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--6的魔力-->
+  	<Entry ID="479" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--爱心贴纸，祝福满满-->
+  	<Entry ID="480" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1613402" Count="3" />
+      	<Item ID="0" Count="2000" />
+    </ItemOut>
+  	</Entry>
+
+	<!--出发向着海底-->
+  	<Entry ID="481" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1614000" Count="3" />
+      	<Item ID="0" Count="2000" />
+    </ItemOut>
+  	</Entry>
+
+	<!--最无辜的坏蛋-->
+  	<Entry ID="482" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="190474" Count="5" />
+      	<Item ID="190458" Count="5" />
+      	<Item ID="190249" Count="5" />
+    </ItemOut>
+  	</Entry>
+
+	<!--在你的口袋中-->
+  	<Entry ID="483" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1614002" Count="3" />
+      	<Item ID="1613402" Count="3" />
+    </ItemOut>
+  	</Entry>
+
+	<!--海之谜城-->
+  	<Entry ID="484" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1613925" Count="1" />
+      	<Item ID="1351366" Count="10" />
+      	<Item ID="1351367" Count="10" />
+    </ItemOut>
+  	</Entry>
+
+	<!--绝世好衣-->
+  	<Entry ID="485" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1351366" Count="5" />
+      	<Item ID="1351367" Count="5" />
+    </ItemOut>
+  	</Entry>
+
+	<!--记忆之门-->
+  	<Entry ID="486" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1613927" Count="1" />
+      	<Item ID="1351371" Count="3" />
+      	<Item ID="17032" Count="2" />
+    </ItemOut>
+  	</Entry>
+
+	<!--主人，生日快乐-->
+  	<Entry ID="487" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1351371" Count="3" />
+      	<Item ID="17032" Count="2" />
+    </ItemOut>
+  	</Entry>
+
+	<!--那年一起玩的游戏-->
+  	<Entry ID="488" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="14276" Count="1" />
+    </ItemOut>
+  	</Entry>
+
+	<!--希翼之海-->
+  	<Entry ID="489" NOT_LIMIT="1" >
+    <ItemOut>
+      	<Item ID="1633000" Count="100" />
+      	<Item ID="1603004" Count="1" />
+      	<Item ID="1613501" Count="50" />
+    </ItemOut>
+  	</Entry>
+
+	<!--神殿囚徒-->
+  	<Entry ID="490" NOT_LIMIT="1" >
+	<ItemOut>
+		<Item ID="1633000" Count="100" />
+		<Item ID="1351389" Count="50" />
+		<Item ID="1613502" Count="50" />
+    </ItemOut>
+  	</Entry>
+
+	<!--王子之约-->
+  	<Entry ID="491" NOT_LIMIT="1" >
+	<ItemOut>
+		<Item ID="1270045" Count="1" />
+		<Item ID="1613502" Count="50" />
+		<Item ID="0" Count="2000" />
+    </ItemOut>
+  	</Entry>
+
+	<!--活动当任务-->
+  	<Entry ID="492" NOT_LIMIT="1" >
+	<ItemOut>
+		<Item ID="1351394" Count="10" />
+    </ItemOut>
+  	</Entry>
+
+	<!--时空之门任务-->
+  	<Entry ID="493" NOT_LIMIT="1" >
+	<ItemOut>
+		<Item ID="1351394" Count="10" />
+		<Item ID="1613502" Count="50" />
+		<Item ID="0" Count="2000" />
+    </ItemOut>
+  	</Entry>
+
+	<!--最炫回归风-->
+  	<Entry ID="495" NOT_LIMIT="1" >
+	<ItemOut>
+		<Item ID="14304" Count="1" />
+    </ItemOut>
+  	</Entry>
+
+
+	<!--库拉的烦恼-->
+  	<Entry ID="499" NOT_LIMIT="1" >
+	<ItemOut>
+		<Item ID="1270037" Count="1" />
+		<Item ID="0" Count="1000" />
+    </ItemOut>
+  	</Entry>
+
+	<!-- 500 - 600 原来的物品兑换配置去掉 恢复成任务id -->
+	<!-- IDs 601 - 1000 For `exchg_item2_cmd()' -->
+
+	<!-- tang yuan-->
+	<Entry ID="616" >
+		<ItemIn>
+			<Item ID="190119" Count="1" />
+			<Item ID="190120" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190627" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--  End spring festival-->
+	<!-- BEGIN MAKE CLOTHE-->
+	<Entry ID="700">
+		<ItemIn>
+			<Item ID="16004" Count="2" />
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13334" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="701">
+		<ItemIn>
+			<Item ID="16003" Count="2" />
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13337" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="702">
+		<ItemIn>
+			<Item ID="190196" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160737" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="703">
+		<ItemIn>
+			<Item ID="190024" Count="10" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160737" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="704">
+		<ItemIn>
+			<Item ID="190026" Count="8" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160737" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="705">
+		<ItemIn>
+			<Item ID="190662" Count="99" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220146" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Texchange Longzhu-->
+	<Entry ID="901" >
+		<ItemIn>
+			<Item ID="190185" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12401" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange BuLuo TuTeng Zhu-->
+	<Entry ID="902" >
+		<ItemIn>
+			<Item ID="190361" Count="80" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220055" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- vip exchange reward-->
+	<Entry ID="903" >
+		<ItemIn>
+			<Item ID="190381" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12752" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- vip exchange reward-->
+	<Entry ID="904" >
+		<ItemIn>
+			<Item ID="190381" Count="4" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12754" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- vip exchange reward-->
+	<Entry ID="905" >
+		<ItemIn>
+			<Item ID="190418" Count="10" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12987" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="909" >
+		<ItemIn>
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="4" />
+			<Item ID="16003"  Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13138" Count="1" />
+		</ItemOut>
+	</Entry>		
+
+	<Entry ID="910" >
+		<ItemIn>
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="3" />
+			<Item ID="190486" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13082" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="911" >
+		<ItemIn>
+			<Item ID="190517" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160617" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="912" >
+		<ItemIn>
+			<Item ID="190517" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160618" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="913" >
+		<ItemIn>
+			<Item ID="190517" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160619" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="919" >
+		<ItemIn>
+			<Item ID="190474" Count="5" />
+			<Item ID="190432" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190578" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--  End NengLiangXing-->
+    <!-- game king reward-->
+	<Entry ID="1000" >
+		<ItemIn>
+			<Item ID="190389" Count="20" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12900" Count="1" />
+		</ItemOut>
+	</Entry>
+    	<!-- game king reward-->
+	<Entry ID="1001" >
+		<ItemIn>
+			<Item ID="190389" Count="40" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12901" Count="1" />
+		</ItemOut>
+	</Entry>
+    	<!-- game king reward-->
+	<Entry ID="1002" >
+		<ItemIn>
+			<Item ID="190389" Count="60" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12902" Count="1" />
+		</ItemOut>
+	</Entry>
+    	<!-- game king reward-->
+	<Entry ID="1003" >
+		<ItemIn>
+			<Item ID="190389" Count="80" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12903" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Gift Package 1 -->
+	<Entry ID="1501" >
+		<ItemOut>
+			<Item ID="160602" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Gift Package 2 -->
+	<!--向导大礼包-->
+	<Entry ID="1502" >
+		<ItemOut>
+			<Item ID="17008" Count="10" />
+		</ItemOut>
+	</Entry>
+
+	<!-- VIP ATM -->
+	<Entry ID="1503" >
+		<ItemOut>
+			<Item ID="0" Count="5000" />
+		</ItemOut>
+	</Entry>
+
+	<!-- foodstuffs -->
+	<Entry ID="1504" >
+		<ItemOut>
+			<Item ID="1230005" Count="10" />
+		</ItemOut>
+	</Entry>
+
+	<!-- gifts for christmas -->
+	<Entry ID="1505" >
+		<ItemOut>
+			<Item ID="17004" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="17005" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="17006" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="17007" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- gifts for spring festival -->
+	<Entry ID="1506" >
+		<ItemOut>
+			<Item ID="150003" Count="10" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Task For Reporting Login -->
+	<Entry ID="1537" >
+		<ItemIn>
+			<Item ID="190018" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12130" Count="1" />
+			<Item ID="12131" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Bonus For Digging npc....tommy-->
+	<Entry ID="1538" >
+		<ItemOut>
+			<Item ID="0" Count="500" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Bonus For Attending Survey -->
+	<Entry ID="1539" >
+		<ItemOut>
+			<Item ID="0" Count="500" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Magic Code - Female's Suit -->
+	<Entry ID="1540" >
+		<ItemOut>
+			<Item ID="12040" Count="1" />
+			<Item ID="12076" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - Male's Suit -->
+	<Entry ID="1541" >
+		<ItemOut>
+			<Item ID="12064" Count="1" />
+			<Item ID="12065" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - Baby's Suit -->
+	<Entry ID="1542" >
+		<ItemOut>
+			<Item ID="12130" Count="1" />
+			<Item ID="12131" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - Tomato -->
+	<Entry ID="1543" >
+		<ItemOut>
+			<Item ID="150002" Count="20" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - Boy's School Bag -->
+	<Entry ID="1544" >
+		<ItemOut>
+			<Item ID="12171" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - Girl's School Bag -->
+	<Entry ID="1545" >
+		<ItemOut>
+			<Item ID="12172" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - 1 zhihuixing -->
+	<Entry ID="1546" >
+		<ItemOut>
+			<Item ID="190051" Count="4" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - 2 zhihuixing -->
+	<Entry ID="1547" >
+		<ItemOut>
+			<Item ID="190051" Count="2" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - 3 zhihuixing -->
+	<Entry ID="1548" >
+		<ItemOut>
+			<Item ID="190051" Count="3" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - 1000 yxb -->
+	<Entry ID="1549" >
+		<ItemOut>
+			<Item ID="0" Count="5000" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - 1500 yxb -->
+	<Entry ID="1550" >
+		<ItemOut>
+			<Item ID="0" Count="10000" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - frog prince dress -->
+	<Entry ID="1551" >
+		<ItemOut>
+			<Item ID="12117" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - berry princess dress -->
+	<Entry ID="1552" >
+		<ItemOut>
+			<Item ID="12163" Count="1" />
+			<Item ID="12164" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - xiao xiong mao -->
+	<Entry ID="1553" >
+		<ItemOut>
+			<Item ID="12019" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - cat hair style -->
+	<Entry ID="1554" >
+		<ItemOut>
+			<Item ID="12007" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - xian ren chui -->
+	<Entry ID="1555" >
+		<ItemOut>
+			<Item ID="12056" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - jingzhi xiao huangguan -->
+	<Entry ID="1556" >
+		<ItemOut>
+			<Item ID="12085" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - super lahm hat -->
+	<Entry ID="1557" >
+		<ItemOut>
+			<Item ID="12339" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - super lahm hat -->
+	<Entry ID="1558" >
+		<ItemOut>
+			<Item ID="12214" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Magic Code - HuLu disguise hat -->
+	<Entry ID="1559" >
+		<ItemOut>
+			<Item ID="12503" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- Bonus For Trusting Pet -->
+	<Entry ID="1601" >
+		<ItemOut>
+			<Item ID="180001" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="180002" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="180003" Count="1" />
+		</ItemOut>
+	</Entry>
+	
+	<!-- Bonus For work in canteen, npc....nik -->
+	<Entry ID="1602" >
+		<ItemOut>
+			<Item ID="0" Count="500" />
+		</ItemOut>
+	</Entry>
+
+    <!-- Bonus For Guard outside mole bank -->
+	<Entry ID="1603" >
+		<ItemOut>
+			<Item ID="0" Count="200" />
+		</ItemOut>
+	</Entry>
+	<!-- Bonus For Guard outside mole bank -->
+	<Entry ID="1604" >
+	</Entry>
+	
+	<!-- festival spring, golden yuanbao -->
+	<Entry ID="1605" >
+		<ItemOut>
+			<Item ID="190025" Count="3" />
+			<Item ID="190029" Count="3" />
+		</ItemOut>
+	</Entry>
+
+	<!-- festival gifts -->
+	<Entry ID="1606" >
+		<ItemOut>
+			<Item ID="150003" Count="10" />
+			<Item ID="150004" Count="40" />
+		</ItemOut>
+	</Entry>
+	<!-- gift-->
+	<Entry ID="1610" >
+		<ItemOut>
+			<Item ID="12130" Count="1" />
+			<Item ID="12131" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- birthday card-->
+	<Entry ID="1612" >
+		<ItemOut>
+			<Item ID="190465" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- da li bao -->
+	<Entry ID="1613" >
+		<ItemOut>
+			<Item ID="190434" Count="3" />
+			<Item ID="190212" Count="2" />
+			<Item ID="190249" Count="2" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1614" >
+		<!--ItemOut>
+			<Item ID="190591" Count="8" />
+			<Item ID="190592" Count="8" />
+			<Item ID="190590" Count="8" />
+			<Item ID="190611" Count="8" />
+			<Item ID="190612" Count="8" />
+			<Item ID="190610" Count="8" />
+			<Item ID="190623" Count="8" />
+			<Item ID="190624" Count="8" />
+			<Item ID="190625" Count="8" />
+		</ItemOut-->
+	</Entry>
+	<!--超拉每周礼包1615, 1617~1625-->
+	<Entry ID="1615" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="1613100" Count="3" />
+			<Item ID="1593011" Count="1" />
+			<Item ID="1613000" Count="2" />
+			<Item ID="1613114" Count="3" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1616" >
+		<ItemOut>
+			<Item ID="190655" Count="2" />
+			<Item ID="190656" Count="2" />
+			<Item ID="190657" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1617" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="190594" Count="2" />
+			<Item ID="1613100" Count="3" />
+			<Item ID="1593011" Count="1" />
+			<Item ID="1613000" Count="2" />
+			<Item ID="1613001" Count="2" />
+			<Item ID="1613114" Count="3" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1618" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="190594" Count="2" />
+			<Item ID="16011" Count="5" />
+			<Item ID="1613100" Count="3" />
+			<Item ID="1593011" Count="2" />
+			<Item ID="1613000" Count="2" />
+			<Item ID="1613001" Count="2" />
+			<Item ID="1613002" Count="2" />
+			<Item ID="1613114" Count="3" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1619" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="190594" Count="2" />
+			<Item ID="16011" Count="5" />
+			<Item ID="190751" Count="5" />
+			<Item ID="190752" Count="5" />
+			<Item ID="1613100" Count="3" />
+			<Item ID="1593011" Count="2" />
+			<Item ID="1613000" Count="2" />
+			<Item ID="1613001" Count="2" />
+			<Item ID="1613002" Count="2" />
+			<Item ID="1613114" Count="5" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1620" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="190594" Count="2" />
+			<Item ID="16011" Count="5" />
+			<Item ID="190751" Count="5" />
+			<Item ID="190752" Count="5" />
+			<Item ID="1613100" Count="5" />
+			<Item ID="1593001" Count="2" />
+			<Item ID="1613000" Count="3" />
+			<Item ID="1613001" Count="3" />
+			<Item ID="1613002" Count="3" />
+			<Item ID="1613114" Count="5" />
+			<Item ID="1613003" Count="3" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1621" >
+		<ItemOut>
+			<Item ID="1301002" Count="2" />
+			<Item ID="190639" Count="1" />
+			<Item ID="190574" Count="20" />
+			<Item ID="16011" Count="6" />
+			<Item ID="190751" Count="6" />
+			<Item ID="190752" Count="6" />
+			<Item ID="1613100" Count="5" />
+			<Item ID="1593001" Count="2" />
+			<Item ID="1613000" Count="3" />
+			<Item ID="1613001" Count="3" />
+			<Item ID="1613002" Count="3" />
+			<Item ID="1613114" Count="5" />
+			<Item ID="1613003" Count="3" />
+			<Item ID="1613102" Count="5" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1622" >
+		<ItemOut>
+			<Item ID="1301006" Count="2" />
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="16011" Count="7" />
+			<Item ID="190751" Count="7" />
+			<Item ID="190752" Count="7" />
+			<Item ID="1613100" Count="5" />
+			<Item ID="1593001" Count="3" />
+			<Item ID="1613000" Count="3" />
+			<Item ID="1613001" Count="3" />
+			<Item ID="1613002" Count="3" />
+			<Item ID="1613114" Count="5" />
+			<Item ID="1613003" Count="3" />
+			<Item ID="1613102" Count="5" />
+			<Item ID="1613109" Count="5" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1623" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="1301002" Count="2" />
+			<Item ID="1301006" Count="2" />
+			<Item ID="1353291" Count="1" />
+			<Item ID="16011" Count="8" />
+			<Item ID="190751" Count="8" />
+			<Item ID="190752" Count="8" />
+			<Item ID="1613100" Count="5" />
+			<Item ID="1593001" Count="3" />
+			<Item ID="1613000" Count="5" />
+			<Item ID="1613001" Count="5" />
+			<Item ID="1613002" Count="5" />
+			<Item ID="1613114" Count="10" />
+			<Item ID="1613003" Count="5" />
+			<Item ID="1613102" Count="5" />
+			<Item ID="1613109" Count="5" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1624" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="190594" Count="2" />
+			<Item ID="16011" Count="5" />
+			<Item ID="190751" Count="5" />
+			<Item ID="190752" Count="10" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1625" >
+		<ItemOut>
+			<Item ID="190574" Count="20" />
+			<Item ID="190639" Count="1" />
+			<Item ID="190594" Count="2" />
+			<Item ID="16011" Count="5" />
+			<Item ID="190751" Count="5" />
+			<Item ID="190752" Count="10" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="1626">
+	<!-- 时报领取弹珠 -->
+		<ItemOut>
+			<Item ID="190671" Count="10" />		
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="1627">
+	<!-- 脚印领取弹珠 -->
+		<ItemOut>
+			<Item ID="190671" Count="2" />		
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="1628">
+	<!-- 砍月桂树 -->
+		<ItemOut>
+			<Item ID="16012" Count="1" />		
+			<Item ID="190743" Count="2" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1629">
+	<!-- 拉姆小导师每日礼包-->
+		<ItemOut>
+			<Item ID="190752" Count="5" />		
+			<Item ID="190753" Count="5" />
+			<Item ID="190754" Count="5" />
+			<Item ID="190755" Count="5" />
+			<Item ID="190756" Count="5" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1630">
+		<ItemOut>
+			<Item ID="190752" Count="2" />
+			<Item ID="190753" Count="3" />
+			<Item ID="190755" Count="2" />
+			<Item ID="190756" Count="2" />
+		</ItemOut>
+	</Entry>
+	<!--时报送拉姆能量星-->
+	<Entry ID="1631">
+		<ItemOut>
+			<Item ID="180071" Count="2" />
+		</ItemOut>
+	</Entry>
+
+	<!-- IDs 2501 - 2600 For `exchg_item2_cmd()' -->
+	<!-- Golden Key For the mask -->
+	<Entry ID="2501" >
+		<ItemIn>
+			<Item ID="190049" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Silver Key -->
+	<Entry ID="2502" >
+		<ItemIn>
+			<Item ID="190050" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="17004" Count="10" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="17007" Count="10" />
+		</ItemOut>
+	</Entry>
+
+	<!-- Golden Key For 1000 mole bean -->
+	<Entry ID="2503" >
+		<ItemIn>
+			<Item ID="190049" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2504" >
+		<ItemIn>
+			<Item ID="190419" Count="1" />
+			<Item ID="190028" Count="1" />
+			<Item ID="190265" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180090" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!-- ID 504 ~ 507 have been removed -->
+
+	<!-- exchange green discolor pill -->
+	<Entry ID="2508" >
+		<ItemIn>
+			<Item ID="16001" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180031" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange orange discolor pill -->
+	<Entry ID="2509" >
+		<ItemIn>
+			<Item ID="16002" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180032" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange blue discolor pill -->
+	<Entry ID="2510" >
+		<ItemIn>
+			<Item ID="16003" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180033" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange violet discolor pill -->
+	<Entry ID="2511" >
+		<ItemIn>
+			<Item ID="16004" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180034" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange red discolor pill -->
+	<Entry ID="2512" >
+		<ItemIn>
+			<Item ID="16005" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180035" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange pale discolor pill -->
+	<Entry ID="2513" >
+		<ItemIn>
+			<Item ID="16006" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180036" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange pink  discolor pill -->
+	<Entry ID="2514" >
+		<ItemIn>
+			<Item ID="16007" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180037" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange grey discolor pill -->
+	<Entry ID="2515" >
+		<ItemIn>
+			<Item ID="16008" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180038" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange yellow discolor pill -->
+	<Entry ID="2516" >
+		<ItemIn>
+			<Item ID="16009" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180039" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange black discolor pill -->
+	<Entry ID="2517" >
+		<ItemIn>
+			<Item ID="16010" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180040" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange cake hat -->
+	<Entry ID="2518" >
+		<ItemIn>
+			<Item ID="190065" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12227" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange MianFen -->
+	<Entry ID="2519" >
+		<ItemIn>
+			<Item ID="190186" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190187" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange red pig baby -->
+	<Entry ID="2520" >
+		<ItemIn>
+			<Item ID="190229" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1270001" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange duck baby -->
+	<Entry ID="2521" >
+		<ItemIn>
+			<Item ID="190223" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1270002" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2522" >
+		<ItemIn>
+			<Item ID="1290001" Count="1" />
+			<Item ID="1290002" Count="1" />
+			<Item ID="1290003" Count="1" />
+			<Item ID="1290004" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1290021" Count="1" />
+			<Item ID="160305" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="2523" >
+		<ItemIn>
+			<Item ID="1290005" Count="1" />
+			<Item ID="1290006" Count="1" />
+			<Item ID="1290007" Count="1" />
+			<Item ID="1290008" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1290022" Count="1" />
+			<Item ID="160304" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2524" >
+		<ItemIn>
+			<Item ID="1290009" Count="1" />
+			<Item ID="1290010" Count="1" />
+			<Item ID="1290011" Count="1" />
+			<Item ID="1290012" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1290023" Count="1" />
+			<Item ID="160303" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2525" >
+		<ItemIn>
+			<Item ID="1290013" Count="1" />
+			<Item ID="1290014" Count="1" />
+			<Item ID="1290015" Count="1" />
+			<Item ID="1290016" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1290024" Count="1" />
+			<Item ID="160306" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2526" >
+		<ItemIn>
+			<Item ID="1290017" Count="1" />
+			<Item ID="1290018" Count="1" />
+			<Item ID="1290019" Count="1" />
+			<Item ID="1290020" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1290025" Count="1" />
+			<Item ID="160307" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange BuLuo TengCao Wu-->
+	<Entry ID="2527" >
+		<ItemIn>
+			<Item ID="190361" Count="90" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160342" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange BuLuo ShiXiang-->
+	<Entry ID="2528" >
+		<ItemIn>
+			<Item ID="190361" Count="30" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220058" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange ShenMi MoFa Shi-->
+	<Entry ID="2529" >
+		<ItemIn>
+			<Item ID="190361" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190362" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange BuLuo TuTengDian-->
+	<Entry ID="2530" >
+		<ItemIn>
+			<Item ID="190361" Count="50" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220056" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange SenLin GouHuo Lu-->
+	<Entry ID="2531" >
+		<ItemIn>
+			<Item ID="190361" Count="30" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220057" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange SenLin CLOTH-->
+	<Entry ID="2532" >
+		<ItemIn>
+			<Item ID="190374" Count="1" />
+			<Item ID="190375" Count="2" />
+			<Item ID="190376" Count="2" />
+			<Item ID="190377" Count="2" />
+			<Item ID="190378" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12743" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange SenLin CLOTH-->
+	<Entry ID="2533" >
+		<ItemIn>
+			<Item ID="190375" Count="1" />
+			<Item ID="190376" Count="1" />
+			<Item ID="190377" Count="1" />
+			<Item ID="190378" Count="3" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12744" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange SenLin CLOTH-->
+	<Entry ID="2534" >
+		<ItemIn>
+			<Item ID="190375" Count="1" />
+			<Item ID="190376" Count="1" />
+			<Item ID="190377" Count="3" />
+			<Item ID="190378" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12745" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange SenLin CLOTH-->
+	<Entry ID="2535" >
+		<ItemIn>
+			<Item ID="190375" Count="3" />
+			<Item ID="190376" Count="1" />
+			<Item ID="190377" Count="1" />
+			<Item ID="190378" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12746" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange SenLin CLOTH-->
+	<Entry ID="2536" >
+		<ItemIn>
+			<Item ID="190375" Count="1" />
+			<Item ID="190376" Count="1" />
+			<Item ID="190377" Count="1" />
+			<Item ID="190378" Count="3" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12747" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange SenLin CLOTH-->
+	<Entry ID="2537" >
+		<ItemIn>
+			<Item ID="190375" Count="1" />
+			<Item ID="190376" Count="3" />
+			<Item ID="190377" Count="1" />
+			<Item ID="190378" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12748" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange SenLin Home Item-->
+	<Entry ID="2538" >
+		<ItemIn>
+			<Item ID="190376" Count="1" />
+			<Item ID="190377" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160365" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange SenLin Home Item-->
+	<Entry ID="2539" >
+		<ItemIn>
+			<Item ID="190375" Count="1" />
+			<Item ID="190378" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160364" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange box-->
+	<Entry ID="2540" >
+		<ItemIn>
+			<Item ID="190373" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12742" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange reward-->
+	<Entry ID="2541" >
+		<ItemIn>
+			<Item ID="190381" Count="3" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12751" Count="1" />
+		</ItemOut>
+	</Entry>
+
+
+	<!-- exchange reward-->
+	<Entry ID="2542" >
+		<ItemIn>
+			<Item ID="190381" Count="3" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12753" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!-- exchange Fire cup cards-->
+	<Entry ID="2548" >
+		<ItemIn>
+			<Item ID="1290056" Count="1" />
+			<Item ID="1290057" Count="1" />
+			<Item ID="1290058" Count="1" />
+			<Item ID="1290059" Count="1" />
+			<Item ID="1290060" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160382" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange HuoXin HuangGuan-->
+	<Entry ID="2549" >
+		<ItemIn>
+			<Item ID="190389" Count="30" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12858" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange HuoGuang HuangGuan-->
+	<Entry ID="2550" >
+		<ItemIn>
+			<Item ID="190389" Count="60" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12859" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange HuoYan HuangGuan-->
+	<Entry ID="2551" >
+		<ItemIn>
+			<Item ID="190389" Count="90" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12860" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange YongShi XiaoHuoShan-->
+	<Entry ID="2552" >
+		<ItemIn>
+			<Item ID="190389" Count="10" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220080" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- exchange HuoShen TuTengZhu-->
+	<Entry ID="2553" >
+		<ItemIn>
+			<Item ID="190389" Count="30" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220081" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- exchange JiJiLe Magic Card-->
+	<Entry ID="2554" >
+		<ItemIn>
+			<Item ID="190393" Count="10" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1290065" Count="1" />
+		</ItemOut>
+	</Entry>
+    <!--magic card reward first time--> 
+	<Entry ID="2555" >
+		<ItemIn>
+			<Item ID="1290061" Count="1" />
+			<Item ID="1290062" Count="1" />
+			<Item ID="1290063" Count="1" />
+			<Item ID="1290064" Count="1" />
+			<Item ID="1290065" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12897" Count="1" />
+		</ItemOut>
+	</Entry>
+    <!--magic card reward later--> 
+	<Entry ID="2556" >
+		<ItemIn>
+			<Item ID="1290061" Count="1" />
+			<Item ID="1290062" Count="1" />
+			<Item ID="1290063" Count="1" />
+			<Item ID="1290064" Count="1" />
+			<Item ID="1290065" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1230022" Count="3" />
+		</ItemOut>
+	</Entry>
+
+    <!--Bai se Ji nian shan--> 
+	<Entry ID="2557" >
+		<ItemIn>
+			<Item ID="190428" Count="20" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12994" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--Hei se Ji nian shan--> 
+	<Entry ID="2558" >
+		<ItemIn>
+			<Item ID="190428" Count="20" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12995" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--Youyi Jia You Heng Fu--> 
+	<Entry ID="2559" >
+		<ItemIn>
+			<Item ID="190428" Count="15" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160469" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--Beita Duibiao Sanjiaoqi--> 
+	<Entry ID="2560" >
+		<ItemIn>
+			<Item ID="190428" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160470" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--Dawei Duibiao Sanjiaoqi--> 
+	<Entry ID="2561" >
+		<ItemIn>
+			<Item ID="190428" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160471" Count="1" />
+		</ItemOut>
+	</Entry>
+	
+    <!--XuanFeng ZhangGuan Mao--> 
+	<Entry ID="2562" >
+		<ItemIn>
+			<Item ID="190428" Count="30" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12992" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--XuanFeng CheShou Fu--> 
+	<Entry ID="2563" >
+		<ItemIn>
+			<Item ID="190428" Count="50" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="12993" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--XuanFeng JiJi Le Kapai--> 
+	<Entry ID="2564" >
+		<ItemIn>
+			<Item ID="1290066" Count="1" />
+			<Item ID="1290067" Count="1" />
+			<Item ID="1290068" Count="1" />
+			<Item ID="1290069" Count="1" />
+			<Item ID="1290070" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220098" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--XuanFeng JiJiLe exchage HeisengLin Qiyi guo zhongzi--> 
+	<Entry ID="2565" >
+		<ItemIn>
+			<Item ID="1290066" Count="1" />
+			<Item ID="1290067" Count="1" />
+			<Item ID="1290068" Count="1" />
+			<Item ID="1290069" Count="1" />
+			<Item ID="1290070" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1230015" Count="3" />
+		</ItemOut>
+	</Entry>
+
+    <!--MoTuoCheMoXing--> 
+	<Entry ID="2566" >
+		<ItemIn>
+			<Item ID="190428" Count="20" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160476" Count="1" />
+		</ItemOut>
+	</Entry>
+
+    <!--MoFaYangPiJuan--> 
+	<Entry ID="2567" >
+		<ItemIn>
+			<Item ID="190396" Count="1" />
+			<Item ID="190403" Count="1" />
+			<Item ID="190417" Count="1" />
+			<Item ID="190424" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13000" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--NaiYouPiSa--> 
+	<Entry ID="2568" >
+		<ItemIn>
+			<Item ID="190441" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180067" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--GuaiWeiNanGuaZhi--> 
+	<Entry ID="2569" >
+		<ItemIn>
+			<Item ID="190441" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180068" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--BianLianNanGuaDeng--> 
+	<Entry ID="2570" >
+		<ItemIn>
+			<Item ID="190441" Count="30" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160503" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--NanSeYouLingWanOu--> 
+	<Entry ID="2571" >
+		<ItemIn>
+			<Item ID="190441" Count="20" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160514" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--HuLuoBo--> 
+	<Entry ID="2572" >
+		<ItemIn>
+			<Item ID="190441" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190028" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--HuLuoBo--> 
+	<Entry ID="2573" >
+		<ItemIn>
+			<Item ID="190441" Count="10" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13014" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!-- jiang cheng xin-turin-->
+	<Entry ID="2574" >
+		<ItemIn>
+			<Item ID="190441" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180027" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2575" >
+		<ItemIn>
+			<Item ID="190441" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180028" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2576" >
+		<ItemIn>
+			<Item ID="190441" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180029" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2577" >
+		<ItemIn>
+			<Item ID="190441" Count="5" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="180030" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="2578" >
+		<ItemIn>
+			<Item ID="190478" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220115" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2579" >
+		<ItemIn>
+			<Item ID="13049" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13050" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2580" >
+		<ItemIn>
+			<Item ID="13057" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13064" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2581" >
+		<ItemIn>
+			<Item ID="13105" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13106" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2582" >
+		<ItemIn>
+			<Item ID="13055" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13056" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2583" >
+		<ItemIn>
+			<Item ID="13050" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13049" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2584" >
+		<ItemIn>
+			<Item ID="13064" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13057" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2585" >
+		<ItemIn>
+			<Item ID="13106" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13105" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2586" >
+		<ItemIn>
+			<Item ID="13056" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13055" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--end turin-->
+	<!-- begin make cloth -->
+	<Entry ID="2587" >
+		<ItemIn>
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="2" />
+			<Item ID="190212" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13090" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--Entry ID="2588" >
+		<ItemIn>
+			<Item ID="190459" Count="4" />
+			<Item ID="190473" Count="4" />
+			<Item ID="16005" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13188" Count="1" />
+		</ItemOut>
+	</Entry-->
+	<Entry ID="2589" >
+	</Entry>
+	<Entry ID="2590" >
+	</Entry>
+	<Entry ID="2591" >
+	</Entry>
+	<Entry ID="2592" >
+		<ItemIn>
+			<Item ID="190459" Count="4" />
+			<Item ID="190212" Count="1" />
+			<Item ID="16004" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13146" Count="1" />
+		</ItemOut>
+	</Entry>
+	
+	<Entry ID="2593" >
+		<ItemIn>
+			<Item ID="16004" Count="1" />
+			<Item ID="190473" Count="2" />
+			<Item ID="190212" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13156" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2594" >
+		<ItemIn>
+			<Item ID="190459" Count="4" />
+			<Item ID="190473" Count="4" />
+			<Item ID="16004" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13279" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2595" >
+		<ItemIn>
+			<Item ID="190459" Count="4" />
+			<Item ID="16002" Count="2" />
+			<Item ID="190212" Count="4" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13253" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2596" >
+		<ItemIn>
+			<Item ID="16005" Count="1" />
+			<Item ID="190212" Count="1" />
+			<Item ID="190459" Count="4" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13319" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2597" >
+		<ItemIn>
+			<Item ID="16003" Count="1" />
+			<Item ID="190212" Count="1" />
+			<Item ID="190459" Count="4" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13322" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2598" >
+		<ItemIn>
+			<Item ID="16008" Count="2" />
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13325" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2599" >
+		<ItemIn>
+			<Item ID="16001" Count="2" />
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13328" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2600" >
+		<ItemIn>
+			<Item ID="16007" Count="2" />
+			<Item ID="190459" Count="2" />
+			<Item ID="190473" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="13331" Count="1" />
+		</ItemOut>
+	</Entry>
+
+</Exchange>
+
+

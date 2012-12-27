@@ -1,0 +1,21 @@
+﻿<task mapID="100" mode="0" starTime="9000" expScale="2" rateScale="1" score="200" losturl="swf/winswf3.swf" winurl="swf/lostswf4.swf" musicurl="christmas.mp3" startStar="40" startLifes="100">	
+	<round tips="第一关挑战将在20秒后开始，请做好准备">
+		<monster id="10021" pathID="1" time = "1300" count="3" live="3"/>		
+		<monster id="10021" pathID="1" time = "1800" count="2" stime ="2000" live="3"/>
+		<monster id="10021" pathID="1" time = "1300" count="3" stime ="4500" live="3"/>		
+		<monster id="10021" pathID="1" time = "1800" count="2" stime ="6000" live="3"/>
+		<monster id="10021" pathID="1" time = "1300" count="2" stime ="7500" live="3"/>		
+		<monster id="10021" pathID="1" time = "1800" count="2" stime ="8500" live="3"/>
+	</round>
+	<round tips="第一关挑战将在10秒后开始，请做好准备">
+		<monster id="10003" pathID="1" time = "1200" count="2" live="3"/>		
+		<monster id="10003" pathID="1" time = "1500" count="2" stime ="1800" live="3"/>
+		<monster id="10003" pathID="1" time = "1800" count="2" stime ="4000" live="3"/>
+		<monster id="10003" pathID="1" time = "1600" count="2" stime ="5000" live="3"/>		
+		<monster id="10003" pathID="1" time = "1900" count="2" stime ="6500" live="3"/>
+		<monster id="10003" pathID="1" time = "1500" count="2" stime ="8000" live="3"/>
+		<monster id="10003" pathID="1" time = "1800" count="2" stime ="10000" live="3"/>		
+		<monster id="10003" pathID="1" time = "1600" count="2" stime ="11500" live="3"/>
+		<monster id="10003" pathID="1" time = "1800" count="2" stime ="13000" live="3"/>
+	</round>
+</task>

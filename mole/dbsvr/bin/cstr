@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import re 
+import sys
+import optparse
+
+def get_chr( hex_re ):
+	hex=hex_re.group();
+	value=eval ("0x%s" % (hex)) ;
+	return chr(value); 
+def hex2bin(hexlist):
+	phex=re.compile(r'(\w\w)')
+	return phex.sub(get_chr , hexlist );
+def main(argv):
+	p = optparse.OptionParser(
+			description=' hex ->	string  ',
+			prog='cstr',
+			version='%prog 0.1',
+			usage='%prog  F0 01 00 00 ' )
+	options, arguments = p.parse_args()	
+	ll=""
+
+	for v in arguments :
+		ll+=v 
+	print hex2bin(ll )
+if __name__ == "__main__":
+	main(sys.argv)

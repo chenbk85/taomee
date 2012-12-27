@@ -1,0 +1,4 @@
+#!/bin/sh
+echo $*  >~/DB/bin/msg_f && 
+awks ~/DB/bin/msg_f >~/DB/bin/send_data_file_msglist && 
+syncmsglist  11008 ~/DB/bin/send_data_file_msglist 

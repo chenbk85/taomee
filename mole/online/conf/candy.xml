@@ -1,0 +1,82 @@
+<Gifts>
+	
+
+
+	<Entry ID="0" >
+		<ItemIn>
+			<Item ID="190474" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190473" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="1" >
+		<ItemIn>
+			<Item ID="190249" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190486" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="2" >
+		<ItemIn>
+			<Item ID="190458" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190459" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="3" >
+		<ItemIn>
+			<Item ID="190028" Count="1" />
+			<Item ID="190419" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190472" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="4" >
+		<ItemIn>
+			<Item ID="190186" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190187" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="5" >
+		<ItemIn>
+			<Item ID="190141" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190510" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="6" >
+		<ItemIn>
+			<Item ID="190591" Count="3" />
+			<Item ID="190592" Count="3" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190649" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="7" >
+		<ItemIn>
+			<Item ID="190623" Count="2" />
+			<Item ID="190610" Count="2" />
+			<Item ID="190612" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190652" Count="1" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="8" >
+		<ItemIn>
+			<Item ID="190625" Count="3" />
+			<Item ID="190624" Count="3" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190651" Count="1" />
+		</ItemOut>
+	</Entry>
+</Gifts>

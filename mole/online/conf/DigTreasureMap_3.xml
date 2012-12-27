@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Area ID对应element的ID； Typs表示种类 1矿、2Boss、3事件、4机关；treasures当前区域宝藏说明；-->
+<!--addTo="upMole" 表示物品盖住mole 不添表示被mole盖住 -->
+
+<Map>
+  <Screen screenId="1" mapId="193">
+		<Area ID='41' Type='1' uiInMapId="m_1"/>
+		<Area ID='66' Type='1' uiInMapId="m_2"/>
+		<Area ID='68' Type='1' uiInMapId="m_3"/>
+		<Area ID='140' Type='1' uiInMapId="m_4"/>
+		<Area ID='70' Type='1' uiInMapId="m_5"/>
+		<Area ID='67' Type='1' uiInMapId="m_6" addTo="upMole"/>
+		<Area ID='72' Type='1' uiInMapId="m_8" addTo="upMole"/>
+		
+		<Area ID='71' Type='1' uiInMapId="m_9"/>
+		<Area ID='141' Type='1' uiInMapId="m_10"/>
+		<Area ID='11' Type='4' uiInMapId="t_1" specialCtlId="0"/>
+		<Area ID='37' Type='1' />
+		<Area ID='45' Type='1' />
+		<SpecialCtl cls="map193_BlockDoor"/>
+	  <treasures desc="    千年前的摩尔古城藏着无数的秘密，这个回廊矿洞就是秘密之一。这里聚集着全世界最为珍稀的矿产，世界各地的淘金者都冲着这个来到摩尔古城。">
+		<Item id="1453040" />
+		<Item id="1453041" />
+		<Item id="1453042" />
+		<Item id="1453043" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="2" mapId="194">
+		<Area ID='73' Type='1' uiInMapId="m_1"/>
+		<Area ID='73' Type='1' uiInMapId="m_2"/>
+		<Area ID='74' Type='1' uiInMapId="m_3"/>
+		<Area ID='74' Type='1' uiInMapId="m_4"/>
+		<Area ID='75' Type='1' uiInMapId="m_5"/>
+		<Area ID='75' Type='1' uiInMapId="m_6" />
+		<Area ID='76' Type='1' uiInMapId="m_7" />
+		<Area ID='76' Type='1' uiInMapId="m_8" />
+	  <treasures desc="    找齐三把钥匙，开启暗金闸门你就可以进入这个秘密藏宝室，这里藏着千年前摩尔皇族囤积的宝藏，都是矿洞里最最珍稀的矿产。">
+		<Item id="1453040" />
+		<Item id="1453041" />
+		<Item id="1453042" />
+		<Item id="1453043" />
+		<Item id="1453044" />
+		<Item id="1453045" />
+		<Item id="1453046" />
+		<Item id="1453047" />
+		<Item id="1453048" />
+		<Item id="1453049" />
+		<Item id="1453050" />
+		<Item id="1453051" />
+		<Item id="1453052" />
+		<Item id="1453053" />
+		<Item id="1453054" />
+		<Item id="1453055" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="3" mapId="195">
+		<Area ID='77' Type='1' uiInMapId="m_1"/>
+		<Area ID='78' Type='1' uiInMapId="m_2"/>
+		<Area ID='79' Type='1' uiInMapId="m_3"/>
+		<Area ID='80' Type='1' uiInMapId="m_4"/>
+		<Area ID='82' Type='1' uiInMapId="m_5" addTo="upMole"/>
+		<Area ID='81' Type='1' uiInMapId="m_6" addTo="upMole"/>
+
+		
+
+		<Area ID='12' Type='4' uiInMapId="t_1" specialCtlId="1"/>
+		<Area ID='12' Type='4' uiInMapId="t_2" specialCtlId="2"/>
+		<Area ID='12' Type='4' uiInMapId="t_3" specialCtlId="3"/>
+		<Area ID='12' Type='4' uiInMapId="t_4" specialCtlId="4"/>
+		<Area ID='12' Type='4' uiInMapId="t_5" specialCtlId="5"/>
+		<Area ID='12' Type='4' uiInMapId="t_6" specialCtlId="6"/>
+		<Area ID='12' Type='4' uiInMapId="t_7" specialCtlId="7"/>
+		<Area ID='12' Type='4' uiInMapId="t_8" specialCtlId="8"/>
+		<Area ID='12' Type='4' uiInMapId="t_9" specialCtlId="9"/>
+		<Area ID='14' Type='2' uiInMapId="b_1" specialCtlId="0" addTo="upMole"/>
+		<SpecialCtl cls="map195_BlockDoor"/>
+	  <treasures desc="    千年前的摩尔古城藏着无数的秘密，这个回廊矿洞就是秘密之一。这里是矿洞二层，这一层藏着一些“奇怪的印记”也许它们能帮你打开新的矿道。">
+		<Item id="1453040" />
+		<Item id="1453041" />
+		<Item id="1453042" />
+		<Item id="1453043" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="4" mapId="196">
+		<Area ID='125' Type='1' uiInMapId="m_1"/>
+		<Area ID='124' Type='1' uiInMapId="m_2"/>
+		<Area ID='122' Type='1' uiInMapId="m_3"/>
+		<Area ID='121' Type='1' uiInMapId="m_4"/>
+		<Area ID='126' Type='1' uiInMapId="m_5"/>
+		<Area ID='123' Type='1' uiInMapId="m_6"/>
+		<Area ID='129' Type='1' uiInMapId="m_7" specialCtlId="1"/>
+		<Area ID='127' Type='1' uiInMapId="m_8"/>
+		<Area ID='128' Type='1' uiInMapId="m_9"/>
+		<Area ID='129' Type='1' uiInMapId="m_10" specialCtlId="2"/>
+		<Area ID='11' Type='2' uiInMapId="b_1" specialCtlId="0" addTo="upMole"/>
+		<SpecialCtl cls="BossBlock_2"/>
+	  <treasures desc="    开动脑筋、开启机关才能来到这个古老幽深的神秘矿道，这个有着更为稀有的矿产，也有着守卫矿产的各种怪物。">
+		<Item id="1453040" />
+		<Item id="1453041" />
+		<Item id="1453042" />
+		<Item id="1453043" />
+		<Item id="1453044" />
+		<Item id="1453045" />
+		<Item id="1453046" />
+		<Item id="1453047" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="5" mapId="197">
+		<Area ID='138' Type='1' uiInMapId="m_1" specialCtlId="1"/>
+		<Area ID='138' Type='1' uiInMapId="m_2" specialCtlId="2"/>
+		<Area ID='136' Type='1' uiInMapId="m_3"/>
+		<Area ID='135' Type='1' uiInMapId="m_4"/>
+		<Area ID='131' Type='1' uiInMapId="m_5"/>
+		<Area ID='130' Type='1' uiInMapId="m_6"/>
+		<Area ID='137' Type='1' uiInMapId="m_7"/>
+		<Area ID='132' Type='1' uiInMapId="m_8"/>
+		<Area ID='139' Type='1' uiInMapId="m_9" specialCtlId="3"/>
+		<Area ID='133' Type='1' uiInMapId="m_10"/>
+		<Area ID='134' Type='1' uiInMapId="m_11"/>
+		<Area ID='139' Type='1' uiInMapId="m_12" specialCtlId="4"/>
+		<Area ID='13' Type='2' uiInMapId="b_1" specialCtlId="0"/>
+		<SpecialCtl cls="BossBlock_4"/>
+	  <treasures desc="    开动脑筋、开启机关才能来到这个古老幽深的神秘矿道，这个有着更为稀有的矿产，也有着守卫矿产的各种怪物。">
+		<Item id="1453048" />
+		<Item id="1453049" />
+		<Item id="1453050" />
+		<Item id="1453051" />
+		<Item id="1453052" />
+		<Item id="1453053" />
+		<Item id="1453054" />
+		<Item id="1453055" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="6" mapId="198">
+		<Area ID='86' Type='1' uiInMapId="m_3"/>
+		<Area ID='85' Type='1' uiInMapId="m_4"/>
+		<Area ID='89' Type='1' uiInMapId="m_6"/>
+		<Area ID='83' Type='1' uiInMapId="m_7"/>
+		<Area ID='87' Type='1' uiInMapId="m_8"/>
+		<Area ID='84' Type='1' uiInMapId="m_9"/>
+		<Area ID='88' Type='1' uiInMapId="m_10"/>
+	  <treasures desc="    千年前的摩尔古城藏着无数的秘密，这个回廊矿洞就是秘密之一。这里聚集着全世界最为珍稀的矿产，世界各地的淘金者都冲着这个来到摩尔古城。">
+		<Item id="1453044" />
+		<Item id="1453045" />
+		<Item id="1453046" />
+		<Item id="1453047" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="7" mapId="199">
+		<Area ID='95' Type='1' uiInMapId="m_1"/>
+		<Area ID='90' Type='1' uiInMapId="m_2"/>
+		<Area ID='92' Type='1' uiInMapId="m_3"/>
+		<Area ID='94' Type='1' uiInMapId="m_4"/>
+		<Area ID='91' Type='1' uiInMapId="m_6"/>
+		<Area ID='93' Type='1' uiInMapId="m_7"/>
+		<Area ID='97' Type='1' uiInMapId="m_8"/>
+		<Area ID='96' Type='1' uiInMapId="m_9" specialCtlId="1"/>
+		<Area ID='96' Type='1' uiInMapId="m_10" specialCtlId="2"/>
+		<Area ID='10' Type='2' uiInMapId="b_1" specialCtlId="0" addTo="upMole"/>
+		<SpecialCtl cls="BossBlock_2"/>
+	  <treasures desc="    千年前的摩尔古城藏着无数的秘密，这个回廊矿洞就是秘密之一。这里聚集着全世界最为珍稀的矿产，世界各地的淘金者都冲着这个来到摩尔古城。">
+		<Item id="1453044" />
+		<Item id="1453045" />
+		<Item id="1453046" />
+		<Item id="1453047" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="8" mapId="200">
+		<Area ID='98' Type='1' uiInMapId="m_1"/>
+		<Area ID='99' Type='1' uiInMapId="m_2"/>
+		<Area ID='101' Type='1' uiInMapId="m_4"/>
+		<Area ID='100' Type='1' uiInMapId="m_5"/>
+		<Area ID='104' Type='1' uiInMapId="m_6"/>
+		<Area ID='102' Type='1' uiInMapId="m_7"/>
+		<Area ID='103' Type='1' uiInMapId="m_8"/>
+		<Area ID='15' Type='2' uiInMapId="b_1" specialCtlId="0" addTo="upMole"/>
+
+	  <treasures desc="    千年前的摩尔古城藏着无数的秘密，这个回廊矿洞就是秘密之一。这里聚集着全世界最为珍稀的矿产，世界各地的淘金者都冲着这个来到摩尔古城。">
+		<Item id="1453048" />
+		<Item id="1453049" />
+		<Item id="1453050" />
+		<Item id="1453051" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="9" mapId="201">
+		<Area ID='108' Type='1' uiInMapId="m_1"/>
+		<Area ID='109' Type='1' uiInMapId="m_2"/>
+		<Area ID='105' Type='1' uiInMapId="m_4"/>
+		<Area ID='106' Type='1' uiInMapId="m_5"/>
+		<Area ID='112' Type='1' uiInMapId="m_6"/>
+		<Area ID='107' Type='1' uiInMapId="m_7"/>
+		<Area ID='110' Type='1' uiInMapId="m_8"/>
+		<Area ID='111' Type='1' uiInMapId="m_9"/>
+
+	  <treasures desc="    千年前的摩尔古城藏着无数的秘密，这个回廊矿洞就是秘密之一。这里聚集着全世界最为珍稀的矿产，世界各地的淘金者都冲着这个来到摩尔古城。">
+		<Item id="1453048" />
+		<Item id="1453049" />
+		<Item id="1453050" />
+		<Item id="1453051" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="10" mapId="202">
+		<Area ID='120' Type='1' uiInMapId="m_1" specialCtlId="1"/>
+		<Area ID='113' Type='1' uiInMapId="m_3"/>
+		<Area ID='115' Type='1' uiInMapId="m_4"/>
+		<Area ID='118' Type='1' uiInMapId="m_5"/>
+		<Area ID='117' Type='1' uiInMapId="m_6"/>
+		<Area ID='114' Type='1' uiInMapId="m_7"/>
+		<Area ID='116' Type='1' uiInMapId="m_8"/>
+		<Area ID='119' Type='1' uiInMapId="m_9"/>
+		<Area ID='120' Type='1' uiInMapId="m_10" specialCtlId="2"/>
+		<Area ID='12' Type='2' uiInMapId="b_1" specialCtlId="0"/>
+		<SpecialCtl cls="BossBlock_2"/>
+	  <treasures desc="    千年前的摩尔古城藏着无数的秘密，这个回廊矿洞就是秘密之一。这里聚集着全世界最为珍稀的矿产，世界各地的淘金者都冲着这个来到摩尔古城。">
+		<Item id="1453052" />
+		<Item id="1453053" />
+		<Item id="1453054" />
+		<Item id="1453055" />
+	  </treasures>
+  </Screen>
+  <RandLimit Mine="100" Boss="100" Event="100" Trigger="100"/>
+</Map>

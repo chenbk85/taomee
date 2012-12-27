@@ -1,0 +1,29 @@
+#!/bin/sh
+showerr() {
+		echo "错误 : $1"
+		exit
+}
+echo "install ... "
+
+SSHDIR=~/.ssh
+BINDIR=~/bin
+#create .ssh
+test -d $SSHDIR ||  mkdir  $SSHDIR ||  showerr "mdkir $SSHDIR" 
+#test ! -f $SSHDIR/id_rsa || showerr "请把原有的密钥移除: $SSHDIR/id_rsa"  
+cp ./id_rsa  $SSHDIR  || showerr "复制密钥失败 :cp ./id_rsa  $SSHDIR " 
+chmod 600 $SSHDIR/id_rsa || showerr "设置权限失败 :chmod 600 $SSHDIR/id_rsa "
+
+test -d ~/protolog/log ||  mkdir  -p ~/protolog/log || showerr "mdkir ~/protolog/log"   
+test -d ~/protolog/bak ||  mkdir  -p ~/protolog/bak || showerr "mdkir ~/protolog/bak"   
+test -d $BINDIR ||  mkdir  $BINDIR || showerr "mdkir $BINDIR"   
+cp ./sshsendfile ./sendattime $BINDIR || showerr "cp sshsendfile $BINDIR " 
+
+#install cron
+crontab crontabfile ||  showerr "crontab crontabfile  "
+#test sendfile
+cd ~/bin
+echo "slkfjlskfjsl test file" >testfile
+~/bin/sshsendfile  ~/bin/testfile
+rm  -f testfile
+
+echo "install succ "

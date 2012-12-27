@@ -1,0 +1,13 @@
+#!/usr/bin/awk -f
+BEGIN{
+	if (i<=0) i=1;
+	all_value=0	
+}
+{
+	if (NF>=1){
+		all_value=all_value+$i;
+	}
+}
+END{
+	printf "all values is %u \n",all_value
+}

@@ -1,0 +1,136 @@
+<!--ExamTime 考试次数 LevelID 1 一般物品 LevelID 2 好的物品 LevelID 3 超拉物品 -->
+<LahmClassroom>
+	<Exam ExamTime="1">
+		<Level LevelID="1">
+			<Item ID="0" Count="50" />
+			<Item ID="190750" Count="3" />
+			<Item ID="190752" Count="3" />
+			<Item ID="1" Count="30" />
+			<Item ID="190753" Count="3" />
+			<Item ID="190754" Count="3" />
+			<Item ID="190755" Count="3" />
+			<Item ID="190756" Count="3" />
+			<Item ID="190757" Count="3" />
+			<Item ID="180001" Count="1" />
+			<Item ID="180002" Count="1" />
+			<Item ID="180003" Count="1" />
+		</Level>
+		<Level LevelID="2">
+			<Item ID="0" Count="100" />
+			<Item ID="190750" Count="6" />
+			<Item ID="190752" Count="5" />
+			<Item ID="1" Count="60" />
+			<Item ID="190753" Count="5" />
+			<Item ID="190754" Count="5" />
+			<Item ID="190755" Count="5" />
+			<Item ID="190756" Count="5" />
+			<Item ID="190757" Count="5" />
+			<Item ID="180001" Count="1" />
+			<Item ID="180002" Count="1" />
+			<Item ID="180003" Count="1" />
+		</Level>
+		<Level LevelID="3">
+			<Item ID="0" Count="200" />
+			<Item ID="190751" Count="3" />
+			<Item ID="190752" Count="8" />
+			<Item ID="190753" Count="8" />
+			<Item ID="190754" Count="8" />
+			<Item ID="190755" Count="8" />
+			<Item ID="190756" Count="8" />
+			<Item ID="190757" Count="8" />
+			<Item ID="1" Count="100" />
+			<Item ID="180086" Count="2" />
+			<Item ID="180072" Count="2" />
+			<Item ID="180022" Count="2" />
+		</Level>
+	</Exam>
+	<Exam ExamTime="2">
+		<Level LevelID="1">
+			<Item ID="0" Count="50" />
+			<Item ID="190750" Count="3" />
+			<Item ID="190752" Count="3" />
+			<Item ID="1" Count="30" />
+			<Item ID="190753" Count="3" />
+			<Item ID="190754" Count="3" />
+			<Item ID="190755" Count="3" />
+			<Item ID="190756" Count="3" />
+			<Item ID="190757" Count="3" />
+			<Item ID="180001" Count="1" />
+			<Item ID="180002" Count="1" />
+			<Item ID="180003" Count="1" />
+		</Level>
+		<Level LevelID="2">
+			<Item ID="0" Count="130" />
+			<Item ID="190750" Count="6" />
+			<Item ID="190752" Count="5" />
+			<Item ID="1" Count="80" />
+			<Item ID="190753" Count="5" />
+			<Item ID="190754" Count="5" />
+			<Item ID="190755" Count="5" />
+			<Item ID="190756" Count="5" />
+			<Item ID="190757" Count="5" />
+			<Item ID="180001" Count="1" />
+			<Item ID="180002" Count="1" />
+			<Item ID="180003" Count="1" />
+		</Level>
+		<Level LevelID="3">
+			<Item ID="0" Count="300" />
+			<Item ID="190751" Count="3" />
+			<Item ID="190752" Count="8" />
+			<Item ID="190753" Count="8" />
+			<Item ID="190754" Count="8" />
+			<Item ID="190755" Count="8" />
+			<Item ID="190756" Count="8" />
+			<Item ID="190757" Count="8" />
+			<Item ID="1" Count="150" />
+			<Item ID="180086" Count="2" />
+			<Item ID="180072" Count="2" />
+			<Item ID="180022" Count="2" />
+		</Level>
+	</Exam>
+	<Exam ExamTime="3">
+		<Level LevelID="1">
+			<Item ID="0" Count="100" />
+			<Item ID="190750" Count="5" />
+			<Item ID="190752" Count="5" />
+			<Item ID="1" Count="50" />
+			<Item ID="190753" Count="5" />
+			<Item ID="190754" Count="5" />
+			<Item ID="190755" Count="5" />
+			<Item ID="190756" Count="5" />
+			<Item ID="190757" Count="5" />
+			<Item ID="180014" Count="2" />
+			<Item ID="180010" Count="2" />
+			<Item ID="180070" Count="2" />
+		</Level>
+		<Level LevelID="2">
+			<Item ID="0" Count="150" />
+			<Item ID="190750" Count="8" />
+			<Item ID="190752" Count="8" />
+			<Item ID="1" Count="100" />
+			<Item ID="190753" Count="8" />
+			<Item ID="190754" Count="8" />
+			<Item ID="190755" Count="8" />
+			<Item ID="190756" Count="8" />
+			<Item ID="190757" Count="8" />
+			<Item ID="180069" Count="2" />
+			<Item ID="180059" Count="2" />
+			<Item ID="180061" Count="2" />
+		</Level>
+		<Level LevelID="3">
+			<Item ID="0" Count="500" />
+			<Item ID="190751" Count="5" />
+			<Item ID="190752" Count="10" />
+			<Item ID="190753" Count="10" />
+			<Item ID="190754" Count="10" />
+			<Item ID="190755" Count="10" />
+			<Item ID="190756" Count="10" />
+			<Item ID="190757" Count="10" />
+			<Item ID="1" Count="200" />
+			<Item ID="180086" Count="2" />
+			<Item ID="180072" Count="2" />
+			<Item ID="180022" Count="2" />
+		</Level>
+	</Exam>
+</LahmClassroom>
+

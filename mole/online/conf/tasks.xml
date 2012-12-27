@@ -1,0 +1,29 @@
+<Tasks>
+	<!-- Task 0 to 512 reserved for pet -->
+	<!-- Language Lesson 1 -->
+	<Task ID="1" Name="语言课1" TaskTime="604800" TaskEndFlag="3" CoinsPerDay="-100" PetIsVIP="0" AwardItemID="1310001" />
+	<!-- Language Lesson 2 -->
+	<Task ID="2" Name="语言课2" TaskTime="1209600" TaskEndFlag="3" CoinsPerDay="-100" PetIsVIP="0" AwardItemID="1310008" />
+	<!-- Language Lesson 3 -->
+	<!--<Task ID="3" Name="语文课3" TaskTime="604800" TaskEndFlag="3" CoinsPerDay="-50" PetIsVIP="0" AwardItemID="0" />-->
+
+	<!-- Fly Lesson TaskEndFlag="1":have an examination -->
+	<Task ID="11" Name="飞行课" TaskTime="604800" TaskEndFlag="1" CoinsPerDay="-100" PetIsVIP="0" AwardItemID="1310004" />
+
+	<!-- Diving Lesson -->
+	<Task ID="12" Name="潜水课" TaskTime="604800" TaskEndFlag="1" CoinsPerDay="-100" PetIsVIP="0" AwardItemID="1310005" />
+
+	<Task ID="13" Name="手工课" TaskTime="86400" TaskEndFlag="3" CoinsPerDay="-100" PetIsVIP="0" AwardItemID="1310007" />
+  	<!-- work Lesson TaskEndFlag="3":no examination -->
+	<Task ID="14" Name="清泥巴课" TaskTime="604800" TaskEndFlag="3" CoinsPerDay="-100" PetIsVIP="0" AwardItemID="1310003" />
+	<!-- Trick-Playing Lesson 1 -->
+	<!--<Task ID="13" Name="" TaskTime="604800" TaskEndFlag="1" CoinsPerDay="-50" PetIsVIP="0" AwardItemID="0" />-->
+	<Task ID="15" Name="英语课" TaskTime="1209600" TaskEndFlag="1" CoinsPerDay="-100" PetIsVIP="0" AwardItemID="1310002" />
+	<!-- Translate Course -->
+	<Task ID="16" Name="动物课1" TaskTime="259200" TaskEndFlag="1" CoinsPerDay="-300" PetIsVIP="1" AwardItemID="1310006" />
+
+	<Task ID="101" Name="超拉魔法课" TaskTime="0" TaskEndFlag="1" CoinsPerDay="0" PetIsVIP="1" AwardItemID="0" />
+	<Task ID="102" Name="力量魔法课" TaskTime="0" TaskEndFlag="1" CoinsPerDay="0" PetIsVIP="1" AwardItemID="0" />
+	<Task ID="103" Name="守护魔法课" TaskTime="0" TaskEndFlag="1" CoinsPerDay="0" PetIsVIP="1" AwardItemID="0" />
+	<Task ID="104" Name="感应魔法课" TaskTime="0" TaskEndFlag="1" CoinsPerDay="0" PetIsVIP="1" AwardItemID="0" />
+</Tasks>

@@ -1,0 +1,5738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Mine ID对应地图配置的ID； ui表示素材ID；tipType表示tips类型 right_barTip、right_tip、left_tip、left_barTip、boss_tip-->
+<!--mouseType 鼠标手势 1镐头、2手型、3放大镜、4问号、5刷子； action表示人物动作，dig、Knock、brush；effect脱离人物的效果素材；hand,brush,knock
+sound表示声音文件，后面的数字表示延迟时间，毫秒单位。MaxCount 如果是随机出现，表示次数上限；
+Region表示挖到第几次之前（含当前次数）所能产出物品的概率
+同一个区域中最多能掉落42种物品-->
+
+<Root>
+  <MineEnum>
+    <Mine ID="0" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="灵光魔方" ui="0" tipType="left_tip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang" awardDelay="0">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="1" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="符文石" ui="1" tipType="left_tip" mouseType="3" action="dig" effect="" sound="">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="2" MaxCount="3" Hp="2" Exp="3" ExplCount="3" name="普通岩石" ui="2" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453079" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453080" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453081" Count="1"/>
+		    </Award>
+		    <Award Rate="12">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		    <Award Rate="13">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="3" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="破旧的凳子" ui="3" tipType="left_tip" mouseType="2" action="dig" sound="dengzi_gun:3000">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="4" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="旧木桶" ui="4" tipType="left_tip" mouseType="3" action="dig" sound="tong_kai:2500">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="5" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="破损的地板" ui="5" tipType="left_tip" mouseType="3" action="dig" sound="">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="6" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="粗瓷水罐" ui="6" tipType="left_tip" mouseType="2" action="" effect="hand" sound="waguan_sui:3000">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="7" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="破旧木桶" ui="7" tipType="left_tip" mouseType="2" effect="hand" action="dig" sound="">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="8" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="空水罐" ui="8" tipType="left_tip" mouseType="2" effect="hand" action="" sound="">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="9" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="空镜框" ui="9" tipType="left_tip" mouseType="2" action="" effect="hand" sound="jingzi_suilie:3000">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="10" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="灰暗的泥地" ui="10" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453082" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453083" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453084" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+				<Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+				<Item ID="1453033" Count="1"/>
+		    </Award>		    		    		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="11" MaxCount="10" Hp="2" Exp="3" ExplCount="4" name="暗水晶矿脉" ui="11" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="3">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="4">
+		    <Award Rate="15">
+			  <Item ID="1453079" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453080" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453081" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453034" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>			    		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="12" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="烛台" ui="12" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="10">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453006" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="13" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="古老的泥土" ui="13" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453082" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453083" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453084" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>		    
+	    </Region>
+    </Mine>
+	<Mine ID="14" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="坚硬的岩石" ui="14" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453079" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453080" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453081" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453008" Count="1"/>
+		    </Award>
+		    <Award Rate="7">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453033" Count="1"/>
+		    </Award>			    
+	    </Region>
+    </Mine>
+	<Mine ID="15" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="破损的盾牌" ui="15" tipType="left_tip" mouseType="3" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453006" Count="1"/>
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453008" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="16" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="储物箱" ui="16" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		     <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="17" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="符文岩石" ui="17" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		     <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		     <Award Rate="15">
+			  <Item ID="1453082" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453083" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453084" Count="1"/>
+		    </Award>
+		    <Award Rate="7">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+				<Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453034" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>			    
+	    </Region>
+    </Mine>
+	<Mine ID="18" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="实木宝箱" ui="18" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3500">
+	    <Region Count="1">
+		    <Award Rate="15">
+			  <Item ID="1453079" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453080" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453081" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+			  <Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453006" Count="1"/>
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			 <Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>	    		    
+	    </Region>
+    </Mine>
+	<Mine ID="19" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="陈旧的战甲" ui="19" tipType="left_tip" mouseType="2" effect="hand" action="" sound="">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453006" Count="1"/>
+				<Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453008" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="20" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="生锈的铁剑" ui="20" tipType="right_tip" mouseType="2" action="" effect="hand" sound="bingqi:2500">
+	    <Region Count="1">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="21" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="坚硬的岩石" ui="21" tipType="right_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453082" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453083" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453084" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453033" Count="1"/>
+		    </Award>			    
+	    </Region>
+    </Mine>
+	<Mine ID="22" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="实木宝箱" ui="22" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3500">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+			   <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453004" Count="1"/>
+			  <Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453006" Count="1"/>
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			 <Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>		    
+	    </Region>
+    </Mine>
+	<Mine ID="23" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="石质柜台" ui="23" tipType="left_tip" mouseType="2" action="" effect="hand" sound="guitai_jiguan:3000">
+	    <Region Count="0">
+		    <Award Rate="0">
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="24" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="暗水晶矿脉" ui="24" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453085" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453086" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453087" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453034" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>		    
+	    </Region>
+    </Mine>
+  <Mine ID="25" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="幽灵菇" ui="25" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453088" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453089" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453090" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="7">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453033" Count="1"/>
+		    </Award>	
+	    </Region>
+    </Mine>
+  <Mine ID="26" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="符文岩石" ui="26" tipType="left_tip" mouseType="2" action="dig" sound="">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453006" Count="1"/>
+				<Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+  <Mine ID="27" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="暗水晶矿脉" ui="27" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		   <Award Rate="15">
+			  <Item ID="1453085" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453086" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453087" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453009" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+				<Item ID="1453010" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453034" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>	    
+	    </Region>
+    </Mine>
+  <Mine ID="28" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="裂开的公告牌" ui="28" tipType="left_barTip" mouseType="2" action="brush" sound="brush">
+	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453006" Count="1"/>
+				<Item ID="1453007" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+  <Mine ID="29" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="幽灵菇" ui="29" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+				<Award Rate="15">
+			  <Item ID="1453088" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453089" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453090" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="7">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453033" Count="1"/>
+		    </Award>	
+	    </Region>
+    </Mine>
+  <Mine ID="30" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="古老的泥土" ui="30" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453085" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453086" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453087" Count="1"/>
+		    </Award>
+		    <Award Rate="7">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453034" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>		    
+	    </Region>
+    </Mine>
+  <Mine ID="31" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="幽灵菇" ui="31" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+				<Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="15">
+			  <Item ID="1453088" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453089" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453090" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453003" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453004" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		   <Award Rate="5">
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="7">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453033" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="32" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="精铁宝箱" ui="32" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453079" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453080" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453081" Count="1"/>
+		    </Award>		    		    	    	
+		    <Award Rate="10">
+			  <Item ID="1453004" Count="1"/>
+			   <Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453006" Count="1"/>
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453033" Count="1"/>
+		    </Award>		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="33" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="精铁宝箱" ui="32" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3000">
+	    <Region Count="1">
+				<Award Rate="10">
+			  <Item ID="1453082" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453083" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453084" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453004" Count="1"/>
+			   <Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453006" Count="1"/>
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453034" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="34" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="精铁宝箱" ui="33" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453085" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453086" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453087" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453004" Count="1"/>
+			   <Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453006" Count="1"/>
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453026" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453027" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453032" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453033" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="35" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="精铁宝箱" ui="33" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453088" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453089" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453090" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453004" Count="1"/>
+			   <Item ID="1453005" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453006" Count="1"/>
+			  <Item ID="1453007" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+				<Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453024" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453025" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453034" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453035" Count="1"/>
+		    </Award>	
+	    </Region>
+    </Mine>
+	<Mine ID="36" MaxCount="10" Hp="4" Exp="6" ExplCount="3" name="绿晶石" ui="36" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+				<Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+				<Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453036" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>		    		    		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="37" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="训练木桩" ui="37" tipType="left_tip" mouseType="2" action="dig" sound="mu_zhuang:3000">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="38" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="发霉的粮草" ui="38" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+	    	 <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    	<Mine ID="39" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="发霉的粮草" ui="38" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+	    	 <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="40" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧木桶" ui="40" tipType="left_tip" mouseType="2" action="" effect="hand" sound="tong_kai:3500">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="41" MaxCount="10" Hp="4" Exp="6" ExplCount="3" name="绿晶石" ui="41" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453037" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>		    		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="42" MaxCount="10" Hp="4" Exp="6" ExplCount="3" name="绿晶石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453038" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>			    		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="43" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="破损的盾牌" ui="43" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="2">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>		    
+	    </Region>
+    </Mine>
+	<Mine ID="44" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="古老的兵器" ui="44" tipType="left_tip" mouseType="5" action="" effect="brush" sound="clean_light">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="45" MaxCount="10" Hp="1" Exp="1" ExplCount="1" name="烛台" ui="45" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="1">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="46" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="普通的沙堆" ui="46" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="35">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="47" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="古老的泥土" ui="47" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    	 <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453036" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>			    
+	    </Region>
+    </Mine>
+	<Mine ID="48" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="破损的路面" ui="48" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>	    
+    </Mine>
+    	<Mine ID="49" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="实木宝箱" ui="22" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3500">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453015" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453036" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453037" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="50" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="实木宝箱" ui="50" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3500">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453015" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453038" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="51" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="幽灵菇" ui="51" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453038" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="52" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="古老的弹药箱" ui="52" tipType="left_barTip" mouseType="2" action="" effect="hand" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="53" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="投石车车头" ui="53" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="54" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="储物箱" ui="54" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="3">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="55" MaxCount="10" Hp="4" Exp="6" ExplCount="1" name="古老的弩炮" ui="55" tipType="left_tip" mouseType="2" action="" effect="hand" sound="shoot:3000">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="56" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="符文岩石" ui="56" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+	    </Region>
+	    	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="57" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="坚硬的岩石" ui="57" tipType="left_barTip" mouseType="1" action="Knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="58" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="古老的弹药箱" ui="58" tipType="left_barTip" mouseType="2" action="" effect="hand" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453036" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>	    
+    </Mine>
+	<Mine ID="59" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="破损的路面" ui="59" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453037" Count="1"/>
+		    </Award>
+	    </Region>	    
+    </Mine>
+	<Mine ID="60" MaxCount="10" Hp="6" Exp="9" ExplCount="1" name="黄金宝箱" ui="60" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453013" Count="1"/>
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453016" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453019" Count="1"/>
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453028" Count="1"/>
+			   <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453030" Count="1"/>
+			   <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453037" Count="1"/>
+			  <Item ID="1453036" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453038" Count="1"/>
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="61" MaxCount="10" Hp="4" Exp="6" ExplCount="1" name="神秘皇冠" ui="61" tipType="left_tip" mouseType="5" action="brush" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453013" Count="1"/>
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453015" Count="1"/>
+			   <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="7">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+			   <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453030" Count="1"/>
+			   <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453037" Count="1"/>
+			  <Item ID="1453036" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453038" Count="1"/>
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="62" MaxCount="10" Hp="2" Exp="3" ExplCount="1" name="实木宝箱" ui="18" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3500">
+	    <Region Count="1">
+		    <Award Rate="5">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453015" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453028" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453036" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453037" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="63" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="普通的沙堆" ui="46" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+	    	<Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+			  <Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453038" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453021" Count="1"/>
+		    </Award>		    		    
+	    </Region>
+    </Mine>
+	<Mine ID="64" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="生锈的铜币堆" ui="64" tipType="left_barTip" mouseType="2" action="dig" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="5">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453016" Count="1"/>
+				<Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>		    		    
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453013" Count="1"/>
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453014" Count="1"/>
+			  <Item ID="1453015" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453016" Count="1"/>
+				<Item ID="1453017" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453028" Count="1"/>
+			  <Item ID="1453029" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453031" Count="1"/>
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453036" Count="1"/>
+			  <Item ID="1453037" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453038" Count="1"/>
+			  <Item ID="1453039" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453020" Count="1"/>
+			  <Item ID="1453021" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+	<Mine ID="65" MaxCount="10" Hp="2" Exp="3" ExplCount="3" name="绿晶石" ui="42" tipType="left_barTip" mouseType="1" action="" effect="knock" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="20">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="30">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+				<Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="13">
+			  <Item ID="1453000" Count="1"/>
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="2">
+			  <Item ID="1453013" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453017" Count="1"/>
+				<Item ID="1453019" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453018" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453030" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453031" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453037" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453022" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453023" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    	<Mine ID="66" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗水晶矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453063" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453064" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="67" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧的木桶" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="tong_kai:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="68" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破损的矿车" ui="42" tipType="left_tip" mouseType="5" action="brush" effect="" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="69" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="符文暗饰" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="70" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗影菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453042" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453043" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453065" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+	  </Mine>
+     <Mine ID="71" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine> 
+     <Mine ID="72" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="符文矿石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453067" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453068" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+      <Mine ID="73" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="暗金宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="heavy_box:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453042" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453043" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453063" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453064" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453065" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		   	<Award Rate="10">
+			  <Item ID="1453301" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+      <Mine ID="74" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="暗金宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="heavy_box:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453044" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453067" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453068" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453069" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453070" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		   	<Award Rate="10">
+			  <Item ID="1453301" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="75" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="暗金宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="heavy_box:3000">
+	    	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453048" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453049" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453071" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453072" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453073" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453074" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		   	<Award Rate="10">
+			  <Item ID="1453301" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="76" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="暗金宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="heavy_box:3000">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453052" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453053" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453054" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453055" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453075" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453076" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453077" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453078" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		   	<Award Rate="10">
+			  <Item ID="1453301" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="77" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗影菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+ <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453042" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453043" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453069" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453070" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="78" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="79" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗水晶矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453071" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453072" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+     <Mine ID="80" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+			<Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453073" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453074" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="81" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453042" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453043" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453074" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453075" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+    <Mine ID="82" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="83" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗水晶矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453044" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453075" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453076" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+     <Mine ID="84" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="85" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="幽灵菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453077" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453077" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="86" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="废弃的矿锄" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="fall_down:3000">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="87" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+			<Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453044" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453063" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453064" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="88" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453065" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+    <Mine ID="89" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧的木桶" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="tong_kai:3000">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="90" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="生锈的矿车" ui="42" tipType="left_tip" mouseType="5" action="brush" effect="" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="91" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧的木桶" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="tong_kai:3000">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="92" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="绿晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+				<Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453044" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453067" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453068" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+    <Mine ID="93" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="幽灵菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453069" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453070" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="94" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453071" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453072" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+     <Mine ID="95" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+			<Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453074" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453073" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="96" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="精铁宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box:3000">
+	    <Region Count="1">
+		    <Award Rate="9">
+			  <Item ID="1453044" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>	    
+		    <Award Rate="9">
+			  <Item ID="1453067" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453068" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453069" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453070" Count="1"/>
+		    </Award>	    
+		    <Award Rate="10">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="97" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="98" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="幽灵菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453048" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453049" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453075" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453076" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="99" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="100" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗水晶矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="101" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧的木桶" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="tong_kai:3000">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="102" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="生锈的矿车" ui="42" tipType="left_tip" mouseType="5" action="brush" effect="" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="103" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的石板" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453049" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="104" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="105" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧的木桶" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="tong_kai:3000">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="106" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗水晶矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453077" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453077" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="107" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="生锈的矿车" ui="42" tipType="left_tip" mouseType="5" action="brush" effect="" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="108" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453049" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453063" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453064" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+        <Mine ID="109" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="幽灵菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453065" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+        <Mine ID="110" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="幽灵菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453048" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453049" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="111" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="112" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="113" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧的木桶" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="114" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="115" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="绿晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453052" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453053" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453067" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="116" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="幽灵菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453054" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453055" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="117" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453054" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453055" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453067" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453068" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="118" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="碎石堆" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453052" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453053" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453069" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453070" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="119" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="生锈的矿车" ui="42" tipType="left_tip" mouseType="5" action="brush" effect="" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="120" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="精铁宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box">
+	    <Region Count="1">
+		    <Award Rate="9">
+			  <Item ID="1453063" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453064" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453065" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		     <Award Rate="8">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="121" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="暗影菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453042" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453043" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453071" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453072" Count="1"/>
+		    </Award>
+	    </Region>
+	  </Mine>
+     <Mine ID="122" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+			<Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine> 
+    <Mine ID="123" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="符文岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453073" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453074" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+    <Mine ID="124" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="绿晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+				<Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453044" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+     <Mine ID="125" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="废弃的矿锄" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="fall_down">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="126" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="生锈的矿车" ui="42" tipType="left_tip" mouseType="5" action="brush" effect="" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="127" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="128" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453075" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453076" Count="1"/>
+		    </Award>
+		    </Region>
+    </Mine>
+    <Mine ID="129" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="精铁宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box">
+	    <Region Count="1">
+		    <Award Rate="9">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453042" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453043" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453071" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453072" Count="1"/>
+		    </Award>
+		     <Award Rate="8">
+			  <Item ID="1453073" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453074" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+ <Mine ID="130" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="幽灵菇" ui="42" tipType="left_barTip" mouseType="2" action="dig" effect="" sound="Wa_Di">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453077" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453078" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="131" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453048" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453049" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+ <Mine ID="132" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="符文岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453050" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453051" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453063" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453064" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="133" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="破旧的木桶" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="134" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的石板" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453054" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453055" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453065" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="135" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="绿晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453052" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453053" Count="1"/>
+		    </Award>
+		    		    <Award Rate="15">
+			  <Item ID="1453067" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453068" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="136" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="生锈的矿车" ui="42" tipType="left_tip" mouseType="5" action="brush" effect="" sound="brush">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="137" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="粗瓷水罐" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="">
+	    <Region Count="1">
+		    <Award Rate="7">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="138" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="精铁宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box">
+	    <Region Count="1">
+		    <Award Rate="9">
+			  <Item ID="1453075" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453076" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453077" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453078" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453044" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453045" Count="1"/>
+		    </Award>
+		     <Award Rate="8">
+			  <Item ID="1453046" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453047" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+    <Mine ID="139" MaxCount="10" Hp="3" Exp="5" ExplCount="1" name="精铁宝箱" ui="42" tipType="left_tip" mouseType="2" action="" effect="hand" sound="open_box">
+	    <Region Count="1">
+		    <Award Rate="8">
+			  <Item ID="1453063" Count="1"/>
+		    </Award>
+		    <Award Rate="8">
+			  <Item ID="1453064" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453065" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453066" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453052" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453053" Count="1"/>
+		    </Award>
+		     <Award Rate="9">
+			  <Item ID="1453054" Count="1"/>
+		    </Award>
+		    <Award Rate="9">
+			  <Item ID="1453055" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+        <Mine ID="140" MaxCount="10" Hp="3" Exp="5" ExplCount="3" name="厚重的岩石" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+	    <Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453012" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453042" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453043" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453069" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453070" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>
+     <Mine ID="141" MaxCount="10" Hp="5" Exp="8" ExplCount="3" name="铜晶石矿脉" ui="42" tipType="left_barTip" mouseType="1" action="Knock" effect="" sound="Cai_Kuang">
+			<Region Count="2">
+		    <Award Rate="10">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453002" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453058" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453059" Count="1"/>
+		    </Award>
+	    </Region>
+	    <Region Count="3">
+		    <Award Rate="5">
+			  <Item ID="1453000" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453001" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453011" Count="1"/>
+		    </Award>
+		    <Award Rate="10">
+			  <Item ID="1453056" Count="1"/>
+		    </Award>
+		    <Award Rate="15">
+			  <Item ID="1453057" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453040" Count="1"/>
+		    </Award>
+		    <Award Rate="20">
+			  <Item ID="1453041" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453060" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453061" Count="1"/>
+		    </Award>
+		    <Award Rate="5">
+			  <Item ID="1453062" Count="1"/>
+		    </Award>
+	    </Region>
+    </Mine>                                                                                                                                                                                                                                                                          
+  </MineEnum>
+
+  
+  <BossEnum>
+    <Boss ID="0" name="呼嗒嗒" MaxCount="1"  Hp="0" Exp="0" ui="0" tipType="boss_tip" >
+      <BattleMap ID="17" Rate="20" star="1" type= "1"/>
+    </Boss>
+	<Boss ID="1" name="唉咔咔" MaxCount="1"  Hp="0" Exp="0" ui="1" tipType="boss_tip" >
+      <BattleMap ID="19" Rate="20" star="1" type= "0"/>
+    </Boss>
+	<Boss ID="2" name="牙黑牙" MaxCount="1"  Hp="0" Exp="0" ui="2" tipType="boss_tip" >
+      <BattleMap ID="20" Rate="20" star="2" type= "0"/>
+    </Boss>
+	<Boss ID="3" name="生气的呼嗒嗒" MaxCount="1"  Hp="0" Exp="0" ui="3" tipType="boss_tip" >
+      <BattleMap ID="18" Rate="20" star="1" type= "1"/>
+    </Boss>
+	<Boss ID="4" name="囧明" MaxCount="1"  Hp="0" Exp="0" ui="4" tipType="boss_tip" >
+      <BattleMap ID="23" Rate="20" star="1" type= "2"/>
+    </Boss>
+	<Boss ID="5" name="独明" MaxCount="1"  Hp="0" Exp="0" ui="5" tipType="boss_tip" >
+      <BattleMap ID="21" Rate="20" star="1" type= "1"/>
+    </Boss>
+	<Boss ID="6" name="残明" MaxCount="1"  Hp="0" Exp="0" ui="6" tipType="boss_tip" >
+      <BattleMap ID="24" Rate="20" star="2" type= "0"/>
+    </Boss>
+	<Boss ID="7" name="独明" MaxCount="1"  Hp="0" Exp="0" ui="10" tipType="boss_tip" >
+      <BattleMap ID="22" Rate="20" star="2" type= "1"/>
+    </Boss>
+    	<Boss ID="8" name="嗷嗷" MaxCount="1"  Hp="0" Exp="0" ui="7" tipType="boss_tip" >
+      <BattleMap ID="25" Rate="20" star="2" type= "1"/>
+    </Boss>
+	<Boss ID="9" name="哇哇" MaxCount="1"  Hp="0" Exp="0" ui="8" tipType="boss_tip" >
+      <BattleMap ID="26" Rate="20" star="2" type= "0"/>
+    </Boss>
+  <Boss ID="10" name="魔角" MaxCount="1"  Hp="0" Exp="0" ui="6" tipType="boss_tip" >
+      <BattleMap ID="27" Rate="20" star="2" type= "1"/>
+    </Boss>
+	<Boss ID="11" name="魔角" MaxCount="1"  Hp="0" Exp="0" ui="10" tipType="boss_tip" >
+      <BattleMap ID="28" Rate="20" star="2" type= "1"/>
+    </Boss>
+    	<Boss ID="12" name="咚嘎" MaxCount="1"  Hp="0" Exp="0" ui="7" tipType="boss_tip" >
+      <BattleMap ID="29" Rate="20" star="2" type= "0"/>
+    </Boss>
+	<Boss ID="13" name="愚昧" MaxCount="1"  Hp="0" Exp="0" ui="8" tipType="boss_tip" >
+      <BattleMap ID="30" Rate="20" star="3" type= "0"/>
+    </Boss>
+      <Boss ID="14" name="钱袋袋" MaxCount="1"  Hp="0" Exp="0" ui="7" tipType="boss_tip" >
+      <BattleMap ID="31" Rate="20" star="2" type= "1"/>
+    </Boss>
+	<Boss ID="15" name="多拉" MaxCount="1"  Hp="0" Exp="0" ui="8" tipType="boss_tip" >
+      <BattleMap ID="32" Rate="20" star="3" type= "0"/>
+    </Boss>      
+  </BossEnum>
+ 
+
+  <EventEnum>
+    <Event ID="0" MaxCount="3" Hp="0" Exp="0">
+      <Award Rate="0">
+        <Item ID="234" Count="1"/>
+      </Award>
+    </Event>
+  </EventEnum>
+
+    <TriggerEnum>
+    <Trigger MaxCount="-1" ID="0" Hp="2" Exp="3" ExplCount="1" ui="0" name="石质柜台"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="guitai_jiguan:3000">
+    </Trigger>
+	 <Trigger MaxCount="-1" ID="1"Hp="0" Exp="0" ExplCount="-1" ui="1" name="未知女神雕像"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="diaoxiang:3000">
+    </Trigger>
+    <Trigger MaxCount="-1" ID="2" Hp="0" Exp="0" ExplCount="-1" ui="2" name="未知女神雕像"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="diaoxiang:3000">
+    </Trigger>
+	 <Trigger MaxCount="-1" ID="3" Hp="0" Exp="0" ExplCount="-1" ui="3" name="未知女神雕像"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="diaoxiang:3000">
+    </Trigger>
+  <Trigger MaxCount="-1" ID="4" Hp="0" Exp="0" ExplCount="-1" ui="4" name="未知女神雕像"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="diaoxiang:3000">
+    </Trigger>
+	<Trigger MaxCount="-1" ID="5" Hp="0" Exp="0" ExplCount="-1" ui="5" name="古老的铁门"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="open_door:3000">
+    </Trigger>
+	<Trigger MaxCount="-1" ID="6" Hp="0" Exp="0" ExplCount="-1" ui="6" name="荧光水晶" tipType="left_tip" mouseType="4" action="" effect="hand" sound="">
+    </Trigger>
+	<Trigger MaxCount="-1" ID="7" Hp="0" Exp="0" ExplCount="-1" ui="7" name="神秘的古镜"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="">
+    </Trigger>
+	<Trigger MaxCount="-1" ID="8" Hp="0" Exp="0" ExplCount="-1" ui="8" name="神秘的古镜"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="">
+    </Trigger>
+	<Trigger MaxCount="-1" ID="9" Hp="0" Exp="0" ExplCount="-1" ui="9" name="神秘的古镜"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="">
+    </Trigger>
+	<Trigger MaxCount="-1" ID="10" Hp="0" Exp="0" ExplCount="-1" ui="10" name="神秘的古镜" tipType="left_tip" mouseType="4" action="" effect="hand" sound="">
+     </Trigger>
+		<Trigger MaxCount="-1" ID="11" Hp="0" Exp="0" ExplCount="-1" ui="10" name="暗金闸门"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="bigdoor_open">
+			</Trigger>
+			<Trigger MaxCount="-1" ID="12" Hp="0" Exp="0" ExplCount="-1" ui="10" name="奇怪的印记"  tipType="left_tip" mouseType="4" action="" effect="hand" sound="">
+    </Trigger>
+  </TriggerEnum>
+</Root>

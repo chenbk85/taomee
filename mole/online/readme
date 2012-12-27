@@ -1,0 +1,81 @@
+1. 开启程序：startup.sh
+2. 结束程序：pkill -9 程序名(如OnlineA)
+3. 监控程序：在crontab中加入
+    * * * * *  cd 程序所在目录（如/opt/taomee/online） && ./restart.sh >> ./log/restartlog.txt 2>/dev/null
+
+4. 主配置文件bench.conf的各项含义：
+      log_dir        ./log           #日志文件存放目录
+      log_level      7               #日志打印等级，7不打印trace日志
+      log_size       32000000        #每个日志文件的最大大小
+
+      shmq_length    8192000         #共享内存大小，8M
+      run_mode       background      #background表示程序将后台运行
+
+	# Online
+	  online_ip               114.80.98.73   #客户端连接online的ip地址
+	  online_port             1863			 #客户端连接online的端口
+	  online_start_id         1				 #online虚拟服务器编号
+	  worker_num              20			 父进程启动onine虚拟服务器的数量
+
+	# Game Server
+	  gameserv_ip             114.80.98.11   #游戏服务器ip地址
+	  gameserv_port           3001 			 #游戏服务器端口
+	  gameserv_test_ip        114.80.98.25	 #游戏服务器ip地址
+	  gameserv_test_port      3001			 #游戏服务器端口
+
+      local_ip       		  192.168.0.73    #组播包出口ip
+      mcast_ip       		  224.0.0.1       #组播ip
+      mcast_incoming_if       eth1	#用于接收组播包的网卡接口
+
+      central_online_ip       192.168.0.81  #中心服务器ip
+      central_online_port     4431          #中心服务器端口
+
+      stamp_server_ip         192.168.0.71  #时间戳服务器ip
+      stamp_server_port       3200          #时间戳服务器端口
+
+      chatlog_svr_ip          192.168.0.88  #聊天记录服务器ip
+      chatlog_svr_port        18183         #聊天记录服务器端口
+			
+			udp_dbserver_ip         192.168.0.32  #udp数据库服务器ip
+			udp_dbserver_port       11001					#udp数据库服务器端口
+      #db server
+      dbproxy_ip     192.168.0.87           #DB Proxy的IP
+      dbproxy_port   21001                  #DB Proxy的端口
+
+      bind_conf               .bind.conf           #online虚拟服务器ip端口配置文件
+      items_conf              ./conf/items.xml     #道具配置文件
+      games_conf              ./conf/games.xml     #游戏配置文件
+      maps_conf               ./conf/maps.xml      #地图配置文件
+      npc_conf                ./conf/npc.xml       #npc配置文件, 暂时没用
+      exchange_conf           ./conf/exchange.xml  #交换物品协议配置文件
+      events_conf             ./conf/events.xml       #特殊时间的事件配置
+      exclusive_things_conf   ./conf/exclu_things.xml #每周一次或每天一次的事件配置
+      statistic_logfile       /var/spool/inbox/log.bin #统计客户的日志文件
+
+5. 配置文件./conf/picsrv.xml的各项含义：
+      Ip	           #图片服务器ip
+      Port	           #图片服务器端口
+      
+6. 配置文件./conf/dirty
+      ch_detail_dirty_word         ./dirtyFilter/dat/c.t       #详细中文单词过滤配置文件，可以配置为按拼音或编码过滤
+      ch_simple_dirty_word         ./dirtyFilter/dat/cdk.dat   #中文单词过滤词典文件
+      en_detail_dirty_word         ./dirtyFilter/dat/e.t       #详细英文单词过滤配置文件
+      en_simple_dirty_word         ./dirtyFilter/dat/edk.dat   #英文单词过滤词典文件
+      
+7. online目录树：
+      online
+        -- conf/*              #online辅助配置文件
+        -- log/*               #存放日志文件
+        -- bench.conf          #主配置文件
+        -- bind.conf           #online虚拟服务器ip端口配置文件
+        -- 主程序(如OnlineA)   #主程序
+        -- restart.sh          #监控脚本 
+        -- startup.sh          #启动脚本
+        -- readme              #说明文件
+        -- changelog           #程序更新说明
+        -- dirtyFilter/dat/
+             -- c.t  #详细中文单词过滤配置文件，可以配置为按拼音或编码过滤
+             -- e.t  #详细英文单词过滤配置文件
+             -- cdk.dat  #中文单词过滤词典文件
+             -- edk.dat  #英文单词过滤词典文件
+	

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Effect Type: "HP" "DEF" "HIT" "CRIT" "ATK" "ASPD" "BLOCK" "EVAD"  Value:相关属性减少量
+	Condition Type: "HP" "RAND" Except:相应值小于此值时条件成立
+	效果索引为自索引
+-->
+<!--Str:大力属性增加 INT：智慧 HAB：强壮 ALI：灵活 HP：生命  MP：法力
+  ATK:攻击 ASPD:行动速度 EVAD:免疫率 BLOCK:抵抗率 COMBO:连击率 CRIT:暴击率 HIT:命中率 DEF:防御力 SKILL:实际附加技能
+-->
+<!--<Effect ID="1" Type="HIT" Value="100">
+		<Condition Type="HP" Except="200"/>
+	</Effect>
+	<Effect ID="2" Type="ATK" Value="100">
+		<Condition Type="RAND" Except="50"/>
+	</Effect>
+-->
+<EffectRoot Count="119">
+	<Effect ID="0" Type="CRIT" Value="-5">
+	</Effect>
+	<Effect ID="1" Type="CRIT" Value="-6">
+	</Effect>
+	<Effect ID="2" Type="CRIT" Value="-7">
+	</Effect>
+	<Effect ID="3" Type="CRIT" Value="-8">
+	</Effect>
+	<Effect ID="4" Type="CRIT" Value="-9">
+	</Effect>
+	<Effect ID="5" Type="CRIT" Value="-10">
+	</Effect>
+	<Effect ID="6" Type="CRIT" Value="-11">
+	</Effect>
+	<Effect ID="7" Type="CRIT" Value="-12">
+	</Effect>
+	<Effect ID="8" Type="CRIT" Value="-13">
+	</Effect>
+	<Effect ID="9" Type="CRIT" Value="-14">
+	</Effect>
+	<Effect ID="10" Type="HP" Value="-10">
+	</Effect>
+	<Effect ID="11" Type="HP" Value="-13">
+	</Effect>
+	<Effect ID="12" Type="HP" Value="-16">
+	</Effect>
+	<Effect ID="13" Type="HP" Value="-19">
+	</Effect>
+	<Effect ID="14" Type="HP" Value="-22">
+	</Effect>
+	<Effect ID="15" Type="HP" Value="-25">
+	</Effect>
+	<Effect ID="16" Type="HP" Value="-28">
+	</Effect>
+	<Effect ID="17" Type="HP" Value="-31">
+	</Effect>
+	<Effect ID="18" Type="HP" Value="-34">
+	</Effect>
+	<Effect ID="19" Type="HP" Value="-37">
+	</Effect>
+	<Effect ID="20" Type="CRIT" Value="15">
+	</Effect>
+	<Effect ID="21" Type="CRIT" Value="17">
+	</Effect>
+	<Effect ID="22" Type="CRIT" Value="19">
+	</Effect>
+	<Effect ID="23" Type="CRIT" Value="21">
+	</Effect>
+	<Effect ID="24" Type="CRIT" Value="23">
+	</Effect>
+	<Effect ID="25" Type="CRIT" Value="25">
+	</Effect>
+	<Effect ID="26" Type="CRIT" Value="27">
+	</Effect>
+	<Effect ID="27" Type="CRIT" Value="29">
+	</Effect>
+	<Effect ID="28" Type="CRIT" Value="31">
+	</Effect>
+	<Effect ID="29" Type="CRIT" Value="38">
+	</Effect>
+	<Effect ID="30" Type="HP" Value="-20">
+	</Effect>
+	<Effect ID="31" Type="ASPD" Value="12">
+	</Effect>
+	<Effect ID="32" Type="ASPD" Value="15">
+	</Effect>
+	<Effect ID="33" Type="ASPD" Value="18">
+	</Effect>
+	<Effect ID="34" Type="ASPD" Value="21">
+	</Effect>
+	<Effect ID="35" Type="ASPD" Value="24">
+	</Effect>
+	<Effect ID="36" Type="ASPD" Value="27">
+	</Effect>
+	<Effect ID="37" Type="ASPD" Value="30">
+	</Effect>
+	<Effect ID="38" Type="ASPD" Value="33">
+	</Effect>
+	<Effect ID="39" Type="ASPD" Value="36">
+	</Effect>
+	<Effect ID="40" Type="ASPD" Value="39">
+	</Effect>
+	<Effect ID="41" Type="DEF" Value="-5">
+	</Effect>
+	<Effect ID="42" Type="DEF" Value="-6">
+	</Effect>
+	<Effect ID="43" Type="DEF" Value="-7">
+	</Effect>
+	<Effect ID="44" Type="DEF" Value="-8">
+	</Effect>
+	<Effect ID="45" Type="DEF" Value="-9">
+	</Effect>
+	<Effect ID="46" Type="DEF" Value="-10">
+	</Effect>
+	<Effect ID="47" Type="DEF" Value="-11">
+	</Effect>
+	<Effect ID="48" Type="DEF" Value="-12">
+	</Effect>
+	<Effect ID="49" Type="DEF" Value="-13">
+	</Effect>
+	<Effect ID="50" Type="DEF" Value="-14">
+	</Effect>
+	<Effect ID="51" Type="ASPD" Value="-8">
+	</Effect>
+	<Effect ID="52" Type="ASPD" Value="-10">
+	</Effect>
+	<Effect ID="53" Type="ASPD" Value="-12">
+	</Effect>
+	<Effect ID="54" Type="ASPD" Value="-14">
+	</Effect>
+	<Effect ID="55" Type="ASPD" Value="-16">
+	</Effect>
+	<Effect ID="56" Type="ASPD" Value="-18">
+	</Effect>
+	<Effect ID="57" Type="ASPD" Value="-20">
+	</Effect>
+	<Effect ID="58" Type="ASPD" Value="-22">
+	</Effect>
+	<Effect ID="59" Type="ASPD" Value="-24">
+	</Effect>
+	<Effect ID="60" Type="ASPD" Value="-26">
+	</Effect>
+	<Effect ID="61" Type="MP" Value="-50">
+	</Effect>
+	<Effect ID="62" Type="EVAD" Value="200">
+	</Effect>
+	<Effect ID="63" Type="ATK" Value="-35">
+	</Effect>
+	<Effect ID="64" Type="DEF" Value="18">
+	</Effect>
+	<Effect ID="65" Type="DEF" Value="20">
+	</Effect>
+	<Effect ID="66" Type="DEF" Value="22">
+	</Effect>
+	<Effect ID="67" Type="DEF" Value="24">
+	</Effect>
+	<Effect ID="68" Type="DEF" Value="26">
+	</Effect>
+	<Effect ID="69" Type="DEF" Value="28">
+	</Effect>
+	<Effect ID="70" Type="DEF" Value="30">
+	</Effect>
+	<Effect ID="71" Type="DEF" Value="32">
+	</Effect>
+	<Effect ID="72" Type="DEF" Value="34">
+	</Effect>
+	<Effect ID="73" Type="DEF" Value="36">
+	</Effect>
+	<Effect ID="74" Type="HIT" Value="18">
+	</Effect>
+	<Effect ID="75" Type="HIT" Value="20">
+	</Effect>
+	<Effect ID="76" Type="HIT" Value="22">
+	</Effect>
+	<Effect ID="77" Type="HIT" Value="24">
+	</Effect>
+	<Effect ID="78" Type="HIT" Value="26">
+	</Effect>
+	<Effect ID="79" Type="HIT" Value="28">
+	</Effect>
+	<Effect ID="80" Type="HIT" Value="30">
+	</Effect>
+	<Effect ID="81" Type="HIT" Value="32">
+	</Effect>
+	<Effect ID="82" Type="HIT" Value="34">
+	</Effect>
+	<Effect ID="83" Type="HIT" Value="36">
+	</Effect>
+	<Effect ID="84" Type="ATK" Value="-10">
+	</Effect>
+	<Effect ID="85" Type="ATK" Value="-12">
+	</Effect>
+	<Effect ID="86" Type="ATK" Value="-14">
+	</Effect>
+	<Effect ID="87" Type="ATK" Value="-16">
+	</Effect>
+	<Effect ID="88" Type="ATK" Value="-18">
+	</Effect>
+	<Effect ID="89" Type="ATK" Value="-20">
+	</Effect>
+	<Effect ID="90" Type="ATK" Value="-22">
+	</Effect>
+	<Effect ID="91" Type="ATK" Value="-24">
+	</Effect>
+	<Effect ID="92" Type="ATK" Value="-26">
+	</Effect>
+	<Effect ID="93" Type="ATK" Value="-30">
+	</Effect>
+	<Effect ID="94" Type="HIT" Value="-8">
+	</Effect>
+	<Effect ID="95" Type="HIT" Value="-9">
+	</Effect>
+	<Effect ID="96" Type="HIT" Value="-10">
+	</Effect>
+	<Effect ID="97" Type="HIT" Value="-11">
+	</Effect>
+	<Effect ID="98" Type="HIT" Value="-12">
+	</Effect>
+	<Effect ID="99" Type="HIT" Value="-13">
+	</Effect>
+	<Effect ID="100" Type="HIT" Value="-14">
+	</Effect>
+	<Effect ID="101" Type="HIT" Value="-15">
+	</Effect>
+	<Effect ID="102" Type="HIT" Value="-16">
+	</Effect>
+	<Effect ID="103" Type="HIT" Value="-17">
+	</Effect>
+	<Effect ID="104" Type="ATK" Value="300">
+	</Effect>
+	<Effect ID="105" Type="BLOCK" Value="200">
+	</Effect>
+	<Effect ID="106" Type="ATK" Value="60">
+	</Effect>
+	<Effect ID="107" Type="ATK" Value="40">
+	</Effect>
+	<Effect ID="108" Type="ATK" Value="44">
+	</Effect>
+	<Effect ID="109" Type="ATK" Value="48">
+	</Effect>
+	<Effect ID="110" Type="ATK" Value="52">
+	</Effect>
+	<Effect ID="111" Type="ATK" Value="57">
+	</Effect>
+	<Effect ID="112" Type="ATK" Value="70">
+	</Effect>
+	<Effect ID="113" Type="ATK" Value="90">
+	</Effect>
+	<Effect ID="114" Type="ATK" Value="110">
+	</Effect>
+	<Effect ID="115" Type="ATK" Value="140">
+	</Effect>
+	<Effect ID="116" Type="ATK" Value="200">
+	</Effect>
+	<Effect ID="117" Type="ATK" Value="200">
+	</Effect>
+	<Effect ID="118" Type="HP" Value="50">
+	</Effect>
+</EffectRoot>

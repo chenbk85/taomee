@@ -1,0 +1,30 @@
+注册的修改
+
+1. 生成可读的注册号文件
+./stat.sh
+
+2. 导出可注册号，保留号
+awk '$3==0 && $5==0 && $6==0  { print $2 }' stat_reg_user > reg
+awk '$5==1  { print $2 }' stat_reg_user > res
+
+3. 从可注册号里再导出一遍保留号
+./seperate_res_id ./reg ./rreg ./rres
+
+4. 确定最终可注册号，合并保留号
+rm reg; cp rreg reg
+cat rres >> res
+
+5. 产生新的可注册号和保留号，并且合并
+./gen_uid 15000000 19999999 rreg rres
+cat rreg >> reg
+cat rres >> res
+./gen_uid 30000001 50000000 rreg rres
+cat rreg >> reg
+cat rres >> res
+
+6. 生成二进制注册号，生成注册号索引文件
+./strnum2num32 reg usr_id_file
+./gen_usr_id_idx usr_id_file usr_id_idx_file
+
+7. 打乱二进制注册号
+./shuffle_uid usr_id_file

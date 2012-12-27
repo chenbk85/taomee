@@ -1,0 +1,57 @@
+﻿<task mapID="26" mode="2" starTime="9000" expScale="1.5" rateScale="1" score="400" losturl="swf/winswf3.swf" winurl="swf/lostswf3.swf" musicurl="dig.mp3" startStar="26" startLifes="100">
+	<round tips="2只哇哇将在20秒后进攻，请做好准备">	
+		<monster id="10015" pathID="1,2,3" time = "900" count="2" live="2" lifeScale="1.4"/>		
+	</round>
+	<round tips="3只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "1200" count="3" live="2" lifeScale="1.4"/>		
+	</round>
+	<round tips="4只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10016" pathID="1" time = "1000" count="1" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1" time = "1400" count="3" stime = "1400" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="5只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "1100" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1,2,3" time = "1500" count="2" stime = "1700" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="6只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "1200" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1,2,3" time = "1000" count="2" stime = "1500" live="2" lifeScale="1.4"/>
+		<monster id="10015" pathID="1,2,3" time = "1000" count="1" stime = "4000" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="7只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "900" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1,2,3" time = "800" count="2" stime = "2500" live="2" lifeScale="1.4"/>
+		<monster id="10016" pathID="1,2,3" time = "1200" count="2" stime = "5000" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="8只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1" time = "1300" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1" time = "1500" count="3" stime = "2900" live="2" lifeScale="1.4"/>
+		<monster id="10015" pathID="1" time = "900" count="2" stime = "5000" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="9只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "1200" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1,2,3" time = "1600" count="3" stime = "2700" live="2" lifeScale="1.4"/>
+		<monster id="10015" pathID="1,2,3" time = "1200" count="3" stime = "5700" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="10只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "1000" count="5" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1,2,3" time = "1100" count="2" stime = "1800" live="2" lifeScale="1.4"/>
+		<monster id="10015" pathID="1,2,3" time = "1200" count="3" stime = "5900" live="2" lifeScale="1.4"/>
+	</round>	
+	<round tips="11只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "1200" count="4" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1,2,3" time = "1500" count="5" stime = "2100" live="2" lifeScale="1.4"/>
+		<monster id="10016" pathID="1,2,3" time = "1500" count="2" stime = "6500" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="12只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1" time = "1200" count="5" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1" time = "1600" count="4" stime = "1600" live="2" lifeScale="1.4"/>
+		<monster id="10015" pathID="1" time = "1800" count="3" stime = "3200" live="2" lifeScale="1.4"/>
+	</round>	
+	<round tips="13只哇哇将在10秒后进攻，请做好准备">
+		<monster id="10015" pathID="1,2,3" time = "1500" count="4" live="2" lifeScale="1.4"/>		
+		<monster id="10015" pathID="1,2,3" time = "1300" count="3" stime = "2700" live="2" lifeScale="1.4"/>
+		<monster id="10015" pathID="1,2,3" time = "1300" count="3" stime = "4500" live="2" lifeScale="1.4"/>
+		<monster id="10015" pathID="1,2,3" time = "1400" count="3" stime = "5300" live="2" lifeScale="1.4"/>
+	</round>
+</task>

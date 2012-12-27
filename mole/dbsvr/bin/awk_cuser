@@ -1,0 +1,27 @@
+#!/usr/bin/awk -f
+BEGIN{
+  count=0;
+}
+NR==1{ 	
+	count=NF
+	i=1
+	while (i <= NF ) {
+		field_name[i]= $i
+		i++
+	}
+} 
+NR==2{ 	
+	i=1
+	while (i <= NF ) {
+		msg[i]= $i
+		i++
+	}
+}
+END{
+	i=1;
+	while (i <= count  ) {
+	 	printf "%s\t%s\n", field_name[i], msg[i]
+		i++
+	}
+
+}

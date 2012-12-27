@@ -1,0 +1,47 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import os 
+import optparse
+
+def main(argv):
+	p = optparse.OptionParser(
+			description='send buffer to server ',
+			prog='sendf',
+			version='%prog 0.1',
+			usage='%prog a.txt ' )
+	options, arguments = p.parse_args()	
+	#p.add_option('-F', '--filed_sep', default="11001", help='filed_sep' );
+
+	fh=open( arguments[0] )
+	#print xml header
+	print """<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Worksheet ss:Name="Table1">
+  <Table>
+	"""
+	s=""
+
+	#print  field  
+	for line in fh.readlines() : 
+		print  "<Row>" 
+		for field in line.split():
+			try:
+			 	v=float(field)
+				print "<Cell><Data ss:Type=\"Number\">"+field+"</Data></Cell>" 
+			except ValueError: 
+				print "<Cell><Data ss:Type=\"String\">"+field+"</Data></Cell>" 
+		print  "</Row>" 
+
+	#print xml ender 
+	print """
+  </Table>
+ </Worksheet>
+</Workbook>
+	"""
+
+if __name__ == "__main__":
+	main(sys.argv)

@@ -1,0 +1,23 @@
+(2009-01-15)
+future:
+	支持更多的打印级别	
+
+(2008-12-4)
+fix:
+	使用libtaomee
+	更新原有connect函数为libtaomee 中的safe_tcp_connect
+	修正2008-11-27版本中接收超时后,可能没有关闭socketfd的bug.(会导致串包)
+
+future:
+	加入群组路由
+todo:
+
+(2008-11-27)
+fix:
+	支持当DB服务down. 一分钟后才重试连接
+	支持重连限时为2秒
+					
+future:
+	加入毛毛树路由
+		
+todo:

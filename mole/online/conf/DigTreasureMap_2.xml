@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Area ID对应element的ID； Typs表示种类 1矿、2Boss、3事件、4机关；treasures当前区域宝藏说明；-->
+<!--addTo="upMole" 表示物品盖住mole 不添表示被mole盖住 -->
+
+<Map>
+  <Screen screenId="1" mapId="188">
+		<Area ID='41' Type='1' x='180' y='154' canWalkX='205' canWalkY='221'/>
+		<Area ID='40' Type='1' x='105' y='183' canWalkX='106' canWalkY='268'/>
+		<Area ID='43' Type='1' x='239' y='179' canWalkX='267' canWalkY='208'/>
+		<Area ID='44' Type='1' x='325' y='119' canWalkX='332' canWalkY='198'/>
+		<Area ID='42' Type='1' x='448' y='150' canWalkX='427' canWalkY='215'/>
+		<Area ID='47' Type='1' x='527' y='467' canWalkX='586' canWalkY='446'/>
+		<Area ID='48' Type='1' x='664' y='381' canWalkX='713' canWalkY='392'/>
+		<Area ID='46' Type='1' x='683' y='278' canWalkX='610' canWalkY='288'/>
+		
+		<Area ID='50' Type='1' x='739' y='115' canWalkX='663' canWalkY='149'/>
+		<Area ID='49' Type='1' x='742' y='114' canWalkX='686' canWalkY='145'/>
+		<Area ID='37' Type='1' x='229' y='318' canWalkX='270' canWalkY='332'/>
+		<Area ID='37' Type='1' x='413' y='327' canWalkX='377' canWalkY='327'/>
+		<Area ID='45' Type='1' x='575' y='94' canWalkX='540' canWalkY='236'/>
+		<Area ID='36' Type='1' x='92' y='379' canWalkX='27' canWalkY='377' addTo="upMole"/>
+		<Area ID='37' Type='1' x='336' y='422' canWalkX='288' canWalkY='385' addTo="upMole"/>
+		<Area ID='38' Type='1' x='829' y='277' canWalkX='823' canWalkY='336'/>
+		
+		<Area specialCtlId="0" ID="4" Type="2"   x='702' y='171' canWalkX='584' canWalkY='200' addTo="upMole"/>
+		<Area ID="8" Type="2"   x='280' y='520' canWalkX='280' canWalkY='480' addTo="upMole"/>
+		<SpecialCtl cls="BlockRoad_map188"/>
+	  <treasures desc="    千年前皇家骑士团卫兵部队的训练场地，从这里遗留下来的东西我们可以看出，上古黑龙战争是多么的严苛，而骑士们是多么的坚毅。">
+		<Item id="1453028" />
+		<Item id="1453029" />
+		<Item id="1453030" />
+		<Item id="1453031" />
+		<Item id="1453018" />
+		<Item id="1453017" />
+		<Item id="1453015" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="2" mapId="189">
+		<Area ID='51' Type='1' x='117' y='244' canWalkX='108' canWalkY='278'/>
+		<Area ID='12' Type='1' x='139' y='128' canWalkX='159' canWalkY='250'/>
+		
+		<Area ID='54' Type='1' x='349' y='109' canWalkX='365' canWalkY='159'/>
+		
+		<Area ID='53' Type='1' x='245' y='127' canWalkX='276' canWalkY='202'/>
+		<Area ID='52' Type='1' x='172' y='186' canWalkX='203' canWalkY='229'/>
+		<Area ID='55' Type='1' x='500' y='98' canWalkX='444' canWalkY='150'/>
+		<Area ID='56' Type='1' x='597' y='126' canWalkX='623' canWalkY='178'/>
+		
+		<Area ID='57' Type='1' x='745' y='205' canWalkX='714' canWalkY='216'/>
+		<Area ID='58' Type='1' x='860' y='286' canWalkX='801' canWalkY='309'/>
+		
+		<Area ID='59' Type='1' x='228' y='351' canWalkX='175' canWalkY='366'/>
+		<Area ID='60' specialCtlId="7" Type='1' x='265' y='478' canWalkX='343' canWalkY='427'/>
+		<Area ID='61' specialCtlId="8" Type='1' x='330' y='481' canWalkX='358' canWalkY='467'/>
+		
+		<Area ID='1' Type='1' x='664' y='1381' canWalkX='713' canWalkY='392'/>
+		<Area ID='1' Type='1' x='683' y='1278' canWalkX='681' canWalkY='324'/>
+				
+		
+		<Area specialCtlId="0" ID='5' Type='4' x='700' y='60' canWalkX='648' canWalkY='181'/>
+		<Area specialCtlId="1" ID='6' Type='4' x='239' y='281' canWalkX='285' canWalkY='313'/>
+		<Area specialCtlId="2" ID='7' Type='4' x='607' y='259' canWalkX='617' canWalkY='309'/>
+		<Area specialCtlId="3" ID='8' Type='4' x='636' y='444' canWalkX='687' canWalkY='405' addTo="upMole"/>
+		<Area specialCtlId="4" ID='9' Type='4' x='481' y='197' canWalkX='477' canWalkY='267'/>
+		<Area specialCtlId="5" ID='10' Type='4' x='339' y='226' canWalkX='348' canWalkY='297'/>
+		<Area specialCtlId="6" ID="6" Type="2"   x='305' y='418' canWalkX='328' canWalkY='374' addTo="upMole"/>
+		
+		<Area ID="9" Type="2"   x='783' y='467' canWalkX='753' canWalkY='437' addTo="upMole"/>
+		<SpecialCtl cls="DoorCtl_map189"/>
+		<SpecialCtl cls="BlockRoad_map189"/>
+		<SpecialCtl cls="RayLineCtl_map189"/>
+	  <treasures desc="    抵御一切外来侵袭的重要阵地，存有大量的武器和机关，虽然荒废已久，但是看起来仍然井井有条。">
+		<Item id="1453028" />
+		<Item id="1453029" />
+		<Item id="1453030" />
+		<Item id="1453031" />
+		<Item id="1453014" />
+		<Item id="1453016" />
+		<Item id="1453019" />
+	  </treasures>
+   </Screen>
+   <Screen screenId="3" mapId="190">
+	  <Area ID='20' Type='1' x='499' y='219' canWalkX='528' canWalkY='291'/>
+	  <Area ID='43' Type='1' x='597' y='284' canWalkX='528' canWalkY='291'/>
+      <Area ID='62' Type='1' x='440' y='297' canWalkX='513' canWalkY='337'/>
+	  <Area specialCtlId="0" ID="0" Type="2"   x='466' y='249' canWalkX='440' canWalkY='367' />
+	  <SpecialCtl cls="BossBlockRoad"/>
+	  <treasures desc="    卫兵要塞主塔楼的第一层，这里当年驻扎了大量的轻骑兵，可以在第一时刻进行速度攻击的部队。">
+		<Item id="1453036" />
+		<Item id="1453037" />
+		<Item id="1453038" />
+		<Item id="1453039" />
+		<Item id="1453018" />
+		<Item id="1453012" />
+	  </treasures>
+   </Screen>
+   <Screen screenId="4" mapId="191">
+		<Area ID='63' Type='1' x='518' y='259' canWalkX='528' canWalkY='291'/>
+		<Area ID='43' Type='1' x='603' y='275' canWalkX='528' canWalkY='291'/>
+		<Area ID='62' Type='1' x='446' y='288' canWalkX='540' canWalkY='322'/>
+	    <Area specialCtlId="0" ID="5" Type="2"   x='413' y='214' canWalkX='440' canWalkY='367' />
+		<SpecialCtl cls="BossBlockRoad"/>
+	  <treasures desc="    卫兵要塞主塔楼的第二层，这里当年驻扎了大量的龙骑兵，在战斗当中是非常重要的多功能部队。">
+		<Item id="1453036" />
+		<Item id="1453037" />
+		<Item id="1453038" />
+		<Item id="1453039" />		
+		<Item id="1453018" />
+		<Item id="1453017" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="5" mapId="192">
+		<Area ID='65' Type='1' x='402' y='241' canWalkX='528' canWalkY='291'/>
+		<Area ID='64' Type='1' x='566' y='259' canWalkX='528' canWalkY='291'/>
+		<Area ID='60' Type='1' x='446' y='288' canWalkX='528' canWalkY='291'/>
+	   <Area specialCtlId="0" ID="7" Type="2"   x='491' y='232' canWalkX='440' canWalkY='367' />
+	  <SpecialCtl cls="BossBlockRoad"/>
+	  <treasures desc="    卫兵要塞主塔楼的第三层，这里当年驻扎了大量的弓箭兵，辅助所有其他兵种进行远程进攻。">
+		<Item id="1453036" />
+		<Item id="1453037" />
+		<Item id="1453038" />
+		<Item id="1453039" />		
+		<Item id="1453018" />
+		<Item id="1453019" />
+	  </treasures>
+  </Screen>
+  <RandLimit Mine="100" Boss="100" Event="100" Trigger="100"/>
+</Map>

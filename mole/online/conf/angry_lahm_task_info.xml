@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <Task Level1="15000" Level2="20000" Level3="30000" AwardScore="30000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="20000" Level2="40000" Level3="60000" AwardScore="60000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="10000" Level2="30000" Level3="42000" AwardScore="42000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+    <Task Level1="10000" Level2="30000" Level3="40000" AwardScore="40000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="15000" Level2="30000" Level3="45000" AwardScore="45000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="10000" Level2="40000" Level3="60000" AwardScore="60000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+    <Task Level1="50000" Level2="40000" Level3="50000" AwardScore="50000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="15000" Level2="30000" Level3="55000" AwardScore="55000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="20000" Level2="50000" Level3="80000" AwardScore="80000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+    <Task Level1="35000" Level2="60000" Level3="80000" AwardScore="80000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+    <Task Level1="15000" Level2="120000" Level3="140000" AwardScore="140000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+    <Task Level1="20000" Level2="40000" Level3="65000" AwardScore="65000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="20000" Level2="70000" Level3="80000" AwardScore="80000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+  <Task Level1="5000" Level2="50000" Level3="80000" AwardScore="80000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+    <Task Level1="5000" Level2="60000" Level3="90000" AwardScore="90000">
+    <Award ItemID="1353248" ItemCount="1"/>
+  </Task>
+</Root>

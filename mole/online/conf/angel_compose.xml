@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ID:合成公式的序号，必须连着       Goal_id:合成成功后的天使ID       Goal_count:合成成功后的天使数量  
+     Fail_id:合成失败后的天使ID        Fail_count:合成失败后的天使数量   Rate:合成成功率
+	 Level:合成等级    Exp:合成一次加的经验值       Angel:必须填天使     Material：必须填合成材料-->
+<Angel_Compose>
+	<Compose ID="19" Goal_id="1353259" Goal_count="1" Fail_id="1353213" Fail_count="1" Rate="40" Level="3" Exp="20" content="">
+		<Angel>
+			<Item ID="1353431" Count="1" tips="    机灵晶晶是晶!br|晶球变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="5" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353431" Count="1" tips="    机灵晶晶是晶!br|晶球变异后获得的!br|天使。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="5" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="20" Goal_id="1353261" Goal_count="1" Fail_id="1353219" Fail_count="1" Rate="30" Level="5" Exp="30" content="">
+		<Angel>
+			<Item ID="1354041" Count="1" tips="    皮艾尔是阿桶!br|变异后获得的天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1354041" Count="1" tips="    皮艾尔是阿桶!br|变异后获得的天使。"/>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="16" Goal_id="1354061" Goal_count="1" Fail_id="1353229" Fail_count="1" Rate="30" Level="2" Exp="15" content="">
+		<Angel>
+			<Item ID="1354062" Count="1" tips="    妙酸酸是妙多!br|多变异后获得的天!br|使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</Material>
+		<need>
+			<Item ID="1354062" Count="1" tips="    妙酸酸是妙多!br|多变异后获得的天!br|使。"/>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</need>
+	</Compose>
+	<Compose ID="17" Goal_id="1354073" Goal_count="1" Fail_id="1353235" Fail_count="1" Rate="30" Level="3" Exp="20" content="">
+		<Angel>
+			<Item ID="1354074" Count="1" tips="    灿小兵是璀璨!br|晶球变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="5" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1354074" Count="1" tips="    灿小兵是璀璨!br|晶球变异后获得的!br|天使。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="5" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="18" Goal_id="1354045" Goal_count="1" Fail_id="1353221" Fail_count="1" Rate="40" Level="3" Exp="20" content="">
+		<Angel>
+			<Item ID="1354046" Count="1" tips="    紫圆子是紫球!br|球变异后获得的天!br|使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453003" Count="1" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+		</Material>
+		<need>
+			<Item ID="1354046" Count="1" tips="    紫圆子是紫球!br|球变异后获得的天!br|使。"/>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453003" Count="1" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+		</need>
+	</Compose>
+	<Compose ID="14" Goal_id="1353240" Goal_count="1" Fail_id="1270077" Fail_count="1" Rate="30" Level="4" Exp="25" content="">
+		<Angel>
+			<Item ID="1353412" Count="1" tips="    嘟噜力士是由!br|圣光兽嘟噜噜蜕变!br|获得的天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453013" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453000" Count="10" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453002" Count="10" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353412" Count="1" tips="    嘟噜力士是由!br|圣光兽嘟噜噜蜕变!br|获得的天使。"/>
+			<Item ID="1453013" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453000" Count="10" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453002" Count="10" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="13" Goal_id="1353427" Goal_count="1" Fail_id="1353211" Fail_count="1" Rate="30" Level="3" Exp="20" content="">
+		<Angel>
+			<Item ID="1353428" Count="1" tips="    摆不动是摆摆!br|种子变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453002" Count="8" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353428" Count="1" tips="    摆不动是摆摆!br|种子变异后获得的!br|天使。"/>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453002" Count="8" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="12" Goal_id="1353422" Goal_count="1" Fail_id="1353208" Fail_count="1" Rate="50" Level="2" Exp="15" content="">
+		<Angel>
+			<Item ID="1353423" Count="1" tips="    空空糕糕是糕!br|糕变异后获得的天!br|使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453001" Count="4" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453000" Count="4" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353423" Count="1" tips="    空空糕糕是糕!br|糕变异后获得的天!br|使。"/>
+			<Item ID="1453001" Count="4" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453000" Count="4" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="15" Goal_id="1353424" Goal_count="1" Fail_id="1353209" Fail_count="1" Rate="20" Level="5" Exp="30" content="">
+		<Angel>
+			<Item ID="1353425" Count="1" tips="    枯果子是呐果!br|子变异后获得的天!br|使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453001" Count="10" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453000" Count="10" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453002" Count="10" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353425" Count="1" tips="    枯果子是呐果!br|子变异后获得的天!br|使。"/>
+			<Item ID="1453001" Count="10" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453000" Count="10" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453002" Count="10" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="7" Goal_id="1353407" Goal_count="1" Fail_id="1353207" Fail_count="1" Rate="70" Level="3" Exp="20" content="">
+		<Angel>
+			<Item ID="1353420" Count="1" tips="    彩羽烧鸡是彩!br|羽蛋变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453002" Count="5" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353420" Count="1" tips="    彩羽烧鸡是彩!br|羽蛋变异后获得的!br|天使。"/>
+			<Item ID="1453002" Count="5" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="8" Goal_id="1353431" Goal_count="1" Fail_id="1353213" Fail_count="1" Rate="50" Level="3" Exp="20" content="">
+		<Angel>
+			<Item ID="1353432" Count="1" tips="    贪睡晶晶是晶!br|晶球变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453001" Count="3" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="3" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353432" Count="1" tips="    贪睡晶晶是晶!br|晶球变异后获得的!br|天使。"/>
+			<Item ID="1453001" Count="3" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="3" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="9" Goal_id="1353237" Goal_count="1" Fail_id="1353201" Fail_count="1" Rate="30" Level="3" Exp="20" content="">
+		<Angel>
+			<Item ID="1353401" Count="1" tips="    爱莲娜是爱莲!br|宝宝变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453013" Count="1" tips="    能够聚集力量的水晶，!br|可以让生灵变得更加强大，!br|非常稀有，在地下城中也能!br|够发现。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</Material>
+		<need>
+			<Item ID="1353401" Count="1" tips="    爱莲娜是爱莲!br|宝宝变异后获得的!br|天使。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453013" Count="1" tips="    能够聚集力量的水晶，!br|可以让生灵变得更加强大，!br|非常稀有，在地下城中也能!br|够发现。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</need>
+	</Compose>
+	<Compose ID="10" Goal_id="1353417" Goal_count="1" Fail_id="1353210" Fail_count="1" Rate="20" Level="4" Exp="25" content="">
+		<Angel>
+			<Item ID="1353426" Count="1" tips="    土小豆是豆豆!br|果变异后获得的天!br|使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453003" Count="1" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353426" Count="1" tips="    土小豆是豆豆!br|果变异后获得的天!br|使。"/>
+			<Item ID="1453003" Count="1" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="11" Goal_id="1354041" Goal_count="1" Fail_id="1353219" Fail_count="1" Rate="30" Level="4" Exp="25" content="">
+		<Angel>
+			<Item ID="1354042" Count="1" tips="    皮尔盒是阿桶!br|变异后获得的天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="10" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1354042" Count="1" tips="    皮尔盒是阿桶!br|变异后获得的天使。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="10" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="1" Goal_id="1353403" Goal_count="1" Fail_id="1353202" Fail_count="1" Rate="80" Level="1" Exp="10" content="">
+		<Angel>
+			<Item ID="1353404" Count="1" tips="    尼莫哒是尼尼!br|莫莫瓜变异后获得!br|的天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453001" Count="1" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</Material>
+		<need>
+			<Item ID="1353404" Count="1" tips="    尼莫哒是尼尼!br|莫莫瓜变异后获得!br|的天使。"/>
+			<Item ID="1453001" Count="1" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</need>
+	</Compose>
+	<Compose ID="2" Goal_id="1353418" Goal_count="1" Fail_id="1353205" Fail_count="1" Rate="60" Level="1" Exp="10" content="">
+		<Angel>
+			<Item ID="1353419" Count="1" tips="    眼睛蛤蟆是蝌!br|蚪君变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453000" Count="3" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453001" Count="3" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</Material>
+		<need>
+			<Item ID="1353419" Count="1" tips="    眼睛蛤蟆是蝌!br|蚪君变异后获得的!br|天使。"/>
+			<Item ID="1453000" Count="3" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453001" Count="3" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</need>
+	</Compose>
+	<Compose ID="3" Goal_id="1353429" Goal_count="1" Fail_id="1353212" Fail_count="1" Rate="50" Level="1" Exp="10" content="">
+		<Angel>
+			<Item ID="1353430" Count="1" tips="    星星娃是小星!br|星变异后获得的天!br|使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453001" Count="3" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="3" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+			<Item ID="1453000" Count="3" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1353430" Count="1" tips="    星星娃是小星!br|星变异后获得的天!br|使。"/>
+			<Item ID="1453001" Count="3" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+			<Item ID="1453002" Count="3" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+			<Item ID="1453000" Count="3" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="4" Goal_id="1353232" Goal_count="1" Fail_id="1353203" Fail_count="1" Rate="30" Level="2" Exp="15" content="">
+		<Angel>
+			<Item ID="1353405" Count="1" tips="    茸茸斯达是斯!br|达球变异后获得的!br|天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453003" Count="1" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</Material>
+		<need>
+			<Item ID="1353405" Count="1" tips="    茸茸斯达是斯!br|达球变异后获得的!br|天使。"/>
+			<Item ID="1453003" Count="1" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+			<Item ID="1453000" Count="5" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+			<Item ID="1453001" Count="5" tips="    摸上去会觉得!br|有些烫手的石头，!br|地下城中比较常见。"/>
+		</need>
+	</Compose>
+	<Compose ID="5" Goal_id="1354039" Goal_count="1" Fail_id="1353214" Fail_count="1" Rate="20" Level="2" Exp="15" content="">
+		<Angel>
+			<Item ID="1354040" Count="1" tips="    晕晕是小薇变!br|异后获得的天使。"/>
+			<Item ID="1354034" Count="1" tips="    刺胖胖是刺宝!br|宝变异后获得的天!br|使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453002" Count="8" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1354040" Count="1" tips="    晕晕是小薇变!br|异后获得的天使。"/>
+			<Item ID="1354034" Count="1" tips="    刺胖胖是刺宝!br|宝变异后获得的天!br|使。"/>
+			<Item ID="1453004" Count="1" tips="    极其罕见的水!br|晶，本身具有灵性，!br|出没于人迹罕至的!br|地方，运气好话，!br|在地下城中也能够!br|发现。"/>
+			<Item ID="1453002" Count="8" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+		</need>
+	</Compose>
+	<Compose ID="6" Goal_id="1354059" Goal_count="1" Fail_id="1353228" Fail_count="1" Rate="30" Level="2" Exp="15" content="">
+		<Angel>
+			<Item ID="1354060" Count="1" tips="    碎石是小石头!br|变异后获得的天使。"/>
+		</Angel>
+		<Material>
+			<Item ID="1453003" Count="2" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+			<Item ID="1453002" Count="4" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+			<Item ID="1453000" Count="3" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</Material>
+		<need>
+			<Item ID="1354060" Count="1" tips="    碎石是小石头!br|变异后获得的天使。"/>
+			<Item ID="1453003" Count="2" tips="    有着幽灵印记!br|的水晶石，蕴含着!br|魔法的神力，能够!br|和部分天使产生共!br|鸣，在地下城中偶!br|尔能够发现。"/>
+			<Item ID="1453002" Count="4" tips="    虽然外观很像!br|岩石，但是质地异!br|常柔软，隐藏在地!br|下城各处。"/>
+			<Item ID="1453000" Count="3" tips="    晶莹的剔透的!br|水晶，隐藏在地下!br|城各处。"/>
+		</need>
+	</Compose>
+	<prop>
+		<goods id="1353106" odds= "5" tips="    能够提升强化成功率5%的药剂。"/>
+		<goods id="1353107" odds= "15" tips="    能够提升强化成功率15%的药剂。"/>
+		<goods id="1353108" odds= "100" tips="    拥有神一般的力量，可以确保!br|天使100%强化成功的药剂。"/>
+	</prop>
+</Angel_Compose>

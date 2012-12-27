@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+PigCnt：比赛用猪数量
+TicketCnt: 胜利获取的奖券
+Rate：随机概率
+ItemID：奖励物品ID
+ItemCnt：奖励物品数量
+-->
+<NPCAward>
+  <BsNpcInfo PigCnt="3" TicketCnt="15">
+    <Award Rate="1" ItemID="1613109" ItemCnt="1"/>
+    <Award Rate="5" ItemID="1613251" ItemCnt="1"/>
+    <Award Rate="39" ItemID="1613270" ItemCnt="1"/>
+    <Award Rate="55" ItemID="1613100" ItemCnt="5"/>
+  </BsNpcInfo>
+   <BsNpcInfo PigCnt="2" TicketCnt="12">
+    <Award Rate="1" ItemID="1613271" ItemCnt="1"/>
+    <Award Rate="5" ItemID="1613253" ItemCnt="1"/>
+    <Award Rate="39" ItemID="1613250" ItemCnt="1"/>
+    <Award Rate="55" ItemID="1613100" ItemCnt="5"/>
+  </BsNpcInfo>
+   <BsNpcInfo PigCnt="1" TicketCnt="10">
+    <Award Rate="20" ItemID="1613114" ItemCnt="1"/>
+    <Award Rate="30" ItemID="1613102" ItemCnt="1"/>
+    <Award Rate="50" ItemID="1613100" ItemCnt="5"/>
+  </BsNpcInfo>
+   <BsNpcInfo PigCnt="1" TicketCnt="8">
+    <Award Rate="100" ItemID="1613100" ItemCnt="5"/>
+  </BsNpcInfo>
+   <BsNpcInfo PigCnt="1" TicketCnt="8">
+    <Award Rate="100" ItemID="1613100" ItemCnt="5"/>
+  </BsNpcInfo>
+</NPCAward>

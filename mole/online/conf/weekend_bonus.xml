@@ -1,0 +1,53 @@
+<WeekendBonus>
+	<Week WeekID="1">
+		<Item ID="0" Count="500" />
+		<Item ID="190809" Count="3" />
+	</Week>
+	<Week WeekID="2">
+		<Item ID="0" Count="600" />
+		<Item ID="1613100" Count="20" />
+		<Item ID="180087" Count="3" />
+	</Week>
+	<Week WeekID="3">
+		<Item ID="0" Count="700" />
+		<Item ID="190840" Count="3" />
+		<Item ID="1613100" Count="20" />
+	</Week>
+	<Week WeekID="4">
+		<Item ID="0" Count="800" />
+		<Item ID="190811" Count="5" />
+		<Item ID="1353101" Count="1" />
+		<Item ID="17018" Count="2" />
+	</Week>
+	<Week WeekID="5">
+		<Item ID="0" Count="900" />
+		<Item ID="1230087" Count="1" />
+		<Item ID="1353101" Count="1" />
+		<Item ID="17018" Count="2" />
+	</Week>
+	<Week WeekID="6">
+		<Item ID="0" Count="1000" />
+		<Item ID="1353109" Count="1" />
+		<Item ID="1613501" Count="20" />
+		<Item ID="1613502" Count="10" />
+	</Week>
+	<Week WeekID="7">
+		<Item ID = "1614000" Count="3"/>
+		<Item ID = "1614005" Count="3"/>
+		<Item ID = "1614002" Count="3"/>
+		<Item ID = "1614006" Count="3"/>
+	</Week>
+	<Week WeekID="8">
+		<Item ID="0" Count="1000" />
+		<Item ID="1353312" Count="1" />
+		<Item ID="1613924" Count="1" />
+		<Item ID="1613926" Count="1" />
+	</Week>
+	<Week WeekID="9">
+		<Item ID="0" Count="1500" />
+		<Item ID="1353312" Count="2" />
+		<Item ID="1613924" Count="1" />
+		<Item ID="1613926" Count="1" />
+	</Week>
+
+</WeekendBonus>

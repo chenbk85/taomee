@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Award:获得的金币
+BoarID:公猪的ItemID
+ID：加工编号，从0开始
+ItemIn：输入物品（可以有多条，上限为5）
+ID：输入物品ID
+Count：输入物品数量
+AwardID:成品ID
+-->
+
+<CPProcess>
+  <Proc ID="0" Award="10" PigBreed="1" BoarID="1593002" AwardID="1613010" ProcLv="1">
+    <ItemIn ID="1613000" Count="1"/>
+  </Proc>
+  <Proc ID="1" Award="12" PigBreed="2" BoarID="1593004" AwardID="1613011" ProcLv="1">
+  	<ItemIn ID="1613001" Count="1"/>
+  </Proc>
+  <Proc ID="2" Award="11" PigBreed="5" BoarID="1593010" AwardID="1613012" ProcLv="1">
+    <ItemIn ID="1613002" Count="1"/>
+  </Proc>
+  <Proc ID="3" Award="20" PigBreed="11" BoarID="1593022" AwardID="1613013" ProcLv="1">
+    <ItemIn ID="1613002" Count="1"/>
+    <ItemIn ID="1613000" Count="1"/>
+  </Proc>
+  <Proc ID="4" Award="30" PigBreed="10" BoarID="1593020" AwardID="1613014" ProcLv="1">
+    <ItemIn ID="1613003" Count="1"/>
+  </Proc>
+  <Proc ID="5" Award="12" PigBreed="0" BoarID="1593000" AwardID="1613015" ProcLv="1">
+    <ItemIn ID="1613000" Count="1"/>
+    <ItemIn ID="1613004" Count="1"/>
+  </Proc>
+  <Proc ID="6" Award="16" PigBreed="6" BoarID="1593012" AwardID="1613016" ProcLv="2">
+    <ItemIn ID="1613001" Count="1"/>
+    <ItemIn ID="1613004" Count="1"/>
+  </Proc>
+  <Proc ID="7" Award="13" PigBreed="3" BoarID="1593006" AwardID="1613017" ProcLv="2">
+    <ItemIn ID="1613005" Count="1"/>
+    <ItemIn ID="1613009" Count="1"/>
+  </Proc>
+  <Proc ID="8" Award="18" PigBreed="12" BoarID="1593024" AwardID="1613018" ProcLv="2">
+    <ItemIn ID="1613025" Count="1"/>
+    <ItemIn ID="1613009" Count="1"/>
+  </Proc>
+  <Proc ID="9" Award="14" PigBreed="7" BoarID="1593014" AwardID="1613019" ProcLv="2">
+    <ItemIn ID="1613006" Count="1"/>
+  </Proc>
+  <Proc ID="10" Award="15" PigBreed="4" BoarID="1593008" AwardID="1613020" ProcLv="3">
+    <ItemIn ID="1613001" Count="1"/>
+  </Proc>
+  <Proc ID="11" Award="14" PigBreed="13" BoarID="1593026" AwardID="1613021" ProcLv="3">
+    <ItemIn ID="1613007" Count="1"/>
+  </Proc>
+  <Proc ID="12" Award="20" PigBreed="8" BoarID="1593016" AwardID="1613022" ProcLv="3">
+    <ItemIn ID="1613005" Count="1"/>
+    <ItemIn ID="1613008" Count="1"/>
+  </Proc>
+  <Proc ID="13" Award="70" PigBreed="14" BoarID="1593028" AwardID="1613023" ProcLv="3">
+    <ItemIn ID="1613001" Count="1"/>
+    <ItemIn ID="1613008" Count="1"/>
+    <ItemIn ID="1613115" Count="1"/>
+   </Proc>
+  <Proc ID="14" Award="21" PigBreed="9" BoarID="1593018" AwardID="1613024" ProcLv="3">
+    <ItemIn ID="1613007" Count="1"/>
+    <ItemIn ID="1613115" Count="1"/>
+  </Proc>
+  <Proc ID="15" Award="20" PigBreed="16" BoarID="1593031" AwardID="1613027" ProcLv="3">
+    <ItemIn ID="1613026" Count="1"/>
+  </Proc>
+   <Proc ID="16" Award="18" PigBreed="19" BoarID="1593035" AwardID="1613031" ProcLv="4">
+    <ItemIn ID="1613029" Count="1"/>
+    <ItemIn ID="1613004" Count="1"/>
+  </Proc>
+   <Proc ID="17" Award="20" PigBreed="20" BoarID="1593036" AwardID="1613032" ProcLv="4">
+    <ItemIn ID="1613001" Count="1"/>
+    <ItemIn ID="1613030" Count="1"/>
+  </Proc>
+   <Proc ID="18" Award="15" PigBreed="22" BoarID="1593038" AwardID="1613033" ProcLv="4">
+    <ItemIn ID="1613000" Count="1"/>
+    <ItemIn ID="1613026" Count="1"/>
+  </Proc>
+   <Proc ID="19" Award="14" PigBreed="23" BoarID="1593039" AwardID="1613034" ProcLv="4">
+    <ItemIn ID="1613029" Count="1"/>
+    <ItemIn ID="1613030" Count="1"/>
+  </Proc>
+   <Proc ID="20" Award="20" PigBreed="24" BoarID="1593041" AwardID="1613035" ProcLv="4">
+    <ItemIn ID="1613005" Count="1"/>
+    <ItemIn ID="1613001" Count="1"/>
+  </Proc>
+   <Proc ID="21" Award="14" PigBreed="25" BoarID="1593042" AwardID="1613036" ProcLv="4">
+    <ItemIn ID="1613008" Count="1"/>
+    <ItemIn ID="1613009" Count="1"/>
+  </Proc>
+   <Proc ID="22" Award="18" PigBreed="26" BoarID="1593066" AwardID="1613037" ProcLv="4">
+    <ItemIn ID="1613000" Count="1"/>
+    <ItemIn ID="1613004" Count="1"/>
+  </Proc>
+   <Proc ID="23" Award="12" PigBreed="27" BoarID="1593069" AwardID="1613038" ProcLv="4">
+    <ItemIn ID="1613029" Count="1"/>
+    <ItemIn ID="1613030" Count="1"/>
+  </Proc>
+   <Proc ID="24" Award="12" PigBreed="28" BoarID="1593070" AwardID="1613039" ProcLv="4">
+    <ItemIn ID="1613025" Count="1"/>
+    <ItemIn ID="1613002" Count="1"/>
+  </Proc>
+</CPProcess>

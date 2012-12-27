@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import optparse
+import re 
+
+def get_int_hex( hex, isbig =False ):
+	if isbig:
+		i=eval ("0x%s" % (hex)) 
+	else:
+		i=eval ("0x%s%s%s%s" % ( hex[6:8],hex[4:6],hex[2:4],hex[0:2] )) 
+	return i
+
+def get_chr( hex_re ):
+	hex=hex_re.group()	
+	if (hex==""): return " "; 
+	value=eval ("0x%s" % (hex)) ;
+	if (value>= 32 and value <=126 ):return chr(value); 
+	else: return  "." ;
+ 
+
+def print_header( headermsg ):
+	print "HEADER:"
+	print "\tprotolen:\t%s"% get_int_hex(headermsg[0:8])  
+	print "\tprotoid:\t%d"% get_int_hex(headermsg[8:16])  
+	print "\tcmdid:\t\t%04X"% get_int_hex(headermsg[16:20]+"0000")  
+	print "\tresult:\t\t%d"% get_int_hex(headermsg[20:28])  
+	print "\tuserid:\t\t%d"% get_int_hex(headermsg[28:36])  
+def print_pri( primsg ):
+	pri_len=len(primsg)/2
+	i=0
+	print "pri:len[%3d]=========================================================================="% (pri_len)
+	phex=re.compile(r'(\w\w)')
+	while(i<pri_len):
+		hex_msg=phex.sub(r"\1 ", primsg[i*2:(i+16)*2]);
+		chr_msg=phex.sub(get_chr , primsg[i*2:(i+16)*2]);
+		print "\t%d\t %-24s %-24s  %-8s %-8s"	%( 18+i, 
+				hex_msg[0:24], hex_msg[24:48], 
+				chr_msg[0:8], chr_msg[8:16] )
+		i=i+16;
+	print "end:=================================================================================="
+def main(argv):
+	p = optparse.OptionParser(
+			description='show proto msg ',
+			prog='sf',
+			version='sf 0.1',
+			usage='%prog 16 00 00 00 C9 00 0C 00 50 10 00 00 00 00 58 C3 00 00 00 00 00 00 ' )
+	options, arguments = p.parse_args()	
+	ll=""
+	for v in arguments :
+		ll+=v 
+	if len(ll)>=36:
+		#处理头部
+		print_header(ll[0:36]);
+		#处理私有部分
+		print_pri(ll[36:]);
+
+	else:
+		print "need 36 chars"
+		p.print_help()
+
+if __name__ == "__main__":
+	main(sys.argv)

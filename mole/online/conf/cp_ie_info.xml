@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+PigID：输出的猪仔ID
+FlagIdx：标志位（和swap里面的FlagIdx共用）
+BreedType：需要收集的猪的品种
+-->
+<Root>
+  <IEInfo PigID="1593065" FlagIdx="184">
+    <BreedNeed BreedType="10008"/>
+    <BreedNeed BreedType="10009"/>
+    <BreedNeed BreedType="10011"/>
+  </IEInfo>
+</Root>

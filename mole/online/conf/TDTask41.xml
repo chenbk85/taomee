@@ -1,0 +1,6 @@
+﻿<task mapID="23" mode="1" countDown="100" starTime="4000" expScale="0.75" rateScale="1.5" score="400" losturl="swf/winswf3.swf" winurl="swf/lostswf3.swf" musicurl="dig.mp3"  startStar="70" startLifes="100">
+	<round tips="敌人将在20秒后进攻，请做好准备">
+		<monster id="10012" pathID="1" time = "1000" count="200" live="2"/>		
+		<monster id="10012" pathID="1" time = "1000" count="200" stime = "900" live="2"/>
+	</round>
+</task>

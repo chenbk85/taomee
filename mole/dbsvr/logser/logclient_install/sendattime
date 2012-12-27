@@ -1,0 +1,8 @@
+#!/bin/bash
+senddate=`date +%Y%m%d%H ` 
+logdir=~/protolog/log/
+for f in  `ls $logdir` ; do 
+	if [ $f -lt $senddate ];  then 
+		~/bin/sshsendfile $logdir/$f 
+	fi
+done

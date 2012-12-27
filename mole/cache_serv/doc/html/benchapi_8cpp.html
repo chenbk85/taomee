@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CacheServ: Z:/cache_svr/benchapi.cpp文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Z:/cache_svr/benchapi.cpp文件参考</h1>实现serverbench提供的hadnle_init, handle_process, handle_input等接口函数  
+<a href="#_details">更多...</a>
+<p>
+
+<p>
+<div class="dynheader">
+benchapi.cpp包含/依赖关系图：</div>
+<div class="dynsection">
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="benchapi_8cpp.html#fd745bea81443271c545a124898857d2">handle_init</a> (int argc, char **argv, int type)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化配置文件，游戏flag、game_id,游戏分数和用户时间等相关文件  <a href="#fd745bea81443271c545a124898857d2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="benchapi_8cpp.html#f67b09aff3b16394d605f8763cece2b5">handle_input</a> (const char *buffer, int length, const skinfo_t *sk)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">检查输入的字符串是否符合长度要求及是否是FLASH请求  <a href="#f67b09aff3b16394d605f8763cece2b5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="benchapi_8cpp.html#f68b0bfaed0f8c13169ce1af92e1b11c">handle_process</a> (char *recvbuf, int rcvlen, char **sendbuf, int *sndlen, const skinfo_t *sk)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">根据命令类型调用相应的处理函数  <a href="#f68b0bfaed0f8c13169ce1af92e1b11c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="benchapi_8cpp.html#a00eecdd254992bdde82eac596c4acc8">handle_timer</a> (int *sec)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">定时器调用此函数  <a href="#a00eecdd254992bdde82eac596c4acc8"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+实现serverbench提供的hadnle_init, handle_process, handle_input等接口函数 
+<p>
+============================================================================<p>
+compiler : gcc version 4.1.2<p>
+platfomr : Debian 4.1.1-12<p>
+copyright : TaoMee, Inc. ShangHai CN. All rights reserved.<p>
+============================================================================ <hr><h2>函数文档</h2>
+<a class="anchor" name="fd745bea81443271c545a124898857d2"></a><!-- doxytag: member="benchapi.cpp::handle_init" ref="fd745bea81443271c545a124898857d2" args="(int argc, char **argv, int type)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handle_init           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&nbsp;</td>
+          <td class="paramname"> <em>argv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>type</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化配置文件，游戏flag、game_id,游戏分数和用户时间等相关文件 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>argc,参数的数目</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>argc,指向参数的指针</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>type,命令参数类型</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0, 成功;-1, 失败 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f67b09aff3b16394d605f8763cece2b5"></a><!-- doxytag: member="benchapi.cpp::handle_input" ref="f67b09aff3b16394d605f8763cece2b5" args="(const char *buffer, int length, const skinfo_t *sk)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handle_input           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const skinfo_t *&nbsp;</td>
+          <td class="paramname"> <em>sk</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+检查输入的字符串是否符合长度要求及是否是FLASH请求 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buffer,输入的字符串指针</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>length,字符串的长度</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sk,保存socket的相关信息</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0, 数据长度达不到要求或者是FLASH请求 <p>
+-1, 发生错误; reallen, 字符串的实际长度 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="f68b0bfaed0f8c13169ce1af92e1b11c"></a><!-- doxytag: member="benchapi.cpp::handle_process" ref="f68b0bfaed0f8c13169ce1af92e1b11c" args="(char *recvbuf, int rcvlen, char **sendbuf, int *sndlen, const skinfo_t *sk)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handle_process           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>recvbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rcvlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&nbsp;</td>
+          <td class="paramname"> <em>sendbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>sndlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const skinfo_t *&nbsp;</td>
+          <td class="paramname"> <em>sk</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+根据命令类型调用相应的处理函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>recvbuf</em>&nbsp;</td><td>接收字符串指针 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rcvlen</em>&nbsp;</td><td>接收的字符串长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sendbuf</em>&nbsp;</td><td>发送的字符串的指针 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sndlen</em>&nbsp;</td><td>存储发送的字符串长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sk</em>&nbsp;</td><td>保存socket的信息 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>-1 执行失败;0 执行成功 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a00eecdd254992bdde82eac596c4acc8"></a><!-- doxytag: member="benchapi.cpp::handle_timer" ref="a00eecdd254992bdde82eac596c4acc8" args="(int *sec)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int handle_timer           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>sec</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+定时器调用此函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sec,定时器的时间间隔</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0 </dd></dl>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Thu Jan 15 19:16:23 2009 for CacheServ by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

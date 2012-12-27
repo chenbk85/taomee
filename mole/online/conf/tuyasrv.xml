@@ -1,0 +1,7 @@
+<TuyaSrv>
+	<!-- tuya server 1 ip and port -->
+	<TuyaSrv Ip="123.150.163.115" Port="80" />
+	<TuyaSrv Ip="123.150.163.115" Port="80" />
+	<!--TuyaSrv Ip="10.1.1.7" Port="81" /-->
+</TuyaSrv>
+

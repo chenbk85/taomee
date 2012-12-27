@@ -1,0 +1,77 @@
+﻿<task mapID="1" mode="2" starTime="9000" expScale="1.5" rateScale="1.5" score="400" losturl="swf/winswf.swf" winurl="swf/lostswf.swf" musicurl="td1.mp3" startStar="14" startLifes="100">
+	<round tips="2只罗咯将在20秒后进攻，请做好准备">	
+		<monster id="10000" pathID="1" time = "1100" count="2" live="2" lifeScale="1.4"/>		
+	</round>
+	<round tips="3只枯枯将在10秒后进攻，请做好准备">
+		<monster id="10001" pathID="1" time = "1000" count="3" live="2" lifeScale="1.4"/>		
+	</round>
+	<round tips="4只罗咯将在10秒后进攻，请做好准备">
+		<monster id="10000" pathID="1" time = "1300" count="1" live="2" lifeScale="1.4"/>		
+		<monster id="10000" pathID="1" time = "900" count="3" stime = "1400" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="5只枯枯将在10秒后进攻，请做好准备">
+		<monster id="10001" pathID="1" time = "1300" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10001" pathID="1" time = "1800" count="2" stime = "1700" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="6只罗咯将在10秒后进攻，请做好准备">
+		<monster id="10000" pathID="1" time = "1200" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10000" pathID="1" time = "1000" count="2" stime = "1500" live="2" lifeScale="1.4"/>
+		<monster id="10000" pathID="1" time = "1000" count="1" stime = "4000" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="7只枯枯将在10秒后进攻，请做好准备">
+		<monster id="10001" pathID="1" time = "900" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10001" pathID="1" time = "800" count="2" stime = "3100" live="2" lifeScale="1.4"/>
+		<monster id="10001" pathID="1" time = "1000" count="2" stime = "5100" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="8只罗咯将在10秒后进攻，请做好准备">
+		<monster id="10000" pathID="1" time = "1300" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10000" pathID="1" time = "1200" count="3" stime = "1900" live="2" lifeScale="1.4"/>
+		<monster id="10000" pathID="1" time = "900" count="2" stime = "5500" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="9只枯枯将在10秒后进攻，请做好准备">
+		<monster id="10001" pathID="1" time = "1500" count="3" live="2" lifeScale="1.4"/>		
+		<monster id="10001" pathID="1" time = "1600" count="3" stime = "2700" live="2" lifeScale="1.4"/>
+		<monster id="10001" pathID="1" time = "1200" count="3" stime = "5700" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="10只罗咯将在10秒后进攻，请做好准备">
+		<monster id="10000" pathID="1" time = "1000" count="5" live="2" lifeScale="1.4"/>		
+		<monster id="10000" pathID="1" time = "1100" count="2" stime = "1400" live="2" lifeScale="1.4"/>
+		<monster id="10000" pathID="1" time = "1200" count="3" stime = "5500" live="2" lifeScale="1.4"/>
+	</round>	
+	<round tips="11只枯枯将在10秒后进攻，请做好准备">
+		<monster id="10001" pathID="1" time = "1500" count="4" live="2" lifeScale="1.4"/>		
+		<monster id="10001" pathID="1" time = "1300" count="4" stime = "2100" live="2" lifeScale="1.4"/>
+		<monster id="10001" pathID="1" time = "1000" count="3" stime = "6900" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="12只罗咯将在10秒后进攻，请做好准备">
+		<monster id="10000" pathID="1" time = "1400" count="5" live="2" lifeScale="1.4"/>		
+		<monster id="10000" pathID="1" time = "1600" count="4" stime = "1600" live="2" lifeScale="1.4"/>
+		<monster id="10000" pathID="1" time = "2000" count="3" stime = "3000" live="2" lifeScale="1.4"/>
+	</round>	
+	<round tips="13只枯枯将在10秒后进攻，请做好准备">
+		<monster id="10001" pathID="1" time = "1300" count="4" live="2" lifeScale="1.4"/>		
+		<monster id="10001" pathID="1" time = "1500" count="3" stime = "2700" live="2" lifeScale="1.4"/>
+		<monster id="10001" pathID="1" time = "1300" count="3" stime = "4000" live="2" lifeScale="1.4"/>
+		<monster id="10001" pathID="1" time = "1400" count="3" stime = "5300" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="14只罗咯将在10秒后进攻，请做好准备">
+		<monster id="10000" pathID="1" time = "1400" count="5" live="2" lifeScale="1.4"/>		
+		<monster id="10000" pathID="1" time = "1800" count="5" stime = "3500" live="2" lifeScale="1.4"/>
+		<monster id="10000" pathID="1" time = "1800" count="4" stime = "5800" live="2" lifeScale="1.4"/>
+	</round>	
+	<round tips="15只枯枯将在10秒后进攻，请做好准备">
+		<monster id="10001" pathID="1" time = "1200" count="7" live="2" lifeScale="1.4"/>		
+		<monster id="10001" pathID="1" time = "2600" count="4" stime = "2800" live="2" lifeScale="1.4"/>
+		<monster id="10001" pathID="1" time = "1600" count="2" stime = "5500" live="2" lifeScale="1.4"/>
+		<monster id="10001" pathID="1" time = "2300" count="2" stime = "9300" live="2" lifeScale="1.4"/>
+	</round>
+	<round tips="16只罗咯将在10秒后进攻，请做好准备">
+		<monster id="10000" pathID="1" time = "2000" count="5" live="2" lifeScale="1.4"/>		
+		<monster id="10000" pathID="1" time = "1700" count="5" stime = "1000" live="2" lifeScale="1.4"/>
+		<monster id="10000" pathID="1" time = "1300" count="4" stime = "6500" live="2" lifeScale="1.4"/>
+		<monster id="10000" pathID="1" time = "2000" count="2" stime = "10000" live="2" lifeScale="1.4"/>
+	</round>	
+	<round tips="1只便便树将在10秒后进攻，请做好准备">	
+		<monster id="10400" pathID="1" time = "0" count="1" stime = "0" live="100" lifeScale="1.4" talk=""/>
+	</round>	
+</task>

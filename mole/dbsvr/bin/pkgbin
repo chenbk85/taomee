@@ -1,0 +1,6 @@
+#!/bin/sh
+cd ~
+fix=`date +%Y%m%d`
+fname="bin$fix.tar"
+tar cvf $fname  DB/bin/  DB/ser/bin/ DB/ser/etc/  DB/ser/log/ DB/ser/sql/ DB/com/bin/ DB/com/etc/ DB/com/log/  DB/payser/bin/ DB/payser/etc/ DB/payser/log/ DB/payser/sql/ 
+scp -2 -P 56000 $fname   222.73.0.71:~/  

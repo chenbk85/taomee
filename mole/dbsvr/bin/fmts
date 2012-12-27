@@ -1,0 +1,70 @@
+#!/usr/bin/awk -f  
+
+function getHexByChar( Ha ) {
+	if ( Ha>=0 && Ha<=9 ) return Ha
+	else if ( Ha =="A" || Ha =="a"  ) return 10     
+	else if ( Ha =="B" || Ha =="b" ) return 11     
+	else if ( Ha =="C" || Ha =="c" ) return 12     
+	else if ( Ha =="D" || Ha =="d" ) return 13     
+	else if ( Ha =="E" || Ha =="e" ) return 14     
+	else if ( Ha =="F" || Ha =="f" ) return 15     
+	else {
+		printf "========%s is not vaild  [0..F]", Ha
+		exit -1 
+	}	
+}
+function fmtchar( HEXstr ){
+		if (HEXstr != "" ){
+			value=getHexByChar(substr(HEXstr,1,1)) * 16 + getHexByChar(substr(HEXstr,2,1))
+		if (value>= 32 && value <=126 )
+			return sprintf ("%c" , value )
+		else 
+			return "." 
+		}else{
+			return " "		
+		}
+}
+function hex2int(hex1, hex2, hex3,hex4 ){
+	buf= sprintf ("%s%s%s%s", hex1 ,hex2, hex3 ,hex4);
+	value=0;
+	for (i=4;i>0;i--) {
+		value=value*256 + getHexByChar(substr(buf,i*2-1,1)) * 16 + getHexByChar(substr(buf,i*2,1))
+	}
+	return value;
+}
+function changs_str( HEXstr ){
+		if (HEXstr != "" )
+			return 	HEXstr	
+		else 
+			return "  "		
+}
+
+function getfmts ( i ){
+
+	return sprintf ("\t%d\t%s %s %s %s %s %s %s %s  %s %s %s %s %s %s %s %s    %s%s%s%s%s%s%s%s  %s%s%s%s%s%s%s%s", 
+			i-1,
+			changs_str($(i+0)), changs_str($(i+1)), changs_str($(i+2)), changs_str($(i+3)),   
+			changs_str($(i+4)), changs_str($(i+5)), changs_str($(i+6)), changs_str($(i+7)),
+			changs_str($(i+8)), changs_str($(i+9)), changs_str($(i+10)), changs_str($(i+11)), 
+			changs_str($(i+12)), changs_str($(i+13)), changs_str($(i+14)), changs_str($(i+15)),
+			fmtchar($(i+0)), fmtchar($(i+1)), fmtchar($(i+2)), fmtchar($(i+3)),   
+			fmtchar($(i+4)), fmtchar($(i+5)), fmtchar($(i+6)), fmtchar($(i+7)),
+			fmtchar($(i+8)), fmtchar($(i+9)), fmtchar($(i+10)), fmtchar($(i+11)), 
+			fmtchar($(i+12)), fmtchar($(i+13)), fmtchar($(i+14)), fmtchar($(i+15)))
+}
+
+{ 	
+	printf "\tHEADER.........\n";  
+	print "\t\t proto_len: "$1" "$2" "$3" "$4"\t => " hex2int($1,$2,$3,$4);   
+	printf "\t\t commandid: " $9 " " $10 "     \t => %X \n", hex2int($9,$10,"00","00");  
+	printf "\t\t    userid: " $15 " "$16" "$17" "$18"\t => %u \n", hex2int($15,$16,$17, $18);  
+	
+	i=19
+	printf "\nMSG TRANS ..bytes:[%s]..................................................................\n", NF  
+	while (i <= NF ) {
+		printf "%s\n", getfmts(i) 
+		i=i+16;
+	}
+	printf "MSG TRANS END...........................................................................\n\n"  
+
+} 

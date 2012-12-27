@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Cutepig_explor_mine>
+    <MapMine MapID="1" LvLimit="1" NeedTime="600" GemID="1613900" SpecialPig="1593010, 1593011" Rate="5" SpecialRate="15" Energy="5" />
+    <MapMine MapID="2" LvLimit="1" NeedTime="720" GemID="1613901" SpecialPig="1593012, 1593013" Rate="5" SpecialRate="15" Energy="5" />
+    <MapMine MapID="3" LvLimit="1" NeedTime="900" GemID="1613902" SpecialPig="1593014, 1593015" Rate="5" SpecialRate="15" Energy="6" />
+    <MapMine MapID="4" LvLimit="1" NeedTime="1080" GemID="1613903" SpecialPig="1593016, 1593017" Rate="5" SpecialRate="15" Energy="6" />
+    <MapMine MapID="5" LvLimit="1" NeedTime="1200" GemID="1613904" SpecialPig="1593018, 1593019" Rate="5" SpecialRate="15" Energy="8" />
+    <MapMine MapID="6" LvLimit="1" NeedTime="1320" GemID="1613905" SpecialPig="1593039, 1593040" Rate="5" SpecialRate="15" Energy="8" />
+    <MapMine MapID="7" LvLimit="1" NeedTime="1500" GemID="1613906" SpecialPig="1593043, 1593044" Rate="5" SpecialRate="15" Energy="10" />
+    <MapMine MapID="8" LvLimit="1" NeedTime="1680" GemID="1613907" SpecialPig="1593045, 1593046" Rate="5" SpecialRate="15" Energy="10" />
+    <MapMine MapID="9" LvLimit="1" NeedTime="1800" GemID="1613908" SpecialPig="1593047, 1593048" Rate="5" SpecialRate="15" Energy="10" />
+    <MapMine MapID="10" LvLimit="2" NeedTime="3600" GemID="1613909" SpecialPig="1593049, 1593050" Rate="3" SpecialRate="8" Energy="12" />
+    <MapMine MapID="11" LvLimit="2" NeedTime="3900" GemID="1613910" SpecialPig="1593002, 1593003" Rate="3" SpecialRate="8" Energy="12" />
+    <MapMine MapID="12" LvLimit="2" NeedTime="4200" GemID="1613911" SpecialPig="1593004, 1593005" Rate="3" SpecialRate="8" Energy="14" />
+    <MapMine MapID="13" LvLimit="2" NeedTime="4500" GemID="1613912" SpecialPig="1593006, 1593007" Rate="3" SpecialRate="8" Energy="14" />
+    <MapMine MapID="14" LvLimit="2" NeedTime="4800" GemID="1613913" SpecialPig="1593000, 1593001" Rate="3" SpecialRate="8" Energy="16" />
+    <MapMine MapID="15" LvLimit="2" NeedTime="5100" GemID="1613914" SpecialPig="1593053, 1593054" Rate="3" SpecialRate="8" Energy="16" />
+    <MapMine MapID="16" LvLimit="2" NeedTime="5400" GemID="1613915" SpecialPig="1593067, 1593068" Rate="3" SpecialRate="8" Energy="18" />
+    <MapMine MapID="17" LvLimit="2" NeedTime="6000" GemID="1613916" SpecialPig="1593055, 1593056" Rate="3" SpecialRate="8" Energy="18" />
+    <MapMine MapID="18" LvLimit="2" NeedTime="6600" GemID="1613917" SpecialPig="1593057, 1593058" Rate="3" SpecialRate="8" Energy="20" />
+    <MapMine MapID="19" LvLimit="2" NeedTime="7200" GemID="1613918" SpecialPig="1593059, 1593060" Rate="3" SpecialRate="8" Energy="20" />
+    <MapMine MapID="20" LvLimit="3" NeedTime="10800" GemID="1613919" SpecialPig="1593063, 1593064" Rate="2" SpecialRate="5" Energy="22" />
+    <MapMine MapID="21" LvLimit="3" NeedTime="11700" GemID="1613920" SpecialPig="1593070, 1593071" Rate="2" SpecialRate="5" Energy="22" />
+    <MapMine MapID="22" LvLimit="3" NeedTime="12600" GemID="1613921" SpecialPig="1593032, 1593033" Rate="2" SpecialRate="5" Energy="24" />
+    <MapMine MapID="23" LvLimit="3" NeedTime="13500" GemID="1613922" SpecialPig="1593020, 1593021" Rate="2" SpecialRate="5" Energy="24" />
+    <MapMine MapID="24" LvLimit="3" NeedTime="14400" GemID="1613923" SpecialPig="1593022, 1593023" Rate="2" SpecialRate="5" Energy="26" />
+    <MapMine MapID="25" LvLimit="3" NeedTime="15300" GemID="1613924" SpecialPig="1593051, 1593052" Rate="2" SpecialRate="5" Energy="26" />
+    <MapMine MapID="26" LvLimit="3" NeedTime="16200" GemID="1613925" SpecialPig="" Rate="2" SpecialRate="5" Energy="28" />
+    <MapMine MapID="27" LvLimit="3" NeedTime="17100" GemID="1613926" SpecialPig="" Rate="2" SpecialRate="5" Energy="28" />
+    <MapMine MapID="28" LvLimit="3" NeedTime="18000" GemID="1613927" SpecialPig="" Rate="2" SpecialRate="5" Energy="30" />
+</Cutepig_explor_mine>

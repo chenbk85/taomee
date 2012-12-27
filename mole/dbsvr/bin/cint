@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import optparse
+
+def get_int_hex( hex, isbig ):
+	if isbig:
+		i=eval ("0x%s" % (hex)) 
+	else:
+		i=eval ("0x%s%s%s%s" % ( hex[6:8],hex[4:6],hex[2:4],hex[0:2] )) 
+	return i;
+
+def main(argv):
+	p = optparse.OptionParser(
+			description=' hex --> int ',
+			prog='cint',
+			version='cint 0.1',
+			usage='%prog [-b] F0 01 00 00 ' )
+	p.add_option('-b', '--big', action ='store_true', help='is big end' )
+	p.add_option('-n', '--not_unsigned', action ='store_true', help='not_unsigned' )
+
+	#p.add_option('--person', '-p', default="world", help='person show'  )
+
+	options, arguments = p.parse_args()	
+
+	bigflag=False
+	if options.big:
+		bigflag=True
+			
+	ll=""
+
+	for v in arguments :
+		ll+=v 
+
+	if len(ll)<=8 :
+		i=get_int_hex( ll, bigflag)	
+		if options.not_unsigned:
+			print i-0xFFFFFFFF-1;
+		else:
+			print i 
+	else:
+		print "need 8 chars"
+		p.print_help()
+
+if __name__ == "__main__":
+	main(sys.argv)

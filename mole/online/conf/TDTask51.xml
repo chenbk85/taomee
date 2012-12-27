@@ -1,0 +1,34 @@
+﻿<task mapID="29" mode="1" starTime="9000" expScale="2" rateScale="1" score="200" losturl="swf/winswf3.swf" winurl="swf/lostswf3.swf" musicurl="dig.mp3" startStar="28" startLifes="100">
+	<round tips="4只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="2" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="2" live="2"/>		
+	</round>
+	<round tips="6只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="3" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="3" live="2"/>		
+	</round>
+	<round tips="8只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="4" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="4" live="2"/>		
+	</round>
+	<round tips="10只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="5" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="5" live="2"/>		
+	</round>
+	<round tips="12只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="6" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="6" live="2"/>		
+	</round>
+	<round tips="14只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="7" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="7" live="2"/>		
+	</round>
+	<round tips="16只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="8" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="8" live="2"/>		
+	</round>
+	<round tips="18只咚嘎将在20秒后进攻，请做好准备">	
+		<monster id="10018" pathID="1" time = "900" count="9" live="2"/>
+		<monster id="10018" pathID="3" time = "900" count="9" live="2"/>		
+	</round>
+</task>

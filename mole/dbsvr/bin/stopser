@@ -1,0 +1,3 @@
+cd ~/DB/com/bin/ &&./*sh stop
+cd ~/DB/ser/bin/ &&./*sh stop
+cd ~/DB/payser/bin/ &&./*sh stop

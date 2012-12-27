@@ -1,0 +1,77 @@
+﻿<task mapID="4" mode="3" starTime="9000" expScale="2.5" rateScale="2" score="600" losturl="swf/winswf3.swf" winurl="swf/lostswf3.swf" musicurl="td1.mp3" attackCountScale="0.8" startStar="26" startLifes="100">
+	<round tips="2只假面将在20秒后进攻，请做好准备">	
+		<monster id="10006" pathID="1" time = "1500" count="2" live="2" lifeScale="2.5"/>		
+	</round>
+	<round tips="3只嘎嘎将在10秒后进攻，请做好准备">
+		<monster id="10007" pathID="1" time = "1100" count="3" live="2" lifeScale="2.5"/>		
+	</round>
+	<round tips="4只假面将在10秒后进攻，请做好准备">
+		<monster id="10006" pathID="1" time = "1200" count="1" live="2" lifeScale="2.5"/>		
+		<monster id="10006" pathID="1" time = "900" count="3" stime = "1700" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="5只嘎嘎将在10秒后进攻，请做好准备">
+		<monster id="10007" pathID="1" time = "1300" count="3" live="2" lifeScale="2.5"/>		
+		<monster id="10007" pathID="1" time = "1800" count="2" stime = "2000" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="6只假面将在10秒后进攻，请做好准备">
+		<monster id="10006" pathID="1" time = "900" count="3" live="2" lifeScale="2.5"/>		
+		<monster id="10006" pathID="1" time = "1300" count="2" stime = "2000" live="2" lifeScale="2.5"/>
+		<monster id="10006" pathID="1" time = "1100" count="1" stime = "4500" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="7只嘎嘎将在10秒后进攻，请做好准备">
+		<monster id="10007" pathID="1" time = "1000" count="3" live="2" lifeScale="2.5"/>		
+		<monster id="10007" pathID="1" time = "800" count="2" stime = "2500" live="2" lifeScale="2.5"/>
+		<monster id="10007" pathID="1" time = "1000" count="2" stime = "4500" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="8只假面将在10秒后进攻，请做好准备">
+		<monster id="10006" pathID="1" time = "1500" count="3" live="2" lifeScale="2.5"/>		
+		<monster id="10006" pathID="1" time = "1600" count="3" stime = "2900" live="2" lifeScale="2.5"/>
+		<monster id="10006" pathID="1" time = "1000" count="2" stime = "5500" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="9只嘎嘎将在10秒后进攻，请做好准备">
+		<monster id="10007" pathID="1" time = "1200" count="3" live="2" lifeScale="2.5"/>		
+		<monster id="10007" pathID="1" time = "1500" count="3" stime = "2800" live="2" lifeScale="2.5"/>
+		<monster id="10007" pathID="1" time = "1000" count="3" stime = "5500" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="10只假面将在10秒后进攻，请做好准备">
+		<monster id="10006" pathID="1" time = "1200" count="5" live="2" lifeScale="2.5"/>		
+		<monster id="10006" pathID="1" time = "1200" count="2" stime = "1500" live="2" lifeScale="2.5"/>
+		<monster id="10006" pathID="1" time = "1000" count="3" stime = "6000" live="2" lifeScale="2.5"/>
+	</round>	
+	<round tips="11只嘎嘎将在10秒后进攻，请做好准备">
+		<monster id="10007" pathID="1" time = "1000" count="4" live="2" lifeScale="2.5"/>		
+		<monster id="10007" pathID="1" time = "1600" count="4" stime = "2000" live="2" lifeScale="2.5"/>
+		<monster id="10007" pathID="1" time = "1200" count="3" stime = "7500" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="12只假面将在10秒后进攻，请做好准备">
+		<monster id="10006" pathID="1" time = "1200" count="5" live="2" lifeScale="2.5"/>		
+		<monster id="10006" pathID="1" time = "1700" count="4" stime = "1600" live="2" lifeScale="2.5"/>
+		<monster id="10006" pathID="1" time = "1800" count="3" stime = "3700" live="2" lifeScale="2.5"/>
+	</round>	
+	<round tips="13只嘎嘎将在10秒后进攻，请做好准备">
+		<monster id="10007" pathID="1" time = "1200" count="4" live="2" lifeScale="2.5"/>		
+		<monster id="10007" pathID="1" time = "1600" count="3" stime = "2700" live="2" lifeScale="2.5"/>
+		<monster id="10007" pathID="1" time = "1300" count="3" stime = "4500" live="2" lifeScale="2.5"/>
+		<monster id="10007" pathID="1" time = "1400" count="3" stime = "5500" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="14只假面将在10秒后进攻，请做好准备">
+		<monster id="10006" pathID="1" time = "1200" count="5" live="2" lifeScale="2.5"/>		
+		<monster id="10006" pathID="1" time = "1600" count="5" stime = "3200" live="2" lifeScale="2.5"/>
+		<monster id="10006" pathID="1" time = "1800" count="4" stime = "5900" live="2" lifeScale="2.5"/>
+	</round>	
+	<round tips="15只嘎嘎将在10秒后进攻，请做好准备">
+		<monster id="10007" pathID="1" time = "1000" count="7" live="2" lifeScale="2.5"/>		
+		<monster id="10007" pathID="1" time = "2200" count="4" stime = "2800" live="2" lifeScale="2.5"/>
+		<monster id="10007" pathID="1" time = "1500" count="2" stime = "5900" live="2" lifeScale="2.5"/>
+		<monster id="10007" pathID="1" time = "2300" count="2" stime = "9300" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="16只假面将在10秒后进攻，请做好准备">
+		<monster id="10006" pathID="1" time = "2500" count="5" live="2" lifeScale="2.5"/>		
+		<monster id="10006" pathID="1" time = "1500" count="5" stime = "1500" live="2" lifeScale="2.5"/>
+		<monster id="10006" pathID="1" time = "1500" count="4" stime = "7000" live="2" lifeScale="2.5"/>
+		<monster id="10006" pathID="1" time = "2200" count="2" stime = "10000" live="2" lifeScale="2.5"/>     
+	</round>	
+	<round tips="1只刺青将在10秒后进攻，请做好准备">	
+		<monster id="10402" pathID="1" time = "0" count="1" stime = "0" live="100" lifeScale="4" talk=""/>
+	</round>
+</task>

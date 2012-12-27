@@ -1,0 +1,221 @@
+<Games Count="100">
+	<Game ID="0" Name="scene-action" File="" Players="100" 
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"  />
+	<Game ID="1" Name="HappyCook" File="" Players="1" PK="1"
+		ItemBonus="1290009 1290010 1290011 1290012" BonusRate="100 100 100 100" BonusRateNumerator="20 20 20 30" BonusCond="1000 3000"
+		Exp="28" Strong="0" IQ="0" Lovely="14" MaxYXB="280" MaxScore="10000" MinTime="10" />
+	<Game ID="2" Name="Sled2" File="" Players="2" 
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="20" MaxScore="0"  />
+	<Game ID="3" Name="Sled3" File="" Players="3" 
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="20" MaxScore="0"  />
+	<Game ID="4" Name="Gobang" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="10" MaxScore="0"  />
+	<Game ID="5" Name="Kart2" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0"  />
+	<Game ID="6" Name="Kart3" File="" Players="3"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0"  />
+	<Game ID="7" Name="Kart4" File="" Players="4"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0"  />
+	<Game ID="8" Name="Fishing" File="" Players="6" PK="1" 
+		ItemBonus="1290009 1290010 1270009" BonusRate="100 100 100" BonusRateNumerator="20 10 100" BonusCond="2000 3500"
+		Exp="20" Strong="10" IQ="0" Lovely="0" MaxYXB="400" MaxScore="10000" MinTime="30" AuxItem="12201" AuxMaxYXB="600" />
+	<Game ID="9" Name="Skating" File="" Players="1" PK="1"
+		ItemBonus="1290017 1290018 1290019 1290020" BonusRate="100 100 100 100" BonusRateNumerator="20 20 40 20" BonusCond="1000 10000"
+		Exp="30" Strong="0" IQ="0" Lovely="15" MaxYXB="150" MaxScore="10000" MinTime="40" />
+	<Game ID="10" Name="Sled1" File="" Players="1"
+		Exp="3" Strong="2" IQ="0" Lovely="0" MaxYXB="15" MaxScore="10000" MinTime="40" />
+	<Game ID="11" Name="Kart1" File="" Players="1"
+		Exp="3" Strong="0" IQ="0" Lovely="2" MaxYXB="15" MaxScore="10000" MinTime="40" />
+	<Game ID="12" Name="Chair" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"  />
+	<Game ID="13" Name="CnChess" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"  />
+	<Game ID="14" Name="PinTu" File="" Players="6" PK="1"
+	ItemBonus="1290001 1290002 1290003 1290004" BonusRate="100 100 100 100" BonusRateNumerator="10 10 10 10" BonusCond="4000 6000"
+		Exp="12" Strong="0" IQ="6" Lovely="0" MaxYXB="800" MaxScore="999999" MinTime="30" GameBonusID="49" />
+	<Game ID="15" Name="Football" File="./games/libfootball.so" Players="10"
+		Exp="20" Strong="0" IQ="10" Lovely="0" MaxYXB="100" MaxScore="0"  />
+	<Game ID="16" Name="PaopaoLong" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"  />
+	<Game ID="17" Name="PaopaoLong2" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"  />
+	<Game ID="18" Name="RescuesHostage" File="" Players="1" PK="1" 
+		ItemBonus="1290005 1290006 1290007 1290008" BonusRate="100 100 100 100" BonusRateNumerator="40 30 20 30" BonusCond="25000 50000"
+		Exp="30" Strong="10" IQ="0" Lovely="0" MaxYXB="300" MaxScore="9999999" MinTime="5" />		
+	<Game ID="19" Name="LittleFarmer" File="" Players="6" PK="1"
+		ItemBonus="1290013 1290014 1290015 1290016" BonusRate="100 100 100 100" BonusRateNumerator="50 40 20 30" BonusCond="2000 4000"
+		Exp="20" Strong="10" IQ="0" Lovely="0" MaxYXB="400" MaxScore="0" MinTime="30" />
+	<Game ID="20" Name="HarvestFruit" File="" Players="1" PK="1"
+		Exp="20" Strong="10" IQ="0" Lovely="0" MaxYXB="200" MaxScore="999999" MinTime="40" />
+	<Game ID="21" Name="SurfRiding1" File="" Players="1"
+		Exp="6" Strong="0" IQ="0" Lovely="3" MaxYXB="30" MaxScore="0" MinTime="40" />
+	<Game ID="22" Name="SurfRiding2" File="" Players="2"
+		Exp="10" Strong="0" IQ="0" Lovely="10" MaxYXB="50" MaxScore="0" />
+	<Game ID="23" Name="SurfRiding3" File="" Players="3"
+		Exp="10" Strong="0" IQ="0" Lovely="10" MaxYXB="50" MaxScore="0" />
+	<Game ID="24" Name="Firebug" File="" Players="1" PK="1"
+		Exp="15" Strong="10" IQ="0" Lovely="0" MaxYXB="150" MaxScore="999999" MinTime="40" />
+	<Game ID="25" Name="PigRiding" File="" Players="6" PK="1"
+		ItemBonus="1290013 1290014 1290015 1290016" BonusRate="100 100 100 100" BonusRateNumerator="30 30 40 50" BonusCond="1500 2500"
+		Exp="20" Strong="0" IQ="0" Lovely="10" MaxYXB="200" MaxScore="0" MinTime="30"/>
+	<Game ID="26" Name="Shooting" File="" Players="1" PK="1"
+		ItemBonus="1290005 1290006 1290007 1290008" BonusRate="100 100 100 100" BonusRateNumerator="20 40 40 10" BonusCond="600 1000"
+		Exp="20" Strong="10" IQ="0" Lovely="0" MaxYXB="200" MaxScore="0" MinTime="40" />
+	<Game ID="27" Name="Diving" File="" Players="6" PK="1"
+		ItemBonus="1290005" BonusRate="100" BonusRateNumerator="1" BonusCond="100 1000"
+		Exp="15" Strong="0" IQ="0" Lovely="10" MaxYXB="150" MaxScore="0" />
+	<Game ID="28" Name="Seesaw" File="./games/libseesaw.so" Players="10"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="29" Name="TugOfWar" File="" Players="4"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="30" Name="TugOfWar" File="" Players="10"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="31" Name="BigEatSmall" File="" Players="1"
+		ItemBonus="1290017 1290018 1290019 1290020" BonusRate="100 100 100 100" BonusRateNumerator="40 20 20 20" BonusCond="1500 5000"
+		Exp="30" Strong="0" IQ="0" Lovely="15" MaxYXB="300" MaxScore="0" MinTime="40" />
+	<Game ID="32" Name="MimicShow" File="" Players="3"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="20" MaxScore="0" />
+	<Game ID="33" Name="Tetris1" File="" Players="1"
+		Exp="6" Strong="3" IQ="0" Lovely="0" MaxYXB="30" MaxScore="0" MinTime="40" />
+	<Game ID="34" Name="Tetris2" File="" Players="2"
+		Exp="10" Strong="5" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" />
+	<Game ID="35" Name="R4" File="" Players="6" PK="1"
+		Exp="30" Strong="0" IQ="10" Lovely="0" MaxYXB="400" MaxScore="0" MinTime="30"/>
+	<Game ID="36" Name="LianLianKan" File="" Players="6" PK="1" 
+		Exp="25" Strong="0" IQ="0" Lovely="10" MaxYXB="300" MaxScore="9999999" MinTime="30"/>
+	<Game ID="37" Name="PlayPiano" File="" Players="1"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="50" MaxScore="0" MinTime="30" />
+	<Game ID="38" Name="CardGameChallenge" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="39" Name="CardGameFree" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="40" Name="CardGameCompete" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="41" Name="ZhaoCha" File="" Players="6" PK="1" 
+		Exp="20" Strong="0" IQ="10" Lovely="0" MaxYXB="120" MaxScore="999999" MinTime="10" />
+	<Game ID="42" Name="CanteenWork" File="" Players="1"
+		ItemBonus="1290013 1290014 1290015 1290016" BonusRate="100 100 100 100" BonusRateNumerator="30 20 50 30" BonusCond="1500 8000"
+		Exp="40" Strong="20" IQ="0" Lovely="0" MaxYXB="800" MaxScore="0" MinTime="40" />
+	<Game ID="43" Name="XunBao" File="" Players="1"
+		ItemBonus="1290005 1290006 1290007 1290008" BonusRate="100 100 100 100" BonusRateNumerator="30 20 40 40" BonusCond="2000 40000"
+		Exp="25" Strong="0" IQ="15" Lovely="0" MaxYXB="600" MaxScore="0" MinTime="40" />
+	<Game ID="44" Name="PaoPaoBall" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="45" Name="CheerSquadShow" File="./games/libcheersquad_show.so" Players="4"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="46" Name="LinHuaQian" File="" Players="6" PK="1"
+		ItemBonus="1290017 1290018 1290019 1290020" BonusRate="100 100 100 100" BonusRateNumerator="40 30 20 10" BonusCond="1000 3000"
+		Exp="50" Strong="0" IQ="0" Lovely="30" MaxYXB="500" MaxScore="0" MinTime="40" />
+	<Game ID="47" Name="BinJiling" File="" Players="1" PK="1" 
+		ItemBonus="1290009 1290010 1290011 1290012" BonusRate="100 100 100 100" BonusRateNumerator="40 20 20 10" BonusCond="300 600"
+		Exp="20" Strong="0" IQ="10" Lovely="0" MaxYXB="400" MaxScore="999999" MinTime="40" />
+	<Game ID="48" Name="XiaoFangYuan" File="" Players="1" PK="1"
+		ItemBonus="1290005 1290006 1290007 1290008" BonusRate="100 100 100 100" BonusRateNumerator="20 40 40 10" BonusCond="4000 6500"
+		Exp="35" Strong="10" IQ="0" Lovely="0" MaxYXB="350" MaxScore="0" />
+	<Game ID="49" Name="KuaiLePinPan" File="" Players="6" PK="1"
+	Exp="20" Strong="0" IQ="10" Lovely="0" MaxYXB="400" MaxScore="999999" MinTime="40" />
+	<Game ID="50" Name="Flight2" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="51" Name="Flight3" File="" Players="3"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="52" Name="Flight4" File="" Players="4"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="53" Name="CardGameFreeAD" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="54" Name="CardGameCompeteAD" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="55" Name="YangGuangBanYunGong" File="" Players="1" PK="1"
+		ItemBonus="1290017 1290018 1290019 1290020 190229" BonusRate="100 100 100 100 3" BonusRateNumerator="20 20 20 30 1" BonusCond="200 350"
+		Exp="40" Strong="0" IQ="0" Lovely="20" MaxYXB="400" MaxScore="0" MinTime="30" />
+	<Game ID="56" Name="LahmRescure" File="" Players="1" PK="1"
+		ItemBonus="190354" BonusRate="100" BonusRateNumerator="100" BonusCond="100 500"
+		Exp="20" Strong="0" IQ="0" Lovely="10" MaxYXB="200" MaxScore="0" MinTime="30" />
+	<Game ID="57" Name="CheerSquadShow" File="./games/libcheersquad_show.so" Players="6"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="58" Name="CheerSquadShow" File="./games/libcheersquad_show.so" Players="5"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="59" Name="Dance" File="" Players="1" PK="1"
+		Exp="60" Strong="0" IQ="0" Lovely="30" MaxYXB="1200" MaxScore="20000" MinTime="40" />
+	<Game ID="60" Name="XiuJianCaoPing" File="" Players="1"
+		ItemBonus="180027 180028 180029 180030" BonusRate="100 100 100 100" BonusRateNumerator="90 90 90 90" BonusCond="15000 60000"
+		Exp="50" Strong="25" IQ="0" Lovely="0" MaxYXB="1000" MaxScore="0" MinTime="40"/>
+	<Game ID="61" Name="RushQues" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="62" Name="RushQues" File="" Players="3"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="63" Name="RushQues" File="" Players="4"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="64" Name="scene-action" File="" Players="9"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="65" Name="CheerSquadShow" File="./games/libcheersquad_show.so" Players="5"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="66" Name="CheerSquadShow" File="./games/libcheersquad_show.so" Players="5"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="67" Name="HuanYouZhuangYuan" File="" Players="1"
+		Exp="50" Strong="25" IQ="0" Lovely="0" MaxYXB="600" MaxScore="20000" MinTime="20"/>
+	<Game ID="68" Name="ShiBoHui" File="./games/liblittle_pos.so" Players="3"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" MinTime="0"/>
+	<Game ID="69" Name="CardGameChallenge" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="70" Name="CardGameChallenge" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="71" Name="CardGameChallenge" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="72" Name="CardGameChallenge" File="" Players="3"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="73" Name="CardGameChallenge" File="" Players="4"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="74" Name="PingZhuangDaJiQi" File="" Players="1"
+		Exp="100" Strong="0" IQ="80" Lovely="0" MaxYXB="700" MaxScore="540" MinTime="10"/>
+	<Game ID="75" Name="LAMUJinHuaLun" File="" Players="1" PK="1"
+		Exp="50" Strong="0" IQ="4" Lovely="0" MaxYXB="100" MaxScore="450" MinTime="5"/>
+	<Game ID="76" Name="ShuZhiMiGong" File="" Players="1" PK="1"
+		Exp="200" Strong="0" IQ="50" Lovely="0" MaxYXB="1200" MaxScore="1000" MinTime="5"/>
+	<Game ID="77" Name="LAMUYuYanKe" File="" Players="1" PK="1"
+		Exp="300" Strong="0" IQ="0" Lovely="100" MaxYXB="1500" MaxScore="10000" MinTime="5"/>
+	<Game ID="78" Name="LAMUKeTang" File="" Players="1" PK="1"
+		Exp="100" Strong="0" IQ="8" Lovely="0" MaxYXB="200" MaxScore="850" MinTime="5"/>
+	<Game ID="79" Name="LanQiou" File="" Players="1" 
+		Exp="200" Strong="100" IQ="0" Lovely="0" MaxYXB="800" MaxScore="200"/>
+	<Game ID="80" Name="QiShiYouYiSai" File=""  Players="1"  GameBonusID="11" VIP="1"
+		Exp="50" Strong="30" IQ="0" Lovely="0" MaxYXB="500" MaxScore="4000"/>
+	<Game ID="81" Name="TuZiTaoWa" File="" Players="1"
+		Exp="20" Strong="0" IQ="5" Lovely="0" MaxYXB="100" MaxScore="400"/>
+	<Game ID="82" Name="DaGuiHuaGao" File=""  Players="1"
+		Exp="20" Strong="0" IQ="5" Lovely="0" MaxYXB="100" MaxScore="400"/>
+	<Game ID="83" Name="MoMoFengShouPaiDui" File=""  Players="6"
+		Exp="20" Strong="0" IQ="5" Lovely="0" MaxYXB="100" MaxScore="400"/>
+	<Game ID="84" Name="MaShuXunLian" File=""  Players="1"
+		Exp="100" Strong="40" IQ="0" Lovely="0" MaxYXB="400" MaxScore="2000"/>
+	<Game ID="85" Name="SeCaiMiGong" File=""  Players="1"  GameBonusID="12"
+		Exp="56" Strong="0" IQ="23" Lovely="0" MaxYXB="2000" MaxScore="9600"/>
+	<Game ID="86" Name="NanGuaSaiPao" File=""  Players="6"
+		Exp="300" Strong="0" IQ="50" Lovely="0" MaxYXB="800" MaxScore="10000"/>
+	<Game ID="87" Name="BaoMiHuaDaZuoZhan" File=""  Players="6"  
+		Exp="300" Strong="0" IQ="50" Lovely="0" MaxYXB="800" MaxScore="10000"/>
+	<Game ID="88" Name="DaHuaiHuaiTu" File=""  Players="1"  
+		Exp="300" Strong="0" IQ="50" Lovely="0" MaxYXB="300" MaxScore="2000"/>
+	<Game ID="89" Name="AngelFight" File=""  Players="1"  
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"/>
+	<Game ID="90" Name="AngelFight_PVP" File=""  Players="1"  
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"/>
+	<Game ID="91" Name="QiQiMeiShi" File="" Players="1" PK="1"
+		Exp="20" Strong="0" IQ="10" Lovely="0" MaxYXB="400" MaxScore="0" MinTime="40" />
+	<Game ID="92" Name="CheerSquadShow" File="./games/libcheersquad_show.so" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+ 	<Game ID="93" Name="LeleGetGift" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="4000" MaxScore="10000" />
+	<Game ID="94" Name="Linker" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+ 	<Game ID="95" Name="BaoZhuangNianHuo" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="1000" MaxScore="32400" />
+	<Game ID="96" Name="Candle" File="" Players="2"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="97" Name="Link_link" File="" Players="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" />
+	<Game ID="98" Name="OceanBrave_Single" File=""  Players="1"  
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"/>
+	<Game ID="99" Name="OceanBrave_Compete" File=""  Players="1"  
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0"/>
+
+</Games>

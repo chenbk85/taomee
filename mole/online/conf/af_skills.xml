@@ -1,0 +1,379 @@
+<!-- ID:序号  Skill_id:技能ID  Skill_type:0主动技能（即天使），1被动技能  Card_id:对应的卡片  Name:技能名字 AddState:附加属性 Desc:技能描述
+	Skill_lvl:技能等级 Exp_lvl:角色等级限制 Card_cnt:升级到这一等级需要的卡片的数量 Rate:升级的概率 UseMp:消耗的mp值 Hurt:伤害点数 Skill:-1为被动技能 0为主动技能
+  Str:大力属性增加 Int：智慧 Hab：强壮 Ali：灵活 Hp：生命 
+  Atk:攻击 Aspd:行动速度 Evad:免疫率 Block:抵抗率 Combo:连击率 Crit:暴击率 Hit:命中率 Def:防御力 Skill:实际附加技能
+-->
+<AF_SKILLS>
+	<Skill ID="1" Skill_id="1563005" Skill_type="1" Card_id="1553005" Name="大力加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="2" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="4" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="6" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="8" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="10" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="12" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="14" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="16" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="18" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="20" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="2" Skill_id="1563006" Skill_type="1" Card_id="1553006" Name="智慧加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="2" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="4" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="6" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="8" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="10" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="12" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="14" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="16" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="18" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="20" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="3" Skill_id="1563007" Skill_type="1" Card_id="1553007" Name="强壮加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="2" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="4" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="6" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="8" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="10" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="12" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="14" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="16" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="18" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="20" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="4" Skill_id="1563008" Skill_type="1" Card_id="1553008" Name="灵活加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="2" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="4" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="6" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="8" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="10" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="12" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="14" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="16" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="18" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="20" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="5" Skill_id="1563009" Skill_type="1" Card_id="1553009" Name="伤害加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="6" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="9" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="12" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="15" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="18" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="21" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="24" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="27" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="30" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="6" Skill_id="1563010" Skill_type="1" Card_id="1553010" Name="暴击加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="1" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="2" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="3" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="4" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="5" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="6" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="7" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="8" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="9" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="10" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="7" Skill_id="1563011" Skill_type="1" Card_id="1553011" Name="生命加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="20" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="40" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="60" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="80" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="100" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="120" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="140" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="160" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="180" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="200" Skill="-1"/>
+	</Skill>
+	<Skill ID="8" Skill_id="1563012" Skill_type="1" Card_id="1553012" Name="抵抗加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="1" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="2" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="3" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="4" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="5" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="6" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="7" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="8" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="9" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="10" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="9" Skill_id="1563013" Skill_type="1" Card_id="1553013" Name="免疫加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="1" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="2" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="3" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="4" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="5" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="6" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="7" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="8" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="9" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="10" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="10" Skill_id="1563014" Skill_type="1" Card_id="1553014" Name="吸收伤害" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="1" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="2" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="3" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="4" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="5" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="6" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="7" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="8" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="9" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="10" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="11" Skill_id="1563015" Skill_type="1" Card_id="1553015" Name="速度加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="3" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="6" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="9" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="12" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="15" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="18" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="21" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="24" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="27" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="30" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="12" Skill_id="1563016" Skill_type="1" Card_id="1553016" Name="连击加成" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="1" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="2" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="3" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="4" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="5" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1100" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="6" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1300" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="7" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="1500" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="8" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="1700" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="8" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="1900" Rate="100" UseMp="0" Hurt="0" Str="0" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="10" Crit="0" Hit="0" Def="0" Hp="0" Skill="-1"/>
+	</Skill>
+	<Skill ID="13" Skill_id="1563000" Skill_type="0" Card_id="1553000" Name="钻头钻头功" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="28" Str="0" Int="0" Hab="0" Ali="1" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="100" Hurt="33" Str="0" Int="0" Hab="0" Ali="2" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="100" Hurt="40" Str="0" Int="0" Hab="0" Ali="3" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="500" Rate="100" UseMp="100" Hurt="46" Str="0" Int="0" Hab="0" Ali="4" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="1000" Rate="100" UseMp="100" Hurt="53" Str="0" Int="0" Hab="0" Ali="5" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1000" Rate="100" UseMp="100" Hurt="59" Str="0" Int="0" Hab="0" Ali="6" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1000" Rate="100" UseMp="100" Hurt="66" Str="0" Int="0" Hab="0" Ali="7" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="100" Hurt="74" Str="0" Int="0" Hab="0" Ali="8" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1500" Rate="100" UseMp="100" Hurt="82" Str="0" Int="0" Hab="0" Ali="9" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1500" Rate="100" UseMp="100" Hurt="110" Str="0" Int="0" Hab="0" Ali="10" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="0"/>
+	</Skill>
+	<Skill ID="14" Skill_id="1563001" Skill_type="0" Card_id="1553001" Name="飘飘遁地术" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="200" Hurt="63" Str="1" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="200" Hurt="75" Str="2" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="200" Hurt="90" Str="3" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="500" Rate="100" UseMp="200" Hurt="105" Str="4" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="1000" Rate="100" UseMp="200" Hurt="119" Str="5" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1000" Rate="100" UseMp="200" Hurt="133" Str="6" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1000" Rate="100" UseMp="200" Hurt="150" Str="7" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="200" Hurt="167" Str="8" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1500" Rate="100" UseMp="200" Hurt="185" Str="9" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1500" Rate="100" UseMp="200" Hurt="230" Str="10" Int="0" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="1"/>
+	</Skill>
+	<Skill ID="15" Skill_id="1563002" Skill_type="0" Card_id="1553002" Name="瞬移冲锋击" AddState="蜂蜇" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="21" Str="0" Int="0" Hab="1" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减10点血"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="100" Hurt="25" Str="0" Int="0" Hab="2" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减13点血"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="100" Hurt="30" Str="0" Int="0" Hab="3" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减16点血"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="500" Rate="100" UseMp="100" Hurt="35" Str="0" Int="0" Hab="4" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减19点血"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="1000" Rate="100" UseMp="100" Hurt="39" Str="0" Int="0" Hab="5" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减22点血"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1000" Rate="100" UseMp="100" Hurt="44" Str="0" Int="0" Hab="6" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减25点血"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1000" Rate="100" UseMp="100" Hurt="50" Str="0" Int="0" Hab="7" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减28点血"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="100" Hurt="56" Str="0" Int="0" Hab="8" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减31点血"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1500" Rate="100" UseMp="100" Hurt="62" Str="0" Int="0" Hab="9" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减34点血"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1500" Rate="100" UseMp="100" Hurt="100" Str="0" Int="0" Hab="10" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="2" Desc="每回合减37点血"/>
+	</Skill>
+	<Skill ID="16" Skill_id="1563003" Skill_type="0" Card_id="1553003" Name="转转冲能弹" AddState="缓解" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="21" Str="0" Int="1" Hab="0" Ali="1" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少5%暴击率"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="100" Hurt="25" Str="0" Int="2" Hab="0" Ali="2" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少6%暴击率"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="100" Hurt="30" Str="0" Int="3" Hab="0" Ali="3" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少7%暴击率"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="500" Rate="100" UseMp="100" Hurt="35" Str="0" Int="4" Hab="0" Ali="4" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少8%暴击率"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="1000" Rate="100" UseMp="100" Hurt="39" Str="0" Int="5" Hab="0" Ali="5" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少9%暴击率"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1000" Rate="100" UseMp="100" Hurt="44" Str="0" Int="6" Hab="0" Ali="6" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少10%暴击率"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1000" Rate="100" UseMp="100" Hurt="50" Str="0" Int="7" Hab="0" Ali="7" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少11%暴击率"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="100" Hurt="56" Str="0" Int="8" Hab="0" Ali="8" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少12%暴击率"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1500" Rate="100" UseMp="100" Hurt="62" Str="0" Int="9" Hab="0" Ali="9" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少13%暴击率"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1500" Rate="100" UseMp="100" Hurt="90" Str="0" Int="10" Hab="0" Ali="10" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="3" Desc="减少14%暴击率"/>
+	</Skill>
+	<Skill ID="17" Skill_id="1563004" Skill_type="0" Card_id="1553004" Name="爱心祝福术" AddState="雷霆" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="50" Hurt="0" Str="0" Int="1" Hab="1" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="15:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率15%"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="2" Hab="2" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="17:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率17%"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="3" Hab="3" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="19:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率19%"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="4" Hab="4" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="21:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率21%"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="0" Int="5" Hab="5" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="23:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率23%"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="0" Int="6" Hab="6" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="25:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率25%"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="0" Int="7" Hab="7" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="27:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率27%"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="8" Hab="8" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="29:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率29%"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="9" Hab="9" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="31:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率31%"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="10" Hab="10" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="38:4" Hit="0" Def="0" Hp="0" Skill="4" Desc="增加暴击率38%"/>
+	</Skill>
+	<Skill ID="18" Skill_id="1563017" Skill_type="0" Card_id="1553057" Name="大叶包围术" AddState="加速" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="50" Hurt="0" Str="0" Int="1" Hab="0" Ali="1" Atk="0" Aspd="12:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加12点攻击速度"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="2" Hab="0" Ali="2" Atk="0" Aspd="15:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加15点攻击速度"/>
+    <Level Skill_lvl="3" Exp_lvl="1" Card_cnt="1" Money="500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="3" Hab="0" Ali="3" Atk="0" Aspd="18:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加18点攻击速度"/>
+    <Level Skill_lvl="4" Exp_lvl="4" Card_cnt="2" Money="500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="4" Hab="0" Ali="4" Atk="0" Aspd="21:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加21点攻击速度"/>
+    <Level Skill_lvl="5" Exp_lvl="7" Card_cnt="4" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="0" Int="5" Hab="0" Ali="5" Atk="0" Aspd="24:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加24点攻击速度"/>
+    <Level Skill_lvl="6" Exp_lvl="10" Card_cnt="6" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="0" Int="6" Hab="0" Ali="6" Atk="0" Aspd="27:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加27点攻击速度"/>
+    <Level Skill_lvl="7" Exp_lvl="12" Card_cnt="8" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="0" Int="7" Hab="0" Ali="7" Atk="0" Aspd="30:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加30点攻击速度"/>
+    <Level Skill_lvl="8" Exp_lvl="14" Card_cnt="10" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="8" Hab="0" Ali="8" Atk="0" Aspd="33:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加33点攻击速度"/>
+    <Level Skill_lvl="9" Exp_lvl="16" Card_cnt="12" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="9" Hab="0" Ali="9" Atk="0" Aspd="36:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加36点攻击速度"/>
+    <Level Skill_lvl="10" Exp_lvl="18" Card_cnt="14" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="0" Int="10" Hab="0" Ali="10" Atk="0" Aspd="39:4" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="5" Desc="增加39点攻击速度"/>
+	</Skill>
+	<Skill ID="19" Skill_id="1563018" Skill_type="0" Card_id="1553058" Name="绵绵神掌" AddState="破甲" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="200" Hurt="75" Str="0" Int="1" Hab="1" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少5%伤害吸收"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="90" Str="0" Int="2" Hab="2" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少6%伤害吸收"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="108" Str="0" Int="3" Hab="3" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少7%伤害吸收"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="1000" Rate="100" UseMp="200" Hurt="126" Str="0" Int="4" Hab="4" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少8%伤害吸收"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="1500" Rate="100" UseMp="200" Hurt="143" Str="0" Int="5" Hab="5" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少9%伤害吸收"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1500" Rate="100" UseMp="200" Hurt="159" Str="0" Int="6" Hab="6" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少10%伤害吸收"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1500" Rate="100" UseMp="200" Hurt="180" Str="0" Int="7" Hab="7" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少11%伤害吸收"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="2000" Rate="100" UseMp="200" Hurt="230" Str="0" Int="8" Hab="8" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少12%伤害吸收"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="200" Hurt="280" Str="0" Int="9" Hab="9" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少13%伤害吸收"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="2000" Rate="100" UseMp="200" Hurt="350" Str="0" Int="10" Hab="10" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="6" Desc="减少14%伤害吸收"/>
+	</Skill>
+	<Skill ID="20" Skill_id="1563019" Skill_type="0" Card_id="1553059" Name="棒槌敲敲" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="200" Hurt="82" Str="1" Int="1" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="99" Str="2" Int="2" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="118" Str="3" Int="3" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="1000" Rate="100" UseMp="200" Hurt="137" Str="4" Int="4" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="1500" Rate="100" UseMp="200" Hurt="156" Str="5" Int="5" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1500" Rate="100" UseMp="200" Hurt="174" Str="6" Int="6" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1500" Rate="100" UseMp="200" Hurt="196" Str="7" Int="7" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="2000" Rate="100" UseMp="200" Hurt="260" Str="8" Int="8" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="200" Hurt="320" Str="9" Int="9" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="2000" Rate="100" UseMp="200" Hurt="400" Str="10" Int="10" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="7"/>
+	</Skill>
+	<Skill ID="21" Skill_id="1563020" Skill_type="0" Card_id="1553060" Name="神目术" AddState="减速" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="40" Str="1" Int="1" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少8点攻击速度"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="48" Str="2" Int="2" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少10点攻击速度"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="58" Str="3" Int="3" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少12点攻击速度"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="1000" Rate="100" UseMp="100" Hurt="67" Str="4" Int="4" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少14点攻击速度"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="1500" Rate="100" UseMp="100" Hurt="76" Str="5" Int="5" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少16点攻击速度"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1500" Rate="100" UseMp="100" Hurt="85" Str="6" Int="6" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少18点攻击速度"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1500" Rate="100" UseMp="100" Hurt="96" Str="7" Int="7" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少20点攻击速度"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="2000" Rate="100" UseMp="100" Hurt="127" Str="8" Int="8" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少22点攻击速度"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="100" Hurt="150" Str="9" Int="9" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少24点攻击速度"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="2000" Rate="100" UseMp="100" Hurt="190" Str="10" Int="10" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="8" Desc="减少26点攻击速度"/>
+	</Skill>
+	<Skill ID="22" Skill_id="1563021" Skill_type="0" Card_id="1553061" Name="果果冲击波" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="47" Str="2" Int="1" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="57" Str="3" Int="2" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="68" Str="4" Int="3" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="1000" Rate="100" UseMp="100" Hurt="79" Str="5" Int="4" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="1500" Rate="100" UseMp="100" Hurt="90" Str="6" Int="5" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1500" Rate="100" UseMp="100" Hurt="100" Str="7" Int="6" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1500" Rate="100" UseMp="100" Hurt="113" Str="8" Int="7" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="2000" Rate="100" UseMp="100" Hurt="149" Str="9" Int="8" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="100" Hurt="190" Str="10" Int="9" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="2000" Rate="100" UseMp="100" Hurt="240" Str="11" Int="10" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="9"/>
+	</Skill>
+	<Skill ID="23" Skill_id="1563022" Skill_type="0" Card_id="1553081" Name="动感光球" AddState="护体" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="50" Hurt="0" Str="2" Int="1" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="18:4" Hp="0" Skill="10" Desc="增加18%伤害吸收"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="3" Int="2" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="20:4" Hp="0" Skill="10" Desc="增加20%伤害吸收"/>
+    <Level Skill_lvl="3" Exp_lvl="4" Card_cnt="1" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="4" Int="3" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="22:4" Hp="0" Skill="10" Desc="增加22%伤害吸收"/>
+    <Level Skill_lvl="4" Exp_lvl="7" Card_cnt="2" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="5" Int="4" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="24:4" Hp="0" Skill="10" Desc="增加24%伤害吸收"/>
+    <Level Skill_lvl="5" Exp_lvl="10" Card_cnt="4" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="6" Int="5" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="26:4" Hp="0" Skill="10" Desc="增加26%伤害吸收"/>
+    <Level Skill_lvl="6" Exp_lvl="13" Card_cnt="6" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="7" Int="6" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="28:4" Hp="0" Skill="10" Desc="增加28%伤害吸收"/>
+    <Level Skill_lvl="7" Exp_lvl="16" Card_cnt="8" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="8" Int="7" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="30:4" Hp="0" Skill="10" Desc="增加30%伤害吸收"/>
+    <Level Skill_lvl="8" Exp_lvl="19" Card_cnt="10" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="9" Int="8" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="32:4" Hp="0" Skill="10" Desc="增加32%伤害吸收"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="10" Int="9" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="34:4" Hp="0" Skill="10" Desc="增加34%伤害吸收"/>
+    <Level Skill_lvl="10" Exp_lvl="25" Card_cnt="14" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="11" Int="10" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="36:4" Hp="0" Skill="10" Desc="增加36%伤害吸收"/>
+	</Skill>
+	<Skill ID="24" Skill_id="1563023" Skill_type="0" Card_id="1553082" Name="地源之力" AddState="精准" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="10" Card_cnt="0" Money="0" Rate="100" UseMp="50" Hurt="0" Str="2" Int="1" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="18:4" Def="0" Hp="0" Skill="11" Desc="增加命中率18%"/>
+    <Level Skill_lvl="2" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="3" Int="2" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="20:4" Def="0" Hp="0" Skill="11" Desc="增加命中率20%"/>
+    <Level Skill_lvl="3" Exp_lvl="10" Card_cnt="1" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="4" Int="3" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="22:4" Def="0" Hp="0" Skill="11" Desc="增加命中率22%"/>
+    <Level Skill_lvl="4" Exp_lvl="12" Card_cnt="2" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="5" Int="4" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="24:4" Def="0" Hp="0" Skill="11" Desc="增加命中率24%"/>
+    <Level Skill_lvl="5" Exp_lvl="14" Card_cnt="4" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="6" Int="5" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="26:4" Def="0" Hp="0" Skill="11" Desc="增加命中率26%"/>
+    <Level Skill_lvl="6" Exp_lvl="16" Card_cnt="6" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="7" Int="6" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="28:4" Def="0" Hp="0" Skill="11" Desc="增加命中率28%"/>
+    <Level Skill_lvl="7" Exp_lvl="18" Card_cnt="8" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="8" Int="7" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="30:4" Def="0" Hp="0" Skill="11" Desc="增加命中率30%"/>
+    <Level Skill_lvl="8" Exp_lvl="20" Card_cnt="10" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="9" Int="8" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="32:4" Def="0" Hp="0" Skill="11" Desc="增加命中率32%"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="10" Int="9" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="34:4" Def="0" Hp="0" Skill="11" Desc="增加命中率34%"/>
+    <Level Skill_lvl="10" Exp_lvl="24" Card_cnt="14" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="11" Int="10" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="36:4" Def="0" Hp="0" Skill="11" Desc="增加命中率36%"/>
+	</Skill>
+	<Skill ID="25" Skill_id="1563024" Skill_type="0" Card_id="1553083" Name="闪电波" AddState="衰弱" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="20" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="92" Str="0" Int="1" Hab="0" Ali="2" Atk="10:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少10点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="2" Exp_lvl="20" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="106" Str="0" Int="2" Hab="0" Ali="3" Atk="12:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少12点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="3" Exp_lvl="20" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="121" Str="0" Int="3" Hab="0" Ali="4" Atk="14:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少14点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="4" Exp_lvl="21" Card_cnt="2" Money="1000" Rate="100" UseMp="100" Hurt="137" Str="0" Int="4" Hab="0" Ali="5" Atk="16:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少16点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="5" Exp_lvl="22" Card_cnt="4" Money="1500" Rate="100" UseMp="100" Hurt="154" Str="0" Int="5" Hab="0" Ali="6" Atk="18:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少18点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="6" Exp_lvl="23" Card_cnt="6" Money="1500" Rate="100" UseMp="100" Hurt="201" Str="0" Int="6" Hab="0" Ali="7" Atk="20:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少20点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="7" Exp_lvl="24" Card_cnt="8" Money="1500" Rate="100" UseMp="100" Hurt="251" Str="0" Int="7" Hab="0" Ali="8" Atk="22:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少22点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="8" Exp_lvl="25" Card_cnt="10" Money="2000" Rate="100" UseMp="100" Hurt="305" Str="0" Int="8" Hab="0" Ali="9" Atk="24:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="增减少24点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="9" Exp_lvl="26" Card_cnt="12" Money="2000" Rate="100" UseMp="100" Hurt="356" Str="0" Int="9" Hab="0" Ali="10" Atk="26:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少26点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="10" Exp_lvl="27" Card_cnt="14" Money="2000" Rate="100" UseMp="100" Hurt="440" Str="0" Int="10" Hab="0" Ali="11" Atk="30:3" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="12" Desc="减少30点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+	</Skill>
+	<Skill ID="26" Skill_id="1563025" Skill_type="0" Card_id="1553084" Name="黑风迷雾" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="102" Str="0" Int="1" Hab="0" Ali="2" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="118" Str="0" Int="2" Hab="0" Ali="3" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="3" Exp_lvl="4" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="134" Str="0" Int="3" Hab="0" Ali="4" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="4" Exp_lvl="7" Card_cnt="2" Money="1000" Rate="100" UseMp="100" Hurt="150" Str="0" Int="4" Hab="0" Ali="5" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="5" Exp_lvl="10" Card_cnt="4" Money="1500" Rate="100" UseMp="100" Hurt="169" Str="0" Int="5" Hab="0" Ali="6" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="6" Exp_lvl="13" Card_cnt="6" Money="1500" Rate="100" UseMp="100" Hurt="223" Str="0" Int="6" Hab="0" Ali="7" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="7" Exp_lvl="16" Card_cnt="8" Money="1500" Rate="100" UseMp="100" Hurt="278" Str="0" Int="7" Hab="0" Ali="8" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="8" Exp_lvl="19" Card_cnt="10" Money="2000" Rate="100" UseMp="100" Hurt="338" Str="0" Int="8" Hab="0" Ali="9" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="100" Hurt="400" Str="0" Int="9" Hab="0" Ali="10" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="10" Exp_lvl="25" Card_cnt="14" Money="2000" Rate="100" UseMp="100" Hurt="490" Str="0" Int="10" Hab="0" Ali="11" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="13" Desc="此技能一场战斗只能使用一次"/>
+	</Skill>
+	<Skill ID="27" Skill_id="1563026" Skill_type="0" Card_id="1553085" Name="磁铁之力" AddState="致盲" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="200" Hurt="142" Str="0" Int="3" Hab="3" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="8:3" Def="0" Hp="0" Skill="14" Desc="减少8%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="164" Str="0" Int="4" Hab="4" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="9:3" Def="0" Hp="0" Skill="14" Desc="减少9%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="3" Exp_lvl="4" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="186" Str="0" Int="5" Hab="5" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="10:3" Def="0" Hp="0" Skill="14" Desc="减少10%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="4" Exp_lvl="7" Card_cnt="2" Money="1000" Rate="100" UseMp="200" Hurt="208" Str="0" Int="6" Hab="6" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="11:3" Def="0" Hp="0" Skill="14" Desc="减少11%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="5" Exp_lvl="10" Card_cnt="4" Money="1500" Rate="100" UseMp="200" Hurt="235" Str="0" Int="7" Hab="7" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="12:3" Def="0" Hp="0" Skill="14" Desc="减少12%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="6" Exp_lvl="13" Card_cnt="6" Money="1500" Rate="100" UseMp="200" Hurt="310" Str="0" Int="8" Hab="8" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="13:3" Def="0" Hp="0" Skill="14" Desc="减少13%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="7" Exp_lvl="16" Card_cnt="8" Money="1500" Rate="100" UseMp="200" Hurt="388" Str="0" Int="9" Hab="9" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="14:3" Def="0" Hp="0" Skill="14" Desc="减少14%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="8" Exp_lvl="19" Card_cnt="10" Money="2000" Rate="100" UseMp="200" Hurt="472" Str="0" Int="10" Hab="10" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="15:3" Def="0" Hp="0" Skill="14" Desc="减少15%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="200" Hurt="550" Str="0" Int="11" Hab="11" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="16:3" Def="0" Hp="0" Skill="14" Desc="减少16%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="10" Exp_lvl="25" Card_cnt="14" Money="2000" Rate="100" UseMp="200" Hurt="635" Str="0" Int="12" Hab="12" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="17:3" Def="0" Hp="0" Skill="14" Desc="减少17%命中率&#x0D;    此技能一场战斗只能使用一次"/>
+	</Skill>
+	<Skill ID="28" Skill_id="1563027" Skill_type="0" Card_id="1553086" Name="大力拳" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="200" Hurt="152" Str="0" Int="3" Hab="3" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="176" Str="0" Int="4" Hab="4" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="3" Exp_lvl="4" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="200" Str="0" Int="5" Hab="5" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="4" Exp_lvl="7" Card_cnt="2" Money="1000" Rate="100" UseMp="200" Hurt="224" Str="0" Int="6" Hab="6" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="5" Exp_lvl="10" Card_cnt="4" Money="1500" Rate="100" UseMp="200" Hurt="251" Str="0" Int="7" Hab="7" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="6" Exp_lvl="13" Card_cnt="6" Money="1500" Rate="100" UseMp="200" Hurt="334" Str="0" Int="8" Hab="8" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="7" Exp_lvl="16" Card_cnt="8" Money="1500" Rate="100" UseMp="200" Hurt="415" Str="0" Int="9" Hab="9" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="8" Exp_lvl="19" Card_cnt="10" Money="2000" Rate="100" UseMp="200" Hurt="500" Str="0" Int="10" Hab="10" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="200" Hurt="575" Str="0" Int="11" Hab="11" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="10" Exp_lvl="25" Card_cnt="14" Money="2000" Rate="100" UseMp="200" Hurt="680" Str="0" Int="12" Hab="12" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="15" Desc="此技能一场战斗只能使用一次"/>
+	</Skill>
+	<Skill ID="29" Skill_id="1563028" Skill_type="0" Card_id="1553118" Name="泡泡术" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="1" Card_cnt="0" Money="0" Rate="100" UseMp="100" Hurt="80" Str="0" Int="2" Hab="0" Ali="2" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="2" Exp_lvl="1" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="95" Str="0" Int="3" Hab="0" Ali="3" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="3" Exp_lvl="4" Card_cnt="1" Money="1000" Rate="100" UseMp="100" Hurt="110" Str="0" Int="4" Hab="0" Ali="4" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="4" Exp_lvl="7" Card_cnt="2" Money="1000" Rate="100" UseMp="100" Hurt="125" Str="0" Int="5" Hab="0" Ali="5" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="5" Exp_lvl="10" Card_cnt="4" Money="1500" Rate="100" UseMp="100" Hurt="140" Str="0" Int="6" Hab="0" Ali="6" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="6" Exp_lvl="13" Card_cnt="6" Money="1500" Rate="100" UseMp="100" Hurt="165" Str="0" Int="7" Hab="0" Ali="7" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="7" Exp_lvl="16" Card_cnt="8" Money="1500" Rate="100" UseMp="100" Hurt="195" Str="0" Int="8" Hab="0" Ali="8" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="8" Exp_lvl="19" Card_cnt="10" Money="2000" Rate="100" UseMp="100" Hurt="235" Str="0" Int="9" Hab="0" Ali="9" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="9" Exp_lvl="22" Card_cnt="12" Money="2000" Rate="100" UseMp="100" Hurt="285" Str="0" Int="10" Hab="0" Ali="10" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+    <Level Skill_lvl="10" Exp_lvl="25" Card_cnt="14" Money="2000" Rate="100" UseMp="100" Hurt="360" Str="0" Int="11" Hab="0" Ali="11" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="16"/>
+	</Skill>
+	<Skill ID="30" Skill_id="1563029" Skill_type="0" Card_id="1553119" Name="翻天钳" AddState="" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="20" Card_cnt="0" Money="0" Rate="100" UseMp="200" Hurt="152" Str="3" Int="3" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="2" Exp_lvl="20" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="176" Str="4" Int="4" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="3" Exp_lvl="20" Card_cnt="1" Money="1000" Rate="100" UseMp="200" Hurt="200" Str="5" Int="5" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="4" Exp_lvl="21" Card_cnt="2" Money="1000" Rate="100" UseMp="200" Hurt="224" Str="6" Int="6" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="5" Exp_lvl="22" Card_cnt="4" Money="1500" Rate="100" UseMp="200" Hurt="252" Str="7" Int="7" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="6" Exp_lvl="23" Card_cnt="6" Money="1500" Rate="100" UseMp="200" Hurt="334" Str="8" Int="8" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="7" Exp_lvl="24" Card_cnt="8" Money="1500" Rate="100" UseMp="200" Hurt="415" Str="9" Int="9" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="8" Exp_lvl="25" Card_cnt="10" Money="2000" Rate="100" UseMp="200" Hurt="505" Str="10" Int="10" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="9" Exp_lvl="26" Card_cnt="12" Money="2000" Rate="100" UseMp="200" Hurt="600" Str="11" Int="11" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="10" Exp_lvl="27" Card_cnt="14" Money="2000" Rate="100" UseMp="200" Hurt="740" Str="12" Int="12" Hab="0" Ali="0" Atk="0" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="17" Desc="此技能一场战斗只能使用一次"/>
+	</Skill>
+	<Skill ID="31" Skill_id="1563030" Skill_type="0" Card_id="1553120" Name="玄幻火力圈" AddState="霸体" Desc="">
+	<Level Skill_lvl="1" Exp_lvl="20" Card_cnt="0" Money="0" Rate="100" UseMp="50" Hurt="0" Str="3" Int="3" Hab="0" Ali="0" Atk="40:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加40点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="2" Exp_lvl="20" Card_cnt="1" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="4" Int="4" Hab="0" Ali="0" Atk="44:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加44点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="3" Exp_lvl="20" Card_cnt="1" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="5" Int="5" Hab="0" Ali="0" Atk="48:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加48点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="4" Exp_lvl="21" Card_cnt="2" Money="1000" Rate="100" UseMp="50" Hurt="0" Str="6" Int="6" Hab="0" Ali="0" Atk="52:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加52点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="5" Exp_lvl="22" Card_cnt="4" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="7" Int="7" Hab="0" Ali="0" Atk="57:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加57点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="6" Exp_lvl="23" Card_cnt="6" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="8" Int="8" Hab="0" Ali="0" Atk="70:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加70点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="7" Exp_lvl="24" Card_cnt="8" Money="1500" Rate="100" UseMp="50" Hurt="0" Str="9" Int="9" Hab="0" Ali="0" Atk="90:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加90点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="8" Exp_lvl="25" Card_cnt="10" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="10" Int="10" Hab="0" Ali="0" Atk="110:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加110点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="9" Exp_lvl="26" Card_cnt="12" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="11" Int="11" Hab="0" Ali="0" Atk="140:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加140点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+    <Level Skill_lvl="10" Exp_lvl="27" Card_cnt="14" Money="2000" Rate="100" UseMp="50" Hurt="0" Str="12" Int="12" Hab="0" Ali="0" Atk="200:4" Aspd="0" Evad="0" Block="0" Combo="0" Crit="0" Hit="0" Def="0" Hp="0" Skill="18" Desc="增加200点攻击力&#x0D;    此技能一场战斗只能使用一次"/>
+	</Skill>
+</AF_SKILLS>

@@ -1,0 +1,16 @@
+update USER_00.t_user_task_0 set petid=26 where userid=6600100 and petid=25;
+update USER_00.t_user_task_0 set petid=25 where userid=5210100 and petid=24;
+update USER_00.t_user_task_0 set petid=24 where userid=3660100 and petid=23;
+update USER_00.t_user_task_0 set petid=23 where userid=4690100 and petid=22;
+update USER_00.t_user_task_0 set petid=22 where userid=470100 and petid=21;
+update USER_00.t_user_task_0 set petid=21 where userid=3800100 and petid=20;
+update USER_00.t_user_task_0 set petid=20 where userid=520100 and petid=19;
+update USER_00.t_user_task_0 set petid=19 where userid=520100 and petid=18;
+update USER_00.t_user_task_0 set petid=18 where userid=7040100 and petid=17;
+update USER_00.t_user_task_0 set petid=17 where userid=7960100 and petid=16;
+update USER_00.t_user_task_0 set petid=16 where userid=900100 and petid=15;
+update USER_00.t_user_task_0 set petid=15 where userid=4720100 and petid=14;
+update USER_00.t_user_task_0 set petid=14 where userid=7690100 and petid=13;
+update USER_00.t_user_task_0 set petid=13 where userid=7690100 and petid=12;
+update USER_00.t_user_task_0 set petid=12 where userid=7690100 and petid=11;
+update USER_00.t_user_task_0 set petid=11 where userid=180100 and petid=10;

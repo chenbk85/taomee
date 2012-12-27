@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Task:表示一个关卡，关卡总数数是10
+Award：表示一种奖励物品：奖励物品最大数量是10
+ID：对应的TD地图ID
+Mode：0休闲模式，1挑战模式
+ItemID:奖励物品ID
+Cnt：奖励物品数量
+RatPL1~2：普拉1~2次获取该物品的概率
+RatSL1~3：超辣1~3次获取该物品的概率
+***配置“直接到下一关”时，ItemID随意，Cnt=0
+***所有Award中的的掉落概率总和没有限制，但是必须是正数概率，总和可以不是100
+-->
+<TDAward>
+  <Task ID="65" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="50" RatPL2="" RatSL1="50" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="40" RatSL3=""/>
+  </Task>
+  <Task ID="66" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="49" RatPL2="" RatSL1="49" RatSL2="6" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="6" RatPL2="" RatSL1="6" RatSL2="39" RatSL3=""/>
+  </Task>
+  <Task ID="67" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="9" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="2" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="48" RatPL2="" RatSL1="48" RatSL2="7" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="7" RatPL2="" RatSL1="7" RatSL2="38" RatSL3=""/>
+  </Task>
+  <Task ID="68" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="9" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="2" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="47" RatPL2="" RatSL1="47" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="8" RatPL2="" RatSL1="8" RatSL2="37" RatSL3=""/>
+  </Task>
+  <Task ID="69" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="3" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="46" RatPL2="" RatSL1="46" RatSL2="9" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="9" RatPL2="" RatSL1="9" RatSL2="36" RatSL3=""/>
+  </Task>
+  <Task ID="70" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="3" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="45" RatPL2="" RatSL1="45" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="35" RatSL3=""/>
+  </Task>
+  <Task ID="71" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="7" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="4" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="44" RatPL2="" RatSL1="44" RatSL2="11" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="11" RatPL2="" RatSL1="11" RatSL2="34" RatSL3=""/>
+  </Task>
+  <Task ID="72" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="7" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="4" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="43" RatPL2="" RatSL1="43" RatSL2="12" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="12" RatPL2="" RatSL1="12" RatSL2="33" RatSL3=""/>
+  </Task>
+  <Task ID="73" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="6" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="5" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="42" RatPL2="" RatSL1="42" RatSL2="13" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="13" RatPL2="" RatSL1="13" RatSL2="32" RatSL3=""/>
+  </Task>
+  <Task ID="74" Mode="0">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="6" RatSL3=""/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="5" RatSL3=""/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="5" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="1" RatPL1="41" RatPL2="" RatSL1="41" RatSL2="14" RatSL3=""/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="" RatSL1="1" RatSL2="1" RatSL3=""/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="" RatSL1="10" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="3" RatPL2="" RatSL1="3" RatSL2="8" RatSL3=""/>
+    <Award ItemID="1353107" Cnt="1" RatPL1="5" RatPL2="" RatSL1="5" RatSL2="10" RatSL3=""/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="14" RatPL2="" RatSL1="14" RatSL2="31" RatSL3=""/>
+  </Task>
+  <Task ID="65" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="5"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="50" RatPL2="50" RatSL1="50" RatSL2="50" RatSL3="5"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="40"/>
+  </Task>
+  <Task ID="66" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="5"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="49" RatPL2="49" RatSL1="49" RatSL2="49" RatSL3="6"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="6" RatPL2="6" RatSL1="6" RatSL2="6" RatSL3="39"/>
+  </Task>
+  <Task ID="67" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="9"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="6"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="48" RatPL2="48" RatSL1="48" RatSL2="48" RatSL3="7"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="7" RatPL2="7" RatSL1="7" RatSL2="7" RatSL3="38"/>
+  </Task>
+  <Task ID="68" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="9"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="6"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="47" RatPL2="47" RatSL1="47" RatSL2="47" RatSL3="8"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="8" RatPL2="8" RatSL1="8" RatSL2="8" RatSL3="37"/>
+  </Task>
+  <Task ID="69" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="8"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="7"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="46" RatPL2="46" RatSL1="46" RatSL2="46" RatSL3="9"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="9" RatPL2="9" RatSL1="9" RatSL2="9" RatSL3="36"/>
+  </Task>
+  <Task ID="70" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="8"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="7"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="45" RatPL2="45" RatSL1="45" RatSL2="45" RatSL3="10"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="35"/>
+  </Task>
+  <Task ID="71" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="7"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="44" RatPL2="44" RatSL1="44" RatSL2="44" RatSL3="11"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="11" RatPL2="11" RatSL1="11" RatSL2="11" RatSL3="34"/>
+  </Task>
+  <Task ID="72" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="7"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="43" RatPL2="43" RatSL1="43" RatSL2="43" RatSL3="12"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="12" RatPL2="12" RatSL1="12" RatSL2="12" RatSL3="33"/>
+  </Task>
+  <Task ID="73" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="6"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="9"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="42" RatPL2="42" RatSL1="42" RatSL2="42" RatSL3="13"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="1" RatSL1="1" RatSL2="1" RatSL3="3"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="13" RatPL2="13" RatSL1="13" RatSL2="13" RatSL3="32"/>
+  </Task>
+  <Task ID="74" Mode="1">
+    <Award ItemID="0" Cnt="0" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="0" Cnt="100" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="6"/>
+    <Award ItemID="1353105" Cnt="1" RatPL1="2" RatPL2="3" RatSL1="2" RatSL2="3" RatSL3="9"/>
+    <Award ItemID="0" Cnt="1000" RatPL1="5" RatPL2="5" RatSL1="5" RatSL2="5" RatSL3="5"/>
+    <Award ItemID="1351180" Cnt="2" RatPL1="41" RatPL2="41" RatSL1="41" RatSL2="41" RatSL3="14"/>
+    <Award ItemID="1353307" Cnt="1" RatPL1="1" RatPL2="8" RatSL1="1" RatSL2="5" RatSL3="10"/>
+    <Award ItemID="0" Cnt="500" RatPL1="10" RatPL2="10" RatSL1="10" RatSL2="10" RatSL3="10"/>
+    <Award ItemID="1353104" Cnt="1" RatPL1="6" RatPL2="3" RatSL1="6" RatSL2="3" RatSL3="8"/>
+    <Award ItemID="1353109" Cnt="1" RatPL1="1" RatPL2="3" RatSL1="1" RatSL2="3" RatSL3="4"/>
+    <Award ItemID="1351180" Cnt="3" RatPL1="14" RatPL2="14" RatSL1="14" RatSL2="14" RatSL3="31"/>
+  </Task>
+</TDAward>

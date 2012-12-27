@@ -1,0 +1,10 @@
+﻿<task mapID="32" mode="3" starTime="9000" expScale="1.5" rateScale="1" score="400" losturl="swf/winswf3.swf" winurl="swf/lostswf3.swf" musicurl="dig.mp3" attackCountScale="2" startStar="220" startLifes="100">
+	<round tips="葫噜噜将在20秒后进攻，请做好准备">
+		<monster id="10021" pathID="1" time = "1000" count="50" live="2" lifeScale="2"/>		
+		<monster id="10021" pathID="1" time = "1500" count="50" stime = "900" live="2" lifeScale="2"/>
+		<monster id="10022" pathID="1" time = "2000" count="20" stime = "9600" live="2"/>
+	</round>
+    <round tips="1只多拉将在10秒后进攻，请做好准备">
+        <monster id="10408" pathID="1" time="0" count="1" stime="0" live="100" talk="" lifeScale="2.5"/> 
+    </round>
+</task>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CUTEPIG_MINE_RANDS>
+  <MapEntry ID="1" >
+    <Item ID="1613400" Count="10" RandStart="0" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="2" >
+    <Item ID="1613400" Count="13" RandStart="0" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="3" >
+    <Item ID="1613400" Count="17" RandStart="0" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="4" >
+    <Item ID="1613400" Count="23" RandStart="0" RandEnd="50" />
+    <Item ID="1613401" Count="10" RandStart="50" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="5" >
+    <Item ID="1613400" Count="26" RandStart="0" RandEnd="40" />
+    <Item ID="1613401" Count="12" RandStart="40" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="6" >
+    <Item ID="1613400" Count="26" RandStart="0" RandEnd="30" />
+    <Item ID="1613401" Count="15" RandStart="30" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="7" >
+    <Item ID="1613400" Count="38" RandStart="0" RandEnd="30" />
+    <Item ID="1613401" Count="18" RandStart="30" RandEnd="60" />
+    <Item ID="1613402" Count="10" RandStart="60" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="8" >
+    <Item ID="1613400" Count="40" RandStart="0" RandEnd="20" />
+    <Item ID="1613401" Count="23" RandStart="20" RandEnd="50" />
+    <Item ID="1613402" Count="12" RandStart="50" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="9" >
+    <Item ID="1613400" Count="40" RandStart="0" RandEnd="20" />
+    <Item ID="1613401" Count="25" RandStart="20" RandEnd="40" />
+    <Item ID="1613402" Count="15" RandStart="40" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="10" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="20" />
+    <Item ID="1613401" Count="50" RandStart="20" RandEnd="40" />
+    <Item ID="1613402" Count="15" RandStart="40" RandEnd="70" />
+    <Item ID="1613404" Count="37" RandStart="70" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="11" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="20" />
+    <Item ID="1613401" Count="50" RandStart="20" RandEnd="40" />
+    <Item ID="1613402" Count="20" RandStart="40" RandEnd="60" />
+    <Item ID="1613404" Count="41" RandStart="60" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="12" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="58" RandStart="10" RandEnd="30" />
+    <Item ID="1613402" Count="24" RandStart="30" RandEnd="50" />
+    <Item ID="1613404" Count="46" RandStart="50" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="13" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="58" RandStart="10" RandEnd="30" />
+    <Item ID="1613402" Count="36" RandStart="30" RandEnd="40" />
+    <Item ID="1613404" Count="60" RandStart="40" RandEnd="80" />
+    <Item ID="1613405" Count="15" RandStart="80" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="14" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="65" RandStart="10" RandEnd="20" />
+    <Item ID="1613402" Count="55" RandStart="20" RandEnd="30" />
+    <Item ID="1613404" Count="60" RandStart="30" RandEnd="70" />
+    <Item ID="1613405" Count="22" RandStart="70" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="15" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="58" RandStart="10" RandEnd="20" />
+    <Item ID="1613402" Count="46" RandStart="20" RandEnd="30" />
+    <Item ID="1613404" Count="60" RandStart="30" RandEnd="60" />
+    <Item ID="1613405" Count="35" RandStart="60" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="16" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="58" RandStart="10" RandEnd="20" />
+    <Item ID="1613402" Count="40" RandStart="20" RandEnd="30" />
+    <Item ID="1613404" Count="60" RandStart="30" RandEnd="50" />
+    <Item ID="1613405" Count="42" RandStart="50" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="17" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="58" RandStart="10" RandEnd="20" />
+    <Item ID="1613402" Count="40" RandStart="20" RandEnd="30" />
+    <Item ID="1613404" Count="80" RandStart="30" RandEnd="50" />
+    <Item ID="1613405" Count="51" RandStart="50" RandEnd="80" />
+    <Item ID="1613406" Count="30" RandStart="80" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="18" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="58" RandStart="10" RandEnd="20" />
+    <Item ID="1613402" Count="40" RandStart="20" RandEnd="30" />
+    <Item ID="1613404" Count="80" RandStart="30" RandEnd="50" />
+    <Item ID="1613405" Count="55" RandStart="50" RandEnd="70" />
+    <Item ID="1613406" Count="43" RandStart="70" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="19" >
+    <Item ID="1613400" Count="80" RandStart="0" RandEnd="10" />
+    <Item ID="1613401" Count="58" RandStart="10" RandEnd="20" />
+    <Item ID="1613402" Count="40" RandStart="20" RandEnd="30" />
+    <Item ID="1613404" Count="80" RandStart="30" RandEnd="40" />
+    <Item ID="1613405" Count="55" RandStart="40" RandEnd="60" />
+    <Item ID="1613406" Count="50" RandStart="60" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="20" >
+    <Item ID="1613401" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613404" Count="100" RandStart="10" RandEnd="30" />
+    <Item ID="1613405" Count="50" RandStart="30" RandEnd="40" />
+    <Item ID="1613406" Count="50" RandStart="40" RandEnd="80" />
+    <Item ID="1613408" Count="90" RandStart="80" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="21" >
+    <Item ID="1613401" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613404" Count="100" RandStart="10" RandEnd="20" />
+    <Item ID="1613405" Count="60" RandStart="20" RandEnd="30" />
+    <Item ID="1613406" Count="55" RandStart="30" RandEnd="70" />
+    <Item ID="1613408" Count="90" RandStart="70" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="22" >
+    <Item ID="1613401" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613404" Count="100" RandStart="10" RandEnd="20" />
+    <Item ID="1613405" Count="100" RandStart="20" RandEnd="30" />
+    <Item ID="1613406" Count="60" RandStart="30" RandEnd="60" />
+    <Item ID="1613408" Count="90" RandStart="60" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="23" >
+    <Item ID="1613401" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613405" Count="100" RandStart="10" RandEnd="20" />
+    <Item ID="1613406" Count="65" RandStart="20" RandEnd="50" />
+    <Item ID="1613408" Count="80" RandStart="50" RandEnd="80" />
+    <Item ID="1613409" Count="60" RandStart="80" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="24" >
+    <Item ID="1613401" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613405" Count="110" RandStart="10" RandEnd="20" />
+    <Item ID="1613406" Count="60" RandStart="20" RandEnd="50" />
+    <Item ID="1613408" Count="80" RandStart="50" RandEnd="70" />
+    <Item ID="1613409" Count="70" RandStart="70" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="25" >
+    <Item ID="1613401" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613405" Count="130" RandStart="10" RandEnd="20" />
+    <Item ID="1613406" Count="80" RandStart="20" RandEnd="40" />
+    <Item ID="1613408" Count="80" RandStart="40" RandEnd="60" />
+    <Item ID="1613409" Count="70" RandStart="60" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="26" >
+    <Item ID="1613402" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613405" Count="200" RandStart="10" RandEnd="20" />
+    <Item ID="1613406" Count="100" RandStart="20" RandEnd="30" />
+    <Item ID="1613408" Count="100" RandStart="30" RandEnd="50" />
+    <Item ID="1613409" Count="80" RandStart="50" RandEnd="80" />
+    <Item ID="1613410" Count="25" RandStart="80" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="27" >
+    <Item ID="1613402" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613405" Count="180" RandStart="10" RandEnd="20" />
+    <Item ID="1613406" Count="100" RandStart="20" RandEnd="30" />
+    <Item ID="1613408" Count="100" RandStart="30" RandEnd="50" />
+    <Item ID="1613409" Count="100" RandStart="50" RandEnd="70" />
+    <Item ID="1613410" Count="40" RandStart="70" RandEnd="100" />
+  </MapEntry>
+  <MapEntry ID="28" >
+    <Item ID="1613402" Count="100" RandStart="0" RandEnd="10" />
+    <Item ID="1613405" Count="150" RandStart="10" RandEnd="20" />
+    <Item ID="1613406" Count="100" RandStart="20" RandEnd="30" />
+    <Item ID="1613408" Count="100" RandStart="30" RandEnd="40" />
+    <Item ID="1613409" Count="100" RandStart="40" RandEnd="60" />
+    <Item ID="1613410" Count="50" RandStart="60" RandEnd="100" />
+  </MapEntry>
+</CUTEPIG_MINE_RANDS>

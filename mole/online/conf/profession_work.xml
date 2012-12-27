@@ -1,0 +1,60 @@
+<PROFESSION>
+<Entry ID="1" PROFESSION="7" LEVEL="1" VIP="0" PRIORITY="5">
+	<ItemIn>
+		<Item ID="190661" Count="4" tips="家园种植白杨树树苗、收获获得"/>
+	</ItemIn>
+	<ItemOut>
+		<Item ID="160716" Count="1" tips="花花绿绿的小椅子，很有春天的味道哟！" />
+	</ItemOut>
+</Entry>
+<Entry ID="2" PROFESSION="7" LEVEL="2" VIP="0" PRIORITY="4">
+	<ItemIn>
+		<Item ID="190638" Count="4" tips="家园种植香樟树苗、收获获得" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="160715" Count="1" tips="这是一个大大的向日葵，有桌子那么大！"/>
+	</ItemOut>
+	</Entry>
+<Entry ID="3" PROFESSION="7" LEVEL="3" VIP="0" PRIORITY="3">
+	<ItemIn>
+		<Item ID="190638" Count="10" tips="家园种植香樟树苗、收获获得" />
+		<Item ID="190661" Count="10" tips="家园种植白杨树树苗、收获获得" />
+		<Item ID="16003" Count="2" tips="淘淘乐街道具店购买获得" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="1220143" Count="1" tips="一二三四，四只会转圈圈的小拉姆！"/>
+	</ItemOut>
+	</Entry>
+<Entry ID="4" PROFESSION="7" LEVEL="4" VIP="0" PRIORITY="2">
+	<ItemIn>
+		<Item ID="190638" Count="15" tips="家园种植香樟树苗、收获获得" />
+		<Item ID="190661" Count="20" tips="家园种植白杨树树苗、收获获得" />
+		<Item ID="16002" Count="3" tips="淘淘乐街道具店购买获得" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="1220144" Count="1" tips="怎么形容呢？它是一个浴缸，\n又是一个热气球，恩！高科技产品！"/>
+	</ItemOut>
+	</Entry>
+<Entry ID="5" PROFESSION="7" LEVEL="5" VIP="0" PRIORITY="1">
+	<ItemIn>
+		<Item ID="190638" Count="25" tips="家园种植香樟树苗、收获获得" />
+		<Item ID="190661" Count="30" tips="家园种植白杨树树苗、收获获得" />
+		<Item ID="16008" Count="5" tips="淘淘乐街道具店购买获得" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="1220145" Count="1" tips="是不是有点眼熟？仿真特洛伊木马，\n仿真得你都看不出来它是仿真的！"/>
+	</ItemOut>
+</Entry>
+<Entry ID="6" PROFESSION="7" LEVEL="5" VIP="0" PRIORITY="6">
+	<ItemIn>
+		<Item ID="190638" Count="40" tips="家园种植香樟树苗、收获获得" />
+		<Item ID="190661" Count="50" tips="家园种植白杨树树苗、收获获得" />
+		<Item ID="16004" Count="8" tips="淘淘乐街道具店购买获得" />
+		<Item ID="16002" Count="8" tips="淘淘乐街道具店购买获得" />
+	</ItemIn>
+	<ItemOut>
+		<Item ID="160738" Count="1" tips="拥有三个房间的真正意义的好房子！"/>
+	</ItemOut>
+</Entry>
+</PROFESSION>
+

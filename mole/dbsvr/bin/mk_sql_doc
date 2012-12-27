@@ -1,0 +1,3 @@
+#!/bin/bash
+mole_sql.py > /tmp/mole_sql.html
+scp -2 /tmp/mole_sql.html  mole@10.1.1.5:/var/www/

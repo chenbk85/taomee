@@ -1,0 +1,1 @@
+rm -f ~/DB/ser/log/* ~/DB/com/log/*  ~/DB/payser/log/*

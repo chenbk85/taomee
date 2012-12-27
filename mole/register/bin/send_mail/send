@@ -1,0 +1,44 @@
+#!/usr/bin/perl 
+
+require '/home/spark/Register/bin/send_mail/lib/MIMEMAIL.pm';
+$mail = MIMEMAIL->new('HTML');
+
+$recipients = $ARGV[0] ;
+$userid = $ARGV[1];
+$activecode = $ARGV[2];
+
+#print "the argv are $recipients->$userid->$activecode\n" ;
+$mail->{charset} = 'utf-8';
+
+$mail->{senderName} = 'taomee';
+$mail->{senderMail} = 'service@taomee.com';
+
+#$mail->{bcc} = 'newday.jesse@gmail.com';
+
+$mail->{subject} = "欢迎您加入摩尔庄园";
+
+open(FILENAME1, "./1.html");
+open(FILENAME2 ,"./2.html");
+
+undef $/ ;
+my $text1 = <FILENAME1> ;
+my $text2 = <FILENAME2> ;
+
+my $infor = "
+<p>链接地址：<a href=\"http://10.1.1.5/cgi-bin/mole_emissary.cgi?user_id=$userid&amp;&active_code=$activecode\" target=\"_blank\">http://10.1.1.5/cgi-bin/mole_emissary.cgi?user_id=$userid&amp;active_code=$activecode</a><br>";
+
+$mail->{body} = $text1.$infor.$text2 ;
+
+
+#$mail->{body} = './1.html' ;
+#$mail->{attachments}[0] = 'path/to/file1';
+#$mail->{attachments}[1] = 'path/to/file2';
+#...
+
+$mail->create();
+
+if(!$mail->send($recipients)) { print $mail->{error}; }
+
+close(FILENAME1);
+close(FILENAME2);
+

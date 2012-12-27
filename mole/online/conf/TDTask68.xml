@@ -1,0 +1,26 @@
+﻿<task mapID="103" mode="0" starTime="7000" expScale="1" rateScale="1" score="200" losturl="swf/winswf3.swf" winurl="swf/lostswf4.swf" musicurl="christmas.mp3" startStar="45" startLifes="100">	
+	<round tips="第四关挑战将在20秒后开始，请做好准备">
+		<monster id="10012" pathID="1" time = "900" count="3" live="4"/>
+		<monster id="10012" pathID="1" time = "900" count="2" stime = "1200" live="4"/>		
+	</round>
+	<round tips="第四关挑战将在10秒后开始，请做好准备">
+		<monster id="10007" pathID="1" time = "1300" count="3" live="4"/>		
+		<monster id="10007" pathID="2" time = "900" count="3" stime = "1400" live="4"/>
+	</round>
+	<round tips="第四关挑战将在10秒后开始，请做好准备">
+		<monster id="10007" pathID="2" time = "1100" count="4" live="4"/>		
+		<monster id="10012" pathID="1" time = "1100" count="3" stime = "1200" live="4"/>
+	</round>
+	<round tips="第四关挑战将在10秒后开始，请做好准备">
+		<monster id="10012" pathID="1" time = "1200" count="4" live="4"/>		
+		<monster id="10007" pathID="2" time = "1700" count="4" stime = "1000" live="4"/>
+	</round>
+	<round tips="第四关挑战将在10秒后开始，请做好准备">
+		<monster id="10007" pathID="1" time = "800" count="4" live="4"/>		
+		<monster id="10007" pathID="2" time = "800" count="3" stime = "2400" live="4"/>
+		<monster id="10012" pathID="1" time = "800" count="2" stime = "4000" live="4"/>
+	</round>
+</task>
+
+
+

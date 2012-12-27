@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Exp：经验需求
+Gold：金币需求
+Level：等级从，1开始
+-->
+<CPLevel>
+  <LevelInfo Level="1" Exp="0">
+    </LevelInfo>
+  <LevelInfo Level="2" Exp="10">
+   <Award ItemID="1613100" ItemCnt="6"/>
+   <Award ItemID="1613114" ItemCnt="1"/>
+    </LevelInfo>
+  <LevelInfo Level="3" Exp="38">
+    <Award ItemID="1613100" ItemCnt="12"/>
+    <Award ItemID="1613114" ItemCnt="2"/>
+     </LevelInfo>
+  <LevelInfo Level="4" Exp="89">
+    <Award ItemID="1613100" ItemCnt="18"/>
+    <Award ItemID="1613114" ItemCnt="3"/>
+  </LevelInfo>
+  <LevelInfo Level="5" Exp="169">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613114" ItemCnt="3"/>
+  </LevelInfo>
+  <LevelInfo Level="6" Exp="280">
+    <Award ItemID="1613100" ItemCnt="30"/>
+    <Award ItemID="1613114" ItemCnt="4"/>
+  </LevelInfo>
+  <LevelInfo Level="7" Exp="426">
+    <Award ItemID="1613100" ItemCnt="40"/>
+    <Award ItemID="1613114" ItemCnt="5"/>
+  </LevelInfo>
+  <LevelInfo Level="8" Exp="611">
+    <Award ItemID="1613109" ItemCnt="1"/>
+    <Award ItemID="1613000" ItemCnt="3"/>
+  </LevelInfo>
+  <LevelInfo Level="9" Exp="837">
+    <Award ItemID="1613109" ItemCnt="1"/>
+    <Award ItemID="1613001" ItemCnt="3"/>
+  </LevelInfo>
+  <LevelInfo Level="10" Exp="1107">
+    <Award ItemID="1613109" ItemCnt="1"/>
+    <Award ItemID="1613002" ItemCnt="3"/>
+  </LevelInfo>
+  <LevelInfo Level="11" Exp="1423">
+    <Award ItemID="1613111" ItemCnt="1"/>
+    <Award ItemID="1613003" ItemCnt="4"/>
+  </LevelInfo>
+  <LevelInfo Level="12" Exp="1787">
+    <Award ItemID="1613111" ItemCnt="2"/>
+    <Award ItemID="1613004" ItemCnt="5"/>
+  </LevelInfo>
+  <LevelInfo Level="13" Exp="2202">
+    <Award ItemID="1613111" ItemCnt="3"/>
+    <Award ItemID="1613005" ItemCnt="6"/>
+  </LevelInfo>
+  <LevelInfo Level="14" Exp="2670">
+    <Award ItemID="1613108" ItemCnt="1"/>
+    <Award ItemID="1613009" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="15" Exp="3193">
+    <Award ItemID="1613108" ItemCnt="1"/>
+    <Award ItemID="1613006" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="16" Exp="3773">
+    <Award ItemID="1613108" ItemCnt="2"/>
+    <Award ItemID="1613007" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="17" Exp="4413">
+    <Award ItemID="1613113" ItemCnt="1"/>
+    <Award ItemID="1613115" ItemCnt="1"/>
+  </LevelInfo>
+  <LevelInfo Level="18" Exp="5113">
+    <Award ItemID="1613110" ItemCnt="1"/>
+    <Award ItemID="1613115" ItemCnt="1"/>
+  </LevelInfo>
+  <LevelInfo Level="19" Exp="5876">
+    <Award ItemID="1613104" ItemCnt="10"/>
+    <Award ItemID="1613108" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="20" Exp="6704">
+    <Award ItemID="1613104" ItemCnt="20"/>
+    <Award ItemID="1613108" ItemCnt="4"/>
+  </LevelInfo>
+  <LevelInfo Level="21" Exp="8045">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613250" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="22" Exp="9488">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613253" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="23" Exp="11035">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613251" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="24" Exp="12689">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613252" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="25" Exp="14452">
+    <Award ItemID="1613292" ItemCnt="1"/>
+    <Award ItemID="1613270" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="26" Exp="16327">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613273" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="27" Exp="18315">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613272" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="28" Exp="20419">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613271" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="29" Exp="22641">
+    <Award ItemID="1613100" ItemCnt="20"/>
+    <Award ItemID="1613295" ItemCnt="2"/>
+  </LevelInfo>
+  <LevelInfo Level="30" Exp="24983">
+    <Award ItemID="1613104" ItemCnt="20"/>
+    <Award ItemID="1613293" ItemCnt="2"/>
+  </LevelInfo>
+</CPLevel>

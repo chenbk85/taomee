@@ -1,0 +1,896 @@
+<GamesBonus>
+	<!--小游戏奖励配置表 Start 游戏积分区间起始值 End 结束值 CMD DB协议号, 只支持十进制的-->
+	<!--打地鼠-->
+	<!--Game GameID="1" CMD="0">
+		<Score Start="0" End="49" Medal="0" >
+			<Item ID="0" Count="0" />
+			<Item ID="1" Count="0" />
+		</Score>
+		<Score Start="50" End="199" Medal="1" >
+			<Item ID="0" Count="20" />
+			<Item ID="1" Count="20" />
+		</Score>
+		<Score Start="200" End="399" Medal="2">
+			<Item ID="0" Count="50" />
+			<Item ID="1" Count="50" />
+		</Score>
+		<Score Start="400" End="699" Medal="4">
+			<Item ID="0" Count="80" />
+			<Item ID="1" Count="80" />
+		</Score>
+		<Score Start="700" End="999" Medal="6">
+			<Item ID="0" Count="200" />
+			<Item ID="1" Count="200" />
+		</Score>
+		<Score Start="1000" End="1400" Medal="8">
+			<Item ID="0" Count="300" />
+			<Item ID="1" Count="300" />
+		</Score>
+		<Score Start="1401" End="99999" Medal="12">
+			<Item ID="0" Count="500" />
+			<Item ID="1" Count="500" />
+		</Score>	
+	</Game-->
+
+	<!--顶屁股-->
+	<!--Game GameID="2" CMD="0">
+		<Score Start="0" End="30" Medal="0" >
+			<Item ID="0" Count="0" />
+			<Item ID="1" Count="0" />
+		</Score>
+		<Score Start="31" End="100" Medal="1" >
+			<Item ID="0" Count="30" />
+			<Item ID="1" Count="30" />
+		</Score>
+		<Score Start="101" End="200" Medal="2">
+			<Item ID="0" Count="50" />
+			<Item ID="1" Count="50" />
+		</Score>
+		<Score Start="201" End="300" Medal="4">
+			<Item ID="0" Count="80" />
+			<Item ID="1" Count="80" />
+		</Score>
+		<Score Start="301" End="400" Medal="6">
+			<Item ID="0" Count="200" />
+			<Item ID="1" Count="200" />
+		</Score>
+		<Score Start="401" End="500" Medal="8">
+			<Item ID="0" Count="400" />
+			<Item ID="1" Count="400" />
+		</Score>
+		<Score Start="501" End="99999" Medal="12">
+			<Item ID="0" Count="600" />
+			<Item ID="1" Count="600" />
+		</Score>	
+	</Game-->
+
+	<!--训龙高手-->
+	<!--Game GameID="3" CMD="0">
+		<Score Start="0" End="100" Medal="0" >
+			<Item ID="0" Count="0" />
+			<Item ID="1" Count="0" />
+			<Item ID="7" Count="0" />
+		</Score>
+		<Score Start="101" End="400" Medal="1" >
+			<Item ID="0" Count="20" />
+			<Item ID="1" Count="20" />
+			<Item ID="7" Count="20" />
+		</Score>
+		<Score Start="401" End="800" Medal="2">
+			<Item ID="0" Count="50" />
+			<Item ID="1" Count="50" />
+			<Item ID="7" Count="50" />
+		</Score>
+		<Score Start="801" End="1200" Medal="4">
+			<Item ID="0" Count="80" />
+			<Item ID="1" Count="80" />
+			<Item ID="7" Count="80" />
+		</Score>
+		<Score Start="1201" End="2000" Medal="6">
+			<Item ID="0" Count="150" />
+			<Item ID="1" Count="150" />
+			<Item ID="7" Count="150" />
+		</Score>
+		<Score Start="2001" End="5000" Medal="8">
+			<Item ID="0" Count="300" />
+			<Item ID="1" Count="300" />
+			<Item ID="7" Count="300" />
+		</Score>
+		<Score Start="5001" End="99999" Medal="12">
+			<Item ID="0" Count="600" />
+			<Item ID="1" Count="600" />
+			<Item ID="7" Count="600" />
+		</Score>	
+	</Game-->
+
+	<!--打气球小游戏-->
+	<Game GameID="4" CMD="0">
+		<Score Start="0" End="0">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="50" End="50" DayType="220" DayCount="40">
+			<Item ID="1230035" Count="1" />
+		</Score>
+		<Score Start="60" End="60" DayType="220" DayCount="40">
+			<Item ID="190684" Count="1" />
+		</Score>
+		<Score Start="80" End="80" DayType="220" DayCount="40">
+			<Item ID="190688" Count="1"/>
+		</Score>
+		<Score Start="110" End="110" DayType="220" DayCount="40">
+			<Item ID="190685" Count="1" />
+		</Score>
+		<Score Start="130" End="130" DayType="220" DayCount="40">
+			<Item ID="160811" Count="1" />
+		</Score>
+		<Score Start="140" End="140" DayType="220" DayCount="40">
+			<Item ID="160810" Count="1" />
+		</Score>
+	</Game>
+
+	<!--夹娃娃游戏-->
+	<Game GameID="5" CMD="0">
+		<Score Start="0" End="0">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="100" End="100" DayType="221" DayCount="30">
+			<Item ID="160808" Count="1" />
+		</Score>
+		<Score Start="200" End="200" DayType="221" DayCount="30">
+			<Item ID="160809" Count="1" />
+		</Score>
+		<Score Start="300" End="300" DayType="221" DayCount="30">
+			<Item ID="160810" Count="1"/>
+		</Score>
+		<Score Start="400" End="400" DayType="221" DayCount="30">
+			<Item ID="160811" Count="1" />
+		</Score>
+		<Score Start="500" End="500" DayType="221" DayCount="30">
+			<Item ID="160812" Count="1" />
+		</Score>
+		<Score Start="600" End="600" DayType="221" DayCount="30">
+			<Item ID="160813" Count="1" />
+		</Score>
+	</Game>
+
+	<!--拼字母游戏-->
+	<Game GameID="8" CMD="0" VIP="0">
+		<Score Start="1" End="1" DayType="223" DayCount="3">
+			<Item ID="180064" Count="1" />
+		</Score>
+		<Score Start="2" End="2" DayType="223" DayCount="3">
+			<Item ID="180065" Count="1" />
+		</Score>
+		<Score Start="3" End="3" DayType="223" DayCount="3">
+			<Item ID="180067" Count="1" />
+		</Score>
+		<Score Start="4" End="4" DayType="223" DayCount="3">
+			<Item ID="180071" Count="1" />
+		</Score>
+		<Score Start="5" End="5" DayType="223" DayCount="3">
+			<Item ID="180072" Count="1" />
+		</Score>
+	</Game>
+	<!--拉姆雕像-->
+	<Game GameID="9" CMD="0" VIP="0">
+		<Score Start="1" End="1" DayType="224" DayCount="3">
+			<Item ID="190028" Count="5" />
+		</Score>
+		<Score Start="2" End="2" DayType="224" DayCount="3">
+			<Item ID="1270003" Count="1" />
+		</Score>
+		<Score Start="3" End="3" DayType="224" DayCount="3">
+			<Item ID="1270001" Count="1" />
+		</Score>
+		<Score Start="4" End="4" DayType="224" DayCount="3">
+			<Item ID="160401" Count="1" />
+		</Score>
+		<Score Start="5" End="5" DayType="224" DayCount="3">
+			<Item ID="160397" Count="1" />
+		</Score>
+	</Game>
+	
+	<!--马术比赛输出-->
+	<!--Game GameID="10" CMD="0" VIP="0">
+		<Score Start="1" End="500">
+			<Item ID="17013" Count="1" />
+		</Score>
+		<Score Start="500" End="1000">
+			<Item ID="17013" Count="2" />
+		</Score>
+		<Score Start="1000" End="1500">
+			<Item ID="17013" Count="3" />
+		</Score>
+		<Score Start="1500" End="3000">
+			<Item ID="17013" Count="4" />
+		</Score>
+	</Game-->
+
+	<!--古老骑士友谊赛-->
+	<Game GameID="11" CMD="0" VIP="1">
+		<Score Start="1" End="200" DayType="225" DayCount="1">
+			<Item ID="190746" Count="1"/>
+		</Score>
+		<Score Start="200" End="1500" DayType="225" DayCount="1">
+			<Item ID="190746" Count="2"/>
+		</Score>
+		<Score Start="1500" End="2500" DayType="225" DayCount="1">
+			<Item ID="190746" Count="3"/>
+		</Score>
+		<Score Start="2500" End="4001" DayType="225" DayCount="1">
+			<Item ID="190746" Count="4"/>
+		</Score>
+	</Game>
+	<!--色彩迷宫-->
+	<Game GameID="12" CMD="0" VIP="0">
+		<Score Start="0" End="200" DayType="222" DayCount="1">
+		</Score>
+		<Score Start="200" End="500" DayType="222" DayCount="1">
+		</Score>
+		<Score Start="500" End="1500" DayType="222" DayCount="1">
+		</Score>
+		<Score Start="1500" End="2500" DayType="222" DayCount="1">
+		</Score>
+		<Score Start="2500" End="5500" DayType="222" DayCount="1">
+		</Score>
+		<Score Start="5500" End="9600" DayType="222" DayCount="1">
+		</Score>
+	</Game>
+	<!--色彩迷宫-->
+	<!--Game GameID="12" CMD="0" VIP="0">
+		<Score Start="0" End="200" DayType="222" DayCount="1">
+			<Item ID="0" Count="0"/>
+		</Score>
+		<Score Start="200" End="500" DayType="222" DayCount="1">
+			<Item ID="190028" Count="1"/>
+			<Item ID="190351" Count="1"/>
+		</Score>
+		<Score Start="500" End="1500" DayType="222" DayCount="1">
+			<Item ID="1270039" Count="2"/>
+			<Item ID="190141" Count="2"/>
+		</Score>
+		<Score Start="1500" End="2500" DayType="222" DayCount="1">
+			<Item ID="190309" Count="2"/>
+			<Item ID="1230005" Count="2"/>
+		</Score>
+		<Score Start="2500" End="5500" DayType="222" DayCount="1">
+			<Item ID="1230045" Count="1"/>
+			<Item ID="1230046" Count="1"/>
+			<Item ID="190309" Count="4"/>
+		</Score>
+		<Score Start="5500" End="9600" DayType="222" DayCount="1">
+			<Item ID="1270026" Count="1"/>
+			<Item ID="1270016" Count="3"/>
+			<Item ID="190309" Count="5"/>
+		</Score>
+	</Game-->
+
+	<!--南瓜迷宫-->
+	<!--Game GameID="13" CMD="0" VIP="0">
+		<Score Start="0" End="2000">
+			<Item ID="0" Count="0"/>
+		</Score>
+		<Score Start="2840" End="4260">
+			<Item ID="190022" Count="1"/>
+		</Score>
+		<Score Start="4260" End="5680">
+			<Item ID="190022" Count="2"/>
+		</Score>
+		<Score Start="5680" End="7100">
+			<Item ID="190022" Count="3"/>
+		</Score>
+		<Score Start="7100" End="9940">
+			<Item ID="190022" Count="4"/>
+		</Score>
+		<Score Start="9940" End="10000">
+			<Item ID="190022" Count="5"/>
+		</Score>
+	</Game-->
+
+	<!--脚印数量兑换物品 1月-->
+	<Game GameID="17" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="190671" Count="3"/>
+		</Score>
+		<Score Start="2" End="2">
+			<Item ID="1230016" Count="1"/>
+		</Score>
+		<Score Start="3" End="3">
+			<Item ID="1230052" Count="1"/>
+		</Score>
+		<Score Start="6" End="6">
+			<Item ID="1270012" Count="1"/>
+		</Score>
+	</Game>
+	<!--脚印数量兑换物品 2月-->
+	<Game GameID="18" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="190840" Count="1"/>
+		</Score>
+		<Score Start="3" End="3">
+			<Item ID="1270076" Count="1"/>
+		</Score>
+		<Score Start="6" End="6">
+			<Item ID="1270077" Count="1"/>
+		</Score>
+	</Game>
+	<!--脚印数量兑换物品 3-->
+	<Game GameID="19" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="17018" Count="1"/>
+		</Score>
+		<Score Start="2" End="2">
+			<Item ID="190309" Count="1"/>
+		</Score>
+		<Score Start="6" End="6">
+			<Item ID="1353203" Count="1"/>
+		</Score>
+	</Game>
+	<!--脚印数量兑换物品 4-->
+	<Game GameID="20" CMD="46488" >
+		<Score Start="3" End="3">
+			<Item ID="1353101" Count="1"/>
+		</Score>
+		<Score Start="6" End="6">
+			<Item ID="1353205" Count="1"/>
+		</Score>
+		<Score Start="10" End="10">
+			<Item ID="1353212" Count="1"/>
+		</Score>
+	</Game>
+
+	<!--脚印数量兑换物品 5-->
+	<Game GameID="21" CMD="46488" >
+		<Score Start="6" End="6">
+			<Item ID="1353213" Count="1"/>
+		</Score>
+		<Score Start="8" End="8">
+			<Item ID="1453003" Count="1"/>
+		</Score>
+		<Score Start="10" End="10">
+			<Item ID="1353107" Count="1"/>
+		</Score>
+	</Game>
+	<!--脚印数量兑换物品 6-->
+	<Game GameID="22" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="1353106" Count="1"/>
+		</Score>
+		<Score Start="2" End="2">
+			<Item ID="1453301" Count="1"/>
+		</Score>
+		<Score Start="12" End="12">
+			<Item ID="1353223" Count="1"/>
+		</Score>
+	</Game>
+	<!--脚印数量兑换物品 7-->
+	<Game GameID="23" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="190671" Count="1"/>
+		</Score>
+		<Score Start="2" End="2">
+			<Item ID="1270018" Count="1"/>
+		</Score>
+		<Score Start="4" End="4">
+			<Item ID="1353264" Count="1"/>
+		</Score>
+		<Score Start="5" End="5">
+			<Item ID="1353219" Count="1"/>
+		</Score>
+	</Game>
+	<!--脚印数量兑换物品 8-->
+	<Game GameID="24" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="180048" Count="1"/>
+		</Score>
+		<Score Start="3" End="3">
+			<Item ID="160927" Count="1"/>
+		</Score>
+		<Score Start="4" End="4">
+			<Item ID="160926" Count="1"/>
+		</Score>
+		<Score Start="5" End="5">
+			<Item ID="1353216" Count="1"/>
+		</Score>
+	</Game>
+	<!--脚印数量兑换物品 9-->
+	<Game GameID="25" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="160956" Count="1"/>
+		</Score>
+		<Score Start="2" End="2">
+			<Item ID="160960" Count="1"/>
+		</Score>
+		<Score Start="3" End="3">
+			<Item ID="160959" Count="1"/>
+		</Score>
+		<Score Start="4" End="4">
+			<Item ID="160958" Count="1"/>
+		</Score>
+		<Score Start="5" End="5">
+			<Item ID="160957" Count="1"/>
+		</Score>
+
+	</Game>
+	<!--脚印数量兑换物品 10-->
+	<Game GameID="26" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="180041" Count="1"/>
+		</Score>
+		<Score Start="2" End="2">
+			<Item ID="180070" Count="1"/>
+		</Score>
+		<Score Start="3" End="3">
+			<Item ID="180071" Count="1"/>
+		</Score>
+		<Score Start="4" End="4">
+			<Item ID="180066" Count="1"/>
+		</Score>
+		<Score Start="5" End="5">
+			<Item ID="180065" Count="1"/>
+		</Score>
+	</Game>
+
+	<!--脚印数量兑换物品 11-->
+	<Game GameID="27" CMD="46488" >
+		<Score Start="1" End="1">
+			<Item ID="1220106" Count="1"/>
+		</Score>
+		<Score Start="2" End="2">
+			<Item ID="1220119" Count="1"/>
+		</Score>
+		<Score Start="3" End="3">
+			<Item ID="1220126" Count="1"/>
+		</Score>
+		<Score Start="4" End="4">
+			<Item ID="1220142" Count="1"/>
+		</Score>
+		<Score Start="5" End="5">
+			<Item ID="1220141" Count="1"/>
+		</Score>
+
+	</Game>
+	<!--脚印数量兑换物品 12-->
+	<Game GameID="28" CMD="46488" >
+		<Score Start="5" End="5">
+			<Item ID="1593010" Count="1"/>
+		</Score>
+		<Score Start="6" End="6">
+			<Item ID="1593011" Count="1"/>
+		</Score>
+		<Score Start="10" End="10">
+			<Item ID="1593030" Count="1"/>
+		</Score>
+	</Game>
+	
+	<!--丫丽测试输出-->
+	<!--Game GameID="29" CMD="0" VIP="0">
+		<Score Start="1" End="60">
+			<Item ID="0" Count="500" />
+			<Item ID="1230036" Count="1" />
+		</Score>
+		<Score Start="61" End="80">
+			<Item ID="0" Count="200" />
+		</Score>
+		<Score Start="81" End="120">
+			<Item ID="0" Count="100" />
+		</Score>
+		<Score Start="121" End="86400">
+			<Item ID="0" Count="10" />
+		</Score>
+	</Game-->
+
+	<!--神秘爆豆机 20110919下掉-->
+	<!--Game GameID="30" CMD="0" VIP="0">
+		<Score Start="0" End="10" DayType="226" DayCount="10">
+			<Item ID="1230001" Count="1"/>
+		</Score>
+		<Score Start="11" End="20" DayType="226" DayCount="10">
+			<Item ID="1230001" Count="3"/>
+		</Score>
+		<Score Start="21" End="30" DayType="226" DayCount="10">
+			<Item ID="1230009" Count="1"/>
+		</Score>
+		<Score Start="31" End="40" DayType="226" DayCount="10">
+			<Item ID="1230009" Count="3"/>
+		</Score>
+		<Score Start="41" End="50" DayType="226" DayCount="10">
+			<Item ID="1230017" Count="1"/>
+		</Score>
+		<Score Start="51" End="55" DayType="226" DayCount="10">
+			<Item ID="1230017" Count="3"/>
+		</Score>
+		<Score Start="56" End="60" DayType="226" DayCount="10">
+			<Item ID="1230016" Count="1"/>
+		</Score>
+		<Score Start="61" End="65" DayType="226" DayCount="10">
+			<Item ID="1230016" Count="3"/>
+		</Score>
+		<Score Start="66" End="70" DayType="226" DayCount="10">
+			<Item ID="16012" Count="2"/>
+		</Score>
+		<Score Start="71" End="999" DayType="226" DayCount="10">
+			<Item ID="16012" Count="5"/>
+		</Score>
+	</Game-->
+
+	<!--卡酷T系列-->
+	<!--Game GameID="31" CMD="4375" VIP="0">
+		<Score Start="1" End="1" DayType="227" DayCount="10">
+			<Item ID="190602" Count="1"/>
+		</Score>
+		<Score Start="2" End="2" DayType="227" DayCount="10">
+			<Item ID="190602" Count="2"/>
+		</Score>
+		<Score Start="3" End="3" DayType="227" DayCount="10">
+			<Item ID="1230068" Count="2"/>
+		</Score>
+		<Score Start="4" End="4" DayType="227" DayCount="10">
+			<Item ID="1230068" Count="4"/>
+		</Score>
+		<Score Start="5" End="5" DayType="227" DayCount="10">
+			<Item ID="190602" Count="5"/>
+		</Score>
+	</Game-->
+
+	<!--捞金鱼-->
+	<Game GameID="32" CMD="0" VIP="0">
+		<Score Start="5000" End="5000000" DayType="228" DayCount="10">
+			<Item ID="1270025" Count="1"/>
+			<Item ID="1270031" Count="1"/>
+			<Item ID="1270032" Count="1"/>
+			<Item ID="1270022" Count="1"/>
+			<Item ID="1270035" Count="1"/>
+		</Score>
+	</Game>
+
+	<!--汉堡传说-->
+	<Game GameID="40" CMD="0" VIP="0">
+		<Score Start="0" End="50" DayType="236" DayCount="20">
+			<Item ID="0" Count="0"/>
+		</Score>
+		<Score Start="51" End="120" DayType="236" DayCount="20">
+			<Item ID="0" Count="50"/>
+		</Score>
+		<Score Start="121" End="200" DayType="236" DayCount="20">
+			<Item ID="0" Count="150"/>
+		</Score>
+		<Score Start="201" End="400" DayType="236" DayCount="20">
+			<Item ID="0" Count="300"/>
+		</Score>
+		<Score Start="401" End="600" DayType="236" DayCount="20">
+			<Item ID="0" Count="400"/>
+		</Score>
+		<Score Start="601" End="860" DayType="236" DayCount="20">
+			<Item ID="0" Count="600"/>
+		</Score>
+		<Score Start="861" End="1200000" DayType="236" DayCount="20">
+			<Item ID="0" Count="700"/>
+			<Item ID="180095" Count="1"/>
+		</Score>
+	</Game>
+
+	<!--肥肥跑跑跑-->
+	<Game GameID="41" CMD="0" VIP="0">
+		<Score Start="1" End="1" DayType="237" DayCount="20">
+			<Item ID="190889" Count="100" />
+		</Score>
+		<Score Start="2" End="2" DayType="237" DayCount="20">
+			<Item ID="190889" Count="80" />
+		</Score>
+		<Score Start="3" End="3" DayType="237" DayCount="20">
+			<Item ID="190889" Count="50" />
+		</Score>
+		<Score Start="4" End="4" DayType="237" DayCount="20">
+			<Item ID="190889" Count="20" />
+		</Score>
+		<Score Start="5" End="5" DayType="237" DayCount="20">
+			<Item ID="190889" Count="0" />
+		</Score>
+	</Game>
+
+	<!--欢乐抓抓抓-->
+	<Game GameID="42" CMD="0" VIP="0">
+		<Score Start="10" End="10" DayType="238" DayCount="20">
+			<Item ID="160898" Count="1" />
+		</Score>
+		<Score Start="20" End="20" DayType="238" DayCount="20">
+			<Item ID="160899" Count="1" />
+		</Score>
+		<Score Start="30" End="30" DayType="238" DayCount="20">
+			<Item ID="160900" Count="1" />
+		</Score>
+		<Score Start="40" End="40" DayType="238" DayCount="20">
+			<Item ID="160901" Count="1" />
+		</Score>
+		<Score Start="50" End="50" DayType="238" DayCount="20">
+			<Item ID="160902" Count="1" />
+		</Score>
+		<Score Start="60" End="60" DayType="238" DayCount="20">
+			<Item ID="160903" Count="1" />
+		</Score>
+		<Score Start="70" End="70" DayType="238" DayCount="20">
+			<Item ID="160904" Count="1" />
+		</Score>
+		<Score Start="80" End="80" DayType="238" DayCount="20">
+			<Item ID="160905" Count="1" />
+		</Score>
+		<Score Start="90" End="90" DayType="238" DayCount="20">
+			<Item ID="160906" Count="1" />
+		</Score>
+		<Score Start="100" End="100" DayType="238" DayCount="20">
+			<Item ID="160907" Count="1" />
+		</Score>
+		<Score Start="110" End="110" DayType="238" DayCount="20">
+			<Item ID="160908" Count="1" />
+		</Score>
+		<Score Start="120" End="120" DayType="238" DayCount="20">
+			<Item ID="160909" Count="1" />
+		</Score>
+		<Score Start="130" End="130" DayType="238" DayCount="20">
+			<Item ID="190889" Count="20" />
+		</Score>
+		<Score Start="140" End="140" DayType="238" DayCount="20">
+			<Item ID="190889" Count="50" />
+		</Score>
+		<Score Start="150" End="150" DayType="238" DayCount="20">
+			<Item ID="190889" Count="100" />
+		</Score>
+		<Score Start="160" End="160" DayType="238" DayCount="20">
+			<Item ID="190889" Count="300" />
+		</Score>
+	</Game>
+
+	<!--肥肥侦察机-->
+	<Game GameID="43" CMD="0" VIP="0">
+		<Score Start="0" End="500" DayType="239" DayCount="20">
+			<Item ID="190889" Count="0" />
+		</Score>
+		<Score Start="501" End="2000" DayType="239" DayCount="20">
+			<Item ID="190889" Count="50" />
+		</Score>
+		<Score Start="2001" End="4000" DayType="239" DayCount="20">
+			<Item ID="190889" Count="100" />
+		</Score>
+		<Score Start="4001" End="6000" DayType="239" DayCount="20">
+			<Item ID="190889" Count="150" />
+		</Score>
+		<Score Start="6001" End="500000" DayType="239" DayCount="20">
+			<Item ID="190889" Count="200" />
+		</Score>
+	</Game>
+
+	<!--肥肥观星记-->
+	<Game GameID="44" CMD="0" VIP="0">
+		<Score Start="0" End="0" DayType="240" DayCount="20">
+			<Item ID="190889" Count="0" />
+		</Score>
+		<Score Start="1" End="1" DayType="240" DayCount="20">
+			<Item ID="190889" Count="10" />
+		</Score>
+		<Score Start="2" End="2" DayType="240" DayCount="20">
+			<Item ID="190889" Count="20" />
+		</Score>
+		<Score Start="3" End="3" DayType="240" DayCount="20">
+			<Item ID="190889" Count="30" />
+		</Score>
+		<Score Start="4" End="4" DayType="240" DayCount="20">
+			<Item ID="190889" Count="40" />
+		</Score>
+		<Score Start="5" End="5" DayType="240" DayCount="20">
+			<Item ID="190889" Count="50" />
+		</Score>
+		<Score Start="6" End="6" DayType="240" DayCount="20">
+			<Item ID="190889" Count="60" />
+		</Score>
+		<Score Start="7" End="7" DayType="240" DayCount="20">
+			<Item ID="190889" Count="70" />
+		</Score>
+		<Score Start="8" End="8" DayType="240" DayCount="20">
+			<Item ID="190889" Count="80" />
+		</Score>
+		<Score Start="9" End="9" DayType="240" DayCount="20">
+			<Item ID="190889" Count="90" />
+		</Score>
+		<Score Start="10" End="10" DayType="240" DayCount="20">
+			<Item ID="190889" Count="100" />
+		</Score>
+		<Score Start="11" End="11" DayType="240" DayCount="20">
+			<Item ID="190889" Count="110" />
+		</Score>
+		<Score Start="12" End="12" DayType="240" DayCount="20">
+			<Item ID="190889" Count="120" />
+		</Score>
+		<Score Start="13" End="13" DayType="240" DayCount="20">
+			<Item ID="190889" Count="130" />
+		</Score>
+		<Score Start="14" End="14" DayType="240" DayCount="20">
+			<Item ID="190889" Count="140" />
+		</Score>
+		<Score Start="15" End="15" DayType="240" DayCount="20">
+			<Item ID="190889" Count="150" />
+		</Score>
+	</Game>
+	
+	<!--假面舞会 20111111下架-->
+	<!--Game GameID="45" CMD="0">
+		<Score Start="0" End="0" DayType="241" DayCount="20">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="1" End="30" DayType="241" DayCount="20">
+			<Item ID="190028" Count="10" />
+		</Score>
+		<Score Start="31" End="45" DayType="241" DayCount="20">
+			<Item ID="1613103" Count="2" />
+		</Score>
+		<Score Start="46" End="55" DayType="241" DayCount="20">
+			<Item ID="1353267" Count="1" />
+		</Score>
+		<Score Start="56" End="65" DayType="241" DayCount="20">
+			<Item ID="160985" Count="1" />
+		</Score>
+		<Score Start="66" End="75" DayType="241" DayCount="20">
+			<Item ID="160984" Count="1" />
+		</Score>
+		<Score Start="76" End="85" DayType="241" DayCount="20">
+			<Item ID="160983" Count="1" />
+		</Score>
+	</Game-->
+
+	<!--超级小店员-->
+	<Game GameID="46" CMD="0" VIP="0">
+		<Score Start="0" End="149" DayType="242" DayCount="10">
+			<Item ID="190889" Count="0" />
+		</Score>
+		<Score Start="150" End="299" DayType="242" DayCount="10">
+			<Item ID="0" Count="100" />
+		</Score>
+		<Score Start="300" End="499" DayType="242" DayCount="10">
+			<Item ID="0" Count="200" />
+		</Score>
+		<Score Start="500" End="999" DayType="242" DayCount="10">
+			<Item ID="0" Count="400" />
+		</Score>
+		<Score Start="1000" End="1499" DayType="242" DayCount="10">
+			<Item ID="0" Count="800" />
+		</Score>
+		<Score Start="1500" End="149999" DayType="242" DayCount="10">
+			<Item ID="0" Count="1000" />
+		</Score>
+	</Game>
+
+	<!--抡链球游戏-->
+	<Game GameID="47" CMD="0" VIP="0">
+		<Score Start="0" End="1999" DayType="243" DayCount="10">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="2000" End="4999" DayType="243" DayCount="10">
+			<Item ID="0" Count="20" />
+		</Score>
+		<Score Start="5000" End="7999" DayType="243" DayCount="10">
+			<Item ID="0" Count="50" />
+		</Score>
+		<Score Start="8000" End="2000000" DayType="243" DayCount="10">
+			<Item ID="0" Count="100" />
+		</Score>
+	</Game>
+
+	<!--跳高游戏-->
+	<Game GameID="48" CMD="0" VIP="0">
+		<Score Start="0" End="99" DayType="244" DayCount="10">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="100" End="299" DayType="244" DayCount="10">
+			<Item ID="0" Count="20" />
+		</Score>
+		<Score Start="300" End="499" DayType="244" DayCount="10">
+			<Item ID="0" Count="50" />
+		</Score>
+		<Score Start="500" End="100000" DayType="244" DayCount="10">
+			<Item ID="0" Count="100" />
+		</Score>
+	</Game>
+
+	<!--拼图游戏-->
+	<Game GameID="49" CMD="0" VIP="0">
+		<Score Start="0" End="3999" DayType="245" DayCount="1">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="4000" End="4999" DayType="245" DayCount="1">
+			<Item ID="1351328" Count="2" />
+		</Score>
+		<Score Start="5000" End="7999" DayType="245" DayCount="1">
+			<Item ID="1351328" Count="4" />
+		</Score>
+		<Score Start="8000" End="100000" DayType="245" DayCount="1">
+			<Item ID="1351328" Count="6" />
+		</Score>
+	</Game>
+
+	<!--丑小鸭飞翔-->
+	<Game GameID="50" CMD="0" VIP="0">
+		<Score Start="0" End="0" DayType="246" DayCount="10">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="1" End="1" DayType="246" DayCount="10">
+			<Item ID="1351328" Count="2" />
+		</Score>
+		<Score Start="2" End="2" DayType="246" DayCount="10">
+			<Item ID="1351328" Count="4" />
+		</Score>
+		<Score Start="3" End="3" DayType="246" DayCount="10">
+			<Item ID="1351328" Count="6" />
+		</Score>
+		<Score Start="4" End="4" DayType="246" DayCount="10">
+			<Item ID="1351328" Count="8" />
+		</Score>
+		<Score Start="5" End="5" DayType="246" DayCount="10">
+			<Item ID="1351328" Count="10" />
+		</Score>
+	</Game>
+	<!--打跑大灰狼-->
+	<Game GameID="51" CMD="0" VIP="0">
+		<Score Start="0" End="899" DayType="247" DayCount="10">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="900" End="1200" DayType="247" DayCount="10">
+			<Item ID="1351328" Count="2" />
+		</Score>
+		<Score Start="1201" End="1500" DayType="247" DayCount="10">
+			<Item ID="1351328" Count="4" />
+		</Score>
+		<Score Start="1501" End="100000" DayType="247" DayCount="10">
+			<Item ID="1351328" Count="6" />
+		</Score>
+	</Game>
+	<!--睡美人迷宫-->
+	<Game GameID="52" CMD="0" VIP="0">
+		<Score Start="0" End="0" DayType="248" DayCount="10">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="1" End="1" DayType="248" DayCount="10">
+			<Item ID="1351328" Count="2" />
+		</Score>
+		<Score Start="2" End="2" DayType="248" DayCount="10">
+			<Item ID="1351328" Count="4" />
+		</Score>
+		<Score Start="3" End="3" DayType="248" DayCount="10">
+			<Item ID="1351328" Count="6" />
+		</Score>
+	</Game>
+	<!--金鹅历险记-->
+	<Game GameID="53" CMD="0" VIP="0">
+		<Score Start="0" End="0" DayType="249" DayCount="10">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="1" End="1" DayType="249" DayCount="10">
+			<Item ID="1351328" Count="2" />
+		</Score>
+		<Score Start="2" End="2" DayType="249" DayCount="10">
+			<Item ID="1351328" Count="4" />
+		</Score>
+		<Score Start="3" End="3" DayType="249" DayCount="10">
+			<Item ID="1351328" Count="6" />
+		</Score>
+		<Score Start="4" End="4" DayType="249" DayCount="10">
+			<Item ID="1351328" Count="8" />
+		</Score>
+		<Score Start="5" End="5" DayType="249" DayCount="10">
+			<Item ID="1351328" Count="10" />
+		</Score>
+	</Game>
+	<!--赛龙舟-->
+	<Game GameID="54" CMD="0" VIP="0">
+		<Score Start="0" End="999" DayType="250" DayCount="5">
+			<Item ID="0" Count="0" />
+		</Score>
+		<Score Start="1000" End="2499" DayType="250" DayCount="5">
+			<Item ID="1351394" Count="2" />
+		</Score>
+		<Score Start="2500" End="2000000" DayType="250" DayCount="5">
+			<Item ID="1351394" Count="4" />
+		</Score>
+	</Game>
+
+</GamesBonus>
+

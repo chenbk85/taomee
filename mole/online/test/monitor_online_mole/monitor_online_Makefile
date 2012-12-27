@@ -1,0 +1,2 @@
+mole_monitor_online_svr: mole_monitor_online_svr.c
+	gcc -g -Wall -o $@ $< -lmsglog

@@ -1,0 +1,9 @@
+picserver structure:
+httpd + fastcgi + php5 + apc + mysql
+
+
+apache2:
+mpm 
+
+php5:
+mcrypt + apc 

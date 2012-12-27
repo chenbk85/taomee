@@ -1,0 +1,81 @@
+<task mapID="202" mode="3" starTime="9000" expScale="2.5" rateScale="1" score="800" losturl="swf/winswf2.swf" winurl="swf/lostswf2.swf" musicurl="td1.mp3" attackCountScale="1" startStar="20" startLifes="100">
+
+	<round tips="宇宙海盗将在20秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "900" count="5" live="2" lifeScale="2" talk="跟着老大，有肉吃！"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "1200" count="3" stime = "900" live="2" lifeScale="2"/>
+		<monster id="10503" pathID="1" time = "1000" count="3" stime = "900" live="2" lifeScale="2"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "1400" count="4" stime = "1400" live="2" lifeScale="2.5"/>
+		<monster id="10503" pathID="1" time = "1400" count="4" stime = "3200" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "1100" count="2" live="2" lifeScale="2.5"/>
+		<monster id="10503" pathID="1" time = "1300" count="6" stime = "1700" live="2" lifeScale="2.5"/>
+		<monster id="10501" pathID="1" time = "1500" count="2" stime = "3700" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "1000" count="3" live="2" lifeScale="2.5"/>
+		<monster id="10503" pathID="1" time = "1000" count="3" stime = "1500" live="2" lifeScale="2.5"/>
+		<monster id="10501" pathID="1" time = "1000" count="3" stime = "2800" live="2" lifeScale="2.5"/>
+		<monster id="10503" pathID="1" time = "1000" count="3" stime = "3200" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "1000" count="3" live="2" lifeScale="2.5"/>
+		<monster id="10503" pathID="1" time = "1000" count="3" stime = "1500" live="2" lifeScale="2.5"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "2800" live="2" lifeScale="2.5"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "3200" live="2" lifeScale="2.5"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10503" pathID="1" time = "1000" count="4" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "1500" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "2800" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "3200" live="2" lifeScale="3"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10503" pathID="1" time = "1000" count="4" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "1500" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="5" stime = "2800" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="5" stime = "3200" live="2" lifeScale="3"/>
+	</round>
+	<round tips="宇宙海盗将在10秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "1000" count="4" live="2" lifeScale="2.5"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "1500" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "2800" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "3200" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "3600" live="2" lifeScale="3"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "4000" live="2" lifeScale="3"/>    
+	</round>
+	<round tips="海盗军曹率队进攻！将在10秒后进攻，请做好准备！">
+		<monster id="10501" pathID="1" time = "1000" count="4" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "1500" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "2800" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "3200" live="2" lifeScale="4"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "3600" live="2" lifeScale="4"/>
+		<monster id="10503" pathID="1" time = "1000" count="4" stime = "4000" live="2" lifeScale="4"/> 
+    <monster id="10502" pathID="1" time = "1000" count="1" stime = "4500" live="20" lifeScale="3"/>  
+	</round>      
+	<round tips="一大波宇宙海盗将在10秒后进攻，他们疯了！！">
+		<monster id="10501" pathID="1" time = "1000" count="4" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "1500" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "2800" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "3200" live="2" lifeScale="4"/>
+		<monster id="10503" pathID="1" time = "1000" count="6" stime = "3600" live="2" lifeScale="4"/>
+		<monster id="10503" pathID="1" time = "1000" count="6" stime = "4000" live="2" lifeScale="4"/> 
+    <monster id="10502" pathID="1" time = "1000" count="1" stime = "4500" live="20" lifeScale="3.5"/>  
+	</round>      
+	<round tips="一大波宇宙海盗将在10秒后进攻，他们疯了！！">
+		<monster id="10501" pathID="1" time = "1000" count="4" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "1500" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "2800" live="2" lifeScale="4"/>
+		<monster id="10501" pathID="1" time = "1000" count="4" stime = "3200" live="2" lifeScale="4"/>
+		<monster id="10503" pathID="1" time = "1000" count="8" stime = "3600" live="2" lifeScale="4"/>
+		<monster id="10503" pathID="1" time = "1000" count="8" stime = "4000" live="2" lifeScale="4"/> 
+    <monster id="10502" pathID="1" time = "1000" count="1" stime = "4500" live="20" lifeScale="4"/>  
+	</round>    
+	<round tips="海盗少尉来啦！将在10秒后进攻，请做好准备！">
+		<monster id="10504" pathID="1" time = "0" count="1" stime = "0" live="100" lifeScale="5" talk="哼哼，在我眼里你们就是些虫子！"/>
+	</round>
+</task>

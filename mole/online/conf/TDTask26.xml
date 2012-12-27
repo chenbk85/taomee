@@ -1,0 +1,47 @@
+﻿<task mapID="10" mode="1" starTime="4000" rateScale="1" losturl="swf/winswf3.swf" winurl="swf/lostswf4.swf" musicurl="zw.mp3" startStar="34" startLifes="100">
+ 	<round tips="考验将在20秒后开始，请做好准备">	
+		<monster id="10397" pathID="1" time = "100" count="1"/>
+		<monster id="10397" pathID="5" time = "100" stime = "4000" count="1"/>		
+ 		<monster id="10398" pathID="4" time = "100" stime = "7000" count="1"/>
+	</round>
+	<round tips="考验将在10秒后开始，请做好准备">	
+		<monster id="10398" pathID="5" time = "100" count="1"/>
+		<monster id="10399" pathID="3" time = "100" stime = "3500" count="1"/>		
+ 		<monster id="10398" pathID="4" time = "100" stime = "6000" count="1"/>
+		<monster id="10398" pathID="1" time = "100" stime = "8000" count="1"/>
+	</round>	
+	<round tips="考验将在10秒后开始，请做好准备">	
+		<monster id="10399" pathID="2" time = "100" count="1"/>
+		<monster id="10397" pathID="3" time = "100" stime = "3000" count="1"/>		
+ 		<monster id="10397" pathID="2" time = "100" stime = "5500" count="1"/>
+		<monster id="10399" pathID="4" time = "100" stime = "7900" count="1"/>
+		<monster id="10399" pathID="5" time = "100" stime = "10000" count="1"/>
+	</round>	
+	<round tips="考验将在10秒后开始，请做好准备">	
+		<monster id="10397" pathID="4" time = "100" count="1"/>
+		<monster id="10398" pathID="2" time = "100" stime = "3200" count="1"/>		
+ 		<monster id="10397" pathID="5" time = "100" stime = "6800" count="1"/>
+		<monster id="10398" pathID="1" time = "100" stime = "8400" count="1"/>
+		<monster id="10397" pathID="3" time = "100" stime = "10700" count="1"/>
+		<monster id="10397" pathID="5" time = "100" stime = "11900" count="1"/>
+	</round>	
+	<round tips="考验将在10秒后开始，请做好准备">	
+		<monster id="10398" pathID="3" time = "100" count="1"/>
+		<monster id="10397" pathID="2" time = "100" stime = "2500" count="1"/>		
+ 		<monster id="10398" pathID="1" time = "100" stime = "4700" count="1"/>
+		<monster id="10398" pathID="4" time = "100" stime = "6600" count="1"/>
+		<monster id="10399" pathID="3" time = "100" stime = "8500" count="1"/>
+		<monster id="10399" pathID="5" time = "100" stime = "10400" count="1"/>
+		<monster id="10398" pathID="1" time = "100" stime = "11900" count="1"/>
+	</round>
+	<round tips="考验将在10秒后开始，请做好准备">
+		<monster id="10399" pathID="5" time = "100" count="1"/>
+		<monster id="10397" pathID="2" time = "100" count="1" stime = "2000"/>		
+ 		<monster id="10399" pathID="1" time = "100" count="1" stime = "3800"/>
+		<monster id="10399" pathID="2" time = "100" count="1" stime = "5400"/>
+		<monster id="10398" pathID="4" time = "100" count="1" stime = "7100"/>
+		<monster id="10398" pathID="3" time = "100" count="1" stime = "9000"/>
+		<monster id="10399" pathID="4" time = "100" count="1" stime = "10400"/>
+		<monster id="10397" pathID="1" time = "100" count="1" stime = "12300"/>		
+	</round>
+</task>

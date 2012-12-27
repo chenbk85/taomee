@@ -1,0 +1,10 @@
+<AF_PRIZE_TYPE>
+	<Prize_Type ID="1" Card1_Type="9,1" Card2_Type="4" Card3_Type="8" Card4_Type="11,5,7" Card5_Type="15" />
+	<Prize_Type ID="2" Card1_Type="2,6" Card2_Type="4,13" Card3_Type="4" Card4_Type="3,12" Card5_Type="10" />
+	<Prize_Type ID="3" Card1_Type="3,5" Card2_Type="11,12" Card3_Type="4" Card4_Type="8" Card5_Type="14" />
+	<Prize_Type ID="4" Card1_Type="1" Card2_Type="1" Card3_Type="1" Card4_Type="8" Card5_Type="14" />
+	<Prize_Type ID="5" Card1_Type="3,5" Card2_Type="11" Card3_Type="4" Card4_Type="8" Card5_Type="12" />
+	<Prize_Type ID="6" Card1_Type="1" Card2_Type="1" Card3_Type="1" Card4_Type="8" Card5_Type="1" />
+	<Prize_Type ID="7" Card1_Type="3" Card2_Type="11" Card3_Type="12" Card4_Type="5" Card5_Type="2,4" />
+	<Prize_Type ID="8" Card1_Type="3" Card2_Type="11" Card3_Type="12" Card4_Type="5" Card5_Type="4" />  
+</AF_PRIZE_TYPE>

@@ -1,0 +1,20 @@
+<Items Kind="3">
+	<Kind ID="1" Name="服饰" Start="10000" End="19999" Count="10" Url="http://192.168.1.3/clothes.xml">
+		<Item ID="10001" Name="农夫帽" Grade="0" Price="1" Layer="35" desc="农夫都得带一顶好遮阳"/>
+		<Item ID="10002" Name="农夫装" Grade="0" Price="4" Layer="15" desc="宽松舒适不怕脏"/>
+		<Item ID="10003" Name="农夫靴" Grade="0" Price="1" Layer="10" desc="穿上它就不怕被石子硌脚了"/>
+		<Item ID="10004" Name="福尔摩尔帽" Grade="0" Price="1" Layer="35" desc="大侦探的帽子,看起来很绅士"/>
+		<Item ID="10005" Name="福尔摩尔装" Grade="0" Price="1" Layer="15" desc="侦探的风衣,真神气"/>
+		<Item ID="10006" Name="黑亮皮靴" Grade="0" Price="1" Layer="15" desc="表面亮的象镜子一样的皮鞋"/>
+		<Item ID="10007" Name="出游帽" Grade="0" Price="1" Layer="35" desc="出去游玩时带的帽子"/>
+		<Item ID="10008" Name="出游便装" Grade="0" Price="1" Layer="15" desc="很休闲，很合身"/>
+		<Item ID="10009" Name="轻便鞋" Grade="0" Price="1" Layer="10" desc="轻到让你感觉不出重量的便鞋"/>
+		<Item ID="10010" Name="北国雪景" Grade="0" Price="1" Layer="1" desc="冬天最美的景色当然是北方的雪"/>
+		<Item ID="10011" Name="春回大地" Grade="0" Price="1" Layer="1" desc="春天到了,万物复苏"/>
+	</Kind>	
+	
+	<Kind ID="2" Name="food" Start="20000" End="29999" Count="4" Url="192.168.1.3/ff.xml">
+	</Kind>	
+	<Kind ID="3" Name="drink" Start="30000" End="39999" Count="1" Url="" >
+	</Kind>	
+</Items>

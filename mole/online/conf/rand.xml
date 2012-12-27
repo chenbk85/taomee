@@ -1,0 +1,839 @@
+<!--按随机概率得到物品. ItemIn表示扣除的物品，可以扣除多种物品,
+	扣除的物品数量等于客户端传过来的count乘以配置表的count。
+	ItemOut表示得到的物品, 从item记录中随机一个，
+  DayBegin和DayEnd表示在该时间范围有效，不填或者填0表示任何时间都有效，这个时间值已经在程序中对台湾版本做了修正，会自动延后7天
+	RandStart和RandEnd表示物品随机的概率范围 CountStart,CountEnd 前端输入count值的范围-->
+<!--每天限制推荐在30000 - 31000 DayType 最后一个30008 DayType超过2000000000为永久的不清除-->
+<RANDS>
+	<!--电光球球袭击咕噜毛毛或卡帕袭击咕噜球球或大眼袭击咕噜球球-->
+	<Entry ID="6" DayType="108" DayCount = "1">
+		<ItemOut>
+			<Item ID="1270059" Count="1"    RrandStart="0"  RandEnd="40" />
+			<Item ID="1270060" Count="1" 	RrandStart="40"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!--圆桌骑士的礼物(超级拉姆专属交互)-->
+	<Entry ID="7" DayType="30000" DayCount = "5" VIP="1" >
+		<ItemIn>
+			<Item ID="190746" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1270066" Count="1"    RrandStart="0"  RandEnd="5" />
+			<Item ID="1270067" Count="1"    RrandStart="5"  RandEnd="10" />
+			<Item ID="1270060" Count="1"    RrandStart="10"  RandEnd="15" />
+			<Item ID="1270059" Count="1" 	RrandStart="15"  RandEnd="20" />
+			<Item ID="1220079" Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="1220075" Count="1" 	RrandStart="40"  RandEnd="60" />
+			<Item ID="190752"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="190751"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!--点点豆开大炮-->
+	<Entry ID="13" CountStart="1" CountEnd="19">
+		<ItemIn>
+			<Item ID="16012" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190752" Count="2"    RrandStart="0"  RandEnd="20" />
+			<Item ID="160809"	   Count="1" RrandStart="20"  RandEnd="40" />
+			<Item ID="160813"	   Count="1" RrandStart="40" RandEnd="60" />
+			<Item ID="1270060"  Count="1"    RrandStart="60" RandEnd="70" />
+			<Item ID="1270065"  Count="1"    RrandStart="70" RandEnd="80" />
+			<Item ID="190742"  Count="100"    RrandStart="80" RandEnd="90" />
+			<Item ID="0"  Count="1000"    RrandStart="90" RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="14" CountStart="20" CountEnd="39">
+		<ItemIn>
+			<Item ID="16012" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190752" Count="5"    RrandStart="0"  RandEnd="20" />
+			<Item ID="160809"	   Count="1" RrandStart="20"  RandEnd="40" />
+			<Item ID="160813"	   Count="1" RrandStart="40" RandEnd="60" />
+			<Item ID="1270060"  Count="1"    RrandStart="60" RandEnd="70" />
+			<Item ID="1270065"  Count="1"    RrandStart="70" RandEnd="80" />
+			<Item ID="190742"  Count="300"    RrandStart="80" RandEnd="90" />
+			<Item ID="16012"  Count="30"    RrandStart="90" RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="15" CountStart="40" CountEnd="79">
+		<ItemIn>
+			<Item ID="16012" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190752" Count="8"    RrandStart="0"  RandEnd="20" />
+			<Item ID="190750" Count="5"    RrandStart="20"  RandEnd="30" />
+			<Item ID="1220144"	   Count="1" RrandStart="30"  RandEnd="40" />
+			<Item ID="1220143"	   Count="1" RrandStart="40"  RandEnd="50" />
+			<Item ID="1270055"	   Count="1" RrandStart="50" RandEnd="55" />
+			<Item ID="1270053"	   Count="1" RrandStart="55" RandEnd="60" />
+			<Item ID="1270018"  Count="1"    RrandStart="60" RandEnd="65" />
+			<Item ID="1270044"  Count="1"    RrandStart="65" RandEnd="70" />
+			<Item ID="190742"  Count="500"    RrandStart="70" RandEnd="90" />
+			<Item ID="16012"  Count="60"    RrandStart="90" RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="16" CountStart="80" CountEnd="100">
+		<ItemIn>
+			<Item ID="16012" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1270053"	   Count="1" RrandStart="0" RandEnd="30" />
+			<Item ID="1270044"  Count="1"    RrandStart="30" RandEnd="60" />
+			<Item ID="16012"  Count="120"    RrandStart="60" RandEnd="90" />
+			<Item ID="1270011"  Count="1"    RrandStart="90" RandEnd="93" />
+			<Item ID="1270040"  Count="1"    RrandStart="93" RandEnd="96" />
+			<Item ID="1270041"  Count="1"    RrandStart="96" RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!--end 点点豆大炮-->
+
+	<!-- 麽麽生日舞会蛋糕爆炸物 -->
+	<Entry ID="17" DayType="30006" DayCount = "20" >
+		<ItemOut>
+			<Item ID="0"	   Count="200" 	RrandStart="0"  RandEnd="16" />
+			<Item ID="17015" Count="2" 		RrandStart="16"  RandEnd="32" />
+			<Item ID="180043" Count="3" 	RrandStart="32"  RandEnd="48" />
+			<Item ID="180044" Count="3" 	RrandStart="48"  RandEnd="64" />
+			<Item ID="180059" Count="3" 	RrandStart="64"  RandEnd="80" />
+			<Item ID="180054" Count="3" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 充值超拉抽奖 -->
+	<Entry ID="18" CountStart="1" CountEnd="1">
+		<ItemIn>
+			<Item ID="10" Count="1"/>
+		</ItemIn>
+		<ItemOut>
+			<Item ID="16012" Count="5" 		RrandStart="0.00"  RandEnd="20.00" />
+			<Item ID="16012" Count="10" 	RrandStart="20.00"  RandEnd="50.00" />
+			<Item ID="16012" Count="50" 	RrandStart="50.00"  RandEnd="80.00" />
+			<Item ID="16012" Count="100" 	RrandStart="80.00"  RandEnd="89.00" />
+			<Item ID="16012" Count="200" 	RrandStart="89.00"  RandEnd="97.00" />
+			<Item ID="16012" Count="300" 	RrandStart="97.00"  RandEnd="99.89" />
+			<Item ID="16012" Count="500" 	RrandStart="99.89"  RandEnd="99.99" />
+			<Item ID="1353294" Count="1" 	RrandStart="99.99"  RandEnd="100.00" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 麽麽生日舞会气球和礼盒输出 -->
+	<Entry ID="19" DayType="30007" DayCount = "3" >
+		<ItemOut>
+			<Item ID="17006" Count="2" 	RrandStart="0"  RandEnd="12" />
+			<Item ID="17010" Count="2" 	RrandStart="12"  RandEnd="24" />
+			<Item ID="17008" Count="2" 	RrandStart="24"  RandEnd="36" />
+			<Item ID="150004" Count="3" 	RrandStart="36"  RandEnd="48" />
+			<Item ID="150003" Count="5" 	RrandStart="48"  RandEnd="60" />
+			<Item ID="190028" Count="5" 	RrandStart="60"  RandEnd="72" />
+			<Item ID="180071" Count="2" 	RrandStart="72"  RandEnd="84" />
+			<Item ID="180065" Count="2" 	RrandStart="84"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 真心话大冒险-->
+	<Entry ID="20" DayType="30008" DayCount = "3" >
+		<ItemOut>
+			<Item ID="150004" Count="1" 	RrandStart="0"  RandEnd="10" />
+			<Item ID="1270005" Count="1" 	RrandStart="10"  RandEnd="20" />
+			<Item ID="180003" Count="1" 	RrandStart="20"  RandEnd="30" />
+			<Item ID="180008" Count="1" 	RrandStart="30"  RandEnd="40" />
+			<Item ID="17007" Count="1"  	RrandStart="40"  RandEnd="50" />
+			<Item ID="1230025" Count="1" 	RrandStart="50"  RandEnd="60" />
+			<Item ID="180067" Count="1" 	RrandStart="60"  RandEnd="70" />
+			<Item ID="1230024" Count="1" 	RrandStart="70"  RandEnd="80" />
+			<Item ID="190028" Count="1" 	RrandStart="80"  RandEnd="90" />
+			<Item ID="180071" Count="1" 	RrandStart="90"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 圣诞场景交互摩尔拉雅山输出 -->
+	<Entry ID="21" DayType="30009" DayCount = "1" >
+		<ItemOut>
+			<Item ID="1230039" Count="1" 	RrandStart="0"  RandEnd="25" />
+			<Item ID="17002" Count="1" 	RrandStart="25"  RandEnd="50" />
+			<Item ID="190809" Count="1" 	RrandStart="50"  RandEnd="75" />
+			<Item ID="0" Count="100" 	RrandStart="75"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 圣诞场景交互开心农场输出 -->
+	<Entry ID="22" DayType="30010" DayCount = "1" >
+		<ItemOut>
+			<Item ID="1230005" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="190574" Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="1230012" Count="1" 	RrandStart="40"  RandEnd="60" />
+			<Item ID="1230032" Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="1230038" Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 圣诞场景交互神秘湖输出 -->
+	<Entry ID="23" DayType="30011" DayCount = "1" >
+		<ItemOut>
+			<Item ID="190809" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="1270059" Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="190028" Count="1" 	RrandStart="40"  RandEnd="60" />
+			<Item ID="1270022" Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="1270017" Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 圣诞场景交互拉姆学院输出 -->
+	<Entry ID="24" DayType="30012" DayCount = "1" >
+		<ItemOut>
+			<Item ID="180020" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="180008" Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="190753" Count="1" 	RrandStart="40"  RandEnd="60" />
+			<Item ID="190752" Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="190756" Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 圣诞场景交互尼尔拉塔输出 -->
+	<Entry ID="25" DayType="30013" DayCount = "1" >
+		<ItemOut>
+			<Item ID="17013" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="150010" Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="17014" Count="1" 	RrandStart="40"  RandEnd="55" />
+			<Item ID="17008" Count="1" 	RrandStart="55"  RandEnd="75" />
+			<Item ID="17016" Count="1" 	RrandStart="75"  RandEnd="85" />
+			<Item ID="150004" Count="1" 	RrandStart="85"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 圣诞场景交互爱心教堂输出 -->
+	<Entry ID="26" DayType="30014" DayCount = "1" >
+		<ItemOut>
+			<Item ID="150004" Count="1" 	RrandStart="0"  RandEnd="10" />
+			<Item ID="1270005" Count="1" 	RrandStart="10"  RandEnd="20" />
+			<Item ID="180003" Count="1" 	RrandStart="20"  RandEnd="30" />
+			<Item ID="180008" Count="1" 	RrandStart="30"  RandEnd="40" />
+			<Item ID="17007" Count="1" 	RrandStart="40"  RandEnd="50" />
+			<Item ID="1230025" Count="1" 	RrandStart="50"  RandEnd="60" />
+			<Item ID="180067" Count="1" 	RrandStart="60"  RandEnd="70" />
+			<Item ID="1230024" Count="1" 	RrandStart="70"  RandEnd="80" />
+			<Item ID="190028" Count="1" 	RrandStart="80"  RandEnd="90" />
+			<Item ID="180071" Count="1" 	RrandStart="90"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 元宵灯会 -->
+	<Entry ID="27" DayType="30015" DayCount = "3" >
+		<ItemOut>
+			<Item ID="0" Count="1000" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="1230004" Count="2" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="1230007" Count="2" 	RrandStart="40"  RandEnd="60" />
+			<Item ID="150004" Count="2" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="150002" Count="2" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 摇摇乐 大卫豆摇奖 -->
+	<Entry ID="30" CountStart="1" CountEnd="1">
+		<ItemIn>
+			<Item ID="1351054" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="160898"	   Count="1" RrandStart="0" RandEnd="5" />
+			<Item ID="160899"  Count="1"    RrandStart="5" RandEnd="10" />
+			<Item ID="160900"  Count="1"    RrandStart="10" RandEnd="15" />
+			<Item ID="160901"  Count="1"    RrandStart="15" RandEnd="20" />
+			<Item ID="160902"  Count="1"    RrandStart="20" RandEnd="25" />
+			<Item ID="160903"  Count="1"    RrandStart="25" RandEnd="30" />
+			<Item ID="160904"  Count="1"    RrandStart="30" RandEnd="35" />
+			<Item ID="160905"  Count="1"    RrandStart="35" RandEnd="40" />
+			<Item ID="160906"  Count="1"    RrandStart="40" RandEnd="45" />
+			<Item ID="160907"  Count="1"    RrandStart="45" RandEnd="50" />
+			<Item ID="160908"  Count="1"    RrandStart="50" RandEnd="55" />
+			<Item ID="160909"  Count="1"    RrandStart="55" RandEnd="60" />
+			<Item ID="1353107"  Count="1"    RrandStart="60" RandEnd="70" />
+			<Item ID="1351054"  Count="1"    RrandStart="70" RandEnd="85" />
+			<Item ID="0"  Count="0"    RrandStart="85" RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 爱酸奶的妙多多 20110920 done-->
+	<!--Entry ID="31" DayType="30018" DayCount = "10" >
+		<ItemOut>
+			<Item ID="1353229" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="1270037" Count="1" 	RrandStart="20"  RandEnd="45" />
+			<Item ID="1270002" Count="1" 	RrandStart="45"  RandEnd="70" />
+			<Item ID="1270006" Count="1" 	RrandStart="70"  RandEnd="100" />
+		</ItemOut>
+	</Entry-->
+
+	<!-- 疯狂大轮转 -->
+	<!--Entry ID="32" DayType="30019" DayCount = "10" >
+		<ItemOut>
+			<Item ID="1353230" Count="1" 	RrandStart="0"  RandEnd="34" />
+			<Item ID="1270015" Count="1" 	RrandStart="34"  RandEnd="67" />
+			<Item ID="1270005" Count="1" 	RrandStart="67"  RandEnd="100" />
+		</ItemOut>
+	</Entry-->
+
+	<!-- 垂直极限 -->
+	<!--Entry ID="33" DayType="30020" DayCount = "10">
+		<ItemOut>
+			<Item ID="1353238" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="1453000" Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="1453001" Count="1" 	RrandStart="40"  RandEnd="80" />
+			<Item ID="1453002" Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry-->
+
+	<!-- 镇塔神灯 -->
+	<Entry ID="34" DayType="30021" DayCount = "10">
+		<ItemOut>
+			<Item ID="1353239" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="1453002" Count="1" 	RrandStart="20"  RandEnd="60" />
+			<Item ID="1453016" Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="1453018" Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 打企鹅 -->
+	<Entry ID="35" DayType="30022" DayCount = "10">
+		<ItemOut>
+			<Item ID="1453004" Count="1" 	RrandStart="0"  RandEnd="40" />
+			<Item ID="1353100" Count="1" 	RrandStart="40"  RandEnd="50" />
+			<Item ID="1353103" Count="1" 	RrandStart="50"  RandEnd="60" />
+			<Item ID="1353106" Count="1" 	RrandStart="60"  RandEnd="70" />
+			<Item ID="1453000" Count="1" 	RrandStart="70"  RandEnd="84" />
+			<Item ID="1453001" Count="1" 	RrandStart="84"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<!-- 6.1运营活动-->
+	<Entry ID="36" DayType="30023" DayCount = "5">
+		<ItemOut>
+			<Item ID="17003" Count="1" 	RrandStart="0"  RandEnd="33" />
+			<Item ID="1230026" Count="1" 	RrandStart="33"  RandEnd="66" />
+			<Item ID="180062" Count="1" 	RrandStart="66"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="37" DayType="30023" DayCount = "5">
+		<ItemOut>
+			<Item ID="17003" Count="1" 	RrandStart="0"  RandEnd="33" />
+			<Item ID="1230026" Count="1" 	RrandStart="33"  RandEnd="66" />
+			<Item ID="180062" Count="1" 	RrandStart="66"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+	<Entry ID="38" DayType="30023" DayCount = "5">
+		<ItemOut>
+			<Item ID="17003" Count="1" 	RrandStart="0"  RandEnd="33" />
+			<Item ID="1230026" Count="1" 	RrandStart="33"  RandEnd="66" />
+			<Item ID="180062" Count="1" 	RrandStart="66"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 莱夫子运营 -->
+	<Entry ID="39" DayType="30024" DayCount = "10">
+		<ItemOut>
+			<Item ID="1353265" Count="1" 	RrandStart="0"  RandEnd="35" />
+			<Item ID="1230001" Count="3" 	RrandStart="35"  RandEnd="70" />
+			<Item ID="1453002" Count="1" 	RrandStart="70"  RandEnd="90" />
+			<Item ID="1453018" Count="1" 	RrandStart="90"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 弹弹牌摇奖 -->
+	<Entry ID="40" CountStart="1" CountEnd="1">
+		<ItemIn>
+			<Item ID="1351095" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1353317"  Count="1"    RrandStart="0" RandEnd="45" />
+			<Item ID="1353314"  Count="1"    RrandStart="45" RandEnd="70" />
+			<Item ID="1353316"  Count="1"    RrandStart="70" RandEnd="85" />
+			<Item ID="1353301"  Count="1"    RrandStart="85" RandEnd="95" />
+			<Item ID="1353310"  Count="1"    RrandStart="95" RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 贪吃的菲尼克斯 -->
+	<Entry ID="41" DayType="30025" DayCount = "10">
+		<ItemOut>
+			<Item ID="17010" Count="1" 	RrandStart="0"  RandEnd="33" />
+			<Item ID="160346" Count="1" 	RrandStart="33"  RandEnd="66" />
+			<Item ID="160347" Count="1" 	RrandStart="66"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 麽麽公主的摇篮 (超级拉姆专属交互)-->
+	<Entry ID="42" DayType="30026" DayCount = "2" VIP="1" >
+		<ItemOut>
+			<Item ID="160932" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="180027" Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="180028" Count="1" 	RrandStart="40"  RandEnd="60" />
+			<Item ID="180029"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="180030"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 祈福奖励	-->
+	<Entry ID="43" DayType="30027" DayCount = "2" >
+		<ItemOut>
+			<Item ID="1301024" Count="1" 	RrandStart="0"  RandEnd="33" />
+			<Item ID="160955"  Count="1" 	RrandStart="33"  RandEnd="66" />
+			<Item ID="180030"  Count="1" 	RrandStart="66"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 商城积分 幸运大转盘抽奖 -->
+	<Entry ID="44" CountStart="1" CountEnd="1">
+		<ItemIn>
+			<Item ID="1351121" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1353223" Count="1" RrandStart="0" RandEnd="10" />
+			<Item ID="1353231" Count="1" RrandStart="10" RandEnd="25" />
+			<Item ID="1353241" Count="1" RrandStart="25" RandEnd="40" />
+			<Item ID="1353258" Count="1" RrandStart="40" RandEnd="52" />
+			<Item ID="1353263" Count="1" RrandStart="52" RandEnd="67" />
+			<Item ID="1353262" Count="1" RrandStart="67" RandEnd="79" />
+			<Item ID="16012" Count="1000" RrandStart="79" RandEnd="80" />
+			<Item ID="160405" Count="1" RrandStart="80" RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 开学派对第三弹 20110922 下架-->
+	<!--Entry ID="45" DayType="30028" DayCount = "30" >
+		<ItemOut>
+			<Item ID="1230029" Count="1" 	RrandStart="0"  RandEnd="10" />
+			<Item ID="1230028"  Count="1" 	RrandStart="10"  RandEnd="20" />
+			<Item ID="1230011"  Count="1" 	RrandStart="20"  RandEnd="30" />
+			<Item ID="1230012"  Count="1" 	RrandStart="30"  RandEnd="40" />
+			<Item ID="1230020"  Count="1" 	RrandStart="40"  RandEnd="50" />
+			<Item ID="1230023"  Count="1" 	RrandStart="50"  RandEnd="60" />
+			<Item ID="1230026"  Count="1" 	RrandStart="60"  RandEnd="70" />
+			<Item ID="1230034"  Count="1" 	RrandStart="70"  RandEnd="80" />
+			<Item ID="1230050"  Count="1" 	RrandStart="80"  RandEnd="90" />
+			<Item ID="1230005"  Count="1" 	RrandStart="90"  RandEnd="100" />
+		</ItemOut>
+	</Entry-->
+
+	<!-- 开学派对第四弹  2011.09.23 20110930下架 大转盘赠送-->
+	<!--Entry ID="46" DayType="30029" DayCount = "3" >
+		<ItemOut>
+			<Item ID="1353224" Count="1" 	RrandStart="0"  RandEnd="10" />
+			<Item ID="1353263"  Count="1" 	RrandStart="10"  RandEnd="20" />
+			<Item ID="1353214"  Count="1" 	RrandStart="20"  RandEnd="30" />
+			<Item ID="1353229"  Count="1" 	RrandStart="30"  RandEnd="40" />
+			<Item ID="1353221"  Count="1" 	RrandStart="40"  RandEnd="50" />
+			<Item ID="1353264"  Count="1" 	RrandStart="50"  RandEnd="60" />
+			<Item ID="0"  Count="200" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="0"  Count="500" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry-->
+
+	<!-- 幸运转盘  2011.09.29-->
+	<Entry ID="47" DayType="30030" DayCount = "30" >
+		<ItemOut>
+			<Item ID="180092" Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="180086"  Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="1270129"  Count="1" 	RrandStart="40"  RandEnd="50" />
+			<Item ID="1270063"  Count="1" 	RrandStart="50"  RandEnd="60" />
+			<Item ID="1270053"  Count="1" 	RrandStart="60"  RandEnd="70" />
+			<Item ID="1353221"  Count="1" 	RrandStart="70"  RandEnd="80" />
+			<Item ID="1353262"  Count="1" 	RrandStart="80"  RandEnd="85" />
+			<Item ID="1353223"  Count="1" 	RrandStart="85"  RandEnd="90" />
+			<Item ID="1353232"  Count="1" 	RrandStart="90"  RandEnd="95" />
+			<Item ID="1353225"  Count="1" 	RrandStart="95"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 摩尔城堡  2011.09.29-->
+	<Entry ID="48" DayType="30031" DayCount = "10" >
+		<ItemOut>
+			<Item ID="190894" Count="10" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="190889"  Count="10" 	RrandStart="30"  RandEnd="60" />
+			<Item ID="1230012"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="160270"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 粒粒小广场  2011.09.29-->
+	<Entry ID="49" DayType="30032" DayCount = "10" >
+		<ItemOut>
+			<Item ID="190894" Count="10" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="190889"  Count="10" 	RrandStart="30"  RandEnd="60" />
+			<Item ID="160282"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="160286"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 粒粒小广场 旁边帽子 2011.09.29-->
+	<Entry ID="50" DayType="30033" DayCount = "10" >
+		<ItemOut>
+			<Item ID="190894" Count="10" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="190889"  Count="10" 	RrandStart="30"  RandEnd="60" />
+			<Item ID="1230012"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="160270"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 咕噜艺术街 2011.09.29-->
+	<Entry ID="51" DayType="30034" DayCount = "10" >
+		<ItemOut>
+			<Item ID="190894" Count="10" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="190889"  Count="10" 	RrandStart="30"  RandEnd="60" />
+			<Item ID="160366"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="160367"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 消防署 2011.09.29-->
+	<Entry ID="52" DayType="30035" DayCount = "10" >
+		<ItemOut>
+			<Item ID="190894" Count="10" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="190889"  Count="10" 	RrandStart="30"  RandEnd="60" />
+			<Item ID="160366"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="160367"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 淘淘乐街 2011.09.29-->
+	<Entry ID="53" DayType="30036" DayCount = "10" >
+		<ItemOut>
+			<Item ID="190894" Count="10" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="190889"  Count="10" 	RrandStart="30"  RandEnd="60" />
+			<Item ID="160269"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="160277"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- red black team 2011.09.29-->
+	<Entry ID="54" DayType="30037" DayCount = "10" >
+		<ItemOut>
+			<Item ID="190894" Count="100" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="190889"  Count="100" 	RrandStart="30"  RandEnd="60" />
+			<Item ID="1230012"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="160270"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!--假面舞会 大于85分 20111111下架-->
+	<!--Entry ID="55" DayType="241" DayCount = "20">
+		<ItemOut>
+			<Item ID="1353300" Count="1" 	RrandStart="0"  RandEnd="10" />
+			<Item ID="1593035" Count="1" 	RrandStart="10"  RandEnd="20" />
+			<Item ID="1353267"  Count="1" 	RrandStart="20"  RandEnd="60" />
+			<Item ID="160984"  Count="1" 	RrandStart="60"  RandEnd="100" />
+		</ItemOut>
+	</Entry-->
+
+	<!-- 南瓜灯 2011.10.28-->
+	<Entry ID="56" DayType="30038" DayCount = "20" >
+		<ItemOut>
+			<Item ID="160114" Count="1" 	RrandStart="0"  RandEnd="15" />
+			<Item ID="160115"  Count="1" 	RrandStart="15"  RandEnd="30" />
+			<Item ID="160116"  Count="1" 	RrandStart="30"  RandEnd="45" />
+			<Item ID="160117"  Count="1" 	RrandStart="45"  RandEnd="60" />
+			<Item ID="160118"  Count="1" 	RrandStart="60"  RandEnd="75" />
+			<Item ID="1351123"  Count="2" 	RrandStart="75"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 南瓜鬼脸抽屉 2011.10.28-->
+	<Entry ID="57" DayType="30039" DayCount = "20" >
+		<ItemOut>
+			<Item ID="160114" Count="1" 	RrandStart="0"  RandEnd="15" />
+			<Item ID="160115"  Count="1" 	RrandStart="15"  RandEnd="30" />
+			<Item ID="160116"  Count="1" 	RrandStart="30"  RandEnd="45" />
+			<Item ID="160117"  Count="1" 	RrandStart="45"  RandEnd="60" />
+			<Item ID="160118"  Count="1" 	RrandStart="60"  RandEnd="75" />
+			<Item ID="1351123"  Count="2" 	RrandStart="75"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 挖糖果 2011.10.28-->
+	<Entry ID="58" DayType="30040" DayCount = "20" >
+		<ItemOut>
+			<Item ID="1351123"  Count="2" 	RrandStart="0"  RandEnd="25" />
+			<Item ID="1230031"  Count="1" 	RrandStart="25"  RandEnd="50" />
+			<Item ID="180065"  Count="1" 	RrandStart="50"  RandEnd="75" />
+			<Item ID="17014"  Count="1" 	RrandStart="75"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 废弃小屋 2011.10.28-->
+	<Entry ID="59" DayType="30041" DayCount = "20" >
+		<ItemOut>
+			<Item ID="180066"  Count="1" 	RrandStart="0"  RandEnd="15" />
+			<Item ID="180067"  Count="1" 	RrandStart="15"  RandEnd="30" />
+			<Item ID="1351123"  Count="2" 	RrandStart="30"  RandEnd="45" />
+			<Item ID="160486"  Count="1" 	RrandStart="45"  RandEnd="60" />
+			<Item ID="160483"  Count="1" 	RrandStart="60"  RandEnd="75" />
+			<Item ID="1351125"  Count="1" 	RrandStart="75"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 万圣节地下迷宫 2011.10.28-->
+	<Entry ID="60" DayType="30042" DayCount = "20" >
+		<ItemOut>
+			<Item ID="160520"  Count="1" 	RrandStart="0"  RandEnd="20" />
+			<Item ID="160513"  Count="1" 	RrandStart="20"  RandEnd="40" />
+			<Item ID="160514"  Count="1" 	RrandStart="40"  RandEnd="60" />
+			<Item ID="13008"  Count="1" 	RrandStart="60"  RandEnd="80" />
+			<Item ID="12261"  Count="1" 	RrandStart="80"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- 南瓜箱 2011.10.28-->
+	<Entry ID="61" DayType="30043" DayCount = "20" >
+		<ItemOut>
+			<Item ID="1351123"  Count="2" 	RrandStart="0"  RandEnd="50" />
+			<Item ID="190028"  Count="2" 	RrandStart="50"  RandEnd="85" />
+			<Item ID="17010"  Count="2" 	RrandStart="85"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+	<!--假面舞会 大于85分 20111111 下架 -->
+	<!--Entry ID="62" DayType="241" DayCount = "20">
+		<ItemOut>
+			<Item ID="1353267"  Count="1" 	RrandStart="0"  RandEnd="50" />
+			<Item ID="160984"  Count="1" 	RrandStart="50"  RandEnd="100" />
+		</ItemOut>
+	</Entry-->
+
+	<!--黄金罗盘-->
+	<Entry ID="63" DayType="2000000007" DayCount = "1000000" CountStart="1" CountEnd="1">
+		<ItemIn>
+			<Item ID="1351365" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0"  Count="0" 	RrandStart="0"  RandEnd="30" />
+			<Item ID="1353319"  Count="1" 	RrandStart="30"  RandEnd="45" />
+			<Item ID="1353315"  Count="1" 	RrandStart="45"  RandEnd="55" />
+			<Item ID="1593076"  Count="1" 	RrandStart="55"  RandEnd="65" />
+			<Item ID="1353323"  Count="1" 	RrandStart="65"  RandEnd="75" />
+			<Item ID="1353322"  Count="1" 	RrandStart="75"  RandEnd="85" />
+			<Item ID="1353313"  Count="1" 	RrandStart="85"  RandEnd="100" />
+		</ItemOut>
+	</Entry>
+
+  <!-- 照镜子失败赠送 -->
+  <Entry ID="64" DayType="30045" DayCount = "25" >
+    <ItemOut>
+      <Item ID="180061"  Count="1" 	RrandStart="0"  RandEnd="20" />
+      <Item ID="180059"  Count="1" 	RrandStart="20"  RandEnd="40" />
+      <Item ID="180065"  Count="1" 	RrandStart="40"  RandEnd="60" />
+      <Item ID="1613100"  Count="1" 	RrandStart="60"  RandEnd="80" />
+      <Item ID="1613102"  Count="1" 	RrandStart="80"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <!-- 臭臭的考验奖励 -->
+  <Entry ID="65" DayType="30046" DayCount = "1" DayBegin="20111209" DayEnd="20111210">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="47" />
+      <Item ID="1593060"  Count="1" 	RrandStart="47"  RandEnd="53" />
+      <Item ID="1593044"  Count="1" 	RrandStart="53"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <Entry ID="66" DayType="30047" DayCount = "1" DayBegin="20111210" DayEnd="20111211">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="47" />
+      <Item ID="1593060"  Count="1" 	RrandStart="47"  RandEnd="53" />
+      <Item ID="1593044"  Count="1" 	RrandStart="53"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <Entry ID="67" DayType="30048" DayCount = "1" DayBegin="20111211" DayEnd="20111212">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="45" />
+      <Item ID="1593060"  Count="1" 	RrandStart="45"  RandEnd="55" />
+      <Item ID="1593044"  Count="1" 	RrandStart="55"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <Entry ID="68" DayType="30049" DayCount = "1" DayBegin="20111212" DayEnd="20111213">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="40" />
+      <Item ID="1593060"  Count="1" 	RrandStart="40"  RandEnd="60" />
+      <Item ID="1593044"  Count="1" 	RrandStart="60"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <Entry ID="69" DayType="30050" DayCount = "1" DayBegin="20111213" DayEnd="20111214">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="30" />
+      <Item ID="1593060"  Count="1" 	RrandStart="30"  RandEnd="70" />
+      <Item ID="1593044"  Count="1" 	RrandStart="70"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <Entry ID="70" DayType="30051" DayCount = "1" DayBegin="20111214" DayEnd="20111215">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="20" />
+      <Item ID="1593060"  Count="1" 	RrandStart="20"  RandEnd="80" />
+      <Item ID="1593044"  Count="1" 	RrandStart="80"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <Entry ID="71" DayType="30052" DayCount = "1" DayBegin="20111215" DayEnd="20111216">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="15" />
+      <Item ID="1593060"  Count="1" 	RrandStart="15"  RandEnd="85" />
+      <Item ID="1593044"  Count="1" 	RrandStart="85"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <!-- 任务 -->
+  <Entry ID="72" DayType="1000000035" DayCount = "1" DayBegin="20111209" DayEnd="20111216">
+    <ItemOut>
+      <Item ID="1593059"  Count="1" 	RrandStart="0"  RandEnd="47" />
+      <Item ID="1593060"  Count="1" 	RrandStart="47"  RandEnd="53" />
+      <Item ID="1593044"  Count="1" 	RrandStart="53"  RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <!-- 臭臭的考验奖励 END-->
+  <!-- 圣诞超拉礼盒兑换 -->
+  <Entry ID="73" DayType="30053" DayCount = "30" VIP="1" CountStart="1" CountEnd="1">
+    <ItemIn>
+      <Item ID="1351178" Count="1"/>
+    </ItemIn>
+    <ItemOut>
+      <Item ID="160149" Count="1" RrandStart="0"    RandEnd="4.5" />
+      <Item ID="160152" Count="1" RrandStart="4.5"  RandEnd="9" />
+      <Item ID="160156" Count="1" RrandStart="9"    RandEnd="13.5" />
+      <Item ID="160150" Count="1" RrandStart="13.5" RandEnd="18" />
+      <Item ID="160157" Count="1" RrandStart="18"   RandEnd="22.5" />
+      <Item ID="160151" Count="1" RrandStart="22.5" RandEnd="27" />
+      <Item ID="160159" Count="1" RrandStart="27"   RandEnd="31.5" />
+      <Item ID="160163" Count="1" RrandStart="31.5" RandEnd="36" />
+      <Item ID="160155" Count="1" RrandStart="36"   RandEnd="40.5" />
+      <Item ID="160166" Count="1" RrandStart="40.5" RandEnd="45" />
+      <Item ID="160165" Count="1" RrandStart="45"   RandEnd="49.5" />
+      <Item ID="160162" Count="1" RrandStart="49.5" RandEnd="54" />
+      <Item ID="160160" Count="1" RrandStart="54"   RandEnd="58.5" />
+      <Item ID="160164" Count="1" RrandStart="58.5" RandEnd="63" />
+      <Item ID="160617" Count="1" RrandStart="63"   RandEnd="67.5" />
+      <Item ID="160607" Count="1" RrandStart="67.5" RandEnd="72" />
+      <Item ID="1593008" Count="1" RrandStart="72"  RandEnd="77.5" />
+      <Item ID="1593024" Count="1" RrandStart="77.5" RandEnd="82" />
+      <Item ID="1593026" Count="1" RrandStart="82"  RandEnd="86.5" />
+      <Item ID="1593028" Count="1" RrandStart="86.5" RandEnd="91" />
+      <Item ID="1593030" Count="1" RrandStart="91"  RandEnd="95.5" />
+      <Item ID="1593035" Count="1" RrandStart="95.5" RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <!-- 圣诞天使礼盒兑换 -->
+  <Entry ID="74" DayType="30054" DayCount="30" CountStart="1" CountEnd="1">
+    <ItemIn>
+      <Item ID="1351177" Count="1"/>
+      <Item ID="1351180" Count="1"/>
+    </ItemIn>
+    <ItemOut>
+      <Item ID="1353218" Count="1" RrandStart="0"    RandEnd="0.5" />
+      <Item ID="1353204" Count="1" RrandStart="0.5"  RandEnd="0.6" />
+      <Item ID="1353210" Count="1" RrandStart="0.6"  RandEnd="3.6" />
+      <Item ID="1353214" Count="1" RrandStart="3.6"  RandEnd="6.6" />
+      <Item ID="1353215" Count="1" RrandStart="6.6"  RandEnd="9.6" />
+      <Item ID="1353217" Count="1" RrandStart="9.6"  RandEnd="12.6" />
+      <Item ID="1353305" Count="1" RrandStart="12.6" RandEnd="14.6" />
+      <Item ID="1353219" Count="1" RrandStart="14.6" RandEnd="16.6" />
+      <Item ID="1353220" Count="1" RrandStart="16.6" RandEnd="19.6" />
+      <Item ID="1353221" Count="1" RrandStart="19.6" RandEnd="22.6" />
+      <Item ID="1353222" Count="1" RrandStart="22.6" RandEnd="22.7" />
+      <Item ID="1353223" Count="1" RrandStart="22.7" RandEnd="24" />
+      <Item ID="1353224" Count="1" RrandStart="24" RandEnd="26" />
+      <Item ID="1353225" Count="1" RrandStart="26" RandEnd="28" />
+      <Item ID="1353226" Count="1" RrandStart="28" RandEnd="30" />
+      <Item ID="1353227" Count="1" RrandStart="30" RandEnd="32" />
+      <Item ID="1353228" Count="1" RrandStart="32" RandEnd="34" />
+      <Item ID="1353229" Count="1" RrandStart="34" RandEnd="37" />
+      <Item ID="1353230" Count="1" RrandStart="37" RandEnd="40" />
+      <Item ID="1353231" Count="1" RrandStart="40" RandEnd="42" />
+      <Item ID="1353232" Count="1" RrandStart="42" RandEnd="44" />
+      <Item ID="1353233" Count="1" RrandStart="44" RandEnd="46" />
+      <Item ID="1353234" Count="1" RrandStart="46" RandEnd="48" />
+      <Item ID="1353235" Count="1" RrandStart="48" RandEnd="50" />
+      <Item ID="1353237" Count="1" RrandStart="50" RandEnd="52" />
+      <Item ID="1353238" Count="1" RrandStart="52" RandEnd="54" />
+      <Item ID="1353239" Count="1" RrandStart="54" RandEnd="56" />
+      <Item ID="1353240" Count="1" RrandStart="56" RandEnd="58" />
+      <Item ID="1353241" Count="1" RrandStart="58" RandEnd="60" />
+      <Item ID="1353242" Count="1" RrandStart="60" RandEnd="62" />
+      <Item ID="1353245" Count="1" RrandStart="62" RandEnd="64" />
+      <Item ID="1353246" Count="1" RrandStart="64" RandEnd="66" />
+      <Item ID="1353247" Count="1" RrandStart="66" RandEnd="68" />
+      <Item ID="1353249" Count="1" RrandStart="68" RandEnd="70" />
+      <Item ID="1353257" Count="1" RrandStart="70" RandEnd="72" />
+      <Item ID="1353258" Count="1" RrandStart="72" RandEnd="74" />
+      <Item ID="1353259" Count="1" RrandStart="74" RandEnd="76" />
+      <Item ID="1353261" Count="1" RrandStart="76" RandEnd="78" />
+      <Item ID="1353262" Count="1" RrandStart="78" RandEnd="80" />
+      <Item ID="1353263" Count="1" RrandStart="80" RandEnd="82" />
+      <Item ID="1353264" Count="1" RrandStart="82" RandEnd="84" />
+      <Item ID="1353265" Count="1" RrandStart="84" RandEnd="86" />
+      <Item ID="1353267" Count="1" RrandStart="86" RandEnd="87" />
+      <Item ID="1353281" Count="1" RrandStart="87" RandEnd="89" />
+      <Item ID="1353282" Count="1" RrandStart="89" RandEnd="91" />
+      <Item ID="1353283" Count="1" RrandStart="91" RandEnd="93" />
+      <Item ID="1353287" Count="1" RrandStart="93" RandEnd="95" />
+      <Item ID="1353289" Count="1" RrandStart="95" RandEnd="97" />
+      <Item ID="1353291" Count="1" RrandStart="97" RandEnd="98" />
+      <Item ID="1353293" Count="1" RrandStart="98" RandEnd="99" />
+      <Item ID="1353300" Count="1" RrandStart="99" RandEnd="100" />
+    </ItemOut>
+  </Entry>
+  <!-- 臭臭的考验更新 -->
+  <Entry ID="75" DayType="30055" DayCount="1">
+    <ItemOut>
+      <Item ID="1593059" Count="1" RrandStart="0" RandEnd="25" />
+      <Item ID="1593060" Count="1" RrandStart="25" RandEnd="50" />
+      <Item ID="1593063" Count="1" RrandStart="50" RandEnd="75" />
+      <Item ID="1593064" Count="1" RrandStart="75" RandEnd="100" />
+    </ItemOut>
+  </Entry>
+
+  <!-- 幸运红包机会摇奖 -->
+  <Entry ID="76" CountStart="1" CountEnd="1" DayType="30056" DayCount="3">
+     <ItemIn>
+      <Item ID="1351291" Count="1"/>
+    </ItemIn>
+   <ItemOut>
+      <Item ID="0" Count="50" RrandStart="0" RandEnd="14" />
+      <Item ID="0" Count="100" RrandStart="14" RandEnd="28" />
+      <Item ID="0" Count="200" RrandStart="28" RandEnd="42" />
+      <Item ID="0" Count="500" RrandStart="42" RandEnd="53" />
+      <Item ID="16012" Count="5" RrandStart="53" RandEnd="67" />
+      <Item ID="16012" Count="20" RrandStart="67" RandEnd="81" />
+      <Item ID="16012" Count="50" RrandStart="81" RandEnd="95" />
+      <Item ID="16012" Count="100" RrandStart="95" RandEnd="100" />
+    </ItemOut>
+  </Entry>
+
+  <!-- 驱赶年兽 -->
+  <Entry ID="77" DayType="30057" DayCount="10">
+    <ItemOut>
+      <Item ID="160885" Count="1" RrandStart="0" RandEnd="10" />
+      <Item ID="160886" Count="1" RrandStart="10" RandEnd="20" />
+      <Item ID="160887" Count="1" RrandStart="20" RandEnd="30" />
+      <Item ID="1220132" Count="1" RrandStart="30" RandEnd="40" />
+      <Item ID="1220133" Count="1" RrandStart="40" RandEnd="50" />
+      <Item ID="1220134" Count="1" RrandStart="50" RandEnd="60" />
+      <Item ID="1220135" Count="1" RrandStart="60" RandEnd="70" />
+      <Item ID="1220160" Count="1" RrandStart="70" RandEnd="80" />
+      <Item ID="1220161" Count="1" RrandStart="80" RandEnd="90" />
+      <Item ID="1230087" Count="1" RrandStart="90" RandEnd="100" />
+    </ItemOut>
+  </Entry>
+
+  <!-- 拉姆运动会啦啦队活动 -->
+  <Entry ID="78" DayType="30058" DayCount="20">
+    <ItemOut>
+      <Item ID="1220270" Count="1" RrandStart="0" RandEnd="16" />
+      <Item ID="1220271" Count="1" RrandStart="16" RandEnd="32" />
+      <Item ID="1220272" Count="1" RrandStart="32" RandEnd="48" />
+      <Item ID="1220273" Count="1" RrandStart="48" RandEnd="64" />
+      <Item ID="1220274" Count="1" RrandStart="64" RandEnd="80" />
+      <Item ID="1351317" Count="5" RrandStart="80" RandEnd="100" />
+    </ItemOut>
+  </Entry>
+
+  <!-- 千纸鹤 -->
+  <Entry ID="79" CountStart="1" CountEnd="1" DayType="30059" DayCount="10">
+     <ItemIn>
+      <Item ID="1351324" Count="1"/>
+      <Item ID="1351325" Count="1"/>
+      <Item ID="1351326" Count="1"/>
+      <Item ID="1351327" Count="1"/>
+    </ItemIn>
+   <ItemOut>
+      <Item ID="1230025" Count="5" RrandStart="0" RandEnd="20" />
+      <Item ID="1230030" Count="5" RrandStart="20" RandEnd="40" />
+      <Item ID="1230083" Count="5" RrandStart="40" RandEnd="60" />
+      <Item ID="1230090" Count="5" RrandStart="60" RandEnd="80" />
+      <Item ID="1230092" Count="5" RrandStart="80" RandEnd="100" />
+    </ItemOut>
+  </Entry>
+
+</RANDS>

@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CacheServ: Z:/cache_svr/base.cpp文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Z:/cache_svr/base.cpp文件参考</h1>提供字符串处理，判断用户是否存在等基本函数  
+<a href="#_details">更多...</a>
+<p>
+
+<p>
+<div class="dynheader">
+base.cpp包含/依赖关系图：</div>
+<div class="dynsection">
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8cpp.html#b09f32012a27f2bd789c879c48542922">trim</a> (char *s)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">去除字符串的前后空格，TAB键和回车键  <a href="#b09f32012a27f2bd789c879c48542922"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8cpp.html#dc5ef030579b1f8053bd534b7aaff89e">set_sndbuf_head</a> (char *sendbuf, int *sndlen, <a class="el" href="structproto__head.html">proto_head_t</a> *rcvph, int private_size, int ret)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化sendbuf指向的空间  <a href="#dc5ef030579b1f8053bd534b7aaff89e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8cpp.html#614bcc8f707d7c6037874fb3bd4de3e8">is_user_exist</a> (uint32_t gm_id, uint32_t user_id, uint32_t score, int *opy_pos)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">得到用户在排行榜中的位置  <a href="#614bcc8f707d7c6037874fb3bd4de3e8"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+提供字符串处理，判断用户是否存在等基本函数 
+<p>
+============================================================================<p>
+compiler : gcc version 4.1.2<p>
+platfomr : Debian 4.1.1-12<p>
+copyright : TaoMee, Inc. ShangHai CN. All rights reserved.<p>
+============================================================================ <hr><h2>函数文档</h2>
+<a class="anchor" name="614bcc8f707d7c6037874fb3bd4de3e8"></a><!-- doxytag: member="base.cpp::is_user_exist" ref="614bcc8f707d7c6037874fb3bd4de3e8" args="(uint32_t gm_id, uint32_t user_id, uint32_t score, int *opy_pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_user_exist           </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&nbsp;</td>
+          <td class="paramname"> <em>gm_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&nbsp;</td>
+          <td class="paramname"> <em>user_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&nbsp;</td>
+          <td class="paramname"> <em>score</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>opy_pos</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+得到用户在排行榜中的位置 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>gm_id,游戏的ID号</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>user_id,用户的ID号</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>score,用户的游戏分数</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>opy_pos,保存返回的位置</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0，用户不在排行榜中 <p>
+-1，用户在排行榜中，但新的分数少于原来的分数; 1，用户在排行榜中，位置信息存储在opy_pos中 </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="dc5ef030579b1f8053bd534b7aaff89e"></a><!-- doxytag: member="base.cpp::set_sndbuf_head" ref="dc5ef030579b1f8053bd534b7aaff89e" args="(char *sendbuf, int *sndlen, proto_head_t *rcvph, int private_size, int ret)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int set_sndbuf_head           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>sendbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>sndlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structproto__head.html">proto_head_t</a> *&nbsp;</td>
+          <td class="paramname"> <em>rcvph</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>private_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>ret</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化sendbuf指向的空间 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sendbuf</em>&nbsp;</td><td>发送字符串的指针 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sndlen</em>&nbsp;</td><td>保存发送字符串长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rcvph</em>&nbsp;</td><td>接收的字符串指针 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>private_size</em>&nbsp;</td><td>在包的头信息基础上加的字符长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ret,返回给客户端的结果；-1,失败；0，成功</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+<a class="anchor" name="b09f32012a27f2bd789c879c48542922"></a><!-- doxytag: member="base.cpp::trim" ref="b09f32012a27f2bd789c879c48542922" args="(char *s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int trim           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>s</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+去除字符串的前后空格，TAB键和回车键 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>s</em>&nbsp;</td><td>指向字符串的指针 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0 </dd></dl>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Thu Jan 15 19:16:23 2009 for CacheServ by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

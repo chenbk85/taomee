@@ -1,0 +1,98 @@
+//获取餐厅信息
+struct client_req_1014
+{
+	uint32_t shop_uid;
+        uint32_t shop_type;
+};
+struct client_out_1014_hdr
+{
+	uint32_t userid;
+	uint32_t roomid;
+	uint32_t gridid;
+	uint32_t shop_exp;
+	uint32_t shop_money;
+	uint32_t shop_evaluate;
+	uint32_t shop_type;
+	uint32_t shop_level;
+	uint32_t shop_total_dishs;
+	uint32_t inner_style;
+	uint32_t shop_style;
+	uint8_t	 shop_name[16];
+	uint32_t off_money;
+	uint32_t level_5_count;
+	uint32_t dish_count;
+	uint32_t employee_count;
+};
+struct client_out_1014_dish
+{
+	uint32_t location;
+	uint32_t itemid;
+	uint32_t index;
+	uint32_t count;
+	uint32_t state;
+	uint32_t time;
+};
+struct client_out_1014_employee
+{
+	uint32_t userid;
+	uint32_t petid;
+	uint8_t  nick[16];
+	uint32_t color;
+	uint32_t level;
+	uint32_t skill;
+	uint32_t employe_level;
+	uint32_t employe_money;
+	uint32_t employe_timer;
+	uint32_t employe_limit;
+};
+
+//获取餐厅面板信息
+struct client_req_1023
+{
+	uint32_t shop_uid;
+	uint32_t shop_type;
+};
+struct client_out_1023
+{
+	uint32_t shop_uid;
+	uint32_t shop_type;
+	uint32_t off_money;
+	uint32_t off_evaluate;
+	uint32_t level_5_count;
+};
+
+//获取餐厅道具是否解锁
+struct client_req_1045
+{
+	uint32_t itemid;//菜的ITEM ID
+};
+struct client_out_1045
+{
+	uint32_t itemid;//菜的ITEM ID
+	uint32_t enable;//是否解锁
+};
+
+//获取所有菜的星级和制作次数
+struct client_out_1046_hdr
+{
+	uint32_t count;
+};
+struct client_out_1046_item
+{
+	uint32_t dish_id;
+	uint32_t dish_count;
+	uint32_t dish_level;
+};
+//获得session
+struct client_out_426
+{
+	uint8_t session[16];
+};
+//通知菜品星级提升
+struct notify_out_1047
+{
+	uint32_t itemid;
+	uint32_t level;
+	uint32_t addexp;
+	uint32_t addcount;
+};

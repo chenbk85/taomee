@@ -1,0 +1,323 @@
+<AF_PRIZES>
+	<PRIZES prize_type="1" start_id="1000" end_id="1999" name="天使">
+		<Prize ID="1000" prize_id="1553000" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="1001" prize_id="1553001" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="1002" prize_id="1553002" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="1003" prize_id="1553003" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="1004" prize_id="1553004" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="1005" prize_id="1553057" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="1006" prize_id="1553058" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="1007" prize_id="1553059" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="1008" prize_id="1553060" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="1009" prize_id="1553061" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="1010" prize_id="1553120" level="20" win="0" vip="0" rate="30"/>
+	</PRIZES>	
+	<PRIZES prize_type="2" start_id="2000" end_id="2999" name="被动技能">
+		<Prize ID="2000" prize_id="1553005" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="2001" prize_id="1553006" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="2002" prize_id="1553007" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="2003" prize_id="1553008" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="2004" prize_id="1553009" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="2005" prize_id="1553010" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="2006" prize_id="1553011" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="2007" prize_id="1553012" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="2008" prize_id="1553013" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="2009" prize_id="1553014" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="2010" prize_id="1553015" level="10" win="0" vip="0" rate="30"/>
+		<Prize ID="2011" prize_id="1553016" level="10" win="0" vip="0" rate="30"/>
+	</PRIZES>	
+	<PRIZES prize_type="3" start_id="3000" end_id="3999" prize_cnt="1" name="能量道具">
+		<Prize ID="3000" prize_id="1301001" level="1" win="0" vip="0" rate="25"/>
+	</PRIZES>
+	<PRIZES prize_type="4" start_id="4000" end_id="4999" prize_cnt="1" name="增益道具">
+		<Prize ID="4000" prize_id="1301009" level="1" rate="40"/>
+		<Prize ID="4001" prize_id="1301010" level="1" rate="40"/>
+		<Prize ID="4002" prize_id="1301011" level="1" rate="40"/>
+		<Prize ID="4003" prize_id="1301012" level="1" rate="40"/>
+	</PRIZES>	
+	<PRIZES prize_type="5" start_id="5000" end_id="5999" prize_cnt="1" name="主动经验道具">
+		<Prize ID="5000" prize_id="1301017" level="1" rate="20"/>
+	</PRIZES>
+	<PRIZES prize_type="6" start_id="6000" end_id="6999" prize_cnt="1" name="其他道具">
+		<Prize ID="6000" prize_id="1301024" level="1" win="0" vip="0" rate="40"/>
+	</PRIZES>	
+	<PRIZES prize_type="7" start_id="7000" end_id="7999" prize_cnt="1" name="地图收集品">
+		<Prize ID="7000" prize_id="1583035" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7001" prize_id="1583036" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7002" prize_id="1583037" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7003" prize_id="1583038" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7004" prize_id="1583039" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7005" prize_id="1583040" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7006" prize_id="1583041" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7007" prize_id="1583042" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7008" prize_id="1583043" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7009" prize_id="1583044" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7010" prize_id="1583080" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7011" prize_id="1583081" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7012" prize_id="1583082" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7013" prize_id="1583083" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7014" prize_id="1583084" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7015" prize_id="1583085" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7016" prize_id="1583086" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7017" prize_id="1583087" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7018" prize_id="1583088" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7019" prize_id="1583089" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7020" prize_id="1583125" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7021" prize_id="1583126" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7022" prize_id="1583127" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7023" prize_id="1583128" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7024" prize_id="1583129" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7025" prize_id="1583130" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7026" prize_id="1583131" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7027" prize_id="1583132" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7028" prize_id="1583133" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7029" prize_id="1583134" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7030" prize_id="1583205" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7031" prize_id="1583206" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7032" prize_id="1583207" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7033" prize_id="1583208" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7034" prize_id="1583209" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7035" prize_id="1583210" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7036" prize_id="1583211" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7037" prize_id="1583212" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7038" prize_id="1583213" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="7039" prize_id="1583214" level="1" win="0" vip="0" rate="15"/>
+	</PRIZES>
+	<PRIZES prize_type="8" start_id="8000" end_id="8999" prize_cnt="1" name="怪物收集品">
+		<Prize ID="8000" prize_id="1583000" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8001" prize_id="1583001" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8002" prize_id="1583002" level="1" win="0" vip="0" rate="40"/>	
+		<Prize ID="8003" prize_id="1583003" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8004" prize_id="1583004" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8005" prize_id="1583005" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8006" prize_id="1583006" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8007" prize_id="1583007" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8008" prize_id="1583008" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8009" prize_id="1583009" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8010" prize_id="1583010" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8011" prize_id="1583011" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8012" prize_id="1583012" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8013" prize_id="1583013" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8014" prize_id="1583014" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8015" prize_id="1583015" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8016" prize_id="1583016" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8017" prize_id="1583017" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8018" prize_id="1583018" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8019" prize_id="1583019" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8020" prize_id="1583020" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8021" prize_id="1583021" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8022" prize_id="1583022" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8023" prize_id="1583023" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8024" prize_id="1583024" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8025" prize_id="1583025" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8026" prize_id="1583026" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8027" prize_id="1583027" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8028" prize_id="1583028" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8029" prize_id="1583029" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8030" prize_id="1583030" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8031" prize_id="1583031" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8032" prize_id="1583032" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8033" prize_id="1583033" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8034" prize_id="1583034" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8035" prize_id="1583045" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8036" prize_id="1583046" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8037" prize_id="1583047" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8038" prize_id="1583048" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8039" prize_id="1583049" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8040" prize_id="1583050" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8041" prize_id="1583051" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8042" prize_id="1583052" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8043" prize_id="1583053" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8044" prize_id="1583054" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8045" prize_id="1583055" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8046" prize_id="1583056" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8047" prize_id="1583057" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8048" prize_id="1583058" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8049" prize_id="1583059" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8050" prize_id="1583060" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8051" prize_id="1583061" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8052" prize_id="1583062" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8053" prize_id="1583063" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8054" prize_id="1583064" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8055" prize_id="1583065" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8056" prize_id="1583066" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8057" prize_id="1583067" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8058" prize_id="1583068" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8059" prize_id="1583069" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8060" prize_id="1583070" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8061" prize_id="1583071" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8062" prize_id="1583072" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8063" prize_id="1583073" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8064" prize_id="1583074" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8065" prize_id="1583075" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8066" prize_id="1583076" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8067" prize_id="1583077" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8068" prize_id="1583078" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8069" prize_id="1583079" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8070" prize_id="1583090" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8071" prize_id="1583091" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8072" prize_id="1583092" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8073" prize_id="1583093" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8074" prize_id="1583094" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8075" prize_id="1583095" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8076" prize_id="1583096" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8077" prize_id="1583097" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8078" prize_id="1583098" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8079" prize_id="1583099" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8080" prize_id="1583100" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8081" prize_id="1583101" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8082" prize_id="1583102" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8083" prize_id="1583103" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8084" prize_id="1583104" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8085" prize_id="1583105" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8086" prize_id="1583106" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8087" prize_id="1583107" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8088" prize_id="1583108" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8089" prize_id="1583109" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8090" prize_id="1583110" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8091" prize_id="1583111" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8092" prize_id="1583112" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8093" prize_id="1583113" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8094" prize_id="1583114" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8095" prize_id="1583115" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8096" prize_id="1583116" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8097" prize_id="1583117" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8098" prize_id="1583118" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8099" prize_id="1583119" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8100" prize_id="1583120" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8101" prize_id="1583121" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8102" prize_id="1583122" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8103" prize_id="1583123" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8104" prize_id="1583124" level="1" win="0" vip="0" rate="40"/>
+		<Prize ID="8105" prize_id="1583135" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8106" prize_id="1583136" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8107" prize_id="1583137" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8108" prize_id="1583138" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8109" prize_id="1583139" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8110" prize_id="1583140" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8111" prize_id="1583141" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8112" prize_id="1583142" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8113" prize_id="1583143" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8114" prize_id="1583144" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8115" prize_id="1583145" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8116" prize_id="1583146" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8117" prize_id="1583147" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8118" prize_id="1583148" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8119" prize_id="1583149" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8120" prize_id="1583150" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8121" prize_id="1583151" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8122" prize_id="1583152" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8123" prize_id="1583153" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8124" prize_id="1583154" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8125" prize_id="1583155" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8126" prize_id="1583156" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8127" prize_id="1583157" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8128" prize_id="1583158" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8129" prize_id="1583159" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8130" prize_id="1583160" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8131" prize_id="1583161" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8132" prize_id="1583162" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8133" prize_id="1583163" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8134" prize_id="1583164" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8135" prize_id="1583165" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8136" prize_id="1583166" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8137" prize_id="1583167" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8138" prize_id="1583168" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8139" prize_id="1583169" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8140" prize_id="1583170" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8141" prize_id="1583171" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8142" prize_id="1583172" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8143" prize_id="1583173" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8144" prize_id="1583174" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8145" prize_id="1583175" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8146" prize_id="1583176" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8147" prize_id="1583177" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8148" prize_id="1583178" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8149" prize_id="1583179" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8150" prize_id="1583180" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8151" prize_id="1583181" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8152" prize_id="1583182" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8153" prize_id="1583183" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8154" prize_id="1583184" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8155" prize_id="1583185" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8156" prize_id="1583186" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8157" prize_id="1583187" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8158" prize_id="1583188" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8159" prize_id="1583189" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8160" prize_id="1583190" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8161" prize_id="1583191" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8162" prize_id="1583192" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8163" prize_id="1583193" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8164" prize_id="1583194" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8165" prize_id="1583195" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8166" prize_id="1583196" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8167" prize_id="1583197" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8168" prize_id="1583198" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8169" prize_id="1583199" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8170" prize_id="1583200" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8171" prize_id="1583201" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8172" prize_id="1583202" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8173" prize_id="1583203" level="1" win="0" vip="0" rate="20"/>
+		<Prize ID="8174" prize_id="1583204" level="1" win="0" vip="0" rate="20"/>
+	</PRIZES>	
+	<PRIZES prize_type="9" start_id="9000" end_id="9999" prize_cnt="1" name="怪物卡">
+		<Prize ID="9000" prize_id="1553017" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9001" prize_id="1553018" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9002" prize_id="1553019" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9003" prize_id="1553020" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9004" prize_id="1553021" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9005" prize_id="1553022" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9006" prize_id="1553023" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9007" prize_id="1553062" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9008" prize_id="1553063" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9009" prize_id="1553064" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9010" prize_id="1553065" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9011" prize_id="1553066" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9012" prize_id="1553067" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9013" prize_id="1553068" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9014" prize_id="1553087" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9015" prize_id="1553088" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9016" prize_id="1553089" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9017" prize_id="1553090" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9018" prize_id="1553091" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9019" prize_id="1553092" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9020" prize_id="1553093" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9021" prize_id="1553121" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9022" prize_id="1553122" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9023" prize_id="1553123" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9024" prize_id="1553124" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9025" prize_id="1553125" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9026" prize_id="1553126" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="9027" prize_id="1553127" level="1" win="0" vip="0" rate="10"/>
+	</PRIZES>	
+	<PRIZES prize_type="10" start_id="10000" end_id="10999" prize_cnt="1" name="摩尔豆">
+		<Prize ID="10000" prize_id="0" level="1" win="0" vip="0" rate="40" prize_cnt="500"/>
+		<Prize ID="10001" prize_id="0" level="1" win="0" vip="0" rate="40" prize_cnt="300"/>
+	</PRIZES>
+	<PRIZES prize_type="11" start_id="11000" end_id="11999" prize_cnt="1" name="活力道具">
+		<Prize ID="11000" prize_id="1301005" level="1" win="0" vip="0" rate="30"/>
+	</PRIZES>
+	<PRIZES prize_type="12" start_id="12000" end_id="12999" prize_cnt="1" name="被动经验道具">
+		<Prize ID="12000" prize_id="1301018" level="1" win="0" vip="0" rate="25"/>
+	</PRIZES>
+	<PRIZES prize_type="13" start_id="13000" end_id="13999" prize_cnt="1" name="装扮">
+		<Prize ID="13000" prize_id="1553055" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="13001" prize_id="1553056" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="13002" prize_id="1553071" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="13003" prize_id="1553072" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="13004" prize_id="1553102" level="1" win="0" vip="0" rate="15"/>
+		<Prize ID="13005" prize_id="1553103" level="1" win="0" vip="0" rate="15"/>
+	</PRIZES>
+	<PRIZES prize_type="14" start_id="14000" end_id="14999" name="boss天使">
+		<Prize ID="14000" prize_id="1553081" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="14001" prize_id="1553082" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="14002" prize_id="1553083" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="14003" prize_id="1553084" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="14004" prize_id="1553085" level="1" win="0" vip="0" rate="10"/>
+		<Prize ID="14005" prize_id="1553086" level="1" win="0" vip="0" rate="30"/>
+		<Prize ID="14006" prize_id="1553119" level="1" win="0" vip="0" rate="10"/>
+	</PRIZES>	
+	<PRIZES prize_type="15" start_id="15000" end_id="15999" name="宝石卡">
+		<Prize ID="15000" prize_id="1301034" level="1" win="0" vip="0" rate="20"/>
+	</PRIZES>	
+</AF_PRIZES>

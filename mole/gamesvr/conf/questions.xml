@@ -1,0 +1,4202 @@
+<Questions>
+	<Question ID="1" Content="你知道火警的电话号码是多少吗？"
+          
+		  OptionA="110"
+		  OptionB="121"
+		  OptionC="112"
+		  OptionD="119"
+          Answer ="4" />
+    <Question ID="2" Content="地震发生时，我们该往哪里逃生？"
+          
+		  OptionA="高大建筑物、窄小胡同"
+		  OptionB="高压线、变压器"
+		  OptionC="陡山坡、河岸边"
+		  OptionD="开阔地带"
+          Answer ="4" />
+  <Question ID="3" Content="地震发生后不应该做的是哪件事情呢？"
+          
+		  OptionA="保持镇定，从容进行分析你的具体情况"
+		  OptionB="帮助受伤的人，必要时给予急救"
+		  OptionC="检查火源,如可能就立即把火扑灭"
+		  OptionD="触摸电力线或与其连接的物体"
+          Answer ="4" />
+  <Question ID="4" Content="下列哪项不属于地球内部三层？"
+          
+		  OptionA="地壳"
+		  OptionB="地幔"
+		  OptionC="地核"
+		  OptionD="地心"
+          Answer ="4" />
+  <Question ID="5" Content="地震造成的最普遍的灾害是什么？"
+          
+		  OptionA="各类建（构）筑物的破坏和倒塌"
+		  OptionB="有煤气、毒气体泄漏"
+		  OptionC="引起火灾、水灾"
+		  OptionD="细菌、放射物扩散"
+          Answer ="1" />
+  <Question ID="6" Content="世界上最大的海是哪一个？"
+          
+		  OptionA="中国的南海"
+		  OptionB="黑海"
+		  OptionC="珊瑚海"
+		  OptionD="红海"
+          Answer ="3" />
+  <Question ID="7" Content="我国每年3月12日的植树节是为纪念谁而定的呢？"
+          
+		  OptionA="屈原"
+		  OptionB="孙中山"
+		  OptionC="白求恩"
+		  OptionD="雷锋"
+          Answer ="2" />
+  <Question ID="8" Content="防震减灾工作的最后一个环节是什么？"
+          
+		  OptionA="地震监测预报"
+		  OptionB="震后救灾与重建"
+		  OptionC="震灾预防"
+		  OptionD="地震应急"
+          Answer ="2" />
+  <Question ID="9" Content="从事什么工作的人整天忙得团团转？"
+          
+		  OptionA="记者"
+		  OptionB="律师"
+		  OptionC="护士"
+		  OptionD="芭蕾舞演员"
+          Answer ="4" />
+  <Question ID="10" Content="海南岛是我国的第几大岛？"
+          
+		  OptionA="第一"
+		  OptionB="第二"
+		  OptionC="第三"
+		  OptionD="第四"
+          Answer ="2" />
+  <Question ID="11" Content="你知道《七步诗》的作者是谁吗？"
+          
+		  OptionA="曹植"
+		  OptionB="曹冲"
+		  OptionC="曹操"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="12" Content="你知道奥运会五环旗中，黄色代表什么吗？"
+          
+		  OptionA="亚洲"
+		  OptionB="欧洲"
+		  OptionC="非洲"
+		  OptionD="大洋洲"
+          Answer ="1" />
+  <Question ID="13" Content="鸡蛋一打有多少个？"
+          
+		  OptionA="一个"
+		  OptionB="两个"
+		  OptionC="二十个"
+		  OptionD="一个也没有，都碎了"
+          Answer ="4" />
+  <Question ID="14" Content="下列哪个国家不是联合国常任理事国之一？"
+          
+		  OptionA="英国"
+		  OptionB="法国"
+		  OptionC="中国"
+		  OptionD="德国"
+          Answer ="4" />
+  <Question ID="15" Content="被称为“画圣”的古代画家是谁？"
+          
+		  OptionA="吴道子"
+		  OptionB="顾恺之"
+		  OptionC="韩干"
+		  OptionD="张择端"
+          Answer ="1" />
+  <Question ID="16" Content="我国最早发现的纸币是哪个时期的？"
+          
+		  OptionA="唐朝"
+		  OptionB="宋朝"
+		  OptionC="元朝"
+		  OptionD="明朝"
+          Answer ="2" />
+  <Question ID="17" Content="几级地震属于微震，人体感觉不到？"
+          
+		  OptionA="6.5级以上"
+		  OptionB="5级至6.5级"
+		  OptionC="2级至4级"
+		  OptionD="小于2级"
+          Answer ="4" />
+  <Question ID="18" Content="提出学习要“温故而知新”的是谁？"
+          
+		  OptionA="老子"
+		  OptionB="孔子"
+		  OptionC="庄子"
+		  OptionD="墨子"
+          Answer ="2" />
+  <Question ID="19" Content="上海的南京路上，过往最多的是什么人？"
+          
+		  OptionA="上海人"
+		  OptionB="行人"
+		  OptionC="外国人"
+		  OptionD="中国人"
+          Answer ="2" />
+  <Question ID="20" Content="大卫养了只老母鸡，在梅森的花盆里下了个鸡蛋，这个鸡蛋该属于谁呢？"
+          
+		  OptionA="梅森"
+		  OptionB="大卫"
+		  OptionC="老母鸡"
+		  OptionD="共同拥有"
+          Answer ="3" />
+  <Question ID="21" Content="著名风景区九寨沟位于我国哪个省？"
+          
+		  OptionA="台湾"
+		  OptionB="云南"
+		  OptionC="广西"
+		  OptionD="四川"
+          Answer ="4" />
+  <Question ID="22" Content="下列哪项不属于破坏性地震预报三要素？"
+          
+		  OptionA="时间"
+		  OptionB="地点"
+		  OptionC="震级"
+		  OptionD="破坏易损程度"
+          Answer ="4" />
+  <Question ID="23" Content="是谁发现了好望角？"
+          
+		  OptionA="达.伽马"
+		  OptionB="迪亚士"
+		  OptionC="麦哲伦"
+		  OptionD="哥伦布"
+          Answer ="2" />
+  <Question ID="24" Content="青蛙比树跳得高，你相信吗？"
+          
+		  OptionA="不相信"
+		  OptionB="相信，因为树不会跳"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="25" Content="名言“生命在于运动”是谁说的？ "
+          
+		  OptionA="车尔尼夫斯基"
+		  OptionB="普希金"
+		  OptionC="伏尔泰"
+		  OptionD="契诃夫"
+          Answer ="3" />
+  <Question ID="26" Content="奥运会每四年举办一次,会期不超过多少天? "
+          
+		  OptionA="14天"
+		  OptionB="16天"
+		  OptionC="20天"
+		  OptionD="21天"
+          Answer ="2" />
+  <Question ID="27" Content="我国面积最大的湖泊是?"
+          
+		  OptionA="青海湖"
+		  OptionB="鄱阳湖"
+		  OptionC="洞庭湖"
+		  OptionD="太湖"
+          Answer ="1" />
+  <Question ID="28" Content="下列农民起义哪次是洪秀全领导的? "
+          
+		  OptionA="大泽乡起义"
+		  OptionB="黄巾起义"
+		  OptionC="赤眉起义"
+		  OptionD="金田起义"
+          Answer ="4" />
+  <Question ID="29" Content="下列哪项不属于我国地震预报的政策？"
+          
+		  OptionA="预测、预防与政府行政决策相结合"
+		  OptionB="鼓励预报研究与严格管理预报发布相结合"
+		  OptionC="专家的科学判断与政府行政决策相结合"
+		  OptionD="预测、预防与预报相结合"
+          Answer ="1" />
+  <Question ID="30" Content="我国上世纪第五个地震活跃期开始于何年？"
+          
+		  OptionA="1987年"
+		  OptionB="1988年"
+		  OptionC="1989年"
+		  OptionD="1998年"
+          Answer ="2" />
+  <Question ID="31" Content="“办事不认真容易出错”这句话错在哪里？"
+          
+		  OptionA="没有错"
+		  OptionB="全错了"
+		  OptionC="错在第二个字"
+		  OptionD="错在最后一个字"
+          Answer ="4" />
+  <Question ID="32" Content="太阳系中质量最大的行星是哪个？"
+          
+		  OptionA="地球"
+		  OptionB="水星"
+		  OptionC="木星"
+		  OptionD="冥王星"
+          Answer ="3" />
+  <Question ID="33" Content="如果北极有一幢房子，有只熊从窗边路过，这只熊是什么颜色呢?"
+          
+		  OptionA="棕色"
+		  OptionB="黑色"
+		  OptionC="白色"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="34" Content="世界地震史上，造成人员伤亡最多的是哪次地震？"
+          
+		  OptionA="1556年陕西华县8级地震"
+		  OptionB="1933年四川叠溪7.5级地震"
+		  OptionC="1739年银川8级地震"
+		  OptionD="1976年河北唐山7.8级地震"
+          Answer ="1" />
+  <Question ID="35" Content="嫦娥姐姐住在哪里呢？"
+          
+		  OptionA="太阳上"
+		  OptionB="月亮上"
+		  OptionC="星星上"
+		  OptionD="地球上"
+          Answer ="2" />
+  <Question ID="36" Content="“腊八粥”最早起源于什么？"
+          
+		  OptionA="祭祀"
+		  OptionB="民间庆祝丰收的风俗"
+		  OptionC="佛教"
+		  OptionD="道教"
+          Answer ="3" />
+  <Question ID="37" Content="什么人一年只上一天班，还不怕被解雇呢？"
+          
+		  OptionA="老师"
+		  OptionB="医生"
+		  OptionC="老板"
+		  OptionD="圣诞老人"
+          Answer ="4" />
+  <Question ID="38" Content="躺着看书的最大受害者是我们的什么？"
+          
+		  OptionA="鼻子"
+		  OptionB="嘴巴"
+		  OptionC="眼睛"
+		  OptionD="耳朵"
+          Answer ="3" />
+  <Question ID="39" Content="围棋共有多少个棋子？"
+          
+		  OptionA="360"
+		  OptionB="361"
+		  OptionC="362"
+		  OptionD="365"
+          Answer ="2" />
+  <Question ID="40" Content="鸡蛋扔出去了却还没有破，为什么？"
+          
+		  OptionA="还没有落地"
+		  OptionB="是橡皮做的"
+		  OptionC="假鸡蛋"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="41" Content="下列历史上的大动乱跟吴三桂有关的是？"
+          
+		  OptionA="八王之乱"
+		  OptionB="三藩之乱"
+		  OptionC="七国之乱"
+		  OptionD="安史之乱"
+          Answer ="2" />
+  <Question ID="42" Content="月亮是地球的什么？"
+          
+		  OptionA="行星"
+		  OptionB="恒星"
+		  OptionC="卫星"
+		  OptionD="彗星"
+          Answer ="3" />
+  <Question ID="43" Content="下列哪一层最常发生地震？"
+          
+		  OptionA="地壳"
+		  OptionB="地幔"
+		  OptionC="地核"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="44" Content="拖拉机的前轮和后轮一般是哪个大呢？"
+          
+		  OptionA="一样大"
+		  OptionB="前轮大"
+		  OptionC="后轮大"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="45" Content="下列哪个有溶解油污的作用？"
+          
+		  OptionA="水"
+		  OptionB="汽油"
+		  OptionC="酒精"
+		  OptionD="水银"
+          Answer ="3" />
+  <Question ID="46" Content="世界名画《和平鸽》的创作者是谁？"
+          
+		  OptionA="毕加索"
+		  OptionB="梵高"
+		  OptionC="达芬奇"
+		  OptionD="拉斐尔"
+          Answer ="1" />
+  <Question ID="47" Content="打糕是我国哪一民族的风味食品？"
+          
+		  OptionA="彝族"
+		  OptionB="傣族"
+		  OptionC="朝鲜族"
+		  OptionD="壮族"
+          Answer ="3" />
+  <Question ID="48" Content="什么海不产鱼？"
+          
+		  OptionA="黑海"
+		  OptionB="摩罗地海"
+		  OptionC="红海"
+		  OptionD="辞海"
+          Answer ="4" />
+  <Question ID="49" Content="巴黎圣母院是什么式建筑的代表作？"
+          
+		  OptionA="巴洛克"
+		  OptionB="洛可可"
+		  OptionC="哥特"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="50" Content="黄河注入什么海？"
+          
+		  OptionA="渤海"
+		  OptionB="黄海"
+		  OptionC="东海"
+		  OptionD="南海"
+          Answer ="1" />
+  <Question ID="51" Content="世界最大的内陆国是？ "
+          
+		  OptionA="阿富汗"
+		  OptionB="哈萨克斯坦"
+		  OptionC="瑞士"
+		  OptionD="蒙古"
+          Answer ="2" />
+  <Question ID="52" Content="我国第一座国家森林公园是？"
+          
+		  OptionA="武夷山"
+		  OptionB="长白山"
+		  OptionC="张家界"
+		  OptionD="九寨沟"
+          Answer ="3" />
+  <Question ID="53" Content="我国卫星火箭发射基地“西昌”位于哪里？"
+          
+		  OptionA="西藏"
+		  OptionB="新疆"
+		  OptionC="四川"
+		  OptionD="青海"
+          Answer ="3" />
+  <Question ID="54" Content="在寒冷的冬日清晨，为什么有一位女士在河里拼命游泳？"
+          
+		  OptionA="她是冬泳爱好者"
+		  OptionB="她在抓鱼"
+		  OptionC="她不小心掉进河里的"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="55" Content="漏气的车胎放在水里，漏气的地方会怎么样？"
+          
+		  OptionA="没有反应"
+		  OptionB="爆炸"
+		  OptionC="产生气泡"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="56" Content="最早的春联是在什么上面的？"
+          
+		  OptionA="刻在木上"
+		  OptionB="写在纸上"
+		  OptionC="雕在石上"
+		  OptionD="绣在绸上"
+          Answer ="1" />
+  <Question ID="57" Content="人走路时摆动双臂主要是为了什么？"
+          
+		  OptionA="减少能量消耗"
+		  OptionB="校正头部位置"
+		  OptionC="平衡走路姿势"
+		  OptionD="加快行走速度"
+          Answer ="3" />
+  <Question ID="58" Content="草原上有一群羊，怎样才能一下子把它们全抓住？"
+          
+		  OptionA="用相机抓拍下来"
+		  OptionB="让牧羊人抓"
+		  OptionC="根本抓不住"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="59" Content="哈雷彗星绕太阳运行的周期约为多少？"
+          
+		  OptionA="１６年"
+		  OptionB="３６年"
+		  OptionC="５６年"
+		  OptionD="７６年"
+          Answer ="4" />
+  <Question ID="60" Content="如果你有一双翅膀会怎么做？"
+          
+		  OptionA="告诉好朋友"
+		  OptionB="飞起来"
+		  OptionC="不告诉任何人"
+		  OptionD="赶紧上医院"
+          Answer ="4" />
+  <Question ID="61" Content="下列哪个国家因“卒可攻王,攻后”而禁止下国际象棋？"
+          
+		  OptionA="印度"
+		  OptionB="印尼"
+		  OptionC="肯尼亚"
+		  OptionD="沙特阿拉伯"
+          Answer ="4" />
+  <Question ID="62" Content=" 咖啡的故乡是哪里？"
+          
+		  OptionA="亚洲"
+		  OptionB="美洲"
+		  OptionC="大洋洲"
+		  OptionD="非洲"
+          Answer ="4" />
+  <Question ID="63" Content="地震发生时该怎么办？"
+          
+		  OptionA="使用电梯"
+		  OptionB="向阳台跑"
+		  OptionC="随手用物件护头和捂住口鼻"
+		  OptionD="跳楼"
+          Answer ="3" />
+  <Question ID="64" Content="我们感受到的光明和温暖来自哪里呢？"
+          
+		  OptionA="月亮"
+		  OptionB="太阳"
+		  OptionC="云朵"
+		  OptionD="彩虹"
+          Answer ="2" />
+  <Question ID="65" Content="铁放在外面会生锈，金子放在外面会怎么样？"
+          
+		  OptionA="生锈"
+		  OptionB="没有变化"
+		  OptionC="越来越多"
+		  OptionD="被偷走"
+          Answer ="4" />
+  <Question ID="66" Content="《兰亭集序》是哪一位古代书法家的杰作？"
+          
+		  OptionA="张旭"
+		  OptionB="王献之"
+		  OptionC="王羲之"
+		  OptionD="张芝"
+          Answer ="3" />
+  <Question ID="67" Content="下列古都哪个被称为“六朝古都”？"
+          
+		  OptionA="洛阳"
+		  OptionB="西安"
+		  OptionC="南京"
+		  OptionD="北京"
+          Answer ="3" />
+  <Question ID="68" Content="《家》《春》《秋》是我国作家巴金的代表作品，合称什么？"
+          
+		  OptionA="激流三部曲"
+		  OptionB="革命三部曲"
+		  OptionC="乡村三部曲"
+		  OptionD="人间三部曲"
+          Answer ="1" />
+  <Question ID="69" Content="地上分别掉了一张5元和50元的钞票，你看见了会捡起哪张？"
+          
+		  OptionA="捡5元的"
+		  OptionB="捡50元的"
+		  OptionC="两张都不捡"
+		  OptionD="两张都捡"
+          Answer ="4" />
+  <Question ID="70" Content="下列哪项不属于天然地震？"
+          
+		  OptionA="构造地震"
+		  OptionB="火山地震"
+		  OptionC="水库地震"
+		  OptionD="陷落地震"
+          Answer ="4" />
+  <Question ID="71" Content="我们人类的家园——地球，围绕着哪个星球转动呢？"
+          
+		  OptionA="太阳"
+		  OptionB="月亮"
+		  OptionC="木星"
+		  OptionD="天王星"
+          Answer ="1" />
+  <Question ID="72" Content="“空山不见人，但闻人语响。返景入深林，复照青苔上。”这是一首什么诗？"
+          
+		  OptionA="山水诗"
+		  OptionB="边塞诗"
+		  OptionC="离别诗"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="73" Content="冻疮是由于皮肤哪一部分受损而引起的？"
+          
+		  OptionA="毛囊"
+		  OptionB="汗腺"
+		  OptionC="竖毛肌"
+		  OptionD="毛细血管"
+          Answer ="4" />
+  <Question ID="74" Content="有“钢琴诗人”之称的是谁？"
+          
+		  OptionA="贝多芬"
+		  OptionB="海顿"
+		  OptionC="莫扎特"
+		  OptionD="肖邦"
+          Answer ="4" />
+  <Question ID="75" Content="为什么一只蜗牛从新疆爬到海南只用了两分钟？"
+          
+		  OptionA="它是坐飞机的"
+		  OptionB="在地图上爬的"
+		  OptionC="时间算错了"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="76" Content="读完“北京大学”最快需要多长时间？"
+          
+		  OptionA="两秒就可以读完这四个字"
+		  OptionB="五年"
+		  OptionC="四年"
+		  OptionD="三年"
+          Answer ="1" />
+  <Question ID="77" Content="体操比赛中有些动作以我国运动员的名字命名,其中鞍马是谁？"
+          
+		  OptionA="李月久"
+		  OptionB="童非"
+		  OptionC="李宁"
+		  OptionD="李小双"
+          Answer ="2" />
+  <Question ID="78" Content="“五角大楼”是美国哪个机构的代称？"
+          
+		  OptionA="中情局"
+		  OptionB="国防部"
+		  OptionC="信息工程部"
+		  OptionD="劳工部"
+          Answer ="2" />
+  <Question ID="79" Content="下列哪部作品不属于杜甫的“三别”？"
+          
+		  OptionA="《新婚别》"
+		  OptionB="《垂老别》"
+		  OptionC="《无家别》"
+		  OptionD="《生死别》"
+          Answer ="4" />
+  <Question ID="80" Content="“山城”是我国哪座城市的雅号？"
+          
+		  OptionA="洛阳"
+		  OptionB="西安"
+		  OptionC="重庆"
+		  OptionD="福州"
+          Answer ="3" />
+  <Question ID="81" Content="下列哪项不属于我国抗震救灾的基本策略？"
+          
+		  OptionA="实行以预防为主的救灾体制"
+		  OptionB="实行以行政区域为主的组织指挥"
+		  OptionC="发挥军队、民兵和各专业救灾队伍的作用"
+		  OptionD="实行以军队、民兵为主的组织指挥"
+          Answer ="4" />
+  <Question ID="82" Content="太阳是一颗什么星？"
+          
+		  OptionA="行星"
+		  OptionB="恒星"
+		  OptionC="彗星"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="83" Content="“贞观之治”是由唐朝的哪个皇帝开创的？"
+          
+		  OptionA="唐太宗"
+		  OptionB="唐玄宗"
+		  OptionC="唐高宗"
+		  OptionD="唐高祖"
+          Answer ="1" />
+  <Question ID="84" Content="俗称的“黑管”是哪种木管乐器？"
+          
+		  OptionA="单簧管"
+		  OptionB="双簧管"
+		  OptionC="巴松"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="85" Content="白人、黑人和黄种人，身上哪部分颜色是完全相同的? "
+          
+		  OptionA="皮肤"
+		  OptionB="血液"
+		  OptionC="头发"
+		  OptionD="眼睛"
+          Answer ="2" />
+  <Question ID="86" Content="黄果树瀑布是我国第一大瀑布，它位于哪个省？"
+          
+		  OptionA="贵州"
+		  OptionB="云南"
+		  OptionC="西藏"
+		  OptionD="广西"
+          Answer ="1" />
+  <Question ID="87" Content="睡美人最怕什么呢？"
+          
+		  OptionA="不漂亮"
+		  OptionB="天亮了"
+		  OptionC="饿肚子"
+		  OptionD="失眠"
+          Answer ="4" />
+  <Question ID="88" Content="我国被称为“泉城”的是哪个城市？"
+          
+		  OptionA="济南"
+		  OptionB="苏州"
+		  OptionC="合肥"
+		  OptionD="柳州"
+          Answer ="1" />
+  <Question ID="89" Content="我国有一个专门进行核试验的“原子城”，它位于哪里？"
+          
+		  OptionA="新疆"
+		  OptionB="内蒙古"
+		  OptionC="青海"
+		  OptionD="四川"
+          Answer ="1" />
+  <Question ID="90" Content="我国最早的神话小说是？"
+          
+		  OptionA="《山海经》"
+		  OptionB="《古镜记》"
+		  OptionC="《搜神记》"
+		  OptionD="《世说新语》"
+          Answer ="3" />
+  <Question ID="91" Content="“豆寇年华”是指几岁？"
+          
+		  OptionA="13岁"
+		  OptionB="14岁"
+		  OptionC="15岁"
+		  OptionD="16岁"
+          Answer ="1" />
+  <Question ID="92" Content="人们常说：“无事不登三宝殿”你知道“三宝”是指哪三宝吗？"
+          
+		  OptionA="纸、砚、笔"
+		  OptionB="书、剑、琴"
+		  OptionC="佛、法、僧"
+		  OptionD="金、银、玉"
+          Answer ="3" />
+  <Question ID="93" Content="丝姐姐在洗衣服，为什么洗了半天，她的衣服还是脏的?"
+          
+		  OptionA="没有放洗衣粉"
+		  OptionB="洗得不够用力"
+		  OptionC="洗的是别人的衣服"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="94" Content="“笑”和“哭”有什么相同之处吗？"
+          
+		  OptionA="没有相同之处"
+		  OptionB="笔画都是10画"
+		  OptionC="都会流眼泪"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="95" Content="汉字“廿”表示什么？"
+          
+		  OptionA="这样"
+		  OptionB="那样"
+		  OptionC="二十"
+		  OptionD="三十"
+          Answer ="3" />
+  <Question ID="96" Content="什么条件下柿子才可以结冰？"
+          
+		  OptionA="什么条件下都不会"
+		  OptionB="零摄氏度"
+		  OptionC="低于零摄氏度"
+		  OptionD="什么条件下都可以"
+          Answer ="3" />
+  <Question ID="97" Content="菩提口袋里原来有十个硬币，但它们都掉了，那他口袋里还有什么呢？"
+          
+		  OptionA="一个硬币"
+		  OptionB="10个硬币"
+		  OptionC="一个洞"
+		  OptionD="什么都没有了"
+          Answer ="3" />
+  <Question ID="98" Content="什么东西不能用放大镜放大？"
+          
+		  OptionA="面积"
+		  OptionB="长度"
+		  OptionC="大小"
+		  OptionD="角度"
+          Answer ="4" />
+  <Question ID="99" Content="ＷＮＢＡ代表什么？"
+          
+		  OptionA="美国男子职业篮球赛"
+		  OptionB="美国女子职业篮球赛"
+		  OptionC="美国大学生职业篮球赛"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="100" Content="《三国演义》中的“凤雏”是谁？"
+          
+		  OptionA="诸葛亮"
+		  OptionB="庞统"
+		  OptionC="徐庶"
+		  OptionD="陈宫"
+          Answer ="2" />
+  <Question ID="101" Content="亚洲第一个举办奥运会的国家是？"
+          
+		  OptionA="韩国"
+		  OptionB="日本"
+		  OptionC="新加坡"
+		  OptionD="中国"
+          Answer ="2" />
+  <Question ID="102" Content="尼克肚子很饿，冰箱里有鸡肉、鱼罐头、披萨，你猜他会先打开哪个？"
+          
+		  OptionA="鸡肉"
+		  OptionB="鱼罐头"
+		  OptionC="披萨"
+		  OptionD="冰箱"
+          Answer ="4" />
+  <Question ID="103" Content="一般情况下，司机进汽车后第一件事情是什么？"
+          
+		  OptionA="踩油门"
+		  OptionB="关车门"
+		  OptionC="坐下"
+		  OptionD="拿出车钥匙"
+          Answer ="3" />
+  <Question ID="104" Content="大炮为什么射不到星星呢？"
+          
+		  OptionA="星星太远了"
+		  OptionB="方向不对"
+		  OptionC="星星会闪"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="105" Content="有一条狗从来不洗澡，为什么不生跳蚤呢？"
+          
+		  OptionA="狗只能生小狗"
+		  OptionB="跳蚤被它吃掉了"
+		  OptionC="它自己偷偷的洗澡了"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="106" Content="属于国家一类保护动物的是？"
+          
+		  OptionA="天鹅"
+		  OptionB="娃娃鱼"
+		  OptionC="孔雀"
+		  OptionD="丹顶鹤"
+          Answer ="4" />
+  <Question ID="107" Content="奥林匹克运动会的发源地是？"
+          
+		  OptionA="古罗马"
+		  OptionB="古希腊"
+		  OptionC="古代中国"
+		  OptionD="古巴比伦"
+          Answer ="2" />
+  <Question ID="108" Content="我国少数民族分布最多的省份是？"
+          
+		  OptionA="广西"
+		  OptionB="西藏"
+		  OptionC="云南"
+		  OptionD="四川"
+          Answer ="3" />
+  <Question ID="109" Content="下列哪一位著名画家擅长画虎？"
+          
+		  OptionA="张大千"
+		  OptionB="张善子"
+		  OptionC="徐悲鸿"
+		  OptionD="齐白石"
+          Answer ="2" />
+  <Question ID="110" Content="馒头是谁发明的？"
+          
+		  OptionA="李冰"
+		  OptionB="诸葛亮"
+		  OptionC="曹操"
+		  OptionD="屈原"
+          Answer ="2" />
+  <Question ID="111" Content="世界上最大的宫殿是？"
+          
+		  OptionA="故宫"
+		  OptionB="白宫"
+		  OptionC="爱丽舍宫"
+		  OptionD="克里姆林宫"
+          Answer ="1" />
+  <Question ID="112" Content="“国有国法，家有家规”，动物园有什么“规”呢？"
+          
+		  OptionA="没有什么规"
+		  OptionB="动物园法则"
+		  OptionC="乌龟"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="113" Content="用什么方式，可以使眉毛长在眼睛下面？"
+          
+		  OptionA="没有方法"
+		  OptionB="倒立"
+		  OptionC="把眉毛剃掉"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="114" Content="第一届奥运会什么时候开始举行？"
+          
+		  OptionA="1890年"
+		  OptionB="1894年"
+		  OptionC="1896年"
+		  OptionD="1900年"
+          Answer ="3" />
+  <Question ID="115" Content="秦时,人们开凿沟通湘江和漓江的运河是？"
+          
+		  OptionA="秦渠"
+		  OptionB="灵渠"
+		  OptionC="唐徕渠"
+		  OptionD="郑国渠"
+          Answer ="2" />
+  <Question ID="116" Content="奔驰汽车原产于哪一个国家？"
+          
+		  OptionA="美国"
+		  OptionB="日本"
+		  OptionC="德国"
+		  OptionD="英国"
+          Answer ="3" />
+  <Question ID="117" Content="林则徐“虎门销烟”的时间是？"
+          
+		  OptionA="1839年6月"
+		  OptionB="1840年6月"
+		  OptionC="1841年1月"
+		  OptionD="1842年6月"
+          Answer ="1" />
+  <Question ID="118" Content="理发师最不喜欢的人是谁？"
+          
+		  OptionA="长头发的人"
+		  OptionB="短头发的人"
+		  OptionC="白头发的人"
+		  OptionD="没有头发的人"
+          Answer ="4" />
+  <Question ID="119" Content="第一届世界杯足球赛是在哪个国家举行？"
+          
+		  OptionA="法国"
+		  OptionB="意大利"
+		  OptionC="乌拉圭"
+		  OptionD="巴西"
+          Answer ="3" />
+  <Question ID="120" Content="色盲患者最普遍的不易分辨的颜色是什么？"
+          
+		  OptionA="红绿"
+		  OptionB="蓝绿"
+		  OptionC="红蓝"
+		  OptionD="绿蓝"
+          Answer ="1" />
+  <Question ID="121" Content="“破釜沉舟”这个成语出于哪次战争？"
+          
+		  OptionA="赤壁之战"
+		  OptionB="长平之战"
+		  OptionC="巨鹿之战"
+		  OptionD="官渡之战"
+          Answer ="3" />
+  <Question ID="122" Content="“世界环境日”是在每年的哪一天？"
+          
+		  OptionA="6月4日"
+		  OptionB="6月5日"
+		  OptionC="6月6日"
+		  OptionD="6月7日"
+          Answer ="2" />
+  <Question ID="123" Content="什么东西力气再大也扛不起？"
+          
+		  OptionA="大石头"
+		  OptionB="罪名"
+		  OptionC="大山"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="124" Content="当今社会，偷什么不犯法？"
+          
+		  OptionA="偷笑"
+		  OptionB="偷钱"
+		  OptionC="偷衣服"
+		  OptionD="偷食物"
+          Answer ="1" />
+  <Question ID="125" Content="下列国家哪个素有“足球王国”之称？"
+          
+		  OptionA="德国"
+		  OptionB="意大利"
+		  OptionC="阿根廷"
+		  OptionD="巴西"
+          Answer ="4" />
+  <Question ID="126" Content="泼水节是我国哪个少数民族的传统节日？"
+          
+		  OptionA="彝族"
+		  OptionB="回族"
+		  OptionC="壮族"
+		  OptionD="傣族"
+          Answer ="4" />
+  <Question ID="127" Content="“山重水复疑无路,柳暗花明又一村”谁的诗句？"
+          
+		  OptionA="李白"
+		  OptionB="辛弃疾"
+		  OptionC="苏轼"
+		  OptionD="陆游"
+          Answer ="4" />
+  <Question ID="128" Content="“打蛇打七寸”的七寸是指？"
+          
+		  OptionA="咽喉"
+		  OptionB="心脏"
+		  OptionC="头部"
+		  OptionD="尾巴"
+          Answer ="2" />
+  <Question ID="129" Content="我国是在哪个时期进入奴隶社会的？"
+          
+		  OptionA="夏"
+		  OptionB="商"
+		  OptionC="战国"
+		  OptionD="秦"
+          Answer ="1" />
+  <Question ID="130" Content="你知道不晕车的最好办法是什么吗？"
+          
+		  OptionA="自己开车"
+		  OptionB="坐在前面"
+		  OptionC="步行"
+		  OptionD="坐在车后面"
+          Answer ="3" />
+  <Question ID="131" Content="2008年奥运会在哪个城市举行？"
+          
+		  OptionA="巴黎"
+		  OptionB="费城"
+		  OptionC="莫斯科"
+		  OptionD="北京"
+          Answer ="4" />
+  <Question ID="132" Content="我国第一个南极考察基地“长城站”是什么时候落成的？"
+          
+		  OptionA="1980"
+		  OptionB="1981"
+		  OptionC="1985"
+		  OptionD="1986"
+          Answer ="3" />
+  <Question ID="133" Content="飞利浦电器是哪一个国家的产品？"
+          
+		  OptionA="日本"
+		  OptionB="荷兰"
+		  OptionC="美国"
+		  OptionD="中国"
+          Answer ="2" />
+  <Question ID="134" Content="伊莲英语很流利，可是有些老外却听不懂，为什么？"
+          
+		  OptionA="伊莲没有讲英语"
+		  OptionB="非英语国家的老外"
+		  OptionC="老外听力不好"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="135" Content="为什么警察一看见小偷就跑呢?"
+          
+		  OptionA="小偷手上有武器"
+		  OptionB="小偷人很多"
+		  OptionC="警察想快点抓住小偷"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="136" Content="我国最早在奥运会上夺金牌的是哪位运动员？ "
+          
+		  OptionA="李宁"
+		  OptionB="许海峰"
+		  OptionC="高凤莲"
+		  OptionD="吴佳怩"
+          Answer ="2" />
+  <Question ID="137" Content="太阳系中的恒星是哪个？"
+          
+		  OptionA="天王星"
+		  OptionB="太阳"
+		  OptionC="木星"
+		  OptionD="海王星"
+          Answer ="2" />
+  <Question ID="138" Content="你知道高空中，空气的压力是怎么样的吗？"
+          
+		  OptionA="小"
+		  OptionB="大"
+		  OptionC="和地面一样"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="139" Content="三国时期，吴国首都建业是今天的哪里？"
+          
+		  OptionA="北京"
+		  OptionB="无锡"
+		  OptionC="苏州"
+		  OptionD="南京"
+          Answer ="4" />
+  <Question ID="140" Content="法律是由哪里制定和认可的"
+          
+		  OptionA="企业"
+		  OptionB="个人"
+		  OptionC="国家"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="141" Content="什么东西只能加，不能减？"
+          
+		  OptionA="体积"
+		  OptionB="重量"
+		  OptionC="年龄"
+		  OptionD="容量"
+          Answer ="3" />
+  <Question ID="142" Content="为什么兔兔能用一只手让车子停下来？"
+          
+		  OptionA="她是在拦出租车"
+		  OptionB="她力大无穷"
+		  OptionC="遇到红灯了"
+		  OptionD="是兔兔朋友的车子"
+          Answer ="1" />
+  <Question ID="143" Content="为什么上课铃声一响，教室里就空无一人了？"
+          
+		  OptionA="是双休日"
+		  OptionB="大家走错教室了"
+		  OptionC="这节是体育课"
+		  OptionD="老师忘记来上课了"
+          Answer ="3" />
+  <Question ID="144" Content="你可知道被人颂称“诗魔”的是谁？ "
+          
+		  OptionA="白居易"
+		  OptionB="王维"
+		  OptionC="刘禹锡"
+		  OptionD="李商隐"
+          Answer ="1" />
+  <Question ID="145" Content="“但愿人长久，千里共婵娟”是哪位作家的作品？"
+          
+		  OptionA="苏轼"
+		  OptionB="苏辙"
+		  OptionC="苏洵"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="146" Content="“中华人民共和国”这一国名最早是由谁提出的？"
+          
+		  OptionA="张奚若"
+		  OptionB="任弼时"
+		  OptionC="毛泽东"
+		  OptionD="周恩来"
+          Answer ="2" />
+  <Question ID="147" Content="铅笔有硬软之分,用英文字母来表示,下列符号相比哪个表示较硬"
+          
+		  OptionA="H"
+		  OptionB="HB"
+		  OptionC="B"
+		  OptionD="2B"
+          Answer ="1" />
+  <Question ID="148" Content="徐志摩、胡适等作家是属于哪一个文学流派的？"
+          
+		  OptionA="江湖派"
+		  OptionB="桐城派"
+		  OptionC="公安派"
+		  OptionD="新月派"
+          Answer ="4" />
+  <Question ID="149" Content="世上什么东西比天还高？"
+          
+		  OptionA="心（心比天高）"
+		  OptionB="飞机"
+		  OptionC="飞碟"
+		  OptionD="星星"
+          Answer ="1" />
+  <Question ID="150" Content="下列中国象棋手哪位获全国冠军次数最多？"
+          
+		  OptionA="杨官璘"
+		  OptionB="谢思明"
+		  OptionC="胡荣华"
+		  OptionD="谢侠逊"
+          Answer ="3" />
+  <Question ID="151" Content="我国境内最早的人类是？"
+          
+		  OptionA="北京人"
+		  OptionB="元谋人"
+		  OptionC="山顶洞人"
+		  OptionD="丁村人"
+          Answer ="2" />
+  <Question ID="152" Content="清朝晚期,被今人誉为“开眼看世界第一人”的是谁？"
+          
+		  OptionA="魏源"
+		  OptionB="龚自珍"
+		  OptionC="林则徐"
+		  OptionD="严复"
+          Answer ="3" />
+  <Question ID="153" Content="著名的亚欧间的海峡是？"
+          
+		  OptionA="马六甲海峡"
+		  OptionB="土耳其海峡"
+		  OptionC="直布罗陀海峡"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="154" Content="我国鸟类中，消灭森林害虫最多的是谁？"
+          
+		  OptionA="喜鹊"
+		  OptionB="啄木鸟"
+		  OptionC="燕子"
+		  OptionD="杜鹃"
+          Answer ="4" />
+  <Question ID="155" Content="大卡车撞到了小轿车，十分严重，小轿车司机却没事，为什么？"
+          
+		  OptionA="小轿车司机当时不在车上"
+		  OptionB="小轿车司机是超人"
+		  OptionC="小轿车司机睡着了"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="156" Content="为什么杰西新买的袜子会有一个洞呢？"
+          
+		  OptionA="袜子烂了"
+		  OptionB="有一个洞才可以穿进去"
+		  OptionC="是别人的旧袜子"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="157" Content="世界游泳锦标赛最长的是男子1500米什么泳式？"
+          
+		  OptionA="自由泳"
+		  OptionB="蛙泳"
+		  OptionC="仰泳 "
+		  OptionD="蝶泳"
+          Answer ="1" />
+  <Question ID="158" Content="现任国际奥委会主席的是？"
+          
+		  OptionA="维凯拉斯"
+		  OptionB="罗格"
+		  OptionC="顾拜旦"
+		  OptionD="萨马兰奇"
+          Answer ="2" />
+  <Question ID="159" Content="饱食后不宜做剧烈运动这是因为什么？"
+          
+		  OptionA="会得阑尾炎"
+		  OptionB="有障消化"
+		  OptionC="导致神经衰弱"
+		  OptionD="呕吐"
+          Answer ="2" />
+  <Question ID="160" Content="下列哪一个口号不是奥运会的口号？"
+          
+		  OptionA="更高"
+		  OptionB="更快"
+		  OptionC="更强"
+		  OptionD="更好"
+          Answer ="4" />
+  <Question ID="161" Content="比赛时,一队白帽,另一队蓝帽,守门员红帽,这是什么比赛？"
+          
+		  OptionA="冰球"
+		  OptionB="橄榄球"
+		  OptionC="水球"
+		  OptionD="曲棍球"
+          Answer ="3" />
+  <Question ID="162" Content="新中国成立后,第一次参加奥运会是在哪一年？ "
+          
+		  OptionA="1952"
+		  OptionB="1956"
+		  OptionC="1980"
+		  OptionD="1984"
+          Answer ="1" />
+  <Question ID="163" Content=" 神话《白蛇传》中“白娘娘盗仙草”盗的是？"
+          
+		  OptionA="人参"
+		  OptionB="冬虫夏草"
+		  OptionC="灵芝"
+		  OptionD="田七"
+          Answer ="3" />
+  <Question ID="164" Content="中国面积最大的省份是哪一个？"
+          
+		  OptionA="四川"
+		  OptionB="新疆"
+		  OptionC="内蒙古"
+		  OptionD="西藏"
+          Answer ="2" />
+  <Question ID="165" Content="世界上最大的动物是哪一种？"
+          
+		  OptionA="蓝鲸"
+		  OptionB="水母"
+		  OptionC="恐龙"
+		  OptionD="大象"
+          Answer ="1" />
+  <Question ID="166" Content="世界上最长的运河是哪一条？"
+          
+		  OptionA="中国京杭大运河"
+		  OptionB="苏伊士运河"
+		  OptionC="巴拿马运河"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="167" Content="我国被称为哪一类体育运动的体育王国？"
+          
+		  OptionA="羽毛球王国"
+		  OptionB="乒乓球王国"
+		  OptionC="排球王国"
+		  OptionD="举重王国"
+          Answer ="2" />
+  <Question ID="168" Content="“发展体育运动,增强人民体质”是我国哪位领导人的题词？"
+          
+		  OptionA="毛泽东"
+		  OptionB="周恩来"
+		  OptionC="邓小平"
+		  OptionD="贺龙"
+          Answer ="1" />
+  <Question ID="169" Content="坦克是哪个国家发明的？"
+          
+		  OptionA="英国"
+		  OptionB="德国"
+		  OptionC="美国"
+		  OptionD="法国"
+          Answer ="1" />
+  <Question ID="170" Content="坐长途车要注意揉搓小腿、大腿这是为防止？"
+          
+		  OptionA="晕车"
+		  OptionB="心理压力增大"
+		  OptionC="窒息"
+		  OptionD="脚浮肿"
+          Answer ="4" />
+  <Question ID="171" Content="山东山西的“山”是指？"
+          
+		  OptionA="泰山"
+		  OptionB="太行山"
+		  OptionC="沂蒙山"
+		  OptionD="恒山"
+          Answer ="2" />
+  <Question ID="172" Content="1990年第十一届亚运会在哪个城市举行？"
+          
+		  OptionA="东京"
+		  OptionB="汉城"
+		  OptionC="北京"
+		  OptionD="曼谷"
+          Answer ="3" />
+  <Question ID="173" Content="下列哪位武术家是迷踪拳的创始人？"
+          
+		  OptionA="董海川"
+		  OptionB="张长兴"
+		  OptionC="霍元甲"
+		  OptionD="李存义"
+          Answer ="3" />
+  <Question ID="174" Content="周恩来倡导中小学生每天必须多长时间的体育运动？"
+          
+		  OptionA="半小时"
+		  OptionB="一小时"
+		  OptionC="一个半小时"
+		  OptionD="二小时"
+          Answer ="2" />
+  <Question ID="175" Content="李白的《静夜思》表达了一种思乡之情，对吗？"
+          
+		  OptionA="对"
+		  OptionB="不对"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="176" Content="下列哪位皇帝是汉朝的？"
+          
+		  OptionA="汉武帝"
+		  OptionB="唐太宗"
+		  OptionC="唐明皇"
+		  OptionD="元世祖"
+          Answer ="1" />
+  <Question ID="177" Content="“知天命”代指什么年纪？"
+          
+		  OptionA="二十岁"
+		  OptionB="七十岁"
+		  OptionC="三十岁"
+		  OptionD="五十岁"
+          Answer ="4" />
+  <Question ID="178" Content="你知道曲棍球每半场的时间是多少分钟吗？"
+          
+		  OptionA="30"
+		  OptionB="35"
+		  OptionC="40"
+		  OptionD="45"
+          Answer ="3" />
+  <Question ID="179" Content="跳竹杆是我国哪个少数民族的传统体育运动？"
+          
+		  OptionA="壮族"
+		  OptionB="苗族"
+		  OptionC="白族"
+		  OptionD="黎族"
+          Answer ="4" />
+  <Question ID="180" Content="奥运会上的马拉松比赛的起源与什么有关？"
+          
+		  OptionA="游戏"
+		  OptionB="战争"
+		  OptionC="打赌"
+		  OptionD="竞赛"
+          Answer ="2" />
+  <Question ID="181" Content="“人不可有傲气,但不可无傲骨”是谁的座右铭？"
+          
+		  OptionA="孙中山"
+		  OptionB="李大钊"
+		  OptionC="徐悲鸿"
+		  OptionD="周恩来"
+          Answer ="3" />
+  <Question ID="182" Content="著名古迹“秦始皇兵马俑”位于我国哪个省份？"
+          
+		  OptionA="湖北"
+		  OptionB="湖南"
+		  OptionC="河南"
+		  OptionD="陕西"
+          Answer ="4" />
+  <Question ID="183" Content="我国最早的一部医学理论著作是？"
+          
+		  OptionA="《本草纲目》"
+		  OptionB="《黄帝内经》"
+		  OptionC="《千金方》"
+		  OptionD="《伤寒杂病论》"
+          Answer ="2" />
+  <Question ID="184" Content="著有“农村三部曲”的著名作家是？"
+          
+		  OptionA="巴金"
+		  OptionB="茅盾"
+		  OptionC="郭沫若"
+		  OptionD="欧阳山"
+          Answer ="2" />
+  <Question ID="185" Content="下列哪位文学家没有获得过诺贝尔文学奖？"
+          
+		  OptionA="泰戈尔"
+		  OptionB="罗曼.罗兰"
+		  OptionC="海明威"
+		  OptionD="鲁迅"
+          Answer ="4" />
+  <Question ID="186" Content="有“二十万行长诗”之称的世界最长的史诗是？"
+          
+		  OptionA="《摩诃婆罗多》"
+		  OptionB="《罗摩衍那》"
+		  OptionC="《荷马史诗》"
+		  OptionD="《唐璜》"
+          Answer ="1" />
+  <Question ID="187" Content="“天下兴亡,匹夫有责”是哪位思想家的名言？"
+          
+		  OptionA="黄宗羲"
+		  OptionB="顾炎武"
+		  OptionC="王夫之"
+		  OptionD="王充"
+          Answer ="2" />
+  <Question ID="188" Content="世界上是被称为“教育王国”的哪一个国家？"
+          
+		  OptionA="中国"
+		  OptionB="美国"
+		  OptionC="以色列"
+		  OptionD="日本"
+          Answer ="3" />
+  <Question ID="189" Content="莎士比亚四大悲剧中哪部又称“王子复仇记”？"
+          
+		  OptionA="《奥赛罗》"
+		  OptionB="《哈姆雷特》"
+		  OptionC="《麦克白斯》"
+		  OptionD="《李尔王》"
+          Answer ="2" />
+  <Question ID="190" Content="“红娘”由来是出自下列哪部古典名剧？"
+          
+		  OptionA="《琵琶记》"
+		  OptionB="《西厢记》"
+		  OptionC="《长生殿》"
+		  OptionD="《桃花扇》"
+          Answer ="2" />
+  <Question ID="191" Content="“琴棋书画”中的“棋”指的是什么？"
+          
+		  OptionA="象棋"
+		  OptionB="围棋"
+		  OptionC="军棋"
+		  OptionD="国际象棋"
+          Answer ="2" />
+  <Question ID="192" Content="谁是“中山装”的创始人？"
+          
+		  OptionA="黄隆生"
+		  OptionB="孙中山"
+		  OptionC="汪精卫"
+		  OptionD="黄兴"
+          Answer ="2" />
+  <Question ID="193" Content="《阳关三叠》是什么时候的琴曲？"
+          
+		  OptionA="汉代"
+		  OptionB="隋唐"
+		  OptionC="宋元"
+		  OptionD="明清"
+          Answer ="2" />
+  <Question ID="194" Content="最早的纸币源于哪国？"
+          
+		  OptionA="中国"
+		  OptionB="美国"
+		  OptionC="日本"
+		  OptionD="法国"
+          Answer ="1" />
+  <Question ID="195" Content="安徒生童话《海的女儿》里，小美人鱼变成人是为了见到谁？"
+          
+		  OptionA="渔夫"
+		  OptionB="国王"
+		  OptionC="皇后"
+		  OptionD="王子"
+          Answer ="3" />
+  <Question ID="196" Content="世界上最深的湖是哪个？"
+          
+		  OptionA="里海"
+		  OptionB="贝加尔湖"
+		  OptionC="苏必利尔湖"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="197" Content="“画龙点睛”的传说中被点睛的龙会怎样？"
+          
+		  OptionA="飞走"
+		  OptionB="扭动"
+		  OptionC="眨眼"
+		  OptionD="不动"
+          Answer ="1" />
+  <Question ID="198" Content="中国民间为什么要吃腊八粥？"
+          
+		  OptionA="迎接春节"
+		  OptionB="纪念释迦牟尼"
+		  OptionC="纪念小寒来临"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="199" Content="“成也萧何，败也萧何”说的是谁的经历？"
+          
+		  OptionA="刘邦"
+		  OptionB="张良"
+		  OptionC="韩信"
+		  OptionD="项羽"
+          Answer ="3" />
+  <Question ID="200" Content="世界上最早种植棉花的国家是哪个？"
+          
+		  OptionA="中国"
+		  OptionB="印度"
+		  OptionC="日本"
+		  OptionD="美国"
+          Answer ="2" />
+  <Question ID="201" Content="“春风不度玉门关”是谁的诗句？"
+          
+		  OptionA="李白"
+		  OptionB="杜甫"
+		  OptionC="李清照"
+		  OptionD="王之涣"
+          Answer ="4" />
+  <Question ID="202" Content="最早芭蕾舞出现于哪里？"
+          
+		  OptionA="杂技团"
+		  OptionB="宫廷"
+		  OptionC="学校"
+		  OptionD="戏团"
+          Answer ="2" />
+  <Question ID="203" Content="哥特式建筑的代表作是哪个？"
+          
+		  OptionA="巴黎圣母院"
+		  OptionB="圣日维涅大教堂（巴黎万神庙）"
+		  OptionC="圣彼得大教堂"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="204" Content="小提琴有几根弦？"
+          
+		  OptionA="2根"
+		  OptionB="3根"
+		  OptionC="4根"
+		  OptionD="6根"
+          Answer ="3" />
+  <Question ID="205" Content="路透社是哪个国家的通讯社？"
+          
+		  OptionA="美国"
+		  OptionB="英国"
+		  OptionC="俄国"
+		  OptionD="法国"
+          Answer ="2" />
+  <Question ID="206" Content="亚洲首次举办奥运会是哪一届？"
+          
+		  OptionA="16届"
+		  OptionB="17届"
+		  OptionC="18届"
+		  OptionD="19届"
+          Answer ="3" />
+  <Question ID="207" Content="世界上地势最低的国家是哪个？"
+          
+		  OptionA="芬兰"
+		  OptionB="冰岛"
+		  OptionC="挪威"
+		  OptionD="荷兰"
+          Answer ="4" />
+  <Question ID="208" Content="陆地水中储量最大的水体是什么？"
+          
+		  OptionA="地下水"
+		  OptionB="江河水"
+		  OptionC="冰川水"
+		  OptionD="湖泊水"
+          Answer ="3" />
+  <Question ID="209" Content="阿诗玛是我国云南哪个民族塑造的艺术形象？"
+          
+		  OptionA="彝族"
+		  OptionB="瑶族"
+		  OptionC="白族"
+		  OptionD="苗族"
+          Answer ="1" />
+  <Question ID="210" Content="象征主义诗歌的开山鼻祖是谁？"
+          
+		  OptionA="荷马"
+		  OptionB="莎士比亚"
+		  OptionC="福克纳"
+		  OptionD="艾略特"
+          Answer ="4" />
+  <Question ID="211" Content="我国最著名的热水湖是哪一个？"
+          
+		  OptionA="西藏羊八井"
+		  OptionB="新疆罗布泊"
+		  OptionC="内蒙古呼伦湖"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="212" Content="被称为“三苏”的北宋文学家父子中的父亲是哪位？"
+          
+		  OptionA="苏洵"
+		  OptionB="苏轼"
+		  OptionC="苏辙"
+		  OptionD="苏舜钦"
+          Answer ="1" />
+  <Question ID="213" Content="在江浙一带最流行的地方戏曲是什么？"
+          
+		  OptionA="越剧"
+		  OptionB="黄梅戏"
+		  OptionC="京剧"
+		  OptionD="昆曲"
+          Answer ="1" />
+  <Question ID="214" Content="泥娃娃“大阿福”的老家是哪里？"
+          
+		  OptionA="江苏无锡"
+		  OptionB="江西景德镇"
+		  OptionC="浙江杭州"
+		  OptionD="浙江龙泉"
+          Answer ="1" />
+  <Question ID="215" Content="世界最深的洼地在哪里？"
+          
+		  OptionA="地中海"
+		  OptionB="死海"
+		  OptionC="红海"
+		  OptionD="黑海"
+          Answer ="2" />
+  <Question ID="216" Content="我国的“冰城”是指哪个城市？"
+          
+		  OptionA="吉林市"
+		  OptionB="哈尔滨"
+		  OptionC="辽阳市"
+		  OptionD="牡丹江"
+          Answer ="2" />
+  <Question ID="217" Content="歌剧《茶花女》是谁的作品？"
+          
+		  OptionA="威尔第"
+		  OptionB="普契尼"
+		  OptionC="比才"
+		  OptionD="瓦格纳"
+          Answer ="1" />
+  <Question ID="218" Content="发生在北京卢沟桥的历史事变名叫？"
+          
+		  OptionA="华北事变"
+		  OptionB="戊戌政变"
+		  OptionC="七七事变"
+		  OptionD="皖南事变"
+          Answer ="3" />
+  <Question ID="219" Content="世界上生产玉米最多的国家是哪个？"
+          
+		  OptionA="中国"
+		  OptionB="日本"
+		  OptionC="美国"
+		  OptionD="英国"
+          Answer ="3" />
+  <Question ID="220" Content="以下哪一个是联合国安理会常任理事国之一？"
+          
+		  OptionA="澳大利亚"
+		  OptionB="德国"
+		  OptionC="意大利"
+		  OptionD="法国"
+          Answer ="4" />
+  <Question ID="221" Content="钻石最大的产出国是哪里？"
+          
+		  OptionA="南非"
+		  OptionB="巴西"
+		  OptionC="扎伊尔"
+		  OptionD="古巴"
+          Answer ="1" />
+  <Question ID="222" Content="在古希腊神话中，爱与美的女神叫做什么？"
+          
+		  OptionA="缪斯"
+		  OptionB="赫拉"
+		  OptionC="雅典娜"
+		  OptionD="阿芙洛狄特"
+          Answer ="4" />
+  <Question ID="223" Content="称为近代科学之父的是谁?"
+          
+		  OptionA="伽利略"
+		  OptionB="哥白尼"
+		  OptionC="亚里士多德"
+		  OptionD="牛顿"
+          Answer ="1" />
+  <Question ID="224" Content="甘肃、青海一带的山歌在当地叫什么？"
+          
+		  OptionA="花儿"
+		  OptionB="信天游"
+		  OptionC="对花"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="225" Content="扑克牌是根据历法原理制成的，其中大小王分别代表什么？"
+          
+		  OptionA="国王、王后"
+		  OptionB="白天、黑夜"
+		  OptionC="太阳、月亮"
+		  OptionD="春夏、秋冬"
+          Answer ="3" />
+  <Question ID="226" Content="我国最大的诗歌集是哪部？"
+          
+		  OptionA="诗经"
+		  OptionB="楚词"
+		  OptionC="全唐诗"
+		  OptionD="千家诗"
+          Answer ="3" />
+  <Question ID="227" Content="战国时，“纸上谈兵”招致兵败的赵国将领是谁？"
+          
+		  OptionA="赵奢"
+		  OptionB="赵构"
+		  OptionC="赵括"
+		  OptionD="赵盾"
+          Answer ="3" />
+  <Question ID="228" Content="“世界足球之王”贝利的球衣号为多少？"
+          
+		  OptionA="7号"
+		  OptionB="10号"
+		  OptionC="12号"
+		  OptionD="23号"
+          Answer ="2" />
+  <Question ID="229" Content="中国签定的第一个不平等条约是哪个？"
+          
+		  OptionA="望厦条约"
+		  OptionB="南京条约"
+		  OptionC="辛丑条约"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="230" Content="谁发现了白光是七色光组成的？"
+          
+		  OptionA="爱因斯坦"
+		  OptionB="牛顿"
+		  OptionC="阿基米德"
+		  OptionD="爱迪生"
+          Answer ="2" />
+  <Question ID="231" Content="我国珍稀野生动物特种纪念币系列的首枚纪念币图案是什么？"
+          
+		  OptionA="大熊猫"
+		  OptionB="金丝猴"
+		  OptionC="扬子鳄"
+		  OptionD="白鳍豚"
+          Answer ="1" />
+  <Question ID="232" Content="世界上最深的海沟位于哪里？"
+          
+		  OptionA="大西洋"
+		  OptionB="太平洋"
+		  OptionC="印度洋"
+		  OptionD="北冰洋"
+          Answer ="2" />
+  <Question ID="233" Content="中国四大名砚中哪一种不是石砚？"
+          
+		  OptionA="端砚"
+		  OptionB="洮河砚"
+		  OptionC="澄泥砚"
+		  OptionD="歙砚"
+          Answer ="3" />
+  <Question ID="234" Content="自然界已知的最硬物质是什么？"
+          
+		  OptionA="金刚石"
+		  OptionB="石墨"
+		  OptionC="锰"
+		  OptionD="钛"
+          Answer ="1" />
+  <Question ID="235" Content="下列三种动物中谁的颈椎数最多？"
+          
+		  OptionA="长颈鹿"
+		  OptionB="棕熊"
+		  OptionC="狗"
+		  OptionD="一样多"
+          Answer ="4" />
+  <Question ID="236" Content="我国运动员打破的第一个世界田径纪录是什么？"
+          
+		  OptionA="女子跳高"
+		  OptionB="女子跳远"
+		  OptionC="女子铅球"
+		  OptionD="男子百米"
+          Answer ="1" />
+  <Question ID="237" Content="千岛湖的蜜山是以下哪个俗语故事的发生地？"
+          
+		  OptionA="七仙女和董永"
+		  OptionB="三个和尚没水吃"
+		  OptionC="阳春白雪"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="238" Content="猕猴桃属于什么种类水果？"
+          
+		  OptionA="仁果类"
+		  OptionB="核果类"
+		  OptionC="浆果类"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="239" Content="海明威没写过什么"
+          
+		  OptionA="《太阳照样升起》"
+		  OptionB="《老人与海》"
+		  OptionC="《乞力马扎罗的雪》 "
+		  OptionD="《百年孤独》"
+          Answer ="4" />
+  <Question ID="240" Content="《奥赛罗》出自谁手？"
+          
+		  OptionA="奥斯丁"
+		  OptionB="莎士比亚"
+		  OptionC="雨果"
+		  OptionD="莫泊桑"
+          Answer ="2" />
+  <Question ID="241" Content="西洋木管乐器中的“巴松”又称为什么？"
+          
+		  OptionA="大管"
+		  OptionB="短笛"
+		  OptionC="长笛"
+		  OptionD="双簧管"
+          Answer ="1" />
+  <Question ID="242" Content="花样游泳首次作为比赛项目进入奥运会是在哪一年？"
+          
+		  OptionA="1956年"
+		  OptionB="1958年"
+		  OptionC="1984年"
+		  OptionD="1988年"
+          Answer ="3" />
+  <Question ID="243" Content="世界上刮风最多的地方是哪里？"
+          
+		  OptionA="日本"
+		  OptionB="美国"
+		  OptionC="印度"
+		  OptionD="南极洲"
+          Answer ="4" />
+  <Question ID="244" Content="贮存土豆时应放在哪里？"
+          
+		  OptionA="避光处"
+		  OptionB="光照处"
+		  OptionC="任何地方"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="245" Content="印象派音乐的代表人物是谁？"
+          
+		  OptionA="柴可夫斯基"
+		  OptionB="德彪西"
+		  OptionC="利斯特"
+		  OptionD="门德尔松"
+          Answer ="2" />
+  <Question ID="246" Content="血液占成人体重的多少？"
+          
+		  OptionA="5-6% "
+		  OptionB="7-8% "
+		  OptionC="9-10%"
+		  OptionD="11-12%"
+          Answer ="2" />
+  <Question ID="247" Content="香水中含有什么物质对人体的皮肤有害？"
+          
+		  OptionA="铁"
+		  OptionB="锌"
+		  OptionC="硅"
+		  OptionD="铜"
+          Answer ="4" />
+  <Question ID="248" Content="被称为“乐圣”的外国音乐家是哪位？"
+          
+		  OptionA="巴赫"
+		  OptionB="莫木扎特"
+		  OptionC="海顿"
+		  OptionD="贝多芬"
+          Answer ="4" />
+  <Question ID="249" Content="《藤王阁序》的作者是谁？"
+          
+		  OptionA="卢照邻"
+		  OptionB="骆宾王"
+		  OptionC="杨炯"
+		  OptionD="王勃"
+          Answer ="4" />
+  <Question ID="250" Content="“碧云天，黄叶地，北雁南飞”语出哪里？"
+          
+		  OptionA="《墙头马上》"
+		  OptionB="《窦娥冤》"
+		  OptionC="《西厢记》"
+		  OptionD="《牡丹亭》"
+          Answer ="3" />
+  <Question ID="251" Content="以下哪一位曾被称为“药王”？"
+          
+		  OptionA="孙思邈"
+		  OptionB="张仲景"
+		  OptionC="李时珍"
+		  OptionD="扁鹊"
+          Answer ="1" />
+  <Question ID="252" Content="《阿里山的姑娘》是哪个少数民族的歌曲？"
+          
+		  OptionA="苗族"
+		  OptionB="彝族"
+		  OptionC="高山族"
+		  OptionD="黎族"
+          Answer ="3" />
+  <Question ID="253" Content="欧洲第一个使用印刷机的民族是哪个？"
+          
+		  OptionA="爱尔兰人"
+		  OptionB="冰岛人"
+		  OptionC="丹麦人"
+		  OptionD="意大利人"
+          Answer ="2" />
+  <Question ID="254" Content="国际奥林匹克集邮联合会在哪一国家成立？"
+          
+		  OptionA="瑞士"
+		  OptionB="希腊"
+		  OptionC="西班牙"
+		  OptionD="美国"
+          Answer ="1" />
+  <Question ID="255" Content="蝴蝶靠什么发现花蜜？"
+          
+		  OptionA="眼看"
+		  OptionB="前足沾"
+		  OptionC="嗅觉闻"
+		  OptionD="嘴尝"
+          Answer ="2" />
+  <Question ID="256" Content="正规围棋比赛的棋盘大小是多少？"
+          
+		  OptionA="13乘13"
+		  OptionB="15乘15"
+		  OptionC="19乘19"
+		  OptionD="21乘21"
+          Answer ="3" />
+  <Question ID="257" Content="《春秋》是按什么记事的？"
+          
+		  OptionA="国"
+		  OptionB="事件"
+		  OptionC="人物"
+		  OptionD="年"
+          Answer ="4" />
+  <Question ID="258" Content="西游记中去西天取经的“唐三藏”的真名是什么？"
+          
+		  OptionA="玄慈"
+		  OptionB="玄明"
+		  OptionC="唐僧"
+		  OptionD="玄奘"
+          Answer ="4" />
+  <Question ID="259" Content="举重比赛中，最重的杠铃片是什么颜色的？"
+          
+		  OptionA="蓝色"
+		  OptionB="绿色"
+		  OptionC="红色"
+		  OptionD="黄色"
+          Answer ="2" />
+  <Question ID="260" Content="中国最热的地方在哪里？"
+          
+		  OptionA="吐鲁番盆地"
+		  OptionB="南沙群岛"
+		  OptionC="拉萨"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="261" Content="苏伊士运河属于哪个国家？"
+          
+		  OptionA="以色列"
+		  OptionB="巴勒斯坦"
+		  OptionC="约旦"
+		  OptionD="埃及"
+          Answer ="4" />
+  <Question ID="262" Content="《本草纲目》的作者是谁？"
+          
+		  OptionA="孙思邈"
+		  OptionB="李时珍"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="263" Content="热带鱼一般生活在哪里？"
+          
+		  OptionA="咸水中"
+		  OptionB="淡水中"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="264" Content="世界上最长的山脉是哪个？"
+          
+		  OptionA="比利牛斯山"
+		  OptionB="喜马拉雅山"
+		  OptionC="安第斯山"
+		  OptionD="乞力马扎罗山"
+          Answer ="3" />
+  <Question ID="265" Content="有记录的世界上飞翔距离最远的是什么鸟？"
+          
+		  OptionA="印度天鹅"
+		  OptionB="波罗的海鱼鸥"
+		  OptionC="北极燕鸥"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="266" Content="“六一居士”是谁的别号？"
+          
+		  OptionA="唐伯虎"
+		  OptionB="欧阳修"
+		  OptionC="辛弃疾"
+		  OptionD="柳亚子"
+          Answer ="2" />
+  <Question ID="267" Content="蒙古首都乌兰巴托的意思是什么？"
+          
+		  OptionA="繁荣的城市"
+		  OptionB="没有水的城市"
+		  OptionC="红色英雄"
+		  OptionD="时尚之都"
+          Answer ="3" />
+  <Question ID="268" Content="生长发育最快的时期是什么时候？"
+          
+		  OptionA="新生儿期"
+		  OptionB="婴儿期"
+		  OptionC="幼儿期"
+		  OptionD="青少年期"
+          Answer ="2" />
+  <Question ID="269" Content="仰韶文化是我国历史上哪个时代中期的文化"
+          
+		  OptionA="旧石器"
+		  OptionB="新石器"
+		  OptionC="青铜器"
+		  OptionD="铁器"
+          Answer ="2" />
+  <Question ID="270" Content="《义勇军进行曲》是哪一位作曲家所作的抗日歌曲？"
+          
+		  OptionA="冼星海"
+		  OptionB="贺绿汀"
+		  OptionC="聂耳"
+		  OptionD="麦新"
+          Answer ="3" />
+  <Question ID="271" Content="反映波兰作曲家肖邦生平的美国影片是哪部？"
+          
+		  OptionA="《翠堤春晓》"
+		  OptionB="《一曲难忘》"
+		  OptionC="《音乐之声》"
+		  OptionD="《雨中曲》"
+          Answer ="2" />
+  <Question ID="272" Content="下面哪一种熨烫衣服的方法是不正确的？"
+          
+		  OptionA="熨之前在衣服上喷一些水"
+		  OptionB="尽可能长时间地熨"
+		  OptionC="掌握合适的温度"
+		  OptionD="在衣服和熨斗之间垫一块湿布"
+          Answer ="2" />
+  <Question ID="273" Content="你知道钨丝在加热的时候表面温度可以达到多少吗？"
+          
+		  OptionA="180"
+		  OptionB="200"
+		  OptionC="500"
+		  OptionD="2000"
+          Answer ="4" />
+  <Question ID="274" Content="你知道玻璃杯一般是用什么制成的吗？"
+          
+		  OptionA="石英砂"
+		  OptionB="聚丙烯"
+		  OptionC="聚乙烯"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="275" Content="火车票不仅是上车的凭证，也是一张什么单？"
+          
+		  OptionA="税"
+		  OptionB="汇款"
+		  OptionC="保险"
+		  OptionD="发票"
+          Answer ="3" />
+  <Question ID="276" Content="刹车时人往前倾是因为什么的作用？"
+          
+		  OptionA="重力"
+		  OptionB="惯性"
+		  OptionC="吸引力"
+		  OptionD="浮力"
+          Answer ="2" />
+  <Question ID="277" Content="地球对周围的物体产生强大的什么力？"
+          
+		  OptionA="吸引力"
+		  OptionB="重力"
+		  OptionC="浮力"
+		  OptionD="压力"
+          Answer ="1" />
+  <Question ID="278" Content="18世纪首先探询新航路的是西班牙和哪个国家？"
+          
+		  OptionA="葡萄牙"
+		  OptionB="土耳其"
+		  OptionC="菲律宾"
+		  OptionD="法国"
+          Answer ="1" />
+  <Question ID="279" Content="后周大将赵匡胤发动了“陈桥兵变”，成为哪个国家的开国皇帝？"
+          
+		  OptionA="唐朝"
+		  OptionB="宋朝"
+		  OptionC="元朝"
+		  OptionD="清朝"
+          Answer ="2" />
+  <Question ID="280" Content="是谁首先发现太阳是太阳系的中心？"
+          
+		  OptionA="哥伦布"
+		  OptionB="哥白尼"
+		  OptionC="伽利略"
+		  OptionD="马克思"
+          Answer ="3" />
+  <Question ID="281" Content="下列哪个国家属于内陆国？"
+          
+		  OptionA="法国"
+		  OptionB="英国"
+		  OptionC="瑞士"
+		  OptionD="印度"
+          Answer ="3" />
+  <Question ID="282" Content="地跨寒温热三带的大洲是哪个"
+          
+		  OptionA="大洋洲"
+		  OptionB="南美洲"
+		  OptionC="亚洲"
+		  OptionD="南极洲"
+          Answer ="3" />
+  <Question ID="283" Content="香港作家金庸的《笑傲江湖》是什么类型的小说？"
+          
+		  OptionA="武侠"
+		  OptionB="言情"
+		  OptionC="神魔"
+		  OptionD="科幻"
+          Answer ="1" />
+  <Question ID="284" Content="从生活的时间来看，李白是一位什么时期的诗人呢？"
+          
+		  OptionA="初唐"
+		  OptionB="盛唐"
+		  OptionC="晚唐"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="285" Content="你知道谁是希腊的“喜剧之父”吗？"
+          
+		  OptionA="阿里斯托芬"
+		  OptionB="埃斯库罗斯"
+		  OptionC="亚里士多德"
+		  OptionD="柏拉图"
+          Answer ="1" />
+  <Question ID="286" Content="唐代有一句诗“大珠小珠落玉盘”，描写的乐器是哪个呢？"
+          
+		  OptionA="古筝"
+		  OptionB="琵琶"
+		  OptionC="二胡"
+		  OptionD="竖笛"
+          Answer ="2" />
+  <Question ID="287" Content="汽车在爬坡的时候开得很慢，是因为受到什么的影响呢？"
+          
+		  OptionA="重力"
+		  OptionB="浮力"
+		  OptionC="压力"
+		  OptionD="地球引力"
+          Answer ="4" />
+  <Question ID="288" Content="高空中空气的流动速度是怎样？"
+          
+		  OptionA="特别快"
+		  OptionB="特别慢"
+		  OptionC="和低处一样快"
+		  OptionD="不流动"
+          Answer ="1" />
+  <Question ID="289" Content="火车进站以后，检车工叔叔拿着锤子在车下敲打，是为什么？"
+          
+		  OptionA="从声音中判断哪儿有毛病"
+		  OptionB="偷东西"
+		  OptionC="检查锤子的质量"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="290" Content="“人有悲欢离合，月有阴晴圆缺”这句古诗中包含的是什么天文知识呢？"
+          
+		  OptionA="天狗吃月亮"
+		  OptionB="潮汐现象"
+		  OptionC="月相的变化"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="291" Content="我们看到太阳东升西落原因是地球在自转，你知道地球自转的方向吗？"
+          
+		  OptionA="自东向西"
+		  OptionB="自西向东"
+		  OptionC="自北向南"
+		  OptionD="自南向北"
+          Answer ="2" />
+  <Question ID="292" Content="阴雨天气时，我们看不到太阳，原因是什么呢？"
+          
+		  OptionA="云层挡住了太阳"
+		  OptionB="大气层挡住了太阳"
+		  OptionC="月亮挡住了太阳"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="293" Content="你知道人类首次登陆月球的宇航员是哪个国家的吗？"
+          
+		  OptionA="前苏联"
+		  OptionB="美国"
+		  OptionC="英国"
+		  OptionD="中国"
+          Answer ="2" />
+  <Question ID="294" Content="你知道著名的天文学家伽利略是哪个国家的吗？"
+          
+		  OptionA="英国"
+		  OptionB="法国"
+		  OptionC="意大利"
+		  OptionD="中国"
+          Answer ="3" />
+  <Question ID="295" Content="宇航员费俊龙和聂海胜是下面哪个国家的？"
+          
+		  OptionA="美国"
+		  OptionB="英国"
+		  OptionC="中国"
+		  OptionD="日本"
+          Answer ="3" />
+  <Question ID="296" Content="天亮时，东方地平线上有时会看到启明星，它是哪一颗呢？"
+          
+		  OptionA="水星"
+		  OptionB="金星"
+		  OptionC="土星"
+		  OptionD="木星"
+          Answer ="2" />
+  <Question ID="297" Content="在晴朗的夜晚，有一颗星星永远会出现在北方的天空，这颗星是？"
+          
+		  OptionA="北极星"
+		  OptionB="北斗星"
+		  OptionC="牛郎星"
+		  OptionD="织女星"
+          Answer ="1" />
+  <Question ID="298" Content="“床前明月光，疑是地上霜。举头望明月，低头思故乡。” 这首诗是谁写的？"
+          
+		  OptionA="白居易"
+		  OptionB="杜甫"
+		  OptionC="辛弃疾"
+		  OptionD="李白"
+          Answer ="4" />
+  <Question ID="299" Content="你知道我国进行第一次防震减灾演习的城市和时间吗？"
+          
+		  OptionA="乌鲁木齐市、1991年7月28日"
+		  OptionB="乌鲁木齐市、1992年7月28日"
+		  OptionC="齐齐哈尔市、1991年7月28日"
+		  OptionD="齐齐哈尔市、1992年7月28日"
+          Answer ="1" />
+  <Question ID="300" Content="号称“西楚霸王”的是谁？"
+          
+		  OptionA="刘备"
+		  OptionB="刘邦"
+		  OptionC="项羽"
+		  OptionD="关羽"
+          Answer ="3" />
+  <Question ID="301" Content="下面哪些颜色也是绿色？"
+          
+		  OptionA="翠"
+		  OptionB="赤"
+		  OptionC="墨"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="302" Content="一匹小马嘴巴里长了4颗牙，他的年龄是几岁？"
+          
+		  OptionA="3岁"
+		  OptionB="4岁"
+		  OptionC="5岁"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="303" Content="中国古代建筑是世界古建筑中的一个独特体系，大多采用什么结构"
+          
+		  OptionA="木构架"
+		  OptionB="钢筋"
+		  OptionC="水"
+		  OptionD="砖石"
+          Answer ="1" />
+  <Question ID="304" Content="被称为“凝固的音乐”艺术形式是什么？"
+          
+		  OptionA="雕塑"
+		  OptionB="油画"
+		  OptionC="建筑"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="305" Content="在中国神话中，谁发明了农业？"
+          
+		  OptionA="后稷"
+		  OptionB="燧人"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="306" Content="蒲公英主要生长在哪里？"
+          
+		  OptionA="热带"
+		  OptionB="亚热带"
+		  OptionC="温带"
+		  OptionD="寒带"
+          Answer ="3" />
+  <Question ID="307" Content="什么颜色的花在自然界中最多？"
+          
+		  OptionA="黄"
+		  OptionB="粉红"
+		  OptionC="白"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="308" Content="引起海洋潮汐现象的原因是什么？"
+          
+		  OptionA="月球、太阳对地球的引力"
+		  OptionB="海啸"
+		  OptionC="地震"
+		  OptionD="火山喷发"
+          Answer ="1" />
+  <Question ID="309" Content="当我国正处于冬季的时候，澳大利亚是什么季节？"
+          
+		  OptionA="春天"
+		  OptionB="夏天"
+		  OptionC="秋天"
+		  OptionD="冬天"
+          Answer ="2" />
+  <Question ID="310" Content="寓言故事中，保护狼，躲过猎人追击的是谁？"
+          
+		  OptionA="东郭先生"
+		  OptionB="南郭先生"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="311" Content="青蛙能辨别几种颜色？"
+          
+		  OptionA="2种"
+		  OptionB="4种"
+		  OptionC="6种"
+		  OptionD="8种"
+          Answer ="1" />
+  <Question ID="312" Content="戛纳电影节在哪国举办？"
+          
+		  OptionA="法国"
+		  OptionB="意大利"
+		  OptionC="英国"
+		  OptionD="德国"
+          Answer ="1" />
+  <Question ID="313" Content="我国曲艺中的相声是？"
+          
+		  OptionA="北方曲种"
+		  OptionB="南方曲种"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="314" Content="最早制造香水瓶所用的原料是什么？"
+          
+		  OptionA="东陶"
+		  OptionB="玻璃"
+		  OptionC="白金"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="315" Content="鸵鸟遇到惊吓或敌害时可能会怎样？"
+          
+		  OptionA="把头埋进沙子里"
+		  OptionB="将脖子平贴地面"
+		  OptionC="把全身都埋进沙子里"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="316" Content="非洲国家边界按什么划分的最多？"
+          
+		  OptionA="直线或曲线的几何方法"
+		  OptionB="经线或纬线"
+		  OptionC="河流、山脉等自然地貌"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="317" Content="举重时运动员为什么搓白粉？"
+          
+		  OptionA="使手变的粗糙"
+		  OptionB="吸取手上的汗"
+		  OptionC="刺激肌肉"
+		  OptionD="保护皮肤"
+          Answer ="2" />
+  <Question ID="318" Content="“文房四宝”中的毛笔是谁发明的？"
+          
+		  OptionA="乐毅"
+		  OptionB="闻仲"
+		  OptionC="蒙恬"
+		  OptionD="刘伯温"
+          Answer ="3" />
+  <Question ID="319" Content="被称为酿酒行业的祖师是谁？"
+          
+		  OptionA="孔子"
+		  OptionB="鲁班"
+		  OptionC="柳永"
+		  OptionD="杜康"
+          Answer ="4" />
+  <Question ID="320" Content="下列历史上的事变哪个是李世民发动的？"
+          
+		  OptionA="玄武门之变"
+		  OptionB="陈桥兵变"
+		  OptionC="靖康之变"
+		  OptionD="土木之变"
+          Answer ="1" />
+  <Question ID="321" Content="有“世界船王”之称的海外炎黄子孙是指谁？"
+          
+		  OptionA="王安"
+		  OptionB="王贞治"
+		  OptionC="杨小燕"
+		  OptionD="包玉刚"
+          Answer ="4" />
+  <Question ID="322" Content="美国第一任总统是谁？"
+          
+		  OptionA="林肯"
+		  OptionB="华盛顿"
+		  OptionC="罗斯福"
+		  OptionD="杜鲁门"
+          Answer ="2" />
+  <Question ID="323" Content="成语“闻鸡起舞”“中流击楫”是出自哪们古代将领的故事？"
+          
+		  OptionA="岳飞"
+		  OptionB="戚继光"
+		  OptionC="祖逖"
+		  OptionD="郑成功"
+          Answer ="3" />
+  <Question ID="324" Content="我国古代“三十六计”中第36计是什么？"
+          
+		  OptionA="美人计"
+		  OptionB="空城计"
+		  OptionC="走为上计"
+		  OptionD="反间计"
+          Answer ="3" />
+  <Question ID="325" Content="比喻变被动为主动是“三十六计”中的哪一计？"
+          
+		  OptionA="声东击西"
+		  OptionB="李代桃僵"
+		  OptionC="欲擒故纵"
+		  OptionD="反客为主"
+          Answer ="4" />
+  <Question ID="326" Content="我国现存最早的兵书是？"
+          
+		  OptionA="《孙膑兵法》"
+		  OptionB="《吴子》"
+		  OptionC="《孙子兵法》"
+		  OptionD="《六韬》"
+          Answer ="3" />
+  <Question ID="327" Content="我国人民解放军第一位女将军是谁？"
+          
+		  OptionA="李贞"
+		  OptionB="贺子珍"
+		  OptionC="邓颖超"
+		  OptionD="蔡畅"
+          Answer ="1" />
+  <Question ID="328" Content="我国进行抗美援朝是在哪一年？"
+          
+		  OptionA="1949"
+		  OptionB="1950"
+		  OptionC="1951"
+		  OptionD="1952"
+          Answer ="2" />
+  <Question ID="329" Content="我国古代项羽“破釜沉舟”战胜秦军是在哪次战役？"
+          
+		  OptionA="牧野之战"
+		  OptionB="巨鹿之战"
+		  OptionC="官渡之战"
+		  OptionD="昆阳之战"
+          Answer ="2" />
+  <Question ID="330" Content="下列著名建筑物哪个不属于法国？"
+          
+		  OptionA="凯旋门"
+		  OptionB="比萨斜塔"
+		  OptionC="埃菲尔铁塔"
+		  OptionD="卢浮宫"
+          Answer ="2" />
+  <Question ID="331" Content="美国“自由女神”座落在哪个城市？"
+          
+		  OptionA="纽约"
+		  OptionB="华盛顿"
+		  OptionC="洛杉机"
+		  OptionD="旧金山"
+          Answer ="1" />
+  <Question ID="332" Content="下列名关哪一座被称为“天下第一关”？"
+          
+		  OptionA="居庸关"
+		  OptionB="娘子关"
+		  OptionC="潼门关"
+		  OptionD="山海关"
+          Answer ="4" />
+  <Question ID="333" Content="下列我国名泉中哪一眼位于杭州？"
+          
+		  OptionA="观音泉"
+		  OptionB="虎跑泉"
+		  OptionC="趵突泉"
+		  OptionD="招隐泉"
+          Answer ="2" />
+  <Question ID="334" Content="我国四大名亭中哪一座亭名是毛泽东题的？"
+          
+		  OptionA="爱晚亭"
+		  OptionB="醉翁亭"
+		  OptionC="陶然亭"
+		  OptionD="湖心亭"
+          Answer ="1" />
+  <Question ID="335" Content="下列我国哪个古迹被誉为“世界八大奇迹”之一？"
+          
+		  OptionA="万里长城"
+		  OptionB="乐山大佛"
+		  OptionC="秦始皇兵马俑"
+		  OptionD="敦煌"
+          Answer ="3" />
+  <Question ID="336" Content="下列哪一座寺院位于南京市？"
+          
+		  OptionA="龙岩寺"
+		  OptionB="国清寺"
+		  OptionC="玉泉寺"
+		  OptionD="栖霞寺"
+          Answer ="4" />
+  <Question ID="337" Content="世界上现存最大的佛教艺术宝库是？"
+          
+		  OptionA="敦煌石窟"
+		  OptionB="云冈石窟"
+		  OptionC="龙门石窟"
+		  OptionD="大足石窟"
+          Answer ="1" />
+  <Question ID="338" Content="我国最大的佛像是哪一座？"
+          
+		  OptionA="潼南金佛"
+		  OptionB="屏山大佛"
+		  OptionC="荣成大佛"
+		  OptionD="乐山大佛"
+          Answer ="4" />
+  <Question ID="339" Content="下列哪座山不属于我国四大佛山之一？"
+          
+		  OptionA="雁荡山"
+		  OptionB="五台山"
+		  OptionC="九华山"
+		  OptionD="峨眉山"
+          Answer ="1" />
+  <Question ID="340" Content="下列五岳中哪座称“中丘”？"
+          
+		  OptionA="泰山"
+		  OptionB="嵩山"
+		  OptionC="华山"
+		  OptionD="桓山"
+          Answer ="2" />
+  <Question ID="341" Content="下列著名宫殿哪个位于英国？"
+          
+		  OptionA="故宫"
+		  OptionB="凡尔赛宫"
+		  OptionC="白金汉宫"
+		  OptionD="克里姆林宫"
+          Answer ="3" />
+  <Question ID="342" Content="下列哪一个城市不是我国的“三大火炉”(高温)之一？"
+          
+		  OptionA="重庆"
+		  OptionB="成都"
+		  OptionC="武汉"
+		  OptionD="南京"
+          Answer ="2" />
+  <Question ID="343" Content="世界石油储量最多是哪一个国家？"
+          
+		  OptionA="伊拉克"
+		  OptionB="伊朗"
+		  OptionC="科威特"
+		  OptionD="沙特阿拉伯"
+          Answer ="4" />
+  <Question ID="344" Content="世界国土面积最小的国家是？"
+          
+		  OptionA="梵蒂冈"
+		  OptionB="摩纳哥"
+		  OptionC="瑙鲁"
+		  OptionD="图瓦卢"
+          Answer ="1" />
+  <Question ID="345" Content="下列哪个国家被称为“袋鼠之国”？"
+          
+		  OptionA="索马里"
+		  OptionB="新西兰"
+		  OptionC="澳大利亚"
+		  OptionD="肯尼亚"
+          Answer ="3" />
+  <Question ID="346" Content="下列河流哪一条是世界流程最长？"
+          
+		  OptionA="尼罗河"
+		  OptionB="长江"
+		  OptionC="亚马孙河"
+		  OptionD="密西西比河"
+          Answer ="1" />
+  <Question ID="347" Content="世界部分首都是以人名命名的，下列哪个不是？"
+          
+		  OptionA="华盛顿"
+		  OptionB="莫斯科"
+		  OptionC="巴黎"
+		  OptionD="科伦坡"
+          Answer ="2" />
+  <Question ID="348" Content="“鲁”是我国哪个省份的简称？"
+          
+		  OptionA="河北"
+		  OptionB="吉林"
+		  OptionC="山东"
+		  OptionD="山西"
+          Answer ="3" />
+  <Question ID="349" Content="峨眉山位于我国哪个省份？"
+          
+		  OptionA="四川"
+		  OptionB="云南"
+		  OptionC="贵州"
+		  OptionD="西藏"
+          Answer ="1" />
+  <Question ID="350" Content="吉林省抚松县被人们称为是哪种药材之乡？"
+          
+		  OptionA="当归"
+		  OptionB="枸杞"
+		  OptionC="人参"
+		  OptionD="田七"
+          Answer ="3" />
+  <Question ID="351" Content="下列我国名茶中哪一种是产于福建安溪？"
+          
+		  OptionA="龙井"
+		  OptionB="碧螺春"
+		  OptionC="武夷岩茶"
+		  OptionD="铁观音"
+          Answer ="4" />
+  <Question ID="352" Content="下列哪一个湖泊是在我国江西省的境内？"
+          
+		  OptionA="洞庭湖"
+		  OptionB="鄱阳湖"
+		  OptionC="太湖"
+		  OptionD="洪泽湖"
+          Answer ="2" />
+  <Question ID="353" Content="世界上海拔最高的山峰是哪一座？"
+          
+		  OptionA="乔戈里峰"
+		  OptionB="珠穆朗玛峰"
+		  OptionC="干城章嘉峰"
+		  OptionD="公格尔山峰"
+          Answer ="2" />
+  <Question ID="354" Content="世界四大洋中面积最小的是？"
+          
+		  OptionA="太平洋"
+		  OptionB="大西洋"
+		  OptionC="印度洋"
+		  OptionD="北冰洋"
+          Answer ="4" />
+  <Question ID="355" Content="中国旧时流行的《百家姓》始写于什么时期？"
+          
+		  OptionA="北宋"
+		  OptionB="唐朝"
+		  OptionC="春秋"
+		  OptionD="隋朝"
+          Answer ="1" />
+  <Question ID="356" Content="大汶口文化遗址在我国的什么地方？ "
+          
+		  OptionA="湖南"
+		  OptionB="广西"
+		  OptionC="山东"
+		  OptionD="陕西"
+          Answer ="3" />
+  <Question ID="357" Content="武汉长江第一大桥是跨武汉的那两个地区？"
+          
+		  OptionA="汉口和汉阳"
+		  OptionB="武昌和汉口"
+		  OptionC="汉阳和武昌"
+		  OptionD="武昌和江夏"
+          Answer ="3" />
+  <Question ID="358" Content="是哪场战争奠定了三国鼎立的局面？"
+          
+		  OptionA="祖逖北伐"
+		  OptionB="官渡之战"
+		  OptionC="赤壁之战"
+		  OptionD="八王之乱"
+          Answer ="3" />
+  <Question ID="359" Content="《孙子兵法》是中国对世界的一大贡献，请问这本兵书有多少篇？"
+          
+		  OptionA="10"
+		  OptionB="13"
+		  OptionC="16"
+		  OptionD="18"
+          Answer ="2" />
+  <Question ID="360" Content="“天生我材必有用，千金散尽还复来”是出自哪里？"
+          
+		  OptionA="《将进酒》"
+		  OptionB="《梦游天姥吟留别》"
+		  OptionC="《蜀道难》"
+		  OptionD="《叨叨令》"
+          Answer ="1" />
+  <Question ID="361" Content="我国有“留学生”一词来源于何时？"
+          
+		  OptionA="汉朝"
+		  OptionB="唐朝"
+		  OptionC="宋朝"
+		  OptionD="明朝"
+          Answer ="2" />
+  <Question ID="362" Content="世界上有两部同名小说《狂人日记》，它们的作者分别是鲁迅和谁？"
+          
+		  OptionA="巴尔扎克"
+		  OptionB="莫泊桑"
+		  OptionC="屠格涅夫"
+		  OptionD="果戈理"
+          Answer ="4" />
+  <Question ID="363" Content="什么人是最早到纽约定居的欧洲人民？"
+          
+		  OptionA="英国人"
+		  OptionB="法国人"
+		  OptionC="荷兰人"
+		  OptionD="西班牙人"
+          Answer ="3" />
+  <Question ID="364" Content="1869年3月，谁正式公布了元素周期律？"
+          
+		  OptionA="巴斯特"
+		  OptionB="康特尔"
+		  OptionC="门捷列夫"
+		  OptionD="居里夫人"
+          Answer ="3" />
+  <Question ID="365" Content="中国古代中最早提到小孔成像的原理的著作是？"
+          
+		  OptionA="《九章算术》"
+		  OptionB="《墨经》"
+		  OptionC="《天工开物》"
+		  OptionD="《四库全书》"
+          Answer ="2" />
+  <Question ID="366" Content="我国传统工艺有“三绝”，下列不是的是？"
+          
+		  OptionA="北京景泰蓝"
+		  OptionB="江西景德镇瓷器"
+		  OptionC="福州脱胎瓷器"
+		  OptionD="江苏宜兴紫砂"
+          Answer ="4" />
+  <Question ID="367" Content="琵琶曲《十面埋伏》描述的是什么情景？"
+          
+		  OptionA="淝水之战"
+		  OptionB="赤壁之战"
+		  OptionC="巨鹿之战"
+		  OptionD="垓下之战"
+          Answer ="4" />
+  <Question ID="368" Content="泰勒斯认为万物之源是什么？"
+          
+		  OptionA="水"
+		  OptionB="火"
+		  OptionC="风"
+		  OptionD="原子"
+          Answer ="1" />
+  <Question ID="369" Content="“我爱吾师，我更爱智慧。”是下列哪位哲学家说的？"
+          
+		  OptionA="苏格拉底"
+		  OptionB="亚历士多德"
+		  OptionC="尼采"
+		  OptionD="阿纳克萨格拉"
+          Answer ="1" />
+  <Question ID="370" Content="成年人身上有多少块骨骼？"
+          
+		  OptionA="205"
+		  OptionB="206"
+		  OptionC="207"
+		  OptionD="208"
+          Answer ="2" />
+  <Question ID="371" Content="世界上迄今为止保存的最完整的最早的一部成文法典是什么？"
+          
+		  OptionA="《汉莫拉比法典》"
+		  OptionB="《摩奴法典》"
+		  OptionC="《十二铜表法》"
+		  OptionD="《国法大全》"
+          Answer ="1" />
+  <Question ID="372" Content="下列酒中最宜在吃海鲜时饮用的是哪种？"
+          
+		  OptionA="啤酒"
+		  OptionB="干白葡萄酒"
+		  OptionC="白酒"
+		  OptionD="红葡萄酒"
+          Answer ="2" />
+  <Question ID="373" Content="四大名茶之一的龙井茶产地是哪里？"
+          
+		  OptionA="福建安溪"
+		  OptionB="云南普洱"
+		  OptionC="河南信阳"
+		  OptionD="浙江杭州"
+          Answer ="4" />
+  <Question ID="374" Content="“碧云天，黄叶地，北雁南飞”语出哪里？"
+          
+		  OptionA="《木兰诗》"
+		  OptionB="《西厢记》"
+		  OptionC="《孔雀东南飞》"
+		  OptionD="《陌上桑》"
+          Answer ="2" />
+  <Question ID="375" Content="“如果冬天来了，春天还会远吗？”这句名言出自哪位作家？"
+          
+		  OptionA="雨果"
+		  OptionB="拜论"
+		  OptionC="雪莱"
+		  OptionD="普斯金"
+          Answer ="3" />
+  <Question ID="376" Content="老舍的戏剧作品有哪个？"
+          
+		  OptionA="《龙须沟》"
+		  OptionB="《日出》"
+		  OptionC="《四世同堂》"
+		  OptionD="《子夜》"
+          Answer ="1" />
+  <Question ID="377" Content="“君子之交淡若水，小人之交甘若醴”出自下列哪部作品？"
+          
+		  OptionA="《老子》"
+		  OptionB="《庄子》"
+		  OptionC="《论语》"
+		  OptionD="《史记》"
+          Answer ="2" />
+  <Question ID="378" Content="“战国四公子”中齐国的孟尝君名为哪位？"
+          
+		  OptionA="魏无忌"
+		  OptionB="赵胜"
+		  OptionC="田文"
+		  OptionD="黄歇"
+          Answer ="3" />
+  <Question ID="379" Content="“文章本无成，妙手偶得之”出自谁之口？"
+          
+		  OptionA="杜甫"
+		  OptionB="李白"
+		  OptionC="陶渊明"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="380" Content="“天生我材必有用，千金散尽还复来”出自哪首诗？"
+          
+		  OptionA="《饮中八仙歌》"
+		  OptionB="《将进酒》"
+		  OptionC="《致酒行》"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="381" Content="“人有悲欢离合，月有阴晴圆缺”出是哪个时代的作品？"
+          
+		  OptionA="南宋 "
+		  OptionB="晚唐"
+		  OptionC="北宋"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="382" Content="世界上最大的古代士石建筑工程是哪一个？"
+          
+		  OptionA="中国的万里长城"
+		  OptionB="埃及的金字塔"
+		  OptionC="古罗马的斗兽场"
+		  OptionD="中国的故宫"
+          Answer ="1" />
+  <Question ID="383" Content="道教首创之地是哪里？"
+          
+		  OptionA="齐云山"
+		  OptionB="武当山"
+		  OptionC="龙虎山"
+		  OptionD="鹤鸣山"
+          Answer ="4" />
+  <Question ID="384" Content="长江三峡闻名世界，其中的巫峡以什么闻名？"
+          
+		  OptionA="雄伟险峡"
+		  OptionB="幽深彩丽"
+		  OptionC="滩多水急"
+		  OptionD="石林秀水"
+          Answer ="2" />
+  <Question ID="385" Content="美丽奇特的“海市蜃楼”是光的折射产生的一种现象，它通常发生在什么时候？"
+          
+		  OptionA="春天"
+		  OptionB="夏天"
+		  OptionC="秋天"
+		  OptionD="冬天"
+          Answer ="2" />
+  <Question ID="386" Content=" 世界水日是哪一天?"
+          
+		  OptionA="3月23日"
+		  OptionB="4月23日"
+		  OptionC="5月23日"
+		  OptionD="6月23日"
+          Answer ="1" />
+  <Question ID="387" Content="人体最可能肥胖的部位是哪里？"
+          
+		  OptionA="背部"
+		  OptionB="肚子"
+		  OptionC="上臂"
+		  OptionD="手臂"
+          Answer ="2" />
+  <Question ID="388" Content="被称为“命运交响曲”的是贝多芬的哪一个交响曲？"
+          
+		  OptionA="第三交响曲"
+		  OptionB="第五交响曲"
+		  OptionC="第九交响曲"
+		  OptionD="第六交响曲"
+          Answer ="2" />
+  <Question ID="389" Content="“孤帆远影碧空尽”的下一句是什么？"
+          
+		  OptionA="万里黄河绕黑山"
+		  OptionB="惟见长江天际流"
+		  OptionC="春风不度玉门关"
+		  OptionD="白云千载空悠悠"
+          Answer ="2" />
+  <Question ID="390" Content="我国国防系统最高学府是下列哪所大学？"
+          
+		  OptionA="清华大学"
+		  OptionB="北京航空航天大学"
+		  OptionC="北京大学"
+		  OptionD="国防大学"
+          Answer ="4" />
+  <Question ID="391" Content="举办过夏季奥运会次数最多的国家是那一个国家？"
+          
+		  OptionA="英国"
+		  OptionB="希腊"
+		  OptionC="美国"
+		  OptionD="意大利"
+          Answer ="3" />
+  <Question ID="392" Content="《钢铁是怎样炼成的》作者是谁？"
+          
+		  OptionA="马雅可夫斯基"
+		  OptionB="奥斯特洛夫斯基"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="393" Content="下列属于哺乳动物的是?"
+          
+		  OptionA="恐龙"
+		  OptionB="蝙蝠"
+		  OptionC="文昌鱼"
+		  OptionD="麻雀"
+          Answer ="2" />
+  <Question ID="394" Content="《思想者》是谁的雕塑作品？"
+          
+		  OptionA="罗丹"
+		  OptionB="罗素"
+		  OptionC="拉斐尔"
+		  OptionD="米开朗基罗"
+          Answer ="1" />
+  <Question ID="395" Content="杜甫的诗《江南逢李龟年》中的李龟年是哪个朝代的人？"
+          
+		  OptionA="唐朝"
+		  OptionB="宋朝"
+		  OptionC="明朝"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="396" Content="我国最早的字典是什么？"
+          
+		  OptionA="《说文解字》"
+		  OptionB="《康熙字典》"
+		  OptionC="《辞海》"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="397" Content="图书馆着火了，应该用什么灭火器灭火？"
+          
+		  OptionA="干粉"
+		  OptionB="二氧化碳"
+		  OptionC="1211"
+		  OptionD=""
+          Answer ="2" />
+  <Question ID="398" Content="太阳能可以使冷水变怎样？"
+          
+		  OptionA="热"
+		  OptionB="冷"
+		  OptionC="干净"
+		  OptionD=""
+          Answer ="1" />
+  <Question ID="399" Content="吸尘器最大的好处是节省了什么？"
+          
+		  OptionA="电能"
+		  OptionB="水"
+		  OptionC="人力"
+		  OptionD=""
+          Answer ="3" />
+  <Question ID="400" Content="一边看书一边吃饭，不利于什么？"
+          
+		  OptionA="消化"
+		  OptionB="呼吸"
+		  OptionC="运动"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="401" Content="古时被人尊奉为“火神”的是谁？"
+          
+		  OptionA="祝融"
+		  OptionB="司"
+		  OptionC="司火亘"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="402" Content="我国宋朝已建立了望火楼，担负防火任务的机构名称是什么？"
+          
+		  OptionA="潜火队"
+		  OptionB="防隅军"
+		  OptionC="军巡铺"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="403" Content="你知道原始人远在几万年前就已开始使用火了吗？"
+          
+		  OptionA="150万年"
+		  OptionB="160万年"
+		  OptionC="170万年"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="404" Content="你知道最早使用火的是我国的西候度人和什么人吗？"
+          
+		  OptionA="元谋人"
+		  OptionB="北京人"
+		  OptionC="蓝田人"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="405" Content="你知道我国从什么朝代开始用刑罚手段管理火政吗？"
+          
+		  OptionA="夏朝"
+		  OptionB="商朝"
+		  OptionC="周朝"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="406" Content="我国最早的救火工具水囊、水袋，出现在哪个朝代？"
+          
+		  OptionA="唐代"
+		  OptionB="宋朝"
+		  OptionC="明朝"
+		  OptionD="清朝"
+          Answer ="1" />
+	<Question ID="407" Content="我国近代第一支消防队在哪个城市建立？"
+          
+		  OptionA="上海"
+		  OptionB="北京"
+		  OptionC="天津"
+		  OptionD="广州"
+          Answer ="1" />
+	<Question ID="408" Content="你知道我国近代第一批消火栓出现在哪一年吗？"
+          
+		  OptionA="1883"
+		  OptionB="1905"
+		  OptionC="1921"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="409" Content="请问，世界上第一根灭火水管出现在哪个国家？"
+          
+		  OptionA="美国"
+		  OptionB="英国"
+		  OptionC="法国"
+		  OptionD="荷兰"
+          Answer ="4" />
+	<Question ID="410" Content="世界上的第一支近代专业消防队是在哪个国家成立的？"
+          
+		  OptionA="美国"
+		  OptionB="英国"
+		  OptionC="法国"
+		  OptionD="德国"
+          Answer ="1" />
+	<Question ID="411" Content="揭开雷电之谜的科学家是谁？"
+          
+		  OptionA="富兰克林"
+		  OptionB="哥白尼"
+		  OptionC="伽利略"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="412" Content="你知道消防车从接到出警指令到驶出车库需要多长时间吗？"
+          
+		  OptionA="白天30秒，夜晚45秒"
+		  OptionB="白天45秒，夜晚60秒"
+		  OptionC="白天60秒，夜晚90秒"
+		  OptionD="白天60秒，夜晚70秒"
+          Answer ="2" />
+	<Question ID="413" Content="成年人谎报火警的，将会被处以什么惩罚？"
+          
+		  OptionA="警告、罚款或拘留"
+		  OptionB="拘留或劳动教养"
+		  OptionC="行政处分或者刑罚"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="414" Content="消防监督检查的特点是什么？"
+          
+		  OptionA="强制性"
+		  OptionB="严格性"
+		  OptionC="特权性"
+		  OptionD="严肃性"
+          Answer ="1" />
+	<Question ID="415" Content="请问金属在常温下能够燃烧吗？"
+          
+		  OptionA="能"
+		  OptionB="不能"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="416" Content="可燃物开始持续燃烧所需要的最低温度叫什么？"
+          
+		  OptionA="燃点"
+		  OptionB="着火源"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="417" Content="影响初期火灾发展的最主要因素是什么？"
+          
+		  OptionA="热传导"
+		  OptionB="热对流"
+		  OptionC="热辐射"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="418" Content="什么是热量传导的动力？"
+          
+		  OptionA="温差"
+		  OptionB="热能差"
+		  OptionC="风速"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="419" Content="划分可燃液体火灾危险等级的依据是什么？"
+          
+		  OptionA="闪点"
+		  OptionB="燃点"
+		  OptionC="自燃点"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="420" Content="燃放礼花时以下哪种行为是正确的？"
+          
+		  OptionA="捂耳靠近点火"
+		  OptionB="在空旷处支撑牢固再点燃"
+		  OptionC="点着后注意观察"
+		  OptionD="以上都对"
+          Answer ="4" />
+	<Question ID="421" Content="被称作居民消防安全“四件宝”的是哪些？"
+          
+		  OptionA="灭火器、逃生绳、水桶、毛巾"
+		  OptionB="灭火器、逃生绳、手电筒、毛巾"
+		  OptionC="灭火器、逃生绳、风扇、毛巾"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="422" Content="在床底下或阁楼上寻找东西，应该用什么？"
+          
+		  OptionA="手电筒"
+		  OptionB="打火机"
+		  OptionC="蜡烛"
+		  OptionD="火柴"
+          Answer ="1" />
+	<Question ID="423" Content="向公安消防部门报警的内容有哪些？"
+          
+		  OptionA="单位名称、详细地址"
+		  OptionB="起火物、火势情况"
+		  OptionC="报警人的姓名、电话号码"
+		  OptionD="上述都对"
+          Answer ="4" />
+	<Question ID="424" Content="防止烟气危害最简单的方法是什么？"
+          
+		  OptionA="低姿、弯腰，必要时匍匐前进"
+		  OptionB="用毛巾、衣服、织物等捂住口鼻"
+		  OptionC="佩戴防烟面具"
+		  OptionD="上述都对"
+          Answer ="4" />
+	<Question ID="425" Content="油锅起火，应该使用什么方法灭火？"
+          
+		  OptionA="用水浇灭"
+		  OptionB="盖上锅盖"
+		  OptionC="把锅搬离炉灶"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="426" Content="家用电器发生火灾，在没有灭火器的情况下应该先怎样？"
+          
+		  OptionA="用水扑救"
+		  OptionB="用毛毯包裹"
+		  OptionC="切断电源"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="427" Content="家用电器或线路着火时，要先切断电源，再用干粉或什么灭火器灭火？"
+          
+		  OptionA="二氧化碳灭火器"
+		  OptionB="泡沫灭火器"
+		  OptionC="清水灭火器"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="428" Content="当打开房门闻到燃气气味时，应该怎么做可以防止引起火灾？"
+          
+		  OptionA="打开燃气灶具查找漏气部位"
+		  OptionB="打开灯查找漏气部位"
+		  OptionC="打开门窗通风"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="429" Content="泡沫不能用于扑救什么引起的火灾？"
+          
+		  OptionA="塑料"
+		  OptionB="汽油"
+		  OptionC="煤油"
+		  OptionD="金属钠"
+          Answer ="4" />
+	<Question ID="430" Content="家中的电视机着火了，直冒浓烟，这时你应该怎么办？"
+          
+		  OptionA="把水泼向电视机进行灭火"
+		  OptionB="用家中的棉被裹住电视机进行灭火"
+		  OptionC="先切断电源再灭火"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="431" Content="当电视机着火时，你应该从电视机的哪一侧上去灭火？"
+          
+		  OptionA="正面"
+		  OptionB="侧面"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="432" Content="人在烟雾中逃生应该用湿毛巾等物捂住口鼻怎么样的快速通过呢？"
+          
+		  OptionA="跑步"
+		  OptionB="弯腰"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="433" Content="火灾中，烟雾沿着楼梯上升的速度是多少？"
+          
+		  OptionA="每秒1-3米"
+		  OptionB="每秒3-5米"
+		  OptionC="每秒5-8米"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="434" Content="高层建筑中发生火灾时，我们应该怎样尽快逃离火场？"
+          
+		  OptionA="乘坐电梯逃生"
+		  OptionB="沿着楼梯逃生"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="435" Content="火灾中，万一身上着了火，你应该怎么做？"
+          
+		  OptionA="快速奔跑"
+		  OptionB="用力拍打"
+		  OptionC="就地打滚"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="436" Content="当你被大火困在屋内，又无法迅速逃生时，哪一个房间相对安全？"
+          
+		  OptionA="卫生间"
+		  OptionB="厨房间"
+		  OptionC="卧室"
+		  OptionD="客厅"
+          Answer ="1" />
+	<Question ID="437" Content="如果经常长时间使用电脑，会造成视力减退吗？"
+          
+		  OptionA="会"
+		  OptionB="不会"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="438" Content="身边没有IC卡，是否可以拨打IC卡电话报火警呢？"
+          
+		  OptionA="可以"
+		  OptionB="不可以"
+		  OptionC="不一定可以"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="439" Content="什么时候最容易发生火灾？"
+          
+		  OptionA="凌晨2点左右"
+		  OptionB="清晨6点左右"
+		  OptionC="中午12点左右"
+		  OptionD="晚上10点左右"
+          Answer ="1" />
+	<Question ID="440" Content="在一年四季中，哪个季节最容易发生火灾？"
+          
+		  OptionA="春季"
+		  OptionB="夏季"
+		  OptionC="秋季"
+		  OptionD="冬季"
+          Answer ="4" />
+	<Question ID="441" Content="当你白天被火围困时，应该怎样向人呼救？"
+          
+		  OptionA="挥动色彩鲜艳的衣衫"
+		  OptionB="挥动白色的衣衫"
+		  OptionC="挥动双手"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="442" Content="下面哪种形态的物品燃烧速度最快？"
+          
+		  OptionA="胶体"
+		  OptionB="气体"
+		  OptionC="固体"
+		  OptionD="液体"
+          Answer ="2" />
+	<Question ID="443" Content="卤代烷灭火器主要靠什么灭火？"
+          
+		  OptionA="降低温度"
+		  OptionB="降低氧浓度"
+		  OptionC="稀释可燃物"
+		  OptionD="抑制链式反应"
+          Answer ="4" />
+	<Question ID="444" Content="下列哪种物品主要是靠冷却作用灭火？"
+          
+		  OptionA="水"
+		  OptionB="干粉灭火剂"
+		  OptionC="砂土"
+		  OptionD="卤化烷灭火剂"
+          Answer ="1" />
+	<Question ID="445" Content="在时间或空间上失去控制的燃烧所造成的灾害就是火灾，对吗？"
+          
+		  OptionA="对"
+		  OptionB="不对"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="446" Content="氧气是助燃气体吗？"
+          
+		  OptionA="是"
+		  OptionB="不是"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="447" Content="我国的位置在哪里？"
+          
+		  OptionA="亚洲东部，太平洋南岸"
+		  OptionB="亚洲东部，太平洋西岸"
+		  OptionC="亚洲西部，太平洋南岸"
+		  OptionD="亚洲西部，太平洋东岸"
+          Answer ="2" />
+	<Question ID="448" Content="电加热设备必须有专人负责使用和监督，离开时要切断电源。对吗？"
+          
+		  OptionA="对"
+		  OptionB="不对"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="449" Content="小学生每天睡眠时间应不少于多少？"
+          
+		  OptionA="8小时"
+		  OptionB="9小时"
+		  OptionC="10小时"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="450" Content="灭火器的灭火级别应由数字和字母组成，数字的含义表示灭火级别的大小。对吗。"
+          
+		  OptionA="对"
+		  OptionB="不对"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="451" Content="我国的陆地面积是多少？"
+          
+		  OptionA="900万平方千米"
+		  OptionB="960万平方千米"
+		  OptionC="980万平方千米"
+		  OptionD="920万平方千米"
+          Answer ="2" />
+	<Question ID="452" Content="我国的四大海域位于哪个方向？"
+          
+		  OptionA="东面和南面"
+		  OptionB="东面和北面"
+		  OptionC="西面和南面"
+		  OptionD="西面和北面"
+          Answer ="1" />
+	<Question ID="453" Content="家用液化气钢瓶不能倒立使用，请问可以卧放使用吗？"
+          
+		  OptionA="可以"
+		  OptionB="不可以"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="454" Content="我国陆地面积居世界第几位？"
+          
+		  OptionA="第一位"
+		  OptionB="第二位"
+		  OptionC="第三位"
+		  OptionD="第四位"
+          Answer ="3" />
+	<Question ID="455" Content="ABC干粉灭火器”的意思是能灭A类、B类和C类火灾。对吗？"
+          
+		  OptionA="对"
+		  OptionB="不对"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="456" Content="是否可以携带易燃易爆危险物品进入公共场所或者乘坐公共交通工具？"
+          
+		  OptionA="不可以"
+		  OptionB="可以"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="457" Content="我国的海域面积有多少？"
+          
+		  OptionA="100万平方千米"
+		  OptionB="200万平方千米"
+		  OptionC="300万平方千米"
+		  OptionD="400万平方千米"
+          Answer ="3" />
+	<Question ID="458" Content="什么气体是火灾中致死的主要燃烧产物之一？"
+          
+		  OptionA="氧气"
+		  OptionB="一氧化碳"
+		  OptionC="二氧化碳"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="459" Content="我国的四大海域分别是什么？"
+          
+		  OptionA="东海、南海、长江、黄海"
+		  OptionB="东海、南海、黄河、黄海"
+		  OptionC="东海、南海、长江、黄河"
+		  OptionD="东海、南海、渤海、黄海"
+          Answer ="4" />
+	<Question ID="460" Content="哪个国家的陆地面积位于世界第二？"
+          
+		  OptionA="美国"
+		  OptionB="中国"
+		  OptionC="俄罗斯"
+		  OptionD="加拿大"
+          Answer ="4" />
+	<Question ID="461" Content="面粉在空气中飞扬并达到一定的浓度，遇到明火后会发生爆炸吗？"
+          
+		  OptionA="不会"
+		  OptionB="会"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="462" Content="香港的首任特别行政长官是谁？"
+          
+		  OptionA="何厚铧"
+		  OptionB="董建华"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="463" Content="发胶是可燃物吗？"
+          
+		  OptionA="是"
+		  OptionB="不是"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="464" Content="我国的四大海域是哪个大洋的一部分？"
+          
+		  OptionA="北冰洋"
+		  OptionB="太平洋"
+		  OptionC="大西洋"
+		  OptionD="印度洋"
+          Answer ="2" />
+	<Question ID="465" Content="哪个国家的陆地面积居世界第一？"
+          
+		  OptionA="中国"
+		  OptionB="俄罗斯"
+		  OptionC="美国"
+		  OptionD="加拿大"
+          Answer ="2" />
+	<Question ID="466" Content="可以用塑料桶来盛装汽油等可燃液体吗？"
+          
+		  OptionA="不可以"
+		  OptionB="可以"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="467" Content="万里长城至今有多少年历史？"
+          
+		  OptionA="500多年"
+		  OptionB="1000多年"
+		  OptionC="1500多年"
+		  OptionD="2000多年"
+          Answer ="4" />
+	<Question ID="468" Content="山海关位于哪个省？"
+          
+		  OptionA="河北"
+		  OptionB="河南"
+		  OptionC="湖北"
+		  OptionD="湖南"
+          Answer ="1" />
+	<Question ID="469" Content="为了装饰，可以用窗帘遮挡空调进气口吗？"
+          
+		  OptionA="可以"
+		  OptionB="不可以"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="470" Content="紫禁城是指什么地方？"
+          
+		  OptionA="布达拉宫"
+		  OptionB="故宫"
+		  OptionC="卢浮宫"
+		  OptionD="白宫"
+          Answer ="2" />
+	<Question ID="471" Content="着火后应自己先扑救，救不灭时再打“119”。这种做法正确吗？"
+          
+		  OptionA="正确"
+		  OptionB="不正确"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="472" Content="长城最著名的两个关口是？"
+          
+		  OptionA="玉门关、白虎关"
+		  OptionB="山海关、嘉峪关"
+		  OptionC="玉门关、嘉峪关"
+		  OptionD="山海关、白虎关"
+          Answer ="2" />
+	<Question ID="473" Content="故宫始建于哪个朝代？"
+          
+		  OptionA="唐朝"
+		  OptionB="宋朝"
+		  OptionC="元朝"
+		  OptionD="明朝"
+          Answer ="4" />
+	<Question ID="474" Content="报警人拨打火灾报警电话后，应该怎样做？"
+          
+		  OptionA="在家等候"
+		  OptionB="不再理会此事"
+		  OptionC="到门口或街上等候消防车到来"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="475" Content="中国野生动物保护协会的会徽上画的是什么动物？"
+          
+		  OptionA="丹顶鹤"
+		  OptionB="大熊猫"
+		  OptionC="骆驼"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="476" Content="你知道《中华人民共和国消防法》实施的日期吗？"
+          
+		  OptionA="1998年9月1日"
+		  OptionB="1998年4月29日"
+		  OptionC="1999年9月1日"
+		  OptionD="1999年4月29日"
+          Answer ="1" />
+	<Question ID="477" Content="地球仪能围绕一个固定轴转动，这个轴的名字是什么？"
+          
+		  OptionA="地心"
+		  OptionB="地轴"
+		  OptionC="赤道"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="478" Content="人们根据一年中地球获得热量的多少，把地球表面分为几个带？"
+          
+		  OptionA="3个带"
+		  OptionB="4个带"
+		  OptionC="5个带"
+		  OptionD="6个带"
+          Answer ="3" />
+	<Question ID="479" Content="公安消防队救火需要收费吗？"
+          
+		  OptionA="只收救火成本费"
+		  OptionB="收取所有费用"
+		  OptionC="不收任何费用"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="480" Content="地轴的两端是什么？"
+          
+		  OptionA="南极、北极"
+		  OptionB="东极、西极"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="481" Content="我国绝大部分地区位于哪里？"
+          
+		  OptionA="温带"
+		  OptionB="热带"
+		  OptionC="亚热带"
+		  OptionD="寒带"
+          Answer ="1" />
+	<Question ID="482" Content="学生外出郊游应注意什么？"
+          
+		  OptionA="听从老师的安排，注意防火安全"
+		  OptionB="护林防火期间，也可以到山林野炊"
+		  OptionC="可以在树林中焚烧枯枝败叶"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="483" Content="地球仪上有许多纵横交错的线，连接南北两极的线叫什么？"
+          
+		  OptionA="纬线"
+		  OptionB="经线"
+		  OptionC="横线"
+		  OptionD="竖线"
+          Answer ="2" />
+	<Question ID="484" Content="在地球上海洋面积大还是陆地面积大？"
+          
+		  OptionA="当然是海洋面积大啦"
+		  OptionB="应该是陆地面积大"
+		  OptionC=""
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="485" Content="火灾分为哪几类？"
+          
+		  OptionA="1、2、3、4四类"
+		  OptionB="甲、乙、丙、丁四类"
+		  OptionC="A、B、C、D四类"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="486" Content="什么线把地球分成南北两个半球？"
+          
+		  OptionA="经线"
+		  OptionB="纬线"
+		  OptionC="赤道"
+		  OptionD="本初子午线"
+          Answer ="3" />
+	<Question ID="487" Content="人类历史上，第一个环球旅行的宇航员是谁？"
+          
+		  OptionA="杨利伟"
+		  OptionB="加加林"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="488" Content="A类火灾是指哪类火灾？"
+          
+		  OptionA="固体物质火灾"
+		  OptionB="液体火灾和可熔化的固体物质火灾"
+		  OptionC="气体火灾"
+		  OptionD="金属火灾"
+          Answer ="1" />
+	<Question ID="489" Content="人们把地球上的陆地分为几个大洲？"
+          
+		  OptionA="5个"
+		  OptionB="6个"
+		  OptionC="7个"
+		  OptionD="8个"
+          Answer ="3" />
+	<Question ID="490" Content="国画《愚公移山》的作者是谁？"
+          
+		  OptionA="吴道子"
+		  OptionB="张大千"
+		  OptionC="徐悲鸿"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="491" Content="下列哪项不是燃烧的充分条件？"
+          
+		  OptionA="一定的可燃物浓度"
+		  OptionB="一定的氧气含量"
+		  OptionC="一定的点火能量"
+		  OptionD="一定的爆炸物品"
+          Answer ="4" />
+	<Question ID="492" Content="你知道Internet最初作用在什么方面吗？"
+          
+		  OptionA="家园"
+		  OptionB="民用"
+		  OptionC="军事工业"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="493" Content="你知道最清洁的能源是什么吗？"
+          
+		  OptionA="石油"
+		  OptionB="天然气"
+		  OptionC="沼气"
+		  OptionD="太阳能"
+          Answer ="4" />
+	<Question ID="494" Content="下列哪项不属于灭火器的组成部件？"
+          
+		  OptionA="筒体"
+		  OptionB="器头"
+		  OptionC="喷嘴"
+		  OptionD="水管"
+          Answer ="4" />
+	<Question ID="495" Content="你知道人体的解毒器官是哪里吗？"
+          
+		  OptionA="心脏"
+		  OptionB="肺部"
+		  OptionC="肝脏"
+		  OptionD="肾脏"
+          Answer ="3" />
+	<Question ID="496" Content="世界三大男高音中多明戈是哪里人？"
+          
+		  OptionA="葡萄牙人"
+		  OptionB="意大利人"
+		  OptionC="西班牙人"
+		  OptionD="加拿大人"
+          Answer ="3" />
+	<Question ID="497" Content="下列哪项不属于消火栓的组成部件？"
+          
+		  OptionA="阀门"
+		  OptionB="出水口"
+		  OptionC="壳体"
+		  OptionD="水井"
+          Answer ="4" />
+	<Question ID="498" Content="什么花很快就不见了？"
+          
+		  OptionA="火花"
+		  OptionB="茉莉花"
+		  OptionC="荷花"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="499" Content="什么东西装玻璃，爱把鼻子当马骑？"
+          
+		  OptionA="玻璃杯"
+		  OptionB="眼镜"
+		  OptionC="水壶"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="500" Content="下列哪项不属于水灭火的基本原理？"
+          
+		  OptionA="冷却"
+		  OptionB="窒息"
+		  OptionC="化学作用"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="501" Content="什么东西放在火中不会燃，放在水中不会沉？"
+          
+		  OptionA="木炭"
+		  OptionB="柴火"
+		  OptionC="冰块"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="502" Content="做什么事会身不由己？"
+          
+		  OptionA="做作业"
+		  OptionB="做家务"
+		  OptionC="做梦"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="503" Content="任何人发现火灾时，都应当怎样？"
+          
+		  OptionA="视而不见"
+		  OptionB="立即报警"
+		  OptionC="马上灭火"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="504" Content="四个人搬木头，猜一个字。"
+          
+		  OptionA="森"
+		  OptionB="李"
+		  OptionC="杰"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="505" Content="元旦是几月几日？"
+          
+		  OptionA="2月1日"
+		  OptionB="1月1日"
+		  OptionC="1月2日"
+		  OptionD="12月30日"
+          Answer ="2" />
+	<Question ID="506" Content="牙膏的泡沫是越多越好吗？"
+          
+		  OptionA="是"
+		  OptionB="不是"
+		  OptionC=""
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="507" Content="一人一张口，口下长只手，猜一个字。"
+          
+		  OptionA="好"
+		  OptionB="盒"
+		  OptionC="拿"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="508" Content="根据闪点将可燃液体分为几类？"
+          
+		  OptionA="1类"
+		  OptionB="2类"
+		  OptionC="3类"
+		  OptionD="4类"
+          Answer ="3" />
+	<Question ID="509" Content="谁的脚常年走路不穿鞋？"
+          
+		  OptionA="医生"
+		  OptionB="囚犯"
+		  OptionC="动物"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="510" Content="一大二小，猜一个字。"
+          
+		  OptionA="好"
+		  OptionB="奈"
+		  OptionC="茶"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="511" Content="按照火灾大小标准划分，火灾共分为哪几类？"
+          
+		  OptionA="特别重大火灾、重大火灾、较大火灾、一般火灾"
+		  OptionB="特别重大火灾、重大火灾、较大火灾"
+		  OptionC="重大火灾、较大火灾、一般火灾"
+		  OptionD="特别重大火灾、较大火灾、一般火灾"
+          Answer ="1" />
+	<Question ID="512" Content="视而不见，听而不闻，打一个字。"
+          
+		  OptionA="见"
+		  OptionB="欣"
+		  OptionC="祈"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="513" Content="内蒙古自治区是哪天成立的？"
+          
+		  OptionA="3月1日"
+		  OptionB="4月1日"
+		  OptionC="5月1日"
+		  OptionD="6月1日"
+          Answer ="3" />
+	<Question ID="514" Content="歇后语“按下葫芦浮起瓢”，后面是什么？"
+          
+		  OptionA="顾此失彼"
+		  OptionB="丢三落四"
+		  OptionC="各显神通"
+		  OptionD="突如其来"
+          Answer ="1" />
+	<Question ID="515" Content="澳门由哪几个岛组成？"
+          
+		  OptionA="砀甾岛"
+		  OptionB="澳门半岛"
+		  OptionC="陆环岛"
+		  OptionD="以上都是"
+          Answer ="4" />
+	<Question ID="516" Content="巴拿马运河建造于哪一年？"
+          
+		  OptionA="1992年"
+		  OptionB="1962年"
+		  OptionC="1932年"
+		  OptionD="1912年"
+          Answer ="4" />
+	<Question ID="517" Content="第一个诺贝尔奖是颁给哪国人的？"
+          
+		  OptionA="美国"
+		  OptionB="法国"
+		  OptionC="德国"
+		  OptionD="英国"
+          Answer ="3" />
+	<Question ID="518" Content="一斗米，猜一个字。"
+          
+		  OptionA="科"
+		  OptionB="抖"
+		  OptionC="料"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="519" Content="电视机是哪国人发明的？"
+          
+		  OptionA="苏格兰人"
+		  OptionB="美国人"
+		  OptionC="法国人"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="520" Content="第一台计算机在什么时候诞生？"
+          
+		  OptionA="1944"
+		  OptionB="1945"
+		  OptionC="1946"
+		  OptionD="1947"
+          Answer ="3" />
+	<Question ID="521" Content="一人在内，猜一个字。"
+          
+		  OptionA="合"
+		  OptionB="两"
+		  OptionC="肉"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="522" Content="第一包方便面诞生在哪个国家？"
+          
+		  OptionA="美国"
+		  OptionB="日本"
+		  OptionC="英国"
+		  OptionD="中国"
+          Answer ="2" />
+	<Question ID="523" Content="“为中华之崛起而读书。”这句名言出自谁之口？"
+          
+		  OptionA="毛泽东"
+		  OptionB="朱德"
+		  OptionC="周恩来"
+		  OptionD="孙中山"
+          Answer ="3" />
+	<Question ID="524" Content="一口吃掉牛尾巴，猜一个字。"
+          
+		  OptionA="号"
+		  OptionB="高"
+		  OptionC="告"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="525" Content="中国的国花是什么花？"
+          
+		  OptionA="玫瑰"
+		  OptionB="桃花"
+		  OptionC="牡丹"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="526" Content="电灯是由谁发明的？"
+          
+		  OptionA="爱迪生"
+		  OptionB="诺贝尔"
+		  OptionC="哥白尼"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="527" Content="《沁园春 雪》的作者是谁？"
+          
+		  OptionA="李白"
+		  OptionB="李清照"
+		  OptionC="毛泽东"
+		  OptionD="白居易"
+          Answer ="3" />
+	<Question ID="528" Content="一口咬定，猜一个字。"
+          
+		  OptionA="交"
+		  OptionB="饺"
+		  OptionC="娇"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="529" Content="“书籍是人类进步的阶梯”这句话是谁说的？"
+          
+		  OptionA="高尔基"
+		  OptionB="牛顿"
+		  OptionC="鲁迅"
+		  OptionD="马克思"
+          Answer ="1" />
+	<Question ID="530" Content="我国有多少个民族？"
+          
+		  OptionA="55个"
+		  OptionB="56个"
+		  OptionC="57个"
+		  OptionD="58个"
+          Answer ="2" />
+	<Question ID="531" Content="哪种水果可以止咳？"
+          
+		  OptionA="苹果"
+		  OptionB="梨子"
+		  OptionC="香蕉"
+		  OptionD="桃子"
+          Answer ="2" />
+	<Question ID="532" Content="一月七日，猜一个字。"
+          
+		  OptionA="指"
+		  OptionB="旨"
+		  OptionC="脂"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="533" Content="马是怎么睡觉的？"
+          
+		  OptionA="站着睡"
+		  OptionB="躺着睡"
+		  OptionC="站着，躺着都可睡"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="534" Content="《梦溪笔谈》的作者是谁？"
+          
+		  OptionA="沈括"
+		  OptionB="苏颂"
+		  OptionC="毕升"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="535" Content="我国第一大高原是哪个？"
+          
+		  OptionA="内蒙古高原"
+		  OptionB="青藏高原"
+		  OptionC="云贵高原"
+		  OptionD="黄土高原"
+          Answer ="2" />
+	<Question ID="536" Content="一加一，猜一个字。"
+          
+		  OptionA="十"
+		  OptionB="王"
+		  OptionC="干"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="537" Content="有田园诗人之称的是谁？"
+          
+		  OptionA="杜甫"
+		  OptionB="李贺"
+		  OptionC="孟浩然"
+		  OptionD="陶渊明"
+          Answer ="4" />
+	<Question ID="538" Content="月亮围绕什么东西转？"
+          
+		  OptionA="太阳"
+		  OptionB="地球"
+		  OptionC="水星"
+		  OptionD="木星"
+          Answer ="2" />
+	<Question ID="539" Content="地球被什么包围着？"
+          
+		  OptionA="星空"
+		  OptionB="没有被子"
+		  OptionC="海水"
+		  OptionD="大气层"
+          Answer ="4" />
+	<Question ID="540" Content="一家十一口，猜一个字。"
+          
+		  OptionA="吉"
+		  OptionB="合"
+		  OptionC="古"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="541" Content="下列哪项不是春节的习俗？"
+          
+		  OptionA="吃粽子"
+		  OptionB="贴春联"
+		  OptionC="吃年夜饭"
+		  OptionD="包饺子"
+          Answer ="1" />
+	<Question ID="542" Content="中国历史上杰出的天文学家是谁？"
+          
+		  OptionA="吴道子"
+		  OptionB="李时珍"
+		  OptionC="李白"
+		  OptionD="张衡"
+          Answer ="4" />
+	<Question ID="543" Content="电池的发明人是谁？"
+          
+		  OptionA="哥白尼"
+		  OptionB="爱迪生"
+		  OptionC="伏特"
+		  OptionD="富兰克林"
+          Answer ="3" />
+	<Question ID="544" Content="一只狗四个口，猜一个字。"
+          
+		  OptionA="器"
+		  OptionB="拳"
+		  OptionC="品"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="545" Content="泰山在哪个省？"
+          
+		  OptionA="山东"
+		  OptionB="河北"
+		  OptionC="陕西"
+		  OptionD="安徽"
+          Answer ="1" />
+	<Question ID="546" Content="法国的首都在哪里？"
+          
+		  OptionA="伦敦"
+		  OptionB="巴黎"
+		  OptionC="纽约"
+		  OptionD="罗马"
+          Answer ="2" />
+	<Question ID="547" Content="最大的两栖动物是什么？"
+          
+		  OptionA="娃娃鱼"
+		  OptionB="鳄鱼"
+		  OptionC="海龟"
+		  OptionD="水母"
+          Answer ="1" />
+	<Question ID="548" Content="一箭穿心，猜一个字。"
+          
+		  OptionA="蕊"
+		  OptionB="必"
+		  OptionC="芯"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="549" Content="英国的首都在哪里？"
+          
+		  OptionA="伦敦"
+		  OptionB="巴黎"
+		  OptionC="罗马"
+		  OptionD="华盛顿"
+          Answer ="1" />
+	<Question ID="550" Content="最早的农作物是什么？"
+          
+		  OptionA="水稻"
+		  OptionB="大豆"
+		  OptionC="玉米"
+		  OptionD="小麦"
+          Answer ="4" />
+	<Question ID="551" Content="远视力表检查视力时，检查距离为多少？"
+          
+		  OptionA="2米"
+		  OptionB="3米"
+		  OptionC="4米"
+		  OptionD="5米"
+          Answer ="4" />
+	<Question ID="552" Content="一边是水，一边是山，猜一个字。"
+          
+		  OptionA="衫"
+		  OptionB="杉"
+		  OptionC="汕"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="553" Content="美国的首都在哪里？"
+          
+		  OptionA="纽约"
+		  OptionB="芝加哥"
+		  OptionC="旧金山"
+		  OptionD="华盛顿"
+          Answer ="4" />
+	<Question ID="554" Content="郁金香是什么国家的国花？"
+          
+		  OptionA="法国"
+		  OptionB="瑞士"
+		  OptionC="冰岛"
+		  OptionD="荷兰"
+          Answer ="4" />
+	<Question ID="555" Content="什么花最大?"
+          
+		  OptionA="喇叭花"
+		  OptionB="鸡冠花"
+		  OptionC="大王花"
+		  OptionD="向日葵"
+          Answer ="3" />
+	<Question ID="556" Content="九只鸟，猜一个字。"
+          
+		  OptionA="鸠"
+		  OptionB="旭"
+		  OptionC="轨"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="557" Content="谁发明了麻醉术？"
+          
+		  OptionA="华佗"
+		  OptionB="扁鹊"
+		  OptionC="李时珍"
+		  OptionD="孙思邈"
+          Answer ="1" />
+	<Question ID="558" Content="橡皮是谁发明的？"
+          
+		  OptionA="钱学森"
+		  OptionB="爱迪生"
+		  OptionC="伏特"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="559" Content="什么动物是被人类最早驯养的？"
+          
+		  OptionA="鸡"
+		  OptionB="鸭"
+		  OptionC="鹅"
+		  OptionD="鱼"
+          Answer ="1" />
+	<Question ID="560" Content="九号，猜一个字。"
+          
+		  OptionA="旭"
+		  OptionB="丸"
+		  OptionC="轨"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="561" Content="最高的哺乳动物是什么？"
+          
+		  OptionA="大象"
+		  OptionB="长颈鹿"
+		  OptionC="野牛"
+		  OptionD="恐龙"
+          Answer ="2" />
+	<Question ID="562" Content="代表着和平的植物是什么？"
+          
+		  OptionA="樟树"
+		  OptionB="柳条"
+		  OptionC="橄榄枝"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="563" Content="UFO是什么的标志？"
+          
+		  OptionA="恒星"
+		  OptionB="外星人"
+		  OptionC="飞碟"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="564" Content="人不在其位，猜一个字。"
+          
+		  OptionA="粒"
+		  OptionB="立"
+		  OptionC="笠"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="565" Content="不给仙人掌浇水，最多能活几年？"
+          
+		  OptionA="1年"
+		  OptionB="3年"
+		  OptionC="6年"
+		  OptionD="8年"
+          Answer ="3" />
+	<Question ID="566" Content="飞机是谁发明的？"
+          
+		  OptionA="莱特兄弟"
+		  OptionB="爱迪生"
+		  OptionC="伏特"
+		  OptionD="瓦特"
+          Answer ="1" />
+	<Question ID="567" Content="最古老的文学体是什么？"
+          
+		  OptionA="小说"
+		  OptionB="诗歌"
+		  OptionC="散文"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="568" Content="弱视的危害有哪些？"
+          
+		  OptionA="视力低下"
+		  OptionB="影响立体视觉发育"
+		  OptionC="以上都是"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="569" Content="八十八，猜一个字。"
+          
+		  OptionA="众"
+		  OptionB="米"
+		  OptionC="茶"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="570" Content="中国是何时参加奥运会的？"
+          
+		  OptionA="1921年"
+		  OptionB="1922年"
+		  OptionC="1923年"
+		  OptionD="1924年"
+          Answer ="4" />
+	<Question ID="571" Content="世界上第一个两次获得若贝尔奖的人是谁？"
+          
+		  OptionA="居里夫人"
+		  OptionB="爱迪生"
+		  OptionC="爱因斯坦"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="572" Content="厨师帽是哪国人发明的？"
+          
+		  OptionA="美国"
+		  OptionB="英国"
+		  OptionC="法国"
+		  OptionD="德国"
+          Answer ="3" />
+	<Question ID="573" Content="中国最早的名医是谁？"
+          
+		  OptionA="扁鹊"
+		  OptionB="华佗"
+		  OptionC="李时珍"
+		  OptionD="孙思邈"
+          Answer ="1" />
+	<Question ID="574" Content="十月十日，武昌起义，猜一个字。"
+          
+		  OptionA="林"
+		  OptionB="朝"
+		  OptionC="汁"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="575" Content="长期大量饮酒对人体的哪个脏器损害最严重？ "
+          
+		  OptionA="心脏"
+		  OptionB="肝脏"
+		  OptionC="肾脏"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="576" Content="预防接种是为了什么？"
+          
+		  OptionA="预防癌症"
+		  OptionB="预防传染病"
+		  OptionC="预防中毒"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="577" Content="如果不吃早餐，血液里缺少什么，大脑功能就会受到影响？"
+          
+		  OptionA="脂肪"
+		  OptionB="维生素"
+		  OptionC="葡萄糖"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="578" Content="夏季在烈日下剧烈运动出汗过多时，为预防中暑应多喝什么？"
+          
+		  OptionA="糖水"
+		  OptionB="淡盐水"
+		  OptionC="白开水"
+		  OptionD="茶叶水"
+          Answer ="2" />
+	<Question ID="579" Content="下列说法中正确的是？"
+          
+		  OptionA="夏天趴在桌上睡午觉很舒服"
+		  OptionB="晚上睡得晚点没关系，早上多睡一会儿补回来"
+		  OptionC="正常人的睡姿应取右侧卧位"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="580" Content="如果有人触电，首先应该采取什么措施？"
+          
+		  OptionA="打110报警电话"
+		  OptionB="迅速切断电源"
+		  OptionC="用手把他拉开"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="581" Content="不在街边小铺吃未经严格消毒的食品，有利于预防什么疾病？"
+          
+		  OptionA="甲型肝炎"
+		  OptionB="乙型肝炎"
+		  OptionC="肾炎"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="582" Content="发生龋齿的主要原因是什么？"
+          
+		  OptionA="牙发育畸形"
+		  OptionB="偏食营养不良"
+		  OptionC="口腔不洁有细菌存在"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="583" Content="以下哪种食物富含微量元素碘？"
+          
+		  OptionA="苹果"
+		  OptionB="胡萝卜"
+		  OptionC="海带"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="584" Content="当你心情不好或碰到自己难以解决的问题时，应该怎么做？"
+          
+		  OptionA="不上课，痛痛快快出去玩"
+		  OptionB="一个人默默忍受，生闷气"
+		  OptionC="去和老师、父母、同学说，请求帮助"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="585" Content="世界爱眼日是每年的哪一天？"
+          
+		  OptionA="9月20日"
+		  OptionB="6月6日"
+		  OptionC="4月25日"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="586" Content="人的眼睛为了看清远近物体，起调节作用的是什么？"
+          
+		  OptionA="房水"
+		  OptionB="晶状体"
+		  OptionC="玻璃体"
+		  OptionD=""
+          Answer ="2" />
+	<Question ID="587" Content="儿童随着年龄的增长，眼轴的长度会怎样变化？"
+          
+		  OptionA="增长"
+		  OptionB="缩短"
+		  OptionC="不变"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="588" Content="连续看电视最好不要超过多长时间？"
+          
+		  OptionA="1小时"
+		  OptionB="2小时"
+		  OptionC="3小时"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="589" Content="下列哪种颜色可以抗眼疲劳？"
+          
+		  OptionA="白色"
+		  OptionB="绿色"
+		  OptionC="红色"
+		  OptionD="黑色"
+          Answer ="2" />
+	<Question ID="590" Content="“凸”字的笔画数是多少？"
+          
+		  OptionA="3"
+		  OptionB="4"
+		  OptionC="5"
+		  OptionD="6"
+          Answer ="3" />
+	<Question ID="591" Content="汉字的五种基本笔画是横、竖、撇、点和什么？"
+          
+		  OptionA="捺"
+		  OptionB="折"
+		  OptionC="提"
+		  OptionD="勾"
+          Answer ="2" />
+	<Question ID="592" Content="为了预防近视，下列措施中哪项是错误的？"
+          
+		  OptionA="不要在光线太暗或直射阳光下看书"
+		  OptionB="不要在走路乘车时看书"
+		  OptionC="连续长时间看书"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="593" Content="上下难分，猜一个字。"
+          
+		  OptionA="卡"
+		  OptionB="肯"
+		  OptionC="吓"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="594" Content="中国学生营养日是每年的哪一天？"
+          
+		  OptionA="5月20日"
+		  OptionB="4月20日"
+		  OptionC="5月10日"
+		  OptionD="3月20日"
+          Answer ="1" />
+	<Question ID="595" Content="下列哪项不是导致青少年肥胖症的因素？"
+          
+		  OptionA="吃甜食过多"
+		  OptionB="吃肥肉过多"
+		  OptionC="吃瘦肉过多"
+		  OptionD="吃蔬菜、水果过多"
+          Answer ="4" />
+	<Question ID="596" Content="以下哪种做法不会引起近视？"
+          
+		  OptionA="趴在桌上看书写字"
+		  OptionB="躺在床上看书"
+		  OptionC="连续看书1小时休息片刻或远眺"
+		  OptionD=""
+          Answer ="3" />
+	<Question ID="597" Content="在什么年龄时期最易患缺铁性贫血？"
+          
+		  OptionA="婴幼儿时期"
+		  OptionB="儿童时期"
+		  OptionC="青春发育时期"
+		  OptionD="中老年时期"
+          Answer ="3" />
+	<Question ID="598" Content="通常情况下，最容易吸收的糖是什么？"
+          
+		  OptionA="乳糖"
+		  OptionB="葡萄糖"
+		  OptionC="蔗糖"
+		  OptionD="麦芽糖"
+          Answer ="2" />
+	<Question ID="599" Content="看书写字正确坐姿应做到三个一，下面错误的是哪个？"
+          
+		  OptionA="眼与书距离1米"
+		  OptionB="笔尖与手指距离1寸"
+		  OptionC="胸与桌缘距离一拳"
+		  OptionD=""
+          Answer ="1" />
+	<Question ID="600" Content="人体中氮的唯一来源是哪类营养素？"
+          
+		  OptionA="蛋白质"
+		  OptionB="碳水化合物"
+		  OptionC="脂肪"
+		  OptionD="维生素"
+          Answer ="1" />
+</Questions>

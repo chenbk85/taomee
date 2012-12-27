@@ -1,0 +1,380 @@
+================(0430)==============
+更新所有的libser.so
+		
+proxy:(39)
+APPEAL申诉(62)
+
+
+	增加字段	
+每周任务(40)：
+	清除	
+
+su:
+	发布
+
+================(0423)==============
+更新所有的libser.so
+EMAIL_DB:(6)
+	更新libser.so (32位)
+		
+proxy:(39)
+	发布新版proxy 
+
+APPEAL申诉(62)
+	创建索引
+
+su:
+	发布
+
+
+
+
+================(0416)==============
+更新所有的libser.so
+USERINFO(16)
+	设置所有的用户已经注册了摩尔庄园
+	20090417_alter_userinfo.sh
+
+DB:(USER 16)
+	t_user_task_ex 调整字段 
+	20090417_alter_user_task_ex.sh
+		
+proxy:(20,23,27,39)
+	调整bench.conf:
+		shmq_length     20480000
+
+	更新route.conf
+	libcom.so
+	comser
+
+PASSWD_LOG_DB(53)
+	调整字段	
+	20090417_alter_passwd_log.sh
+
+APPEAL申诉(62)
+	创建相关表和库
+	20090417_create_appeal.sh
+
+su:
+	发布
+
+
+
+================(0326)==============
+更新所有的libser.so
+DB:(USER 16)
+	*.sh
+		
+VIP 同步:42 (cmd_id 更新了)
+	程序更新
+
+DB:(ROOM_INFO)
+	20090326_alter_roominfo.sh
+
+su:
+	发布
+
+
+================(0226)==============
+更新所有的libser.so
+DB:(40:OTHER )
+	拉姆运动会
+	20090304_alter_other.sh
+DB:(53:聊天服务器)
+	更新libser.so
+	支持保存处分的聊天历史记录
+	20090304_alter_chatlog.sh
+su:
+	发布
+
+================(0226)==============
+更新所有的libser.so
+DB:(40:OTHER )
+	拉姆运动会
+	20090226_alter_other.sh
+su:
+	发布
+
+
+
+================(0219)==============
+更新所有的libser.so
+DB:(USER_16)
+	备份
+	增加拉姆装扮	
+	20090219_alter_user.sh			
+DB:(40:OTHER )
+	增加拉姆运动会
+	20090219_alter_other.sh
+vipsendser:(42 )
+	更新:libvipsendser.so
+
+su:
+	发布
+
+
+================(0212)==============
+更新所有的libser.so
+DB:(USER_16)
+	备份
+	为活动增加两个字段	
+	20090212_alter_user.sh			
+DB:(40:OTHER )
+	为MSGBOARD 加t_qa表.用于保存爱心蘑菇问题
+	20090212_alter_msgboard.sh
+
+DB:(EMAILSYS)
+	备份
+	更新libser.so
+	支持msg :601字节: 
+	20090212_alter_emailsys.sh;
+
+DB:(ROOMMSG 59)
+	调整DB_ROOMMSG_0为10个库（ROOMMSG_0-9）	
+	20090205_alter_roommsg.sh
+su:
+	发布
+
+
+================(0205)==============
+更新所有的libser.so
+DB:(USER_16)
+	删除count=0的记录
+		clean_user_attire.sh		
+			
+DB:(ROOMINFO ,ROOMMSG)
+	分库:
+		调整DB_ROOMINFO_0为10个库（ROOMINFO_0-9）	
+		20090205_alter_roominfo.sh
+
+		调整DB_ROOMMSG_0为10个库（ROOMMSG_0-9）	
+		20090205_alter_roommsg.sh
+		
+su:
+	发布
+
+================(0124)==============
+更新所有的libser.so
+DB:(USER_16)
+	更新 libser.so		
+	调整user_card 为 innodb   
+	20090124_alter_user.sh		
+			
+DB:(OTHER)
+	20090123_create_spring.sh		
+	修正SYSARG_DB.t_sysarg的表类型为myisam
+	
+su:
+	发布
+================(0115)==============
+proxy(23,27,85):
+	更新libcom.so
+
+DB:(USER_16)
+	更新 libser.so		
+	调整摩尔大使字段 加入卡片系统	
+		20090115_alter_user.sh		
+			
+
+DB:(USERMSG)32
+	更新libser.so
+
+DB:(OTHER1,2)
+	更新libser.so
+
+DB (PIC 图片服务器 )
+	创建:
+		20090115_create_pic.sh	
+
+CHAR_CHANGE_LOG(53)
+	更新libser.so
+	重建DB 调整为memory
+
+支持热备
+	USER 0-16
+
+分库：
+DB 55:  from 54			 
+	roominfo[5-9]
+DB 59: from 4  			 
+	roommsg[5-9]
+DB 61: from 41  			 
+	email sys[5-9]
+
+
+================(0108)==============
+proxy(23,27):
+	加入PARTY,ADMIN 路由     
+	调整打印级别为2(只打印有更新的)
+	更新 libcom.so		
+
+DB:(USER_16)
+	更新 libser.so		
+	加入:密码邮箱
+	20090108_alter_userinfo.sh;
+
+DB:(EMAILSYS)(由扩容失败，取消)
+	更新libser.so
+	支持msg :601字节: 
+	20090108_alter_emailsys.sh;
+
+DB:(OTHER)
+	更新libser.so
+	派对:
+		create_party.sh	
+		clean_party.sh(crontab)
+	SU客服:	
+		支持同一分钟发多个信息
+	 	20090108_alter_su.sh;
+	加入ADMIN_ALL:
+		支持统一权限管理
+		账户迁移	
+		insert into ADMIN_DB.t_admin_all select adminid, nick ,passwd, 1 from SU_CHANGE_DB.t_admin;
+	神奇密码：	
+		超级拉姆头套:1557
+			40030000（7RBA9VHP9U9P）-40034999（7RBBUT7V7DG7）	
+	加入随机码:
+		create_user_serail.sh	
+		cronntab 中加入48小时删除原有记录
+		clean_user_serial.sh
+分库：
+DB 55:  from 54			 
+	roominfo[5-9]
+DB 59: from 4  			 
+	roommsg[5-9]
+DB 61: from 41  			 
+	email sys[5-9]
+DB 62:(other 2) 
+	MMS ADMIN  PARTY  
+	
+
+================(1230)==============
+DB (ALL)
+	/etc/mysql/my.cnf :6G=>5G
+
+proxy(23,27):
+	work进程数修改为200
+	路由IP调整:
+	ROOMINFO 设置到54 
+			
+DB:(USER_8)
+	更新 libser.so		
+	支持查看重要修改记录: etc/bench.conf 加入：		
+		CHANGE_LOG_IP     192.168.0.53
+		CHANGE_LOG_PORT   11001
+
+CHAR_CHANGE_LOG(53)
+	更新 libser.so		
+	迁移24->53
+	布署dbser
+	
+ROOM_INFO(54)
+	支持扩号，当查不到时加入一条初始记录
+	更新 libser.so		
+	迁移16->54
+	布署dbser 
+
+
+USERMSG (32) 
+	更新 libser.so		
+
+other(40): 
+	更新 libser.so		
+
+LOGDB(39): 
+	mysql 移到  /opt/目录下  
+
+================(1224)==============
+proxy(23,27):
+	无
+DB:(USER_8)
+	更新 libser.so		
+	加入注册渠道:alter_userinfo.sh
+
+聊天记录服务器(16)
+	布署dbser	(socket:udp) 
+	
+
+other(40): 
+	更新 libser.so		
+
+
+================(1218)==============
+proxy(23,27):
+	无
+DB:(USER_8)
+	更新 libser.so		
+
+
+other(109): 
+	更新 libser.so		
+	调整定时信息字段
+		 alter_su.sh
+
+================(1211)==============
+proxy(87,91):
+	更新route.conf
+		USERMSG->96		
+
+DB:(USER_8)
+	备份数据
+	alter_db.sh  :
+		为t_user_x加入字段birthday,支持生日飞艇
+	更新 libser.so		
+
+
+other(109): 
+	更新 libser.so		
+	create_christmas.sh :圣诞祝福
+
+USERMSG-(96): 
+	支持UDP
+	迁移数据库
+	设置备份脚本
+	更新 libser.so		
+	alter_usermsg.sh	
+
+	定时：(每天一次)设定邮件编号每天的起始值
+		set_user_writing_per_day.sh
+					
+
+DB:(70):EMAIL->userid
+	不更新
+
+DB:(80):小屋信息
+	不更新
+DB:(68):小屋留言
+	不更新
+DB:(111):群组
+	更新 libser.so		
+
+su(74):
+ 	更新	
+
+================(1204)==============
+comser(87,91):
+	更新libcom.so	
+	设置route.conf (支持 GROUP , GROUPMAIN->111)		   
+
+DB:(USER_8)
+	更新 libser.so		
+
+DB:(68)
+	备份数据
+	更新 libser.so		
+	alter_roommsg.sh #调整表索引
+	setdate_roommsg.sh #调整表数据
+
+DB:(111)
+	更新 libser.so		
+	新增"群组"
+	create_group.sh
+
+other(109): 
+	更新 libser.so		
+	导入神奇密码:21,22
+
+su(74):
+ 	不更新	
+	设置新的(proxy_ser) 提供给SU
+

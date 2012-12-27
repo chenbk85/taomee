@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/DB/com/bin/
+./*sh stop
+./*sh start 

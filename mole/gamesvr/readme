@@ -1,0 +1,35 @@
+1. 开启程序：startup.sh
+2. 结束程序：pkill -9 程序名（如Gameserv1）
+3. 监控程序：在crontab中加入* * * * *  cd 程序所在目录（如/opt/taomee/gameserv1） && ./restart.sh >> ./log/restartlog.txt 2>/dev/null
+4. 主配置文件bench.conf的各项含义：
+      log_dir        ./log            		#日志文件存放目录
+      log_level      7                		#日志打印等级，7不打印trace日志
+      log_size       32000000         		#每个日志文件的最大大小
+
+      shmq_length    16384000         		#共享内存大小，16M
+      run_mode       background       		#background表示程序将后台运行
+
+      #server info	
+      bind_ip        222.73.105.75    		#Game Server绑定的IP
+      bind_port      3001             		#Game Server绑定的端口
+
+      #db server
+      dbproxy_ip     192.168.0.87     		#DB Proxy的IP
+      dbproxy_port   21001            		#DB Proxy的端口
+
+      games_conf     ./conf/games.xml 		#游戏配置文件路径
+      cards_conf     ./conf/cards.xml 		#卡牌游戏配置文件路径
+	  statistic_file ./data/inbox/bin.log 	#统计信息文件，注释掉则关闭统计功能
+5. Game Server目录树：
+      GameServ
+        -- conf/*              #Game Server辅助配置文件
+        -- games/*             #存放游戏so及和游戏相关的配置文件
+        -- log/*               #存放日志文件
+		-- data/inbox/bin.log  #统计信息文件
+        -- bench.conf          #主配置文件
+        -- 主程序(如Gameserv1) #主程序
+        -- restart.sh          #监控脚本 
+        -- startup.sh          #启动脚本
+        -- readme              #说明文件
+        -- changelog           #程序更新说明
+

@@ -1,0 +1,240 @@
+<!-- ID:任务ID，从1开始必须连续 	    Type:1好友交互 2挑战指定关卡 3PVP 4挑战指定BOSS 5师徒交互 6许愿
+  Name:任务名称 Desc:任务描述
+  Low_lvl:最低等级限制     High_lvl:最高等级限制     Max_cnt:需要的次数    NeedVip:vip用户能接(暂不用)
+  Event_id: Type=1、5、6时，1(许愿祝福) 2(你快回来) 3(抱抱你) 4(危机见真情) 5(给好友加油) 6(师徒切磋) 7(读书时间)   
+
+            Type=2、3、4时，关卡ID
+-->
+<AF_TASKS>
+	<Task ID="1" Type="1" Low_lvl="1" High_lvl="10" Max_cnt="1" Event_id="1" NeedVip="0" Name="小小的祝福" Desc="祝福你的1位好友">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="0" Count="100" />
+	</Task>
+	<Task ID="2" Type="1" Low_lvl="11" High_lvl="20" Max_cnt="3" Event_id="1" NeedVip="0" Name="持续的祝福" Desc="祝福你的3位好友">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="0" Count="200" />
+	</Task>
+	<Task ID="3" Type="1" Low_lvl="21" High_lvl="30" Max_cnt="6" Event_id="1" NeedVip="0" Name="热情的祝福" Desc="祝福你的6位好友">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="0" Count="300" />
+	</Task>
+	<Task ID="4" Type="1" Low_lvl="31" High_lvl="40" Max_cnt="10" Event_id="1" NeedVip="0" Name="美妙的祝福" Desc="祝福你的10位好友">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="0" Count="500" />
+	</Task>
+	<Task ID="5" Type="1" Low_lvl="1" High_lvl="10" Max_cnt="1" Event_id="3" NeedVip="0" Name="抱抱你" Desc="拥抱你的1位好友">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="0" Count="100" />
+	</Task>
+	<Task ID="6" Type="1" Low_lvl="11" High_lvl="20" Max_cnt="3" Event_id="3" NeedVip="0" Name="抱抱大家" Desc="拥抱你的3位好友">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="0" Count="200" />
+	</Task>
+	<Task ID="7" Type="1" Low_lvl="21" High_lvl="30" Max_cnt="6" Event_id="3" NeedVip="0" Name="抱作一团" Desc="拥抱你的6位好友">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="0" Count="300" />
+	</Task>
+	<Task ID="8" Type="1" Low_lvl="31" High_lvl="40" Max_cnt="10" Event_id="3" NeedVip="0" Name="大爱" Desc="拥抱你的10位好友">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="0" Count="500" />
+	</Task>
+	<Task ID="9" Type="1" Low_lvl="1" High_lvl="10" Max_cnt="1" Event_id="4" NeedVip="0" Name="小小的危机" Desc="解救你的1位好友于危难之中">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="0" Count="100" />
+	</Task>
+	<Task ID="10" Type="1" Low_lvl="11" High_lvl="20" Max_cnt="3" Event_id="4" NeedVip="0" Name="危机见真情" Desc="解救你的3位好友于危难之中">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="0" Count="200" />
+	</Task>
+	<Task ID="11" Type="1" Low_lvl="21" High_lvl="30" Max_cnt="6" Event_id="4" NeedVip="0" Name="真情流露" Desc="解救你的6位好友于危难之中">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="0" Count="300" />
+	</Task>
+	<Task ID="12" Type="1" Low_lvl="31" High_lvl="40" Max_cnt="10" Event_id="4" NeedVip="0" Name="救世主" Desc="解救你的10位好友于危难之中">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="0" Count="500" />
+	</Task>
+	<Task ID="13" Type="2" Low_lvl="1" High_lvl="3" Max_cnt="1" Event_id="1" NeedVip="0" Name="挑战蛮荒小林" Desc="成功挑战蛮荒小林1次">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="1301009" Count="1" />
+	</Task>
+	<Task ID="14" Type="2" Low_lvl="2" High_lvl="5" Max_cnt="1" Event_id="2" NeedVip="0" Name="挑战蛮荒深处" Desc="成功挑战蛮荒深处1次">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="1301010" Count="1" />
+	</Task>
+	<Task ID="15" Type="2" Low_lvl="4" High_lvl="8" Max_cnt="1" Event_id="3" NeedVip="0" Name="挑战爱萨木阵" Desc="成功挑战爱萨木阵1次">
+		<ItemOut ID="13" Count="15"  />
+		<ItemOut ID="1301011" Count="1" />
+	</Task>
+	<Task ID="16" Type="2" Low_lvl="7" High_lvl="10" Max_cnt="1" Event_id="4" NeedVip="0" Name="挑战爱萨栖地" Desc="成功挑战爱萨栖地1次">
+		<ItemOut ID="13" Count="15"  />
+		<ItemOut ID="1301012" Count="1" />
+	</Task>
+	<Task ID="17" Type="2" Low_lvl="10" High_lvl="12" Max_cnt="1" Event_id="5" NeedVip="0" Name="挑战疯狂蛮荒小林" Desc="成功挑战疯狂模式蛮荒小林1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301001" Count="1" />
+	</Task>
+	<Task ID="18" Type="2" Low_lvl="11" High_lvl="13" Max_cnt="1" Event_id="6" NeedVip="0" Name="挑战疯狂蛮荒深处" Desc="成功挑战疯狂模式蛮荒深处1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301005" Count="1" />
+	</Task>
+	<Task ID="19" Type="2" Low_lvl="12" High_lvl="14" Max_cnt="1" Event_id="7" NeedVip="0" Name="挑战疯狂爱萨木阵" Desc="成功挑战疯狂模式爱萨木阵1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301017" Count="1" />
+	</Task>
+	<Task ID="20" Type="2" Low_lvl="13" High_lvl="15" Max_cnt="1" Event_id="8" NeedVip="0" Name="挑战疯狂爱萨栖地" Desc="成功挑战疯狂模式爱萨栖地1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301018" Count="1" />
+	</Task>
+	<Task ID="21" Type="2" Low_lvl="8" High_lvl="11" Max_cnt="1" Event_id="9" NeedVip="0" Name="挑战树洞密室" Desc="成功挑战树洞密室1次">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="1301009" Count="1" />
+	</Task>
+	<Task ID="22" Type="2" Low_lvl="10" High_lvl="13" Max_cnt="1" Event_id="10" NeedVip="0" Name="挑战树洞深处" Desc="成功挑战树洞深处1次">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="1301010" Count="1" />
+	</Task>
+	<Task ID="23" Type="2" Low_lvl="12" High_lvl="15" Max_cnt="1" Event_id="11" NeedVip="0" Name="挑战灵奇洞穴" Desc="成功挑战灵奇洞穴1次">
+		<ItemOut ID="13" Count="15"  />
+		<ItemOut ID="1301011" Count="1" />
+	</Task>
+	<Task ID="24" Type="2" Low_lvl="14" High_lvl="16" Max_cnt="1" Event_id="12" NeedVip="0" Name="挑战灵奇树根" Desc="成功挑战灵奇树根1次">
+		<ItemOut ID="13" Count="15"  />
+		<ItemOut ID="1301012" Count="1" />
+	</Task>
+	<Task ID="25" Type="2" Low_lvl="15" High_lvl="17" Max_cnt="1" Event_id="13" NeedVip="0" Name="挑战疯狂树洞密室" Desc="成功挑战疯狂模式树洞密室1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301001" Count="1" />
+	</Task>
+	<Task ID="26" Type="2" Low_lvl="16" High_lvl="18" Max_cnt="1" Event_id="14" NeedVip="0" Name="挑战疯狂树洞深处" Desc="成功挑战疯狂模式树洞深处1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301005" Count="1" />
+	</Task>
+	<Task ID="27" Type="2" Low_lvl="17" High_lvl="19" Max_cnt="1" Event_id="15" NeedVip="0" Name="挑战疯狂灵奇洞穴" Desc="成功挑战疯狂模式灵奇洞穴1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301017" Count="1" />
+	</Task>
+	<Task ID="28" Type="2" Low_lvl="18" High_lvl="20" Max_cnt="1" Event_id="16" NeedVip="0" Name="挑战疯狂灵奇树根" Desc="成功挑战疯狂模式灵奇树根1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301018" Count="1" />
+	</Task>
+	<Task ID="29" Type="2" Low_lvl="16" High_lvl="19" Max_cnt="1" Event_id="17" NeedVip="0" Name="挑战神秘洞穴" Desc="成功挑战神秘洞穴1次">
+		<ItemOut ID="13" Count="15"  />
+		<ItemOut ID="1301009" Count="1" />
+	</Task>
+	<Task ID="30" Type="2" Low_lvl="18" High_lvl="21" Max_cnt="1" Event_id="18" NeedVip="0" Name="挑战碧水岩石" Desc="成功挑战碧水岩石1次">
+		<ItemOut ID="13" Count="15"  />
+		<ItemOut ID="1301010" Count="1" />
+	</Task>
+	<Task ID="31" Type="2" Low_lvl="20" High_lvl="24" Max_cnt="1" Event_id="19" NeedVip="0" Name="挑战毛头之家" Desc="成功挑战毛头之家1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301011" Count="1" />
+	</Task>
+	<Task ID="32" Type="2" Low_lvl="23" High_lvl="25" Max_cnt="1" Event_id="20" NeedVip="0" Name="挑战碧水洞" Desc="成功挑战碧水洞1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301012" Count="1" />
+	</Task>
+	<Task ID="33" Type="2" Low_lvl="20" High_lvl="24" Max_cnt="1" Event_id="21" NeedVip="0" Name="挑战疯狂神秘洞穴" Desc="成功挑战疯狂模式神秘洞穴1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301002" Count="1" />
+	</Task>
+	<Task ID="34" Type="2" Low_lvl="22" High_lvl="25" Max_cnt="1" Event_id="22" NeedVip="0" Name="挑战疯狂碧水岩石" Desc="成功挑战疯狂模式碧水岩石1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301006" Count="1" />
+	</Task>
+	<Task ID="35" Type="2" Low_lvl="24" High_lvl="27" Max_cnt="1" Event_id="23" NeedVip="0" Name="挑战疯狂毛头之家" Desc="成功挑战疯狂模式毛头之家1次">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="1301017" Count="1" />
+	</Task>
+	<Task ID="36" Type="2" Low_lvl="26" High_lvl="30" Max_cnt="1" Event_id="24" NeedVip="0" Name="挑战疯狂碧水洞" Desc="成功挑战疯狂模式碧水洞1次">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="1301018" Count="1" />
+	</Task>
+	<Task ID="37" Type="4" Low_lvl="1" High_lvl="20" Max_cnt="1" Event_id="25" NeedVip="0" Name="挑战呆呆牛头人" Desc="成功战胜呆呆牛头人1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301009" Count="1" />
+	</Task>
+	<Task ID="38" Type="4" Low_lvl="11" High_lvl="25" Max_cnt="1" Event_id="26" NeedVip="0" Name="挑战地狱神犬" Desc="成功战胜地狱神犬1次">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301010" Count="1" />
+	</Task>
+	<Task ID="39" Type="4" Low_lvl="21" High_lvl="40" Max_cnt="1" Event_id="27" NeedVip="0" Name="挑战暗夜精灵" Desc="成功战胜暗夜精灵1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301011" Count="1" />
+	</Task>	
+		<Task ID="40" Type="6" Low_lvl="1" High_lvl="40" Max_cnt="1" Event_id="1" NeedVip="0" Name="许愿" Desc="完成1次许愿">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301002" Count="1" />
+	</Task>
+	 <Task ID="41" Type="3" Low_lvl="1" High_lvl="5" Max_cnt="1" Event_id="0" NeedVip="0" Name="挑战好友" Desc="成功挑战你的1位好友">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="1301001" Count="1" />
+	</Task>
+	<Task ID="42" Type="3" Low_lvl="6" High_lvl="10" Max_cnt="2" Event_id="0" NeedVip="0" Name="切磋至上" Desc="成功挑战你的2位好友">
+		<ItemOut ID="13" Count="10"  />
+		<ItemOut ID="1301005" Count="1" />
+	</Task>
+	<Task ID="43" Type="3" Low_lvl="11" High_lvl="15" Max_cnt="3" Event_id="0" NeedVip="0" Name="新的挑战" Desc="成功挑战你的3位好友">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301017" Count="1" />
+	</Task>
+	<Task ID="44" Type="3" Low_lvl="16" High_lvl="20" Max_cnt="5" Event_id="0" NeedVip="0" Name="三五好友" Desc="成功挑战你的5位好友">
+		<ItemOut ID="13" Count="20"  />
+		<ItemOut ID="1301018" Count="1" />
+	</Task>
+	<Task ID="45" Type="3" Low_lvl="21" High_lvl="25" Max_cnt="7" Event_id="0" NeedVip="0" Name="共同进步" Desc="成功挑战你的7位好友">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="1301005" Count="1" />
+	</Task>
+	<Task ID="46" Type="3" Low_lvl="26" High_lvl="30" Max_cnt="10" Event_id="0" NeedVip="0" Name="武艺精进" Desc="成功挑战你的10位好友">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="1301005" Count="1" />
+	</Task>
+	<Task ID="47" Type="3" Low_lvl="31" High_lvl="35" Max_cnt="12" Event_id="0" NeedVip="0" Name="众人练武" Desc="成功挑战你的12位好友">
+		<ItemOut ID="13" Count="40"  />
+		<ItemOut ID="1301017" Count="1" />
+	</Task>
+	<Task ID="48" Type="3" Low_lvl="36" High_lvl="40" Max_cnt="15" Event_id="0" NeedVip="0" Name="功德圆满" Desc="成功挑战你的15位好友">
+		<ItemOut ID="13" Count="50"  />
+		<ItemOut ID="1301006" Count="1" />
+	</Task>
+		<Task ID="49" Type="4" Low_lvl="31" High_lvl="40" Max_cnt="1" Event_id="43" NeedVip="0" Name="挑战萨尔冥王" Desc="战胜萨尔冥王1次">
+		<ItemOut ID="13" Count="35"  />
+		<ItemOut ID="1301002" Count="1" />
+	</Task>
+	<Task ID="50" Type="2" Low_lvl="26" High_lvl="30" Max_cnt="1" Event_id="35" NeedVip="0" Name="挑战幻影莲池" Desc="成功挑战幻影莲池1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301001" Count="1" />
+	</Task>
+	<Task ID="51" Type="2" Low_lvl="28" High_lvl="32" Max_cnt="1" Event_id="36" NeedVip="0" Name="挑战萤火之地" Desc="成功挑战萤火之地1次">
+		<ItemOut ID="13" Count="25"  />
+		<ItemOut ID="1301005" Count="1" />
+	</Task>
+	<Task ID="52" Type="2" Low_lvl="30" High_lvl="34" Max_cnt="1" Event_id="37" NeedVip="0" Name="挑战碧波深处" Desc="成功挑战碧波深处1次">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="1301017" Count="1" />
+	</Task>
+	<Task ID="53" Type="2" Low_lvl="32" High_lvl="40" Max_cnt="1" Event_id="38" NeedVip="0" Name="挑战呐奇树洞" Desc="成功挑战呐奇树洞1次">
+		<ItemOut ID="13" Count="30"  />
+		<ItemOut ID="1301018" Count="1" />
+	</Task>
+	<Task ID="54" Type="2" Low_lvl="29" High_lvl="32" Max_cnt="1" Event_id="39" NeedVip="0" Name="挑战疯狂幻影莲池" Desc="成功挑战疯狂模式幻影莲池1次">
+		<ItemOut ID="13" Count="35"  />
+		<ItemOut ID="1301001" Count="1" />
+	</Task>
+	<Task ID="55" Type="2" Low_lvl="31" High_lvl="35" Max_cnt="1" Event_id="40" NeedVip="0" Name="挑战疯狂萤火之地" Desc="成功挑战疯狂模式萤火之地1次">
+		<ItemOut ID="13" Count="35"  />
+		<ItemOut ID="1301005" Count="1" />
+	</Task>
+	<Task ID="56" Type="2" Low_lvl="33" High_lvl="37" Max_cnt="1" Event_id="41" NeedVip="0" Name="挑战疯狂碧波深处" Desc="成功挑战疯狂模式碧波深处1次">
+		<ItemOut ID="13" Count="40"  />
+		<ItemOut ID="1301017" Count="1" />
+	</Task>
+	<Task ID="57" Type="2" Low_lvl="35" High_lvl="40" Max_cnt="1" Event_id="42" NeedVip="0" Name="挑战疯狂呐奇树洞" Desc="成功挑战疯狂模式呐奇树洞1次">
+		<ItemOut ID="13" Count="40"  />
+		<ItemOut ID="1301018" Count="1" />
+	</Task>
+
+	
+
+</AF_TASKS>

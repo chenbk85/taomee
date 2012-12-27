@@ -1,0 +1,308 @@
+<NpcTasks>
+	<!-- Take over DaBaiXiong-->
+	<!--Entry ID="1" NPC="6" NpcLovely="-200" MaxNum="1" VIP="0" Daily="0" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="0" Count="0" />
+		</ItemOut>
+	</Entry-->
+
+	<!-- give MeiSen YuMi -->
+	<Entry ID="2" NPC="1" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="1270002" Count="2" />
+		</ItemOut>
+	</Entry>
+
+	<!-- get SiLiao from MeiSeng, to YouYou -->
+	<Entry ID="3" NPC="7" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="0" Count="200" />
+		</ItemOut>
+	</Entry>
+
+	<!-- get yangmao from YouYou, to XiSuo -->
+	<Entry ID="4" NPC="7" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="0" Count="250" />
+		</ItemOut>
+	</Entry>
+
+	<!-- give chuizi to dawei -->
+	<Entry ID="5" NPC="2" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="190466" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1220076" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--give YouYou shuaishuaitu -->
+	<Entry ID="6" NPC="1" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="1270016" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="100" />
+		</ItemOut>
+	</Entry>
+
+	<!-- give MeiSen yumi, get linlanhua -->
+	<Entry ID="7" NPC="4" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="190419" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="1230009" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- youyou gan zhu -->
+	<Entry ID="8" NPC="1" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="190241" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!-- meishen flower -->
+	<Entry ID="9" NPC="4" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="190581" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="100" />
+		</ItemOut>
+	</Entry>
+
+	<!--jiang cheng xin che-->
+	<Entry ID="10" NPC="7" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="0" Count="200" />
+			<Item ID="190636" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="24" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="190646" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="100" />
+			<Item ID="5" Count="25" />
+			<Item ID="1230039" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="25" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="190647" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="100" />
+			<Item ID="5" Count="25" />
+			<Item ID="1230039" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="26" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="190649" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="200" />
+			<Item ID="5" Count="40" />
+			<Item ID="1230039" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="27" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="190652" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="100" />
+			<Item ID="5" Count="30" />
+			<Item ID="1230039" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="28" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="190651" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="100" />
+			<Item ID="5" Count="30" />
+			<Item ID="1230039" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="29" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="190651" Count="2" />
+			<Item ID="190652" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="200" />
+			<Item ID="5" Count="40" />
+			<Item ID="1230039" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="30" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="160716" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="100" />
+			<Item ID="5" Count="30" />
+			<Item ID="1230039" Count="2" />
+		</ItemOut>
+	</Entry>
+
+	<Entry ID="31" NPC="8" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0" SMC="8">
+		<ItemIn>
+			<Item ID="160715" Count="2" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="200" />
+			<Item ID="5" Count="40" />
+			<Item ID="1230039" Count="4" />
+		</ItemOut>
+	</Entry>
+
+	<!--彩虹姐姐-->
+	<Entry ID="32" NPC="9" NpcLovely="-200" MaxNum="1" VIP="0" Daily="0" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="190668" Count="1" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="190196" Count="10" />
+		</ItemOut>
+	</Entry>
+
+	<!--依恋姐姐-->
+	<!--Entry ID="33" NPC="10" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="190671" Count="5" />
+		</ItemOut>
+	</Entry-->
+
+	<!--么么公主,超拉新发现，送衣服-->
+	<Entry ID="34" NPC="11" NpcLovely="-200" MaxNum="1" VIP="1" Daily="0" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="13487" Count="1" />
+			<Item ID="13488" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="13489" Count="1" />
+			<Item ID="13490" Count="1" />
+			<Item ID="13491" Count="1" />
+		</ItemOut>
+	</Entry>
+
+	<!--马渴斯.偷取的粮食-->
+	<Entry ID="35" NPC="12" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="190677" Count="4" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="1" Count="400" />
+		</ItemOut>
+	</Entry>
+
+	<!--流浪商.我要玩偶-->
+	<Entry ID="36" NPC="13" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="190680" Count="4" />
+			<Item ID="190678" Count="4" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="1" Count="400" />
+		</ItemOut>
+	</Entry>
+
+	<!--尼尔.武器短缺-->
+	<Entry ID="37" NPC="14" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="190676" Count="4" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="1" Count="400" />
+		</ItemOut>
+	</Entry>
+
+	<!--桑德.拯救黑生林骑士-->
+	<Entry ID="38" NPC="15" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="0" Count="1000" />
+			<Item ID="1" Count="400" />
+		</ItemOut>
+	</Entry>
+
+	<!--桑德.让恶魔畏惧-->
+	<Entry ID="39" NPC="15" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="0" Count="1200" />
+			<Item ID="1" Count="600" />
+		</ItemOut>
+	</Entry>
+
+	<!--送毛毛豆给彩虹姐姐-->
+	<Entry ID="40" NPC="9" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="1340001" Count="50" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="6" Count="500" />
+		</ItemOut>
+	</Entry>
+
+	<!--火鸡妈妈的请求-->
+	<Entry ID="41" NPC="16" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="0" Count="800" />
+			<Item ID="1" Count="800" />
+		</ItemOut>
+	</Entry>
+
+	<!--丢失的模型部件-->
+	<!--Entry ID="42" NPC="17" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="6" Count="300" />
+		</ItemOut>
+	</Entry-->
+
+	<!--被打飞的磨磨菌-->
+	<Entry ID="43" NPC="17" NpcLovely="-200" MaxNum="1" VIP="1" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="1" Count="300" />
+			<Item ID="1270065" Count="1" />
+		</ItemOut>
+		<ItemOut>
+			<Item ID="1" Count="300" />
+			<Item ID="1270064" Count="1" />
+		</ItemOut>
+	</Entry>
+	<!--教师节送彩挞挞酥-->
+	<!--Entry ID="44" NPC="18" NpcLovely="-200" MaxNum="1" VIP="0" Daily="1" Weekly="0" Monthly="0">
+		<ItemIn>
+			<Item ID="1340060" Count="30" />
+		</ItemIn>
+		<ItemOut>
+			<Item ID="6" Count="600" />
+			<Item ID="180072" Count="3" />
+		</ItemOut>
+	</Entry-->
+	
+	<!--制作孔明灯-->
+	<Entry ID="45" NPC="19" NpcLovely="-200" MaxNum="1" VIP="1" Daily="1" Weekly="0" Monthly="0">
+		<ItemOut>
+			<Item ID="1220169" Count="1" />
+		</ItemOut>
+	</Entry>
+
+</NpcTasks>

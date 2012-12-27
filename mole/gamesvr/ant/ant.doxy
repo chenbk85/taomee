@@ -1,0 +1,11 @@
+
+/**
+ * @namespace ant
+ * @brief 提供游戏服务器支持库
+ * @details 提供了伪随机数、时间计算、数据打包等功能，以上函数都放在名空间 ant 里。
+ * @author andy andy@taomee.com && easyeagel easyeagel@taomee.com
+ * @version 1.0
+ */
+
+/* vim: set filetype=cpp:  */
+

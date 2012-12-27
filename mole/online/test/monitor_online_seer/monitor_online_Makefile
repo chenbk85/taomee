@@ -1,0 +1,2 @@
+seer_monitor_online_svr: seer_monitor_online_svr.c
+	gcc -g -Wall -o $@ $< -lmsglog

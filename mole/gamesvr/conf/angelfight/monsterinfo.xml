@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Skill上限为5
+Drop上限为5
+-->
+
+<!--Drop怪物掉落物品   Str:大力属性增加 Int：智慧 Hab：强壮 Ali：灵活 Hp：生命 
+  Atk:攻击 Aspd:行动速度 Evad:免疫率 Block:抵抗率 Combo:连击率 Crit:暴击率 Hit:命中率 Def:防御力 Skill:实际附加技能
+  IsBoss:是否使用BOSS版本AI
+-->
+
+<MonsterRoot Count="77">
+	<Monster ID="0" Level="1" Str="16" Int="30" Hab="3" Ali= "4" Atk="0" Aspd="0" Evad="0" Block="3" Crit="0" Hit="0" Combo="5" Def="0">
+		<Skill ID="50"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="1" Level="2" Str="16" Int="30" Hab="3" Ali= "5" Atk="0" Aspd="0" Evad="0" Block="3" Crit="0" Hit="0" Combo="5" Def="0">
+		<Skill ID="51"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="2" Level="2" Str="16" Int="30" Hab="3" Ali= "5" Atk="0" Aspd="0" Evad="0" Block="3" Crit="0" Hit="0" Combo="5" Def="0">
+		<Skill ID="51"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="3" Level="3" Str="16" Int="30" Hab="4" Ali= "8" Atk="0" Aspd="0" Evad="0" Block="3" Crit="0" Hit="0" Combo="5" Def="0">
+		<Skill ID="52"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="4" Level="3" Str="16" Int="30" Hab="4" Ali= "8" Atk="0" Aspd="0" Evad="0" Block="3" Crit="0" Hit="0" Combo="5" Def="0">
+		<Skill ID="52"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="5" Level="4" Str="16" Int="40" Hab="4" Ali= "6" Atk="0" Aspd="0" Evad="0" Block="4" Crit="0" Hit="0" Combo="6" Def="0">
+		<Skill ID="53"/>
+		<Skill ID="60"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="6" Level="4" Str="16" Int="40" Hab="4" Ali= "6" Atk="0" Aspd="0" Evad="0" Block="4" Crit="0" Hit="0" Combo="6" Def="0">
+		<Skill ID="53"/>
+		<Skill ID="60"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="7" Level="5" Str="19" Int="40" Hab="6" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="4" Crit="0" Hit="0" Combo="6" Def="0">
+		<Skill ID="54"/>
+		<Skill ID="61"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="8" Level="5" Str="19" Int="40" Hab="6" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="4" Crit="0" Hit="0" Combo="6" Def="0">
+		<Skill ID="54"/>
+		<Skill ID="61"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="9" Level="6" Str="19" Int="40" Hab="6" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="4" Crit="0" Hit="0" Combo="6" Def="0">
+		<Skill ID="55"/>
+		<Skill ID="62"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="10" Level="7" Str="20" Int="50" Hab="7" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="5" Crit="0" Hit="0" Combo="7" Def="0">
+		<Skill ID="56"/>
+		<Skill ID="63"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="11" Level="7" Str="20" Int="50" Hab="7" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="5" Crit="0" Hit="0" Combo="7" Def="0">
+		<Skill ID="56"/>
+		<Skill ID="63"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="12" Level="8" Str="20" Int="50" Hab="7" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="5" Crit="0" Hit="0" Combo="7" Def="0">
+		<Skill ID="57"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="13" Level="8" Str="20" Int="50" Hab="7" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="5" Crit="0" Hit="0" Combo="7" Def="0">
+		<Skill ID="57"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="14" Level="9" Str="29" Int="50" Hab="7" Ali= "15" Atk="0" Aspd="0" Evad="0" Block="5" Crit="0" Hit="0" Combo="7" Def="0">
+		<Skill ID="58"/>
+		<Skill ID="64"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="15" Level="10" Str="34" Int="60" Hab="27" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="6" Crit="0" Hit="0" Combo="8" Def="0">
+		<Skill ID="59"/>
+		<Skill ID="65"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="16" Level="8" Str="20" Int="50" Hab="7" Ali= "10" Atk="0" Aspd="0" Evad="0" Block="5" Crit="0" Hit="0" Combo="7" Def="0">
+		<Skill ID="57"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="17" Level="9" Str="29" Int="50" Hab="7" Ali= "15" Atk="0" Aspd="0" Evad="0" Block="5" Crit="0" Hit="0" Combo="7" Def="0">
+		<Skill ID="58"/>
+		<Skill ID="64"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="18" Level="10" Str="34" Int="60" Hab="27" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="6" Crit="0" Hit="0" Combo="8" Def="0">
+		<Skill ID="59"/>
+		<Skill ID="65"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="19" Level="10" Str="34" Int="60" Hab="27" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="6" Crit="0" Hit="0" Combo="8" Def="0">
+		<Skill ID="59"/>
+		<Skill ID="65"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="20" Level="11" Str="34" Int="60" Hab="28" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="6" Crit="0" Hit="0" Combo="8" Def="0">
+		<Skill ID="116"/>
+		<Skill ID="124"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="21" Level="11" Str="34" Int="60" Hab="28" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="6" Crit="0" Hit="0" Combo="8" Def="0">
+		<Skill ID="116"/>
+		<Skill ID="124"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="22" Level="12" Str="34" Int="60" Hab="28" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="6" Crit="0" Hit="0" Combo="8" Def="0">
+		<Skill ID="117"/>
+		<Skill ID="125"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="23" Level="12" Str="34" Int="60" Hab="28" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="6" Crit="0" Hit="0" Combo="8" Def="0">
+		<Skill ID="117"/>
+		<Skill ID="125"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="24" Level="13" Str="34" Int="60" Hab="28" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="118"/>
+		<Skill ID="126"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="25" Level="13" Str="34" Int="60" Hab="28" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="118"/>
+		<Skill ID="126"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="26" Level="14" Str="35" Int="60" Hab="29" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="119"/>
+		<Skill ID="127"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="27" Level="15" Str="40" Int="60" Hab="32" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="120"/>
+		<Skill ID="128"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="28" Level="15" Str="40" Int="60" Hab="32" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="120"/>
+		<Skill ID="128"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="29" Level="16" Str="40" Int="70" Hab="33" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="121"/>
+		<Skill ID="129"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="30" Level="17" Str="50" Int="70" Hab="40" Ali= "40" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="122"/>
+		<Skill ID="130"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="31" Level="18" Str="50" Int="70" Hab="41" Ali= "40" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="123"/>
+		<Skill ID="131"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="32" Level="16" Str="40" Int="70" Hab="33" Ali= "30" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="121"/>
+		<Skill ID="129"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="33" Level="17" Str="50" Int="70" Hab="40" Ali= "40" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="122"/>
+		<Skill ID="130"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="34" Level="18" Str="50" Int="70" Hab="41" Ali= "40" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="123"/>
+		<Skill ID="131"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="35" Level="18" Str="50" Int="70" Hab="41" Ali= "40" Atk="0" Aspd="0" Evad="0" Block="7" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="123"/>
+		<Skill ID="131"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="36" Level="19" Str="50" Int="70" Hab="41" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="192"/>
+		<Skill ID="200"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="37" Level="19" Str="50" Int="70" Hab="41" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="192"/>
+		<Skill ID="200"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="38" Level="20" Str="65" Int="70" Hab="67" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="193"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="39" Level="20" Str="65" Int="70" Hab="67" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="193"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="40" Level="21" Str="73" Int="70" Hab="68" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="194"/>
+		<Skill ID="201"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="41" Level="21" Str="73" Int="70" Hab="68" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="194"/>
+		<Skill ID="201"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="42" Level="22" Str="73" Int="70" Hab="69" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="195"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="43" Level="23" Str="73" Int="70" Hab="70" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="196"/>
+		<Skill ID="202"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="44" Level="23" Str="73" Int="70" Hab="70" Ali= "60" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="196"/>
+		<Skill ID="202"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="45" Level="24" Str="73" Int="70" Hab="72" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="197"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="46" Level="25" Str="76" Int="80" Hab="75" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="198"/>
+		<Skill ID="203"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="47" Level="26" Str="76" Int="80" Hab="77" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="199"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="48" Level="5" IsBoss="true" Str="20" Int="50" Hab="2" Ali="30" Atk="0" Aspd="0" Evad="0" Block="5" Crit="5" Hit="0" Combo="5" Def="0">
+		<Skill ID="204"/>
+		<Skill ID="214"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="49" Level="15" IsBoss="true" Str="30" Int="60" Hab="32" Ali="60" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="10" Def="0">
+		<Skill ID="205"/>
+		<Skill ID="215"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="50" Level="25" IsBoss="true" Str="150" Int="150" Hab="135" Ali="110" Atk="0" Aspd="0" Evad="0" Block="15" Crit="40" Hit="0" Combo="40" Def="0">
+		<Skill ID="206"/>
+		<Skill ID="216"/>
+		<Skill ID="220"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="51" Level="5" IsBoss="true" Str="5" Int="50" Hab="15" Ali="30" Atk="0" Aspd="0" Evad="0" Block="8" Crit="5" Hit="0" Combo="5" Def="0">
+		<Skill ID="207"/>
+		<Skill ID="221"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="52" Level="5" IsBoss="true" Str="18" Int="50" Hab="2" Ali="30" Atk="0" Aspd="0" Evad="0" Block="8" Crit="10" Hit="0" Combo="10" Def="0">
+		<Skill ID="208"/>
+		<Skill ID="217"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="53" Level="15" IsBoss="true" Str="25" Int="60" Hab="31" Ali="40" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="10" Def="0">
+		<Skill ID="209"/>
+		<Skill ID="218"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="54" Level="25" IsBoss="true" Str="90" Int="100" Hab="80" Ali="45" Atk="0" Aspd="0" Evad="0" Block="15" Crit="15" Hit="0" Combo="15" Def="0">
+		<Skill ID="210"/>
+		<Skill ID="219"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="55" Level="5" IsBoss="true" Str="16" Int="50" Hab="1" Ali="30" Atk="0" Aspd="0" Evad="0" Block="8" Crit="10" Hit="0" Combo="10" Def="0">
+		<Skill ID="211"/>
+		<Skill ID="222"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="56" Level="15" IsBoss="true" Str="20" Int="70" Hab="30" Ali="40" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="5" Def="0">
+		<Skill ID="212"/>
+		<Skill ID="223"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="57" Level="25" IsBoss="true" Str="80" Int="100" Hab="70" Ali="45" Atk="0" Aspd="0" Evad="0" Block="10" Crit="15" Hit="0" Combo="15" Def="0">
+		<Skill ID="213"/>
+		<Skill ID="224"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="58" Level="26" Str="76" Int="80" Hab="77" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="8" Crit="0" Hit="0" Combo="9" Def="0">
+		<Skill ID="199"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="59" Level="27" Str="90" Int="90" Hab="81" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="11" Def="0">
+		<Skill ID="255"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="60" Level="28" Str="90" Int="90" Hab="89" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="11" Def="0">
+		<Skill ID="256"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="61" Level="29" Str="90" Int="90" Hab="92" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="11" Def="0">
+		<Skill ID="257"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="62" Level="29" Str="90" Int="90" Hab="92" Ali= "80" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="11" Def="0">
+		<Skill ID="257"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="63" Level="30" Str="100" Int="100" Hab="97" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="10" Crit="0" Hit="0" Combo="11" Def="0">
+		<Skill ID="258"/>
+		<Skill ID="267"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="64" Level="31" Str="100" Int="100" Hab="101" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="12" Crit="0" Hit="0" Combo="13" Def="0">
+		<Skill ID="259"/>
+		<Skill ID="268"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="65" Level="32" Str="100" Int="100" Hab="106" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="12" Crit="0" Hit="0" Combo="13" Def="0">
+		<Skill ID="260"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="66" Level="32" Str="100" Int="100" Hab="106" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="12" Crit="0" Hit="0" Combo="13" Def="0">
+		<Skill ID="260"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="67" Level="33" Str="105" Int="110" Hab="113" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="12" Crit="0" Hit="0" Combo="13" Def="0">
+		<Skill ID="261"/>
+		<Skill ID="269"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="68" Level="34" Str="110" Int="110" Hab="119" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="12" Crit="0" Hit="0" Combo="13" Def="0">
+		<Skill ID="262"/>
+		<Skill ID="270"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="69" Level="35" Str="115" Int="110" Hab="125" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="12" Crit="0" Hit="0" Combo="13" Def="0">
+		<Skill ID="263"/>
+		<Skill ID="271"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="70" Level="35" Str="115" Int="110" Hab="125" Ali= "100" Atk="0" Aspd="0" Evad="0" Block="12" Crit="0" Hit="0" Combo="13" Def="0">
+		<Skill ID="263"/>
+		<Skill ID="271"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="71" Level="36" Str="115" Int="120" Hab="131" Ali= "110" Atk="0" Aspd="0" Evad="0" Block="13" Crit="0" Hit="0" Combo="14" Def="0">
+		<Skill ID="264"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="72" Level="37" Str="120" Int="120" Hab="138" Ali= "110" Atk="0" Aspd="0" Evad="0" Block="13" Crit="0" Hit="0" Combo="14" Def="0">
+		<Skill ID="265"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="73" Level="38" Str="120" Int="120" Hab="144" Ali= "110" Atk="0" Aspd="0" Evad="0" Block="13" Crit="0" Hit="0" Combo="14" Def="0">
+		<Skill ID="266"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="74" Level="35" IsBoss="true" Str="200" Int="200" Hab="240" Ali="180" Atk="0" Aspd="0" Evad="0" Block="15" Crit="40" Hit="0" Combo="40" Def="0">
+		<Skill ID="272"/>
+		<Skill ID="273"/>
+		<Skill ID="274"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="75" Level="5" IsBoss="true" Str="15" Int="50" Hab="1" Ali="30" Atk="0" Aspd="0" Evad="0" Block="3" Crit="5" Hit="0" Combo="5" Def="0">
+		<Skill ID="275"/>
+		<Skill ID="274"/>
+		<Drop ID="0"/>
+	</Monster>
+	<Monster ID="76" Level="6" IsBoss="true" Str="18" Int="50" Hab="2" Ali="30" Atk="0" Aspd="0" Evad="0" Block="3" Crit="5" Hit="0" Combo="5" Def="0">
+		<Skill ID="276"/>
+		<Skill ID="274"/>
+		<Drop ID="0"/>
+	</Monster>
+</MonsterRoot>

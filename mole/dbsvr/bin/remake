@@ -1,0 +1,31 @@
+#!/bin/bash
+cd ~/DB/libsrc/pub &&  make
+cd ~/DB/libsrc/db && make
+cd ~/DB/libsrc/clientproto && make
+
+rm -f ~/DB/ser/bin/libser.so
+cd ~/DB/ser/src && make all
+rm -f ~/DB/com/bin/libcom.so
+cd ~/DB/com/src && make 
+#cd ~/DB/logser/src/ && make 
+#cd ~/DB/payser/src && make 
+#cd ~/DB/payser/tools/init_shm && make
+#cd ~/DB/payser/tools/sync_user && make all
+
+#cd ~/DB/ServerBench &&  make clean  &&  make 
+#cp  ServerBench  ~/DB/ser/bin/ser 
+#cp  ServerBench  ~/DB/com/bin/comser
+#cp  ServerBench  ~/DB/payser/bin/payser
+
+rm -rf 	~/pkg/*
+cp ~/DB/include/def.h  ~/DB/include/common.h  ~/DB/include/proto.h ~/DB/include/proto_header.h  ~/DB/lib/libproto.a ~/DB/lib/libpub.a  ~/DB/include/Cclientproto.h ~/DB/libsrc/clientproto/t.cpp ~/DB/include/logproto.h ~/DB/include/Csync_log.h ~/pkg
+
+rm -rf 	~/dbpkg/*
+cp  ~/DB/include/def.h ~/DB/include/common.h ~/DB/include/proto.h ~/DB/include/proto_header.h  ~/DB/lib/libpub.a ~/DB/lib/libdbtable.a  ~/DB/include/mysql_iface.h  ~/DB/include/Ctable.h ~/dbpkg/
+
+
+find ~/DB -name "*.cpp" -o  -name "*.h" | awk '{ print "chmod a-w", $0 }' | bash
+chmod a+w ~/DB/libsrc/clientproto/t.cpp
+
+rmlog
+initser

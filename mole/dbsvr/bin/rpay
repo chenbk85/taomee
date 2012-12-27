@@ -1,0 +1,3 @@
+cd ~/DB/payser/bin/
+./*sh stop
+./*sh start 

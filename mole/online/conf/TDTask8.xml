@@ -1,0 +1,44 @@
+﻿<task mapID="3" mode="1" starTime="9000" expScale="2.5" rateScale="1" score="200" losturl="swf/winswf2.swf" winurl="swf/lostswf2.swf" musicurl="td1.mp3" startStar="12" startLifes="100">
+	<round tips="2只嘿啦将在20秒后进攻，请做好准备">	
+		<monster id="10002" pathID="1" time = "1300" count="2" talk="杀遍摩尔庄园！"/>		
+	</round>
+	<round tips="3只呕哒将在10秒后进攻，请做好准备">
+		<monster id="10003" pathID="1" time = "900" count="3" />		
+	</round>
+	<round tips="4只嘿啦将在10秒后进攻，请做好准备">
+		<monster id="10002" pathID="1" time = "1300" count="1" />		
+		<monster id="10002" pathID="1" time = "900" count="3" stime = "1400"/>
+	</round>
+	<round tips="5只呕哒将在10秒后进攻，请做好准备">
+		<monster id="10003" pathID="1" time = "1300" count="3" />		
+		<monster id="10003" pathID="1" time = "1800" count="2" stime = "1700"/>
+	</round>
+	<round tips="6只嘿啦将在10秒后进攻，请做好准备">
+		<monster id="10002" pathID="1" time = "1200" count="3" />		
+		<monster id="10002" pathID="1" time = "1000" count="2" stime = "1500"/>
+		<monster id="10002" pathID="1" time = "1000" count="1" stime = "4000"/>
+	</round>
+	<round tips="7只呕哒将在10秒后进攻，请做好准备">
+		<monster id="10003" pathID="1" time = "900" count="3" />		
+		<monster id="10003" pathID="1" time = "800" count="2" stime = "3100"/>
+		<monster id="10003" pathID="1" time = "1000" count="2" stime = "5100"/>
+	</round>
+	<round tips="8只嘿啦将在10秒后进攻，请做好准备">
+		<monster id="10002" pathID="1" time = "1300" count="3" />		
+		<monster id="10002" pathID="1" time = "1800" count="3" stime = "2900"/>
+		<monster id="10002" pathID="1" time = "900" count="2" stime = "5500"/>
+	</round>
+	<round tips="9只呕哒将在10秒后进攻，请做好准备">
+		<monster id="10003" pathID="1" time = "1500" count="3" />		
+		<monster id="10003" pathID="1" time = "1600" count="3" stime = "2700"/>
+		<monster id="10003" pathID="1" time = "1200" count="3" stime = "5700"/>
+	</round>
+	<round tips="10只嘿啦将在10秒后进攻，请做好准备">
+		<monster id="10002" pathID="1" time = "1000" count="5" />		
+		<monster id="10002" pathID="1" time = "1100" count="2" stime = "1400"/>
+		<monster id="10002" pathID="1" time = "1200" count="3" stime = "5500"/>
+	</round>	
+	<round tips="1只啊呜花将在10秒后进攻，请做好准备">	
+		<monster id="10401" pathID="1" time = "0" count="1" stime = "0"  talk=""/>
+	</round>	
+</task>

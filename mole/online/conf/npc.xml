@@ -1,0 +1,32 @@
+<NPC Count="1" >
+<!-- 1:leave; 2:enter; 3:action; 4:walk 5:talk -->
+	<NPC Type="1" Nick="NPC导游" Color="34567" Items="12004 12020" >
+		<Action Cmd="2" Param="1 0" Delay="1" />
+		<Action Cmd="4" Param="378 365" Delay="2" />
+		<Action Cmd="3" Param="2 0" Delay="1" />
+		<Action Cmd="5" Param="走啊走啊，去城堡里喽！！！" Delay="3" />
+		<Action Cmd="4" Param="447 326" Delay="1" />
+		<Action Cmd="1" Param="" Delay="1" />
+
+		<Action Cmd="2" Param="15 1" Delay="1" />
+		<Action Cmd="4" Param="589 408" Delay="5" />
+		<Action Cmd="5" Param="谁和我一起跳舞?" Delay="1" />
+		<Action Cmd="3" Param="1 0" Delay="10" />
+		<Action Cmd="3" Param="0 0" Delay="7" />
+		<Action Cmd="5" Param="闷啊，走啦" Delay="1" />
+		<Action Cmd="4" Param="236 286" Delay="5" />
+		<Action Cmd="4" Param="216 286" Delay="1" />
+		<Action Cmd="1" Param="" Delay="1" />
+	</NPC>
+	<NPC Type="2" Nick="小二" Color="367" Items="" >
+		<Action Cmd="2" Param="17 0" Delay="1" />
+		<Action Cmd="4" Param="0 0" Delay="5" />
+		<Action Cmd="5" Param="客官，您点啥菜啊？要二两酒不？" Delay="3" />
+		<Action Cmd="5" Param="好，马上来!" Delay="3" />
+		<Action Cmd="4" Param="812 330" Delay="6" />
+		<Action Cmd="3" Param="2 0" Delay="1" />
+		<Action Cmd="4" Param="0 0" Delay="4" />
+		<Action Cmd="5" Param="客官，酒来了!" Delay="2" />
+		<Action Cmd="1" Param="" Delay="1" />
+	</NPC>
+</NPC>	

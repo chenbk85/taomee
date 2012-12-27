@@ -1,0 +1,7 @@
+#!/bin/bash
+cpp ~/DB/include/proto.h -DMK_PROTO_DOC >l.h 
+ctags l.h --sort=no
+sed  -i -e "s/l\.h\t//" tags
+cat ~/DB/ser/src/*.cpp > ./func_source.cpp
+gendoc_txt.py $1  
+rm l.h ./tags ./func_source.cpp

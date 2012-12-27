@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+mailBit: 1~32 set the flag bit 0~31 of p->sendmail_flag,
+so the mail send only one time, 
+if the bit is set and the bit = (bit + 16) & 31 is clear,
+so make sure the range [min,max] is not more than 16 bits,(max - min) < 16
+-->
+<root>
+	<Mail MailID="1000181" MailBit="7" StartDate="20101216" EndDate="20110127" SendBy="凯文老师" MsgFmt=""/>
+	<Mail MailID="1000188" MailBit="10" StartDate="20101230" EndDate="20110131" SendBy="快乐小精灵" MsgFmt=""/>
+	<Mail MailID="1000190" MailBit="11" StartDate="20101230" EndDate="20210131" SendBy="善哉阿七" MsgFmt=""/>
+	<Mail MailID="1000191" MailBit="12" StartDate="20110105" EndDate="20110113" SendBy="艾尔警官" MsgFmt=""/>
+	<Mail MailID="1000192" MailBit="13" StartDate="20110105" EndDate="20110113" SendBy="兔兔主编" MsgFmt=""/>
+</root>

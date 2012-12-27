@@ -1,0 +1,143 @@
+<!--ID 问题编号 Answer 答案编号  Value 增加属性值 活动课 潜力 正常课 课程掌握程度 最多30道题目-->
+<Lahm_Lesson_Questions>
+	<Lesson ID="1"><!--拉姆语言课-->
+		<Question ID="1" Answer="1" Value="5"/>
+		<Question ID="2" Answer="1" Value="5"/>
+		<Question ID="3" Answer="2" Value="5"/>
+		<Question ID="4" Answer="2" Value="5"/>
+		<Question ID="5" Answer="1" Value="5"/>
+	</Lesson>
+	<Lesson ID="2"><!--拉姆进化论-->
+		<Question ID="1" Answer="2" Value="5"/>
+		<Question ID="2" Answer="3" Value="5"/>
+		<Question ID="3" Answer="2" Value="5"/>
+		<Question ID="4" Answer="1" Value="5"/>
+		<Question ID="5" Answer="2" Value="5"/>
+	</Lesson>
+	<Lesson ID="3"><!--数字迷宫-->
+		<Question ID="1" Answer="3" Value="5"/>
+		<Question ID="2" Answer="3" Value="5"/>
+		<Question ID="3" Answer="1" Value="5"/>
+		<Question ID="4" Answer="3" Value="5"/>
+		<Question ID="5" Answer="2" Value="5"/>
+	</Lesson>
+	<Lesson ID="4"><!--二叔自然课-->
+		<Question ID="1" Answer="3" Value="5"/>
+		<Question ID="2" Answer="3" Value="5"/>
+		<Question ID="3" Answer="3" Value="5"/>
+		<Question ID="4" Answer="1" Value="5"/>
+		<Question ID="5" Answer="2" Value="5"/>
+	</Lesson>
+	<Lesson ID="5"><!--庄园大课堂-->
+		<Question ID="1" Answer="2" Value="5"/>
+		<Question ID="2" Answer="1" Value="5"/>
+		<Question ID="3" Answer="3" Value="5"/>
+		<Question ID="4" Answer="3" Value="5"/>
+		<Question ID="5" Answer="3" Value="5"/>
+	</Lesson>
+	<Lesson ID="6"><!--看电影-->
+		<Question ID="1" Answer="1" Value="0"/>
+		<Question ID="2" Answer="1" Value="0"/>
+		<Question ID="3" Answer="2" Value="0"/>
+		<Question ID="4" Answer="2" Value="0"/>
+		<Question ID="5" Answer="1" Value="0"/>
+	</Lesson>
+	<Lesson ID="7"><!--参观博物馆-->
+		<Question ID="1" Answer="1" Value="0"/>
+		<Question ID="2" Answer="1" Value="0"/>
+		<Question ID="3" Answer="2" Value="0"/>
+		<Question ID="4" Answer="2" Value="0"/>
+		<Question ID="5" Answer="1" Value="0"/>
+	</Lesson>
+	<Lesson ID="8"><!--打扫卫生-->
+		<Question ID="1" Answer="1" Value="50"/>
+		<Question ID="2" Answer="2" Value="50"/>
+		<Question ID="3" Answer="2" Value="50"/>
+		<Question ID="4" Answer="1" Value="50"/>
+		<Question ID="5" Answer="1" Value="50"/>
+	</Lesson>
+	<Lesson ID="9"><!--义务劳动-->
+		<Question ID="1" Answer="1" Value="0"/>
+		<Question ID="2" Answer="1" Value="0"/>
+		<Question ID="3" Answer="2" Value="0"/>
+		<Question ID="4" Answer="2" Value="0"/>
+		<Question ID="5" Answer="1" Value="0"/>
+	</Lesson>
+	<Lesson ID="10"><!--自由活动-->
+		<Question ID="1" Answer="1" Value="50"/>
+		<Question ID="2" Answer="2" Value="50"/>
+		<Question ID="3" Answer="2" Value="50"/>
+		<Question ID="4" Answer="1" Value="50"/>
+		<Question ID="5" Answer="1" Value="50"/>
+	</Lesson>
+	<Lesson ID="11"><!--班会-->
+		<Question ID="1" Answer="2" Value="50"/>
+		<Question ID="2" Answer="3" Value="50"/>
+		<Question ID="3" Answer="1" Value="50"/>
+		<Question ID="4" Answer="3" Value="50"/>
+		<Question ID="5" Answer="2" Value="50"/>
+	</Lesson>
+	<Lesson ID="12"><!--郊游-->
+		<Question ID="1" Answer="1" Value="0"/>
+		<Question ID="2" Answer="1" Value="0"/>
+		<Question ID="3" Answer="2" Value="0"/>
+		<Question ID="4" Answer="2" Value="0"/>
+		<Question ID="5" Answer="1" Value="0"/>
+	</Lesson>
+	<Lesson ID="13"><!--拉姆体育课-->
+		<Question ID="1" Answer="1" Value="50"/>
+		<Question ID="2" Answer="3" Value="50"/>
+		<Question ID="3" Answer="1" Value="50"/>
+		<Question ID="4" Answer="2" Value="50"/>
+		<Question ID="5" Answer="3" Value="50"/>
+	</Lesson>
+	<Lesson ID="14"><!--答疑解难-->
+		<Question ID="1 " Answer="1" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="2 " Answer="2" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="3 " Answer="2" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="4 " Answer="1" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="5 " Answer="2" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="6 " Answer="1" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="7 " Answer="3" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="8 " Answer="1" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="9 " Answer="1" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="10" Answer="2" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="11" Answer="2" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="12" Answer="2" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="13" Answer="2" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="14" Answer="2" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="15" Answer="2" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="16" Answer="1" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="17" Answer="3" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="18" Answer="1" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="19" Answer="3" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="20" Answer="1" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="21" Answer="2" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="22" Answer="3" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="23" Answer="3" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="24" Answer="2" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="25" Answer="2" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="26" Answer="3" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="27" Answer="1" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="28" Answer="2" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="29" Answer="2" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="30" Answer="2" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="31" Answer="2" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="32" Answer="1" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="33" Answer="3" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="34" Answer="2" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="35" Answer="1" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="36" Answer="3" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="37" Answer="2" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="38" Answer="1" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="39" Answer="2" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="40" Answer="1" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="41" Answer="3" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>
+		<Question ID="42" Answer="2" Value="0" Lovely="50" Moral="40" IQ="30" Sport="20" Art="10" Labor="50" Latent="100"/>
+		<Question ID="43" Answer="3" Value="0" Lovely="50" Moral="30" IQ="20" Sport="10" Art="50" Labor="40" Latent="100"/>
+		<Question ID="44" Answer="2" Value="0" Lovely="50" Moral="20" IQ="10" Sport="50" Art="40" Labor="30" Latent="100"/>
+		<Question ID="45" Answer="3" Value="0" Lovely="50" Moral="10" IQ="50" Sport="40" Art="30" Labor="20" Latent="100"/>
+		<Question ID="46" Answer="2" Value="0" Lovely="50" Moral="50" IQ="40" Sport="30" Art="20" Labor="10" Latent="100"/>		
+	</Lesson>
+</Lahm_Lesson_Questions>
+

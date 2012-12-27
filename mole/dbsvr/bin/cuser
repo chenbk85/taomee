@@ -1,0 +1,45 @@
+#!/bin/bash
+
+user="root"
+password="ta0mee"
+host="localhost"
+tmp_file="table.sql"
+if [ "$1" = "" ]; then
+	echo "need userid"
+	exit
+fi
+userid=$1
+let "db_id=$userid%100 "
+let "table_id=($userid/100)%100 "
+
+dbx=`printf "%02d" $db_id`
+tbx=`printf "%02d" $table_id`
+
+create_sql() {
+cat <<EOF >$tmp_file
+	select userid,hex(vip) vip , hex(flag) flag , petcolor pcolor,
+		 petbirthday pbirth, xiaomee,xiaomee_max xiaomax, exp,
+		strong,iq,charm,Ol_count Olcount,Ol_today Oltoday,Ol_last,Ol_time, 
+		hex(homeattirelist) halist ,
+		hex(noused_homeattirelist) nhalist,hex(homemap) homemap,hex(msglist) msglit
+		from   USER_$dbx.t_user_$tbx
+		where userid=$userid;
+EOF
+}
+
+create_userinfo() {
+cat <<EOF >$tmp_file
+	select userid,nick,hex(flag1) flag1, hex(flag2) flag2,
+		hex(friendlist) flist,
+		hex(blacklist) blist 
+		from   USER_INFO_$dbx.t_user_info_$tbx
+		where userid=$userid;
+EOF
+}
+
+create_sql 
+cat $tmp_file | mysql -u $user --password="$password" -h $host  | awk_cuser
+
+create_userinfo
+cat $tmp_file | mysql -u $user --password="$password" -h $host  | awk_cuser
+

@@ -1,0 +1,46 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import optparse
+
+
+def main(argv):
+	p = optparse.OptionParser(
+			description=' hex --> int ',
+			prog='cx',
+			version='cx 0.1',
+			usage='%prog [-b] F0 01 00 00 ' )
+	p.add_option('-b', '--big', action ='store_true', help='is big end' )
+	p.add_option('-s', '--space', action ='store_true', help='without space' )
+	#p.add_option('--person', '-p', default="world", help='person show'  )
+
+	options, arguments = p.parse_args()	
+
+	bigflag=False
+	if options.big:
+		bigflag=True
+
+	if options.space:
+		space_str=""
+	else:
+		space_str=" "
+
+	ll=""
+	for v in arguments :
+		ll+=v 
+	h=[]
+	int_value=int( ll);
+	hex_value="%08X"%(int_value)
+	h.append( hex_value[0:2]);
+	h.append( hex_value[2:4]);
+	h.append( hex_value[4:6]);
+	h.append( hex_value[6:8]);
+	if (bigflag ):
+		print ( "%s%s%s%s%s%s%s"%(h[0],space_str,h[1],space_str,h[2],space_str,h[3]));
+	else:
+		print ( "%s%s%s%s%s%s%s"%(h[3],space_str,h[2],space_str,h[1],space_str,h[0]));
+
+
+
+if __name__ == "__main__":
+	main(sys.argv)

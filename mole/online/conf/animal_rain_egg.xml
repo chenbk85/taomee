@@ -1,0 +1,110 @@
+<RainEgg>
+	<Map mapid="59" name="">
+		<Egg posid="1" x="330" y="350" itemid="0"/>
+		<Egg posid="2" x="507" y="269" itemid="0"/>
+		<Egg posid="3" x="545" y="332" itemid="0"/>
+	</Map>
+	<Map mapid="7" name="">
+		<Egg posid="1" x="202" y="311" itemid="0"/>
+		<Egg posid="2" x="525" y="237" itemid="0"/>
+		<Egg posid="3" x="793" y="330" itemid="0"/>
+	</Map>
+	<Map mapid="6" name="">
+		<Egg posid="1" x="213" y="398" itemid="0"/>
+		<Egg posid="2" x="337" y="238" itemid="0"/>
+		<Egg posid="3" x="626" y="375" itemid="0"/>
+		<Egg posid="4" x="825" y="320" itemid="0"/>
+	</Map>
+	<Map mapid="10" name="">
+		<Egg posid="1" x="213" y="334" itemid="0"/>
+		<Egg posid="2" x="518" y="396" itemid="0"/>
+		<Egg posid="3" x="505" y="260" itemid="0"/>
+		<Egg posid="4" x="660" y="381" itemid="0"/>
+	</Map>
+	<Map mapid="28" name="">
+		<Egg posid="1" x="320" y="313" itemid="0"/>
+		<Egg posid="2" x="434" y="151" itemid="0"/>
+		<Egg posid="3" x="680" y="330" itemid="0"/>
+	</Map>
+	<Map mapid="8" name="">
+		<Egg posid="1" x="301" y="324" itemid="0"/>
+		<Egg posid="2" x="608" y="222" itemid="0"/>
+		<Egg posid="3" x="390" y="181" itemid="0"/>
+	</Map>
+	<Map mapid="9" name="">
+		<Egg posid="1" x="224" y="399" itemid="0"/>
+		<Egg posid="2" x="666" y="387" itemid="0"/>
+		<Egg posid="3" x="728" y="269" itemid="0"/>
+	</Map>	
+	<Map mapid="4" name="">
+		<Egg posid="1" x="340" y="311" itemid="0"/>
+		<Egg posid="2" x="518" y="381" itemid="0"/>
+		<Egg posid="3" x="704" y="331" itemid="0"/>
+	</Map>		
+	<Map mapid="80" name="">
+		<Egg posid="1" x="216" y="371" itemid="0"/>
+		<Egg posid="2" x="366" y="283" itemid="0"/>
+		<Egg posid="3" x="507" y="133" itemid="0"/>
+		<Egg posid="4" x="778" y="359" itemid="0"/>
+	</Map>	
+	<Map mapid="61" name="">
+		<Egg posid="1" x="438" y="179" itemid="0"/>
+		<Egg posid="2" x="517" y="379" itemid="0"/>
+		<Egg posid="3" x="722" y="325" itemid="0"/>
+	</Map>
+	<Map mapid="5" name="">
+		<Egg posid="1" x="211" y="344" itemid="0"/>
+		<Egg posid="2" x="314" y="256" itemid="0"/>
+		<Egg posid="3" x="668" y="325" itemid="0"/>
+	</Map>
+	<Map mapid="33" name="">
+		<Egg posid="1" x="206" y="293" itemid="0"/>
+		<Egg posid="2" x="555" y="261" itemid="0"/>
+		<Egg posid="3" x="288" y="136" itemid="0"/>
+	</Map>	
+	<Map mapid="37" name="">
+		<Egg posid="1" x="211" y="365" itemid="0"/>
+		<Egg posid="2" x="406" y="96" itemid="0"/>
+		<Egg posid="3" x="880" y="128" itemid="0"/>
+	</Map>
+	<Map mapid="109" name="">
+		<Egg posid="1" x="94" y="258" itemid="0"/>
+		<Egg posid="2" x="403" y="165" itemid="0"/>
+		<Egg posid="3" x="692" y="287" itemid="0"/>
+	</Map>	
+	<Map mapid="47" name="">
+		<Egg posid="1" x="191" y="205" itemid="0"/>
+		<Egg posid="2" x="355" y="201" itemid="0"/>
+		<Egg posid="3" x="493" y="376" itemid="0"/>
+	</Map>
+	<Map mapid="83" name="">
+		<Egg posid="1" x="381" y="409" itemid="0"/>
+		<Egg posid="2" x="552" y="314" itemid="0"/>
+		<Egg posid="3" x="758" y="300" itemid="0"/>
+	</Map>
+	<Map mapid="68" name="">
+		<Egg posid="1" x="260" y="284" itemid="0"/>
+		<Egg posid="2" x="661" y="93" itemid="0"/>
+		<Egg posid="3" x="625" y="311" itemid="0"/>
+	</Map>
+	<Map mapid="77" name="">
+		<Egg posid="1" x="330" y="174" itemid="0"/>
+		<Egg posid="2" x="596" y="334" itemid="0"/>
+		<Egg posid="3" x="609" y="105" itemid="0"/>
+	</Map>
+	<Map mapid="120" name="">
+		<Egg posid="1" x="199" y="237" itemid="0"/>
+		<Egg posid="2" x="483" y="134" itemid="0"/>
+		<Egg posid="3" x="782" y="136" itemid="0"/>
+	</Map>
+	<Map mapid="112" name="">
+		<Egg posid="1" x="325" y="144" itemid="0"/>
+		<Egg posid="2" x="478" y="372" itemid="0"/>
+		<Egg posid="3" x="879" y="259" itemid="0"/>
+	</Map>
+	<Map mapid="41" name="">
+		<Egg posid="1" x="238" y="250" itemid="0"/>
+		<Egg posid="2" x="725" y="251" itemid="0"/>
+		<Egg posid="3" x="318" y="324" itemid="0"/>
+	</Map>
+</RainEgg>

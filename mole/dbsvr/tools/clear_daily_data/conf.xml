@@ -1,0 +1,30 @@
+<!-- comm_type:命令类型,必选,目前只有3种(sqlupdate为数据库更新 sqldelete清楚表中数据 shellcomm执行shell命令或脚本)
+	 dow:可选，每周的第几天,从1-7，默认为每天执行一次
+	 db_name:数据库名称 db_to:库的大小,默认为1 tb_name:表名 tb_to:表的大小，默认为1 field:数据库更新的字段设置或命令参数 comm_name:命令名或脚本路径
+-->
+
+<Conf>
+	<Command comm_type="sqlupdate" dow="">
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo" tb_to="10" field="dayhot=0"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo" tb_to="10" field="candy=0"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo_rally" tb_to="10" field="day_score=0,day_medal=0"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo" tb_to="10" field="candy=0,merge_list=unhex\(00000000\),candy_list=unhex\(00000000\)"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo" tb_to="10" field="day_star=0"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo" tb_to="10" field="today_score=0"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo_sports_meet" tb_to="10" field="medal_limit=0"/>
+	</Command>
+
+	<Command comm_type="sqlupdate" dow="5">
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo" tb_to="10" field="weekhot=0"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_question" tb_to="10" field="right_count=0,question_count=0,question_id=0"/>
+	</Command>
+	
+	<Command comm_type="sqldelete" dow="">
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo_day_limit" tb_to="10"/>
+		<Comm db_name="ROOMINFO" db_to="10" tb_name="t_roominfo_skill_limit" tb_to="10"/>
+	</Command>
+
+	<Command comm_type="shellcomm" dow="">
+		<Comm comm_name="./mv_logs.sh"/>
+	</Command>
+</Conf>

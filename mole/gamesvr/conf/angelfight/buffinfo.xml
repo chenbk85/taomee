@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Effect ID 来自effectinfo.xml中的描述起始ID为0
+	Lasts:状态持续时间
+-->
+<BuffRoot Count="119">
+	<Buff ID="0" Lasts="2">
+		<Effect ID="10"/>
+	</Buff>
+	<Buff ID="1" Lasts="2">
+		<Effect ID="11"/>
+	</Buff>
+	<Buff ID="2" Lasts="2">
+		<Effect ID="12"/>
+	</Buff>
+	<Buff ID="3" Lasts="2">
+		<Effect ID="13"/>
+	</Buff>
+	<Buff ID="4" Lasts="2">
+		<Effect ID="14"/>
+	</Buff>
+	<Buff ID="5" Lasts="2">
+		<Effect ID="15"/>
+	</Buff>
+	<Buff ID="6" Lasts="2">
+		<Effect ID="16"/>
+	</Buff>
+	<Buff ID="7" Lasts="2">
+		<Effect ID="17"/>
+	</Buff>
+	<Buff ID="8" Lasts="2">
+		<Effect ID="18"/>
+	</Buff>
+	<Buff ID="9" Lasts="2">
+		<Effect ID="19"/>
+	</Buff>
+	<Buff ID="10" Lasts="2">
+		<Effect ID="0"/>
+	</Buff>
+	<Buff ID="11" Lasts="2">
+		<Effect ID="1"/>
+	</Buff>
+	<Buff ID="12" Lasts="2">
+		<Effect ID="2"/>
+	</Buff>
+	<Buff ID="13" Lasts="2">
+		<Effect ID="3"/>
+	</Buff>
+	<Buff ID="14" Lasts="2">
+		<Effect ID="4"/>
+	</Buff>
+	<Buff ID="15" Lasts="2">
+		<Effect ID="5"/>
+	</Buff>
+	<Buff ID="16" Lasts="2">
+		<Effect ID="6"/>
+	</Buff>
+	<Buff ID="17" Lasts="2">
+		<Effect ID="7"/>
+	</Buff>
+	<Buff ID="18" Lasts="2">
+		<Effect ID="8"/>
+	</Buff>
+	<Buff ID="19" Lasts="2">
+		<Effect ID="9"/>
+	</Buff>
+	<Buff ID="20" Lasts="4">
+		<Effect ID="20"/>
+	</Buff>
+	<Buff ID="21" Lasts="4">
+		<Effect ID="21"/>
+	</Buff>
+	<Buff ID="22" Lasts="4">
+		<Effect ID="22"/>
+	</Buff>
+	<Buff ID="23" Lasts="4">
+		<Effect ID="23"/>
+	</Buff>
+	<Buff ID="24" Lasts="4">
+		<Effect ID="24"/>
+	</Buff>
+	<Buff ID="25" Lasts="4">
+		<Effect ID="25"/>
+	</Buff>
+	<Buff ID="26" Lasts="4">
+		<Effect ID="26"/>
+	</Buff>
+	<Buff ID="27" Lasts="4">
+		<Effect ID="27"/>
+	</Buff>
+	<Buff ID="28" Lasts="4">
+		<Effect ID="28"/>
+	</Buff>
+	<Buff ID="29" Lasts="4">
+		<Effect ID="29"/>
+	</Buff>
+	<Buff ID="30" Lasts="4">
+		<Effect ID="30"/>
+	</Buff>
+	<Buff ID="31" Lasts="4">
+		<Effect ID="31"/>
+	</Buff>
+	<Buff ID="32" Lasts="4">
+		<Effect ID="32"/>
+	</Buff>
+	<Buff ID="33" Lasts="4">
+		<Effect ID="33"/>
+	</Buff>
+	<Buff ID="34" Lasts="4">
+		<Effect ID="34"/>
+	</Buff>
+	<Buff ID="35" Lasts="4">
+		<Effect ID="35"/>
+	</Buff>
+	<Buff ID="36" Lasts="4">
+		<Effect ID="36"/>
+	</Buff>
+	<Buff ID="37" Lasts="4">
+		<Effect ID="37"/>
+	</Buff>
+	<Buff ID="38" Lasts="4">
+		<Effect ID="38"/>
+	</Buff>
+	<Buff ID="39" Lasts="4">
+		<Effect ID="39"/>
+	</Buff>
+	<Buff ID="40" Lasts="4">
+		<Effect ID="40"/>
+	</Buff>
+	<Buff ID="41" Lasts="3">
+		<Effect ID="41"/>
+	</Buff>
+	<Buff ID="42" Lasts="3">
+		<Effect ID="42"/>
+	</Buff>
+	<Buff ID="43" Lasts="3">
+		<Effect ID="43"/>
+	</Buff>
+	<Buff ID="44" Lasts="3">
+		<Effect ID="44"/>
+	</Buff>
+	<Buff ID="45" Lasts="3">
+		<Effect ID="45"/>
+	</Buff>
+	<Buff ID="46" Lasts="3">
+		<Effect ID="46"/>
+	</Buff>
+	<Buff ID="47" Lasts="3">
+		<Effect ID="47"/>
+	</Buff>
+	<Buff ID="48" Lasts="3">
+		<Effect ID="48"/>
+	</Buff>
+	<Buff ID="49" Lasts="3">
+		<Effect ID="49"/>
+	</Buff>
+	<Buff ID="50" Lasts="3">
+		<Effect ID="50"/>
+	</Buff>
+	<Buff ID="51" Lasts="3">
+		<Effect ID="51"/>
+	</Buff>
+	<Buff ID="52" Lasts="3">
+		<Effect ID="52"/>
+	</Buff>
+	<Buff ID="53" Lasts="3">
+		<Effect ID="53"/>
+	</Buff>
+	<Buff ID="54" Lasts="3">
+		<Effect ID="54"/>
+	</Buff>
+	<Buff ID="55" Lasts="3">
+		<Effect ID="55"/>
+	</Buff>
+	<Buff ID="56" Lasts="3">
+		<Effect ID="56"/>
+	</Buff>
+	<Buff ID="57" Lasts="3">
+		<Effect ID="57"/>
+	</Buff>
+	<Buff ID="58" Lasts="3">
+		<Effect ID="58"/>
+	</Buff>
+	<Buff ID="59" Lasts="3">
+		<Effect ID="59"/>
+	</Buff>
+	<Buff ID="60" Lasts="3">
+		<Effect ID="60"/>
+	</Buff>
+	<Buff ID="61" Lasts="4">
+		<Effect ID="61"/>
+	</Buff>
+	<Buff ID="62" Lasts="3">
+		<Effect ID="62"/>
+	</Buff>
+	<Buff ID="63" Lasts="4">
+		<Effect ID="63"/>
+	</Buff>
+	<Buff ID="64" Lasts="4">
+		<Effect ID="64"/>
+	</Buff>
+	<Buff ID="65" Lasts="4">
+		<Effect ID="65"/>
+	</Buff>
+	<Buff ID="66" Lasts="4">
+		<Effect ID="66"/>
+	</Buff>
+	<Buff ID="67" Lasts="4">
+		<Effect ID="67"/>
+	</Buff>
+	<Buff ID="68" Lasts="4">
+		<Effect ID="68"/>
+	</Buff>
+	<Buff ID="69" Lasts="4">
+		<Effect ID="69"/>
+	</Buff>
+	<Buff ID="70" Lasts="4">
+		<Effect ID="70"/>
+	</Buff>
+	<Buff ID="71" Lasts="4">
+		<Effect ID="71"/>
+	</Buff>
+	<Buff ID="72" Lasts="4">
+		<Effect ID="72"/>
+	</Buff>
+	<Buff ID="73" Lasts="4">
+		<Effect ID="73"/>
+	</Buff>
+	<Buff ID="74" Lasts="4">
+		<Effect ID="74"/>
+	</Buff>
+	<Buff ID="75" Lasts="4">
+		<Effect ID="75"/>
+	</Buff>
+	<Buff ID="76" Lasts="4">
+		<Effect ID="76"/>
+	</Buff>
+	<Buff ID="77" Lasts="4">
+		<Effect ID="77"/>
+	</Buff>
+	<Buff ID="78" Lasts="4">
+		<Effect ID="78"/>
+	</Buff>
+	<Buff ID="79" Lasts="4">
+		<Effect ID="79"/>
+	</Buff>
+	<Buff ID="80" Lasts="4">
+		<Effect ID="80"/>
+	</Buff>
+	<Buff ID="81" Lasts="4">
+		<Effect ID="81"/>
+	</Buff>
+	<Buff ID="82" Lasts="4">
+		<Effect ID="82"/>
+	</Buff>
+	<Buff ID="83" Lasts="4">
+		<Effect ID="83"/>
+	</Buff>
+	<Buff ID="84" Lasts="3">
+		<Effect ID="84"/>
+	</Buff>
+	<Buff ID="85" Lasts="3">
+		<Effect ID="85"/>
+	</Buff>
+	<Buff ID="86" Lasts="3">
+		<Effect ID="86"/>
+	</Buff>
+	<Buff ID="87" Lasts="3">
+		<Effect ID="87"/>
+	</Buff>
+	<Buff ID="88" Lasts="3">
+		<Effect ID="88"/>
+	</Buff>
+	<Buff ID="89" Lasts="3">
+		<Effect ID="89"/>
+	</Buff>
+	<Buff ID="90" Lasts="3">
+		<Effect ID="90"/>
+	</Buff>
+	<Buff ID="91" Lasts="3">
+		<Effect ID="91"/>
+	</Buff>
+	<Buff ID="92" Lasts="3">
+		<Effect ID="92"/>
+	</Buff>
+	<Buff ID="93" Lasts="3">
+		<Effect ID="93"/>
+	</Buff>
+	<Buff ID="94" Lasts="3">
+		<Effect ID="94"/>
+	</Buff>
+	<Buff ID="95" Lasts="3">
+		<Effect ID="95"/>
+	</Buff>
+	<Buff ID="96" Lasts="3">
+		<Effect ID="96"/>
+	</Buff>
+	<Buff ID="97" Lasts="3">
+		<Effect ID="97"/>
+	</Buff>
+	<Buff ID="98" Lasts="3">
+		<Effect ID="98"/>
+	</Buff>
+	<Buff ID="99" Lasts="3">
+		<Effect ID="99"/>
+	</Buff>
+	<Buff ID="100" Lasts="3">
+		<Effect ID="100"/>
+	</Buff>
+	<Buff ID="101" Lasts="3">
+		<Effect ID="101"/>
+	</Buff>
+	<Buff ID="102" Lasts="3">
+		<Effect ID="102"/>
+	</Buff>
+	<Buff ID="103" Lasts="3">
+		<Effect ID="103"/>
+	</Buff>
+	<Buff ID="104" Lasts="2">
+		<Effect ID="104"/>
+	</Buff>
+	<Buff ID="105" Lasts="3">
+		<Effect ID="105"/>
+	</Buff>
+	<Buff ID="106" Lasts="4">
+		<Effect ID="106"/>
+	</Buff>
+	<Buff ID="107" Lasts="4">
+		<Effect ID="107"/>
+	</Buff>
+	<Buff ID="108" Lasts="4">
+		<Effect ID="108"/>
+	</Buff>
+	<Buff ID="109" Lasts="4">
+		<Effect ID="109"/>
+	</Buff>
+	<Buff ID="110" Lasts="4">
+		<Effect ID="110"/>
+	</Buff>
+	<Buff ID="111" Lasts="4">
+		<Effect ID="111"/>
+	</Buff>
+	<Buff ID="112" Lasts="4">
+		<Effect ID="112"/>
+	</Buff>
+	<Buff ID="113" Lasts="4">
+		<Effect ID="113"/>
+	</Buff>
+	<Buff ID="114" Lasts="4">
+		<Effect ID="114"/>
+	</Buff>
+	<Buff ID="115" Lasts="4">
+		<Effect ID="115"/>
+	</Buff>
+	<Buff ID="116" Lasts="4">
+		<Effect ID="116"/>
+	</Buff>
+	<Buff ID="117" Lasts="2">
+		<Effect ID="117"/>
+	</Buff>
+	<Buff ID="118" Lasts="4">
+		<Effect ID="118"/>
+	</Buff>
+</BuffRoot>

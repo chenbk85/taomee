@@ -1,0 +1,474 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import sys
+import os 
+import optparse
+import re 
+import mypub 
+
+work_dir="/home/easyeagel/DB"
+
+struct_conf={}
+typedef_conf={}
+command_conf={}
+type_conf={
+	"userid_t":"Uint32",
+	"int32_t":"int32",
+	"uint32_t":"Uint32",
+	"uint8_t":"Uint8",
+	"char":"char",
+	"uint16_t":"Uint16"
+}
+fd=mypub.fielddesc();
+fd.init( work_dir+"/include/field_desc.txt");
+
+field_desc_conf={ }
+err_conf={ }
+
+func_err_conf={}
+db_conf={}
+
+def get_err_from_func(func_name):
+	global func_err_conf
+	err_list={}
+	ret_list={}
+	if func_err_conf.has_key(func_name):
+		err_list=func_err_conf[func_name]
+		for k in err_list.keys():
+			if re.match(r".*_ERR", k):
+				ret_list.update({k:1});
+			else:
+				ret=get_err_from_func(k)
+				ret_list.update(ret);
+	return ret_list;
+
+def gen_func_err_conf():
+	global func_err_conf
+
+	pf=open("./func_source.cpp","r")				
+	cur_func=""
+	cur_class=""
+	for line in pf.readlines(): 
+		m=re.match("^\s*int\s+(\w+)\s*::\s*(\w+)\s*\(.*",line)
+		if (m) :
+			cur_class=m.group(1)
+			cur_func=m.group(1) + "."+m.group(2)
+			func_err_conf[cur_func]={ }
+
+		#得到调用的函数列表
+		m0=re.match(r"^\s*(int)*\s+ret\s*=\s*this->\s*\b(\w+)\b\s*\.\s*\b(\w+)\b.*",line)
+		if (m0):
+			if (cur_func != "" ):
+				func_err_conf[cur_func]["C"+m0.group(2)+"."+m0.group(3)]=1; 
+		else:
+			m1=re.match(r"\s*(int)*\s+ret\s*=\s*this->\s*\b(\w+)\b.*",line)
+			if (not m1):
+				m1=re.match(r"\s*(int)*\s+return\s+this->\s*\b(\w+)\b.*",line)
+	
+			if (m1) :
+				if (cur_func != "" ):
+					func_err_conf[cur_func][cur_class+'.'+m1.group(2)]=1; 
+	
+			#得到错误码
+			m2=re.match(r'.*[^=][^=]\s*\b(\w\w\w\w+_ERR)\b.*',line)
+			m3=re.match(".*_LOG.*",line)
+			if (m2 and (not m3) ) :
+				if (cur_func != "" ):
+					func_err_conf[cur_func][m2.group(1)]=1; 
+
+
+
+def gen_err_def():
+	global err_conf
+	global db_conf
+	global   work_dir
+	pf=open(work_dir+"/include/common.h","r")				
+	re_defcmd=re.compile(r'^#define.*_ERR.*')
+	re_defdb=re.compile(r'.*=\s*SET_ROUTE.*')
+	last_line=""
+	line=""
+
+	for line in pf.readlines(): 
+		if (re_defcmd.findall (line)):
+			m=re.match("#define\s+(\w+)\s+(\w+)\s*",line)
+			if (m):
+				err_name=m.group(1);
+				err_value=str(m.group(2));
+				if last_line[0]=="/":
+					err_conf[err_name]= (err_value ,last_line[2:]);
+				else:
+					err_conf[err_name]= (err_value ,"无");
+		last_line=line
+
+		if (re_defdb.findall (line)):
+			#print "12"
+			#m=re.match("\s*(\w+)\s*=\s*SET_ROUTE\(\s*(\w+)\s*\)//(\w*)",line)
+			m=re.match("\s*(\w+)\s*=\s*SET_ROUTE\(\s*(\w+)\s*\)\s*,\s*//(.*)",line)
+			if (m):
+				db_conf[str(int(eval(m.group(2))))]=(m.group(1),m.group(2),m.group(3) );
+		
+	
+
+
+def get_type_doc(type):
+	global type_conf
+	if (type_conf.has_key(type)):	
+		return type_conf[type]
+	else:
+		return type
+
+def print_filed( filed_def, fix,struct_list=""  ):
+	#print filed_def
+
+	m=re.match(r"^\s*(\w+)\s+(\w+)\s*\[*(\w+)*\]*\s*",filed_def)
+	type=m.group(1);
+	filed_name="";
+	filed_name=m.group(2);
+	count_def=""	
+	if m.group(3):
+		count_def="["+m.group(3)+"]"	
+	td_class=""	
+	if filed_name.isupper():
+		td_class="class=\"alt\""	
+			
+	print ( "<tr ><td %s>%s%s</td><td>%s%s</td><td>%s</td></tr>"%(td_class ,fix ,filed_name , 
+				get_type_doc(type),count_def , fd.getDesc( struct_list+"."+filed_name )  )  )
+	#print m.groups() 
+	pass 
+
+def show_struct(struct_name , fix="", struct_list="" ):
+	global struct_conf;
+	global typedef_conf;
+	global type_conf;
+	memberlist=struct_conf[typedef_conf[struct_name]]
+	for mv in memberlist:
+		filed_type= mv[1].split(" ",2)[0];
+		print_filed(mv[1],fix,struct_list+"."+struct_name );
+		if filed_type.isupper():
+			show_struct(filed_type ,fix+">>>>&nbsp;",struct_list+"."+struct_name )		
+
+
+def gen_commond_def():
+	pf=open(work_dir+"/include/proto.h","r")				
+	re_defcmd=re.compile(r'^\s*#define.*_CMD')
+	line=""
+	global command_conf
+	for line in pf.readlines(): 
+		if (re_defcmd.findall (line)):
+			#print line
+			m=re.match("^\s*#define\s+(\w+)\s*\(\s*(\w+)*[ \t|]*(\w+)*\s*\)\s*",line)
+			if (m):
+				#print line
+				cmd_name=m.group(1)[:-4];
+				cmd_id=str(m.group(2));
+				cmd_needupdate=m.group(3);
+				if last_line[0]=="/":
+					command_conf[cmd_id]= (cmd_name,cmd_needupdate,last_line[2:]);
+				else:
+					command_conf[cmd_id]= (cmd_name,cmd_needupdate,"无");
+		last_line=line
+	#print command_conf;
+		#pass
+		##print( "%s=%s"%(k,struct_conf[v]) )
+
+def gen_struct_def():
+	pf=open("tags","r")				
+	line=""
+	global struct_conf
+	global typedef_conf
+
+	for line in pf.readlines(): 
+		m1=re.match("^(\w+)[\t ]+\/\^[\t ]*(.*);\$\/;\"[\t ]+m[\t ]+struct:(\w+)",line)
+		m2=re.match("^(\w+)[\t ]+\/\^[\t ]*.*;\$\/;\"[\t ]+t[\t ]+typeref:struct:(\w+)",line)
+		m3=re.match("^(\w+)[\t ]+\/\^[\t ]*typedef[\t ]+(.*)[\t ]+\w+[\t ]*;\$\/;\"[\t ]+t",line)
+		if (m1):
+			struct_name=m1.group(3);
+			member_name=m1.group(1);
+			member_def=m1.group(2);
+			if struct_conf.has_key(struct_name):
+			 	struct_conf[struct_name].append ([member_name,member_def]);
+				pass
+			else:
+			 	struct_conf[struct_name]=[[member_name,member_def]];
+				pass
+			pass
+		elif(m2):
+			def_name=""
+			struct_name=m2.group(1);
+			def_name=m2.group(2);
+			while def_name.isupper():
+				def_name=typedef_conf[def_name]
+			typedef_conf[struct_name]=def_name;
+		elif(m3):
+			def_name=""
+			struct_name=m3.group(1);
+			def_name=m3.group(2);
+			while def_name.isupper():
+				def_name=typedef_conf[def_name]
+			typedef_conf[struct_name]=def_name;
+			#print m3.groups()
+			pass
+	#for k,v in typedef_conf.items():
+	#	print( "%s=%s"%(k,struct_conf[v]) )
+def main(argv):
+	gen_commond_def()
+	gen_struct_def()
+	gen_err_def()
+	gen_func_err_conf()
+
+	global struct_conf
+	global typedef_conf
+	global command_conf
+	global err_conf
+	global func_err_conf
+	global db_conf
+	#print func_err_conf;
+	
+	print """
+<style type="text/css">
+/* CSS Document */
+
+body {
+font: normal 12px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #4f6b72;
+background: #E6EAE9;
+}
+
+a{
+color: #c75f3e;
+}
+
+#mytable {
+width: 700px;
+padding: 0;
+margin: 0;
+}
+
+#mytable_1 {
+width: 750px;
+padding: 0;
+margin: 0;
+}
+
+
+
+caption {
+padding: 0 0 5px 0;
+width: 700px;
+font: bold  15px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+text-align: left;
+}
+
+th {
+font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #4f6b72;
+border-right: 1px solid #C1DAD7;
+border-bottom: 1px solid #C1DAD7;
+border-top: 1px solid #C1DAD7;
+letter-spacing: 2px;
+text-align: left;
+padding: 6px 6px 6px 12px;
+background: #CAE8EA url(images/bg_header.jpg) no-repeat;
+}
+th.title_def {
+font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #4f6b72;
+border-right: 1px solid #FFD8C0;
+border-bottom: 1px solid #FFD8C0;
+border-top: 1px solid #FFD8C0 ;
+letter-spacing: 2px;
+text-align: left;
+padding: 6px 6px 6px 12px;
+background: #FFD8C0 url(images/bg_header.jpg) no-repeat;
+}
+
+
+
+th.nobg {
+border-top: 0;
+border-left: 0;
+border-right: 1px solid #C1DAD7;
+background: none;
+}
+
+td {
+border-right: 1px solid #C1DAD7;
+border-bottom: 1px solid #C1DAD7;
+background: #fff;
+width:200;
+font-size:12px;
+padding: 6px 6px 6px 12px;
+color: #4f6b72;
+}
+
+
+td.alt {
+background: #F5FAFA;
+color: #797268;
+}
+td.spec {
+border-left: 1px solid #C1DAD7;
+border-top: 0;
+background: #fff url(images/bullet1.gif) no-repeat;
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+th.spec {
+border-left: 1px solid #C1DAD7;
+border-top: 0;
+background: #fff url(images/bullet1.gif) no-repeat;
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+border-left: 1px solid #C1DAD7;
+border-top: 0;
+background: #f5fafa url(images/bullet2.gif) no-repeat;
+font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+color: #797268;
+}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+<link id="themestyle" rel="stylesheet" type="text/css" href="./css.css">
+<SCRIPT LANGUAGE="JavaScript" src="../pub/pub.js"></SCRIPT>
+</head>
+<body  >
+<div align=center>
+	"""
+	#print struct_conf[typedef_conf["ATTIRE_NOUSED_ITEM"]]
+	id=0;	
+	keylist=command_conf.keys();
+	keylist.sort();
+
+	last_type=-1;
+	db_type=-1;
+	for k in keylist:
+		v=command_conf[k][0]
+		need_update_flag=command_conf[k][1];
+		db_type= (int (eval(k)) & 0xFF00)>>8;    
+		if (db_type!=last_type):	
+			if ( last_type!=-1 ):
+				print "</table>";
+			print "<table id=\"mytable\" cellspacing=\"0\" >";
+			print	"<caption >%s00:%s:%s</caption>"%(db_conf[str(db_type)][1],db_conf[str(db_type)][0],db_conf[str(db_type)][2]   );
+			print "<tr><th>命令号</th><th>名字</th><th>说明</th></tr>"
+			last_type=db_type
+		comment=command_conf[k][2]
+
+		if (need_update_flag):
+			cmd_id='0x%04X'%(int (eval(k ) )+ 0x0100 )
+		else:
+			cmd_id='0x%04X'%(int (eval(k ) ))
+
+		print("<tr><td>%s</td><td><a name=%s_2 href=\"#%s_1\">%s</a></td><td>%s</td></tr>"%( cmd_id,v,v,v,comment))
+		
+
+	print "</table>";
+		
+
+	for k in keylist:
+		v=command_conf[k][0]
+		need_update_flag=command_conf[k][1];
+		if not need_update_flag: need_update_flag=""
+		if (need_update_flag):
+			cmd_id='0x%04X'%(int (eval(k ) )+ 0x0100 )
+		else:
+			cmd_id='0x%04X'%(int (eval(k ) ))
+
+		comment=command_conf[k][2]
+		id=id+1
+		str_in=v+"_IN";	
+		str_in_header=v+"_IN_HEADER";	
+		str_in_item=v+"_IN_ITEM";	
+		str_out=v+"_OUT";	
+		str_out_header=v+"_OUT_HEADER";	
+		str_out_item=v+"_OUT_ITEM";	
+		str_func="Croute_func.f_"+v;	
+
+		print "<br \>"
+		print "<table id=\"mytable_1\" cellspacing=\"0\" >";
+		print "<tr><th width=50 class=\"title_def\">%d</th><th class=\"title_def\"><a name=%s_1 href=#%s_2 >%s</a><br />%s</th><th class=\"title_def\" width=100 >%s<br />%s</th></tr>"%(
+				id,v,v,v,comment, cmd_id,need_update_flag )
+		print "</table>"		
+
+		#print header
+		print "<table id=\"mytable\" cellspacing=\"0\" >";
+		print	"<caption >请求包:</caption>";
+		print "<tr><th>字段</th><th>类型</th><th>说明</th></tr>"
+		if (typedef_conf.has_key(str_in)):
+			show_struct(str_in)
+		elif (typedef_conf.has_key(str_in_header)):
+			show_struct(str_in_header)
+			if (typedef_conf.has_key(str_in_item) ):
+				print("<tr><td>%s</td><td>无</td><td>无</td></tr>"%str_in_item)
+				show_struct(str_in_item,">>>>&nbsp;" )
+			else:
+				for i in range (1,5):
+					str_item_id=str_in_item + "_" + str(i)
+					if ( typedef_conf.has_key(str_item_id ) ): 
+						print("<tr><td>%s</td><td>无</td><td>%s</td></tr>"%(str_item_id,
+									fd.getDesc(str_item_id.lower())))
+						show_struct(str_item_id,">>>>&nbsp;" )
+		else:
+			print("<tr><td>无</td><td>无</td><td>无</td></tr>")
+
+		print "</table>"		
+		#print header
+		print "<table id=\"mytable\" cellspacing=\"0\" >";
+		print "<caption >返回包:</caption>";
+		print "<tr><th class=\"\">字段</th><th class=\"\">类型</th><th class=\"\">说明</th></tr>"
+		if (typedef_conf.has_key(str_out)):
+			show_struct(str_out)
+		elif (typedef_conf.has_key(str_out_header)):
+			show_struct(str_out_header)
+			if (typedef_conf.has_key(str_out_item) ):
+				print("<tr><td>%s</td><td>无</td><td>无</td></tr>"%str_out_item)
+				show_struct(str_out_item, ">>>>&nbsp;")
+			else:
+				for i in range (1,5):
+					str_item_id=str_out_item + "_" + str(i)
+					if ( typedef_conf.has_key(str_item_id ) ): 
+						print("<tr><td>%s</td><td>无</td><td>%s</td></tr>"%(str_item_id,
+									fd.getDesc (str_item_id.lower())))
+						show_struct(str_item_id,">>>>&nbsp;" )
+		else:
+			print("<tr><td>无</td><td>无</td><td>无</td></tr>")
+
+		#错误码		
+		print "<table id=\"mytable\" cellspacing=\"0\" >";
+		print "<caption >错误码:</caption>";
+		print "<tr><th>名字</th><th>数值</th><th>说明</th></tr>"
+		err_list=get_err_from_func(str_func)
+		for err in err_list .keys():
+			v = err_conf[err];
+			print ( "<tr ><td >%s</td><td>%s</td><td>%s</td></tr>"%( err,v[0], v[1] ))
+		print "</table>"		
+
+	print "<br /> <hr />"
+
+	err_sort_list={ }
+	for k,v in err_conf.items():
+		err_sort_list[v[0]]=[k, v[1] ];
+
+	err_keylist=err_sort_list.keys();
+	err_keylist.sort();
+	#错误列表 print 
+	print "<table id=\"mytable\" cellspacing=\"0\" >";
+	print	"<caption color=red >错误定义:</caption>";
+	print "<tr><th>名字</th><th>数值</th><th>说明</th></tr>"
+	
+
+	for k in  err_keylist:
+		print ( "<tr ><td >%s</td><td>%s</td><td>%s</td></tr>"%( k,
+					err_sort_list[k][0], err_sort_list[k][1] ))
+
+	print "</table>"		
+
+print "</div>"		
+print "</body></html>"		
+
+if __name__ == '__main__':
+	main(sys.argv)

@@ -1,0 +1,7 @@
+<PicSrv>
+	<!-- picsrv 1 to 3 -->
+	<!-- picture server 1 ip and port -->
+	<!--PicSrv Ip="218.1.65.208" Port="4267" /-->
+	<!--PicSrv Ip="114.80.98.81" Port="80" /-->
+	<PicSrv Ip="123.150.163.115" Port="80" />
+</PicSrv>

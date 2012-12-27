@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ID：物品ID Level：物品等级 Type：1_被动技能 0_主动技能
+  Str：力量 Int：智慧 Hab：体力 Ali:灵活 Atk:攻击力 Aspd：行动速度 Evad：闪避率 Block：
+  格挡率 Combo：连击率 Crit：暴击率 Hit：命中率 Def：防御力 Hp：生命值加成 Skill：附加技能
+-->
+<ItemRoot MaxLevel="10">
+  <!--0:Name:力量-->
+  <Item ID="1563005" Level="1" Type="1" Str="2"/>
+  <Item ID="1563005" Level="2" Type="1" Str="4"/>
+  <Item ID="1563005" Level="3" Type="1" Str="6"/>
+  <Item ID="1563005" Level="4" Type="1" Str="8"/>
+  <Item ID="1563005" Level="5" Type="1" Str="10"/>
+  <Item ID="1563005" Level="6" Type="1" Str="12"/>
+  <Item ID="1563005" Level="7" Type="1" Str="14"/>
+  <Item ID="1563005" Level="8" Type="1" Str="16"/>
+  <Item ID="1563005" Level="9" Type="1" Str="18"/>
+  <Item ID="1563005" Level="10" Type="1" Str="20"/>
+  <!--1:Name:智慧-->
+  <Item ID="1563006" Level="1" Type="1" Int="2"/>
+  <Item ID="1563006" Level="2" Type="1" Int="4"/>
+  <Item ID="1563006" Level="3" Type="1" Int="6"/>
+  <Item ID="1563006" Level="4" Type="1" Int="8"/>
+  <Item ID="1563006" Level="5" Type="1" Int="10"/>
+  <Item ID="1563006" Level="6" Type="1" Int="12"/>
+  <Item ID="1563006" Level="7" Type="1" Int="14"/>
+  <Item ID="1563006" Level="8" Type="1" Int="16"/>
+  <Item ID="1563006" Level="9" Type="1" Int="18"/>
+  <Item ID="1563006" Level="10" Type="1" Int="20"/>
+  <!--2:Name:强壮-->
+  <Item ID="1563007" Level="1" Type="1" Hab="2"/>
+  <Item ID="1563007" Level="2" Type="1" Hab="4"/>
+  <Item ID="1563007" Level="3" Type="1" Hab="6"/>
+  <Item ID="1563007" Level="4" Type="1" Hab="8"/>
+  <Item ID="1563007" Level="5" Type="1" Hab="10"/>
+  <Item ID="1563007" Level="6" Type="1" Hab="12"/>
+  <Item ID="1563007" Level="7" Type="1" Hab="14"/>
+  <Item ID="1563007" Level="8" Type="1" Hab="16"/>
+  <Item ID="1563007" Level="9" Type="1" Hab="18"/>
+  <Item ID="1563007" Level="10" Type="1" Hab="20"/>
+  <!--3:Name:灵活-->
+  <Item ID="1563008" Level="1" Type="1" Ali="2"/>
+  <Item ID="1563008" Level="2" Type="1" Ali="4"/>
+  <Item ID="1563008" Level="3" Type="1" Ali="6"/>
+  <Item ID="1563008" Level="4" Type="1" Ali="8"/>
+  <Item ID="1563008" Level="5" Type="1" Ali="10"/>
+  <Item ID="1563008" Level="6" Type="1" Ali="12"/>
+  <Item ID="1563008" Level="7" Type="1" Ali="14"/>
+  <Item ID="1563008" Level="8" Type="1" Ali="16"/>
+  <Item ID="1563008" Level="9" Type="1" Ali="18"/>
+  <Item ID="1563008" Level="10" Type="1" Ali="20"/>
+  <!--4:Name:攻击-->
+  <Item ID="1563009" Level="1" Type="1" Atk="3"/>
+  <Item ID="1563009" Level="2" Type="1" Atk="6"/>
+  <Item ID="1563009" Level="3" Type="1" Atk="9"/>
+  <Item ID="1563009" Level="4" Type="1" Atk="12"/>
+  <Item ID="1563009" Level="5" Type="1" Atk="15"/>
+  <Item ID="1563009" Level="6" Type="1" Atk="18"/>
+  <Item ID="1563009" Level="7" Type="1" Atk="21"/>
+  <Item ID="1563009" Level="8" Type="1" Atk="24"/>
+  <Item ID="1563009" Level="9" Type="1" Atk="27"/>
+  <Item ID="1563009" Level="10" Type="1" Atk="30"/>
+  <!--5:Name:暴击-->
+  <Item ID="1563010" Level="1" Type="1" Crit="1"/>
+  <Item ID="1563010" Level="2" Type="1" Crit="2"/>
+  <Item ID="1563010" Level="3" Type="1" Crit="3"/>
+  <Item ID="1563010" Level="4" Type="1" Crit="4"/>
+  <Item ID="1563010" Level="5" Type="1" Crit="5"/>
+  <Item ID="1563010" Level="6" Type="1" Crit="6"/>
+  <Item ID="1563010" Level="7" Type="1" Crit="7"/>
+  <Item ID="1563010" Level="8" Type="1" Crit="8"/>
+  <Item ID="1563010" Level="9" Type="1" Crit="9"/>
+  <Item ID="1563010" Level="10" Type="1" Crit="10"/>
+  <!--6:Name:血-->
+  <Item ID="1563011" Level="1" Type="1" Hp="20"/>
+  <Item ID="1563011" Level="2" Type="1" Hp="40"/>
+  <Item ID="1563011" Level="3" Type="1" Hp="60"/>
+  <Item ID="1563011" Level="4" Type="1" Hp="80"/>
+  <Item ID="1563011" Level="5" Type="1" Hp="100"/>
+  <Item ID="1563011" Level="6" Type="1" Hp="120"/>
+  <Item ID="1563011" Level="7" Type="1" Hp="140"/>
+  <Item ID="1563011" Level="8" Type="1" Hp="160"/>
+  <Item ID="1563011" Level="9" Type="1" Hp="180"/>
+  <Item ID="1563011" Level="10" Type="1" Hp="200"/>
+  <!--7:Name:抵抗-->
+  <Item ID="1563012" Level="1" Type="1" Block="1"/>
+  <Item ID="1563012" Level="2" Type="1" Block="2"/>
+  <Item ID="1563012" Level="3" Type="1" Block="3"/>
+  <Item ID="1563012" Level="4" Type="1" Block="4"/>
+  <Item ID="1563012" Level="5" Type="1" Block="5"/>
+  <Item ID="1563012" Level="6" Type="1" Block="6"/>
+  <Item ID="1563012" Level="7" Type="1" Block="7"/>
+  <Item ID="1563012" Level="8" Type="1" Block="8"/>
+  <Item ID="1563012" Level="9" Type="1" Block="9"/>
+  <Item ID="1563012" Level="10" Type="1" Block="10"/>
+  <!--8:Name:免疫-->
+  <Item ID="1563013" Level="1" Type="1" Evad="1"/>
+  <Item ID="1563013" Level="2" Type="1" Evad="2"/>
+  <Item ID="1563013" Level="3" Type="1" Evad="3"/>
+  <Item ID="1563013" Level="4" Type="1" Evad="4"/>
+  <Item ID="1563013" Level="5" Type="1" Evad="5"/>
+  <Item ID="1563013" Level="6" Type="1" Evad="6"/>
+  <Item ID="1563013" Level="7" Type="1" Evad="7"/>
+  <Item ID="1563013" Level="8" Type="1" Evad="8"/>
+  <Item ID="1563013" Level="9" Type="1" Evad="9"/>
+  <Item ID="1563013" Level="10" Type="1" Evad="10"/>
+  <!--9:Name:吸收伤害-->
+  <Item ID="1563014" Level="1" Type="1" Def="1"/>
+  <Item ID="1563014" Level="2" Type="1" Def="2"/>
+  <Item ID="1563014" Level="3" Type="1" Def="3"/>
+  <Item ID="1563014" Level="4" Type="1" Def="4"/>
+  <Item ID="1563014" Level="5" Type="1" Def="5"/>
+  <Item ID="1563014" Level="6" Type="1" Def="6"/>
+  <Item ID="1563014" Level="7" Type="1" Def="7"/>
+  <Item ID="1563014" Level="8" Type="1" Def="8"/>
+  <Item ID="1563014" Level="9" Type="1" Def="9"/>
+  <Item ID="1563014" Level="10" Type="1" Def="10"/>
+  <!--10:Name:速度-->
+  <Item ID="1563015" Level="1" Type="1" Aspd="3"/>
+  <Item ID="1563015" Level="2" Type="1" Aspd="6"/>
+  <Item ID="1563015" Level="3" Type="1" Aspd="9"/>
+  <Item ID="1563015" Level="4" Type="1" Aspd="12"/>
+  <Item ID="1563015" Level="5" Type="1" Aspd="15"/>
+  <Item ID="1563015" Level="6" Type="1" Aspd="18"/>
+  <Item ID="1563015" Level="7" Type="1" Aspd="21"/>
+  <Item ID="1563015" Level="8" Type="1" Aspd="24"/>
+  <Item ID="1563015" Level="9" Type="1" Aspd="27"/>
+  <Item ID="1563015" Level="10" Type="1" Aspd="30"/>
+  <!--11:Name:连击-->
+  <Item ID="1563016" Level="1" Type="1" Combo="1"/>
+  <Item ID="1563016" Level="2" Type="1" Combo="2"/>
+  <Item ID="1563016" Level="3" Type="1" Combo="3"/>
+  <Item ID="1563016" Level="4" Type="1" Combo="4"/>
+  <Item ID="1563016" Level="5" Type="1" Combo="5"/>
+  <Item ID="1563016" Level="6" Type="1" Combo="6"/>
+  <Item ID="1563016" Level="7" Type="1" Combo="7"/>
+  <Item ID="1563016" Level="8" Type="1" Combo="8"/>
+  <Item ID="1563016" Level="9" Type="1" Combo="9"/>
+  <Item ID="1563016" Level="10" Type="1" Combo="10"/>
+   <!--12:Name:钻头钻头功-->
+  <Item ID="1563000" Level="1" Type="0" Ali="1" Skill="0"/>
+  <Item ID="1563000" Level="2" Type="0" Ali="2" Skill="1"/>
+  <Item ID="1563000" Level="3" Type="0" Ali="3" Skill="2"/>
+  <Item ID="1563000" Level="4" Type="0" Ali="4" Skill="3"/>
+  <Item ID="1563000" Level="5" Type="0" Ali="5" Skill="4"/>
+  <Item ID="1563000" Level="6" Type="0" Ali="6" Skill="5"/>
+  <Item ID="1563000" Level="7" Type="0" Ali="7" Skill="6"/>
+  <Item ID="1563000" Level="8" Type="0" Ali="8" Skill="7"/>
+  <Item ID="1563000" Level="9" Type="0" Ali="9" Skill="8"/>
+  <Item ID="1563000" Level="10" Type="0" Ali="10" Skill="9"/>
+   <!--13:Name:飘飘遁地术-->
+  <Item ID="1563001" Level="1" Type="0" Str="1" Skill="10"/>
+  <Item ID="1563001" Level="2" Type="0" Str="2" Skill="11"/>
+  <Item ID="1563001" Level="3" Type="0" Str="3" Skill="12"/>
+  <Item ID="1563001" Level="4" Type="0" Str="4" Skill="13"/>
+  <Item ID="1563001" Level="5" Type="0" Str="5" Skill="14"/>
+  <Item ID="1563001" Level="6" Type="0" Str="6" Skill="15"/>
+  <Item ID="1563001" Level="7" Type="0" Str="7" Skill="16"/>
+  <Item ID="1563001" Level="8" Type="0" Str="8" Skill="17"/>
+  <Item ID="1563001" Level="9" Type="0" Str="9" Skill="18"/>
+  <Item ID="1563001" Level="10" Type="0" Str="10" Skill="19"/>
+   <!--14:Name:瞬移冲锋击-->
+  <Item ID="1563002" Level="1" Type="0" Hab="1" Skill="20"/>
+  <Item ID="1563002" Level="2" Type="0" Hab="2" Skill="21"/>
+  <Item ID="1563002" Level="3" Type="0" Hab="3" Skill="22"/>
+  <Item ID="1563002" Level="4" Type="0" Hab="4" Skill="23"/>
+  <Item ID="1563002" Level="5" Type="0" Hab="5" Skill="24"/>
+  <Item ID="1563002" Level="6" Type="0" Hab="6" Skill="25"/>
+  <Item ID="1563002" Level="7" Type="0" Hab="7" Skill="26"/>
+  <Item ID="1563002" Level="8" Type="0" Hab="8" Skill="27"/>
+  <Item ID="1563002" Level="9" Type="0" Hab="9" Skill="28"/>
+  <Item ID="1563002" Level="10" Type="0" Hab="10" Skill="29"/>
+   <!--15:Name:转转冲能弹-->
+  <Item ID="1563003" Level="1" Type="0" Int="1" Ali="1" Skill="30"/>
+  <Item ID="1563003" Level="2" Type="0" Int="2" Ali="2" Skill="31"/>
+  <Item ID="1563003" Level="3" Type="0" Int="3" Ali="3" Skill="32"/>
+  <Item ID="1563003" Level="4" Type="0" Int="4" Ali="4" Skill="33"/>
+  <Item ID="1563003" Level="5" Type="0" Int="5" Ali="5" Skill="34"/>
+  <Item ID="1563003" Level="6" Type="0" Int="6" Ali="6" Skill="35"/>
+  <Item ID="1563003" Level="7" Type="0" Int="7" Ali="7" Skill="36"/>
+  <Item ID="1563003" Level="8" Type="0" Int="8" Ali="8" Skill="37"/>
+  <Item ID="1563003" Level="9" Type="0" Int="9" Ali="9" Skill="38"/>
+  <Item ID="1563003" Level="10" Type="0" Int="10" Ali="10" Skill="39"/>
+   <!--16:Name:爱心祝福术-->
+  <Item ID="1563004" Level="1" Type="0" Int="1" Hab="1" Skill="40"/>
+  <Item ID="1563004" Level="2" Type="0" Int="2" Hab="2" Skill="41"/>
+  <Item ID="1563004" Level="3" Type="0" Int="3" Hab="3" Skill="42"/>
+  <Item ID="1563004" Level="4" Type="0" Int="4" Hab="4" Skill="43"/>
+  <Item ID="1563004" Level="5" Type="0" Int="5" Hab="5" Skill="44"/>
+  <Item ID="1563004" Level="6" Type="0" Int="6" Hab="6" Skill="45"/>
+  <Item ID="1563004" Level="7" Type="0" Int="7" Hab="7" Skill="46"/>
+  <Item ID="1563004" Level="8" Type="0" Int="8" Hab="8" Skill="47"/>
+  <Item ID="1563004" Level="9" Type="0" Int="9" Hab="9" Skill="48"/>
+  <Item ID="1563004" Level="10" Type="0" Int="10" Hab="10" Skill="49"/>
+   <!--17:Name:装备-->
+  <Item ID="1573000" Level="1" Type="0" Str="1" Hab="1"/>
+  <Item ID="1573001" Level="1" Type="0" Int="1" Str="2"/>
+  <Item ID="1573002" Level="1" Type="0" Ali="2" Int="2"/>
+  <Item ID="1573003" Level="1" Type="0" Str="2" Ali="2"/>
+  <Item ID="1573004" Level="1" Type="0" Str="2" Int="3"/>
+  <Item ID="1573005" Level="1" Type="0" Int="3" Ali="2"/>
+  <Item ID="1573006" Level="1" Type="0" Int="20" Ali="10"/>
+  <Item ID="1573007" Level="1" Type="0" Str="10" Hab="10"/>
+  <Item ID="1573008" Level="1" Type="0" Ali="10"/>
+  <Item ID="1573009" Level="1" Type="0" Str="10"/>
+  <Item ID="1573010" Level="1" Type="0" Int="10"/>
+  <Item ID="1573011" Level="1" Type="0" Hab="10"/>
+  <Item ID="1573012" Level="1" Type="0" Hab="10" Int="10" Str="10" Ali="10"/>
+   <!--18:Name:大叶包围术-->
+  <Item ID="1563017" Level="1" Type="0" Int="1" Ali="1" Skill="66"/>
+  <Item ID="1563017" Level="2" Type="0" Int="2" Ali="2" Skill="67"/>
+  <Item ID="1563017" Level="3" Type="0" Int="3" Ali="3" Skill="68"/>
+  <Item ID="1563017" Level="4" Type="0" Int="4" Ali="4" Skill="69"/>
+  <Item ID="1563017" Level="5" Type="0" Int="5" Ali="5" Skill="70"/>
+  <Item ID="1563017" Level="6" Type="0" Int="6" Ali="6" Skill="71"/>
+  <Item ID="1563017" Level="7" Type="0" Int="7" Ali="7" Skill="72"/>
+  <Item ID="1563017" Level="8" Type="0" Int="8" Ali="8" Skill="73"/>
+  <Item ID="1563017" Level="9" Type="0" Int="9" Ali="9" Skill="74"/>
+  <Item ID="1563017" Level="10" Type="0" Int="10" Ali="10" Skill="75"/>
+   <!--19:Name:绵绵神掌-->
+  <Item ID="1563018" Level="1" Type="0" Int="1" Hab="1" Skill="76"/>
+  <Item ID="1563018" Level="2" Type="0" Int="2" Hab="2" Skill="77"/>
+  <Item ID="1563018" Level="3" Type="0" Int="3" Hab="3" Skill="78"/>
+  <Item ID="1563018" Level="4" Type="0" Int="4" Hab="4" Skill="79"/>
+  <Item ID="1563018" Level="5" Type="0" Int="5" Hab="5" Skill="80"/>
+  <Item ID="1563018" Level="6" Type="0" Int="6" Hab="6" Skill="81"/>
+  <Item ID="1563018" Level="7" Type="0" Int="7" Hab="7" Skill="82"/>
+  <Item ID="1563018" Level="8" Type="0" Int="8" Hab="8" Skill="83"/>
+  <Item ID="1563018" Level="9" Type="0" Int="9" Hab="9" Skill="84"/>
+  <Item ID="1563018" Level="10" Type="0" Int="10" Hab="10" Skill="85"/>
+   <!--20:Name:棒槌敲敲-->
+  <Item ID="1563019" Level="1" Type="0" Int="1" Str="1" Skill="86"/>
+  <Item ID="1563019" Level="2" Type="0" Int="2" Str="2" Skill="87"/>
+  <Item ID="1563019" Level="3" Type="0" Int="3" Str="3" Skill="88"/>
+  <Item ID="1563019" Level="4" Type="0" Int="4" Str="4" Skill="89"/>
+  <Item ID="1563019" Level="5" Type="0" Int="5" Str="5" Skill="90"/>
+  <Item ID="1563019" Level="6" Type="0" Int="6" Str="6" Skill="91"/>
+  <Item ID="1563019" Level="7" Type="0" Int="7" Str="7" Skill="92"/>
+  <Item ID="1563019" Level="8" Type="0" Int="8" Str="8" Skill="93"/>
+  <Item ID="1563019" Level="9" Type="0" Int="9" Str="9" Skill="94"/>
+  <Item ID="1563019" Level="10" Type="0" Int="10" Str="10" Skill="95"/>
+   <!--21:Name:神目术-->
+  <Item ID="1563020" Level="1" Type="0" Int="1" Str="1" Skill="96"/>
+  <Item ID="1563020" Level="2" Type="0" Int="2" Str="2" Skill="97"/>
+  <Item ID="1563020" Level="3" Type="0" Int="3" Str="3" Skill="98"/>
+  <Item ID="1563020" Level="4" Type="0" Int="4" Str="4" Skill="99"/>
+  <Item ID="1563020" Level="5" Type="0" Int="5" Str="5" Skill="100"/>
+  <Item ID="1563020" Level="6" Type="0" Int="6" Str="6" Skill="101"/>
+  <Item ID="1563020" Level="7" Type="0" Int="7" Str="7" Skill="102"/>
+  <Item ID="1563020" Level="8" Type="0" Int="8" Str="8" Skill="103"/>
+  <Item ID="1563020" Level="9" Type="0" Int="9" Str="9" Skill="104"/>
+  <Item ID="1563020" Level="10" Type="0" Int="10" Str="10" Skill="105"/>
+   <!--22:Name:果果冲击波-->
+  <Item ID="1563021" Level="1" Type="0" Int="1" Str="1" Skill="106"/>
+  <Item ID="1563021" Level="2" Type="0" Int="2" Str="2" Skill="107"/>
+  <Item ID="1563021" Level="3" Type="0" Int="3" Str="3" Skill="108"/>
+  <Item ID="1563021" Level="4" Type="0" Int="4" Str="4" Skill="109"/>
+  <Item ID="1563021" Level="5" Type="0" Int="5" Str="5" Skill="110"/>
+  <Item ID="1563021" Level="6" Type="0" Int="6" Str="6" Skill="111"/>
+  <Item ID="1563021" Level="7" Type="0" Int="7" Str="7" Skill="112"/>
+  <Item ID="1563021" Level="8" Type="0" Int="8" Str="8" Skill="113"/>
+  <Item ID="1563021" Level="9" Type="0" Int="9" Str="9" Skill="114"/>
+  <Item ID="1563021" Level="10" Type="0" Int="10" Str="10" Skill="115"/>
+   <!--23:Name:动感光球-->
+  <Item ID="1563022" Level="1" Type="0" Int="1" Str="2" Skill="132"/>
+  <Item ID="1563022" Level="2" Type="0" Int="2" Str="3" Skill="133"/>
+  <Item ID="1563022" Level="3" Type="0" Int="3" Str="4" Skill="134"/>
+  <Item ID="1563022" Level="4" Type="0" Int="4" Str="5" Skill="135"/>
+  <Item ID="1563022" Level="5" Type="0" Int="5" Str="6" Skill="136"/>
+  <Item ID="1563022" Level="6" Type="0" Int="6" Str="7" Skill="137"/>
+  <Item ID="1563022" Level="7" Type="0" Int="7" Str="8" Skill="138"/>
+  <Item ID="1563022" Level="8" Type="0" Int="8" Str="9" Skill="139"/>
+  <Item ID="1563022" Level="9" Type="0" Int="9" Str="10" Skill="140"/>
+  <Item ID="1563022" Level="10" Type="0" Int="10" Str="11" Skill="141"/>
+   <!--24:Name:地源之力-->
+  <Item ID="1563023" Level="1" Type="0" Int="1" Str="2" Skill="142"/>
+  <Item ID="1563023" Level="2" Type="0" Int="2" Str="3" Skill="143"/>
+  <Item ID="1563023" Level="3" Type="0" Int="3" Str="4" Skill="144"/>
+  <Item ID="1563023" Level="4" Type="0" Int="4" Str="5" Skill="145"/>
+  <Item ID="1563023" Level="5" Type="0" Int="5" Str="6" Skill="146"/>
+  <Item ID="1563023" Level="6" Type="0" Int="6" Str="7" Skill="147"/>
+  <Item ID="1563023" Level="7" Type="0" Int="7" Str="8" Skill="148"/>
+  <Item ID="1563023" Level="8" Type="0" Int="8" Str="9" Skill="149"/>
+  <Item ID="1563023" Level="9" Type="0" Int="9" Str="10" Skill="150"/>
+  <Item ID="1563023" Level="10" Type="0" Int="10" Str="11" Skill="151"/>
+   <!--25:Name:闪电波-->
+  <Item ID="1563024" Level="1" Type="0" Int="1" Ali="2" Skill="152"/>
+  <Item ID="1563024" Level="2" Type="0" Int="2" Ali="3" Skill="153"/>
+  <Item ID="1563024" Level="3" Type="0" Int="3" Ali="4" Skill="154"/>
+  <Item ID="1563024" Level="4" Type="0" Int="4" Ali="5" Skill="155"/>
+  <Item ID="1563024" Level="5" Type="0" Int="5" Ali="6" Skill="156"/>
+  <Item ID="1563024" Level="6" Type="0" Int="6" Ali="7" Skill="157"/>
+  <Item ID="1563024" Level="7" Type="0" Int="7" Ali="8" Skill="158"/>
+  <Item ID="1563024" Level="8" Type="0" Int="8" Ali="9" Skill="159"/>
+  <Item ID="1563024" Level="9" Type="0" Int="9" Ali="10" Skill="160"/>
+  <Item ID="1563024" Level="10" Type="0" Int="10" Ali="11" Skill="161"/>
+   <!--26:Name:黑风迷雾-->
+  <Item ID="1563025" Level="1" Type="0" Int="1" Ali="2" Skill="162"/>
+  <Item ID="1563025" Level="2" Type="0" Int="2" Ali="3" Skill="163"/>
+  <Item ID="1563025" Level="3" Type="0" Int="3" Ali="4" Skill="164"/>
+  <Item ID="1563025" Level="4" Type="0" Int="4" Ali="5" Skill="165"/>
+  <Item ID="1563025" Level="5" Type="0" Int="5" Ali="6" Skill="166"/>
+  <Item ID="1563025" Level="6" Type="0" Int="6" Ali="7" Skill="167"/>
+  <Item ID="1563025" Level="7" Type="0" Int="7" Ali="8" Skill="168"/>
+  <Item ID="1563025" Level="8" Type="0" Int="8" Ali="9" Skill="169"/>
+  <Item ID="1563025" Level="9" Type="0" Int="9" Ali="10" Skill="170"/>
+  <Item ID="1563025" Level="10" Type="0" Int="10" Ali="11" Skill="171"/>
+   <!--27:Name:磁铁之力-->
+  <Item ID="1563026" Level="1" Type="0" Int="3" Hab="3" Skill="172"/>
+  <Item ID="1563026" Level="2" Type="0" Int="4" Hab="4" Skill="173"/>
+  <Item ID="1563026" Level="3" Type="0" Int="5" Hab="5" Skill="174"/>
+  <Item ID="1563026" Level="4" Type="0" Int="6" Hab="6" Skill="175"/>
+  <Item ID="1563026" Level="5" Type="0" Int="7" Hab="7" Skill="176"/>
+  <Item ID="1563026" Level="6" Type="0" Int="8" Hab="8" Skill="177"/>
+  <Item ID="1563026" Level="7" Type="0" Int="9" Hab="9" Skill="178"/>
+  <Item ID="1563026" Level="8" Type="0" Int="10" Hab="10" Skill="179"/>
+  <Item ID="1563026" Level="9" Type="0" Int="11" Hab="11" Skill="180"/>
+  <Item ID="1563026" Level="10" Type="0" Int="12" Hab="12" Skill="181"/>
+   <!--28:Name:大力拳-->
+  <Item ID="1563027" Level="1" Type="0" Int="3" Hab="3" Skill="182"/>
+  <Item ID="1563027" Level="2" Type="0" Int="4" Hab="4" Skill="183"/>
+  <Item ID="1563027" Level="3" Type="0" Int="5" Hab="5" Skill="184"/>
+  <Item ID="1563027" Level="4" Type="0" Int="6" Hab="6" Skill="185"/>
+  <Item ID="1563027" Level="5" Type="0" Int="7" Hab="7" Skill="186"/>
+  <Item ID="1563027" Level="6" Type="0" Int="8" Hab="8" Skill="187"/>
+  <Item ID="1563027" Level="7" Type="0" Int="9" Hab="9" Skill="188"/>
+  <Item ID="1563027" Level="8" Type="0" Int="10" Hab="10" Skill="189"/>
+  <Item ID="1563027" Level="9" Type="0" Int="11" Hab="11" Skill="190"/>
+  <Item ID="1563027" Level="10" Type="0" Int="12" Hab="12" Skill="191"/>
+   <!--29:Name:泡泡术-->
+  <Item ID="1563028" Level="1" Type="0" Int="2" Ali="2" Skill="225"/>
+  <Item ID="1563028" Level="2" Type="0" Int="3" Ali="3" Skill="226"/>
+  <Item ID="1563028" Level="3" Type="0" Int="4" Ali="4" Skill="227"/>
+  <Item ID="1563028" Level="4" Type="0" Int="5" Ali="5" Skill="228"/>
+  <Item ID="1563028" Level="5" Type="0" Int="6" Ali="6" Skill="229"/>
+  <Item ID="1563028" Level="6" Type="0" Int="7" Ali="7" Skill="230"/>
+  <Item ID="1563028" Level="7" Type="0" Int="8" Ali="8" Skill="231"/>
+  <Item ID="1563028" Level="8" Type="0" Int="9" Ali="9" Skill="232"/>
+  <Item ID="1563028" Level="9" Type="0" Int="10" Ali="10" Skill="233"/>
+  <Item ID="1563028" Level="10" Type="0" Int="11" Ali="11" Skill="234"/>
+   <!--30:Name:翻天钳-->
+  <Item ID="1563029" Level="1" Type="0" Int="3" Str="3" Skill="235"/>
+  <Item ID="1563029" Level="2" Type="0" Int="4" Str="4" Skill="236"/>
+  <Item ID="1563029" Level="3" Type="0" Int="5" Str="5" Skill="237"/>
+  <Item ID="1563029" Level="4" Type="0" Int="6" Str="6" Skill="238"/>
+  <Item ID="1563029" Level="5" Type="0" Int="7" Str="7" Skill="239"/>
+  <Item ID="1563029" Level="6" Type="0" Int="8" Str="8" Skill="240"/>
+  <Item ID="1563029" Level="7" Type="0" Int="9" Str="9" Skill="241"/>
+  <Item ID="1563029" Level="8" Type="0" Int="10" Str="10" Skill="242"/>
+  <Item ID="1563029" Level="9" Type="0" Int="11" Str="11" Skill="243"/>
+  <Item ID="1563029" Level="10" Type="0" Int="12" Str="12" Skill="244"/>
+   <!--31:Name:玄幻火力圈-->
+  <Item ID="1563030" Level="1" Type="0" Int="3" Str="3" Skill="245"/>
+  <Item ID="1563030" Level="2" Type="0" Int="4" Str="4" Skill="246"/>
+  <Item ID="1563030" Level="3" Type="0" Int="5" Str="5" Skill="247"/>
+  <Item ID="1563030" Level="4" Type="0" Int="6" Str="6" Skill="248"/>
+  <Item ID="1563030" Level="5" Type="0" Int="7" Str="7" Skill="249"/>
+  <Item ID="1563030" Level="6" Type="0" Int="8" Str="8" Skill="250"/>
+  <Item ID="1563030" Level="7" Type="0" Int="9" Str="9" Skill="251"/>
+  <Item ID="1563030" Level="8" Type="0" Int="10" Str="10" Skill="252"/>
+  <Item ID="1563030" Level="9" Type="0" Int="11" Str="11" Skill="253"/>
+  <Item ID="1563030" Level="10" Type="0" Int="12" Str="12" Skill="254"/>
+  </ItemRoot>

@@ -1,0 +1,10 @@
+#!/bin/bash
+cpp ~/DB/include/proto.h -DMK_PROTO_DOC >l.h 
+ctags l.h --sort=no
+sed  -i -e "s/l\.h\t//" tags
+cat ~/DB/ser/src/*.cpp > ./func_source.cpp
+
+./gendoc.py > ~/f.html
+scp -2 ~/f.html  mole@10.1.1.5:/var/www/
+
+rm -f l.h ./tags ./func_source.cpp

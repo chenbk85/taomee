@@ -1,0 +1,361 @@
+<SurfRidingMap>
+	<TileGroup>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="1" BarType="7" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="1" BarType="8" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="1" BarType="9" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="1" BarType="7" />
+			<BarPos Row="9" Col="1" BarType="7" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="1" BarType="10" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="1" BarType="10" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="1" BarType="1" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="1" BarType="10" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="1" BarType="3" />
+			<BarPos Row="5" Col="1" BarType="2" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="1" BarType="3" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="0" BarType="7" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="0" BarType="8" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="0" BarType="9" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="0" BarType="7" />
+			<BarPos Row="9" Col="0" BarType="7" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="0" BarType="10" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="0" BarType="10" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="0" BarType="1" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="0" BarType="10" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="0" BarType="3" />
+			<BarPos Row="5" Col="0" BarType="2" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="0" BarType="3" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="7" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="8" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="9" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="7" />
+			<BarPos Row="9" Col="8" BarType="7" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="10" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="10" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="1" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="10" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="3" />
+			<BarPos Row="5" Col="8" BarType="2" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="3" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="7" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="8" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="9" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="7" />
+			<BarPos Row="9" Col="9" BarType="7" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="10" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="10" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="1" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="10" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="3" />
+			<BarPos Row="5" Col="9" BarType="2" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="3" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+	</TileGroup>
+
+	<TileGroup>
+		<Tile>
+			<BarPos Row="0" Col="0" BarType="3" />
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="3" BarType="7" />
+			<BarPos Row="5" Col="0" BarType="3" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="3" BarType="8" />
+			<BarPos Row="9" Col="0" BarType="3" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="0" BarType="3" />
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="3" BarType="9" />
+			<BarPos Row="5" Col="0" BarType="3" />
+			<BarPos Row="5" Col="3" BarType="10" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="3" BarType="10" />
+			<BarPos Row="9" Col="0" BarType="3" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="0" BarType="3" />
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="3" BarType="1" />
+			<BarPos Row="5" Col="0" BarType="3" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="3" BarType="2" />
+			<BarPos Row="9" Col="0" BarType="3" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="0" Col="9" BarType="3" />
+			<BarPos Row="3" Col="6" BarType="7" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="5" Col="9" BarType="3" />
+			<BarPos Row="7" Col="6" BarType="8" />
+			<BarPos Row="9" Col="3" BarType="3" />
+			<BarPos Row="9" Col="9" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="0" Col="9" BarType="3" />
+			<BarPos Row="3" Col="6" BarType="9" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="5" Col="6" BarType="10" />
+			<BarPos Row="5" Col="9" BarType="3" />
+			<BarPos Row="7" Col="6" BarType="10" />
+			<BarPos Row="9" Col="3" BarType="3" />
+			<BarPos Row="9" Col="9" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="0" Col="9" BarType="3" />
+			<BarPos Row="3" Col="6" BarType="1" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="5" Col="9" BarType="3" />
+			<BarPos Row="7" Col="6" BarType="2" />
+			<BarPos Row="9" Col="3" BarType="3" />
+			<BarPos Row="9" Col="9" BarType="3" />
+		</Tile>
+	</TileGroup>
+
+	<TileGroup>
+		<Tile>
+			<BarPos Row="0" Col="2" BarType="3" />
+			<BarPos Row="0" Col="5" BarType="8" />
+			<BarPos Row="0" Col="8" BarType="3" />
+			<BarPos Row="3" Col="0" BarType="3" />
+			<BarPos Row="3" Col="2" BarType="7" />
+			<BarPos Row="3" Col="5" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="10" />
+			<BarPos Row="3" Col="9" BarType="3" />
+			<BarPos Row="7" Col="0" BarType="3" />
+			<BarPos Row="7" Col="2" BarType="10" />
+			<BarPos Row="7" Col="5" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="9" />
+			<BarPos Row="7" Col="9" BarType="3" />
+			<BarPos Row="9" Col="5" BarType="7" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="2" BarType="3" />
+			<BarPos Row="0" Col="5" BarType="9" />
+			<BarPos Row="0" Col="8" BarType="3" />
+			<BarPos Row="3" Col="0" BarType="3" />
+			<BarPos Row="3" Col="2" BarType="10" />
+			<BarPos Row="3" Col="5" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="7" />
+			<BarPos Row="3" Col="9" BarType="3" />
+			<BarPos Row="7" Col="0" BarType="3" />
+			<BarPos Row="7" Col="2" BarType="10" />
+			<BarPos Row="7" Col="5" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="8" />
+			<BarPos Row="7" Col="9" BarType="3" />
+			<BarPos Row="9" Col="5" BarType="7" />
+		</Tile>
+
+		<Tile>
+			<BarPos Row="0" Col="8" BarType="3" />
+			<BarPos Row="0" Col="5" BarType="7" />
+			<BarPos Row="0" Col="2" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="8" />
+			<BarPos Row="3" Col="5" BarType="3" />
+			<BarPos Row="3" Col="2" BarType="10" />
+			<BarPos Row="3" Col="0" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="10" />
+			<BarPos Row="7" Col="5" BarType="3" />
+			<BarPos Row="7" Col="2" BarType="9" />
+			<BarPos Row="7" Col="0" BarType="3" />
+			<BarPos Row="9" Col="5" BarType="7" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="8" BarType="3" />
+			<BarPos Row="0" Col="5" BarType="7" />
+			<BarPos Row="0" Col="2" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="7" />
+			<BarPos Row="3" Col="5" BarType="3" />
+			<BarPos Row="3" Col="2" BarType="10" />
+			<BarPos Row="3" Col="0" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="8" />
+			<BarPos Row="7" Col="5" BarType="3" />
+			<BarPos Row="7" Col="2" BarType="10" />
+			<BarPos Row="7" Col="0" BarType="3" />
+			<BarPos Row="9" Col="5" BarType="9" />
+		</Tile>
+
+		<Tile>
+			<BarPos Row="0" Col="8" BarType="3" />
+			<BarPos Row="0" Col="5" BarType="7" />
+			<BarPos Row="0" Col="2" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="7" />
+			<BarPos Row="3" Col="8" BarType="8" />
+			<BarPos Row="3" Col="5" BarType="3" />
+			<BarPos Row="3" Col="2" BarType="10" />
+			<BarPos Row="3" Col="0" BarType="3" />
+			<BarPos Row="7" Col="9" BarType="3" />
+			<BarPos Row="7" Col="8" BarType="10" />
+			<BarPos Row="7" Col="5" BarType="3" />
+			<BarPos Row="7" Col="2" BarType="9" />
+			<BarPos Row="7" Col="0" BarType="7" />
+			<BarPos Row="9" Col="5" BarType="7" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="8" BarType="3" />
+			<BarPos Row="0" Col="5" BarType="7" />
+			<BarPos Row="0" Col="2" BarType="3" />
+			<BarPos Row="3" Col="9" BarType="3" />
+			<BarPos Row="3" Col="8" BarType="7" />
+			<BarPos Row="3" Col="5" BarType="3" />
+			<BarPos Row="3" Col="2" BarType="10" />
+			<BarPos Row="3" Col="0" BarType="7" />
+			<BarPos Row="7" Col="9" BarType="7" />
+			<BarPos Row="7" Col="8" BarType="8" />
+			<BarPos Row="7" Col="5" BarType="3" />
+			<BarPos Row="7" Col="2" BarType="10" />
+			<BarPos Row="7" Col="0" BarType="3" />
+			<BarPos Row="9" Col="5" BarType="9" />
+		</Tile>
+	</TileGroup>
+
+	<TileGroup>
+		<Tile>
+			<BarPos Row="0" Col="0" BarType="3" />
+			<BarPos Row="0" Col="6" BarType="3" />
+			<BarPos Row="3" Col="3" BarType="7" />
+			<BarPos Row="5" Col="0" BarType="4" />
+			<BarPos Row="5" Col="6" BarType="3" />
+			<BarPos Row="7" Col="3" BarType="8" />
+			<BarPos Row="9" Col="0" BarType="3" />
+			<BarPos Row="9" Col="6" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="0" BarType="3" />
+			<BarPos Row="3" Col="3" BarType="7" />
+			<BarPos Row="5" Col="0" BarType="3" />
+			<BarPos Row="5" Col="6" BarType="5" />
+			<BarPos Row="7" Col="3" BarType="8" />
+			<BarPos Row="9" Col="0" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="9" BarType="3" />
+			<BarPos Row="0" Col="3" BarType="3" />
+			<BarPos Row="3" Col="6" BarType="7" />
+			<BarPos Row="5" Col="9" BarType="4" />
+			<BarPos Row="5" Col="3" BarType="3" />
+			<BarPos Row="7" Col="6" BarType="8" />
+			<BarPos Row="9" Col="9" BarType="3" />
+			<BarPos Row="9" Col="3" BarType="3" />
+		</Tile>
+		<Tile>
+			<BarPos Row="0" Col="9" BarType="3" />
+			<BarPos Row="3" Col="6" BarType="7" />
+			<BarPos Row="5" Col="9" BarType="3" />
+			<BarPos Row="5" Col="3" BarType="5" />
+			<BarPos Row="7" Col="6" BarType="8" />
+			<BarPos Row="9" Col="9" BarType="3" />
+		</Tile>
+	</TileGroup>
+</SurfRidingMap>

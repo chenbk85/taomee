@@ -1,0 +1,26 @@
+CC = g++
+WORKDIR=$(HOME)/DB
+CFLAGS  = -Wall -pipe -DLOG_PROTO_FLAG -DDEBUG -D_NEW_LIC -g -D_GNU_SOURCE  -D_REENTRANT
+#CFLAGS  = -Wall -pipe -DDEBUG -D_NEW_LIC -g -D_GNU_SOURCE  -D_REENTRANT
+#CFLAGS  = -Wall -pipe -D_NEW_LIC -g -D_GNU_SOURCE -shared -D_REENTRANT
+LIB 	= -lproto  -lpub  -lpthread
+LIBDIR 	= -L$(WORKDIR)/lib
+INCLUDE = -I$(WORKDIR)/include
+
+TARGETS= liblogproto.a 
+TARGETSOBJ= Cclientproto.o 
+TT=tt
+TTFILE=ttfile
+TTOBJ=t.o 
+
+all: $(TARGETS)   clean
+	
+$(TARGETS): $(TARGETSOBJ)  
+	ar -rv  $@ $(TARGETSOBJ)  $(WORKDIR)/lib/libpub.a
+	mv $(TARGETS) $(WORKDIR)/lib 
+
+.cpp.o:
+	$(CC)  $(CFLAGS) -c $(INCLUDE) $<
+
+clean:
+	rm -f *.o 

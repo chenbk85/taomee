@@ -1,0 +1,844 @@
+addcharm    调整魅力(+/-) 	  		
+adddamee 	调整大米(+/-) 	  		
+addexp		调整经验(+/-) 	  
+addiq		调整智慧(+/-) 	  
+addr	    地址	
+addr_city	 城市编号	
+addr_province	省份编号	
+addr_type	    地址类型	
+addstrong	调整力量(+/-)	
+add_succ_flag  是否添加成功(0:false,1:true)	
+add_value	调整数值(+/-)	
+addxiaomee		调整小米(+/-)	
+adminid	  管理员编号	
+amdinid		管理员编号	
+answer	 答案	
+attireid 物品ID		
+attiretype  物品类型(0:装扮,1:小屋,2:家园, 4:牧场, 6:吉吉乐, 7:班级, 8:汽车)
+attrid		物品ID		
+automonthed		
+birthday	生日	
+boardid	 面板ID	0:记者社 1:音乐 2:涂鸦
+buf		 
+cachedate		 
+cardid	 	
+cardtype		
+changeflag	
+changvalue  修改value(+/-) 	 		
+charm	 魅力值	
+childcount	新的大使多少个下线	 
+childid		下线ID 
+color	   颜色	
+count	   个数	
+count_all	  总共个数	
+count_in_db		
+cup1		
+cup2		
+cup3		
+cup_item		
+cup_list		
+cup_type		
+damee		
+damee_item		
+date	 	日期 		
+deal_date		
+dealflag		
+deal_hour		
+deal_minute		
+deal_type		
+def_flag	 	预定义的flag
+def_usetime	 预定义的usetime
+desc		
+email	 邮箱	
+emailid	 邮件ID
+email_noread   邮箱未读个数 		
+email_unread	邮箱未读个数 			
+endattireid	   查询终止ID(不包括)	
+enddate	          终止时间	
+end_taskid		
+endtime		 终止时间	
+end_type		
+exp				经验	
+fiend_list		
+flag		 标志
+flag1		 标志1
+flag2		标志2
+flower		
+friendcount		 好友个数
+frienditem		
+gameid	     游戏ID	
+groupcount		
+groupid		
+group_item		
+hopedate     许愿时间		
+hot				小屋热度	
+hungry	    饥饿值	
+id			编号	
+index		编号	
+info		
+info_ex		
+interest	 兴趣	  
+ip		    IP地址			
+iq			智慧	
+is_existed	0:不存在,1:存在
+item		
+itemlen	     	
+item_msgboard		
+key		
+leavedamee		
+leave_damee		
+len	        长度	
+list		
+logdate	    时间	
+mail_number  邮编		
+map		
+mapid	    地图编号	
+maxcount	 最大允许值	
+maxvalue		最大允许值	
+mobile	  手机	
+monthcount		
+month_duedate		
+month_enabledate		
+month_nexterrcount		
+month_paytype		
+months		
+month_used		
+msg	    消息 
+msgid	 消息ID
+msglen 消息长度	
+msglist	 消息列表	
+mud	        泥巴
+newcount    要换多少个
+new_email	新邮箱	
+newnick		新昵称
+newpasswd   新密码
+next_startdate		
+next_startindex		
+nick	 昵称	
+noread_count	未读个数
+nousedcount	 未使用个数	
+objuserid	 要举报的米米号
+Ol_count	  在线总次数	
+oldcount	 要原有的多少个来换
+old_email	 原有的邮箱名
+oldpasswd	 原有的密码	
+Ol_last	   最后一次登陆的时间	
+Ol_time    在线总时长
+Ol_today	 最后一次登陆的那天在线时长	
+one_count	 	
+onlinetime	 本次在线时间	
+operatetype	  类型:0:减少总个数.<br />1:增加总个数..<br />2:已使用转成未使用<br />3:未使用转成已使用.<br />4:已使用转成未使用并将减少总个数
+out_transid	 	
+parent_email  父母邮箱		
+parentid		摩尔大使中的上线
+passwd	     密码	
+paypasswd	 支付密码	
+paytype	       	
+petbirthday	 注册时间	
+petcolor	 摩尔颜色	
+petid	 	拉姆ID	
+pos_x	     拉姆位置X	
+pos_y		  拉姆位置Y
+price	    	
+private_msg		
+question	   问题	
+read_count	      实际的个数	
+real_add_value	 实际增加的个数 	
+reason	          原因  	
+reason1_count		
+reason2_count		
+reason3_count		
+reason4_count		
+reason_ex	原因_ex
+recv_id	      接收者ID     	
+recv_type		许愿类型	
+recv_type_name	许愿类型名称
+reg_addr_type	  注册渠道类型	
+register_serial_id		
+reportlen	  	
+reportmsg		
+sanitary	清洁值	
+score		 分数
+senderid	 发送者ID		
+sendernick		 发送者昵称	
+send_id	   发送者ID	
+send_nick	 发送者昵称	
+sendtime	 发送时间	
+serialid		
+serial_str		
+sex	         性别	
+sicktime  生病时间 		
+signature  个性签名	 	
+skill	    技巧 	
+sort_index	 排序类型	
+spirit	      心情  	
+srcuserid	 	
+stamp	      时戳	
+startattireid	查找时开始的装扮ID
+startdate		  开始时间
+startime	  开始时间			
+startindex	 	
+start_taskid		
+starttime   开始时间		
+start_type		
+strong	 力量值	
+task	   任务ID	
+taskid	   任务ID	
+tasklist	 任务列表	
+telephone	 电话	
+thirsty 	口渴值	  	
+transid	 	
+type	  类型	
+usedamee		
+usedcount 		
+usedflag	0:未使用.1:已使用.2:所有	
+useflag		0:未使用.1:已使用.2:所有
+userid	    米米号
+usetime		
+usexiaomee  使用多少小米
+value	 数值 	
+vip	 	VIP标志
+vipflag	VIP标志
+vip_flag	VIP标志  	
+xiaomee	 小米	
+xiaomee_max	 	
+is_add_group  (0,1),1:创建群并且是群主.
+groupid	    群组ID
+memberid    成员米米号
+membercount	 成员个数
+groupname 群名称 
+groupmsg 群公告
+memberlist 成员列表
+groupownerid 群主
+opt_type   操作类型：0-4: 对v1-v5中的值加1
+water    浇水
+max_count   最多允许拿的个数 get_count   已经拿的个数 
+creategroupid 创建的群的ID
+is_seted  是否已经设置过：1:true,0:false
+creategroup_count 创建群的个数=3
+creategroup_id1 创建群id1
+creategroup_id2 创建群id2
+creategroup_id3 创建群id3
+mms_type 		类型:1:果果树,2:向导,3:送祝福
+change_type     1:摩尔豆,2:密码
+win_lose_flag   0:输 1:赢
+change_v1 		摩尔豆:当前摩尔豆.<br />密码:1.登入密码. 2.支付密码
+change_v2 		摩尔豆:物品ID.<br />密码:无
+change_value    (+/-)<br />摩尔豆:调整多少.<br />密码:1
+logtime      记录时间
+servername   服务器名字
+mapname     地图名字
+opt_count   当天投票数
+c			字符
+serverid    服务器ID
+partytime   派对时间
+partytype   派对类型
+ownerid     主人米米号
+ownerflag   主人flag
+ownercolor  主人颜色 
+ownernick   主人昵称
+pagecount   每页最多多少个
+startindex  开始ID
+init_lowercard_count 初始几张是有效的
+win_count   赢的次数
+lose_count  输的次数
+lower_count  低级卡片的个数
+super_count  高级卡片的个数
+cards        卡片列表
+is_inited	0:没有初始化,1:已经初始化
+is_succ     操作是否成功： 0:NO , 1:YES
+cardid   卡片ID
+old_childcount  摩尔大使原有的下线
+spring_msg  春联
+change_gold  调整金元宝(+/-) 
+change_silver 调整银元宝(+/-) 
+gold  金元宝
+silver 银元宝
+attire_usedflag  0:未使用,1:已使用,2:未使用+已使用
+is_first_set     是否是首次设置：1:true,0:false
+diarydate   日记日期（例如20090101）
+feeling     心情描述
+public_flag 公开标志0：no,1:yes
+leave_xiaomee  剩余小米
+buy_attireid   购买的装扮ID
+buy_count  购买的个数
+cur_count   当前次数
+usedcount   使用中的个数
+pet_groupid  拉姆队伍ID
+sportstype   运动项目类型 1:马拉松,2:游泳,3:跳高 bool_value  1:是 ,0:否
+allcount   总数
+user_get_info_ex_out_item_1  用户穿在身上的装扮
+user_get_info_ex_out_item_2  宠物的相关信息 
+user_get_info_ex_out_item_3  宠物穿在身上的装扮
+user_swap_zyattire_list_in_item_1 要换掉的物品 
+user_swap_zyattire_list_in_item_2 要换成的物品 
+user_set_zy_attirelist_in_item_1  使用中的物品
+user_set_zy_attirelist_in_item_2  未使用的物品
+time 		时间
+totalmoney 全部金额
+hometype_id 房型ID 
+timelimit   存款期限
+now_time    当前时间
+user_get_jy_out_item_2.attireid 种子类型
+user_get_jy_out_item_2.value 成长值 
+sickflag  1,表示干旱，2表示虫害，3表示既虫害又干旱
+fruitnum  果实数量
+cal_value_time 属性更新时间
+water_time 浇水时间
+kill_bug_time 除虫时间
+user_get_jy_out_item_2.status 种子健康状态标志
+mature_time 种子成熟时间
+user_get_jy_out_item_2 种子数据
+user_get_jy_out_item_1  家园装扮数据
+user_catch_fruit_out.attireid 果实ID
+get_user_out.is_bank_daoqi  存款到期 
+get_user_out.have_doing_task 对于当前用户是否有宠物接受了任务，如果有为1, 如果没有为0
+user_get_user_out.have_doing_task 对于当前用户是否有宠物接受了任务，如果有为1, 如果没有为0
+user_get_user_with_msglist_out.have_doing_task 对于当前用户是否有宠物接受了任务，如果有为1, 如果没有为0
+gameflag   每一位分别代表： 1:摩尔, 2:PP, 3:大玩国,4,DUDU, 5:小花仙, 6,功夫, 7:mole2(勇士),8:摩尔宝宝,21:哈奇
+regflag 每一位分别代表： 1:摩尔, 2:PP, 3:大玩国,4,DUDU, 5:小花仙, 6,功夫, 7:mole2(勇士),8:摩尔宝宝，21:哈奇
+game_act_flag    产品是否可以注册角色,每一位分别代表： 1:摩尔, 2:PP, 3:大玩国,4,DUDU, 5:小花仙, 6,功夫, 7:mole2(勇士),8:摩尔宝宝,21:哈奇
+gameid_flag  1:摩尔, 2:PP, 3:大玩国,4,DUDU, 5:小花仙, 6,功夫,  7:mole2(勇士),21:哈奇
+user_get_access_jylist_out.mms_opt_item.opt_type  操作:0x01:浇水 0x02:除虫
+user_access_jy_in.opt_type  操作:0x01:浇水 0x02:除虫
+user_get_info_ex2_out.flag  0x01:当前是不是VIP ,0x02:曾经是不是VIP
+user_get_vip_nick_out.vipflag  0x01:当前是不是VIP ,0x02:曾经是不是VIP
+user_get_user_all_out.vip   普通FLAG
+user_get_user_out.vip   	普通FLAG
+xiaomee_max 当天拿到的摩尔豆数目
+user_swap_list_in_item_1 交换去除的物品 
+user_swap_list_in_item_2 交换得到的物品 
+passwd_add_change_in.opt_type  1000:修改登入密码 <br>  2000:修改支付密码 <br> 01 通过原有密码修改    <br> 02: 通过密保邮箱修改 <br>  03:客服修改
+appeal_get_list_in.userid  如果大于0，state,dealtime条件无效,即查该用户的记录
+appeal_get_list_in.state  处理了没有:0全部，1未处理， 2己处理
+appeal_get_list_in.dealflag  处理情况:0全部，1不处理， 2审核通过，并发送了邮件
+appeal_get_list_in.pageid	   第几页 (每页4条)  	
+
+user_get_attire_list_in.attiretype  物品类型(0:装扮,1:小屋,2:家园,3:卡牌,4:牧场:5饲料房)
+user_get_user_pet_in.petid 为0时 得到全部的拉姆
+user_pet_get_info_out_item 宠物装扮和物品
+right 答对为1，答错为0
+question_id 题目编号
+right_count 答对的总数
+question_count 答题目的总数
+state 状态 
+fire 家园火的大小(只有火的状态为1时有效)
+pos  火的位置（只有火的状态为1时有效）
+alive_die  第一位表示家园第一次着火，第二位表示家园第一次熄灭
+user_jy_access_set_opt_in.opt_type  操作类型: 0x01 :为庄稼浇水 0x02:除虫 0x04:喂宠物 0x08:浇水灭火
+user_jy_access_set_opt_in.opt_userid 访问人 
+appeal_add_appeal_in.flag  &0x01==0x01:忘记密码.否则是被盗.0x02:是否把密码告诉他人
+appeal_add_appeal_in.why 	为什么要找回的理由
+questionnaireid 问题的题号
+sysarg_add_questionnaire_in_item.value 0x01:A,0x02:B,0x04:C,0x08:D
+profession_value 职业信息
+profession_id 职业ID[0-49]:0:向导,1:警查,2:记者,3:骑士,4:消防员
+classid 班级的ID号
+monitor 班长的ID号
+interest 兴趣
+log 创建班级时，选择的标志
+word 创建班级时，创建的字体
+color 创建班级时，选择的背景色
+name 班级的名称
+slogan  班级的口号
+member  班级成员数和各个成员的USERID
+class_add_member_in.member 要增加的成员
+class_del_member_in.member 要删除的成员
+present_msg  赠送留言
+presentid  礼品id
+monitorid 班长号
+user_get_member_out.member 加入的各个班级的号码
+class_set_state_in.state 表示班级小屋的状态，是否锁住，是否允许其他人加入
+class_get_state_out.state 得到班级小屋的状态，是否锁住，是否允许其他人加入
+classid 班级ID
+class_logo 班级标志.图片logo
+class_name 班级名称 
+class_word 班级标志中的文字ID
+class_color 班级标志中的颜色
+class_jion_flag 加入班级设置 
+class_access_flag 访问班级设置 
+class_member_count  班级成员个数
+user_class_edit_home_in_item_1 使用中的装扮数据
+user_class_edit_home_in_item_2 未使用的装扮数据
+class_firstid 首选班级ID
+user_class_get_info_out_item_1 成员数据
+user_class_get_info_out_item_2 使用中物品数据
+class_slogan  班级口号
+onwernick 所有者昵称
+thiever_id 偷取果实者的ID号
+croominfo_gen_vip_out.vip_flag 0表示不能设置为VIP，1表示能抽中VIP,2表示抽中消费卷
+background 背景
+pool_state 水池的状态,0非干旱状态，1干旱状态
+animal_id 动物种类的ID号
+user_get_farm_out_item_1.state 动物的状态，0表示良好状态，1表示饥渴状态，2表示饥饿状态，3表示即饥渴又饥饿状态
+user_farm_water_out_item_1.state 动物的状态，0表示良好状态，1表示饥渴状态，2表示饥饿状态，3表示即饥渴又饥饿状态
+user_farm_get_fish_out_item_1.state 动物的状态，0表示良好状态，1表示饥渴状态，2表示饥饿状态，3表示即饥渴又饥饿状态
+user_farm_get_all_animal_info_out_item_1.state 动物的状态，0表示良好状态，1表示饥渴状态，2表示饥饿状态，3表示即饥渴又饥饿状态
+user_farm_get_fish_out_item_1.mature_time 动物的成年时间
+user_farm_water_out_item_1.mature_time 动物的成年时间
+mature 成年时间
+animal_type 动物类型，0表示水生动物，1表示陆生动物
+user_farm_update_animal_info_in.state 动物的状态，0表示良好状态，1表示饥渴状态，2表示饥饿状态，3表示即饥渴又饥饿状态
+growth 动物的成长值
+eat_time 上次吃食时间
+drink_time 上次喝水时间
+total_output 总共的产出
+output_time 上次产出时间
+lastcal_time 上次计算成长值时间
+get_farm_out_item_1.mature_time 动物成年时间
+food_num 此种类物品的数量
+which_type 1表示请求仓库的物品，2表示请求饲料房的物品
+goods 加的饲料信息
+roominfo_check_if_gen_vip_out.vip_flag 0可以抽取，1不可以抽取
+user_farm_feedstuff_add_in.type 0表示其他人帮忙喂，1表示自己喂
+user_farm_feedstuff_add_out_header.type 0表示其他人帮忙喂，1表示自己喂
+bitid 第几位(1..32)
+farm_state 0表示农场开放，1表示陆地动物不能捕获，2表示水生动物不能捕获
+card_id 增加卡牌的ID号
+swap_flag 卡牌交换标志，0表示不处于交换状态，1表示处于交换状态
+swap_card 自己的哪种开牌交换
+need_card 需要对方交换的卡牌
+user_card_get_super_in.change_type  升级到哪种类型的卡牌
+er_card_get_card_out_item.num 卡牌的数量
+user_farm_set_state_in.state 0表示农场开放，1表示陆地动物不能偷取，2表示水生动物不能偷取, 3表示都不能偷取
+card_type 卡牌的ID号
+clothe_type 衣服的类型，1表示防护头盔 2表示见习骑士 3表示蓝色骑士 4表示紫色骑士
+clothe_waste 衣服的损耗度
+flag_bit 应该设置哪一位，0X00800000封号14天，0X01000000封号7天，0x04000000永久封号，0x02000000离线24小时
+bool_set 设置为1还是0
+user_swap_card_swap_in.type 0表示对方，1表示自己，2表示回滚
+sick_type 拉姆的得病类型，0~1bit为表示帕拉森冻伤症，2~3bit表示沸厄烫炎症，4~5bit表示皮痒痒过敏症。00表示没得过这个病，01表示正得此病，10表示已经得过此病
+roominfo_set_clothe_waste_in.value 衣服损耗度的改变值，正数表示增加，负数表示减少
+roominfo_set_point_in.value 要设置那位的数值
+mon_king_wins 	精灵王之战羸的次数  
+mon_king_losses 精灵王之战输的次数  
+cur_stages 		精灵王之战当前关卡
+teamid 火神杯的哪个队,1白熊队，2小火鸡队，3卢卡斯队
+roominfo_fire_cup_update_in.type 1表示增加金牌，2表示增加银牌，3表示增加铜牌
+check 是否要对奖牌数进行校验  1表示需要校验，0表示不需要校验
+num  增加奖牌的数目
+total_gold 总的金牌数
+total_silver 总的银牌数
+total_copper  总的铜牌数
+userid_pk    被PK者   
+userid_score 挑战者的分数
+userid_pk_score 被挑战者的分数
+is_win_flag 1表示被挑战者失败，2表示被挑战者成功
+pkflag 0x01表示胜利0x02表示失败
+user_lamu_catalog_get_in.state  1表示没加锁，2表示加锁
+user_lamu_catalog_get_out_item.state 1表示没加锁， 2表示加锁
+roominfo_work_set_in.type 1表示tom, 2表示nick 
+roominfo_work_set_out.time 打工的次数
+roominfo_work_set_out.money 打工的得到的豆豆
+user_lamu_diary_state_update_in.state  1表示没加锁，2表示加锁
+mood 选择的心情编号
+title 日记标题
+surprise 拉姆给我的惊喜
+game 我喜欢的游戏
+content 摩尔大记事
+user_lamu_catalog_get_in.start 日记的开始编号
+user_lamu_catalog_get_in.end 日记的结束编号
+lock 1表示没加锁，2表示加锁
+time_tom tom上周打工的次数
+time_nick nick上周打工的次数
+this_tom tom本周打工的次数
+this_nick nick本周打工的次数
+time_total 总的打工次数 
+work_level 打工的级别
+user_lamu_diary_edit_in.state 1表示没加锁，2表示已经加锁
+stage_flag 1表示接第一阶段的任务，2表示接第二阶段任务, 3表示接考核任务 
+stage 1表示第一阶段任务结束，2表示第二阶段任务结束, 3表示任务结束
+step 1表示接了第一阶段任务，2表示第一阶段任务结束，3表示第二阶段任务开始，4表示第二阶段任务结束，5表示接了考核，6表示整个任务结束
+client  客户端存的数据
+lamu_task 参加的魔法课数目
+user_task_get_pet_task_in.petid 0时就查找这个用户的全部拉姆
+user_task_pet_first_stage_set_out.count 任务结束时返回拉姆学习的任务数目
+start_taskid 开始的任务号
+end_taskid 结束的任务号
+user_task_taskid_del_out.count 拉姆学习的魔法课程数目数
+home_type_item 房型数据：第一小屋的第一物品
+roominfo_change_present_in.change_value  礼物改变的数量（+增加，-减少）
+roominfo_get_present_num_out.num 礼物的数目
+user_farm_get_sheep_num_out.num 被领取的羊的数目 
+auto_id 汽车种类的ID号
+user_auto_insert_out.id 新插入的汽车的自增编号
+user_auto_change_attire_in.type  1表示更新引擎，2表示更新颜色
+user_auto_change_attire_in.id 汽车的自增编号
+new_value 要更换的新值
+user_auto_change_attire_out.id 被替换的物品的ID号
+user_auto_change_propery_in.id 汽车的自增编号
+user_auto_change_propery_in.type 1表示增加道具孔，2表示增加道具，3表示减少道具，4表示交换道具
+user_auto_change_propery_in.propery_id 如果为增加道具孔，为要增加的道具孔的ID号。其他为要改变道具的道具孔
+user_auto_change_propery_in.new_propery  如为增加道具孔，此值为零。如为增加道具，此值为要增加的道具ID号。如为减少道具，此值为零。如为交换道具，次值表示拿来交换的道具ID号
+oil 汽车的油量
+engine 汽车的引擎
+user_auto_get_all_out.color 汽车的颜色
+shape 汽车的外形
+oil_time 汽车上次加油时间
+user_auto_get_all_out.flag 1表示穿在身上，2表示展示
+user_auto_get_all_out.count 道具孔的数目
+propery_id  道具孔的ID号
+attire_id  道具孔里存放的道具ID号
+user_auto_get_one_info_out.color 汽车的颜色
+user_ex_get_show_auto_out.color 汽车的颜色
+skill_value 增加的熟练值
+adorn 汽车的装饰
+user_auto_get_all_out.propery.item 道具的ID号
+user_auto_get_all_out.propery.count 道具孔的数目
+user_auto_change_adron_in.type 1表示增加装饰，2表示减少装饰，3表示交换装饰
+user_auto_change_adron_in.id 汽车的编号
+adron_id 装饰的编号的孔
+user_auto_insert_in.xiaomee 购买汽车需要的豆豆
+new_adron 新增的装饰的编号
+user_get_farm_out.item_count1 动物的数目
+user_get_farm_out.item_count2 已使用物品的数目 
+user_get_farm_out.item_count1 饲料房物品的数目
+add_candy 要增加的糖果数目
+candy_num 糖果的数目 
+roominfo_get_score_candy_out.score 当天的分数（每天清楚一次）
+total_score 为班级贡献的总的分数
+candy 糖果(每天清楚一次)
+catch_candy 被抓的糖果
+user_farm_set_accestlist_in.opt_type 0x01表示捕鱼，0x02表示加饲料，0x04表示领取羊, 0x08表示孵蛋
+roominfo_rally_sign_out.team 1表示炫风贝塔队， 2表示炫风大卫队
+add_score 增加的分数
+race_num 哪一个赛道
+add_flag 是否应该增加徽章，1表示增加徽章，0表示不增加徽章
+run_flag 赛道是否全部跑完,1表示全部跑完，0表示没有
+sys_rally_update_score_in.team 1表示炫风贝塔队， 2表示炫风大卫队
+sys_rally_update_race_in.team 1表示炫风贝塔队， 2表示炫风大卫队
+sys_rally_update_race_in.index 1表示消防署赛道，2表示粒粒小广场赛道，3表示咕噜艺术街赛道，4表示西部游乐场赛道
+sys_rally_update_race_in.value 要更新的值
+sys_get_team_race_list_out.team 1表示炫风贝塔队， 2表示炫风大卫队
+race1 消防署赛道
+race2 粒粒小广场赛道
+race3 咕噜艺术街赛道
+race4 西部游乐场赛道
+sys_get_team_race_list_out_item.team 1表示炫风贝塔队， 2表示炫风大卫队
+sys_get_team_score_list_out_item.team 1表示炫风贝塔队， 2表示炫风大卫队
+user_get_user_with_msglist_out.game 火神勇士的分数
+user_get_user_with_msglist_out.work 建设卡的等级数
+stru_user_other.level VIP的等级数
+user_get_user_out.game 火神勇士的分数
+user_get_user_out.work 建设卡的等级数
+user_get_user_out.level VIP的等级数
+roominfo_rally_add_score_in.race_num 1表示消防署赛道，2表示粒粒小广场赛道，3表示咕噜艺术街赛道，4表示西部游乐场赛道
+race1_num 表示消防署赛道
+race2_num 表示粒粒小广场赛道
+race3_num 表示咕噜艺术街赛道
+race4_num 表示西部游乐场赛道
+stru_user_other.driver 驾照时间
+auto_count 此种车拥有的数量
+favor_time 计算好感度的时间
+favor 好感度
+user_farm_set_outgo_in.flag 0表示正常，1表示带出
+outgo 是否出走标志位，0表示正常，0x01表示带出, 0x02表示出逃, 0x04表示剪过羊毛, 0x08表示配对
+user_ex_set_show_auto_in.type 0表示取消展示的车，1表示设置展示的车
+runout_num 动物好感度减为零的逃跑数目
+tax 收取的利息税
+xiaomeeinterest 利息税
+rand_flag 是否随机成功
+user_bank_delete_account_out.flag 0表示在10月22之前，1表示在10月22号之后
+diff_mature 离成熟还有多长时间
+net 0表示用户每有渔网，1表示拥护渔网已经损坏，其他表示正常
+cur_grow 目前植物的成长速率
+prop_num 道具的数目
+change_candy 糖果数量是否改变
+change_prop 道具数目是否改变
+fish_type 鱼的种类
+sheep 领取羊的数量
+roominfo_change_candy_ex_out.flag 0表示不送汽车，1表示糖果数大于一百，送汽车，2表示由于没有驾照，但达到一百，不能送汽车
+earth 0表示正常，1表示处于翻地状态
+total_oil 汽车的初始油耗
+user_del_seed_in.type 0表示不需要翻地，1表示需要翻地
+plant 种植植物等级
+breed 饲养动物等级
+roominfo_change_candy_ex_out.prop 0表示糖果数足够兑换，1表示糖果数不足兑换
+user_npc_change_in.index 1表示尤尤，2表示梅森, 3，4，5，6
+user_jy_add_exp_in.type 1表示改变家园的，2表示改变牧场的。
+user_jy_add_exp_in.exp 增加的技能点 
+user_class_get_info_out_header.item1_count 成员个数
+user_egg_insert_in.pos 蛋放入的位置
+user_egg_insert_in.attireid 放入的蛋的ID号
+user_egg_fudan_in.pos 蛋的位置
+user_egg_get_info_in.pos 蛋的位置
+user_egg_get_info_out.num 蛋孵的次数
+user_egg_get_info_out.total_num 总共需要孵蛋的次数
+roominfo_pic_insert_in.type 1表示领取图纸，2表示取回图纸 
+user_greenhouse_insert_in.animal_id 动物的唯一编号
+user_greenhouse_insert_in.animal_type 动物的种类ID号
+user_greenhouse_drop_in.animal_id 动物的编号
+user_greenhouse_drop_in.animal_type  兔子的类型
+npc_favor npc的好感度 
+user_npc_task_recv_in.maxnum 任务允许接的最大次数
+user_npc_one_task_get_info_out.state  任务的状态
+user_npc_one_task_get_info_out.num 任务完成的次数
+user_npc_task_get_npc_task_out_item.state 任务的状态
+user_npc_task_get_npc_task_out_item.num 任务的接的数量
+user_egg_brood_egg_in.pos 蛋的位置
+user_egg_brood_egg_out.id 放置家园的动物编号 
+user_greenhouse_user_all_animal_out.animal_id 动物的ID编号 
+user_greenhouse_user_all_animal_out.animal_type 动物的种类编号 
+user_greenhouse_user_all_animal_out.married_time 配对时间
+married_time 配对时间
+user_npc_task_finish_out.state  任务的状态
+user_npc_task_finish_out.num 已接任务的次数
+type_count 第一字节代表type,第二个字节代表衣服的数量
+clothe_id 保存穿的衣服的ID号
+mode_score 增加的时尚分数
+fashion 时尚分数
+roominfo_cake_gift_swap_do_swap_in.cake_num 增加的蛋糕数量，正值表示添加，负值表示减去
+roominfo_cake_gift_swap_do_swap_out.statu 任务完成的状态，成功：1, 失败：0
+roominfo_cake_gift_get_out.cake_num 当前用户所有的蛋糕数目
+
+roominfo_fish_weight_get_out.total_weight 用户所有鱼的总重量
+roominfo_fish_weight_set_in.type 哪一种动物, 相应的动物ID
+roominfo_fish_weight_set_in.weight 相应动物的重量
+roominfo_fish_weight_set_out.total_weight 用户所有鱼的总重量
+user_pic_book_get_in.type 得到那种类型的图鉴，1表示鱼类
+user_pet_attire_set_used_in_header.is_colth 指定是装扮还是荣誉标志，装扮：1, 荣誉标志：0
+weight  鱼的总重量
+other_send_email_in.flag 0：销户，1：首次开通VIP，2：销户后重新开通，3：续时
+max_weight 得到最大的鱼的总重量
+sysarg_db_update_animal_limit_in.change_value 改变的动物的数目
+insect_house 昆虫房
+user_farm_set_col_in.type 1表示设置昆虫房
+user_animal_release_insect_in.type 2表示昆虫 
+user_farm_set_col_in.value 设置的数值
+animal_flag 表示动物状态的标志
+
+appeal_ex_get_state_out.state 处理情况: 1：未处理，2,已处理（不通过），3：已处理（通过） 
+appeal_ex_deal_in.state 处理情况: 1：未处理，2,已处理（不通过），3：已处理（通过） 
+pollinate_num 授粉次数
+appeal_ex_add_appeal_in.gameid 1:摩尔，2：赛尔
+appeal_ex_add_appeal_in.state  1：未处理，2,已处理（不通过），3：已处理（通过） 
+appeal_type : 0:登入密码，1：支付密码
+
+appeal_ex_add_appeal_in.realname 真实姓名
+appeal_ex_add_appeal_in.moblie 手机号码
+appeal_ex_add_appeal_in.telephone 联系电话
+appeal_ex_add_appeal_in.email 邮箱地址
+appeal_ex_add_appeal_in.games 所玩游戏
+appeal_ex_add_appeal_in. 相应产品基本信息
+appeal_ex_add_appeal_in.birth 出生日期（在洛克那儿登记的，摩尔使用）
+appeal_ex_add_appeal_in.first_login 第一次登录
+appeal_ex_add_appeal_in.last_login 最后一次登录
+appeal_ex_add_appeal_in.last_place 登录过的地点
+appeal_ex_add_appeal_in.vip 是否充值过超级拉姆
+appeal_ex_add_appeal_in.vip_type 充值方式
+appeal_ex_add_appeal_in.vip_no 充值方式所含的编号
+appeal_ex_add_appeal_in.vip_time 充值时间
+appeal_ex_add_appeal_in.mole_tasks smc任务
+appeal_ex_add_appeal_in.mole_wizardlevel 向导等级
+appeal_ex_add_appeal_in.mole_knightlevel 骑士等级
+appeal_ex_add_appeal_in.mole_islastwish 是否许过愿
+appeal_ex_add_appeal_in.mole_bankbalance1 银行存款数量范围开始
+appeal_ex_add_appeal_in.mole_bankbalance2 银行存款数量范围结束
+appeal_ex_add_appeal_in.seer_tasks 完成的任务
+appeal_ex_add_appeal_in.seer_has_teacher 是否有师傅
+appeal_ex_add_appeal_in.seer_has_student 是否有徒弟
+appeal_ex_add_appeal_in.seer_expirence1 经验分配器中的经验开始
+appeal_ex_add_appeal_in.seer_expirence2 经验分配器中的经验结束
+appeal_ex_add_appeal_in.seer_money1 赛尔豆数量范围开始
+appeal_ex_add_appeal_in.seer_money2 赛尔豆数量范围结束
+appeal_ex_add_appeal_in.seer_fairy_num1 精灵数量范围开始
+appeal_ex_add_appeal_in.seer_fairy_num2 精灵数量范围结束
+appeal_ex_add_appeal_in.seer_fairy_name 等级最高的精灵名称
+appeal_ex_add_appeal_in.seer_fairy_level 等级最高的精灵等级
+appeal_ex_add_appeal_in.seer_tower_level 勇者之塔的层数
+appeal_ex_add_appeal_in.receptid 申诉回执编号
+appeal_ex_add_appeal_in.state 处理状态
+appeal_ex_add_appeal_in.adminid 处理管理员
+appeal_ex_add_appeal_in.logtime 申诉时间
+appeal_ex_add_appeal_in.dealtime 处理时间
+pollinate_tm 授粉时间
+max_output 最大产出
+
+roominfo_penguin_egg_get_out.user_penguin_num 抽取企鹅孵蛋次数，
+roominfo_penguin_egg_get_out.user_penguin_client  户端私有数据
+roominfo_penguin_egg_set_in.user_penguin_flag  0:抽取企鹅孵蛋次数，1:客户端私有数据
+roominfo_penguin_egg_set_in.value 由user_penguin_flag类型的值 
+user_buy_many_thing_in_one_time_in_header.attire_in_where  0:装扮, 1:小屋, 2:家园, 其它未定义
+
+user_attire_get_attire_except_chest_in_item.attireid 物品ID号
+user_attire_get_attire_except_chest_out_item.attireid 物品ID号
+user_attire_get_attire_except_chest_out_item.count 相应物品在背包的个数
+
+user_pet_hot_spring_in.petid 哪个宠物泡温泉
+user_pet_hot_spring_in.attireid 消耗哪种物品
+user_pet_hot_spring_in.attire_count 消耗物品多少个
+user_pet_hot_spring_in.birthday_logic_shift_second 取得提前成长的秒数
+
+user_pet_hot_spring_out.petid 哪个宠物泡温泉
+user_pet_hot_spring_out.logic_birthday 经处理后的逻辑生日
+
+user_pet_skill_set_in.petid 哪个宠物更新
+user_pet_skill_set_in.type 更新哪个技能点:0, 火系；1, 水系；2, 木系
+user_pet_skill_set_in.n_pos 设置第n_pos位
+user_pet_skill_set_in.n_value 设置第n_pos位的值
+
+user_pet_halt_set_in.type 更新哪种宫殿:0, 火系；1, 水系；2, 木系
+user_pet_halt_set_in.height  宫殿的高度
+
+user_pet_halt_get_out.fire_height  火宫殿的高度
+user_pet_halt_get_out.water_height  水宫殿的高度
+user_pet_halt_get_out.wood_height  木宫殿的高度
+
+user_pet_task_get_by_user_in.petid 宠物编号
+user_pet_task_get_by_user_in.taskstat 任务状态：0, 未开始， 1:已经开始， 2： 已经结束
+
+user_pet_task_get_by_user_out_header.petid 宠物编号
+user_pet_task_get_by_user_out_header.taskstat 任务状态：0, 未开始， 1:已经开始， 2： 已经结束
+user_pet_task_get_by_user_out_header.count 随后的列表个数
+
+user_pet_task_get_by_user_out_item.taskid 任务编号
+
+user_use_skill_one_in.type 使用技能种系:0, 火系；1, 水系；2, 木系
+user_use_skill_one_in.pos 需要哪个位置上的物品, 可以取值：0、1、2
+user_use_skill_one_in.is_vip 当前用户是否为vip用户
+skill_flag 技能系位 0 火 1 水 2 木
+change_value 变身值
+build_level 建筑师熟练度
+professionlist 职业信息
+event_flag	事件标识
+passwd_change_way 11:注册邮箱,12:米米卡,13:密码申诉,14:密码问题,15:客服,16:原密码
+passwd_type 	1.登入密码. 2.支付密码
+roomid	餐厅id
+room_name	餐厅名称
+style_id	外部房型id
+type_id	现在都是31餐厅
+inner_style	餐厅内设ID
+channel 渠道
+condition 条件
+max_bench 最大灶台ID
+max_cooler 最大冷柜ID
+evaluate 好评度
+level 等级
+out_style 外部房型id
+off_xiaomee 离线收益
+honor_flag 荣誉标识
+dish_count 菜的记录数量
+employer_count 服务员的记录数
+em_userid 雇员米米号
+em_user_name 雇员名称
+em_petid 雇员拉姆ID
+pet_color 拉姆颜色
+pet_level 拉姆等级
+pet_skill 拉姆技能
+em_num 可以雇佣的服务员数量
+dish_id 菜的ID
+location 位置ID灶台或冷柜
+food_one 做菜材料1
+count_one 材料1需要的数量
+food_two 做菜材料2
+count_two 材料2需要的数量
+food_three 做菜材料3
+count_three 材料3需要的数量
+sale_xiaomee 一份菜的售价
+dish_num 菜的数量
+off_evaluate 离线好评度
+frameid 一条街最后一格ID
+begin_id 起始格ID
+user_frameid 用户所在的格子ID
+userinfo_login_ex_with_stat_in.ip 网络字节序(即大端字节序)
+user_teamid 队伍id
+game_reward_num 个人游戏奖励次数
+team_ranking 队伍名次
+event_num 事件完成数量
+event_count 事件完成数量
+level_5_count 五星级菜的数量
+enable_flag 0,冻结，1:解冻
+dragon_id 龙的ID
+dragonid  龙的ID
+egg_id	  龙蛋的ID
+get_dragon_list_out_item.state 0:未召唤(默认)，1:已召唤，2:冻结
+set_dragon_state_in.state 0:未召唤(默认)，1:已召唤，2:冻结
+user_set_dragon_name_in.name 飞龙名称
+roominfo_get_item_sell_in.npcid 0:流浪商人威尔,1:流浪商人索菲亚
+roominfo_add_item_sell_in.npcid 0:流浪商人威尔,1:流浪商人索菲亚
+roominfo_fire_cup_update_in.addnum 增加或减少的奖牌数
+roominfo_fire_cup_update_in.daymax 每天获得的上限值
+roominfo_fire_cup_update_out.today 最后一次操作的日期
+roominfo_fire_cup_update_out.day_left 当天剩余可获取的个数
+lamu_classroom_user_create_classroom_in.room_name 拉姆教室名称
+lamu_classroom_user_set_classroom_name_in.room_name 拉姆教室名称
+grade 拉姆教室年级
+room_id 拉姆教室id
+frame_id 拉姆教室格子
+user_lamu_classroom_create_classroom_in.room_name 拉姆教室名称
+user_lamu_classroom_set_name_in.room_name 拉姆教室名称
+user_lamu_classroom_create_classroom_in.inner_style 拉姆教室内部装饰
+user_lamu_classroom_set_inner_style_in.inner_style 拉姆教室内部装饰
+course_id 拉姆教室课程id
+user_lamu_course.score 课程的掌握程度
+lamu_info 拉姆信息
+course_info 拉姆科课程掌握情况
+lamu_id 拉姆id
+latent 潜力
+nature 性格
+lovely 亲密度
+energy 精力
+moral 品德
+intelligence 智力
+sport 体育
+art 美术
+lobar 劳动
+difficulty 困难度
+evaluate 考评
+class_sum 已教授的班级数量
+course_sum 累计上课次数
+term_left 本学期剩余课程数
+today_sum 今日累计课程数
+term_sum 本学期总的课程数
+class_flag 当前上课状态
+level_s S级考评的学生总数
+level_a A级考评的学生总数
+level_b B级考评的学生
+avg_score 历史平均分数
+user_lamu_classroom_get_course_item.level 等级
+course_cnt 累计讲课的次数
+remem_id 教学回忆的id
+got_time 教学回忆得到的时间
+member_cnt 班级人数
+name_id 拉姆名称ID
+user_lamu_classroom_lamu_info.level 拉姆阶段
+user_lamu_classroom_lamu_info.color 拉姆颜色
+user_lamu_classroom_lamu_info.skill 拉姆技能
+user_lamu_classroom_lamu_info_ex.level 拉姆阶段
+user_lamu_classroom_lamu_info_ex.color 拉姆颜色
+user_lamu_classroom_lamu_info_ex.skill 拉姆技能
+cur_course_id 正在上的课程id
+start_time 开始上课的时间
+course_time 上课的时间
+class_flag 当前状态,0基础课、1活动课、2下课、3放学、4考试
+lamu_cnt 普拉个数
+su_lamu_cnt 超拉个数
+quality 教学质量
+user_lamu_classroom_get_exam_info_out_header.score 学生评分
+exam_times 考试次数
+user_exam_prize_list.count 奖品数量
+user_lamu_course_score_list.count 考试科目数量
+score_list 考试后学生的各科成绩得分
+user_lamu_classroom_get_exam_info_out_item.score 考试总评,1/2/3/4/5/6分别对应S/A/B/C/D/作弊
+user_lamu_classroom_get_exam_info_out_item.course_cnt 考试科目数量
+lamu_count 学生人数
+graduate_time 毕业时间
+graduate_cnt 毕业人数
+great_cnt 优秀学生人数
+great_sum 已毕业的优秀学生总人数
+user_lamu_classroom_class_graduate_out_header.count 毕业去向总数
+direct_id 毕业去向id
+direct_cnt 本届此毕业去向的人数
+graduate_sum 毕业生数量
+outstand_sum 优秀毕业生人数
+user_lamu_classroom_class_end_in.end_type 0为正常下课，1为立即下课
+user_lamu_classroom_recover_lamu_attr_in.type 1精力、2亲密度
+teacher_exp 教师经验
+user_lamu_classroom_update_lamu_attr_in.type 1潜力
+months 活动期间累计充值月数 
+expire 活动结束时间 
+bonus_used 已摇奖次数 
+nourish_level 营养师熟练度
+cakeid 蛋糕id
+
+

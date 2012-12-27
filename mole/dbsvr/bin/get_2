@@ -1,0 +1,43 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import os 
+def get_2v(value):
+	mapvalue=128;
+	str_2="";
+	while (mapvalue>0):
+		#print ("%d :%d"%( value ,mapvalue)  );
+		if (value >= mapvalue):
+			str_2=str_2+"1" ;
+			value= value-mapvalue;		
+		else:
+			str_2=str_2+"0" ;
+		mapvalue=mapvalue/2
+	return str_2;
+
+def main(argv):
+	s=argv[1];	
+	vlist=s.split(".");
+	v_str=""
+	for  value in  vlist:
+		v_str += get_2v(int (value) ) ;
+	ip1=v_str;	
+
+	s=argv[2];	
+	vlist=s.split(".");
+	v_str=""
+	for value in  vlist:
+		v_str += get_2v(int (value) ) ;
+	ip2=v_str;	
+	print ip1
+	print ip2
+	i=31
+	while (True):
+		if (ip1[i] != "0" or ip2[i] != "1"   ):
+			break;
+		i=i-1
+	zw=i+1;
+	print  argv[1] + "/" + str(zw)
+
+if __name__ == "__main__":
+	main(sys.argv)

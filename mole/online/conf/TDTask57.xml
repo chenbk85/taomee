@@ -1,0 +1,83 @@
+﻿<task mapID="31" mode="1" countDown="80" starTime="4000" expScale="2" rateScale="1" losturl="swf/winswf3.swf" winurl="swf/lostswf3.swf" musicurl="dig.mp3" startStar="30" startLifes="100">
+ 	<round tips="坚持就是胜利！">	
+		<monster id="10020" pathID="4" time = "100" count="1"/>
+		<monster id="10020" pathID="2" time = "100" stime = "2500" count="1"/>		
+ 		<monster id="10020" pathID="3" time = "100" stime = "3600" count="1"/>
+	</round>
+	<round tips="坚持就是胜利！">	
+		<monster id="10020" pathID="1" time = "100" count="1"/>
+		<monster id="10020" pathID="2" time = "100" stime = "2200" count="1"/>		
+ 		<monster id="10020" pathID="3" time = "100" stime = "3500" count="1"/>
+		<monster id="10020" pathID="4" time = "100" stime = "5500" count="1"/>
+	</round>	
+	<round tips="坚持就是胜利！">	
+		<monster id="10020" pathID="2" time = "100" count="1"/>
+		<monster id="10020" pathID="1" time = "100" stime = "2700" count="1"/>		
+ 		<monster id="10020" pathID="1" time = "100" stime = "5000" count="1"/>
+		<monster id="10020" pathID="4" time = "100" stime = "6300" count="1"/>
+		<monster id="10020" pathID="3" time = "100" stime = "8800" count="1"/>
+	</round>	
+	<round tips="坚持就是胜利！">	
+		<monster id="10020" pathID="3" time = "100" count="1"/>
+		<monster id="10020" pathID="2" time = "100" stime = "2500" count="1"/>		
+ 		<monster id="10020" pathID="3" time = "100" stime = "5000" count="1"/>
+		<monster id="10020" pathID="4" time = "100" stime = "6500" count="1"/>
+		<monster id="10020" pathID="2" time = "100" stime = "7700" count="1"/>
+		<monster id="10020" pathID="4" time = "100" stime = "8800" count="1"/>
+	</round>	
+	<round tips="坚持就是胜利！">	
+		<monster id="10020" pathID="1" time = "100" count="1"/>
+		<monster id="10020" pathID="2" time = "100" stime = "2500" count="1"/>		
+ 		<monster id="10020" pathID="3" time = "100" stime = "3400" count="1"/>
+		<monster id="10020" pathID="3" time = "100" stime = "4800" count="1"/>
+		<monster id="10020" pathID="4" time = "100" stime = "5700" count="1"/>
+		<monster id="10020" pathID="2" time = "100" stime = "7000" count="1"/>
+		<monster id="10020" pathID="1" time = "100" stime = "8200" count="1"/>
+	</round>
+	<round tips="坚持就是胜利！">
+		<monster id="10020" pathID="2" time = "100" count="1"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "2000"/>		
+ 		<monster id="10020" pathID="1" time = "100" count="1" stime = "3800"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "5000"/>
+		<monster id="10020" pathID="4" time = "100" count="1" stime = "6300"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "7500"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "8800"/>
+		<monster id="10020" pathID="2" time = "100" count="1" stime = "10000"/>		
+	</round>
+	<round tips="坚持就是胜利！">
+		<monster id="10020" pathID="3" time = "100" count="1"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "1900"/>		
+ 		<monster id="10020" pathID="2" time = "100" count="1" stime = "2900"/>
+		<monster id="10020" pathID="2" time = "100" count="1" stime = "4000"/>
+		<monster id="10020" pathID="4" time = "100" count="1" stime = "4700"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "6000"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "7700"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "8300"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "9000"/>
+	</round>
+	<round tips="坚持就是胜利！">
+		<monster id="10020" pathID="2" time = "100" count="1"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "1800"/>		
+ 		<monster id="10020" pathID="2" time = "100" count="1" stime = "2500"/>
+		<monster id="10020" pathID="4" time = "100" count="1" stime = "3900"/>
+		<monster id="10020" pathID="4" time = "100" count="1" stime = "4800"/>
+		<monster id="10020" pathID="2" time = "100" count="1" stime = "6300"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "7500"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "8800"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "10000"/>
+		<monster id="10020" pathID="2" time = "100" count="1" stime = "11000"/>
+	</round>
+	<round tips="坚持就是胜利！">
+		<monster id="10020" pathID="4" time = "100" count="1"/>
+		<monster id="10020" pathID="4" time = "100" count="1" stime = "1500"/>		
+ 		<monster id="10020" pathID="1" time = "100" count="1" stime = "2700"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "4000"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "5100"/>
+		<monster id="10020" pathID="2" time = "100" count="1" stime = "6300"/>
+		<monster id="10020" pathID="3" time = "100" count="1" stime = "7700"/>
+		<monster id="10020" pathID="2" time = "100" count="1" stime = "8400"/>
+		<monster id="10020" pathID="1" time = "100" count="1" stime = "8800"/>
+		<monster id="10020" pathID="4" time = "100" count="1" stime = "9200"/>
+		<monster id="10020" pathID="2" time = "100" count="1" stime = "9800"/>
+	</round>
+</task>

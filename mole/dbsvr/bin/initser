@@ -1,0 +1,4 @@
+#sudo /etc/init.d/mysql restart
+cd /home/jim/DB/bin
+./rser
+#./rcom

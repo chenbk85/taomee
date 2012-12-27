@@ -1,0 +1,185 @@
+<ExclusiveThings>
+	<!-- Attr `ExcluID` default to be `ID` -->
+	<!-- OutPutKind 0 For Outputing Items, 1 For Adding Pet Attr -->
+	<!-- Ball -->
+	<!--<Bonus ID="0" />-->
+	<!-- Bonus For Digging -->
+	<Thing ID="1" RelatedExchgID="1538" />
+
+	<!-- ExcluID 1000000001 And Above For Weekly Exclusive Things -->
+	<!-- Gift Package 1, Flag=0 means for all moles -->
+	<Thing ID="2" ExcluID="1000000001" RelatedExchgID="1501" />
+	<!-- Gift Package 2, guild's gift -->
+	<Thing ID="3" ExcluID="1000000002" RelatedExchgID="1502" />
+	<!-- Sunny Pool - Speedup Pet's Growth -->
+	<Thing ID="4" RelatedExchgID="1" OutPutKind="1" />
+	<!-- VIP ATM - Flag=1 means Vip Only -->
+	<Thing ID="5" ExcluID="1000000003" RelatedExchgID="1503" Flag="1" />
+	<!-- foodstuffs -->
+	<Thing ID="6" ExcluID="1000000004" RelatedExchgID="1504" Flag="1" />
+	<!-- ExcluID 1000000005 used for donating -->
+	<!-- ExcluID 1000000000 And below For daily Exclusive Things -->
+	<!-- ExcluID 10000001 For Learning Pet Skills -->
+	<Thing ID="7" ExcluID="10000001" />
+
+	<!-- Bonus For work in  canteen -->
+	<Thing ID="8" RelatedExchgID="1602" />
+
+	<!-- Bonus For Guard outside mole bank -->
+	<Thing ID="9" RelatedExchgID="1603" />
+	<!-- spring festival gifts -->
+	<Thing ID="10" ExcluID="1000000006" RelatedExchgID="1605" />
+	<Thing ID="11" ExcluID="1000000007" RelatedExchgID="1606" />
+	<Thing ID="15" ExcluID="1000000012" RelatedExchgID="1610" />
+	<!-- User for getting work salary  -->
+	<Thing ID="16" ExcluID="1000000013" />
+	<!-- ExcluID 1000000015 used for TouPiao  -->
+	<Thing ID="18" ExcluID="1000000016" RelatedExchgID="1612" />
+	<Thing ID="19" ExcluID="1000000017" RelatedExchgID="1613" />
+	<Thing ID="20" ExcluID="1000000011"/> 
+	<!--Thing ID="21" ExcluID="1000000022" RelatedExchgID="1615" Flag="1"/--> 
+	<Thing ID="22" ExcluID="1000000024" RelatedExchgID="1616" Flag="0"/> 
+	<Thing ID="23" ExcluID="1000000022" RelatedExchgID="1615" Flag="1" VipLevel="1"/> 
+	<Thing ID="24" ExcluID="1000000022" RelatedExchgID="1617" Flag="1" VipLevel="2"/> 
+	<Thing ID="25" ExcluID="1000000022" RelatedExchgID="1618" Flag="1" VipLevel="3"/> 
+	<Thing ID="26" ExcluID="1000000022" RelatedExchgID="1619" Flag="1" VipLevel="4"/> 
+	<Thing ID="27" ExcluID="1000000022" RelatedExchgID="1620" Flag="1" VipLevel="5"/> 
+	<Thing ID="28" ExcluID="1000000022" RelatedExchgID="1621" Flag="1" VipLevel="6"/> 
+	<Thing ID="29" ExcluID="1000000022" RelatedExchgID="1622" Flag="1" VipLevel="7"/> 
+	<Thing ID="30" ExcluID="1000000022" RelatedExchgID="1623" Flag="1" VipLevel="8"/> 
+	<Thing ID="31" ExcluID="1000000022" RelatedExchgID="1624" Flag="1" VipLevel="9"/> 
+	<Thing ID="32" ExcluID="1000000022" RelatedExchgID="1625" Flag="1" VipLevel="10"/> 
+	<!-- 时报领取弹珠 -->
+	<Thing ID="33" ExcluID="1000000023" RelatedExchgID="1626" />
+	<!-- 脚印领取弹珠 -->
+	<Thing ID="34" ExcluID="105" RelatedExchgID="1627" />
+	<!--砍月桂树-->
+	<Thing ID="35" ExcluID="109" RelatedExchgID="1628" Flag="1" />
+	<Thing ID="36" ExcluID="195" RelatedExchgID="1629" Flag="1" />
+	<Thing ID="37" ExcluID="196" RelatedExchgID="1630" />
+	<!-- 时报拉姆能量星-->
+	<Thing ID="38" ExcluID="1000000024" RelatedExchgID="1631" />
+
+	<!-- ExcluID 10000001 For Learning Pet Skills -->
+	<!-- ExcluID 101 Used For voting flower -->
+	<Thing ID="101" />
+	<!-- ExcluID 102 For standing guard -->
+	<Thing ID="102" RelatedExchgID="1604" />
+
+	<!-- ExcluID 103 Used For watering and fertilizing maomao tree -->
+	<Thing ID="103" />
+	<!-- ExcluID 104 Used For vote smc -->
+	<Thing ID="104" />
+	<!-- ExcluID 104 Used For ji bao pen -->
+	<Thing ID="106" />
+	<Thing ID="108" />
+	<!-- ExcluID 109 Used For add party-->
+	<Thing ID="109" />
+	<!-- ExcluID 110 Used For vote FU-->
+	<Thing ID="110" />
+	<!-- ExcluID 111 Used For add run times -->
+	<Thing ID="111" />
+	<Thing ID="114" />
+	<!-- ExcluID 112 Used For HuoShen JiNian Zhang -->
+	<!-- ExcluID 113 Used For YingHuoCao seed -->
+	<!-- ExcluID 115 Used For freely get fruits in homeland when rabbit apper-->
+	<Thing ID="115" />
+	<!-- ExcluID 116-118 Used For QiShi JiDi MiMi-->
+	<!-- ExcluID 119 Used For move wood to get 500 Xiaome-->
+	<!-- ExcluID 121 Used For magic code-->
+	<Thing ID="121" />
+	<!-- ExcluID 122-124 Used For *** -->
+	<!-- ExcluID 125 Used For *** -->
+	<Thing ID="125" />
+	<!-- ExcluID 126 Used For happy card-->
+	<Thing ID="126" />
+	<!-- ExcluID 127 Used For doctor-->
+	<Thing ID="127" />
+	<!-- ExcluID 128 Used For ***-->
+	<Thing ID="128" />
+	<!-- ExcluID 129 Used For FeiNiao Guoshi-->
+	<Thing ID="129" />
+	<!-- ExcluID 130 Used For catch little Dululu-->
+	<Thing ID="130" />
+	<!-- ExcluID 131 Used For Lottery-->
+	<!-- ExcluID 136 Used For DIY NanGua-->
+	<Thing ID="136" />
+	<!-- ExcluID 139 Used For PK game time-->
+	<Thing ID="139" />
+	<!-- ExcluID 140 Used For Get fire cup cards-->
+	<Thing ID="140" />
+	<!-- ExcluID 141 Used For Writing diary-->
+	<Thing ID="141" />
+	<!-- ExcluID 142, 143 Used For DuiHuanQuan-->
+	<Thing ID="144" />
+	<!-- ExcluID 145 Used For send diary flower-->
+	<Thing ID="145" />
+	<!-- ExcluID 146 Used For MoFa DingDang Dou-->
+	<Thing ID="146" />
+	<!-- ExcluID 147 - 150 Used For JiJiLe Magic Card-->
+	<!-- ExcluID 151 Used For Normal Output-->
+	<Thing ID="151" />
+	<!-- ExcluID 152 Used For FlyBirdFruit-->
+	<Thing ID="152" />
+	<!-- ExcluID 153 Used For GuaiGuaiJi-->
+	<Thing ID="153" />
+    <!-- ExcluID 154 Used For get sheep from vip pasture -->
+	<Thing ID="154" />
+    <!-- ExcluID 155 Used For get yinhuocao-->
+	<Thing ID="155" />
+    <!-- ExcluID 156 Used For vip get sheep-->
+	<Thing ID="156" />
+	<Thing ID="161" />
+	<Thing ID="165" />
+	<Thing ID="166" />
+	<Thing ID="167" />
+	<Thing ID="168" />
+	<Thing ID="169" />
+	<Thing ID="170" />
+	<Thing ID="171" />
+	<Thing ID="172" />
+  	<!-- ExcluID 201 Used For sending pet home-->
+	<Thing ID="201" />
+	<!-- ExcluID 202 Used For sending gift-->
+	<Thing ID="202" />
+	<!-- ExcluID 203 Used For race score-->
+	<Thing ID="203" />
+	<!-- ExcluID 204 Used For getting special gift-->
+	<Thing ID="204" />
+	<!-- ExcluID 205 Used For restricting times-->
+	<Thing ID="205" />
+	<!-- ExcluID 206 Used For sending candy packet-->
+	<Thing ID="206" />
+	<!-- ExcluID 208 Used For vip working-->
+	<Thing ID="208" />
+	<!-- ExcluID 211 Used For mini show  -->
+	<Thing ID="211" />
+	<!-- ExcluID 219 Used For penguin egg hatch-->
+	<Thing ID="219" />
+	<!-- give times of tang yuan -->
+	<Thing ID="220" />
+	<!-- ExcluID 305 Used For HuangFengDie-->
+	<Thing ID="305" />
+	<!-- ExcluID 310 Used For locus yanjingtu-->
+	<Thing ID="310" />
+	<!-- ExcluID 310 Used For locus wayu-->
+	<Thing ID="318" />
+	<!-- ExcluID 322 Used For HuHuaShiZhe-->
+	<Thing ID="322" />
+	<!-- ExcluID 328 Used For JuHuaZhongZi-->
+	<Thing ID="328" />
+	<!-- ExcluID 330 Used For SiSeBaiHeHuaZhongZi-->
+	<Thing ID="330" />
+	<!-- ExcluID 333 Used For XunLu-->
+	<Thing ID="333" />
+	<!-- ExcluID 336 Used For SongShu-->
+	<Thing ID="336" />
+
+	<!-- NianShou appear times -->
+	<Thing ID="611" />
+	<Thing ID="612" />
+	<Thing ID="633" />
+	<Thing ID="501" />
+	<Thing ID="504" />
+	<Thing ID="600" />
+</ExclusiveThings>

@@ -1,0 +1,24 @@
+--HTTP_Request_whathellareyoudoing
+Content-Disposition: form-data; name="uid"
+
+50077
+--HTTP_Request_whathellareyoudoing
+Content-Disposition: form-data; name="session"; filename="session.data"
+Content-Type: application/binary
+
+\\!¶xêò×«÷Å
+--HTTP_Request_whathellareyoudoing
+Content-Disposition: form-data; name="cmdid"
+
+3
+--HTTP_Request_whathellareyoudoing
+Content-Disposition: form-data; name="ownerid"
+
+50077
+--HTTP_Request_whathellareyoudoing
+Content-Disposition: form-data; name="photoid"
+
+23
+--HTTP_Request_whathellareyoudoing--
+
+

@@ -1,0 +1,31 @@
+﻿<Clothes>
+
+	<Layer Probability="100" >
+		<Item ID="12117" Name="青蛙王子装" Grade="0" Price="3200" Layer="15" Tradability="1"/>
+		<Item ID="12015" Name="紫色淑女裙" Grade="0" Price="700" Layer="15" Tradability="1"/> 
+		<Item ID="12020" Name="温暖大衣" Grade="0" Price="750" Layer="15" Discount="0.5"/> 
+		<Item ID="12213" Name="小村姑的裙子" Grade="0" Price="1200" Layer="15" Discount="0.5"/>
+		<Item ID="12283" Name="蓝色卫衣" Grade="0" Price="1800" Layer="15" Discount="0.5"/>
+		<Item ID="12164" Name="浆果公主裙" Grade="0" Price="2250" Layer="15" Tradability="1"/>
+		<Item ID="12065" Name="劳动服" Grade="0" Price="650" Layer="15" Tradability="1"/> 
+		<Item ID="12130" Name="宝宝装" Grade="0" Price="0" Layer="15" Tradability="2"/>
+		<Item ID="12306" Name="萌萌冬装" Grade="0" Price="1400" Layer="15" Discount="0.5"/>
+		<Item ID="12008" Name="超人服" Grade="0" Price="1500" Layer="15" Tradability="1"/> 
+	</Layer>
+
+	<Layer Probability="100" >
+		<Item ID="12014" Name="莫莫发型" Grade="0" Price="300" Layer="45"/> 
+		<Item ID="12092" Name="可爱包子头" Grade="0" Price="1400" Layer="45" Tradability="1"/>
+		<Item ID="12081" Name="白色爆破发型" Grade="0" Price="450" Layer="45" Tradability="1"/> 
+		<Item ID="12022" Name="韩版滑雪帽" Grade="0" Price="350" Layer="45" Discount="0.5"/> 
+		<Item ID="12282" Name="运动发型" Grade="0" Price="700" Layer="45" Discount="0.5"/>
+		<Item ID="12198" Name="宇航员头盔" Grade="0" Price="1350" Layer="45" />
+		<Item ID="12212" Name="小村姑的发型" Grade="0" Price="550" Layer="45" />
+		<Item ID="12305" Name="火热女孩发型" Grade="0" Price="600" Layer="45" Discount="0.5"/>
+		<Item ID="12093" Name="爸爸的草帽" Grade="0" Price="0" Layer="45" Tradability="3"/>
+		<Item ID="12179" Name="粉红乖乖女发型" Grade="0" Price="900" Layer="45" Discount="0.5" /> 
+		
+	</Layer>
+
+
+</Clothes>

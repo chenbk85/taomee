@@ -1,0 +1,2912 @@
+﻿<!-- MaxPoints,the max number of points that can generate item -->
+<!-- Max,the max number of points that can generate item at the same time -->
+<!-- RebornTime, the interval to regenerate item  -->
+<!-- AppearAnyTime, can generate item at any time -->
+<!-- Multiplicator, can generate multipied number items at party time -->
+<!-- FullyGen, generate the same number item at any time -->
+<!-- StartTime, time to begin the party -->
+<!-- EndTime, time to end the party -->
+<!-- Map->Type, 2,map with game;4,scene game map -->
+<Maps FirstMap="1" TopMax="1" >
+
+	<Map ID="1" Name="摩尔城堡" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="450" PosY="450" />
+			<Entry MapID="2" PosX="130" PosY="340" />
+			<Entry MapID="3" PosX="850" PosY="450" />
+			<Entry MapID="4" PosX="100" PosY="260" />
+			<Entry MapID="12" PosX="0" PosY="0" />
+			<Entry MapID="15" PosX="450" PosY="410" />
+			<Entry MapID="16" PosX="480" PosY="140" />
+			<Entry MapID="17" PosX="670" PosY="440" />
+			<Entry MapID="32" PosX="530" PosY="150" />
+		</Entries>
+		<Group GameID="47" Type="0" Action="0" LG_PosX="450" LG_PosY="450">
+            <Item ID="1" Direction="0" Flag="0" />
+        </Group>
+	</Map>	
+
+	<Map ID="2" Name="爱心教堂" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="890" PosY="340" />
+			<Entry MapID="1" PosX="890" PosY="340" />
+			<Entry MapID="9" PosX="120" PosY="330" />
+			<Entry MapID="18" PosX="600" PosY="350" />
+			<Entry MapID="44" PosX="170" PosY="260" />
+			<Entry MapID="45" PosX="310" PosY="260" />
+			<Entry MapID="46" PosX="314" PosY="280" />
+			<Entry MapID="69" PosX="542" PosY="367" />
+			<Entry MapID="70" PosX="560" PosY="340" />
+			<Entry MapID="222" PosX="195" PosY="150" />
+		</Entries>
+
+		<RandomItems>
+			<Item ID="190026" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<!-- <Item ID="190025" MaxPoints="2" StartPoint="1" Max="2" RebornTime="30" Multiplicator="1" AppearAnyTime="1" /> -->
+		</RandomItems>
+		<Group GameID="86" Type="8" Action="3" LG_PosX="535" LG_PosY="380">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="6" Flag="0" />
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="6" Flag="0" />
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="14" Type="8" Action="3" LG_PosX="530" LG_PosY="160">
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="4" Flag="0" />
+			<Item ID="9" Direction="4" Flag="0" />
+			<Item ID="10" Direction="4" Flag="0" />
+			<Item ID="11" Direction="4" Flag="0" />
+			<Item ID="12" Direction="4" Flag="0" />
+		</Group>
+	</Map>	
+
+	<Map ID="3" Name="淘淘乐街" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="250" PosY="380" />
+			<Entry MapID="1" PosX="120" PosY="400" />
+			<Entry MapID="59" PosX="790" PosY="310" />
+			<Entry MapID="19" PosX="310" PosY="330" />
+			<Entry MapID="20" PosX="430" PosY="280" />
+			<Entry MapID="21" PosX="790" PosY="310" />
+			<Entry MapID="28" PosX="680" PosY="280" />
+			<Entry MapID="76" PosX="230" PosY="380" />
+			<Entry MapID="86" PosX="230" PosY="380" />
+			<Entry MapID="92" PosX="230" PosY="380" />
+			<Entry MapID="142" PosX="770" PosY="400" />
+			<Entry MapID="242" PosX="770" PosY="400" />
+		</Entries>
+	</Map>	
+
+	<Map ID="4" Name="摩尔拉雅山脚" Type="1" PartyPeriod="1" >
+		<Entries>
+			<Entry MapID="0" PosX="609" PosY="369" />
+			<Entry MapID="1" PosX="800" PosY="450" />
+			<Entry MapID="5" PosX="130" PosY="158" />
+			<Entry MapID="47" PosX="100" PosY="370" />
+			<Entry MapID="51" PosX="609" PosY="369" />
+			<Entry MapID="61" PosX="650" PosY="260" />
+			<Entry MapID="75" PosX="736" PosY="360" />
+			<Entry MapID="80" PosX="480" PosY="370" />
+			<Entry MapID="143" PosX="317" PosY="310" />
+		</Entries>
+
+		<Group GameID="64" Type="1" Action="3" LG_PosX="300" LG_PosY="300">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>	
+		<Group GameID="30" Type="1" Action="0" LG_PosX="300" LG_PosY="330">
+			<Item ID="5" Direction="7" Flag="0" />
+			<Item ID="6" Direction="7" Flag="0" />
+			<Item ID="7" Direction="0" Flag="0" />
+			<Item ID="8" Direction="1" Flag="0" />
+			<Item ID="9" Direction="1" Flag="0" />
+			<Item ID="10" Direction="1" Flag="0" />
+			<Item ID="11" Direction="1" Flag="0" />
+			<Item ID="12" Direction="1" Flag="0" />
+			<Item ID="13" Direction="1" Flag="0" />
+			<Item ID="14" Direction="1" Flag="0" />
+		</Group>
+    <Group GameID="94" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+      <Item ID="15" Direction="6" Flag="0" />
+      <Item ID="16" Direction="2" Flag="0" />
+    </Group>
+	</Map>
+
+	<Map ID="5" Name="摩尔拉雅滑冰场" Type="4" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="460" PosY="300" />
+			<Entry MapID="4" PosX="250" PosY="460" />
+			<Entry MapID="34" PosX="630" PosY="310" />
+			<Entry MapID="37" PosX="610" PosY="310" />
+			<Entry MapID="40" PosX="325" PosY="325" />
+           	<Entry MapID="72" PosX="460" PosY="290" />
+           	<Entry MapID="230" PosX="440" PosY="270" />
+		</Entries>
+		<Group GameID="9" Type="0" Action="0" LG_PosX="700" LG_PosY="460">
+			<Item ID="1" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="58" Type="16" Action="3" LG_PosX="160" LG_PosY="445" >
+			<Item ID="2" Direction="6" Flag="0" />
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="6" Flag="0" />
+			<Item ID="5" Direction="6" Flag="0" />
+		</Group>
+	</Map>	
+
+	<Map ID="6" Name="西部游乐场" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="800" PosY="480" />
+			<Entry MapID="7" PosX="800" PosY="480" />
+			<Entry MapID="22" PosX="200" PosY="280" />
+			<Entry MapID="36" PosX="430" PosY="300" />
+			<Entry MapID="80" PosX="120" PosY="500" />
+		</Entries>
+		<Group GameID="33" Type="1" Action="3" LG_PosX="440" LG_PosY="440">
+			<Item ID="3" Direction="6" Flag="0" />
+		</Group>
+		<!-- Action=3,sit down; ID,the id of chair -->
+		<Group GameID="34" Type="1" Action="3" LG_PosX="440" LG_PosY="440">
+			<Item ID="1" Direction="2" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="49" Type="8" Action="3" LG_PosX="440" LG_PosY="440">
+			<Item ID="4" Direction="4" Flag="0" />
+			<Item ID="5" Direction="3" Flag="0" />
+			<Item ID="6" Direction="3" Flag="0" />
+			<Item ID="7" Direction="2" Flag="0" />
+			<Item ID="8" Direction="2" Flag="0" />
+			<Item ID="9" Direction="2" Flag="0" />
+		</Group>
+        <Group GameID="50" Type="1" Action="3" LG_PosX="440" LG_PosY="440">
+			<Item ID="10" Direction="3" Flag="0" />
+			<Item ID="11" Direction="3" Flag="0" />
+		</Group>
+        <Group GameID="52" Type="1" Action="3" LG_PosX="440" LG_PosY="440">
+			<Item ID="12" Direction="4" Flag="0" />
+			<Item ID="13" Direction="4" Flag="0" />
+			<Item ID="14" Direction="4" Flag="0" />
+			<Item ID="15" Direction="4" Flag="0" />
+		</Group>
+        <Group GameID="51" Type="1" Action="3" LG_PosX="440" LG_PosY="440">
+			<Item ID="16" Direction="5" Flag="0" />
+			<Item ID="17" Direction="5" Flag="0" />
+			<Item ID="18" Direction="5" Flag="0" />
+		</Group>
+
+	</Map>	
+
+	<Map ID="7" Name="东部游乐场" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="720" PosY="288" />
+			<Entry MapID="6" PosX="140" PosY="350" />
+			<Entry MapID="23" PosX="0" PosY="0" />
+			<Entry MapID="24" PosX="436" PosY="330" />
+			<Entry MapID="47" PosX="750" PosY="280" />
+		</Entries>
+
+		<Group GameID="27" Type="8" Action="3" LG_PosX="130" LG_PosY="400">
+			<Item ID="1" Direction="7" Flag="0" />
+			<Item ID="2" Direction="7" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+			<Item ID="4" Direction="1" Flag="0" />
+			<Item ID="5" Direction="1" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="59" Type="0" Action="0" LG_PosX="130" LG_PosY="400">
+			<Item ID="7" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="95" Type="0" Action="0" LG_PosX="130" LG_PosY="490" Flag="0" >
+			<Item ID="8" Direction="0" Flag="0" />
+		</Group>
+
+<!--		<RandomItems>
+			<Item ID="190008" MaxPoints="20" StartPoint="0" Max="5" RebornTime="15" StartTime="16" EndTime="20" Multiplicator="2" />
+		</RandomItems>-->
+	</Map>	
+
+	<Map ID="8" Name="神秘湖" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="880" PosY="270" />
+			<Entry MapID="9" PosX="832" PosY="209" />
+			<Entry MapID="31" PosX="210" PosY="240" />
+			<Entry MapID="50" PosX="400" PosY="380" />
+			<Entry MapID="67" PosX="459" PosY="229" />
+			<Entry MapID="176" PosX="48" PosY="295" />
+			<Entry MapID="178" PosX="583" PosY="260" />
+			<Entry MapID="204" PosX="850" PosY="480" />
+		</Entries>
+		<Group GameID="8" Type="8" Action="3" LG_PosX="770" LG_PosY="340">
+			<Item ID="1" Direction="1" Flag="0" />
+			<Item ID="2" Direction="1" Flag="0" />
+			<Item ID="3" Direction="1" Flag="0" />
+			<Item ID="4" Direction="1" Flag="0" />
+			<Item ID="5" Direction="1" Flag="0" />
+			<Item ID="6" Direction="1" Flag="0" />
+		</Group>
+		<Group GameID="8" Type="8" Action="3" LG_PosX="630" LG_PosY="220">
+			<Item ID="7" Direction="3" Flag="0" />
+			<Item ID="8" Direction="3" Flag="0" />
+			<Item ID="9" Direction="7" Flag="0" />
+			<Item ID="10" Direction="7" Flag="0" />
+			<Item ID="11" Direction="7" Flag="0" />
+			<Item ID="12" Direction="7" Flag="0" />
+		</Group>
+		<Group GameID="8" Type="8" Action="3" LG_PosX="250" LG_PosY="270">
+			<Item ID="13" Direction="6" Flag="0" />
+			<Item ID="14" Direction="7" Flag="0" />
+			<Item ID="15" Direction="7" Flag="0" />
+			<Item ID="16" Direction="7" Flag="0" />
+			<Item ID="17" Direction="0" Flag="0" />
+			<Item ID="18" Direction="1" Flag="0" />
+		</Group>
+
+	</Map>	
+
+	<Map ID="9" Name="阳光牧场" Type="4" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="800" PosY="280" />  
+			<Entry MapID="2" PosX="820" PosY="180" /> 
+			<Entry MapID="8" PosX="150" PosY="410" /> 
+			<Entry MapID="38" PosX="890" PosY="210" /> 
+          	<Entry MapID="79" PosX="400" PosY="320" /> 
+			<Entry MapID="106" PosX="540" PosY="200" />
+			<Entry MapID="107" PosX="460" PosY="250" />
+		</Entries>
+
+		<Group GameID="25" Type="8" Action="3" LG_PosX="820" LG_PosY="200">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="6" Flag="0" />
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="5" Direction="2" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+
+		<Group GameID="45" Type="16" Action="0" LG_PosX="160" LG_PosY="445" >
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="4" Flag="0" />
+			<Item ID="9" Direction="4" Flag="0" />
+		</Group>
+
+		<RandomItems>
+			<Item ID="190024" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<!-- <Item ID="190025" MaxPoints="2" StartPoint="1" Max="2" RebornTime="30" Multiplicator="1" AppearAnyTime="1" /> -->
+		</RandomItems>
+	</Map>  
+
+	<Map ID="10" Name="开心农场" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="190" PosY="370" />
+			<Entry MapID="59" PosX="400" PosY="240" />
+			<Entry MapID="27" PosX="760" PosY="330" />
+       		<Entry MapID="83" PosX="878" PosY="347" />
+			<Entry MapID="38" PosX="173" PosY="450" />
+			<Entry MapID="56" PosX="500" PosY="330" />
+			<Entry MapID="101" PosX="183" PosY="321" />
+			<Entry MapID="105" PosX="888" PosY="320" />
+			<Entry MapID="154" PosX="300" PosY="400" />
+			<Entry MapID="242" PosX="300" PosY="400" />
+		</Entries>
+
+		<RandomItems>
+			<Item ID="150002" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" StartTime="16" EndTime="19" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="12138" MaxPoints="1" StartPoint="1" Max="1" GenOnDemand="1" DisappearTime="120" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190027" MaxPoints="1" StartPoint="2" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190028" MaxPoints="1" StartPoint="3" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190022" MaxPoints="2" StartPoint="4" Max="2" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+
+		<Group GameID="19" Type="8" Action="0" LG_PosX="400" LG_PosY="340">
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+			<Item ID="4" Direction="0" Flag="0" />
+			<Item ID="5" Direction="0" Flag="0" />
+			<Item ID="6" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="14" Name="城堡地下" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="100" PosY="360" />
+			<Entry MapID="15" PosX="100" PosY="360" />
+			<Entry MapID="26" PosX="410" PosY="330" />
+			<Entry MapID="54" PosX="770" PosY="350" />
+		</Entries>
+		<Group GameID="33" Type="1" Action="3" LG_PosX="300" LG_PosY="360">
+			<Item ID="3" Direction="6" Flag="0" />
+		</Group>
+		<!-- Action=3,sit down; ID,the id of chair -->
+		<Group GameID="34" Type="1" Action="3" LG_PosX="300" LG_PosY="360">
+			<Item ID="1" Direction="2" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+		</Group>
+	</Map>  
+
+	<Map ID="15" Name="城堡大厅" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="300" PosY="300" />
+			<Entry MapID="1" PosX="300" PosY="300" />
+			<Entry MapID="14" PosX="240" PosY="420" />
+			<Entry MapID="16" PosX="700" PosY="273" />
+		</Entries>
+		<Group GameID="0" Type="1" Action="3" LG_PosX="300" LG_PosY="300">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>	
+	</Map>	
+
+	<Map ID="16" Name="城堡二楼" Type="4" >
+		<Entries >
+            <Entry MapID="0" PosX="520" PosY="460" />
+            <Entry MapID="33" PosX="163" PosY="240" />
+            <Entry MapID="15" PosX="733" PosY="467" />
+            <Entry MapID="32" PosX="475" PosY="133" />
+            <Entry MapID="108" PosX="850" PosY="300" />
+		</Entries>
+
+		<Group GameID="14" Type="8" Action="3" LG_PosX="530" LG_PosY="160">
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="4" Flag="0" />
+			<Item ID="3" Direction="4" Flag="0" />
+			<Item ID="4" Direction="4" Flag="0" />
+			<Item ID="5" Direction="4" Flag="0" />
+			<Item ID="6" Direction="4" Flag="0" />
+		</Group>
+		<Group GameID="68" Type="16" Action="3" LG_PosX="530" LG_PosY="160">
+			<Item ID="11" Direction="4" Flag="0" />
+			<Item ID="12" Direction="4" Flag="0" />
+			<Item ID="13" Direction="4" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="17" Name="摩尔餐厅" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="210" PosY="280" />
+			<Entry MapID="1" PosX="210" PosY="280" />
+		</Entries>
+		<Group GameID="0" Type="1" Action="3" LG_PosX="210" LG_PosY="280">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+			<Item ID="7" Direction="6" Flag="0" />
+			<Item ID="8" Direction="2" Flag="0" />
+			<Item ID="9" Direction="6" Flag="0" />
+			<Item ID="10" Direction="2" Flag="0" />
+			<Item ID="11" Direction="6" Flag="0" />
+			<Item ID="12" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="1" Type="0" Action="0" LG_PosX="750" LG_PosY="300">
+			<Item ID="25" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="42" Type="0" Action="0" LG_PosX="750" LG_PosY="300">
+			<Item ID="26" Direction="6" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="18" Name="爱心教堂内" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="230" PosY="300" />
+			<Entry MapID="2" PosX="230" PosY="300" />
+		</Entries>
+	</Map>
+
+	<Map ID="19" Name="道具店" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="365" PosY="280" />
+			<Entry MapID="3" PosX="365" PosY="280" />
+			<Entry MapID="76" PosX="590" PosY="245" />
+		</Entries>
+	</Map>
+
+	<Map ID="20" Name="服装店" Type="4" >
+		<Entries >
+			<Entry MapID="0" PosX="400" PosY="320" />
+			<Entry MapID="3" PosX="400" PosY="320" />
+			<Entry MapID="35" PosX="745" PosY="420" />
+			<Entry MapID="171" PosX="410" PosY="334" />
+	    	<Entry MapID="161" PosX="400" PosY="320" />
+		</Entries>
+		<Group GameID="66" Type="16" Action="3" LG_PosX="160" LG_PosY="445" >
+	    		<Item ID="1" Direction="6" Flag="0" />
+	    		<Item ID="2" Direction="6" Flag="0" />
+	    		<Item ID="3" Direction="6" Flag="0" />
+		</Group>
+
+	</Map>
+
+	<Map ID="21" Name="宠物店" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="510" PosY="350" />
+			<Entry MapID="3" PosX="510" PosY="350" />
+		</Entries>
+		<Group GameID="16" Type="1" Action="3" LG_PosX="660" LG_PosY="400">
+			<Item ID="3" Direction="5" Flag="0" />
+		</Group>
+		<Group GameID="17" Type="1" Action="3" LG_PosX="660" LG_PosY="400">
+			<Item ID="1" Direction="5" Flag="0" />
+			<Item ID="2" Direction="5" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="22" Name="游戏小屋" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="660" PosY="360" />
+			<Entry MapID="6" PosX="600" PosY="330" />
+		</Entries>
+		<Group GameID="36" Type="8" Action="3" LG_PosX="480" LG_PosY="370">
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="3" Flag="0" />
+			<Item ID="3" Direction="3" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="5" Direction="2" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="41" Type="8" Action="3" LG_PosX="480" LG_PosY="370">
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="5" Flag="0" />
+			<Item ID="9" Direction="5" Flag="0" />
+			<Item ID="10" Direction="5" Flag="0" />
+			<Item ID="11" Direction="6" Flag="0" />
+			<Item ID="12" Direction="6" Flag="0" />
+		</Group>		
+	</Map>
+
+	<Map ID="24" Name="魔法马车" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="280" PosY="440" />
+			<Entry MapID="7" PosX="265" PosY="440" />
+		</Entries>
+	</Map>
+
+	<Map ID="26" Name="蘑菇洞" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="630" PosY="340" />
+			<Entry MapID="14" PosX="630" PosY="340" />                      
+		</Entries>
+	</Map>  
+
+	<Map ID="27" Name="发明屋" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="230" PosY="420" />
+			<Entry MapID="10" PosX="230" PosY="420" />
+		</Entries>
+	</Map> 
+
+	<Map ID="28" Name="拉姆学院" Type="4">
+		<Entries>
+			<Entry MapID="0" PosX="370" PosY="200" /> 
+			<Entry MapID="3" PosX="370" PosY="200" />
+            <Entry MapID="83" PosX="830" PosY="350" />
+			<Entry MapID="48" PosX="800" PosY="160" />
+			<Entry MapID="52" PosX="300" PosY="230" />
+			<Entry MapID="53" PosX="700" PosY="310" />
+			<Entry MapID="68" PosX="220" PosY="260" />
+			<Entry MapID="77" PosX="470" PosY="170" />
+			<Entry MapID="81" PosX="212" PosY="266" />
+		</Entries>
+
+		<Group GameID="28" Type="16" Action="0" LG_PosX="260" LG_PosY="190" Flag="0" >
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+		
+	</Map>
+
+	<Map ID="31" Name="smc基地" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="460" PosY="400" />                        
+			<Entry MapID="8" PosX="460" PosY="400" />  
+		</Entries>
+		<Group GameID="43" Type="0" Action="0" LG_PosX="460" LG_PosY="400">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="32" Name="城堡书房" Type="2" >
+		<Entries >
+			<Entry MapID="0" PosX="170" PosY="350" />
+			<Entry MapID="16" PosX="170" PosY="350" />
+			<Entry MapID="1" PosX="300" PosY="240" />
+		</Entries>
+		<Group GameID="4" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+			<Item ID="101" Direction="0" Flag="1" />
+		</Group>
+		<Group GameID="4" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="102" Direction="0" Flag="1" />
+		</Group>
+		<Group GameID="4" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+			<Item ID="103" Direction="0" Flag="1" />
+		</Group>
+		<Group GameID="4" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="7" Direction="6" Flag="0" />
+			<Item ID="8" Direction="2" Flag="0" />
+			<Item ID="104" Direction="0" Flag="1" />
+		</Group>
+	</Map> 
+
+	<Map ID="33" Name="城堡露台" Type="1" PartyPeriod="1" >
+		<Entries>
+			<Entry MapID="0" PosX="240" PosY="480" />
+			<Entry MapID="16" PosX="240" PosY="480" />    
+		</Entries>
+
+		<RandomItems>
+			<Item ID="0" MaxPoints="32" StartPoint="0" Max="32" ItmNumPerPoint="5" GenOnDemand="1" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+	</Map>
+
+	<Map ID="34" Name="猎人小屋" Type="2" >
+		<Entries>
+			<Entry MapID="0" PosX="480" PosY="250" />
+			<Entry MapID="5" PosX="480" PosY="250" />
+		</Entries>
+
+		<Group GameID="13" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+			<Item ID="101" Direction="0" Flag="1" />
+		</Group>
+		<Group GameID="13" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="102" Direction="0" Flag="1" />
+		</Group>
+		<Group GameID="13" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+			<Item ID="103" Direction="0" Flag="1" />
+		</Group>
+		<Group GameID="13" Type="3" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="7" Direction="6" Flag="0" />
+			<Item ID="8" Direction="2" Flag="0" />
+			<Item ID="104" Direction="0" Flag="1" />
+		</Group>
+	</Map>
+	
+  <Map ID="35" Name="靓靓屋" Type="1" PartyPeriod="0" >
+		<Entries>
+			<Entry MapID="0" PosX="168" PosY="377" />
+			<Entry MapID="20" PosX="160" PosY="336" />    
+		</Entries>
+		<Group GameID="0" Type="1" Action="3" LG_PosX="210" LG_PosY="280">
+			<Item ID="1" Direction="6" Flag="0" />
+		</Group>
+
+		<!--Group GameID="32" Type="16" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="5" Flag="0" />
+			<Item ID="3" Direction="3" Flag="0" />
+		</Group-->
+
+		<RandomItems>
+			<Item ID="0" MaxPoints="32" StartPoint="0" Max="32" ItmNumPerPoint="5" Multiplicator="1" AppearAnyTime="1" FullyGen="1" DisappearTime="120" />
+		</RandomItems>
+	</Map>
+
+	<Map ID="36" Name="摩摩赛车场" Type="2" >
+		<Entries >
+			<Entry MapID="0" PosX="730" PosY="430" />
+			<Entry MapID="6" PosX="730" PosY="430" />
+		</Entries>
+		<Group GameID="5" Type="1" Action="3" LG_PosX="730" LG_PosY="430">
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="4" Flag="0" />
+		</Group>
+		<Group GameID="6" Type="1" Action="3" LG_PosX="730" LG_PosY="430">
+			<Item ID="3" Direction="4" Flag="0" />
+			<Item ID="4" Direction="4" Flag="0" />
+			<Item ID="5" Direction="4" Flag="0" />
+		</Group>
+		<Group GameID="7" Type="1" Action="3" LG_PosX="730" LG_PosY="430">
+			<Item ID="6" Direction="4" Flag="0" />
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="4" Flag="0" />
+			<Item ID="9" Direction="4" Flag="0" />
+		</Group>
+		<Group GameID="11" Type="1" Action="3" LG_PosX="730" LG_PosY="430">
+			<Item ID="10" Direction="4" Flag="0" />
+		</Group>
+		<Group GameID="12" Type="16" Action="3" LG_PosX="0" LG_PosY="0">
+			<Item ID="101" Direction="6" Flag="0" />
+		</Group>
+
+	</Map>
+
+	<Map ID="37" Name="摩尔拉雅山顶" Type="1" Top="1">
+		<Entries >
+			<Entry MapID="0" PosX="325" PosY="252" />
+			<Entry MapID="5" PosX="325" PosY="252" />
+			<Entry MapID="114" PosX="366" PosY="240" />
+			<Entry MapID="118" PosX="325" PosY="252" />
+		</Entries>
+
+		<Group GameID="67" Type="0" Action="0" LG_PosX="260" LG_PosY="190">
+			<Item ID="7" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="10" Type="1" Action="0" LG_PosX="260" LG_PosY="190">
+			<Item ID="6" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="2" Type="1" Action="0" LG_PosX="260" LG_PosY="190">
+			<Item ID="4" Direction="0" Flag="0" />
+			<Item ID="5" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="3" Type="1" Action="0" LG_PosX="260" LG_PosY="190">
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+		</Group>
+    <Group GameID="93" Type="0" Action="0" LG_PosX="260" LG_PosY="190">
+			<Item ID="8" Direction="0" Flag="0" />
+		</Group>
+	</Map> 
+
+	<Map ID="38" Name="摩尔足球场" Type="4">
+		<Entries >
+			<Entry MapID="0" PosX="160" PosY="445" />
+			<Entry MapID="9" PosX="160" PosY="445" />
+   			<Entry MapID="10" PosX="855" PosY="492" />
+			<Entry MapID="119" PosX="489" PosY="261" />
+         	<Entry MapID="157" PosX="450" PosY="350" />
+         	<Entry MapID="160" PosX="450" PosY="350" />
+		</Entries>
+		<!--Group GameID="88" Type="8" Action="0" LG_PosX="260" LG_PosY="190" Flag="0" >
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group-->
+
+		<!--Group GameID="79" Type="0" Action="0" LG_PosX="260" LG_PosY="190" Flag="0" >
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group-->
+		<!--Group GameID="28" Type="16" Action="0" LG_PosX="260" LG_PosY="190" Flag="0" >
+			<Item ID="2" Direction="0" Flag="0" />
+		</Group-->
+
+		<!--Group GameID="95" Type="0" Action="0" LG_PosX="130" LG_PosY="490" Flag="0" >
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group-->
+
+		<Group GameID="15" Type="16" Action="0" LG_PosX="260" LG_PosY="190" Flag="0" >
+			<Item ID="2" Direction="0" Flag="0" />
+		</Group>
+
+		<!--Group GameID="57" Type="16" Action="0" LG_PosX="260" LG_PosY="190" >
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+		</Group-->
+		<RandomItems>
+			<Item ID="38" MaxPoints="10" StartPoint="0" Max="10" ItmNumPerPoint="1" GenOnDemand="1" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+	</Map>
+
+	<Map ID="40" Name="浆果秘道" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="750" PosY="190" />
+			<Entry MapID="5" PosX="750" PosY="190" />
+			<Entry MapID="41" PosX="480" PosY="400" />
+ 			<Entry MapID="71" PosX="290" PosY="190" />	
+		</Entries>
+
+		<RandomItems>
+			<Item ID="12137" MaxPoints="1" StartPoint="0" Max="1" RebornTime="120" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="17005" MaxPoints="1" StartPoint="1" Max="1" RebornTime="1200" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190053" MaxPoints="1" StartPoint="2" Max="1" GenOnDemand="1" DisappearTime="120" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+	</Map>
+
+	<Map ID="41" Name="浆果丛林" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="770" PosY="170" />
+			<Entry MapID="40" PosX="770" PosY="170" />
+			<Entry MapID="42" PosX="230" PosY="260" />
+			<Entry MapID="70" PosX="550" PosY="300" />
+		</Entries>
+		<RandomItems>
+			<Item ID="190120" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+		<Group GameID="20" Type="0" Action="0" LG_PosX="200" LG_PosY="300">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="24" Type="0" Action="0" LG_PosX="770" LG_PosY="170">
+			<Item ID="2" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="42" Name="彩虹瀑布" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="720" PosY="320" />
+			<Entry MapID="41" PosX="720" PosY="320" />
+			<Entry MapID="43" PosX="520" PosY="260" />
+		</Entries>
+
+		<RandomItems>
+			<Item ID="17006" MaxPoints="2" StartPoint="0" Max="1" RebornTime="60" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+
+		<Group GameID="23" Type="1" Action="0" LG_PosX="570" LG_PosY="310">
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="22" Type="1" Action="0" LG_PosX="570" LG_PosY="310">
+			<Item ID="4" Direction="0" Flag="0" />
+			<Item ID="5" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="21" Type="1" Action="0" LG_PosX="570" LG_PosY="310">
+			<Item ID="6" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="43" Name="力量之泉" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="440" PosY="150" />
+			<Entry MapID="42" PosX="440" PosY="150" />
+		</Entries>
+
+		<RandomItems>
+			<Item ID="17007" MaxPoints="3" StartPoint="0" Max="1" RebornTime="100" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="12138" MaxPoints="2" StartPoint="3" Max="2" GenOnDemand="1" DisappearTime="120" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+	</Map>
+
+	<Map ID="44" Name="警察局" Type="1">
+		<Entries>
+			<Entry MapID="0" PosX="210" PosY="420" />
+			<Entry MapID="2" PosX="210" PosY="420" />
+		</Entries>
+
+		<Group GameID="26" Type="0" Action="0" LG_PosX="260" LG_PosY="310">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="18" Type="0" Action="0" LG_PosX="260" LG_PosY="310">
+			<Item ID="2" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="45" Name="报社" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="250" PosY="180" />
+			<Entry MapID="2" PosX="250" PosY="180" />
+		</Entries>
+	</Map>
+
+	<Map ID="46" Name="爱心向导社" Type="1">
+		<Entries>
+			<Entry MapID="0" PosX="780" PosY="310" />
+			<Entry MapID="2" PosX="780" PosY="310" />
+		</Entries>
+
+		<Group GameID="0" Type="1" Action="3" LG_PosX="200" LG_PosY="300">
+			<Item ID="1" Direction="3" Flag="0" />
+			<Item ID="2" Direction="3" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="47" Name="粒粒小广场" Type="1">
+		<Entries>
+			<Entry MapID="0" PosX="485" PosY="500" />
+			<Entry MapID="233" PosX="775" PosY="380" />
+			<Entry MapID="4" PosX="840" PosY="350" />
+			<Entry MapID="7" PosX="115" PosY="320" />
+			<Entry MapID="57" PosX="680" PosY="280" />
+			<Entry MapID="72" PosX="460" PosY="450" />
+			<Entry MapID="98" PosX="300" PosY="420" />
+			<Entry MapID="156" PosX="678" PosY="400" />
+			<Entry MapID="157" PosX="750" PosY="200" />
+			<Entry MapID="172" PosX="775" PosY="380" />
+			<Entry MapID="173" PosX="775" PosY="380" />
+			<Entry MapID="174" PosX="775" PosY="380" />
+			<Entry MapID="205" PosX="450" PosY="350" />
+			<Entry MapID="208" PosX="458" PosY="372" />
+			<Entry MapID="211" PosX="775" PosY="380" />
+			<Entry MapID="231" PosX="410" PosY="405" />
+		</Entries>
+		<Group GameID="0" Type="1" Action="3" LG_PosX="260" LG_PosY="190"> 
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="4" Flag="0" />
+			<Item ID="3" Direction="4" Flag="0" />
+			<Item ID="4" Direction="4" Flag="0" />
+			<Item ID="5" Direction="4" Flag="0" />
+			<Item ID="6" Direction="4" Flag="0" />
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="4" Flag="0" />
+		</Group>
+
+		<!--Group GameID="57" Type="16" Action="0" LG_PosX="260" LG_PosY="190" >
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+			<Item ID="4" Direction="0" Flag="0" />
+			<Item ID="5" Direction="0" Flag="0" />
+			<Item ID="6" Direction="0" Flag="0" />
+		</Group-->
+<!--
+		<Group GameID="32" Type="16" Action="3" LG_PosX="260" LG_PosY="190">
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="3" Flag="0" />
+			<Item ID="3" Direction="1" Flag="0" />
+			<Item ID="4" Direction="7" Flag="0" />
+			<Item ID="5" Direction="5" Flag="0" />
+		</Group>
+
+		<RandomItems>
+			<Item ID="0" MaxPoints="32" StartPoint="0" Max="32" Multiplicator="1" AppearAnyTime="1" FullyGen="1" DisappearTime="120" />
+		</RandomItems>-->
+	</Map>
+
+	<!-- Map ID="48" Name="火山" Type="1">
+		<Entries>
+			<Entry MapID="0" PosX="820" PosY="270" />
+			<Entry MapID="28" PosX="820" PosY="270" />
+			<Entry MapID="49" PosX="630" PosY="200" />
+		</Entries>
+	</Map>
+
+	<Map ID="49" Name="熔岩山洞" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="360" PosY="110" />
+			<Entry MapID="48" PosX="360" PosY="110" />
+		</Entries>
+	</Map -->
+
+	<Map ID="50" Name="摩罗地海海底" Type="1">
+		<Entries>
+			<Entry MapID="0" PosX="800" PosY="430" />
+			<Entry MapID="8" PosX="800" PosY="430" />
+			<Entry MapID="55" PosX="360" PosY="210" />
+		</Entries>
+
+		<Group GameID="31" Type="0" Action="0" LG_PosX="200" LG_PosY="300">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="51" Name="摩登码头" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="676" PosY="123" />
+			<Entry MapID="4" PosX="676" PosY="123" />
+		</Entries>
+
+		<RandomItems>
+			<Item ID="190025" MaxPoints="2" StartPoint="0" Max="2" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190029" MaxPoints="3" StartPoint="2" Max="3" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+	</Map>
+
+	<Map ID="52" Name="拉姆课堂" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="770" PosY="380" />
+			<Entry MapID="28" PosX="770" PosY="380" />
+		</Entries>
+		<Group GameID="78" Type="0" Action="0" LG_PosX="730" LG_PosY="340">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="53" Name="学院教导处堂" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="730" PosY="340" />
+			<Entry MapID="28" PosX="730" PosY="340" />
+		</Entries>
+		<Group GameID="74" Type="0" Action="0" LG_PosX="730" LG_PosY="340">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="75" Type="0" Action="0" LG_PosX="730" LG_PosY="340">
+			<Item ID="2" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="76" Type="0" Action="0" LG_PosX="730" LG_PosY="340">
+			<Item ID="3" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="77" Type="0" Action="0" LG_PosX="730" LG_PosY="340">
+			<Item ID="4" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+
+	<Map ID="54" Name="搞怪迷宫" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="430" PosY="400" />
+			<Entry MapID="14" PosX="160" PosY="380" />
+			<Entry MapID="55" PosX="780" PosY="360" />
+		</Entries>
+	</Map>
+
+	<Map ID="55" Name="迷宫洞穴" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="508" PosY="82" />
+			<Entry MapID="54" PosX="508" PosY="82" />
+			<Entry MapID="50" PosX="840" PosY="450" />
+		</Entries>
+		
+		<RandomItems>
+			<Item ID="0" MaxPoints="10" StartPoint="0" Max="4" ItmNumPerPoint="10" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="0" MaxPoints="10" StartPoint="10" Max="4" ItmNumPerPoint="15" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="0" MaxPoints="10" StartPoint="20" Max="4" ItmNumPerPoint="20" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+	</Map>
+
+	<Map ID="56" Name="梅森小屋" Type="1"  Door_map="10">
+		<Entries>
+			<Entry MapID="0" PosX="180" PosY="330" />
+			<Entry MapID="10" PosX="180" PosY="330" />
+		</Entries>
+		<RandomItems>
+			<Item ID="190119" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+		<Group GameID="35" Type="8" Action="0" LG_PosX="170" LG_PosY="330">
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+			<Item ID="4" Direction="0" Flag="0" />
+			<Item ID="5" Direction="0" Flag="0" />
+			<Item ID="6" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+  <Map ID="57" Name="生日飞艇" Type="1" >
+		  <Entries >
+			  <Entry MapID="0" PosX="390" PosY="470" />
+			  <Entry MapID="47" PosX="390" PosY="470" />
+			  <Entry MapID="203" PosX="390" PosY="470" />
+		  </Entries>
+	</Map>
+  <Map ID="58" Name="丝尔特小屋" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="190" PosY="440" />
+		</Entries>
+  </Map>
+  <Map ID="59" Name="咕噜艺术街" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="240" PosY="330" />
+      		<Entry MapID="3" PosX="21" PosY="201" />
+			<Entry MapID="10" PosX="725" PosY="450" />
+			<Entry MapID="60" PosX="643" PosY="374" />
+			<Entry MapID="65" PosX="440" PosY="260" />
+			<Entry MapID="72" PosX="400" PosY="260" />
+		</Entries>
+	</Map>
+  <Map ID="60" Name="摩尔大剧院" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="160" PosY="340" />
+			<Entry MapID="59" PosX="160" PosY="340" />
+			<Entry MapID="242" PosX="160" PosY="340" />
+		</Entries>
+		<Group GameID="37" Type="0" Action="3" LG_PosX="847" LG_PosY="407">
+			<Item ID="1" Direction="6" Flag="0" />
+		</Group>
+  </Map>
+  <Map ID="61" Name="前哨站" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="850" PosY="430" />
+			<Entry MapID="4" PosX="850" PosY="430" />
+			<Entry MapID="62" PosX="350" PosY="340" />
+			<Entry MapID="63" PosX="570" PosY="255" />
+			<Entry MapID="64" PosX="430" PosY="380" />
+			<Entry MapID="81" PosX="800" PosY="270" />
+			<Entry MapID="120" PosX="795" PosY="287"/>	
+		</Entries>
+		<RandomItems>
+			<Item ID="190345" MaxPoints="1" StartPoint="0" Max="1" RebornTime="60" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+  </Map>
+  <Map ID="62" Name="骑士训练营" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="100" PosY="350" />
+			<Entry MapID="61" PosX="100" PosY="350" />
+			<Entry MapID="72" PosX="500" PosY="340" />
+		</Entries>
+		<Group GameID="39" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="39" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="39" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="39" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+			<Item ID="7" Direction="6" Flag="0" />
+			<Item ID="8" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="40" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+			<Item ID="9" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="38" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+			<Item ID="10" Direction="6" Flag="0" />
+		</Group>
+		<!--Group GameID="69" Type="1" Action="3" LG_PosX="100" LG_PosY="350">
+			<Item ID="11" Direction="6" Flag="0" />
+		</Group-->
+  </Map>
+  <Map ID="63" Name="骑士要塞塔顶" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="100" PosY="350" />
+			<Entry MapID="61" PosX="110" PosY="300" />
+		</Entries>
+  </Map>
+  <Map ID="64" Name="骑士秘密基地" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="120" PosY="230" />
+			<Entry MapID="61" PosX="120" PosY="230" />
+			<Entry MapID="72" PosX="500" PosY="340" />
+		</Entries>
+
+		<Group GameID="54" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="9" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="54" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="10" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="54" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="11" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="54" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="12" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="54" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="13" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="53" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="53" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="53" Type="1" Action="3" LG_PosX="120" LG_PosY="230">
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+  </Map>
+  <Map ID="65" Name="涂鸦馆" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="310" PosY="305" />
+			<Entry MapID="59" PosX="310" PosY="305" />
+			<Entry MapID="242" PosX="310" PosY="305" />
+		</Entries>
+  </Map>
+  <Map ID="66" Name="阿福号船舱内" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="500" PosY="200" />
+			<Entry MapID="67" PosX="480" PosY="145" />
+		</Entries>
+  </Map>
+
+  <Map ID="67" Name="阿福号船舱外" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="500" PosY="200" />
+			<Entry MapID="8" PosX="465" PosY="450" />
+			<Entry MapID="66" PosX="380" PosY="390" />
+		</Entries>
+  </Map>
+  <Map ID="68" Name="拉姆运动场" Type="1">
+		<Entries>
+			<Entry MapID="0" PosX="500" PosY="270" /> 
+			<Entry MapID="28" PosX="850" PosY="380" /> 
+		</Entries>
+		<Group GameID="29" Type="1" Action="0" LG_PosX="500" LG_PosY="270">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="2" Flag="0" />
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="44" Type="1" Action="0" LG_PosX="500" LG_PosY="270">
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="60" Type="0" Action="0" LG_PosX="500" LG_PosY="270">
+			<Item ID="7" Direction="2" Flag="0" />
+		</Group>
+		<Group GameID="96" Type="1" Action="3" LG_PosX="500" LG_PosY="270">
+			<Item ID="8" Direction="6" Flag="0" />
+			<Item ID="9" Direction="2" Flag="0" />
+		</Group>
+  </Map>
+  <Map ID="69" Name="摩尔银行" Type="1" PartyPeriod="0" >
+		<Entries >
+			<Entry MapID="0" PosX="340" PosY="270" />
+			<Entry MapID="2" PosX="340" PosY="270" />
+			
+		</Entries>
+		<Group GameID="46" Type="8" Action="3" LG_PosX="340" LG_PosY="270">
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="3" Flag="0" />
+			<Item ID="3" Direction="3" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="5" Direction="2" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+  </Map>
+
+  <Map ID="70" Name="拉姆医院" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="300" PosY="400" />
+			<Entry MapID="2" PosX="120" PosY="330" />
+		</Entries>
+		<Group GameID="56" Type="0" Action="0" LG_PosX="150" LG_PosY="370">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+  </Map>
+  <!--
+  <Map ID="71" Name="RK密洞" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="210" PosY="210" />
+			<Entry MapID="40" PosX="210" PosY="210" />
+				
+		</Entries>
+  </Map>
+  -->
+  <Map ID="72" Name="土豆号飞艇" Type="1" >
+        <Entries>
+            <Entry MapID="0" PosX="268" PosY="326" />   
+            <Entry MapID="59" PosX="268" PosY="326" />
+	    <Entry MapID="83" PosX="268" PosY="326" />
+        </Entries>
+  </Map>
+
+  <Map ID="73" Name="开心农场" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="190" PosY="370" />
+			
+		</Entries>
+		<RandomItems>
+			<Item ID="150002" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" StartTime="16" EndTime="19" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="12138" MaxPoints="1" StartPoint="1" Max="1" GenOnDemand="1" DisappearTime="120" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+		<Group GameID="19" Type="8" Action="0" LG_PosX="400" LG_PosY="340">
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+			<Item ID="4" Direction="0" Flag="0" />
+			<Item ID="5" Direction="0" Flag="0" />
+			<Item ID="6" Direction="0" Flag="0" />
+		</Group>
+  </Map>	
+
+  <Map ID="74" Name="淘淘乐街" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="250" PosY="380" />
+		</Entries>
+  </Map>
+  <Map ID="75" Name="消防署" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="550" PosY="240" />
+			<Entry MapID="4" PosX="550" PosY="240" />
+		</Entries>
+		<Group GameID="48" Type="0" Action="0" LG_PosX="550" LG_PosY="240">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+  </Map>
+  <Map ID="76" Name="礼品店" Type="1"  >
+		<Entries >
+			<Entry MapID="0" PosX="130" PosY="400" />
+			<Entry MapID="3" PosX="130" PosY="400" />
+			<Entry MapID="19" PosX="560" PosY="250" />
+		</Entries>
+  </Map>
+  <Map ID="77" Name="摩尔大学" Type="1"  >
+		<Entries >
+            		<Entry MapID="0"  PosX="750" PosY="330" />
+            		<Entry MapID="28" PosX="750" PosY="330" />
+            		<Entry MapID="78" PosX="520" PosY="300" />
+		</Entries>
+        <Group GameID="61" Type="1" Action="3" LG_PosX="750" LG_PosY="330">
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="4" Flag="0" />
+		</Group>
+        <Group GameID="63" Type="1" Action="3" LG_PosX="750" LG_PosY="330">
+			<Item ID="9" Direction="3" Flag="0" />
+			<Item ID="10" Direction="3" Flag="0" />
+			<Item ID="11" Direction="3" Flag="0" />
+			<Item ID="12" Direction="3" Flag="0" />
+		</Group>
+        <Group GameID="62" Type="1" Action="3" LG_PosX="750" LG_PosY="330">
+			<Item ID="13" Direction="8" Flag="0" />
+			<Item ID="14" Direction="8" Flag="0" />
+			<Item ID="15" Direction="8" Flag="0" />
+		</Group>
+  </Map>
+  <Map ID="78" Name="摩尔大学大厅" Type="1"  >
+		<Entries >
+			<Entry MapID="0" PosX="190" PosY="320" />
+			<Entry MapID="77" PosX="190" PosY="320" />
+		</Entries>
+  </Map>
+  <Map ID="79" Name="阳光草舍" Type="1"  Door_map="9">
+        <Entries >
+            <Entry MapID="0" PosX="470" PosY="210" />
+            <Entry MapID="9" PosX="470" PosY="210" />
+	    <Entry MapID="107" PosX="460" PosY="380"/>
+        </Entries>
+	<Group GameID="55" Type="0" Action="0" LG_PosX="470" LG_PosY="210">
+	    <Item ID="1" Direction="0" Flag="0" />
+	</Group>
+  </Map>
+  <Map ID="80" Name="尼尔拉塔" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="880" PosY="230" />
+            <Entry MapID="6" PosX="880" PosY="230" />
+	    <Entry MapID="84" PosX="330" PosY="410" />
+	    <Entry MapID="112" PosX="146" PosY="286" />
+	    <Entry MapID="161" PosX="880" PosY="230" />
+        </Entries>
+	
+  </Map>
+  <Map ID="81" Name="魔法阁楼" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="785" PosY="390" />
+            <Entry MapID="28" PosX="785" PosY="390" />
+	    <Entry MapID="94" PosX="810" PosY="147" />
+	    <Entry MapID="95" PosX="630" PosY="330" />
+	    <Entry MapID="97" PosX="440" PosY="330" />
+        </Entries>
+  </Map>
+  <Map ID="82" Name="神秘流星花园" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="310" PosY="480" /> 
+        </Entries>
+  </Map>
+  <Map ID="83" Name="交通署" Type="1"  >
+        <Entries >
+        <Entry MapID="0" PosX="130" PosY="360" />
+	    <Entry MapID="28" PosX="900" PosY="370" />
+	    <Entry MapID="10" PosX="130" PosY="360" />
+	    <Entry MapID="72" PosX="450" PosY="270" />
+	    <Entry MapID="85" PosX="250" PosY="280" />
+            <Entry MapID="86" PosX="230" PosY="380" />
+	    <Entry MapID="92" PosX="230" PosY="380" />
+
+        </Entries>
+  </Map>
+
+
+  <Map ID="84" Name="尼尔拉塔第一层" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="230" PosY="320" />
+            <Entry MapID="80" PosX="230" PosY="320" />
+	    <Entry MapID="93" PosX="890" PosY="300" />
+        </Entries>
+	<Group GameID="85" Type="0" Action="0" LG_PosX="230" LG_PosY="320" >
+		<Item ID="1" Direction="4" Flag="0" />
+	</Group>
+  </Map>
+  <Map ID="85" Name="交通署大厅" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="200" PosY="260" />
+            <Entry MapID="83" PosX="200" PosY="260" />
+        </Entries>
+  </Map>
+  <Map ID="86" Name="炫风冲刺赛道起点" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="90" PosY="230" />
+            <Entry MapID="231" PosX="90" PosY="230" />
+            <Entry MapID="83" PosX="90" PosY="230" />
+            <Entry MapID="87" PosX="800" PosY="230" />
+        </Entries>
+  </Map>
+ <Map ID="87" Name="炫风冲刺赛道2段" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="90" PosY="230" />
+            <Entry MapID="86" PosX="90" PosY="300" />
+            <Entry MapID="88" PosX="830" PosY="300" />
+        </Entries>
+  </Map>
+ <Map ID="88" Name="炫风冲刺赛道3段" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="90" PosY="230" />
+            <Entry MapID="87" PosX="90" PosY="300" />
+            <Entry MapID="89" PosX="830" PosY="300" />
+        </Entries>
+  </Map>
+  <Map ID="89" Name="炫风冲刺赛道4段" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="90" PosY="230" />
+            <Entry MapID="88" PosX="90" PosY="300" />
+            <Entry MapID="90" PosX="830" PosY="300" />
+        </Entries>
+  </Map>
+  <Map ID="90" Name="炫风冲刺赛道5段" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="90" PosY="230" />
+            <Entry MapID="89" PosX="90" PosY="300" />
+            <Entry MapID="91" PosX="90" PosY="300" />
+        </Entries>
+  </Map>
+  <Map ID="91" Name="炫风冲刺赛道6段" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="90" PosY="230" />
+            <Entry MapID="90" PosX="90" PosY="300" />
+            <Entry MapID="92" PosX="830" PosY="300" />
+        </Entries>
+  </Map>
+  <Map ID="92" Name="炫风冲刺赛道终点" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="90" PosY="230" />
+            <Entry MapID="91" PosX="90" PosY="300" />
+        </Entries>
+  </Map>
+  <Map ID="93" Name="尼尔拉塔第二层" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="140" PosY="450" />
+            <Entry MapID="84" PosX="140" PosY="450" />
+            <Entry MapID="184" PosX="666" PosY="373" />
+	    
+        </Entries>
+  </Map>
+  <Map ID="94" Name="魔法练习场" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="415" PosY="400" />
+            <Entry MapID="81" PosX="415" PosY="400" />
+	    
+        </Entries>
+  </Map>
+  <Map ID="95" Name="魔法空间" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="350" PosY="250" />
+	    <Entry MapID="81" PosX="350" PosY="250" />
+        </Entries>
+  </Map>
+  <Map ID="96" Name="蜘蛛洞穴" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="320" PosY="340" />
+        </Entries>
+  </Map>
+  <Map ID="97" Name="魔法练习场" Type="1"  >
+        <Entries >
+         <Entry MapID="0" PosX="630" PosY="370" />
+        </Entries>
+  </Map>
+  <Map ID="98" Name="鬼屋第一关" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="120" PosY="250" />
+	     <Entry MapID="47" PosX="120" PosY="250" />
+	     <Entry MapID="99" PosX="820" PosY="300" />
+        </Entries>
+  </Map>
+  <Map ID="99" Name="鬼屋第二关" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="820" PosY="300" />
+	     <Entry MapID="98" PosX="820" PosY="300" />
+	     <Entry MapID="100" PosX="450" PosY="260" />
+        </Entries>
+  </Map>
+  <Map ID="100" Name="黑猫鬼屋" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="830" PosY="350" />
+	     <Entry MapID="99" PosX="800" PosY="350" />
+        </Entries>
+  </Map>
+
+  <Map ID="101" Name="幽灵南瓜屋" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="166" PosY="358" />
+	     <Entry MapID="10" PosX="784" PosY="396" />
+        </Entries>
+	<!--Group GameID="45" Type="16" Action="0" LG_PosX="160" LG_PosY="445" >
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="4" Flag="0" />
+			<Item ID="3" Direction="4" Flag="0" />
+			<Item ID="4" Direction="4" Flag="0" />
+
+	</Group-->
+  </Map>
+  <Map ID="102" Name="蛋糕派对" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="200" PosY="275" />			 
+        </Entries>
+  </Map>
+
+  <Map ID="103" Name="魔术派对" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="750" PosY="398" />			
+        </Entries>
+  </Map>
+
+  <Map ID="104" Name="骑士派对" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="115" PosY="280" />
+        </Entries>
+  </Map>
+  <Map ID="105" Name="三兄弟小屋" Type="1"  >
+        <Entries >
+             <Entry MapID="0" PosX="175" PosY="188" />
+             <Entry MapID="10" PosX="175" PosY="188" />			 
+        </Entries>	
+	<Group GameID="0" Type="1" Action="3" LG_PosX="210" LG_PosY="280">
+		<Item ID="1" Direction="6" Flag="0" />
+		<Item ID="2" Direction="7" Flag="0" />
+		<Item ID="3" Direction="2" Flag="0" />
+		<Item ID="4" Direction="4" Flag="0" />
+	</Group>
+  </Map>
+  <Map ID="106" Name="尤尤小屋" Type="1"  >
+        <Entries >
+              <Entry MapID="0" PosX="500" PosY="330" />
+	      <Entry MapID="9" PosX="500" PosY="330" />		
+        </Entries>
+   </Map>
+   <Map ID="107" Name="牧场饲养室" Type="1"  Door_map="9" >
+        <Entries >
+	     <Entry MapID="0" PosX="890" PosY="390" />
+             <Entry MapID="79" PosX="890" PosY="390" />
+	     <Entry MapID="9" PosX="125" PosY="410" />
+        </Entries>
+   </Map>
+   <Map ID="108" Name="三兄弟小屋" Type="1"  >
+        <Entries >
+	   	<Entry MapID="0" PosX="100" PosY="370" />
+	        <Entry MapID="16" PosX="100" PosY="370" />		
+	 	<Entry MapID="109" PosX="800" PosY="150" />			 
+	</Entries>
+    </Map>
+    <Map ID="109" Name="么么公主花园" Type="1"  >
+	<Entries >
+		<Entry MapID="0" PosX="770" PosY="450" />
+		<Entry MapID="108" PosX="770" PosY="450" />
+		<Entry MapID="110" PosX="610" PosY="210"/>
+		<Entry MapID="111" PosX="117" PosY="460"/>
+		<Entry MapID="155" PosX="485" PosY="500"/>
+		<Entry MapID="229" PosX="231" PosY="287"/>
+	</Entries>
+    </Map>
+    <Map ID="110" Name="么么的卧室" Type="1"  >
+            <Entries >
+	    <Entry MapID="0" PosX="200" PosY="300"/>
+	    <Entry MapID="109" PosX="200" PosY="300"/>			 
+	    </Entries>
+	</Map>
+    <Map ID="111" Name="么么密室" Type="1"  >
+            <Entries >
+	    <Entry MapID="0" PosX="217" PosY="450"/>
+	    <Entry MapID="168" PosX="217" PosY="450"/>			 
+	    <Entry MapID="109" PosX="117" PosY="460"/>
+	    </Entries>
+    </Map>
+    <Map ID="112" Name="虫虫谷" Type="4"  >
+        <Entries >
+            <Entry MapID="0" PosX="161" PosY="300" />
+            <Entry MapID="80" PosX="161" PosY="300" />
+            <Entry MapID="113" PosX="800" PosY="157" />
+            <Entry MapID="175" PosX="340" PosY="340" />
+        </Entries>	
+	<Group GameID="65" Type="16" Action="3" LG_PosX="160" LG_PosY="445" >
+	    <Item ID="1" Direction="6" Flag="0" />
+	    <Item ID="2" Direction="6" Flag="0" />
+	    <Item ID="3" Direction="6" Flag="0" />
+	</Group>
+    </Map>
+    <Map ID="113" Name="神秘花蕊" Type="1"  >
+         <Entries >
+             <Entry MapID="0" PosX="896" PosY="232" />
+             <Entry MapID="112" PosX="896" PosY="232" />
+         </Entries>	
+    </Map>
+    <Map ID="114" Name="圣诞城大门" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="800" PosY="450" />
+            <Entry MapID="37" PosX="800" PosY="450" />
+	    <Entry MapID="115" PosX="400" PosY="360" />
+	    <Entry MapID="118" PosX="727" PosY="260" />
+        </Entries>	
+    </Map>
+
+    <Map ID="115" Name="圣诞屋" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="777" PosY="340" />
+            <Entry MapID="114" PosX="777" PosY="340" />
+	    <Entry MapID="116" PosX="720" PosY="278" />
+	    <Entry MapID="117" PosX="170" PosY="300" />
+       </Entries>	
+    </Map>
+
+    <Map ID="116" Name="圣诞老人与小精灵的房间" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="530" PosY="447" />
+            <Entry MapID="115" PosX="530" PosY="447" />
+        </Entries>
+	<Group GameID="0" Type="1" Action="3" LG_PosX="210" LG_PosY="280">
+		<Item ID="1" Direction="6" Flag="0" />
+		<Item ID="2" Direction="5" Flag="0" />
+		<Item ID="3" Direction="4" Flag="0" />
+		<Item ID="4" Direction="4" Flag="0" />
+		<Item ID="5" Direction="0" Flag="0" />
+		<Item ID="6" Direction="2" Flag="0" />
+		<Item ID="7" Direction="3" Flag="0" />
+	</Group>	
+    </Map>
+
+    <Map ID="117" Name="礼品秘密制作基地" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="660" PosY="350" />
+            <Entry MapID="115" PosX="660" PosY="350" />
+        </Entries>	
+    </Map>
+
+    <Map ID="118" Name="圣诞车" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="484" PosY="479" />
+            <Entry MapID="37" PosX="484" PosY="479" />
+            <Entry MapID="115" PosX="499" PosY="288" />
+        </Entries>	
+    </Map>
+    <Map ID="119" Name="大脚印纪念房" Type="1"  >
+        <Entries >
+            <Entry MapID="0" PosX="516" PosY="238" />
+            <Entry MapID="38" PosX="502" PosY="257" />
+        </Entries>	
+    </Map>
+
+<Map ID="120" Name="云雾谜桥" Type="1"  >
+     <Entries >
+        <Entry MapID="0" PosX="171" PosY="438" />
+		<Entry MapID="61" PosX="171" PosY="438" />
+		<Entry MapID="121" PosX="99" PosY="270" />
+		<Entry MapID="151" PosX="529" PosY="188" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="170" LG_PosY="350">
+			<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+
+<Map ID="121" Name="拉姆世界丛林" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="778" PosY="370" />
+		<Entry MapID="120" PosX="778" PosY="370" />
+		<Entry MapID="122" PosX="630" PosY="325" />
+		<Entry MapID="123" PosX="126" PosY="333" />
+     </Entries>	
+</Map>
+
+
+<Map ID="122" Name="拉姆世界云端" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="196" PosY="370" />
+		<Entry MapID="121" PosX="836" PosY="420" />
+		<Entry MapID="153" PosX="480" PosY="397" />
+     </Entries>	
+</Map>
+
+<Map ID="123" Name="拉姆神秘世界" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="837" PosY="366" />
+		<Entry MapID="121" PosX="837" PosY="366" />
+		<Entry MapID="124" PosX="580" PosY="373" />
+		<Entry MapID="125" PosX="380" PosY="243" />
+		<Entry MapID="128" PosX="775" PosY="305" />
+		<Entry MapID="133" PosX="586" PosY="220" />
+		<Entry MapID="144" PosX="269" PosY="465" />
+		<Entry MapID="240" PosX="475" PosY="185" />
+     </Entries>	
+</Map>
+
+<Map ID="124" Name="藏宝神殿" Type="1">
+     <Entries >
+		<Entry MapID="0" PosX="358" PosY="298" />
+		<Entry MapID="121" PosX="837" PosY="366" />
+		<Entry MapID="123" PosX="247" PosY="350" />
+		<Entry MapID="132" PosX="811" PosY="312" />
+		<Entry MapID="136" PosX="367" PosY="309" />
+     </Entries>	
+</Map>
+
+<Map ID="125" Name="拉姆世界火焰洞" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="798" PosY="418" />
+         <Entry MapID="123" PosX="798" PosY="418" />
+         <Entry MapID="126" PosX="693" PosY="120" />
+     </Entries>	
+</Map>
+
+
+<Map ID="126" Name="火焰酋长洞穴" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="137" PosY="348" />
+		<Entry MapID="127" PosX="598" PosY="107" />
+		<Entry MapID="125" PosX="137" PosY="348" />
+     </Entries>	
+</Map>
+
+<Map ID="127" Name="拉姆火焰试炼场" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="466" PosY="411" />
+         <Entry MapID="126" PosX="466" PosY="411" />
+     </Entries>	
+</Map>
+<Map ID="128" Name="精灵之森" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="918" PosY="235" />
+         <Entry MapID="127" PosX="918" PosY="235" />
+         <Entry MapID="129" PosX="663" PosY="193" />
+     </Entries>	
+</Map>
+
+
+<Map ID="129" Name="拉姆世界" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="690" PosY="388" />
+		<Entry MapID="128" PosX="690" PosY="388" />
+		<Entry MapID="130" PosX="795" PosY="185" />
+     </Entries>	
+</Map>
+
+<Map ID="130" Name="拉姆世界木系酋长洞穴" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="800" PosY="231" />
+         <Entry MapID="129" PosX="800" PosY="231" />
+         <Entry MapID="128" PosX="798" PosY="436" />
+         <Entry MapID="131" PosX="169" PosY="357" />
+     </Entries>	
+</Map>
+
+<Map ID="131" Name="拉姆世界木系酋长洞穴" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="464" PosY="393" />
+         <Entry MapID="130" PosX="464" PosY="393" />
+     </Entries>	
+</Map>
+<Map ID="132" Name="拉姆世界木之禁地" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="100" PosY="312" />
+         <Entry MapID="124" PosX="100" PosY="312" />
+     </Entries>	
+</Map>
+<Map ID="133" Name="冰之洞穴" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="233" PosY="458" />
+         <Entry MapID="123" PosX="120" PosY="450" />
+         <Entry MapID="134" PosX="437" PosY="453" />
+     </Entries>	
+</Map>
+<Map ID="134" Name="水系酋长洞穴" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="746" PosY="187" />
+         <Entry MapID="133" PosX="746" PosY="187" />
+         <Entry MapID="135" PosX="290" PosY="245" />
+     </Entries>	
+</Map>
+<Map ID="135" Name="冰之章鱼试炼场" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="464" PosY="394" />
+         <Entry MapID="134" PosX="464" PosY="394" />
+     </Entries>	
+</Map>
+
+<Map ID="136" Name="藏宝神殿内" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="284" PosY="336" />
+         <Entry MapID="124" PosX="284" PosY="336" />
+     </Entries>	
+</Map>
+<Map ID="137" Name="摩尔大厅新手场景" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="380" PosY="400" />
+		<Entry MapID="138" PosX="380" PosY="400" />
+     </Entries>	
+</Map>
+<Map ID="138" Name="摩尔城堡新手场景" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="450" PosY="450" />
+		<Entry MapID="137" PosX="450" PosY="450" />
+		<Entry MapID="139" PosX="450" PosY="450" />
+     </Entries>	
+</Map>
+<Map ID="139" Name="摩尔餐厅新手场景" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="210" PosY="280" />
+		<Entry MapID="138" PosX="210" PosY="280" />
+     </Entries>	
+</Map>
+<Map ID="140" Name="淘淘乐街新手场景" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="250" PosY="380" />
+		<Entry MapID="138" PosX="250" PosY="380" />
+     </Entries>	
+</Map>
+<Map ID="141" Name="宠物店新手场景" Type="1"  >
+     <Entries >
+		<Entry MapID="0" PosX="510" PosY="350" />
+		<Entry MapID="140" PosX="510" PosY="350" />
+     </Entries>	
+</Map>
+<Map ID="142" Name="米勒大道" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="730" PosY="420" />
+         <Entry MapID="3" PosX="730" PosY="420" />
+         <Entry MapID="147" PosX="675" PosY="350" />
+         <Entry MapID="149" PosX="324" PosY="328" />
+         <entry MapID="150" PosX="324" PosY="328" />
+         <Entry MapID="153" PosX="460" PosY="260" />
+         <Entry MapID="203" PosX="750" PosY="330" />
+     </Entries>	
+</Map>
+<Map ID="143" Name="建设署" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="450" PosY="270" />
+         <Entry MapID="4" PosX="450" PosY="270" />
+     </Entries>	
+</Map>
+<!--Map ID="144" Name="建设署" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="283" />
+         <Entry MapID="123" PosX="476" PosY="305" />
+         <Entry MapID="145" PosX="381" PosY="301" />
+     </Entries>	
+</Map>
+<Map ID="145" Name="建设署" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="283" />
+         <Entry MapID="144" PosX="650" PosY="190" />
+         <Entry MapID="146" PosX="150" PosY="400" />
+     </Entries>	
+</Map>
+<Map ID="146" Name="建设署" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="283" />
+         <Entry MapID="145" PosX="770" PosY="220" />
+     </Entries>	
+</Map-->
+<Map ID="147" Name="尼菲餐厅" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="283" />
+         <Entry MapID="142" PosX="460" PosY="290" />
+         <Entry MapID="147" PosX="148" PosY="460" />
+     </Entries>	
+</Map>
+<Map ID="148" Name="餐厅培训室" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="283" />
+         <Entry MapID="147" PosX="460" PosY="290" />
+     </Entries>	
+</Map>
+<Map ID="149" Name="摩摩商会" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="283" />
+         <Entry MapID="147" PosX="460" PosY="290" />
+         <Entry MapID="142" PosX="140" PosY="357" />
+     </Entries>	
+</Map>
+<Map ID="150" Name="米勒街区" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="600" PosY="420" />
+         <Entry MapID="3" PosX="850" PosY="400" />
+         <Entry MapID="142" PosX="100" PosY="400" />
+         <entry MapID="150" PosX="600" PosY="420" />
+     </Entries>	
+</Map>
+<Map ID="151" Name="藤蔓森林" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="191" PosY="369" />
+         <Entry MapID="120" PosX="191" PosY="369" />
+         <Entry MapID="152" PosX="465" PosY="146" />
+         <Entry MapID="228" PosX="360" PosY="240" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="796" LG_PosY="309">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="152" Name="森林训练场" Type="1"  >
+     <Entries >
+         <Entry MapID="0" PosX="655" PosY="306" />
+         <Entry MapID="151" PosX="518" PosY="390" />
+     </Entries>	
+	<Group GameID="71" Type="1" Action="3" LG_PosX="644" LG_PosY="391">
+		<Item ID="1" Direction="6" Flag="0" />
+		<Item ID="2" Direction="6" Flag="0" />
+	</Group>
+	<Group GameID="72" Type="1" Action="3" LG_PosX="644" LG_PosY="391">
+		<Item ID="3" Direction="6" Flag="0" />
+		<Item ID="4" Direction="6" Flag="0" />
+		<Item ID="5" Direction="6" Flag="0" />
+	</Group>
+	<Group GameID="73" Type="1" Action="3" LG_PosX="644" LG_PosY="391">
+		<Item ID="6" Direction="6" Flag="0" />
+		<Item ID="7" Direction="6" Flag="0" />
+		<Item ID="8" Direction="6" Flag="0" />
+		<Item ID="9" Direction="6" Flag="0" />
+	</Group>
+	<Group GameID="70" Type="1" Action="3" LG_PosX="655" LG_PosY="306">
+		<Item ID="10" Direction="6" Flag="0" />
+	</Group>
+	<Group GameID="69" Type="1" Action="3" LG_PosX="655" LG_PosY="306">
+		<Item ID="11" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="153" Name="拉姆学校" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="764" PosY="280" />
+         <Entry MapID="142" PosX="764" PosY="280" />
+     </Entries>	
+</Map>
+<Map ID="154" Name="天空游乐场" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="650" PosY="350" />
+     </Entries>	
+</Map>
+
+<Map ID="155" Name="摩尔王宝藏" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="774" PosY="358" />
+         <Entry MapID="109" PosX="200" PosY="320" />
+         <Entry MapID="153" PosX="719" PosY="400" />
+     </Entries>	
+	<Group GameID="83" Type="8" Action="3" LG_PosX="521" LG_PosY="252">
+		<Item ID="1" Direction="4" Flag="0" />
+		<Item ID="2" Direction="4" Flag="0" />
+		<Item ID="3" Direction="4" Flag="0" />
+		<Item ID="4" Direction="4" Flag="0" />
+		<Item ID="5" Direction="4" Flag="0" />
+		<Item ID="6" Direction="4" Flag="0" />
+	</Group>
+</Map>
+<Map ID="156" Name="马其诺营地" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="277" PosY="344" />
+         <Entry MapID="47" PosX="277" PosY="344" />
+         <Entry MapID="155" PosX="642" PosY="373" />
+         <Entry MapID="157" PosX="100" PosY="280" />
+         <Entry MapID="158" PosX="800" PosY="330" />
+     </Entries>	
+	 <Group GameID="80" Type="0" Action="0" LG_PosX="277" LG_PosY="344">
+		<Item ID="1" Direction="0" Flag="0" />
+	</Group>
+	 <Group GameID="84" Type="0" Action="0" LG_PosX="277" LG_PosY="344">
+		<Item ID="2" Direction="0" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="157" Name="驯龙场" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="736" PosY="352" />
+		<Entry MapID="38" PosX="750" PosY="200" />
+         <Entry MapID="47" PosX="450" PosY="300" />
+         <Entry MapID="156" PosX="750" PosY="250" />
+         <Entry MapID="158" PosX="130" PosY="250" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="333" LG_PosY="130">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="158" Name="艾尔文湿地" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="100" PosY="350" />
+         <Entry MapID="156" PosX="100" PosY="350" />
+         <Entry MapID="157" PosX="180" PosY="200" />
+         <Entry MapID="159" PosX="700" PosY="250" />
+         <Entry MapID="160" PosX="349" PosY="193" />
+         <Entry MapID="170" PosX="566" PosY="297" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="520" LG_PosY="340">
+		<Item ID="1" Direction="6" Flag="0" />
+		<Item ID="2" Direction="6" Flag="0" />
+		<Item ID="3" Direction="6" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="159" Name="黑雾沼泽" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="400" PosY="352" />
+         <Entry MapID="160" PosX="450" PosY="190" />
+         <Entry MapID="158" PosX="750" PosY="250" />
+         <Entry MapID="161" PosX="705" PosY="305" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="500" LG_PosY="300">
+		<Item ID="1" Direction="6" Flag="0" />
+		<Item ID="2" Direction="6" Flag="0" />
+		<Item ID="3" Direction="6" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="160" Name="丹莫洛丛林" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="400" PosY="352" />
+         <Entry MapID="158" PosX="870" PosY="293" />
+         <Entry MapID="159" PosX="450" PosY="300" />
+         <Entry MapID="161" PosX="208" PosY="308" />
+         <Entry MapID="162" PosX="170" PosY="304" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="500" LG_PosY="300">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="161" Name="导师内饰" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="517" PosY="310" />
+         <Entry MapID="80" PosX="517" PosY="310" />
+     </Entries>	
+</Map>
+<Map ID="162" Name="奥达诺森" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="479" PosY="350" />
+         <Entry MapID="160" PosX="842" PosY="319" />
+         <Entry MapID="163" PosX="292" PosY="182" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="500" LG_PosY="300">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="163" Name="黑刃要塞" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="477" PosY="366" />
+         <Entry MapID="162" PosX="223" PosY="304" />
+         <Entry MapID="164" PosX="712" PosY="311" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="477" LG_PosY="366">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="164" Name="埃特拉火山" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="508" PosY="377" />
+         <Entry MapID="163" PosX="239" PosY="207" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="239" LG_PosY="207">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="165" Name="远古海滩" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="200" PosY="344" />
+         <Entry MapID="161" PosX="200" PosY="344" />
+         <Entry MapID="166" PosX="484" PosY="236" />
+         <Entry MapID="167" PosX="720" PosY="318" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="200" LG_PosY="344">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="166" Name="蒂斯深海" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="260" PosY="250" />
+         <Entry MapID="165" PosX="260" PosY="250" />
+         <Entry MapID="169" PosX="626" PosY="227" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="260" LG_PosY="250">
+		<Item ID="1" Direction="6" Flag="0" />
+		<Item ID="2" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="167" Name="和平村" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="307" PosY="357" />
+         <Entry MapID="165" PosX="307" PosY="357" />
+         <Entry MapID="168" PosX="651" PosY="327" />
+     </Entries>	
+</Map>
+<Map ID="168" Name="平平后山" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="420" PosY="276" />
+         <Entry MapID="167" PosX="254" PosY="403" />
+     </Entries>	
+</Map>
+<Map ID="169" Name="奥林波斯海滩" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="307" PosY="357" />
+         <Entry MapID="166" PosX="351" PosY="256" />
+         <Entry MapID="172" PosX="516" PosY="217" />
+     </Entries>	
+	<Group GameID="70" Type="1" Action="3" LG_PosX="307" LG_PosY="357">
+		<Item ID="1" Direction="6" Flag="0" />
+	</Group>
+</Map>
+<Map ID="170" Name="吉吉赛秘境" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="240" PosY="270" />
+         <Entry MapID="158" PosX="240" PosY="270" />
+     </Entries>	
+</Map>
+<Map ID="171" Name="云裳镜界" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="304" PosY="349" />
+     </Entries>	
+</Map>
+<Map ID="172" Name="爆米花异度空间" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="258" PosY="276" />
+         <Entry MapID="173" PosX="263" PosY="377" />
+         <Entry MapID="174" PosX="599" PosY="377" />
+         <Entry MapID="47" PosX="243" PosY="405" />
+     </Entries>
+	<Group GameID="87" Type="8" Action="3" LG_PosX="440" LG_PosY="440">
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="3" Flag="0" />
+			<Item ID="3" Direction="3" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="5" Direction="2" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="173" Name="章鱼异度空间" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="210" PosY="441" />
+         <Entry MapID="47" PosX="210" PosY="441" />
+         <Entry MapID="172" PosX="210" PosY="441" />
+         <Entry MapID="174" PosX="210" PosY="441" />
+     </Entries>	
+</Map>
+<Map ID="174" Name="卡酷T系列车" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="250" PosY="482" />
+         <Entry MapID="47" PosX="250" PosY="482" />
+         <Entry MapID="172" PosX="250" PosY="482" />
+         <Entry MapID="173" PosX="250" PosY="482" />
+     </Entries>	
+</Map>
+
+<Map ID="175" Name="哈哈移动城堡" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="650" PosY="350" />
+         <Entry MapID="112" PosX="550" PosY="350" />
+     </Entries>	
+	<Group GameID="81" Type="0" Action="0" LG_PosX="650" LG_PosY="350">
+		<Item ID="1" Direction="0" Flag="0" />
+	</Group>
+	<Group GameID="82" Type="0" Action="0" LG_PosX="650" LG_PosY="350">
+		<Item ID="2" Direction="0" Flag="0" />
+	</Group>
+</Map>
+<Map ID="176" Name="神秘湖码头" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="800" PosY="400" />
+         <Entry MapID="8" PosX="800" PosY="400" />
+         <Entry MapID="177" PosX="800" PosY="400" />
+         <Entry MapID="179" PosX="727" PosY="400" />
+         <Entry MapID="252" PosX="530" PosY="390" />
+     </Entries>	
+</Map>
+<Map ID="177" Name="前沿阵地" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="900" PosY="450" />
+         <Entry MapID="176" PosX="900" PosY="450" />
+     </Entries>	
+</Map>
+<Map ID="178" Name="神秘湖云海" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="479" PosY="290" />
+         <Entry MapID="8" PosX="479" PosY="290" />
+     </Entries>	
+</Map>
+<Map ID="179" Name="摩罗岛海滩" Type="1">
+     <Entries >
+         <Entry MapID="176" PosX="723" PosY="419" />
+         <Entry MapID="0" PosX="723" PosY="419" />
+         <Entry MapID="180" PosX="590" PosY="233" />
+     </Entries>	
+</Map>
+<Map ID="180" Name="摩罗岛洼地" Type="1">
+     <Entries >
+         <Entry MapID="179" PosX="805" PosY="380" />
+         <Entry MapID="0" PosX="805" PosY="380" />
+         <Entry MapID="181" PosX="262" PosY="218" />
+     </Entries>	
+</Map>
+<Map ID="181" Name="摩罗岛丛林" Type="1">
+     <Entries >
+         <Entry MapID="180" PosX="733" PosY="430" />
+         <Entry MapID="0" PosX="733" PosY="430" />
+         <Entry MapID="182" PosX="330" PosY="340" />
+     </Entries>	
+</Map>
+<Map ID="182" Name="摩罗岛岩地" Type="1">
+     <Entries >
+         <Entry MapID="181" PosX="719" PosY="392" />
+         <Entry MapID="0" PosX="719" PosY="392" />
+         <Entry MapID="183" PosX="240" PosY="400" />
+     </Entries>	
+</Map>
+<Map ID="183" Name="摩罗岛山洞" Type="1">
+     <Entries >
+         <Entry MapID="182" PosX="680" PosY="390" />
+         <Entry MapID="0" PosX="680" PosY="390" />
+     </Entries>	
+</Map>
+<Map ID="184" Name="摩尔古城门" Type="1">
+     <Entries >
+         <Entry MapID="93" PosX="760" PosY="413" />
+         <Entry MapID="0" PosX="760" PosY="413" />
+         <Entry MapID="185" PosX="480" PosY="320" />
+     </Entries>	
+</Map>
+<Map ID="185" Name="地下城商业区" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="75" PosY="366" />
+         <Entry MapID="184" PosX="75" PosY="366" />
+         <Entry MapID="186" PosX="865" PosY="408" />
+     </Entries>	
+</Map>
+<Map ID="186" Name="广场遗迹" Type="1">
+     <Entries >
+         <Entry MapID="185" PosX="136" PosY="471" />
+         <Entry MapID="0" PosX="136" PosY="471" />
+         <Entry MapID="187" PosX="640" PosY="250" />
+         <Entry MapID="188" PosX="890" PosY="300" />
+     </Entries>	
+</Map>
+<Map ID="187" Name="神秘藏宝室" Type="1">
+     <Entries >
+         <Entry MapID="186" PosX="363" PosY="145" />
+         <Entry MapID="0" PosX="363" PosY="145" />
+     </Entries>	
+</Map>
+<Map ID="188" Name="荒废的训练场" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="50" PosY="300" />
+         <Entry MapID="186" PosX="50" PosY="300" />
+         <Entry MapID="189" PosX="850" PosY="400" />
+     </Entries>	
+</Map>
+<Map ID="189" Name="地下城岗哨" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="50" PosY="350" />
+         <Entry MapID="188" PosX="50" PosY="350" />
+         <Entry MapID="190" PosX="650" PosY="200" />
+         <Entry MapID="193" PosX="810" PosY="350" />
+     </Entries>	
+</Map>
+<Map ID="190" Name="卫兵要塞第一层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="420" />
+         <Entry MapID="189" PosX="360" PosY="325" />
+         <Entry MapID="191" PosX="360" PosY="325" />
+     </Entries>	
+</Map>
+<Map ID="191" Name="卫兵要塞第二层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="420" />
+         <Entry MapID="190" PosX="360" PosY="325" />
+         <Entry MapID="192" PosX="360" PosY="325" />
+     </Entries>	
+</Map>
+<Map ID="192" Name="卫兵要塞第三层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="460" PosY="420" />
+         <Entry MapID="191" PosX="360" PosY="325" />
+     </Entries>	
+</Map>
+<Map ID="193" Name="回廊矿洞一层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="150" PosY="200" />
+         <Entry MapID="189" PosX="100" PosY="200" />
+         <Entry MapID="194" PosX="800" PosY="150" />
+         <Entry MapID="195" PosX="500" PosY="500" />
+     </Entries>	
+</Map>
+<Map ID="194" Name="秘密藏宝室" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="300" PosY="400" />
+         <Entry MapID="193" PosX="350" PosY="350" />
+     </Entries>	
+</Map>
+<Map ID="195" Name="回廊矿洞二层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="500" PosY="100" />
+         <Entry MapID="193" PosX="500" PosY="100" />
+         <Entry MapID="196" PosX="120" PosY="350" />
+         <Entry MapID="198" PosX="850" PosY="350" />
+         <Entry MapID="200" PosX="500" PosY="500" />
+     </Entries>	
+</Map>
+<Map ID="196" Name="神秘矿道" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="150" PosY="200" />
+         <Entry MapID="195" PosX="850" PosY="150" />
+         <Entry MapID="197" PosX="150" PosY="200" />
+     </Entries>	
+</Map>
+<Map ID="197" Name="神秘矿道深处" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="800" PosY="200" />
+         <Entry MapID="196" PosX="850" PosY="175" />
+     </Entries>	
+</Map>
+<Map ID="198" Name="回廊矿洞三层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="100" PosY="375" />
+         <Entry MapID="195" PosX="100" PosY="350" />
+         <Entry MapID="199" PosX="850" PosY="350" />
+         <Entry MapID="201" PosX="500" PosY="500" />
+     </Entries>	
+</Map>
+<Map ID="199" Name="回廊矿洞四层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="100" PosY="375" />
+         <Entry MapID="198" PosX="100" PosY="350" />
+         <Entry MapID="202" PosX="500" PosY="500" />
+     </Entries>	
+</Map>
+<Map ID="200" Name="回廊矿洞五层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="100" PosY="375" />
+         <Entry MapID="195" PosX="500" PosY="100" />
+         <Entry MapID="201" PosX="850" PosY="350" />
+     </Entries>	
+</Map>
+<Map ID="201" Name="回廊矿洞六层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="100" PosY="375" />
+         <Entry MapID="198" PosX="500" PosY="100" />
+         <Entry MapID="200" PosX="100" PosY="350" />
+         <Entry MapID="202" PosX="850" PosY="350" />
+     </Entries>	
+</Map>
+<Map ID="202" Name="回廊矿洞七层" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="100" PosY="375" />
+         <Entry MapID="199" PosX="500" PosY="100" />
+         <Entry MapID="201" PosX="100" PosY="350" />
+     </Entries>	
+</Map>
+<Map ID="203" Name="KFC餐厅" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="250" PosY="330" />
+         <Entry MapID="142" PosX="250" PosY="330" />
+         <Entry MapID="57" PosX="850" PosY="350" />
+     </Entries>
+	 <Group GameID="91" Type="0" Action="0" LG_PosX="592" LG_PosY="342">
+			<Item ID="1" Direction="0" Flag="0" />
+	</Group>
+</Map>
+<Map ID="204" Name="天空树" Type="1">
+     <Entries >
+         <Entry MapID="0" PosX="167" PosY="491" />
+         <Entry MapID="8" PosX="167" PosY="491" />
+         <Entry MapID="237" PosX="220" PosY="210" />
+         <Entry MapID="238" PosX="200" PosY="175" />
+         <Entry MapID="239" PosX="620" PosY="305" />
+     </Entries>	
+</Map>
+<Map ID="205" Name="摩尔王国后花园" Type="1">
+     <Entries >
+         <Entry MapID="206" PosX="200" PosY="115" />
+         <Entry MapID="47" PosX="600" PosY="450" />
+         <Entry MapID="0" PosX="600" PosY="450" />
+         <Entry MapID="207" PosX="219" PosY="395" />
+         <Entry MapID="223" PosX="805" PosY="380" />
+     </Entries>	
+	<Group GameID="89" Type="1" Action="3" LG_PosX="600" LG_PosY="450">
+			<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="600" LG_PosY="450">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="206" Name="皇后寝宫" Type="1">
+     <Entries >
+         <Entry MapID="205" PosX="750" PosY="250" />
+         <Entry MapID="0" PosX="750" PosY="250" />
+     </Entries>
+	 <Group GameID="89" Type="1" Action="3" LG_PosX="750" LG_PosY="250">
+	 	<Item ID="1" Direction="2" Flag="0" />
+	 </Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="750" LG_PosY="250">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="207" Name="摩尔王国前殿" Type="1">
+     <Entries >
+         <Entry MapID="208" PosX="440" PosY="410" />
+         <Entry MapID="205" PosX="798" PosY="336" />
+         <Entry MapID="0" PosX="440" PosY="410" />
+     </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="440" LG_PosY="410">
+        <Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="440" LG_PosY="410">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="208" Name="摩尔王国城堡口" Type="1">
+     <Entries >
+         <Entry MapID="47" PosX="111" PosY="394" />
+         <Entry MapID="0" PosX="111" PosY="394" />
+         <Entry MapID="207" PosX="306" PosY="267" />
+         <Entry MapID="209" PosX="665" PosY="321" />
+         <Entry MapID="213" PosX="762" PosY="388" />
+     </Entries>	
+	 <Group GameID="89" Type="1" Action="3" LG_PosX="111" LG_PosY="394">
+	 	<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="111" LG_PosY="394">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="209" Name="亚撒训练场" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="400" PosY="250" />
+        <Entry MapID="208" PosX="373" PosY="240" />
+        <Entry MapID="210" PosX="716" PosY="292" />
+        <Entry MapID="220" PosX="245" PosY="400" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="400" LG_PosY="250">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="400" LG_PosY="250">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="210" Name="爱萨栖息地" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="200" PosY="230" />
+        <Entry MapID="209" PosX="200" PosY="230" />
+        <Entry MapID="212" PosX="705" PosY="425" />
+        <Entry MapID="219" PosX="356" PosY="297" />
+        <Entry MapID="226" PosX="430" PosY="450" />
+    </Entries>	
+	<Group GameID="89" Type="1" Action="3" LG_PosX="200" LG_PosY="230">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="200" LG_PosY="230">
+		<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="211" Name="比巴卜奇幻岛" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="486" PosY="334" />
+        <Entry MapID="212" PosX="486" PosY="334" />
+        <Entry MapID="216" PosX="303" PosY="326" />
+        <Entry MapID="217" PosX="700" PosY="320" />
+        <Entry MapID="218" PosX="500" PosY="330" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="643" LG_PosY="400">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="643" LG_PosY="400">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="212" Name="灵奇树洞" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="248" PosY="393" />
+    	<Entry MapID="210" PosX="248" PosY="393" />
+    	<Entry MapID="211" PosX="256" PosY="321" />
+    	<Entry MapID="214" PosX="819" PosY="373" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="248" LG_PosY="393">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="248" LG_PosY="393">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="213" Name="捷克的回忆" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="250" PosY="350" />
+    </Entries>
+</Map>
+
+<Map ID="214" Name="毛毛头村落" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="267" PosY="399" />
+    	<Entry MapID="212" PosX="267" PosY="399" />
+    	<Entry MapID="215" PosX="750" PosY="380" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="267" LG_PosY="399">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="267" LG_PosY="399">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="215" Name="呐奇拉沼泽" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="399" PosY="462" />
+    	<Entry MapID="214" PosX="399" PosY="462" />
+    	<Entry MapID="224" PosX="730" PosY="200" />
+    	<Entry MapID="225" PosX="705" PosY="485" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="300" LG_PosY="300">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="300" LG_PosY="300">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="216" Name="大力酷滑屋" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="789" PosY="448" />
+    	<Entry MapID="211" PosX="789" PosY="448" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="789" LG_PosY="448">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="789" LG_PosY="448">
+		<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="217" Name="花仙神枪屋" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="643" PosY="400" />
+    	<Entry MapID="211" PosX="643" PosY="400" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="643" LG_PosY="400">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="643" LG_PosY="400">
+		<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="218" Name="奇变精灵屋" Type="1">
+	<Entries >
+    	<Entry MapID="211" PosX="600" PosY="350" />
+    	<Entry MapID="0" PosX="600" PosY="350" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="600" LG_PosY="350">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="600" LG_PosY="350">
+		<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="219" Name="爱萨栖息地深处" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="228" PosY="355" />
+    	<Entry MapID="210" PosX="228" PosY="355" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="484" LG_PosY="412">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="484" LG_PosY="412">
+		<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="220" Name="勇者之战竞技场" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="795" PosY="305" />
+    	<Entry MapID="209" PosX="795" PosY="305" />
+    	<Entry MapID="221" PosX="205" PosY="315" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="795" LG_PosY="305">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="795" LG_PosY="305">
+		<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="221" Name="勇者训练营" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="140" PosY="305" />
+    	<Entry MapID="220" PosX="805" PosY="305" />
+    	<Entry MapID="213" PosX="140" PosY="305" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="140" LG_PosY="305">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="140" LG_PosY="305">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="222" Name="电视墙" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="150" PosY="405" />
+    	<Entry MapID="2" PosX="150" PosY="405" />
+    </Entries>
+</Map>
+
+<Map ID="223" Name="麽麽公主的摇篮" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="455" PosY="461" />
+    	<Entry MapID="205" PosX="455" PosY="461" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="455" LG_PosY="461">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="455" LG_PosY="461">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="224" Name="废弃之地" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="160" PosY="275" />
+    	<Entry MapID="215" PosX="160" PosY="275" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="160" LG_PosY="275">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="160" LG_PosY="275">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="225" Name="暗黑之地" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="125" PosY="287" />
+    	<Entry MapID="215" PosX="125" PosY="287" />
+    	<Entry MapID="227" PosX="720" PosY="230" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="125" LG_PosY="287">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="125" LG_PosY="287">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="226" Name="黑暗密室" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="590" PosY="300" />
+    	<Entry MapID="210" PosX="590" PosY="300" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="590" LG_PosY="300">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="590" LG_PosY="300">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="227" Name="暗黑巢穴" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="265" PosY="220" />
+    	<Entry MapID="225" PosX="265" PosY="220" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="750" LG_PosY="285">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="750" LG_PosY="285">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+<Map ID="228" Name="摩摩训练场" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="750" PosY="285" />
+    	<Entry MapID="151" PosX="750" PosY="285" />
+    </Entries>
+	<Group GameID="89" Type="1" Action="3" LG_PosX="750" LG_PosY="285">
+		<Item ID="1" Direction="2" Flag="0" />
+	</Group>
+	<Group GameID="90" Type="1" Action="3" LG_PosX="750" LG_PosY="285">
+    	<Item ID="2" Direction="2" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="229" Name="摩尔假面舞会" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="119" PosY="277" />
+    	<Entry MapID="109" PosX="119" PosY="277" />
+    </Entries>
+</Map>
+
+<Map ID="230" Name="aaaa" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="70" PosY="350" />
+    	<Entry MapID="5" PosX="70" PosY="350" />
+    </Entries>
+</Map>
+
+<Map ID="231" Name="南瓜小屋" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="200" PosY="330" />
+    	<Entry MapID="47" PosX="200" PosY="330" />
+    </Entries>
+	<Group GameID="92" Type="16" Action="0" LG_PosX="160" LG_PosY="445" >
+		<Item ID="1" Direction="4" Flag="0" />
+		<Item ID="2" Direction="4" Flag="0" />
+		<Item ID="3" Direction="4" Flag="0" />
+		<Item ID="4" Direction="4" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="232" Name="aaaa" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="48" PosY="183" />
+    	<Entry MapID="231" PosX="48" PosY="183" />
+    </Entries>
+</Map>
+
+<Map ID="233" Name="aaaa" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="717" PosY="373" />
+    	<Entry MapID="229" PosX="717" PosY="373" />
+    	<Entry MapID="230" PosX="178" PosY="359" />
+    	<Entry MapID="47" PosX="157" PosY="350" />
+    	<Entry MapID="235" PosX="646" PosY="306" />
+    </Entries>
+</Map>
+
+<Map ID="234" Name="aaaa" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="82" PosY="267" />
+    	<Entry MapID="231" PosX="108" PosY="298" />
+    </Entries>
+</Map>
+
+<Map ID="235" Name="aaaa" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="769" PosY="437" />
+    	<Entry MapID="233" PosX="769" PosY="437" />
+    </Entries>
+	<Group GameID="92" Type="16" Action="0" LG_PosX="160" LG_PosY="445" >
+		<Item ID="1" Direction="4" Flag="0" />
+		<Item ID="2" Direction="4" Flag="0" />
+		<Item ID="3" Direction="4" Flag="0" />
+		<Item ID="4" Direction="4" Flag="0" />
+	</Group>
+</Map>
+
+<Map ID="236" Name="臭臭的肥肥馆" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="200" PosY="300" />
+    </Entries>
+</Map>
+
+<Map ID="237" Name="布多多布少少房间" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="160" PosY="450" />
+    	<Entry MapID="204" PosX="160" PosY="450" />
+    </Entries>
+</Map>
+
+<Map ID="238" Name="布多多布少少房间" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="145" PosY="365" />
+    	<Entry MapID="204" PosX="145" PosY="365" />
+    </Entries>
+</Map>
+
+<Map ID="239" Name="摩乐乐家" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="190" PosY="445" />
+    	<Entry MapID="204" PosX="190" PosY="445" />
+    </Entries>
+</Map>
+
+<Map ID="240" Name="库拉城堡" Type="1">
+	<Entries >
+    	<Entry MapID="0" PosX="815" PosY="315" />
+    	<Entry MapID="123" PosX="815" PosY="315" />
+    </Entries>
+</Map>
+  
+  <Map ID="241" Name="埋骨之地" Type="1">
+    <Entries >
+      <Entry MapID="0" PosX="370" PosY="400" />
+    </Entries>
+  </Map>
+
+  <Map ID="242" Name="新咕噜艺术街" Type="1" > 
+  		<Entries >
+			<Entry MapID="0" PosX="240" PosY="330" />
+      		<Entry MapID="3" PosX="21" PosY="201" />
+			<Entry MapID="10" PosX="414" PosY="216" />
+			<Entry MapID="60" PosX="643" PosY="374" />
+			<Entry MapID="65" PosX="440" PosY="260" />
+			<Entry MapID="72" PosX="400" PosY="260" />
+			<Entry MapID="248" PosX="400" PosY="260" />
+		</Entries>
+	</Map>
+
+	<Map ID="243" Name="爱心教堂2" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="890" PosY="340" />
+			<Entry MapID="1" PosX="890" PosY="340" />
+			<Entry MapID="9" PosX="120" PosY="330" />
+			<Entry MapID="18" PosX="600" PosY="350" />
+			<Entry MapID="44" PosX="170" PosY="260" />
+			<Entry MapID="45" PosX="310" PosY="260" />
+			<Entry MapID="46" PosX="314" PosY="280" />
+			<Entry MapID="69" PosX="542" PosY="367" />
+			<Entry MapID="70" PosX="560" PosY="340" />
+			<Entry MapID="222" PosX="195" PosY="150" />
+			<Entry MapID="244" PosX="600" PosY="350" />
+			<Entry MapID="247" PosX="120" PosY="330" />
+		</Entries>
+
+		<RandomItems>
+			<Item ID="190026" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<!-- <Item ID="190025" MaxPoints="2" StartPoint="1" Max="2" RebornTime="30" Multiplicator="1" AppearAnyTime="1" /> -->
+		</RandomItems>
+		<Group GameID="86" Type="8" Action="3" LG_PosX="535" LG_PosY="380">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="6" Flag="0" />
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="6" Flag="0" />
+			<Item ID="5" Direction="6" Flag="0" />
+			<Item ID="6" Direction="6" Flag="0" />
+		</Group>
+		<Group GameID="14" Type="8" Action="3" LG_PosX="530" LG_PosY="160">
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="4" Flag="0" />
+			<Item ID="9" Direction="4" Flag="0" />
+			<Item ID="10" Direction="4" Flag="0" />
+			<Item ID="11" Direction="4" Flag="0" />
+			<Item ID="12" Direction="4" Flag="0" />
+		</Group>
+	</Map>	
+	<Map ID="244" Name="爱心教堂内2" Type="1" >
+		<Entries >
+			<Entry MapID="0" PosX="230" PosY="300" />
+			<Entry MapID="2" PosX="230" PosY="300" />
+			<Entry MapID="243" PosX="230" PosY="300" />
+		</Entries>
+	</Map>
+	<Map ID="245" Name="浆果丛林2" Type="1" >
+		<Entries>
+			<Entry MapID="0" PosX="770" PosY="170" />
+			<Entry MapID="40" PosX="770" PosY="170" />
+			<Entry MapID="42" PosX="230" PosY="260" />
+			<Entry MapID="70" PosX="550" PosY="300" />
+		</Entries>
+		<RandomItems>
+			<Item ID="190120" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+		<Group GameID="20" Type="0" Action="0" LG_PosX="200" LG_PosY="300">
+			<Item ID="1" Direction="0" Flag="0" />
+		</Group>
+		<Group GameID="24" Type="0" Action="0" LG_PosX="770" LG_PosY="170">
+			<Item ID="2" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+	<Map ID="246" Name="神秘湖2" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="780" PosY="250" />
+			<Entry MapID="9" PosX="832" PosY="209" />
+			<Entry MapID="31" PosX="210" PosY="240" />
+			<Entry MapID="50" PosX="400" PosY="380" />
+			<Entry MapID="67" PosX="459" PosY="229" />
+			<Entry MapID="176" PosX="48" PosY="295" />
+			<Entry MapID="178" PosX="583" PosY="260" />
+			<Entry MapID="204" PosX="850" PosY="480" />
+			<Entry MapID="247" PosX="850" PosY="480" />
+		</Entries>
+		<Group GameID="8" Type="8" Action="3" LG_PosX="770" LG_PosY="340">
+			<Item ID="1" Direction="1" Flag="0" />
+			<Item ID="2" Direction="1" Flag="0" />
+			<Item ID="3" Direction="1" Flag="0" />
+			<Item ID="4" Direction="1" Flag="0" />
+			<Item ID="5" Direction="1" Flag="0" />
+			<Item ID="6" Direction="1" Flag="0" />
+		</Group>
+		<Group GameID="8" Type="8" Action="3" LG_PosX="630" LG_PosY="220">
+			<Item ID="7" Direction="3" Flag="0" />
+			<Item ID="8" Direction="3" Flag="0" />
+			<Item ID="9" Direction="7" Flag="0" />
+			<Item ID="10" Direction="7" Flag="0" />
+			<Item ID="11" Direction="7" Flag="0" />
+			<Item ID="12" Direction="7" Flag="0" />
+		</Group>
+		<Group GameID="8" Type="8" Action="3" LG_PosX="250" LG_PosY="270">
+			<Item ID="13" Direction="6" Flag="0" />
+			<Item ID="14" Direction="7" Flag="0" />
+			<Item ID="15" Direction="7" Flag="0" />
+			<Item ID="16" Direction="7" Flag="0" />
+			<Item ID="17" Direction="0" Flag="0" />
+			<Item ID="18" Direction="1" Flag="0" />
+		</Group>
+	</Map>	
+	<Map ID="247" Name="阳光牧场" Type="4" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="800" PosY="280" />  
+			<Entry MapID="2" PosX="820" PosY="180" /> 
+			<Entry MapID="8" PosX="150" PosY="410" /> 
+			<Entry MapID="38" PosX="890" PosY="210" /> 
+          	<Entry MapID="79" PosX="400" PosY="320" /> 
+			<Entry MapID="106" PosX="540" PosY="200" />
+			<Entry MapID="107" PosX="460" PosY="250" />
+			<Entry MapID="246" PosX="460" PosY="250" />
+		</Entries>
+		<Group GameID="25" Type="8" Action="3" LG_PosX="820" LG_PosY="200">
+			<Item ID="1" Direction="6" Flag="0" />
+			<Item ID="2" Direction="6" Flag="0" />
+			<Item ID="3" Direction="6" Flag="0" />
+			<Item ID="4" Direction="2" Flag="0" />
+			<Item ID="5" Direction="2" Flag="0" />
+			<Item ID="6" Direction="2" Flag="0" />
+		</Group>
+
+		<Group GameID="45" Type="16" Action="0" LG_PosX="160" LG_PosY="445" >
+			<Item ID="7" Direction="4" Flag="0" />
+			<Item ID="8" Direction="4" Flag="0" />
+			<Item ID="9" Direction="4" Flag="0" />
+		</Group>
+
+		<RandomItems>
+			<Item ID="190024" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<!-- <Item ID="190025" MaxPoints="2" StartPoint="1" Max="2" RebornTime="30" Multiplicator="1" AppearAnyTime="1" /> -->
+		</RandomItems>
+	</Map>  
+	<Map ID="248" Name="开心农场" Type="1" PartyPeriod="1" >
+		<Entries >
+			<Entry MapID="0" PosX="190" PosY="370" />
+			<Entry MapID="59" PosX="400" PosY="240" />
+			<Entry MapID="27" PosX="760" PosY="330" />
+       		<Entry MapID="83" PosX="878" PosY="347" />
+			<Entry MapID="38" PosX="173" PosY="450" />
+			<Entry MapID="56" PosX="500" PosY="330" />
+			<Entry MapID="101" PosX="183" PosY="321" />
+			<Entry MapID="105" PosX="888" PosY="320" />
+			<Entry MapID="154" PosX="300" PosY="400" />
+			<Entry MapID="242" PosX="300" PosY="400" />
+		</Entries>
+
+		<RandomItems>
+			<Item ID="150002" MaxPoints="1" StartPoint="0" Max="1" RebornTime="30" StartTime="16" EndTime="19" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="12138" MaxPoints="1" StartPoint="1" Max="1" GenOnDemand="1" DisappearTime="120" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190027" MaxPoints="1" StartPoint="2" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190028" MaxPoints="1" StartPoint="3" Max="1" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+			<Item ID="190022" MaxPoints="2" StartPoint="4" Max="2" RebornTime="30" Multiplicator="1" AppearAnyTime="1" />
+		</RandomItems>
+
+		<Group GameID="19" Type="8" Action="0" LG_PosX="400" LG_PosY="340">
+			<Item ID="1" Direction="0" Flag="0" />
+			<Item ID="2" Direction="0" Flag="0" />
+			<Item ID="3" Direction="0" Flag="0" />
+			<Item ID="4" Direction="0" Flag="0" />
+			<Item ID="5" Direction="0" Flag="0" />
+			<Item ID="6" Direction="0" Flag="0" />
+		</Group>
+	</Map>
+    <Map ID="249" Name="么么公主花园" Type="1"  >
+	<Entries >
+		<Entry MapID="0" PosX="770" PosY="450" />
+		<Entry MapID="108" PosX="770" PosY="450" />
+		<Entry MapID="110" PosX="610" PosY="210"/>
+		<Entry MapID="111" PosX="117" PosY="460"/>
+		<Entry MapID="155" PosX="485" PosY="500"/>
+		<Entry MapID="229" PosX="231" PosY="287"/>
+		<Entry MapID="250" PosX="231" PosY="287"/>
+	</Entries>
+    </Map>
+    <Map ID="250" Name="么么的卧室" Type="1"  >
+    <Entries >
+	    <Entry MapID="0" PosX="200" PosY="300"/>
+	    <Entry MapID="109" PosX="200" PosY="300"/>
+	    <Entry MapID="249" PosX="200" PosY="300"/>
+	</Entries>
+	</Map>
+    <Map ID="251" Name="摩达尼号遗迹" Type="1"  >
+		<Entries >
+			<Entry MapID="0" PosX="670" PosY="270"/>
+		</Entries>
+		<Group GameID="97" Type="1" Action="3" LG_PosX="670" LG_PosY="270">
+			<Item ID="2" Direction="2" Flag="0" />
+		</Group>
+	</Map>
+    <Map ID="252" Name="海之谜城" Type="1"  >
+		<Entries >
+			<Entry MapID="0" PosX="485" PosY="425"/>
+			<Entry MapID="176" PosX="370" PosY="340"/>
+			<Entry MapID="253" PosX="625" PosY="290"/>
+			<Entry MapID="254" PosX="788" PosY="376"/>
+		</Entries>
+		<Group GameID="92" Type="16" Action="0" LG_PosX="225" LG_PosY="400" >
+			<Item ID="1" Direction="4" Flag="0" />
+			<Item ID="2" Direction="4" Flag="0" />
+		</Group>
+	</Map>
+    <Map ID="253" Name="人鱼宫殿" Type="1"  >
+		<Entries >
+			<Entry MapID="0" PosX="410" PosY="440"/>
+			<Entry MapID="252" PosX="180" PosY="315"/>
+		</Entries>
+	</Map>
+    <Map ID="254" Name="海妖国" Type="1"  >
+		<Entries >
+			<Entry MapID="0" PosX="150" PosY="250"/>
+			<Entry MapID="252" PosX="150" PosY="250"/>
+		</Entries>
+		<Group GameID="85" Type="0" Action="0" LG_PosX="518" LG_PosY="343" >
+			<Item ID="1" Direction="4" Flag="0" />
+		</Group>	
+	</Map>
+
+</Maps>

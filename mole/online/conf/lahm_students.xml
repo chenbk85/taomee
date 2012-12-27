@@ -1,0 +1,135 @@
+<!--GradeID 年级id latent 潜力值 moral 德育 IQ 智力 sport 体育 art 艺术  labor 劳动-->
+<Students>
+	<Grade GradeID="1">
+		<Level LevelID="1">
+			<Item PetID="1" Latent="40" Moral="3" IQ="14" Sport="7" Art="9" Labor="9" Flag="0"/>
+			<Item PetID="2" Latent="20" Moral="17" IQ="4" Sport="0" Art="11" Labor="17" Flag="0"/>
+			<Item PetID="3" Latent="13" Moral="17" IQ="18" Sport="2" Art="5" Labor="11" Flag="0"/>
+			<Item PetID="4" Latent="28" Moral="17" IQ="3" Sport="18" Art="14" Labor="1" Flag="0"/>
+			<Item PetID="5" Latent="15" Moral="20" IQ="4" Sport="14" Art="0" Labor="7" Flag="0"/>
+			<Item PetID="6" Latent="45" Moral="10" IQ="2" Sport="11" Art="17" Labor="21" Flag="0"/>
+			<Item PetID="7" Latent="49" Moral="13" IQ="17" Sport="18" Art="7" Labor="24" Flag="0"/>
+			<Item PetID="8" Latent="36" Moral="22" IQ="24" Sport="22" Art="12" Labor="18" Flag="0"/>
+			<Item PetID="9" Latent="14" Moral="17" IQ="2" Sport="9" Art="2" Labor="20" Flag="0"/>
+			<Item PetID="10" Latent="16" Moral="23" IQ="6" Sport="2" Art="3" Labor="24" Flag="0"/>
+			<Item PetID="11" Latent="23" Moral="4" IQ="18" Sport="7" Art="24" Labor="13" Flag="0"/>
+			<Item PetID="12" Latent="33" Moral="3" IQ="1" Sport="5" Art="21" Labor="4" Flag="0"/>
+			<Item PetID="13" Latent="14" Moral="23" IQ="0" Sport="2" Art="18" Labor="24" Flag="0"/>
+			<Item PetID="14" Latent="37" Moral="8" IQ="24" Sport="19" Art="23" Labor="19" Flag="0"/>
+			<Item PetID="15" Latent="5" Moral="17" IQ="18" Sport="23" Art="14" Labor="0" Flag="0"/>
+			<Item PetID="16" Latent="41" Moral="4" IQ="3" Sport="14" Art="20" Labor="23" Flag="0"/>
+			<Item PetID="17" Latent="97" Moral="31" IQ="30" Sport="35" Art="26" Labor="31" Flag="1"/>
+			<Item PetID="18" Latent="89" Moral="33" IQ="38" Sport="27" Art="49" Labor="35" Flag="1"/>
+			<Item PetID="19" Latent="73" Moral="43" IQ="34" Sport="40" Art="28" Labor="36" Flag="1"/>
+			<Item PetID="20" Latent="124" Moral="30" IQ="40" Sport="34" Art="25" Labor="40" Flag="1"/>
+			<Item PetID="21" Latent="115" Moral="27" IQ="45" Sport="46" Art="31" Labor="48" Flag="1"/>
+			<Item PetID="22" Latent="58" Moral="48" IQ="38" Sport="31" Art="41" Labor="25" Flag="1"/>
+			<Item PetID="23" Latent="77" Moral="44" IQ="37" Sport="25" Art="44" Labor="35" Flag="1"/>
+			<Item PetID="24" Latent="124" Moral="26" IQ="36" Sport="31" Art="32" Labor="25" Flag="1"/>
+		</Level>
+		<Level LevelID="2">
+			<Item PetID="25" Latent="49" Moral="7" IQ="24" Sport="24" Art="24" Labor="2" Flag="0"/>
+			<Item PetID="26" Latent="29" Moral="2" IQ="1" Sport="18" Art="8" Labor="17" Flag="0"/>
+			<Item PetID="27" Latent="49" Moral="23" IQ="16" Sport="9" Art="17" Labor="23" Flag="0"/>
+			<Item PetID="28" Latent="47" Moral="6" IQ="5" Sport="6" Art="18" Labor="14" Flag="0"/>
+			<Item PetID="29" Latent="10" Moral="15" IQ="2" Sport="6" Art="18" Labor="24" Flag="0"/>
+			<Item PetID="30" Latent="32" Moral="8" IQ="4" Sport="14" Art="3" Labor="11" Flag="0"/>
+			<Item PetID="31" Latent="16" Moral="11" IQ="24" Sport="23" Art="13" Labor="1" Flag="0"/>
+			<Item PetID="32" Latent="6" Moral="11" IQ="11" Sport="16" Art="15" Labor="22" Flag="0"/>
+			<Item PetID="33" Latent="20" Moral="12" IQ="17" Sport="11" Art="21" Labor="10" Flag="0"/>
+			<Item PetID="34" Latent="17" Moral="23" IQ="9" Sport="6" Art="23" Labor="4" Flag="0"/>
+			<Item PetID="35" Latent="39" Moral="11" IQ="18" Sport="0" Art="19" Labor="10" Flag="0"/>
+			<Item PetID="36" Latent="25" Moral="23" IQ="22" Sport="7" Art="21" Labor="8" Flag="0"/>
+			<Item PetID="37" Latent="5" Moral="0" IQ="19" Sport="21" Art="14" Labor="9" Flag="0"/>
+			<Item PetID="38" Latent="19" Moral="16" IQ="10" Sport="24" Art="6" Labor="1" Flag="0"/>
+			<Item PetID="39" Latent="14" Moral="4" IQ="16" Sport="13" Art="7" Labor="14" Flag="0"/>
+			<Item PetID="40" Latent="41" Moral="4" IQ="24" Sport="18" Art="0" Labor="24" Flag="0"/>
+			<Item PetID="41" Latent="66" Moral="41" IQ="41" Sport="48" Art="41" Labor="43" Flag="1"/>
+			<Item PetID="42" Latent="58" Moral="25" IQ="47" Sport="30" Art="34" Labor="42" Flag="1"/>
+			<Item PetID="43" Latent="74" Moral="41" IQ="37" Sport="33" Art="48" Labor="28" Flag="1"/>
+			<Item PetID="44" Latent="86" Moral="35" IQ="38" Sport="46" Art="26" Labor="31" Flag="1"/>
+			<Item PetID="45" Latent="73" Moral="44" IQ="44" Sport="37" Art="40" Labor="48" Flag="1"/>
+			<Item PetID="46" Latent="53" Moral="41" IQ="34" Sport="25" Art="45" Labor="44" Flag="1"/>
+			<Item PetID="47" Latent="92" Moral="31" IQ="43" Sport="28" Art="38" Labor="31" Flag="1"/>
+			<Item PetID="48" Latent="108" Moral="44" IQ="35" Sport="34" Art="39" Labor="30" Flag="1"/>
+		</Level>
+		<Level LevelID="3">
+			<Item PetID="49" Latent="24" Moral="11" IQ="1" Sport="1" Art="13" Labor="0" Flag="0"/>
+			<Item PetID="50" Latent="6" Moral="16" IQ="6" Sport="15" Art="11" Labor="12" Flag="0"/>
+			<Item PetID="51" Latent="2" Moral="15" IQ="14" Sport="2" Art="12" Labor="21" Flag="0"/>
+			<Item PetID="52" Latent="0" Moral="24" IQ="12" Sport="11" Art="22" Labor="12" Flag="0"/>
+			<Item PetID="53" Latent="49" Moral="7" IQ="10" Sport="24" Art="15" Labor="16" Flag="0"/>
+			<Item PetID="54" Latent="23" Moral="24" IQ="1" Sport="9" Art="4" Labor="10" Flag="0"/>
+			<Item PetID="55" Latent="1" Moral="12" IQ="15" Sport="17" Art="7" Labor="20" Flag="0"/>
+			<Item PetID="56" Latent="3" Moral="13" IQ="9" Sport="14" Art="13" Labor="18" Flag="0"/>
+			<Item PetID="57" Latent="15" Moral="12" IQ="18" Sport="1" Art="5" Labor="9" Flag="0"/>
+			<Item PetID="58" Latent="46" Moral="8" IQ="17" Sport="10" Art="11" Labor="3" Flag="0"/>
+			<Item PetID="59" Latent="26" Moral="23" IQ="5" Sport="24" Art="1" Labor="22" Flag="0"/>
+			<Item PetID="60" Latent="39" Moral="0" IQ="19" Sport="9" Art="12" Labor="24" Flag="0"/>
+			<Item PetID="61" Latent="1" Moral="19" IQ="16" Sport="0" Art="16" Labor="19" Flag="0"/>
+			<Item PetID="62" Latent="0" Moral="18" IQ="21" Sport="21" Art="7" Labor="12" Flag="0"/>
+			<Item PetID="63" Latent="17" Moral="6" IQ="7" Sport="12" Art="11" Labor="11" Flag="0"/>
+			<Item PetID="64" Latent="33" Moral="5" IQ="15" Sport="23" Art="21" Labor="1" Flag="0"/>
+			<Item PetID="65" Latent="66" Moral="49" IQ="35" Sport="34" Art="34" Labor="27" Flag="1"/>
+			<Item PetID="66" Latent="103" Moral="38" IQ="37" Sport="43" Art="44" Labor="34" Flag="1"/>
+			<Item PetID="67" Latent="114" Moral="42" IQ="29" Sport="40" Art="40" Labor="44" Flag="1"/>
+			<Item PetID="68" Latent="91" Moral="47" IQ="36" Sport="41" Art="40" Labor="32" Flag="1"/>
+			<Item PetID="69" Latent="83" Moral="25" IQ="36" Sport="28" Art="33" Labor="39" Flag="1"/>
+			<Item PetID="70" Latent="110" Moral="36" IQ="43" Sport="32" Art="34" Labor="27" Flag="1"/>
+			<Item PetID="71" Latent="77" Moral="32" IQ="38" Sport="25" Art="28" Labor="41" Flag="1"/>
+			<Item PetID="72" Latent="101" Moral="25" IQ="46" Sport="46" Art="35" Labor="37" Flag="1"/>
+		</Level>
+		<Level LevelID="4">
+			<Item PetID="73" Latent="26" Moral="19" IQ="1" Sport="20" Art="2" Labor="9" Flag="0"/>
+			<Item PetID="74" Latent="37" Moral="16" IQ="8" Sport="11" Art="23" Labor="21" Flag="0"/>
+			<Item PetID="75" Latent="2" Moral="3" IQ="11" Sport="4" Art="6" Labor="6" Flag="0"/>
+			<Item PetID="76" Latent="22" Moral="20" IQ="3" Sport="23" Art="9" Labor="13" Flag="0"/>
+			<Item PetID="77" Latent="36" Moral="8" IQ="8" Sport="12" Art="12" Labor="4" Flag="0"/>
+			<Item PetID="78" Latent="14" Moral="1" IQ="21" Sport="5" Art="1" Labor="21" Flag="0"/>
+			<Item PetID="79" Latent="29" Moral="11" IQ="14" Sport="24" Art="3" Labor="24" Flag="0"/>
+			<Item PetID="80" Latent="41" Moral="9" IQ="23" Sport="5" Art="10" Labor="14" Flag="0"/>
+			<Item PetID="81" Latent="38" Moral="4" IQ="5" Sport="3" Art="2" Labor="7" Flag="0"/>
+			<Item PetID="82" Latent="33" Moral="19" IQ="13" Sport="8" Art="7" Labor="7" Flag="0"/>
+			<Item PetID="83" Latent="18" Moral="22" IQ="11" Sport="12" Art="7" Labor="6" Flag="0"/>
+			<Item PetID="84" Latent="18" Moral="19" IQ="5" Sport="9" Art="5" Labor="3" Flag="0"/>
+			<Item PetID="85" Latent="13" Moral="12" IQ="14" Sport="19" Art="3" Labor="15" Flag="0"/>
+			<Item PetID="86" Latent="22" Moral="15" IQ="16" Sport="0" Art="22" Labor="17" Flag="0"/>
+			<Item PetID="87" Latent="20" Moral="22" IQ="4" Sport="24" Art="4" Labor="0" Flag="0"/>
+			<Item PetID="88" Latent="39" Moral="24" IQ="3" Sport="10" Art="20" Labor="11" Flag="0"/>
+			<Item PetID="89" Latent="51" Moral="44" IQ="38" Sport="28" Art="30" Labor="44" Flag="1"/>
+			<Item PetID="90" Latent="120" Moral="41" IQ="39" Sport="44" Art="30" Labor="27" Flag="1"/>
+			<Item PetID="91" Latent="107" Moral="35" IQ="37" Sport="44" Art="43" Labor="39" Flag="1"/>
+			<Item PetID="92" Latent="72" Moral="31" IQ="31" Sport="37" Art="41" Labor="44" Flag="1"/>
+			<Item PetID="93" Latent="100" Moral="36" IQ="42" Sport="27" Art="31" Labor="38" Flag="1"/>
+			<Item PetID="94" Latent="72" Moral="30" IQ="37" Sport="37" Art="43" Labor="43" Flag="1"/>
+			<Item PetID="95" Latent="97" Moral="39" IQ="29" Sport="38" Art="33" Labor="31" Flag="1"/>
+			<Item PetID="96" Latent="87" Moral="35" IQ="42" Sport="26" Art="41" Labor="25" Flag="1"/>
+		</Level>
+		<Level LevelID="5">
+			<Item PetID="97" Latent="13" Moral="11" IQ="23" Sport="12" Art="18" Labor="5" Flag="0"/>
+			<Item PetID="98" Latent="9" Moral="13" IQ="12" Sport="14" Art="14" Labor="8" Flag="0"/>
+			<Item PetID="99" Latent="8" Moral="7" IQ="2" Sport="14" Art="16" Labor="21" Flag="0"/>
+			<Item PetID="100" Latent="39" Moral="6" IQ="13" Sport="0" Art="11" Labor="7" Flag="0"/>
+			<Item PetID="101" Latent="9" Moral="8" IQ="18" Sport="22" Art="21" Labor="4" Flag="0"/>
+			<Item PetID="102" Latent="7" Moral="24" IQ="21" Sport="0" Art="24" Labor="5" Flag="0"/>
+			<Item PetID="103" Latent="36" Moral="10" IQ="21" Sport="0" Art="13" Labor="0" Flag="0"/>
+			<Item PetID="104" Latent="32" Moral="7" IQ="4" Sport="23" Art="13" Labor="19" Flag="0"/>
+			<Item PetID="105" Latent="42" Moral="2" IQ="5" Sport="13" Art="19" Labor="14" Flag="0"/>
+			<Item PetID="106" Latent="26" Moral="0" IQ="3" Sport="0" Art="0" Labor="16" Flag="0"/>
+			<Item PetID="107" Latent="47" Moral="18" IQ="8" Sport="15" Art="13" Labor="10" Flag="0"/>
+			<Item PetID="108" Latent="13" Moral="5" IQ="3" Sport="18" Art="0" Labor="13" Flag="0"/>
+			<Item PetID="109" Latent="0" Moral="8" IQ="18" Sport="16" Art="11" Labor="3" Flag="0"/>
+			<Item PetID="110" Latent="4" Moral="18" IQ="19" Sport="7" Art="3" Labor="9" Flag="0"/>
+			<Item PetID="111" Latent="12" Moral="1" IQ="7" Sport="7" Art="18" Labor="4" Flag="0"/>
+			<Item PetID="112" Latent="0" Moral="23" IQ="16" Sport="23" Art="20" Labor="16" Flag="0"/>
+			<Item PetID="113" Latent="104" Moral="38" IQ="30" Sport="31" Art="44" Labor="27" Flag="1"/>
+			<Item PetID="114" Latent="56" Moral="25" IQ="40" Sport="42" Art="34" Labor="27" Flag="1"/>
+			<Item PetID="115" Latent="66" Moral="42" IQ="33" Sport="44" Art="41" Labor="30" Flag="1"/>
+			<Item PetID="116" Latent="78" Moral="39" IQ="40" Sport="39" Art="44" Labor="30" Flag="1"/>
+			<Item PetID="117" Latent="109" Moral="36" IQ="25" Sport="49" Art="40" Labor="33" Flag="1"/>
+			<Item PetID="118" Latent="70" Moral="28" IQ="33" Sport="28" Art="25" Labor="32" Flag="1"/>
+			<Item PetID="119" Latent="69" Moral="44" IQ="43" Sport="44" Art="34" Labor="28" Flag="1"/>
+			<Item PetID="120" Latent="105" Moral="35" IQ="35" Sport="45" Art="28" Labor="45" Flag="1"/>
+		</Level>
+	</Grade>
+</Students>

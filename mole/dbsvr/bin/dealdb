@@ -1,0 +1,7 @@
+#!/bin/bash
+user="root"
+password="ta0mee"
+host="localhost"
+tmp_file="table.sql"
+mysqladmin -f -u $user --password="$password" -h $host CREATE $1
+cat  $1 | mysql -u $user --password="$password"  -h $host $1 

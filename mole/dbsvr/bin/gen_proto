@@ -1,0 +1,118 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import sys
+import os 
+import optparse
+import re 
+
+def get_chr( hex_re ):
+	hex=hex_re.group();
+	value=eval ("0x%s" % (hex)) ;
+	return chr(value); 
+def get_hex( chr_re ):
+	a_chr=chr_re.group();
+	return "%02X"% ord(a_chr); 
+
+def hex2bin(hexlist):
+	phex=re.compile(r'(\w\w)')
+	return phex.sub(get_chr , hexlist );
+
+def bin2hex(chrlist):
+	phex=re.compile(r'(.)')
+	return phex.sub(get_hex, chrlist );
+
+def main(argv):
+	p = optparse.OptionParser(
+			description='send buffer to server ',
+			prog='sendf',
+			version='%prog 0.1',
+			usage='%prog 16 00 00 00 C9 00 0C 00 50 10 00 00 00 00 58 C3 00 00 00 00 00 00 ' )
+	p.add_option('-p', '--proto', default="USER_TEST", help='proto command text'  );
+	p.add_option('-c', '--commandid', default="0000", help='proto command id'  );
+	p.add_option('-u', '--update', action ='store_true', help='proto need update db ' );
+	p.add_option('-i', '--pri_in', action ='store_true',   help='need private in struct' );
+	p.add_option('-o', '--pri_out', action ='store_true', 
+			help='need private out struct' );
+
+	p.add_option('-I', '--pri_in_list', action ='store_true', 
+			 help='need private in struct with list ' );
+
+	p.add_option('-O', '--pri_out_list', action ='store_true', 
+			 help='need private out struct with list' );
+	options, arguments = p.parse_args()	
+
+	if ( options.update ) : 
+		proto_need_update= "|NEED_UPDATE"
+	else:
+		proto_need_update= ""
+	proto_name="" 
+	proto_name= options.proto
+	if (proto_name=="USER_TEST" and len(arguments)>0  ):
+		proto_name= arguments[0] 
+	proto_name=proto_name.upper()
+	
+
+	print ("\n~/DB/include/proto.h" );
+	print ( "#define %-33s\t(0x%s %s)" %( proto_name+"_CMD" ,
+					options.commandid , proto_need_update ) ) ;
+	
+	#pri_in
+	if ( options.pri_in_list ) : 
+		print("typedef stru_count   %s_in_header;" % proto_name.lower() );
+		print( "struct  %s_in_item{\n}__attribute__((packed));"%( 
+					proto_name.lower() ));
+	elif (options.pri_in ) :
+		print( "struct  %s_in{\n}__attribute__((packed));"%( 
+					proto_name.lower() ));
+	#pri_out
+	if ( options.pri_out_list ) : 
+		print("typedef stru_count   %s_out_header;" % proto_name.lower() );
+		print( "struct  %s_out_item{\n}__attribute__((packed));"%( 
+					proto_name.lower() ));
+	elif (options.pri_out ) :
+		print( "struct  %s_out{\n}__attribute__((packed));"%( 
+					proto_name.lower() ));
+
+	print ("\n~/DB/ser/src/Croute_func.h" );
+	print ("\tint %s(DEAL_FUN_ARG);"% proto_name.lower()  );
+	
+	print ("\n~/DB/ser/src/Croute_func.cpp" );
+	#bind
+	if ( options.pri_in_list ): 
+		print ( "\tFILL_CMD_WITH_PRI_IN_GE	(%s,%s),"% (proto_name ,proto_name.lower()) )
+	elif (options.pri_in ) :
+		print ( "\tFILL_CMD_WITH_PRI_IN	(%s,%s),"% (proto_name ,proto_name.lower()) )
+	else:
+		print ( "\tFILL_CMD_WITHOUT_PRI_IN	(%s,%s),"% (proto_name ,proto_name.lower()) )
+	#function
+	print ( "int Croute_func::%s(DEAL_FUN_ARG)"% proto_name.lower() )
+	print ( "{")
+	#pri_in
+	if ( options.pri_in_list ): 
+		print ( "\t%s_in_header *p_in=PRI_IN_POS;"% proto_name.lower() )
+		print ("\tCHECK_PRI_IN_LEN_WITHOUT_HEADER((p_in->count)*sizeof(%s_in_item));"%(
+					proto_name.lower()) )
+		print ( "\t%s_in_item * p_in_item=(%s_in_item*)(RCVBUF_PRIVATE_POS+sizeof(*p_in)) ;"% (
+					proto_name.lower() ,proto_name.lower() ) )
+	elif (options.pri_in ) :
+		print ( "\t%s_in *p_in=PRI_IN_POS; "% proto_name.lower() )
+	#pri_out
+	if ( options.pri_out_list ): 
+		print ( "\t%s_out_header  out_header;"% proto_name.lower() )
+		print ( "\t%s_out_item *p_out_item;"% proto_name.lower() )
+	elif (options.pri_out ) :
+		print ( "\t%s_out out={};"% proto_name.lower() )
+
+	print "\tret=this->";
+		
+	if ( options.pri_out_list ): 
+		print("\tSTD_RETURN_WITH_STRUCT_LIST(ret,out_header,p_out_item,out_header.count);");
+	elif (options.pri_out ) :
+		print("\tSTD_RETURN_WITH_STRUCT(ret,out);");
+	else:
+		print("\tSTD_RETURN(ret);");
+	
+	print ( "}\n\n")
+
+if __name__ == "__main__":
+	main(sys.argv)

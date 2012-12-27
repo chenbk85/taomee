@@ -1,0 +1,89 @@
+<!-- -->
+<Angel_honor>
+	<HonorType Type="1">
+		<Honor HonorID="1">
+			<Item ID="1353209" Count="3" />
+			<Item ID="1353211" Count="3" />
+			<Item ID="1353210" Count="3" />
+		</Honor>
+		<Honor HonorID="2">
+			<Item ID="1353102" Count="20" />
+			<Item ID="1353105" Count="3" />
+		</Honor>
+		<Honor HonorID="3">
+			<Item ID="1353409" Count="2" />
+			<Item ID="1353410" Count="2" />
+			<Item ID="1353412" Count="2" />
+		</Honor>
+		<Honor HonorID="4">
+			<Item ID="1353381" Count="5" />
+			<Item ID="1353384" Count="3" />
+			<Item ID="1354039" Count="1" />
+		</Honor>
+		<Honor HonorID="5">
+			<Item ID="1353383" Count="5" />
+			<Item ID="1353386" Count="3" />
+			<Item ID="1354043" Count="1" />
+		</Honor>
+		<Honor HonorID="6">
+			<Item ID="1353382" Count="5" />
+			<Item ID="1353384" Count="3" />
+			<Item ID="1354051" Count="1" />
+		</Honor>
+		<Honor HonorID="7">
+			<Item ID="1353250" Count="2" />
+		</Honor>
+		<Honor HonorID="8">
+			<Item ID="1353251" Count="2" />
+		</Honor>
+		<Honor HonorID="9">
+			<Item ID="1353254" Count="2" />
+		</Honor>
+		<Honor HonorID="10">
+			<Item ID="1353255" Count="2" />
+		</Honor>
+		<Honor HonorID="11">
+			<Item ID="1353256" Count="2" />
+		</Honor>
+		<Honor HonorID="12">
+			<Item ID="1353252" Count="2" />
+		</Honor>
+		<Honor HonorID="13">
+			<Item ID="1353253" Count="2" />
+		</Honor>
+
+	</HonorType>
+	<HonorType Type="2">
+		<Honor HonorID="1">
+			<Item ID="1353411" Count="1" />
+		</Honor>
+		<Honor HonorID="2">
+			<Item ID="1353408" Count="1" />
+		</Honor>
+		<Honor HonorID="3">
+			<Item ID="1353413" Count="1" />
+		</Honor>
+		<Honor HonorID="4">
+			<Item ID="1354041" Count="1" />
+		</Honor>
+		<Honor HonorID="5">
+			<Item ID="1353424" Count="2" />
+		</Honor>
+		<Honor HonorID="6">
+			<Item ID="1353431" Count="1" />
+			<Item ID="1353417" Count="1" />
+		</Honor>
+		<Honor HonorID="7">
+			<Item ID="1354035" Count="2" />
+		</Honor>
+		<Honor HonorID="8">
+			<Item ID="1354037" Count="1" />
+			<Item ID="1354039" Count="1" />
+		</Honor>
+		<Honor HonorID="9">
+			<Item ID="1354043" Count="1" />
+			<Item ID="1354045" Count="1" />
+		</Honor>
+	</HonorType>
+</Angel_honor>
+

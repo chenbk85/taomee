@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Damage:附加伤害
+Consume:魔法消耗
+Buff ID:附加状态ID,在buffinfo.xml中描述，起始ID为0
+Effect ID:附加效果，在effectinfo.xml中描述，起始ID为0,该效果在技能触发时执行，没有持续性
+-->
+<!--Damage伤害 Consume法力消耗 usepoint使用次数（-1无限次，1为使用1次） true对敌人使用的 false对自己使用的
+-->
+<SkillRoot Count="277">
+	<Skill ID="0" IsEvil="true" Damage="28" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="1" IsEvil="true" Damage="33" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="2" IsEvil="true" Damage="40" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="3" IsEvil="true" Damage="46" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="4" IsEvil="true" Damage="53" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="5" IsEvil="true" Damage="59" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="6" IsEvil="true" Damage="66" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="7" IsEvil="true" Damage="74" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="8" IsEvil="true" Damage="82" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="9" IsEvil="true" Damage="110" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="10" IsEvil="true" Damage="63" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="11" IsEvil="true" Damage="75" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="12" IsEvil="true" Damage="90" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="13" IsEvil="true" Damage="105" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="14" IsEvil="true" Damage="119" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="15" IsEvil="true" Damage="133" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="16" IsEvil="true" Damage="150" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="17" IsEvil="true" Damage="167" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="18" IsEvil="true" Damage="185" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="19" IsEvil="true" Damage="230" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="20" IsEvil="true" Damage="21" Consume="100" UsePoint="-1">
+		<Buff ID="0"/>
+	</Skill>
+	<Skill ID="21" IsEvil="true" Damage="25" Consume="100" UsePoint="-1">
+		<Buff ID="1"/>
+	</Skill>
+	<Skill ID="22" IsEvil="true" Damage="30" Consume="100" UsePoint="-1">
+		<Buff ID="2"/>
+	</Skill>
+	<Skill ID="23" IsEvil="true" Damage="35" Consume="100" UsePoint="-1">
+		<Buff ID="3"/>
+	</Skill>
+	<Skill ID="24" IsEvil="true" Damage="39" Consume="100" UsePoint="-1">
+		<Buff ID="4"/>
+	</Skill>
+	<Skill ID="25" IsEvil="true" Damage="44" Consume="100" UsePoint="-1">
+		<Buff ID="5"/>
+	</Skill>
+	<Skill ID="26" IsEvil="true" Damage="50" Consume="100" UsePoint="-1">
+		<Buff ID="6"/>
+	</Skill>
+	<Skill ID="27" IsEvil="true" Damage="56" Consume="100" UsePoint="-1">
+		<Buff ID="7"/>
+	</Skill>
+	<Skill ID="28" IsEvil="true" Damage="62" Consume="100" UsePoint="-1">
+		<Buff ID="8"/>
+	</Skill>
+	<Skill ID="29" IsEvil="true" Damage="100" Consume="100" UsePoint="-1">
+		<Buff ID="9"/>
+	</Skill>
+	<Skill ID="30" IsEvil="true" Damage="21" Consume="100" UsePoint="-1">
+		<Buff ID="10"/>
+	</Skill>
+	<Skill ID="31" IsEvil="true" Damage="25" Consume="100" UsePoint="-1">
+		<Buff ID="11"/>
+	</Skill>
+	<Skill ID="32" IsEvil="true" Damage="30" Consume="100" UsePoint="-1">
+		<Buff ID="12"/>
+	</Skill>
+	<Skill ID="33" IsEvil="true" Damage="35" Consume="100" UsePoint="-1">
+		<Buff ID="13"/>
+	</Skill>
+	<Skill ID="34" IsEvil="true" Damage="39" Consume="100" UsePoint="-1">
+		<Buff ID="14"/>
+	</Skill>
+	<Skill ID="35" IsEvil="true" Damage="44" Consume="100" UsePoint="-1">
+		<Buff ID="15"/>
+	</Skill>
+	<Skill ID="36" IsEvil="true" Damage="50" Consume="100" UsePoint="-1">
+		<Buff ID="16"/>
+	</Skill>
+	<Skill ID="37" IsEvil="true" Damage="56" Consume="100" UsePoint="-1">
+		<Buff ID="17"/>
+	</Skill>
+	<Skill ID="38" IsEvil="true" Damage="62" Consume="100" UsePoint="-1">
+		<Buff ID="18"/>
+	</Skill>
+	<Skill ID="39" IsEvil="true" Damage="90" Consume="100" UsePoint="-1">
+		<Buff ID="19"/>
+	</Skill>
+	<Skill ID="40" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="20"/>
+	</Skill>
+	<Skill ID="41" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="21"/>
+	</Skill>
+	<Skill ID="42" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="22"/>
+	</Skill>
+	<Skill ID="43" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="23"/>
+	</Skill>
+	<Skill ID="44" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="24"/>
+	</Skill>
+	<Skill ID="45" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="25"/>
+	</Skill>
+	<Skill ID="46" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="26"/>
+	</Skill>
+	<Skill ID="47" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="27"/>
+	</Skill>
+	<Skill ID="48" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="28"/>
+	</Skill>
+	<Skill ID="49" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="29"/>
+	</Skill>
+	<Skill ID="50" IsEvil="true" Damage="18" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="51" IsEvil="true" Damage="18" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="52" IsEvil="true" Damage="10" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="53" IsEvil="true" Damage="10" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="54" IsEvil="true" Damage="12" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="55" IsEvil="true" Damage="12" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="56" IsEvil="true" Damage="13" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="57" IsEvil="true" Damage="10" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="58" IsEvil="true" Damage="2" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="59" IsEvil="true" Damage="22" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="60" IsEvil="true" Damage="19" Consume="200" UsePoint="-1">
+		<Buff ID="30"/>
+	</Skill>
+	<Skill ID="61" IsEvil="true" Damage="21" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="62" IsEvil="true" Damage="22" Consume="200" UsePoint="-1">
+		<Buff ID="30"/>
+	</Skill>
+	<Skill ID="63" IsEvil="true" Damage="23" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="64" IsEvil="true" Damage="16" Consume="200" UsePoint="-1">
+		<Buff ID="30"/>
+	</Skill>
+	<Skill ID="65" IsEvil="true" Damage="39" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="66" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="31"/>
+	</Skill>
+	<Skill ID="67" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="32"/>
+	</Skill>
+	<Skill ID="68" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="33"/>
+	</Skill>
+	<Skill ID="69" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="34"/>
+	</Skill>
+	<Skill ID="70" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="35"/>
+	</Skill>
+	<Skill ID="71" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="36"/>
+	</Skill>
+	<Skill ID="72" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="37"/>
+	</Skill>
+	<Skill ID="73" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="38"/>
+	</Skill>
+	<Skill ID="74" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="39"/>
+	</Skill>
+	<Skill ID="75" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="40"/>
+	</Skill>
+	<Skill ID="76" IsEvil="true" Damage="75" Consume="200" UsePoint="-1">
+		<Buff ID="41"/>
+	</Skill>
+	<Skill ID="77" IsEvil="true" Damage="90" Consume="200" UsePoint="-1">
+		<Buff ID="42"/>
+	</Skill>
+	<Skill ID="78" IsEvil="true" Damage="108" Consume="200" UsePoint="-1">
+		<Buff ID="43"/>
+	</Skill>
+	<Skill ID="79" IsEvil="true" Damage="126" Consume="200" UsePoint="-1">
+		<Buff ID="44"/>
+	</Skill>
+	<Skill ID="80" IsEvil="true" Damage="143" Consume="200" UsePoint="-1">
+		<Buff ID="45"/>
+	</Skill>
+	<Skill ID="81" IsEvil="true" Damage="159" Consume="200" UsePoint="-1">
+		<Buff ID="46"/>
+	</Skill>
+	<Skill ID="82" IsEvil="true" Damage="180" Consume="200" UsePoint="-1">
+		<Buff ID="47"/>
+	</Skill>
+	<Skill ID="83" IsEvil="true" Damage="230" Consume="200" UsePoint="-1">
+		<Buff ID="48"/>
+	</Skill>
+	<Skill ID="84" IsEvil="true" Damage="280" Consume="200" UsePoint="-1">
+		<Buff ID="49"/>
+	</Skill>
+	<Skill ID="85" IsEvil="true" Damage="350" Consume="200" UsePoint="-1">
+		<Buff ID="50"/>
+	</Skill>
+	<Skill ID="86" IsEvil="true" Damage="82" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="87" IsEvil="true" Damage="99" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="88" IsEvil="true" Damage="118" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="89" IsEvil="true" Damage="137" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="90" IsEvil="true" Damage="156" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="91" IsEvil="true" Damage="174" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="92" IsEvil="true" Damage="196" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="93" IsEvil="true" Damage="260" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="94" IsEvil="true" Damage="320" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="95" IsEvil="true" Damage="400" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="96" IsEvil="true" Damage="40" Consume="100" UsePoint="-1">
+		<Buff ID="51"/>
+	</Skill>
+	<Skill ID="97" IsEvil="true" Damage="48" Consume="100" UsePoint="-1">
+		<Buff ID="52"/>
+	</Skill>
+	<Skill ID="98" IsEvil="true" Damage="58" Consume="100" UsePoint="-1">
+		<Buff ID="53"/>
+	</Skill>
+	<Skill ID="99" IsEvil="true" Damage="67" Consume="100" UsePoint="-1">
+		<Buff ID="54"/>
+	</Skill>
+	<Skill ID="100" IsEvil="true" Damage="76" Consume="100" UsePoint="-1">
+		<Buff ID="55"/>
+	</Skill>
+	<Skill ID="101" IsEvil="true" Damage="85" Consume="100" UsePoint="-1">
+		<Buff ID="56"/>
+	</Skill>
+	<Skill ID="102" IsEvil="true" Damage="96" Consume="100" UsePoint="-1">
+		<Buff ID="57"/>
+	</Skill>
+	<Skill ID="103" IsEvil="true" Damage="127" Consume="100" UsePoint="-1">
+		<Buff ID="58"/>
+	</Skill>
+	<Skill ID="104" IsEvil="true" Damage="150" Consume="100" UsePoint="-1">
+		<Buff ID="59"/>
+	</Skill>
+	<Skill ID="105" IsEvil="true" Damage="190" Consume="100" UsePoint="-1">
+		<Buff ID="60"/>
+	</Skill>
+	<Skill ID="106" IsEvil="true" Damage="47" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="107" IsEvil="true" Damage="57" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="108" IsEvil="true" Damage="68" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="109" IsEvil="true" Damage="79" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="110" IsEvil="true" Damage="90" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="111" IsEvil="true" Damage="100" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="112" IsEvil="true" Damage="113" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="113" IsEvil="true" Damage="149" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="114" IsEvil="true" Damage="190" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="115" IsEvil="true" Damage="240" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="116" IsEvil="true" Damage="22" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="117" IsEvil="true" Damage="22" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="118" IsEvil="true" Damage="46" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="119" IsEvil="true" Damage="22" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="120" IsEvil="true" Damage="25" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="121" IsEvil="true" Damage="25" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="122" IsEvil="true" Damage="28" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="123" IsEvil="true" Damage="55" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="124" IsEvil="true" Damage="39" Consume="200" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="125" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="126" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="127" IsEvil="true" Damage="38" Consume="200" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="128" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="129" IsEvil="true" Damage="33" Consume="200" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="130" IsEvil="true" Damage="23" Consume="200" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="131" IsEvil="true" Damage="23" Consume="100" UsePoint="-1">
+		<Buff ID="63"/>
+	</Skill>
+	<Skill ID="132" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="64"/>
+	</Skill>
+	<Skill ID="133" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="65"/>
+	</Skill>
+	<Skill ID="134" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="66"/>
+	</Skill>
+	<Skill ID="135" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="67"/>
+	</Skill>
+	<Skill ID="136" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="68"/>
+	</Skill>
+	<Skill ID="137" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="69"/>
+	</Skill>
+	<Skill ID="138" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="70"/>
+	</Skill>
+	<Skill ID="139" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="71"/>
+	</Skill>
+	<Skill ID="140" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="72"/>
+	</Skill>
+	<Skill ID="141" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="73"/>
+	</Skill>
+	<Skill ID="142" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="74"/>
+	</Skill>
+	<Skill ID="143" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="75"/>
+	</Skill>
+	<Skill ID="144" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="76"/>
+	</Skill>
+	<Skill ID="145" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="77"/>
+	</Skill>
+	<Skill ID="146" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="78"/>
+	</Skill>
+	<Skill ID="147" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="79"/>
+	</Skill>
+	<Skill ID="148" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="80"/>
+	</Skill>
+	<Skill ID="149" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="81"/>
+	</Skill>
+	<Skill ID="150" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="82"/>
+	</Skill>
+	<Skill ID="151" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="83"/>
+	</Skill>
+	<Skill ID="152" IsEvil="true" Damage="92" Consume="100" UsePoint="1">
+		<Buff ID="84"/>
+	</Skill>
+	<Skill ID="153" IsEvil="true" Damage="106" Consume="100" UsePoint="1">
+		<Buff ID="85"/>
+	</Skill>
+	<Skill ID="154" IsEvil="true" Damage="121" Consume="100" UsePoint="1">
+		<Buff ID="86"/>
+	</Skill>
+	<Skill ID="155" IsEvil="true" Damage="137" Consume="100" UsePoint="1">
+		<Buff ID="87"/>
+	</Skill>
+	<Skill ID="156" IsEvil="true" Damage="154" Consume="100" UsePoint="1">
+		<Buff ID="88"/>
+	</Skill>
+	<Skill ID="157" IsEvil="true" Damage="201" Consume="100" UsePoint="1">
+		<Buff ID="89"/>
+	</Skill>
+	<Skill ID="158" IsEvil="true" Damage="251" Consume="100" UsePoint="1">
+		<Buff ID="90"/>
+	</Skill>
+	<Skill ID="159" IsEvil="true" Damage="305" Consume="100" UsePoint="1">
+		<Buff ID="91"/>
+	</Skill>
+	<Skill ID="160" IsEvil="true" Damage="356" Consume="100" UsePoint="1">
+		<Buff ID="92"/>
+	</Skill>
+	<Skill ID="161" IsEvil="true" Damage="440" Consume="100" UsePoint="1">
+		<Buff ID="93"/>
+	</Skill>
+	<Skill ID="162" IsEvil="true" Damage="102" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="163" IsEvil="true" Damage="118" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="164" IsEvil="true" Damage="134" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="165" IsEvil="true" Damage="150" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="166" IsEvil="true" Damage="169" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="167" IsEvil="true" Damage="223" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="168" IsEvil="true" Damage="278" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="169" IsEvil="true" Damage="338" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="170" IsEvil="true" Damage="400" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="171" IsEvil="true" Damage="490" Consume="100" UsePoint="1">
+	</Skill>
+	<Skill ID="172" IsEvil="true" Damage="142" Consume="200" UsePoint="1">
+		<Buff ID="94"/>
+	</Skill>
+	<Skill ID="173" IsEvil="true" Damage="164" Consume="200" UsePoint="1">
+		<Buff ID="95"/>
+	</Skill>
+	<Skill ID="174" IsEvil="true" Damage="186" Consume="200" UsePoint="1">
+		<Buff ID="96"/>
+	</Skill>
+	<Skill ID="175" IsEvil="true" Damage="208" Consume="200" UsePoint="1">
+		<Buff ID="97"/>
+	</Skill>
+	<Skill ID="176" IsEvil="true" Damage="235" Consume="200" UsePoint="1">
+		<Buff ID="98"/>
+	</Skill>
+	<Skill ID="177" IsEvil="true" Damage="310" Consume="200" UsePoint="1">
+		<Buff ID="99"/>
+	</Skill>
+	<Skill ID="178" IsEvil="true" Damage="388" Consume="200" UsePoint="1">
+		<Buff ID="100"/>
+	</Skill>
+	<Skill ID="179" IsEvil="true" Damage="472" Consume="200" UsePoint="1">
+		<Buff ID="101"/>
+	</Skill>
+	<Skill ID="180" IsEvil="true" Damage="550" Consume="200" UsePoint="1">
+		<Buff ID="102"/>
+	</Skill>
+	<Skill ID="181" IsEvil="true" Damage="635" Consume="200" UsePoint="1">
+		<Buff ID="103"/>
+	</Skill>
+	<Skill ID="182" IsEvil="true" Damage="152" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="183" IsEvil="true" Damage="176" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="184" IsEvil="true" Damage="200" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="185" IsEvil="true" Damage="224" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="186" IsEvil="true" Damage="251" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="187" IsEvil="true" Damage="334" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="188" IsEvil="true" Damage="415" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="189" IsEvil="true" Damage="500" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="190" IsEvil="true" Damage="575" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="191" IsEvil="true" Damage="680" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="192" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="104"/>
+	</Skill>
+	<Skill ID="193" IsEvil="true" Damage="55" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="194" IsEvil="true" Damage="43" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="195" IsEvil="true" Damage="43" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="196" IsEvil="true" Damage="55" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="197" IsEvil="true" Damage="45" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="198" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="105"/>
+	</Skill>
+	<Skill ID="199" IsEvil="true" Damage="84" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="200" IsEvil="true" Damage="55" Consume="200" UsePoint="-1">
+		<Buff ID="63"/>
+	</Skill>
+	<Skill ID="201" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="202" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="105"/>
+	</Skill>
+	<Skill ID="203" IsEvil="true" Damage="60" Consume="200" UsePoint="-1">
+		<Buff ID="63"/>
+	</Skill>
+	<Skill ID="204" IsEvil="true" Damage="20" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="205" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="106"/>
+	</Skill>
+	<Skill ID="206" IsEvil="true" Damage="20" Consume="100" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="207" IsEvil="true" Damage="20" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="208" IsEvil="true" Damage="10" Consume="100" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="209" IsEvil="true" Damage="15" Consume="100" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="210" IsEvil="true" Damage="10" Consume="100" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="211" IsEvil="true" Damage="20" Consume="100" UsePoint="-1">
+		<Buff ID="63"/>
+	</Skill>
+	<Skill ID="212" IsEvil="true" Damage="25" Consume="100" UsePoint="-1">
+		<Buff ID="63"/>
+	</Skill>
+	<Skill ID="213" IsEvil="true" Damage="30" Consume="100" UsePoint="-1">
+		<Buff ID="63"/>
+	</Skill>
+	<Skill ID="214" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="106"/>
+	</Skill>
+	<Skill ID="215" IsEvil="true" Damage="30" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="216" IsEvil="true" Damage="60" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="217" IsEvil="true" Damage="25" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="218" IsEvil="true" Damage="25" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="219" IsEvil="true" Damage="50" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="220" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="221" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="105"/>
+	</Skill>
+	<Skill ID="222" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="223" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="224" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="62"/>
+	</Skill>
+	<Skill ID="225" IsEvil="true" Damage="80" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="226" IsEvil="true" Damage="95" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="227" IsEvil="true" Damage="110" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="228" IsEvil="true" Damage="125" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="229" IsEvil="true" Damage="140" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="230" IsEvil="true" Damage="165" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="231" IsEvil="true" Damage="195" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="232" IsEvil="true" Damage="235" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="233" IsEvil="true" Damage="285" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="234" IsEvil="true" Damage="360" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="235" IsEvil="true" Damage="152" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="236" IsEvil="true" Damage="176" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="237" IsEvil="true" Damage="200" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="238" IsEvil="true" Damage="224" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="239" IsEvil="true" Damage="252" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="240" IsEvil="true" Damage="334" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="241" IsEvil="true" Damage="415" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="242" IsEvil="true" Damage="505" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="243" IsEvil="true" Damage="600" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="244" IsEvil="true" Damage="740" Consume="200" UsePoint="1">
+	</Skill>
+	<Skill ID="245" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="107"/>
+	</Skill>
+	<Skill ID="246" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="108"/>
+	</Skill>
+	<Skill ID="247" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="109"/>
+	</Skill>
+	<Skill ID="248" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="110"/>
+	</Skill>
+	<Skill ID="249" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="111"/>
+	</Skill>
+	<Skill ID="250" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="112"/>
+	</Skill>
+	<Skill ID="251" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="113"/>
+	</Skill>
+	<Skill ID="252" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="114"/>
+	</Skill>
+	<Skill ID="253" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="115"/>
+	</Skill>
+	<Skill ID="254" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="116"/>
+	</Skill>
+	<Skill ID="255" IsEvil="true" Damage="85" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="256" IsEvil="true" Damage="100" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="257" IsEvil="true" Damage="100" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="258" IsEvil="true" Damage="85" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="259" IsEvil="true" Damage="95" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="260" IsEvil="true" Damage="90" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="261" IsEvil="true" Damage="95" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="262" IsEvil="true" Damage="80" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="263" IsEvil="true" Damage="85" Consume="100" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="264" IsEvil="true" Damage="95" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="265" IsEvil="true" Damage="90" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="266" IsEvil="true" Damage="100" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="267" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="117"/>
+	</Skill>
+	<Skill ID="268" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="118"/>
+	</Skill>
+	<Skill ID="269" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="117"/>
+	</Skill>
+	<Skill ID="270" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="118"/>
+	</Skill>
+	<Skill ID="271" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="117"/>
+	</Skill>
+	<Skill ID="272" IsEvil="true" Damage="60" Consume="100" UsePoint="-1">
+		<Buff ID="61"/>
+	</Skill>
+	<Skill ID="273" IsEvil="true" Damage="200" Consume="200" UsePoint="-1">
+	</Skill>
+	<Skill ID="274" IsEvil="false" Damage="0" Consume="50" UsePoint="-1">
+		<Buff ID="118"/>
+	</Skill>
+	<Skill ID="275" IsEvil="true" Damage="20" Consume="100" UsePoint="-1">
+	</Skill>
+	<Skill ID="276" IsEvil="true" Damage="20" Consume="100" UsePoint="-1">
+	</Skill>
+</SkillRoot>

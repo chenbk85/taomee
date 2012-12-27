@@ -1,0 +1,44 @@
+﻿<task mapID="5" mode="1" starTime="9000" expScale="2.5" rateScale="1" score="200" losturl="swf/winswf3.swf" winurl="swf/lostswf3.swf" musicurl="td1.mp3" attackCountScale="100" startStar="14" startLifes="100">
+	<round tips="2只毛球将在20秒后进攻，请做好准备">	
+		<monster id="10004" pathID="1" time = "900" count="2"/>		
+	</round>
+	<round tips="3只刺球将在10秒后进攻，请做好准备">
+		<monster id="10005" pathID="1" time = "1200" count="3"/>		
+	</round>
+	<round tips="4只毛球将在10秒后进攻，请做好准备">
+		<monster id="10004" pathID="1" time = "1000" count="1"/>		
+		<monster id="10004" pathID="2" time = "1400" count="3" stime = "1400"/>
+	</round>
+	<round tips="5只刺球将在10秒后进攻，请做好准备">
+		<monster id="10005" pathID="1" time = "1100" count="3"/>		
+		<monster id="10005" pathID="1" time = "1500" count="2" stime = "1700"/>
+	</round>
+	<round tips="6只毛球将在10秒后进攻，请做好准备">
+		<monster id="10004" pathID="1" time = "1200" count="3"/>		
+		<monster id="10004" pathID="2" time = "1000" count="2" stime = "1500"/>
+		<monster id="10004" pathID="1" time = "1000" count="1" stime = "4000"/>
+	</round>
+	<round tips="7只刺球将在10秒后进攻，请做好准备">
+		<monster id="10005" pathID="1" time = "900" count="3"/>		
+		<monster id="10005" pathID="1" time = "800" count="2" stime = "2500"/>
+		<monster id="10005" pathID="2" time = "1200" count="2" stime = "5000"/>
+	</round>
+	<round tips="8只毛球将在10秒后进攻，请做好准备">
+		<monster id="10004" pathID="1" time = "1300" count="3"/>		
+		<monster id="10004" pathID="1" time = "1500" count="3" stime = "2900"/>
+		<monster id="10004" pathID="1" time = "900" count="2" stime = "5000"/>
+	</round>
+	<round tips="9只刺球将在10秒后进攻，请做好准备">
+		<monster id="10005" pathID="1" time = "1200" count="3"/>		
+		<monster id="10005" pathID="2" time = "1600" count="3" stime = "2700"/>
+		<monster id="10005" pathID="1" time = "1200" count="3" stime = "5700"/>
+	</round>
+	<round tips="10只毛球将在10秒后进攻，请做好准备">
+		<monster id="10004" pathID="1" time = "1000" count="5"/>		
+		<monster id="10004" pathID="1" time = "1100" count="2" stime = "1800"/>
+		<monster id="10004" pathID="1" time = "1200" count="3" stime = "5900"/>
+	</round>	
+	<round tips="1只青刺将在10秒后进攻，请做好准备">	
+		<monster id="10403" pathID="1" time = "0" count="1" stime = "0"  talk=""/>
+	</round>	
+</task>

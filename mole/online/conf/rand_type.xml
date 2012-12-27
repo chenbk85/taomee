@@ -1,0 +1,170 @@
+<!--add one item of Entry to user, if Entry have many items, we can randy one item-->
+<!--ID : the index, client send the ID-->
+<!--Type : distinguish every day max limit-->
+<!--Max : the max value every day-->
+<!--ID : the item id-->
+<!--Count : how many id to add-->
+<!--Vip : if need the user is vip-->
+<RAND>
+	<!--10.1每日登陆礼包-->
+	<!--Entry ID="0">
+		<Item Type="600" Max="1" ID="16011" Count="1" Vip="0"/>
+	</Entry-->
+	<Entry ID="1">
+		<Item Type="601" Max="3" ID="1230004" Count="1" Vip="0"/>
+		<Item Type="601" Max="3" ID="1230009" Count="1" Vip="0"/>
+		<Item Type="601" Max="3" ID="1230010" Count="1" Vip="0"/>
+		<Item Type="601" Max="3" ID="1230020" Count="1" Vip="0"/>
+		<Item Type="601" Max="3" ID="1230022" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="2">
+		<Item Type="602" Max="3" ID="190586" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="3">
+		<Item Type="603" Max="3" ID="190587" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="4">
+		<Item Type="604" Max="1" ID="190588" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="5">
+		<Item Type="605" Max="1" ID="190589" Count="1" Vip="0"/>
+	</Entry>
+	<!--Entry ID="6">
+		<Item Type="606" Max="4" ID="190601" Count="2" Vip="0"/>
+		<Item Type="606" Max="4" ID="190602" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="7">
+		<Item Type="607" Max="4" ID="190601" Count="2" Vip="0"/>
+		<Item Type="607" Max="4" ID="190602" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="8">
+		<Item Type="608" Max="4" ID="190601" Count="2" Vip="0"/>
+		<Item Type="608" Max="4" ID="190602" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="9">
+		<Item Type="609" Max="4" ID="190601" Count="2" Vip="0"/>
+		<Item Type="609" Max="4" ID="190602" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="10">
+		<Item Type="610" Max="4" ID="190601" Count="2" Vip="0"/>
+		<Item Type="610" Max="4" ID="190602" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="11">
+		<Item Type="611" Max="3" ID="190601" Count="8" Vip="0"/>
+		<Item Type="611" Max="3" ID="190602" Count="10" Vip="0"/>
+	</Entry>
+	<Entry ID="12">
+		<Item Type="612" Max="3" ID="190601" Count="8" Vip="0"/>
+		<Item Type="612" Max="3" ID="190602" Count="10" Vip="0"/>
+	</Entry>
+	<Entry ID="13">
+		<Item Type="613" Max="4" ID="190601" Count="3" Vip="0"/>
+		<Item Type="613" Max="4" ID="190602" Count="4" Vip="0"/>
+	</Entry>
+	<Entry ID="14">
+		<Item Type="614" Max="4" ID="190601" Count="2" Vip="0"/>
+		<Item Type="614" Max="4" ID="190602" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="15">
+		<Item Type="615" Max="9" ID="190610" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="16">
+		<Item Type="616" Max="9" ID="190612" Count="1" Vip="0"/>
+	</Entry-->
+	<Entry ID="17">
+		<Item Type="617" Max="1" ID="190606" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="18">
+		<Item Type="618" Max="3" ID="190607" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="19">
+		<Item Type="619" Max="3" ID="190608" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="20">
+		<Item Type="620" Max="1" ID="190609" Count="1" Vip="0"/>
+	</Entry>
+	<!--Entry ID="21">
+		<Item Type="621" Max="1" ID="190609" Count="1" Vip="0"/>
+	</Entry-->
+	<Entry ID="22">
+		<Item Type="622" Max="2" ID="1230038" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="23">
+		<Item Type="623" Max="1" ID="1270042" Count="1" Vip="1"/>
+	</Entry>
+	<Entry ID="24">
+		<Item Type="624" Max="5" ID="1230012" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="25">
+		<Item Type="625" Max="5" ID="1230012" Count="1" Vip="0"/>
+	</Entry>
+	<!--Entry ID="26">
+		<Item Type="626" Max="20" ID="150003" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="27">
+		<Item Type="627" Max="1" ID="190601" Count="10" Vip="1"/>
+	</Entry>
+	<Entry ID="28">
+		<Item Type="628" Max="1" ID="190602" Count="10" Vip="1"/>
+	</Entry-->
+	<Entry ID="29">
+		<Item Type="629" Max="1" ID="190619" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="30">
+		<Item Type="630" Max="3" ID="190621" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="31">
+		<Item Type="631" Max="3" ID="190620" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="32">
+		<Item Type="632" Max="1" ID="190622" Count="1" Vip="0"/>
+	</Entry>
+	<!--Entry ID="33">
+		<Item Type="633" Max="1" ID="1270045" Count="1" Vip="1"/>
+	</Entry-->
+	<Entry ID="34">
+		<Item Type="634" Max="4" ID="180065" Count="5" Vip="0"/>
+	</Entry>
+	<!--Entry ID="35">
+		<Item Type="635" Max="1" ID="17011" Count="20" Vip="0"/>
+	</Entry>
+	<Entry ID="36">
+		<Item Type="636" Max="15" ID="150002" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="37">
+		<Item Type="637" Max="15" ID="150003" Count="2" Vip="0"/>
+	</Entry>
+	<Entry ID="38">
+		<Item Type="638" Max="5" ID="180021" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="39">
+		<Item Type="639" Max="5" ID="190653" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="40">
+		<Item Type="640" Max="5" ID="190577" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="41">
+		<Item Type="641" Max="5" ID="180062" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="42">
+		<Item Type="642" Max="5" ID="180085" Count="1" Vip="0"/>
+	</Entry>
+	<Entry ID="43">
+		<Item Type="643" Max="5" ID="180084" Count="1" Vip="0"/>
+	</Entry-->
+	<!-- 杂草大清理 -->
+	<!--Entry ID="44">
+		<Item Type="644" Max="10" ID="190419" Count="1" Vip="0"/>
+		<Item Type="645" Max="10" ID="190141" Count="1" Vip="0"/>
+		<Item Type="646" Max="10" ID="190614" Count="1" Vip="0"/>
+		<Item Type="647" Max="10" ID="190028" Count="1" Vip="0"/>
+	</Entry-->
+	<!--嘉年华送气球-->
+	<Entry ID="45">
+		<Item Type="660" Max="10" ID="13573" Count="1" Vip="1"/>
+	</Entry>
+	<!--舞台剧赠送-->
+	<Entry ID="46">
+		<Item Type="661" Max="1" ID="1230052" Count="1" Vip="0"/>
+	</Entry>
+</RAND>

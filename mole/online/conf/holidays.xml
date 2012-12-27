@@ -1,0 +1,6 @@
+<!-- Holidays 防沉迷日期配置 CloDiscotDays 衣服半价日 FurDiscotDays 装潢半价日 -->
+<Holiday_Conf>
+	<Holidays Sunday="1" Monday="1" Tuesday="1" Wednesday="1" Thursday="1" Friday="1" Saturday="1" />
+	<CloDiscotDays Jan="20120121" Feb="20120218" Mar="20120317" Apr="20120421" May="20120519" Jun="20120616" Jul="20120714" Aug="20120818" Sep="20120915" Oct="20121013" Nov="20121117" Dec="20121215" />
+	<FurDiscotDays Jan="20120114" Feb="20120211" Mar="20120310" Apr="20120414" May="20120512" Jun="20120609" Jul="20120707" Aug="20120811" Sep="20120908" Oct="20121006" Nov="20121110" Dec="20121208" />
+</Holiday_Conf>

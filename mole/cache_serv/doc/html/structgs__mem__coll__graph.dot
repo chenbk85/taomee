@@ -1,0 +1,9 @@
+digraph G
+{
+  bgcolor="transparent";
+  edge [fontname="FreeSans",fontsize="10",labelfontname="FreeSans",labelfontsize="10"];
+  node [fontname="FreeSans",fontsize="10",shape=record];
+  Node1 [label="{gs_mem\n|+ flag\l+ game_id\l+ playernum\l+ game_score\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="darkorchid3",fontsize="10",style="dashed",label="game_score",arrowtail="open",fontname="FreeSans"];
+  Node2 [label="{gmsc\n|+ user_id\l+ nick\l+ score\l|}",height=0.2,width=0.4,color="black",URL="$structgmsc.html",tooltip="存储用户ID，用户昵称和用户的游戏分数"];
+}

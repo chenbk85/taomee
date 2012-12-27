@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>CacheServ: Z:/cache_svr/cmdprocess.h文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.8 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Z:/cache_svr/cmdprocess.h文件参考</h1>定义函数指针和申明命令处理函数  
+<a href="#_details">更多...</a>
+<p>
+
+<p>
+<div class="dynheader">
+此图展示直接或间接包含该文件的文件：</div>
+<div class="dynsection">
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="cmdprocess_8h.html#c081e0d62cec61318396440dcc712689">process_command</a> (char *recvbuf, int rcvlen, char *sendbuf, int *sndlen)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">根据不同的命令号调用相应的函数  <a href="#c081e0d62cec61318396440dcc712689"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+定义函数指针和申明命令处理函数 
+<p>
+====================================================================<p>
+platform Debian 4.1.1-12<p>
+copyright: TaoMee, Inc. ShangHai CN. All rights reserved.<p>
+==================================================================== <hr><h2>函数文档</h2>
+<a class="anchor" name="c081e0d62cec61318396440dcc712689"></a><!-- doxytag: member="cmdprocess.h::process_command" ref="c081e0d62cec61318396440dcc712689" args="(char *recvbuf, int rcvlen, char *sendbuf, int *sndlen)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int process_command           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>recvbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>rcvlen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>sendbuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>sndlen</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+根据不同的命令号调用相应的函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>recvbuf,接收到的字符串指针</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>rcvlen,接收到的字符串长度</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sendbuf,发送的字符串的指针</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sndlen,保存发送字符串长度的指针</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0, 执行成功;-1,执行失败 </dd></dl>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Thu Jan 15 19:16:23 2009 for CacheServ by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.8 </small></address>
+</body>
+</html>

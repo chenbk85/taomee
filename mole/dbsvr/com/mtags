@@ -1,0 +1,2 @@
+rm tags
+ctags -R  --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q . ~/DB/include 

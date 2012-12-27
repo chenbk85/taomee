@@ -1,0 +1,1 @@
+mysqldump -uroot -pxcwen  --opt OTHER >f

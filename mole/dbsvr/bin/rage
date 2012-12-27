@@ -1,0 +1,3 @@
+cd ~/DB/agentser/bin/
+./*sh stop
+./*sh start 

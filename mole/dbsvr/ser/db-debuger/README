@@ -1,0 +1,6 @@
+本文件描述 db-debuger
+
+db-debuger是一个实用程序，它专门用户调试mole DB so动态链接库的驱动程序，主要easyeagel@taomee.com设计并实现
+它努力把DB模块的开发与设计独立于全系统，为最大内联性最小偶合性努力！
+
+

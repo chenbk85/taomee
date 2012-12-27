@@ -1,0 +1,198 @@
+<Games Count="98">
+	<Game ID="0" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="1" Name="Dummy" File="" Players="4"  Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="2" Name="Sled2" File="./games/libsled.so"  Type="1" Players="2"
+		Exp="6" Strong="3" IQ="0" Lovely="0" MaxYXB="60" MaxScore="0" TimeOut="480" />
+	<Game ID="3" Name="Sled3" File="./games/libsled.so"  Type="1" Players="3"
+		Exp="6" Strong="3" IQ="0" Lovely="0" MaxYXB="60" MaxScore="0" TimeOut="480" />
+	<Game ID="4" Name="Gobang" File="./games/libgobang.so" Type="3" Players="2"
+		Exp="6" Strong="0" IQ="3" Lovely="0" MaxYXB="60" MaxScore="0" TimeOut="3600" />
+	<Game ID="5" Name="Kart2" File="./games/libkart.so" Type="1" Players="2"
+		Exp="6" Strong="0" IQ="0" Lovely="3" MaxYXB="60" MaxScore="0" TimeOut="480" />
+	<Game ID="6" Name="Kart3" File="./games/libkart.so" Type="1" Players="3"
+		Exp="6" Strong="0" IQ="0" Lovely="3" MaxYXB="60" MaxScore="0" TimeOut="480" />
+	<Game ID="7" Name="Kart4" File="./games/libkart.so" Type="1" Players="4"
+		Exp="6" Strong="0" IQ="0" Lovely="3" MaxYXB="60" MaxScore="0" TimeOut="480" />
+	<Game ID="8" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="100" MaxScore="0" TimeOut="600" />
+	<Game ID="9" Name="Dummy" File="" Players="1" Type="0"
+		Exp="30" Strong="0" IQ="0" Lovely="15" MaxYXB="150" MaxScore="10000" TimeOut="600" />
+	<Game ID="10" Name="Sled1" File="./games/libsled.so" Players="1" Type="0"
+		Exp="3" Strong="2" IQ="0" Lovely="0" MaxYXB="30" MaxScore="10000" TimeOut="480" />
+	<Game ID="11" Name="Kart1" File="./games/libkart.so" Players="1" Type="0"
+		Exp="3" Strong="0" IQ="0" Lovely="2" MaxYXB="30" MaxScore="10000" TimeOut="480" />
+	<Game ID="12" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="13" Name="CnChess" File="./games/libcnchess.so" Players="2" Type="3"
+		Exp="10" Strong="0" IQ="5" Lovely="0" MaxYXB="80" MaxScore="0" TimeOut="3600" />
+	<Game ID="14" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="15" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="16" Name="PaopaoLong" File="./games/libpopgame.so" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="3600" />
+	<Game ID="17" Name="PaopaoLong2" File="./games/libpopgame_m.so" Players="2" Type="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="3600" />
+	<Game ID="18" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="19" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="20" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="21" Name="SurfRiding1" File="./games/libsurfriding.so" Players="1" Type="0"
+		Exp="6" Strong="3" IQ="0" Lovely="0" MaxYXB="30" MaxScore="0" TimeOut="1200" />
+	<Game ID="22" Name="SurfRiding2" File="./games/libsurfriding.so" Players="2" Type="1"
+		Exp="10" Strong="5" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="1200" />
+	<Game ID="23" Name="SurfRiding3" File="./games/libsurfriding.so" Players="3" Type="1"
+		Exp="10" Strong="5" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="1200" />
+	<Game ID="24" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="25" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="26" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="27" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="28" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="480" />
+	<Game ID="29" Name="TugOfWar4" File="./games/libtugofwar.so" Players="4" Type="1"
+		Exp="6" Strong="3" IQ="0" Lovely="0" MaxYXB="60" MaxScore="0" TimeOut="480" />
+	<Game ID="30" Name="TugOfWar10" File="./games/libtugofwar.so" Players="10" Type="1"
+		Exp="6" Strong="3" IQ="0" Lovely="0" MaxYXB="60" MaxScore="0" TimeOut="480" />
+	<Game ID="31" Name="Dummy" File="" Players="1" Type="0"
+		Exp="30" Strong="0" IQ="0" Lovely="15" MaxYXB="300" MaxScore="0" TimeOut="480" />
+	<Game ID="32" Name="Dummy" File="" Players="5" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="20" MaxScore="0" TimeOut="480" />
+	<Game ID="33" Name="Tetris1" File="./games/libtetris.so" Players="1" Type="0"
+		Exp="25" Strong="0" IQ="0" Lovely="12" MaxYXB="300" MaxScore="42345" TimeOut="3700" />
+	<Game ID="34" Name="Tetris2" File="./games/libtetris.so" Players="2" Type="1"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="35" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="36" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="37" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="38" Name="CardGame_Challenge" File="./games/libcardgame.so" Players="1" Type="64"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="604800" />
+	<Game ID="39" Name="CardGame_Multi" File="./games/libcardgame.so" Players="2" Type="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="40" Name="CardGame_Compete" File="./games/libcardgame.so" Players="1" Type="32"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="41" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="42" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="43" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="44" Name="PaoPaoBall" File="./games/libpaopaoball.so" Players="2" Type="1"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="150" MaxScore="32345" TimeOut="600" />
+	<Game ID="45" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="46" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="47" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="48" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="49" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="50" Name="Flight2" File="./games/libflight_game.so" Type="1" Players="2"
+		Exp="30" Strong="15" IQ="0" Lovely="3" MaxYXB="300" MaxScore="0" TimeOut="5400" />
+	<Game ID="51" Name="Flight3" File="./games/libflight_game.so" Type="1" Players="3"
+		Exp="40" Strong="20" IQ="0" Lovely="3" MaxYXB="400" MaxScore="0" TimeOut="5400" />
+	<Game ID="52" Name="Flight4" File="./games/libflight_game.so" Type="1" Players="4"
+		Exp="50" Strong="25" IQ="0" Lovely="3" MaxYXB="500" MaxScore="0" TimeOut="5400" />
+	<Game ID="53" Name="CardGame_AD_Multi" File="./games/libcardgame.so" Players="2" Type="129"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="54" Name="CardGame_AD_Compete" File="./games/libcardgame.so" Players="1" Type="160"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="55" Name="CardGame_AD_Compete" File="./games/libcardgame.so" Players="1" Type="160"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="56" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="57" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="58" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="59" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="60" Name="Dummy" File="" Players="1" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="1100" />
+	<Game ID="61" Name="RushQues" File="./games/librushques.so" Players="2" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="3600" />
+	<Game ID="62" Name="RushQues" File="./games/librushques.so" Players="3" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="3600" />
+	<Game ID="63" Name="RushQues" File="./games/librushques.so" Players="4" Type="0"
+		Exp="10" Strong="0" IQ="0" Lovely="5" MaxYXB="100" MaxScore="32345" TimeOut="3600" />
+	<Game ID="64" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="65" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="66" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="67" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="68" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="69" Name="NewCardGame_Compete" File="./games/libnew_card.so" Players="1" Type="32"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="70" Name="NewCardGame_Challenge" File="./games/libnew_card.so" Players="1" Type="64"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="604800" />
+	<Game ID="71" Name="NewCardGame_Multi2" File="./games/libnew_card.so" Players="2" Type="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="72" Name="NewCardGame_Multi3" File="./games/libnew_card.so" Players="3" Type="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="73" Name="NewCardGame_Multi4" File="./games/libnew_card.so" Players="4" Type="1"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="74" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="75" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="76" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="77" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="78" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="79" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="80" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="81" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="82" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="83" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="84" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="85" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="86" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="87" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="88" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="89" Name="AngelFight_Single" File="./games/libangel_fight.so" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="90" Name="AngelFight_Compete" File="./games/libangel_fight.so" Players="1" Type="32"
+	 	Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="50" MaxScore="0" TimeOut="604800" />
+	<Game ID="91" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="92" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="93" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+	<Game ID="94" Name="LinkerGame" File="./games/liblinker.so" Players="2" Type="32"
+	 	Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="604800" />
+  	<Game ID="95" Name="Dummy" File="" Players="1" Type="0"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="600" />
+  	<Game ID="96" Name="CandleGame" File="./games/libcandles.so" Players="2" Type="32"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="604800" />
+  	<Game ID="97" Name="Link_link" File="./games/liblink_link.so" Players="1" Type="32"
+		Exp="0" Strong="0" IQ="0" Lovely="0" MaxYXB="0" MaxScore="0" TimeOut="604800" />
+</Games>

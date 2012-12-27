@@ -1,0 +1,31 @@
+<Events>
+	<!-- Event Type 2 Should Not Be Used **More Than Once** Unless `event_handler_2` Is Modified Accordingly -->
+	<!-- Traffic Light -->
+	<Event ID="0" Type="0" Status="0" MaxStatus="2" Durations="60 10" AffectedMaps="6" />
+	<!-- Party inside the Big Tree -->
+	<Event ID="1" Type="1" Status="1" MaxStatus="2" StartTime="19" EndTime="21" AffectedMaps="22" />
+	<!-- Chime -->
+	<Event ID="2" Type="2" Status="0" MaxStatus="24" Durations="3600" AffectedMaps="1 2 3 7 9 18 27 32" />
+	<!-- Keep Client Alive -->
+	<Event ID="3" Type="0" Status="0" MaxStatus="1" Durations="50" IdleTime="30" AffectedMaps="" />
+	<!-- Kick All Users Offline, Internal Use Only -->
+	<Event ID="4" Type="3" Status="0" MaxStatus="1" AffectedMaps="" />
+	<!-- Discount Day For Clothes -->
+	<Event ID="5" Type="4" Status="1" MaxStatus="2" StartDay="24" EndDay="25" AffectedMaps="" />
+	<!-- Rainbow Apprear Time -->
+	<Event ID="6" Type="1" Status="1" MaxStatus="2" StartTime="16" EndTime="17" AffectedMaps="42" />
+	<!-- Swimming Party -->
+	<Event ID="7" Type="1" Status="1" MaxStatus="2" StartTime="19" EndTime="20" AffectedMaps="42" />
+	<!-- Changing Pics -->
+	<Event ID="8" Type="0" Status="0" MaxStatus="4" Durations="1800 1800 1800 1800" AffectedMaps="47" />
+	<!-- Momo's Letter -->
+	<Event ID="9" Type="0" Status="1" MaxStatus="2" Durations="432000 864000" AffectedMaps="20" />
+	<!-- Discount Day For Furnitures -->
+	<Event ID="10" Type="4" Status="1" MaxStatus="2" StartDay="10" EndDay="11" AffectedMaps="" />
+	<!-- keep alive with switch -->
+	<Event ID="11" Type="6" Status="0" MaxStatus="1"  AffectedMaps="" />
+	<!-- notify cloth grade time -->
+	<Event ID="12" Type="5" Status="0" MaxStatus="1"  AffectedMaps="" />
+	<!-- add animal every hour -->
+	<Event ID="13" Type="7" Status="0" MaxStatus="1"  AffectedMaps="" />
+</Events>

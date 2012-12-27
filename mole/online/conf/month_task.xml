@@ -1,0 +1,14 @@
+<MonthTask>
+	<!-- ID 0 Used to send smc sallary mail-->
+	<Thing ID="0" />
+	<!-- ID 1 Used to send fire god cup mail-->
+	<Thing ID="1" />
+	<!-- ID 2 Used to get smc sallary -->
+	<Thing ID="2" />
+	<!-- ID 3 Used to send fire god cup start mail-->
+	<Thing ID="3" />
+	<!-- ID 4 Used to send vip party mail-->
+	<Thing ID="4" />
+	<!-- ID 5 Used to send pet magic task mail-->
+	<Thing ID="5" />
+</MonthTask>

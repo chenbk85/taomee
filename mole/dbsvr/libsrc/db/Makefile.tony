@@ -1,0 +1,23 @@
+CC = g++
+WORKDIR=$(HOME)/DB
+CFLAGS  = -Wall -pipe -DDEBUG -D_NEW_LIC -g -D_GNU_SOURCE -shared -D_REENTRANT
+#CFLAGS  = -Wall -pipe -D_NEW_LIC -g -D_GNU_SOURCE -shared -D_REENTRANT
+LIBDIR = -L/usr/lib -L/usr/lib/mysql  -L$(WORKDIR)/lib
+LIB 	= -ldl    -lmysqlclient
+INCLUDE =  -I$(WORKDIR)/include -I/usr/include/mysql
+
+OO	=  CtableRoute10x10.o CtableString.o CtableDate.o CtableMonth.o Ctable.o CtableWithKey.o  CtableRoute.o  mysql_iface.o
+
+TARGETS = libdb.a
+
+all: $(OO) $(TARGETS) clean
+	
+$(TARGETS):
+	ar -rv  $@ $(OO) 
+	mv $(TARGETS) $(WORKDIR)/lib/
+.cpp.o:
+	$(CC)  $(CFLAGS) -c $(INCLUDE) $<
+	echo $@
+
+clean:
+	rm -f $(TARGETS)  $(OO)  

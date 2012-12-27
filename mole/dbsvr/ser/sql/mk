@@ -1,0 +1,1 @@
+gcc -o insertkey a.c -I/usr/include/mysql -L/usr/lib/mysql -lmysqlclient

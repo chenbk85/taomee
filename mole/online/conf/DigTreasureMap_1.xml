@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Area ID对应element的ID； Typs表示种类 1矿、2Boss、3事件、4机关；treasures当前区域宝藏说明；-->
+<!--addTo="upMole" 表示物品盖住mole 不添表示被mole盖住 -->
+
+<Map>
+  <Screen screenId="1" mapId="185">
+	  <Area ID="0" Type="1" x='69.8' y='221.1' canWalkX='78.3' canWalkY='355.9' />
+	  <Area ID="1" Type="1"  x='216.1' y='374.1' canWalkX='217' canWalkY='404'/>
+	  <Area ID="2" Type="1"  x='143.3' y='242.2' canWalkX='276.9' canWalkY='291.5'/>
+	  <Area ID="3" Type="1"  x='208.6' y='188.9' canWalkX='259.9' canWalkY='188.2'/>
+	   <Area ID="5" Type="1"  x='328.9' y='167.9' canWalkX='291.0' canWalkY='221.2'/>
+	  <Area ID="4" Type="1" x='349.1' y='205.3' canWalkX='291.0' canWalkY='221.2'/>
+	  
+	  <Area ID="7" Type="1" x='335.6' y='108.3' canWalkX='291.0' canWalkY='179.2'/>
+	  <Area ID="6" Type="1" x='313.1' y='132.1' canWalkX='291.0' canWalkY='179.2'/>
+	  <Area ID="8" Type="1"  x='389.1' y='108.1' canWalkX='291.0' canWalkY='179.2'/>
+	  <Area ID="9" Type="1" x='381.2' y='70.3' canWalkX='291.0' canWalkY='179.2'/>
+	  <Area ID="10" Type="1"  x='394.6' y='366.7' canWalkX='369.0' canWalkY='428.9'/>
+	  <Area ID="11" Type="1"  x='467.6' y='263.8' canWalkX='425.0' canWalkY='358'/>
+	  <Area ID="12" Type="1"  x='459.9' y='198.2' canWalkX='480.0' canWalkY='367.9'/>
+	  <Area ID="13" Type="1" x='456.7' y='445.8' canWalkX='481.0' canWalkY='470' />
+	  <Area ID="14" Type="1" x='566.0' y='329.0' canWalkX='556.0' canWalkY='430'/>
+	  
+	  <Area ID="22" Type="1"  x='650.6' y='124.0' canWalkX='714.5' canWalkY='209.7'/>
+	  <Area ID="0" Type="4"  x='604.1' y='43.0' canWalkX='712.1' canWalkY='209.9'/>
+	  <Area ID="16" Type="1"  x='612.4' y='165.2' canWalkX='700.0' canWalkY='205.2'/>
+	  <Area ID="15" Type="1" x='613.1' y='182.8' canWalkX='700.0' canWalkY='205.2'/>
+	  <Area ID="17" Type="1" x='772.1' y='361.6' canWalkX='769.0' canWalkY='393' />
+	  <Area ID="18" Type="1"  x='753.1' y='203.7' canWalkX='725.0' canWalkY='201.9'/>
+	  <Area ID="19" Type="1" x='764.2' y='110.2' canWalkX='813.0' canWalkY='193.9' />
+	  <Area ID="20" Type="1" x='877.4' y='129.7' canWalkX='863.0' canWalkY='208.1'/>
+	  <Area ID="21" Type="1"  x='858.2' y='294.0' canWalkX='865.0' canWalkY='394'/>
+	  
+	  <Area specialCtlId="0" ID="0" Type="2"  x='758.2' y='254.0' canWalkX='712.1' canWalkY='330'/>
+	  <SpecialCtl cls="BlockRoad_map185"/>
+	  <treasures desc="    千年前，大量的商铺都集中在这里，金钱、货物全都在这里流通，当时的商会在这里囤积了大量的财富，摩尔们认为这里是堆满黄金的大道。">
+		<Item id="1453379" />
+		<Item id="1453380" />
+		<Item id="1453026" />
+		<Item id="1453027" />
+		<Item id="1453004" />
+		<Item id="1453005" />
+		<Item id="1453006" />
+		<Item id="1453007" />
+	  </treasures>
+  </Screen>
+  <Screen screenId="2" mapId="186">
+	  <Area ID="24" Type="1"  x='129.0' y='205.9' canWalkX='207.0' canWalkY='337.3'/>
+	  <Area ID="12" Type="1"  x='200.5' y='151.8' canWalkX='276.3' canWalkY='305.8'/>
+	  <Area ID="6"  Type="1"  x='237.2' y='185.3' canWalkX='276.3' canWalkY='305.8'/>
+	  <Area ID="25" Type="1"  x='253.1' y='246.7' canWalkX='276.3' canWalkY='305.8'/>
+	  <Area ID="26" Type="1"  x='257.8' y='165.2' canWalkX='356' canWalkY='249'/>
+	  <Area ID="27" Type="1"  x='351.6' y='185.2' canWalkX='401.3' canWalkY='263.6'/>
+	  <Area ID="28" Type="1"  x='406.0' y='52.3' canWalkX='467.3' canWalkY='192.6'/>
+	  <Area ID="29" Type="1"  x='473.9' y='90.3' canWalkX='578' canWalkY='173'/>
+	  <Area ID="30" Type="1"  x='337.9' y='267.6' canWalkX='370' canWalkY='362'/>
+	  <Area ID="31" Type="1"  x='856.9' y='176.0' canWalkX='816' canWalkY='216'/>
+	  
+	  <Area specialCtlId="1"  ID="1" Type="4"  x='464.6' y='137.8' canWalkX='422.2' canWalkY='270.4' addTo="upMole"/>
+	  <Area specialCtlId="2" ID="2" Type="4"  x='720.6' y='156.3' canWalkX='684.2' canWalkY='239.4' addTo="upMole"/>
+	  <Area specialCtlId="3" ID="3" Type="4"  x='546.1' y='450.4' canWalkX='616.2' canWalkY='454.3'/>
+	  <Area specialCtlId="4" ID="4" Type="4"  x='807.6' y='434.0' canWalkX='731.2' canWalkY='446.3'/>
+	  <SpecialCtl cls="OpenRoadTrigger_map186"/>
+	  
+	  <Area specialCtlId="5" ID="2" Type="2"  x='655' y='215' canWalkX='619' canWalkY='235'/>
+	  <SpecialCtl cls="BossBlockTrigger_map186"/>
+	  
+	  <Area ID="1" Type="2"  x='620.6' y='350.0' canWalkX='620.6' canWalkY='430.0'/>
+	  
+	  <treasures desc="    曾经，这里种植了各种珍稀植物、展示着各种精美的雕塑。公告、聚会、阅兵、庆典，广场辉煌过，灿烂过，留下了无数摩尔的欢声笑语。">
+		<Item id="1453381" />
+		<Item id="1453382" />
+		<Item id="1453026" />
+		<Item id="1453027" />		
+		<Item id="1453008" />
+		<Item id="1453009" />
+		<Item id="1453010" />
+		<Item id="1453011" />
+		<Item id="1453012" />
+	  </treasures>
+   </Screen>
+   <Screen screenId="3" mapId="187">
+	  <Area ID="32" Type="1"  x='396.4' y='318.4' canWalkX='396.0' canWalkY='288.3'/>
+	  <Area ID="32" Type="1"  x='386.3' y='355.0' canWalkX='386.3' canWalkY='385.8'/>
+	  <Area  ID="33"  Type="1"  x='449.8' y='324.9' canWalkX='449.3' canWalkY='284.8'/>
+	  <Area specialCtlId="1" ID="33" Type="1"  x='446.9' y='363.5' canWalkX='446.3' canWalkY='383.8'/>
+	  
+	  <Area ID="34" Type="1"  x='505.1' y='326.1' canWalkX='505.3' canWalkY='265.3'/>
+	  <Area  ID="34" Type="1"  x='508.0' y='363.7' canWalkX='508.3' canWalkY='385.8'/>
+	  <Area ID="35" Type="1"  x='558.5' y='319.6' canWalkX='558.3' canWalkY='284.8'/>
+	  <Area ID="35" Type="1"  x='565.5' y='355.2' canWalkX='565.3' canWalkY='383.8'/>
+	  
+	  <Area specialCtlId="2" ID="3" Type="2"  x='450' y='350' canWalkX='467.3' canWalkY='392.6'/>
+	  <SpecialCtl cls="JumpOutBoss_map187"/>
+	  
+	  <treasures desc="    这个藏宝室不知道是当时富商囤积的财富，还是商会储存的准备金，抑或是某位皇族的全部家当。总之，这里有着大量珍贵的宝藏。">
+		<Item id="1453379" />
+		<Item id="1453380" />
+		<Item id="1453381" />
+		<Item id="1453382" />		
+		<Item id="1453003" />
+		<Item id="1453004" />
+		<Item id="1453301" />
+	  </treasures>
+   </Screen>
+  <RandLimit Mine="100" Boss="100" Event="100" Trigger="100"/>
+</Map>

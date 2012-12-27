@@ -1,0 +1,23 @@
+#!/usr/bin/awk -f
+function getHexByChar( Ha ) {
+	if ( Ha>=0 && Ha<=9 ) return Ha
+	else if ( Ha =="A" ) return 10     
+	else if ( Ha =="B" ) return 11     
+	else if ( Ha =="C" ) return 12     
+	else if ( Ha =="D" ) return 13     
+	else if ( Ha =="E" ) return 14     
+	else if ( Ha =="F" ) return 15     
+	else {
+		printf "========%s is not vaild  [0..F]",value  
+		exit -1 
+	}	
+} 
+
+{ 	
+	i=1
+	while (i <= NF ) {
+		value=getHexByChar(substr($i,1,1)) * 16 + getHexByChar(substr($i,2,1))
+		printf "%c",value  
+		i++
+	}
+} 

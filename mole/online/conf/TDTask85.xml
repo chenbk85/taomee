@@ -1,0 +1,63 @@
+<task mapID="205" mode="1" starTime="6000" expScale="1" rateScale="1" score="200" losturl="swf/winswf3.swf" winurl="swf/lostswf4.swf" musicurl="christmas.mp3" startStar="120" startLifes="100">	
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10007" pathID="2" time = "1100" count="4" live="4"/>		
+		<monster id="10012" pathID="3" time = "1100" count="3" stime = "1200" live="4"/>
+	</round>
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10012" pathID="2" time = "1200" count="4" live="4"/>		
+		<monster id="10007" pathID="4" time = "1700" count="4" stime = "1000" live="4"/>
+	</round>
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10007" pathID="3" time = "800" count="4" live="4"/>
+		<monster id="10007" pathID="5" time = "800" count="3" stime = "2400" live="4"/>
+		<monster id="10012" pathID="4" time = "800" count="2" stime = "4000" live="4"/>
+	</round>
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10023" pathID="4" time = "1500" count="3" live="3"/>		
+		<monster id="10023" pathID="7,6" time = "1600" count="3" stime = "2900" live="3"/>
+		<monster id="10023" pathID="4,5" time = "1000" count="2" stime = "5500" live="3"/>
+	</round>
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10024" pathID="8" time = "1200" count="3" live="3"/>		
+		<monster id="10024" pathID="4,6" time = "1500" count="3" stime = "2800" live="3"/>
+		<monster id="10024" pathID="9" time = "1000" count="3" stime = "5500" live="3"/>
+	</round>
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10024" pathID="1,2" time = "1200" count="5" live="3"/>		
+		<monster id="10023" pathID="3" time = "1200" count="2" stime = "1500" live="3"/>
+		<monster id="10024" pathID="4,5" time = "1000" count="3" stime = "6000" live="3"/>
+	</round>	
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10023" pathID="6,7" time = "1200" count="5" live="3"/>		
+		<monster id="10024" pathID="8,9" time = "1100" count="3" stime = "1500" live="3"/>
+		<monster id="10023" pathID="1,2" time = "1000" count="3" stime = "6000" live="3"/>
+	</round>  
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10018" pathID="3" time = "1000" count="2" live="2" lifeScale="1.5"/>		
+		<monster id="10018" pathID="4" time = "1600" count="2" stime = "2000" live="2" lifeScale="1.5"/>
+		<monster id="10018" pathID="5" time = "1200" count="3" stime = "7500" live="2" lifeScale="1.5"/>
+	</round>
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10018" pathID="6" time = "1200" count="3" live="2" lifeScale="1.5"/>		
+		<monster id="10001" pathID="7" time = "1700" count="2" stime = "1600" live="2" lifeScale="1.5"/>
+		<monster id="10018" pathID="8" time = "1800" count="3" stime = "3700" live="2" lifeScale="1.5"/>
+	</round>	
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10001" pathID="9" time = "1200" count="2" live="2" lifeScale="1.5"/>		
+		<monster id="10018" pathID="1" time = "1600" count="2" stime = "2700" live="2" lifeScale="1.5"/>
+		<monster id="10001" pathID="2" time = "1300" count="3" stime = "4500" live="2" lifeScale="1.5"/>
+		<monster id="10018" pathID="3" time = "1400" count="2" stime = "5500" live="2" lifeScale="1.5"/>
+	</round>
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10001" pathID="4" time = "1200" count="3" live="2" lifeScale="1.5"/>		
+		<monster id="10001" pathID="6" time = "1600" count="4" stime = "3200" live="2" lifeScale="1.5"/>
+		<monster id="10001" pathID="5,7" time = "1800" count="3" stime = "5900" live="2" lifeScale="1.5"/>
+	</round>	
+	<round tips="邪恶巨人的杂役来啦！请做好准备">
+		<monster id="10018" pathID="8" time = "1000" count="3" live="2" lifeScale="1.5"/>		
+		<monster id="10001" pathID="9" time = "2200" count="3" stime = "2800" live="2" lifeScale="1.5"/>
+		<monster id="10018" pathID="1" time = "1500" count="2" stime = "5900" live="2" lifeScale="1.5"/>
+		<monster id="10001" pathID="2" time = "2300" count="3" stime = "9300" live="2" lifeScale="1.5"/>
+	</round>
+</task>
+

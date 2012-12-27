@@ -1,0 +1,364 @@
+﻿<!-- animal: 动物 id: 动物id star：动物星级 id:0,1,2,3(0是普通动物) level：动物成长阶段 id:1,2,3,4 id:技能id 
+	type 1 每天限制 2 永久限制 cold_time 冷却时间 max_time 最多使用次数-->
+<animal_skill>
+	<animal animal_id="1270126">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+	<animal animal_id="1270127">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+		<animal animal_id="1270128">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+		<animal animal_id="1270129">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+		<animal animal_id="1270130">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+		<animal animal_id="1270005">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+		<animal animal_id="1270015">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+		<animal animal_id="1270064">
+		<star star_id="1">
+			<level level_id= "1">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="1" name="庆典" type="2" cold_time="30" max_time="10"/>
+			</level>
+		</star>
+		<star star_id="2">
+			<level level_id= "1">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="2" name="庆典" type="2" cold_time="30" max_time="20"/>
+			</level>
+		</star>
+		<star star_id="3">
+			<level level_id= "1">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "2">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "3">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+			</level>
+			<level level_id= "4">
+				<skill skill_id="4" name="庆典" type="2" cold_time="30" max_time="30"/>
+				<skill skill_id="3" name="天使蛋雨" type="2" cold_time="0" max_time="1"/>
+			</level>
+		</star>
+	</animal>
+</animal_skill>

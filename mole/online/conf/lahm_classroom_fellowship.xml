@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--联谊奖励 亲密度 德智体美劳 物品-->
+<Lahm_Classroom_Fellowships>
+	<Fellowship ID="1" Lovely="0" Moral="20" IQ="0" Sport="0" Art="0" Labor="0" Latent="50" 
+		ItemBonus=""/>
+	<Fellowship ID="2" Lovely="0" Moral="0" IQ="0" Sport="0" Art="0" Labor="0" Latent="20" 
+		ItemBonus="190750"/>
+	<Fellowship ID="3" Lovely="20" Moral="0" IQ="0" Sport="0" Art="0" Labor="0" Latent="0" 
+		ItemBonus=""/>
+	<Fellowship ID="4" Lovely="0" Moral="0" IQ="0" Sport="0" Art="0" Labor="0" Latent="0" 
+		ItemBonus="190351 190351 190351"/>
+	<Fellowship ID="5" Lovely="0" Moral="0" IQ="0" Sport="0" Art="30" Labor="0" Latent="0" 
+		ItemBonus=""/>
+	<Fellowship ID="6" Lovely="0" Moral="0" IQ="0" Sport="0" Art="0" Labor="0" Latent="50" 
+		ItemBonus="190754"/>
+	<Fellowship ID="7" Lovely="0" Moral="0" IQ="0" Sport="30" Art="0" Labor="0" Latent="0" 
+		ItemBonus=""/>
+	<Fellowship ID="8" Lovely="50" Moral="0" IQ="0" Sport="0" Art="0" Labor="0" Latent="0" 
+		ItemBonus="190755"/>
+	<Fellowship ID="9" Lovely="0" Moral="0" IQ="0" Sport="0" Art="0" Labor="0" Latent="0" 
+		ItemBonus=""/>
+	<Fellowship ID="10" Lovely="0" Moral="0" IQ="0" Sport="0" Art="0" Labor="0" Latent="-60" 
+		ItemBonus=""/>
+</Lahm_Classroom_Fellowships>
+
