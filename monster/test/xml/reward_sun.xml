@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plantation_maintain>
+        <maintain id="0" name="不需要维护" reward_coins="0" reward_growth="10" reward_happy="15" reward_exp="10" rate="10"/>
+        <maintain id="1" name="浇水" reward_coins="0" reward_growth="10" reward_happy="15" reward_exp="10" rate="60"/>
+        <maintain id="2" name="音乐" reward_coins="0" reward_growth="50" reward_happy="10" reward_exp="5" rate="90"/>
+        <maintain id="3" name="施肥" reward_coins="0" reward_growth="50" reward_happy="10" reward_exp="5" rate="100"/>
+        <maintain id="4" name="收获" reward_coins="5" reward_growth="0" reward_happy="20" reward_exp="20" rate="101"/>
+        <maintain id="5" name="铲除" reward_coins="0" reward_growth="0" reward_happy="0" reward_exp="0" rate="101"/>
+</plantation_maintain>
+<!--
+	这里的id同程序中的id保持一致
+    reward_coins:奖励的咕咚果 reward_growth:奖励的成长值 reward_happy:奖励的快乐值 reward_exp:奖励的经验值
+-->

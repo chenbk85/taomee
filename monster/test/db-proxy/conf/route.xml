@@ -1,0 +1,53 @@
+<root>
+
+<route_item  name="account" db_type="1" >
+	<cmd_bind>
+		<item cmdid="0xA000"> </item>
+		<item cmdid="0x0060"> </item>
+	</cmd_bind>
+	<ip_bind>
+		<item   db_startid="0"  db_endid="0" ip="10.1.1.47"  port="11014" />
+	</ip_bind>
+</route_item>
+
+
+
+<route_item  name="MONSTER" db_type="10" >
+	<cmd_bind>
+		<item cmdid="0xD0A0"> </item>
+		<item cmdid="0x8000"> </item>
+	</cmd_bind>
+	<ip_bind>
+		<item   db_startid="0"  db_endid="9" ip="10.1.1.24"  port="31001" />
+	</ip_bind>
+</route_item>
+
+<route_item  name="MONSTER_CONF" db_type="1" >
+	<cmd_bind>
+		<item cmdid="0x8200"> </item>
+	</cmd_bind>
+	<ip_bind>
+		<item   db_startid="0"  db_endid="0" ip="10.1.1.24"  port="31001" />
+	</ip_bind>
+</route_item>
+
+
+
+
+<!-- 可用命令号范围:0x8000-0x9FFFF , 如果:0x8200 0x8400 ,每个区段间隔512个命令-->
+<!--
+<route_item  name="XXX" db_type="10">
+	<cmd_bind>
+		<item cmdid="0x8000"> </item>
+		<item  cmdid="0x8400"> </item>
+		<item  cmdid="0x9E00"> </item>
+	</cmd_bind>
+	<ip_bind>
+		<item   db_startid="0"  db_endid="4" ip="10.1.1.5"  port="210033" />
+		<item   db_startid="5"  db_endid="9" ip="10.1.1.5"  port="2333" />
+	</ip_bind>
+</route_item>
+-->
+
+
+</root>

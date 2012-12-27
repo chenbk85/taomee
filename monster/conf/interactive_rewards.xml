@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interactive_rewards>
+    <interactive id = "1001" name="互动元素1" min_reward_gudong= "8" max_reward_gudong="12"/>
+    <interactive id = "1002" name="互动元素2" min_reward_gudong= "8" max_reward_gudong="12"/>
+    <interactive id = "1003" name="互动元素3" min_reward_gudong= "8" max_reward_gudong="12"/>
+    <interactive id = "1004" name="互动元素4" min_reward_gudong= "8" max_reward_gudong="12"/>
+    <interactive id = "1005" name="互动元素5" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1006" name="互动元素6" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1007" name="互动元素7" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1008" name="互动元素8" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1009" name="互动元素9" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1010" name="互动元素10" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1011" name="互动元素11" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1012" name="互动元素12" min_reward_gudong= "8" max_reward_gudong="12"/>
+	<interactive id = "1013" name="互动元素13" min_reward_gudong= "8" max_reward_gudong="12"/>
+</interactive_rewards>
+<!--
+ id:互动元素编号 从1001开始 预留到1999
+ min_reward_gudong: 奖励咕咚果的最小范围
+ max_reward_gudong: 奖励咕咚果的最大范围
+-->

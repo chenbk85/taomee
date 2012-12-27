@@ -1,0 +1,1032 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AS_MAGGIC_VISIT	online_constant.h	/^    AS_MAGGIC_VISIT = 3,$/;"	e	enum:__anon70
+AS_START_TASK	online_constant.h	/^    AS_START_TASK = 4,$/;"	e	enum:__anon70
+AS_STAT_LEAVE_SHOP	online_constant.h	/^    AS_STAT_LEAVE_SHOP = 1,$/;"	e	enum:__anon70
+AS_STAT_START_GAME	online_constant.h	/^    AS_STAT_START_GAME = 2,$/;"	e	enum:__anon70
+BADGE_PROGRESS_LATEST	online_constant.h	/^    BADGE_PROGRESS_LATEST = 1,\/\/记录最新成绩$/;"	e	enum:__anon72
+BADGE_PROGRESS_TOP	online_constant.h	/^    BADGE_PROGRESS_TOP = 0,\/\/成就项记录最高分$/;"	e	enum:__anon72
+BADGE_TYPE_SET	online_constant.h	/^    BADGE_TYPE_SET  = 0, \/\/直接"设置"型成就$/;"	e	enum:__anon71
+BADGE_TYPE_SUM	online_constant.h	/^    BADGE_TYPE_SUM  = 1,\/\/"累加"型成就项$/;"	e	enum:__anon71
+BEST_FRIEND	online_constant.h	/^    BEST_FRIEND = 0,$/;"	e	enum:__anon60
+BLOCK_FRIEND	online_constant.h	/^    BLOCK_FRIEND = 3,$/;"	e	enum:__anon60
+BOBO_REWARDED	online_constant.h	/^    BOBO_REWARDED = 2,$/;"	e	enum:__anon79
+BOBO_UNREAD	online_constant.h	/^    BOBO_UNREAD = 0,$/;"	e	enum:__anon79
+BOBO_UNREWARD	online_constant.h	/^    BOBO_UNREWARD = 1,$/;"	e	enum:__anon79
+BROADCAST_TIME	online_constant.h	24;"	d
+CANCEL_BEST_FRIEND	online_constant.h	/^    CANCEL_BEST_FRIEND = 1,$/;"	e	enum:__anon60
+CANCEL_COMPOSE	online_constant.h	/^    CANCEL_COMPOSE = 2,     \/\/取消合成物品$/;"	e	enum:__anon74
+CC	Makefile	/^CC = g++$/;"	m
+CHECK_VAL	utility.h	97;"	d
+CHECK_VAL_GE	utility.h	94;"	d
+CHECK_VAL_LE	utility.h	91;"	d
+CHENGMI_HALF	online_constant.h	/^    CHENGMI_HALF = 3 * 60 * 60,    \/\/放沉迷收益减半的时间$/;"	e	enum:__anon78
+CHENGMI_NO	online_constant.h	/^    CHENGMI_NO = 5 * 60 * 60,      \/\/放沉迷没有收益时间$/;"	e	enum:__anon78
+CHENGMI_OFFLINE	online_constant.h	/^    CHENGMI_OFFLINE = 5 * 60 * 60, \/\/放沉迷下线到达这个时间，时间都清零$/;"	e	enum:__anon78
+COMMON_PET	online_constant.h	/^    COMMON_PET = 1,$/;"	e	enum:__anon63
+CONDITION_LEVEL	online_constant.h	/^    CONDITION_LEVEL = 0,        \/\/根据等级解锁$/;"	e	enum:__anon75
+CONF_PARSE_FUNC	data.h	/^typedef int (*CONF_PARSE_FUNC)();\/\/解析配置文件的func$/;"	t
+DAILY_COIN_REWARD	online_constant.h	117;"	d
+DAILY_EXP_REWARD	online_constant.h	121;"	d
+DAILY_PUZZLE	online_constant.h	80;"	d
+DB_PROCESS_FUNC	data.h	/^typedef int (*DB_PROCESS_FUNC)(usr_info_t *p_user, svr_msg_header_t *p_db_pkg);$/;"	t
+DEBUG_FLAGS	Makefile	/^all: DEBUG_FLAGS = -DDEBUG -DUSE_TLOG$/;"	m
+DEBUG_FLAGS	Makefile	/^release: DEBUG_FLAGS = -DNDEBUG -DUSE_TLOG$/;"	m
+DEL_FRIEND	online_constant.h	/^    DEL_FRIEND = 2,$/;"	e	enum:__anon60
+DIRTY_NO	online_constant.h	/^    DIRTY_NO = 0,         \/\/不思脏词$/;"	e	enum:__anon76
+DIRTY_YES	online_constant.h	/^    DIRTY_YES = 1,        \/\/是脏词$/;"	e	enum:__anon76
+DOOR_DEFAULT_ID	online_constant.h	56;"	d
+EXTRA_COIN_REWARD	online_constant.h	115;"	d
+FACTORY_CREATE	online_constant.h	/^    FACTORY_CREATE = 1,     \/\/合成工厂正在合成中$/;"	e	enum:__anon73
+FACTORY_FINISH	online_constant.h	/^    FACTORY_FINISH = 2,     \/\/合成完成$/;"	e	enum:__anon73
+FACTORY_IDLE	online_constant.h	/^    FACTORY_IDLE = 0,       \/\/合成工厂空闲$/;"	e	enum:__anon73
+FEMALE	online_constant.h	/^    FEMALE = 0,$/;"	e	enum:__anon59
+FEMALE_DOOR_DEFAULT_ID	online_constant.h	64;"	d
+FEMALE_FLOOR_DEFAULT_ID	online_constant.h	76;"	d
+FEMALE_WALLPAPER_DEFAULT_ID	online_constant.h	72;"	d
+FEMALE_WINDOWS_DEFAULT_ID	online_constant.h	68;"	d
+FIND_BY_NAME	online_constant.h	/^    FIND_BY_NAME = 2,$/;"	e	enum:__anon64
+FIND_BY_USER_ID	online_constant.h	/^    FIND_BY_USER_ID = 1,$/;"	e	enum:__anon64
+FLAGS	Makefile	/^FLAGS = -Wall -ggdb -fPIC$/;"	m
+FLOOR_DEFAULT_ID	online_constant.h	59;"	d
+FRIEND_REQ_AGREE	online_constant.h	/^    FRIEND_REQ_AGREE = 0,$/;"	e	enum:__anon61
+FRIEND_REQ_BLOCK	online_constant.h	/^    FRIEND_REQ_BLOCK = 2,$/;"	e	enum:__anon61
+FRIEND_REQ_REFUSE	online_constant.h	/^    FRIEND_REQ_REFUSE = 1,$/;"	e	enum:__anon61
+GAME_GET_STUFF	online_constant.h	/^    GAME_GET_STUFF = 0,     \/\/获得奖励的道具$/;"	e	enum:__anon68
+GAME_NO_STUFF	online_constant.h	/^    GAME_NO_STUFF = 1,      \/\/没有达到奖励道具的分数$/;"	e	enum:__anon68
+GAME_STUFF_FULL	online_constant.h	/^    GAME_STUFF_FULL = 2,    \/\/当天奖励的道具已经满了$/;"	e	enum:__anon68
+GET_COMPOSE	online_constant.h	/^    GET_COMPOSE = 1,        \/\/领取合成物品$/;"	e	enum:__anon74
+GET_SVR_SN	utility.h	88;"	d
+GOOD_PET	online_constant.h	/^    GOOD_PET = 2,$/;"	e	enum:__anon63
+HAPPY_GROWTH_TIME	online_constant.h	89;"	d
+HAPPY_VALUE	online_constant.h	101;"	d
+H_ACCOUNT_H_20110718	c_server.h	19;"	d
+H_ACTIVITY_H_20120530	activity.h	19;"	d
+H_BADGE_H_20120220	badge.h	19;"	d
+H_CLI_PROTO_H_20110730	cli_proto.h	21;"	d
+H_DATA_H_20110718	data.h	19;"	d
+H_DB_CACHE_H_20120605	db_cache.h	21;"	d
+H_DB_PROXY_H_20110730	db_proxy.h	21;"	d
+H_FRIEND_H_20110913	c_friend.h	20;"	d
+H_FUNCTION_H_2011_07_19	function.h	21;"	d
+H_MULTI_SVR_H_20111215	multi_svr.h	19;"	d
+H_ONLINE_CONSTANT_H_20110720	online_constant.h	20;"	d
+H_ONLINE_STRUCTURE_H_20110711	online_structure.h	20;"	d
+H_PLANTATION_H_20120308	plantation.h	19;"	d
+H_STUFF_H_20120308	stuff.h	19;"	d
+H_SWITCH_H_20111226	switch.h	19;"	d
+H_UCOUNT_H_20110810	ucount.h	21;"	d
+H_USER_CACHE_H_20110711	c_user_cache.h	3;"	d
+H_UTILITY_H_2010_08_24	utility.h	19;"	d
+H_XML_PARSE_H_20120518	xml_parse.h	19;"	d
+INCLUDE	Makefile	/^INCLUDE = -I\/usr\/include\/glib-2.0 -I\/usr\/lib\/glib-2.0\/include\/ -I\/usr\/include\/libxml2\/ -I..\/..\/common\/ -I..\/..\/common\/pack\/$/;"	m
+INIT_COINS	online_constant.h	27;"	d
+INIT_EXP	online_constant.h	30;"	d
+INIT_HAPPY	online_constant.h	36;"	d
+INIT_HEALTH	online_constant.h	33;"	d
+ITEM_FOOD	online_constant.h	/^    ITEM_FOOD = 3,      \/\/食物$/;"	e	enum:__anon65
+ITEM_FRUNITURE	online_constant.h	/^    ITEM_FRUNITURE = 1, \/\/家具$/;"	e	enum:__anon65
+ITEM_SEED	online_constant.h	/^    ITEM_SEED = 2,      \/\/种子$/;"	e	enum:__anon65
+JUQING_ENTER_PLANTATION	online_constant.h	/^    JUQING_ENTER_PLANTATION = 32,    \/\/触发种植园$/;"	e	enum:__anon77
+JUQING_ENTER_STORE	online_constant.h	/^    JUQING_ENTER_STORE = 128,    \/\/触发商店$/;"	e	enum:__anon77
+JUQING_ENTER_STREET	online_constant.h	/^    JUQING_ENTER_STREET = 64,    \/\/触发街道$/;"	e	enum:__anon77
+JUQING_OPEN_BOX	online_constant.h	/^    JUQING_OPEN_BOX = 2,    \/\/打开储物箱$/;"	e	enum:__anon77
+LEVEL_HAPPY_VALUE	online_constant.h	106;"	d
+LEVEL_HEALTH_VALUE	online_constant.h	104;"	d
+LIBS	Makefile	/^LIBS = -ltaomee -ltaomee++ -lxml2 -lssl -lpthread -lglib-2.0$/;"	m
+LIBTAOMEEPP_USER_MANAGER_HPP_	user_manager.h	15;"	d
+LIB_PATH	Makefile	/^LIB_PATH = ..\/..\/lib\/$/;"	m
+MALE	online_constant.h	/^    MALE = 1,$/;"	e	enum:__anon59
+MALE_DOOR_DEFAULT_ID	online_constant.h	63;"	d
+MALE_FLOOR_DEFAULT_ID	online_constant.h	75;"	d
+MALE_WALLPAPER_DEFAULT_ID	online_constant.h	71;"	d
+MALE_WINDOWS_DEFAULT_ID	online_constant.h	67;"	d
+MATURITY_GROWTH_VALUE	online_constant.h	109;"	d
+MAX_HAPPY_VALUE	online_constant.h	97;"	d
+MAX_HEALTH_VALUE	online_constant.h	95;"	d
+MAX_LEVEL	online_constant.h	83;"	d
+MAX_PET_NUM	online_constant.h	46;"	d
+MAX_PUZZLE_COIN	online_constant.h	49;"	d
+MAX_PUZZLE_TYPE_NUM	online_constant.h	112;"	d
+MAX_ROOM_NUM	online_constant.h	41;"	d
+MAX_STUFF_NUM	online_constant.h	52;"	d
+OBJS	Makefile	/^OBJS    = $(patsubst %.cpp, %.o, $(SRCS))$/;"	m
+PERCENT_FORTY	online_constant.h	/^    PERCENT_FORTY = 1,$/;"	e	enum:__anon67
+PERCENT_RANDOM	online_constant.h	/^    PERCENT_RANDOM = 2,$/;"	e	enum:__anon67
+PINBOARD_CACHE_NUM	online_constant.h	44;"	d
+PKG_FILE	online_constant.h	135;"	d
+PLANTATION_ATTRACT_PET	online_constant.h	/^    PLANTATION_ATTRACT_PET = 1,$/;"	e	enum:__anon62
+PLANTATION_NOT_MATCH	online_constant.h	/^    PLANTATION_NOT_MATCH = 3,$/;"	e	enum:__anon62
+PLANTATION_UNATTRACT_PET	online_constant.h	/^    PLANTATION_UNATTRACT_PET = 2,$/;"	e	enum:__anon62
+PLANT_COLOR_NUM	online_constant.h	86;"	d
+PROFILE_COLOR	online_constant.h	/^    PROFILE_COLOR = 3,$/;"	e	enum:__anon69
+PROFILE_FRUIT	online_constant.h	/^    PROFILE_FRUIT = 5,$/;"	e	enum:__anon69
+PROFILE_MOOD	online_constant.h	/^    PROFILE_MOOD = 2,$/;"	e	enum:__anon69
+PROFILE_PET	online_constant.h	/^    PROFILE_PET = 4,$/;"	e	enum:__anon69
+PROFILE_SIGN	online_constant.h	/^    PROFILE_SIGN = 1,$/;"	e	enum:__anon69
+PROTO_PROCESS_FUNC	data.h	/^typedef int (*PROTO_PROCESS_FUNC)(usr_info_t *p_user, char *p_body, uint16_t body_len);$/;"	t
+PUZZLE_DAILY_HAPPY_ASC	online_constant.h	127;"	d
+PUZZLE_DAILY_HAPPY_DESC	online_constant.h	128;"	d
+PUZZLE_DAILY_HAPPY_REWARD	online_constant.h	126;"	d
+PUZZLE_HAPPY_REWARD	online_constant.h	123;"	d
+PUZZLE_SINGLE_HAPPY_ASC	online_constant.h	130;"	d
+PUZZLE_SINGLE_HAPPY_DESC	online_constant.h	131;"	d
+PUZZLE_SINGLE_HAPPY_REWARD	online_constant.h	129;"	d
+RARE_PET	online_constant.h	/^    RARE_PET = 3,$/;"	e	enum:__anon63
+ROOM_DEFAULT_ID	online_constant.h	39;"	d
+SHOP_RARITY_NUM	online_constant.h	139;"	d
+SOFLAGS	Makefile	/^SOFLAGS = -shared$/;"	m
+SRCS	Makefile	/^SRCS    = $(wildcard *.cpp $(foreach n, $(SUBDIRS), $(n)\/*.cpp))$/;"	m
+SUBDIRS	Makefile	/^SUBDIRS = ..\/..\/common\/pack\/$/;"	m
+TARGET	Makefile	/^TARGET = ..\/bin\/libmonsteronline.so$/;"	m
+THUMB_ROOM_BEFORE	online_constant.h	/^    THUMB_ROOM_BEFORE = 0,$/;"	e	enum:__anon66
+THUMB_ROOM_SUCCESS	online_constant.h	/^    THUMB_ROOM_SUCCESS = 1,$/;"	e	enum:__anon66
+TIMEOUT_CALLBACK	c_server.h	/^typedef int (*TIMEOUT_CALLBACK)(void *p_owner, void *p_data);$/;"	t
+UNHAPPY_GROWTH_TIME	online_constant.h	92;"	d
+UserManager	user_manager.h	/^    UserManager() { INIT_LIST_HEAD(&timer_list); }$/;"	f	class:UserManager
+UserManager	user_manager.h	/^class UserManager {$/;"	c
+VIP_PET	online_constant.h	/^    VIP_PET = 4,$/;"	e	enum:__anon63
+WALLPAPER_DEFAULT_ID	online_constant.h	57;"	d
+WINDOWS_DEFAULT_ID	online_constant.h	58;"	d
+active_user_t	online_structure.h	/^} active_user_t;$/;"	t	typeref:struct:__anon23
+activity_id	online_structure.h	/^    uint32_t activity_id;$/;"	m	struct:__anon54
+activity_info_t	online_structure.h	/^}activity_info_t;\/\/活动配表的信息$/;"	t	typeref:struct:__anon54
+activity_open	activity.cpp	/^int activity_open(usr_info_t *p_user, uint32_t act_id, single_activity_t *p_sa)$/;"	f
+add_all_badge	c_user_cache.cpp	/^int c_user_cache::add_all_badge(all_badge_info_t *p_badge)$/;"	f	class:c_user_cache
+add_attract_pet	c_user_cache.cpp	/^int c_user_cache::add_attract_pet(uint32_t pet_id)$/;"	f	class:c_user_cache
+add_bag	c_user_cache.cpp	/^int c_user_cache::add_bag(const db_msg_get_bag_rsp_t *p_bag)$/;"	f	class:c_user_cache
+add_cur_room	c_user_cache.cpp	/^int c_user_cache::add_cur_room(uint32_t room_id, room_value_t *p_room_value)$/;"	f	class:c_user_cache
+add_day_restrict	c_user_cache.cpp	/^void c_user_cache::add_day_restrict(restrict_key_t key, uint32_t value)$/;"	f	class:c_user_cache
+add_default_room	c_user_cache.cpp	/^int c_user_cache::add_default_room(room_value_t *p_room_value)$/;"	f	class:c_user_cache
+add_finished_task	c_user_cache.cpp	/^int c_user_cache::add_finished_task(db_msg_finished_task_rsp_t *p_finished_task)$/;"	f	class:c_user_cache
+add_friend	c_friend.cpp	/^int c_friend::add_friend(uint32_t user_id, const friend_list_t *p_friend_list, bool new_friend)$/;"	f	class:c_friend
+add_friend_list	c_friend.cpp	/^int c_friend::add_friend_list(const db_msg_friend_list_rsp_t *p_friend_list)$/;"	f	class:c_friend
+add_game_day_restrict	c_user_cache.cpp	/^int c_user_cache::add_game_day_restrict(restrict_key_t key_coin, uint32_t restrict_coins, restrict_key_t key_item, uint32_t restrict_value)$/;"	f	class:c_user_cache
+add_game_level	c_user_cache.cpp	/^int c_user_cache::add_game_level(uint32_t game_id, uint32_t total_lvl_num, game_level_info_t *p_game_level)$/;"	f	class:c_user_cache
+add_museum_item	c_user_cache.cpp	/^int c_user_cache::add_museum_item(museum_info_t *museum_item)$/;"	f	class:c_user_cache
+add_other_friend	c_friend.cpp	/^int c_friend::add_other_friend(const friend_list_t *p_friend_list)$/;"	f	class:c_friend
+add_other_friend_list	c_friend.cpp	/^int c_friend::add_other_friend_list(uint32_t peer_id, const db_msg_friend_list_rsp_t *p_friend_list)$/;"	f	class:c_friend
+add_pet	c_user_cache.cpp	/^int c_user_cache::add_pet(pet_info_t *p_pet)$/;"	f	class:c_user_cache
+add_pinboard	c_user_cache.cpp	/^int c_user_cache::add_pinboard(int page, pinboard_t *p_pinboard)$/;"	f	class:c_user_cache
+add_puzzle	c_user_cache.cpp	/^int c_user_cache::add_puzzle(const db_msg_puzzle_rsp_t *p_puzzle)$/;"	f	class:c_user_cache
+add_puzzle_type	c_user_cache.cpp	/^int c_user_cache::add_puzzle_type(int type, puzzle_info_t *p_puzzle)$/;"	f	class:c_user_cache
+add_role	c_user_cache.cpp	/^int c_user_cache::add_role(const role_cache_t *p_role)$/;"	f	class:c_user_cache
+add_room_id	c_user_cache.cpp	/^int c_user_cache::add_room_id(uint32_t *p_room_id, int p_room_num)$/;"	f	class:c_user_cache
+add_self_friend	c_friend.cpp	/^int c_friend::add_self_friend(const friend_list_t *p_friend_list, bool new_friend)$/;"	f	class:c_friend
+add_stuff	c_user_cache.cpp	/^void c_user_cache::add_stuff(uint32_t stuff_id, uint16_t stuff_num)$/;"	f	class:c_user_cache
+add_stuff	online_structure.h	/^    db_msg_add_stuff_req2_t add_stuff;$/;"	m	struct:__anon30
+add_stuff_used	c_user_cache.cpp	/^int c_user_cache::add_stuff_used(uint32_t stuff_id, uint16_t used_num)$/;"	f	class:c_user_cache
+all_pet_t	online_structure.h	/^} all_pet_t;$/;"	t	typeref:struct:__anon21
+all_plant_maturity	plantation.cpp	/^int all_plant_maturity(all_hole_info_t *p_all_hole)$/;"	f
+all_users	user_manager.h	/^	usr_info_t	all_users[max_player_num];$/;"	m	class:UserManager
+alloc_user	user_manager.h	/^UserManager::alloc_user(int fd, uint32_t uid, fdsession_t* fdsess)$/;"	f	class:UserManager
+apply	online_structure.h	/^    apply_info_t apply[0];$/;"	m	struct:__anon13
+apply_info_t	online_structure.h	/^} apply_info_t;$/;"	t	typeref:struct:__anon12
+badge_cake_game_const	badge.h	/^const uint32_t badge_cake_game_const                = 22;\/\/蛋糕店游戏达到10关$/;"	v
+badge_cond	online_structure.h	/^    uint32_t badge_cond;        \/\/成就项条件$/;"	m	struct:__anon45
+badge_daily_puzzle_25_const	badge.h	/^const uint32_t badge_daily_puzzle_25_const          = 3;   \/\/每日挑战达到25分$/;"	v
+badge_first_open_box	badge.h	/^const uint32_t badge_first_open_box                 = 21;\/\/第一次打开储物盒$/;"	v
+badge_friends_100_const	badge.h	/^const uint32_t badge_friends_100_const              = 8; \/\/好友数达到100个$/;"	v
+badge_get_dragon_pet_const	badge.h	/^const uint32_t badge_get_dragon_pet_const           = 18;\/\/收集齐神龙系精灵$/;"	v
+badge_get_hero_pet_const	badge.h	/^const uint32_t badge_get_hero_pet_const             = 16; \/\/收集齐英雄系精灵$/;"	v
+badge_get_mengchong_pet_const	badge.h	/^const uint32_t badge_get_mengchong_pet_const        = 15; \/\/收集齐萌宠系精灵$/;"	v
+badge_get_one_monster_const	badge.h	/^const uint32_t badge_get_one_monster_const          = 1;    \/\/成功领养1个小精灵$/;"	v
+badge_get_plant_pet_const	badge.h	/^const uint32_t badge_get_plant_pet_const            = 17; \/\/收集齐植物系精灵$/;"	v
+badge_get_seans_pet_const	badge.h	/^const uint32_t badge_get_seans_pet_const            = 19;\/\/收集齐海洋系精灵$/;"	v
+badge_get_tiaotiao_pet_const	badge.h	/^const uint32_t badge_get_tiaotiao_pet_const         = 14; \/\/收集齐跳跳系精灵$/;"	v
+badge_get_two_same_monster_const	badge.h	/^const uint32_t badge_get_two_same_monster_const     = 2;\/\/成功领养2个同样的小精灵$/;"	v
+badge_heixia_5000_const	badge.h	/^const uint32_t badge_heixia_5000_const              = 4;        \/\/跳跳小黑侠达到5000分$/;"	v
+badge_kuaigongfang_12000_const	badge.h	/^const uint32_t badge_kuaigongfang_12000_const       = 5; \/\/快快小工房达到12000分$/;"	v
+badge_lianliankan_4000_const	badge.h	/^const uint32_t badge_lianliankan_4000_const         = 6;  \/\/怪卡连连看道道4000分$/;"	v
+badge_message_50_const	badge.h	/^const uint32_t badge_message_50_const               = 11;\/\/得到50个留言$/;"	v
+badge_miti_5_const	badge.h	/^const uint32_t badge_miti_5_const                   = 12; \/\/挑战自我，谜题大全，突破5次记录$/;"	v
+badge_npc_score_const	badge.h	/^const uint32_t badge_npc_score_const                = 23;\/\/小屋评分达到20分$/;"	v
+badge_progress_type	online_structure.h	/^    uint8_t badge_progress_type; \/\/成就项进度类型(记录最高分还是最新成绩)(0:最高分(TOP) 1:最新成绩(LATEST)))$/;"	m	struct:__anon45
+badge_reward_id	online_structure.h	/^    uint32_t badge_reward_id;  \/\/成就项奖品id$/;"	m	struct:__anon45
+badge_step	badge.cpp	/^int badge_step(usr_info_t *p_user, uint32_t badge_id, uint32_t cond_val)$/;"	f
+badge_stuffinhome_30_const	badge.h	/^const uint32_t badge_stuffinhome_30_const           = 7; \/\/自己小屋，拜访物品数量达到30个$/;"	v
+badge_thumb_50_const	badge.h	/^const uint32_t badge_thumb_50_const                 = 10; \/\/得到50个赞$/;"	v
+badge_type	online_structure.h	/^    uint8_t badge_type;         \/\/成就项类型，(0:SET 1:SUM)$/;"	m	struct:__anon45
+badge_visits_500_const	badge.h	/^const uint32_t badge_visits_500_const               = 9; \/\/得到500个拜访脚印$/;"	v
+badge_win_puzzle_50_const	badge.h	/^const uint32_t badge_win_puzzle_50_const            = 13; \/\/联机对战 ，赢得50场胜利$/;"	v
+badge_xml_info_t	online_structure.h	/^}badge_xml_info_t; \/\/成就项xml表中的信息$/;"	t	typeref:struct:__anon45
+begin_index	online_structure.h	/^    uint16_t begin_index;$/;"	m	struct:__anon19
+best_friend_key_t	online_structure.h	/^} best_friend_key_t;$/;"	t	typeref:struct:__anon14
+birthday	online_structure.h	/^    uint32_t birthday;$/;"	m	struct:__anon12
+birthday	online_structure.h	/^    uint32_t birthday;$/;"	m	struct:__anon17
+bobo_cache_t	online_structure.h	/^} bobo_cache_t;$/;"	t	typeref:struct:__anon50
+broadcast_timeout_cb	function.cpp	/^int broadcast_timeout_cb(void *p_owner, void *p_data)$/;"	f
+broadcast_to_user	function.cpp	/^void broadcast_to_user(usr_info_t *p_user)$/;"	f
+buf	online_structure.h	/^    char buf[0];$/;"	m	struct:__anon2
+buf	online_structure.h	/^    char buf[MAX_ROOM_STUFF * 32];$/;"	m	struct:__anon4
+buf_len	online_structure.h	/^    uint16_t buf_len;$/;"	m	struct:__anon2
+buf_len	online_structure.h	/^    uint16_t buf_len;$/;"	m	struct:__anon4
+buffer	user_manager.h	/^	uint8_t			           buffer[MAX_RECV_PKG_SIZE];$/;"	m	struct:usr_info_t
+c_friend	c_friend.h	/^        c_friend(): m_inited(0), m_user_id(0), m_other_user_id(0), is_add_friend_list(false) { }$/;"	f	class:c_friend
+c_friend	c_friend.h	/^class c_friend$/;"	c
+c_restrict_cmp	c_user_cache.h	/^class c_restrict_cmp$/;"	c
+c_seed_cmp	data.h	/^class c_seed_cmp$/;"	c
+c_server	c_server.cpp	/^c_server::c_server() : m_inited(0), m_port(0), m_fd(-1), m_bufsz(0), m_timeout(0)$/;"	f	class:c_server
+c_server	c_server.h	/^class c_server$/;"	c
+c_shop_cmp	data.h	/^class c_shop_cmp$/;"	c
+c_user_cache	c_user_cache.cpp	/^c_user_cache::c_user_cache() : m_inited(0), m_p_default_room(NULL), m_cur_room_id(0), m_p_cur_room(NULL), m_attract_pet(0)$/;"	f	class:c_user_cache
+c_user_cache	c_user_cache.h	/^class c_user_cache$/;"	c
+cache_a_pkg	cli_proto.cpp	/^int cache_a_pkg(usr_info_t *p_user, const char *buf, uint32_t buf_len, bool clear_cmd)$/;"	f
+cache_all_hole_reward	c_user_cache.cpp	/^int c_user_cache::cache_all_hole_reward(db_all_hole_reward_rsp_t *p_all_reward)$/;"	f	class:c_user_cache
+cached_all_hole	c_user_cache.cpp	/^int c_user_cache::cached_all_hole(all_hole_info_t *p_all_hole)$/;"	f	class:c_user_cache
+cached_pkg_queue	user_manager.h	/^    std::queue<cached_pkg_t *> cached_pkg_queue;$/;"	m	struct:usr_info_t
+cached_pkg_t	user_manager.h	/^struct cached_pkg_t {$/;"	s
+can_get_open_reward	c_user_cache.cpp	/^int c_user_cache::can_get_open_reward(uint32_t reward_id)$/;"	f	class:c_user_cache
+category	online_structure.h	/^    uint8_t category;$/;"	m	struct:__anon29
+category	online_structure.h	/^    uint8_t category;$/;"	m	struct:__anon8
+category	online_structure.h	/^    uint8_t category;\/\/暂时保留$/;"	m	struct:__anon30
+check_body_sum	function.h	/^inline uint32_t check_body_sum(uint8_t body[], int body_len)$/;"	f
+check_for_depversion	function.h	/^inline int check_for_depversion(usr_info_t *p_user, uint32_t peer_id)$/;"	f
+child_num	online_structure.h	/^    uint16_t child_num;$/;"	m	struct:__anon7
+cmp_room_buf	function.cpp	/^int cmp_room_buf(usr_info_t *p_user, const room_stuff_t *p_old_room, const room_stuff_t *p_new_room, stuff_change_t *p_stuff_change)$/;"	f
+coin_restrict	online_structure.h	/^    uint8_t coin_restrict; \/\/奖励金币 0:正常 1：达到每日上限$/;"	m	struct:__anon32
+coins	online_structure.h	/^    uint16_t coins;$/;"	m	struct:__anon50
+coins	online_structure.h	/^    uint32_t coins;$/;"	m	struct:__anon35
+color	online_structure.h	/^    uint8_t color;$/;"	m	struct:__anon22
+commit_puzzle_cache_t	online_structure.h	/^} commit_puzzle_cache_t;$/;"	t	typeref:struct:__anon29
+commit_stuff_cache_t	online_structure.h	/^}commit_stuff_cache_t;$/;"	t	typeref:struct:__anon30
+compute_reward_commit_to_db	function.cpp	/^int compute_reward_commit_to_db(usr_info_t *p_user, as_msg_puzzle_req_t *p_req, uint32_t day_restrict_exp)$/;"	f
+connect_to_server	c_server.h	/^inline int c_server::connect_to_server()$/;"	f	class:c_server
+constant_t	user_manager.h	/^	enum constant_t {$/;"	g	class:UserManager
+count	online_structure.h	/^    uint16_t count;$/;"	m	struct:__anon11
+count	online_structure.h	/^    uint16_t count;$/;"	m	struct:__anon18
+count	online_structure.h	/^    uint16_t count;$/;"	m	struct:__anon21
+count	online_structure.h	/^    uint16_t count;$/;"	m	struct:__anon44
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon10
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon13
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon20
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon23
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon25
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon41
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon43
+count	online_structure.h	/^    uint8_t count;$/;"	m	struct:__anon56
+counter	user_manager.h	/^	uint16_t		           counter;$/;"	m	struct:usr_info_t
+country_id	online_structure.h	/^    uint32_t country_id;$/;"	m	struct:__anon12
+country_id	online_structure.h	/^    uint32_t country_id;$/;"	m	struct:__anon17
+create_server_instance	c_server.cpp	/^int create_server_instance(c_server **pp_instance)$/;"	f
+cur_count	online_structure.h	/^    uint16_t cur_count;$/;"	m	struct:__anon19
+cur_count	online_structure.h	/^    uint8_t cur_count;$/;"	m	struct:__anon13
+cur_index	online_structure.h	/^    uint8_t cur_index;$/;"	m	struct:__anon41
+cur_level_max	online_structure.h	/^    uint16_t cur_level_max;$/;"	m	struct:__anon26
+cur_level_min	online_structure.h	/^    uint16_t cur_level_min;$/;"	m	struct:__anon26
+cur_num	online_structure.h	/^    uint8_t cur_num;$/;"	m	struct:__anon25
+dealloc_user	user_manager.h	/^UserManager::dealloc_user(int fd)$/;"	f	class:UserManager
+del_a_pet	c_user_cache.cpp	/^int c_user_cache::del_a_pet(uint32_t pet_id)$/;"	f	class:c_user_cache
+del_all_plant	c_user_cache.cpp	/^void c_user_cache::del_all_plant()$/;"	f	class:c_user_cache
+del_attract_pet	c_user_cache.cpp	/^void c_user_cache::del_attract_pet()$/;"	f	class:c_user_cache
+del_friend	c_friend.cpp	/^int c_friend::del_friend(uint32_t peer_id)$/;"	f	class:c_friend
+del_friend_tree	c_friend.h	/^inline void c_friend::del_friend_tree(bool is_self)$/;"	f	class:c_friend
+del_hole_reward_i	c_user_cache.cpp	/^int c_user_cache::del_hole_reward_i(uint8_t hole_id, uint32_t reward_id)$/;"	f	class:c_user_cache
+del_pinboard	c_user_cache.cpp	/^void c_user_cache::del_pinboard()$/;"	f	class:c_user_cache
+del_plant	c_user_cache.cpp	/^void c_user_cache::del_plant(uint8_t hole_id)$/;"	f	class:c_user_cache
+del_plant_at_hole	c_user_cache.cpp	/^int c_user_cache::del_plant_at_hole(uint8_t hole_id)$/;"	f	class:c_user_cache
+depth_index	online_structure.h	/^    uint16_t depth_index;$/;"	m	struct:__anon7
+desc_stuff	c_user_cache.cpp	/^int c_user_cache::desc_stuff(uint32_t stuff_id, uint16_t stuff_num)$/;"	f	class:c_user_cache
+desc_stuff_used	c_user_cache.cpp	/^int c_user_cache::desc_stuff_used(uint32_t stuff_id, uint16_t used_num)$/;"	f	class:c_user_cache
+dispatch	cli_proto.cpp	/^int dispatch(void *p_data, int len, fdsession_t *fdsess, bool first_tm)$/;"	f
+do_game_restrict_and_star	function.cpp	/^int do_game_restrict_and_star(usr_info_t *p_user, game_t *p_game, uint32_t restrict_coins, uint32_t restrict_item, uint32_t day_time)$/;"	f
+dragon_series	badge.h	/^const uint32_t dragon_series  = 5;$/;"	v
+encourage_guide_to_db	function.cpp	/^int encourage_guide_to_db(usr_info_t *p_user, uint8_t type, uint32_t score)$/;"	f
+end_timestamp	online_structure.h	/^    uint32_t end_timestamp;$/;"	m	struct:__anon54
+ex_color	online_structure.h	/^    uint32_t ex_color;$/;"	m	struct:__anon40
+exit_online	function.cpp	/^int exit_online()$/;"	f
+extra_coins	online_structure.h	/^    uint16_t extra_coins;$/;"	m	struct:__anon29
+extra_coins	online_structure.h	/^    uint16_t extra_coins;$/;"	m	struct:__anon31
+eye_color	online_structure.h	/^    uint32_t eye_color;$/;"	m	struct:__anon40
+factory_cost_t	online_structure.h	/^} factory_cost_t;$/;"	t	typeref:struct:__anon46
+factory_op_t	online_structure.h	/^} factory_op_t;$/;"	t	typeref:struct:__anon47
+factory_unlock_t	online_structure.h	/^} factory_unlock_t;$/;"	t	typeref:struct:__anon48
+fini_service	dll_interface.cpp	/^extern "C" int fini_service(int isparent)$/;"	f
+finished_score	online_structure.h	/^    uint32_t finished_score; \/\/过关所需要的最低分数$/;"	m	struct:__anon34
+flag	online_structure.h	/^    uint8_t flag;$/;"	m	struct:__anon13
+float2int	utility.cpp	/^int float2int(float x)$/;"	f
+follow_num	online_structure.h	/^    uint8_t follow_num;$/;"	m	struct:__anon36
+friend_apply_rsp_t	online_structure.h	/^} friend_apply_rsp_t;$/;"	t	typeref:struct:__anon13
+friend_cache_t	online_structure.h	/^} friend_cache_t;$/;"	t	typeref:struct:__anon19
+friend_cmp_t	online_structure.h	/^} friend_cmp_t;$/;"	t	typeref:struct:__anon16
+friend_list	online_structure.h	/^    db_msg_friend_list_rsp_t friend_list;$/;"	m	struct:__anon19
+friend_list	online_structure.h	/^    friend_list_t friend_list[0];$/;"	m	struct:__anon18
+friend_list_exist	c_friend.h	/^        bool friend_list_exist() { return is_add_friend_list; }$/;"	f	class:c_friend
+friend_list_t	online_structure.h	/^} friend_list_t;$/;"	t	typeref:struct:__anon17
+friend_page_t	online_structure.h	/^} friend_page_t;$/;"	t	typeref:struct:__anon20
+friend_rsp_t	online_structure.h	/^} friend_rsp_t;$/;"	t	typeref:struct:__anon18
+friend_tree	user_manager.h	/^    c_friend                   friend_tree;$/;"	m	struct:usr_info_t
+g_activity_map	data.cpp	/^map<uint32_t, activity_info_t> g_activity_map;\/\/记录配表中的所有活动信息$/;"	v
+g_allowed_ip	data.cpp	/^char g_allowed_ip[16] = {0};$/;"	v
+g_badge_item_map	data.cpp	/^map<uint32_t, badge_xml_info_t> g_badge_item_map;\/\/成就项列表$/;"	v
+g_bobo_reward_max	data.cpp	/^int g_bobo_reward_max;$/;"	v
+g_bobo_reward_min	data.cpp	/^int g_bobo_reward_min;$/;"	v
+g_common_pet	data.cpp	/^map<uint32_t, map<seed_match_t, int, c_seed_cmp> > g_common_pet;$/;"	v
+g_conf_parse_func	data.cpp	/^CONF_PARSE_FUNC g_conf_parse_func[MAX_CONF_FILE_NUM] = {NULL};$/;"	v
+g_current_paper_term	data.cpp	/^int g_current_paper_term;$/;"	v
+g_db_cmd_map	data.cpp	/^map<uint16_t, DB_PROCESS_FUNC> g_db_cmd_map;$/;"	v
+g_depversion_id_set	data.cpp	/^set<uint32_t> g_depversion_id_set;  \/\/版署米米号集合$/;"	v
+g_donate_map	data.cpp	/^map<uint32_t, donate_info_t> g_donate_map;\/\/募捐计划$/;"	v
+g_errno	data.cpp	/^uint32_t g_errno;                            \/\/协议处理的错误码$/;"	v
+g_extra_growth	data.cpp	/^int g_extra_growth;                          \/\/进入种植园额外的成长值$/;"	v
+g_factory_cost_map	data.cpp	/^map<uint32_t, vector<factory_cost_t> > g_factory_cost_map;     \/\/工厂消耗的物品$/;"	v
+g_factory_cost_time_map	data.cpp	/^map<uint32_t, uint32_t> g_factory_cost_time_map;               \/\/工厂生成的物品的消耗时间$/;"	v
+g_factory_create_map	data.cpp	/^map<uint32_t, vector<uint32_t> > g_factory_create_map;         \/\/工厂生成的物品$/;"	v
+g_factory_unlock_map	data.cpp	/^map<uint32_t, factory_unlock_t> g_factory_unlock_map;          \/\/工厂图纸的解锁条件$/;"	v
+g_female_name_num	data.cpp	/^int g_female_name_num;$/;"	v
+g_female_name_vec	data.cpp	/^std::vector<user_name_t> g_female_name_vec;\/\/女孩姓名集合$/;"	v
+g_game_change_period_map	data.cpp	/^map<uint32_t, uint32_t> g_game_change_period_map;\/\/记录小游戏兑换奖励的当前期数$/;"	v
+g_game_change_stuff_map	data.cpp	/^map<uint32_t, std::map<uint32_t, uint8_t> > g_game_change_stuff_map; \/\/小游戏兑换奖励物品map key:game_id value:stuff_list$/;"	v
+g_game_level_map	data.cpp	/^map<uint32_t, game_level_item_t> g_game_level_map;          \/\/小游戏关卡信息$/;"	v
+g_game_map	data.cpp	/^map<uint32_t, uint32_t> g_game_map;$/;"	v
+g_game_reward_map	data.cpp	/^map<uint32_t, map<int, game_item_t> > g_game_reward_map;          \/\/小游戏的道具奖励$/;"	v
+g_good_pet	data.cpp	/^map<uint32_t, map<seed_match_t, int, c_seed_cmp> > g_good_pet;$/;"	v
+g_happy_desc_time	data.cpp	/^int g_happy_desc_time;                       \/\/愉悦值减少1点需要的时间,分钟$/;"	v
+g_happy_growth_time	data.cpp	/^int g_happy_growth_time;                     \/\/愉悦时植物成长1点需要的时间,秒$/;"	v
+g_health_desc_high	data.cpp	/^int g_health_desc_high;                      \/\/在线时健康值低时减少1点需要的时间$/;"	v
+g_health_desc_middle	data.cpp	/^int g_health_desc_middle;                    \/\/在线时健康值中时减少1点需要的时间$/;"	v
+g_health_desc_offline	data.cpp	/^int g_health_desc_offline;                   \/\/离线时健康值减少1点需要的时间$/;"	v
+g_health_desc_slow	data.cpp	/^int g_health_desc_slow;                       \/\/在线时健康值高时减少1点需要的时间$/;"	v
+g_interactive_reward_map	data.cpp	/^map<uint32_t, interactive_rewards_t> g_interactive_reward_map; \/\/保存互动元素奖励信息$/;"	v
+g_item_map	data.cpp	/^map<uint32_t, item_t> g_item_map;       \/\/保存所有商品购买信息$/;"	v
+g_item_npc_map	data.cpp	/^std::map<uint32_t, uint32_t> g_item_npc_map;\/\/保存商品对应的npc信息 key:item_id value:npc_id$/;"	v
+g_keepalive_timer	data.cpp	/^online_timer_t g_keepalive_timer;\/\/定时发送指定报文给switch和multi表示online还是活跃的$/;"	v
+g_level	data.cpp	/^int g_level[MAX_LEVEL];$/;"	v
+g_level_num	data.cpp	/^int g_level_num;$/;"	v
+g_log_file	data.cpp	/^char g_log_file[PATH_MAX];$/;"	v
+g_maintain_map	data.cpp	/^map<uint8_t, maintain_type_t> g_maintain_map;$/;"	v
+g_maintain_plant_time	data.cpp	/^int g_maintain_plant_time;                   \/\/对植物进行维护的间隔时间$/;"	v
+g_male_name_num	data.cpp	/^int g_male_name_num;$/;"	v
+g_male_name_vec	data.cpp	/^std::vector<user_name_t> g_male_name_vec; \/\/男孩姓名集合$/;"	v
+g_max_day_exp	data.cpp	/^int g_max_day_exp;                           \/\/每天最多可以获得经验值$/;"	v
+g_max_day_puzzle_exp	data.cpp	/^int g_max_day_puzzle_exp;                    \/\/益智游戏每天最多可以获得经验值$/;"	v
+g_max_day_stuff_exp	data.cpp	/^int g_max_day_stuff_exp;                     \/\/买物品每天最多可以获得经验值$/;"	v
+g_max_exp_in_plant	data.cpp	/^int g_max_exp_in_plant;                      \/\/在种植园中领取阳关奖励每天可以获得的最大经验值$/;"	v
+g_max_game_item	data.cpp	/^int g_max_game_item;                   	    \/\/小游戏每天最多获得道具次数$/;"	v
+g_max_game_score	data.cpp	/^int g_max_game_score;                        \/\/小游戏每天最多获得的金币值$/;"	v
+g_max_pet_id	data.cpp	/^int g_max_pet_id;                   	    \/\/精灵的最大id$/;"	v
+g_museum_level_map	data.cpp	/^map<uint32_t, level_item_t> g_museum_level_map;				   \/\/博物馆关卡奖品$/;"	v
+g_museum_map	data.cpp	/^map<uint32_t, uint8_t> g_museum_map;						   \/\/博物馆属性$/;"	v
+g_npc_num	data.cpp	/^int g_npc_num;\/\/商店npc的个数$/;"	v
+g_npc_vec	data.cpp	/^std::vector<uint32_t> g_npc_vec;\/\/保存所有的商店npc_id$/;"	v
+g_p_db_cache_svr	data.cpp	/^c_server *g_p_db_cache_svr;                 \/\/管理到db-cache_server的连接$/;"	v
+g_p_db_proxy_svr	data.cpp	/^c_server *g_p_db_proxy_svr;                  \/\/管理到db-proxy的连接$/;"	v
+g_p_multi_server_svr	data.cpp	/^c_server *g_p_multi_server_svr;              \/\/管理到多人益智游戏服务的连接$/;"	v
+g_p_share_svr	data.cpp	/^c_server *g_p_share_svr;                     \/\/管理到分享服务的连接$/;"	v
+g_p_switch_svr	data.cpp	/^c_server *g_p_switch_svr;                    \/\/管理到switch服务的连接$/;"	v
+g_p_ucount_svr	data.cpp	/^c_server *g_p_ucount_svr;                    \/\/管理到唯一数服务的连接$/;"	v
+g_pet_series_map	data.cpp	/^map<uint32_t, uint32_t> g_pet_series_map;\/\/记录精灵对应的系别$/;"	v
+g_plant_time	data.cpp	/^int g_plant_time;                            \/\/进入种植园可以增加成长值的最短时间$/;"	v
+g_rare_pet	data.cpp	/^map<uint32_t, map<seed_match_t, int, c_seed_cmp> > g_rare_pet;$/;"	v
+g_register_to_multi_timer	data.cpp	/^online_timer_t g_register_to_multi_timer;\/\/定时检测到multi的连接，如果已断开，发起重连，并发送初始信息给multi$/;"	v
+g_register_to_switch_timer	data.cpp	/^online_timer_t g_register_to_switch_timer;\/\/定时检测到switch的连接，如果已断开，发起重连，并发送初始信息给swtich$/;"	v
+g_seed_reward	data.cpp	/^vector<seed_reward_t> g_seed_reward;$/;"	v
+g_send_buffer	data.cpp	/^char g_send_buffer[MAX_SEND_PKG_SIZE];       \/\/发送数据的缓存$/;"	v
+g_send_msg	data.cpp	/^c_pack g_send_msg;                           \/\/用来打包数据的类$/;"	v
+g_shop_item_map	data.cpp	/^map<uint32_t, vector<uint32_t> > g_shop_item_map;  \/\/商店的物品列表$/;"	v
+g_shop_num_map	data.cpp	/^map<shop_key_t, shop_num_t, c_shop_cmp> g_shop_num_map;$/;"	v
+g_shop_type_map	data.cpp	/^map<uint32_t, int> g_shop_type_map;$/;"	v
+g_shop_update_time	data.cpp	/^int g_shop_update_time;                      \/\/商店更新的时间$/;"	v
+g_street_normal_num	data.cpp	/^int g_street_normal_num;                     \/\/街道上普通用户的数量$/;"	v
+g_street_vip_num	data.cpp	/^int g_street_vip_num;                        \/\/街道上vip用户的数量$/;"	v
+g_task_map	data.cpp	/^map<uint32_t, task_xml_t> g_task_map; \/\/记录配表中的所有任务$/;"	v
+g_tel_or_net	data.cpp	/^uint8_t g_tel_or_net;            \/\/电信(0)or网通(1)$/;"	v
+g_unhappy_growth_time	data.cpp	/^int g_unhappy_growth_time;                   \/\/不愉悦时成长1点需要的时间,秒$/;"	v
+g_user_index	data.cpp	/^int g_user_index = 0;                            \/\/记录第几个登录的用户，每100个用户给share-svr发一次$/;"	v
+g_user_mng	data.cpp	/^UserManager g_user_mng;                      \/\/管理所有在线用户的缓存$/;"	v
+g_vip_pet	data.cpp	/^map<uint32_t, map<seed_match_t, int, c_seed_cmp> > g_vip_pet;$/;"	v
+g_waiting_user_list	data.cpp	/^list<int> g_waiting_user_list;          \/\/保存有请求正在等待处理的用户fd$/;"	v
+game_id	online_structure.h	/^    uint32_t game_id;$/;"	m	struct:__anon32
+game_id	online_structure.h	/^    uint32_t game_id;$/;"	m	struct:__anon49
+game_item_t	online_structure.h	/^} game_item_t;$/;"	t	typeref:struct:__anon33
+game_key	online_structure.h	/^    uint32_t game_key;\/\/为game_id和level_id的组合$/;"	m	struct:__anon32
+game_level_item_t	online_structure.h	/^}game_level_item_t;$/;"	t	typeref:struct:__anon34
+game_level_t	online_structure.h	/^}game_level_t;$/;"	t	typeref:struct:__anon49
+game_t	online_structure.h	/^} game_t;$/;"	t	typeref:struct:__anon32
+gender	online_structure.h	/^    uint8_t gender;$/;"	m	struct:__anon12
+gender	online_structure.h	/^    uint8_t gender;$/;"	m	struct:__anon17
+get_a_activity_info	activity.cpp	/^int get_a_activity_info(usr_info_t *p_user, uint32_t act_id)$/;"	f
+get_act_reward	activity.cpp	/^int get_act_reward(usr_info_t *p_user, as_request_activity_reward_t req)$/;"	f
+get_actinfo_from_conf	activity.cpp	/^int get_actinfo_from_conf(single_activity_t *p_act)$/;"	f
+get_all_badge	c_user_cache.cpp	/^int c_user_cache::get_all_badge(all_badge_info_t *p_badge)$/;"	f	class:c_user_cache
+get_all_hole	c_user_cache.cpp	/^int c_user_cache::get_all_hole(all_hole_info_t *p_all_hole)$/;"	f	class:c_user_cache
+get_all_pet	c_user_cache.cpp	/^int c_user_cache::get_all_pet(all_pet_t *p_pet)$/;"	f	class:c_user_cache
+get_all_plants	c_user_cache.cpp	/^int c_user_cache::get_all_plants(all_plant_t *p_all_plant)$/;"	f	class:c_user_cache
+get_all_puzzle	c_user_cache.cpp	/^int c_user_cache::get_all_puzzle(db_msg_puzzle_rsp_t *p_puzzle)$/;"	f	class:c_user_cache
+get_all_room_id	c_user_cache.cpp	/^int c_user_cache::get_all_room_id(uint32_t *p_room_id, int *p_room_num)$/;"	f	class:c_user_cache
+get_attract_pet	c_user_cache.cpp	/^uint32_t c_user_cache::get_attract_pet()$/;"	f	class:c_user_cache
+get_attract_pet	function.cpp	/^void get_attract_pet(all_plant_t *p_all_plant, uint32_t *p_pet_id, int *p_seed_match)$/;"	f
+get_bag	c_user_cache.cpp	/^int c_user_cache::get_bag(db_msg_get_bag_rsp_t *p_bag)$/;"	f	class:c_user_cache
+get_cached_open_act	c_user_cache.cpp	/^int c_user_cache::get_cached_open_act(single_activity_t *p_nv)$/;"	f	class:c_user_cache
+get_cur_activity_from_conf	activity.cpp	/^int get_cur_activity_from_conf(activity_list_t *p_list)$/;"	f
+get_cur_room	c_user_cache.cpp	/^room_value_t *c_user_cache::get_cur_room()$/;"	f	class:c_user_cache
+get_cur_room_id	c_user_cache.cpp	/^uint32_t c_user_cache::get_cur_room_id()$/;"	f	class:c_user_cache
+get_current_gains	function.cpp	/^uint32_t get_current_gains(uint32_t now_gains, usr_info_t *p_user)$/;"	f
+get_day_restrict	c_user_cache.cpp	/^int c_user_cache::get_day_restrict(restrict_key_t key, uint32_t *p_value)$/;"	f	class:c_user_cache
+get_default_room	c_user_cache.cpp	/^room_value_t *c_user_cache::get_default_room()$/;"	f	class:c_user_cache
+get_extra_growth	function.cpp	/^void get_extra_growth(usr_info_t *p_user, all_plant_t *p_all_plant)$/;"	f
+get_fd	user_manager.h	/^UserManager::get_fd(uint32_t user_id)$/;"	f	class:UserManager
+get_finished_task_list	c_user_cache.cpp	/^int c_user_cache::get_finished_task_list(as_msg_finished_task_rsp_t *p_finished_task)$/;"	f	class:c_user_cache
+get_following_pet	c_user_cache.cpp	/^void c_user_cache::get_following_pet(following_pet_t *p_pet)$/;"	f	class:c_user_cache
+get_friend_list	c_friend.cpp	/^int c_friend::get_friend_list(int min, int max, db_msg_friend_list_rsp_t *p_friend_list)$/;"	f	class:c_friend
+get_friend_num	c_friend.cpp	/^int c_friend::get_friend_num()$/;"	f	class:c_friend
+get_friend_tree	c_friend.cpp	/^int c_friend::get_friend_tree(uint32_t user_id, int min, int max, friend_rsp_t *p_friend, uint16_t *p_all_friend_num)$/;"	f	class:c_friend
+get_game_changed	c_user_cache.cpp	/^int c_user_cache::get_game_changed(db_msg_changed_stuff_t *p_changed_stuff)$/;"	f	class:c_user_cache
+get_game_day_restrict	c_user_cache.cpp	/^int c_user_cache::get_game_day_restrict(restrict_key_t key_coin, restrict_key_t key_item, uint32_t *p_restrict_coins, uint32_t *p_restrict_value)$/;"	f	class:c_user_cache
+get_game_level	c_user_cache.cpp	/^int c_user_cache::get_game_level(uint32_t game_id, uint32_t total_level_num,  game_level_info_t *p_game_level)$/;"	f	class:c_user_cache
+get_game_reward_item	function.cpp	/^int get_game_reward_item(game_t *p_game)$/;"	f
+get_game_star	function.cpp	/^int get_game_star(game_t *p_game, uint32_t one_star_score, uint32_t two_star_score, uint32_t three_star_score, uint32_t finish_score)$/;"	f
+get_hole_plant	c_user_cache.cpp	/^hole_info_t *c_user_cache::get_hole_plant(uint8_t hole_id)$/;"	f	class:c_user_cache
+get_hole_reward	c_user_cache.cpp	/^int c_user_cache::get_hole_reward(uint8_t hole_id, single_hole_reward_t *p_hole_reward)$/;"	f	class:c_user_cache
+get_hole_reward_i	c_user_cache.cpp	/^int c_user_cache::get_hole_reward_i(uint8_t hole_id, uint32_t reward_id, hole_sun_reward_t *sun_reward)$/;"	f	class:c_user_cache
+get_level_from_exp	function.cpp	/^uint16_t get_level_from_exp(int exp)$/;"	f
+get_level_left_exp	function.cpp	/^uint16_t get_level_left_exp(int exp, int level)$/;"	f
+get_loop_maintain	plantation.cpp	/^int get_loop_maintain(uint8_t maintain_count)$/;"	f
+get_monster_health_on_login	function.cpp	/^int get_monster_health_on_login(uint32_t now, uint32_t last_logout_time, int health)$/;"	f
+get_museum_item	c_user_cache.cpp	/^museum_info_t*  c_user_cache::get_museum_item(uint32_t museum_id)$/;"	f	class:c_user_cache
+get_new_happy	function.cpp	/^uint32_t get_new_happy(uint32_t now_time, uint32_t last_time, uint32_t last_happy)$/;"	f
+get_new_maintain	plantation.cpp	/^int get_new_maintain()$/;"	f
+get_new_seq	function.h	/^inline uint32_t get_new_seq(uint32_t old_seq, int pkg_len, uint16_t msg_type)$/;"	f
+get_now_health	function.cpp	/^int get_now_health(int health, uint32_t last_update_health_time, uint32_t now)$/;"	f
+get_npc_score	c_user_cache.cpp	/^int c_user_cache::get_npc_score(npc_score_info_t *p_npc)$/;"	f	class:c_user_cache
+get_other_friend_list	c_friend.cpp	/^int c_friend::get_other_friend_list(int min, int max, db_msg_friend_list_rsp_t *p_friend_list)$/;"	f	class:c_friend
+get_other_friend_tree	c_friend.cpp	/^int c_friend::get_other_friend_tree(uint32_t user_id, int min, int max, friend_rsp_t *p_friend, uint16_t *p_all_friend_num)$/;"	f	class:c_friend
+get_other_monster_health	function.cpp	/^int get_other_monster_health(uint32_t now, uint32_t last_logout_time, uint32_t last_login_time, int last_health)$/;"	f
+get_peer_real	c_user_cache.cpp	/^int c_user_cache::get_peer_real(uint32_t peer_id)$/;"	f	class:c_user_cache
+get_pinboard	c_user_cache.cpp	/^pinboard_t *c_user_cache::get_pinboard(int page)$/;"	f	class:c_user_cache
+get_pinboard_by_id	c_user_cache.cpp	/^pinboard_message_t *c_user_cache::get_pinboard_by_id(int id)$/;"	f	class:c_user_cache
+get_pkg_len	dll_interface.cpp	/^extern "C" int get_pkg_len(int fd, const void* pkg, int pkglen, int isparent)$/;"	f
+get_plant_growth_add	function.cpp	/^uint32_t get_plant_growth_add(uint32_t now_happy, uint32_t last_growth_time)$/;"	f
+get_puzzle	c_user_cache.cpp	/^puzzle_info_t *c_user_cache::get_puzzle(int type)$/;"	f	class:c_user_cache
+get_role	c_user_cache.cpp	/^role_cache_t *c_user_cache::get_role()$/;"	f	class:c_user_cache
+get_self_friend_tree	c_friend.cpp	/^int c_friend::get_self_friend_tree(int min, int max, friend_rsp_t *p_friend, uint16_t *p_all_friend_num)$/;"	f	class:c_friend
+get_server_fd	c_server.h	/^inline int c_server::get_server_fd()$/;"	f	class:c_server
+get_stranger_id	function.cpp	/^int get_stranger_id(usr_info_t *p_user, stranger_t *p_stranger_info, switch_msg_active_user_t *p_active_usr)$/;"	f
+get_stuff_npc_num	function.cpp	/^int get_stuff_npc_num(room_value_t *p_room, npc_score_info_t *p_npc)$/;"	f
+get_stuff_num	c_user_cache.cpp	/^int c_user_cache::get_stuff_num(uint32_t stuff_id)$/;"	f	class:c_user_cache
+get_timestamp	function.cpp	/^time_t get_timestamp(uint32_t birthday)$/;"	f
+get_user	user_manager.h	/^UserManager::get_user(int fd)$/;"	f	class:UserManager
+get_utc_second_ex	utility.h	/^inline uint32_t get_utc_second_ex(const char *input_date)$/;"	f
+handle_cache_svr_return	db_cache.cpp	/^void handle_cache_svr_return(svr_msg_header_t *p_cache_pkg, int len)$/;"	f
+handle_db_return	db_proxy.cpp	/^void handle_db_return(svr_msg_header_t *p_db_pkg, int len)$/;"	f
+handle_get_pinboard_return	db_cache.cpp	/^int handle_get_pinboard_return(usr_info_t *p_user, svr_msg_header_t *p_cache_pkg)$/;"	f
+handle_latest_visit_return	ucount.cpp	/^int handle_latest_visit_return(usr_info_t *p_user, svr_msg_header_t *p_ucount_pkg)$/;"	f
+handle_multi_svr_return	multi_svr.cpp	/^void handle_multi_svr_return(svr_msg_header_t* p_pkg, int len)$/;"	f
+handle_switch_return	switch.cpp	/^void handle_switch_return(svr_msg_header_t *p_data, int len)$/;"	f
+handle_thumb_user_room_return	ucount.cpp	/^int handle_thumb_user_room_return(usr_info_t *p_user, svr_msg_header_t *p_ucount_pkg)$/;"	f
+handle_ucount_return	ucount.cpp	/^void handle_ucount_return(svr_msg_header_t *p_ucount_pkg, int len)$/;"	f
+handle_unread_count_return	ucount.cpp	/^int handle_unread_count_return(usr_info_t *p_user, svr_msg_header_t *p_ucount_pkg)$/;"	f
+handle_visit_user_room_return	ucount.cpp	/^int handle_visit_user_room_return(usr_info_t *p_user, svr_msg_header_t *p_ucount_pkg)$/;"	f
+happy	online_structure.h	/^    uint16_t happy;$/;"	m	struct:__anon8
+health	online_structure.h	/^    uint16_t health;$/;"	m	struct:__anon8
+hero_series	badge.h	/^const uint32_t hero_series  = 3;$/;"	v
+id	online_structure.h	/^    uint32_t id;$/;"	m	struct:__anon27
+inc_counter	user_manager.h	/^	void inc_counter()$/;"	f	struct:usr_info_t
+init	c_friend.h	/^inline int c_friend::init(uint32_t user_id)$/;"	f	class:c_friend
+init	c_server.cpp	/^int c_server::init(int bufsz, int timeout, const char *server_name, const char *ip, int port)$/;"	f	class:c_server
+init	c_user_cache.cpp	/^int c_user_cache::init()$/;"	f	class:c_user_cache
+init_cli_handle_funs	cli_proto.cpp	/^void init_cli_handle_funs()$/;"	f
+init_db_handle_funs	db_proxy.cpp	/^void init_db_handle_funs()$/;"	f
+init_log_file	function.cpp	/^void init_log_file(const char *stat_path)$/;"	f
+init_server_instance	dll_interface.cpp	/^static int init_server_instance()$/;"	f	file:
+init_service	dll_interface.cpp	/^extern "C" int init_service(int isparent)$/;"	f
+interactive_rewards_t	online_structure.h	/^}interactive_rewards_t;$/;"	t	typeref:struct:__anon37
+is_add_friend_list	c_friend.h	/^        bool is_add_friend_list;$/;"	m	class:c_friend
+is_add_other_friend_list	c_friend.h	/^        bool is_add_other_friend_list;$/;"	m	class:c_friend
+is_badge_acquired	c_user_cache.cpp	/^int c_user_cache::is_badge_acquired(badge_info_t *p_badge, uint8_t *p_need_update, uint8_t badge_type)$/;"	f	class:c_user_cache
+is_best_friend	online_structure.h	/^    uint8_t is_best_friend;$/;"	m	struct:__anon16
+is_best_friend	online_structure.h	/^    uint8_t is_best_friend;$/;"	m	struct:__anon17
+is_depversion_id	function.h	/^inline int is_depversion_id(uint32_t user_id)$/;"	f
+is_friend	c_friend.cpp	/^int c_friend::is_friend(uint32_t peer_id)$/;"	f	class:c_friend
+is_hole_reward_cached	c_user_cache.cpp	/^int c_user_cache::is_hole_reward_cached()$/;"	f	class:c_user_cache
+is_passed	online_structure.h	/^    uint8_t is_passed;\/\/本次玩的分数是否通关    0:未通关 1：通关$/;"	m	struct:__anon32
+is_pet_exist	c_user_cache.cpp	/^int c_user_cache::is_pet_exist(uint32_t pet_id)$/;"	f	class:c_user_cache
+is_register	user_manager.h	/^    uint8_t                    is_register;$/;"	m	struct:usr_info_t
+is_stuff_changed	c_user_cache.cpp	/^int c_user_cache::is_stuff_changed(uint32_t game_id, uint32_t stuff_id)$/;"	f	class:c_user_cache
+is_stuff_exist	c_user_cache.cpp	/^bool c_user_cache::is_stuff_exist(uint32_t stuff_id)$/;"	f	class:c_user_cache
+is_vip	online_structure.h	/^    uint8_t is_vip;$/;"	m	struct:__anon40
+item_id	online_structure.h	/^    int item_id[100];$/;"	m	struct:__anon33
+item_id	online_structure.h	/^    uint32_t item_id;$/;"	m	struct:__anon35
+item_id	online_structure.h	/^    uint32_t item_id;$/;"	m	struct:__anon46
+item_id	online_structure.h	/^    uint32_t item_id;$/;"	m	struct:__anon47
+item_id	online_structure.h	/^    uint32_t item_id[0];$/;"	m	struct:__anon44
+item_num	online_structure.h	/^    int item_num;$/;"	m	struct:__anon33
+item_num	online_structure.h	/^    uint16_t item_num;$/;"	m	struct:__anon46
+item_t	online_structure.h	/^} item_t;$/;"	t	typeref:struct:__anon8
+keepalive_check	function.cpp	/^int keepalive_check(void *owner, void *p_data)$/;"	f
+last_login_time	online_structure.h	/^    uint32_t last_login_time;$/;"	m	struct:__anon15
+last_login_time	online_structure.h	/^    uint32_t last_login_time;$/;"	m	struct:__anon16
+last_login_time	online_structure.h	/^    uint32_t last_login_time;$/;"	m	struct:__anon17
+last_playtime	online_structure.h	/^    uint32_t last_playtime;$/;"	m	struct:__anon9
+last_reward_time_t	c_user_cache.h	/^typedef uint32_t last_reward_time_t;\/\/上次任务奖励时间$/;"	t
+last_update_health_time	online_structure.h	/^    uint32_t last_update_health_time;$/;"	m	struct:__anon3
+latest_visit_t	online_structure.h	/^} latest_visit_t;$/;"	t	typeref:struct:__anon41
+len	user_manager.h	/^    uint16_t len;$/;"	m	struct:cached_pkg_t
+level	online_structure.h	/^    uint16_t level;$/;"	m	struct:__anon8
+level_id	online_structure.h	/^	uint8_t level_id;$/;"	m	struct:__anon52
+level_id	online_structure.h	/^    uint32_t level_id;          \/\/关卡id$/;"	m	struct:__anon34
+level_id	online_structure.h	/^    uint32_t level_id;$/;"	m	struct:__anon32
+level_item_t	online_structure.h	/^}level_item_t;$/;"	t	typeref:struct:__anon52
+level_unlocked	c_user_cache.cpp	/^int c_user_cache::level_unlocked(uint32_t game_id, uint32_t game_key, uint32_t level_id, uint32_t score, uint32_t unlock_cond,  uint8_t *p_need_update, uint32_t *p_badge_add)$/;"	f	class:c_user_cache
+m_attract_pet	c_user_cache.h	/^        uint32_t m_attract_pet;           \/\/保存用户吸引到的但是还未处理的小怪兽$/;"	m	class:c_user_cache
+m_badge_cached	c_user_cache.h	/^        uint8_t m_badge_cached;\/\/判断成就项是否有做缓存(0:未做缓存 1：做了缓存)$/;"	m	class:c_user_cache
+m_badge_map	c_user_cache.h	/^        std::map<uint32_t, badge_info_t> m_badge_map; \/\/保存所有的成就项$/;"	m	class:c_user_cache
+m_bag_map	c_user_cache.h	/^        std::map<uint32_t, stuff_num_t> m_bag_map;$/;"	m	class:c_user_cache
+m_best_friend_id_list	c_friend.h	/^        std::list<uint32_t> m_best_friend_id_list;                \/\/按顺序保存用户的最爱好友id$/;"	m	class:c_friend
+m_best_friend_map	c_friend.h	/^        std::map<uint32_t, friend_list_t> m_best_friend_map;$/;"	m	class:c_friend
+m_bufsz	c_server.h	/^    int m_bufsz;$/;"	m	class:c_server
+m_cur_room_id	c_user_cache.h	/^        int m_cur_room_id;                      \/\/用户最后一次获取的非默认房间的id$/;"	m	class:c_user_cache
+m_day_restrict_map	c_user_cache.h	/^        std::map<restrict_key_t, uint32_t, c_restrict_cmp> m_day_restrict_map;          \/\/保存小游戏的每日限制$/;"	m	class:c_user_cache
+m_elf_map	c_user_cache.h	/^        std::map<uint32_t, uint32_t> m_elf_map; \/\/保存用户拥有的小精灵$/;"	m	class:c_user_cache
+m_fd	c_server.h	/^    int m_fd;$/;"	m	class:c_server
+m_finished_task_map	c_user_cache.h	/^        std::map<task_id_t, last_reward_time_t> m_finished_task_map;\/\/已完成任务列表$/;"	m	class:c_user_cache
+m_friend_list_map	c_friend.h	/^        std::map<uint32_t, friend_info_t> m_friend_list_map;   \/\/保存用户的好友列表$/;"	m	class:c_friend
+m_game_change_stuff_map	c_user_cache.h	/^        std::map<uint32_t, std::vector<uint32_t> > m_game_change_stuff_map; \/\/记录用户已经兑换过的游戏当前期物品列表, key为游戏id$/;"	m	class:c_user_cache
+m_game_level_map	c_user_cache.h	/^        std::map<uint32_t, level_info_t> m_game_level_map;\/\/小游戏的缓存 key为game_id和level_id的组合$/;"	m	class:c_user_cache
+m_hole	c_user_cache.h	/^        hole_info_t m_hole[PLANTATION_NUM];\/\/坑的信息$/;"	m	class:c_user_cache
+m_hole1_reward_map	c_user_cache.h	/^        std::map<uint32_t, hole_sun_reward_t> m_hole1_reward_map;\/\/第一个坑上的奖励信息, key为奖励id$/;"	m	class:c_user_cache
+m_hole2_reward_map	c_user_cache.h	/^        std::map<uint32_t, hole_sun_reward_t> m_hole2_reward_map;\/\/第二个坑上的奖励信息$/;"	m	class:c_user_cache
+m_hole3_reward_map	c_user_cache.h	/^        std::map<uint32_t, hole_sun_reward_t> m_hole3_reward_map;\/\/第三个坑上的奖励信息$/;"	m	class:c_user_cache
+m_hole_cached	c_user_cache.h	/^        uint8_t m_hole_cached;\/\/种植园的坑是否有缓存(0:未做缓存 1:做了缓存)$/;"	m	class:c_user_cache
+m_hole_reward_cached	c_user_cache.h	/^        uint8_t m_hole_reward_cached;\/\/种植园的阳光奖励是否缓存(0:未做缓存 1：做了缓存)$/;"	m	class:c_user_cache
+m_inited	c_friend.h	/^        int m_inited;$/;"	m	class:c_friend
+m_inited	c_server.h	/^    uint8_t m_inited;$/;"	m	class:c_server
+m_inited	c_user_cache.h	/^        int m_inited;$/;"	m	class:c_user_cache
+m_ip	c_server.h	/^    char m_ip[16];$/;"	m	class:c_server
+m_museum_info_map	c_user_cache.h	/^		std::map<uint32_t, museum_info_t> m_museum_info_map;\/\/记录完成博物馆任务情况$/;"	m	class:c_user_cache
+m_normal_friend_id_list	c_friend.h	/^        std::list<uint32_t> m_normal_friend_id_list;              \/\/按顺序保存用户的普通好友id$/;"	m	class:c_friend
+m_normal_friend_map	c_friend.h	/^        std::map<uint32_t, friend_list_t> m_normal_friend_map;$/;"	m	class:c_friend
+m_npc_score	c_user_cache.h	/^        npc_score_info_t m_npc_score;$/;"	m	class:c_user_cache
+m_open_act_cached	c_user_cache.h	/^        uint8_t m_open_act_cached;$/;"	m	class:c_user_cache
+m_open_act_reward_map	c_user_cache.h	/^        std::map<uint32_t, single_reward_t> m_open_act_reward_map;\/\/存放公测活动的奖励$/;"	m	class:c_user_cache
+m_other_best_friend_id_vec	c_friend.h	/^        std::vector<uint32_t> m_other_best_friend_id_vec;                \/\/按顺序保存用户的最爱好友id$/;"	m	class:c_friend
+m_other_best_friend_map	c_friend.h	/^        std::map<uint32_t, friend_list_t> m_other_best_friend_map;$/;"	m	class:c_friend
+m_other_friend_list_map	c_friend.h	/^        std::map<uint32_t, friend_info_t> m_other_friend_list_map;   \/\/保存用户的好友列表$/;"	m	class:c_friend
+m_other_normal_friend_id_vec	c_friend.h	/^        std::vector<uint32_t> m_other_normal_friend_id_vec;              \/\/按顺序保存用户的普通好友id$/;"	m	class:c_friend
+m_other_normal_friend_map	c_friend.h	/^        std::map<uint32_t, friend_list_t> m_other_normal_friend_map;$/;"	m	class:c_friend
+m_other_user_id	c_friend.h	/^        uint32_t m_other_user_id;$/;"	m	class:c_friend
+m_p_cur_room	c_user_cache.h	/^        room_value_t *m_p_cur_room;          \/\/保存最后一次获得的非默认房间的信息$/;"	m	class:c_user_cache
+m_p_default_room	c_user_cache.h	/^        room_value_t *m_p_default_room;      \/\/保存用户的默认房间信息$/;"	m	class:c_user_cache
+m_peer_msg	c_user_cache.h	/^        peer_real_msg_num_t m_peer_msg;$/;"	m	class:c_user_cache
+m_pet_map	c_user_cache.h	/^        std::map<uint32_t, pet_num_t> m_pet_map;    \/\/保存用户跟随的小怪兽$/;"	m	class:c_user_cache
+m_pinboard_id_map	c_user_cache.h	/^        std::map<int, pinboard_message_t *> m_pinboard_id_map;      \/\/留言id对应的留言信息$/;"	m	class:c_user_cache
+m_pinboard_map	c_user_cache.h	/^        std::map<int, pinboard_t *> m_pinboard_map;$/;"	m	class:c_user_cache
+m_plant_map	c_user_cache.h	/^        std::map<uint8_t, plant_info_t> m_plant_map;$/;"	m	class:c_user_cache
+m_port	c_server.h	/^    int m_port;$/;"	m	class:c_server
+m_puzzle_map	c_user_cache.h	/^        std::map<int, puzzle_info_t> m_puzzle_map;$/;"	m	class:c_user_cache
+m_role	c_user_cache.h	/^        role_cache_t m_role;$/;"	m	class:c_user_cache
+m_room_set	c_user_cache.h	/^        std::set<uint32_t> m_room_set;       \/\/保存用户对应的所有房间id$/;"	m	class:c_user_cache
+m_server_name	c_server.h	/^    char m_server_name[100];$/;"	m	class:c_server
+m_task_cached	c_user_cache.h	/^        uint8_t m_task_cached;\/\/任务列表是否缓存$/;"	m	class:c_user_cache
+m_timeout	c_server.h	/^    int m_timeout;$/;"	m	class:c_server
+m_user_id	c_friend.h	/^        uint32_t m_user_id;                                    \/\/用户自己的米米号$/;"	m	class:c_friend
+main_color	online_structure.h	/^    uint32_t main_color;$/;"	m	struct:__anon40
+maintain_type_t	online_structure.h	/^}maintain_type_t;$/;"	t	typeref:struct:__anon51
+max_coins	online_structure.h	/^    uint32_t max_coins;$/;"	m	struct:__anon32
+max_player_num	user_manager.h	/^		max_player_num	= 60000$/;"	e	enum:UserManager::constant_t
+max_rewards	online_structure.h	/^    uint16_t max_rewards;$/;"	m	struct:__anon37
+max_score	online_structure.h	/^    uint16_t max_score;$/;"	m	struct:__anon9
+mengchong_series	badge.h	/^const uint32_t mengchong_series  = 2;$/;"	v
+message	online_structure.h	/^    pinboard_cache_t message[0];$/;"	m	struct:__anon56
+message	online_structure.h	/^    pinboard_message_t message;$/;"	m	struct:__anon55
+min_max	utility.cpp	/^int min_max(int v, int min, int max)$/;"	f
+min_rewards	online_structure.h	/^    uint16_t min_rewards;$/;"	m	struct:__anon37
+mon_ex_color	online_structure.h	/^    uint32_t mon_ex_color;$/;"	m	struct:__anon12
+mon_ex_color	online_structure.h	/^    uint32_t mon_ex_color;$/;"	m	struct:__anon17
+mon_eye_color	online_structure.h	/^    uint32_t mon_eye_color;$/;"	m	struct:__anon12
+mon_eye_color	online_structure.h	/^    uint32_t mon_eye_color;$/;"	m	struct:__anon17
+mon_id	online_structure.h	/^    uint32_t mon_id;$/;"	m	struct:__anon12
+mon_id	online_structure.h	/^    uint32_t mon_id;$/;"	m	struct:__anon17
+mon_id	online_structure.h	/^    uint32_t mon_id;$/;"	m	struct:__anon40
+mon_level	online_structure.h	/^    uint16_t mon_level;$/;"	m	struct:__anon14
+mon_level	online_structure.h	/^    uint16_t mon_level;$/;"	m	struct:__anon16
+mon_level	online_structure.h	/^    uint16_t mon_level;$/;"	m	struct:__anon17
+mon_main_color	online_structure.h	/^    uint32_t mon_main_color;$/;"	m	struct:__anon12
+mon_main_color	online_structure.h	/^    uint32_t mon_main_color;$/;"	m	struct:__anon17
+msg_log	function.cpp	/^void msg_log(uint32_t type, const void *stat_data, int len)$/;"	f
+msg_type	online_structure.h	/^    uint16_t msg_type;$/;"	m	struct:__anon1
+msg_type	online_structure.h	/^    uint16_t msg_type;$/;"	m	struct:__anon39
+museum_id	online_structure.h	/^	uint32_t museum_id;$/;"	m	struct:__anon52
+name	online_structure.h	/^    char name[16];$/;"	m	struct:__anon12
+name	online_structure.h	/^    char name[16];$/;"	m	struct:__anon17
+name	online_structure.h	/^    char name[16];$/;"	m	struct:__anon40
+name	online_structure.h	/^    char name[16];$/;"	m	struct:__anon53
+need_update_db	online_structure.h	/^    uint8_t need_update_db;\/\/是否需要更新数据库 0:不需要 1：需要$/;"	m	struct:__anon32
+next_level_max	online_structure.h	/^    uint16_t next_level_max;$/;"	m	struct:__anon26
+next_level_min	online_structure.h	/^    uint16_t next_level_min;$/;"	m	struct:__anon26
+normal_friend_key_t	online_structure.h	/^} normal_friend_key_t;$/;"	t	typeref:struct:__anon15
+notify_as_current_user_info	function.cpp	/^void notify_as_current_user_info(usr_info_t *p_user)$/;"	f
+num	online_structure.h	/^    int num;$/;"	m	struct:__anon33
+old_happy	online_structure.h	/^    uint32_t old_happy;$/;"	m	struct:__anon30
+old_happy	online_structure.h	/^    uint32_t old_happy;$/;"	m	struct:__anon31
+on_client_conn_closed	dll_interface.cpp	/^extern "C" void on_client_conn_closed(int fd)$/;"	f
+on_fd_closed	dll_interface.cpp	/^extern "C" void on_fd_closed(int fd)$/;"	f
+one_star_score	online_structure.h	/^    uint32_t one_star_score;    \/\/获得一颗星需要的分数$/;"	m	struct:__anon34
+online_timer_t	data.h	/^}online_timer_t;$/;"	t	typeref:struct:__anon58
+operator ()	c_user_cache.h	/^    bool operator()(const restrict_key_t &key_a, const restrict_key_t &key_b) const$/;"	f	class:c_restrict_cmp
+operator ()	data.h	/^    bool operator()(const seed_match_t &key_a, const seed_match_t &key_b) const$/;"	f	class:c_seed_cmp
+operator ()	data.h	/^    bool operator()(const shop_key_t &key_a, const shop_key_t &key_b) const$/;"	f	class:c_shop_cmp
+pack_as_pkg_header	function.cpp	/^void pack_as_pkg_header(uint32_t user_id, uint16_t msg_type, uint32_t result, uint32_t err_no)$/;"	f
+pack_svr_pkg_head	function.cpp	/^void pack_svr_pkg_head(svr_msg_header_t *p_head, uint16_t msg_type, uint32_t user_id, uint32_t seq_id, uint32_t body_len)$/;"	f
+page	online_structure.h	/^    uint16_t page;$/;"	m	struct:__anon10
+page	online_structure.h	/^    uint8_t page;$/;"	m	struct:__anon11
+page	online_structure.h	/^    uint8_t page;$/;"	m	struct:__anon19
+page	online_structure.h	/^    uint8_t page;$/;"	m	struct:__anon20
+page_num	online_structure.h	/^    uint8_t page_num;$/;"	m	struct:__anon19
+page_num	online_structure.h	/^    uint8_t page_num;$/;"	m	struct:__anon20
+paper_term	online_structure.h	/^    uint8_t paper_term;$/;"	m	struct:__anon50
+parse_config	dll_interface.cpp	/^static int parse_config()$/;"	f	file:
+parse_room_buf	function.cpp	/^int parse_room_buf(const char *buf, int buf_len, room_stuff_t *p_room_value)$/;"	f
+parse_xml_activity	xml_parse.cpp	/^int parse_xml_activity()$/;"	f
+parse_xml_badge	xml_parse.cpp	/^int parse_xml_badge()$/;"	f
+parse_xml_bobo	xml_parse.cpp	/^int parse_xml_bobo()$/;"	f
+parse_xml_data	xml_parse.cpp	/^int parse_xml_data()$/;"	f
+parse_xml_donate	xml_parse.cpp	/^int parse_xml_donate()$/;"	f
+parse_xml_formulaes	xml_parse.cpp	/^int parse_xml_formulaes()$/;"	f
+parse_xml_game	xml_parse.cpp	/^int parse_xml_game()$/;"	f
+parse_xml_game_change	xml_parse.cpp	/^int parse_xml_game_change()$/;"	f
+parse_xml_interactive	xml_parse.cpp	/^int parse_xml_interactive()$/;"	f
+parse_xml_items	xml_parse.cpp	/^int parse_xml_items()$/;"	f
+parse_xml_level	xml_parse.cpp	/^int parse_xml_level()$/;"	f
+parse_xml_maintain	xml_parse.cpp	/^int parse_xml_maintain()$/;"	f
+parse_xml_museum	xml_parse.cpp	/^int parse_xml_museum()$/;"	f
+parse_xml_pet	xml_parse.cpp	/^int parse_xml_pet()$/;"	f
+parse_xml_pet_series	xml_parse.cpp	/^int parse_xml_pet_series()$/;"	f
+parse_xml_shops	xml_parse.cpp	/^int parse_xml_shops()$/;"	f
+parse_xml_system	xml_parse.cpp	/^int parse_xml_system()$/;"	f
+parse_xml_task	xml_parse.cpp	/^int parse_xml_task()$/;"	f
+parse_xml_user_name	xml_parse.cpp	/^int parse_xml_user_name()$/;"	f
+peer_id	online_structure.h	/^    uint32_t peer_id;$/;"	m	struct:__anon10
+peer_id	online_structure.h	/^    uint32_t peer_id;$/;"	m	struct:__anon19
+peer_id	online_structure.h	/^    uint32_t peer_id;$/;"	m	struct:__anon57
+peer_real_msg_num_t	online_structure.h	/^}peer_real_msg_num_t;$/;"	t	typeref:struct:__anon57
+pending_req_num	online_structure.h	/^    uint16_t pending_req_num;$/;"	m	struct:__anon3
+percent	online_structure.h	/^    uint8_t percent;$/;"	m	struct:__anon35
+pet	online_structure.h	/^    pet_info_t pet[0];$/;"	m	struct:__anon21
+pet_match	plantation.cpp	/^int pet_match(all_hole_info_t *p_all_hole, uint32_t *p_pet_id, int *p_seed_match)$/;"	f
+pet_num_t	online_structure.h	/^} pet_num_t;$/;"	t	typeref:struct:__anon36
+pinboard_cache_t	online_structure.h	/^} pinboard_cache_t;$/;"	t	typeref:struct:__anon55
+pinboard_count_t	online_structure.h	/^} pinboard_count_t;$/;"	t	typeref:struct:__anon10
+pinboard_t	online_structure.h	/^} pinboard_t;$/;"	t	typeref:struct:__anon56
+pkg	user_manager.h	/^    uint8_t pkg[0];$/;"	m	struct:cached_pkg_t
+plant_all_maturity	function.cpp	/^bool plant_all_maturity(all_plant_t *p_all_plant)$/;"	f
+plant_change	online_structure.h	/^    db_msg_update_plant_req_t plant_change;$/;"	m	struct:__anon29
+plant_change	online_structure.h	/^    db_msg_update_plant_req_t plant_change;$/;"	m	struct:__anon30
+plant_change	online_structure.h	/^    db_msg_update_plant_req_t plant_change;$/;"	m	struct:__anon31
+plant_series	badge.h	/^const uint32_t plant_series  = 4;$/;"	v
+plantation_get_pet	function.cpp	/^int plantation_get_pet(usr_info_t *p_user, all_plant_t *p_all_plant, uint32_t pet_id)$/;"	f
+plantation_no_plant	function.cpp	/^int plantation_no_plant(usr_info_t *p_user)$/;"	f
+play_times	online_structure.h	/^	uint16_t play_times;$/;"	m	struct:__anon9
+pos_x	online_structure.h	/^    uint32_t pos_x;$/;"	m	struct:__anon7
+pos_y	online_structure.h	/^    uint32_t pos_y;$/;"	m	struct:__anon7
+price	online_structure.h	/^    uint16_t price;$/;"	m	struct:__anon8
+proc_cached_pkgs	cli_proto.cpp	/^void proc_cached_pkgs()$/;"	f
+proc_events	dll_interface.cpp	/^extern "C" void proc_events()$/;"	f
+proc_pkg_from_client	dll_interface.cpp	/^extern "C" int proc_pkg_from_client(void *data, int len, fdsession_t *fdsess)$/;"	f
+proc_pkg_from_serv	dll_interface.cpp	/^extern "C" void proc_pkg_from_serv(int fd, void *data, int len)$/;"	f
+process_active_user_return	switch.cpp	/^int process_active_user_return(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_add_friend	cli_proto.cpp	/^int process_add_friend(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_add_friend_to_cache	cli_proto.cpp	/^int process_add_friend_to_cache(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_add_message	cli_proto.cpp	/^int process_add_message(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_add_new_unlock_map	cli_proto.cpp	/^int process_add_new_unlock_map(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_all_user	user_manager.h	/^UserManager::process_all_user(void (*func)(usr_info_t *p_user))$/;"	f	class:UserManager
+process_answer_two_puzzle	cli_proto.cpp	/^int process_answer_two_puzzle(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)\/\/40136$/;"	f
+process_answer_two_puzzle_return	multi_svr.cpp	/^int process_answer_two_puzzle_return(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_attract_pet	cli_proto.cpp	/^int process_attract_pet(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_buy_stuff	cli_proto.cpp	/^int process_buy_stuff(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_buy_stuff_after_get_restrict	stuff.cpp	/^int process_buy_stuff_after_get_restrict(usr_info_t *p_user, commit_stuff_cache_t *p_cm_stuff,  uint32_t day_restrict)$/;"	f
+process_check_dirty_word	cli_proto.cpp	/^int process_check_dirty_word(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_commit_game	cli_proto.cpp	/^int process_commit_game(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_commit_game_change_score	cli_proto.cpp	/^int process_commit_game_change_score(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_commit_mesuem_game_return	db_proxy.cpp	/^int process_commit_mesuem_game_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_commit_museum_game	cli_proto.cpp	/^int process_commit_museum_game(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_commit_puzzle	cli_proto.cpp	/^int process_commit_puzzle(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_create_stuff	cli_proto.cpp	/^int process_create_stuff(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_cur_donate_info	cli_proto.cpp	/^int process_cur_donate_info(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)\/\/重写捐助计划的三个协议$/;"	f
+process_db_add_day_restrict_return	db_proxy.cpp	/^int process_db_add_day_restrict_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_add_game_day_restrict_return	db_proxy.cpp	/^int process_db_add_game_day_restrict_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_add_game_level_return	db_proxy.cpp	/^int process_db_add_game_level_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_add_message_return	db_proxy.cpp	/^int process_db_add_message_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_add_plant_return	db_proxy.cpp	/^int process_db_add_plant_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_add_role_return	db_proxy.cpp	/^int process_db_add_role_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_add_role_value_return	db_proxy.cpp	/^int process_db_add_role_value_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_add_stuff_return	db_proxy.cpp	/^int process_db_add_stuff_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_apply_for_friend_return	db_proxy.cpp	/^int process_db_apply_for_friend_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_check_session_return	db_proxy.cpp	/^int process_db_check_session_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_commit_puzzle_return	db_proxy.cpp	/^int process_db_commit_puzzle_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_compose_stuff_return	db_proxy.cpp	/^int process_db_compose_stuff_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_del_friend_return	db_proxy.cpp	/^int process_db_del_friend_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_del_plant_return	db_proxy.cpp	/^int process_db_del_plant_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_eat_food_return	db_proxy.cpp	/^int process_db_eat_food_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_all_badge_return	db_proxy.cpp	/^int process_db_get_all_badge_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_bag_stuff_return	db_proxy.cpp	/^int process_db_get_bag_stuff_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_day_restrict_return	db_proxy.cpp	/^int process_db_get_day_restrict_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_friend_apply_return	db_proxy.cpp	/^int process_db_get_friend_apply_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_friend_id_return	db_proxy.cpp	/^int process_db_get_friend_id_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_friend_info_return	db_proxy.cpp	/^int process_db_get_friend_info_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_game_day_restrict_return	db_proxy.cpp	/^int process_db_get_game_day_restrict_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_game_level_return	db_proxy.cpp	/^int process_db_get_game_level_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_pet_return	db_proxy.cpp	/^int process_db_get_pet_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_pinboard_return	db_proxy.cpp	/^int process_db_get_pinboard_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_profile_return	db_proxy.cpp	/^int process_db_get_profile_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_puzzle_return	db_proxy.cpp	/^int process_db_get_puzzle_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_real_message_count_return	db_proxy.cpp	/^int process_db_get_real_message_count_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_room_info_return	db_proxy.cpp	/^int process_db_get_room_info_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_get_room_num_return	db_proxy.cpp	/^int process_db_get_room_num_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_interactive_return	db_proxy.cpp	/^int process_db_interactive_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_modify_sign_return	db_proxy.cpp	/^int process_db_modify_sign_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_other_role_info_return	db_proxy.cpp	/^int process_db_other_role_info_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_pet_op_return	db_proxy.cpp	/^int process_db_pet_op_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_role_info_return	db_proxy.cpp	/^int process_db_role_info_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_search_name_return	db_proxy.cpp	/^int process_db_search_name_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_set_friend_status_return	db_proxy.cpp	/^int process_db_set_friend_status_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_set_unread_badge_return	db_proxy.cpp	/^int process_db_set_unread_badge_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_update_badge_return	db_proxy.cpp	/^int process_db_update_badge_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_update_login_return	db_proxy.cpp	/^int process_db_update_login_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_update_msg_status_return	db_proxy.cpp	/^int process_db_update_msg_status_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_update_plant_return	db_proxy.cpp	/^int process_db_update_plant_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_update_role_return	db_proxy.cpp	/^int process_db_update_role_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_db_update_room_return	db_proxy.cpp	/^int process_db_update_room_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_donate_coins	cli_proto.cpp	/^int process_donate_coins(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)\/\/重写捐助计划的三个协议$/;"	f
+process_eat_food	cli_proto.cpp	/^int process_eat_food(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_encourage_guide_return	db_proxy.cpp	/^int process_encourage_guide_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_encourage_guide_return	switch.cpp	/^int process_encourage_guide_return(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_enter_museum	cli_proto.cpp	/^int process_enter_museum(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_enter_museum_return	db_proxy.cpp	/^int process_enter_museum_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_enter_npc_score	cli_proto.cpp	/^int process_enter_npc_score(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_enter_show	cli_proto.cpp	/^int process_enter_show(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_enter_two_puzzle	cli_proto.cpp	/^int process_enter_two_puzzle(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)\/\/40134$/;"	f
+process_enter_two_puzzle_return	multi_svr.cpp	/^int process_enter_two_puzzle_return(usr_info_t *p_user, svr_msg_header_t* p_pkg, int len)$/;"	f
+process_factory_op	cli_proto.cpp	/^int process_factory_op(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_factory_op_return	db_proxy.cpp	/^int process_factory_op_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_find_friend	cli_proto.cpp	/^int process_find_friend(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_finish_task	cli_proto.cpp	/^int process_finish_task(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_finish_task_return	db_proxy.cpp	/^int process_finish_task_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_friend_apply_op	cli_proto.cpp	/^int process_friend_apply_op(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_friend_op	cli_proto.cpp	/^int process_friend_op(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_game_change	cli_proto.cpp	/^int process_game_change(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_a_activity_info	cli_proto.cpp	/^int process_get_a_activity_info(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_activity_list	cli_proto.cpp	/^int process_get_activity_list(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_activity_reward	cli_proto.cpp	/^int process_get_activity_reward(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_activity_reward_ex	cli_proto.cpp	/^int process_get_activity_reward_ex(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_activity_reward_ex_return	activity.cpp	/^int process_get_activity_reward_ex_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_get_activity_rewarded_return	db_proxy.cpp	/^int process_get_activity_rewarded_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_get_all_badge	cli_proto.cpp	/^int process_get_all_badge(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_bag_stuff	cli_proto.cpp	/^int process_get_bag_stuff(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_bobo_reward	cli_proto.cpp	/^int process_get_bobo_reward(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_factory	cli_proto.cpp	/^int process_get_factory(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_finished_task	cli_proto.cpp	/^int process_get_finished_task(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_finished_task_return	db_proxy.cpp	/^int process_get_finished_task_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_get_friend_apply	cli_proto.cpp	/^int process_get_friend_apply(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_friend_list	cli_proto.cpp	/^int process_get_friend_list(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_game_change	cli_proto.cpp	/^int process_get_game_change(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_game_changed_stuff_return	db_proxy.cpp	/^int process_get_game_changed_stuff_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_get_game_level	cli_proto.cpp	/^int process_get_game_level(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_hole_reward_return	db_proxy.cpp	/^int process_get_hole_reward_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_get_invite_info_return	activity.cpp	/^int process_get_invite_info_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_get_latest_visit	cli_proto.cpp	/^int process_get_latest_visit(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_museum_reward	cli_proto.cpp	/^int process_get_museum_reward(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_museum_reward_return	db_proxy.cpp	/^int process_get_museum_reward_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_get_npc_score_return	db_proxy.cpp	/^int process_get_npc_score_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_get_open_reward_return	db_proxy.cpp	/^int process_get_open_reward_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_get_pet	cli_proto.cpp	/^int process_get_pet(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_pinboard	cli_proto.cpp	/^int process_get_pinboard(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_plant_info	cli_proto.cpp	/^int process_get_plant_info(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_plant_return	db_proxy.cpp	/^int process_get_plant_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_get_puzzle_info	cli_proto.cpp	/^int process_get_puzzle_info(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_random_name	cli_proto.cpp	/^int process_get_random_name(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_real_message_count	cli_proto.cpp	/^int process_get_real_message_count(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_room_info	cli_proto.cpp	/^int process_get_room_info(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_room_num	cli_proto.cpp	/^int process_get_room_num(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_shop_item	cli_proto.cpp	/^int process_get_shop_item(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_shop_item_return	switch.cpp	/^int process_get_shop_item_return(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_get_stranger	cli_proto.cpp	/^int process_get_stranger(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_sun_reward	cli_proto.cpp	/^int process_get_sun_reward(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_unread_visit	cli_proto.cpp	/^int process_get_unread_visit(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_get_user_info	cli_proto.cpp	/^int process_get_user_info(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_grow_plant	cli_proto.cpp	/^int process_grow_plant(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_guess_show	cli_proto.cpp	/^int process_guess_show(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_history_donate	cli_proto.cpp	/^int process_history_donate(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_interactive_element	cli_proto.cpp	/^int process_interactive_element(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_invitor_activity	activity.cpp	/^int process_invitor_activity(usr_info_t *p_user, uint32_t act_id)$/;"	f
+process_join_show	cli_proto.cpp	/^int process_join_show(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_login	cli_proto.cpp	/^int process_login(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_maintain_plant	cli_proto.cpp	/^int process_maintain_plant(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_maintain_plant_return	db_proxy.cpp	/^int process_maintain_plant_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_modify_monster_name	cli_proto.cpp	/^int process_modify_monster_name(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_modify_monster_name_return	db_proxy.cpp	/^int process_modify_monster_name_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_multi_puzzle_add_coin	cli_proto.cpp	/^int process_multi_puzzle_add_coin(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_notify_apply	switch.cpp	/^int process_notify_apply(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_npc_score	cli_proto.cpp	/^int process_npc_score(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_open_act_reward	activity.cpp	/^int process_open_act_reward(usr_info_t *p_user, uint32_t act_id,  uint32_t reward_id)$/;"	f
+process_open_activity	activity.cpp	/^int process_open_activity(usr_info_t *p_user, uint32_t act_id)$/;"	f
+process_plantation_after_all_hole	plantation.cpp	/^int process_plantation_after_all_hole(usr_info_t *p_user, all_hole_info_t *p_all_hole)$/;"	f
+process_prize_lottery	cli_proto.cpp	/^int process_prize_lottery(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_prize_lottery_return	db_proxy.cpp	/^int process_prize_lottery_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_rating_user_room	cli_proto.cpp	/^int process_rating_user_room(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_read_bobo_newspaper	cli_proto.cpp	/^int process_read_bobo_newspaper(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_register	cli_proto.cpp	/^int process_register(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_reload_conf	cli_proto.cpp	/^int process_reload_conf(fdsession_t *fdsess, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_request_cur_donate_return	db_proxy.cpp	/^int process_request_cur_donate_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_request_donate_coins_return	db_proxy.cpp	/^int process_request_donate_coins_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_request_history_donate_return	db_proxy.cpp	/^int process_request_history_donate_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_set_game_changed_stuff_return	db_proxy.cpp	/^int process_set_game_changed_stuff_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_set_npc_score_return	db_proxy.cpp	/^int process_set_npc_score_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_start_two_puzzle	cli_proto.cpp	/^int process_start_two_puzzle(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)\/\/40135$/;"	f
+process_start_two_puzzle_return	multi_svr.cpp	/^int process_start_two_puzzle_return(usr_info_t *p_user, svr_msg_header_t* p_pkg, int len)$/;"	f
+process_stat_data	cli_proto.cpp	/^int process_stat_data(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_sun_reward_coins_return	db_proxy.cpp	/^int process_sun_reward_coins_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_sun_reward_exp	plantation.cpp	/^int process_sun_reward_exp(usr_info_t *p_user, sun_reward_exp_cache_t *p_cache, uint32_t day_restrict)$/;"	f
+process_sun_reward_exp_return	db_proxy.cpp	/^int process_sun_reward_exp_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_sun_reward_happy_return	db_proxy.cpp	/^int process_sun_reward_happy_return(usr_info_t *p_user, svr_msg_header_t *p_db_pkg)$/;"	f
+process_time_t	online_structure.h	/^} process_time_t;$/;"	t	typeref:struct:__anon1
+process_trade_stuff	cli_proto.cpp	/^int process_trade_stuff(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_two_puzzle_answer_notice	multi_svr.cpp	/^int process_two_puzzle_answer_notice(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_two_puzzle_match_notice	multi_svr.cpp	/^int process_two_puzzle_match_notice(usr_info_t *p_user, svr_msg_header_t* p_pkg, int len)$/;"	f
+process_two_puzzle_result_notice	multi_svr.cpp	/^int process_two_puzzle_result_notice(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_two_puzzle_start_notice	multi_svr.cpp	/^int process_two_puzzle_start_notice(usr_info_t *p_user, svr_msg_header_t *p_pkg, int len)$/;"	f
+process_ucount_add_visit	cli_proto.cpp	/^int process_ucount_add_visit(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_act_status_return	db_proxy.cpp	/^int process_update_act_status_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+process_update_activity_status	cli_proto.cpp	/^int process_update_activity_status(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_badge_status	cli_proto.cpp	/^int process_update_badge_status(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_flag	cli_proto.cpp	/^int process_update_flag(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_guide_flag	cli_proto.cpp	/^int process_update_guide_flag(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_message_status	cli_proto.cpp	/^int process_update_message_status(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_profile	cli_proto.cpp	/^int process_update_profile(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_room_buf	cli_proto.cpp	/^int process_update_room_buf(usr_info_t *p_user, char *p_msg_body, uint16_t msg_body_len)$/;"	f
+process_update_wealth_return	db_proxy.cpp	/^int process_update_wealth_return(usr_info_t * p_user,svr_msg_header_t * p_db_pkg)$/;"	f
+puzzle_cache_t	online_structure.h	/^}puzzle_cache_t;$/;"	t	typeref:struct:__anon31
+puzzle_info_t	online_structure.h	/^} puzzle_info_t;$/;"	t	typeref:struct:__anon9
+puzzle_reward	online_structure.h	/^    db_msg_puzzle_req_t puzzle_reward;$/;"	m	struct:__anon29
+puzzle_reward	online_structure.h	/^    db_msg_puzzle_req_t puzzle_reward;$/;"	m	struct:__anon31
+question_num	online_structure.h	/^	uint8_t question_num;$/;"	m	struct:__anon52
+rarity	online_structure.h	/^    uint8_t rarity; \/\/物品的稀有程度，0-3,0表示普通物品$/;"	m	struct:__anon8
+rate	online_structure.h	/^    uint8_t rate;$/;"	m	struct:__anon51
+real_num	online_structure.h	/^    uint32_t real_num;$/;"	m	struct:__anon57
+reason	online_structure.h	/^    uint8_t reason; \/\/没有获得道具奖励的原因(0:正常 1：分数不够 2：达到每日限制)$/;"	m	struct:__anon32
+recv_time	user_manager.h	/^    time_t                     recv_time;$/;"	m	struct:usr_info_t
+register_online	function.cpp	/^int register_online()$/;"	f
+register_to_multi	function.cpp	/^int register_to_multi(void *owner, void *p_data)$/;"	f
+register_to_switch	function.cpp	/^int register_to_switch(void *owner, void *p_data)$/;"	f
+release	c_server.cpp	/^int c_server::release()$/;"	f	class:c_server
+remain_time	online_structure.h	/^    uint16_t remain_time;$/;"	m	struct:__anon44
+restrict_key_t	online_structure.h	/^} restrict_key_t;$/;"	t	typeref:struct:__anon28
+result	online_structure.h	/^    two_puzzle_result_t result;$/;"	m	struct:__anon39
+reward_coins	online_structure.h	/^    uint16_t reward_coins;$/;"	m	struct:__anon51
+reward_coins	online_structure.h	/^    uint32_t reward_coins;$/;"	m	struct:__anon32
+reward_exp	online_structure.h	/^    uint16_t reward_exp;$/;"	m	struct:__anon51
+reward_growth	online_structure.h	/^    uint16_t reward_growth;$/;"	m	struct:__anon51
+reward_happy	online_structure.h	/^    uint16_t reward_happy;$/;"	m	struct:__anon51
+reward_id	online_structure.h	/^	uint32_t reward_id;$/;"	m	struct:__anon52
+reward_item_score	online_structure.h	/^    uint32_t reward_item_score;\/\/奖励道具的最低分数要求$/;"	m	struct:__anon32
+reward_item_score	online_structure.h	/^    uint32_t reward_item_score;\/\/奖励道具的最低分数要求$/;"	m	struct:__anon34
+reward_items	online_structure.h	/^    uint8_t reward_items;$/;"	m	struct:__anon32
+reward_num	online_structure.h	/^	uint16_t reward_num;$/;"	m	struct:__anon52
+reward_vec	online_structure.h	/^    std::vector<task_reward_t> reward_vec;$/;"	m	struct:__anon54
+role	online_structure.h	/^    role_t role;$/;"	m	struct:__anon3
+role_cache_t	online_structure.h	/^} role_cache_t;$/;"	t	typeref:struct:__anon3
+role_info	online_structure.h	/^    db_msg_get_friend_rsp_t role_info[0];$/;"	m	struct:__anon11
+role_list_t	online_structure.h	/^} role_list_t;$/;"	t	typeref:struct:__anon11
+room_id	online_structure.h	/^    uint32_t room_id;$/;"	m	struct:__anon2
+room_stuff_t	online_structure.h	/^} room_stuff_t;$/;"	t	typeref:struct:__anon5
+room_update_t	online_structure.h	/^} room_update_t;$/;"	t	typeref:struct:__anon2
+room_value_t	online_structure.h	/^} room_value_t;$/;"	t	typeref:struct:__anon4
+score	online_structure.h	/^    uint32_t score;$/;"	m	struct:__anon32
+seans_series	badge.h	/^const uint32_t seans_series  = 6;$/;"	v
+seed1	online_structure.h	/^    uint32_t seed1;$/;"	m	struct:__anon38
+seed2	online_structure.h	/^    uint32_t seed2;$/;"	m	struct:__anon38
+seed3	online_structure.h	/^    uint32_t seed3;$/;"	m	struct:__anon38
+seed_id	online_structure.h	/^    uint32_t seed_id;$/;"	m	struct:__anon22
+seed_match_t	online_structure.h	/^} seed_match_t;$/;"	t	typeref:struct:__anon22
+seed_reward_t	online_structure.h	/^} seed_reward_t;$/;"	t	typeref:struct:__anon38
+send_badge_to_db	badge.cpp	/^int send_badge_to_db(usr_info_t *p_user, badge_info_t badge)$/;"	f
+send_cache_pet_info	function.cpp	/^void send_cache_pet_info(usr_info_t *p_user, all_pet_t *p_all_pet)$/;"	f
+send_data	c_server.cpp	/^int c_server::send_data(usr_info_t *p_user, const char *p_data, int data_len, TIMEOUT_CALLBACK timeout_cb)$/;"	f	class:c_server
+send_data_to_user	function.cpp	/^void send_data_to_user(usr_info_t *p_user, const char *p_buf, uint32_t buf_len, bool clear_waitcmd)$/;"	f
+send_game_lvl_to_db	function.cpp	/^int send_game_lvl_to_db(usr_info_t *p_user, game_t *p_game)$/;"	f
+send_header_to_user	function.cpp	/^void send_header_to_user(usr_info_t *p_user, uint32_t result, uint32_t err_no, bool clear_waitcmd)$/;"	f
+send_npc_score_to_as	function.cpp	/^void send_npc_score_to_as(usr_info_t *p_user, npc_score_info_t npc_score)$/;"	f
+send_pet_info	function.cpp	/^void send_pet_info(usr_info_t *p_user)$/;"	f
+seq	user_manager.h	/^	uint32_t		           seq;$/;"	m	struct:usr_info_t
+session	user_manager.h	/^	fdsession_t*	           session;$/;"	m	struct:usr_info_t
+set_all_badge_to_no_reward	c_user_cache.cpp	/^int c_user_cache::set_all_badge_to_no_reward()$/;"	f	class:c_user_cache
+set_best_friend	c_friend.cpp	/^int c_friend::set_best_friend(uint32_t peer_id, int is_best_friend)$/;"	f	class:c_friend
+set_cached_open_act	c_user_cache.cpp	/^int c_user_cache::set_cached_open_act(single_activity_t *p_nv)$/;"	f	class:c_user_cache
+set_friend_list	function.cpp	/^void set_friend_list(friend_cache_t *p_friend_cache, db_msg_friend_list_rsp_t *p_friend_list)$/;"	f
+set_game_changed	c_user_cache.cpp	/^int c_user_cache::set_game_changed(db_msg_changed_stuff_t *p_changed_stuff)$/;"	f	class:c_user_cache
+set_npc_score	c_user_cache.cpp	/^int c_user_cache::set_npc_score(npc_score_info_t *npc_score)$/;"	f	class:c_user_cache
+set_peer_real	c_user_cache.cpp	/^int c_user_cache::set_peer_real(peer_real_msg_num_t *p_peer_msg)$/;"	f	class:c_user_cache
+set_server_fd	c_server.h	/^inline void c_server::set_server_fd()$/;"	f	class:c_server
+set_unread_badge	c_user_cache.cpp	/^int c_user_cache::set_unread_badge(uint16_t unread_badge_num)$/;"	f	class:c_user_cache
+shop_key_t	online_structure.h	/^} shop_key_t;$/;"	t	typeref:struct:__anon27
+shop_num_t	online_structure.h	/^} shop_num_t;$/;"	t	typeref:struct:__anon26
+shop_t	online_structure.h	/^} shop_t;$/;"	t	typeref:struct:__anon44
+star_num	online_structure.h	/^    uint8_t star_num;\/\/获得星星数量$/;"	m	struct:__anon32
+start_timestamp	online_structure.h	/^    uint32_t start_timestamp;$/;"	m	struct:__anon54
+stat_time	user_manager.h	/^    time_t                     stat_time;$/;"	m	struct:usr_info_t
+status	online_structure.h	/^        uint8_t status;$/;"	m	struct:__anon42
+status	online_structure.h	/^    uint8_t status;$/;"	m	struct:__anon40
+stranger	online_structure.h	/^    stranger_info_t stranger[0];$/;"	m	struct:__anon25
+stranger_info	online_structure.h	/^    db_msg_street_user_rsp_t stranger_info;$/;"	m	struct:__anon24
+stranger_info_t	online_structure.h	/^} stranger_info_t;$/;"	t	typeref:struct:__anon24
+stranger_t	online_structure.h	/^} stranger_t;$/;"	t	typeref:struct:__anon25
+string_is_digit	utility.cpp	/^bool string_is_digit(char *p_str)$/;"	f
+stuff	online_structure.h	/^    as_msg_buy_stuff_req_t stuff[0];$/;"	m	struct:__anon5
+stuff_child_t	online_structure.h	/^} stuff_child_t;$/;"	t	typeref:struct:__anon7
+stuff_id	online_structure.h	/^    uint32_t stuff_id;$/;"	m	struct:__anon29
+stuff_id	online_structure.h	/^    uint32_t stuff_id;$/;"	m	struct:__anon7
+stuff_num	online_structure.h	/^    uint16_t stuff_num;$/;"	m	struct:__anon5
+stuff_num	online_structure.h	/^    uint16_t stuff_num;$/;"	m	struct:__anon6
+stuff_num_t	online_structure.h	/^} stuff_num_t;$/;"	t	typeref:struct:__anon6
+stuff_trade_t	online_structure.h	/^} stuff_trade_t;$/;"	t	typeref:struct:__anon35
+task_id_t	c_user_cache.h	/^typedef uint32_t task_id_t;\/\/任务id$/;"	t
+task_need_reward	c_user_cache.cpp	/^int c_user_cache::task_need_reward(uint32_t task_id, uint16_t lvl, uint32_t pre_mission, uint16_t reward_cycle)$/;"	f	class:c_user_cache
+three_star_score	online_structure.h	/^    uint32_t three_star_score;$/;"	m	struct:__anon34
+tiaotiao_series	badge.h	/^const uint32_t tiaotiao_series  = 1;$/;"	v
+time	online_structure.h	/^    uint32_t time;$/;"	m	struct:__anon28
+time	online_structure.h	/^    uint8_t time;$/;"	m	struct:__anon1
+timeout_cb	function.cpp	/^int timeout_cb(void *p_owner, void *p_data)$/;"	f
+timer_list	data.h	/^    list_head_t timer_list;$/;"	m	struct:__anon58
+timer_list	user_manager.h	/^	list_head_t		           timer_list;$/;"	m	class:UserManager
+timer_list	user_manager.h	/^	list_head_t		           timer_list;$/;"	m	struct:usr_info_t
+timestamp	online_structure.h	/^        uint32_t timestamp;$/;"	m	struct:__anon42
+timestamp	online_structure.h	/^    uint32_t timestamp;$/;"	m	struct:__anon40
+timestamp2day	utility.cpp	/^int timestamp2day(uint32_t timestamp)$/;"	f
+timestamp_begin_day	utility.cpp	/^uint32_t timestamp_begin_day()$/;"	f
+timestamp_equal_day	utility.cpp	/^int timestamp_equal_day(uint32_t timestamp1, uint32_t timestamp2)$/;"	f
+total_level	online_structure.h	/^    uint32_t total_level;$/;"	m	struct:__anon49
+total_num	online_structure.h	/^    uint32_t total_num;$/;"	m	struct:__anon36
+total_num	online_structure.h	/^    uint32_t total_num;$/;"	m	struct:__anon9
+total_score	online_structure.h	/^    uint32_t total_score;$/;"	m	struct:__anon9
+two_puzzle_req_t	online_structure.h	/^} two_puzzle_req_t;$/;"	t	typeref:struct:__anon39
+two_star_score	online_structure.h	/^    uint32_t two_star_score;$/;"	m	struct:__anon34
+type	online_structure.h	/^        uint8_t type;$/;"	m	struct:__anon42
+type	online_structure.h	/^    uint32_t type;$/;"	m	struct:__anon28
+type	online_structure.h	/^    uint8_t type;$/;"	m	struct:__anon27
+type	online_structure.h	/^    uint8_t type;$/;"	m	struct:__anon32
+type	online_structure.h	/^    uint8_t type;$/;"	m	struct:__anon40
+type	online_structure.h	/^    uint8_t type;$/;"	m	struct:__anon47
+type	online_structure.h	/^    uint8_t type;$/;"	m	struct:__anon51
+uid	user_manager.h	/^	uint32_t		           uid;$/;"	m	struct:usr_info_t
+uniform_rand	utility.cpp	/^int uniform_rand(int min, int max)$/;"	f
+uninit	c_friend.h	/^inline int c_friend::uninit()$/;"	f	class:c_friend
+uninit	c_server.cpp	/^int c_server::uninit()$/;"	f	class:c_server
+uninit	c_user_cache.cpp	/^int c_user_cache::uninit()$/;"	f	class:c_user_cache
+uninit_server_instance	dll_interface.cpp	/^static void uninit_server_instance()$/;"	f	file:
+unlock_cond	online_structure.h	/^    uint16_t unlock_cond;   \/\/解锁这一关需要的星星数量$/;"	m	struct:__anon34
+unlock_map_item	stuff.cpp	/^int unlock_map_item(usr_info_t *p_user, uint16_t mon_level)$/;"	f
+unlock_next_level	c_user_cache.cpp	/^int c_user_cache::unlock_next_level(uint32_t game_id, uint32_t level_id)$/;"	f	class:c_user_cache
+unlock_type	online_structure.h	/^    uint8_t unlock_type;$/;"	m	struct:__anon48
+unread_visits	online_structure.h	/^    uint16_t unread_visits;$/;"	m	struct:__anon3
+update_badge_status	c_user_cache.cpp	/^int c_user_cache::update_badge_status(badge_info_t *p_badge)$/;"	f	class:c_user_cache
+update_cached_open_act	c_user_cache.cpp	/^int c_user_cache::update_cached_open_act(uint32_t reward_id)$/;"	f	class:c_user_cache
+update_day_restrict	c_user_cache.cpp	/^void c_user_cache::update_day_restrict(restrict_key_t key, uint32_t value)$/;"	f	class:c_user_cache
+update_game_changed	c_user_cache.cpp	/^int c_user_cache::update_game_changed(db_msg_get_changed_stuff_t *p_changed)$/;"	f	class:c_user_cache
+update_game_day_restrict	c_user_cache.cpp	/^int c_user_cache::update_game_day_restrict(restrict_key_t key_coin, uint32_t restrict_coins, restrict_key_t key_item, uint32_t restrict_value)$/;"	f	class:c_user_cache
+update_game_level	c_user_cache.cpp	/^int c_user_cache::update_game_level(game_t *p_game)$/;"	f	class:c_user_cache
+update_hole_info_after_maintain	c_user_cache.cpp	/^int c_user_cache::update_hole_info_after_maintain(db_msg_maintain_req_t *p_req)$/;"	f	class:c_user_cache
+update_level_relative_info	function.cpp	/^int update_level_relative_info(usr_info_t *p_user, uint32_t activity_id)$/;"	f
+update_on_logout	function.cpp	/^void update_on_logout(usr_info_t *p_user)$/;"	f
+update_plant_growth	plantation.cpp	/^int update_plant_growth(usr_info_t *p_user, uint32_t mon_happy, all_hole_info_t *p_all_hole, db_msg_update_plant_req_t *p_change, uint8_t enter_plantation)$/;"	f
+update_plant_in_hole	c_user_cache.cpp	/^int c_user_cache::update_plant_in_hole(db_msg_add_plant_req_t *p_plant)$/;"	f	class:c_user_cache
+update_plant_info	c_user_cache.cpp	/^int c_user_cache::update_plant_info(plant_growth_t plant_growth)$/;"	f	class:c_user_cache
+update_plant_info_after_buy_stuff	stuff.cpp	/^int update_plant_info_after_buy_stuff(usr_info_t *p_user, commit_stuff_cache_t *p_sf_cache)$/;"	f
+update_plant_info_after_commit_puzzle_return	plantation.cpp	/^int update_plant_info_after_commit_puzzle_return(usr_info_t *p_user, puzzle_cache_t *p_puzzle_cache)$/;"	f
+update_plant_info_after_eat_food	plantation.cpp	/^int update_plant_info_after_eat_food(usr_info_t *p_user, uint32_t old_happy, db_msg_update_plant_req_t *p_change)$/;"	f
+update_plant_info_in_cache	plantation.cpp	/^int update_plant_info_in_cache(usr_info_t *p_user, db_msg_update_plant_req_t *p_change)$/;"	f
+update_room	c_user_cache.cpp	/^int c_user_cache::update_room(room_update_t *p_room)$/;"	f	class:c_user_cache
+update_task_list	c_user_cache.cpp	/^int c_user_cache::update_task_list(uint32_t task_id, uint32_t reward_time)$/;"	f	class:c_user_cache
+update_wealth_to_db	function.cpp	/^int update_wealth_to_db(usr_info_t *p_user, uint32_t money, uint32_t stuff_id, uint16_t stuff_num, const char *buf, int buf_len)$/;"	f
+used_num	online_structure.h	/^    uint16_t used_num;$/;"	m	struct:__anon6
+user_cache	user_manager.h	/^    c_user_cache               user_cache;$/;"	m	struct:usr_info_t
+user_fd_map	user_manager.h	/^    std::map<uint32_t, fdsession_t *> user_fd_map;$/;"	m	class:UserManager
+user_id	online_structure.h	/^        uint32_t user_id;$/;"	m	struct:__anon42
+user_id	online_structure.h	/^    uint32_t user_id;$/;"	m	struct:__anon12
+user_id	online_structure.h	/^    uint32_t user_id;$/;"	m	struct:__anon14
+user_id	online_structure.h	/^    uint32_t user_id;$/;"	m	struct:__anon15
+user_id	online_structure.h	/^    uint32_t user_id;$/;"	m	struct:__anon17
+user_id	online_structure.h	/^    uint32_t user_id;$/;"	m	struct:__anon20
+user_id	online_structure.h	/^    uint32_t user_id;$/;"	m	struct:__anon24
+user_id	online_structure.h	/^    uint32_t user_id;$/;"	m	struct:__anon40
+user_id	online_structure.h	/^    uint32_t user_id[0];$/;"	m	struct:__anon23
+user_info	online_structure.h	/^    db_msg_get_friend_rsp_t user_info;$/;"	m	struct:__anon55
+user_name_t	online_structure.h	/^}user_name_t;$/;"	t	typeref:struct:__anon53
+user_type	online_structure.h	/^    uint8_t user_type;$/;"	m	struct:__anon12
+user_type	online_structure.h	/^    uint8_t user_type;$/;"	m	struct:__anon17
+usr_info_t	user_manager.h	/^struct usr_info_t {$/;"	s
+value	online_structure.h	/^    restrict_value_t value[0];$/;"	m	struct:__anon32
+value	online_structure.h	/^    uint32_t value;$/;"	m	struct:__anon48
+visit_id_t	online_structure.h	/^} visit_id_t;$/;"	t	typeref:struct:__anon43
+visit_info	online_structure.h	/^    visit_info_t visit_info[0];$/;"	m	struct:__anon41
+visit_info	online_structure.h	/^    visit_ucount_t visit_info[0];$/;"	m	struct:__anon43
+visit_info_t	online_structure.h	/^} visit_info_t;$/;"	t	typeref:struct:__anon40
+visit_ucount_t	online_structure.h	/^} visit_ucount_t;$/;"	t	typeref:struct:__anon42
+waitcmd	user_manager.h	/^	uint32_t		           waitcmd;$/;"	m	struct:usr_info_t
+waiting_flag	user_manager.h	/^    uint8_t                    waiting_flag;$/;"	m	struct:usr_info_t
+~c_friend	c_friend.h	/^        ~c_friend() { uninit(); }$/;"	f	class:c_friend
+~c_server	c_server.cpp	/^c_server::~c_server()$/;"	f	class:c_server
+~c_user_cache	c_user_cache.cpp	/^c_user_cache::~c_user_cache()$/;"	f	class:c_user_cache

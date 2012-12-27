@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+    <!-- 进入种植园植物有额外成长值的最小时间，秒标准时间为1800秒 -->
+	<plant_min_time value="1800"/>
+     <!-- 对种植园植物进行维护操作的间隔时间 -->
+      <plant_maintain_time value="15"/>
+	<!--在种植园中领取阳光奖励每天可以得到的最大经验值 -->
+      <plant_max_exp value="40"/>
+    <!-- 种植园植物额外成长值，标准值为38。 -->
+	<extra_plant_growth_value value="38"/>
+    <!-- 商店物品更新的时间，秒 -->
+	<shop_update_time value="900"/>
+    <!--  街道显示的普通用户的数量 -->
+	<street_normal_user_num value="2"/>
+    <!--  街道显示的vip用户的数量,不足显示普通用户 -->
+	<street_vip_user_num value="4"/>
+    <!--  离线时健康值下降1点需要的时间，分钟 -->
+	<health_desc_offline value="43"/>
+    <!--  健康值600-999时下降1点需要的时间，分钟 -->
+	<health_desc_high value="2"/>
+    <!--  健康值300-600时下降1点需要的时间，分钟 -->
+	<health_desc_middle value="28"/>
+    <!--  健康值100-300时下降1点需要的时间，分钟 -->
+	<health_desc_slow value="1000"/>
+    <!--  愉悦值下降1点需要的时间，分钟 -->
+	<happy_desc_time value="30"/>
+    <!--  怪兽快乐时植物成长1点需要的时间，秒 -->
+	<happy_growth_time value="12"/>
+    <!--  怪兽不快乐时植物成长1点需要的时间，秒 -->
+	<unhappy_growth_time value="24"/>
+    <!--  小游戏每天的金币限制 -->
+	<max_game_score value="150"/>
+    <!--  小游戏每天的道具限制 -->
+	<max_game_item value="30"/>
+    <!-- 二人益智游戏每天的咕咚果奖励上限 -->
+    <max_two_puzzle_coins value="50"/>
+	<!-- 每天购买商品的经验值限制 --> 	
+    <max_stuff_exp_day value="80"/>
+	<!-- 每天益智游戏的经验值限制 --> 	
+    <max_puzzle_exp_day value="80"/>
+</system>

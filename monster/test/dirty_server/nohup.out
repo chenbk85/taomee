@@ -1,0 +1,2 @@
+access log dir ./dirty_log error, No such file or directory
+init log failed

@@ -1,0 +1,254 @@
+#+TITLE:     后台服务之间的通信协议
+#+AUTHOR:    monster@taomee
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  zh
+#+OPTIONS:   ^:nil d:nil skip:nil pri:nil tags:not-in-toc LaTeX:nul TeX:nil toc:2 H:2
+#+STARTUP:   content
+#+INFOJS_OPT: view:content tdepth:nil ltoc:nil path:http://10.1.1.28/smyang/org-info.js
+
+
+* 50001 -- 50100 login同switch之间的通信协议ID
+| 协议号 | 说明 |
+|--------+------|
+| 50001  | login向switch请求一个可用的online服务器ip和port  |
+|        |      |
+
+
+* 50101 -- 50200 online同switch之间的通信协议ID
+| 协议号 | 说明                              |
+|--------+-----------------------------------|
+|  50101 | online向switch发起注册请求        |
+|  50102 | 有用户登录或登出online,告知switch |
+|  50103 | 有用户登出online,告知switch       |
+|        |                                   |
+
+
+* 50201 -- 50300 switch主动向online发送的数据包
+| 协议号 | 说明                            |
+|--------+---------------------------------|
+|  50201 | switch告知online将用户踢下线 ｜ |
+|        |                                 |
+
+
+* 0xD0A0 -- 0xD0BF(53408 --- 53439)
+  0xD1A0 -- 0XD1BF(53664 --- 53695)
+  online同proxy通信的协议
+
+
+
+* 请求包头
+| 名称      | 类型   | 字节数 | 说明                                                       |
+|-----------+--------+--------+------------------------------------------------------------|
+| len       | uint32 |      4 | 消息长度                                                   |
+| seq       | uint32 |      4 | 协议序列号                                                 |
+| type      | uint16 |      2 | 协议类型                                                       |
+| result    | uint32 |      4 | 返回结果，包括错误码                                            |
+| user_id   | uint32 |      4 | 用户米米号                                                 |                                                                                                                                                          |
+
+
+* 包体
+
+** 获取单个online服务器IP和port(login向switch请求): 50001
+*** 请求包
+空
+
+*** 应答包
+| 名称        | 类型     | 字节数 | 说明     |
+|-------------+----------+--------+----------|
+| online_ip   | char(16) |     16 | online服务器ip |
+| online_port | uint16   |      2 | online服务器port |
+
+
+
+** online服务器向switch服务器发注册请求:50101
+*** 请求包
+| 名称        | 类型     | 字节数 | 说明                                |
+|-------------+----------+--------+-------------------------------------|
+| online_id   | uint32   |      4 | online编号，配置在bind.conf第一行的 |
+| online_ip   | char(16) |     16 | online服务绑定到的IP地址            |
+| online_port | uint16   |     2  | online服务绑定到的端口                      |
+
+无需返回
+
+** 有用户登录online,告知switch: 50102
+*** 请求包
+空
+
+无需返回
+
+** 有用户登出online,告知switch: 50103
+*** 请求包
+空
+
+无需返回
+
+** online通知switch有添加好友的请求: 50104
+*** 请求包
+| friend_id | uint32 | 4 | 被请求的人的米米|
+
+
+
+** switch告知online将用户踢下线: 50201
+*** 请求包
+| 名称      | 类型 | 字节数 | 说明 |
+|-----------+------+--------+------|
+| reason_id | uint8   |  1     | 1:已在其他online上登录 |
+
+*** 应答包
+无
+
+** switch告知online有添加好友的请求: 50202
+*** 请求包
+| friend_id | uint32 | 4 | friend_id向包头中的user_id发出添加好友请求|
+
+无需应答
+
+
+
+** 新增一个role: 53408(0xD0A0)
+*** 请求包
+| 名称            | 类型     | 字节数 | 说明                      |
+|-----------------+----------+--------+---------------------------|
+| name            | char(16) |     16 | 用户昵称                  |
+| gender          | uint8    |      1 | 用户性别(0:女性 1：男性)  |
+| country_id      | uint16   |      2 | 国籍id                    |
+| vip             | uint8    |      1 | 是否vip会员(0:不是 1：是) |
+| birthday        | uint32   |      4 | 生日,格式:19901123        |
+| register_time   | uint32   |      4 | 注册时间                  |
+| coins           | uint32   |      4 | 拥有的金币数              |
+| last_login_time | uint32   |      4 | 上次登录时间              |
+| mon_id          | uint32   |      4 | 怪兽id                    |
+| mon_name        | char(16) |     16 | 怪兽昵称                  |
+| mon_main_color  | uint32   |      4 | 怪兽主颜色                |
+| mon_exp_color   | uint32   |      4 | 怪兽辅颜色                |
+| mon_exp         | uint32   |      4 | 怪兽经验值                |
+| mon_level       | uint16   |      2 | 怪兽等级                  |
+| mon_health      | uint32   |      4 | 怪兽健康度                |
+| mon_happy       | uint32   |      4 | 怪兽愉悦度                     |
+| wallpaper_id   | uint32   |      4 | 默认墙纸id           |
+| floor_id       | uint32   |      4 | 默认地板id               |
+| windows_id     | uint32   |      4 | 默认窗户id               |
+| door_id        | uint32   |      4 | 默认们id                |
+| room_id        | uint32   |      4 | 默认创建的room id    |
+| room_buf       | char()   |        |                      |
+
+*** 应答包
+| 名称 | 类型 | 字节数 | 说明 |
+|------+------+--------+------|
+
+** 查询用户的role信息: 53409(0XD0A1)
+*** 请求包
+空
+
+*** 应答包
+| 名称        | 类型   | 字节数 | 说明 |
+|-------------+--------+--------+------|
+| is_register | uint8  |      1 | (0:未注册 1：已注册) |
+未注册用户没有下面的数据
+| name            | char(16) | 16 | 用户昵称                  |
+| gender          | uint8    |  1 | 用户性别(0:女性 1：男性)  |
+| country_id      | uint16   |  2 | 国籍id                    |
+| vip             | uint8    |  1 | 是否vip会员(0:不是 1：是) |
+| birthday        | uint32   |  4 | 生日,格式:19901123        |
+| register_time   | uint32   |  4 | 注册时间                  |
+| coins           | uint32   |  4 | 拥有的金币数              |
+| last_login_time | uint32   |  4 | 上次登录时间              |
+| mon_id          | uint32   |  4 | 怪兽id                    |
+| mon_name        | char(16) | 16 | 怪兽昵称                  |
+| mon_main_color  | uint32   |  4 | 怪兽主颜色                |
+| mon_exp_color   | uint32   |  4 | 怪兽辅颜色                |
+| mon_exp         | uint32   |  4 | 怪兽经验值                |
+| mon_level       | uint16   |  2 | 怪兽等级                  |
+| mon_health      | uint32   |  4 | 怪兽健康度                |
+| mon_happy       | uint32   |  4 | 怪兽愉悦度                     |
+
+** 拉取背包中的物品: 53410(0XD0A2)
+*** 请求包
+空
+
+*** 应答包
+| 名称      | 类型   | 字节数 | 说明       |
+|-----------+--------+--------+------------|
+| count     | uint16 |      2 | 物品总数量 |
+| ...       |        |        |            |
+| stuff_id  | uint32 |      4 | 物品id     |
+| stuff_num | uint16 |      2 | 物品个数   |
+| used_num  | uint16 |      2 | 已使用的个数     |
+
+** 背包中增加物品; 53411(0XD0A3)
+*** 请求包
+| 名称       | 类型   | 字节数 | 说明       |
+|------------+--------+--------+------------|
+| cost_coins | uint32 |      4 | 扣除的金币数量    |
+| count      | uint16 |      2 | 物品总数量 |
+| ...        |        |        |            |
+| stuff_id   | uint32 |      4 | 物品id     |
+| stuff_num  | uint16 |      2 | 物品个数   |
+
+*** 应答包
+空
+
+** 更新背包中物品数量: 53412(0XD0A4)
+*** 请求包 
+| 名称      | 类型   | 字节数 | 说明       |
+|-----------+--------+--------+------------|
+| stuff_id  | uint32 |      4 | 物品id     |
+| stuff_num | uint16 |      2 | 更新后的值 |
+| used_num  | uint16 |      2 | 更新后的值    |
+
+*** 应答包
+空
+
+** 拉取用户的房间数量: 53413(0XC0A5)
+*** 请求包
+
+*** 应答包
+| room_num | uint16 | 2 | 用户拥有的房间总个数 |
+| ...      |        |   |                      |
+| room_id  | uint32  |4  | 房间id（主房间默认为1）        |
+
+** 拉取单个房间信息: 53414(0XD0A6)
+*** 请求包 
+| 名称    | 类型   | 字节数 | 说明 |
+|---------+--------+--------+------|
+| room_id | uint32 |      4 | 房间id |
+|         |        |        |      |
+
+*** 应答包
+| 名称    | 类型   | 字节数 | 说明    |
+|---------+--------+--------+---------|
+| buf     | char(0) |    buf_len(变长) |  buf内容  |
+
+** 新增一个房间: 53415(0XD0A7)
+*** 请求包
+| wallpaper_id | uint32 | 4 |        |
+| floor_id     | uint32 | 4 |        |
+| windows_id   | uint32 | 4 |        |
+| door_id      | uint32 | 4 |        |
+| room_id      | uint32 | 4 | 房间id |
+| room_buf     | char() |   |        |
+
+*** 返回包
+
+
+** 更新role表中last_login_time: 53416(0XD0A8)
+*** 请求包
+| login_time | uint32 | 4 | 登录时间 |
+
+*** 应答包
+空
+
+** 更新房间room_buf: 53417(0XD0A9)
+*** 请求包
+| stuff_change_num | uint16 | 2 | 要变化的物品数量              |
+| ...              |        |   |                               |
+| stuff_id         | uint32 | 4 | 要变化的物品id                |
+| stuff_num        | uint16 | 2 |                               |
+| stuff_flow       | uint8  | 1 | 方向(0:bag->room 1:room->bag) |
+| room_id          | uint32 |   |                               |
+| room_buf_len     | uint16 | 2 | buf长度                       |
+| room_buf         | char(0) |   | buf 内容                        |
+
+*** 应答包
+空 

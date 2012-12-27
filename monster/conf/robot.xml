@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF8"?>
+<!-- 机器人信息配置 -->
+<robots>
+    <robot uid="12345" uname="麦咭" is_vip="1" mon_id="3" mon_main_color="16767488" mon_exp_color="16736768" mon_eye_color="2721130"/>
+    <robot uid="8888804" uname="克拉博" is_vip="1" mon_id="4" mon_main_color="16777137" mon_exp_color="16762880" mon_eye_color="5460224"/>
+    <robot uid="99990" uname="斗哥" is_vip="1" mon_id="2" mon_main_color="4476517" mon_exp_color="16777215" mon_eye_color="8615989"/>
+    <robot uid="47159775" uname="lighttpd" is_vip="1" mon_id="3" mon_main_color="7989068" mon_exp_color="16736768" mon_eye_color="7834368"/>
+    <robot uid="39883370" uname="aRAY" is_vip="1" mon_id="3" mon_main_color="16767488" mon_exp_color="16736768" mon_eye_color="4286976"/>
+    <robot uid="227679645" uname="jacky" is_vip="1" mon_id="1" mon_main_color="10871833" mon_exp_color="16733022" mon_eye_color="9000908"/>
+    <robot uid="353255279" uname="麦麦" is_vip="1" mon_id="3" mon_main_color="16747435" mon_exp_color="7810375" mon_eye_color="9777664"/>
+    <robot uid="77980125" uname="Echo" is_vip="1" mon_id="1" mon_main_color="16764445" mon_exp_color="16713472" mon_eye_color="502023"/>
+    <robot uid="295246616" uname="小白可爱多" is_vip="1" mon_id="4" mon_main_color="16777137" mon_exp_color="16737024" mon_eye_color="9245347"/>
+    <robot uid="99996" uname="Johnny" is_vip="1" mon_id="3" mon_main_color="9284863" mon_exp_color="16736768" mon_eye_color="11993088"/>
+    <robot uid="254869908" uname="Dauglas" is_vip="1" mon_id="1" mon_main_color="8443135" mon_exp_color="16733022" mon_eye_color="5407129"/>
+    <robot uid="182957329" uname="okami" is_vip="1" mon_id="1" mon_main_color="8443135" mon_exp_color="16777215" mon_eye_color="13369937"/>
+    <robot uid="289285954" uname="我要胡萝卜" is_vip="1" mon_id="1" mon_main_color="8443135" mon_exp_color="2843903" mon_eye_color="42956"/>
+    <robot uid="210891276" uname="苏胖纸" is_vip="1" mon_id="4" mon_main_color="10240768" mon_exp_color="11878224" mon_eye_color="7776521"/>
+</robots>
+

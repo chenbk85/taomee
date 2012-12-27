@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf8"?>
+<formulaesPool>
+	<formula id="100001" name="机器人模型" desc="儿童的梦想，拥有它是种骄傲" conditionDesc="无需解锁条件" costTime="15">
+		<condition type="0" value="5"/>
+		<products>
+			<product id="30137" probability=""/>
+			<product id="30138" probability=""/>
+			<product id="30139" probability=""/>
+		</products>
+		<materials>
+			<material id="30105" num="2"/>
+			<material id="30131" num="1"/>
+			<material id="30011" num="3"/>
+		</materials>
+	</formula>
+	<formula id="100002" name="机器人2" desc="儿童的梦想，拥有它是种骄傲2" conditionDesc="无需解锁条件" costTime="15">
+		<condition type="0" value="5"/>
+		<products>
+			<product id="30137" probability=""/>
+			<product id="30138" probability=""/>
+			<product id="30139" probability=""/>
+		</products>
+		<materials>
+			<material id="30105" num="5"/>
+			<material id="30131" num="3"/>
+			<material id="30011" num="6"/>
+		</materials>
+	</formula>
+	<formula id="100003" name="机器人3" desc="儿童的梦想，拥有它是种骄傲3" conditionDesc="无需解锁条件" costTime="15">
+		<condition type="0" value="5"/>
+		<products>
+			<product id="30137" probability=""/>
+			<product id="30138" probability=""/>
+			<product id="30139" probability=""/>
+		</products>
+		<materials>
+			<material id="30105" num="99"/>
+			<material id="30131" num="2"/>
+			<material id="30011" num="13"/>
+		</materials>
+	</formula>
+		<formula id="100004" name="机器人4" desc="儿童的梦想，拥有它是种骄傲4" conditionDesc="无需解锁条件" costTime="15">
+		<condition type="0" value="5"/>
+		<products>
+			<product id="30137" probability=""/>
+			<product id="30138" probability=""/>
+			<product id="30139" probability=""/>
+		</products>
+		<materials>
+			<material id="30105" num="99"/>
+			<material id="30131" num="2"/>
+			<material id="30011" num="14"/>
+		</materials>
+	</formula>
+		<formula id="100005" name="机器人5" desc="儿童的梦想，拥有它是种骄傲5" conditionDesc="无需解锁条件" costTime="15">
+		<condition type="0" value="5"/>
+		<products>
+			<product id="30137" probability=""/>
+			<product id="30138" probability=""/>
+			<product id="30139" probability=""/>
+		</products>
+		<materials>
+			<material id="30105" num="99"/>
+			<material id="30131" num="2"/>
+			<material id="30011" num="15"/>
+		</materials>
+	</formula>
+		<formula id="100006" name="机器人6" desc="儿童的梦想，拥有它是种骄傲6" conditionDesc="无需解锁条件" costTime="15">
+		<condition type="0" value="5"/>
+		<products>
+			<product id="30137" probability=""/>
+			<product id="30138" probability=""/>
+			<product id="30139" probability=""/>
+		</products>
+		<materials>
+			<material id="30105" num="99"/>
+			<material id="30131" num="2"/>
+			<material id="30011" num="16"/>
+		</materials>
+	</formula>
+</formulaesPool>
+<!--
+成就配置
+formula.@id：
+formula.@name：
+formula.@desc：
+formula.@conditionDesc:成就达成条件描述
+formula.@costTime：合成所需时间（秒）
+product.@id：合成成品id
+product.@probability：合成成品概率
+material.@id：原材料id
+material.@num：原材料所需数量
+condition.@type: 解锁条件的类型，0表示等级
+condition.@value: 解锁条件需要到达的值
+-->

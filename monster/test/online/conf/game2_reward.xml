@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game2>
+	<game id="4" name="蛋糕店" period_id="1">
+		<stuff id="40048"  score="5"/>
+		<stuff id="40049"  score="10"/>
+		<stuff id="40050"  score="15"/>
+		<stuff id="40051"  score="20"/>
+		<stuff id="40052"  score="25"/>
+	</game>
+</game2>
+
+<!--
+    game2表示是第二种类型的小游戏
+   period_id:当前第几次活动
+   stuff: id:奖励的物品id score:需要的分数
+-->

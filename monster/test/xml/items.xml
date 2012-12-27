@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf8"?>
+<items>
+	<Cat ID="1" DbCatID="0" Name="小家道具" Max="4000000000">
+		<Item ID="10001" Name="淡黄墙纸" Price="37" type="0" level="2" des="明亮清新，让屋子看起来宽敞又干净 " happy="15" rarity="0" canSell="1"/>
+		<Item ID="10002" Name="粉色墙纸" Price="37" type="0" level="2" des="甜美温馨，时刻让小屋充满爱意 " happy="15" rarity="0" canSell="1"/>
+		<Item ID="10003" Name="漆黑墙纸" Price="73" type="0" level="15" des="低调隐秘，让小屋充满神秘和期待 " happy="15" rarity="0" canSell="1"/>
+		<Item ID="10004" Name="果子绿墙纸" Price="54" type="0" level="3" des="活泼调皮，将春天满满地搬回家" happy="15" rarity="0" canSell="1"/>
+		<Item ID="10005" Name="咖啡豆墙纸" Price="57" type="0" level="7" des="温和亲切，适合性格温顺、安静的怪兽们 " happy="29" rarity="0" canSell="1"/>
+		<Item ID="10006" Name="蓝波墙纸" Price="96" type="0" level="16" des="蓝底和白色小圆点花纹的搭配十分经典 " happy="54" rarity="2" canSell="1"/>
+		<Item ID="10007" Name="布朗条纹墙纸" Price="78" type="0" level="11" des="布朗系列的墙纸都有点深沉哦 " happy="67" rarity="1" canSell="1"/>
+		<Item ID="10008" Name="土著墙纸" Price="94" type="0" level="19" des="石头主题，哇！这是原始怪物留下来的踪迹吗？" happy="31" rarity="1" canSell="1"/>
+		<Item ID="10009" Name="海浪墙纸" Price="69" type="0" level="4" des="海洋主题，海浪弯弯，小屋蓝蓝，可以在家里做一个海盗探险的梦" happy="40" rarity="1" canSell="1"/>
+		<Item ID="10010" Name="宇宙很大墙纸" Price="80" type="0" level="7" des="宇宙主题，宇宙这么大，一定有外星怪兽啊，或许它们已在怪兽国了" happy="59" rarity="1" canSell="1"/>
+		<Item ID="10011" Name="森林墙纸" Price="100" type="0" level="13" des="森林主题，用上这个墙纸，就好像在森林里散步一样了" happy="52" rarity="2" canSell="1"/>
+		<Item ID="10012" Name="红色圣诞墙纸" Price="55" type="0" level="2" des="告诉你个秘密，这可是从圣诞城带来的哦！" happy="79" rarity="1" canSell="1"/>
+		<Item ID="10013" Name="蓝色条纹墙纸" Price="118" type="0" level="22" des="优雅大方，恩恩，像绅士一般" happy="52" rarity="2" canSell="1"/>
+		<Item ID="10014" Name="贴纸墙纸" Price="124" type="0" level="25" des="嘘，这可是怪兽伙伴写的悄悄话呦！" happy="52" rarity="2" canSell="1"/>
+		<Item ID="10015" Name="石板墙纸" Price="65" type="0" level="1" des="据说是神工巧匠的作品呢，还是收藏下吧！" happy="88" rarity="0" canSell="1"/>
+		<Item ID="10016" Name="新年墙纸" Price="69" type="0" level="1" des="春节主题，新年到，墙纸俏，买来贴，春天笑~" happy="88" rarity="3" canSell="1"/>
+		<Item ID="10017" Name="橙黄墙纸" Price="64" type="0" level="3" des="有的怪兽看到一种颜色，有的两种，还有的三种…… " happy="15" rarity="0" canSell="1"/>
+		<Item ID="10018" Name="五星墙纸" Price="94" type="0" level="1" des="五颜六色的五角星贴在墙上，如同真的一样，灵活跳动 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10019" Name="红黄墙纸" Price="76" type="0" level="5" des="为数不多的双色墙纸，即使颜色简单，也非常漂亮！" happy="15" rarity="1" canSell="1"/>
+		<Item ID="10020" Name="游戏墙纸" Price="126" type="0" level="12" des="据说可以在墙上打躲避方块的小游戏，只是据说而已…… " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10021" Name="踩浪花墙纸" Price="112" type="0" level="19" des="在家里也能看见大大的浪花，感觉还有海风吹过哦 " happy="15" rarity="2" canSell="1"/>
+		<Item ID="10022" Name="数猫猫墙纸" Price="95" type="0" level="3" des="一起数数墙上有几只猫吧，看看是黑的多还是白的多 " happy="15" rarity="2" canSell="1"/>
+		<Item ID="10023" Name="机械墙纸" Price="98" type="0" level="8" des="其实是来自合成工厂的杰作，后来辗转到了商店里 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10024" Name="骨头墙纸" Price="116" type="0" level="25" des="为了提醒怪兽减肥的哑铃墙纸，可是怪兽越看越饿了 " happy="15" rarity="1" canSell="1"/>
+		<Item ID="10025" Name="斑斓墙纸" Price="85" type="0" level="3" des="由于色彩新奇而曾被阿来来啧啧称赞，不知道是哪位设计师设计的 " happy="15" rarity="2" canSell="1"/>
+		<Item ID="10026" Name="树婆婆墙纸" Price="71" type="0" level="4" des="有什么不开心的事情或者悄悄话，可以告诉树婆婆哦 " happy="15" rarity="0" canSell="1"/>
+		<Item ID="10027" Name="爱心飞飞墙纸" Price="104" type="0" level="6" des="满屋子充满小心心，满屋子都甜蜜蜜 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10028" Name="绿格子树墙纸" Price="111" type="0" level="12" des="小树在春天的第一天醒来，就发现自己穿上绿格子衣服了 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10029" Name="奶牛墙纸" Price="93" type="0" level="15" des="黑一坨，白一块，一只超超超大的奶牛撞到墙上了 " happy="15" rarity="0" canSell="1"/>
+		<Item ID="10030" Name="宝石墙纸" Price="114" type="0" level="11" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+
+		<Item ID="10031" Name="宝石墙纸" Price="114" type="0" level="1" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10032" Name="宝石墙纸" Price="114" type="0" level="1" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10033" Name="宝石墙纸" Price="114" type="0" level="1" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10034" Name="宝石墙纸" Price="114" type="0" level="1" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10035" Name="宝石墙纸" Price="114" type="0" level="1" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10036" Name="宝石墙纸" Price="114" type="0" level="1" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+		<Item ID="10037" Name="宝石墙纸" Price="114" type="0" level="1" des="咣当咣当，用上宝石墙纸，小屋里真是炫彩夺目 " happy="15" rarity="3" canSell="1"/>
+		
+
+
+		<Item ID="11001" Name="橡木门" Price="35" type="1" level="3" des="经典橡木门，是那些传统的怪兽们的首选 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="11002" Name="白巧克力门" Price="35" type="1" level="3" des="都闻到甜味了，好像咬一口噢！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="11003" Name="凡高木门" Price="36" type="1" level="1" des="凡高木门会让你想起向日葵的颜色 " happy="20" rarity="0" canSell="1"/>
+		<Item ID="11004" Name="曼朵木门" Price="61" type="1" level="11" des="曼朵木门总是会吸引喇叭花的注意 " happy="24" rarity="0" canSell="1"/>
+		<Item ID="11005" Name="格林木门" Price="80" type="1" level="18" des="格林木门是森林的小怪兽扛过来的 " happy="14" rarity="0" canSell="1"/>
+		<Item ID="11006" Name="海森木门" Price="90" type="1" level="23" des="喜欢大海的怪兽不能没有海森大门 " happy="22" rarity="0" canSell="1"/>
+		<Item ID="11007" Name="克丽大门" Price="102" type="1" level="25" des="华丽丽的漆木玻璃门，那是相当滴阔气 " happy="53" rarity="1" canSell="1"/>
+		<Item ID="11008" Name="笨笨石头门" Price="71" type="1" level="4" des="石头主题，笨笨的石头门有一扇石缝里还长出小草了 " happy="40" rarity="3" canSell="1"/>
+		<Item ID="11009" Name="鲨鱼门" Price="92" type="1" level="5" des="海洋主题，大鲨鱼不要怕，啊呜一口做门啦 " happy="66" rarity="1" canSell="1"/>
+		<Item ID="11010" Name="阿波罗门" Price="91" type="1" level="7" des="宇宙主题，怪兽国首席科学家蓝胡子波罗就是通过这个门去了火星 " happy="48" rarity="1" canSell="1"/>
+		<Item ID="11011" Name="树爷爷的门" Price="89" type="1" level="16" des="森林主题，树爷爷的门年纪有点大了，爱护树木就不要在门上乱涂乱画呀 " happy="58" rarity="1" canSell="1"/>
+		<Item ID="11012" Name="神殿大门" Price="76" type="1" level="7" des="极具收藏价值，传说门柱是地道的罗马货 " happy="102" rarity="1" canSell="1"/>
+		<Item ID="11013" Name="电话亭门" Price="81" type="1" level="3" des="好无聊呢，打电话叫伙伴来喝下午茶吧！ " happy="54" rarity="2" canSell="1"/>
+		<Item ID="11014" Name="粉红木门" Price="106" type="1" level="22" des="这是哪个木匠做的，真是粗心，油漆都没有涂好！！ " happy="53" rarity="1" canSell="1"/>
+		<Item ID="11015" Name="嘎嘎门" Price="78" type="1" level="4" des="每次拉开这扇门，都会“嘎嘎”作响。 " happy="117" rarity="2" canSell="1"/>
+		<Item ID="11016" Name="新年门" Price="57" type="1" level="1" des="春节主题，新年到，大门俏，买来换，春天笑~ " happy="41" rarity="2" canSell="1"/>
+		<Item ID="11017" Name="阿里麦麦门" Price="92" type="1" level="1" des="传说中的阿里麦麦和四十大盗都很喜欢这种门" happy="41" rarity="2" canSell="1"/>
+		<Item ID="11018" Name="墨西哥大门" Price="89" type="1" level="1" des="开门的时候可小心别被仙人掌戳到手啊 " happy="41" rarity="1" canSell="1"/>
+		<Item ID="11019" Name="正义之门" Price="82" type="1" level="1" des="将一切坏坏的东西挡在门外" happy="41" rarity="2" canSell="1"/>
+		<Item ID="11020" Name="海盗大门" Price="107" type="1" level="2" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+
+		<Item ID="11021" Name="海盗大门" Price="107" type="1" level="1" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+		<Item ID="11022" Name="海盗大门" Price="107" type="1" level="1" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+		<Item ID="11023" Name="海盗大门" Price="107" type="1" level="1" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+		<Item ID="11024" Name="海盗大门" Price="107" type="1" level="1" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+		<Item ID="11025" Name="海盗大门" Price="107" type="1" level="1" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+		<Item ID="11026" Name="海盗大门" Price="107" type="1" level="1" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+		<Item ID="11027" Name="海盗大门" Price="107" type="1" level="1" des="为了更像海盗，这个大门给自己做了个眼罩" happy="19" rarity="3" canSell="1"/>
+
+
+
+
+		<Item ID="12001" Name="小蓝地板" Price="37" type="2" level="4" des="森林区的莫斯特地板厂出品，天然材质（蓝款）" happy="19" rarity="0" canSell="1"/>
+		<Item ID="12002" Name="小红地板" Price="37" type="2" level="4" des="森林区的莫斯特地板厂出品，天然材质（红款） " happy="19" rarity="0" canSell="1"/>
+		<Item ID="12003" Name="诺拉蓝地板" Price="36" type="2" level="1" des="诺拉二代地板，特殊防滑处理，海水蓝让小屋充满海洋气息 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="12004" Name="诺拉木地板" Price="50" type="2" level="8" des="诺拉二代地板，特殊防滑处理，环保木材，色彩百搭 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="12005" Name="诺拉绿地板" Price="74" type="2" level="20" des="诺拉二代地板，特殊防滑处理，田园风的小屋必选品 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="12006" Name="诺拉红地板" Price="86" type="2" level="26" des="诺拉二代地板，特殊防滑处理，淡淡的一抹夕阳红很温暖 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="12007" Name="石砖地" Price="66" type="2" level="16" des="石头主题，用软香草打磨过的石砖地，走在上面一点都不打滑 " happy="32" rarity="0" canSell="1"/>
+		<Item ID="12008" Name="沙滩地板" Price="78" type="2" level="17" des="海洋主题，走在沙滩地板上，真的是柔软又舒服，就像散步在海边 " happy="40" rarity="0" canSell="1"/>
+		<Item ID="12009" Name="飞船地板" Price="69" type="2" level="5" des="宇宙主题，听说伟大的赛尔号飞船也是用的这种高科技地板，哼哼 " happy="50" rarity="0" canSell="1"/>
+		<Item ID="12010" Name="森林地板" Price="104" type="2" level="17" des="森林主题，想在屋子里办一次野餐会吗？那就赶紧用块地板装扮一下！ " happy="35" rarity="2" canSell="1"/>
+		<Item ID="12011" Name="云朵地板" Price="129" type="2" level="27" des="哇，真的走在天空中了，太美妙了！ " happy="89" rarity="2" canSell="1"/>
+		<Item ID="12012" Name="草地花花地板" Price="97" type="2" level="7" des="尤其是小雨过后，还能闻到阵阵青草的香味 " happy="107" rarity="3" canSell="1"/>
+		<Item ID="12013" Name="粉红地毯" Price="86" type="2" level="12" des="据说，这块地毯还会飞，不过没人记得咒语了 " happy="40" rarity="1" canSell="1"/>
+		<Item ID="12014" Name="圣诞绿色雪地" Price="57" type="2" level="5" des="可以跟怪兽伙伴一起打雪仗了呢！ " happy="65" rarity="1" canSell="1"/>
+		<Item ID="12016" Name="新年地板" Price="65" type="2" level="1" des="春节主题，新年到，地板俏，买来换，春天笑~  " happy="43" rarity="3" canSell="1"/>
+		<Item ID="12017" Name="黑白地板" Price="99" type="2" level="21" des="适合给那些表情严肃的怪兽使用" happy="28" rarity="1" canSell="1"/>
+		<Item ID="12018" Name="斑点地板" Price="122" type="2" level="26" des="不是颜料打翻在地上，是彩色的斑点石头地板啦" happy="28" rarity="2" canSell="1"/>
+		<Item ID="12019" Name="红绒地板" Price="79" type="2" level="1" des="踩在这样的地板上，会感觉很柔软舒服" happy="28" rarity="1" canSell="1"/>
+		<Item ID="12020" Name="工厂地板" Price="78" type="2" level="3" des="合成梦工厂也是用的这个地板！看起来相当酷的" happy="19" rarity="1" canSell="1"/>
+		<Item ID="12021" Name="玫红格子地板" Price="100" type="2" level="6" des="这是怪兽贝比最喜欢的颜色" happy="19" rarity="3" canSell="1"/>
+
+		<Item ID="12022" Name="玫红格子地板" Price="100" type="2" level="1" des="这是怪兽贝比最喜欢的颜色" happy="19" rarity="3" canSell="1"/>
+		<Item ID="12023" Name="玫红格子地板" Price="100" type="2" level="1" des="这是怪兽贝比最喜欢的颜色" happy="19" rarity="3" canSell="1"/>
+		<Item ID="12024" Name="玫红格子地板" Price="100" type="2" level="1" des="这是怪兽贝比最喜欢的颜色" happy="19" rarity="3" canSell="1"/>
+		<Item ID="12025" Name="玫红格子地板" Price="100" type="2" level="1" des="这是怪兽贝比最喜欢的颜色" happy="19" rarity="3" canSell="1"/>
+		<Item ID="12026" Name="玫红格子地板" Price="100" type="2" level="1" des="这是怪兽贝比最喜欢的颜色" happy="19" rarity="3" canSell="1"/>
+		<Item ID="12027" Name="玫红格子地板" Price="100" type="2" level="1" des="这是怪兽贝比最喜欢的颜色" happy="19" rarity="3" canSell="1"/>
+
+
+		<Item ID="13001" Name="拱形木窗" Price="35" type="3" level="5" des="可爱又笨笨的经典拱形小窗，物美价廉 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="13002" Name="方形木窗" Price="37" type="3" level="6" des="可爱又笨笨的经典方形小窗，物美价廉 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="13003" Name="七彩木窗" Price="43" type="3" level="4" des="本季新品，核桃木窗框和彩色松木的拼贴，超精致 " happy="45" rarity="0" canSell="1"/>
+		<Item ID="13004" Name="橡木窗" Price="41" type="3" level="8" des="正宗橡木，买窗框送玻璃，一年保修 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="13005" Name="凡高窗" Price="49" type="3" level="12" des="松木拱形窗，黄色喷漆，让小屋顿时明亮 " happy="18" rarity="0" canSell="1"/>
+		<Item ID="13006" Name="海森窗" Price="63" type="3" level="19" des="地中海蓝色木窗，给你一扇安静的小窗 " happy="27" rarity="0" canSell="1"/>
+		<Item ID="13007" Name="格林窗" Price="71" type="3" level="23" des="绿色喷漆木窗，还有森林里灌木的气息 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="13008" Name="曼朵窗" Price="89" type="3" level="24" des="粉色小窗，让一个个甜蜜的梦飞出窗外 " happy="53" rarity="2" canSell="1"/>
+		<Item ID="13009" Name="岩石窗" Price="51" type="3" level="2" des="坚硬无比的石头窗，用巨石区最坚强的石头做成的 " happy="66" rarity="1" canSell="1"/>
+		<Item ID="13010" Name="贝壳窗" Price="57" type="3" level="6" des="那些会唱歌的海底精灵就是躲在这样的贝壳里的 " happy="75" rarity="1" canSell="1"/>
+		<Item ID="13011" Name="飞艇窗" Price="70" type="3" level="8" des="能够在宇宙里畅游的窗户，肯定是坚固的没法再坚固了 " happy="91" rarity="1" canSell="1"/>
+		<Item ID="13012" Name="绿叶窗" Price="61" type="3" level="20" des="镜子像森林的湖水一样透明，窗栏像绿萝叶一样美丽 " happy="79" rarity="1" canSell="1"/>
+		<Item ID="13013" Name="拼图窗" Price="55" type="3" level="25" des="怪兽国某著名设计师制作，绝对个性！ " happy="71" rarity="2" canSell="1"/>
+		<Item ID="13014" Name="云朵窗" Price="101" type="3" level="5" des="云朵飞到家里来了，摸一摸，软绵绵的呢！ " happy="131" rarity="3" canSell="1"/>
+		<Item ID="13015" Name="棕色方窗" Price="23" type="3" level="1" des="透过它，窗外美景尽收眼底 " happy="29" rarity="0" canSell="1"/>
+		<Item ID="13016" Name="新年窗户" Price="41" type="3" level="1" des="新年到，窗户俏，买来换，春天笑~ " happy="53" rarity="1" canSell="1"/>
+		<Item ID="13017" Name="蝴蝶结小窗" Price="59" type="3" level="7" des="小屋搭配上这样的窗户和粉红色系的家具，会更可爱！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="13018" Name="邦邦硬铁窗" Price="59" type="3" level="2" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+
+		<Item ID="13019" Name="邦邦硬铁窗" Price="59" type="3" level="1" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="13020" Name="邦邦硬铁窗" Price="59" type="3" level="1" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="13021" Name="邦邦硬铁窗" Price="59" type="3" level="1" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="13022" Name="邦邦硬铁窗" Price="59" type="3" level="1" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="13023" Name="邦邦硬铁窗" Price="59" type="3" level="1" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="13024" Name="邦邦硬铁窗" Price="59" type="3" level="1" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+		<Item ID="13025" Name="邦邦硬铁窗" Price="59" type="3" level="1" des="邦邦硬铁窗每天都在喊：放我出去啊，放我出去啊！" happy="19" rarity="0" canSell="1"/>
+
+
+		<Item ID="20001" Name="橡木柜" Price="28" type="4" level="1" des="超划算超实用的储物柜，防虫防蛀 " happy="32" rarity="0" canSell="1"/>
+		<Item ID="20002" Name="大盘钟" Price="33" type="6" level="1" des="大盘钟时刻提醒你珍惜时间，上网太久要注意休息 " happy="40" rarity="0" canSell="1"/>
+		<Item ID="20003" Name="木头钟" Price="45" type="6" level="7" des="木制钟面，注意防水，浸了水就完蛋了 " happy="18" rarity="0" canSell="1"/>
+		<Item ID="20004" Name="库西娜台灯" Price="52" type="5" level="8" des="库西娜灯具的经典款，采用珍贵的绿叶麻布灯罩 " happy="35" rarity="0" canSell="1"/>
+		<Item ID="20005" Name="绿漆圆桌" Price="44" type="4" level="9" des="松木材质，采用环保的仙人掌油漆 " happy="40" rarity="0" canSell="1"/>
+		<Item ID="20006" Name="绿丝绒椅子" Price="44" type="4" level="9" des="松木材质，靠背用的布料可是绿色天鹅绒的 " happy="46" rarity="0" canSell="1"/>
+		<Item ID="20007" Name="罗兰画框" Price="67" type="6" level="13" des="简洁淡雅，搭配同色系地板效果会更好 " happy="19" rarity="0" canSell="1"/>
+		<Item ID="20008" Name="矮人牌橡木椅" Price="46" type="4" level="10" des="产自森林矮人家居作坊，全手工打造 " happy="33" rarity="0" canSell="1"/>		
+		<Item ID="20009" Name="布拉格大橱" Price="46" type="4" level="10" des="宫廷款式，精致做工，还有那么点艺术气息 " happy="54" rarity="0" canSell="1"/>
+		<Item ID="20010" Name="格林隔板" Price="47" type="6" level="13" des="绿色喷漆小隔板，一百年不掉漆！ " happy="27" rarity="0" canSell="1"/>
+		<Item ID="20011" Name="凡高隔板" Price="47" type="6" level="13" des="黄色喷漆小隔板，坚固美观，还便宜 " happy="32" rarity="0" canSell="1"/>
+		<Item ID="20012" Name="橡木置物架" Price="54" type="6" level="14" des="纯手工打造，小零小碎的东西可以放在上面哦 " happy="15" rarity="0" canSell="1"/>
+		<Item ID="20013" Name="薇拉相框" Price="72" type="6" level="18" des="这个是古拉的心爱品，照片上的女士是他的夫人薇拉。" happy="55" rarity="0" canSell="1"/>	
+
+		<Item ID="20014" Name="怪仔三世石像" Price="86" type="4" level="21" des="石头主题，古董级石像，非常有收藏价值。 " happy="66" rarity="1" canSell="1"/>
+		<Item ID="20015" Name="石头马桶" Price="97" type="4" level="24" des="古拉的最爱，由于采用特殊石材，这个马桶坐上去屁屁不会冰冰凉的 " happy="59" rarity="1" canSell="1"/>
+		<Item ID="20016" Name="船长钟" Price="57" type="6" level="8" des="海洋主题，短腿船长最喜欢的大钟，长的很像救生圈哦 " happy="64" rarity="0" canSell="1"/>
+		<Item ID="20017" Name="海洋浴缸" Price="59" type="4" level="9" des="海洋主题，满满一缸冬瓜洋的温暖海水，还有调皮的小海怪陪你玩儿 " happy="90" rarity="0" canSell="1"/>
+		<Item ID="20018" Name="趴趴龟桌子" Price="59" type="4" level="9" des="海洋主题，绿毛趴趴龟任劳任怨做你的小桌子 " happy="40" rarity="0" canSell="1"/>
+		<Item ID="20019" Name="阿凡太空桌" Price="48" type="4" level="1" des="宇宙主题，这是一款正在风靡整个宇宙和怪兽国的太空家具 " happy="62" rarity="0" canSell="1"/>
+		<Item ID="20020" Name="乔布太空椅" Price="48" type="4" level="1" des="宇宙主题，拥有这样的椅子，让你有在太空旅行的感觉哦 " happy="40" rarity="0" canSell="1"/>
+		<Item ID="20021" Name="森林书橱" Price="75" type="4" level="17" des="森林主题，虫子在树上，知识在书里，做一个爱读书的小怪兽 " happy="52" rarity="0" canSell="1"/>
+		<Item ID="20022" Name="蘑菇桌" Price="81" type="4" level="20" des="森林主题，除了当桌子，饿了还可以用它来做蘑菇汤，哈哈" happy="52" rarity="0" canSell="1"/>
+
+
+
+		<Item ID="20023" Name="长颈鹿柜子" Price="142" type="4" level="35" des="其实它还有个用处——记录身高，快来跟它比一比吧！ " happy="82" rarity="2" canSell="1"/>
+		<Item ID="20024" Name="长颈鹿竖柜子" Price="137" type="4" level="35" des="某设计师拍下长颈鹿博士搬书的瞬间，绝对造型不错，就做成了柜子。" happy="131" rarity="2" canSell="1"/>
+		<Item ID="20025" Name="黄色嘎嘎柜子" Price="92" type="4" level="23" des="如果有怪兽在它身上堆了过多的东西，它会“嘎嘎”抗议的哦！ " happy="42" rarity="0" canSell="1"/>
+		<Item ID="20026" Name="蓝色柜子" Price="69" type="4" level="14" des="森林区的莫斯特柜子厂出品，无任何有害香料（蓝色款） " happy="80" rarity="0" canSell="1"/>
+		<Item ID="20027" Name="蘑菇柜" Price="122" type="4" level="29" des="该设计师说：我的灵感来自于一片蘑菇森林…... " happy="105" rarity="1" canSell="1"/>
+		<Item ID="20028" Name="白色立体桌" Price="86" type="4" level="20" des="上学族怪兽必备，科学合理的高度，让眼睛不会疲劳。 " happy="55" rarity="0" canSell="1"/>
+		<Item ID="20029" Name="粉色柜子" Price="71" type="4" level="15" des="森林区的莫斯特柜子厂出品，无任何有害香料（粉色款） " happy="82" rarity="0" canSell="1"/>
+		<Item ID="20030" Name="黄色柜子" Price="90" type="4" level="22" des="森林区的莫斯特柜子厂出品，无任何有害香料（黄色款）" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20031" Name="绿色台灯" Price="61" type="5" level="10" des="没错，它的脑袋就是歪的 " happy="35" rarity="0" canSell="1"/>
+		<Item ID="20032" Name="新年鹿头" Price="50" type="6" level="3" des="看到了它，就想到圣诞老人，然后想到礼物…… " happy="35" rarity="1" canSell="1"/>
+		<Item ID="20033" Name="圣诞树" Price="59" type="5" level="6" des="看到了它，就会想到圣诞老人，然后还会想到礼物…… " happy="65" rarity="2" canSell="1"/>
+		<Item ID="20034" Name="新年雪人" Price="72" type="5" level="9" des="春节主题，这个雪人不会化，yeah！" happy="42" rarity="1" canSell="1"/>
+
+		<Item ID="20035" Name="企鹅钟" Price="52" type="5" level="3" des="这是个像企鹅的钟，还是像钟的企鹅？" happy="59" rarity="0" canSell="1"/>
+		<Item ID="20036" Name="大红柜子" Price="49" type="4" level="4" des="春节主题，红彤彤的柜子，非常喜庆~" happy="36" rarity="0" canSell="1"/>
+		<Item ID="20037" Name="飞镖盘" Price="113" type="6" level="28" des="没事的时候可以在家玩玩飞镖~" happy="90" rarity="2" canSell="1"/>
+		<Item ID="20038" Name="红抽屉柜" Price="55" type="4" level="7" des="春节主题，小巧的柜子，抽屉会装些什么呢？" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20039" Name="孔雀钟" Price="66" type="6" level="10" des="这是个像孔雀的钟，还是像钟的孔雀？" happy="66" rarity="0" canSell="1"/>
+		<Item ID="20040" Name="猫猫钟" Price="55" type="6" level="3" des="这是个像猫的钟，还是像钟的猫？" happy="72" rarity="1" canSell="1"/>
+		<Item ID="20041" Name="绵羊钟" Price="52" type="5" level="3" des="这是个像绵羊的钟，还是像钟的绵羊？" happy="103" rarity="0" canSell="1"/>
+		<Item ID="20042" Name="撞球钟" Price="72" type="6" level="5" des="这是个像撞球的钟，还是像钟的撞球？" happy="59" rarity="2" canSell="1"/>
+
+
+
+		<Item ID="20043" Name="老七的床" Price="73" type="4" level="3" des="据说是老七睡觉专用的床，后来老七尾巴变长了，不睡这个床了" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20044" Name="彩色挂钟" Price="113" type="6" level="27" des="它只有一种颜色是对称显示的，这里面蕴含着一个秘密" happy="28" rarity="1" canSell="1"/>
+		<Item ID="20046" Name="船板柜" Price="50" type="4" level="2" des="忧郁的蓝色，船板的模样，有一种恬静的感觉" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20048" Name="阿拉东神壶" Price="60" type="5" level="3" des="和阿拉丁神灯不一样，这个壶没有魔法" happy="28" rarity="1" canSell="1"/>
+		<Item ID="20049" Name="牛仔沙发" Price="57" type="4" level="3" des="适合坐在上面看怪兽国西部牛仔片，牛角还能当把手呢。" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20050" Name="彩色沙发" Price="81" type="4" level="3" des="它有两个特点，第一，彩色的。第二，不平的。" happy="28" rarity="3" canSell="1"/>
+		<Item ID="20051" Name="鲨鱼床" Price="74" type="4" level="1" des="躺上去虽然会胆战心惊，但同时也是对勇气的考验。" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20052" Name="龙猫水壶" Price="60" type="5" level="3" des="做了水壶的龙猫每天屁股都有点烫烫的。" happy="28" rarity="1" canSell="1"/>
+		<Item ID="20053" Name="天鹅丽莎" Price="59" type="4" level="4" des="中了魔法的天鹅公主丽莎会变身吗？" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20054" Name="呼啦洗衣机" Price="70" type="4" level="4" des="呼呼啦啦，呼啦洗衣机最勤快了，就是声音有点响" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20055" Name="怪兽大床" Price="78" type="4" level="3" des="别被吓到，它是个长得像怪兽的床，怪兽躺上去很安全。" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20056" Name="双层床" Price="78" type="4" level="3" des="个子高的怪兽睡上面，个字矮的怪兽睡下面，仅供参考。" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20057" Name="彩虹兔" Price="82" type="4" level="18" des="穿上彩虹的小兔出来散步了" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20058" Name="土著兄弟鼓" Price="72" type="4" level="4" des="这三个兄弟总是在一起，它们不会分开的！不会的！" happy="28" rarity="1" canSell="1"/>
+		<Item ID="20059" Name="宴会椅子" Price="76" type="4" level="11" des="在怪兽宴会上比较常见的椅子。" happy="28" rarity="1" canSell="1"/>
+		<Item ID="20060" Name="古怪的椅子" Price="71" type="4" level="10" des="这把椅子坐上去很舒服，只可惜靠背是弯的，果然古怪……" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20061" Name="红色窝窝椅" Price="62" type="4" level="5" des="躺在红色窝窝椅子上，很快就会做一个红色的梦" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20062" Name="绿色窝窝椅" Price="58" type="4" level="6" des="躺在绿色窝窝椅子上，很快就会做一个绿色的梦" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20063" Name="软绵绵椅" Price="80" type="4" level="9" des="玩了一天的游戏，应该躺在软绵绵椅子上休息一下" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20064" Name="神龙台灯" Price="70" type="5" level="3" des="像七龙珠里的那条龙一样威武霸气的台灯" happy="28" rarity="1" canSell="1"/>
+		<Item ID="20065" Name="爱心篷车" Price="131" type="4" level="27" des="爱心蓬蓬车去到哪里都让大家觉得温暖" happy="28" rarity="2" canSell="1"/>
+		<Item ID="20066" Name="月亮婆婆灯" Price="72" type="5" level="9" des="月亮婆婆变成路灯和你说晚安了，早睡早起身体好啦" happy="28" rarity="1" canSell="1"/>
+		<Item ID="20067" Name="南瓜灯笼" Price="108" type="4" level="31" des="提着它的时候，真想咬他一口" happy="28" rarity="0" canSell="1"/>
+		<Item ID="20068" Name="八音树" Price="75" type="4" level="5" des="一棵会出声音的奇怪的树" happy="28" rarity="3" canSell="1"/>
+		<Item ID="20069" Name="犀牛衣架" Price="76" type="4" level="8" des="大犀牛肚皮大，收拾衣服全靠它" happy="28" rarity="3" canSell="1"/>
+		<Item ID="20070" Name="不老神泉" Price="89" type="4" level="15" des="大家都叫它不老神泉，但没人敢喝它的水，因为看上去真像颜料" happy="28" rarity="1" canSell="1"/>
+
+		<Item ID="20071" Name="彩虹七色圈" Price="69" type="4" level="4" des="很Q的彩虹圈，放在小屋里超级醒目的" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20072" Name="长颈鹿花盆" Price="74" type="4" level="9" des="小长颈鹿喜欢坐在花盆里，这样就显得自己矮一点" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20073" Name="怪怪鸟窝" Price="101" type="4" level="15" des="怪怪鸟窝里的蛋会孵出什么来呢？" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20074" Name="美美化妆桌" Price="67" type="4" level="8" des="公主们使用的美美化妆桌，价值不菲呢" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20075" Name="大门牙垃圾桶" Price="52" type="4" level="3" des="大门牙垃圾桶很爱干净，每天牙齿都是白白的" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20076" Name="机器人老爸" Price="86" type="4" level="3" des="机器人老爸上班就是穿成这个样子的" happy="32" rarity="3" canSell="1"/>
+		<Item ID="20077" Name="长鼻子兔花盆" Price="74" type="4" level="5" des="妈妈说兔子坐在花盆里会长出大象的鼻子，原来是真的！" happy="32" rarity="1" canSell="1"/>
+		<Item ID="20078" Name="魔方" Price="85" type="4" level="18" des="魔方，也叫鲁比克方块。是地球上一个叫鲁比克的教授在1974年发明的" happy="32" rarity="1" canSell="1"/>
+		<Item ID="20079" Name="蓓蕾花盆" Price="72" type="4" level="8" des="店长橘子花自己种的蓓蕾花" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20080" Name="番茄花盆" Price="112" type="5" level="28" des="店长橘子花自己培育的小番茄" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20081" Name="尖尖帽盆栽" Price="76" type="4" level="10" des="店长橘子花自己种的圆圆帽，没想到种出尖尖帽了" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20082" Name="熊掌花盆" Price="79" type="5" level="14" des="熊弟弟不听妈妈话，坐在花盆里变成了仙人掌" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20083" Name="小猴花盆" Price="92" type="4" level="18" des="小猴感冒不想打针，赖在花盆里不出来" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20084" Name="糖果棒棒牌" Price="98" type="4" level="26" des="用糖果棒做的指示牌，放在大门边上是个不错的选择" happy="32" rarity="0" canSell="1"/>
+		<Item ID="20085" Name="小熊冰箱" Price="76" type="4" level="6" des="红脸热呼呼的小熊很怕冷，做了冰箱就没这个问题了" happy="32" rarity="1" canSell="1"/>
+		<Item ID="20086" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+
+		<Item ID="20087" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20088" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20089" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20090" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20091" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20092" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20093" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20094" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20095" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20096" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20097" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20098" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20099" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20100" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20101" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20102" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20103" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20104" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20105" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20106" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20107" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20108" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20109" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20110" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20111" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20112" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20113" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+		<Item ID="20114" Name="熊妈沙发" Price="79" type="4" level="1" des="熊妈沙发最有爱，欢迎小屋的客人们都来坐客哦" happy="32" rarity="2" canSell="1"/>
+
+
+
+	
+		<Item ID="30001" Name="艾尔龙头骨" Price="33" type="5" level="1" des="曾经的勇士，都为拥有这样的头骨而骄傲！" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30002" Name="艾尔龙躯干" Price="38" type="4" level="1" des="翅膀配上锋利的爪，才是艾尔龙的标志哦" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30003" Name="艾尔龙腿骨" Price="30" type="4" level="2" des="传说这样的腿骨只有小精灵才能找到" happy="54" rarity="0" canSell="1"/>
+		<Item ID="30011" Name="克拉号火箭头" Price="37" type="5" level="3" des="印有黑白格的火箭头，别处可是找不滴！" happy="28" rarity="0" canSell="1"/>
+		<Item ID="30012" Name="克拉号火箭舱" Price="42" type="4" level="3" des="透过金属窗口，你可以欣赏浩瀚宇宙！" happy="41" rarity="0" canSell="1"/>
+		<Item ID="30013" Name="克拉号火箭尾" Price="34" type="4" level="4" des="稀有合金打造，一飞冲天全靠它啦！" happy="54" rarity="0" canSell="1"/>
+		<Item ID="30021" Name="克拉博画像A" Price="23" type="6" level="1" des="克拉博是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第一部分。" happy="15" rarity="0" canSell="1"/>
+		<Item ID="30022" Name="克拉博画像B" Price="28" type="6" level="1" des="克拉博是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第二部分。" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30023" Name="克拉博画像C" Price="35" type="6" level="2" des="克拉博是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第三部分。" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30024" Name="克拉博画像D" Price="42" type="6" level="3" des="克拉博是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第四部分。" happy="53" rarity="0" canSell="1"/>
+		<Item ID="30025" Name="那那画像A" Price="23" type="6" level="1" des="那那是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第一部分。" happy="15" rarity="0" canSell="1"/>
+		<Item ID="30026" Name="那那画像B" Price="28" type="6" level="1" des="那那是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第二部分。" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30027" Name="那那画像C" Price="35" type="6" level="2" des="那那是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第三部分。" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30028" Name="那那画像D" Price="42" type="6" level="3" des="那那是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第四部分。" happy="53" rarity="0" canSell="1"/>
+
+		<Item ID="30031" Name="扎扎画像A" Price="23" type="6" level="1" des="扎扎是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第一部分。" happy="15" rarity="0" canSell="1"/>
+		<Item ID="30032" Name="扎扎画像B" Price="28" type="6" level="1" des="扎扎是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第二部分。" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30033" Name="扎扎画像C" Price="35" type="6" level="2" des="扎扎是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第三部分。" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30034" Name="扎扎画像D" Price="42" type="6" level="3" des="扎扎是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第四部分。" happy="53" rarity="0" canSell="1"/>
+		<Item ID="30035" Name="麦咭画像A" Price="23" type="6" level="1" des="麦咭是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第一部分。" happy="15" rarity="0" canSell="1"/>
+		<Item ID="30036" Name="麦咭画像B" Price="28" type="6" level="1" des="麦咭是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第二部分。" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30037" Name="麦咭画像C" Price="35" type="6" level="2" des="麦咭是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第三部分。" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30038" Name="麦咭画像D" Price="42" type="6" level="3" des="麦咭是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第四部分。" happy="53" rarity="0" canSell="1"/>
+		<Item ID="30041" Name="卜卜画像A" Price="23" type="6" level="1" des="卜卜是《卜卜报》的主编。他唯一的画像被分成了四部分，这是第一部分。" happy="15" rarity="0" canSell="1"/>
+		<Item ID="30042" Name="卜卜画像B" Price="28" type="6" level="1" des="卜卜是《卜卜报》的主编。他唯一的画像被分成了四部分，这是第二部分。" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30043" Name="卜卜画像C" Price="35" type="6" level="2" des="卜卜是《卜卜报》的主编。他唯一的画像被分成了四部分，这是第三部分。" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30044" Name="卜卜画像D" Price="42" type="6" level="3" des="卜卜是《卜卜报》的主编。他唯一的画像被分成了四部分，这是第四部分。" happy="53" rarity="0" canSell="1"/>
+		<Item ID="30051" Name="巴迪画像A" Price="23" type="6" level="1" des="巴弟是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第一部分。" happy="15" rarity="0" canSell="1"/>
+		<Item ID="30052" Name="巴迪画像B" Price="28" type="6" level="1" des="巴弟是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第二部分。" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30053" Name="巴迪画像C" Price="35" type="6" level="2" des="巴弟是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第三部分。" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30054" Name="巴迪画像D" Price="42" type="6" level="3" des="巴弟是怪兽国六英雄之一。他唯一的画像被分成了四部分，这是第四部分。" happy="53" rarity="0" canSell="1"/>
+		<Item ID="30061" Name="贝比画像A" Price="23" type="6" level="1" des="贝比是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第一部分。" happy="15" rarity="0" canSell="1"/>
+		<Item ID="30062" Name="贝比画像B" Price="28" type="6" level="1" des="贝比是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第二部分。" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30063" Name="贝比画像C" Price="35" type="6" level="2" des="贝比是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第三部分。" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30064" Name="贝比画像D" Price="42" type="6" level="3" des="贝比是怪兽国六英雄之一。她唯一的画像被分成了四部分，这是第四部分。" happy="53" rarity="0" canSell="1"/>
+		
+		<Item ID="30065" Name="音乐达球" Price="42" type="4" level="3" des="六魔球之一，呦呦~我在听音乐，呦呦~猜我听什么歌?" happy="54" rarity="0" canSell="1"/>
+		<Item ID="30066" Name="紫紫球" Price="49" type="4" level="4" des="六魔球之一，简单也是美，所以，他不需要装饰" happy="54" rarity="0" canSell="1"/>
+		<Item ID="30067" Name="美美球" Price="54" type="4" level="4" des="六魔球之一，她真的很爱美，自从带上蝴蝶结就不愿拿下来了" happy="54" rarity="0" canSell="1"/>
+		<Item ID="30068" Name="流行达球" Price="64" type="4" level="5" des="六魔球之一，啧啧，好酷哇，白色眼镜框说明了一切！" happy="42" rarity="1" canSell="1"/>
+		<Item ID="30069" Name="小恶魔球" Price="57" type="4" level="9" des="六魔球之一，他向恶魔先生借了角，不过好像忘记还了" happy="69" rarity="1" canSell="1"/>
+		<Item ID="30070" Name="小龙屁屁翘" Price="47" type="4" level="3" des="五屁屁翘之一，哎呦喂，不要动他的尾巴，他会生气的哦！" happy="42" rarity="0" canSell="1"/>
+		<Item ID="30071" Name="小猫屁屁翘" Price="59" type="4" level="9" des="五屁屁翘之一，一只单眼皮的小猫哦，信不信由你" happy="35" rarity="0" canSell="1"/>
+		<Item ID="30072" Name="小熊屁屁翘" Price="68" type="4" level="11" des="五屁屁翘之一，其实他在做鬼脸哦，只是你看不到" happy="62" rarity="0" canSell="1"/>
+		<Item ID="30073" Name="小兔屁屁翘" Price="79" type="4" level="14" des="五屁屁翘之一，粉粉兔很骄傲 ，就是不给你看正面！" happy="31" rarity="0" canSell="1"/>
+		<Item ID="30074" Name="小羊屁屁翘" Price="88" type="4" level="16" des="五屁屁翘之一，他最大的愿望是，有一天变成云彩" happy="24" rarity="0" canSell="1"/>
+		<Item ID="30075" Name="丑丑娃娃" Price="52" type="4" level="3" des="娃娃系列之一，想努力学会抛球的小丑娃娃" happy="33" rarity="0" canSell="1"/>
+		<Item ID="30076" Name="冬季娃娃" Price="59" type="4" level="4" des="娃娃系列之一，因为身体很小，只要一条围巾就很温暖了呢！" happy="42" rarity="0" canSell="1"/>
+		<Item ID="30077" Name="彩虹娃娃" Price="72" type="4" level="5" des="娃娃系列之一，彩虹娃娃最近很伤心，因为他找不到雨天娃娃了" happy="66" rarity="2" canSell="1"/>
+		<Item ID="30078" Name="潜水娃娃" Price="82" type="4" level="6" des="娃娃系列之一，他想写一本《海底四万里》！" happy="32" rarity="3" canSell="1"/>
+		<Item ID="30079" Name="女孩娃娃" Price="53" type="4" level="6" des="娃娃系列之一，很乖很乖哦，学习成绩好的没话说！" happy="29" rarity="0" canSell="1"/>
+		<Item ID="30080" Name="男孩娃娃" Price="55" type="4" level="7" des="娃娃系列之一，跟女孩娃娃是同桌，经常上课睡觉。" happy="36" rarity="0" canSell="1"/>
+		<Item ID="30081" Name="小鸡宝宝" Price="106" type="4" level="21" des="娃娃系列之一，从出生起就一直呆在蛋里，因为它不知道怎么走" happy="52" rarity="1" canSell="1"/>
+		<Item ID="30082" Name="小熊宝宝" Price="97" type="4" level="23" des="娃娃系列之一，很想跟小鸡宝宝出去玩，可是小鸡宝宝总不来" happy="40" rarity="0" canSell="1"/>
+		<Item ID="30083" Name="温泉娃娃" Price="67" type="4" level="8" des="娃娃系列之一，太舒服了，他都不愿意从水里出来了！" happy="85" rarity="0" canSell="1"/>
+		<Item ID="30084" Name="安全出口" Price="115" type="6" level="27" des="它有999种用法哦，其中一种就是挂在家门旁边。" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30085" Name="阿比" Price="66" type="4" level="5" des="开拓型机器人模型，它的使命是为怪兽国开拓疆野" happy="106" rarity="0" canSell="1"/>
+		<Item ID="30086" Name="兜兜" Price="74" type="4" level="9" des="护卫型机器人模型，它的使命是保护怪兽国所有成员" happy="106" rarity="0" canSell="1"/>
+		<Item ID="30087" Name="茉茉" Price="80" type="4" level="12" des="救护型机器人模型，它的使命是救助所有怪兽国成员" happy="106" rarity="0" canSell="1"/>
+		<Item ID="30088" Name="尼尔" Price="92" type="4" level="15" des="暗部型机器人模型，它的使命是调查怪兽国神秘事件" happy="106" rarity="2" canSell="1"/>
+		<Item ID="30089" Name="维尼" Price="99" type="4" level="17" des="审判型机器人模型，它的使命是审判怪兽国各种事件" happy="106" rarity="3" canSell="1"/>
+		<Item ID="30090" Name="绅士球" Price="69" type="4" level="11" des="六魔球之一，他每天准时喝下午茶，不愧是绅士" happy="28" rarity="2" canSell="1"/>
+		<Item ID="30091" Name="白塑料车" Price="62" type="4" level="13" des="车系列之一，白色象征纯洁。这是纯洁的塑料车" happy="41" rarity="0" canSell="1"/>
+		<Item ID="30092" Name="红塑料车" Price="68" type="4" level="16" des="车系列之一，红色象征热情。这是热情的塑料车" happy="55" rarity="0" canSell="1"/>
+		<Item ID="30093" Name="蓝塑料车" Price="72" type="4" level="18" des="车系列之一，蓝色象征灵性。这是有灵性的塑料车" happy="75" rarity="0" canSell="1"/>
+		<Item ID="30094" Name="绿塑料车" Price="74" type="4" level="19" des="车系列之一，绿色象征自由。这是自由的塑料车。" happy="82" rarity="0" canSell="1"/>
+
+		<Item ID="30104" Name="红铁皮车" Price="81" type="4" level="20" des="车系列之一，红色象征热情。这是热情的铁皮车" happy="92" rarity="0" canSell="1"/>
+		<Item ID="30105" Name="红火箭车" Price="94" type="4" level="20" des="车系列之一，红色象征热情。这是热情的火箭车" happy="107" rarity="1" canSell="1"/>
+		<Item ID="30106" Name="红五星车" Price="104" type="4" level="21" des="车系列之一，红色象征热情。这是热情的五星车" happy="119" rarity="2" canSell="1"/>
+		<Item ID="30107" Name="蓝跑车" Price="119" type="4" level="22" des="车系列之一，蓝色象征灵性。这是有灵性的跑车" happy="131" rarity="3" canSell="1"/>
+		<Item ID="30108" Name="绿三轮车" Price="90" type="4" level="22" des="车系列之一，绿色象征自由。这是自由的三轮车" happy="28" rarity="0" canSell="1"/>
+		<Item ID="30109" Name="许愿图腾左A" Price="23" type="4" level="1" des="这对许愿图腾柱一共有十二部分，这是第一部分" happy="18" rarity="0" canSell="1"/>
+		<Item ID="30110" Name="许愿图腾左B" Price="30" type="4" level="2" des="这对许愿图腾柱一共有十二部分，这是第二部分" happy="18" rarity="0" canSell="1"/>
+		<Item ID="30111" Name="许愿图腾左C" Price="37" type="4" level="3" des="这对许愿图腾柱一共有十二部分，这是第三部分" happy="31" rarity="0" canSell="1"/>
+		<Item ID="30112" Name="许愿图腾左D" Price="50" type="4" level="4" des="这对许愿图腾柱一共有十二部分，这是第四部分" happy="31" rarity="2" canSell="1"/>
+		<Item ID="30113" Name="许愿图腾左E" Price="59" type="4" level="6" des="这对许愿图腾柱一共有十二部分，这是第五部分" happy="46" rarity="2" canSell="1"/>
+		<Item ID="30114" Name="许愿图腾左F" Price="86" type="4" level="8" des="这对许愿图腾柱一共有十二部分，这是第六部分" happy="46" rarity="3" canSell="1"/>
+		<Item ID="30115" Name="许愿图腾右A" Price="39" type="4" level="9" des="这对许愿图腾柱一共有十二部分，这是第七部分" happy="53" rarity="0" canSell="1"/>
+		<Item ID="30116" Name="许愿图腾右B" Price="46" type="4" level="10" des="这对许愿图腾柱一共有十二部分，这是第八部分" happy="53" rarity="0" canSell="1"/>
+		<Item ID="30117" Name="许愿图腾右C" Price="53" type="4" level="11" des="这对许愿图腾柱一共有十二部分，这是第九部分" happy="76" rarity="0" canSell="1"/>
+		<Item ID="30118" Name="许愿图腾右D" Price="64" type="4" level="11" des="这对许愿图腾柱一共有十二部分，这是第十部分" happy="76" rarity="2" canSell="1"/>
+		<Item ID="30119" Name="许愿图腾右E" Price="71" type="4" level="12" des="这对许愿图腾柱一共有十二部分，这是第十一部分" happy="85" rarity="2" canSell="1"/>
+		<Item ID="30120" Name="许愿图腾右F" Price="94" type="4" level="12" des="这对许愿图腾柱一共有十二部分，这是第十二部分" happy="85" rarity="3" canSell="1"/>
+		<Item ID="30121" Name="热心碎片A" Price="75" type="6" level="22" des="有一个热心肠的的怪兽，在路边扶老人过街后，留下的一小块红色碎片" happy="27" rarity="0" canSell="1"/>
+		<Item ID="30122" Name="热心碎片B" Price="93" type="6" level="24" des="有一个热心肠的的怪兽，在路边扶老人过街后，留下的一小块红色碎片" happy="41" rarity="3" canSell="1"/>
+		<Item ID="30123" Name="热心碎片C" Price="99" type="6" level="26" des="有一个热心肠的的怪兽，在路边扶老人过街后，留下的一小块红色碎片" happy="55" rarity="2" canSell="1"/>
+		<Item ID="30124" Name="热心碎片D" Price="105" type="6" level="28" des="有一个热心肠的的怪兽，在路边扶老人过街后，留下的一小块红色碎片" happy="66" rarity="1" canSell="1"/>
+		<Item ID="30125" Name="智慧碎片A" Price="91" type="6" level="30" des="据说把智慧碎片收集齐，放在自己的家里，写作业时会充满着智慧" happy="88" rarity="0" canSell="1"/>
+		<Item ID="30126" Name="智慧碎片B" Price="109" type="6" level="32" des="据说把智慧碎片收集齐，放在自己的家里，写作业时会充满着智慧" happy="92" rarity="3" canSell="1"/>
+		<Item ID="30127" Name="智慧碎片C" Price="111" type="6" level="32" des="据说把智慧碎片收集齐，放在自己的家里，写作业时会充满着智慧" happy="94" rarity="2" canSell="1"/>
+		<Item ID="30128" Name="智慧碎片D" Price="115" type="6" level="33" des="据说把智慧碎片收集齐，放在自己的家里，写作业时会充满着智慧" happy="119" rarity="1" canSell="1"/>
+
+		<Item ID="30130" Name="玩具冲锋枪" Price="66" type="6" level="6" des="枪系列之一，适合左手使用的冲锋枪！注意是玩具枪，不是真的！" happy="68" rarity="1" canSell="1"/>
+
+		<Item ID="30132" Name="玩具大手枪" Price="74" type="6" level="19" des="枪系列之一，适合左手使用的大手枪！注意是玩具枪，不是真的！" happy="79" rarity="0" canSell="1"/>
+		<Item ID="30133" Name="玩具霰弹枪" Price="74" type="6" level="14" des="枪系列之一，适合右手使用的霰弹枪！注意是玩具枪，不是真的！" happy="51" rarity="0" canSell="1"/>
+
+		<Item ID="30135" Name="玩具小手枪" Price="109" type="6" level="21" des="枪系列之一，适合右手使用的小手枪！注意是玩具枪，不是真的！" happy="32" rarity="2" canSell="1"/>
+
+
+		<Item ID="30137" Name="RK公仔" Price="85" type="4" level="4" des="对了，这就是来自摩尔庄园的头号捣蛋鬼RK" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30138" Name="阿铁打公仔" Price="98" type="4" level="8" des="阿铁打来自赛尔号，他可能是赛尔历史上最坚固的机器人" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30139" Name="盖亚公仔" Price="102" type="4" level="10" des="盖亚可是来自赛尔号的BOSS级精灵，是赛尔精灵中的战斗大师" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30140" Name="佐小助挂画" Price="71" type="6" level="10" des="迪迪去地球日本度假带回来的挂画系列，他可真舍不得卖啊" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30141" Name="小樱挂画" Price="73" type="6" level="11" des="迪迪去地球日本度假带回来的挂画系列，他可真舍不得卖啊" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30142" Name="鸣鸣挂画" Price="75" type="6" level="12" des="迪迪去地球日本度假带回来的挂画系列，他可真舍不得卖啊" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30143" Name="卡西挂画" Price="77" type="6" level="13" des="迪迪去地球日本度假带回来的挂画系列，他可真舍不得卖啊" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30144" Name="虎花花" Price="87" type="4" level="11" des="春田花花动物玩偶系列，小虎吃了个桔子，脑袋上开出朵花" happy="63" rarity="3" canSell="1"/>
+		<Item ID="30145" Name="库拉公仔" Price="84" type="4" level="7" des="来自摩尔庄园的黑魔法师库拉，要小心他的魔药哦" happy="63" rarity="3" canSell="1"/>
+		<Item ID="30146" Name="雷伊公仔" Price="95" type="4" level="5" des="来自赛尔号的稀有精灵雷伊，已经绝版，赶紧买个公仔收藏一下" happy="63" rarity="3" canSell="1"/>
+		<Item ID="30147" Name="路飞飞" Price="84" type="4" level="14" des="长得很像海贼王路飞的玩偶，他的梦想是当上玩偶王" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30148" Name="驴花花" Price="100" type="4" level="19" des="春田花花动物玩偶系列，小驴吃了胡萝卜脑袋上开出朵花" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30149" Name="么么公主公仔" Price="109" type="4" level="20" des="来自摩尔庄园的么么公主善良又可爱，怪兽们应该也喜欢" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30150" Name="摩乐乐公仔" Price="122" type="4" level="21" des="来自摩尔庄园的摩乐乐的梦想是成为一名骑士" happy="63" rarity="3" canSell="1"/>
+		<Item ID="30151" Name="美美" Price="86" type="4" level="15" des="即使变成了玩偶，也掩盖不了她的可爱" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30152" Name="卡璐璐公仔" Price="100" type="4" level="9" des="来自赛尔号的女机器人，她想成为一名优秀的赛尔医生" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30153" Name="菩提公仔" Price="82" type="4" level="9" des="来自摩尔庄园的菩提大伯一天到晚都乐呵呵的" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30154" Name="巧巧" Price="86" type="4" level="15" des="他的祖先是只狸猫，但他非要说自己是驯鹿" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30155" Name="赛小息公仔" Price="129" type="4" level="22" des="来自赛尔号的机器人赛小息，听说他半个小时就会短路一次" happy="63" rarity="3" canSell="1"/>
+		<Item ID="30156" Name="索索" Price="90" type="4" level="17" des="喜欢装酷的玩偶，一直在说：我的刀呢？我的刀呢？" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30157" Name="索武普" Price="92" type="4" level="18" des="跟童话世界里的匹诺曹很像，一说谎话鼻子就会变长" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30158" Name="香香吉" Price="84" type="4" level="14" des="长得很像厨师香吉士，他的梦想是给路飞飞做可口的饭菜" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30159" Name="小春椅子" Price="73" type="4" level="11" des="这把椅子一定会让你想起食量惊人的神犬定春" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30160" Name="米咔公仔" Price="93" type="4" level="12" des="米咔是来自赛尔号的光系精灵，是赛小息的精灵伙伴" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30161" Name="小起椅子" Price="77" type="4" level="13" des="这把椅子一定会让你想起健康又爱恶作剧的猫咪小起" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30162" Name="熊花花" Price="113" type="4" level="24" des="春田花花动物玩偶系列，小熊打了个喷嚏，脑袋上开出朵花" happy="63" rarity="3" canSell="1"/>
+		<Item ID="30163" Name="丫丽公仔" Price="91" type="4" level="16" des="来自摩尔庄园的丫丽可是东方小侠女" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30164" Name="猪花花" Price="122" type="4" level="30" des="春田花花动物玩偶系列，小猪放了个屁屁，脑袋上开出朵花" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30165" Name="一星龙珠" Price="49" type="4" level="4" des="老七从地球带来的龙珠之一，它寓意着力量" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30166" Name="二星龙珠" Price="60" type="4" level="7" des="老七从地球带来的龙珠之一，它寓意着友谊" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30167" Name="三星龙珠" Price="67" type="4" level="8" des="老七从地球带来的龙珠之一，它寓意着梦想" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30168" Name="四星龙珠" Price="79" type="4" level="10" des="老七从地球带来的龙珠之一，它寓意着团结" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30169" Name="五星龙珠" Price="66" type="4" level="1" des="老七从地球带来的龙珠之一，它寓意着毅力" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30170" Name="六星龙珠" Price="76" type="4" level="2" des="老七从地球带来的龙珠之一，它寓意着真诚" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30171" Name="七星龙珠" Price="86" type="4" level="3" des="老七从地球带来的龙珠之一，它寓意着善良" happy="63" rarity="3" canSell="1"/>
+		<Item ID="30172" Name="很高红沙发" Price="56" type="4" level="6" des="据说是一对怪兽兄妹中的妹妹设计的，这个妹妹个头很高" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30173" Name="很高黑沙发" Price="58" type="4" level="7" des="据说是一对怪兽兄妹中的哥哥设计的，这个哥哥个头很高" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30174" Name="狗汪汪柜子" Price="108" type="4" level="31" des="农庄柜子系列，这是小狗的形状" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30175" Name="鸡咯咯柜子" Price="112" type="4" level="33" des="农庄柜子系列，这是小鸡的形状" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30176" Name="牛花花柜子" Price="114" type="4" level="34" des="农庄柜子系列，这是小牛的形状" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30177" Name="鸭呱呱柜子" Price="114" type="4" level="34" des="农庄柜子系列，这是小鸭的形状" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30178" Name="乐神大提琴" Price="57" type="4" level="4" des="乐神第一次出现时带的乐器，乐神是怪兽国的传说，据说只有八大乐王见过" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30179" Name="黑色吉他" Price="62" type="4" level="3" des="黑乐王的专属乐器，黑乐皇是怪兽国传说八大乐王之一" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30180" Name="蓝色吉他" Price="62" type="4" level="3" des="蓝乐王的专属乐器，蓝乐王是怪兽国传说八大乐王之一，路易斯的老师。" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30181" Name="橘色吉他" Price="62" type="4" level="3" des="橘乐王的专属乐器，橘乐王是怪兽国传说八大乐王之一" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30182" Name="黄色吉他" Price="62" type="4" level="3" des="黄乐王的专属乐器，黄乐王是怪兽国传说八大乐王之一" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30183" Name="绿色吉他" Price="65" type="4" level="3" des="绿乐王的专属乐器，绿乐王是怪兽国传说八大乐王之一" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30184" Name="紫色吉他" Price="65" type="4" level="3" des="紫乐王的专属乐器，紫乐王是怪兽国传说八大乐王之一" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30185" Name="灰色吉他" Price="68" type="4" level="3" des="灰乐王的专属乐器，灰乐王是怪兽国传说八大乐王之一" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30186" Name="棕色吉他" Price="68" type="4" level="3" des="棕乐王的专属乐器，棕乐王是怪兽国传说八大乐王之一" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30187" Name="麦咭1号音箱" Price="62" type="4" level="5" des="店主路易斯最钟爱的音箱，这其实是组合音响中的一部分" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30188" Name="麦咭2号音箱" Price="64" type="4" level="6" des="店主路易斯最钟爱的音箱，这其实是组合音响中的一部分" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30189" Name="彝族面具" Price="57" type="6" level="4" des="短腿船长航海带回来的地球中国的彝族面具" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30190" Name="藏戏面具" Price="56" type="6" level="2" des="短腿船长航海带回来的地球中国西藏戏曲的面具" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30191" Name="土著面具" Price="60" type="6" level="4" des="短腿船长航海带回来的来自地球非洲的土著面具" happy="63" rarity="2" canSell="1"/>
+		<Item ID="30192" Name="天狗面具" Price="61" type="6" level="6" des="短腿船长航海带回来的来自地球日本的相扑面具" happy="63" rarity="1" canSell="1"/>
+		<Item ID="30193" Name="麦三三玩偶" Price="61" type="4" level="6" des="麦弟玩偶系列，麦三三的棕色眼睛拥有土地的力量" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30194" Name="麦二二玩偶" Price="49" type="4" level="4" des="麦弟玩偶系列，麦二二的绿眼睛拥有海洋的力量" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30195" Name="麦一一玩偶" Price="49" type="4" level="5" des="麦弟玩偶系列，大哥麦一一的绿眼睛拥有森林的力量" happy="63" rarity="0" canSell="1"/>
+
+		<Item ID="30196" Name="巴迪海报" Price="52" type="6" level="3" des="勇敢果断的巴迪会功夫，他讨厌别人踩到自己的大尾巴" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30197" Name="贝比海报" Price="52" type="6" level="3" des="充满爱心的贝比爱手工和花草，她很粘人，还经常会丢点东西哦" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30198" Name="克拉博海报" Price="52" type="6" level="3" des="贪吃，总觉得吃不饱，做事慢吞吞的克拉博可是个大美食家。" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30199" Name="麦咭海报" Price="52" type="6" level="3" des="活泼调皮，爱学习，对世界充满好奇的麦咭想成为一个魔法师呢。" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30200" Name="那那海报" Price="52" type="6" level="3" des="爱干净，不爱说话，内心充满幻想的那那可是个小画家。" happy="63" rarity="0" canSell="1"/>
+		<Item ID="30201" Name="扎扎海报" Price="52" type="6" level="3" des="有点神秘、聪明酷酷的扎扎爱科学，是个十足的小发明家。" happy="63" rarity="0" canSell="1"/>
+
+
+
+		<Item ID="31001" Name="大写字母A" Price="1" type="6" level="8" des="它能拼写什么呢？也许是apple（苹果）" happy="33" rarity="3" canSell="1"/>
+		<Item ID="31002" Name="大写字母B" Price="1" type="6" level="9" des="它能拼写什么呢？也许是boy（男孩）" happy="52" rarity="2" canSell="1"/>
+		<Item ID="31003" Name="大写字母C" Price="1" type="6" level="9" des="它能拼写什么呢？也许是cat（猫）" happy="26" rarity="0" canSell="1"/>
+		<Item ID="31004" Name="大写字母D" Price="1" type="6" level="10" des="它能拼写什么呢？也许是duck（鸭子）" happy="52" rarity="2" canSell="1"/>
+		<Item ID="31005" Name="大写字母E" Price="1" type="6" level="12" des="它能拼写什么呢？也许是egg（鸡蛋）" happy="33" rarity="3" canSell="1"/>
+		<Item ID="31006" Name="大写字母F" Price="1" type="6" level="12" des="它能拼写什么呢？也许是fly（飞翔）" happy="52" rarity="2" canSell="1"/>
+		<Item ID="31007" Name="大写字母G" Price="1" type="6" level="13" des="它能拼写什么呢？也许是game（游戏）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31008" Name="大写字母H" Price="1" type="6" level="14" des="它能拼写什么呢？也许是hello（你好）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31009" Name="大写字母I" Price="1" type="6" level="15" des="它能拼写什么呢？也许是interesting（有趣的）" happy="33" rarity="3" canSell="1"/>
+		<Item ID="31010" Name="大写字母J" Price="1" type="6" level="6" des="它能拼写什么呢？也许是June（六月）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31011" Name="大写字母K" Price="1" type="6" level="6" des="它能拼写什么呢？也许是know（知道）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31012" Name="大写字母L" Price="1" type="6" level="6" des="它能拼写什么呢？也许是love（爱）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31013" Name="大写字母M" Price="1" type="6" level="7" des="它能拼写什么呢？也许是mother（妈妈）" happy="52" rarity="2" canSell="1"/>
+		<Item ID="31014" Name="大写字母N" Price="1" type="6" level="7" des="它能拼写什么呢？也许是new（新的）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31015" Name="大写字母O" Price="1" type="6" level="1" des="它能拼写什么呢？也许是ok（好的）" happy="33" rarity="3" canSell="1"/>
+		<Item ID="31016" Name="大写字母P" Price="1" type="6" level="7" des="它能拼写什么呢？也许是popular（流行的）" happy="52" rarity="2" canSell="1"/>
+		<Item ID="31017" Name="大写字母Q" Price="1" type="6" level="7" des="它能拼写什么呢？也许是question（问题）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31018" Name="大写字母R" Price="1" type="6" level="7" des="它能拼写什么呢？也许是ruler（直尺）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31019" Name="大写字母S" Price="1" type="6" level="9" des="它能拼写什么呢？也许是superman（超人）" happy="26" rarity="0" canSell="1"/>
+		<Item ID="31020" Name="大写字母T" Price="1" type="6" level="9" des="它能拼写什么呢？也许是teacher（老师）" happy="52" rarity="2" canSell="1"/>
+		<Item ID="31021" Name="大写字母U" Price="1" type="6" level="1" des="它能拼写什么呢？也许是united（统一的）" happy="52" rarity="2" canSell="1"/>
+		<Item ID="31022" Name="大写字母V" Price="1" type="6" level="9" des="它能拼写什么呢？也许是victory（胜利）" happy="26" rarity="0" canSell="1"/>
+		<Item ID="31023" Name="大写字母W" Price="1" type="6" level="9" des="它能拼写什么呢？也许是wood（木材）" happy="52" rarity="0" canSell="1"/>
+		<Item ID="31024" Name="大写字母X" Price="1" type="6" level="9" des="它能拼写什么呢？其实x本身是未知数……" happy="18" rarity="1" canSell="1"/>
+		<Item ID="31025" Name="大写字母Y" Price="1" type="6" level="9" des="它能拼写什么呢？也许是yes（是的）" happy="26" rarity="0" canSell="1"/>
+		<Item ID="31026" Name="大写字母Z" Price="1" type="6" level="11" des="它能拼写什么呢？也许是zoo（动物园）" happy="39" rarity="1" canSell="1"/>
+		<Item ID="31027" Name="数字1" Price="33" type="6" level="6" des="十兄弟之一，很苗条，最纤细，它经常教兄弟们减肥秘方" happy="18" rarity="0" canSell="1"/>
+		<Item ID="31028" Name="数字2" Price="40" type="6" level="7" des="十兄弟之一，他其实挺委屈的，不知何时变成了形容词" happy="34" rarity="0" canSell="1"/>
+		<Item ID="31029" Name="数字3" Price="40" type="6" level="7" des="十兄弟之一，他喜欢到成语里凑热闹，比如事不过三" happy="35" rarity="0" canSell="1"/>
+		<Item ID="31030" Name="数字4" Price="56" type="6" level="8" des="十兄弟之一，4很喜欢用一只脚站着，这是他的绝技" happy="46" rarity="3" canSell="1"/>
+		<Item ID="31031" Name="数字5" Price="70" type="6" level="10" des="十兄弟之一，5总是被赞美，经常耀武扬威" happy="70" rarity="3" canSell="1"/>
+		<Item ID="31032" Name="数字6" Price="75" type="6" level="10" des="十兄弟之一，当很多个6在一起，事情就会往顺利的方向发展" happy="85" rarity="3" canSell="1"/>
+		<Item ID="31033" Name="数字7" Price="53" type="6" level="11" des="十兄弟之一，7是老七的最爱，悄悄跟你说哦，老七收集了几百个7呢" happy="45" rarity="0" canSell="1"/>
+		<Item ID="31034" Name="数字8" Price="80" type="6" level="12" des="十兄弟之一，8很矛盾，他总认为自己等于两个0" happy="114" rarity="0" canSell="1"/>
+		<Item ID="31035" Name="数字9" Price="67" type="6" level="13" des="十兄弟之一，虽然只是方向的差别，但9也希望有6一样的美好含义" happy="77" rarity="0" canSell="1"/>
+		<Item ID="31036" Name="数字0" Price="57" type="6" level="14" des="十兄弟之一，0长的很圆，它喜欢吃汤圆" happy="40" rarity="1" canSell="1"/>
+		<Item ID="31037" Name="笑脸" Price="58" type="6" level="16" des="微笑着看待字母和数字" happy="40" rarity="0" canSell="1"/>
+		<Item ID="31038" Name="杯具" Price="60" type="6" level="17" des="看多了字母和数字，就不觉得杯具了" happy="40" rarity="0" canSell="1"/>
+
+
+		<Item ID="40001" Name="组合鼓" Price="400" type="5" level="7" des="路易斯乐器店的镇店之宝，爵士鼓系列之一，会响的哦！" happy="500" rarity="2" canSell="1"/>
+		<Item ID="40002" Name="架子鼓A" Price="300" type="5" level="5" des="路易斯乐器店的镇店之宝，爵士鼓系列之一，会响的哦！" happy="400" rarity="2" canSell="1"/>
+		<Item ID="40003" Name="架子鼓B" Price="300" type="5" level="5" des="路易斯乐器店的镇店之宝，爵士鼓系列之一，会响的哦！" happy="400" rarity="2" canSell="1"/>
+		<Item ID="40004" Name="铜钹A" Price="200" type="5" level="5" des="路易斯乐器店的镇店之宝，爵士鼓系列之一，会响的哦！" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40005" Name="铜钹B" Price="200" type="5" level="5" des="路易斯乐器店的镇店之宝，爵士鼓系列之一，会响的哦！" happy="300" rarity="2" canSell="1"/>
+
+
+
+		<Item ID="40007" Name="长颈鹿电视" Price="200" type="5" level="6" des="长颈鹿吃下了一台电视机，就变成这样了" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40008" Name="地神炮" Price="200" type="5" level="6" des="传说拥有神奇的大地的力量" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40009" Name="雷神炮" Price="200" type="5" level="6" des="传说拥有神奇的雷电的力量" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40010" Name="海狮贝波" Price="200" type="5" level="6" des="小海狮贝波快乐的玩着它的波波球" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40011" Name="惊吓盒" Price="200" type="5" level="6" des="第一次也许会被吓到，但之后就吓不了人了" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40012" Name="生长盒" Price="200" type="5" level="6" des="它每天都在长啊长，然后缩回去，然后再长啊长" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40013" Name="长腿电视" Price="200" type="5" level="6" des="长了腿的电视机喜欢出门和怪兽聊天" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40014" Name="火箭台灯" Price="200" type="5" level="6" des="打开灯他好像就要发射一样，别担心，它不会飞走的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40015" Name="乐神贝斯" Price="200" type="5" level="6" des="乐神第三次出现时带的乐器，乐神是怪兽国的传说，据说只有八大乐王见过。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40016" Name="咚咚哐" Price="200" type="5" level="6" des="咚咚三兄弟之咚咚哐，跟咚咚锵和咚咚桶一起的时候能有非凡的表现" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40017" Name="鲸鱼缸" Price="200" type="5" level="6" des="你还见过装鲸鱼的浴缸吧，眼前的就是啦" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40018" Name="吓吓桶" Price="200" type="5" level="6" des="吓吓桶其实是个胆小鬼，最怕臭哄哄的垃圾了" happy="300" rarity="2" canSell="1"/>
+
+		<Item ID="40020" Name="留声机" Price="200" type="5" level="6" des="这可是古董级的东西啊，相当珍贵，值得收藏~" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40021" Name="吐吐木" Price="200" type="5" level="6" des="吐吐木又吐了，是不是生病了呢？" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40022" Name="咚咚桶" Price="200" type="5" level="6" des="咚咚三兄弟之咚咚桶，跟咚咚锵和咚咚哐一起的时候能有非凡的表现" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40023" Name="基里红科公仔" Price="200" type="5" level="6" des="一只叫基里红科的兔子爱干净、喜欢收集帆布鞋" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40024" Name="普绿京公仔" Price="200" type="5" level="6" des="一只叫普绿京的兔子呆呆的，但是每天都很开心" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40025" Name="乐神小提琴" Price="200" type="5" level="6" des="乐神第二次出现时带的乐器，乐神是怪兽国的传说，据说只有八大乐王见过" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40026" Name="麦乐五星棒" Price="200" type="5" level="6" des="麦咭制作的魔法棒，棒芯可是龙骨的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40027" Name="手雷喇喇" Price="200" type="5" level="6" des="喇喇小姐脾气很暴躁，动不动就从大喇叭中吐点东西吓唬人" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40028" Name="下雨盒" Price="200" type="5" level="6" des="会下雨的盒子，而且盒子不会被淋湿，你说神奇不神奇" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40029" Name="PP弹" Price="200" type="5" level="6" des="装在大炮里可以发射出去，小心走火哦！" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40030" Name="章鱼眼" Price="200" type="5" level="6" des="别章鱼眼瞥一下，今天可真没什么胃口吃东西了" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40031" Name="绿色CD盘" Price="200" type="6" level="6" des="绿色CD盘飘出来的音乐是快乐的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40032" Name="黄色CD盘" Price="200" type="6" level="6" des="黄色CD盘飘出来的音乐是暖暖的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40033" Name="蓝色CD盘" Price="200" type="6" level="6" des="蓝色CD盘飘出来的音乐是有点伤心的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40034" Name="青色CD盘" Price="200" type="6" level="6" des="青涩CD盘飘出来的音乐是神秘的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40035" Name="黑色CD盘" Price="200" type="6" level="6" des="黑色CD盘飘出来的音乐是有点坏坏的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40036" Name="白色CD盘" Price="200" type="6" level="6" des="白色CD盘飘出来的音乐是简单的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40037" Name="粉色CD盘" Price="200" type="6" level="6" des="粉色CD盘飘出来的音乐是梦幻的" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40038" Name="蛋蛋王" Price="200" type="5" level="6" des="蛋蛋国的国王，他就是被达芬奇画过的那个蛋" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40039" Name="蛋公主" Price="200" type="5" level="6" des="蛋蛋国的公主，她是一个鹅蛋，她很怕摔。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40040" Name="蛋骑士" Price="200" type="5" level="6" des="蛋蛋国的骑士，他是一个铁蛋！" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40041" Name="蛋王后" Price="200" type="5" level="6" des="蛋蛋国的王后，她是一个美丽的鸡蛋。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40042" Name="蛋爵士" Price="200" type="5" level="6" des="蛋蛋国的爵士，追随蛋蛋王很多年了，他是一个皮蛋。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40043" Name="蛋小明" Price="200" type="5" level="6" des="穿越到蛋蛋国的小明，他放学后吃了茶叶蛋就到了蛋蛋国。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40044" Name="蛋小明" Price="200" type="5" level="6" des="穿越到蛋蛋国的小明，他放学后吃了茶叶蛋就到了蛋蛋国。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40045" Name="蛋小明" Price="200" type="5" level="6" des="穿越到蛋蛋国的小明，他放学后吃了茶叶蛋就到了蛋蛋国。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40046" Name="蛋小明" Price="200" type="5" level="6" des="穿越到蛋蛋国的小明，他放学后吃了茶叶蛋就到了蛋蛋国。" happy="300" rarity="2" canSell="1"/>
+		<Item ID="40047" Name="蛋小明" Price="200" type="5" level="6" des="穿越到蛋蛋国的小明，他放学后吃了茶叶蛋就到了蛋蛋国。" happy="300" rarity="2" canSell="1"/>
+
+		<Item ID="50001" Name="橙色小方块" Price="23" type="6" level="1" des="这个小方块的身上有个大秘密，欲知秘密请看红色小方块 " happy="10" rarity="0" canSell="1"/>
+		<Item ID="50002" Name="红色小方块" Price="28" type="6" level="1" des="首先，小方块的上面能放别的东西，其次…看蓝色小方块 " happy="10" rarity="0" canSell="1"/>
+		<Item ID="50003" Name="蓝色小方块" Price="30" type="6" level="2" des="其次，小方块能贴在墙上，第三…看绿色小方块" happy="10" rarity="0" canSell="1"/>
+		<Item ID="50004" Name="绿色小方块" Price="37" type="6" level="3" des="第三，小方块很小，嘿嘿，你懂的。第四…看紫色小方块" happy="10" rarity="0" canSell="1"/>
+		<Item ID="50005" Name="紫色小方块" Price="39" type="6" level="4" des="第四，多个小方块可以组成其他形状。最后…看金色小方块" happy="10" rarity="0" canSell="1"/>
+		<Item ID="50006" Name="金色小方块" Price="46" type="6" level="5" des="你可以用它来拼写汉字，甚至你的名字！！" happy="10" rarity="0" canSell="1"/>
+
+
+		<Item ID="50031" Name="L形方块" Price="1" type="4" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="50032" Name="T形方块" Price="1" type="4" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="50033" Name="Z形方块" Price="1" type="4" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="50034" Name="方形方块" Price="1" type="4" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="50035" Name="一形方块" Price="1" type="4" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="50036" Name="折形方块" Price="1" type="4" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+
+		<Item ID="60001" Name="机器人白" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60002" Name="机器人黑" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60003" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60004" Name="机器人A" Price="0" type="5" level="2" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60005" Name="机器人B" Price="0" type="5" level="3" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60006" Name="机器人B" Price="0" type="5" level="4" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60007" Name="机器人A" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60008" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60009" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60010" Name="机器人A" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60011" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60012" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60013" Name="机器人A" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60014" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60015" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60016" Name="机器人A" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60017" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60018" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60019" Name="机器人A" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60020" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60021" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60022" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60023" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60024" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60025" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60026" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60027" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60028" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60029" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60030" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60031" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60032" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60033" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60034" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>
+		<Item ID="60035" Name="机器人B" Price="0" type="5" level="1" des="块块小工房中获得的稀有奖励，稀有度高 " happy="0" rarity="0" canSell="1"/>           
+
+
+
+	</Cat>
+	
+	<Cat ID="3" DbCatID="0" Name="食物" Max="4000000000">
+		<Item ID="80001" Name="火龙盐汽水" Price="6" type="100" level="1" des="全新配方！爽口、解渴，喝完就有了力气！ " health="11" happy="7" rarity="0" canSell="1"/>
+		<Item ID="80002" Name="汉克招牌奶茶" Price="16" type="100" level="2" des="本店招牌之一，传统秘方，奶茶里居然有深海珍珠！ " health="40" happy="6" rarity="0" canSell="1"/>
+		<Item ID="80003" Name="蒙马酸奶" Price="9" type="100" level="1" des="多喝酸奶对怪兽的肠胃有好处 " health="29" happy="3" rarity="0" canSell="1"/>
+		<Item ID="80004" Name="海藻露" Price="12" type="100" level="3" des="来自海洋的健康饮品，清清凉凉的，还能治瞌睡 " health="33" happy="2" rarity="0" canSell="1"/>
+		<Item ID="80005" Name="濛濛汁" Price="21" type="100" level="4" des="五种水果汁混合而成，还有淡淡的香味儿 " health="58" happy="10" rarity="0" canSell="1"/>
+		<Item ID="80006" Name="馋嘴冰棍" Price="3" type="100" level="5" des="尝一口就会爱上它，本店销售冠军 " health="10" happy="1" rarity="0" canSell="1"/>
+		<Item ID="80007" Name="甜瓜蜘蛛匹萨" Price="49" type="100" level="6" des="甜瓜的浓汁和蒜烤蜘蛛的完美组合 " health="123" happy="25" rarity="0" canSell="1"/>
+		<Item ID="80008" Name="麦辣虫腿汉堡" Price="21" type="100" level="1" des="奥耳良烤虫腿、新鲜绿叶、超级管饱的大汉堡 " health="46" happy="24" rarity="1" canSell="1"/>
+		<Item ID="80009" Name="墨水虫泡饭" Price="25" type="100" level="3" des="想要聪明一整天，就来一碗墨水虫泡饭！ " health="34" happy="33" rarity="1" canSell="1"/>
+		<Item ID="80010" Name="酸辣石头汤" Price="24" type="100" level="7" des="浓香扑鼻，酸酸辣辣，滚烫的石头，吃起来超过瘾 " health="31" happy="23" rarity="0" canSell="1"/>
+		<Item ID="80011" Name="红烧笨豆丝" Price="53" type="100" level="4" des="有些笨豆还活着，吃的时候小心舌头被咬 " health="154" happy="7" rarity="2" canSell="1"/>
+		<Item ID="80012" Name="水母炸鱼排" Price="19" type="100" level="5" des="嘎嘣脆的水母皮，外酥里嫩的大鱼排 " health="59" happy="0" rarity="1" canSell="1"/>
+		<Item ID="80013" Name="蓝莓熊熊糕" Price="29" type="100" level="7" des="可爱熊熊饼，蓝莓口味，裹着蜂蜜 " health="72" happy="1" rarity="1" canSell="1"/>
+		<Item ID="80014" Name="绿泥蚊子饼" Price="36" type="100" level="8" des="馅料是沼泽区特产大蚊子，闻着臭吃着香 " health="61" happy="30" rarity="1" canSell="1"/>
+		<Item ID="80015" Name="大嘴蛋挞" Price="50" type="100" level="9" des="本店招牌之二，汉克亲自烘焙，趁热吃味道最棒 " health="141" happy="0" rarity="0" canSell="1"/>
+		<Item ID="80016" Name="愤怒倭瓜条" Price="40" type="100" level="1" des="吃愤怒倭瓜条，可以让心情立刻好起来 " health="77" happy="21" rarity="1" canSell="1"/>
+		<Item ID="80017" Name="大嘴铜锣烧" Price="9" type="100" level="2" des="本店招牌之三，特制蜜豆和向月葵馅料，香软可口 " health="25" happy="1" rarity="0" canSell="1"/>
+		<Item ID="80018" Name="酸酸甜甜圈" Price="15" type="100" level="3" des="酸酸甜甜，百吃不厌的面包圈 " health="22" happy="16" rarity="0" canSell="1"/>
+		<Item ID="80019" Name="吹牛棒棒糖" Price="26" type="100" level="4" des="越吃越大的棒棒糖（蛀牙的怪兽千万不能吃） " health="31" happy="31" rarity="0" canSell="1"/>
+		<Item ID="80020" Name="松果冰淇林" Price="5" type="100" level="5" des="五色冰淇林球撒上了来自森林区的上等松果粒 " health="17" happy="0" rarity="0" canSell="1"/>
+		<Item ID="80021" Name="鼻涕果冻" Price="40" type="100" level="6" des="不怕呕心的就吃了它们吧 " health="87" happy="34" rarity="0"/>
+		<Item ID="80022" Name="妈咪薯片" Price="75" type="100" level="4" des="精选优质笨豆炸成的薯片，每一片都有不同口味 " health="138" happy="82" rarity="3" canSell="1"/>
+		<Item ID="80023" Name="巴巴脆爆米花" Price="18" type="100" level="7" des="焦糖口味，超值大桶装 " health="21" happy="31" rarity="2" canSell="1"/>
+		<Item ID="80024" Name="鲸鱼饼干" Price="35" type="100" level="8" des="来自鲸鱼镇的手工饼干 " health="100" happy="3" rarity="0" canSell="1"/>
+		<Item ID="80025" Name="比格酸酸饮" Price="40" type="100" level="1" des="酸酸甜甜的，不知道什么东西做的 " health="46" happy="61" rarity="2" canSell="1"/>
+		<Item ID="80026" Name="虫虫卵饭团" Price="64" type="100" level="2" des="怪兽们很喜欢吃这个，可惜货不多啊 " health="81" happy="93" rarity="2" canSell="1"/>
+		<Item ID="80027" Name="咕噜果芝士球" Price="50" type="100" level="3" des="一口一个，非常甜脆" health="129" happy="24" rarity="2" canSell="1"/>
+		<Item ID="80028" Name="豪华脆皮肠" Price="99" type="100" level="4" des="脆皮香肠，吃完变得更乖巧 " health="102" happy="81" rarity="2" canSell="1"/>
+		<Item ID="80029" Name="豪华冰淇林" Price="350" type="100" level="5" des="夏天里最畅销的冷饮之一 " health="299" happy="299" rarity="3" canSell="1"/>
+		<Item ID="80030" Name="豪华三明治" Price="132" type="100" level="6" des="三明治，夹着酸甜的茄汁，美味可口不腻嘴 " health="299" happy="100" rarity="3" canSell="1"/>
+		<Item ID="80031" Name="豪华花奶昔" Price="89" type="100" level="7" des="用食人花做的奶昔，还原森林原始滋味" health="253" happy="17" rarity="3" canSell="1"/>
+		<Item ID="80032" Name="毛毛羔" Price="30" type="100" level="7" des="别看表面不怎么样，吃起来香嫩滑润极了" health="49" happy="39" rarity="0" canSell="1"/>
+		<Item ID="80033" Name="咪咪豌豆酥" Price="35" type="100" level="1" des="绝对酥到骨子里的，吃下去就会变聪明" health="61" happy="13" rarity="0" canSell="1"/>
+		<Item ID="80034" Name="泡酸乳" Price="9" type="100" level="3" des="每天喝一杯，消毒清肠胃，还很爽口呢" health="36" happy="0" rarity="0" canSell="1"/>
+		<Item ID="80035" Name="皮皮汁" Price="3" type="100" level="1" des="用叶子皮熬煮三个小时后，熬出来的汤汁，很新鲜" health="12" happy="0" rarity="0" canSell="1"/>
+		<Item ID="80036" Name="瓢虫脆" Price="25" type="100" level="2" des="芥末加上新烤的瓢虫肉，嫩脆无比!" health="65" happy="5" rarity="0" canSell="1"/>
+		<Item ID="80037" Name="桑叶饼干" Price="43" type="100" level="1" des="碧绿的桑叶配上干脆的饼干，美妙爽口！ " health="127" happy="7" rarity="0" canSell="1"/>
+		<Item ID="80038" Name="史莱姆土豆泥" Price="52" type="100" level="3" des="清炒史莱姆，再配上粘粘的土豆泥，你不能错过！ " health="92" happy="26" rarity="0" canSell="1"/>
+		<Item ID="80039" Name="歪歪杏仁酥" Price="12" type="100" level="6" des="这个非常适合喜欢素食的怪兽噢！" health="41" happy="3" rarity="0" canSell="1"/>
+		<Item ID="80040" Name="香辣菇头" Price="14" type="100" level="5" des="炒熟的蘑菇，配上香辣的浇头，先辣后甜，爽爽的 " health="34" happy="10" rarity="0" canSell="1"/>
+		<Item ID="80041" Name="眼球果冻" Price="37" type="100" level="4" des="提神明目的新鲜果冻，有助于视力增长！ " health="50" happy="51" rarity="1" canSell="1"/>
+		<Item ID="80042" Name="釉子蜜" Price="5" type="100" level="8" des="将新鲜的蜂蜜放进酸甜的柚子里，快点尝尝吧！" health="15" happy="1" rarity="0" canSell="1"/>
+		<Item ID="80043" Name="云朵棉花糖" Price="5" type="100" level="2" des="这棉花糖做的非常精致，像云朵一样白呢." health="13" happy="5" rarity="0" canSell="1"/>
+		<Item ID="80044" Name="粘粘糖" Price="9" type="100" level="4" des="用爪子抓一下，粘粘糖。舔一舔，甜甜的！" health="23" happy="9" rarity="0" canSell="1"/>
+	</Cat>
+	
+	<Cat ID="2" DbCatID="0" Name="种子" Max="4000000000">
+		<Item ID="90001" Name="月儿花" Price="10" type="100" level="1" des="天上的月亮掉了下来，变成了花。成熟时间为(5-10)个小时 " canSell="1"/>
+		<Item ID="90002" Name="帽帽葵" Price="30" type="100" level="6" des="长成后往头上一戴！帽子！成熟时间为(5-10)个小时" canSell="1"/>
+		<Item ID="90003" Name="嘎嘎椒" Price="20" type="100" level="6" des="喳喳呼呼、不听妈妈话的火爆小辣椒。成熟时间为(5-10)个小时 " canSell="1"/>
+		<Item ID="90004" Name="鸡蛋果" Price="10" type="100" level="1" des="虽然不能当成鸡蛋来吃，但好歹是个果子。成熟时间为(5-10)个小时 " canSell="1"/>
+		<Item ID="90005" Name="兔耳铃" Price="15" type="100" level="3" des="据说声音能传千里，可惜从来不响。成熟时间为(5-10)个小时" canSell="1"/>
+		<Item ID="90006" Name="章鱼草" Price="25" type="100" level="6" des="作为一只草，它长得像章鱼。成熟时间为(5-10)个小时" canSell="1"/>
+		<Item ID="90007" Name="乌谷蛋" Price="1" type="100" level="1" des="乌谷蛋" canSell="1"/>
+		<Item ID="90008" Name="黑兔耳" Price="1" type="100" level="1" des="黑兔耳" canSell="1"/>
+		<Item ID="90009" Name="墨鱼草" Price="1" type="100" level="1" des="墨鱼草" canSell="1"/>
+		<Item ID="90010" Name="黑旋风" Price="1" type="100" level="1" des="黑旋风" canSell="1"/>
+	</Cat>
+	
+	<Cat ID="1" DbCatID="0" Name="小工房奖励道具" Max="4000000000">
+
+	</Cat>
+	
+	<Cat ID="4" DbCatID="0" Name="" Max="4000000000">
+		<Item ID="100001" type="100" level="1" des="" canSell=""/>
+	</Cat>
+	
+</items>
+<!-- 根据Cat ID不同，Item ID的起始也不同。例如Cat ID="2"，则Item ID从200001开始 -->
+<!-- ItemID可以不连续，但目前限制了ItemID和起始ID之差不能超过1000。 -->
+<!-- Cat Max用于限制用户能够拥有该Cat下每种Item的个数，如果需要对某Item做特殊处理，可以定义Item Max="x" -->
+<!-- Cat Id 1:小家道具 3:食物 2:种子  4:图纸-->
+	<!-- type:0:墙纸,1:门,2:地板,3:窗子,4:容器(落地),5:普通(落地),6:容器(悬挂)
+		 male:0 女性 1 男性 2 男女均适合
+	 -->
+<!--40006就是现在的60010，以前是纯互动物品，后来归到了合成物品。40019就是现在的60004。31044-31049是打算卖到商店的块块小工房奖励物品，现在不打算卖了。12015是一个铺在地上的地毯，目前这种功能未实现。20045是花球，美术觉得不好，删除。20047其实就是静态版的40010，去掉了。30095-30103全是车，镜像的车。30129,30131,30134,30136全是枪，镜像的枪。50007-50030是方块系物品，风格不统一。30139~30143是原来卖在商店的AEIOU，删除。-->

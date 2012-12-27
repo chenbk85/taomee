@@ -1,0 +1,4105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="zh" xml:lang="zh">
+<head>
+<title>as同后台服务通信协议</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-06-20 23:38:03 "/>
+<meta name="author" content="monster@taomee"/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color:lightblue; font-weight:normal }
+  .target { }
+  .timestamp { color: grey }
+  .timestamp-kwd { color: CadetBlue }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript" src="http://10.1.1.28/smyang/org-info.js"></script>
+<script type="text/javascript" >
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "2");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "0");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "2");
+org_html_manager.set("VIEW", "content");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*/-->
+</script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*/-->
+</script>
+</head><body>
+<h1 class="title">as同后台服务通信协议</h1>
+
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 协议类型定义 </a>
+<ul>
+<li><a href="#sec-1.1">1.1 101&ndash;104 as同主登录login之间的通信协议 </a></li>
+<li><a href="#sec-1.2">1.2 110 &ndash; 120 as同副login之间的通信协议 </a></li>
+<li><a href="#sec-1.3">1.3 40001 &mdash; 40100 as以及online同share-server之间的通信协议 </a></li>
+<li><a href="#sec-1.4">1.4 40101 &ndash; 42000 as同online之间的通信协议 </a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 请求包头 </a></li>
+<li><a href="#sec-3">3 包体 </a>
+<ul>
+<li><a href="#sec-3.1">3.1 as向主login发重新生成验证码图片协议:101 </a></li>
+<li><a href="#sec-3.2">3.2 as向主login查询游戏是否激活: 102 </a></li>
+<li><a href="#sec-3.3">3.3 as向主login发用户登录协议:103 </a></li>
+<li><a href="#sec-3.4">3.4 as向主login发用激活码激活游戏的协议:104 </a></li>
+<li><a href="#sec-3.5">3.5 as向login请求单个online服务器: 110 </a></li>
+<li><a href="#sec-3.6">3.6 online告知share-server有用户登录游戏: 40001 </a></li>
+<li><a href="#sec-3.7">3.7 as向share-server请求最近登录用户信息: 40002 </a></li>
+<li><a href="#sec-3.8">3.8 as向online发注册信息: 40101 </a></li>
+<li><a href="#sec-3.9">3.9 as向online发起登录信息: 40102 </a></li>
+<li><a href="#sec-3.10">3.10 拉取背包中的物品: 40103 </a></li>
+<li><a href="#sec-3.11">3.11 拉取房间信息: 40104 </a></li>
+<li><a href="#sec-3.12">3.12 更新房间buf信息: 40105 </a></li>
+<li><a href="#sec-3.13">3.13 拉取个数信息: 40106 </a></li>
+<li><a href="#sec-3.14">3.14 添加新房间: 40107(房间的个数有上限) </a></li>
+<li><a href="#sec-3.15">3.15 购买商品: 40108 </a></li>
+<li><a href="#sec-3.16">3.16 拉取益智游戏信息: 40109 </a></li>
+<li><a href="#sec-3.17">3.17 提交益智游戏结果: 40110 </a></li>
+<li><a href="#sec-3.18">3.18 拉取好友列表: 40111 </a></li>
+<li><a href="#sec-3.19">3.19 拉取单个好友信息; 40112 </a></li>
+<li><a href="#sec-3.20">3.20 好友操作: 40113 </a></li>
+<li><a href="#sec-3.21">3.21 查找好友: 40114 </a></li>
+<li><a href="#sec-3.22">3.22 添加好友: 40115 </a></li>
+<li><a href="#sec-3.23">3.23 拉取好友申请: 40116 </a></li>
+<li><a href="#sec-3.24">3.24 对好友申请的操作: 40117 </a></li>
+<li><a href="#sec-3.25">3.25 拉取用户的留言板信息:40118 </a></li>
+<li><a href="#sec-3.26">3.26 新增一条留言:40119 </a></li>
+<li><a href="#sec-3.27">3.27 对留言的操作:40120 </a></li>
+<li><a href="#sec-3.28">3.28 顶用户的小屋:40121 </a></li>
+<li><a href="#sec-3.29">3.29 拉取种植园信息:40122 </a></li>
+<li><a href="#sec-3.30">3.30 种植园种植物:40123 </a></li>
+<li><a href="#sec-3.31">3.31 种植园维护植物:40124 </a></li>
+<li><a href="#sec-3.32">3.32 对吸引到的小怪收的操作:40125 </a></li>
+<li><a href="#sec-3.33">3.33 获得商业街上的用户信息: 40126 </a></li>
+<li><a href="#sec-3.34">3.34 提交小游戏答题结果: 40127 </a></li>
+<li><a href="#sec-3.35">3.35 怪兽吃食物: 40128 </a></li>
+<li><a href="#sec-3.36">3.36 更改用户的profile信息: 40129 </a></li>
+<li><a href="#sec-3.37">3.37 拉取商店的物品列表: 40130 </a></li>
+<li><a href="#sec-3.38">3.38 更新新手引导的flag标识: 40131 </a></li>
+<li><a href="#sec-3.39">3.39 二手物品的兑换: 40132 </a></li>
+<li><a href="#sec-3.40">3.40 as向online获取精灵园的所有精灵: 40133 </a></li>
+<li><a href="#sec-3.41">3.41 进入二人益智游戏比赛: 40134 </a></li>
+<li><a href="#sec-3.42">3.42 二人益智游戏，online给as推送匹配信息: 42003 </a></li>
+<li><a href="#sec-3.43">3.43 二人益智游戏比赛匹配成功，点击start按钮: 40135 </a></li>
+<li><a href="#sec-3.44">3.44 二人益智游戏,online给as推送进入游戏信息：42004 </a></li>
+<li><a href="#sec-3.45">3.45 答题： 40136 </a></li>
+<li><a href="#sec-3.46">3.46 二人益智游戏，online给as推送对手的答题信息:42005 </a></li>
+<li><a href="#sec-3.47">3.47 二人益智游戏，online给as推送的比赛结果信息: 42006 </a></li>
+<li><a href="#sec-3.48">3.48 互动元素奖励:40137 </a></li>
+<li><a href="#sec-3.49">3.49 AS发过来的统计信息: 40138 </a></li>
+<li><a href="#sec-3.50">3.50 打开最近来访面板：40139 </a></li>
+<li><a href="#sec-3.51">3.51 打开成就面板: 40140 </a></li>
+<li><a href="#sec-3.52">3.52 领取成就项奖杯: 40141 </a></li>
+<li><a href="#sec-3.53">3.53 online通知客户端有新的成就项获得:42008 </a></li>
+<li><a href="#sec-3.54">3.54 拉取实际可以看到的留言条数: 40142 </a></li>
+<li><a href="#sec-3.55">3.55 拉取最近访客未读条数:40143 </a></li>
+<li><a href="#sec-3.56">3.56 online有新的实时通知: 42000 </a></li>
+<li><a href="#sec-3.57">3.57 online广播包 ，定时清理关掉的连接: 42001 </a></li>
+<li><a href="#sec-3.58">3.58 实时通知as更新用户的用户信息: 42002 </a></li>
+<li><a href="#sec-3.59">3.59 拉取小游戏的关卡信息(只拉取已经解锁的关卡): 40144 </a></li>
+<li><a href="#sec-3.60">3.60 拉取合成工厂信息:40145 </a></li>
+<li><a href="#sec-3.61">3.61 提交合成信息: 40146 </a></li>
+<li><a href="#sec-3.62">3.62 合成工厂操作:40147 </a></li>
+<li><a href="#sec-3.63">3.63 检测名字是否脏词: 40148 </a></li>
+<li><a href="#sec-3.64">3.64 修改怪兽名字:40149 </a></li>
+<li><a href="#sec-3.65">3.65 as随机获取一个名字给用户: 40151 </a></li>
+<li><a href="#sec-3.66">3.66 领取卜卜报奖励:40152 </a></li>
+<li><a href="#sec-3.67">3.67 领取种植园阳关奖励包:40153 </a></li>
+<li><a href="#sec-3.68">3.68 读卜卜报: 40154 </a></li>
+<li><a href="#sec-3.69">3.69 进入大众点评: 40155 </a></li>
+<li><a href="#sec-3.70">3.70 NPC评分:40156 </a></li>
+<li><a href="#sec-3.71">3.71 拉取游戏当前期奖励兑换信息:40157 </a></li>
+<li><a href="#sec-3.72">3.72 小游戏兑换物品:40158 </a></li>
+<li><a href="#sec-3.73">3.73 拉取已完成任务列表: 40159 </a></li>
+<li><a href="#sec-3.74">3.74 完成一个任务: 40160 </a></li>
+<li><a href="#sec-3.75">3.75 进入援助计划面板: 40161 </a></li>
+<li><a href="#sec-3.76">3.76 捐款: 40162 </a></li>
+<li><a href="#sec-3.77">3.77 请求援助概况信息: 40163 </a></li>
+<li><a href="#sec-3.78">3.78 进入博物馆: 40164 </a></li>
+<li><a href="#sec-3.79">3.79 领取博物馆奖励: 40165 </a></li>
+<li><a href="#sec-3.80">3.80 博物馆答题结束: 40166 </a></li>
+<li><a href="#sec-3.81">3.81 提交蛋糕店游戏的分数:40167 </a></li>
+<li><a href="#sec-3.82">3.82 更新强制引导标示: 40168 </a></li>
+<li><a href="#sec-3.83">3.83 拉取单个活动的信息: 40169 </a></li>
+<li><a href="#sec-3.84">3.84 领取单个活动的奖品: 40170 </a></li>
+<li><a href="#sec-3.85">3.85 拉取当前活动列表: 40171 </a></li>
+<li><a href="#sec-3.86">3.86 领取单个活动的可选择奖品: 40172 </a></li>
+<li><a href="#sec-3.87">3.87 兑奖: 40173 </a></li>
+<li><a href="#sec-3.88">3.88 进入大众点评场馆: 40174 </a></li>
+<li><a href="#sec-3.89">3.89 参加大众点评海选: 40175 </a></li>
+<li><a href="#sec-3.90">3.90 投票大众点评候选人: 40176 </a></li>
+<li><a href="#sec-3.91">3.91 拉取往届大众点评信息:40177 </a></li>
+<li><a href="#sec-3.92">3.92 42003-42006用于推送二人益智游戏信息 </a></li>
+<li><a href="#sec-3.93">3.93 42007 未用 </a></li>
+<li><a href="#sec-3.94">3.94 42008 告知AS成就项的个数 </a></li>
+<li><a href="#sec-3.95">3.95 42009 告知as新的成绩(小屋评分 ，每日益智挑战) </a></li>
+<li><a href="#sec-3.96">3.96 42010 告知as新的活动状态 </a></li>
+<li><a href="#sec-3.97">3.97 错误码 </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">1 协议类型定义 </h2>
+<div id="text-1">
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1">1.1 101&ndash;104 as同主登录login之间的通信协议 </h3>
+<div id="text-1.1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>协议号</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>101</td><td>重新生成验证码图片</td></tr>
+<tr><td>102</td><td>查询游戏是否激活</td></tr>
+<tr><td>103</td><td>用户登录</td></tr>
+<tr><td>104</td><td>用激活码激活游戏</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2">1.2 110 &ndash; 120 as同副login之间的通信协议 </h3>
+<div id="text-1.2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>协议号</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>110</td><td>as向login请求单个online服务器ip和port</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.3" class="outline-3">
+<h3 id="sec-1.3">1.3 40001 &mdash; 40100 as以及online同share-server之间的通信协议 </h3>
+<div id="text-1.3">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>协议号</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>40001</td><td>online告知share-server有用户登录</td></tr>
+<tr><td>40002</td><td>as向share-server请求最近登录用户</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.4" class="outline-3">
+<h3 id="sec-1.4">1.4 40101 &ndash; 42000 as同online之间的通信协议 </h3>
+<div id="text-1.4">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>协议号</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>40101</td><td>as向onlne发注册信息</td></tr>
+<tr><td>40102</td><td>as向online发登录信息</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">2 请求包头 </h2>
+<div id="text-2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>len</td><td>uint32</td><td>4</td><td>消息长度</td></tr>
+<tr><td>type</td><td>uint16</td><td>2</td><td>协议类型</td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>用户米米号</td></tr>
+<tr><td>result</td><td>uint32</td><td>4</td><td>暂时未用</td></tr>
+<tr><td>err_no</td><td>uint32</td><td>4</td><td>错误码</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">3 包体 </h2>
+<div id="text-3">
+
+
+</div>
+
+<div id="outline-container-3.1" class="outline-3">
+<h3 id="sec-3.1">3.1 as向主login发重新生成验证码图片协议:101 </h3>
+<div id="text-3.1">
+
+<ul>
+<li id="sec-3.1.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>4</td><td>uint32</td><td>0:正常登录 1：使用激活码时</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.1.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>4</td><td>uint32</td><td>0不需要输入验证码，1需要输入验证码。仅当Flag==1时，才会发送下面的内容</td></tr>
+<tr><td>imgid</td><td>16</td><td>uint8(16)</td><td>图片ID。发送验证码时，需要把这个ID带上</td></tr>
+<tr><td>imgsize</td><td>4</td><td>uint32</td><td>图片大小(字节)</td></tr>
+<tr><td>img</td><td>imgsize</td><td>uint8()</td><td>Png格式图片，大小由ImgSize指定</td></tr>
+</tbody>
+</table>
+
+1、用户输入了米米号/邮件地址后，点击输入密码框时；通过此协议询问服务器是否需要输入验证码
+2、验证码看不清楚时，通过此协议请求服务器重新生成一个验证码
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.2" class="outline-3">
+<h3 id="sec-3.2">3.2 as向主login查询游戏是否激活: 102 </h3>
+<div id="text-3.2">
+
+<ul>
+<li id="sec-3.2.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>whichgame</td><td>4</td><td>uint32</td><td>13:小怪兽</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.2.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>4</td><td>uint32</td><td>0:未激活 1：已激活</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.3" class="outline-3">
+<h3 id="sec-3.3">3.3 as向主login发用户登录协议:103 </h3>
+<div id="text-3.3">
+
+<ul>
+<li id="sec-3.3.1">请求包(包头的userid字段不为0) <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>password</td><td>32</td><td>uint8(32)</td><td>用户密码, MD5加密2次</td></tr>
+<tr><td>channel</td><td>4</td><td>uint32</td><td>登录渠道</td></tr>
+<tr><td>whichgame</td><td>4</td><td>uint32</td><td>13:小怪兽</td></tr>
+<tr><td>ip</td><td>4</td><td>uint32</td><td>IP(如果时大玩国等php页面就填写用户外网地址，其他的游戏填0)</td></tr>
+<tr><td>imgid</td><td>16</td><td>uint8(16)</td><td>101/103协议返回的图片id.如果不需要验证码，16个字节全部填0</td></tr>
+<tr><td>verigcode</td><td>6</td><td>uint8(6)</td><td>验证码(3到5个字符，余下的填0).如果不需要验证码，6个字节全部填0</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.3.2">请求包(包头的userid字段为0) <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>email</td><td>64</td><td>char(64)</td><td>用户的email地址</td></tr>
+<tr><td>password</td><td>32</td><td>uint8(32)</td><td>用户密码, MD5加密2次</td></tr>
+<tr><td>channel</td><td>4</td><td>uint32</td><td>登录渠道</td></tr>
+<tr><td>whichgame</td><td>4</td><td>uint32</td><td>13:小怪兽</td></tr>
+<tr><td>ip</td><td>4</td><td>uint32</td><td>IP(如果时大玩国等php页面就填写用户外网地址，其他的游戏填0)</td></tr>
+<tr><td>imgid</td><td>16</td><td>uint8(16)</td><td>101/103协议返回的图片id.如果不需要验证码，16个字节全部填0</td></tr>
+<tr><td>verigcode</td><td>6</td><td>uint8(6)</td><td>验证码(3到5个字符，余下的填0).如果不需要验证码，6个字节全部填0</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.3.3">应答包 <br/>
+<ul>
+<li id="sec-3.3.3.1">登录成功 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>4</td><td>uint32</td><td>0表示登录成功</td></tr>
+<tr><td>session</td><td>16</td><td>uint8(16)</td><td>登录online用的session</td></tr>
+<tr><td>rolecreated</td><td>4</td><td>uint32</td><td>该游戏的角色是否已创建（0-没创建 1-已创建）</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.3.3.2">登录失败(需要输入验证码) <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>4</td><td>uint32</td><td>1:密码错误 请输入验证码 2:验证码输入错误 3:米米号不存在 4：米米号被封停 5：系统错误</td></tr>
+<tr><td>imgid</td><td>16</td><td>uint8(16)</td><td>图片ID。发送验证码时，需要把这个ID带上</td></tr>
+<tr><td>imgsize</td><td>4</td><td>uint32</td><td>图片大小（字节）</td></tr>
+<tr><td>img</td><td>imgsize</td><td>uint8(imgsize)</td><td>Png格式图片，大小由ImgSize指定</td></tr>
+</tbody>
+</table>
+
+备注:用户登录时，如果服务端发现同一个ip或者米米号一段时间内密码输错次数过多，会返回这个协议请求用户输入验证码。如果用户输入验证码错误，同样也会返回这个协议，请求用户重新输入。
+
+</li>
+<li id="sec-3.3.3.3">异地登录 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>4</td><td>uint32</td><td>6:登录成功，但异地登录 7：登录成功，但异地登录次数过多，提醒修改密码</td></tr>
+<tr><td>session</td><td>16</td><td>uint8(16)</td><td>登录online用的session</td></tr>
+<tr><td>rolecreated</td><td>4</td><td>uint32</td><td>该游戏的角色是否已创建(0-未创建 10已创建)</td></tr>
+<tr><td>last_login_ip</td><td>4</td><td>uint32</td><td>上次登录ip</td></tr>
+<tr><td>last_login_time</td><td>4</td><td>uint32</td><td>上次登录时间</td></tr>
+<tr><td>last_login_city</td><td>64</td><td>char(64)</td><td>上次登录城市，字符串形式,如"上海市" "浙江省 杭州市"</td></tr>
+<tr><td>current_login_city</td><td>64</td><td>char(64)</td><td>本次登录城市</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.4" class="outline-3">
+<h3 id="sec-3.4">3.4 as向主login发用激活码激活游戏的协议:104 </h3>
+<div id="text-3.4">
+
+<ul>
+<li id="sec-3.4.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>whichgame</td><td>4</td><td>uint32</td><td>13:小怪兽</td></tr>
+<tr><td>active_code</td><td>10</td><td>char(10)</td><td>激活码：6-8个0-9、A-Z、a-z字符，没有用到的字节填0</td></tr>
+<tr><td>img_id</td><td>16</td><td>uint8(16)</td><td>101/103协议返回的图片ID。如果不需要输入验证码，则16个字节都填数字0</td></tr>
+<tr><td>verifcode</td><td>6</td><td>uint8(6)</td><td>验证码（3到5个字符，余下字节填数字0） 如果不需要输入验证码，则6个字节都填数字0</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.4.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>字节数</th><th>类型</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>4</td><td>uint32</td><td>0:表示激活成功，不会发送下面的内容 1:激活码错误次数过多，需要输入验证码后再激活 2:验证码输入错误</td></tr>
+<tr><td>imgid</td><td>16</td><td>uint8(16)</td><td>图片ID。发送验证码时，需要把这个ID带上</td></tr>
+<tr><td>imgsize</td><td>4</td><td>uint32</td><td>图片大小（字节）</td></tr>
+<tr><td>img</td><td>imgsize</td><td>uitn8(imgsize)</td><td>Png格式图片，大小由ImgSize指定</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.4.3">错误码(对应101-104协议) <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>错误码</th><th>描述</th></tr>
+</thead>
+<tbody>
+<tr><td>5001</td><td>系统错误</td></tr>
+<tr><td>5002</td><td>用户帐号被冻结</td></tr>
+<tr><td>5003</td><td>密码错误</td></tr>
+<tr><td>5004</td><td>号码尚未激活</td></tr>
+<tr><td>5005</td><td>号码不存在</td></tr>
+<tr><td>5006</td><td>号码被永久封停（副登录在用）</td></tr>
+<tr><td>5007</td><td>号码被24小时封停（副登录在用）</td></tr>
+<tr><td>5009</td><td>密码输错次数太多</td></tr>
+<tr><td>5010</td><td>激活码错误</td></tr>
+<tr><td>5011</td><td>服务器维护</td></tr>
+<tr><td>5012</td><td>非法的邀请码（副登录在用）</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.5" class="outline-3">
+<h3 id="sec-3.5">3.5 as向login请求单个online服务器: 110 </h3>
+<div id="text-3.5">
+
+<ul>
+<li id="sec-3.5.1">请求包 <br/>
+空 
+
+</li>
+<li id="sec-3.5.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>online_ip</td><td>char(16)</td><td>16</td><td>online服务器IP</td></tr>
+<tr><td>online_port</td><td>uint16</td><td>2</td><td>online服务器port</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.6" class="outline-3">
+<h3 id="sec-3.6">3.6 online告知share-server有用户登录游戏: 40001 </h3>
+<div id="text-3.6">
+
+<ul>
+<li id="sec-3.6.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>性别(0:女性 1：男性)</td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户昵称</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.6.2">应答包 <br/>
+无需应答online
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.7" class="outline-3">
+<h3 id="sec-3.7">3.7 as向share-server请求最近登录用户信息: 40002 </h3>
+<div id="text-3.7">
+
+<ul>
+<li id="sec-3.7.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.7.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>active_num</td><td>uint16</td><td>2</td><td>活跃用户数量(不会超过50个)</td></tr>
+<tr><td>&hellip;.</td><td>&hellip;.</td><td>&hellip;.</td><td>&hellip;.</td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>用户米米号</td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户昵称</td></tr>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>用户性别(0:女性 1：男性)</td></tr>
+</tbody>
+</table>
+
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.8" class="outline-3">
+<h3 id="sec-3.8">3.8 as向online发注册信息: 40101 </h3>
+<div id="text-3.8">
+
+<ul>
+<li id="sec-3.8.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户昵称</td></tr>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>性别(0:女性 1：男性)</td></tr>
+<tr><td>country_id</td><td>uint16</td><td>2</td><td>国籍id</td></tr>
+<tr><td>birthday</td><td>uint32</td><td>4</td><td>生日,格式:19901123</td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td></tr>
+<tr><td>mon_name</td><td>char(16)</td><td>16</td><td>怪兽昵称</td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td></tr>
+<tr><td>mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td></tr>
+<tr><td>invitor_id</td><td>uint32</td><td>4</td><td>邀请人米米号(没人邀请填写0)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.8.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户昵称</td><td></td><td></td><td></td></tr>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>用户性别(0:女性 1：男性)</td><td></td><td></td><td></td></tr>
+<tr><td>country_id</td><td>uint32</td><td>4</td><td>国籍id</td><td></td><td></td><td></td></tr>
+<tr><td>user_type</td><td>uint8</td><td>1</td><td>(0:普通用户 1：vip用户 2:gm用户)</td><td></td><td></td><td></td></tr>
+<tr><td>birthday</td><td>uint32</td><td>4</td><td>生日，格式(20110723)</td><td></td><td></td><td></td></tr>
+<tr><td>mood</td><td>uint8</td><td>1</td><td>用户心情</td><td></td><td></td><td></td></tr>
+<tr><td>fav_color</td><td>uint8</td><td>1</td><td>用户最爱的颜色</td><td></td><td></td><td></td></tr>
+<tr><td>fav_pet</td><td>uint8</td><td>1</td><td>用户最爱的精灵</td><td></td><td></td><td></td></tr>
+<tr><td>fav_fruit</td><td>uint8</td><td>1</td><td>用户最爱的水果</td><td></td><td></td><td></td></tr>
+<tr><td>personal_sign</td><td>char(64)</td><td>64</td><td>用户个性签名</td><td></td><td></td><td></td></tr>
+<tr><td>room_num</td><td>uint8</td><td>1</td><td>用户房间数量</td><td></td><td></td><td></td></tr>
+<tr><td>pet_num</td><td>uint8</td><td>1</td><td>用户精灵个数</td><td></td><td></td><td></td></tr>
+<tr><td>max_puzzle_score</td><td>uint16</td><td>2</td><td>益智游戏最高分</td><td></td><td></td><td></td></tr>
+<tr><td>register_time</td><td>uint32</td><td>4</td><td>注册时间</td><td></td><td></td><td></td></tr>
+<tr><td>coins</td><td>uint32</td><td>4</td><td>金币数</td><td></td><td></td><td></td></tr>
+<tr><td>last_login_time</td><td>uint32</td><td>4</td><td>上次登录时间</td><td></td><td></td><td></td></tr>
+<tr><td>is_first_login</td><td>uint32</td><td>4</td><td>今天是否第一次登陆0：否 1：是</td><td></td><td></td><td></td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td><td></td><td></td><td></td></tr>
+<tr><td>mon_name</td><td>char(16)</td><td>16</td><td>怪兽昵称</td><td></td><td></td><td></td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td><td></td><td></td><td></td></tr>
+<tr><td>mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td><td></td><td></td><td></td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td><td></td><td></td><td></td></tr>
+<tr><td>mon_exp</td><td>uint32</td><td>4</td><td>怪兽经验值</td><td></td><td></td><td></td></tr>
+<tr><td>mon_level</td><td>uint16</td><td>2</td><td>怪兽等级</td><td></td><td></td><td></td></tr>
+<tr><td>mon_health</td><td>uint32</td><td>4</td><td>怪兽健康值</td><td></td><td></td><td></td></tr>
+<tr><td>mon_happy</td><td>uint32</td><td>4</td><td>怪兽愉悦度</td><td></td><td></td><td></td></tr>
+<tr><td>approved_message_num</td><td>uint32</td><td>4</td><td>已审核的留言数量</td><td></td><td></td><td></td></tr>
+<tr><td>unapproved_message_num</td><td>uint32</td><td>4</td><td>未审核的留言数量</td><td></td><td></td><td></td></tr>
+<tr><td>friend_total</td><td>uint16</td><td>2</td><td>好友总数</td><td></td><td></td><td></td></tr>
+<tr><td>pending_req</td><td>uint8</td><td>1</td><td>是否有未处理的好友请求(0:没有 1：有)</td><td></td><td></td><td></td></tr>
+<tr><td>thumb</td><td>uint32</td><td>4</td><td>小屋被顶的次数</td><td></td><td></td><td></td></tr>
+<tr><td>visits</td><td>uint32</td><td>4</td><td>小屋的访问次数</td><td></td><td></td><td></td></tr>
+<tr><td>recent_badge</td><td>uint6</td><td>2</td><td>未查看的最近获得的成就数</td><td></td><td></td><td></td></tr>
+<tr><td>npc_cur_score</td><td>uint32</td><td>4</td><td>当前npc给出的得分</td><td></td><td></td><td></td></tr>
+<tr><td>following_pet_num</td><td>uint8</td><td>1</td><td>跟随的小怪兽数量</td><td></td><td></td><td></td></tr>
+<tr><td>下面是每个小怪收的id</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>pet_id</td><td>uint32</td><td>4</td><td>小怪兽id</td><td></td><td></td><td></td></tr>
+<tr><td>下面的数据只有获取自己信息时菜返回</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>flag1</td><td>uint32</td><td>4</td><td>用于新手引导的标志位</td><td></td><td></td><td></td></tr>
+<tr><td>recent_visit</td><td>uint16</td><td>2</td><td>未查看的最近来访或顶的用户数</td><td></td><td></td><td></td></tr>
+<tr><td>bobo_flag</td><td>uint8</td><td>1</td><td>卜卜报是否领奖(0:未读  1:已读未领奖 2:已读已领奖)</td><td></td><td></td><td></td></tr>
+<tr><td>online_time</td><td>uint32</td><td>4</td><td>放成谜的时间</td><td></td><td></td><td></td></tr>
+<tr><td>limited_reward</td><td>uint8</td><td>1</td><td>是否有封测大礼(0:没有 1：封测大礼海报 2：封测大礼海报加雕像)</td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.9" class="outline-3">
+<h3 id="sec-3.9">3.9 as向online发起登录信息: 40102 </h3>
+<div id="text-3.9">
+
+<ul>
+<li id="sec-3.9.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>session</td><td>char(16)</td><td>16</td><td>从login服务器获取到的session</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.9.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>is_register</td><td>uint8</td><td>1</td><td>是否注册用户(0:未注册  1:已注册用户)</td></tr>
+<tr><td>guide_flag</td><td>uint32</td><td>4</td><td>强制引导标识</td></tr>
+</tbody>
+</table>
+
+未注册用户没有下面数据;已注册用户同40101
+</li>
+<li id="sec-3.9.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100201:给account平台发送验证消息失败</td></tr>
+<tr><td>200015:用户的session不能通过account平台的验证</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.10" class="outline-3">
+<h3 id="sec-3.10">3.10 拉取背包中的物品: 40103 </h3>
+<div id="text-3.10">
+
+<ul>
+<li id="sec-3.10.1">请求包 <br/>
+空 
+
+</li>
+<li id="sec-3.10.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>count</td><td>uint16</td><td>2</td><td>物品总数量</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>stuff_id</td><td>uint32</td><td>4</td><td>物品id</td></tr>
+<tr><td>stuff_num</td><td>uint16</td><td>2</td><td>物品数量</td></tr>
+<tr><td>category</td><td>uint8</td><td></td><td>物品的类别</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.10.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100827:物品id不存在</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.11" class="outline-3">
+<h3 id="sec-3.11">3.11 拉取房间信息: 40104 </h3>
+<div id="text-3.11">
+
+<ul>
+<li id="sec-3.11.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>用户id</td></tr>
+<tr><td>room_id</td><td>uint32</td><td>4</td><td>房间id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.11.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>buf</td><td>char(0)</td><td>长度不固定</td><td>buf内容</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.11.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100019:数据库里找不到对应的房间信息</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.12" class="outline-3">
+<h3 id="sec-3.12">3.12 更新房间buf信息: 40105 </h3>
+<div id="text-3.12">
+
+<ul>
+<li id="sec-3.12.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>room_id</td><td>uint32</td><td>4</td><td>房间id</td></tr>
+<tr><td>buf</td><td>char(0)</td><td>不定长</td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.12.2">应答包 <br/>
+空
+</li>
+<li id="sec-3.12.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100801：解析用户的房间buf失败</td></tr>
+<tr><td>100803：缓存里找不到用户老的房间buf</td></tr>
+<tr><td>100806：缓存里找不到用户的背包信息</td></tr>
+<tr><td>100808：要更新的房间buf不合法</td></tr>
+<tr><td>100836：保存用户要更新的房间信息失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.13" class="outline-3">
+<h3 id="sec-3.13">3.13 拉取个数信息: 40106 </h3>
+<div id="text-3.13">
+
+<ul>
+<li id="sec-3.13.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.13.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>room_num</td><td>uint16</td><td>2</td><td>房间总个数</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>room_id</td><td>uint32</td><td>4</td><td>房间id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.14" class="outline-3">
+<h3 id="sec-3.14">3.14 添加新房间: 40107(房间的个数有上限) </h3>
+<div id="text-3.14">
+
+<ul>
+<li id="sec-3.14.1">请求包 <br/>
+
+</li>
+<li id="sec-3.14.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>room_id</td><td>uint32</td><td>4</td><td>新房间id</td></tr>
+<tr><td>room_buf</td><td>char(0)</td><td>不定长</td><td>初始房间buf</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.15" class="outline-3">
+<h3 id="sec-3.15">3.15 购买商品: 40108 </h3>
+<div id="text-3.15">
+
+<ul>
+<li id="sec-3.15.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>stuff_id</td><td>uint32</td><td>4</td><td>商品id</td></tr>
+<tr><td>stuff_num</td><td>uint16</td><td>2</td><td>本次购买的商品数量</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.15.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>stuff_id</td><td>uint32</td><td>4</td><td>购买成功的商品id</td></tr>
+<tr><td>category</td><td>uint8</td><td>1</td><td>物品的种类</td></tr>
+<tr><td>reward_exp</td><td>uint16</td><td>2</td><td>奖励的经验值</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.15.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100827：购买的物品id不存在</td></tr>
+<tr><td>100811：不符合购买物品的条件限制（金币不够或等级不够）</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.16" class="outline-3">
+<h3 id="sec-3.16">3.16 拉取益智游戏信息: 40109 </h3>
+<div id="text-3.16">
+
+<ul>
+<li id="sec-3.16.1">请求包 <br/>
+空 
+
+</li>
+<li id="sec-3.16.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>count</th><th>uint16</th><th>2</th><th>游戏信息的数量</th></tr>
+</thead>
+<tbody>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>type</td><td>uint8</td><td>1</td><td>游戏类型(0:每日挑战 &gt;0:单个游戏挑战所属的类型)</td></tr>
+<tr><td>is_played</td><td>uint8</td><td>1</td><td>当天是否挑战过</td></tr>
+<tr><td>daily_max</td><td>uint16</td><td>2</td><td>最高分</td></tr>
+<tr><td>daily_avg</td><td>uint16</td><td>2</td><td>平均分</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.16.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100007：未知的系统错误(转换时间戳出错)</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.17" class="outline-3">
+<h3 id="sec-3.17">3.17 提交益智游戏结果: 40110 </h3>
+<div id="text-3.17">
+
+<ul>
+<li id="sec-3.17.1">请求包: <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>type</td><td>uint8</td><td>1</td><td>游戏类型</td></tr>
+<tr><td>total_num</td><td>uint16</td><td>2</td><td>总共答题数量</td></tr>
+<tr><td>right_num</td><td>uint16</td><td>2</td><td>答对的题目的数量</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.17.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<tbody>
+<tr><td>type</td><td>uint8</td><td>1</td><td>游戏类型</td></tr>
+<tr><td>reward_coins</td><td>uint16</td><td>2</td><td>奖励的金币</td></tr>
+<tr><td>reward_exp</td><td>uint16</td><td>2</td><td>奖励的经验值</td></tr>
+<tr><td>reward_happy</td><td>uint16</td><td>2</td><td>奖励的愉悦值</td></tr>
+<tr><td>extra_coins</td><td>uint16</td><td>2</td><td>额外的金币奖励（打破最高分会获得）</td></tr>
+<tr><td>current_happy</td><td>uint32</td><td>4</td><td>当前的愉悦度</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.17.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100812：答对的数量大于总共答题的数量</td></tr>
+<tr><td>100810, 获得缓存里的用户角色信息失败</td></tr>
+<tr><td>100007：未知的系统错误(转换时间戳出错)</td></tr>
+<tr><td>100815：当天已经玩过的每日挑战</td></tr>
+<tr><td>100816：不存在的益智游戏类型</td></tr>
+<tr><td>100826：不满足益智游戏所yaoqi</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.18" class="outline-3">
+<h3 id="sec-3.18">3.18 拉取好友列表: 40111 </h3>
+<div id="text-3.18">
+
+<ul>
+<li id="sec-3.18.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>page</td><td>uint8</td><td>1</td><td>好友页数</td></tr>
+<tr><td>page_num</td><td>uint8</td><td>1</td><td>每页好友的数量(上限100个)</td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>要拉取的用户的米米号</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.18.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>total_num</td><td>uint16</td><td>2</td><td>总的好友数量</td></tr>
+<tr><td>count</td><td>uint8</td><td>1</td><td>实际拉取到的好友数量</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>米米号</td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户名字</td></tr>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>用户性别(0:女 1：男)</td></tr>
+<tr><td>country_id</td><td>uint32</td><td>4</td><td>国籍</td></tr>
+<tr><td>birthday</td><td>uint32</td><td>4</td><td>生日(格式: 20111108)</td></tr>
+<tr><td>user_type</td><td>uint8</td><td>1</td><td>0:普通用户 1：vip用户</td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td></tr>
+<tr><td>mon_level</td><td>uint16</td><td>2</td><td>怪兽等级</td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td></tr>
+<tr><td>mon_ex_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td></tr>
+<tr><td>last_login_time</td><td>uin32</td><td>4</td><td>用户上次登录时间</td></tr>
+<tr><td>is_bestfriend</td><td>uint8</td><td>1</td><td>是否最爱好友(0:不是 1：是)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.18.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100839：操作好友列表缓存信息失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.19" class="outline-3">
+<h3 id="sec-3.19">3.19 拉取单个好友信息; 40112 </h3>
+<div id="text-3.19">
+
+<ul>
+<li id="sec-3.19.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>好友米米号</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.19.2">应答包 <br/>
+同40102
+
+</li>
+<li id="sec-3.19.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100810, 获得缓存里的用户角色信息失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.20" class="outline-3">
+<h3 id="sec-3.20">3.20 好友操作: 40113 </h3>
+<div id="text-3.20">
+
+<ul>
+<li id="sec-3.20.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>好友米米号</td></tr>
+<tr><td>op_type</td><td>uint8</td><td>1</td><td>操作类型(0:设为最爱, 1:取消最爱,2:删除好友,3:屏蔽好友)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.20.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>op_type</td><td>uint8</td><td>1</td><td>操作类型</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.20.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100819：非法的的好友操作类型</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.21" class="outline-3">
+<h3 id="sec-3.21">3.21 查找好友: 40114 </h3>
+<div id="text-3.21">
+
+<ul>
+<li id="sec-3.21.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>search_user</td><td>char(16)</td><td>16</td><td>要查找用户的名字或米米号的字符串</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.21.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>count</td><td>uint8</td><td>1</td><td>查找到的好友数量</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>米米号</td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户名字</td></tr>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>0:女  1:男</td></tr>
+<tr><td>country_id</td><td>uint32</td><td>4</td><td>国籍</td></tr>
+<tr><td>birthday</td><td>uint32</td><td>4</td><td>生日(格式: 20111204)</td></tr>
+<tr><td>user_type</td><td>uint8</td><td>1</td><td>用户类型(0:普通用户)</td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td></tr>
+<tr><td>mon_ex_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.22" class="outline-3">
+<h3 id="sec-3.22">3.22 添加好友: 40115 </h3>
+<div id="text-3.22">
+
+<ul>
+<li id="sec-3.22.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>好友米米号</td></tr>
+<tr><td>remark_num</td><td>uint8</td><td>1</td><td>remark的字符数</td></tr>
+<tr><td>remark</td><td>char(16)</td><td>不定长</td><td>好友申请时的留言(不超过256字节)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.22.2">应答包 <br/>
+空
+
+</li>
+<li id="sec-3.22.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100834：重复申请好友（需要前端单独处理）</td></tr>
+<tr><td></td></tr>
+<tr><td>100844:不能把自己加为好友</td></tr>
+<tr><td>100848:已经时好友</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.23" class="outline-3">
+<h3 id="sec-3.23">3.23 拉取好友申请: 40116 </h3>
+<div id="text-3.23">
+
+<ul>
+<li id="sec-3.23.1">请求包 <br/>
+空
+
+</li>
+<li id="sec-3.23.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>uint8</td><td>1</td><td>是否还有好友申请(0:没有 1：有)</td></tr>
+<tr><td>count</td><td>uint8</td><td>1</td><td>好友申请的数量(最多99个)</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>米米号</td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户名字</td></tr>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>0:女  1:男</td></tr>
+<tr><td>country_id</td><td>uint32</td><td>4</td><td>国籍</td></tr>
+<tr><td>birthday</td><td>uint32</td><td>4</td><td>生日(格式: 20111204)</td></tr>
+<tr><td>user_type</td><td>uint8</td><td>1</td><td>用户类型(0:普通用户)</td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td></tr>
+<tr><td>mon_ex_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td></tr>
+<tr></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.23.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100842：缓存好友申请信息失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.24" class="outline-3">
+<h3 id="sec-3.24">3.24 对好友申请的操作: 40117 </h3>
+<div id="text-3.24">
+
+<ul>
+<li id="sec-3.24.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>peer_id</td><td>uint32</td><td>4</td><td>对方米米号</td></tr>
+<tr><td>type</td><td>uint8</td><td>1</td><td>0:同意 1：忽略 2：屏蔽</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.24.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>peer_id</td><td>uint32</td><td>4</td><td>对方米米号</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.24.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.25" class="outline-3">
+<h3 id="sec-3.25">3.25 拉取用户的留言板信息:40118 </h3>
+<div id="text-3.25">
+
+<ul>
+<li id="sec-3.25.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>要拉取的用户的米米号</td></tr>
+<tr><td>page</td><td>uint32</td><td>4</td><td>留言板页数</td></tr>
+<tr><td>page_num</td><td>uint8</td><td>1</td><td>每页留言的数量(最多8个)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.25.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>count</td><td>uint8</td><td>1</td><td>实际拉取到的留言数量</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>id</td><td>uint32</td><td>4</td><td>留言 id</td></tr>
+<tr><td>icon</td><td>uint8</td><td>1</td><td>便签的图案编号</td></tr>
+<tr><td>color</td><td>uint8</td><td>1</td><td>便签的颜色</td></tr>
+<tr><td>user_id</td><td>uitn32</td><td>4</td><td>写留言的用户的米米号</td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户名字</td></tr>
+<tr><td>user_type</td><td>uint8</td><td>1</td><td>0:普通用户 1： vip</td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td></tr>
+<tr><td>mon_level</td><td>uint16</td><td>2</td><td>怪兽等级</td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td></tr>
+<tr><td>mon_ex_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td></tr>
+<tr><td>create_time</td><td>uint32</td><td>4</td><td>留言创建的时间</td></tr>
+<tr><td>status</td><td>uint8</td><td>1</td><td>留言状态(1:未审核 2：已审核)</td></tr>
+<tr><td>message_count</td><td>uint16</td><td>2</td><td>留言的字节数</td></tr>
+<tr><td>message</td><td>char()</td><td></td><td>留言的内容</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.25.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100823：不能拉取第0页的留言</td></tr>
+<tr><td>100840:留言板一页的留言数超过最大值</td></tr>
+<tr><td>100841:缓存留言板信息失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.26" class="outline-3">
+<h3 id="sec-3.26">3.26 新增一条留言:40119 </h3>
+<div id="text-3.26">
+
+<ul>
+<li id="sec-3.26.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>peer_id</td><td>uint32</td><td>4</td><td>被留言的用户米米号</td></tr>
+<tr><td>icon</td><td>uint8</td><td>1</td><td>便签的图片编号</td></tr>
+<tr><td>color</td><td>uint8</td><td>1</td><td>便签的颜色编号</td></tr>
+<tr><td>message</td><td>char()</td><td></td><td>留言内容 ，最多512字节</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.26.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>id</td><td>uint32</td><td>4</td><td>留言的id</td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户名字</td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td></tr>
+<tr><td>mon_level</td><td>uit16</td><td>2</td><td>怪兽等级</td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽的主颜色</td></tr>
+<tr><td>mon_ex_color</td><td>uint32</td><td>4</td><td>怪兽的辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛的颜色</td></tr>
+<tr><td>create_time</td><td>uint32</td><td>4</td><td>留言的创建时间</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.26.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100824：留言不能为空</td></tr>
+<tr><td>100810：获得缓存里的用户角色信息失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.27" class="outline-3">
+<h3 id="sec-3.27">3.27 对留言的操作:40120 </h3>
+<div id="text-3.27">
+
+<ul>
+<li id="sec-3.27.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>被操作留言的用户的米米号(0:表示对自己的留言进行操作)</td></tr>
+<tr><td>id</td><td>uint32</td><td>4</td><td>留言的id</td></tr>
+<tr><td>type</td><td>uint8</td><td>1</td><td>0：删除一条留言 1：审核未通过 2：审核通过4：举报留言</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.27.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.27.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100817：不存在的操作类型</td></tr>
+<tr><td>100818：不是自己的留言，不能进行除举报外的操作</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.28" class="outline-3">
+<h3 id="sec-3.28">3.28 顶用户的小屋:40121 </h3>
+<div id="text-3.28">
+
+<ul>
+<li id="sec-3.28.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>peer_id</td><td>uint32</td><td>4</td><td>被顶的笑我用户的米米号</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.28.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>uint8</td><td>1</td><td>0:已经顶过用户的小屋 1:陈宫顶用户的小屋</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.28.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100601：给唯一数服务发送请求失败</td></tr>
+<tr><td>100822:重复顶用户的小屋(需要前端单独处理)</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.29" class="outline-3">
+<h3 id="sec-3.29">3.29 拉取种植园信息:40122 </h3>
+<div id="text-3.29">
+
+<ul>
+<li id="sec-3.29.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.29.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>hole_count</td><td>uint8</td><td>1</td><td>坑的个数(目前固定为3)</td></tr>
+<tr><td>&hellip;.</td><td></td><td></td><td></td></tr>
+<tr><td>plant_id</td><td>uint32</td><td>4</td><td>植物id(没有植物时取值0)</td></tr>
+<tr><td>hole_id</td><td>uint8</td><td>1</td><td>坑的编号(1,2,3)</td></tr>
+<tr><td>color</td><td>uint16</td><td>2</td><td>颜色编号</td></tr>
+<tr><td>last_growth</td><td>uint16</td><td>2</td><td>上次进种植园的成长值</td></tr>
+<tr><td>growth</td><td>uint16</td><td>2</td><td>成长值</td></tr>
+<tr><td>maintain</td><td>uint8</td><td>1</td><td>维护选项(0:不需要维护 1：浇水 2：修剪 3：施肥 4：收获)</td></tr>
+<tr><td>reward_num</td><td>uint32</td><td>4</td><td>未领取的阳光奖励包个数(最大500个，超过500后需要等领取完后重新进入种植园)</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖励包id</td></tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>下面的内容不属于hole_count循环</td><td></td><td></td><td></td></tr>
+<tr><td>flag</td><td>uint8</td><td>1</td><td>1:能吸引到小怪兽 2:种子没有3个或没有都成熟不能吸引到 3:颜色没有匹配到</td></tr>
+<tr><td>flag为1返回以下字段</td><td></td><td></td><td></td></tr>
+<tr><td>pet_id</td><td>uint32</td><td>4</td><td>小怪兽id</td></tr>
+<tr><td>flag为3返回以下字段</td><td></td><td></td><td></td></tr>
+<tr><td>hole_1</td><td>uint8</td><td>1</td><td>第一个坑的颜色是否匹配</td></tr>
+<tr><td>hole_2</td><td>uint8</td><td>1</td><td>第二个坑的颜色是否匹配</td></tr>
+<tr><td>hoel_3</td><td>uint8</td><td>1</td><td>第三个坑的颜色是否匹配</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.29.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100810：获得缓存里的用户角色信息失败</td></tr>
+<tr><td>100843：吸引到小怪兽，但是种植园植物没有种满</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.30" class="outline-3">
+<h3 id="sec-3.30">3.30 种植园种植物:40123 </h3>
+<div id="text-3.30">
+
+<ul>
+<li id="sec-3.30.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>plant_id</td><td>uint32</td><td>4</td><td>植物id</td></tr>
+<tr><td>hole_id</td><td>uint8</td><td>1</td><td>坑的编号</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.30.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>hole_id</td><td>uint8</td><td>1</td><td>坑编号</td></tr>
+<tr><td>maintain</td><td>uint8</td><td>1</td><td>维护选项(0:没有维护操作 1：浇水 2：音乐 3：施肥  )</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.30.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100828：坑上已种过植物，不能重复种</td></tr>
+<tr><td>100835：没有足够的种子种植</td></tr>
+<tr><td>100806：缓存里找不到用户的背包信息</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.31" class="outline-3">
+<h3 id="sec-3.31">3.31 种植园维护植物:40124 </h3>
+<div id="text-3.31">
+
+<ul>
+<li id="sec-3.31.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>hole_id</td><td>uint8</td><td>1</td><td>坑的编号</td></tr>
+<tr><td>maintain</td><td>uint8</td><td>1</td><td>维护选项(0:没有维护操作 1:浇水 2：音乐 3：施肥 4：收获 5：铲除)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.31.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>hole_id</td><td>uint8</td><td>1</td><td>坑的编号</td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>阳光奖励包id(没有阳关奖励时为0)</td></tr>
+<tr><td>reward_coins</td><td>uint16</td><td>2</td><td>奖励的咕咚果</td></tr>
+<tr><td>reward_growth</td><td>uint16</td><td>2</td><td>增加的成长值</td></tr>
+<tr><td>maintain</td><td>uint8</td><td>1</td><td>下一个维护选项(0:不需要维护 1：浇水 2:修剪 3：施肥 4:收获)</td></tr>
+<tr><td>flag</td><td>uint8</td><td>1</td><td>1:能吸引到小精灵 2:种子没有3个或没有全部成熟 3：颜色不匹配</td></tr>
+<tr><td>flag = 1时返回下面字段</td><td></td><td></td><td></td></tr>
+<tr><td>pet_id</td><td>uint32</td><td>4</td><td>吸引到的小精灵id</td></tr>
+<tr><td>flag = 3时返回下面字段</td><td></td><td></td><td></td></tr>
+<tr><td>hole1</td><td>uint8</td><td>1</td><td>第一个坑的颜色是否匹配</td></tr>
+<tr><td>hole2</td><td>uint8</td><td>1</td><td>第二个坑的颜色是否匹配</td></tr>
+<tr><td>hole3</td><td>uint8</td><td>1</td><td>第三个坑的颜色是否匹配</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.31.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100829：坑上没有种植物</td></tr>
+<tr><td>100865: 错误的坑编号</td></tr>
+<tr><td>100866: 错误的维护类型</td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.32" class="outline-3">
+<h3 id="sec-3.32">3.32 对吸引到的小怪收的操作:40125 </h3>
+<div id="text-3.32">
+
+<ul>
+<li id="sec-3.32.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>type</td><td>uint8</td><td>1</td><td>1:领养 2：放生 3:删除(针对已经收养的精灵)</td></tr>
+<tr><td>pet_id</td><td>uint32</td><td>4</td><td>要操作的精灵id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.32.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.32.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<thead>
+<tr><th>错误码</th></tr>
+</thead>
+<tbody>
+<tr><td>100831：没有定义的对吸引到小怪兽的操作</td></tr>
+<tr><td>100830：没有吸引到小怪兽，不能进行小怪兽的操作</td></tr>
+<tr><td>100869:传过来的精灵id与服务器记录的不一致</td></tr>
+<tr><td>100870:已经拥有3个精灵，必须删除一个才可以继续收养</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.33" class="outline-3">
+<h3 id="sec-3.33">3.33 获得商业街上的用户信息: 40126 </h3>
+<div id="text-3.33">
+
+<ul>
+<li id="sec-3.33.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.33.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>count</td><td>uint8</td><td>1</td><td>获得的用户数量</td><td></td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>用户的id</td><td></td></tr>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>用户昵称</td><td></td></tr>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>用户性别(0:女性 1：男性)</td><td></td></tr>
+<tr><td>country_id</td><td>uint32</td><td>4</td><td>国籍id</td><td></td></tr>
+<tr><td>user_type</td><td>uint8</td><td>1</td><td>(0:普通用户 1：vip用户 2:gm用户)</td><td></td></tr>
+<tr><td>birthday</td><td>uint32</td><td>4</td><td>生日，格式(20110723)</td><td></td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td><td></td></tr>
+<tr><td>mon_name</td><td>char(16)</td><td>16</td><td>怪兽昵称</td><td></td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td><td></td></tr>
+<tr><td>mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td><td></td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td><td></td></tr>
+<tr><td>mon_exp</td><td>uint32</td><td>4</td><td>怪兽经验值</td><td></td></tr>
+<tr><td>mon_level</td><td>uint16</td><td>2</td><td>怪兽等级</td><td></td></tr>
+<tr><td>mon_health</td><td>uint32</td><td>4</td><td>怪兽健康值</td><td></td></tr>
+<tr><td>mon_happy</td><td>uint32</td><td>4</td><td>怪兽愉悦度</td><td></td></tr>
+<tr><td>friend_num</td><td>uint16</td><td>2</td><td>好友总数</td><td></td></tr>
+<tr><td>visits</td><td>uint32</td><td>4</td><td>小屋的访问次数</td><td></td></tr>
+<tr><td>mood</td><td>uint8</td><td>1</td><td>用户心情</td><td></td></tr>
+<tr><td>fav_color</td><td>uint8</td><td>1</td><td>用户最爱的颜色</td><td></td></tr>
+<tr><td>fav_pet</td><td>uint8</td><td>1</td><td>用户最爱的精灵</td><td></td></tr>
+<tr><td>fav_fruit</td><td>uint8</td><td>1</td><td>用户最爱的水果</td><td></td></tr>
+<tr><td>room_num</td><td>uint8</td><td>1</td><td>用户房间数量</td><td></td></tr>
+<tr><td>pet_num</td><td>uint8</td><td>1</td><td>用户精灵个数</td><td></td></tr>
+<tr><td>max_puzzle_score</td><td>uint16</td><td>2</td><td>益智游戏最高分</td><td></td></tr>
+<tr><td>pet_id</td><td>uint32</td><td>4</td><td>跟随精灵的id,0表示没有跟随精灵</td><td></td></tr>
+<tr><td>count</td><td>uint8</td><td>1</td><td>个性签名的字节数</td><td></td></tr>
+<tr><td>personal_sign</td><td>char()</td><td></td><td>个性签名</td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.33.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.34" class="outline-3">
+<h3 id="sec-3.34">3.34 提交小游戏答题结果: 40127 </h3>
+<div id="text-3.34">
+
+<ul>
+<li id="sec-3.34.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>game_id</td><td>uint32</td><td>4</td><td>游戏id</td></tr>
+<tr><td>level_id</td><td>uint32</td><td>4</td><td>关卡id</td></tr>
+<tr><td>gained_coins</td><td>uint32</td><td>4</td><td>获得的金币数</td></tr>
+<tr><td>score</td><td>uint32</td><td>4</td><td>得分</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.34.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>game_id</td><td>uint32</td><td>4</td><td>游戏id</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>level_id</td><td>uint32</td><td>4</td><td>关卡id</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>is_restrict</td><td>uint8</td><td>1</td><td>0:未达到每日上限 1：达到每日上限</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>reward_coins</td><td>uint32</td><td>4</td><td>实际可以得到的金币</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>star_num</td><td>uint8</td><td>1</td><td>获得的星星数</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>next_level_lock</td><td>uint8</td><td>1</td><td>下一关是否解锁(0:未解锁 1：解锁 2：没有下一关了)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>reason</td><td>uint8</td><td>1</td><td>0:正常 1：分数不够 2：达到每日限制</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>reason=0时才有下面的两个字段</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>stuff_num</td><td>uint8</td><td>1</td><td>获得该道具的数量</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>stuff_id</td><td>uint32</td><td>4</td><td>获得的道具id(这里只是获得一种道具,但这种道具可以获得多个)</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.34.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.35" class="outline-3">
+<h3 id="sec-3.35">3.35 怪兽吃食物: 40128 </h3>
+<div id="text-3.35">
+
+<ul>
+<li id="sec-3.35.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>item_id</td><td>uint32</td><td>4</td><td>食物的物品id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.35.2">应答包 <br/>
+
+</li>
+<li id="sec-3.35.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.36" class="outline-3">
+<h3 id="sec-3.36">3.36 更改用户的profile信息: 40129 </h3>
+<div id="text-3.36">
+
+<ul>
+<li id="sec-3.36.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>type</td><td>uint8</td><td>1</td><td>要更改的信息的类型(1:个性签名,2:今天心情,3:最爱的颜色,4:最爱的精灵,5:最爱的食物)</td></tr>
+<tr><td>下面的字段根据type的类型确定</td><td></td><td></td><td></td></tr>
+<tr><td>type:1</td><td></td><td></td><td></td></tr>
+<tr><td>personal-sign</td><td>char()</td><td>最大64字节</td><td>个性签名</td></tr>
+<tr><td>type: 2, 3, 4,5</td><td></td><td></td><td></td></tr>
+<tr><td>id</td><td>uint32</td><td>4</td><td>选择的物品的id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.36.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.36.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.37" class="outline-3">
+<h3 id="sec-3.37">3.37 拉取商店的物品列表: 40130 </h3>
+<div id="text-3.37">
+
+<ul>
+<li id="sec-3.37.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>shop_id</td><td>uint32</td><td>4</td><td>商店id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.37.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>remain_time</td><td>uint16</td><td>2</td><td>剩余刷新时间</td></tr>
+<tr><td>count</td><td>uint16</td><td>2</td><td>物品个数</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>item_id</td><td>uint32</td><td>4</td><td>物品id</td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.37.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.38" class="outline-3">
+<h3 id="sec-3.38">3.38 更新新手引导的flag标识: 40131 </h3>
+<div id="text-3.38">
+
+<ul>
+<li id="sec-3.38.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>flag</td><td>uint32</td><td>4</td><td>标识位</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.38.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.38.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.39" class="outline-3">
+<h3 id="sec-3.39">3.39 二手物品的兑换: 40132 </h3>
+<div id="text-3.39">
+
+<ul>
+<li id="sec-3.39.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>stuff_id</td><td>uint32</td><td>4</td><td>要兑换的物品</td></tr>
+<tr><td>req_type</td><td>uint8</td><td>1</td><td>1: 固定的40%  2:随机抽奖</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.39.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>percent</td><td>uint8</td><td>1</td><td>取值 1-10</td></tr>
+<tr><td>coins</td><td>uint32</td><td>4</td><td>该物品可以换到多少金币</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.40" class="outline-3">
+<h3 id="sec-3.40">3.40 as向online获取精灵园的所有精灵: 40133 </h3>
+<div id="text-3.40">
+
+<ul>
+<li id="sec-3.40.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>被查看的用户的米米号</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.40.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>pet_num</td><td>uint16</td><td>2</td><td>精灵的数量</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>pet_id</td><td>uint32</td><td>4</td><td>精灵ID</td></tr>
+<tr><td>pet_total</td><td>uint16</td><td>2</td><td>该精灵的拥有数量</td></tr>
+<tr><td>pet_in_home</td><td>uint16</td><td>2</td><td>该精灵在家中的数量</td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.41" class="outline-3">
+<h3 id="sec-3.41">3.41 进入二人益智游戏比赛: 40134 </h3>
+<div id="text-3.41">
+
+<ul>
+<li id="sec-3.41.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.41.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th><th></th></tr>
+</thead>
+<tbody>
+<tr><td>is_found</td><td>uint8</td><td>1</td><td>0:未找到对手，需要等待，进入等待页面 1：找到对手</td><td></td></tr>
+<tr><td>is_found=1时才会有下面的字段</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>opponent_id</td><td>uint32</td><td>4</td><td>对方米米号</td><td></td></tr>
+<tr><td>opponent_name</td><td>char(16)</td><td>16</td><td>对方名称</td><td></td></tr>
+<tr><td>is_vip</td><td>uint8</td><td>1</td><td>是否VIP用户(0:普通用户 1：VIP用户 2:GA用户)</td><td></td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td><td></td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td><td></td></tr>
+<tr><td>mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td><td></td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td><td></td></tr>
+<tr><td>initial_total_time</td><td>uint16</td><td>2</td><td>比赛初始总时间 单位秒</td><td></td></tr>
+<tr><td>quest_num</td><td>uint16</td><td>2</td><td>题目数量</td><td></td></tr>
+<tr><td>&hellip;.</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>quest_type</td><td>uint8</td><td>1</td><td>题目类型</td><td></td></tr>
+<tr><td>quest_id</td><td>uint32</td><td>4</td><td>题目id</td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.41.3">错误码 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="right"></col><col align="left"></col>
+<tbody>
+<tr><td>100301</td><td>已经在多人益智游戏中，重复进入</td></tr>
+</tbody>
+</table>
+
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.42" class="outline-3">
+<h3 id="sec-3.42">3.42 二人益智游戏，online给as推送匹配信息: 42003 </h3>
+<div id="text-3.42">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>is_found</td><td>uint8</td><td>1</td><td>0:未找到对手 1：找到对手</td></tr>
+<tr><td>is_found=1时菜会有下面的字段</td><td></td><td></td><td></td></tr>
+<tr><td>opponent_id</td><td>uint32</td><td>4</td><td>对手米米号</td></tr>
+<tr><td>opponent_name</td><td>char(16)</td><td>16</td><td>对手名称</td></tr>
+<tr><td>is_vip</td><td>uint8</td><td>1</td><td>是否VIP用户(0:普通用户 1：VIP用户 2：GA用户)</td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽id</td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td></tr>
+<tr><td>mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td></tr>
+<tr><td>initial_total_time</td><td>uint16</td><td>2</td><td>比赛初始总时间,单位秒</td></tr>
+<tr><td>question_num</td><td>uint16</td><td>2</td><td>题目数量(未找到对手时，题目数量为0)</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>quest_type</td><td>uint8</td><td>1</td><td>题目类型</td></tr>
+<tr><td>quest_id</td><td>uint32</td><td>4</td><td>题目id</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.43" class="outline-3">
+<h3 id="sec-3.43">3.43 二人益智游戏比赛匹配成功，点击start按钮: 40135 </h3>
+<div id="text-3.43">
+
+<ul>
+<li id="sec-3.43.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.43.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>status</td><td>uint8</td><td>1</td><td>0: 对方已离开 1:对方未开始，需等待 2:对方已开始，直接进入游戏</td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.44" class="outline-3">
+<h3 id="sec-3.44">3.44 二人益智游戏,online给as推送进入游戏信息：42004 </h3>
+<div id="text-3.44">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>status</td><td>uint8</td><td>1</td><td>0:用户自己长时间未点击start按钮 1：对手长时间未点击start按钮  2：进入游戏</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.45" class="outline-3">
+<h3 id="sec-3.45">3.45 答题： 40136 </h3>
+<div id="text-3.45">
+
+<ul>
+<li id="sec-3.45.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>result</td><td>uint8</td><td>1</td><td>0:答题正确 1：答题错误</td></tr>
+<tr><td>is_end</td><td>uint8</td><td>1</td><td>答题是否结束(0:未结束 1：结束)</td></tr>
+<tr><td>remain_time</td><td>uint16</td><td>2</td><td>剩余时间（当结束时剩余时间为0）</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.45.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>status</td><td>uint8</td><td>1</td><td>是否结束(1:用户自己未结束 2：用户自己已结束， 但对方未结束 3、用户自己和对手豆已结束)</td></tr>
+<tr><td>status = 3时才有下面的字段</td><td></td><td></td><td></td></tr>
+<tr><td>score</td><td>uint16</td><td>2</td><td>自己得分</td></tr>
+<tr><td>opp_sscore</td><td>uint16</td><td>2</td><td>对手得分</td></tr>
+<tr><td>result</td><td>uint8</td><td>1</td><td>0:平局 1：胜利 2：失败h</td></tr>
+<tr><td>reward_coins</td><td>uint16</td><td>2</td><td>奖励的咕咚果</td></tr>
+<tr><td>is_restrict</td><td>uint8</td><td>1</td><td>是否达到每日上限(0;么有 1;有)(与multi-server通信时无该字段)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.46" class="outline-3">
+<h3 id="sec-3.46">3.46 二人益智游戏，online给as推送对手的答题信息:42005 </h3>
+<div id="text-3.46">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>opp_score</td><td>uint16</td><td>2</td><td>对手当前得分</td></tr>
+<tr><td>opp_remain_time</td><td>uint16</td><td>2</td><td>对手剩余时间,单位秒</td></tr>
+<tr><td>opp_is_end</td><td>uint8</td><td>1</td><td>对手是否已结束(0:未结束 1：已结束)</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.47" class="outline-3">
+<h3 id="sec-3.47">3.47 二人益智游戏，online给as推送的比赛结果信息: 42006 </h3>
+<div id="text-3.47">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>score</td><td>uint16</td><td>2</td><td>自己得分</td></tr>
+<tr><td>opp_score</td><td>uint16</td><td>2</td><td>对手得分</td></tr>
+<tr><td>result</td><td>uint8</td><td>1</td><td>0:平局 1：胜利 2：失败</td></tr>
+<tr><td>reward_coins</td><td>uint16</td><td>2</td><td>奖励的咕咚果</td></tr>
+<tr><td>is_restrict</td><td>uint8</td><td>1</td><td>是否达到每日上限(0:没有 1：有)(与multi-svr通信无该字段)</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.48" class="outline-3">
+<h3 id="sec-3.48">3.48 互动元素奖励:40137 </h3>
+<div id="text-3.48">
+
+<ul>
+<li id="sec-3.48.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>interactive_id</td><td>uint32</td><td>4</td><td>互动元素编号(从1001开始)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.48.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>is_restrict</td><td>uint8</td><td>1</td><td>是否达到每日上限(0:没有 1：有)</td></tr>
+<tr><td>rewards_coins</td><td>uint16</td><td>2</td><td>奖励的咕咚果数量</td></tr>
+<tr><td>端午节活动返回包</td><td></td><td></td><td></td></tr>
+<tr><td>is_reward</td><td>uint8</td><td>1</td><td>能否奖励叶子0：能 1：不能</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.49" class="outline-3">
+<h3 id="sec-3.49">3.49 AS发过来的统计信息: 40138 </h3>
+<div id="text-3.49">
+
+<ul>
+<li id="sec-3.49.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>type</td><td>uint8</td><td>1</td><td>用户操作类型(1:离开商店 2：开始小游戏 3：访问麦咭)</td></tr>
+<tr><td>value</td><td>uint32</td><td>4</td><td>类型值(没有值时填0)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.49.2">没有应答包 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.50" class="outline-3">
+<h3 id="sec-3.50">3.50 打开最近来访面板：40139 </h3>
+<div id="text-3.50">
+
+<ul>
+<li id="sec-3.50.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.50.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>visit_num</td><td>uint16</td><td>2</td><td>来访者数量(最多99个)</td></tr>
+<tr><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td></tr>
+<tr><td>status</td><td>uint8</td><td>1</td><td>状态(0:未读 1：已读)</td></tr>
+<tr><td>visit_type</td><td>uint8</td><td>1</td><td>来访类型(1:访问 2：顶)</td></tr>
+<tr><td>visit_time</td><td>uint32</td><td>4</td><td>来访时间戳</td></tr>
+<tr><td>visit_id</td><td>uint32</td><td>4</td><td>来访者米米号</td></tr>
+<tr><td>is_vip</td><td>uint8</td><td>1</td><td>是否vip用户(0:普通用户 1：VIP用户)</td></tr>
+<tr><td>visit_name</td><td>char(16)</td><td>16</td><td>来访者名字</td></tr>
+<tr><td>visit_mon_id</td><td>uint32</td><td>4</td><td>来访者怪兽id</td></tr>
+<tr><td>visit_mon_main_color</td><td>uint32</td><td>4</td><td>怪兽颜色</td></tr>
+<tr><td>visit_mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽颜色</td></tr>
+<tr><td>visit_mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽颜色</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.51" class="outline-3">
+<h3 id="sec-3.51">3.51 打开成就面板: 40140 </h3>
+<div id="text-3.51">
+
+<ul>
+<li id="sec-3.51.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>peer_id</td><td>uint32</td><td>4</td><td>被查看的用户的米米号</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.51.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>badge_num</td><td>uint16</td><td>2</td><td>成就项个数</td></tr>
+<tr><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td></tr>
+<tr><td>badge_id</td><td>uint32</td><td>4</td><td>成就项id</td></tr>
+<tr><td>badge_status</td><td>uint8</td><td>1</td><td>成就项状态(0:进行中 1：已获得未领奖杯 2:已获得未查看 3：已获得已领奖)</td></tr>
+<tr><td>badge_progress</td><td>uint32</td><td>4</td><td>成就项进度</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.52" class="outline-3">
+<h3 id="sec-3.52">3.52 领取成就项奖杯: 40141 </h3>
+<div id="text-3.52">
+
+<ul>
+<li id="sec-3.52.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>badge_id</td><td>uint32</td><td>4</td><td>要领取的成就项id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.52.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖杯id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.53" class="outline-3">
+<h3 id="sec-3.53">3.53 online通知客户端有新的成就项获得:42008 </h3>
+<div id="text-3.53">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>unread_badge_num</td><td>uint16</td><td>2</td><td>未查看的成就项个数</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.54" class="outline-3">
+<h3 id="sec-3.54">3.54 拉取实际可以看到的留言条数: 40142 </h3>
+<div id="text-3.54">
+
+<ul>
+<li id="sec-3.54.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>peer_id</td><td>uint32</td><td>4</td><td>被查看的用户的米米号</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.54.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>real_num</td><td>uint32</td><td>4</td><td>实际可以看到的留言条数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.55" class="outline-3">
+<h3 id="sec-3.55">3.55 拉取最近访客未读条数:40143 </h3>
+<div id="text-3.55">
+
+<ul>
+<li id="sec-3.55.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.55.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>unread_num</td><td>uint16</td><td>2</td><td>未读数量</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.56" class="outline-3">
+<h3 id="sec-3.56">3.56 online有新的实时通知: 42000 </h3>
+<div id="text-3.56">
+
+<ul>
+<li id="sec-3.56.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>type</td><td>uint8</td><td>1</td><td>1:有好友请求 2:有新的留言 5:有新的访客</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.56.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.56.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.57" class="outline-3">
+<h3 id="sec-3.57">3.57 online广播包 ，定时清理关掉的连接: 42001 </h3>
+<div id="text-3.57">
+
+<ul>
+<li id="sec-3.57.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.57.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.57.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.58" class="outline-3">
+<h3 id="sec-3.58">3.58 实时通知as更新用户的用户信息: 42002 </h3>
+<div id="text-3.58">
+
+<ul>
+<li id="sec-3.58.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>mon_happy</td><td>uint32</td><td>4</td><td>怪兽愉悦度</td></tr>
+<tr><td>mon_health</td><td>uint32</td><td>4</td><td>怪兽健康值</td></tr>
+<tr><td>mon_exp</td><td>uint32</td><td>4</td><td>怪兽经验</td></tr>
+<tr><td>mon_level</td><td>uint16</td><td>2</td><td>怪兽等级</td></tr>
+<tr><td>coins</td><td>uint32</td><td>4</td><td>用户金币</td></tr>
+<tr><td>visits</td><td>uint32</td><td>4</td><td>用户小屋的访问次数</td></tr>
+<tr><td>thumb</td><td>uint32</td><td>4</td><td>小屋被顶的次数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.58.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>名称</td><td>类型</td><td>字节数</td><td>说明</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.58.3">错误码 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.59" class="outline-3">
+<h3 id="sec-3.59">3.59 拉取小游戏的关卡信息(只拉取已经解锁的关卡): 40144 </h3>
+<div id="text-3.59">
+
+<ul>
+<li id="sec-3.59.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>game_id</td><td>uint32</td><td>4</td><td>游戏id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.59.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>next_level_lock</td><td>uint8</td><td>1</td><td>下一关是否解锁(0:未解锁 1：解锁 2：么有下一关了)</td></tr>
+<tr><td>level_num</td><td>uint16</td><td>2</td><td>关卡数量</td></tr>
+<tr><td>&hellip;&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>level_id</td><td>uint32</td><td>4</td><td>关卡id</td></tr>
+<tr><td>max_score</td><td>uint32</td><td>4</td><td>曾经的最高分</td></tr>
+<tr><td>acquired_star</td><td>uint8</td><td>1</td><td>获得的星星数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.60" class="outline-3">
+<h3 id="sec-3.60">3.60 拉取合成工厂信息:40145 </h3>
+<div id="text-3.60">
+
+<ul>
+<li id="sec-3.60.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.60.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>status</td><td>uint8</td><td>1</td><td>0:合成工厂空闲 1:合成工厂有物品合成，2:合成工厂已合成出物品</td></tr>
+<tr><td>time_or_item</td><td>uint32</td><td>4</td><td>status=0没有该字段 status=1时为合成物品的剩余时间 status=2为合成的物品id</td></tr>
+<tr><td>map_id</td><td>uint32</td><td>4</td><td>图纸id（status=1时才有该字段）</td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.61" class="outline-3">
+<h3 id="sec-3.61">3.61 提交合成信息: 40146 </h3>
+<div id="text-3.61">
+
+<ul>
+<li id="sec-3.61.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>id</td><td>uint32</td><td>4</td><td>合成图纸id</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.61.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>left_time</td><td>uint32</td><td>4</td><td>合成剩余时间</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.62" class="outline-3">
+<h3 id="sec-3.62">3.62 合成工厂操作:40147 </h3>
+<div id="text-3.62">
+
+<ul>
+<li id="sec-3.62.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>status</td><td>uint8</td><td>1</td><td>1:领取合成物品，2:取消合成物品</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.62.2">应答包 <br/>
+空
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.63" class="outline-3">
+<h3 id="sec-3.63">3.63 检测名字是否脏词: 40148 </h3>
+<div id="text-3.63">
+
+<ul>
+<li id="sec-3.63.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>需要检测的名字</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.63.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>dirty</td><td>uint8</td><td>1</td><td>是否脏词(0:不是  1：是)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.64" class="outline-3">
+<h3 id="sec-3.64">3.64 修改怪兽名字:40149 </h3>
+<div id="text-3.64">
+
+<ul>
+<li id="sec-3.64.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>mon_name</td><td>char(16)</td><td>16</td><td>新的怪兽名字</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.64.2">应答包 <br/>
+空
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.65" class="outline-3">
+<h3 id="sec-3.65">3.65 as随机获取一个名字给用户: 40151 </h3>
+<div id="text-3.65">
+
+<ul>
+<li id="sec-3.65.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>gender</td><td>uint8</td><td>1</td><td>性别(0:女性 1：男性)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.65.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>name</td><td>char(16)</td><td>16</td><td>随机到的用户名字</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.66" class="outline-3">
+<h3 id="sec-3.66">3.66 领取卜卜报奖励:40152 </h3>
+<div id="text-3.66">
+
+<ul>
+<li id="sec-3.66.1">请求包 <br/>
+
+</li>
+<li id="sec-3.66.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>reward_coins</td><td>uint16</td><td>2</td><td>奖励的金币数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.67" class="outline-3">
+<h3 id="sec-3.67">3.67 领取种植园阳关奖励包:40153 </h3>
+<div id="text-3.67">
+
+<ul>
+<li id="sec-3.67.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>hole_id</td><td>uint8</td><td>1</td><td>坑的编号</td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>阳关奖励包id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.67.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>hole_id</td><td>uint8</td><td>1</td><td>坑的编号</td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>阳关奖励包id</td></tr>
+<tr><td>reward_happy</td><td>uint16</td><td>2</td><td>奖励的快乐值(为0表示不奖励该项)</td></tr>
+<tr><td>reward_exp</td><td>uint16</td><td>2</td><td>奖励的经验值（为0表示不奖励该项）</td></tr>
+<tr><td>reward_coins</td><td>uint16</td><td>2</td><td>奖励的咕咚果 （为0表示不奖励该项）</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.68" class="outline-3">
+<h3 id="sec-3.68">3.68 读卜卜报: 40154 </h3>
+<div id="text-3.68">
+
+<ul>
+<li id="sec-3.68.1">请求包 <br/>
+
+</li>
+<li id="sec-3.68.2">应答包 <br/>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.69" class="outline-3">
+<h3 id="sec-3.69">3.69 进入大众点评: 40155 </h3>
+<div id="text-3.69">
+
+<ul>
+<li id="sec-3.69.1">请求包 <br/>
+空
+
+</li>
+<li id="sec-3.69.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>status</td><td>uint8</td><td>1</td><td>1:今天未点评过 2：今天已经点评过</td></tr>
+<tr><td>total_score</td><td>uint32</td><td>4</td><td>最终得分</td></tr>
+<tr><td>npc_num</td><td>uint8</td><td>1</td><td>参与点评的NPC的个数(目前为3个)</td></tr>
+<tr><td>&hellip;.</td><td></td><td></td><td></td></tr>
+<tr><td>npc_id</td><td>uint32</td><td>4</td><td>npc_id</td></tr>
+<tr><td>npc_score</td><td>uint32</td><td>4</td><td>npc给出的分数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.70" class="outline-3">
+<h3 id="sec-3.70">3.70 NPC评分:40156 </h3>
+<div id="text-3.70">
+
+<ul>
+<li id="sec-3.70.1">请求包 <br/>
+空
+
+</li>
+<li id="sec-3.70.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>total_score</td><td>uint32</td><td>4</td><td>最终得分</td></tr>
+<tr><td>npc_num</td><td>uint8</td><td>1</td><td>npc的个数</td></tr>
+<tr><td>&hellip;</td><td>..</td><td></td><td></td></tr>
+<tr><td>npc_id</td><td>uint32</td><td>4</td><td>npc_id</td></tr>
+<tr><td>npc_score</td><td>uint32</td><td>4</td><td>npc给出的分数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.70.3">错误码 <br/>
+100871 ：今天已经评过了
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.71" class="outline-3">
+<h3 id="sec-3.71">3.71 拉取游戏当前期奖励兑换信息:40157 </h3>
+<div id="text-3.71">
+
+<ul>
+<li id="sec-3.71.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>game_id</td><td>uint32</td><td>4</td><td>游戏id(当前只有蛋糕店游戏)</td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.71.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>game_id</td><td>uint32</td><td>4</td><td>游戏id</td></tr>
+<tr><td>stuff_num</td><td>uint16</td><td>2</td><td>本期已经兑换到的物品个数</td></tr>
+<tr><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>stuff_id</td><td>uint32</td><td>4</td><td>物品道具id</td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.72" class="outline-3">
+<h3 id="sec-3.72">3.72 小游戏兑换物品:40158 </h3>
+<div id="text-3.72">
+
+<ul>
+<li id="sec-3.72.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>game_id</td><td>uint32</td><td>4</td><td>游戏id｜</td></tr>
+<tr><td>stuff_id</td><td>uint32</td><td>4</td><td>要兑换的物品id</td></tr>
+<tr><td>game_score</td><td>uint32</td><td>4</td><td>得分(为了统计)</td></tr>
+<tr><td>level_num</td><td>uint16</td><td>2</td><td>关卡(为了成就项)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.72.2">应答包 <br/>
+空
+
+</li>
+<li id="sec-3.72.3">错误码 <br/>
+100873 :已经兑换过
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.73" class="outline-3">
+<h3 id="sec-3.73">3.73 拉取已完成任务列表: 40159 </h3>
+<div id="text-3.73">
+
+<ul>
+<li id="sec-3.73.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.73.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>finished_task_num</td><td>uint16</td><td>2</td><td>已完成任务个数</td></tr>
+<tr><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td></tr>
+<tr><td>task_id</td><td>uint32</td><td>4</td><td>任务id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.74" class="outline-3">
+<h3 id="sec-3.74">3.74 完成一个任务: 40160 </h3>
+<div id="text-3.74">
+
+<ul>
+<li id="sec-3.74.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>task_id</td><td>uint32</td><td>4</td><td>任务id</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.74.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>task_id</td><td>uint32</td><td>4</td><td>任务id</td></tr>
+<tr><td>reward_type_num</td><td>uint8</td><td>1</td><td>奖励的种类数量</td></tr>
+<tr><td>&hellip;</td><td>&hellip;.</td><td>&hellip;.</td><td>&hellip;..</td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖励的物品(10000001:为奖励的金币 其他暂时为奖励的道具 )</td></tr>
+<tr><td>reward_num</td><td>uint16</td><td>2</td><td>奖励的数量</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.74.3">错误码 <br/>
+100874 任务等级条件未达到
+100875 任务前置任务未完成
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.75" class="outline-3">
+<h3 id="sec-3.75">3.75 进入援助计划面板: 40161 </h3>
+<div id="text-3.75">
+
+<ul>
+<li id="sec-3.75.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.75.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>unreward_denote_id</td><td>uint32</td><td>4</td><td>未领奖的援助计划id（0：表示没有未领取的 ）</td></tr>
+<tr><td>denote_id</td><td>uint32</td><td>4</td><td>当前期援助计划id(0:表示当前暂无援助计划)</td></tr>
+<tr><td>denote_num</td><td>uint32</td><td>4</td><td>已募捐数额</td></tr>
+<tr><td>denoter_num</td><td>uint32</td><td>4</td><td>志愿者人数</td></tr>
+</tbody>
+</table>
+
+
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.76" class="outline-3">
+<h3 id="sec-3.76">3.76 捐款: 40162 </h3>
+<div id="text-3.76">
+
+<ul>
+<li id="sec-3.76.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>denote_id</td><td>uint32</td><td>4</td><td>要援助的计划id</td></tr>
+<tr><td>denote_num</td><td>uint32</td><td>4</td><td>捐款数额</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.76.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>denote_id</td><td>uint32</td><td>4</td><td>要援助的计划id</td></tr>
+<tr><td>flag</td><td>uint8</td><td>1</td><td>0: 募捐成功但计划尚未达成 1：募捐成功并计划达成(用户达成) 2：募捐已结束(别人导致募捐结束) 3:咕咚果不够 4：已达到募捐上限</td></tr>
+</tbody>
+</table>
+
+flag =1 和2才有下面的字段
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>unreward_denote_id</td><td>uint32</td><td>4</td><td>未领奖的援助计划id(0表示没有)</td></tr>
+<tr><td>new_denote_id</td><td>uint32</td><td>4</td><td>新的一期援助计划id (0表示没有)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.77" class="outline-3">
+<h3 id="sec-3.77">3.77 请求援助概况信息: 40163 </h3>
+<div id="text-3.77">
+
+<ul>
+<li id="sec-3.77.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.77.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col>
+<tbody>
+<tr><td>denote_total</td><td>uint32</td><td>4</td><td>到目前为止，一共募捐到的咕咚果</td></tr>
+<tr><td>helped_pet</td><td>uint16</td><td>2</td><td>受帮助过的小精灵数量</td></tr>
+<tr><td>total_parti</td><td>uint32</td><td>4</td><td>总共参与者人数</td></tr>
+<tr><td>denote_count</td><td>uint16</td><td>2</td><td>总共已举办的援助计划数</td></tr>
+<tr><td>&hellip;.</td><td></td><td></td><td></td></tr>
+<tr><td>denote_id</td><td>uint32</td><td>4</td><td>援助计划id</td></tr>
+<tr><td>reach_time</td><td>uint32</td><td>4</td><td>达成时间(0:表示尚在进行中)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.78" class="outline-3">
+<h3 id="sec-3.78">3.78 进入博物馆: 40164 </h3>
+<div id="text-3.78">
+
+<ul>
+<li id="sec-3.78.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>museum_id</td><td>uint32</td><td>4</td><td>博物馆id(必须是配表中存在的)</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.78.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>museum_id</td><td>uint32</td><td>4</td><td>博物馆id</td></tr>
+<tr><td>flag</td><td>uint8</td><td>1</td><td>是否有奖励(1:没有 0：有)</td></tr>
+<tr><td>level_id</td><td>uint8</td><td>1</td><td>flag = 1 表示下一关id  flag=0表示未领取奖品的关卡id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.79" class="outline-3">
+<h3 id="sec-3.79">3.79 领取博物馆奖励: 40165 </h3>
+<div id="text-3.79">
+
+<ul>
+<li id="sec-3.79.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>museum_id</td><td>uint32</td><td>4</td><td>博物馆id</td></tr>
+<tr><td>level_id</td><td>uint8</td><td>1</td><td>未领取奖品的关卡id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.79.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>名称</th><th>类型</th><th>字节数</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖品id(0:表示没有奖励)</td></tr>
+<tr><td>reward_num</td><td>uint16</td><td>2</td><td>奖品数量</td></tr>
+<tr><td>next_level_id</td><td>uint8</td><td>1</td><td>下一关id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.80" class="outline-3">
+<h3 id="sec-3.80">3.80 博物馆答题结束: 40166 </h3>
+<div id="text-3.80">
+
+<ul>
+<li id="sec-3.80.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>museum_id</td><td>uint32</td><td>4</td><td>博物馆id</td></tr>
+<tr><td>level_id</td><td>uint8</td><td>1</td><td>关卡id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.80.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>flag</td><td>uint8</td><td>1</td><td>是否有奖励(1:没有 0：有)</td></tr>
+<tr><td>level_id</td><td>uint8</td><td>1</td><td>flag=1表示下一关id  flag=0表示未领取奖品的关卡id</td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.81" class="outline-3">
+<h3 id="sec-3.81">3.81 提交蛋糕店游戏的分数:40167 </h3>
+<div id="text-3.81">
+
+<ul>
+<li id="sec-3.81.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>game_id</td><td>uint32</td><td>4</td><td>游戏id</td></tr>
+<tr><td>level_id</td><td>uint32</td><td>4</td><td>游戏关卡</td></tr>
+<tr><td>score</td><td>uint32</td><td>4</td><td>分数</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.81.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>端午节活动进行时返回包</td><td></td><td></td><td></td></tr>
+<tr><td>is_reward</td><td>uint8</td><td>1</td><td>能否奖励叶子0：能 1：不能</td></tr>
+</tbody>
+</table>
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.82" class="outline-3">
+<h3 id="sec-3.82">3.82 更新强制引导标示: 40168 </h3>
+<div id="text-3.82">
+
+<ul>
+<li id="sec-3.82.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>guide_flag</td><td>uint32</td><td>4</td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.82.2">应答包 <br/>
+空
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.83" class="outline-3">
+<h3 id="sec-3.83">3.83 拉取单个活动的信息: 40169 </h3>
+<div id="text-3.83">
+
+<ul>
+<li id="sec-3.83.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>activity_id</td><td>uint32</td><td>4</td><td>活动id</td></tr>
+<tr><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.83.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>activity_id</td><td>uint32</td><td>4</td><td>活动id(公测活动的返回包)</td></tr>
+<tr><td>reward_kind</td><td>uint16</td><td>2</td><td>奖品种类</td></tr>
+<tr><td>&hellip;..</td><td></td><td></td><td></td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖品id</td></tr>
+<tr><td>reward_num</td><td>uint16</td><td>2</td><td>奖品数量</td></tr>
+<tr><td>reward_status</td><td>uint8</td><td>1</td><td>奖品状态(0:不可以领取 1：已领取 2：可以领取)</td></tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>邀请好友活动的返回包</td><td></td><td></td><td></td></tr>
+<tr><td>invite_num</td><td>uint16</td><td>2</td><td>已经邀请的人数</td></tr>
+<tr><td>qualitified_num</td><td>uint16</td><td>2</td><td>达到5级以上的受邀人数</td></tr>
+<tr><td>status<sup><a class="footref" name="fnr.1" href="#fn.1">1</a></sup></td><td>uint8</td><td>1</td><td>该活动每一关的状态 0：未完成 1：完成未领奖 2：完成并已领奖</td></tr>
+</tbody>
+</table>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>端午节活动的返回包</td><td></td><td></td><td></td></tr>
+<tr><td>is_reward</td><td>uint8</td><td>1</td><td>是否已经领奖 0：未领 1：已领</td></tr>
+<tr><td>status<sup><a class="footref" name="fnr.1.2" href="#fn.1">1</a></sup></td><td>uint8</td><td>1</td><td>该活动每一关的状态 0：未完成 1：完成</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.84" class="outline-3">
+<h3 id="sec-3.84">3.84 领取单个活动的奖品: 40170 </h3>
+<div id="text-3.84">
+
+<ul>
+<li id="sec-3.84.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>activity_id</td><td>uint32</td><td>4</td><td>活动id</td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖品id</td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+<li id="sec-3.84.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>act_id</td><td>uint32</td><td>4</td><td>活动id</td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖品id</td></tr>
+<tr><td>now_status</td><td>uint32</td><td>4</td><td>活动状态</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.85" class="outline-3">
+<h3 id="sec-3.85">3.85 拉取当前活动列表: 40171 </h3>
+<div id="text-3.85">
+
+<ul>
+<li id="sec-3.85.1">请求包 <br/>
+空
+</li>
+<li id="sec-3.85.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>activity_num</td><td>uint16</td><td>2</td><td>活动数量</td></tr>
+<tr><td>&hellip;</td><td>..</td><td></td><td></td></tr>
+<tr><td>activity_id</td><td>uint32</td><td>4</td><td>活动id</td></tr>
+<tr><td>activity_status</td><td>uint8</td><td>1</td><td>活动状态(0:进行中 1：new 2:完成)</td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.86" class="outline-3">
+<h3 id="sec-3.86">3.86 领取单个活动的可选择奖品: 40172 </h3>
+<div id="text-3.86">
+
+<ul>
+<li id="sec-3.86.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>activity_id</td><td>uint32</td><td>4</td><td>活动id</td></tr>
+<tr><td>level_id</td><td>uint32</td><td>4</td><td>关卡id</td></tr>
+<tr><td>reward_id</td><td>uint32</td><td>4</td><td>奖品id</td></tr>
+<tr><td>reward_num</td><td>uint16</td><td>2</td><td>奖品数量</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.86.2">应答包 <br/>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.87" class="outline-3">
+<h3 id="sec-3.87">3.87 兑奖: 40173 </h3>
+<div id="text-3.87">
+
+<ul>
+<li id="sec-3.87.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>stuff_A_id</td><td>uint32</td><td>4</td><td>被兑换物品ID</td></tr>
+<tr><td>stuff_B_id</td><td>uint32</td><td>4</td><td>兑换物品ID</td></tr>
+</tbody>
+</table>
+
+用A兑换B  
+</li>
+<li id="sec-3.87.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>stuff_A_id</td><td>uint32</td><td>4</td><td>被兑换物品ID</td></tr>
+<tr><td>stuff_b__num</td><td>uint16</td><td>2</td><td>被兑换物品数量</td></tr>
+<tr><td>stuff_B_id</td><td>uint32</td><td>4</td><td>兑换品物ID</td></tr>
+<tr><td>stuff_B_category</td><td>uint8</td><td>1</td><td>兑换物品种类</td></tr>
+</tbody>
+</table>
+
+错误码
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>100827：购买的物品id不存在</td></tr>
+<tr><td>100811：不符合购买物品的条件限制（金币不够或等级不够）</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.88" class="outline-3">
+<h3 id="sec-3.88">3.88 进入大众点评场馆: 40174 </h3>
+<div id="text-3.88">
+
+<ul>
+<li id="sec-3.88.1">请求包 <br/>
+</li>
+<li id="sec-3.88.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>show_id</td><td>uint32</td><td>4</td><td>标识本次大众点评是第几期</td><td></td></tr>
+<tr><td>show_state</td><td>uint8</td><td>1</td><td>本次大众点评的阶段：0参选阶段 1投票阶段</td><td></td></tr>
+<tr><td>total_num</td><td>uint32</td><td>4</td><td>总共报名人数</td><td></td></tr>
+<tr><td>user_num</td><td>uint8</td><td>1</td><td>用户数量</td><td></td></tr>
+<tr><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td></td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>米米号</td><td></td></tr>
+<tr><td>user_name</td><td>char(16)</td><td>16</td><td>用户名字</td><td></td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽形象</td><td></td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td><td></td></tr>
+<tr><td>mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td><td></td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td><td></td></tr>
+<tr><td>npc_score</td><td>uint32</td><td>4</td><td>小屋得分</td><td></td></tr>
+<tr><td>npc_timestamp</td><td>uint32</td><td>4</td><td>得分的时间戳</td><td></td></tr>
+<tr><td>votes</td><td>uint32</td><td>4</td><td>得到的票数</td><td></td></tr>
+<tr><td>is_top</td><td>uint8</td><td>1</td><td>名次(1:冠军 2：亚军 3， 4， 5， 6)</td><td></td></tr>
+<tr><td></td><td>循环结束</td><td></td><td></td><td></td></tr>
+<tr><td>is_join</td><td>uint8</td><td>1</td><td>参选解读那代表是否已经报名 投票阶段代表是否已经投票 0否 1是</td><td></td></tr>
+<tr><td>is_notice</td><td>uint8</td><td>1</td><td>之前的结果是否已经通知 0:未通知 1：已通知</td><td></td></tr>
+<tr><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+当is_notice=0时有下列字段
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>vote_id</td><td>uint32</td><td>4</td><td>未通知的大众点评是第几期</td></tr>
+<tr><td>reward_type</td><td>uint8</td><td>1</td><td>奖品类型: 0:冠军奖 1：猜中冠军奖</td></tr>
+<tr><td>reward_coins</td><td>uint32</td><td>4</td><td>奖品的金币数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.89" class="outline-3">
+<h3 id="sec-3.89">3.89 参加大众点评海选: 40175 </h3>
+<div id="text-3.89">
+
+<ul>
+<li id="sec-3.89.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>show_id</td><td>uint16</td><td>4</td><td>参与的届数</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.89.2">应答包 <br/>
+空
+
+<p>
+错误码：
+100883:请求的大众点评届数不正确
+100884：不是大众点评的报名阶段
+100886:小屋今天没有参与评分
+100887:已经报过名
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.90" class="outline-3">
+<h3 id="sec-3.90">3.90 投票大众点评候选人: 40176 </h3>
+<div id="text-3.90">
+
+<ul>
+<li id="sec-3.90.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>show_id</td><td>uint32</td><td>4</td><td>投票的届数</td></tr>
+<tr><td>candidate</td><td>uint32</td><td>4</td><td>被选举人</td></tr>
+</tbody>
+</table>
+
+</li>
+<li id="sec-3.90.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>端午节活动进行时返回包</td><td></td><td></td><td></td></tr>
+<tr><td>is_reward</td><td>uint8</td><td>1</td><td>能否奖励叶子0：能 1：不能</td></tr>
+</tbody>
+</table>
+
+
+<p>
+错误码：
+100883：请求的大众点评届数不正确
+100885：不是大众点评的投票阶段
+100888:已经投过票
+</p>
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.91" class="outline-3">
+<h3 id="sec-3.91">3.91 拉取往届大众点评信息:40177 </h3>
+<div id="text-3.91">
+
+<ul>
+<li id="sec-3.91.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>show_id</td><td>uint32</td><td>4</td><td>请求的期数</td></tr>
+</tbody>
+</table>
+
+
+</li>
+<li id="sec-3.91.2">应答包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="right"></col><col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>show_id</td><td>uint32</td><td>4</td><td>请求的大众点评是第几期</td><td></td><td></td><td></td></tr>
+<tr><td>total_num</td><td>uint32</td><td>4</td><td>总共报名人数</td><td></td><td></td><td></td></tr>
+<tr><td>user_num</td><td>uint8</td><td>1</td><td>用户数量</td><td></td><td></td><td></td></tr>
+<tr><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td></td><td></td><td></td></tr>
+<tr><td>user_id</td><td>uint32</td><td>4</td><td>米米号</td><td></td><td></td><td></td></tr>
+<tr><td>user_name</td><td>char(16)</td><td>16</td><td>用户名字</td><td></td><td></td><td></td></tr>
+<tr><td>mon_id</td><td>uint32</td><td>4</td><td>怪兽形象</td><td></td><td></td><td></td></tr>
+<tr><td>mon_main_color</td><td>uint32</td><td>4</td><td>怪兽主颜色</td><td></td><td></td><td></td></tr>
+<tr><td>mon_exp_color</td><td>uint32</td><td>4</td><td>怪兽辅颜色</td><td></td><td></td><td></td></tr>
+<tr><td>mon_eye_color</td><td>uint32</td><td>4</td><td>怪兽眼睛颜色</td><td></td><td></td><td></td></tr>
+<tr><td>npc_score</td><td>uint32</td><td>4</td><td>小屋得分</td><td></td><td></td><td></td></tr>
+<tr><td>npc_timestamp</td><td>uint32</td><td>4</td><td>得分的时间戳</td><td></td><td></td><td></td></tr>
+<tr><td>votes</td><td>uint32</td><td>4</td><td>得到的票数</td><td></td><td></td><td></td></tr>
+<tr><td>is_top</td><td>uint8</td><td>1</td><td>名次(1:冠军 2：亚军 3， 4， 5， 6)</td><td></td><td></td><td></td></tr>
+<tr><td></td><td>循环结束</td><td></td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table>
+
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.92" class="outline-3">
+<h3 id="sec-3.92">3.92 42003-42006用于推送二人益智游戏信息 </h3>
+<div id="text-3.92">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.93" class="outline-3">
+<h3 id="sec-3.93">3.93 42007 未用 </h3>
+<div id="text-3.93">
+
+</div>
+
+</div>
+
+<div id="outline-container-3.94" class="outline-3">
+<h3 id="sec-3.94">3.94 42008 告知AS成就项的个数 </h3>
+<div id="text-3.94">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.95" class="outline-3">
+<h3 id="sec-3.95">3.95 42009 告知as新的成绩(小屋评分 ，每日益智挑战) </h3>
+<div id="text-3.95">
+
+<ul>
+<li id="sec-3.95.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>type</td><td>uint8</td><td>1</td><td>类型(1:小屋评分 2：每日挑战)</td></tr>
+<tr><td>win_num</td><td>uint32</td><td>4</td><td>战胜的人数</td></tr>
+<tr><td>total_num</td><td>uint32</td><td>4</td><td>总公参与的人数</td></tr>
+<tr><td>rand_user_id</td><td>uint32</td><td>4</td><td>随机的一个用户id</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.96" class="outline-3">
+<h3 id="sec-3.96">3.96 42010 告知as新的活动状态 </h3>
+<div id="text-3.96">
+
+<ul>
+<li id="sec-3.96.1">请求包 <br/>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col><col align="left"></col><col align="left"></col>
+<tbody>
+<tr><td>status</td><td>uint8</td><td>1</td><td>状态值(0:有新的活动 1：有活动奖品可领取 )</td></tr>
+</tbody>
+</table>
+
+
+</li>
+</ul>
+</div>
+
+</div>
+
+<div id="outline-container-3.97" class="outline-3">
+<h3 id="sec-3.97">3.97 错误码 </h3>
+<div id="text-3.97">
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col><col align="left"></col>
+<thead>
+<tr><th>错误码</th><th>说明</th></tr>
+</thead>
+<tbody>
+<tr><td>ERR_SNDBUF_OVERFLOW = 10001,        //发送缓冲区溢出</td><td></td></tr>
+<tr><td>ERR_NO_AVAILABLE_ONLINE = 10002,    //暂时没有可用的online服务器</td><td></td></tr>
+<tr><td>ERR_INVALID_IP  = 10003,            //无效的IP地址</td><td></td></tr>
+<tr><td>ERR_USER_ID = 10004,                //米米号不合法</td><td></td></tr>
+<tr><td>ERR_MSG_LEN = 10005,                //接收到的消息长度错误</td><td></td></tr>
+<tr><td>ERR_MSG_TYPE = 10006,               //消息类型错误</td><td></td></tr>
+<tr><td>ERR_SYSTEM_ERR  = 100007,           //未知的系统错误</td><td></td></tr>
+<tr><td>ERR_REPEAT_LOGIN    = 100008,       //重复登录到同一台online</td><td></td></tr>
+<tr><td>ERR_LOGIN_AT_OTHER  = 100009,       //在其他online登录</td><td></td></tr>
+<tr><td>ERR_USER_UNONLINE   = 100010,       //用户已经下线</td><td></td></tr>
+<tr><td>ERR_MSG_TIMEOUT = 100011,           //请求服务端超时</td><td></td></tr>
+<tr><td>ERR_NET_ERROR   = 100012,           //网络错误 用于同db_proxy同db_server通信</td><td></td></tr>
+<tr><td>ERR_REPEAT_REQUEST  = 100013,       //重复请求</td><td></td></tr>
+<tr><td>ERR_LOGIN_VERIFY_FAILED = 100014,   //米米号密码没通过account验证</td><td></td></tr>
+<tr><td>ERR_LOGIN_VERIFY_SESSION = 100015,  //登录用户的session不能通过account的验证</td><td></td></tr>
+<tr><td>ERR_LOGIN_SESSION_FAILED = 100016,  //未通过session验证的请求</td><td></td></tr>
+<tr><td>ERR_GET_VERIFY_FAILED = 100017,     //获取验证码失败</td><td></td></tr>
+<tr><td>ERR_SQL_ERR     = 100018,           //mysql错误</td><td></td></tr>
+<tr><td>ERR_SQL_NO_RECORD     = 100019,     //mysql里没有对应的记录</td><td></td></tr>
+<tr><td>ERR_ALLOC_USER_CACHE     = 100020,  //分配用户缓存失败</td><td></td></tr>
+</tbody>
+</table>
+
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>//100201 &ndash; 100400 为同account平台之间的错误码</td></tr>
+<tr><td>ERR_MSG_ACCOUNT = 100201,           //给account平台发送请求失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>//100401 &ndash; 100600 为同switch平台之间的错误码</td></tr>
+<tr><td>ERR_MSG_SWITCH = 100401,            //给switch服务发送请求失败</td></tr>
+</tbody>
+</table>
+
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>ERR_MSG_UCOUNT = 100601,            //给唯一数服务发送请求失败</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<col align="left"></col>
+<tbody>
+<tr><td>//100601 &ndash; 100800 为同db-proxy之间的错误码</td></tr>
+<tr><td>ERR_MSG_DB_PROXY = 100601,          //给db-proxy发送请求失败</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+<p class="footnote"><sup><a class="footnum" name="fn.1" href="#fnr.1">1</a></sup> FOOTNOTE DEFINITION NOT FOUND: 3
+</p>
+</div>
+</div>
+<div id="postamble"><p class="author"> Author: monster@taomee
+<a href="mailto:magee@MAGEE">&lt;magee@MAGEE&gt;</a>
+</p>
+<p class="date"> Date: 2012-06-20 23:38:03 </p>
+<p>HTML generated by org-mode 6.21b in emacs 23</p>
+</div></body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pets>
+    <pet id="1" name="尼小龙" type="2" seed1="90001" color1="2" seed2="90001" color2="0" seed3="90006" color3="0"/>
+    <pet id="2" name="阿贝尔" type="1" seed1="90001" color1="0" seed2="90003" color2="0" seed3="90003" color3="0"/>
+    <pet id="3" name="卡叉叉" type="2" seed1="90004" color1="0" seed2="90005" color2="4" seed3="90006" color3="0"/>
+    <pet id="4" name="马克思" type="1" seed1="90002" color1="0" seed2="90003" color2="0" seed3="90006" color3="0"/>
+    <pet id="5" name="艾伦鱼" type="2" seed1="90001" color1="4" seed2="90003" color2="0" seed3="90004" color3="0"/>
+    <pet id="6" name="拉娜" type="2" seed1="90002" color1="6" seed2="90005" color2="0" seed3="90005" color3="0"/>
+    <pet id="7" name="小莫" type="1" seed1="90006" color1="0" seed2="90006" color2="0" seed3="90006" color3="0"/>
+    <pet id="8" name="哼力" type="3" seed1="90001" color1="6" seed2="90001" color2="5" seed3="90005" color3="0"/>
+    <pet id="9" name="悠悠" type="2" seed1="90001" color1="0" seed2="90004" color2="1" seed3="90004" color3="0"/>
+    <pet id="10" name="亚历山大豆" type="1" seed1="90003" color1="0" seed2="90004" color2="0" seed3="90004" color3="0"/>
+    <pet id="11" name="冯冯" type="2" seed1="90005" color1="0" seed2="90005" color2="0" seed3="90006" color3="3"/>
+    <pet id="12" name="路易斯" type="3" seed1="90002" color1="0" seed2="90001" color2="4" seed3="90003" color3="2"/>
+    <pet id="13" name="维咯尼" type="3" seed1="90003" color1="5" seed2="90004" color2="0" seed3="90006" color3="0"/>
+    <pet id="14" name="托比" type="3" seed1="90001" color1="0" seed2="90001" color2="1" seed3="90003" color3="3"/>
+    <pet id="15" name="雷迪斯" type="1" seed1="90002" color1="0" seed2="90001" color2="0" seed3="90006" color3="0"/>
+    <pet id="16" name="拖拖母" type="1" seed1="90002" color1="0" seed2="90002" color2="0" seed3="90004" color3="0"/>
+    <pet id="17" name="喷喷" type="2" seed1="90001" color1="0" seed2="90001" color2="0" seed3="90001" color3="6"/>
+    <pet id="18" name="拖拖母" type="2" seed1="90004" color1="0" seed2="90004" color2="0" seed3="90005" color3="4"/>
+    <pet id="19" name="爱迪生" type="3" seed1="90003" color1="3" seed2="90003" color2="0" seed3="90003" color3="2"/>
+    <pet id="20" name="伊戈尔" type="1" seed1="90002" color1="0" seed2="90002" color2="0" seed3="90001" color3="0"/>
+</pets>

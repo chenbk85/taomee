@@ -1,0 +1,3077 @@
+<!--?xml version="1.0" encoding="utf-8"?--><meta name="generator" content="Org-mode"> <meta name="generated" content="2011-08-01 16:21:35 CST"> <meta name="author" content="monster@taomee"> <meta name="description" content=""> <meta name="keywords" content=""> <style type="text/css">
+<!--/*--><![CDATA[/*>
+<!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {a
+ border: 1pt solid #AEBDCC;
+ background-color: #F3F5F7;
+ padding: 5pt;
+ font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="http://10.1.1.28/smyang/base.css"> <script type="text/javascript" src="http://10.1.1.28/smyang/org-info.js"></script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*>
+<!--*/
+org_html_manager.set("TOC_DEPTH", "2");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "0");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "2");
+org_html_manager.set("VIEW", "content");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*>
+<!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<style type="text/css">
+<!--
+.STYLE1 {font-size: 16px}
+.STYLE2 {font-size: 14px}
+-->
+</style>
+<div id="content">
+<h1 class="title">后台服务之间的通信协议</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 50001 – 50100 login同switch之间的通信协议ID </a> </li>
+<li><a href="#sec-2">2 50101 – 50200 online同switch之间的通信协议ID </a> </li>
+<li><a href="#sec-3">3 50201 – 50300 switch主动向online发送的数据包 </a> </li>
+<li><a href="#sec-4">4 0x8000 – 0x81FF(32768 — 33279) </a> </li>
+<li><a href="#sec-5">5 请求包头 </a> </li>
+<li><a href="#sec-6">6 包体 </a> <ul>
+<li><a href="#sec-6.1">6.1 获取单个online服务器IP和port(login向switch请求): 50001 </a> </li>
+<li><a href="#sec-6.2">6.2 online服务器向switch服务器发注册请求:50101 </a> </li>
+<li><a href="#sec-6.3">6.3 有用户登录online,告知switch: 50102 </a> </li>
+<li><a href="#sec-6.4">6.4 有用户登出online,告知switch: 50103 </a> </li>
+<li><a href="#sec-6.5">6.5 online通知switch有添加好友的请求: 50104 </a> </li>
+<li><a href="#sec-6.6">6.6 switch告知online将用户踢下线: 50201 </a> </li>
+<li><a href="#sec-6.7">6.7 switch告知online有添加好友的请求: 50202 </a> </li>
+<li><a href="#sec-6.8">6.8 新增一个role: 32768(0x8000) </a> </li>
+<li><a href="#sec-6.9">6.9 查询用户的role信息: 32769(0X8001) </a> </li>
+<li><a href="#sec-6.10">6.10 拉取背包中的物品: 32770(0X8002) </a> </li>
+<li><a href="#sec-6.11">6.11 背包中增加物品; 32771(0X8003) </a> </li>
+<li><a href="#sec-6.12">6.12 更新背包中物品数量: 32772(0X8004) </a> </li>
+<li><a href="#sec-6.13">6.13 拉取用户的房间数量: 32773(0X8005) </a> </li>
+<li><a href="#sec-6.14">6.14 拉取单个房间信息: 32774(0X8006) </a> </li>
+<li><a href="#sec-6.15">6.15 新增一个房间: 32775(0X8007) </a> </li>
+<li><a href="#sec-6.16">6.16 更新role表中last_login_time: 32776(0X8008) </a> </li>
+<li><a href="#sec-6.17">6.17 更新房间room_buf: 32777(0X8009) </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 50001 – 50100 login同switch之间的通信协议ID </h2>
+<div id="text-1" class="outline-text-2">
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">协议号</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>50001</td>
+      <td>login向switch请求一个可用的online服务器ip和port</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> 50101 – 50200 online同switch之间的通信协议ID </h2>
+<div id="text-2" class="outline-text-2">
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="right" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">协议号</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>50101</td>
+      <td>online向switch发起注册请求</td>
+    </tr>
+    <tr>
+      <td>50102</td>
+      <td>有用户登录或登出online,告知switch</td>
+    </tr>
+    <tr>
+      <td>50103</td>
+      <td>有用户登出online,告知switch</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 50201 – 50300 switch主动向online发送的数据包 </h2>
+<div id="text-3" class="outline-text-2">
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">协议号</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>50201</td>
+      <td>switch告知online将用户踢下线 ｜</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<h3>4&nbsp;50301 – 50400 online向ucount发送的数据包<br />
+<span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:19px;" class="Apple-style-span">注释:唯一数服务的目录结构 天/消息id/米米号倒数第3,4位/米米号倒数第1,2位/米米号 (110810/50301/97/75/47159775)</span></span></h3>
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4">
+<p></p>
+</h2>
+</div>
+<div id="outline-container-4" class="outline-2">
+<div id="text-3" class="outline-text-2">
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">协议号</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>50301</td>
+      <td>online向ucount提交小屋访问的用户</td>
+    </tr>
+    <tr>
+      <td>50302&nbsp;</td>
+      <td>online向ucount提交对小屋打分的用户&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p></p>
+<h3>4.1 小屋访问用户去重:50301</h3>
+<p>请求包:</p>
+<p></p>
+<ul>
+<li id="sec-6.6.1">请求包&nbsp;<br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>peer_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>访问用户的米米号</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.6.2">应答包&nbsp;<br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>flag</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>用户当天有没有访问过(0:没有访问过，1:已经访问过)</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<p></p>
+<p></p>
+<h3>4.2 小屋打分用户去重:50302</h3>
+<p>请求包:</p>
+<p></p>
+<ul>
+<li id="sec-6.6.1">请求包&nbsp;<br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>peer_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>访问用户的米米号</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.6.2">应答包&nbsp;<br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>flag</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>用户当天有没有访问过(0:没有访问过，1:已经访问过)</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+<p></p>
+<p></p>
+<p>&nbsp;</p>
+<p>5 0x8000 – 0x81FF(32768 — 33279) online同proxy通信的协议</p>
+</div>
+</div>
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> 请求包头 </h2>
+<div id="text-5" class="outline-text-2">
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>len</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>消息长度</td>
+    </tr>
+    <tr>
+      <td>seq</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>协议序列号</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>协议类型</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>返回结果，包括错误码</td>
+    </tr>
+    <tr>
+      <td>user_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>用户米米号</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> 包体 </h2>
+<div id="text-6" class="outline-text-2"></div>
+<div id="outline-container-6.1" class="outline-3">
+<h3 id="sec-6.1"><span class="section-number-3">6.1</span> 获取单个online服务器IP和port(login向switch请求): 50001 </h3>
+<div id="text-6.1" class="outline-text-3">
+<ul>
+<li id="sec-6.1.1">请求包 <br />
+空 </li>
+<li id="sec-6.1.2">应答包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>online_ip</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>online服务器ip</td>
+    </tr>
+    <tr>
+      <td>online_port</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>online服务器port</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.2" class="outline-3">
+<h3 id="sec-6.2"><span class="section-number-3">6.2</span> online服务器向switch服务器发注册请求:50101 </h3>
+<div id="text-6.2" class="outline-text-3">
+<ul>
+<li id="sec-6.2.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>online_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>online编号，配置在bind.conf第一行的</td>
+    </tr>
+    <tr>
+      <td>online_ip</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>online服务绑定到的IP地址</td>
+    </tr>
+    <tr>
+      <td>online_port</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>online服务绑定到的端口</td>
+    </tr>
+  </tbody>
+</table>
+<p>无需返回</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.3" class="outline-3">
+<h3 id="sec-6.3"><span class="section-number-3">6.3</span> 有用户登录online,告知switch: 50102 </h3>
+<div id="text-6.3" class="outline-text-3">
+<ul>
+<li id="sec-6.3.1">请求包 <br />
+空 <p>无需返回</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.4" class="outline-3">
+<h3 id="sec-6.4"><span class="section-number-3">6.4</span> 有用户登出online,告知switch: 50103 </h3>
+<div id="text-6.4" class="outline-text-3">
+<ul>
+<li id="sec-6.4.1">请求包 <br />
+空 <p>无需返回</p>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.5" class="outline-3">
+<h3 id="sec-6.5"><span class="section-number-3">6.5</span> online通知switch有实时通知的请求: 50104 </h3>
+<div id="text-6.5" class="outline-text-3">
+<ul>
+<li id="sec-6.5.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>friend_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>被请求的人的米米</td>
+    </tr>
+    <tr>
+      <td>&nbsp;type</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>请求的类型(1:有好友申请,2:有新的留言,3:好友请求通过,4:删除好友)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.6" class="outline-3">
+<h3 id="sec-6.6"><span class="section-number-3">6.6</span> switch告知online将用户踢下线: 50201 </h3>
+<div id="text-6.6" class="outline-text-3">
+<ul>
+<li id="sec-6.6.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>reason_id</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>1:已在其他online上登录</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.6.2">应答包 <br />
+无 </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.7" class="outline-3">
+<h3 id="sec-6.7"><span class="section-number-3">6.7</span> switch告知online有实时通知的请求: 50202 </h3>
+<div id="text-6.7" class="outline-text-3">
+<ul>
+<li id="sec-6.7.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>   </table>
+<p>
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>user_id&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>发起请求的用户id&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>请求的类型(1:有好友申请,2:有新的留言,3:好友请求通过，4:对方删除好友)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<p>无需应答</p>
+</li>
+</ul>
+</div>
+</div>
+<h3><span class="section-number-3">6.7</span> switch检测online是否处于正常状态: 50203 </h3>
+<li>请求包 <br />
+<p>包体为空</p>
+</li>
+<li>应答包<br />
+<p>包体为空</p>
+<p>&nbsp;</p>
+<p>7 与multi-server通信的协议 50401-50500</p>
+<p>7.1 进入2人益智游戏 50401</p>
+<p>请求包&nbsp;<br />
+<table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><caption></caption><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup></table>
+</p>
+<p><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><caption></caption><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+</tr>
+</thead><tbody><tr><td>user_name&nbsp;</td>
+<td>char(16)&nbsp;</td>
+<td>16&nbsp;</td>
+<td>用户名字&nbsp;</td>
+</tr>
+<tr><td>is_vip</td>
+<td>uint8</td>
+<td>1</td>
+<td>是否是vip(0:不是，1:是,)&nbsp;</td>
+</tr>
+<tr><td>monster_id&nbsp;</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>怪兽id&nbsp;</td>
+</tr>
+<tr><td>monster_main_color&nbsp;</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>monster_exp_color&nbsp;</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>monster_eye_color</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p></p>
+应答包<br />
+<p><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><caption></caption><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+</tr>
+</thead><tbody><tr><td>is_found&nbsp;</td>
+<td>uint8&nbsp;</td>
+<td>1</td>
+<td>0:未找到，1:找到</td>
+</tr>
+<tr><td>quest_num&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2</td>
+<td>题目数量&nbsp;</td>
+</tr>
+<tr><td>&nbsp;。。。</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>quest_id</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;7.2 multi-server推送2人益智游戏匹配信息给online 50402</p>
+<p><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><caption></caption><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><thead><tr><th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+</tr>
+</thead><tbody><tr><td>is_found&nbsp;</td>
+<td>uint8&nbsp;</td>
+<td>1</td>
+<td>0:未找到，1:找到</td>
+</tr>
+<tr><td>quest_num&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2</td>
+<td>题目数量&nbsp;</td>
+</tr>
+<tr><td>&nbsp;。。。</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>quest_id</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p>&nbsp;</p>
+<p>7.3&nbsp;<span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;">二人益智游戏比赛匹配成功，点击start按钮 50403</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;">格式同40134协议</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;"><br />
+</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;">7.4 multi-server给online推送进入游戏信息 50404</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;">格式同42004协议</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;"><br />
+</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;">7.5 答题 50405</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;">格式同40135协议</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;"><br />
+</span></p>
+<p><span class="Apple-style-span" style="font-size:14px;font-weight:bold;line-height:normal;">7.6 multi-server给online推送对手答题信息 50406</span></p>
+<p><span class="Apple-style-span" style="color:#24306f;"><span class="Apple-style-span" style="font-size:14px;line-height:normal;"><b>格式同42005</b></span></span></p>
+<p><span class="Apple-style-span" style="color:#24306f;"><span class="Apple-style-span" style="font-size:14px;line-height:normal;"><b><br />
+</b></span></span></p>
+<p><span class="Apple-style-span" style="color:#24306f;"><span class="Apple-style-span" style="font-size:14px;line-height:normal;"><b>7.7 multi-server给online推送比赛结果信息 50407</b></span></span></p>
+<p><span class="Apple-style-span" style="color:#24306f;"><span class="Apple-style-span" style="font-size:14px;line-height:normal;"><b>格式同42006</b></span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ul></ul>
+</li>
+</div>
+<div></div>
+<div id="outline-container-6.8" class="outline-3">
+<h3 id="sec-6.8"><span class="section-number-3">6.8</span> 新增一个role: 32768(0x8000) </h3>
+<div id="text-6.8" class="outline-text-3">
+<ul>
+<li id="sec-6.8.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>name</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>用户昵称</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>用户性别(0:女性 1：男性)</td>
+    </tr>
+    <tr>
+      <td>country_id</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>国籍id</td>
+    </tr>
+    <tr>
+      <td>vip</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>是否vip会员(0:不是 1：是)</td>
+    </tr>
+    <tr>
+      <td>birthday</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>生日,格式:19901123</td>
+    </tr>
+    <tr>
+      <td>register_time</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>注册时间</td>
+    </tr>
+    <tr>
+      <td>coins</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>拥有的金币数</td>
+    </tr>
+    <tr>
+      <td>last_login_time</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>上次登录时间</td>
+    </tr>
+    <tr>
+      <td>mon_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽id</td>
+    </tr>
+    <tr>
+      <td>mon_name</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>怪兽昵称</td>
+    </tr>
+    <tr>
+      <td>mon_main_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽主颜色</td>
+    </tr>
+    <tr>
+      <td>mon_exp_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽辅颜色</td>
+    </tr>
+    <tr>
+      <td>mon_eye_color&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>怪兽眼睛颜色&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_exp</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽经验值</td>
+    </tr>
+    <tr>
+      <td>mon_level</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>怪兽的等级&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_health</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽健康度</td>
+    </tr>
+    <tr>
+      <td>mon_happy</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td><p>怪兽愉悦度</p>
+</td>
+    </tr>
+    <tr><td>&nbsp;seed1</td>
+<td>uint32&nbsp;</td>
+<td>&nbsp;4</td>
+<td>赠送的种子id&nbsp;</td>
+</tr>
+<tr><td>&nbsp;seed2</td>
+<td>uint32&nbsp;</td>
+<td>&nbsp;4</td>
+<td>&nbsp;赠送的种子id</td>
+</tr>
+<tr><td>&nbsp;seed3</td>
+<td>uint32&nbsp;</td>
+<td>&nbsp;4</td>
+<td>&nbsp;赠送的种子id</td>
+</tr>
+<tr>
+      <td>wallpaper_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>默认墙纸id</td>
+    </tr>
+    <tr>
+      <td>floor_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>默认地板id</td>
+    </tr>
+    <tr>
+      <td>windows_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>默认窗户id</td>
+    </tr>
+    <tr>
+      <td>door_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>默认们id</td>
+    </tr>
+    <tr>
+      <td>room_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>默认创建的room id</td>
+    </tr>
+    <tr>
+      <td>room_buf</td>
+      <td>char()</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.8.2">应答包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>名称</td>
+      <td>类型</td>
+      <td>字节数</td>
+      <td>说明</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.9" class="outline-3">
+<h3 id="sec-6.9"><span class="section-number-3">6.9</span> 查询用户的role信息: 32769(0X8001) </h3>
+<div id="text-6.9" class="outline-text-3">
+<ul>
+<li id="sec-6.9.1">请求包 <br />
+空 </li>
+<li id="sec-6.9.2">应答包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>is_register</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>(0:未注册 1：已注册)</td>
+    </tr>
+  </tbody>
+</table>
+未注册用户没有下面的数据 
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>name</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>用户昵称</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>用户性别(0:女性 1：男性)</td>
+    </tr>
+    <tr>
+      <td>country_id</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>国籍id</td>
+    </tr>
+    <tr>
+      <td>vip</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>是否vip会员(0:不是 1：是)</td>
+    </tr>
+    <tr>
+      <td>birthday</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>生日,格式:19901123</td>
+    </tr>
+    <tr>
+      <td>register_time</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>注册时间</td>
+    </tr>
+    <tr>
+      <td>coins</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>拥有的金币数</td>
+    </tr>
+    <tr>
+      <td>last_login_time</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>上次登录时间</td>
+    </tr>
+    <tr>
+      <td>last_visit_plantation_time</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>上次访问种植园的时间&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽id</td>
+    </tr>
+    <tr>
+      <td>mon_name</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>怪兽昵称</td>
+    </tr>
+    <tr>
+      <td>mon_main_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽主颜色</td>
+    </tr>
+    <tr>
+      <td>mon_exp_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽辅颜色</td>
+    </tr>
+    <tr>
+      <td>mon_eye_color&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>怪兽眼睛颜色&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_exp</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽经验值</td>
+    </tr>
+    <tr>
+      <td>mon_level&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>怪兽的等级&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_health</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽健康度</td>
+    </tr>
+    <tr>
+      <td>mon_happy</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽愉悦度</td>
+    </tr>
+    <tr>
+      <td>friend_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>好友总数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>thumb&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>小屋被顶的次数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>visits&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>小屋的访问次数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;mood</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户心情&nbsp;</td>
+    </tr>
+    <tr>
+      <td>fav_color&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户最爱的颜色&nbsp;</td>
+    </tr>
+    <tr>
+      <td>fav_pet&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户最爱的精灵&nbsp;</td>
+    </tr>
+    <tr>
+      <td>fav_fruit&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户最爱的水果&nbsp;</td>
+    </tr>
+    <tr>
+      <td>persinal_sign&nbsp;</td>
+      <td>char(64)&nbsp;</td>
+      <td>最大64&nbsp;</td>
+      <td>个性签名&nbsp;</td>
+    </tr>
+    <tr>
+      <td>room_num&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户房间数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>pet_num&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户精灵的数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>max_puzzle_score&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>益智游戏最高得分&nbsp;</td>
+    </tr>
+    <tr>
+      <td>flag1</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>用于新手引导的标准位&nbsp;</td>
+    </tr>
+    <tr>
+      <td>approved_message_num</td>
+      <td>uint16&nbsp;</td>
+      <td>2</td>
+      <td>审核过的留言数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>unapproved_message_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2</td>
+      <td>未审核过的留言数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>friend_apply_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>好友申请的数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>all_pet_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>拥有的精灵的种类数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>...&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>精灵循环区</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td>pet_id</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>小怪兽id&nbsp;</td>
+    </tr>
+    <tr>
+      <td>total_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>这类精灵的总数量</td>
+    </tr>
+    <tr><td>follow_num&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>这类精灵在家里的数量&nbsp;</td>
+</tr>
+<tr>
+      <td>...&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>plant_num&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>种植园植物的数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>...&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>植物的循环区&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>hole_id&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>植物的坑编号&nbsp;</td>
+    </tr>
+    <tr>
+      <td>plant_id&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>植物的编号&nbsp;</td>
+    </tr>
+    <tr>
+      <td>color&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>植物的颜色&nbsp;</td>
+    </tr>
+    <tr>
+      <td>growth&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>植物的成长值&nbsp;</td>
+    </tr>
+    <tr>
+      <td>last_growth_time&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>上次更新成长值的时间&nbsp;</td>
+    </tr>
+  <tr><td>last_add_extra_growth_time&nbsp;</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>上次更新额外成长值的时间</td>
+</tr>
+<tr><td>last_growth</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>上次进种植园植物的成长值</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.10" class="outline-3">
+<h3 id="sec-6.10"><span class="section-number-3">6.10</span> 拉取背包中的物品: 32770(0X8002) </h3>
+<div id="text-6.10" class="outline-text-3">
+<ul>
+<li id="sec-6.10.1">请求包 <br />
+空 </li>
+<li id="sec-6.10.2">应答包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>count</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>物品总数量</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>stuff_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>物品id</td>
+    </tr>
+    <tr>
+      <td>stuff_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>物品个数</td>
+    </tr>
+    <tr>
+      <td>used_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>已使用的个数</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.11" class="outline-3">
+<h3 id="sec-6.11"><span class="section-number-3">6.11</span> 背包中增加物品; 32771(0X8003) </h3>
+<div id="text-6.11" class="outline-text-3">
+<ul>
+<li id="sec-6.11.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>cost_coins</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>扣除的金币数量</td>
+    </tr>
+    <tr>
+      <td>count</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>物品总数量</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>stuff_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>物品id</td>
+    </tr>
+    <tr>
+      <td>stuff_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>物品个数</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.11.2">应答包 <br />
+空 </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.12" class="outline-3">
+<h3 id="sec-6.12"><span class="section-number-3">6.12</span> 更新背包中物品数量: 32772(0X8004) </h3>
+<div id="text-6.12" class="outline-text-3">
+<ul>
+<li id="sec-6.12.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>stuff_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>物品id</td>
+    </tr>
+    <tr>
+      <td>stuff_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>更新后的值</td>
+    </tr>
+    <tr>
+      <td>used_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>更新后的值</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.12.2">应答包 <br />
+空 </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.13" class="outline-3">
+<h3 id="sec-6.13"><span class="section-number-3">6.13</span> 拉取用户的房间数量: 32773(0X8005) </h3>
+<div id="text-6.13" class="outline-text-3">
+<ul>
+<li id="sec-6.13.1">请求包 <br />
+</li>
+<li id="sec-6.13.2">应答包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>room_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>用户拥有的房间总个数</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>room_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>房间id（主房间默认为1）</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.14" class="outline-3">
+<h3 id="sec-6.14"><span class="section-number-3">6.14</span> 拉取单个房间信息: 32774(0X8006) </h3>
+<div id="text-6.14" class="outline-text-3">
+<ul>
+<li id="sec-6.14.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>room_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>房间id</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.14.2">应答包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup> <thead>     <tr>
+<th scope="col">名称</th>
+<th scope="col">类型</th>
+<th scope="col">字节数</th>
+<th scope="col">说明</th>
+    </tr>
+</thead>     <tbody><tr>
+      <td>buf</td>
+      <td>char(0)</td>
+      <td>buf_len(变长)</td>
+      <td>buf内容</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.15" class="outline-3">
+<h3 id="sec-6.15"><span class="section-number-3">6.15</span> 新增一个房间: 32775(0X8007) </h3>
+<div id="text-6.15" class="outline-text-3">
+<ul>
+<li id="sec-6.15.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>wallpaper_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>floor_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>windows_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>door_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>room_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>房间id</td>
+    </tr>
+    <tr>
+      <td>room_buf</td>
+      <td>char()</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.15.2">返回包 <br />
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.16" class="outline-3">
+<h3 id="sec-6.16"><span class="section-number-3">6.16</span> 更新role表中的字段: 32776(0X8008) </h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>count&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>要修改的字段的个数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>....&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>要修改的字段(1:登录时间,2:愉悦度,3:健康值,4:上次访问种植园时间,5:益智游戏最高分,6:登出时间,7:flag1)&nbsp;</td>
+    </tr>
+    <tr>
+      <td>value&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>修改后的值&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.16.2">应答包 <br />
+空 </li>
+</ul>
+</div>
+</div>
+<div id="outline-container-6.17" class="outline-3">
+<h3 id="sec-6.17"><span class="section-number-3">6.17</span> 更新房间room_buf: 32777(0X8009) </h3>
+<div id="text-6.17" class="outline-text-3">
+<ul>
+<li id="sec-6.17.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>stuff_change_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>要变化的物品数量</td>
+    </tr>
+    <tr>
+      <td>…</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>stuff_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>要变化的物品id</td>
+    </tr>
+    <tr>
+      <td>stuff_num</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>stuff_flow</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>方向(0:bag-&gt;room 1:room-&gt;bag)</td>
+    </tr>
+    <tr>
+      <td>room_id</td>
+      <td>uint32</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>room_buf_len</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>buf长度</td>
+    </tr>
+    <tr>
+      <td>room_buf</td>
+      <td>char(0)</td>
+      <td></td>
+      <td>buf 内容</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.17.2">应答包 <br />
+空 </li>
+</ul>
+</div>
+</div>
+<div id="postamble">
+<h3 id="sec-6.17"><span style="font-size:18px;" class="section-number-3">6.18</span><span style="font-size:18px;">&nbsp;拉取益智游戏信息</span><span style="font-size:18px;">: 32778(0X800A)</span></h3>
+<div id="text-6.17" class="outline-text-3">
+<ul>
+<li style="margin-bottom:0.5em;" id="sec-6.17.1"><span style="font-size:16px;">请求包</span><span style="font-size:16px;">&nbsp;</span><br />
+ <div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;border-collapse:collapse;font-size:16px;" class="Apple-style-span">空</span></span></div>
+ </li>
+<li style="margin-bottom:0.5em;" id="sec-6.17.2"><span style="font-size:16px;">应答包</span><span style="font-size:16px;">&nbsp;</span><br />
+<span style="line-height:21px;font-size:14px;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table style="border-bottom:#ce4542 0px outset;border-left:#ce4542 0px outset;background-color:white;border-collapse:collapse;border-top:#ce4542 0px outset;border-right:#ce4542 0px outset;-webkit-border-horizontal-spacing:0px;-webkit-border-vertical-spacing:0px;" border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">count</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">要变化的物品数量</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">…</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">type</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint8</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">1</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">游戏类型</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">last_playtime</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint32</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">4</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">上次完游戏的时间</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">max_score</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">获得的最高分</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">total_score</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint32&nbsp; &nbsp;</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">4</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">总共获得的分数</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">total_num</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">总共参加的次数</span></td>
+    </tr>
+  </tbody>
+</table>
+</span></span></li>
+</ul>
+</div>
+<h3 id="sec-6.17"><span style="font-size:18px;" class="section-number-3">6.19</span><span style="font-size:18px;">&nbsp;提交益智游戏答题信息: 32779(0X800B)</span></h3>
+<div id="text-6.17" class="outline-text-3">
+<ul>
+<li style="margin-bottom:0.5em;" id="sec-6.17.1"><span style="font-size:16px;">请求包</span><span style="font-size:16px;">&nbsp;</span><br />
+ <div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;border-collapse:collapse;" class="Apple-style-span"><span style="line-height:18px;border-collapse:separate;font-size:16px;" class="Apple-style-span">   <table style="border-bottom:#ce4542 0px outset;border-left:#ce4542 0px outset;background-color:white;border-collapse:collapse;border-top:#ce4542 0px outset;border-right:#ce4542 0px outset;-webkit-border-horizontal-spacing:0px;-webkit-border-vertical-spacing:0px;" border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">type</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint8</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">1</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">游戏类型</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">last_playtime</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint32</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">4</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">上次完游戏的时间(0表示不更新)</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">max_score</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">获得的最高分(0表示不更新)</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="line-height:21px;font-size:16px;" class="Apple-style-span">score</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16&nbsp; &nbsp;</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE1">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:14px;">获得的分数</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE2">num</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE2">uint8</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE2">1</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE2">增加的答题次数</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE1">coins</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE1">获得的金币数</span></td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE1">exp</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE1">获得的经验值</span></td>
+    </tr>
+    <tr>
+      <td>level&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>&nbsp;1</td>
+      <td>等级的提升&nbsp;</td>
+    </tr>
+    <tr>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE1">happy</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">uint16</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span style="font-size:16px;">2</span></td>
+      <td style="border-bottom:#ce4542 1px dashed;border-left:#ce4542 1px dashed;padding-bottom:5px;padding-left:5px;padding-right:5px;font:12px/1.5 'sans serif', tahoma, verdana, helvetica;vertical-align:top;border-top:#ce4542 1px dashed;border-right:#ce4542 1px dashed;padding-top:5px;"><span class="STYLE1">获得的愉悦值</span></td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+</ul>
+<ul>
+<li style="margin-bottom:0.5em;" id="sec-6.17.2"><span style="font-size:16px;">应答包</span> <div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;border-collapse:collapse;font-size:16px;" class="Apple-style-span">空</span></span></div>
+</li>
+</ul>
+</div>
+<div id="outline-container-6.16" class="outline-3">
+<h3 id="sec-6.16"><span class="section-number-3">6.20</span>&nbsp;修改role表中的值: 32780(0X800C) </h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包 <br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>0:增加 1:减少&nbsp;</td>
+    </tr>
+    <tr>
+      <td>count&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>修改的字段的个数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>...&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>字段的类型&nbsp;</td>
+    </tr>
+    <tr>
+      <td>value&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>要更改的值&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+<li id="sec-6.16.2">应答包 <br />
+空 </li>
+</ul>
+</div>
+</div>
+<div id="text-6.16" class="outline-text-3">
+<ul></ul>
+</div>
+<h3 id="sec-6.16"><span class="section-number-3">6.21</span>&nbsp;拉取好友id列表: 32781(0X800D)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span class="Apple-style-span" style="font-size:x-small;"><span class="Apple-style-span" style="line-height:normal;"><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><caption></caption><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><tbody><tr><td>begin_id&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>起始的好友位置&nbsp;</td>
+</tr>
+<tr><td>num</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>需要拉取的好友数量&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td><span style="line-height:21px;font-size:16px;" class="Apple-style-span">count</span></td>
+      <td><span style="font-size:16px;">uint16</span></td>
+      <td><span style="font-size:16px;">2</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">好友的数量</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:16px;">…</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">user_id</span></span></td>
+      <td><span style="font-size:16px;">uint32</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">好友id</span></span></td>
+    </tr>
+    <tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>1:未分组的好友&nbsp;</td>
+    </tr>
+    <tr>
+      <td>is_bestfriend&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>是否最爱朋友(0:不是,1:是)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+<h3 id="sec-6.16"><span class="section-number-3">6.22</span>&nbsp;新增一条好友记录: 32782(0X800E)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>peer_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>申请者的米米号</td>
+    </tr>
+    <tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>记录类型(0：好友申请，1:位分组好友，1时没有后面的字段)&nbsp;</td>
+    </tr>
+    <tr>
+      <td>remard_count&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>remark的字符数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>remark</td>
+      <td>char()&nbsp;</td>
+      <td>不定长&nbsp;</td>
+      <td>申请好友时的留言&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></p>
+<p><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><br />
+</span></span></p>
+</li>
+</ul>
+</div>
+<h3 id="sec-6.16"><span class="section-number-3">6.23</span>&nbsp;拉取好友申请信息: 32783(0X800F)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td><span style="line-height:21px;font-size:16px;" class="Apple-style-span">count</span></td>
+      <td><span style="font-size:16px;">uint8</span></td>
+      <td><span style="font-size:16px;">1</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">申请的数量(最多25个)</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:16px;">…</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">user_id</span></span></td>
+      <td><span style="font-size:16px;">uint32</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">申请者米米号</span></span></td>
+    </tr>
+    <tr>
+      <td>remark_len&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>remark的字符数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>remark</td>
+      <td>char()&nbsp;</td>
+      <td>不定长&nbsp;</td>
+      <td>申请好友时的留言(最多256字节)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+</ul>
+</div>
+<p></p>
+<h3 id="sec-6.16"><span class="section-number-3">6.24</span>&nbsp;设置好友状态: 32784(0X8010)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>peer_id</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>对方米米号&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>uint8</td>
+      <td>1&nbsp;</td>
+      <td>好友状态(0：好友申请，1：未分组好友，2：被屏蔽,-1表示没有更新)&nbsp;</td>
+    </tr>
+    <tr>
+      <td>is_bestfriend</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>是否最爱好友(0:不是,1:是,-1表示没有更新)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></div>
+</li>
+</ul>
+</div>
+<p></p>
+<h3 id="sec-6.16"><span class="section-number-3">6.25</span>&nbsp;拉取单个好友的基本信息: 32785(0X8011)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><br />
+</span></span></div>
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>name</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>用户昵称</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>用户性别(0:女性 1：男性)</td>
+    </tr>
+    <tr>
+      <td>country_id</td>
+      <td>uint32</td>
+      <td>2</td>
+      <td>国籍id</td>
+    </tr>
+    <tr>
+      <td>vip</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>是否vip会员(0:不是 1：是)</td>
+    </tr>
+    <tr>
+      <td>birthday</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>生日,格式:19901123</td>
+    </tr>
+    <tr>
+      <td>last_login_time</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>上次登录时间</td>
+    </tr>
+    <tr>
+      <td>mon_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽id</td>
+    </tr>
+    <tr>
+      <td>mon_main_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽主颜色</td>
+    </tr>
+    <tr>
+      <td>mon_exp_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽辅颜色</td>
+    </tr>
+    <tr>
+      <td>mon_level&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>怪兽等级&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+</ul>
+</div>
+<p></p>
+<h3 id="sec-6.16"><span style="font-weight:normal;" class="Apple-style-span"> <h3 style="line-height:18px;font-size:12px;" id="sec-6.16"><span class="section-number-3">6.26</span>&nbsp;拉取留言板信息: 32786(0X8012)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>page</td>
+      <td>uint8</td>
+      <td>2&nbsp;</td>
+      <td>留言板页数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>page_num</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>每页的留言数(最多8个)&nbsp;</td>
+    </tr>
+    <tr>
+      <td>status&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>只拉取符合状态的留言(status为1:未审核,2:已审核,4:被举报状态的组合)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">应答包&nbsp;</span><br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>total_count&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>用户总的留言条数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;count</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>实际拉取到的留言的数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>...</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>id</td>
+      <td>uint32</td>
+      <td>4&nbsp;</td>
+      <td>留言的id&nbsp;</td>
+    </tr>
+    <tr>
+      <td>peer_id</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>留言用户的id&nbsp;</td>
+    </tr>
+    <tr>
+      <td>icon&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>留言图案&nbsp;</td>
+    </tr>
+    <tr>
+      <td>color&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>留言便签的颜色&nbsp;</td>
+    </tr>
+    <tr>
+      <td>status&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>留言的状态(1:未审核,2:已审核,4:被举报状态的组合)&nbsp;</td>
+    </tr>
+    <tr>
+      <td>create_time&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>留言创建的时间&nbsp;</td>
+    </tr>
+    <tr>
+      <td>message_count&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>留言的字节数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>message&nbsp;</td>
+      <td>char()&nbsp;</td>
+      <td>不定长&nbsp;</td>
+      <td>留言的内容&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+</ul>
+</div>
+</span></h3>
+<h3 id="sec-6.16"><span style="font-weight:normal;" class="Apple-style-span"> <h3 style="line-height:18px;font-size:12px;" id="sec-6.16"><span class="section-number-3">6.27</span>&nbsp;插入一条新留言: 32787(0X8013)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>peer_id&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4</td>
+      <td>留言的用户的米米号&nbsp;</td>
+    </tr>
+    <tr>
+      <td>icon&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>留言图案的编号&nbsp;</td>
+    </tr>
+    <tr>
+      <td>color&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>留言颜色的编号&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>留言的状态&nbsp;</td>
+    </tr>
+    <tr>
+      <td>message&nbsp;</td>
+      <td>char()&nbsp;</td>
+      <td>不定长&nbsp;</td>
+      <td>留言的内容&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">应答包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><br />
+</span></span></div>
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>留言的id</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</span></li>
+</ul>
+</div>
+</span></h3>
+<h3 id="sec-6.16"><span style="font-weight:normal;" class="Apple-style-span"> <h3 style="line-height:18px;font-size:12px;" id="sec-6.16"><span class="section-number-3">6.27</span>&nbsp;更改留言的状态: 32788(0X8014)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>id&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4</td>
+      <td>留言的id&nbsp;</td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>更改的类型(0:删除留言,1:未审核,2:已审核,4:被举报)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">应答包&nbsp;</span><br />
+<div></div>
+</li>
+</ul>
+</div>
+</span></h3>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 空</p>
+<p></p>
+<h3 id="sec-6.16"><span class="section-number-3">6.28</span>&nbsp;删除一个好友: 32789(0X8015)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>peer_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>要删除好友的米米号</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></p>
+</li>
+</ul>
+</div>
+<p></p>
+<p>&nbsp;</p>
+<h3 id="sec-6.16"><span class="section-number-3">6.29</span>&nbsp;用户小怪兽的操作: 32790(0X8016)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>1:增加一个小怪兽，2:删除一个小怪兽&nbsp;</td>
+    </tr>
+    <tr>
+      <td>pet_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>精灵id</td>
+    </tr>
+    <tr>
+      <td>status&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>小怪兽的状态&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>num</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>之前是否拥有的该类精灵（0：没有，1：有）</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></p>
+</li>
+</ul>
+</div>
+<h3 id="sec-6.16"><span class="section-number-3">6.30</span>&nbsp;新增一颗植物: 32791(0X8017)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>plant_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>植物id</td>
+    </tr>
+    <tr>
+      <td>hole_id&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>坑的编号(1,2,3)&nbsp;</td>
+    </tr>
+    <tr>
+      <td>color&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>植物的颜色&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></p>
+</li>
+</ul>
+</div>
+<p></p>
+<h3 id="sec-6.16"><span class="section-number-3">6.31</span>&nbsp;删除一颗植物: 32792(0X8018)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>hole_id&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>坑的编号(1,2,3),0表示删除所有的植&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></p>
+</li>
+</ul>
+</div>
+<p></p>
+<p></p>
+<h3 id="sec-6.16"><span class="section-number-3">6.32</span>&nbsp;更改植物的成长值并更新修改成长值时的时间: 32793(0X8019)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span"><br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>count&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>需要修改的植物的个数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;...</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>growth&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>增加的成长值&nbsp;</td>
+    </tr>
+    <tr>
+      <td>hole_id&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>种植的坑的编号&nbsp;</td>
+    </tr>
+  <tr><td>growth_time&nbsp;</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>上次更新成长值的时间&nbsp;</td>
+</tr>
+<tr><td>last_add_extra_growth_time</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>上次增加额外成长值的时间&nbsp;</td>
+</tr>
+<tr><td>last_growth_value&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>上次进种植园时植物的成长值&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></p>
+</li>
+</ul>
+</div>
+<p></p>
+<h3><span style="line-height:18px;font-size:12px;font-weight:normal;" class="Apple-style-span"> <h3>6.33 拉取活跃用户的id：32794(0X801A)</h3>
+<p></p>
+<p></p>
+<ul>
+<li id="sec-6.17.1"><span style="font-size:16px;">请求包</span> <span style="line-height:24px;font-size:16px;" class="Apple-style-span">空&nbsp;</span></li>
+</ul>
+<p></p>
+<p></p>
+<ul>
+<li id="sec-6.17.2"><span style="font-size:16px;">应答包</span><span style="font-size:16px;">&nbsp;</span><br />
+<span style="line-height:21px;font-size:14px;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td><span style="line-height:21px;font-size:16px;" class="Apple-style-span">count</span></td>
+      <td><span style="font-size:16px;">uint8</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">1</span></span></td>
+      <td><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">实际获得的活跃用户的数量</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:16px;">…</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">user_id</span></span></td>
+      <td><span style="font-size:16px;">uint32&nbsp; &nbsp;</span></td>
+      <td><span style="font-size:16px;">4</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">用户米米号</span></span></td>
+    </tr>
+    <tr>
+      <td>is_vip</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户是否vip(1:是,0:否)&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></li>
+</ul>
+</span></h3>
+<h3><span style="line-height:18px;font-size:12px;font-weight:normal;" class="Apple-style-span"> <h3 id="sec-6.16"><span style="font-weight:normal;" class="Apple-style-span"> <h3 style="line-height:18px;font-size:12px;" id="sec-6.16"><span class="section-number-3">6.34</span>&nbsp;获取天限制表的值: 32795(0X801B)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>限制的类型&nbsp;</td>
+    </tr>
+    <tr>
+      <td>time&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>要获取值的时间&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">应答包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><br />
+</span></span></div>
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>value</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>当天的值</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</span></li>
+</ul>
+</div>
+</span></h3>
+</span></h3>
+<div>
+<h3 id="sec-6.16"><span style="font-weight:normal;" class="Apple-style-span"> <h3 style="line-height:18px;font-size:12px;" id="sec-6.16"><span class="section-number-3">6.35</span>&nbsp;增加天限制表的值: 32796(0X801C)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>type&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>限制的类型&nbsp;</td>
+    </tr>
+    <tr>
+      <td>time&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>要获取值的时间&nbsp;</td>
+    </tr>
+    <tr>
+      <td>restrict_value&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>要增加的值&nbsp;</td>
+    </tr>
+    <tr><td>&nbsp;count</td>
+<td>uint8&nbsp;</td>
+<td>1</td>
+<td>增加的物品的个数&nbsp;</td>
+</tr>
+<tr><td>。。。&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+      <td>valut_id&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>增加的值的类型id&nbsp;</td>
+    </tr>
+  <tr><td>value&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2</td>
+<td>增加的物品的个数&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">应答包&nbsp;</span><br />
+<div style="line-height:18px;font-size:12px;"><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></div>
+</li>
+</ul>
+</div>
+</span></h3>
+</div>
+<h3></h3>
+<h2></h2>
+<h3><span class="section-number-3">6.36</span>&nbsp;拉取商业街用户的profile信息: 32797(0X801D)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;font-weight:normal;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;font-weight:normal;" class="Apple-style-span">应答包&nbsp;</span> <div><span style="line-height:18px;font-size:xx-small;font-weight:normal;" class="Apple-style-span"><br />
+</span>   <table style="line-height:18px;font-size:12px;font-weight:normal;" border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">name</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">char(16)</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">16</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户昵称</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">gender</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户性别(0:女性 1：男性)</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">country_id</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint16</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">2</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">国籍id</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">vip</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">是否vip会员(0:不是 1：是)</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">birthday</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint32</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">生日,格式:19901123</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">mon_id</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint32</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">怪兽id</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">mon_name</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">char(16)</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">16</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">怪兽昵称</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">mon_main_color</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint32</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">怪兽主颜色</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">mon_exp_color</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint32</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">怪兽辅颜色</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">mon_level&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint16&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">2&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">怪兽的等级&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">mon_health</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint32</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">怪兽健康度</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">mon_happy</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint32</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">4</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">怪兽愉悦度</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">friend_num&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint16&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">2&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">好友总数&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">visits&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint32&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">4&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">小屋的访问次数&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">&nbsp;mood</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户心情&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">fav_color&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户最爱的颜色&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">fav_pet&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户最爱的精灵&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">fav_fruit&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户最爱的水果&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">persinal_sign&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">char(64)&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">最大64&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">个性签名&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">room_num&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户房间数量&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">pet_num&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">用户精灵的数量&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">max_puzzle_score&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">uint8&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">1&nbsp;</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">益智游戏最高得分&nbsp;</span></span></td>
+    </tr>
+    <tr>
+      <td>pet_id&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>跟随精灵的id&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+</div>
+</li>
+</ul>
+</div>
+<h3><span style="line-height:18px;font-size:12px;font-weight:normal;" class="Apple-style-span"> <h3 id="sec-6.16"><span style="font-weight:normal;" class="Apple-style-span"> <h3 style="line-height:18px;font-size:12px;" id="sec-6.16"><span class="section-number-3">6.37</span>&nbsp;怪兽吃食物: 32798(0X801E)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>item_id&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>食物的物品id&nbsp;</td>
+    </tr>
+    <tr>
+      <td>reward_health&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>增加的健康值&nbsp;</td>
+    </tr>
+    <tr>
+      <td>reward_happy&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>增加的愉悦值&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">应答包&nbsp;</span><br />
+<div style="line-height:18px;font-size:12px;"><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></div>
+</li>
+</ul>
+</div>
+</span></h3>
+</span></h3>
+<h3><span style="line-height:18px;font-size:12px;font-weight:normal;" class="Apple-style-span"> <h3 id="sec-6.16"><span style="font-weight:normal;" class="Apple-style-span"> <h3 style="line-height:18px;font-size:12px;" id="sec-6.16"><span class="section-number-3">6.38</span>&nbsp;修改用户的个性签名: 32799(0X801F)</h3>
+<div id="text-6.16" class="outline-text-3">
+<ul>
+<li style="line-height:18px;font-size:12px;" id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>personal_sign&nbsp;</td>
+      <td>char(0)&nbsp;</td>
+      <td>不定长&nbsp;</td>
+      <td>用户的个性签名&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">应答包&nbsp;</span><br />
+<div style="line-height:18px;font-size:12px;"><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></div>
+</li>
+</ul>
+</div>
+</span></h3>
+</span></h3>
+<h3></h3>
+<h3 id="sec-6.9"><span class="section-number-3">6.39</span>&nbsp;查询其他用户的role信息: 32800(0X8020)</h3>
+<div style="line-height:18px;font-size:12px;font-weight:normal;" id="text-6.9" class="outline-text-3">
+<ul>
+<li id="sec-6.9.1">请求包&nbsp;<br />
+空 </li>
+<li id="sec-6.9.2">应答包&nbsp;<br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="right" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>名称&nbsp;</td>
+      <td>类型&nbsp;</td>
+      <td>字节数&nbsp;</td>
+      <td>说明&nbsp;</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>用户昵称</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>用户性别(0:女性 1：男性)</td>
+    </tr>
+    <tr>
+      <td>country_id</td>
+      <td>uint16</td>
+      <td>2</td>
+      <td>国籍id</td>
+    </tr>
+    <tr>
+      <td>vip</td>
+      <td>uint8</td>
+      <td>1</td>
+      <td>是否vip会员(0:不是 1：是)</td>
+    </tr>
+    <tr>
+      <td>birthday</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>生日,格式:19901123</td>
+    </tr>
+    <tr>
+      <td>register_time</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>注册时间</td>
+    </tr>
+    <tr>
+      <td>coins</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>拥有的金币数</td>
+    </tr>
+    <tr>
+      <td>last_login_time</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>上次登录时间</td>
+    </tr>
+    <tr>
+      <td>last_visit_plantation_time</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>上次访问种植园的时间&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_id</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽id</td>
+    </tr>
+    <tr>
+      <td>mon_name</td>
+      <td>char(16)</td>
+      <td>16</td>
+      <td>怪兽昵称</td>
+    </tr>
+    <tr>
+      <td>mon_main_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽主颜色</td>
+    </tr>
+    <tr>
+      <td>mon_exp_color</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽辅颜色</td>
+    </tr>
+    <tr>
+      <td>mon_eye_color&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>怪兽眼睛颜色&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_exp</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽经验值</td>
+    </tr>
+    <tr>
+      <td>mon_level&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>怪兽的等级&nbsp;</td>
+    </tr>
+    <tr>
+      <td>mon_health</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽健康度</td>
+    </tr>
+    <tr>
+      <td>mon_happy</td>
+      <td>uint32</td>
+      <td>4</td>
+      <td>怪兽愉悦度</td>
+    </tr>
+    <tr>
+      <td>friend_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>好友总数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>thumb&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>小屋被顶的次数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>visits&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>小屋的访问次数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;mood</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户心情&nbsp;</td>
+    </tr>
+    <tr>
+      <td>fav_color&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户最爱的颜色&nbsp;</td>
+    </tr>
+    <tr>
+      <td>fav_pet&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户最爱的精灵&nbsp;</td>
+    </tr>
+    <tr>
+      <td>fav_fruit&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户最爱的水果&nbsp;</td>
+    </tr>
+    <tr>
+      <td>persinal_sign&nbsp;</td>
+      <td>char(64)&nbsp;</td>
+      <td>最大64&nbsp;</td>
+      <td>个性签名&nbsp;</td>
+    </tr>
+    <tr>
+      <td>room_num&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户房间数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>pet_num&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>用户精灵的数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>max_puzzle_score&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>益智游戏最高得分&nbsp;</td>
+    </tr>
+    <tr>
+      <td>approved_message_num</td>
+      <td>uint16&nbsp;</td>
+      <td>2</td>
+      <td>审核过的留言数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>unapproved_message_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2</td>
+      <td>未审核过的留言数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>friend_apply_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>好友申请的数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>following_pet_num&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>跟随小怪兽的数量&nbsp;</td>
+    </tr>
+    <tr>
+      <td>...&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>跟随小怪兽id循环区</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    
+    <tr>
+      <td>pet_id</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>小怪兽id&nbsp;</td>
+    </tr>
+    
+  </tbody>
+</table>
+</li>
+</ul>
+</div>
+<h3></h3>
+<h3 id="sec-6.16"><span class="section-number-3">6.40</span>&nbsp;登录时修改用户的数据: 32801(0X8021)</h3>
+<div style="line-height:18px;font-size:12px;font-weight:normal;" id="text-6.16" class="outline-text-3">
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span"><br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>login_time&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>用户的登录时间&nbsp;</td>
+    </tr>
+    <tr>
+      <td>monster_happy&nbsp;</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>怪兽愉悦度&nbsp;</td>
+    </tr>
+    <tr>
+      <td>count&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>需要修改的植物的个数&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;...</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>growth&nbsp;</td>
+      <td>uint16&nbsp;</td>
+      <td>2&nbsp;</td>
+      <td>增加的成长值&nbsp;</td>
+    </tr>
+    <tr>
+      <td>hole_id&nbsp;</td>
+      <td>uint8&nbsp;</td>
+      <td>1&nbsp;</td>
+      <td>种植的坑的编号&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></p>
+</li>
+</ul>
+</div>
+<h3></h3>
+<h3 id="sec-6.16"><span class="section-number-3">6.41</span>&nbsp;获取精灵园精灵信息: 32802(0X8022)</h3>
+<div id="text-6.16" class="outline-text-3" style="font-weight:normal;"><ul><li id="sec-6.16.1" style="line-height:18px;font-size:12px;">请求包&nbsp;<br />
+<div><span class="Apple-style-span" style="font-size:x-small;"><span class="Apple-style-span" style="line-height:normal;"><span class="Apple-style-span" style="line-height:18px;font-size:12px;"><br />
+</span></span></span></div>
+<div><span class="Apple-style-span" style="font-size:x-small;"><span class="Apple-style-span" style="line-height:normal;"><span class="Apple-style-span" style="line-height:18px;font-size:12px;"><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><tbody><tr><td>id</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>只获得主键大于id的精灵&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><tbody></tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span class="Apple-style-span" style="font-size:x-small;"><span class="Apple-style-span" style="line-height:normal;"><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><tbody>
+<tr><td>count&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>精灵的个数&nbsp;</td>
+</tr>
+<tr><td>&nbsp;。。。</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>pet_id&nbsp;</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>精灵id</td>
+</tr>
+<tr><td>total_num&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2</td>
+<td>该类精灵的总数量&nbsp;</td>
+</tr>
+<tr><td>follow_num&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>该类精灵在家里的数量&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</span></span></p>
+</li>
+</ul>
+</div>
+<h3></h3>
+<h3 id="sec-6.16"><span class="section-number-3">6.42</span>&nbsp;获取用户实际可见的留言条数: 32803(0X8023)</h3>
+<div id="text-6.16" class="outline-text-3" style="font-size:12px;font-weight:normal;line-height:18px;"><ul><li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span class="Apple-style-span" style="font-size:x-small;"><span class="Apple-style-span" style="line-height:normal;"><span class="Apple-style-span" style="line-height:18px;font-size:12px;"><br />
+</span></span></span></div>
+<div><span class="Apple-style-span" style="font-size:x-small;"><span class="Apple-style-span" style="line-height:normal;"><span class="Apple-style-span" style="line-height:18px;font-size:12px;"><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><tbody><tr><td>peer_id</td>
+<td>uint32&nbsp;</td>
+<td>4&nbsp;</td>
+<td>查看的用户的liuyanb&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><tbody></tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span class="Apple-style-span" style="font-size:x-small;"><span class="Apple-style-span" style="line-height:normal;"><table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides"><colgroup><col align="left" /><col align="left" /><col align="left" /><col align="left" /></colgroup><tbody><tr><td>count&nbsp;</td>
+<td>uint16&nbsp;</td>
+<td>2&nbsp;</td>
+<td>实际的留言的条数&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</span></span></p>
+</li>
+</ul>
+</div>
+<h3>6.50 增加用户名字对应的米米号：20001(0X4E21)</h3>
+<div>
+<ul>
+<li id="sec-6.16.1">请求包&nbsp;<br />
+<div><span style="font-size:x-small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span"><br />
+  <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>name&nbsp;</td>
+      <td>char(16)&nbsp;</td>
+      <td>16&nbsp;</td>
+      <td>用户名字&nbsp;</td>
+    </tr>
+    <tr>
+      <td>user_id</td>
+      <td>uint32&nbsp;</td>
+      <td>4&nbsp;</td>
+      <td>用户米米号&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.16.2">应答包&nbsp;<br />
+<p><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span">空</span></span></p>
+</li>
+</ul>
+</div>
+<h3><br />
+6.51 获得用户名字对应的所有米米号：20002(0X4E22)</h3>
+<ul>
+<li id="sec-6.17.1"><span style="font-size:16px;">请求包</span><span style="font-size:16px;">&nbsp;</span><br />
+<div><span style="font-size:small;" class="Apple-style-span"><span style="line-height:normal;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td>name&nbsp;</td>
+      <td>char(16)&nbsp;</td>
+      <td>16&nbsp;</td>
+      <td>用户名字&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</span></span></span></div>
+</li>
+<li id="sec-6.17.2"><span style="font-size:16px;">应答包</span><span style="font-size:16px;">&nbsp;</span><br />
+<span style="line-height:21px;font-size:14px;" class="Apple-style-span"><span style="line-height:18px;font-size:12px;" class="Apple-style-span">   <table border="2" rules="groups" cellspacing="0" cellpadding="6" frame="hsides">
+<caption></caption> <colgroup> <col align="left" /> <col align="left" /> <col align="left" /> <col align="left" /></colgroup>     <tbody><tr>
+      <td><span style="line-height:21px;font-size:16px;" class="Apple-style-span">count</span></td>
+      <td><span style="font-size:16px;">uint8</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">1</span></span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">查找到的用户的数量</span></span></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:16px;">…</span></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:21px;" class="Apple-style-span">user_id</span></span></td>
+      <td><span style="font-size:16px;">uint32&nbsp; &nbsp;</span></td>
+      <td><span style="font-size:16px;">4</span></td>
+      <td><span style="font-size:small;" class="Apple-style-span"><span style="line-height:24px;" class="Apple-style-span">用户米米号</span></span></td>
+    </tr>
+  </tbody>
+</table>
+</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<p class="author">Author: monster@taomee<a href="mailto:henry@taomee.com">&lt;henry@taomee.com&gt;</a> </p>
+<p class="date">Date: 2011-08-01 16:21:35 CST</p>
+<p class="creator">HTML generated by org-mode 6.30c in emacs 23</p>
+</div>
+<div></div>
+<div></div>

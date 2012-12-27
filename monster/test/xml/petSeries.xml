@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf8"?>
+<petSeries>
+	<Series ID="1" Name="跳跳系" includeElves="1,2,3,4">
+		<pet id="1" name=""/>
+		<pet id="2" name=""/>
+		<pet id="3" name=""/>
+		<pet id="4" name=""/>
+	</Series>
+	<Series ID="2" Name="萌宠系" includeElves="5,6,7,8">
+		<pet id="5" name=""/>
+		<pet id="6" name=""/>
+		<pet id="7" name=""/>
+		<pet id="8" name=""/>	
+	 </Series>
+	<Series ID="3" Name="英雄系" includeElves="9,10,11,12"> 
+		<pet id= "9" name=""/>
+		<pet id= "10" name=""/>
+		<pet id= "11" name=""/>
+		<pet id= "12" name=""/>
+ 	</Series>
+	<Series ID="4" Name="植物系" includeElves="13,14,15,16"> 
+		<pet id= "13" name=""/>
+		<pet id= "14" name=""/>
+		<pet id= "15" name=""/>
+		<pet id= "16" name=""/>
+	</Series>
+	<Series ID="5" Name="神龙系" includeElves="17,18,19,20"> 
+		<pet id= "17" name=""/>
+		<pet id= "18" name=""/>
+		<pet id= "19" name=""/>
+		<pet id= "20" name=""/>
+	</Series>
+	<Series ID="6" Name="海洋系" includeElves="21,22,23,24"> 
+		<pet id= "21" name=""/>
+		<pet id= "22" name=""/>
+		<pet id= "23" name=""/>
+		<pet id= "24" name=""/>
+	</Series>
+</petSeries>

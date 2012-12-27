@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<num>
+    <cat name="家具" id="1">
+        <rarity id="0" cur_min="13" cur_max="13" next_min="1" next_max="3"/>
+        <rarity id="1" cur_min="2" cur_max="9" next_min="1" next_max="2"/>
+        <rarity id="2" cur_min="1" cur_max="2" next_min="0" next_max="1"/>
+        <rarity id="3" cur_min="0" cur_max="1" next_min="1" next_max="1"/>
+    </cat>
+    <cat name="食物" id="2">
+        <rarity id="0" cur_min="7" cur_max="7" next_min="1" next_max="3"/>
+        <rarity id="1" cur_min="2" cur_max="4" next_min="1" next_max="2"/>
+        <rarity id="2" cur_min="1" cur_max="2" next_min="0" next_max="1"/>
+        <rarity id="3" cur_min="0" cur_max="1" next_min="1" next_max="1"/>
+    </cat>
+</num>
+
+<!-- level:0表示相同等级和以下的物品， 1表示高三级的物品 -->

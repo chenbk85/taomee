@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="zh" xml:lang="zh">
+<head>
+
+<title>'x#+TITLE:     小怪兽项目数据库设计</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-04-24 11:00:23 CST"/>
+<meta name="author" content="monster@taomee"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style><link rel="stylesheet" type="text/css" href="http://10.1.1.28/smyang/base.css">
+<script type="text/javascript" src="http://10.1.1.28/smyang/org-info.js"></script>
+<script type="text/javascript" >
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "2");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "0");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "2");
+org_html_manager.set("VIEW", "content");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">'x#+TITLE:     小怪兽项目数据库设计</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 分表分库规则 </a></li>
+<li><a href="#sec-2">2 db_monster_[0..9] </a>
+<ul>
+<li><a href="#sec-2.1">2.1 角色表：t_role_[0..99] </a></li>
+<li><a href="#sec-2.2">2.2 背包物品表: t_stuff_[0..99] </a></li>
+<li><a href="#sec-2.3">2.3 房间表: t_room_[0..99] </a></li>
+<li><a href="#sec-2.4">2.4 小怪兽表:t_pet_[0..99] </a></li>
+<li><a href="#sec-2.5">2.5 好友表:t_friend_[0..99] </a></li>
+<li><a href="#sec-2.6">2.6 留言板表: t_pin_board_[0..99] </a></li>
+<li><a href="#sec-2.7">2.7 种植园表: t_plant_[0..99] </a></li>
+<li><a href="#sec-2.8">2.8 种植园奖励表: t_plant_reward_[0..99] </a></li>
+<li><a href="#sec-2.9">2.9 益智游戏表: t_puzzle_[0..99] </a></li>
+<li><a href="#sec-2.10">2.10 每天限制表:t_day_restrict_[0..99] </a></li>
+<li><a href="#sec-2.11">2.11 t_score_[0..99] 暂时未用 </a></li>
+<li><a href="#sec-2.12">2.12 t_badge_[0..99] 成就表 </a></li>
+<li><a href="#sec-2.13">2.13 t_npc_score_[0..99]:小屋评分 </a></li>
+<li><a href="#sec-2.14">2.14 t_game_[0..99]:小游戏表 </a></li>
+<li><a href="#sec-2.15">2.15 t_game2_change_[0..99]:小游戏兑换表(全部作为主键) </a></li>
+<li><a href="#sec-2.16">2.16 t_task_[0..99] :任务表 </a></li>
+<li><a href="#sec-2.17">2.17 t_denote_[0..99]:捐助表 </a></li>
+<li><a href="#sec-2.18">2.18 t_museum_[0..99]: 博物馆 </a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3 下面的 表位于config库里面  不进行分表操作 </a>
+<ul>
+<li><a href="#sec-3.1">3.1 用户id同名称的对应表t_name(根据名字进行好友搜索时用到): </a></li>
+<li><a href="#sec-3.2">3.2 各期捐助表:t_denote </a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> 分表分库规则 </h2>
+<div class="outline-text-2" id="text-1">
+
+<p>db_suffix = user_id % 10
+</p>
+<p>
+table_suffix = (user_id / 100) % 100
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> db_monster_[0..9] </h2>
+<div class="outline-text-2" id="text-2">
+
+
+
+</div>
+
+<div id="outline-container-2.1" class="outline-3">
+<h3 id="sec-2.1"><span class="section-number-3">2.1</span> 角色表：t_role_[0..99] </h3>
+<div class="outline-text-3" id="text-2.1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号  主键</td></tr>
+<tr><td>name</td><td>char(16)</td><td>用户角色昵称</td></tr>
+<tr><td>gender</td><td>tinyint(4)</td><td>用户性别(0:女性 1：男性)</td></tr>
+<tr><td>country_id</td><td>int(11)</td><td>国籍id</td></tr>
+<tr><td>vip</td><td>tinyint(4)</td><td>is_vip(0:不是 1:是)</td></tr>
+<tr><td>birthday</td><td>int(11)</td><td>生日(20110719)</td></tr>
+<tr><td>register_time</td><td>int(11)</td><td>注册时间</td></tr>
+<tr><td>coins</td><td>int(11)</td><td>金币数</td></tr>
+<tr><td>last_login_time</td><td>int(11)</td><td>上次登录时间</td></tr>
+<tr><td>last_logout_time</td><td>int(11)</td><td>上次登出时间</td></tr>
+<tr><td>mon_id</td><td>int(11)</td><td>选择的大怪兽id</td></tr>
+<tr><td>mon_name</td><td>char(16)</td><td>怪兽名字</td></tr>
+<tr><td>mon_main_color</td><td>int(11)</td><td>大怪兽主颜色</td></tr>
+<tr><td>mon_exp_color</td><td>int(11)</td><td>大怪兽辅颜色</td></tr>
+<tr><td>mon_eye_color</td><td>int(11)</td><td>大怪兽眼睛颜色</td></tr>
+<tr><td>mon_exp</td><td>int(11)</td><td>大怪兽经验值(等级根据经验值计算出来)</td></tr>
+<tr><td>mon_level</td><td>tinyint(4)</td><td>大怪兽等级</td></tr>
+<tr><td>mon_health</td><td>int(11)</td><td>大怪兽健康度</td></tr>
+<tr><td>mon_happy</td><td>int(11)</td><td>大怪兽愉悦度</td></tr>
+<tr><td>fav_color</td><td>tinyint(4)</td><td>最喜欢的颜色</td></tr>
+<tr><td>fav_fruit</td><td>tinyint(4)</td><td>最喜欢的水果</td></tr>
+<tr><td>fav_pet</td><td>tinyint(4)</td><td>最喜欢的小精灵</td></tr>
+<tr><td>mood</td><td>tinyint(4)</td><td>心情</td></tr>
+<tr><td>max_puzzle_score</td><td>tinyint(4)</td><td>益智游戏的最高分数</td></tr>
+<tr><td>thumb</td><td>int(11)</td><td>'顶'的次数</td></tr>
+<tr><td>visits</td><td>int(11)</td><td>访问次数</td></tr>
+<tr><td>flag1</td><td>int(11)</td><td>新手引导标志 值由AS设定</td></tr>
+<tr><td>last_visit_plantation_time</td><td>int(11)</td><td>上次访问种植园的时间</td></tr>
+<tr><td>personal_sign</td><td>char(64)</td><td>个性签名</td></tr>
+<tr><td>remark</td><td>char(42)</td><td>备注</td></tr>
+<tr><td>recent_badge</td><td>int(11)</td><td>最近获得成就数(未查看的)</td></tr>
+<tr><td>drawing_id</td><td>int(11)</td><td></td></tr>
+<tr><td>compose_time</td><td>int(11)</td><td>物品将要被合成的时间,0表示当前没有物品在合成</td></tr>
+<tr><td>compose_id</td><td>int(11)</td><td>合成的物品id</td></tr>
+<tr><td>online_time</td><td>int(11)</td><td>累积在线时长</td></tr>
+<tr><td>offline_time</td><td>int(11)</td><td>累积离线时长</td></tr>
+<tr><td>npc_score_daytime</td><td>int(11)</td><td>npc上次打分时间</td></tr>
+<tr><td>last_paper_reward</td><td>int(11)</td><td></td></tr>
+<tr><td>last_paper_read</td><td>int(11)</td><td></td></tr>
+<tr><td>npc_score</td><td>int(11)</td><td>npc上次打的分数</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.2" class="outline-3">
+<h3 id="sec-2.2"><span class="section-number-3">2.2</span> 背包物品表: t_stuff_[0..99] </h3>
+<div class="outline-text-3" id="text-2.2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号    主键</td></tr>
+<tr><td>stuff_id</td><td>int</td><td>物品id       主键</td></tr>
+<tr><td>stuff_num</td><td>int</td><td>物品数量</td></tr>
+<tr><td>used_num</td><td>int</td><td>已使用物品数量</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.3" class="outline-3">
+<h3 id="sec-2.3"><span class="section-number-3">2.3</span> 房间表: t_room_[0..99] </h3>
+<div class="outline-text-3" id="text-2.3">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号 联合主键</td></tr>
+<tr><td>room_id</td><td>int</td><td>房间id  联合主键</td></tr>
+<tr><td>buf</td><td>varbinary(2048)</td><td>房间物品buf</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.4" class="outline-3">
+<h3 id="sec-2.4"><span class="section-number-3">2.4</span> 小怪兽表:t_pet_[0..99] </h3>
+<div class="outline-text-3" id="text-2.4">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>id</td><td>int</td><td>自增id 主键</td></tr>
+<tr><td>user_id</td><td>int</td><td>用户米米号</td></tr>
+<tr><td>pet_id</td><td>int</td><td>宠物小精灵id</td></tr>
+<tr><td>type</td><td>tinyint</td><td>是否跟随</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.5" class="outline-3">
+<h3 id="sec-2.5"><span class="section-number-3">2.5</span> 好友表:t_friend_[0..99] </h3>
+<div class="outline-text-3" id="text-2.5">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号  主键</td></tr>
+<tr><td>friend_id</td><td>int</td><td>好友米米号  主键</td></tr>
+<tr><td>create_time</td><td>int</td><td>创建时间(代表成为好友时间或申请好友时间)</td></tr>
+<tr><td>type</td><td>tinyint(4)</td><td>0:申请暂未通过的好友 1:未分组的好友</td></tr>
+<tr><td>is_best_friend</td><td>tinyint(4)</td><td>0:不是 1：是</td></tr>
+<tr><td>remark</td><td>varchar(256)</td><td>备注</td></tr>
+</tbody>
+</table>
+
+
+<p>
+A申请加B为好友，在B的表里会产生一条记录，
+</p>
+<p>
+user_id:B
+</p>
+<p>
+friend_id:A
+</p>
+<p>
+create_time:time(NULL)
+</p>
+<p>
+type: 0
+</p>
+<p>
+B同意A为好友，将更新create_time和type,另外在A的表中增加一条好友记录
+B不同意，则删除B表中的记录即可。
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-2.6" class="outline-3">
+<h3 id="sec-2.6"><span class="section-number-3">2.6</span> 留言板表: t_pin_board_[0..99] </h3>
+<div class="outline-text-3" id="text-2.6">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>id</td><td>int</td><td>自增 主键 auto_increment</td></tr>
+<tr><td>user_id</td><td>int</td><td>用户米米号</td></tr>
+<tr><td>peer_id</td><td>int</td><td>对方的米米号</td></tr>
+<tr><td>message</td><td>varchar(512)</td><td>留言内容</td></tr>
+<tr><td>icon</td><td>tinyint</td><td>背景图标id</td></tr>
+<tr><td>color</td><td>int</td><td>背景颜色</td></tr>
+<tr><td>status</td><td>tiyint</td><td>状态</td></tr>
+<tr><td>create_time</td><td>int</td><td>留言创建时间</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.7" class="outline-3">
+<h3 id="sec-2.7"><span class="section-number-3">2.7</span> 种植园表: t_plant_[0..99] </h3>
+<div class="outline-text-3" id="text-2.7">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号</td></tr>
+<tr><td>hole_id</td><td>tinyint</td><td>坑编号(1,2,3)</td></tr>
+<tr><td>plant_id</td><td>int</td><td>种子id</td></tr>
+<tr><td>color</td><td>int</td><td>种子颜色</td></tr>
+<tr><td>growth</td><td>int</td><td>种子成长值</td></tr>
+<tr><td>last_extra_growth_time</td><td>int</td><td>上次增加额外成长值的时间</td></tr>
+<tr><td>last_growth_value</td><td>int</td><td>上次看到的成长值</td></tr>
+<tr><td>last_growth_time</td><td>int</td><td>上次成长时间</td></tr>
+<tr><td>maintain</td><td>int</td><td>维护类型(0:不需要维护 1：浇水 2：音乐 3：施肥 4：收获 5：铲除)</td></tr>
+<tr><td>next_maintain_time</td><td>int</td><td>下一抡维护开始时间</td></tr>
+<tr><td>last_reward_id</td><td>int</td><td>上次的奖励id</td></tr>
+<tr><td>maintain_count</td><td>tinyint(4)</td><td>本轮维护次数(最多5次)</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.8" class="outline-3">
+<h3 id="sec-2.8"><span class="section-number-3">2.8</span> 种植园奖励表: t_plant_reward_[0..99] </h3>
+<div class="outline-text-3" id="text-2.8">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号  主键之一</td></tr>
+<tr><td>hole_id</td><td>tinyint(4)</td><td>坑id      主键之一</td></tr>
+<tr><td>reward_id</td><td>int</td><td>奖励id     主键之一</td></tr>
+<tr><td>reward_happy</td><td>int</td><td>奖励的愉悦值</td></tr>
+<tr><td>reward_exp</td><td>int</td><td>奖励的经验值</td></tr>
+<tr><td>reward_coins</td><td>int</td><td>奖励的金币</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.9" class="outline-3">
+<h3 id="sec-2.9"><span class="section-number-3">2.9</span> 益智游戏表: t_puzzle_[0..99] </h3>
+<div class="outline-text-3" id="text-2.9">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号 主键</td></tr>
+<tr><td>type_id</td><td>tinyint</td><td>益智游戏类型 主键(0:日常游戏 1：其他游戏)</td></tr>
+<tr><td>last_playtime</td><td>int</td><td>上次玩的时间</td></tr>
+<tr><td>max_score</td><td>int</td><td>最高分</td></tr>
+<tr><td>total_score</td><td>int</td><td>总分</td></tr>
+<tr><td>total_num</td><td>int</td><td>玩这种类型游戏的总次数</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.10" class="outline-3">
+<h3 id="sec-2.10"><span class="section-number-3">2.10</span> 每天限制表:t_day_restrict_[0..99] </h3>
+<div class="outline-text-3" id="text-2.10">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>用户米米号 主键</td></tr>
+<tr><td>time</td><td>int</td><td>时间  主键</td></tr>
+<tr><td>type</td><td>int</td><td>类型 主键</td></tr>
+<tr><td>value</td><td>int</td><td></td></tr>
+<tr><td>total_value</td><td>int</td><td></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.11" class="outline-3">
+<h3 id="sec-2.11"><span class="section-number-3">2.11</span> t_score_[0..99] 暂时未用 </h3>
+<div class="outline-text-3" id="text-2.11">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>米米号 主键</td></tr>
+<tr><td>type</td><td>int</td><td>类型  主键</td></tr>
+<tr><td>value</td><td>int</td><td></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.12" class="outline-3">
+<h3 id="sec-2.12"><span class="section-number-3">2.12</span> t_badge_[0..99] 成就表 </h3>
+<div class="outline-text-3" id="text-2.12">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>米米号</td></tr>
+<tr><td>badge_id</td><td>int</td><td>成就项id</td></tr>
+<tr><td>status</td><td>tinyint(4)</td><td>成就状态(0:进行中 1：已获得未领奖杯 2:已获得已领奖)</td></tr>
+<tr><td>progress</td><td>int</td><td>成就进度</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.13" class="outline-3">
+<h3 id="sec-2.13"><span class="section-number-3">2.13</span> t_npc_score_[0..99]:小屋评分 </h3>
+<div class="outline-text-3" id="text-2.13">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>米米号</td></tr>
+<tr><td>npc_id</td><td>int</td><td>打分的npc</td></tr>
+<tr><td>npc_score</td><td>int</td><td>NPC给打的分数</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.14" class="outline-3">
+<h3 id="sec-2.14"><span class="section-number-3">2.14</span> t_game_[0..99]:小游戏表 </h3>
+<div class="outline-text-3" id="text-2.14">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>米米号</td></tr>
+<tr><td>game_id</td><td>int</td><td>游戏id</td></tr>
+<tr><td>level_id</td><td>int</td><td>关卡id</td></tr>
+<tr><td>max_score</td><td>int</td><td>最高得分</td></tr>
+<tr><td>max_star</td><td>int</td><td>获得最多星星数</td></tr>
+<tr><td>is_passed</td><td>tinyint(4)</td><td>是否通关</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.15" class="outline-3">
+<h3 id="sec-2.15"><span class="section-number-3">2.15</span> t_game2_change_[0..99]:小游戏兑换表(全部作为主键) </h3>
+<div class="outline-text-3" id="text-2.15">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>米米号</td></tr>
+<tr><td>game_id</td><td>int</td><td>游戏id</td></tr>
+<tr><td>period_id</td><td>int</td><td>期数</td></tr>
+<tr><td>stuff_id</td><td>int</td><td>物品道具id</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.16" class="outline-3">
+<h3 id="sec-2.16"><span class="section-number-3">2.16</span> t_task_[0..99] :任务表 </h3>
+<div class="outline-text-3" id="text-2.16">
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.17" class="outline-3">
+<h3 id="sec-2.17"><span class="section-number-3">2.17</span> t_denote_[0..99]:捐助表 </h3>
+<div class="outline-text-3" id="text-2.17">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>id</td><td>int</td><td>子增主键</td></tr>
+<tr><td>user_id</td><td>int</td><td>米米号</td></tr>
+<tr><td>denote_id</td><td>int</td><td>捐助计划id</td></tr>
+<tr><td>denote_time</td><td>int</td><td>捐助时间</td></tr>
+<tr><td>denote_num</td><td>int</td><td>捐助数额</td></tr>
+<tr><td>reward_flag</td><td>tinyint</td><td>是否已领奖(0:未领奖 1：已领奖)</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2.18" class="outline-3">
+<h3 id="sec-2.18"><span class="section-number-3">2.18</span> t_museum_[0..99]: 博物馆 </h3>
+<div class="outline-text-3" id="text-2.18">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>user_id</td><td>int</td><td>米米号 主键之一</td></tr>
+<tr><td>museum_id</td><td>int</td><td>博物馆id 主键之一</td></tr>
+<tr><td>cur_level</td><td>int</td><td>当前关卡</td></tr>
+<tr><td>reward_flag</td><td>tinyint</td><td>是否领奖(0:未领奖 1：已领奖)</td></tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> 下面的 表位于config库里面  不进行分表操作 </h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3.1" class="outline-3">
+<h3 id="sec-3.1"><span class="section-number-3">3.1</span> 用户id同名称的对应表t_name(根据名字进行好友搜索时用到): </h3>
+<div class="outline-text-3" id="text-3.1">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>name</td><td>char(16)</td><td></td></tr>
+<tr><td>user_id</td><td>int(11)</td><td></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3.2" class="outline-3">
+<h3 id="sec-3.2"><span class="section-number-3">3.2</span> 各期捐助表:t_denote </h3>
+<div class="outline-text-3" id="text-3.2">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">字段名</th><th scope="col">类型</th><th scope="col">备注</th></tr>
+</thead>
+<tbody>
+<tr><td>denote_id</td><td>int</td><td>捐助id 主键</td></tr>
+<tr><td>cur_denote_num</td><td>int</td><td>当前已经捐助的数额</td></tr>
+<tr><td>total_denote_num</td><td>int</td><td>总共需要的数额</td></tr>
+<tr><td>cur_denoter</td><td>int</td><td>当前总共的捐助者数量</td></tr>
+<tr><td>helped_pet</td><td>int</td><td>帮助的精灵数量</td></tr>
+<tr><td>reward_id</td><td>int</td><td>奖励品id</td></tr>
+<tr><td>end_flag</td><td>int</td><td>是否已结束(0:未结束 其他：结束时间)</td></tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: monster@taomee
+<a href="mailto:henry@taomee.com">&lt;henry@taomee.com&gt;</a>
+</p>
+<p class="date"> Date: 2012-04-24 11:00:23 CST</p>
+<p class="creator">HTML generated by org-mode 6.30c in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

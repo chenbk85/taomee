@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levels>
+	<item level="1" exp="39"/>
+	<item level="2" exp="119"/>
+	<item level="3" exp="239"/>
+	<item level="4" exp="399"/>
+	<item level="5" exp="599"/>
+	<item level="6" exp="839"/>
+	<item level="7" exp="1119"/>
+	<item level="8" exp="1439"/>
+	<item level="9" exp="1799"/>
+</levels>

@@ -1,0 +1,244 @@
+'x#+TITLE:     小怪兽项目数据库设计
+#+AUTHOR:    monster@taomee
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  zh
+#+OPTIONS:   ^:nil d:nil skip:nil pri:nil tags:not-in-toc LaTeX:nul TeX:nil toc:2 H:2
+#+STARTUP:   content
+#+INFOJS_OPT: view:content tdepth:nil ltoc:nil path:http://10.1.1.28/smyang/org-info.js
+
+* 分表分库规则
+db_suffix = user_id % 10
+
+table_suffix = (user_id / 100) % 100
+
+
+* db_monster_[0..9]
+
+** 角色表：t_role_[0..99]
+| 字段名                     | 类型       | 备注                                 |
+|----------------------------+------------+--------------------------------------|
+| user_id                    | int        | 用户米米号  主键                     |
+| name                       | char(16)   | 用户角色昵称                         |
+| gender                     | tinyint(4) | 用户性别(0:女性 1：男性)             |
+| country_id                 | int(11)    | 国籍id                               |
+| vip                        | tinyint(4) | is_vip(0:不是 1:是)                  |
+| birthday                   | int(11)    | 生日(20110719)                       |
+| register_time              | int(11)    | 注册时间                             |
+| coins                      | int(11)    | 金币数                               |
+| last_login_time            | int(11)    | 上次登录时间                         |
+| last_logout_time           | int(11)    | 上次登出时间                         |
+| mon_id                     | int(11)    | 选择的大怪兽id                       |
+| mon_name                   | char(16)   | 怪兽名字                             |
+| mon_main_color             | int(11)    | 大怪兽主颜色                         |
+| mon_exp_color              | int(11)    | 大怪兽辅颜色                         |
+| mon_eye_color              | int(11)    | 大怪兽眼睛颜色                       |
+| mon_exp                    | int(11)    | 大怪兽经验值(等级根据经验值计算出来) |
+| mon_level                  | tinyint(4) | 大怪兽等级                           |
+| mon_health                 | int(11)    | 大怪兽健康度                         |
+| mon_happy                  | int(11)    | 大怪兽愉悦度                         |
+| fav_color                  | tinyint(4) | 最喜欢的颜色                         |
+| fav_fruit                  | tinyint(4) | 最喜欢的水果                         |
+| fav_pet                    | tinyint(4) | 最喜欢的小精灵                       |
+| mood                       | tinyint(4) | 心情                                 |
+| max_puzzle_score           | tinyint(4) | 益智游戏的最高分数                   |
+| thumb                      | int(11)    | '顶'的次数                           |
+| visits                     | int(11)    | 访问次数                             |
+| flag1                      | int(11)    | 新手引导标志 值由AS设定              |
+| last_visit_plantation_time | int(11)    | 上次访问种植园的时间                 |
+| personal_sign              | char(64)   | 个性签名                             |
+| remark                     | char(42)   | 备注                                 |
+| recent_badge               | int(11)    | 最近获得成就数(未查看的)             |
+| drawing_id                 | int(11)    |                                      |
+| compose_time               | int(11)    | 物品将要被合成的时间,0表示当前没有物品在合成              |
+| compose_id                 | int(11)    | 合成的物品id                         |
+| online_time                | int(11)    | 累积在线时长                         |
+| offline_time               | int(11)    | 累积离线时长                         |
+| npc_score_daytime          | int(11)    | npc上次打分时间                      |
+| last_paper_reward          | int(11)    |                                      |
+| last_paper_read            | int(11)    |                                      |
+| npc_score                  | int(11)    | npc上次打的分数                      |
+
+** 背包物品表: t_stuff_[0..99]
+| 字段名       | 类型   | 备注                   |
+|--------------+--------+------------------------|
+| user_id      | int    | 用户米米号    主键   |
+| stuff_id     | int    | 物品id       主键  |
+| stuff_num    | int    | 物品数量                 |
+| used_num     | int    | 已使用物品数量              |
+
+    
+** 房间表: t_room_[0..99]
+| 字段名       | 类型       | 备注 |
+|--------------+------------+------|
+| user_id      | int        |  用户米米号 联合主键 |
+| room_id      | int        |   房间id  联合主键 |
+| buf          | varbinary(2048) |    房间物品buf |
+
+
+** 小怪兽表:t_pet_[0..99]
+| 字段名  | 类型    | 备注         |
+|---------+---------+--------------|
+| id      | int     | 自增id 主键      |
+| user_id | int     | 用户米米号   |
+| pet_id  | int     | 宠物小精灵id |
+| type    | tinyint | 是否跟随     |
+    
+** 好友表:t_friend_[0..99]
+| 字段名         | 类型         | 备注                                     |
+|----------------+--------------+------------------------------------------|
+| user_id        | int          | 用户米米号  主键                           |
+| friend_id      | int          | 好友米米号  主键                           |
+| create_time    | int          | 创建时间(代表成为好友时间或申请好友时间) |
+| type           | tinyint(4)   | 0:申请暂未通过的好友 1:未分组的好友      |
+| is_best_friend | tinyint(4)   | 0:不是 1：是                             |
+| remark         | varchar(256) | 备注                                       |
+
+A申请加B为好友，在B的表里会产生一条记录，
+
+user_id:B
+
+friend_id:A
+
+create_time:time(NULL)
+
+type: 0
+
+B同意A为好友，将更新create_time和type,另外在A的表中增加一条好友记录
+B不同意，则删除B表中的记录即可。
+
+** 留言板表: t_pin_board_[0..99]
+| 字段名      | 类型         | 备注                     |
+|-------------+--------------+--------------------------|
+| id          | int          | 自增 主键 auto_increment |
+| user_id     | int          | 用户米米号               |
+| peer_id     | int          | 对方的米米号             |
+| message     | varchar(512) | 留言内容                 |
+| icon        | tinyint      | 背景图标id               |
+| color       | int          | 背景颜色                 |
+| status      | tiyint       | 状态                     |
+| create_time | int          | 留言创建时间                   |
+
+** 种植园表: t_plant_[0..99]
+| 字段名                 | 类型       | 备注                     |
+|------------------------+------------+--------------------------|
+| user_id                | int        | 用户米米号               |
+| hole_id                | tinyint    | 坑编号(1,2,3)            |
+| plant_id               | int        | 种子id                   |
+| color                  | int        | 种子颜色                 |
+| growth                 | int        | 种子成长值               |
+| last_extra_growth_time | int        | 上次增加额外成长值的时间 |
+| last_growth_value      | int        | 上次看到的成长值         |
+| last_growth_time       | int        | 上次成长时间             |
+| maintain               | int        | 维护类型(0:不需要维护 1：浇水 2：音乐 3：施肥 4：收获 5：铲除) |
+| next_maintain_time     | int        | 下一抡维护开始时间       |
+| last_reward_id         | int        | 上次的奖励id             |
+| maintain_count         | tinyint(4) | 本轮维护次数(最多5次)             |
+
+** 种植园奖励表: t_plant_reward_[0..99]
+| 字段名       | 类型       | 备注                 |
+|--------------+------------+----------------------|
+| user_id      | int        | 用户米米号  主键之一 |
+| hole_id      | tinyint(4) | 坑id      主键之一   |
+| reward_id    | int        | 奖励id     主键之一  |
+| reward_happy | int        | 奖励的愉悦值               |
+| reward_exp   | int        | 奖励的经验值               |
+| reward_coins | int        | 奖励的金币                |
+
+** 益智游戏表: t_puzzle_[0..99]
+| 字段名        | 类型    | 备注              |
+|---------------+---------+-------------------|
+| user_id       | int     | 用户米米号 主键   |
+| type_id       | tinyint | 益智游戏类型 主键(0:日常游戏 1：其他游戏) |
+| last_playtime | int     | 上次玩的时间      |
+| max_score     | int     | 最高分            |
+| total_score   | int     | 总分              |
+| total_num     | int     | 玩这种类型游戏的总次数       |
+
+** 每天限制表:t_day_restrict_[0..99]
+| 字段名      | 类型 | 备注            |
+|-------------+------+-----------------|
+| user_id     | int  | 用户米米号 主键 |
+| time        | int  | 时间  主键          |
+| type        | int  | 类型 主键           |
+| value       | int  |                 |
+| total_value | int  |                 |
+
+** t_score_[0..99] 暂时未用
+| 字段名  | 类型 | 备注        |
+|---------+------+-------------|
+| user_id | int  | 米米号 主键 |
+| type    | int  | 类型  主键  |
+| value   | int  |             |
+
+** t_badge_[0..99] 成就表
+| 字段名   | 类型       | 备注 |
+|----------+------------+------|
+| user_id  | int        | 米米号  |
+| badge_id | int        |  成就项id |
+| status   | tinyint(4) |  成就状态(0:进行中 1：已获得未领奖杯 2:已获得已领奖)  |
+| progress | int        |  成就进度 |
+
+** t_npc_score_[0..99]:小屋评分
+| 字段名    | 类型 | 备注 |
+|-----------+------+------|
+| user_id   | int  | 米米号  |
+| npc_id    | int  |  打分的npc |
+| npc_score | int  | NPC给打的分数 |
+
+** t_game_[0..99]:小游戏表
+| 字段名    | 类型       | 备注 |
+|-----------+------------+------|
+| user_id   | int        | 米米号  |
+| game_id   | int        |  游戏id |
+| level_id  | int        |  关卡id |
+| max_score | int        |   最高得分 |
+| max_star  | int        |  获得最多星星数 |
+| is_passed | tinyint(4) |   是否通关 |
+
+** t_game2_change_[0..99]:小游戏兑换表(全部作为主键)
+| 字段名    | 类型 | 备注   |
+|-----------+------+--------|
+| user_id   | int  | 米米号 |
+| game_id   | int  | 游戏id |
+| period_id | int  | 期数   |
+| stuff_id  | int  | 物品道具id |
+
+
+** t_task_[0..99] :任务表
+
+** t_denote_[0..99]:捐助表
+| 字段名      | 类型    | 备注                           |
+|-------------+---------+--------------------------------|
+| id          | int     | 子增主键                           |
+| user_id     | int     | 米米号                     |
+| denote_id   | int     | 捐助计划id                 |
+| denote_time | int     | 捐助时间                   |
+| denote_num  | int     | 捐助数额                       |
+| reward_flag | tinyint | 是否已领奖(0:未领奖 1：已领奖) |
+
+** t_museum_[0..99]: 博物馆
+| 字段名      | 类型    | 备注 |
+|-------------+---------+------|
+| user_id     | int     | 米米号 主键之一 |
+| museum_id   | int     | 博物馆id 主键之一 |
+| cur_level   | int     | 当前关卡      |
+| reward_flag | tinyint |  是否领奖(0:未领奖 1：已领奖) |
+
+* 下面的 表位于config库里面  不进行分表操作
+** 用户id同名称的对应表t_name(根据名字进行好友搜索时用到):
+| 字段名  | 类型     | 备注 |
+|---------+----------+------|
+| name    | char(16) |      |
+| user_id | int(11)  |      |
+
+** 各期捐助表:t_denote
+| 字段名           | 类型    | 备注 |
+|------------------+---------+------|
+| denote_id        | int     |  捐助id 主键 |
+| cur_denote_num   | int     |   当前已经捐助的数额 |
+| total_denote_num | int     |  总共需要的数额  |
+| cur_denoter      | int     |  当前总共的捐助者数量 |
+| helped_pet       | int     |  帮助的精灵数量 |
+| reward_id        | int     |  奖励品id |
+| end_flag         | int     | 是否已结束(0:未结束 其他：结束时间) |

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<achievements_pool>
+
+	<achievement id="3" Name="智慧与毅力" describe="在智慧树堡，玩每日挑战，坚持不懈，达到25高分" condValue="25" award="0" progress_type="TOP" type="SET"/>
+	<achievement id="12" Name="智慧与挑战" describe="挑战自我，谜题大全，打破10次最高记录" condValue="10" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="13" Name="智慧与勇气" describe="智慧勇敢，联机对战，获得50场胜利" condValue="50" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="4" Name="跳跳小黑侠" describe="在春田草地，玩跳跳小黑侠，达到5000高分" condValue="5000" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="5" Name="块块房达人" describe="在春田草地，玩块块小工房，所有关卡累计达到30000分" condValue="30000" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="6" Name="连连看达人" describe="在歪瓜大道，玩怪卡连连看，所有关卡累计达到70000分" condValue="70000" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="8" Name="人气小怪兽" describe="人气旺旺，好友数达到100个" condValue="100" award="0" progress_type="LATEST" type="SET"/>
+	<achievement id="9" Name="当红小怪兽" describe="怪兽国里当红的小怪兽，得到500个拜访脚印" condValue="500" award="0" progress_type="TOP" type="SET"/>
+	<achievement id="10" Name="美誉小怪兽" describe="怪兽国里美誉可嘉，得到50个赞" condValue="50" award="0" progress_type="TOP" type="SET"/>
+	<achievement id="7" Name="琳琅满目" describe="好好给自己小屋装修一下，摆放物品数量达到30个" condValue="30" award="0" progress_type="LATEST" type="SET"/>
+	<achievement id="11" Name="热心小怪兽" describe="人缘不错热心交流，获得50个留言" condValue="50" award="0" progress_type="LATEST" type="SET"/>
+	<achievement id="21" Name="储物盒新手" describe="首次使用储物盒" condValue="1" award="0" progress_type="TOP" type="SET"/>
+	<achievement id="1" Name="精灵发现者" describe="在种植园里，发现魔法种子的神奇，成功吸引1个小精灵" condValue="1" award="0" progress_type="TOP" type="SET"/>
+	<achievement id="2" Name="精灵领悟者" describe="在种植园里，领悟魔法种子的秘诀，成功吸引2个同样的小精灵" condValue="2" award="0" progress_type="TOP" type="SET"/>
+	<!--
+	<achievement id="14" Name="跳跳小博士" describe="收集齐跳跳系的精灵" condValue="4" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="15" Name="萌宠小博士" describe="收集齐萌宠系的精灵" condValue="4" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="16" Name="英雄小博士" describe="收集齐英雄系的精灵" condValue="4" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="17" Name="植物小博士" describe="收集齐植物系的精灵" condValue="4" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="18" Name="神龙小博士" describe="收集齐神龙系的精灵" condValue="4" award="0" progress_type="TOP" type="SUM"/>
+	<achievement id="19" Name="海洋小博士" describe="收集齐海洋系的精灵" condValue="4" award="0" progress_type="TOP" type="SUM"/>
+	-->
+</achievements_pool>
+
+<!--
+成就配置
+achievement.@id：
+achievement.@name：
+achievement.@describe：
+achievement.@condValue:成就达成条件
+achievement.@award：为0表示无道具奖励，其他数字对应奖励道具id
+achievement.@type:SET表示直接设置型成就项  SUM表示累加型成就项(12, 13, 20属于这种类型)
+-->

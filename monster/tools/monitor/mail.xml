@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<monster-monitor>
+    <mail>
+        <host>192.168.0.8</host>
+        <port>25</port>
+        <user></user>
+        <passwd></passwd>
+        <from>henry@taomee.com</from>
+        <to>henry@taomee.com, luis@taomee.com</to>
+        <cc></cc>
+        <title>小怪兽接口性能每日监控报告</title>
+    </mail>
+</monster-monitor>
+

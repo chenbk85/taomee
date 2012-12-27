@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf8"?>
+<missionesPool>
+	<mission id="100001" name="丢失的精灵蛋1" lvl="1" pre_mission="0" reward_cycle="1" desc="儿童的梦想，拥有它是种骄傲11111111111111" className="FindAlailaiModule">
+		<rewards type="10000001" value="10"/>
+	</mission>
+	<mission id="100002" name="丢失的精灵蛋2" lvl="1" pre_mission="100001" reward_cycle="36500" desc="儿童的梦想，拥有它是种骄傲222222222222222" className="FindAlailaiModule">
+		<rewards type="40001" value="2"/>
+	</mission>
+</missionesPool>
+<!--
+任务配置
+mission.@id：任务id
+mission.@name：任务名称
+mission.@desc：任务描述
+mission.@lv: 任务等级要求
+mission.@pre_mission:前续任务要求
+mission.@reward_cycle:奖励周期(天为单位, 如果是只奖励一次的任务，可以填写一个很大的值(不能超过65535)，比如36500，代表100年)
+rewards.@type:奖励类型(奖励道具时为道具id, 金币:10000001)
+rewards.@value:奖励具体数值
+-->

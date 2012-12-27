@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+    <game id="1" name="怪卡连连看">
+    <level id="1" name="第一关" one_star_score="1700" two_star_score="3650" three_star_score="5600" finish_score="1700" unlock_cond="0" reward_item_score="3650">
+	    <field score="3650" num="1">
+	    	<item id="31001" name="大写字母A"/>
+			<item id="31002" name="大写字母B"/>
+			<item id="31003" name="大写字母C"/>
+		</field>
+    </level>
+    <level id="2" name="第二关" one_star_score="1800" two_star_score="3650" three_star_score="5500" finish_score="1800" unlock_cond="0" reward_item_score="3650">
+	    <field score="3650" num="1">
+	    	<item id="31002" name="大写字母B"/>
+			<item id="31003" name="大写字母C"/>
+			<item id="31004" name="大写字母D"/>
+        </field>
+    </level>
+    <level id="3" name="第三关" one_star_score="2200" two_star_score="3850" three_star_score="5500" finish_score="2200" unlock_cond="0" reward_item_score="3850">
+	    <field score="3850" num="1">
+	    	<item id="31003" name="大写字母C"/>
+			<item id="31004" name="大写字母D"/>
+			<item id="31005" name="大写字母E"/>
+		</field>
+    </level>
+    <level id="4" name="第四关" one_star_score="2300" two_star_score="3895" three_star_score="5490" finish_score="2300" unlock_cond="0" reward_item_score="3895">
+	    <field score="3895" num="1">
+	    	<item id="31004" name="大写字母D"/>
+	    	<item id="31005" name="大写字母E"/>
+			<item id="31006" name="大写字母F"/>			
+		</field>
+    </level>
+    <level id="5" name="第五关" one_star_score="2400" two_star_score="3935" three_star_score="5470" finish_score="2400" unlock_cond="0" reward_item_score="3935">
+	    <field score="3935" num="1">
+	    	<item id="31005" name="大写字母E"/>
+			<item id="31006" name="大写字母F"/>
+			<item id="31007" name="大写字母G"/>
+		</field>
+    </level>
+    <level id="6" name="第六关" one_star_score="2400" two_star_score="3935" three_star_score="5470" finish_score="2400" unlock_cond="0" reward_item_score="3935">
+	    <field score="3935" num="1">
+	    	<item id="31007" name="大写字母G"/>
+			<item id="31008" name="大写字母H"/>
+			<item id="31009" name="大写字母I"/>
+		</field>
+    </level>
+    <level id="7" name="第七关" one_star_score="2400" two_star_score="3935" three_star_score="5470" finish_score="2400" unlock_cond="0" reward_item_score="3935">
+	    <field score="3935" num="1">
+	    	<item id="31009" name="大写字母I"/>
+			<item id="31010" name="大写字母J"/>
+			<item id="31011" name="大写字母K"/>
+		</field>
+    </level>
+    <level id="8" name="第八关" one_star_score="2600" two_star_score="4020" three_star_score="5440" finish_score="2600" unlock_cond="0" reward_item_score="4020">
+	    <field score="4020" num="1">
+	    	<item id="31011" name="大写字母K"/>
+			<item id="31012" name="大写字母L"/>
+			<item id="31013" name="大写字母M"/>
+		</field>
+    </level>
+    <level id="9" name="第九关" one_star_score="2800" two_star_score="4100" three_star_score="5400" finish_score="2800" unlock_cond="0" reward_item_score="4100">
+	    <field score="4100" num="1">
+	    	<item id="31013" name="大写字母M"/>
+			<item id="31014" name="大写字母N"/>
+			<item id="31015" name="大写字母O"/>
+		</field>
+    </level>
+    <level id="10" name="第十关" one_star_score="3000" two_star_score="4185" three_star_score="5370" finish_score="3000" unlock_cond="0" reward_item_score="4185">
+	    <field score="4185" num="1">
+	    	<item id="31015" name="大写字母O"/>
+			<item id="31016" name="大写字母P"/>
+			<item id="31017" name="大写字母Q"/>
+		</field>
+    </level>
+    <level id="11" name="第十一关" one_star_score="3200" two_star_score="4265" three_star_score="5330" finish_score="3200" unlock_cond="0" reward_item_score="4265">
+	    <field score="4265" num="1">
+	    	<item id="31017" name="大写字母Q"/>
+			<item id="31018" name="大写字母R"/>
+			<item id="31019" name="大写字母S"/>
+		</field>
+    </level>
+    <level id="12" name="第十二关" one_star_score="3700" two_star_score="4470" three_star_score="5240" finish_score="3700" unlock_cond="0" reward_item_score="4470">
+	    <field score="4470" num="1">
+	    	<item id="31019" name="大写字母S"/>
+			<item id="31020" name="大写字母T"/>
+			<item id="31021" name="大写字母U"/>
+		</field>
+    </level>
+    <level id="13" name="第十三关" one_star_score="3800" two_star_score="4515" three_star_score="5230" finish_score="3800" unlock_cond="0" reward_item_score="4515">
+	    <field score="4515" num="1">
+	    	<item id="31021" name="大写字母U"/>
+			<item id="31022" name="大写字母V"/>
+			<item id="31023" name="大写字母W"/>
+		</field>
+    </level>
+    <level id="14" name="第十四关" one_star_score="4000" two_star_score="4600" three_star_score="5200" finish_score="4000" unlock_cond="0" reward_item_score="4600">
+	    <field score="4600" num="1">
+	    	<item id="31023" name="大写字母W"/>
+			<item id="31024" name="大写字母X"/>
+			<item id="31025" name="大写字母Y"/>
+		</field>
+    </level>
+    <level id="15" name="第十五关" one_star_score="4000" two_star_score="4600" three_star_score="5200" finish_score="4000" unlock_cond="0" reward_item_score="4600">
+	    <field score="4600" num="1">
+	    	<item id="31025" name="大写字母Y"/>
+			<item id="31026" name="大写字母Z"/>
+			<item id="31001" name="大写字母A"/>
+		</field>
+	</level>
+	
+    <level id="16" name="第十六关" one_star_score="2000" two_star_score="3950" three_star_score="5850" finish_score="2000" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31026" name="大写字母Z"/>
+			<item id="31001" name="大写字母A"/>
+			<item id="31002" name="大写字母B"/>			
+		</field>
+    </level>
+    <level id="17" name="第十七关" one_star_score="2100" two_star_score="4000" three_star_score="5830" finish_score="2100" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31001" name="大写字母A"/>
+			<item id="31002" name="大写字母B"/>
+			<item id="31003" name="大写字母C"/>
+        </field>
+    </level>
+    <level id="18" name="第十八关" one_star_score="2200" two_star_score="4010" three_star_score="5810" finish_score="2200" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31002" name="大写字母B"/>
+			<item id="31003" name="大写字母C"/>
+			<item id="31004" name="大写字母D"/>
+		</field>
+    </level>
+    <level id="19" name="第十九关" one_star_score="2200" two_star_score="4010" three_star_score="5810" finish_score="2200" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31003" name="大写字母C"/>
+			<item id="31004" name="大写字母D"/>
+			<item id="31005" name="大写字母E"/>
+		</field>
+    </level>
+    <level id="20" name="第二十关" one_star_score="2200" two_star_score="4010" three_star_score="5810" finish_score="2200" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31004" name="大写字母D"/>
+	    	<item id="31005" name="大写字母E"/>
+			<item id="31006" name="大写字母F"/>
+		</field>
+    </level>
+    <level id="21" name="第二十一关" one_star_score="2200" two_star_score="4010" three_star_score="5810" finish_score="2200" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31005" name="大写字母E"/>
+			<item id="31006" name="大写字母F"/>
+			<item id="31007" name="大写字母G"/>
+		</field>
+    </level>
+    <level id="22" name="第二十二关" one_star_score="2300" two_star_score="4050" three_star_score="5800" finish_score="2300" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31007" name="大写字母G"/>
+			<item id="31008" name="大写字母H"/>
+			<item id="31009" name="大写字母I"/>
+		</field>
+    </level>
+    <level id="23" name="第二十三关" one_star_score="2300" two_star_score="4050" three_star_score="5800" finish_score="2300" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31009" name="大写字母I"/>
+			<item id="31010" name="大写字母J"/>
+			<item id="31011" name="大写字母K"/>
+		</field>
+    </level>
+    <level id="24" name="第二十四关" one_star_score="2400" two_star_score="4100" three_star_score="5780" finish_score="2400" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31011" name="大写字母K"/>
+			<item id="31012" name="大写字母L"/>
+			<item id="31013" name="大写字母M"/>
+		</field>
+    </level>
+    <level id="25" name="第二十五关" one_star_score="2400" two_star_score="4100" three_star_score="5780" finish_score="2400" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31013" name="大写字母M"/>
+			<item id="31014" name="大写字母N"/>
+			<item id="31015" name="大写字母O"/>
+		</field>
+    </level>
+    <level id="26" name="第二十六关" one_star_score="2400" two_star_score="4100" three_star_score="5780" finish_score="2400" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31015" name="大写字母O"/>
+			<item id="31016" name="大写字母P"/>
+			<item id="31017" name="大写字母Q"/>
+		</field>
+    </level>
+    <level id="27" name="第二十七关" one_star_score="2400" two_star_score="4100" three_star_score="5780" finish_score="2400" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31017" name="大写字母Q"/>
+			<item id="31018" name="大写字母R"/>
+			<item id="31019" name="大写字母S"/>
+		</field>
+    </level>
+    <level id="28" name="第二十八关" one_star_score="2400" two_star_score="4100" three_star_score="5780" finish_score="2400" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31019" name="大写字母S"/>
+			<item id="31020" name="大写字母T"/>
+			<item id="31021" name="大写字母U"/>
+		</field>
+    </level>
+    <level id="29" name="第二十九关" one_star_score="2400" two_star_score="4100" three_star_score="5780" finish_score="2400" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31021" name="大写字母U"/>
+			<item id="31022" name="大写字母V"/>
+			<item id="31023" name="大写字母W"/>
+		</field>
+    </level>
+    <level id="30" name="第三十关" one_star_score="2400" two_star_score="4100" three_star_score="5780" finish_score="2400" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31023" name="大写字母W"/>
+			<item id="31024" name="大写字母X"/>
+			<item id="31025" name="大写字母Y"/>
+		</field>
+	</level>
+    <level id="31" name="第三十一关" one_star_score="2500" two_star_score="4130" three_star_score="5760" finish_score="2500" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31025" name="大写字母Y"/>
+			<item id="31026" name="大写字母Z"/>
+			<item id="31001" name="大写字母A"/>
+		</field>
+    </level>
+    <level id="32" name="第三十二关" one_star_score="2600" two_star_score="4170" three_star_score="5740" finish_score="2600" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31001" name="大写字母A"/>
+			<item id="31002" name="大写字母B"/>
+			<item id="31003" name="大写字母C"/>
+        </field>
+    </level>
+    <level id="33" name="第三十三关" one_star_score="2700" two_star_score="4210" three_star_score="5720" finish_score="2700" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31002" name="大写字母B"/>
+			<item id="31003" name="大写字母C"/>
+			<item id="31004" name="大写字母D"/>
+		</field>
+    </level>
+    <level id="34" name="第三十四关" one_star_score="2700" two_star_score="4210" three_star_score="5720" finish_score="2700" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31003" name="大写字母C"/>
+			<item id="31004" name="大写字母D"/>
+			<item id="31005" name="大写字母E"/>
+		</field>
+    </level>
+    <level id="35" name="第三十五关" one_star_score="2800" two_star_score="4250" three_star_score="5730" finish_score="2800" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31004" name="大写字母D"/>
+	    	<item id="31005" name="大写字母E"/>
+			<item id="31006" name="大写字母F"/>
+		</field>
+    </level>
+    <level id="36" name="第三十六关" one_star_score="2800" two_star_score="4250" three_star_score="5730" finish_score="2800" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31005" name="大写字母E"/>
+			<item id="31006" name="大写字母F"/>
+			<item id="31007" name="大写字母G"/>
+		</field>
+    </level>
+    <level id="37" name="第三十七关" one_star_score="2900" two_star_score="4300" three_star_score="5690" finish_score="2900" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31007" name="大写字母G"/>
+			<item id="31008" name="大写字母H"/>
+			<item id="31009" name="大写字母I"/>
+		</field>
+    </level>
+    <level id="38" name="第三十八关" one_star_score="2900" two_star_score="4300" three_star_score="5690" finish_score="2900" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31009" name="大写字母I"/>
+			<item id="31010" name="大写字母J"/>
+			<item id="31011" name="大写字母K"/>
+		</field>
+    </level>
+    <level id="39" name="第三十九关" one_star_score="2900" two_star_score="4300" three_star_score="5690" finish_score="2900" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31011" name="大写字母K"/>
+			<item id="31012" name="大写字母L"/>
+			<item id="31013" name="大写字母M"/>
+		</field>
+    </level>
+    <level id="40" name="第四十关" one_star_score="3000" two_star_score="4340" three_star_score="5670" finish_score="3000" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31013" name="大写字母M"/>
+			<item id="31014" name="大写字母N"/>
+			<item id="31015" name="大写字母O"/>
+		</field>
+    </level>
+    <level id="41" name="第四十一关" one_star_score="3000" two_star_score="4340" three_star_score="5670" finish_score="3000" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31015" name="大写字母O"/>
+			<item id="31016" name="大写字母P"/>
+			<item id="31017" name="大写字母Q"/>
+		</field>
+    </level>
+    <level id="42" name="第四十二关" one_star_score="3100" two_star_score="4380" three_star_score="5650" finish_score="3100" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31017" name="大写字母Q"/>
+			<item id="31018" name="大写字母R"/>
+			<item id="31019" name="大写字母S"/>
+		</field>
+    </level>
+    <level id="43" name="第四十三关" one_star_score="3100" two_star_score="4380" three_star_score="5650" finish_score="3100" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31019" name="大写字母S"/>
+			<item id="31020" name="大写字母T"/>
+			<item id="31021" name="大写字母U"/>
+		</field>
+    </level>
+    <level id="44" name="第四十四关" one_star_score="3200" two_star_score="4420" three_star_score="5630" finish_score="3200" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31021" name="大写字母U"/>
+			<item id="31022" name="大写字母V"/>
+			<item id="31023" name="大写字母W"/>
+		</field>
+    </level>
+    <level id="45" name="第四十五关" one_star_score="3300" two_star_score="4460" three_star_score="5630" finish_score="3300" unlock_cond="0" reward_item_score="5000">
+	    <field score="5000" num="1">
+	    	<item id="31023" name="大写字母W"/>
+			<item id="31024" name="大写字母X"/>
+			<item id="31025" name="大写字母Y"/>
+		</field>
+	</level>
+
+    </game>
+    <game id="2" name="块块小工房">
+    <level id="1" name="第一关" one_star_score="3230" two_star_score="4630" three_star_score="5330" finish_score="3250" unlock_cond="0" reward_item_score="4630">
+		<field score="4630" num="1">
+		<item id="50031" name="L形方块"/>
+		<item id="50032" name="T形方块"/>
+		<item id="50033" name="Z形方块"/>
+        </field>      
+    </level>
+    <level id="2" name="第二关" one_star_score="5050" two_star_score="8350" three_star_score="10000" finish_score="5050" unlock_cond="0" reward_item_score="8350">
+		<field score="8350" num="1">
+		<item id="50032" name="T形方块"/>
+		<item id="50033" name="Z形方块"/>
+		<item id="50034" name="方形方块"/>
+        </field>      
+    </level>	
+    <level id="3" name="第三关" one_star_score="4920" two_star_score="8060" three_star_score="9630" finish_score="4920" unlock_cond="0" reward_item_score="8060">
+		<field score="8060" num="1">
+		<item id="50034" name="方形方块"/>
+		<item id="50035" name="一形方块"/>
+		<item id="50036" name="折形方块"/>
+        </field>      
+    </level>	
+    <level id="4" name="第四关" one_star_score="5500" two_star_score="9420" three_star_score="11380" finish_score="5500" unlock_cond="0" reward_item_score="9420">
+		<field score="9420" num="1">
+		<item id="50035" name="一形方块"/>
+		<item id="50036" name="折形方块"/>
+		<item id="50031" name="L形方块"/>
+        </field>      
+    </level>	
+	<level id="5" name="第五关" one_star_score="5350" two_star_score="9100" three_star_score="10970" finish_score="5350" unlock_cond="0" reward_item_score="9100">
+		<field score="9100" num="1">
+		<item id="50036" name="折形方块"/>
+		<item id="50031" name="L形方块"/>
+		<item id="50032" name="T形方块"/>		
+        </field>      
+    </level>
+	<level id="6" name="第六关" one_star_score="4770" two_star_score="7750" three_star_score="9240" finish_score="4770" unlock_cond="0" reward_item_score="7750">
+		<field score="7750" num="1">
+		<item id="50031" name="L形方块"/>
+		<item id="50032" name="T形方块"/>
+		<item id="50033" name="Z形方块"/>
+        </field>      
+    </level>
+	<level id="7" name="第七关" one_star_score="5400" two_star_score="9320" three_star_score="11280" finish_score="5400" unlock_cond="0" reward_item_score="9320">
+		<field score="9320" num="1">
+		<item id="50032" name="T形方块"/>
+		<item id="50033" name="Z形方块"/>
+		<item id="50034" name="方形方块"/>
+        </field>      
+    </level>
+	<level id="8" name="第八关" one_star_score="5970" two_star_score="10610" three_star_score="12940" finish_score="5970" unlock_cond="0" reward_item_score="10610">
+		<field score="10610" num="1">
+		<item id="50034" name="方形方块"/>
+		<item id="50035" name="一形方块"/>
+		<item id="50036" name="折形方块"/>
+        </field>      
+    </level>
+	<level id="9" name="第九关" one_star_score="4820" two_star_score="7940" three_star_score="9500" finish_score="4820" unlock_cond="0" reward_item_score="7940">
+		<field score="7940" num="1">
+		<item id="50035" name="一形方块"/>
+		<item id="50036" name="折形方块"/>
+		<item id="50031" name="L形方块"/>
+        </field>      
+    </level>
+	<level id="10" name="第十关" one_star_score="4550" two_star_score="7230" three_star_score="8570" finish_score="4550" unlock_cond="0" reward_item_score="7230">
+		<field score="7230" num="1">
+		<item id="50036" name="折形方块"/>
+		<item id="50031" name="L形方块"/>
+		<item id="50032" name="T形方块"/>
+        </field>      
+    </level>
+	<level id="11" name="第十一关" one_star_score="5300" two_star_score="8940" three_star_score="10760" finish_score="5300" unlock_cond="0" reward_item_score="8940">
+		<field score="8940" num="1">
+		<item id="50031" name="L形方块"/>
+		<item id="50032" name="T形方块"/>
+		<item id="50033" name="Z形方块"/>
+        </field>      
+    </level>
+	<level id="12" name="第十二关" one_star_score="4800" two_star_score="7780" three_star_score="9270" finish_score="4800" unlock_cond="0" reward_item_score="7780">
+		<field score="7780" num="1">
+		<item id="50032" name="T形方块"/>
+		<item id="50033" name="Z形方块"/>
+		<item id="50034" name="方形方块"/>
+        </field>      
+    </level>
+	<level id="13" name="第十三关" one_star_score="5250" two_star_score="8920" three_star_score="10760" finish_score="5250" unlock_cond="0" reward_item_score="8920">
+		<field score="8920" num="1">
+		<item id="50034" name="方形方块"/>
+		<item id="50035" name="一形方块"/>
+		<item id="50036" name="折形方块"/>
+        </field>      
+    </level>
+	<level id="14" name="第十四关" one_star_score="4450" two_star_score="7010" three_star_score="8290" finish_score="4450" unlock_cond="0" reward_item_score="7010">
+		<field score="7010" num="1">
+		<item id="50035" name="一形方块"/>
+		<item id="50036" name="折形方块"/>
+		<item id="50031" name="L形方块"/>
+        </field>      
+    </level>
+	<level id="15" name="第十五关" one_star_score="5150" two_star_score="8580" three_star_score="10300" finish_score="5150" unlock_cond="0" reward_item_score="8580">
+		<field score="8580" num="1">
+		<item id="50036" name="折形方块"/>
+		<item id="50031" name="L形方块"/>
+		<item id="50032" name="T形方块"/>
+        </field>      
+    </level>
+    </game>
+    <game id="3" name="跳跳小黑侠">
+    <level id="1" name="第一关" one_star_score="1000" two_star_score="2000" three_star_score="3000" finish_score="0" unlock_cond="0" reward_item_score="700">
+		<field score="700" num="1">
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90008" name="黑兔耳"/>
+		</field>
+
+		<field score="1000" num="1">
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90009" name="墨鱼草"/>
+		</field>
+
+		<field score="1400" num="1">
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90007" name="乌谷蛋"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90009" name="墨鱼草"/>
+		</field>
+
+        <field score="1900" num="1">
+	  	<item id="90007" name="乌谷蛋"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90009" name="墨鱼草"/>
+		</field>
+
+		<field score="2500" num="1">
+	  	<item id="90008" name="黑兔耳"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90010" name="黑旋风"/>
+		</field>
+
+        <field score="3200" num="1">
+		<item id="90008" name="黑兔耳"/>
+		<item id="90008" name="黑兔耳"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90010" name="黑旋风"/>
+        </field>
+
+		<field score="4000" num="1">
+		<item id="90008" name="黑兔耳"/>
+		<item id="90009" name="墨鱼草"/>
+		<item id="90010" name="黑旋风"/>
+        </field>
+        </level>
+    </game>
+</games>
+<!--
+   one_star_score:得到1颗星需要的分数
+   two_star_score:得到2颗星需要的分数
+   three_star_score:得到3颗星需要的分数
+   finish_score:完成这一关需要的最低分数
+   unlock_cond:解锁这一关需要的星星数
+   reward_item_score:奖励道具的最低分数要求
+    -->

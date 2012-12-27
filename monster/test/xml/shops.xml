@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf8"?>
+<Shops>
+	<Shop ID="10001" NpcId="1011" Name="古拉精品家居馆" Type="1" ShopModule="GulaShopModule" inStreet="2" showRows="2" showColumns="4" npcSound="NPC_001" flash_time="300">
+		<Item ID="10001" Position="1"/>
+		<Item ID="10002" Position="2"/>
+		<Item ID="10003" Position="3"/>
+		<Item ID="10004" Position="4"/>
+		<Item ID="10005" Position="5"/>
+		<Item ID="10006" Position="6"/>
+		<Item ID="10007" Position="7"/>
+		<Item ID="10008" Position="8"/>
+		<Item ID="10013" Position="9"/>
+		<Item ID="10014" Position="10"/>
+		<Item ID="10015" Position="11"/>
+		<Item ID="10017" Position="12"/>
+		<Item ID="10018" Position="13"/>
+		<Item ID="10019" Position="14"/>
+		<Item ID="10020" Position="15"/>
+		<Item ID="11001" Position="16"/>
+		<Item ID="11002" Position="17"/>
+		<Item ID="11003" Position="18"/>
+		<Item ID="11004" Position="19"/>
+		<Item ID="11005" Position="20"/>
+		<Item ID="11006" Position="21"/>
+		<Item ID="11007" Position="22"/>
+		<Item ID="11008" Position="23"/>
+		<Item ID="12001" Position="24"/>
+		<Item ID="12002" Position="25"/>
+		<Item ID="12003" Position="26"/>
+		<Item ID="12004" Position="27"/>
+		<Item ID="12005" Position="28"/>
+		<Item ID="12006" Position="29"/>
+		<Item ID="12007" Position="30"/>
+		<Item ID="12008" Position="31"/>
+		<Item ID="12017" Position="32"/>
+		<Item ID="12018" Position="33"/>
+		<Item ID="12019" Position="34"/>
+		<Item ID="12021" Position="35"/>
+		<Item ID="13001" Position="36"/>
+		<Item ID="13002" Position="37"/>
+		<Item ID="13003" Position="38"/>
+		<Item ID="13004" Position="39"/>
+		<Item ID="13005" Position="40"/>
+		<Item ID="13006" Position="41"/>
+		<Item ID="13007" Position="42"/>
+		<Item ID="13008" Position="43"/>
+		<Item ID="13009" Position="44"/>
+		<Item ID="13015" Position="45"/>
+		<Item ID="13018" Position="46"/>
+		<Item ID="20001" Position="47"/>
+		<Item ID="20002" Position="48"/>
+		<Item ID="20003" Position="49"/>
+		<Item ID="20005" Position="50"/>
+		<Item ID="20006" Position="51"/>
+		<Item ID="20008" Position="52"/>
+		<Item ID="20009" Position="53"/>
+		<Item ID="20010" Position="54"/>
+		<Item ID="20011" Position="55"/>
+		<Item ID="20012" Position="56"/>
+		<Item ID="20013" Position="57"/>
+		<Item ID="20014" Position="58"/>
+		<Item ID="20015" Position="59"/>
+		<Item ID="20026" Position="60"/>
+		<Item ID="20028" Position="61"/>
+		<Item ID="20029" Position="62"/>
+		<Item ID="20030" Position="63"/>
+		<Item ID="20044" Position="64"/>
+		<Item ID="30084" Position="65"/>
+		<Item ID="20037" Position="66"/>
+
+
+
+
+	</Shop>
+	
+	<Shop ID="10002" NpcId="1012" Name="橘子花小姐的店" Type="1" ShopModule="OrangeFlowerShopModule" inStreet="2" showRows="2" showColumns="4" npcSound="NPC_002" flash_time="0">
+		<Item ID="10011" Position="1"/>
+		<Item ID="10021" Position="2"/>
+		<Item ID="10024" Position="3"/>
+		<Item ID="10026" Position="4"/>
+		<Item ID="10027" Position="5"/>
+		<Item ID="10028" Position="6"/>
+		<Item ID="10029" Position="7"/>
+		<Item ID="11011" Position="8"/>
+		<Item ID="11014" Position="9"/>
+		<Item ID="11015" Position="10"/>
+		<Item ID="12010" Position="11"/>
+		<Item ID="12011" Position="12"/>
+		<Item ID="12012" Position="13"/>
+		<Item ID="12013" Position="14"/>
+		<Item ID="13012" Position="15"/>
+		<Item ID="13013" Position="16"/>
+		<Item ID="13014" Position="17"/>
+		<Item ID="13017" Position="18"/>
+		<Item ID="20004" Position="19"/>
+		<Item ID="20007" Position="20"/>
+		<Item ID="20021" Position="21"/>
+		<Item ID="20022" Position="22"/>
+		<Item ID="20025" Position="23"/>
+		<Item ID="20027" Position="24"/>
+		<Item ID="20031" Position="25"/>
+		<Item ID="20057" Position="26"/>
+		<Item ID="20065" Position="27"/>
+		<Item ID="20067" Position="28"/>
+		<Item ID="20071" Position="29"/>
+		<Item ID="20072" Position="30"/>
+		<Item ID="20073" Position="31"/>
+		<Item ID="20077" Position="32"/>
+		<Item ID="20079" Position="33"/>
+		<Item ID="20080" Position="34"/>
+		<Item ID="20081" Position="35"/>
+		<Item ID="20082" Position="36"/>
+		<Item ID="20083" Position="37"/>
+		<Item ID="20084" Position="38"/>
+		<Item ID="20085" Position="39"/>
+		<Item ID="20086" Position="40"/>
+		<Item ID="30021" Position="41"/>
+		<Item ID="30022" Position="42"/>
+		<Item ID="30023" Position="43"/>
+		<Item ID="30024" Position="44"/>
+		<Item ID="30025" Position="45"/>
+		<Item ID="30026" Position="46"/>
+		<Item ID="30027" Position="47"/>
+		<Item ID="30028" Position="48"/>
+		<Item ID="30031" Position="49"/>
+		<Item ID="30032" Position="50"/>
+		<Item ID="30033" Position="51"/>
+		<Item ID="30034" Position="52"/>
+		<Item ID="30035" Position="53"/>
+		<Item ID="30036" Position="54"/>
+		<Item ID="30037" Position="55"/>
+		<Item ID="30038" Position="56"/>
+		<Item ID="30041" Position="57"/>
+		<Item ID="30042" Position="58"/>
+		<Item ID="30043" Position="59"/>
+		<Item ID="30044" Position="60"/>
+		<Item ID="30051" Position="61"/>
+		<Item ID="30052" Position="62"/>
+		<Item ID="30053" Position="63"/>
+		<Item ID="30054" Position="64"/>
+		<Item ID="30061" Position="65"/>
+		<Item ID="30062" Position="66"/>
+		<Item ID="30063" Position="67"/>
+		<Item ID="30064" Position="68"/>
+		<Item ID="30071" Position="69"/>
+		<Item ID="30072" Position="70"/>
+		<Item ID="30073" Position="71"/>
+		<Item ID="30081" Position="72"/>
+		<Item ID="30082" Position="73"/>
+		<Item ID="30121" Position="74"/>
+		<Item ID="30122" Position="75"/>
+		<Item ID="30123" Position="76"/>
+		<Item ID="30124" Position="77"/>
+		<Item ID="30125" Position="78"/>
+		<Item ID="30126" Position="79"/>
+		<Item ID="30127" Position="80"/>
+		<Item ID="30128" Position="81"/>
+		<Item ID="30144" Position="82"/>
+		<Item ID="30148" Position="83"/>
+		<Item ID="30162" Position="84"/>
+		<Item ID="30164" Position="85"/>
+		<Item ID="30174" Position="86"/>
+		<Item ID="30175" Position="87"/>
+		<Item ID="30176" Position="88"/>
+		<Item ID="30177" Position="89"/>
+		<Item ID="20023" Position="90"/>
+		<Item ID="20024" Position="91"/>
+		<Item ID="10031" Position="92"/>
+		<Item ID="10032" Position="93"/>
+		<Item ID="12022" Position="95"/>
+		<Item ID="13019" Position="96"/>
+		<Item ID="20087" Position="97"/>
+		<Item ID="20088" Position="98"/>
+		<Item ID="20089" Position="99"/>
+		<Item ID="20090" Position="100"/>
+		<Item ID="20091" Position="101"/>
+	        <Item ID="20092" Position="102"/>
+		<Item ID="20093" Position="103"/>
+		<Item ID="20094" Position="104"/>
+		<Item ID="20095" Position="105"/>
+		<Item ID="20096" Position="106"/>
+		<Item ID="20097" Position="107"/>
+		<Item ID="20098" Position="108"/>
+		<Item ID="20099" Position="109"/>
+		<Item ID="20100" Position="110"/>
+		<Item ID="20101" Position="111"/>
+		<Item ID="20102" Position="112"/>
+		<Item ID="11021" Position="92"/>
+		<Item ID="30070" Position="111"/>
+		<Item ID="30074" Position="112"/>
+	</Shop>
+	
+	<Shop ID="10003" NpcId="1016" Name="大嘴汉克店" Type="2" ShopModule="BigMouthHankShop" inStreet="4" showRows="2" showColumns="4" npcSound="NPC_006" flash_time="0">
+		<Item ID="80001" Position="1"/>
+		<Item ID="80002" Position="2"/>
+		<Item ID="80003" Position="3"/>
+		<Item ID="80004" Position="4"/>
+		<Item ID="80005" Position="5"/>
+		<Item ID="80006" Position="6"/>
+		<Item ID="80007" Position="7"/>
+		<Item ID="80008" Position="8"/>
+		<Item ID="80009" Position="9"/>
+		<Item ID="80010" Position="10"/>
+		<Item ID="80011" Position="11"/>
+		<Item ID="80012" Position="12"/>
+		<Item ID="80013" Position="13"/>
+		<Item ID="80014" Position="14"/>
+		<Item ID="80015" Position="15"/>
+		<Item ID="80016" Position="16"/>
+		<Item ID="80017" Position="17"/>
+		<Item ID="80018" Position="18"/>
+		<Item ID="80019" Position="19"/>
+		<Item ID="80020" Position="20"/>
+		<Item ID="80021" Position="21"/>
+		<Item ID="80022" Position="22"/>
+		<Item ID="80023" Position="23"/>
+		<Item ID="80024" Position="24"/>
+		<Item ID="80025" Position="25"/>
+		<Item ID="80026" Position="26"/>
+		<Item ID="80027" Position="27"/>
+		<Item ID="80028" Position="28"/>
+		<Item ID="80029" Position="29"/>
+		<Item ID="80030" Position="30"/>
+		<Item ID="80031" Position="31"/>
+		<Item ID="80032" Position="32"/>
+		<Item ID="80033" Position="33"/>
+		<Item ID="80034" Position="34"/>
+		<Item ID="80035" Position="35"/>
+		<Item ID="80036" Position="36"/>
+		<Item ID="80037" Position="37"/>
+		<Item ID="80038" Position="38"/>
+		<Item ID="80039" Position="39"/>
+		<Item ID="80040" Position="40"/>
+		<Item ID="80041" Position="41"/>
+		<Item ID="80042" Position="42"/>
+		<Item ID="80043" Position="43"/>
+		<Item ID="80044" Position="44"/>
+
+	</Shop>
+	
+	<Shop ID="10004" NpcId="1014" Name="短腿2号店" Type="1" ShopModule="ShortLegShop" inStreet="2" showRows="2" showColumns="4" npcSound="NPC_008" flash_time="300">
+		<Item ID="10009" Position="1"/>
+		<Item ID="10010" Position="2"/>
+		<Item ID="11009" Position="3"/>
+		<Item ID="11010" Position="4"/>
+		<Item ID="11017" Position="5"/>
+		<Item ID="11018" Position="6"/>
+		<Item ID="11019" Position="7"/>
+		<Item ID="11020" Position="8"/>
+		<Item ID="12009" Position="9"/>
+		<Item ID="13010" Position="10"/>
+		<Item ID="13011" Position="11"/>
+		<Item ID="20016" Position="12"/>
+		<Item ID="20017" Position="13"/>
+		<Item ID="20018" Position="14"/>
+		<Item ID="20019" Position="15"/>
+		<Item ID="20020" Position="16"/>
+		<Item ID="20046" Position="17"/>
+		<Item ID="20048" Position="18"/>
+		<Item ID="20049" Position="19"/>
+		<Item ID="20051" Position="20"/>
+		<Item ID="30001" Position="21"/>
+		<Item ID="30002" Position="22"/>
+		<Item ID="30003" Position="23"/>
+		<Item ID="30011" Position="24"/>
+		<Item ID="30012" Position="25"/>
+		<Item ID="30013" Position="26"/>
+		<Item ID="30189" Position="27"/>
+		<Item ID="30190" Position="28"/>
+		<Item ID="30191" Position="29"/>
+		<Item ID="30192" Position="30"/>
+		<Item ID="20111" Position="31"/>
+		<Item ID="20112" Position="32"/>
+		<Item ID="20113" Position="33"/>
+		<Item ID="20114" Position="34"/>
+		<Item ID="13023" Position="35"/>
+		<Item ID="13024" Position="36"/>
+		<Item ID="13025" Position="37"/>
+		<Item ID="12026" Position="38"/>
+		<Item ID="12027" Position="39"/>
+	        <Item ID="11025" Position="40"/>
+       		 <Item ID="11026" Position="41"/>
+       		 <Item ID="11027" Position="42"/>
+        	<Item ID="10036" Position="43"/>
+      	  <Item ID="10037" Position="44"/>
+
+
+	</Shop>
+	
+	<Shop ID="10005" NpcId="1013" Name="老七杂货铺" Type="1" ShopModule="TheSevensShopModule" inStreet="2" showRows="2" showColumns="4" npcSound="NPC_007" flash_time="0">
+		<Item ID="10012" Position="1"/>
+		<Item ID="10016" Position="2"/>
+		<Item ID="11016" Position="3"/>
+		<Item ID="12014" Position="4"/>
+		<Item ID="12016" Position="5"/>
+		<Item ID="13016" Position="6"/>
+		<Item ID="20032" Position="7"/>
+		<Item ID="20033" Position="8"/>
+		<Item ID="20034" Position="9"/>
+		<Item ID="20036" Position="10"/>
+		<Item ID="20038" Position="11"/>
+		<Item ID="30109" Position="12"/>
+		<Item ID="30110" Position="13"/>
+		<Item ID="30111" Position="14"/>
+		<Item ID="30112" Position="15"/>
+		<Item ID="30113" Position="16"/>
+		<Item ID="30114" Position="17"/>
+		<Item ID="30115" Position="18"/>
+		<Item ID="30116" Position="19"/>
+		<Item ID="30117" Position="20"/>
+		<Item ID="30118" Position="21"/>
+		<Item ID="30119" Position="22"/>
+		<Item ID="30120" Position="23"/>
+		<Item ID="30165" Position="24"/>
+		<Item ID="30166" Position="25"/>
+		<Item ID="30167" Position="26"/>
+		<Item ID="30168" Position="27"/>
+		<Item ID="30169" Position="28"/>
+		<Item ID="30170" Position="29"/>
+		<Item ID="30171" Position="30"/>
+		<Item ID="50001" Position="31"/>
+		<Item ID="50002" Position="32"/>
+		<Item ID="50003" Position="33"/>
+		<Item ID="50004" Position="34"/>
+		<Item ID="50005" Position="35"/>
+		<Item ID="50006" Position="36"/>
+        <Item ID="10033" Position="37"/>
+	    <Item ID="10034" Position="38"/>
+        <Item ID="10035" Position="39"/>
+	    <Item ID="11022" Position="40"/>
+	    <Item ID="11023" Position="41"/>
+	    <Item ID="11024" Position="42"/>
+	    <Item ID="12023" Position="43"/>
+	    <Item ID="12024" Position="44"/>
+	    <Item ID="12025" Position="45"/>
+	    <Item ID="13020" Position="46"/>
+	    <Item ID="13021" Position="47"/>
+	    <Item ID="13022" Position="48"/>
+	    <Item ID="20103" Position="49"/>
+	    <Item ID="20104" Position="50"/>
+	    <Item ID="20105" Position="51"/>
+	    <Item ID="20106" Position="52"/>
+	    <Item ID="20107" Position="53"/>
+	    <Item ID="20108" Position="54"/>
+	    <Item ID="20109" Position="55"/>
+	    <Item ID="20110" Position="56"/>
+
+
+	
+
+
+
+
+
+
+
+	</Shop>
+	
+	<Shop ID="10006" NpcId="1017" Name="迪迪的店面" Type="1" ShopModule="DDShopModule" inStreet="3" showRows="2" showColumns="4" npcSound="NPC_007" flash_time="0">
+		<Item ID="30075" Position="5"/>
+		<Item ID="30076" Position="6"/>
+		<Item ID="30077" Position="7"/>
+		<Item ID="30078" Position="8"/>
+		<Item ID="30079" Position="9"/>
+		<Item ID="30080" Position="10"/>
+		<Item ID="30083" Position="11"/>
+		<Item ID="30137" Position="12"/>
+		<Item ID="30138" Position="13"/>
+		<Item ID="30139" Position="14"/>
+		<Item ID="30140" Position="15"/>
+		<Item ID="30141" Position="16"/>
+		<Item ID="30142" Position="17"/>
+		<Item ID="30143" Position="18"/>
+        <Item ID="30145" Position="19"/>
+		<Item ID="30146" Position="20"/>
+		<Item ID="30147" Position="21"/>
+		<Item ID="30149" Position="22"/>
+		<Item ID="30150" Position="23"/>
+		<Item ID="30151" Position="24"/>
+		<Item ID="30152" Position="25"/>
+		<Item ID="30153" Position="26"/>
+		<Item ID="30154" Position="27"/>
+		<Item ID="30155" Position="28"/>
+		<Item ID="30156" Position="29"/>
+		<Item ID="30157" Position="30"/>
+		<Item ID="30158" Position="31"/>
+		<Item ID="30159" Position="32"/>
+		<Item ID="30160" Position="33"/>
+		<Item ID="30161" Position="34"/>
+		<Item ID="30163" Position="35"/>
+		<Item ID="30196" Position="36"/>
+		<Item ID="30197" Position="37"/>
+		<Item ID="30198" Position="38"/>
+		<Item ID="30199" Position="39"/>
+		<Item ID="30200" Position="40"/>
+		<Item ID="30201" Position="41"/>
+
+
+
+	
+
+
+
+
+
+
+	</Shop>
+	
+	<Shop ID="10007" NpcId="1021" Name="路易斯音乐店" Type="1" ShopModule="LouisShopModule" inStreet="3" showRows="2" showColumns="4" npcSound="NPC_007" flash_time="0">
+		<Item ID="20058" Position="1"/>
+		<Item ID="20068" Position="2"/>
+		<Item ID="30178" Position="3"/>
+		<Item ID="30179" Position="4"/>
+		<Item ID="30180" Position="5"/>
+		<Item ID="30181" Position="6"/>
+		<Item ID="30182" Position="7"/>
+		<Item ID="30183" Position="8"/>
+		<Item ID="30184" Position="9"/>
+		<Item ID="30185" Position="10"/>
+		<Item ID="30186" Position="11"/>
+		<Item ID="30187" Position="12"/>
+		<Item ID="30188" Position="13"/>
+
+
+
+	
+
+
+
+
+
+
+	</Shop>
+	
+	<Shop ID="10008" NpcId="1020" Name="阿来来新奇店" Type="1" ShopModule="AlailaiShopModule" inStreet="3" showRows="2" showColumns="4" npcSound="NPC_007" flash_time="0">
+	    <Item ID="10022" Position="1"/>
+	    <Item ID="10025" Position="2"/>
+	    <Item ID="20052" Position="3"/>
+	    <Item ID="20055" Position="4"/>
+	    <Item ID="20064" Position="5"/>
+	    <Item ID="20069" Position="6"/>
+	    <Item ID="20070" Position="7"/>
+	    <Item ID="20075" Position="8"/>			
+        <Item ID="20076" Position="9"/>
+        <Item ID="20078" Position="10"/>
+        <Item ID="30065" Position="11"/>
+        <Item ID="30066" Position="12"/>
+        <Item ID="30067" Position="13"/>
+        <Item ID="30068" Position="14"/>
+        <Item ID="30069" Position="15"/>
+        <Item ID="30085" Position="16"/>
+		<Item ID="30086" Position="17"/>
+		<Item ID="30087" Position="18"/>
+		<Item ID="30088" Position="19"/>
+		<Item ID="30089" Position="20"/>
+		<Item ID="30090" Position="21"/>
+		<Item ID="30091" Position="22"/>
+		<Item ID="30092" Position="23"/>
+		<Item ID="30093" Position="24"/>
+		<Item ID="30094" Position="25"/>
+		<Item ID="30104" Position="26"/>
+		<Item ID="30105" Position="27"/>
+		<Item ID="30106" Position="28"/>
+		<Item ID="30107" Position="29"/>
+		<Item ID="30108" Position="30"/>
+		<Item ID="30130" Position="31"/>
+		<Item ID="30132" Position="32"/>
+		<Item ID="30133" Position="33"/>
+		<Item ID="30135" Position="34"/>
+		<Item ID="31027" Position="35"/>
+		<Item ID="31028" Position="36"/>
+		<Item ID="31029" Position="37"/>
+		<Item ID="31030" Position="38"/>
+		<Item ID="31031" Position="39"/>
+		<Item ID="31032" Position="40"/>
+		<Item ID="31033" Position="41"/>
+		<Item ID="31034" Position="42"/>
+		<Item ID="31035" Position="43"/>
+		<Item ID="31036" Position="44"/>
+		<Item ID="31037" Position="45"/>
+		<Item ID="31038" Position="46"/>
+
+
+
+	
+
+
+
+
+
+
+	</Shop>
+	
+	<Shop ID="10009" NpcId="1019" Name="爱德华家具店" Type="1" ShopModule="EdwardShopModule" inStreet="3" showRows="2" showColumns="4" npcSound="NPC_007" flash_time="0">
+		<Item ID="10023" Position="1"/>
+        <Item ID="10030" Position="2"/>
+		<Item ID="11012" Position="3"/>
+		<Item ID="11013" Position="4"/>
+		<Item ID="12020" Position="5"/>
+		<Item ID="20035" Position="6"/>
+		<Item ID="20039" Position="7"/>
+		<Item ID="20040" Position="8"/>
+        	<Item ID="20041" Position="9"/>		
+        	<Item ID="20042" Position="10"/>
+        <Item ID="20043" Position="11"/>
+        <Item ID="20050" Position="12"/>
+        <Item ID="20053" Position="13"/>
+        <Item ID="20054" Position="14"/>
+        <Item ID="20056" Position="15"/>
+        <Item ID="20059" Position="16"/>
+        <Item ID="20060" Position="17"/>
+        <Item ID="20061" Position="18"/>
+        <Item ID="20062" Position="19"/>
+        <Item ID="20063" Position="20"/>
+        <Item ID="20066" Position="21"/>
+		<Item ID="20074" Position="22"/>
+		<Item ID="30172" Position="23"/>
+		<Item ID="30173" Position="24"/>
+		<Item ID="90001" Position="25"/>
+       		 <Item ID="90002" Position="26"/>
+		<Item ID="90003" Position="27"/>
+		<Item ID="90004" Position="28"/>
+		<Item ID="90005" Position="29"/>
+		<Item ID="90006" Position="30"/>
+	</Shop>
+
+	<Shop ID="10010" NpcId="1019" Name="隐藏的种子店" Type="1" ShopModule="EdwardShopModule" inStreet="3" showRows="2" showColumns="4" npcSound="NPC_007" flash_time="0">
+
+		<Item ID="90001" Position="1"/>
+	        <Item ID="90002" Position="2"/>
+		<Item ID="90003" Position="3"/>
+		<Item ID="90004" Position="4"/>
+		<Item ID="90005" Position="5"/>
+		<Item ID="90006" Position="6"/>
+	</Shop>
+	
+</Shops>
+
+<!-- 根据Type:0:不需要向服务器请求, 1:家具装饰, 2:食物 
+老七：春节主题物品、字母、数字、网络表情，宇宙主题家具
+橘子花：玩偶、汽车模型、图腾柱、安全出口、适合放玩偶的大柜子、森林主题家具
+古拉：门、窗、地板、墙纸、柜子、桌子、椅子、钟、隔板、台灯、石头主题家具
+短腿2号：拼图、龙拼接、火箭拼接、方块类、海洋主题家具。-->

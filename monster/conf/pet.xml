@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pets>
+    <pet id="1" name="喵小黑" type="3" seed1="90010" color1="0" seed2="90010" color2="0" seed3="90010" color3="0"/>
+    <pet id="2" name="海特先生" type="2" seed1="90007" color1="0" seed2="90007" color2="0" seed3="90008" color3="0"/>
+    <pet id="3" name="尼尼尔" type="2" seed1="90008" color1="0" seed2="90008" color2="0" seed3="90009" color3="0"/>
+    <pet id="4" name="点奈特" type="2" seed1="90009" color1="0" seed2="90009" color2="0" seed3="90007" color3="0"/>
+    <pet id="5" name="绵绵莫" type="1" seed1="90003" color1="0" seed2="90003" color2="0" seed3="90003" color3="0"/>
+    <pet id="6" name="黑小白" type="1" seed1="90004" color1="0" seed2="90004" color2="0" seed3="90001" color3="0"/>
+    <pet id="7" name="滴滴" type="2" seed1="90001" color1="0" seed2="90001" color2="0" seed3="90004" color3="5"/>
+    <pet id="8" name="咪熊" type="1" seed1="90004" color1="0" seed2="90004" color2="0" seed3="90004" color3="0"/>
+    <pet id="9" name="凹小曼" type="4" seed1="90005" color1="4" seed2="90004" color2="3" seed3="90001" color3="1"/>
+    <pet id="10" name="呼呼侠" type="4" seed1="90002" color1="6" seed2="90006" color2="6" seed3="90001" color3="6"/>
+    <pet id="11" name="可可侠" type="4" seed1="90002" color1="3" seed2="90006" color2="3" seed3="90003" color3="3"/>
+    <pet id="12" name="超超钻" type="4" seed1="90002" color1="4" seed2="90006" color2="4" seed3="90005" color3="4"/>
+    <pet id="13" name="亚历山大豆" type="2" seed1="90005" color1="2" seed2="90004" color2="0" seed3="90004" color3="0"/>
+    <pet id="14" name="蹦哒哒" type="2" seed1="90005" color1="0" seed2="90005" color2="0" seed3="90001" color3="3"/>
+    <pet id="15" name="杰克假面" type="2" seed1="90005" color1="0" seed2="90005" color2="0" seed3="90004" color3="2"/>
+    <pet id="16" name="蹲蹲" type="1" seed1="90001" color1="0" seed2="90001" color2="0" seed3="90003" color3="0"/>
+    <pet id="17" name="尼小龙" type="2" seed1="90001" color1="0" seed2="90001" color2="0" seed3="90005" color3="6"/>
+    <pet id="18" name="鲁斯斯龙" type="3" seed1="90003" color1="2" seed2="90005" color2="3" seed3="90005" color3="1"/>
+    <pet id="19" name="维恩龙" type="3" seed1="90003" color1="4" seed2="90003" color2="5" seed3="90005" color3="2"/>
+    <pet id="20" name="哼古力龙" type="1" seed1="90002" color1="0" seed2="90002" color2="0" seed3="90002" color3="0"/>
+	<pet id="21" name="阿贝尔" type="1" seed1="90005" color1="0" seed2="90003" color2="0" seed3="90006" color3="0"/>
+	<pet id="22" name="逗逗鱼" type="1" seed1="90001" color1="0" seed2="90001" color2="0" seed3="90001" color3="0"/>
+	<pet id="23" name="伊格尔" type="3" seed1="90002" color1="4" seed2="90002" color2="2" seed3="90003" color3="6"/>
+	<pet id="24" name="瓜瓜母" type="1" seed1="90006" color1="0" seed2="90006" color2="0" seed3="90006" color3="0"/>
+</pets>
+<!-- color，0是任意色，1是黄色，2是绿色，3是红色，4是蓝色，5是紫色，6是白色。-->
+<!-- type,1是常见，2是优秀，3是稀有，4是濒危。-->
+<!-- <Item ID="90001" Name="月儿花" Price="10" type="100" level="1" des="天上的月亮掉了下来，变成了花。成熟时间为(2-12)个小时。 " canSell="1"/>
+		<Item ID="90002" Name="帽帽葵" Price="30" type="100" level="9" des="长成后往头上一戴！帽子！成熟时间为(2-12)个小时。" canSell="1"/>
+		<Item ID="90003" Name="嘎嘎椒" Price="20" type="100" level="5" des="喳喳呼呼、不听妈妈话的火爆小辣椒。成熟时间为(2-12)个小时。 " canSell="1"/>
+		<Item ID="90004" Name="鸡蛋果" Price="10" type="100" level="1" des="虽然不能当成鸡蛋来吃，但好歹是个果子。成熟时间为(2-12)个小时。 " canSell="1"/>
+		<Item ID="90005" Name="兔耳铃" Price="15" type="100" level="3" des="据说声音能传千里，可惜从来不响。成熟时间为(2-12)个小时。" canSell="1"/>
+		<Item ID="90006" Name="章鱼草" Price="25" type="100" level="7" des="作为一只草，它长得像章鱼。成熟时间为(2-12)个小时。" canSell="1"/>
+		<Item ID="90007" Name="乌谷蛋" Price="1" type="100" level="1" des="乌谷蛋" canSell="1"/>
+		<Item ID="90008" Name="黑兔耳" Price="1" type="100" level="1" des="黑兔耳" canSell="1"/>
+		<Item ID="90009" Name="墨鱼草" Price="1" type="100" level="1" des="墨鱼草" canSell="1"/>
+		<Item ID="90010" Name="黑旋风" Price="1" type="100" level="1" des="黑旋风" canSell="1"/>
+		-->
