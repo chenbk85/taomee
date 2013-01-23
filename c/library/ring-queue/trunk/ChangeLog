@@ -1,0 +1,21 @@
+2011-07-26 richard <richard@taomee.com>
+    * variable_queue.cpp: 修改pop_data_dummy当p_recv_buffer为NULL时为查询接口 
+
+2010-09-27 richard <richard@taomee.com>
+	* error_list.h, error_list.cpp: 为ring_queue实现错误原因查询功能
+
+2010-09-20 richard <richard@taomee.com>
+	* *.cpp: 重构代码
+
+2010-09-07 richard <richard@taomee.com>
+	* ring_queue.cpp: 给pop添加无限等待功能
+
+2010-06-29 richard <richard@taomee.com>
+	* ring_queue_test.cpp: 完善ring_queue单元测试
+
+2010-06-28 richard <richard@taomee.com>
+	* i_ring_queue.h, ring_queue_impl.h, ring_queue_impl.cpp: 修改push_data接口的第一个参数为const类型
+	* ring_queue_test.cpp: 为ring_queue添加单元测试
+
+2010-06-22 richard <richard@taomee.com>
+	* ring_queue_impl.cpp: 修改pop_data操作，当timeout为0时，也从pipe中读取字符

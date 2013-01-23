@@ -1,0 +1,407 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BIN_DIR	Makefile	/^BIN_DIR = .\/bin$/;"	kind:m	line:15	language:Make
+CC	Makefile	/^CC = g++$/;"	kind:m	line:1	language:Make
+DEMO_DIR	Makefile	/^DEMO_DIR = .\/demo$/;"	kind:m	line:29	language:Make
+DEMO_TARGET	Makefile	/^DEMO_TARGET = $(DEMO_DIR)\/bin\/simple_file_server$/;"	kind:m	line:30	language:Make
+DS	Makefile	/^DS := $(OBJS:.o=.d)$/;"	kind:m	line:22	language:Make
+HEADER_DIR	Makefile	/^HEADER_DIR = .\/src\/header$/;"	kind:m	line:13	language:Make
+HEADER_FILES	Makefile	/^HEADER_FILES := $(wildcard $(HEADER_DIR)\/*.h)$/;"	kind:m	line:19	language:Make
+INCLUDE_DIR	Makefile	/^INCLUDE_DIR = .\/include$/;"	kind:m	line:14	language:Make
+INCLUDE_FILES	Makefile	/^INCLUDE_FILES := $(wildcard $(INCLUDE_DIR)\/*.h)$/;"	kind:m	line:20	language:Make
+LD_LIBRARY_PATH	Makefile	/^	export LD_LIBRARY_PATH=$(BIN_DIR):$LD_LIBRARY_PATH;$(TEST_TARGET)$/;"	kind:m	line:69	language:Make
+LD_LIBRARY_PATH	Makefile	/^	export LD_LIBRARY_PATH=$(BIN_DIR):$LD_LIBRARY_PATH;gdb $(TEST_TARGET)$/;"	kind:m	line:72	language:Make
+LINK	Makefile	/^LINK = libnetioserver.so$/;"	kind:m	line:7	language:Make
+MAX_ACTIVE_CLIENT_NUM	src/header/c_net_io_server.h	16;"	kind:d	line:16	language:C++
+MAX_BUFFER_EXTRA_LEN	src/header/c_net_io_server.h	20;"	kind:d	line:20	language:C++
+MAX_BUFFER_RECV_LEN	src/header/c_net_io_server.h	18;"	kind:d	line:18	language:C++
+MAX_BUFFER_SEND_LEN	src/header/c_net_io_server.h	19;"	kind:d	line:19	language:C++
+MAX_CLIENT_NUM	src/header/c_net_io_server.h	15;"	kind:d	line:15	language:C++
+MAX_ERRSTR_LEN	src/header/c_net_io_server.h	22;"	kind:d	line:22	language:C++
+Makefile	Makefile	1;"	kind:F	line:1	language:Make
+NET_IO_SERVER_CMD_ACCEPT	include/i_net_io_server.h	13;"	kind:d	line:13	language:C++
+NET_IO_SERVER_CMD_READ	include/i_net_io_server.h	14;"	kind:d	line:14	language:C++
+NET_IO_SERVER_CMD_WRITE	include/i_net_io_server.h	15;"	kind:d	line:15	language:C++
+NET_IO_SERVER_ECLOSE	include/i_net_io_server.h	24;"	kind:d	line:24	language:C++
+NET_IO_SERVER_EINIT	include/i_net_io_server.h	19;"	kind:d	line:19	language:C++
+NET_IO_SERVER_EIO	include/i_net_io_server.h	20;"	kind:d	line:20	language:C++
+NET_IO_SERVER_EQUERY	include/i_net_io_server.h	23;"	kind:d	line:23	language:C++
+NET_IO_SERVER_ERECV	include/i_net_io_server.h	22;"	kind:d	line:22	language:C++
+NET_IO_SERVER_ESEND	include/i_net_io_server.h	21;"	kind:d	line:21	language:C++
+NET_IO_SERVER_FLAG_RUNOUT	src/header/c_net_io_server.h	24;"	kind:d	line:24	language:C++
+NET_IO_SERVER_LISTEN_BACKLOG	src/header/c_net_io_server.h	14;"	kind:d	line:14	language:C++
+NET_IO_SERVER_OK	include/i_net_io_server.h	18;"	kind:d	line:18	language:C++
+OBJS	Makefile	/^OBJS := $(patsubst %.cpp,%.o,$(subst $(SOURCE_DIR),$(OBJ_DIR),$(SOURCE_FILES)))$/;"	kind:m	line:21	language:Make
+OBJ_DIR	Makefile	/^OBJ_DIR = .\/obj$/;"	kind:m	line:16	language:Make
+SONAME	Makefile	/^SONAME = libnetioserver.so.2$/;"	kind:m	line:6	language:Make
+SOURCE_DIR	Makefile	/^SOURCE_DIR = .\/src\/source$/;"	kind:m	line:12	language:Make
+SOURCE_FILES	Makefile	/^SOURCE_FILES := $(wildcard $(SOURCE_DIR)\/*.cpp)$/;"	kind:m	line:18	language:Make
+STATIC_TARGET	Makefile	/^STATIC_TARGET = libnetioserver.a$/;"	kind:m	line:9	language:Make
+STATIC_TARGET_FILES	Makefile	/^STATIC_TARGET_FILES = $(BIN_DIR)\/$(STATIC_TARGET)$/;"	kind:m	line:10	language:Make
+TARGET	Makefile	/^TARGET = libnetioserver.so.2.0$/;"	kind:m	line:5	language:Make
+TARGET_FILES	Makefile	/^TARGET_FILES := $(BIN_DIR)\/$(TARGET)$/;"	kind:m	line:23	language:Make
+TEST_DIR	Makefile	/^TEST_DIR = .\/test$/;"	kind:m	line:25	language:Make
+TEST_FILES	Makefile	/^TEST_FILES := $(wildcard $(TEST_DIR)\/*.cpp)$/;"	kind:m	line:27	language:Make
+TEST_TARGET	Makefile	/^TEST_TARGET = $(BIN_DIR)\/test$/;"	kind:m	line:26	language:Make
+__COMMAND_HANDLER_H__	test/command_handler.h	2;"	kind:d	line:2	language:C++
+__C_NET_IO_EVENT_HANDLER_H__	demo/c_net_io_event_handler.h	2;"	kind:d	line:2	language:C++
+__C_NET_IO_NOTIFIER__	src/header/c_net_io_notifier.h	10;"	kind:d	line:10	language:C++
+__C_NET_IO_SERVER_H__	src/header/c_net_io_server.h	10;"	kind:d	line:10	language:C++
+__I_NET_IO_SERVER_H__	include/i_net_io_server.h	10;"	kind:d	line:10	language:C++
+__construct	demo/client/random_request_file.class.php	/^    public function __construct()$/;"	kind:f	line:22	language:PHP
+__destruct	demo/client/socket_handler.class.php	/^    function __destruct()$/;"	kind:f	line:38	language:PHP
+broadcast	include/i_net_io_server.h	/^    virtual int broadcast(int id,$/;"	kind:p	line:210	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int date_len, int is_atomic)
+broadcast	src/header/c_net_io_server.h	/^    int broadcast(int id, const char *p_data, int date_len, int is_atomic);$/;"	kind:p	line:124	language:C++	class:c_net_io_server	access:public	signature:(int id, const char *p_data, int date_len, int is_atomic)
+broadcast	src/source/c_net_io_server.cpp	/^int c_net_io_server::broadcast(int id,$/;"	kind:f	line:1113	language:C++	class:c_net_io_server	signature:(int id, const char *p_data, int data_len, int is_atomic)
+buffer_recv	src/header/c_net_io_server.h	/^        char buffer_recv[MAX_BUFFER_RECV_LEN];$/;"	kind:m	line:46	language:C++	struct:c_net_io_server::__anon1	access:public
+buffer_recv_len	src/header/c_net_io_server.h	/^        int buffer_recv_len;$/;"	kind:m	line:45	language:C++	struct:c_net_io_server::__anon1	access:public
+buffer_send	src/header/c_net_io_server.h	/^        char buffer_send[MAX_BUFFER_SEND_LEN];$/;"	kind:m	line:51	language:C++	struct:c_net_io_server::__anon1	access:public
+buffer_send_len	src/header/c_net_io_server.h	/^        int buffer_send_len;$/;"	kind:m	line:47	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_event_handler	demo/c_net_io_event_handler.h	/^class c_net_io_event_handler: public i_net_io_event_handler$/;"	kind:c	line:6	language:C++	inherits:i_net_io_event_handler
+c_net_io_event_handler	test/test.cpp	/^class c_net_io_event_handler: public i_net_io_event_handler$/;"	kind:c	line:10	language:C++	file:	inherits:i_net_io_event_handler
+c_net_io_event_handler.cpp	demo/c_net_io_event_handler.cpp	1;"	kind:F	line:1	language:C++
+c_net_io_event_handler.h	demo/c_net_io_event_handler.h	1;"	kind:F	line:1	language:C++
+c_net_io_event_handler::on_connection_closed	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_connection_closed($/;"	kind:f	line:116	language:C++	class:c_net_io_event_handler	signature:( void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+c_net_io_event_handler::on_connection_closed	demo/c_net_io_event_handler.h	/^    int on_connection_closed(void *p_net_io_server,$/;"	kind:p	line:25	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+c_net_io_event_handler::on_connection_closed	test/test.cpp	/^    int on_connection_closed(void * \/*p_net_io_server *\/,$/;"	kind:f	line:119	language:C++	class:c_net_io_event_handler	access:public	signature:(void * , const int id, const int fd, const char * , const int , union net_io_storage *p_storage)
+c_net_io_event_handler::on_new_connection	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_new_connection(void *p_net_io_server,$/;"	kind:f	line:12	language:C++	class:c_net_io_event_handler	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+c_net_io_event_handler::on_new_connection	demo/c_net_io_event_handler.h	/^    int on_new_connection(void *p_net_io_server,$/;"	kind:p	line:9	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+c_net_io_event_handler::on_new_connection	test/test.cpp	/^    int on_new_connection(void * \/* p_net_io_server *\/,$/;"	kind:f	line:13	language:C++	class:c_net_io_event_handler	access:public	signature:(void * , const int id, const int fd, const char *ip, const int port, union net_io_storage *p_storage)
+c_net_io_event_handler::on_recv_data	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_recv_data(void *p_net_io_server,$/;"	kind:f	line:25	language:C++	class:c_net_io_event_handler	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+c_net_io_event_handler::on_recv_data	demo/c_net_io_event_handler.h	/^    int on_recv_data(void *p_net_io_server,$/;"	kind:p	line:16	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+c_net_io_event_handler::on_recv_data	test/test.cpp	/^    int on_recv_data(void *p_net_io_server,$/;"	kind:f	line:28	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, const int id, const int , const char * , const int , char *p_data, int data_len, union net_io_storage *p_storage)
+c_net_io_event_handler::on_wakeup	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_wakeup(void *p_net_io_server)$/;"	kind:f	line:130	language:C++	class:c_net_io_event_handler	signature:(void *p_net_io_server)
+c_net_io_event_handler::on_wakeup	demo/c_net_io_event_handler.h	/^    int on_wakeup(void *p_net_io_server);$/;"	kind:p	line:32	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server)
+c_net_io_event_handler::on_wakeup	test/test.cpp	/^    int on_wakeup(void *p_net_io_server)$/;"	kind:f	line:132	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server)
+c_net_io_notifier	src/header/c_net_io_notifier.h	/^    c_net_io_notifier();$/;"	kind:p	line:32	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier	src/header/c_net_io_notifier.h	/^class c_net_io_notifier: public i_net_io_notifier$/;"	kind:c	line:26	language:C++	inherits:i_net_io_notifier
+c_net_io_notifier	src/source/c_net_io_notifier.cpp	/^c_net_io_notifier::c_net_io_notifier()$/;"	kind:f	line:38	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_notifier.cpp	src/source/c_net_io_notifier.cpp	1;"	kind:F	line:1	language:C++
+c_net_io_notifier.h	src/header/c_net_io_notifier.h	1;"	kind:F	line:1	language:C++
+c_net_io_notifier::c_net_io_notifier	src/header/c_net_io_notifier.h	/^    c_net_io_notifier();$/;"	kind:p	line:32	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier::c_net_io_notifier	src/source/c_net_io_notifier.cpp	/^c_net_io_notifier::c_net_io_notifier()$/;"	kind:f	line:38	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_notifier::get_eventfd	src/header/c_net_io_notifier.h	/^    int get_eventfd() const;$/;"	kind:p	line:74	language:C++	class:c_net_io_notifier	access:public	signature:() const
+c_net_io_notifier::get_eventfd	src/header/c_net_io_notifier.h	/^inline int c_net_io_notifier::get_eventfd() const$/;"	kind:f	line:103	language:C++	class:c_net_io_notifier	signature:() const
+c_net_io_notifier::got	src/header/c_net_io_notifier.h	/^    int got();$/;"	kind:p	line:67	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier::got	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::got()$/;"	kind:f	line:119	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_notifier::init	src/header/c_net_io_notifier.h	/^    int init();$/;"	kind:p	line:46	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier::init	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::init()$/;"	kind:f	line:48	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_notifier::m_init_	src/header/c_net_io_notifier.h	/^    int m_init_;$/;"	kind:m	line:85	language:C++	class:c_net_io_notifier	access:private
+c_net_io_notifier::m_p_mutex_	src/header/c_net_io_notifier.h	/^    int *m_p_mutex_;$/;"	kind:m	line:100	language:C++	class:c_net_io_notifier	access:private
+c_net_io_notifier::m_rfd_	src/header/c_net_io_notifier.h	/^    int m_rfd_;$/;"	kind:m	line:95	language:C++	class:c_net_io_notifier	access:private
+c_net_io_notifier::m_wfd_	src/header/c_net_io_notifier.h	/^    int m_wfd_;$/;"	kind:m	line:90	language:C++	class:c_net_io_notifier	access:private
+c_net_io_notifier::popup	src/header/c_net_io_notifier.h	/^    int popup();$/;"	kind:p	line:60	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier::popup	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::popup()$/;"	kind:f	line:92	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_notifier::release	src/header/c_net_io_notifier.h	/^    int release();$/;"	kind:p	line:79	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier::release	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::release()$/;"	kind:f	line:165	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_notifier::uninit	src/header/c_net_io_notifier.h	/^    int uninit();$/;"	kind:p	line:53	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier::uninit	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::uninit()$/;"	kind:f	line:144	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_notifier::~c_net_io_notifier	src/header/c_net_io_notifier.h	/^    ~c_net_io_notifier();$/;"	kind:p	line:37	language:C++	class:c_net_io_notifier	access:public	signature:()
+c_net_io_notifier::~c_net_io_notifier	src/source/c_net_io_notifier.cpp	/^c_net_io_notifier::~c_net_io_notifier()$/;"	kind:f	line:43	language:C++	class:c_net_io_notifier	signature:()
+c_net_io_server	src/header/c_net_io_server.h	/^    c_net_io_server();$/;"	kind:p	line:67	language:C++	class:c_net_io_server	access:public	signature:()
+c_net_io_server	src/header/c_net_io_server.h	/^class c_net_io_server: public i_net_io_server$/;"	kind:c	line:31	language:C++	inherits:i_net_io_server
+c_net_io_server	src/source/c_net_io_server.cpp	/^c_net_io_server::c_net_io_server()$/;"	kind:f	line:65	language:C++	class:c_net_io_server	signature:()
+c_net_io_server.cpp	src/source/c_net_io_server.cpp	1;"	kind:F	line:1	language:C++
+c_net_io_server.h	src/header/c_net_io_server.h	1;"	kind:F	line:1	language:C++
+c_net_io_server::__anon1::buffer_recv	src/header/c_net_io_server.h	/^        char buffer_recv[MAX_BUFFER_RECV_LEN];$/;"	kind:m	line:46	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::buffer_recv_len	src/header/c_net_io_server.h	/^        int buffer_recv_len;$/;"	kind:m	line:45	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::buffer_send	src/header/c_net_io_server.h	/^        char buffer_send[MAX_BUFFER_SEND_LEN];$/;"	kind:m	line:51	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::buffer_send_len	src/header/c_net_io_server.h	/^        int buffer_send_len;$/;"	kind:m	line:47	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::connect_time	src/header/c_net_io_server.h	/^        int connect_time;$/;"	kind:m	line:43	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::extra_buffer	src/header/c_net_io_server.h	/^        char *extra_buffer;$/;"	kind:m	line:50	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::extra_buffer_len	src/header/c_net_io_server.h	/^        int extra_buffer_len;$/;"	kind:m	line:48	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::extra_buffer_len_used	src/header/c_net_io_server.h	/^        int extra_buffer_len_used;$/;"	kind:m	line:49	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::fd	src/header/c_net_io_server.h	/^        int fd;$/;"	kind:m	line:40	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::id	src/header/c_net_io_server.h	/^        int id;$/;"	kind:m	line:39	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::ip	src/header/c_net_io_server.h	/^        char ip[16];$/;"	kind:m	line:41	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::port	src/header/c_net_io_server.h	/^        int port;$/;"	kind:m	line:42	language:C++	struct:c_net_io_server::__anon1	access:public
+c_net_io_server::__anon1::storage	src/header/c_net_io_server.h	/^        union net_io_storage storage;$/;"	kind:m	line:44	language:C++	struct:c_net_io_server::__anon1	typeref:union:c_net_io_server::__anon1::net_io_storage	access:public
+c_net_io_server::broadcast	src/header/c_net_io_server.h	/^    int broadcast(int id, const char *p_data, int date_len, int is_atomic);$/;"	kind:p	line:124	language:C++	class:c_net_io_server	access:public	signature:(int id, const char *p_data, int date_len, int is_atomic)
+c_net_io_server::broadcast	src/source/c_net_io_server.cpp	/^int c_net_io_server::broadcast(int id,$/;"	kind:f	line:1113	language:C++	class:c_net_io_server	signature:(int id, const char *p_data, int data_len, int is_atomic)
+c_net_io_server::c_net_io_server	src/header/c_net_io_server.h	/^    c_net_io_server();$/;"	kind:p	line:67	language:C++	class:c_net_io_server	access:public	signature:()
+c_net_io_server::c_net_io_server	src/source/c_net_io_server.cpp	/^c_net_io_server::c_net_io_server()$/;"	kind:f	line:65	language:C++	class:c_net_io_server	signature:()
+c_net_io_server::close_connection	src/header/c_net_io_server.h	/^    int close_connection(int id, bool need_notify);$/;"	kind:p	line:177	language:C++	class:c_net_io_server	access:public	signature:(int id, bool need_notify)
+c_net_io_server::close_connection	src/source/c_net_io_server.cpp	/^int c_net_io_server::close_connection(int id, bool need_notify)$/;"	kind:f	line:1157	language:C++	class:c_net_io_server	signature:(int id, bool need_notify)
+c_net_io_server::connection_info_t	src/header/c_net_io_server.h	/^    } connection_info_t;$/;"	kind:t	line:52	language:C++	class:c_net_io_server	typeref:struct:c_net_io_server::__anon1	access:public
+c_net_io_server::do_io	src/header/c_net_io_server.h	/^    int do_io(int timeout, int cmd);$/;"	kind:p	line:167	language:C++	class:c_net_io_server	access:public	signature:(int timeout, int cmd)
+c_net_io_server::do_io	src/source/c_net_io_server.cpp	/^int c_net_io_server::do_io(int timeout, int cmd)$/;"	kind:f	line:227	language:C++	class:c_net_io_server	signature:(int timeout, int cmd)
+c_net_io_server::enum_connections	src/header/c_net_io_server.h	/^    int enum_connections(int *p_buffer, int length, int *p_buffer_len);$/;"	kind:p	line:156	language:C++	class:c_net_io_server	access:public	signature:(int *p_buffer, int length, int *p_buffer_len)
+c_net_io_server::enum_connections	src/source/c_net_io_server.cpp	/^int c_net_io_server::enum_connections(int *p_buffer,$/;"	kind:f	line:1248	language:C++	class:c_net_io_server	signature:(int *p_buffer, int length, int *p_buffer_len)
+c_net_io_server::genereate_id_	src/header/c_net_io_server.h	/^    int genereate_id_();$/;"	kind:p	line:231	language:C++	class:c_net_io_server	access:private	signature:()
+c_net_io_server::genereate_id_	src/header/c_net_io_server.h	/^inline int c_net_io_server::genereate_id_()$/;"	kind:f	line:328	language:C++	class:c_net_io_server	signature:()
+c_net_io_server::get_connection_info	src/header/c_net_io_server.h	/^    int get_connection_info(int id,$/;"	kind:p	line:139	language:C++	class:c_net_io_server	access:public	signature:(int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+c_net_io_server::get_connection_info	src/source/c_net_io_server.cpp	/^int c_net_io_server::get_connection_info(int id,$/;"	kind:f	line:1197	language:C++	class:c_net_io_server	signature:(int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+c_net_io_server::get_last_errno	src/header/c_net_io_server.h	/^    int get_last_errno();$/;"	kind:p	line:184	language:C++	class:c_net_io_server	access:public	signature:()
+c_net_io_server::get_last_errno	src/header/c_net_io_server.h	/^inline int c_net_io_server::get_last_errno()$/;"	kind:f	line:349	language:C++	class:c_net_io_server	signature:()
+c_net_io_server::get_last_errstr	src/header/c_net_io_server.h	/^    const char *get_last_errstr();$/;"	kind:p	line:191	language:C++	class:c_net_io_server	access:public	signature:()
+c_net_io_server::get_last_errstr	src/header/c_net_io_server.h	/^inline const char *c_net_io_server::get_last_errstr()$/;"	kind:f	line:354	language:C++	class:c_net_io_server	signature:()
+c_net_io_server::id_conn_map_iter_t	src/header/c_net_io_server.h	/^    typedef id_connection_map_t::iterator id_conn_map_iter_t;$/;"	kind:t	line:62	language:C++	class:c_net_io_server	access:public
+c_net_io_server::id_connection_map_t	src/header/c_net_io_server.h	/^    typedef std::map<int, connection_info_t> id_connection_map_t;$/;"	kind:t	line:57	language:C++	class:c_net_io_server	access:public
+c_net_io_server::init	src/header/c_net_io_server.h	/^    int init(const char *ip,$/;"	kind:p	line:86	language:C++	class:c_net_io_server	access:public	signature:(const char *ip, int port, const i_net_io_event_handler *p_events_handler, const i_net_io_notifier *p_net_io_notifier, int id_base = 1, int id_step = 1)
+c_net_io_server::init	src/source/c_net_io_server.cpp	/^int c_net_io_server::init(const char *ip,$/;"	kind:f	line:81	language:C++	class:c_net_io_server	signature:(const char *ip, int port, const i_net_io_event_handler *p_event_handler, const i_net_io_notifier *p_net_io_notifier, int id_base, int id_step)
+c_net_io_server::m_connection_info_	src/header/c_net_io_server.h	/^    connection_info_t m_connection_info_;$/;"	kind:m	line:299	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_epoll_fd_	src/header/c_net_io_server.h	/^    int m_epoll_fd_;$/;"	kind:m	line:269	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_errno_	src/header/c_net_io_server.h	/^    int m_errno_;$/;"	kind:m	line:236	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_errstr_	src/header/c_net_io_server.h	/^    char m_errstr_[MAX_ERRSTR_LEN];$/;"	kind:m	line:241	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_events_	src/header/c_net_io_server.h	/^    epoll_event m_events_[MAX_ACTIVE_CLIENT_NUM + 2];$/;"	kind:m	line:294	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_flag_	src/header/c_net_io_server.h	/^    int m_flag_;$/;"	kind:m	line:289	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_id_	src/header/c_net_io_server.h	/^    int m_id_;$/;"	kind:m	line:214	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_id_base_	src/header/c_net_io_server.h	/^    int m_id_base_;$/;"	kind:m	line:219	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_id_conn_map_	src/header/c_net_io_server.h	/^    id_connection_map_t m_id_conn_map_;$/;"	kind:m	line:274	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_id_step_	src/header/c_net_io_server.h	/^    int m_id_step_;$/;"	kind:m	line:224	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_init_	src/header/c_net_io_server.h	/^    int m_init_;$/;"	kind:m	line:209	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_ip_listen_	src/header/c_net_io_server.h	/^    char m_ip_listen_[16];$/;"	kind:m	line:254	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_p_net_io_event_handler_	src/header/c_net_io_server.h	/^    i_net_io_event_handler* m_p_net_io_event_handler_;$/;"	kind:m	line:279	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_p_net_io_notifier_	src/header/c_net_io_server.h	/^    i_net_io_notifier *m_p_net_io_notifier_;$/;"	kind:m	line:284	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_port_listen_	src/header/c_net_io_server.h	/^    int m_port_listen_;$/;"	kind:m	line:259	language:C++	class:c_net_io_server	access:private
+c_net_io_server::m_socket_listen_	src/header/c_net_io_server.h	/^    int m_socket_listen_;$/;"	kind:m	line:264	language:C++	class:c_net_io_server	access:private
+c_net_io_server::release	src/header/c_net_io_server.h	/^    int release();$/;"	kind:p	line:203	language:C++	class:c_net_io_server	access:public	signature:()
+c_net_io_server::release	src/source/c_net_io_server.cpp	/^int c_net_io_server::release()$/;"	kind:f	line:1315	language:C++	class:c_net_io_server	signature:()
+c_net_io_server::send_data	src/header/c_net_io_server.h	/^    int send_data(int id, const char *p_data, int data_len);$/;"	kind:p	line:102	language:C++	class:c_net_io_server	access:public	signature:(int id, const char *p_data, int data_len)
+c_net_io_server::send_data	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data(int id, const char *p_data, int data_len)$/;"	kind:f	line:787	language:C++	class:c_net_io_server	signature:(int id, const char *p_data, int data_len)
+c_net_io_server::send_data_	src/header/c_net_io_server.h	/^    int send_data_(connection_info_t *p_connection_info,$/;"	kind:p	line:310	language:C++	class:c_net_io_server	access:private	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+c_net_io_server::send_data_	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data_(connection_info_t *p_connection_info,$/;"	kind:f	line:533	language:C++	class:c_net_io_server	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+c_net_io_server::send_data_atomic	src/header/c_net_io_server.h	/^    int send_data_atomic(int id, const char *p_data, int data_len);$/;"	kind:p	line:113	language:C++	class:c_net_io_server	access:public	signature:(int id, const char *p_data, int data_len)
+c_net_io_server::send_data_atomic	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data_atomic(int id, const char *p_data, int data_len)$/;"	kind:f	line:814	language:C++	class:c_net_io_server	signature:(int id, const char *p_data, int data_len)
+c_net_io_server::send_data_atomic_	src/header/c_net_io_server.h	/^    int send_data_atomic_(connection_info_t *p_connection_info,$/;"	kind:p	line:323	language:C++	class:c_net_io_server	access:private	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+c_net_io_server::send_data_atomic_	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data_atomic_(connection_info_t *p_connection_info,$/;"	kind:f	line:841	language:C++	class:c_net_io_server	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+c_net_io_server::set_error_info_	src/header/c_net_io_server.h	/^    void set_error_info_(int error_no, const char *msg, ...);$/;"	kind:p	line:249	language:C++	class:c_net_io_server	access:private	signature:(int error_no, const char *msg, ...)
+c_net_io_server::set_error_info_	src/header/c_net_io_server.h	/^inline void c_net_io_server::set_error_info_(int error_no, const char *msg, ...)$/;"	kind:f	line:340	language:C++	class:c_net_io_server	signature:(int error_no, const char *msg, ...)
+c_net_io_server::uninit	src/header/c_net_io_server.h	/^    int uninit();$/;"	kind:p	line:198	language:C++	class:c_net_io_server	access:public	signature:()
+c_net_io_server::uninit	src/source/c_net_io_server.cpp	/^int c_net_io_server::uninit()$/;"	kind:f	line:1280	language:C++	class:c_net_io_server	signature:()
+c_net_io_server::~c_net_io_server	src/header/c_net_io_server.h	/^    ~c_net_io_server();$/;"	kind:p	line:72	language:C++	class:c_net_io_server	access:public	signature:()
+c_net_io_server::~c_net_io_server	src/source/c_net_io_server.cpp	/^c_net_io_server::~c_net_io_server()$/;"	kind:f	line:76	language:C++	class:c_net_io_server	signature:()
+close	demo/client/socket_handler.class.php	/^    public function close()$/;"	kind:f	line:48	language:PHP
+close_connection	include/i_net_io_server.h	/^    virtual int close_connection(int id, bool need_ontify) = 0;$/;"	kind:p	line:269	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, bool need_ontify)
+close_connection	src/header/c_net_io_server.h	/^    int close_connection(int id, bool need_notify);$/;"	kind:p	line:177	language:C++	class:c_net_io_server	access:public	signature:(int id, bool need_notify)
+close_connection	src/source/c_net_io_server.cpp	/^int c_net_io_server::close_connection(int id, bool need_notify)$/;"	kind:f	line:1157	language:C++	class:c_net_io_server	signature:(int id, bool need_notify)
+command_handler.cpp	test/command_handler.cpp	1;"	kind:F	line:1	language:C++
+command_handler.h	test/command_handler.h	1;"	kind:F	line:1	language:C++
+connect	demo/client/socket_handler.class.php	/^    public function connect($host, $port)$/;"	kind:f	line:21	language:PHP
+connect_time	src/header/c_net_io_server.h	/^        int connect_time;$/;"	kind:m	line:43	language:C++	struct:c_net_io_server::__anon1	access:public
+connection_info_t	src/header/c_net_io_server.h	/^    } connection_info_t;$/;"	kind:t	line:52	language:C++	class:c_net_io_server	typeref:struct:c_net_io_server::__anon1	access:public
+content	demo/client/random_request_file.class.php	/^            $content = '';$/;"	kind:v	line:52	language:PHP
+content	test/get.php	/^    $content = '';$/;"	kind:v	line:38	language:PHP
+data	demo/client/random_request_file.class.php	/^                $data = $this->socket_->receive();$/;"	kind:v	line:57	language:PHP
+data	demo/client/socket_handler.class.php	/^        $data = socket_read($this->socket, 1024 * 4, PHP_BINARY_READ);$/;"	kind:v	line:80	language:PHP
+data	test/get.php	/^        $data = socket_read($socket, 1, PHP_BINARY_READ);$/;"	kind:v	line:44	language:PHP
+data	test/test.php	/^    $data = socket_read($socket, 1, PHP_BINARY_READ);$/;"	kind:v	line:20	language:PHP
+data	test/test.php	/^$data = '';$/;"	kind:v	line:12	language:PHP
+do_io	include/i_net_io_server.h	/^    virtual int do_io(int timeout, int cmd) = 0;$/;"	kind:p	line:259	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int timeout, int cmd)
+do_io	src/header/c_net_io_server.h	/^    int do_io(int timeout, int cmd);$/;"	kind:p	line:167	language:C++	class:c_net_io_server	access:public	signature:(int timeout, int cmd)
+do_io	src/source/c_net_io_server.cpp	/^int c_net_io_server::do_io(int timeout, int cmd)$/;"	kind:f	line:227	language:C++	class:c_net_io_server	signature:(int timeout, int cmd)
+enum_connections	include/i_net_io_server.h	/^    virtual int enum_connections(int *p_buffer,$/;"	kind:p	line:246	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int *p_buffer, int length, int *p_buffer_len)
+enum_connections	src/header/c_net_io_server.h	/^    int enum_connections(int *p_buffer, int length, int *p_buffer_len);$/;"	kind:p	line:156	language:C++	class:c_net_io_server	access:public	signature:(int *p_buffer, int length, int *p_buffer_len)
+enum_connections	src/source/c_net_io_server.cpp	/^int c_net_io_server::enum_connections(int *p_buffer,$/;"	kind:f	line:1248	language:C++	class:c_net_io_server	signature:(int *p_buffer, int length, int *p_buffer_len)
+error_	demo/client/random_request_file.class.php	/^        $this->error_ = $error;$/;"	kind:v	line:14	language:PHP
+error_	demo/client/random_request_file.class.php	/^    private $error_ = '';$/;"	kind:v	line:10	language:PHP
+extra_buffer	src/header/c_net_io_server.h	/^        char *extra_buffer;$/;"	kind:m	line:50	language:C++	struct:c_net_io_server::__anon1	access:public
+extra_buffer_len	src/header/c_net_io_server.h	/^        int extra_buffer_len;$/;"	kind:m	line:48	language:C++	struct:c_net_io_server::__anon1	access:public
+extra_buffer_len_used	src/header/c_net_io_server.h	/^        int extra_buffer_len_used;$/;"	kind:m	line:49	language:C++	struct:c_net_io_server::__anon1	access:public
+f	test/get.php	/^$f = fopen('php:\/\/stdin', 'r');$/;"	kind:v	line:10	language:PHP
+fd	src/header/c_net_io_server.h	/^        int fd;$/;"	kind:m	line:40	language:C++	struct:c_net_io_server::__anon1	access:public
+file	test/get.php	/^            $file = 'linux.txt';$/;"	kind:v	line:24	language:PHP
+file	test/get.php	/^            $file = 'story.txt';$/;"	kind:v	line:20	language:PHP
+file	test/get.php	/^            $file = 'story.txt';$/;"	kind:v	line:32	language:PHP
+file	test/get.php	/^            $file = '大话设计模式.txt';$/;"	kind:v	line:28	language:PHP
+file	test/get.php	/^    $file = '';$/;"	kind:v	line:14	language:PHP
+file_content	demo/client/random_request_file.class.php	/^                                $file_content = substr($content,$/;"	kind:v	line:79	language:PHP
+file_list	demo/client/run.php	/^$file_list = include('.\/file_list.inc.php');$/;"	kind:v	line:11	language:PHP
+file_list.inc.php	demo/client/file_list.inc.php	1;"	kind:F	line:1	language:PHP
+file_list_	demo/client/random_request_file.class.php	/^        $this->file_list_ = $file_list;$/;"	kind:v	line:37	language:PHP
+file_list_	demo/client/random_request_file.class.php	/^    private $file_list_ = array();$/;"	kind:v	line:8	language:PHP
+filename	demo/client/random_request_file.class.php	/^            $filename = $this->file_list_[$index]['name'];$/;"	kind:v	line:48	language:PHP
+free_	src/source/c_net_io_server.cpp	/^static inline void free_(void *ptr)$/;"	kind:f	line:58	language:C++	file:	signature:(void *ptr)
+genereate_id_	src/header/c_net_io_server.h	/^    int genereate_id_();$/;"	kind:p	line:231	language:C++	class:c_net_io_server	access:private	signature:()
+genereate_id_	src/header/c_net_io_server.h	/^inline int c_net_io_server::genereate_id_()$/;"	kind:f	line:328	language:C++	class:c_net_io_server	signature:()
+get.php	test/get.php	1;"	kind:F	line:1	language:PHP
+get_connection_info	include/i_net_io_server.h	/^    virtual int get_connection_info($/;"	kind:p	line:228	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:( int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+get_connection_info	src/header/c_net_io_server.h	/^    int get_connection_info(int id,$/;"	kind:p	line:139	language:C++	class:c_net_io_server	access:public	signature:(int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+get_connection_info	src/source/c_net_io_server.cpp	/^int c_net_io_server::get_connection_info(int id,$/;"	kind:f	line:1197	language:C++	class:c_net_io_server	signature:(int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+get_error	demo/client/random_request_file.class.php	/^    public function get_error()$/;"	kind:f	line:17	language:PHP
+get_eventfd	include/i_net_io_server.h	/^    virtual int get_eventfd() const = 0;$/;"	kind:p	line:71	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:() const
+get_eventfd	src/header/c_net_io_notifier.h	/^    int get_eventfd() const;$/;"	kind:p	line:74	language:C++	class:c_net_io_notifier	access:public	signature:() const
+get_eventfd	src/header/c_net_io_notifier.h	/^inline int c_net_io_notifier::get_eventfd() const$/;"	kind:f	line:103	language:C++	class:c_net_io_notifier	signature:() const
+get_last_errno	include/i_net_io_server.h	/^    virtual int get_last_errno() = 0;$/;"	kind:p	line:276	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+get_last_errno	src/header/c_net_io_server.h	/^    int get_last_errno();$/;"	kind:p	line:184	language:C++	class:c_net_io_server	access:public	signature:()
+get_last_errno	src/header/c_net_io_server.h	/^inline int c_net_io_server::get_last_errno()$/;"	kind:f	line:349	language:C++	class:c_net_io_server	signature:()
+get_last_errstr	include/i_net_io_server.h	/^    virtual const char *get_last_errstr() = 0;$/;"	kind:p	line:283	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+get_last_errstr	src/header/c_net_io_server.h	/^    const char *get_last_errstr();$/;"	kind:p	line:191	language:C++	class:c_net_io_server	access:public	signature:()
+get_last_errstr	src/header/c_net_io_server.h	/^inline const char *c_net_io_server::get_last_errstr()$/;"	kind:f	line:354	language:C++	class:c_net_io_server	signature:()
+got	include/i_net_io_server.h	/^    virtual int got() = 0;$/;"	kind:p	line:59	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+got	src/header/c_net_io_notifier.h	/^    int got();$/;"	kind:p	line:67	language:C++	class:c_net_io_notifier	access:public	signature:()
+got	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::got()$/;"	kind:f	line:119	language:C++	class:c_net_io_notifier	signature:()
+i	test/get.php	/^    $i = 0;$/;"	kind:v	line:37	language:PHP
+i	test/test.php	/^$i = 0;$/;"	kind:v	line:15	language:PHP
+i_net_io_event_handler	include/i_net_io_server.h	/^struct i_net_io_event_handler$/;"	kind:s	line:86	language:C++
+i_net_io_event_handler::on_connection_closed	include/i_net_io_server.h	/^    virtual int on_connection_closed(void *p_net_io_server,$/;"	kind:p	line:138	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+i_net_io_event_handler::on_new_connection	include/i_net_io_server.h	/^    virtual int on_new_connection(void *p_net_io_server,$/;"	kind:p	line:99	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+i_net_io_event_handler::on_recv_data	include/i_net_io_server.h	/^    virtual int on_recv_data(void *p_net_io_server,$/;"	kind:p	line:120	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+i_net_io_event_handler::on_wakeup	include/i_net_io_server.h	/^    virtual int on_wakeup(void *p_net_io_server) = 0;$/;"	kind:p	line:152	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server)
+i_net_io_notifier	include/i_net_io_server.h	/^struct i_net_io_notifier$/;"	kind:s	line:31	language:C++
+i_net_io_notifier::get_eventfd	include/i_net_io_server.h	/^    virtual int get_eventfd() const = 0;$/;"	kind:p	line:71	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:() const
+i_net_io_notifier::got	include/i_net_io_server.h	/^    virtual int got() = 0;$/;"	kind:p	line:59	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::init	include/i_net_io_server.h	/^    virtual int init() = 0;$/;"	kind:p	line:38	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::popup	include/i_net_io_server.h	/^    virtual int popup() = 0;$/;"	kind:p	line:52	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:64	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:45	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_server	include/i_net_io_server.h	/^struct i_net_io_server$/;"	kind:s	line:158	language:C++
+i_net_io_server.h	include/i_net_io_server.h	1;"	kind:F	line:1	language:C++
+i_net_io_server::broadcast	include/i_net_io_server.h	/^    virtual int broadcast(int id,$/;"	kind:p	line:210	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int date_len, int is_atomic)
+i_net_io_server::close_connection	include/i_net_io_server.h	/^    virtual int close_connection(int id, bool need_ontify) = 0;$/;"	kind:p	line:269	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, bool need_ontify)
+i_net_io_server::do_io	include/i_net_io_server.h	/^    virtual int do_io(int timeout, int cmd) = 0;$/;"	kind:p	line:259	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int timeout, int cmd)
+i_net_io_server::enum_connections	include/i_net_io_server.h	/^    virtual int enum_connections(int *p_buffer,$/;"	kind:p	line:246	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int *p_buffer, int length, int *p_buffer_len)
+i_net_io_server::get_connection_info	include/i_net_io_server.h	/^    virtual int get_connection_info($/;"	kind:p	line:228	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:( int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+i_net_io_server::get_last_errno	include/i_net_io_server.h	/^    virtual int get_last_errno() = 0;$/;"	kind:p	line:276	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+i_net_io_server::get_last_errstr	include/i_net_io_server.h	/^    virtual const char *get_last_errstr() = 0;$/;"	kind:p	line:283	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+i_net_io_server::init	include/i_net_io_server.h	/^    virtual int init(const char *ip,$/;"	kind:p	line:172	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(const char *ip, int port, const i_net_io_event_handler *p_event_handler, const i_net_io_notifier *p_net_io_notifier, int id_base, int id_step)
+i_net_io_server::release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:295	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+i_net_io_server::send_data	include/i_net_io_server.h	/^    virtual int send_data(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:188	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+i_net_io_server::send_data_atomic	include/i_net_io_server.h	/^    virtual int send_data_atomic(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:199	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+i_net_io_server::uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:290	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+id	src/header/c_net_io_server.h	/^        int id;$/;"	kind:m	line:39	language:C++	struct:c_net_io_server::__anon1	access:public
+id_conn_map_iter_t	src/header/c_net_io_server.h	/^    typedef id_connection_map_t::iterator id_conn_map_iter_t;$/;"	kind:t	line:62	language:C++	class:c_net_io_server	access:public
+id_connection_map_t	src/header/c_net_io_server.h	/^    typedef std::map<int, connection_info_t> id_connection_map_t;$/;"	kind:t	line:57	language:C++	class:c_net_io_server	access:public
+index	demo/client/random_request_file.class.php	/^            $index = rand(0, count($this->file_list_) - 1);$/;"	kind:v	line:47	language:PHP
+init	demo/client/random_request_file.class.php	/^    public function init($host, $port, $file_list)$/;"	kind:f	line:27	language:PHP
+init	include/i_net_io_server.h	/^    virtual int init() = 0;$/;"	kind:p	line:38	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+init	include/i_net_io_server.h	/^    virtual int init(const char *ip,$/;"	kind:p	line:172	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(const char *ip, int port, const i_net_io_event_handler *p_event_handler, const i_net_io_notifier *p_net_io_notifier, int id_base, int id_step)
+init	src/header/c_net_io_notifier.h	/^    int init();$/;"	kind:p	line:46	language:C++	class:c_net_io_notifier	access:public	signature:()
+init	src/header/c_net_io_server.h	/^    int init(const char *ip,$/;"	kind:p	line:86	language:C++	class:c_net_io_server	access:public	signature:(const char *ip, int port, const i_net_io_event_handler *p_events_handler, const i_net_io_notifier *p_net_io_notifier, int id_base = 1, int id_step = 1)
+init	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::init()$/;"	kind:f	line:48	language:C++	class:c_net_io_notifier	signature:()
+init	src/source/c_net_io_server.cpp	/^int c_net_io_server::init(const char *ip,$/;"	kind:f	line:81	language:C++	class:c_net_io_server	signature:(const char *ip, int port, const i_net_io_event_handler *p_event_handler, const i_net_io_notifier *p_net_io_notifier, int id_base, int id_step)
+ip	src/header/c_net_io_server.h	/^        char ip[16];$/;"	kind:m	line:41	language:C++	struct:c_net_io_server::__anon1	access:public
+j	test/get.php	/^    $j = 0;$/;"	kind:v	line:40	language:PHP
+j	test/test.php	/^$j = 0;$/;"	kind:v	line:16	language:PHP
+length	test/get.php	/^            $length = 1184640;$/;"	kind:v	line:21	language:PHP
+length	test/get.php	/^            $length = 1184640;$/;"	kind:v	line:33	language:PHP
+length	test/get.php	/^            $length = 1461903;$/;"	kind:v	line:25	language:PHP
+length	test/get.php	/^            $length = 76178;$/;"	kind:v	line:29	language:PHP
+length	test/get.php	/^    $length = 0;$/;"	kind:v	line:15	language:PHP
+m_connection_info_	src/header/c_net_io_server.h	/^    connection_info_t m_connection_info_;$/;"	kind:m	line:299	language:C++	class:c_net_io_server	access:private
+m_epoll_fd_	src/header/c_net_io_server.h	/^    int m_epoll_fd_;$/;"	kind:m	line:269	language:C++	class:c_net_io_server	access:private
+m_errno_	src/header/c_net_io_server.h	/^    int m_errno_;$/;"	kind:m	line:236	language:C++	class:c_net_io_server	access:private
+m_errstr_	src/header/c_net_io_server.h	/^    char m_errstr_[MAX_ERRSTR_LEN];$/;"	kind:m	line:241	language:C++	class:c_net_io_server	access:private
+m_events_	src/header/c_net_io_server.h	/^    epoll_event m_events_[MAX_ACTIVE_CLIENT_NUM + 2];$/;"	kind:m	line:294	language:C++	class:c_net_io_server	access:private
+m_flag_	src/header/c_net_io_server.h	/^    int m_flag_;$/;"	kind:m	line:289	language:C++	class:c_net_io_server	access:private
+m_id_	src/header/c_net_io_server.h	/^    int m_id_;$/;"	kind:m	line:214	language:C++	class:c_net_io_server	access:private
+m_id_base_	src/header/c_net_io_server.h	/^    int m_id_base_;$/;"	kind:m	line:219	language:C++	class:c_net_io_server	access:private
+m_id_conn_map_	src/header/c_net_io_server.h	/^    id_connection_map_t m_id_conn_map_;$/;"	kind:m	line:274	language:C++	class:c_net_io_server	access:private
+m_id_step_	src/header/c_net_io_server.h	/^    int m_id_step_;$/;"	kind:m	line:224	language:C++	class:c_net_io_server	access:private
+m_init_	src/header/c_net_io_notifier.h	/^    int m_init_;$/;"	kind:m	line:85	language:C++	class:c_net_io_notifier	access:private
+m_init_	src/header/c_net_io_server.h	/^    int m_init_;$/;"	kind:m	line:209	language:C++	class:c_net_io_server	access:private
+m_ip_listen_	src/header/c_net_io_server.h	/^    char m_ip_listen_[16];$/;"	kind:m	line:254	language:C++	class:c_net_io_server	access:private
+m_p_mutex_	src/header/c_net_io_notifier.h	/^    int *m_p_mutex_;$/;"	kind:m	line:100	language:C++	class:c_net_io_notifier	access:private
+m_p_net_io_event_handler_	src/header/c_net_io_server.h	/^    i_net_io_event_handler* m_p_net_io_event_handler_;$/;"	kind:m	line:279	language:C++	class:c_net_io_server	access:private
+m_p_net_io_notifier_	src/header/c_net_io_server.h	/^    i_net_io_notifier *m_p_net_io_notifier_;$/;"	kind:m	line:284	language:C++	class:c_net_io_server	access:private
+m_port_listen_	src/header/c_net_io_server.h	/^    int m_port_listen_;$/;"	kind:m	line:259	language:C++	class:c_net_io_server	access:private
+m_rfd_	src/header/c_net_io_notifier.h	/^    int m_rfd_;$/;"	kind:m	line:95	language:C++	class:c_net_io_notifier	access:private
+m_socket_listen_	src/header/c_net_io_server.h	/^    int m_socket_listen_;$/;"	kind:m	line:264	language:C++	class:c_net_io_server	access:private
+m_wfd_	src/header/c_net_io_notifier.h	/^    int m_wfd_;$/;"	kind:m	line:90	language:C++	class:c_net_io_notifier	access:private
+main	demo/simple_file_server.cpp	/^int main(int argc, char **argv)$/;"	kind:f	line:10	language:C++	signature:(int argc, char **argv)
+main	test/test.cpp	/^int main()$/;"	kind:f	line:138	language:C++	signature:()
+malloc_	src/source/c_net_io_server.cpp	/^static inline void *malloc_(size_t size)$/;"	kind:f	line:44	language:C++	file:	signature:(size_t size)
+md5	demo/client/random_request_file.class.php	/^            $md5 = $this->file_list_[$index]['md5'];$/;"	kind:v	line:49	language:PHP
+msg_mgr_	demo/c_net_io_event_handler.cpp	/^static map<int, string> msg_mgr_;$/;"	kind:v	line:10	language:C++	file:
+net_io_notifier_create	src/header/c_net_io_notifier.h	/^int net_io_notifier_create(i_net_io_notifier **pp_net_io_notifier);$/;"	kind:p	line:24	language:C++	signature:(i_net_io_notifier **pp_net_io_notifier)
+net_io_notifier_create	src/source/c_net_io_notifier.cpp	/^int net_io_notifier_create(i_net_io_notifier **pp_net_io_notifier)$/;"	kind:f	line:19	language:C++	signature:(i_net_io_notifier **pp_net_io_notifier)
+net_io_server_create	include/i_net_io_server.h	/^int net_io_server_create(i_net_io_server **pp_net_io_server);$/;"	kind:p	line:305	language:C++	signature:(i_net_io_server **pp_net_io_server)
+net_io_server_create	src/source/c_net_io_server.cpp	/^int net_io_server_create(i_net_io_server **pp_net_io_server)$/;"	kind:f	line:26	language:C++	signature:(i_net_io_server **pp_net_io_server)
+net_io_storage	include/i_net_io_server.h	/^union net_io_storage {$/;"	kind:u	line:77	language:C++
+net_io_storage::ptr	include/i_net_io_server.h	/^    void *ptr;$/;"	kind:m	line:80	language:C++	union:net_io_storage	access:public
+net_io_storage::u32	include/i_net_io_server.h	/^    uint32_t u32;$/;"	kind:m	line:78	language:C++	union:net_io_storage	access:public
+net_io_storage::u64	include/i_net_io_server.h	/^    uint64_t u64;$/;"	kind:m	line:79	language:C++	union:net_io_storage	access:public
+on_connection_closed	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_connection_closed($/;"	kind:f	line:116	language:C++	class:c_net_io_event_handler	signature:( void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_connection_closed	demo/c_net_io_event_handler.h	/^    int on_connection_closed(void *p_net_io_server,$/;"	kind:p	line:25	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_connection_closed	include/i_net_io_server.h	/^    virtual int on_connection_closed(void *p_net_io_server,$/;"	kind:p	line:138	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_connection_closed	test/test.cpp	/^    int on_connection_closed(void * \/*p_net_io_server *\/,$/;"	kind:f	line:119	language:C++	class:c_net_io_event_handler	access:public	signature:(void * , const int id, const int fd, const char * , const int , union net_io_storage *p_storage)
+on_new_connection	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_new_connection(void *p_net_io_server,$/;"	kind:f	line:12	language:C++	class:c_net_io_event_handler	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_new_connection	demo/c_net_io_event_handler.h	/^    int on_new_connection(void *p_net_io_server,$/;"	kind:p	line:9	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_new_connection	include/i_net_io_server.h	/^    virtual int on_new_connection(void *p_net_io_server,$/;"	kind:p	line:99	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_new_connection	test/test.cpp	/^    int on_new_connection(void * \/* p_net_io_server *\/,$/;"	kind:f	line:13	language:C++	class:c_net_io_event_handler	access:public	signature:(void * , const int id, const int fd, const char *ip, const int port, union net_io_storage *p_storage)
+on_recv_data	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_recv_data(void *p_net_io_server,$/;"	kind:f	line:25	language:C++	class:c_net_io_event_handler	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+on_recv_data	demo/c_net_io_event_handler.h	/^    int on_recv_data(void *p_net_io_server,$/;"	kind:p	line:16	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+on_recv_data	include/i_net_io_server.h	/^    virtual int on_recv_data(void *p_net_io_server,$/;"	kind:p	line:120	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+on_recv_data	test/test.cpp	/^    int on_recv_data(void *p_net_io_server,$/;"	kind:f	line:28	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server, const int id, const int , const char * , const int , char *p_data, int data_len, union net_io_storage *p_storage)
+on_wakeup	demo/c_net_io_event_handler.cpp	/^int c_net_io_event_handler::on_wakeup(void *p_net_io_server)$/;"	kind:f	line:130	language:C++	class:c_net_io_event_handler	signature:(void *p_net_io_server)
+on_wakeup	demo/c_net_io_event_handler.h	/^    int on_wakeup(void *p_net_io_server);$/;"	kind:p	line:32	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server)
+on_wakeup	include/i_net_io_server.h	/^    virtual int on_wakeup(void *p_net_io_server) = 0;$/;"	kind:p	line:152	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server)
+on_wakeup	test/test.cpp	/^    int on_wakeup(void *p_net_io_server)$/;"	kind:f	line:132	language:C++	class:c_net_io_event_handler	access:public	signature:(void *p_net_io_server)
+parse_command	test/command_handler.cpp	/^int parse_command(const char *cmd, int length, char *name)$/;"	kind:f	line:4	language:C++	signature:(const char *cmd, int length, char *name)
+parse_command	test/command_handler.h	/^int parse_command(const char *cmd, int length, char *name);$/;"	kind:p	line:4	language:C++	signature:(const char *cmd, int length, char *name)
+popup	include/i_net_io_server.h	/^    virtual int popup() = 0;$/;"	kind:p	line:52	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+popup	src/header/c_net_io_notifier.h	/^    int popup();$/;"	kind:p	line:60	language:C++	class:c_net_io_notifier	access:public	signature:()
+popup	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::popup()$/;"	kind:f	line:92	language:C++	class:c_net_io_notifier	signature:()
+port	src/header/c_net_io_server.h	/^        int port;$/;"	kind:m	line:42	language:C++	struct:c_net_io_server::__anon1	access:public
+ptr	include/i_net_io_server.h	/^    void *ptr;$/;"	kind:m	line:80	language:C++	union:net_io_storage	access:public
+random_request_file	demo/client/random_request_file.class.php	/^class random_request_file$/;"	kind:c	line:4	language:PHP
+random_request_file.class.php	demo/client/random_request_file.class.php	1;"	kind:F	line:1	language:PHP
+realloc_	src/source/c_net_io_server.cpp	/^static inline void *realloc_(void *ptr, size_t size)$/;"	kind:f	line:51	language:C++	file:	signature:(void *ptr, size_t size)
+receive	demo/client/socket_handler.class.php	/^    public function receive()$/;"	kind:f	line:78	language:PHP
+release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:295	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:64	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+release	src/header/c_net_io_notifier.h	/^    int release();$/;"	kind:p	line:79	language:C++	class:c_net_io_notifier	access:public	signature:()
+release	src/header/c_net_io_server.h	/^    int release();$/;"	kind:p	line:203	language:C++	class:c_net_io_server	access:public	signature:()
+release	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::release()$/;"	kind:f	line:165	language:C++	class:c_net_io_notifier	signature:()
+release	src/source/c_net_io_server.cpp	/^int c_net_io_server::release()$/;"	kind:f	line:1315	language:C++	class:c_net_io_server	signature:()
+requester	demo/client/run.php	/^$requester = new random_request_file();$/;"	kind:v	line:10	language:PHP
+result	demo/client/random_request_file.class.php	/^                            $result = substr($content, -10, 1);$/;"	kind:v	line:73	language:PHP
+result	demo/client/socket_handler.class.php	/^        $result = $this->connect($host, $port);$/;"	kind:v	line:98	language:PHP
+result	demo/client/socket_handler.class.php	/^        $result = $this->receive();$/;"	kind:v	line:108	language:PHP
+result	demo/client/socket_handler.class.php	/^        $result = $this->send($data);$/;"	kind:v	line:103	language:PHP
+result	demo/client/socket_handler.class.php	/^        $result = socket_write($this->socket, $data, strlen($data));$/;"	kind:v	line:65	language:PHP
+ret	demo/client/random_request_file.class.php	/^        $ret = $this->socket_->connect($host, $port);$/;"	kind:v	line:29	language:PHP
+ret	demo/client/run.php	/^$ret = $requester->init($argv[1], $argv[2], $file_list);$/;"	kind:v	line:12	language:PHP
+ret	demo/client/run.php	/^$ret = $requester->run();$/;"	kind:v	line:20	language:PHP
+run	demo/client/random_request_file.class.php	/^    public function run()$/;"	kind:f	line:41	language:PHP
+run.php	demo/client/run.php	1;"	kind:F	line:1	language:PHP
+saveas	demo/client/random_request_file.class.php	/^                                $saveas = '.\/download\/'$/;"	kind:v	line:77	language:PHP
+send	demo/client/socket_handler.class.php	/^    public function send($data)$/;"	kind:f	line:63	language:PHP
+send2	demo/client/socket_handler.class.php	/^    public function send2($host, $port, $data)$/;"	kind:f	line:96	language:PHP
+send_data	include/i_net_io_server.h	/^    virtual int send_data(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:188	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+send_data	src/header/c_net_io_server.h	/^    int send_data(int id, const char *p_data, int data_len);$/;"	kind:p	line:102	language:C++	class:c_net_io_server	access:public	signature:(int id, const char *p_data, int data_len)
+send_data	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data(int id, const char *p_data, int data_len)$/;"	kind:f	line:787	language:C++	class:c_net_io_server	signature:(int id, const char *p_data, int data_len)
+send_data_	src/header/c_net_io_server.h	/^    int send_data_(connection_info_t *p_connection_info,$/;"	kind:p	line:310	language:C++	class:c_net_io_server	access:private	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+send_data_	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data_(connection_info_t *p_connection_info,$/;"	kind:f	line:533	language:C++	class:c_net_io_server	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+send_data_atomic	include/i_net_io_server.h	/^    virtual int send_data_atomic(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:199	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+send_data_atomic	src/header/c_net_io_server.h	/^    int send_data_atomic(int id, const char *p_data, int data_len);$/;"	kind:p	line:113	language:C++	class:c_net_io_server	access:public	signature:(int id, const char *p_data, int data_len)
+send_data_atomic	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data_atomic(int id, const char *p_data, int data_len)$/;"	kind:f	line:814	language:C++	class:c_net_io_server	signature:(int id, const char *p_data, int data_len)
+send_data_atomic_	src/header/c_net_io_server.h	/^    int send_data_atomic_(connection_info_t *p_connection_info,$/;"	kind:p	line:323	language:C++	class:c_net_io_server	access:private	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+send_data_atomic_	src/source/c_net_io_server.cpp	/^int c_net_io_server::send_data_atomic_(connection_info_t *p_connection_info,$/;"	kind:f	line:841	language:C++	class:c_net_io_server	signature:(connection_info_t *p_connection_info, const char *p_data, int data_len)
+set_error_	demo/client/random_request_file.class.php	/^    private function set_error_($error)$/;"	kind:f	line:12	language:PHP
+set_error_info_	src/header/c_net_io_server.h	/^    void set_error_info_(int error_no, const char *msg, ...);$/;"	kind:p	line:249	language:C++	class:c_net_io_server	access:private	signature:(int error_no, const char *msg, ...)
+set_error_info_	src/header/c_net_io_server.h	/^inline void c_net_io_server::set_error_info_(int error_no, const char *msg, ...)$/;"	kind:f	line:340	language:C++	class:c_net_io_server	signature:(int error_no, const char *msg, ...)
+simple_file_server.cpp	demo/simple_file_server.cpp	1;"	kind:F	line:1	language:C++
+socket	demo/client/socket_handler.class.php	/^            $this->socket = NULL;$/;"	kind:v	line:53	language:PHP
+socket	demo/client/socket_handler.class.php	/^        $this->socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);$/;"	kind:v	line:24	language:PHP
+socket	demo/client/socket_handler.class.php	/^    private $socket = NULL;$/;"	kind:v	line:12	language:PHP
+socket	test/get.php	/^$socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);$/;"	kind:v	line:4	language:PHP
+socket	test/test.php	/^$socket = socket_create(AF_INET, SOCK_STREAM, SOL_TCP);$/;"	kind:v	line:4	language:PHP
+socket_	demo/client/random_request_file.class.php	/^        $this->socket_ = new socket_handler();$/;"	kind:v	line:24	language:PHP
+socket_	demo/client/random_request_file.class.php	/^    private $socket_;$/;"	kind:v	line:6	language:PHP
+socket_handler	demo/client/socket_handler.class.php	/^class socket_handler$/;"	kind:c	line:5	language:PHP
+socket_handler.class.php	demo/client/socket_handler.class.php	1;"	kind:F	line:1	language:PHP
+stars	demo/client/random_request_file.class.php	/^            $stars = 0;$/;"	kind:v	line:53	language:PHP
+storage	src/header/c_net_io_server.h	/^        union net_io_storage storage;$/;"	kind:m	line:44	language:C++	struct:c_net_io_server::__anon1	typeref:union:c_net_io_server::__anon1::net_io_storage	access:public
+story	test/test.php	/^$story = '';$/;"	kind:v	line:10	language:PHP
+test.cpp	test/test.cpp	1;"	kind:F	line:1	language:C++
+test.php	test/test.php	1;"	kind:F	line:1	language:PHP
+timeout	test/get.php	/^$timeout = array('sec'=>1, 'usec'=>500000);$/;"	kind:v	line:5	language:PHP
+timeout	test/test.php	/^$timeout = array('sec'=>1, 'usec'=>500000);$/;"	kind:v	line:5	language:PHP
+times_request	demo/client/random_request_file.class.php	/^        $times_request = 0;$/;"	kind:v	line:43	language:PHP
+u32	include/i_net_io_server.h	/^    uint32_t u32;$/;"	kind:m	line:78	language:C++	union:net_io_storage	access:public
+u64	include/i_net_io_server.h	/^    uint64_t u64;$/;"	kind:m	line:79	language:C++	union:net_io_storage	access:public
+uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:290	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:45	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+uninit	src/header/c_net_io_notifier.h	/^    int uninit();$/;"	kind:p	line:53	language:C++	class:c_net_io_notifier	access:public	signature:()
+uninit	src/header/c_net_io_server.h	/^    int uninit();$/;"	kind:p	line:198	language:C++	class:c_net_io_server	access:public	signature:()
+uninit	src/source/c_net_io_notifier.cpp	/^int c_net_io_notifier::uninit()$/;"	kind:f	line:144	language:C++	class:c_net_io_notifier	signature:()
+uninit	src/source/c_net_io_server.cpp	/^int c_net_io_server::uninit()$/;"	kind:f	line:1280	language:C++	class:c_net_io_server	signature:()
+~c_net_io_notifier	src/header/c_net_io_notifier.h	/^    ~c_net_io_notifier();$/;"	kind:p	line:37	language:C++	class:c_net_io_notifier	access:public	signature:()
+~c_net_io_notifier	src/source/c_net_io_notifier.cpp	/^c_net_io_notifier::~c_net_io_notifier()$/;"	kind:f	line:43	language:C++	class:c_net_io_notifier	signature:()
+~c_net_io_server	src/header/c_net_io_server.h	/^    ~c_net_io_server();$/;"	kind:p	line:72	language:C++	class:c_net_io_server	access:public	signature:()
+~c_net_io_server	src/source/c_net_io_server.cpp	/^c_net_io_server::~c_net_io_server()$/;"	kind:f	line:76	language:C++	class:c_net_io_server	signature:()

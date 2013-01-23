@@ -1,0 +1,2 @@
+2012-03-01 richard <richard@taomee.com>
+	* i_net_client.h net_client.h net_client.cpp: 为send_rqst方法添加网络字节充及２字节或４字节的支持。

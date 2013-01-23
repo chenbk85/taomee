@@ -1,0 +1,1448 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: c_net_io_server类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>c_net_io_server类参考</h1><!-- doxytag: class="c_net_io_server" --><!-- doxytag: inherits="i_net_io_server" -->TCP网络服务端的封装实现类  
+<a href="#_details">更多...</a>
+<p>
+<div class="dynheader">
+继承图，类c_net_io_server</div>
+<div class="dynsection">
+<p><center><img src="classc__net__io__server__inherit__graph.png" border="0" usemap="#c__net__io__server__inherit__map" alt="Inheritance graph"></center>
+<map name="c__net__io__server__inherit__map">
+<area shape="rect" href="structi__net__io__server.html" title="提供网络服务的实例" alt="" coords="5,5,160,213"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+<div class="dynheader">
+c_net_io_server合作图：</div>
+<div class="dynsection">
+<p><center><img src="classc__net__io__server__coll__graph.png" border="0" usemap="#c__net__io__server__coll__map" alt="Collaboration graph"></center>
+<map name="c__net__io__server__coll__map">
+<area shape="rect" href="structi__net__io__server.html" title="提供网络服务的实例" alt="" coords="5,5,160,213"><area shape="rect" href="structi__net__io__server__events.html" title="用户需要继承的" alt="" coords="184,53,355,165"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+
+<p>
+<a href="classc__net__io__server-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#fbc8ef63685fbca0580acff2fb073946">c_net_io_server</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">构造函数  <a href="#fbc8ef63685fbca0580acff2fb073946"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#1f6c47ba9b507c13eaa743325174c5f9">close_connection</a> (const int connection_id, bool b_notify)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关闭连接  <a href="#1f6c47ba9b507c13eaa743325174c5f9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#cb71405262cb0e79e2da560a1ef80416">do_io</a> (const int time_interval, const int flags)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发送，接收网络数据  <a href="#cb71405262cb0e79e2da560a1ef80416"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#39e5d7df86ed6e224ef2d7d03cd1fa5a">enum_connections</a> (int *p_recv_buffer, int buffer_len, int *p_data_len)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">枚举所有的连接ID  <a href="#39e5d7df86ed6e224ef2d7d03cd1fa5a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#03fbfbdf28cf441f3564c17c1b678560">get_connection_info</a> (const int connection_id, char *server_ip, int ip_buffer_len, int *p_port, int *p_connected_time)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获得连接信息  <a href="#03fbfbdf28cf441f3564c17c1b678560"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#f85696c90ecd2db9c576260d80a6e309">init</a> (const char *listen_ip, const int listen_port, const <a class="el" href="structi__net__io__server__events.html">i_net_io_server_events</a> *p_events)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化函数  <a href="#f85696c90ecd2db9c576260d80a6e309"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#3dd8f933902025718146c797d948fee7">release</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放本对象资源  <a href="#3dd8f933902025718146c797d948fee7"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#e7907307ceaaa742408bc7342dc378a6">send_data</a> (const int connection_id, char *p_data, const int data_len)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发送数据，将数据拷贝到相应连接的缓冲区,并没有实际发送。拷贝数据的长度为min(data_len,缓冲区空闲长度)  <a href="#e7907307ceaaa742408bc7342dc378a6"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#99617304a3c16351896b045cd3c4a3b0">send_data_atomic</a> (const int connection_id, char *p_data, const int data_len)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发送数据，将数据拷贝到发送缓冲区，如果缓冲去无足够空间，就不拷贝  <a href="#99617304a3c16351896b045cd3c4a3b0"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#4f029fc2a35789c91bc7e1730e25f9c9">uninit</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">反初始化  <a href="#4f029fc2a35789c91bc7e1730e25f9c9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#ba5f974ce222555518bbeb74ef9dcc60">~c_net_io_server</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">析构函数  <a href="#ba5f974ce222555518bbeb74ef9dcc60"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>保护类型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef <br>
+fd_connection_map_t::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#b55284ec2e72a1bf968a2b77e8dc9fb7">fd_conn_map_const_iter_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef <br>
+fd_connection_map_t::iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#a5b63d3629ac90e109e48a036f28dcf8">fd_conn_map_iter_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef <br>
+fd_connection_map_t::value_type&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#9659647549d2af070e897f9a6c8253e6">fd_conn_map_value_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef std::map&lt; int, <br>
+<a class="el" href="structc__net__io__server_1_1connection__info__t.html">connection_info_t</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#389b23dfeb8960a7362b96fad3cc368c">fd_connection_map_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef <br>
+id_connection_map_t::const_iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#4b7808c67570b2307daec39ed98a6e17">id_conn_map_const_iter_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef <br>
+id_connection_map_t::iterator&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#ef333dcde65007b75eac101b8a38a7a3">id_conn_map_iter_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef <br>
+id_connection_map_t::value_type&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#8bb86d9126f829d61a2d0bd97693d019">id_conn_map_value_t</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">typedef std::map&lt; int, <br>
+<a class="el" href="structc__net__io__server_1_1connection__info__t.html">connection_info_t</a> * &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#2a57ac631db769fa8a3000adfcf76ef4">id_connection_map_t</a></td></tr>
+
+<tr><td colspan="2"><br><h2>保护成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#0469501bddf87f529266a8cd977f4c6f">get_conn_id</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取链接id  <a href="#0469501bddf87f529266a8cd977f4c6f"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>保护属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">m_connect_id</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classc__net__io__server.html#389b23dfeb8960a7362b96fad3cc368c">fd_connection_map_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="classc__net__io__server.html#2a57ac631db769fa8a3000adfcf76ef4">id_connection_map_t</a>&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#46c46bd81b21bb91e3d45bec546d9945">m_listen_ip</a> [16]</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#270560a70c18a6c016601825c5870f21">m_listen_port</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="structi__net__io__server__events.html">i_net_io_server_events</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a></td></tr>
+
+<tr><td colspan="2"><br><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__net__io__server_1_1connection__info__t.html">connection_info_t</a></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+TCP网络服务端的封装实现类 <hr><h2>成员类型定义文档</h2>
+<a class="anchor" name="b55284ec2e72a1bf968a2b77e8dc9fb7"></a><!-- doxytag: member="c_net_io_server::fd_conn_map_const_iter_t" ref="b55284ec2e72a1bf968a2b77e8dc9fb7" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef fd_connection_map_t::const_iterator <a class="el" href="classc__net__io__server.html#b55284ec2e72a1bf968a2b77e8dc9fb7">c_net_io_server::fd_conn_map_const_iter_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a5b63d3629ac90e109e48a036f28dcf8"></a><!-- doxytag: member="c_net_io_server::fd_conn_map_iter_t" ref="a5b63d3629ac90e109e48a036f28dcf8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef fd_connection_map_t::iterator <a class="el" href="classc__net__io__server.html#a5b63d3629ac90e109e48a036f28dcf8">c_net_io_server::fd_conn_map_iter_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="9659647549d2af070e897f9a6c8253e6"></a><!-- doxytag: member="c_net_io_server::fd_conn_map_value_t" ref="9659647549d2af070e897f9a6c8253e6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef fd_connection_map_t::value_type <a class="el" href="classc__net__io__server.html#9659647549d2af070e897f9a6c8253e6">c_net_io_server::fd_conn_map_value_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="389b23dfeb8960a7362b96fad3cc368c"></a><!-- doxytag: member="c_net_io_server::fd_connection_map_t" ref="389b23dfeb8960a7362b96fad3cc368c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, <a class="el" href="structc__net__io__server_1_1connection__info__t.html">connection_info_t</a>&gt; <a class="el" href="classc__net__io__server.html#389b23dfeb8960a7362b96fad3cc368c">c_net_io_server::fd_connection_map_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4b7808c67570b2307daec39ed98a6e17"></a><!-- doxytag: member="c_net_io_server::id_conn_map_const_iter_t" ref="4b7808c67570b2307daec39ed98a6e17" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef id_connection_map_t::const_iterator <a class="el" href="classc__net__io__server.html#4b7808c67570b2307daec39ed98a6e17">c_net_io_server::id_conn_map_const_iter_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ef333dcde65007b75eac101b8a38a7a3"></a><!-- doxytag: member="c_net_io_server::id_conn_map_iter_t" ref="ef333dcde65007b75eac101b8a38a7a3" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef id_connection_map_t::iterator <a class="el" href="classc__net__io__server.html#ef333dcde65007b75eac101b8a38a7a3">c_net_io_server::id_conn_map_iter_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8bb86d9126f829d61a2d0bd97693d019"></a><!-- doxytag: member="c_net_io_server::id_conn_map_value_t" ref="8bb86d9126f829d61a2d0bd97693d019" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef id_connection_map_t::value_type <a class="el" href="classc__net__io__server.html#8bb86d9126f829d61a2d0bd97693d019">c_net_io_server::id_conn_map_value_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2a57ac631db769fa8a3000adfcf76ef4"></a><!-- doxytag: member="c_net_io_server::id_connection_map_t" ref="2a57ac631db769fa8a3000adfcf76ef4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::map&lt;int, <a class="el" href="structc__net__io__server_1_1connection__info__t.html">connection_info_t</a>*&gt; <a class="el" href="classc__net__io__server.html#2a57ac631db769fa8a3000adfcf76ef4">c_net_io_server::id_connection_map_t</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr><h2>构造及析构函数文档</h2>
+<a class="anchor" name="fbc8ef63685fbca0580acff2fb073946"></a><!-- doxytag: member="c_net_io_server::c_net_io_server" ref="fbc8ef63685fbca0580acff2fb073946" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">c_net_io_server::c_net_io_server           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+构造函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@return</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<div class="fragment"><pre class="fragment"><a name="l00068"></a>00068 {
+<a name="l00069"></a>00069     memset(<a class="code" href="classc__net__io__server.html#46c46bd81b21bb91e3d45bec546d9945">m_listen_ip</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="classc__net__io__server.html#46c46bd81b21bb91e3d45bec546d9945">m_listen_ip</a>));
+<a name="l00070"></a>00070     <a class="code" href="classc__net__io__server.html#270560a70c18a6c016601825c5870f21">m_listen_port</a> = 0;
+<a name="l00071"></a>00071 
+<a name="l00072"></a>00072     <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = -1;
+<a name="l00073"></a>00073     <a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a> = -1;
+<a name="l00074"></a>00074     
+<a name="l00075"></a>00075     <a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a> = NULL;
+<a name="l00076"></a>00076     <a class="code" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">m_connect_id</a> = 0;
+<a name="l00077"></a>00077     <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.clear();
+<a name="l00078"></a>00078     <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.clear();
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080     <a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a> = 0; 
+<a name="l00081"></a>00081 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ba5f974ce222555518bbeb74ef9dcc60"></a><!-- doxytag: member="c_net_io_server::~c_net_io_server" ref="ba5f974ce222555518bbeb74ef9dcc60" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">c_net_io_server::~c_net_io_server           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+析构函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@return</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<div class="fragment"><pre class="fragment"><a name="l00089"></a>00089 {
+<a name="l00090"></a>00090     <a class="code" href="classc__net__io__server.html#4f029fc2a35789c91bc7e1730e25f9c9" title="反初始化">uninit</a>();
+<a name="l00091"></a>00091 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="1f6c47ba9b507c13eaa743325174c5f9"></a><!-- doxytag: member="c_net_io_server::close_connection" ref="1f6c47ba9b507c13eaa743325174c5f9" args="(const int connection_id, bool b_notify)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::close_connection           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>b_notify</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+关闭连接 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>要关闭的连接ID </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b_notify</em>&nbsp;</td><td>关闭连接后是否通知上层 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>实现了<a class="el" href="structi__net__io__server.html#f6c143d2277d2b6b2760bea94d1210b8">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00400"></a>00400 {
+<a name="l00401"></a>00401     <span class="keywordflow">if</span>(!<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00402"></a>00402     {
+<a name="l00403"></a>00403         <span class="keywordflow">return</span> -1;
+<a name="l00404"></a>00404     }
+<a name="l00405"></a>00405 
+<a name="l00406"></a>00406     <a class="code" href="classc__net__io__server.html#ef333dcde65007b75eac101b8a38a7a3">id_conn_map_iter_t</a> iter = <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.find(connection_id);
+<a name="l00407"></a>00407     <span class="keywordflow">if</span>(iter == <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.end())
+<a name="l00408"></a>00408     {
+<a name="l00409"></a>00409         ERROR_LOG(<span class="stringliteral">"not found connection %d"</span>, connection_id);
+<a name="l00410"></a>00410         <span class="keywordflow">return</span> -1;
+<a name="l00411"></a>00411     }
+<a name="l00412"></a>00412     <span class="keywordflow">else</span>
+<a name="l00413"></a>00413     {
+<a name="l00414"></a>00414         <span class="keywordflow">if</span>(b_notify)
+<a name="l00415"></a>00415         {<span class="comment">//通知上层连接已关闭</span>
+<a name="l00416"></a>00416             <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>)
+<a name="l00417"></a>00417             {
+<a name="l00418"></a>00418                 <a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>-&gt;<a class="code" href="structi__net__io__server__events.html#23850f48629325d3f76d49f2593634f2" title="底层关闭连接时通知用户">on_connection_closed</a>((<span class="keywordtype">void</span>*)dynamic_cast&lt;c_net_io_server*&gt;(<span class="keyword">this</span>), iter-&gt;first);
+<a name="l00419"></a>00419             }
+<a name="l00420"></a>00420         }
+<a name="l00421"></a>00421 
+<a name="l00422"></a>00422         close(iter-&gt;second-&gt;sock_fd);
+<a name="l00423"></a>00423         <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.erase(iter-&gt;second-&gt;sock_fd);
+<a name="l00424"></a>00424         <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.erase(iter);
+<a name="l00425"></a>00425 
+<a name="l00426"></a>00426         <span class="keywordflow">return</span> 0;
+<a name="l00427"></a>00427     }
+<a name="l00428"></a>00428 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cb71405262cb0e79e2da560a1ef80416"></a><!-- doxytag: member="c_net_io_server::do_io" ref="cb71405262cb0e79e2da560a1ef80416" args="(const int time_interval, const int flags)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::do_io           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>time_interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>flags</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+发送，接收网络数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>int time_interval, 超时限制值 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>const</em>&nbsp;</td><td>const int flags, 控制网络操作的标志，可以为:NET_IO_SERVER_OP_ACCEPT,NET_IO_SERVER_OP_READ,NET_IO_SERVER_OP_WRITE </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回0， 失败返回－1. </dd></dl>
+
+<p>
+&lt; 对端连接ID 
+<p>实现了<a class="el" href="structi__net__io__server.html#c96c17ed1327463bdf70bb58b7bee9cd">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00452"></a>00452 {
+<a name="l00453"></a>00453    <span class="keywordflow">if</span>(!<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00454"></a>00454     {
+<a name="l00455"></a>00455         <span class="keywordflow">return</span> -1;
+<a name="l00456"></a>00456     }
+<a name="l00457"></a>00457 
+<a name="l00458"></a>00458     <span class="keywordflow">if</span>(time_interval &lt; 0)
+<a name="l00459"></a>00459     {
+<a name="l00460"></a>00460         <span class="keywordflow">return</span> -1;
+<a name="l00461"></a>00461     }
+<a name="l00462"></a>00462 
+<a name="l00463"></a>00463     epoll_event events[<a class="code" href="net__io__server_8h.html#3683528649fa637cfecd207a2391758b">MAX_CLIENT_NUM</a>];
+<a name="l00464"></a>00464     <span class="keywordflow">if</span>((flags &amp; <a class="code" href="i__net__io__server_8h.html#d6b31176408d9fed72fd4989b8329704">NET_IO_SERVER_OP_READ</a>) || (flags &amp; <a class="code" href="i__net__io__server_8h.html#9a95cf6abde3a13dd474cd509160ab29">NET_IO_SERVER_OP_ACCEPT</a>)) 
+<a name="l00465"></a>00465     {
+<a name="l00466"></a>00466         <span class="keywordtype">int</span> result = epoll_wait(<a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a>, events, <span class="keyword">sizeof</span>(events)/<span class="keyword">sizeof</span>(epoll_event), time_interval);
+<a name="l00467"></a>00467         <span class="keywordflow">if</span>(result &gt; 0)
+<a name="l00468"></a>00468         {
+<a name="l00469"></a>00469             <span class="keywordflow">for</span>(<span class="keywordtype">int</span> index = 0; index &lt; result; index++)
+<a name="l00470"></a>00470             {
+<a name="l00471"></a>00471                 <span class="keywordflow">if</span>(events[index].data.fd == <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>)
+<a name="l00472"></a>00472                 {<span class="comment">//新的连接到达</span>
+<a name="l00473"></a>00473                     <span class="keywordflow">while</span>(<span class="keyword">true</span>)
+<a name="l00474"></a>00474                     {
+<a name="l00475"></a>00475                         sockaddr_in peer_addr;
+<a name="l00476"></a>00476                         memset(&amp;peer_addr, 0, <span class="keyword">sizeof</span>(peer_addr)); 
+<a name="l00477"></a>00477                         socklen_t addr_len = <span class="keyword">sizeof</span>(peer_addr);
+<a name="l00478"></a>00478                         <span class="keywordtype">int</span> peer_socket = accept(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>, (<span class="keyword">struct</span> sockaddr*)&amp;peer_addr, &amp;addr_len);
+<a name="l00479"></a>00479                         <span class="keywordflow">if</span>(peer_socket &gt;= 0)
+<a name="l00480"></a>00480                         {
+<a name="l00481"></a>00481                             <span class="keywordflow">if</span>( !(flags &amp; NET_IO_SERVER_OP_ACCEPT))
+<a name="l00482"></a>00482                             {
+<a name="l00483"></a>00483                                 close(peer_socket);
+<a name="l00484"></a>00484                                 <span class="keywordflow">continue</span>;
+<a name="l00485"></a>00485                             }
+<a name="l00486"></a>00486 
+<a name="l00487"></a>00487                             connection_info_t conn_info;
+<a name="l00488"></a>00488                             memset(&amp;conn_info, 0, <span class="keyword">sizeof</span>(conn_info));
+<a name="l00489"></a>00489 
+<a name="l00490"></a>00490                             conn_info.connection_id = <a class="code" href="classc__net__io__server.html#0469501bddf87f529266a8cd977f4c6f" title="获取链接id">get_conn_id</a>();
+<a name="l00491"></a>00491                             conn_info.sock_fd = peer_socket;
+<a name="l00492"></a>00492                             strcpy(conn_info.peer_ip, inet_ntoa(peer_addr.sin_addr));
+<a name="l00493"></a>00493                             conn_info.peer_port = ntohs(peer_addr.sin_port);
+<a name="l00494"></a>00494                             conn_info.connected_time = time(NULL);
+<a name="l00495"></a>00495                             conn_info.buffer_data_len = 0;
+<a name="l00496"></a>00496                             <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>)
+<a name="l00497"></a>00497                             {
+<a name="l00498"></a>00498                                 <span class="keywordflow">if</span>(-1 == <a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>-&gt;<a class="code" href="structi__net__io__server__events.html#cd8e810c7979543c1d1ab41509b01587" title="底层监听到有新的连接到来时通知用户">on_new_connection</a>((<span class="keywordtype">void</span>*)dynamic_cast&lt;c_net_io_server*&gt;(<span class="keyword">this</span>),
+<a name="l00499"></a>00499                                                 conn_info.connection_id, conn_info.peer_ip, conn_info.peer_port))
+<a name="l00500"></a>00500                                 {
+<a name="l00501"></a>00501                                     close(peer_socket);
+<a name="l00502"></a>00502                                     <span class="keywordflow">continue</span>;
+<a name="l00503"></a>00503                                 }
+<a name="l00504"></a>00504                             }
+<a name="l00505"></a>00505 
+<a name="l00506"></a>00506                             <span class="keywordtype">int</span> socket_flags = fcntl(peer_socket, F_GETFL);
+<a name="l00507"></a>00507                             socket_flags |= O_NONBLOCK;
+<a name="l00508"></a>00508                             fcntl(peer_socket, F_SETFL, socket_flags);
+<a name="l00509"></a>00509 
+<a name="l00510"></a>00510                             epoll_event event;
+<a name="l00511"></a>00511                             memset(&amp;event, 0, <span class="keyword">sizeof</span>(event));
+<a name="l00512"></a>00512                             <span class="keyword">event</span>.events = EPOLLIN|EPOLLET;
+<a name="l00513"></a>00513                             <span class="keyword">event</span>.data.fd = peer_socket;
+<a name="l00514"></a>00514 
+<a name="l00515"></a>00515                             <span class="keywordflow">if</span>(epoll_ctl(<a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a>, EPOLL_CTL_ADD, peer_socket, &amp;event) &lt; 0)
+<a name="l00516"></a>00516                             {
+<a name="l00517"></a>00517                                 <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>)
+<a name="l00518"></a>00518                                 {
+<a name="l00519"></a>00519                                     <a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>-&gt;<a class="code" href="structi__net__io__server__events.html#23850f48629325d3f76d49f2593634f2" title="底层关闭连接时通知用户">on_connection_closed</a>((<span class="keywordtype">void</span>*)dynamic_cast&lt;c_net_io_server*&gt;(<span class="keyword">this</span>), conn_info.connection_id);
+<a name="l00520"></a>00520                                 }
+<a name="l00521"></a>00521                                 close(peer_socket);
+<a name="l00522"></a>00522                                 <span class="keywordflow">continue</span>;
+<a name="l00523"></a>00523                             }
+<a name="l00524"></a>00524 
+<a name="l00525"></a>00525                             pair&lt;fd_conn_map_iter_t, bool&gt; fd_pair = <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.insert(pair&lt;int, connection_info_t&gt;(peer_socket, conn_info));
+<a name="l00526"></a>00526                             <span class="keywordflow">if</span>(fd_pair.second)
+<a name="l00527"></a>00527                             {
+<a name="l00528"></a>00528                                 <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.insert(pair&lt;int, connection_info_t*&gt;(conn_info.connection_id, &amp;((fd_pair.first)-&gt;second)));
+<a name="l00529"></a>00529                             }
+<a name="l00530"></a>00530                             <span class="keywordflow">else</span>
+<a name="l00531"></a>00531                             {
+<a name="l00532"></a>00532                                 ERROR_LOG(<span class="stringliteral">"It's not possible"</span>);
+<a name="l00533"></a>00533                                 <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>)
+<a name="l00534"></a>00534                                 {
+<a name="l00535"></a>00535                                     <a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>-&gt;<a class="code" href="structi__net__io__server__events.html#23850f48629325d3f76d49f2593634f2" title="底层关闭连接时通知用户">on_connection_closed</a>((<span class="keywordtype">void</span>*)dynamic_cast&lt;c_net_io_server*&gt;(<span class="keyword">this</span>), conn_info.connection_id);
+<a name="l00536"></a>00536                                 }
+<a name="l00537"></a>00537                                 close(peer_socket);
+<a name="l00538"></a>00538                                 <span class="keywordflow">return</span> -1;
+<a name="l00539"></a>00539                             }
+<a name="l00540"></a>00540                         }
+<a name="l00541"></a>00541                         <span class="keywordflow">else</span> <span class="comment">//accept 返回小于0</span>
+<a name="l00542"></a>00542                         {
+<a name="l00543"></a>00543                             <span class="keywordflow">break</span>; 
+<a name="l00544"></a>00544                         }
+<a name="l00545"></a>00545                     } 
+<a name="l00546"></a>00546                 }
+<a name="l00547"></a>00547                 <span class="keywordflow">else</span>
+<a name="l00548"></a>00548                 {<span class="comment">//已经建立连接的socket</span>
+<a name="l00549"></a>00549                     <span class="keywordflow">if</span>(events[index].events &amp; EPOLLIN)
+<a name="l00550"></a>00550                     {
+<a name="l00551"></a>00551                         <span class="keywordflow">while</span>(<span class="keyword">true</span>)
+<a name="l00552"></a>00552                         {
+<a name="l00553"></a>00553                             <span class="keywordtype">char</span> recv_buffer[<a class="code" href="net__io__server_8h.html#d1482e771f3273378c389e8b008cab70">MAX_BUFFER_LEN</a>];
+<a name="l00554"></a>00554                             <span class="keywordtype">int</span> peer_socket = events[index].data.fd;
+<a name="l00555"></a>00555 
+<a name="l00556"></a>00556                             <a class="code" href="classc__net__io__server.html#a5b63d3629ac90e109e48a036f28dcf8">fd_conn_map_iter_t</a> iter = <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.find(peer_socket); 
+<a name="l00557"></a>00557                             <span class="keywordflow">if</span>(iter == <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.end())
+<a name="l00558"></a>00558                             {
+<a name="l00559"></a>00559                                 ERROR_LOG(<span class="stringliteral">"unknown socket :%d."</span>, peer_socket);
+<a name="l00560"></a>00560                                 <span class="keywordflow">return</span> -1;
+<a name="l00561"></a>00561                             }
+<a name="l00562"></a>00562 
+<a name="l00563"></a>00563                             <span class="keywordtype">int</span> bytes_recv = recv(peer_socket, recv_buffer, <span class="keyword">sizeof</span>(recv_buffer),0);
+<a name="l00564"></a>00564                             <span class="keywordflow">if</span>(bytes_recv &gt; 0)
+<a name="l00565"></a>00565                             {
+<a name="l00566"></a>00566                                 <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>)
+<a name="l00567"></a>00567                                 {
+<a name="l00568"></a>00568                                     <a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a>-&gt;<a class="code" href="structi__net__io__server__events.html#a25648b8ca837c33f1b1b35530e72372" title="底层接收到数据时通知用户">on_recv_data</a>((<span class="keywordtype">void</span>*)dynamic_cast&lt;c_net_io_server*&gt;(<span class="keyword">this</span>), iter-&gt;second.connection_id, recv_buffer, bytes_recv);
+<a name="l00569"></a>00569                                 }
+<a name="l00570"></a>00570 
+<a name="l00571"></a>00571                                 <span class="keywordflow">if</span>(bytes_recv &lt; (<span class="keywordtype">int</span>)<span class="keyword">sizeof</span>(recv_buffer))
+<a name="l00572"></a>00572                                 {<span class="comment">//没有更多的数据可接受</span>
+<a name="l00573"></a>00573                                     <span class="keywordflow">break</span>;
+<a name="l00574"></a>00574                                 }
+<a name="l00575"></a>00575                             }
+<a name="l00576"></a>00576                             <span class="keywordflow">else</span> <span class="keywordflow">if</span>(bytes_recv == 0)
+<a name="l00577"></a>00577                             {<span class="comment">//对端关闭连接</span>
+<a name="l00578"></a>00578                                 <a class="code" href="classc__net__io__server.html#1f6c47ba9b507c13eaa743325174c5f9" title="关闭连接">close_connection</a>(iter-&gt;second.connection_id, <span class="keyword">true</span>); 
+<a name="l00579"></a>00579                                 <span class="keywordflow">break</span>;
+<a name="l00580"></a>00580                             }
+<a name="l00581"></a>00581                             <span class="keywordflow">else</span>
+<a name="l00582"></a>00582                             {
+<a name="l00583"></a>00583                                 <span class="keywordflow">if</span>(errno == EAGAIN)
+<a name="l00584"></a>00584                                 {<span class="comment">//没有数据可读取了</span>
+<a name="l00585"></a>00585                                     <span class="keywordflow">break</span>;
+<a name="l00586"></a>00586                                 }
+<a name="l00587"></a>00587                                 <span class="keywordflow">else</span> <span class="keywordflow">if</span>(errno == EINTR)
+<a name="l00588"></a>00588                                 {
+<a name="l00589"></a>00589                                     <span class="keywordflow">continue</span>;
+<a name="l00590"></a>00590                                 }
+<a name="l00591"></a>00591                                 <span class="keywordflow">else</span>
+<a name="l00592"></a>00592                                 {
+<a name="l00593"></a>00593                                     <a class="code" href="classc__net__io__server.html#1f6c47ba9b507c13eaa743325174c5f9" title="关闭连接">close_connection</a>(iter-&gt;second.connection_id, <span class="keyword">true</span>);
+<a name="l00594"></a>00594                                     <span class="keywordflow">break</span>;
+<a name="l00595"></a>00595                                 }   
+<a name="l00596"></a>00596                             }<span class="comment">//bytes_recv == -1                                 </span>
+<a name="l00597"></a>00597                         }<span class="comment">//while(true) </span>
+<a name="l00598"></a>00598                     }<span class="comment">//EPOLLIN</span>
+<a name="l00599"></a>00599 
+<a name="l00600"></a>00600                     <span class="keywordflow">if</span>((events[index].events &amp; EPOLLERR) || (events[index].events &amp; EPOLLHUP))
+<a name="l00601"></a>00601                     {
+<a name="l00602"></a>00602                         <span class="keywordtype">int</span> peer_socket = events[index].data.fd;
+<a name="l00603"></a>00603                         <a class="code" href="classc__net__io__server.html#a5b63d3629ac90e109e48a036f28dcf8">fd_conn_map_iter_t</a> tmp_iter = <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.find(peer_socket); 
+<a name="l00604"></a>00604                         <span class="keywordflow">if</span>(tmp_iter != <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.end())
+<a name="l00605"></a>00605                         {
+<a name="l00606"></a>00606                             <a class="code" href="classc__net__io__server.html#1f6c47ba9b507c13eaa743325174c5f9" title="关闭连接">close_connection</a>(tmp_iter-&gt;second.connection_id, <span class="keyword">true</span>);
+<a name="l00607"></a>00607                         }
+<a name="l00608"></a>00608                     }<span class="comment">//EPOLLERR EPOLLHUP     </span>
+<a name="l00609"></a>00609                 }
+<a name="l00610"></a>00610             }<span class="comment">//for </span>
+<a name="l00611"></a>00611         }
+<a name="l00612"></a>00612         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(result == -1)
+<a name="l00613"></a>00613         {
+<a name="l00614"></a>00614             <span class="keywordflow">if</span>(errno == EINTR)
+<a name="l00615"></a>00615             {
+<a name="l00616"></a>00616                 <span class="comment">//do nothing , continue to send data</span>
+<a name="l00617"></a>00617             }
+<a name="l00618"></a>00618             <span class="keywordflow">else</span>
+<a name="l00619"></a>00619             {
+<a name="l00620"></a>00620                 <span class="keywordflow">return</span> -1;
+<a name="l00621"></a>00621             }
+<a name="l00622"></a>00622         }
+<a name="l00623"></a>00623         <span class="keywordflow">else</span>
+<a name="l00624"></a>00624         {
+<a name="l00625"></a>00625             <span class="comment">// do nothing, continue to send data</span>
+<a name="l00626"></a>00626         }
+<a name="l00627"></a>00627     }<span class="comment">//NET_IO_SERVER_OP_READ NET_IO_SERVER_OP_ACCEPT</span>
+<a name="l00628"></a>00628     
+<a name="l00629"></a>00629     <span class="keywordflow">if</span>(flags &amp; <a class="code" href="i__net__io__server_8h.html#786b35698a4ca171d2e892c7727789b2">NET_IO_SERVER_OP_WRITE</a>)
+<a name="l00630"></a>00630     {
+<a name="l00631"></a>00631         <span class="comment">//遍历每个连接，将各个连接缓冲区中的数据发送出去</span>
+<a name="l00632"></a>00632        <a class="code" href="classc__net__io__server.html#a5b63d3629ac90e109e48a036f28dcf8">fd_conn_map_iter_t</a> fd_iter = <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.begin(); 
+<a name="l00633"></a>00633         <span class="keywordflow">while</span>(fd_iter != <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.end())
+<a name="l00634"></a>00634         {
+<a name="l00635"></a>00635             <span class="keywordflow">if</span>(fd_iter-&gt;second.buffer_data_len &gt; 0)
+<a name="l00636"></a>00636             {
+<a name="l00637"></a>00637                 <span class="keywordtype">int</span> peer_socket = fd_iter-&gt;first; 
+<a name="l00638"></a>00638                 <span class="keywordtype">int</span> bytes_sent = send(peer_socket, fd_iter-&gt;second.send_buffer, fd_iter-&gt;second.buffer_data_len, 0);
+<a name="l00639"></a>00639                 <span class="keywordflow">if</span>(bytes_sent &gt; 0)
+<a name="l00640"></a>00640                 {
+<a name="l00641"></a>00641                     memmove(fd_iter-&gt;second.send_buffer, fd_iter-&gt;second.send_buffer + bytes_sent,
+<a name="l00642"></a>00642                             fd_iter-&gt;second.buffer_data_len - bytes_sent);
+<a name="l00643"></a>00643                     fd_iter-&gt;second.buffer_data_len -= bytes_sent;
+<a name="l00644"></a>00644                 }
+<a name="l00645"></a>00645                 <span class="keywordflow">else</span>
+<a name="l00646"></a>00646                 {
+<a name="l00647"></a>00647                     <span class="keywordflow">if</span>( (errno != EAGAIN) &amp;&amp; (errno != EINTR) )
+<a name="l00648"></a>00648                     {<span class="comment">//有错误发生</span>
+<a name="l00649"></a>00649                         <a class="code" href="classc__net__io__server.html#1f6c47ba9b507c13eaa743325174c5f9" title="关闭连接">close_connection</a>(fd_iter-&gt;second.connection_id, <span class="keyword">true</span>);
+<a name="l00650"></a>00650                         <span class="keywordflow">continue</span>; <span class="comment">//very important to continue</span>
+<a name="l00651"></a>00651                     }
+<a name="l00652"></a>00652                 } 
+<a name="l00653"></a>00653             }
+<a name="l00654"></a>00654             fd_iter++;
+<a name="l00655"></a>00655         }
+<a name="l00656"></a>00656     }<span class="comment">//NET_IO_SERVER_OP_WRITE</span>
+<a name="l00657"></a>00657     <span class="keywordflow">return</span> 0;
+<a name="l00658"></a>00658 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="39e5d7df86ed6e224ef2d7d03cd1fa5a"></a><!-- doxytag: member="c_net_io_server::enum_connections" ref="39e5d7df86ed6e224ef2d7d03cd1fa5a" args="(int *p_recv_buffer, int buffer_len, int *p_data_len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::enum_connections           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_recv_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+枚举所有的连接ID 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_recv_buffer</em>&nbsp;</td><td>存放所有的连接信息id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>存放连接缓冲区的长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_data_len</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>实现了<a class="el" href="structi__net__io__server.html#ad68111e220e0ad92c366611508d1f20">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00362"></a>00362 {
+<a name="l00363"></a>00363     <span class="keywordflow">if</span>(!<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00364"></a>00364     {
+<a name="l00365"></a>00365         <span class="keywordflow">return</span> -1;
+<a name="l00366"></a>00366     }
+<a name="l00367"></a>00367 
+<a name="l00368"></a>00368     <span class="keywordflow">if</span>(NULL == p_recv_buffer || buffer_len &lt; 1)
+<a name="l00369"></a>00369     {
+<a name="l00370"></a>00370         <span class="keywordflow">return</span> -1;
+<a name="l00371"></a>00371     }
+<a name="l00372"></a>00372 
+<a name="l00373"></a>00373     <span class="keywordtype">int</span> data_len = 0;
+<a name="l00374"></a>00374 
+<a name="l00375"></a>00375     <a class="code" href="classc__net__io__server.html#4b7808c67570b2307daec39ed98a6e17">id_conn_map_const_iter_t</a> iter = <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.begin();
+<a name="l00376"></a>00376     <span class="keywordflow">for</span>(; iter != <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.end(); iter++)
+<a name="l00377"></a>00377     {
+<a name="l00378"></a>00378         <span class="keywordflow">if</span>(data_len &gt;= buffer_len)
+<a name="l00379"></a>00379         {
+<a name="l00380"></a>00380             <span class="keywordflow">break</span>;
+<a name="l00381"></a>00381         }
+<a name="l00382"></a>00382         *(p_recv_buffer + data_len) = iter-&gt;first;
+<a name="l00383"></a>00383         data_len++;
+<a name="l00384"></a>00384     }
+<a name="l00385"></a>00385 
+<a name="l00386"></a>00386     <span class="keywordflow">if</span>(p_data_len != NULL)
+<a name="l00387"></a>00387     {
+<a name="l00388"></a>00388         *p_data_len = data_len;
+<a name="l00389"></a>00389     }
+<a name="l00390"></a>00390     <span class="keywordflow">return</span> 0;
+<a name="l00391"></a>00391 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="0469501bddf87f529266a8cd977f4c6f"></a><!-- doxytag: member="c_net_io_server::get_conn_id" ref="0469501bddf87f529266a8cd977f4c6f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::get_conn_id           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [protected]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取链接id 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无 </dd></dl>
+<div class="fragment"><pre class="fragment"><a name="l00436"></a>00436 {
+<a name="l00437"></a>00437         <a class="code" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">m_connect_id</a>++;
+<a name="l00438"></a>00438         <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">m_connect_id</a> &lt; 0)
+<a name="l00439"></a>00439         {
+<a name="l00440"></a>00440                 <a class="code" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">m_connect_id</a> = 1;
+<a name="l00441"></a>00441         }
+<a name="l00442"></a>00442         <span class="keywordflow">return</span> <a class="code" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">m_connect_id</a>;
+<a name="l00443"></a>00443 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="03fbfbdf28cf441f3564c17c1b678560"></a><!-- doxytag: member="c_net_io_server::get_connection_info" ref="03fbfbdf28cf441f3564c17c1b678560" args="(const int connection_id, char *server_ip, int ip_buffer_len, int *p_port, int *p_connected_time)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::get_connection_info           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>server_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>ip_buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_connected_time</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获得连接信息 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>连接ID </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>server_ip</em>&nbsp;</td><td>存放对端的IP </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ip_buffer_len</em>&nbsp;</td><td>对端IP地址长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_port</em>&nbsp;</td><td>对端端口 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_connected_time</em>&nbsp;</td><td>此连接的时间 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>实现了<a class="el" href="structi__net__io__server.html#a1ef7b1cad5111829e93a3f2a23b302c">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00323"></a>00323 {
+<a name="l00324"></a>00324     <span class="keywordflow">if</span>(!<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00325"></a>00325     {
+<a name="l00326"></a>00326         <span class="keywordflow">return</span> -1;
+<a name="l00327"></a>00327     }
+<a name="l00328"></a>00328 
+<a name="l00329"></a>00329     <a class="code" href="classc__net__io__server.html#ef333dcde65007b75eac101b8a38a7a3">id_conn_map_iter_t</a> iterator = <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.find(connection_id);
+<a name="l00330"></a>00330     <span class="keywordflow">if</span>(iterator == <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.end())
+<a name="l00331"></a>00331     {
+<a name="l00332"></a>00332         ERROR_LOG(<span class="stringliteral">"not found connection %d"</span>, connection_id);
+<a name="l00333"></a>00333         <span class="keywordflow">return</span> -1;
+<a name="l00334"></a>00334     }
+<a name="l00335"></a>00335 
+<a name="l00336"></a>00336    <span class="keywordflow">if</span>(server_ip != NULL &amp;&amp; ip_buffer_len &gt;= 16)
+<a name="l00337"></a>00337     {
+<a name="l00338"></a>00338         strcpy(server_ip,iterator-&gt;second-&gt;peer_ip);
+<a name="l00339"></a>00339     }
+<a name="l00340"></a>00340 
+<a name="l00341"></a>00341     <span class="keywordflow">if</span>(p_port != NULL)
+<a name="l00342"></a>00342     {
+<a name="l00343"></a>00343         *p_port = iterator-&gt;second-&gt;peer_port;
+<a name="l00344"></a>00344     }
+<a name="l00345"></a>00345 
+<a name="l00346"></a>00346     <span class="keywordflow">if</span>(p_connected_time != NULL)
+<a name="l00347"></a>00347     {
+<a name="l00348"></a>00348         *p_connected_time = iterator-&gt;second-&gt;connected_time;
+<a name="l00349"></a>00349     }
+<a name="l00350"></a>00350  
+<a name="l00351"></a>00351     <span class="keywordflow">return</span> 0;
+<a name="l00352"></a>00352 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="f85696c90ecd2db9c576260d80a6e309"></a><!-- doxytag: member="c_net_io_server::init" ref="f85696c90ecd2db9c576260d80a6e309" args="(const char *listen_ip, const int listen_port, const i_net_io_server_events *p_events)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::init           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>listen_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>listen_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structi__net__io__server__events.html">i_net_io_server_events</a> *&nbsp;</td>
+          <td class="paramname"> <em>p_events</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>listen_ip</em>&nbsp;</td><td>服务端IP地址 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>listen_port</em>&nbsp;</td><td>服务端端口号 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_events</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1 failed </dd></dl>
+
+<p>实现了<a class="el" href="structi__net__io__server.html#e56f9099bcbc26c48adc786b361bf3ec">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00102"></a>00102 {
+<a name="l00103"></a>00103     <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00104"></a>00104     {
+<a name="l00105"></a>00105         <span class="keywordflow">return</span> -1;
+<a name="l00106"></a>00106     }
+<a name="l00107"></a>00107     
+<a name="l00108"></a>00108     <span class="keywordflow">if</span>(NULL == listen_ip || listen_port &lt; 0 || listen_port &gt; 65535)
+<a name="l00109"></a>00109     {
+<a name="l00110"></a>00110         <span class="keywordflow">return</span> -1;
+<a name="l00111"></a>00111     } 
+<a name="l00112"></a>00112 
+<a name="l00113"></a>00113     <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = socket(AF_INET, SOCK_STREAM, 0);
+<a name="l00114"></a>00114     <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> &lt; 0)
+<a name="l00115"></a>00115     {
+<a name="l00116"></a>00116         ERROR_LOG(<span class="stringliteral">"Socket Error:%s"</span>,strerror(errno));
+<a name="l00117"></a>00117         <span class="keywordflow">return</span> -1;
+<a name="l00118"></a>00118     }
+<a name="l00119"></a>00119 
+<a name="l00120"></a>00120     sockaddr_in listen_addr;
+<a name="l00121"></a>00121     memset(&amp;listen_addr, 0, <span class="keyword">sizeof</span>(listen_addr));
+<a name="l00122"></a>00122     listen_addr.sin_family = AF_INET;
+<a name="l00123"></a>00123     listen_addr.sin_port = htons(listen_port);
+<a name="l00124"></a>00124     listen_addr.sin_addr.s_addr = inet_addr(listen_ip);
+<a name="l00125"></a>00125     
+<a name="l00126"></a>00126     <span class="keywordflow">if</span>(listen_addr.sin_addr.s_addr == INADDR_NONE)
+<a name="l00127"></a>00127     {
+<a name="l00128"></a>00128         ERROR_LOG(<span class="stringliteral">"listen ip :%s error\n"</span>, listen_ip);
+<a name="l00129"></a>00129         <span class="keywordflow">return</span> -1;
+<a name="l00130"></a>00130     }
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132     <span class="comment">//设置地址重用</span>
+<a name="l00133"></a>00133     <span class="keywordtype">int</span> reuseaddr_flag = 1;
+<a name="l00134"></a>00134     <span class="keywordflow">if</span>(setsockopt(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>, SOL_SOCKET, SO_REUSEADDR, &amp;reuseaddr_flag, <span class="keyword">sizeof</span>(reuseaddr_flag)))
+<a name="l00135"></a>00135     {
+<a name="l00136"></a>00136         close(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>);
+<a name="l00137"></a>00137         <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = -1;
+<a name="l00138"></a>00138         ERROR_LOG(<span class="stringliteral">"Setsockopt Error:%s"</span>,strerror(errno));
+<a name="l00139"></a>00139         <span class="keywordflow">return</span> -1;
+<a name="l00140"></a>00140     }
+<a name="l00141"></a>00141 
+<a name="l00142"></a>00142     <span class="keywordflow">if</span>(bind(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>, (<span class="keyword">struct</span> sockaddr*)&amp;listen_addr, <span class="keyword">sizeof</span>(listen_addr)) &lt; 0)
+<a name="l00143"></a>00143     {
+<a name="l00144"></a>00144         close(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>);
+<a name="l00145"></a>00145         <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = -1;
+<a name="l00146"></a>00146         ERROR_LOG(<span class="stringliteral">"Bind Error:%s"</span>,strerror(errno));
+<a name="l00147"></a>00147         <span class="keywordflow">return</span> -1;
+<a name="l00148"></a>00148     }
+<a name="l00149"></a>00149 
+<a name="l00150"></a>00150     <span class="comment">//设置非阻塞模式</span>
+<a name="l00151"></a>00151     <span class="keywordtype">int</span> flags = fcntl(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>, F_GETFL);
+<a name="l00152"></a>00152     flags |= O_NONBLOCK;
+<a name="l00153"></a>00153     fcntl(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>, F_SETFL, flags);
+<a name="l00154"></a>00154  
+<a name="l00155"></a>00155 
+<a name="l00156"></a>00156     <span class="keywordflow">if</span>(listen(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>, 80) &lt; 0)
+<a name="l00157"></a>00157     {
+<a name="l00158"></a>00158         close(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>);
+<a name="l00159"></a>00159         <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = -1;
+<a name="l00160"></a>00160         ERROR_LOG(<span class="stringliteral">"Listen Error:%s"</span>,strerror(errno));
+<a name="l00161"></a>00161         <span class="keywordflow">return</span> -1;
+<a name="l00162"></a>00162     }
+<a name="l00163"></a>00163 
+<a name="l00164"></a>00164     <a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a> = epoll_create(<a class="code" href="net__io__server_8h.html#3683528649fa637cfecd207a2391758b">MAX_CLIENT_NUM</a>);
+<a name="l00165"></a>00165     <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a> &lt; 0)
+<a name="l00166"></a>00166     {
+<a name="l00167"></a>00167         close(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>);
+<a name="l00168"></a>00168         <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = -1;
+<a name="l00169"></a>00169         ERROR_LOG(<span class="stringliteral">"epoll_create error:%s"</span>,strerror(errno));
+<a name="l00170"></a>00170         <span class="keywordflow">return</span> -1;
+<a name="l00171"></a>00171     }
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173     epoll_event event;
+<a name="l00174"></a>00174     memset(&amp;event, 0, <span class="keyword">sizeof</span>(event));
+<a name="l00175"></a>00175     <span class="keyword">event</span>.events = EPOLLIN;
+<a name="l00176"></a>00176     <span class="keyword">event</span>.data.fd = <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>;
+<a name="l00177"></a>00177 
+<a name="l00178"></a>00178     <span class="keywordflow">if</span>(epoll_ctl(<a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a>, EPOLL_CTL_ADD, <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>, &amp;event) &lt; 0) 
+<a name="l00179"></a>00179     {
+<a name="l00180"></a>00180         close(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>);
+<a name="l00181"></a>00181         <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = -1;
+<a name="l00182"></a>00182 
+<a name="l00183"></a>00183         close(<a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a>);
+<a name="l00184"></a>00184         <a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a> = -1;
+<a name="l00185"></a>00185 
+<a name="l00186"></a>00186         ERROR_LOG(<span class="stringliteral">"epoll_ctl error:%s"</span>,strerror(errno));
+<a name="l00187"></a>00187         <span class="keywordflow">return</span> -1;
+<a name="l00188"></a>00188     }
+<a name="l00189"></a>00189 
+<a name="l00190"></a>00190     strcpy(<a class="code" href="classc__net__io__server.html#46c46bd81b21bb91e3d45bec546d9945">m_listen_ip</a>, listen_ip);
+<a name="l00191"></a>00191     <a class="code" href="classc__net__io__server.html#270560a70c18a6c016601825c5870f21">m_listen_port</a> = listen_port;
+<a name="l00192"></a>00192     <a class="code" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">m_p_events</a> = (<a class="code" href="structi__net__io__server__events.html" title="用户需要继承的">i_net_io_server_events</a>*)p_events;
+<a name="l00193"></a>00193     <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.clear();
+<a name="l00194"></a>00194     <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.clear();
+<a name="l00195"></a>00195     <a class="code" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">m_connect_id</a> = 0;
+<a name="l00196"></a>00196     <a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a> = 1;
+<a name="l00197"></a>00197 
+<a name="l00198"></a>00198     <span class="keywordflow">return</span> 0;
+<a name="l00199"></a>00199 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3dd8f933902025718146c797d948fee7"></a><!-- doxytag: member="c_net_io_server::release" ref="3dd8f933902025718146c797d948fee7" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放本对象资源 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无 </dd></dl>
+
+<p>实现了<a class="el" href="structi__net__io__server.html#5f2ac3bb27db53bf47fc0bf2ef868547">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00707"></a>00707 {
+<a name="l00708"></a>00708     <span class="keyword">delete</span> <span class="keyword">this</span>;
+<a name="l00709"></a>00709     <span class="keywordflow">return</span> 0;
+<a name="l00710"></a>00710 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e7907307ceaaa742408bc7342dc378a6"></a><!-- doxytag: member="c_net_io_server::send_data" ref="e7907307ceaaa742408bc7342dc378a6" args="(const int connection_id, char *p_data, const int data_len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::send_data           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+发送数据，将数据拷贝到相应连接的缓冲区,并没有实际发送。拷贝数据的长度为min(data_len,缓冲区空闲长度) 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>代表连接的ID </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_data</em>&nbsp;</td><td>要发送的数据 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_len</em>&nbsp;</td><td>要发送的数据的长度 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>&gt;=0 实际发送的字节数 -1failed </dd></dl>
+
+<p>
+&lt; 剩余的待发送的数据的长度<p>
+底层缓冲中没有数据，那么就直接发送数据 
+<p>实现了<a class="el" href="structi__net__io__server.html#1416267d267b7793cac8a61948ca2d81">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00209"></a>00209 {
+<a name="l00210"></a>00210     <span class="keywordflow">if</span>(!<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00211"></a>00211     {
+<a name="l00212"></a>00212         <span class="keywordflow">return</span> -1;
+<a name="l00213"></a>00213     }
+<a name="l00214"></a>00214     
+<a name="l00215"></a>00215     <span class="keywordflow">if</span>(NULL == p_data || data_len &lt;= 0)
+<a name="l00216"></a>00216     {
+<a name="l00217"></a>00217         <span class="keywordflow">return</span> -1;
+<a name="l00218"></a>00218     }
+<a name="l00219"></a>00219 
+<a name="l00220"></a>00220     <a class="code" href="classc__net__io__server.html#ef333dcde65007b75eac101b8a38a7a3">id_conn_map_iter_t</a> iter = <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.find(connection_id);
+<a name="l00221"></a>00221     <span class="keywordflow">if</span>(iter == <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.end())
+<a name="l00222"></a>00222     {
+<a name="l00223"></a>00223         ERROR_LOG(<span class="stringliteral">"not found connection %d"</span>, connection_id);
+<a name="l00224"></a>00224         <span class="keywordflow">return</span> -1;
+<a name="l00225"></a>00225     }
+<a name="l00226"></a>00226     
+<a name="l00227"></a>00227     <span class="keywordtype">int</span> remain_data_len = data_len;
+<a name="l00228"></a>00228     <span class="keywordtype">int</span> bytes_sent = 0;
+<a name="l00229"></a>00229     <span class="keywordflow">if</span>(iter-&gt;second-&gt;buffer_data_len == 0)
+<a name="l00230"></a>00230     {
+<a name="l00231"></a>00231         bytes_sent = send(iter-&gt;second-&gt;sock_fd, p_data, remain_data_len, 0);
+<a name="l00232"></a>00232         <span class="keywordflow">if</span>(bytes_sent &gt; 0)
+<a name="l00233"></a>00233         {
+<a name="l00234"></a>00234            remain_data_len -= bytes_sent;
+<a name="l00235"></a>00235         }
+<a name="l00236"></a>00236     } 
+<a name="l00237"></a>00237     
+<a name="l00238"></a>00238     <span class="keywordflow">if</span>(remain_data_len == 0)
+<a name="l00239"></a>00239     {
+<a name="l00240"></a>00240         <span class="keywordflow">return</span> data_len;
+<a name="l00241"></a>00241     }
+<a name="l00242"></a>00242     
+<a name="l00243"></a>00243     <span class="keywordtype">int</span> empty_buffer_len = <span class="keyword">sizeof</span>(iter-&gt;second-&gt;send_buffer) - iter-&gt;second-&gt;buffer_data_len;
+<a name="l00244"></a>00244 
+<a name="l00245"></a>00245     <span class="keywordtype">int</span> copy_len = 0;
+<a name="l00246"></a>00246     <span class="keywordflow">if</span>(remain_data_len &lt;= empty_buffer_len)
+<a name="l00247"></a>00247     {
+<a name="l00248"></a>00248         copy_len = remain_data_len;
+<a name="l00249"></a>00249     }
+<a name="l00250"></a>00250     <span class="keywordflow">else</span>
+<a name="l00251"></a>00251     {
+<a name="l00252"></a>00252         copy_len = empty_buffer_len;
+<a name="l00253"></a>00253     }
+<a name="l00254"></a>00254 
+<a name="l00255"></a>00255     memcpy(iter-&gt;second-&gt;send_buffer + iter-&gt;second-&gt;buffer_data_len, p_data + bytes_sent, copy_len);
+<a name="l00256"></a>00256     iter-&gt;second-&gt;buffer_data_len += copy_len;
+<a name="l00257"></a>00257     <span class="keywordflow">return</span> copy_len + bytes_sent;
+<a name="l00258"></a>00258 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="99617304a3c16351896b045cd3c4a3b0"></a><!-- doxytag: member="c_net_io_server::send_data_atomic" ref="99617304a3c16351896b045cd3c4a3b0" args="(const int connection_id, char *p_data, const int data_len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::send_data_atomic           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+发送数据，将数据拷贝到发送缓冲区，如果缓冲去无足够空间，就不拷贝 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参数含义同上个函数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>
+&lt; 剩余的待发送的数据的长度<p>
+底层缓冲中没有数据，那么就直接发送数据 
+<p>实现了<a class="el" href="structi__net__io__server.html#6dd9951945c22d42ea3494b9fca0bdd3">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00266"></a>00266 {
+<a name="l00267"></a>00267     <span class="keywordflow">if</span>(!<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00268"></a>00268     {
+<a name="l00269"></a>00269         <span class="keywordflow">return</span> -1;
+<a name="l00270"></a>00270     }
+<a name="l00271"></a>00271     
+<a name="l00272"></a>00272     <span class="keywordflow">if</span>(NULL == p_data || data_len &lt;= 0)
+<a name="l00273"></a>00273     {
+<a name="l00274"></a>00274         <span class="keywordflow">return</span> -1;
+<a name="l00275"></a>00275     }
+<a name="l00276"></a>00276 
+<a name="l00277"></a>00277     <a class="code" href="classc__net__io__server.html#ef333dcde65007b75eac101b8a38a7a3">id_conn_map_iter_t</a> iter = <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.find(connection_id);
+<a name="l00278"></a>00278     <span class="keywordflow">if</span>(iter == <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.end())
+<a name="l00279"></a>00279     {
+<a name="l00280"></a>00280         ERROR_LOG(<span class="stringliteral">"not found connection %d"</span>, connection_id);
+<a name="l00281"></a>00281         <span class="keywordflow">return</span> -1;
+<a name="l00282"></a>00282     }
+<a name="l00283"></a>00283    
+<a name="l00284"></a>00284     <span class="keywordtype">int</span> empty_buffer_len = <span class="keyword">sizeof</span>(iter-&gt;second-&gt;send_buffer) - iter-&gt;second-&gt;buffer_data_len;
+<a name="l00285"></a>00285     <span class="keywordflow">if</span>(empty_buffer_len &lt; data_len)
+<a name="l00286"></a>00286     {
+<a name="l00287"></a>00287         ERROR_LOG(<span class="stringliteral">"It doesn't have enough space"</span>);
+<a name="l00288"></a>00288         <span class="keywordflow">return</span> -1;
+<a name="l00289"></a>00289     } 
+<a name="l00290"></a>00290     
+<a name="l00291"></a>00291     <span class="keywordtype">int</span> remain_data_len = data_len;
+<a name="l00292"></a>00292     <span class="keywordtype">int</span> bytes_sent = 0;
+<a name="l00293"></a>00293     <span class="keywordflow">if</span>(iter-&gt;second-&gt;buffer_data_len == 0)
+<a name="l00294"></a>00294     {
+<a name="l00295"></a>00295         bytes_sent = send(iter-&gt;second-&gt;sock_fd, p_data, remain_data_len, 0);
+<a name="l00296"></a>00296         <span class="keywordflow">if</span>(bytes_sent &gt; 0)
+<a name="l00297"></a>00297         {
+<a name="l00298"></a>00298            remain_data_len -= bytes_sent;
+<a name="l00299"></a>00299         }
+<a name="l00300"></a>00300     } 
+<a name="l00301"></a>00301     
+<a name="l00302"></a>00302     <span class="keywordflow">if</span>(remain_data_len == 0)
+<a name="l00303"></a>00303     {
+<a name="l00304"></a>00304         <span class="keywordflow">return</span> 0;
+<a name="l00305"></a>00305     }
+<a name="l00306"></a>00306     
+<a name="l00307"></a>00307     memcpy(iter-&gt;second-&gt;send_buffer + iter-&gt;second-&gt;buffer_data_len, p_data + bytes_sent, remain_data_len);
+<a name="l00308"></a>00308     iter-&gt;second-&gt;buffer_data_len += remain_data_len;
+<a name="l00309"></a>00309     <span class="keywordflow">return</span> 0;
+<a name="l00310"></a>00310 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="4f029fc2a35789c91bc7e1730e25f9c9"></a><!-- doxytag: member="c_net_io_server::uninit" ref="4f029fc2a35789c91bc7e1730e25f9c9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_net_io_server::uninit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+反初始化 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无 </dd></dl>
+
+<p>实现了<a class="el" href="structi__net__io__server.html#a816b4501b92a61b1ad314e0a6a522e8">i_net_io_server</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00666"></a>00666 {
+<a name="l00667"></a>00667     <span class="keywordflow">if</span>(!<a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a>)
+<a name="l00668"></a>00668     {
+<a name="l00669"></a>00669         <span class="keywordflow">return</span> -1;
+<a name="l00670"></a>00670     }
+<a name="l00671"></a>00671         
+<a name="l00672"></a>00672     <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> &gt;= 0)
+<a name="l00673"></a>00673     {
+<a name="l00674"></a>00674         close(<a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a>);
+<a name="l00675"></a>00675         <a class="code" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">m_listen_socket</a> = -1;
+<a name="l00676"></a>00676     }
+<a name="l00677"></a>00677 
+<a name="l00678"></a>00678     <a class="code" href="classc__net__io__server.html#ef333dcde65007b75eac101b8a38a7a3">id_conn_map_iter_t</a> iterator = <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.begin();
+<a name="l00679"></a>00679     <span class="keywordflow">while</span>(iterator != <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.end())
+<a name="l00680"></a>00680     {
+<a name="l00681"></a>00681         <a class="code" href="classc__net__io__server.html#1f6c47ba9b507c13eaa743325174c5f9" title="关闭连接">close_connection</a>((iterator++)-&gt;first, <span class="keyword">true</span>);
+<a name="l00682"></a>00682     }
+<a name="l00683"></a>00683 
+<a name="l00684"></a>00684     <a class="code" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">m_id_conn_map</a>.clear();
+<a name="l00685"></a>00685     <a class="code" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">m_fd_conn_map</a>.clear();
+<a name="l00686"></a>00686 
+<a name="l00687"></a>00687     <span class="keywordflow">if</span>(<a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a> &gt;= 0)
+<a name="l00688"></a>00688     {
+<a name="l00689"></a>00689         close(<a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a>);
+<a name="l00690"></a>00690         <a class="code" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">m_epoll_fd</a> = -1;
+<a name="l00691"></a>00691     }
+<a name="l00692"></a>00692 
+<a name="l00693"></a>00693     memset(<a class="code" href="classc__net__io__server.html#46c46bd81b21bb91e3d45bec546d9945">m_listen_ip</a>,0,<span class="keyword">sizeof</span>(<a class="code" href="classc__net__io__server.html#46c46bd81b21bb91e3d45bec546d9945">m_listen_ip</a>));
+<a name="l00694"></a>00694     <a class="code" href="classc__net__io__server.html#270560a70c18a6c016601825c5870f21">m_listen_port</a> = 0;
+<a name="l00695"></a>00695 
+<a name="l00696"></a>00696     <a class="code" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">m_inited</a> = 0;
+<a name="l00697"></a>00697 
+<a name="l00698"></a>00698     <span class="keywordflow">return</span> 0;
+<a name="l00699"></a>00699 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<hr><h2>成员数据文档</h2>
+<a class="anchor" name="e82461927bd4aff60e7de584d07ce550"></a><!-- doxytag: member="c_net_io_server::m_connect_id" ref="e82461927bd4aff60e7de584d07ce550" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__net__io__server.html#e82461927bd4aff60e7de584d07ce550">c_net_io_server::m_connect_id</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+用于自增的连接标识 
+</div>
+</div><p>
+<a class="anchor" name="e27abff21aeabd8743c0bf1c64ff1338"></a><!-- doxytag: member="c_net_io_server::m_epoll_fd" ref="e27abff21aeabd8743c0bf1c64ff1338" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__net__io__server.html#e27abff21aeabd8743c0bf1c64ff1338">c_net_io_server::m_epoll_fd</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+建立的epoll描述符 
+</div>
+</div><p>
+<a class="anchor" name="56b0ddfcb4eaea7a01458ebedef2387a"></a><!-- doxytag: member="c_net_io_server::m_fd_conn_map" ref="56b0ddfcb4eaea7a01458ebedef2387a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classc__net__io__server.html#389b23dfeb8960a7362b96fad3cc368c">fd_connection_map_t</a> <a class="el" href="classc__net__io__server.html#56b0ddfcb4eaea7a01458ebedef2387a">c_net_io_server::m_fd_conn_map</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+代表所有链接的映射,以fd为主键 
+</div>
+</div><p>
+<a class="anchor" name="7f777bf9dbad323602f0b9174f0b2e79"></a><!-- doxytag: member="c_net_io_server::m_id_conn_map" ref="7f777bf9dbad323602f0b9174f0b2e79" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classc__net__io__server.html#2a57ac631db769fa8a3000adfcf76ef4">id_connection_map_t</a> <a class="el" href="classc__net__io__server.html#7f777bf9dbad323602f0b9174f0b2e79">c_net_io_server::m_id_conn_map</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+代表所有链接的映射,以id为主键 
+</div>
+</div><p>
+<a class="anchor" name="7f2ee118513cbfc797b4257e0c4e0d0e"></a><!-- doxytag: member="c_net_io_server::m_inited" ref="7f2ee118513cbfc797b4257e0c4e0d0e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__net__io__server.html#7f2ee118513cbfc797b4257e0c4e0d0e">c_net_io_server::m_inited</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+是否初始化标志 
+</div>
+</div><p>
+<a class="anchor" name="46c46bd81b21bb91e3d45bec546d9945"></a><!-- doxytag: member="c_net_io_server::m_listen_ip" ref="46c46bd81b21bb91e3d45bec546d9945" args="[16]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="classc__net__io__server.html#46c46bd81b21bb91e3d45bec546d9945">c_net_io_server::m_listen_ip</a>[16]<code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+监听的机器IP 
+</div>
+</div><p>
+<a class="anchor" name="270560a70c18a6c016601825c5870f21"></a><!-- doxytag: member="c_net_io_server::m_listen_port" ref="270560a70c18a6c016601825c5870f21" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__net__io__server.html#270560a70c18a6c016601825c5870f21">c_net_io_server::m_listen_port</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+监听的端口号 
+</div>
+</div><p>
+<a class="anchor" name="107a789a406fb4f573024f21e02deaea"></a><!-- doxytag: member="c_net_io_server::m_listen_socket" ref="107a789a406fb4f573024f21e02deaea" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__net__io__server.html#107a789a406fb4f573024f21e02deaea">c_net_io_server::m_listen_socket</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+监听的socket套接口 
+</div>
+</div><p>
+<a class="anchor" name="06dd06893e9adbab79ea71023f18b375"></a><!-- doxytag: member="c_net_io_server::m_p_events" ref="06dd06893e9adbab79ea71023f18b375" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structi__net__io__server__events.html">i_net_io_server_events</a>* <a class="el" href="classc__net__io__server.html#06dd06893e9adbab79ea71023f18b375">c_net_io_server::m_p_events</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/net-io-server-1.0.0/<a class="el" href="net__io__server_8h.html">net_io_server.h</a><li>E:/aw/svn/standard/c/library/net-io-server-1.0.0/<a class="el" href="net__io__server_8cpp.html">net_io_server.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:04 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

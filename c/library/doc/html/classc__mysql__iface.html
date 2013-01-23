@@ -1,0 +1,872 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: c_mysql_iface类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>c_mysql_iface类参考</h1><!-- doxytag: class="c_mysql_iface" --><!-- doxytag: inherits="i_mysql_iface" -->mysql接口的实现类  
+<a href="#_details">更多...</a>
+<p>
+<div class="dynheader">
+继承图，类c_mysql_iface</div>
+<div class="dynsection">
+<p><center><img src="classc__mysql__iface__inherit__graph.png" border="0" usemap="#c__mysql__iface__inherit__map" alt="Inheritance graph"></center>
+<map name="c__mysql__iface__inherit__map">
+<area shape="rect" href="structi__mysql__iface.html" title="mysql接口" alt="" coords="5,5,141,213"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+<div class="dynheader">
+c_mysql_iface合作图：</div>
+<div class="dynsection">
+<p><center><img src="classc__mysql__iface__coll__graph.png" border="0" usemap="#c__mysql__iface__coll__map" alt="Collaboration graph"></center>
+<map name="c__mysql__iface__coll__map">
+<area shape="rect" href="structi__mysql__iface.html" title="mysql接口" alt="" coords="5,5,141,213"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+
+<p>
+<a href="classc__mysql__iface-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#6753d6895f85189c2438c0ed5ab77951">c_mysql_iface</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">构造函数  <a href="#6753d6895f85189c2438c0ed5ab77951"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#3447abe20261c1a8ebaf0c25dc96502f">execsql</a> (const char *sql_fmt,...)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">执行SQL语句, 参数格式同printf()  <a href="#3447abe20261c1a8ebaf0c25dc96502f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">MYSQL *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#a9151834a42c9abf813680f6caec6cba">get_conn</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取数据库链接  <a href="#a9151834a42c9abf813680f6caec6cba"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#8a56e99b3bf8637c36c415833e7fb75c">get_last_errno</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取本对象实例最近一次错误号。  <a href="#8a56e99b3bf8637c36c415833e7fb75c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#870c5eead9117150eb7d3a92619f615a">get_last_errstr</a> () const </td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取本对象实例最近一次错误号。  <a href="#870c5eead9117150eb7d3a92619f615a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#150a6fe15d51b2ae8d9f42cc0de92b60">init</a> (const char *host, unsigned short port, const char *db_name, const char *user, const char *passwd, const char *charset)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化对象属性参数  <a href="#150a6fe15d51b2ae8d9f42cc0de92b60"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#c99e8595a4f92eca49dcfea91238dd6b">release</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放本对象占用的资源  <a href="#c99e8595a4f92eca49dcfea91238dd6b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#3049736fb6e574e8f987f71a9c110dbf">select_first_row</a> (MYSQL_ROW *row, const char *sql_fmt,...)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从数据库内查询第一行数据, 建议只使用SELECT语句，传入非SELECT语句是不安全的。  <a href="#3049736fb6e574e8f987f71a9c110dbf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">MYSQL_ROW&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#bbca56dd5077717a2bff9375fd119680">select_next_row</a> (bool check_field=false)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取SELECT结果的下一行数据  <a href="#bbca56dd5077717a2bff9375fd119680"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#ed5d142f814e05f62d1273216d1ae405">uninit</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">反初始化  <a href="#ed5d142f814e05f62d1273216d1ae405"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#62b9cc0d792d873e60355706f97ef03d">~c_mysql_iface</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">析构函数  <a href="#62b9cc0d792d873e60355706f97ef03d"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>私有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78">set_err</a> (int errno, const char *msg,...)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">设置本对象实例的内部错误信息  <a href="#cbed60649c13d553f8cf0d211d9b5e78"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>私有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#5fc34e974dc9e3ec27b262a856e0a8d2">m_errno</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">保存本对象错误号  <a href="#5fc34e974dc9e3ec27b262a856e0a8d2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#7c41e1938635e04652ad804049de2255">m_errstr</a> [1024]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">保存本对象的错误描述  <a href="#7c41e1938635e04652ad804049de2255"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">MYSQL *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a">m_hdb</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">对象内部维护的MYSQL连接指针  <a href="#42405763b85e74fdb50a1beb648eaa4a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#bcaeb1a68f768b76201c59bbbb7d4452">m_host</a> [MYSQL_MAX_HOST_BUF_LEN]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">数据库主机地址  <a href="#bcaeb1a68f768b76201c59bbbb7d4452"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned short&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#96ec800d10fbc5d9098f754a4860d61f">m_port</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">数据库主机端口  <a href="#96ec800d10fbc5d9098f754a4860d61f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">MYSQL_RES *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff">m_res</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">维护select_first_row和select_next_row查询结果的内部资源  <a href="#e8df7b82424e7fdd0716f246654bb6ff"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">MYSQL_ROW&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a">m_row</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">维护select_first_row和select_next_row查询结果的内部资源  <a href="#898bf0590171bc298cfa5410d8e44b7a"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660">m_sql_buf</a> [MYSQL_MAX_SQL_BUF_LEN]</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接保存接口串入的SQL语句的缓存  <a href="#628b8f47be1138590dc0fde9feb33660"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+mysql接口的实现类 <hr><h2>构造及析构函数文档</h2>
+<a class="anchor" name="6753d6895f85189c2438c0ed5ab77951"></a><!-- doxytag: member="c_mysql_iface::c_mysql_iface" ref="6753d6895f85189c2438c0ed5ab77951" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">c_mysql_iface::c_mysql_iface           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+构造函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无 </dd></dl>
+<div class="fragment"><pre class="fragment"><a name="l00032"></a>00032     : <a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>(NULL), <a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a>(NULL), <a class="code" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a" title="维护select_first_row和select_next_row查询结果的内部资源">m_row</a>(NULL), <a class="code" href="classc__mysql__iface.html#96ec800d10fbc5d9098f754a4860d61f" title="数据库主机端口">m_port</a>(0), <a class="code" href="classc__mysql__iface.html#5fc34e974dc9e3ec27b262a856e0a8d2" title="保存本对象错误号">m_errno</a>(0)
+<a name="l00033"></a>00033 {
+<a name="l00034"></a>00034     strcpy(<a class="code" href="classc__mysql__iface.html#7c41e1938635e04652ad804049de2255" title="保存本对象的错误描述">m_errstr</a>, <span class="stringliteral">"Operation success."</span>);
+<a name="l00035"></a>00035 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="62b9cc0d792d873e60355706f97ef03d"></a><!-- doxytag: member="c_mysql_iface::~c_mysql_iface" ref="62b9cc0d792d873e60355706f97ef03d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">c_mysql_iface::~c_mysql_iface           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+析构函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>无</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无 </dd></dl>
+<div class="fragment"><pre class="fragment"><a name="l00044"></a>00044 {
+<a name="l00045"></a>00045     <a class="code" href="classc__mysql__iface.html#ed5d142f814e05f62d1273216d1ae405" title="反初始化">uninit</a>();
+<a name="l00046"></a>00046 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="3447abe20261c1a8ebaf0c25dc96502f"></a><!-- doxytag: member="c_mysql_iface::execsql" ref="3447abe20261c1a8ebaf0c25dc96502f" args="(const char *sql_fmt,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_mysql_iface::execsql           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>sql_fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+执行SQL语句, 参数格式同printf() 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sql_fmt</em>&nbsp;</td><td>字符串格式 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>...</em>&nbsp;</td><td>变参</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>失败返回－1， 成功返回SQL(UPDATE,INSERT,DELETE)语句影响的行数,或SELECT到数据的行数。 </dd></dl>
+
+<p>
+检查参数<p>
+得到数据库的连接<p>
+构造 sql 语句 
+<p>实现了<a class="el" href="structi__mysql__iface.html#0654173ff27704d541814e754afa0933">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00243"></a>00243 {
+<a name="l00245"></a>00245     <span class="keywordflow">if</span> (sql_fmt == NULL) {
+<a name="l00246"></a>00246         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#961dbd023ecd7afbda7ffc22cbf9d879">MYSQL_IFACE_E_PARAMETER</a>, <span class="stringliteral">"NULL sql fmt str."</span>);
+<a name="l00247"></a>00247         <span class="keywordflow">return</span> -1;
+<a name="l00248"></a>00248     }
+<a name="l00249"></a>00249 
+<a name="l00251"></a>00251     <a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> = <a class="code" href="classc__mysql__iface.html#a9151834a42c9abf813680f6caec6cba" title="获取数据库链接">get_conn</a>();
+<a name="l00252"></a>00252     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> == NULL) {
+<a name="l00253"></a>00253         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#aa0b547ba5c30d3092e82f58e81e83be">MYSQL_IFACE_E_NOT_INITED</a>, <span class="stringliteral">"Db uninited while select one row."</span>);
+<a name="l00254"></a>00254         <span class="keywordflow">return</span> -1;
+<a name="l00255"></a>00255     }
+<a name="l00256"></a>00256 
+<a name="l00258"></a>00258     va_list argptr;
+<a name="l00259"></a>00259     va_start(argptr, sql_fmt);
+<a name="l00260"></a>00260     vsprintf(<a class="code" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660" title="接保存接口串入的SQL语句的缓存">m_sql_buf</a>, sql_fmt, argptr);
+<a name="l00261"></a>00261     va_end(argptr);
+<a name="l00262"></a>00262 
+<a name="l00263"></a>00263     <span class="keywordflow">if</span> (mysql_query(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>, <a class="code" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660" title="接保存接口串入的SQL语句的缓存">m_sql_buf</a>) != 0) {
+<a name="l00264"></a>00264         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"Mysql query error: %s\n\tSQL: %s"</span>, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>), <a class="code" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660" title="接保存接口串入的SQL语句的缓存">m_sql_buf</a>);
+<a name="l00265"></a>00265         <span class="keywordflow">return</span> -1;
+<a name="l00266"></a>00266     }
+<a name="l00267"></a>00267 
+<a name="l00268"></a>00268     <span class="keywordflow">return</span> mysql_affected_rows(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>);
+<a name="l00269"></a>00269 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="a9151834a42c9abf813680f6caec6cba"></a><!-- doxytag: member="c_mysql_iface::get_conn" ref="a9151834a42c9abf813680f6caec6cba" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL * c_mysql_iface::get_conn           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取数据库链接 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>MYSQL指针 </dd></dl>
+
+<p>
+ping 
+<p>实现了<a class="el" href="structi__mysql__iface.html#b4d8aa993a32f1cec0eef0f6ea7c09dd">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00129"></a>00129 {
+<a name="l00130"></a>00130     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> == NULL) {
+<a name="l00131"></a>00131         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#aa0b547ba5c30d3092e82f58e81e83be">MYSQL_IFACE_E_NOT_INITED</a>, <span class="stringliteral">"Db uninited while get connection."</span>);
+<a name="l00132"></a>00132         <span class="keywordflow">return</span> NULL;
+<a name="l00133"></a>00133     }
+<a name="l00134"></a>00134 
+<a name="l00136"></a>00136     <span class="keywordflow">if</span> (mysql_ping(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>)) {
+<a name="l00137"></a>00137         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"mysql_ping error: %s"</span>, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>));
+<a name="l00138"></a>00138         <span class="keywordflow">return</span> NULL;
+<a name="l00139"></a>00139     }
+<a name="l00140"></a>00140 
+<a name="l00141"></a>00141     <span class="keywordflow">return</span> <a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>;
+<a name="l00142"></a>00142 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="8a56e99b3bf8637c36c415833e7fb75c"></a><!-- doxytag: member="c_mysql_iface::get_last_errno" ref="8a56e99b3bf8637c36c415833e7fb75c" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_mysql_iface::get_last_errno           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取本对象实例最近一次错误号。 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>错误号 </dd></dl>
+
+<p>实现了<a class="el" href="structi__mysql__iface.html#650c9ceb73b81645cf6a13584b87ef2e">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00296"></a>00296 {
+<a name="l00297"></a>00297     <span class="keywordflow">return</span> <a class="code" href="classc__mysql__iface.html#5fc34e974dc9e3ec27b262a856e0a8d2" title="保存本对象错误号">m_errno</a>;
+<a name="l00298"></a>00298 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="870c5eead9117150eb7d3a92619f615a"></a><!-- doxytag: member="c_mysql_iface::get_last_errstr" ref="870c5eead9117150eb7d3a92619f615a" args="() const " -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * c_mysql_iface::get_last_errstr           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取本对象实例最近一次错误号。 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>错误号 </dd></dl>
+
+<p>实现了<a class="el" href="structi__mysql__iface.html#56db96965b461ab0d59cb8de03a0f4ff">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00305"></a>00305 {
+<a name="l00306"></a>00306     <span class="keywordflow">return</span> <a class="code" href="classc__mysql__iface.html#7c41e1938635e04652ad804049de2255" title="保存本对象的错误描述">m_errstr</a>;
+<a name="l00307"></a>00307 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="150a6fe15d51b2ae8d9f42cc0de92b60"></a><!-- doxytag: member="c_mysql_iface::init" ref="150a6fe15d51b2ae8d9f42cc0de92b60" args="(const char *host, unsigned short port, const char *db_name, const char *user, const char *passwd, const char *charset)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_mysql_iface::init           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>db_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>passwd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>charset</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化对象属性参数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>host</em>&nbsp;</td><td>数据库主机 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>数据库端口 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>db_name</em>&nbsp;</td><td>数据库里的库名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>user</em>&nbsp;</td><td>数据库账户名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>passwd</em>&nbsp;</td><td>数据库密码 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>charset</em>&nbsp;</td><td>本次链接数据库使用的字符集</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回0， 失败返回－1 </dd></dl>
+
+<p>实现了<a class="el" href="structi__mysql__iface.html#b9101cfc135925b1a7a93a548ae4101c">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00062"></a>00062 {
+<a name="l00063"></a>00063     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> != NULL) {
+<a name="l00064"></a>00064         <a class="code" href="classc__mysql__iface.html#ed5d142f814e05f62d1273216d1ae405" title="反初始化">uninit</a>();
+<a name="l00065"></a>00065     }
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067     <a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> = mysql_init(NULL);
+<a name="l00068"></a>00068     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> == NULL) {
+<a name="l00069"></a>00069         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"Mysql_init error: %s"</span>, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>));
+<a name="l00070"></a>00070         <span class="keywordflow">return</span> -1;
+<a name="l00071"></a>00071     }
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073     my_bool is_auto_reconnect = 1;
+<a name="l00074"></a>00074     <span class="keywordflow">if</span> (mysql_options(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>, MYSQL_OPT_RECONNECT, &amp;is_auto_reconnect)) {
+<a name="l00075"></a>00075         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"Set mysql_options reconnect error: %s."</span>, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>));
+<a name="l00076"></a>00076         <span class="keywordflow">return</span> -1;
+<a name="l00077"></a>00077     }
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079     <span class="keywordflow">if</span> (mysql_real_connect(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>, host, user, passwd, db_name, port, NULL, CLIENT_INTERACTIVE) == NULL) {
+<a name="l00080"></a>00080         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"Mysql_real_connect to %s(%u) on %s with user %s(%s) error: %s."</span>, host, port, db_name, user, passwd, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>));
+<a name="l00081"></a>00081         <span class="keywordflow">return</span> -1;
+<a name="l00082"></a>00082     }
+<a name="l00083"></a>00083 
+<a name="l00084"></a>00084     <span class="keywordflow">if</span> (mysql_set_character_set(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>, charset)) {
+<a name="l00085"></a>00085         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"Mysql_set_character_set to %s error: %s."</span>, charset, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>));
+<a name="l00086"></a>00086         <span class="keywordflow">return</span> -1;
+<a name="l00087"></a>00087     }
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089     strcpy(<a class="code" href="classc__mysql__iface.html#bcaeb1a68f768b76201c59bbbb7d4452" title="数据库主机地址">m_host</a>, host);
+<a name="l00090"></a>00090     <a class="code" href="classc__mysql__iface.html#96ec800d10fbc5d9098f754a4860d61f" title="数据库主机端口">m_port</a> = port;
+<a name="l00091"></a>00091     <span class="keywordflow">return</span> 0;
+<a name="l00092"></a>00092 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c99e8595a4f92eca49dcfea91238dd6b"></a><!-- doxytag: member="c_mysql_iface::release" ref="c99e8595a4f92eca49dcfea91238dd6b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_mysql_iface::release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放本对象占用的资源 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0 </dd></dl>
+
+<p>实现了<a class="el" href="structi__mysql__iface.html#14add87e9fc19da40c85a71b5c987f0f">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00118"></a>00118 {
+<a name="l00119"></a>00119     <span class="keyword">delete</span> <span class="keyword">this</span>;
+<a name="l00120"></a>00120     <span class="keywordflow">return</span> 0;
+<a name="l00121"></a>00121 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3049736fb6e574e8f987f71a9c110dbf"></a><!-- doxytag: member="c_mysql_iface::select_first_row" ref="3049736fb6e574e8f987f71a9c110dbf" args="(MYSQL_ROW *row, const char *sql_fmt,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_mysql_iface::select_first_row           </td>
+          <td>(</td>
+          <td class="paramtype">MYSQL_ROW *&nbsp;</td>
+          <td class="paramname"> <em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>sql_fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+从数据库内查询第一行数据, 建议只使用SELECT语句，传入非SELECT语句是不安全的。 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>row</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sql_fmt</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd></dd></dl>
+
+<p>
+检查参数<p>
+得到数据库的连接<p>
+构造 sql 语句<p>
+清空上次查询的 res 指针 
+<p>实现了<a class="el" href="structi__mysql__iface.html#5067259870ce27e2cfad7e65a5b0bd7c">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00152"></a>00152 {
+<a name="l00154"></a>00154     <span class="keywordflow">if</span> (sql_fmt == NULL) {
+<a name="l00155"></a>00155         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#961dbd023ecd7afbda7ffc22cbf9d879">MYSQL_IFACE_E_PARAMETER</a>, <span class="stringliteral">"NULL sql fmt str(%p)."</span>, sql_fmt);
+<a name="l00156"></a>00156         <span class="keywordflow">return</span> -1;
+<a name="l00157"></a>00157     }
+<a name="l00158"></a>00158 
+<a name="l00160"></a>00160     <a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> = <a class="code" href="classc__mysql__iface.html#a9151834a42c9abf813680f6caec6cba" title="获取数据库链接">get_conn</a>();
+<a name="l00161"></a>00161     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> == NULL) {
+<a name="l00162"></a>00162         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#aa0b547ba5c30d3092e82f58e81e83be">MYSQL_IFACE_E_NOT_INITED</a>, <span class="stringliteral">"Db uninited while select one row."</span>);
+<a name="l00163"></a>00163         <span class="keywordflow">return</span> -1;
+<a name="l00164"></a>00164     }
+<a name="l00165"></a>00165 
+<a name="l00167"></a>00167     va_list argptr;
+<a name="l00168"></a>00168     va_start(argptr, sql_fmt);
+<a name="l00169"></a>00169     vsprintf(<a class="code" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660" title="接保存接口串入的SQL语句的缓存">m_sql_buf</a>, sql_fmt, argptr);
+<a name="l00170"></a>00170     va_end(argptr);
+<a name="l00171"></a>00171     
+<a name="l00172"></a>00172 
+<a name="l00173"></a>00173     <span class="keywordflow">if</span> (mysql_query(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>, <a class="code" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660" title="接保存接口串入的SQL语句的缓存">m_sql_buf</a>) != 0) {
+<a name="l00174"></a>00174         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"Mysql query error: %s\n\tSQL: %s"</span>, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>), <a class="code" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660" title="接保存接口串入的SQL语句的缓存">m_sql_buf</a>);
+<a name="l00175"></a>00175         <span class="keywordflow">return</span> -1;
+<a name="l00176"></a>00176     }
+<a name="l00177"></a>00177 
+<a name="l00179"></a>00179     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> != NULL) {
+<a name="l00180"></a>00180         mysql_free_result(<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a>);
+<a name="l00181"></a>00181         <a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> = NULL;
+<a name="l00182"></a>00182     }
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184     <a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> = mysql_store_result(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>);
+<a name="l00185"></a>00185     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> == NULL) {
+<a name="l00186"></a>00186         <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#3291e84282c660cb568ecdae4d41d542">MYSQL_IFACE_E_MYSQL_API</a>, <span class="stringliteral">"mysql_store_result error: %s\n\tSQL: %s"</span>, mysql_error(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>), <a class="code" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660" title="接保存接口串入的SQL语句的缓存">m_sql_buf</a>);
+<a name="l00187"></a>00187         <span class="keywordflow">return</span> -1;
+<a name="l00188"></a>00188     }
+<a name="l00189"></a>00189 
+<a name="l00190"></a>00190     <span class="keywordtype">int</span> row_cnt = mysql_num_rows(<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a>);
+<a name="l00191"></a>00191     <span class="keywordflow">if</span> (row != NULL) {
+<a name="l00192"></a>00192         *row = NULL;
+<a name="l00193"></a>00193 
+<a name="l00194"></a>00194         <span class="keywordflow">if</span> (row_cnt != 0) {
+<a name="l00195"></a>00195             *row = <a class="code" href="classc__mysql__iface.html#bbca56dd5077717a2bff9375fd119680" title="获取SELECT结果的下一行数据">select_next_row</a>();
+<a name="l00196"></a>00196         }
+<a name="l00197"></a>00197     }
+<a name="l00198"></a>00198 
+<a name="l00199"></a>00199     <span class="keywordflow">return</span> row_cnt;
+<a name="l00200"></a>00200 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bbca56dd5077717a2bff9375fd119680"></a><!-- doxytag: member="c_mysql_iface::select_next_row" ref="bbca56dd5077717a2bff9375fd119680" args="(bool check_field=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_ROW c_mysql_iface::select_next_row           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>check_field</em> = <code>false</code>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取SELECT结果的下一行数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>check_field</em>&nbsp;</td><td>是否检查每个字段的指针是否为NULL</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>mysql对象MYSQL_ROW. </dd></dl>
+
+<p>
+获取到最后一行时释放资源 
+<p>实现了<a class="el" href="structi__mysql__iface.html#8e578d26aab86d409553beeff5f34bdb">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00209"></a>00209 {
+<a name="l00210"></a>00210     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> == NULL) {
+<a name="l00211"></a>00211         <span class="keywordflow">return</span> NULL;
+<a name="l00212"></a>00212     }
+<a name="l00213"></a>00213 
+<a name="l00214"></a>00214     <a class="code" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a" title="维护select_first_row和select_next_row查询结果的内部资源">m_row</a> = mysql_fetch_row(<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a>);
+<a name="l00215"></a>00215     <span class="keywordflow">if</span> ((<a class="code" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a" title="维护select_first_row和select_next_row查询结果的内部资源">m_row</a> != NULL) &amp;&amp; check_field) {
+<a name="l00216"></a>00216         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> field_cnt = mysql_num_fields(<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a>);
+<a name="l00217"></a>00217         <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt;field_cnt; i++) {
+<a name="l00218"></a>00218             <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a" title="维护select_first_row和select_next_row查询结果的内部资源">m_row</a>[i] == NULL) {
+<a name="l00219"></a>00219                 <a class="code" href="classc__mysql__iface.html#cbed60649c13d553f8cf0d211d9b5e78" title="设置本对象实例的内部错误信息">set_err</a>(<a class="code" href="c__mysql__iface_8h.html#f682cb12bd8cd6abbcb793bb66e9b600">MYSQL_IFACE_E_NULL_FIELD</a>, <span class="stringliteral">"NULL field at position %u."</span>, i);
+<a name="l00220"></a>00220                 <span class="keywordflow">return</span> NULL;
+<a name="l00221"></a>00221             }
+<a name="l00222"></a>00222         }
+<a name="l00223"></a>00223     }
+<a name="l00224"></a>00224 
+<a name="l00225"></a>00225     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a" title="维护select_first_row和select_next_row查询结果的内部资源">m_row</a> == NULL) {
+<a name="l00227"></a>00227         mysql_free_result(<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a>);
+<a name="l00228"></a>00228         <a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> = NULL;
+<a name="l00229"></a>00229     }
+<a name="l00230"></a>00230 
+<a name="l00231"></a>00231     <span class="keywordflow">return</span> <a class="code" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a" title="维护select_first_row和select_next_row查询结果的内部资源">m_row</a>;
+<a name="l00232"></a>00232 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cbed60649c13d553f8cf0d211d9b5e78"></a><!-- doxytag: member="c_mysql_iface::set_err" ref="cbed60649c13d553f8cf0d211d9b5e78" args="(int errno, const char *msg,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_mysql_iface::set_err           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>errno</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+设置本对象实例的内部错误信息 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>errno</em>&nbsp;</td><td>错误码 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>msg</em>&nbsp;</td><td>错误描述 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>...</em>&nbsp;</td><td>变参</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>空 </dd></dl>
+<div class="fragment"><pre class="fragment"><a name="l00281"></a>00281 {
+<a name="l00282"></a>00282     <a class="code" href="classc__mysql__iface.html#5fc34e974dc9e3ec27b262a856e0a8d2" title="保存本对象错误号">m_errno</a> = errno;
+<a name="l00283"></a>00283 
+<a name="l00284"></a>00284     va_list argptr;
+<a name="l00285"></a>00285     va_start(argptr, msg);
+<a name="l00286"></a>00286     vsprintf(<a class="code" href="classc__mysql__iface.html#7c41e1938635e04652ad804049de2255" title="保存本对象的错误描述">m_errstr</a>, msg, argptr);
+<a name="l00287"></a>00287     va_end(argptr);
+<a name="l00288"></a>00288 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ed5d142f814e05f62d1273216d1ae405"></a><!-- doxytag: member="c_mysql_iface::uninit" ref="ed5d142f814e05f62d1273216d1ae405" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_mysql_iface::uninit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+反初始化 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0 </dd></dl>
+
+<p>实现了<a class="el" href="structi__mysql__iface.html#3f3a90b50ca5afaad5e2828f808811dc">i_mysql_iface</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00099"></a>00099 {
+<a name="l00100"></a>00100     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> != NULL) {
+<a name="l00101"></a>00101         mysql_free_result(<a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a>);
+<a name="l00102"></a>00102         <a class="code" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff" title="维护select_first_row和select_next_row查询结果的内部资源">m_res</a> = NULL;
+<a name="l00103"></a>00103     }
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105     <span class="keywordflow">if</span> (<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> != NULL) {
+<a name="l00106"></a>00106         mysql_close(<a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a>);
+<a name="l00107"></a>00107         <a class="code" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a" title="对象内部维护的MYSQL连接指针">m_hdb</a> = NULL;
+<a name="l00108"></a>00108     }
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110     <span class="keywordflow">return</span> 0;
+<a name="l00111"></a>00111 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<hr><h2>成员数据文档</h2>
+<a class="anchor" name="5fc34e974dc9e3ec27b262a856e0a8d2"></a><!-- doxytag: member="c_mysql_iface::m_errno" ref="5fc34e974dc9e3ec27b262a856e0a8d2" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__mysql__iface.html#5fc34e974dc9e3ec27b262a856e0a8d2">c_mysql_iface::m_errno</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+保存本对象错误号 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7c41e1938635e04652ad804049de2255"></a><!-- doxytag: member="c_mysql_iface::m_errstr" ref="7c41e1938635e04652ad804049de2255" args="[1024]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="classc__mysql__iface.html#7c41e1938635e04652ad804049de2255">c_mysql_iface::m_errstr</a>[1024]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+保存本对象的错误描述 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="42405763b85e74fdb50a1beb648eaa4a"></a><!-- doxytag: member="c_mysql_iface::m_hdb" ref="42405763b85e74fdb50a1beb648eaa4a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL* <a class="el" href="classc__mysql__iface.html#42405763b85e74fdb50a1beb648eaa4a">c_mysql_iface::m_hdb</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+对象内部维护的MYSQL连接指针 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="bcaeb1a68f768b76201c59bbbb7d4452"></a><!-- doxytag: member="c_mysql_iface::m_host" ref="bcaeb1a68f768b76201c59bbbb7d4452" args="[MYSQL_MAX_HOST_BUF_LEN]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="classc__mysql__iface.html#bcaeb1a68f768b76201c59bbbb7d4452">c_mysql_iface::m_host</a>[MYSQL_MAX_HOST_BUF_LEN]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+数据库主机地址 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="96ec800d10fbc5d9098f754a4860d61f"></a><!-- doxytag: member="c_mysql_iface::m_port" ref="96ec800d10fbc5d9098f754a4860d61f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short <a class="el" href="classc__mysql__iface.html#96ec800d10fbc5d9098f754a4860d61f">c_mysql_iface::m_port</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+数据库主机端口 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e8df7b82424e7fdd0716f246654bb6ff"></a><!-- doxytag: member="c_mysql_iface::m_res" ref="e8df7b82424e7fdd0716f246654bb6ff" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_RES* <a class="el" href="classc__mysql__iface.html#e8df7b82424e7fdd0716f246654bb6ff">c_mysql_iface::m_res</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+维护select_first_row和select_next_row查询结果的内部资源 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="898bf0590171bc298cfa5410d8e44b7a"></a><!-- doxytag: member="c_mysql_iface::m_row" ref="898bf0590171bc298cfa5410d8e44b7a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MYSQL_ROW <a class="el" href="classc__mysql__iface.html#898bf0590171bc298cfa5410d8e44b7a">c_mysql_iface::m_row</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+维护select_first_row和select_next_row查询结果的内部资源 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="628b8f47be1138590dc0fde9feb33660"></a><!-- doxytag: member="c_mysql_iface::m_sql_buf" ref="628b8f47be1138590dc0fde9feb33660" args="[MYSQL_MAX_SQL_BUF_LEN]" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char <a class="el" href="classc__mysql__iface.html#628b8f47be1138590dc0fde9feb33660">c_mysql_iface::m_sql_buf</a>[MYSQL_MAX_SQL_BUF_LEN]<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+接保存接口串入的SQL语句的缓存 
+<p>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/mysql-iface-1.0.0/<a class="el" href="c__mysql__iface_8h.html">c_mysql_iface.h</a><li>E:/aw/svn/standard/c/library/mysql-iface-1.0.0/<a class="el" href="c__mysql__iface_8cpp.html">c_mysql_iface.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:02 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

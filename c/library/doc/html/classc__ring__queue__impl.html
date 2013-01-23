@@ -1,0 +1,864 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: c_ring_queue_impl类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>c_ring_queue_impl类参考</h1><!-- doxytag: class="c_ring_queue_impl" --><!-- doxytag: inherits="i_ring_queue" -->ring queue implementation for binary data  
+<a href="#_details">更多...</a>
+<p>
+<div class="dynheader">
+继承图，类c_ring_queue_impl</div>
+<div class="dynsection">
+<p><center><img src="classc__ring__queue__impl__inherit__graph.png" border="0" usemap="#c__ring__queue__impl__inherit__map" alt="Inheritance graph"></center>
+<map name="c__ring__queue__impl__inherit__map">
+<area shape="rect" href="classc__fixed__queue__impl.html" title="固定长度环形缓冲区的实现类" alt="" coords="5,629,168,789"><area shape="rect" href="classc__variable__queue__impl.html" title="变长环形缓冲区" alt="" coords="192,629,371,789"><area shape="rect" href="structi__ring__queue.html" title="环状缓冲区接口类" alt="" coords="103,5,265,229"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+<div class="dynheader">
+c_ring_queue_impl合作图：</div>
+<div class="dynsection">
+<p><center><img src="classc__ring__queue__impl__coll__graph.png" border="0" usemap="#c__ring__queue__impl__coll__map" alt="Collaboration graph"></center>
+<map name="c__ring__queue__impl__coll__map">
+<area shape="rect" href="structi__ring__queue.html" title="环状缓冲区接口类" alt="" coords="5,5,168,229"><area shape="rect" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html" title="维护环形缓冲区的物理内存结构" alt="" coords="192,45,440,189"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+
+<p>
+<a href="classc__ring__queue__impl-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#b6dabd2ac3bc2389b6b8de893de91a98">c_ring_queue_impl</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">构造函数  <a href="#b6dabd2ac3bc2389b6b8de893de91a98"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#e5c7ee62542d1f20143f9b6e1dde9a8e">get_buffer_len</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取缓冲区物理内存的字节大小  <a href="#e5c7ee62542d1f20143f9b6e1dde9a8e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#7627250c8b2bc1b7b1111b6849ba0a8d">get_data_len</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取缓冲区内有多少字节的可读数据  <a href="#7627250c8b2bc1b7b1111b6849ba0a8d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#2c4f164da4e91a48e743f555f5d1d54e">get_empty_buffer_len</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取缓冲区内有多少空闲字节可写数据  <a href="#2c4f164da4e91a48e743f555f5d1d54e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#fca3be7932e2bbc47ba25a24f3a477cf">get_last_error</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取本对象实例的最近一次错误码  <a href="#fca3be7932e2bbc47ba25a24f3a477cf"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#519354a6cdac6b88287124a36bb4507c">init</a> (int buffer_len)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化环形缓冲区  <a href="#519354a6cdac6b88287124a36bb4507c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#eb36bd33ce9dab69cf33bfd766a2a0ca">pop_data</a> (char *p_recv_buffer, int buffer_len, int timeout=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">从环形缓冲区内存里获取数据  <a href="#eb36bd33ce9dab69cf33bfd766a2a0ca"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#e0e80f69ad7159d576fd9f2cda2e8a39">pop_data_dummy</a> (char *p_recv_buffer, int buffer_len, int timeout=0)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">仅仅从环形缓冲区中读数据，但不移动内部的读指针位置，即读出的数据仍然可以再读对到  <a href="#e0e80f69ad7159d576fd9f2cda2e8a39"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#291af7a93cb35fa2db417906afac6f6b">push_data</a> (const char *p_data, int data_len, int is_atomic)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">将数据压入环形缓冲区  <a href="#291af7a93cb35fa2db417906afac6f6b"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#ee40736b861f90544e8664dc15d9d70e">release</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放本实例对象资源  <a href="#ee40736b861f90544e8664dc15d9d70e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#3e7f678501a05d79074703e2219f8333">uninit</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">反初始化  <a href="#3e7f678501a05d79074703e2219f8333"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#3c283a8993ce090314ff6c48ba4a2e90">~c_ring_queue_impl</a> ()</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">析构函数  <a href="#3c283a8993ce090314ff6c48ba4a2e90"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>保护属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee">m_inited</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">module status  <a href="#a5b421d432ce1698fb5833a844a0dfee"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html">ring_queue_meta_t</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1">m_read_fd</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">如果使用select机制，管道的读描述符  <a href="#2d32fc939c23d126178713298284c5c1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53">m_write_fd</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">如果使用select机制，管道的写描述符  <a href="#67d6895f1a88ebff8c343ff579e2ee53"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>组合类型</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">class &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html">ring_queue_meta_t</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">维护环形缓冲区的物理内存结构  <a href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#_details">更多...</a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+ring queue implementation for binary data <hr><h2>构造及析构函数文档</h2>
+<a class="anchor" name="b6dabd2ac3bc2389b6b8de893de91a98"></a><!-- doxytag: member="c_ring_queue_impl::c_ring_queue_impl" ref="b6dabd2ac3bc2389b6b8de893de91a98" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">c_ring_queue_impl::c_ring_queue_impl           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+构造函数 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无 </dd></dl>
+<div class="fragment"><pre class="fragment"><a name="l00049"></a>00049 {
+<a name="l00050"></a>00050     <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>    = NULL;
+<a name="l00051"></a>00051     <a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a>  = -1;
+<a name="l00052"></a>00052     <a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>   = -1;
+<a name="l00053"></a>00053     <a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>    = 0;
+<a name="l00054"></a>00054 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3c283a8993ce090314ff6c48ba4a2e90"></a><!-- doxytag: member="c_ring_queue_impl::~c_ring_queue_impl" ref="3c283a8993ce090314ff6c48ba4a2e90" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">c_ring_queue_impl::~c_ring_queue_impl           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+析构函数 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>无 </dd></dl>
+<div class="fragment"><pre class="fragment"><a name="l00062"></a>00062 {
+<a name="l00063"></a>00063     <a class="code" href="classc__ring__queue__impl.html#3e7f678501a05d79074703e2219f8333" title="反初始化">uninit</a>();
+<a name="l00064"></a>00064 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="e5c7ee62542d1f20143f9b6e1dde9a8e"></a><!-- doxytag: member="c_ring_queue_impl::get_buffer_len" ref="e5c7ee62542d1f20143f9b6e1dde9a8e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::get_buffer_len           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取缓冲区物理内存的字节大小 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>失败返回－1， 成功返回字节数 </dd></dl>
+
+<p>实现了<a class="el" href="structi__ring__queue.html#d10603a4bda5b1b05ce1ac21ff655ccc">i_ring_queue</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00332"></a>00332 {
+<a name="l00333"></a>00333     <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00334"></a>00334         <span class="keywordflow">return</span> -1;
+<a name="l00335"></a>00335     } <span class="keywordflow">else</span> {
+<a name="l00336"></a>00336                 <span class="comment">// 预留一个字节的空间，用来区别缓冲区满、缓冲区空这两种状态</span>
+<a name="l00337"></a>00337         <span class="keywordflow">return</span> <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - 1;
+<a name="l00338"></a>00338     }
+<a name="l00339"></a>00339 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7627250c8b2bc1b7b1111b6849ba0a8d"></a><!-- doxytag: member="c_ring_queue_impl::get_data_len" ref="7627250c8b2bc1b7b1111b6849ba0a8d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::get_data_len           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取缓冲区内有多少字节的可读数据 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>失败返回－1， 成功返回字节数 </dd></dl>
+
+<p>
+read index and write index are snapshot 
+<p>实现了<a class="el" href="structi__ring__queue.html#839317f1c4d326d000c35ebf5a3c7dc5">i_ring_queue</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00347"></a>00347 {
+<a name="l00348"></a>00348     <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00349"></a>00349         <span class="keywordflow">return</span> -1;
+<a name="l00350"></a>00350     }
+<a name="l00351"></a>00351 
+<a name="l00353"></a>00353     <span class="keywordtype">int</span> current_write_index = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a>;
+<a name="l00354"></a>00354     <span class="keywordtype">int</span> current_read_index = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>;
+<a name="l00355"></a>00355 
+<a name="l00356"></a>00356     <span class="keywordflow">if</span> (current_write_index &gt;= current_read_index) {
+<a name="l00357"></a>00357         <span class="keywordflow">return</span> current_write_index - current_read_index;
+<a name="l00358"></a>00358     } <span class="keywordflow">else</span> {
+<a name="l00359"></a>00359         <span class="keywordflow">return</span> <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - (current_read_index - current_write_index);
+<a name="l00360"></a>00360     }
+<a name="l00361"></a>00361 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2c4f164da4e91a48e743f555f5d1d54e"></a><!-- doxytag: member="c_ring_queue_impl::get_empty_buffer_len" ref="2c4f164da4e91a48e743f555f5d1d54e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::get_empty_buffer_len           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取缓冲区内有多少空闲字节可写数据 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>失败返回－1， 成功返回0 </dd></dl>
+
+<p>实现了<a class="el" href="structi__ring__queue.html#fe4a80a3ccf81ea4ccacdb3a93110958">i_ring_queue</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00369"></a>00369 {
+<a name="l00370"></a>00370     <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00371"></a>00371         <span class="keywordflow">return</span> -1;
+<a name="l00372"></a>00372     }
+<a name="l00373"></a>00373 
+<a name="l00374"></a>00374     <span class="keywordflow">return</span> <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - <a class="code" href="classc__ring__queue__impl.html#7627250c8b2bc1b7b1111b6849ba0a8d" title="获取缓冲区内有多少字节的可读数据">get_data_len</a>() - 1;
+<a name="l00375"></a>00375 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="fca3be7932e2bbc47ba25a24f3a477cf"></a><!-- doxytag: member="c_ring_queue_impl::get_last_error" ref="fca3be7932e2bbc47ba25a24f3a477cf" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::get_last_error           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取本对象实例的最近一次错误码 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>错误码 </dd></dl>
+
+<p>实现了<a class="el" href="structi__ring__queue.html#0ef3ff77984b7aabb1b5e99e0080a0e9">i_ring_queue</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00382"></a>00382 {
+<a name="l00383"></a>00383     <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00384"></a>00384         <span class="keywordflow">return</span> -1;
+<a name="l00385"></a>00385     }
+<a name="l00386"></a>00386 
+<a name="l00387"></a>00387     <span class="keywordflow">return</span> <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#7e349b3bb04345e5dac42cd7cdcb1a55" title="last error code (not used yet)">last_error</a>;
+<a name="l00388"></a>00388 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="519354a6cdac6b88287124a36bb4507c"></a><!-- doxytag: member="c_ring_queue_impl::init" ref="519354a6cdac6b88287124a36bb4507c" args="(int buffer_len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::init           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化环形缓冲区 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>要建立的环形缓冲区实际站的内存大小(有1 BYTE差别)</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd></dd></dl>
+
+<p>实现了<a class="el" href="structi__ring__queue.html#f38866404215f4b1f0b67528ea655572">i_ring_queue</a>。</p>
+
+<p>被<a class="el" href="classc__fixed__queue__impl.html#331ea34c1148f02c5a247e4f2ed4703a">c_fixed_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#595e14711be248583a64b4ff9d51a9b1">c_variable_queue_impl</a>重载。</p>
+<div class="fragment"><pre class="fragment"><a name="l00073"></a>00073 {
+<a name="l00074"></a>00074     <span class="keywordflow">if</span> (<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00075"></a>00075         <span class="keywordflow">return</span> -1;
+<a name="l00076"></a>00076     }
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078         <span class="comment">// 预留一个字节的空间，用来区别缓冲区满、缓冲区空这两种状态</span>
+<a name="l00079"></a>00079         ++buffer_len;  
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081     <span class="comment">// 缓冲区的长度不能太大</span>
+<a name="l00082"></a>00082     <span class="keywordflow">if</span> (buffer_len &lt;= 1 || buffer_len &gt;= 1 *1024 * 1024 * 1024) {
+<a name="l00083"></a>00083         <span class="keywordflow">return</span> -1;
+<a name="l00084"></a>00084     }
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086         <span class="comment">// 为缓冲区分配内存</span>
+<a name="l00087"></a>00087         assert(<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a> == NULL);
+<a name="l00088"></a>00088         <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a> = (ring_queue_meta_t *)mmap(NULL, <span class="keyword">sizeof</span>(ring_queue_meta_t) + buffer_len, 
+<a name="l00089"></a>00089                                                                              PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
+<a name="l00090"></a>00090         <span class="keywordflow">if</span> (<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a> == MAP_FAILED) {
+<a name="l00091"></a>00091                 <span class="keywordflow">return</span> -1;
+<a name="l00092"></a>00092         }
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094         <span class="comment">// 初始化管道文件描述符</span>
+<a name="l00095"></a>00095         <span class="keywordtype">int</span> pipe_fds[2] = {0};
+<a name="l00096"></a>00096         <span class="keywordflow">if</span> (pipe(pipe_fds) != 0) {
+<a name="l00097"></a>00097                 munmap((<span class="keywordtype">char</span> *)<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>, <span class="keyword">sizeof</span>(m_p_meta) + m_p_meta-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a>);
+<a name="l00098"></a>00098                 m_p_meta = NULL;
+<a name="l00099"></a>00099                 <span class="keywordflow">return</span> -1;
+<a name="l00100"></a>00100         }
+<a name="l00101"></a>00101 
+<a name="l00102"></a>00102         <a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a> = pipe_fds[0];
+<a name="l00103"></a>00103         <a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a> = pipe_fds[1];
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105         <span class="comment">// 设置管道文件描述符为非阻塞模式</span>
+<a name="l00106"></a>00106         <span class="keywordtype">int</span> flags = fcntl(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>, F_GETFL);
+<a name="l00107"></a>00107         flags |= O_NONBLOCK;
+<a name="l00108"></a>00108         fcntl(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>,F_SETFL,flags);
+<a name="l00109"></a>00109 
+<a name="l00110"></a>00110         flags = fcntl(<a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a>, F_GETFL);
+<a name="l00111"></a>00111         flags |= O_NONBLOCK;
+<a name="l00112"></a>00112         fcntl(<a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a>,F_SETFL,flags);
+<a name="l00113"></a>00113 
+<a name="l00114"></a>00114     <span class="comment">// 初始化成员变量</span>
+<a name="l00115"></a>00115         <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> = (<span class="keywordtype">char</span> *)<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a> + <span class="keyword">sizeof</span>(ring_queue_meta_t);
+<a name="l00116"></a>00116     <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> = buffer_len;
+<a name="l00117"></a>00117     <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a> = 0;
+<a name="l00118"></a>00118     <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a> = 0;
+<a name="l00119"></a>00119     <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#7e349b3bb04345e5dac42cd7cdcb1a55" title="last error code (not used yet)">last_error</a> = 0;
+<a name="l00120"></a>00120     <a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a> = 1;
+<a name="l00121"></a>00121 
+<a name="l00122"></a>00122     <span class="keywordflow">return</span> 0;
+<a name="l00123"></a>00123 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="eb36bd33ce9dab69cf33bfd766a2a0ca"></a><!-- doxytag: member="c_ring_queue_impl::pop_data" ref="eb36bd33ce9dab69cf33bfd766a2a0ca" args="(char *p_recv_buffer, int buffer_len, int timeout=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::pop_data           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_recv_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timeout</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+从环形缓冲区内存里获取数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_recv_buffer</em>&nbsp;</td><td>接收获取到的数据的存储内存 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>接收数据的内存的大小 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>timeout</em>&nbsp;</td><td>等待接收数据的时长限制</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回获取的字节数据，失败返回－1 </dd></dl>
+
+<p>
+no data available,go to select read_fd<p>
+get current write index snapshot<p>
+while 
+<p>实现了<a class="el" href="structi__ring__queue.html#e1def6cd2d2bc242736d095747015e29">i_ring_queue</a>。</p>
+
+<p>被<a class="el" href="classc__fixed__queue__impl.html#42599a01f79455c601c514db118c743b">c_fixed_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#aa455a817ad5b452916d0bf6486284f7">c_variable_queue_impl</a>重载。</p>
+<div class="fragment"><pre class="fragment"><a name="l00193"></a>00193 {
+<a name="l00194"></a>00194         <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00195"></a>00195         <span class="keywordflow">return</span> -1;
+<a name="l00196"></a>00196     }
+<a name="l00197"></a>00197 
+<a name="l00198"></a>00198     <span class="keywordflow">if</span> (NULL == p_recv_buffer || buffer_len &lt; 1) {
+<a name="l00199"></a>00199         <span class="keywordflow">return</span> -1;
+<a name="l00200"></a>00200     }
+<a name="l00201"></a>00201 
+<a name="l00202"></a>00202         <span class="keywordflow">while</span> (<span class="keyword">true</span>) {
+<a name="l00203"></a>00203           <span class="keywordflow">if</span> (<a class="code" href="classc__ring__queue__impl.html#7627250c8b2bc1b7b1111b6849ba0a8d" title="获取缓冲区内有多少字节的可读数据">get_data_len</a>() &lt;= 0) {
+<a name="l00205"></a>00205                         <span class="keywordflow">if</span> (timeout &gt; 0) {
+<a name="l00206"></a>00206                                 <span class="keywordflow">goto</span> SELECT_READ_FD;
+<a name="l00207"></a>00207                         } <span class="keywordflow">else</span> {
+<a name="l00208"></a>00208                                 <span class="keywordflow">return</span> 0;
+<a name="l00209"></a>00209                         }
+<a name="l00210"></a>00210         } <span class="keywordflow">else</span> {
+<a name="l00211"></a>00211             <span class="keywordtype">char</span> ch;
+<a name="l00212"></a>00212             read(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>, &amp;ch, <span class="keyword">sizeof</span>(ch));
+<a name="l00213"></a>00213                         
+<a name="l00214"></a>00214                         <span class="keywordtype">int</span> current_write_index = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a>; 
+<a name="l00216"></a>00216                         <span class="keywordflow">if</span> (current_write_index &gt;= <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>) {
+<a name="l00217"></a>00217                                 <span class="keywordtype">int</span> current_data_len = current_write_index - <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>;
+<a name="l00218"></a>00218                                 <span class="keywordtype">int</span> copy_len = std::min(current_data_len,buffer_len);
+<a name="l00219"></a>00219                                 memcpy(p_recv_buffer,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>,copy_len);
+<a name="l00220"></a>00220                                 <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a> += copy_len;
+<a name="l00221"></a>00221                                 <span class="keywordflow">return</span> copy_len;
+<a name="l00222"></a>00222                         } <span class="keywordflow">else</span> {
+<a name="l00223"></a>00223                                 <span class="keywordtype">int</span> current_data_len = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - (<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a> - current_write_index);
+<a name="l00224"></a>00224                                 <span class="keywordtype">int</span> copy_len = std::min(current_data_len,buffer_len);
+<a name="l00225"></a>00225 
+<a name="l00226"></a>00226                                 <span class="keywordtype">int</span> right_data_len = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>;
+<a name="l00227"></a>00227                                 <span class="keywordflow">if</span> (buffer_len &lt; right_data_len) {
+<a name="l00228"></a>00228                                         memcpy(p_recv_buffer,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>,buffer_len);
+<a name="l00229"></a>00229                                         <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a> += buffer_len;
+<a name="l00230"></a>00230                                         <span class="keywordflow">return</span> buffer_len;
+<a name="l00231"></a>00231                                 } <span class="keywordflow">else</span> {
+<a name="l00232"></a>00232                                         memcpy(p_recv_buffer,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>,right_data_len);
+<a name="l00233"></a>00233                                         memcpy(p_recv_buffer + right_data_len,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a>,copy_len - right_data_len);
+<a name="l00234"></a>00234                                         <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a> = copy_len - right_data_len;
+<a name="l00235"></a>00235                                         <span class="keywordflow">return</span> copy_len;
+<a name="l00236"></a>00236                                 }
+<a name="l00237"></a>00237                         }
+<a name="l00238"></a>00238                 }
+<a name="l00239"></a>00239 
+<a name="l00240"></a>00240 SELECT_READ_FD:
+<a name="l00241"></a>00241         fd_set read_set;
+<a name="l00242"></a>00242         FD_ZERO(&amp;read_set);
+<a name="l00243"></a>00243         FD_SET(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>,&amp;read_set);
+<a name="l00244"></a>00244         timeval time_interval;
+<a name="l00245"></a>00245         time_interval.tv_sec = 0;
+<a name="l00246"></a>00246         time_interval.tv_usec = timeout;
+<a name="l00247"></a>00247 
+<a name="l00248"></a>00248         <span class="keywordtype">int</span> fd_num = select(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a> + 1, &amp;read_set, NULL, NULL, &amp;time_interval);
+<a name="l00249"></a>00249         <span class="keywordflow">if</span> (fd_num &gt; 0) {
+<a name="l00250"></a>00250             <span class="keywordtype">char</span> temp_buffer[1024 * 2];
+<a name="l00251"></a>00251             read(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>, temp_buffer, <span class="keyword">sizeof</span>(temp_buffer));
+<a name="l00252"></a>00252         } <span class="keywordflow">else</span> {
+<a name="l00253"></a>00253             <span class="keywordflow">return</span> 0;
+<a name="l00254"></a>00254         }
+<a name="l00255"></a>00255     }
+<a name="l00256"></a>00256 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="e0e80f69ad7159d576fd9f2cda2e8a39"></a><!-- doxytag: member="c_ring_queue_impl::pop_data_dummy" ref="e0e80f69ad7159d576fd9f2cda2e8a39" args="(char *p_recv_buffer, int buffer_len, int timeout=0)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::pop_data_dummy           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_recv_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timeout</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+仅仅从环形缓冲区中读数据，但不移动内部的读指针位置，即读出的数据仍然可以再读对到 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_recv_buffer</em>&nbsp;</td><td>接收数据的内存指针 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>接收的数据的内存长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>timeout</em>&nbsp;</td><td>等待读数据的时长限制</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd></dd></dl>
+
+<p>
+no data available,go to select read_fd<p>
+while 
+<p>实现了<a class="el" href="structi__ring__queue.html#28d3a5cfcca8599803470223ac203393">i_ring_queue</a>。</p>
+
+<p>被<a class="el" href="classc__fixed__queue__impl.html#d6b13c989cd95bb9f371ec0102b8a209">c_fixed_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#bf77fed6c644d0729e9e8937fe57d648">c_variable_queue_impl</a>重载。</p>
+<div class="fragment"><pre class="fragment"><a name="l00267"></a>00267 {
+<a name="l00268"></a>00268         <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00269"></a>00269         <span class="keywordflow">return</span> -1;
+<a name="l00270"></a>00270     }
+<a name="l00271"></a>00271 
+<a name="l00272"></a>00272     <span class="keywordflow">if</span> (NULL == p_recv_buffer || buffer_len &lt; 1) {
+<a name="l00273"></a>00273         <span class="keywordflow">return</span> -1;
+<a name="l00274"></a>00274     }
+<a name="l00275"></a>00275 
+<a name="l00276"></a>00276     <span class="keywordflow">while</span> (<span class="keyword">true</span>) {
+<a name="l00277"></a>00277         <span class="keywordflow">if</span> (<a class="code" href="classc__ring__queue__impl.html#7627250c8b2bc1b7b1111b6849ba0a8d" title="获取缓冲区内有多少字节的可读数据">get_data_len</a>() &lt;= 0) {
+<a name="l00279"></a>00279             <span class="keywordflow">if</span> (timeout &gt; 0) {
+<a name="l00280"></a>00280                 <span class="keywordflow">goto</span> SELECT_READ_FD;
+<a name="l00281"></a>00281             } <span class="keywordflow">else</span> {
+<a name="l00282"></a>00282                 <span class="keywordflow">return</span> 0;
+<a name="l00283"></a>00283             }
+<a name="l00284"></a>00284         } <span class="keywordflow">else</span> {
+<a name="l00285"></a>00285             <span class="keywordtype">int</span> current_write_index = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a>;
+<a name="l00286"></a>00286 
+<a name="l00287"></a>00287             <span class="keywordflow">if</span> (current_write_index &gt;= <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>) {
+<a name="l00288"></a>00288                 <span class="keywordtype">int</span> current_data_len = current_write_index - <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>;
+<a name="l00289"></a>00289                 <span class="keywordtype">int</span> copy_len = std::min(current_data_len,buffer_len);
+<a name="l00290"></a>00290                 memcpy(p_recv_buffer,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>,copy_len);
+<a name="l00291"></a>00291                 <span class="keywordflow">return</span> copy_len;
+<a name="l00292"></a>00292             } <span class="keywordflow">else</span> {
+<a name="l00293"></a>00293                 <span class="keywordtype">int</span> current_data_len = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - (<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a> - current_write_index);
+<a name="l00294"></a>00294                 <span class="keywordtype">int</span> copy_len = std::min(current_data_len,buffer_len);
+<a name="l00295"></a>00295 
+<a name="l00296"></a>00296                 <span class="keywordtype">int</span> right_data_len = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>;
+<a name="l00297"></a>00297                 <span class="keywordflow">if</span> (buffer_len &lt; right_data_len) {
+<a name="l00298"></a>00298                     memcpy(p_recv_buffer,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>,buffer_len);
+<a name="l00299"></a>00299                     <span class="keywordflow">return</span> buffer_len;
+<a name="l00300"></a>00300                 } <span class="keywordflow">else</span> {
+<a name="l00301"></a>00301                     memcpy(p_recv_buffer,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>,right_data_len);
+<a name="l00302"></a>00302                     memcpy(p_recv_buffer + right_data_len,<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a>,copy_len - right_data_len);
+<a name="l00303"></a>00303                     <span class="keywordflow">return</span> copy_len;
+<a name="l00304"></a>00304                 }
+<a name="l00305"></a>00305             }
+<a name="l00306"></a>00306         }
+<a name="l00307"></a>00307 
+<a name="l00308"></a>00308 SELECT_READ_FD:
+<a name="l00309"></a>00309         fd_set read_set;
+<a name="l00310"></a>00310         FD_ZERO(&amp;read_set);
+<a name="l00311"></a>00311         FD_SET(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>,&amp;read_set);
+<a name="l00312"></a>00312         timeval time_interval;
+<a name="l00313"></a>00313         time_interval.tv_sec = 0;
+<a name="l00314"></a>00314         time_interval.tv_usec = timeout;
+<a name="l00315"></a>00315 
+<a name="l00316"></a>00316         <span class="keywordtype">int</span> fd_num = select(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a> + 1, &amp;read_set, NULL, NULL, &amp;time_interval);
+<a name="l00317"></a>00317         <span class="keywordflow">if</span> (fd_num &gt; 0) {
+<a name="l00318"></a>00318             <span class="keywordtype">char</span> temp_buffer[1024 * 2];
+<a name="l00319"></a>00319             read(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>, temp_buffer, <span class="keyword">sizeof</span>(temp_buffer));
+<a name="l00320"></a>00320         } <span class="keywordflow">else</span> {
+<a name="l00321"></a>00321             <span class="keywordflow">return</span> 0;
+<a name="l00322"></a>00322         }
+<a name="l00323"></a>00323     }
+<a name="l00324"></a>00324 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="291af7a93cb35fa2db417906afac6f6b"></a><!-- doxytag: member="c_ring_queue_impl::push_data" ref="291af7a93cb35fa2db417906afac6f6b" args="(const char *p_data, int data_len, int is_atomic)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::push_data           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>is_atomic</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+将数据压入环形缓冲区 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_data</em>&nbsp;</td><td>要压入数据的内存指针; </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_len</em>&nbsp;</td><td>要压入数据的大小, 超过缓冲区的物理内存大小将是不安全的； </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>is_atomic</em>&nbsp;</td><td>本函数操作对压入的数据来说是否是原子的(true:要么全压入， 要么1字节也不压入;fasle:根据环形缓冲区内部的空闲空间大小尽可能的压入;)</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功压入缓冲区的数据的长度 </dd></dl>
+
+<p>实现了<a class="el" href="structi__ring__queue.html#e2652348417e50ac26ba547288126825">i_ring_queue</a>。</p>
+
+<p>被<a class="el" href="classc__fixed__queue__impl.html#7688a97f8b432cedaa4ae510364fc50b">c_fixed_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#c1f30c6538034daa42105bc1d02ff495">c_variable_queue_impl</a>重载。</p>
+<div class="fragment"><pre class="fragment"><a name="l00135"></a>00135 {
+<a name="l00136"></a>00136         <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00137"></a>00137         <span class="keywordflow">return</span> -1;
+<a name="l00138"></a>00138     }
+<a name="l00139"></a>00139 
+<a name="l00140"></a>00140     <span class="keywordflow">if</span> (p_data == NULL || data_len &lt; 1) {
+<a name="l00141"></a>00141         <span class="keywordflow">return</span> -1;
+<a name="l00142"></a>00142     }
+<a name="l00143"></a>00143 
+<a name="l00144"></a>00144     <span class="keywordtype">int</span> current_read_index = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489" title="read index,start from zero">read_index</a>;
+<a name="l00145"></a>00145 
+<a name="l00146"></a>00146     <span class="keywordflow">if</span> (<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a> &gt;= current_read_index) {
+<a name="l00147"></a>00147         <span class="keywordtype">int</span> current_empty_buffer_len = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - 
+<a name="l00148"></a>00148                                                                                         (<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a> - current_read_index) - 1;
+<a name="l00149"></a>00149         <span class="keywordtype">int</span> copy_len = std::min(data_len, current_empty_buffer_len);
+<a name="l00150"></a>00150 
+<a name="l00151"></a>00151         <span class="keywordflow">if</span> (is_atomic &amp;&amp; copy_len &lt; data_len) {
+<a name="l00152"></a>00152             <span class="keywordflow">return</span> -1;
+<a name="l00153"></a>00153         }
+<a name="l00154"></a>00154 
+<a name="l00155"></a>00155         <span class="keywordtype">int</span> right_empty_buffer_len = <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a> - <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a>;
+<a name="l00156"></a>00156         <span class="keywordflow">if</span> (copy_len &lt; right_empty_buffer_len) {
+<a name="l00157"></a>00157             memcpy(<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a>,p_data,copy_len);
+<a name="l00158"></a>00158             <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a> += copy_len;
+<a name="l00159"></a>00159                         write(<a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a>,<span class="stringliteral">"w"</span>,1);
+<a name="l00160"></a>00160             <span class="keywordflow">return</span> copy_len;
+<a name="l00161"></a>00161         } <span class="keywordflow">else</span> {
+<a name="l00162"></a>00162             memcpy(<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a>,p_data,right_empty_buffer_len);
+<a name="l00163"></a>00163             memcpy(<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a>,p_data + right_empty_buffer_len,copy_len - right_empty_buffer_len);
+<a name="l00164"></a>00164             <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a> = copy_len - right_empty_buffer_len;
+<a name="l00165"></a>00165                         write(<a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a>,<span class="stringliteral">"w"</span>,1);
+<a name="l00166"></a>00166             <span class="keywordflow">return</span> copy_len;
+<a name="l00167"></a>00167         }
+<a name="l00168"></a>00168     } <span class="keywordflow">else</span> {
+<a name="l00169"></a>00169         <span class="keywordtype">int</span> current_empty_buffer_len = current_read_index - <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a> - 1;
+<a name="l00170"></a>00170         <span class="keywordtype">int</span> copy_len = std::min(data_len,current_empty_buffer_len);
+<a name="l00171"></a>00171 
+<a name="l00172"></a>00172         <span class="keywordflow">if</span> (is_atomic &amp;&amp; copy_len &lt; data_len) {
+<a name="l00173"></a>00173             <span class="keywordflow">return</span> -1;
+<a name="l00174"></a>00174         }
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176         memcpy(<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653" title="buffer to simulate ring queue">p_buffer</a> + <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a>,p_data,copy_len);
+<a name="l00177"></a>00177                 <a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728" title="write index,start from zero">write_index</a> += copy_len;
+<a name="l00178"></a>00178                 write(<a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a>,<span class="stringliteral">"w"</span>,1);
+<a name="l00179"></a>00179                 <span class="keywordflow">return</span> copy_len;
+<a name="l00180"></a>00180     }
+<a name="l00181"></a>00181 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="ee40736b861f90544e8664dc15d9d70e"></a><!-- doxytag: member="c_ring_queue_impl::release" ref="ee40736b861f90544e8664dc15d9d70e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放本实例对象资源 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>返回0 </dd></dl>
+
+<p>实现了<a class="el" href="structi__ring__queue.html#77812d269e377ba164d2dbad7333726e">i_ring_queue</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00422"></a>00422 {
+<a name="l00423"></a>00423     <span class="keyword">delete</span> <span class="keyword">this</span>;
+<a name="l00424"></a>00424     <span class="keywordflow">return</span> 0;
+<a name="l00425"></a>00425 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="3e7f678501a05d79074703e2219f8333"></a><!-- doxytag: member="c_ring_queue_impl::uninit" ref="3e7f678501a05d79074703e2219f8333" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_ring_queue_impl::uninit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+反初始化 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回0， 错误返回－1 </dd></dl>
+
+<p>
+restore all variables 
+<p>实现了<a class="el" href="structi__ring__queue.html#b16c997806206e5b0452fba5d9714fd4">i_ring_queue</a>。</p>
+<div class="fragment"><pre class="fragment"><a name="l00396"></a>00396 {
+<a name="l00397"></a>00397     <span class="keywordflow">if</span> (!<a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a>) {
+<a name="l00398"></a>00398         <span class="keywordflow">return</span> -1;
+<a name="l00399"></a>00399     }
+<a name="l00400"></a>00400 
+<a name="l00401"></a>00401         assert(<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a> != NULL);
+<a name="l00402"></a>00402     munmap((<span class="keywordtype">char</span> *)<a class="code" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">m_p_meta</a>, <span class="keyword">sizeof</span>(m_p_meta) + m_p_meta-&gt;<a class="code" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1" title="length of whole buffer">buffer_len</a>);
+<a name="l00403"></a>00403 
+<a name="l00404"></a>00404         close(<a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a>);
+<a name="l00405"></a>00405         close(<a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a>);
+<a name="l00406"></a>00406         <a class="code" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53" title="如果使用select机制，管道的写描述符">m_write_fd</a> = -1;
+<a name="l00407"></a>00407         <a class="code" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1" title="如果使用select机制，管道的读描述符">m_read_fd</a> = -1;
+<a name="l00408"></a>00408 
+<a name="l00410"></a>00410     m_p_meta = NULL;
+<a name="l00411"></a>00411         <a class="code" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee" title="module status">m_inited</a> = 0;
+<a name="l00412"></a>00412 
+<a name="l00413"></a>00413     <span class="keywordflow">return</span> 0;
+<a name="l00414"></a>00414 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+<hr><h2>成员数据文档</h2>
+<a class="anchor" name="a5b421d432ce1698fb5833a844a0dfee"></a><!-- doxytag: member="c_ring_queue_impl::m_inited" ref="a5b421d432ce1698fb5833a844a0dfee" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__ring__queue__impl.html#a5b421d432ce1698fb5833a844a0dfee">c_ring_queue_impl::m_inited</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+module status 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="f90a50d2fece1434b21d46296fbc8d4e"></a><!-- doxytag: member="c_ring_queue_impl::m_p_meta" ref="f90a50d2fece1434b21d46296fbc8d4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html">ring_queue_meta_t</a>* <a class="el" href="classc__ring__queue__impl.html#f90a50d2fece1434b21d46296fbc8d4e">c_ring_queue_impl::m_p_meta</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="2d32fc939c23d126178713298284c5c1"></a><!-- doxytag: member="c_ring_queue_impl::m_read_fd" ref="2d32fc939c23d126178713298284c5c1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__ring__queue__impl.html#2d32fc939c23d126178713298284c5c1">c_ring_queue_impl::m_read_fd</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+如果使用select机制，管道的读描述符 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="67d6895f1a88ebff8c343ff579e2ee53"></a><!-- doxytag: member="c_ring_queue_impl::m_write_fd" ref="67d6895f1a88ebff8c343ff579e2ee53" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classc__ring__queue__impl.html#67d6895f1a88ebff8c343ff579e2ee53">c_ring_queue_impl::m_write_fd</a><code> [protected]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+如果使用select机制，管道的写描述符 
+<p>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/ring-queue-1.0.0/<a class="el" href="ring__queue__impl_8h.html">ring_queue_impl.h</a><li>E:/aw/svn/standard/c/library/ring-queue-1.0.0/<a class="el" href="ring__queue__impl_8cpp.html">ring_queue_impl.cpp</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:04 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

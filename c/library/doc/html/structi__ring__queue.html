@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: i_ring_queue结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>i_ring_queue结构参考</h1><!-- doxytag: class="i_ring_queue" -->环状缓冲区接口类  
+<a href="#_details">更多...</a>
+<p>
+<div class="dynheader">
+继承图，类i_ring_queue</div>
+<div class="dynsection">
+<p><center><img src="structi__ring__queue__inherit__graph.png" border="0" usemap="#i__ring__queue__inherit__map" alt="Inheritance graph"></center>
+<map name="i__ring__queue__inherit__map">
+<area shape="rect" href="classc__ring__queue__impl.html" title="ring queue implementation for binary data" alt="" coords="103,277,265,581"><area shape="rect" href="classc__fixed__queue__impl.html" title="固定长度环形缓冲区的实现类" alt="" coords="5,629,168,789"><area shape="rect" href="classc__variable__queue__impl.html" title="变长环形缓冲区" alt="" coords="192,629,371,789"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+
+<p>
+<a href="structi__ring__queue-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#d10603a4bda5b1b05ce1ac21ff655ccc">get_buffer_len</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取换新缓冲区的长度  <a href="#d10603a4bda5b1b05ce1ac21ff655ccc"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#839317f1c4d326d000c35ebf5a3c7dc5">get_data_len</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取环形缓冲区内当前数据长度(快照，并非确切值)  <a href="#839317f1c4d326d000c35ebf5a3c7dc5"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#fe4a80a3ccf81ea4ccacdb3a93110958">get_empty_buffer_len</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取环形缓冲区内当前空区域长度(快照，并非确切值)  <a href="#fe4a80a3ccf81ea4ccacdb3a93110958"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#0ef3ff77984b7aabb1b5e99e0080a0e9">get_last_error</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取最近一次错误信息， 非线程安全  <a href="#0ef3ff77984b7aabb1b5e99e0080a0e9"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#f38866404215f4b1f0b67528ea655572">init</a> (int buffer_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化  <a href="#f38866404215f4b1f0b67528ea655572"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#e1def6cd2d2bc242736d095747015e29">pop_data</a> (char *p_recv_buffer, int buffer_len, int timeout=0)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">尽可能的从缓冲去取出数据  <a href="#e1def6cd2d2bc242736d095747015e29"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#28d3a5cfcca8599803470223ac203393">pop_data_dummy</a> (char *p_recv_buffer, int buffer_len, int timeout=0)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">和pop_data()相同，只不过这个函数不会删除本环形缓冲对象里的数据  <a href="#28d3a5cfcca8599803470223ac203393"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#e2652348417e50ac26ba547288126825">push_data</a> (const char *p_data, int data_len, int is_atomic)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">把数据压入到环状缓冲区中  <a href="#e2652348417e50ac26ba547288126825"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#77812d269e377ba164d2dbad7333726e">release</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放自己  <a href="#77812d269e377ba164d2dbad7333726e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__ring__queue.html#b16c997806206e5b0452fba5d9714fd4">uninit</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">反初始化  <a href="#b16c997806206e5b0452fba5d9714fd4"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+环状缓冲区接口类 
+<p>
+<dl class="note" compact><dt><b>注解:</b></dt><dd>本接口不是多进程(线程)安全的，除非只有一个读进程(线程)、一个写进程(线程) </dd></dl>
+<hr><h2>成员函数文档</h2>
+<a class="anchor" name="d10603a4bda5b1b05ce1ac21ff655ccc"></a><!-- doxytag: member="i_ring_queue::get_buffer_len" ref="d10603a4bda5b1b05ce1ac21ff655ccc" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::get_buffer_len           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取换新缓冲区的长度 
+<p>
+
+<p>在<a class="el" href="classc__ring__queue__impl.html#e5c7ee62542d1f20143f9b6e1dde9a8e">c_ring_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="839317f1c4d326d000c35ebf5a3c7dc5"></a><!-- doxytag: member="i_ring_queue::get_data_len" ref="839317f1c4d326d000c35ebf5a3c7dc5" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::get_data_len           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取环形缓冲区内当前数据长度(快照，并非确切值) 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>数据区域长度值 </dd></dl>
+
+<p>在<a class="el" href="classc__ring__queue__impl.html#7627250c8b2bc1b7b1111b6849ba0a8d">c_ring_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="fe4a80a3ccf81ea4ccacdb3a93110958"></a><!-- doxytag: member="i_ring_queue::get_empty_buffer_len" ref="fe4a80a3ccf81ea4ccacdb3a93110958" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::get_empty_buffer_len           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取环形缓冲区内当前空区域长度(快照，并非确切值) 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>空区域长度值 </dd></dl>
+
+<p>在<a class="el" href="classc__ring__queue__impl.html#2c4f164da4e91a48e743f555f5d1d54e">c_ring_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="0ef3ff77984b7aabb1b5e99e0080a0e9"></a><!-- doxytag: member="i_ring_queue::get_last_error" ref="0ef3ff77984b7aabb1b5e99e0080a0e9" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::get_last_error           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取最近一次错误信息， 非线程安全 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>错误码 </dd></dl>
+
+<p>在<a class="el" href="classc__ring__queue__impl.html#fca3be7932e2bbc47ba25a24f3a477cf">c_ring_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="f38866404215f4b1f0b67528ea655572"></a><!-- doxytag: member="i_ring_queue::init" ref="f38866404215f4b1f0b67528ea655572" args="(int buffer_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::init           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>缓冲区的长度 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回0，失败返回－1 </dd></dl>
+
+<p>在<a class="el" href="classc__fixed__queue__impl.html#331ea34c1148f02c5a247e4f2ed4703a">c_fixed_queue_impl</a>、<a class="el" href="classc__ring__queue__impl.html#519354a6cdac6b88287124a36bb4507c">c_ring_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#595e14711be248583a64b4ff9d51a9b1">c_variable_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e1def6cd2d2bc242736d095747015e29"></a><!-- doxytag: member="i_ring_queue::pop_data" ref="e1def6cd2d2bc242736d095747015e29" args="(char *p_recv_buffer, int buffer_len, int timeout=0)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::pop_data           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_recv_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timeout</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+尽可能的从缓冲去取出数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_recv_buffer</em>&nbsp;</td><td>接收取出的数据的缓冲区 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>接收数据缓冲区的长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>timeout</em>&nbsp;</td><td>microseconds 等待超时时限, 单位毫秒 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>实际取出数据的长度，0是正常值，－1发生错误了。 </dd></dl>
+
+<p>在<a class="el" href="classc__fixed__queue__impl.html#42599a01f79455c601c514db118c743b">c_fixed_queue_impl</a>、<a class="el" href="classc__ring__queue__impl.html#eb36bd33ce9dab69cf33bfd766a2a0ca">c_ring_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#aa455a817ad5b452916d0bf6486284f7">c_variable_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="28d3a5cfcca8599803470223ac203393"></a><!-- doxytag: member="i_ring_queue::pop_data_dummy" ref="28d3a5cfcca8599803470223ac203393" args="(char *p_recv_buffer, int buffer_len, int timeout=0)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::pop_data_dummy           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_recv_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timeout</em> = <code>0</code></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+和pop_data()相同，只不过这个函数不会删除本环形缓冲对象里的数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_recv_buffer</em>&nbsp;</td><td>接收取出的数据的缓冲区 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>接收数据缓冲区的长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>timeout</em>&nbsp;</td><td>microseconds 等待超时时限, 单位毫秒 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>实际取出数据的长度，0是正常值，－1发生错误了。 </dd></dl>
+
+<p>在<a class="el" href="classc__fixed__queue__impl.html#d6b13c989cd95bb9f371ec0102b8a209">c_fixed_queue_impl</a>、<a class="el" href="classc__ring__queue__impl.html#e0e80f69ad7159d576fd9f2cda2e8a39">c_ring_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#bf77fed6c644d0729e9e8937fe57d648">c_variable_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e2652348417e50ac26ba547288126825"></a><!-- doxytag: member="i_ring_queue::push_data" ref="e2652348417e50ac26ba547288126825" args="(const char *p_data, int data_len, int is_atomic)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::push_data           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>is_atomic</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+把数据压入到环状缓冲区中 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_data</em>&nbsp;</td><td>指向要压入的数据 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_len</em>&nbsp;</td><td>要压入的数据的长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>is_atomic</em>&nbsp;</td><td>压入操作是否是原子的 如果is_atomic等于1，则数据要么全部压入，要么全部不压入 如果is_atomic等于0，则压入尽可能多的数据 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功时返回实际压入的数据的长度，出错返回-1 </dd></dl>
+
+<p>在<a class="el" href="classc__fixed__queue__impl.html#7688a97f8b432cedaa4ae510364fc50b">c_fixed_queue_impl</a>、<a class="el" href="classc__ring__queue__impl.html#291af7a93cb35fa2db417906afac6f6b">c_ring_queue_impl</a>及<a class="el" href="classc__variable__queue__impl.html#c1f30c6538034daa42105bc1d02ff495">c_variable_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="77812d269e377ba164d2dbad7333726e"></a><!-- doxytag: member="i_ring_queue::release" ref="77812d269e377ba164d2dbad7333726e" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放自己 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回0，失败返回－1 </dd></dl>
+
+<p>在<a class="el" href="classc__ring__queue__impl.html#ee40736b861f90544e8664dc15d9d70e">c_ring_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="b16c997806206e5b0452fba5d9714fd4"></a><!-- doxytag: member="i_ring_queue::uninit" ref="b16c997806206e5b0452fba5d9714fd4" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_ring_queue::uninit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+反初始化 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回0，失败返回－1 </dd></dl>
+
+<p>在<a class="el" href="classc__ring__queue__impl.html#3e7f678501a05d79074703e2219f8333">c_ring_queue_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/ring-queue-1.0.0/<a class="el" href="i__ring__queue_8h.html">i_ring_queue.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:06 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

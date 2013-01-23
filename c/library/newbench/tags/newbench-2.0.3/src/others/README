@@ -1,0 +1,6 @@
+list.h: 这个文件是从linux内核源代码里借过来的，为了能成功编译，做了部分修改，原文件请查看linux内核代码
+
+log.h, log.c: 这两个文件是从Libtaomee-0.6.7.tar.gz借过来的，未做修改，详情请查看http://dev.taomee.com/
+
+setproctitle.h, setproctitle.cpp: 这两个文件是从chromium源代码里借过来的，因为chromium的代码在排版上是2个空格缩进的，和部门的不太一致，因此在排版上做了修改，原文件请查看: http://src.chromium.org/viewvc/chrome/trunk/src/content/common/set_process_title_linux.h?revision=78516&view=markup 和 http://src.chromium.org/viewvc/chrome/trunk/src/content/common/set_process_title_linux.cc?revision=78516&view=markup
+

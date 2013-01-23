@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: i_net_io_server_events结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>i_net_io_server_events结构参考</h1><!-- doxytag: class="i_net_io_server_events" -->用户需要继承的  
+<a href="#_details">更多...</a>
+<p>
+
+<p>
+<a href="structi__net__io__server__events-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server__events.html#23850f48629325d3f76d49f2593634f2">on_connection_closed</a> (void *p_net_io_server, const int connection_id)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">底层关闭连接时通知用户  <a href="#23850f48629325d3f76d49f2593634f2"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server__events.html#cd8e810c7979543c1d1ab41509b01587">on_new_connection</a> (void *p_net_io_server, const int connection_id, const char *peer_ip, const int peer_port)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">底层监听到有新的连接到来时通知用户  <a href="#cd8e810c7979543c1d1ab41509b01587"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server__events.html#a25648b8ca837c33f1b1b35530e72372">on_recv_data</a> (void *p_net_io_server, const int connection_id, char *p_data, int data_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">底层接收到数据时通知用户  <a href="#a25648b8ca837c33f1b1b35530e72372"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+用户需要继承的 <hr><h2>成员函数文档</h2>
+<a class="anchor" name="23850f48629325d3f76d49f2593634f2"></a><!-- doxytag: member="i_net_io_server_events::on_connection_closed" ref="23850f48629325d3f76d49f2593634f2" args="(void *p_net_io_server, const int connection_id)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server_events::on_connection_closed           </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p_net_io_server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+底层关闭连接时通知用户 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_net_io_server</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>指示关闭的是哪个连接 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="cd8e810c7979543c1d1ab41509b01587"></a><!-- doxytag: member="i_net_io_server_events::on_new_connection" ref="cd8e810c7979543c1d1ab41509b01587" args="(void *p_net_io_server, const int connection_id, const char *peer_ip, const int peer_port)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server_events::on_new_connection           </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p_net_io_server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>peer_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>peer_port</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+底层监听到有新的连接到来时通知用户 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_net_io_server</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>连接ID </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>peer_ip</em>&nbsp;</td><td>对端IP </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>peer_port</em>&nbsp;</td><td>对端端口号 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a25648b8ca837c33f1b1b35530e72372"></a><!-- doxytag: member="i_net_io_server_events::on_recv_data" ref="a25648b8ca837c33f1b1b35530e72372" args="(void *p_net_io_server, const int connection_id, char *p_data, int data_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server_events::on_recv_data           </td>
+          <td>(</td>
+          <td class="paramtype">void *&nbsp;</td>
+          <td class="paramname"> <em>p_net_io_server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+底层接收到数据时通知用户 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_net_io_server</em>&nbsp;</td><td></td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>指示哪个连接ID上接收到数据 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_data</em>&nbsp;</td><td>指向接收到的数据 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_len</em>&nbsp;</td><td>接收到的数据长度 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+</div>
+</div><p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/net-io-server-1.0.0/<a class="el" href="i__net__io__server_8h.html">i_net_io_server.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:06 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

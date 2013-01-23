@@ -1,0 +1,564 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALERT_LOG	include/log.h	75;"	kind:d	line:75	language:C++
+APP_ALERT	include/log.h	59;"	kind:d	line:59	language:C++
+APP_CRIT	include/log.h	60;"	kind:d	line:60	language:C++
+APP_DEBUG	include/log.h	65;"	kind:d	line:65	language:C++
+APP_EMERG	include/log.h	58;"	kind:d	line:58	language:C++
+APP_ERROR	include/log.h	61;"	kind:d	line:61	language:C++
+APP_INFO	include/log.h	64;"	kind:d	line:64	language:C++
+APP_NOTICE	include/log.h	63;"	kind:d	line:63	language:C++
+APP_TRACE	include/log.h	66;"	kind:d	line:66	language:C++
+APP_WARNING	include/log.h	62;"	kind:d	line:62	language:C++
+BIN_DIR	Makefile	/^BIN_DIR = bin$/;"	kind:m	line:5	language:Make
+BOOT_LOG	include/log.h	82;"	kind:d	line:82	language:C++
+BOOT_LOG2	include/log.h	87;"	kind:d	line:87	language:C++
+CC	Makefile	/^CC = g++$/;"	kind:m	line:1	language:Make
+CRIT_LOG	include/log.h	74;"	kind:d	line:74	language:C++
+DEBUG_LOG	include/log.h	81;"	kind:d	line:81	language:C++
+DETAIL	include/log.h	68;"	kind:d	line:68	language:C++
+DO_PROCESS_E_CHANNEL_VERIFY_FAILED	include/do_handle.h	70;"	kind:d	line:70	language:C++
+DO_PROCESS_E_DO_COMMAND_SYSTEM_ERROR	include/do_handle.h	72;"	kind:d	line:72	language:C++
+DO_PROCESS_E_INVALID_COMMAND_ENTRY	include/do_handle.h	68;"	kind:d	line:68	language:C++
+DO_PROCESS_E_INVALID_COMMAND_ID	include/do_handle.h	69;"	kind:d	line:69	language:C++
+DO_PROCESS_E_INVALID_PACKAGE_LENGTH	include/do_handle.h	67;"	kind:d	line:67	language:C++
+DO_PROCESS_E_IP_DENIED	include/do_handle.h	71;"	kind:d	line:71	language:C++
+DO_PROCESS_S_SUCCESS	include/do_handle.h	66;"	kind:d	line:66	language:C++
+ECHO_CMD_ID	src/server.cpp	12;"	kind:d	line:12	language:C++	file:
+EMERG_LOG	include/log.h	76;"	kind:d	line:76	language:C++
+ENTRY_FLAG_NEED_VERIFY_CHNL	include/do_handle.h	63;"	kind:d	line:63	language:C++
+ENTRY_FLAG_NEED_VERIFY_IP	include/do_handle.h	64;"	kind:d	line:64	language:C++
+ENTRY_FLAG_NORMAL	include/do_handle.h	62;"	kind:d	line:62	language:C++
+ERROR_LOG	include/log.h	73;"	kind:d	line:73	language:C++
+ERROR_RETURN	include/log.h	92;"	kind:d	line:92	language:C++
+INFO_LOG	include/log.h	80;"	kind:d	line:80	language:C++
+IP_ALLOW_E_INVALID_PARAM	include/i_ip_allow.h	39;"	kind:d	line:39	language:C++
+IP_ALLOW_E_OPERATION_ERROR	include/i_ip_allow.h	34;"	kind:d	line:34	language:C++
+IP_ALLOW_S_IP_ACCEPTTED	include/i_ip_allow.h	29;"	kind:d	line:29	language:C++
+IP_ALLOW_S_IP_DENIED	include/i_ip_allow.h	24;"	kind:d	line:24	language:C++
+IP_ALLOW_S_SUCCESS	include/i_ip_allow.h	19;"	kind:d	line:19	language:C++
+IP_RANGE_END	include/c_ip_allow.h	31;"	kind:d	line:31	language:C++
+IP_RANGE_START	include/c_ip_allow.h	26;"	kind:d	line:26	language:C++
+MAX_CONFIG_FILE_PATH_LEN	include/c_ip_allow.h	21;"	kind:d	line:21	language:C++
+MAX_CONF_STR_LEN	include/newbench.h	27;"	kind:d	line:27	language:C++
+MAX_PACKAGE_LEN	include/newbench.h	28;"	kind:d	line:28	language:C++
+MD5_32	include/functions.h	/^const char* MD5_32(const char* src, size_t len, char *dest);$/;"	kind:p	line:36	language:C++	signature:(const char* src, size_t len, char *dest)
+MD5_32	src/functions.cpp	/^const char* MD5_32(const char* src, size_t len, char *dest)$/;"	kind:f	line:44	language:C++	signature:(const char* src, size_t len, char *dest)
+Makefile	Makefile	1;"	kind:F	line:1	language:Make
+NB_BOOT_LOG	include/newbench.h	30;"	kind:d	line:30	language:C++
+NET_IO_SERVER_CMD_ACCEPT	include/i_net_io_server.h	13;"	kind:d	line:13	language:C++
+NET_IO_SERVER_CMD_READ	include/i_net_io_server.h	14;"	kind:d	line:14	language:C++
+NET_IO_SERVER_CMD_WRITE	include/i_net_io_server.h	15;"	kind:d	line:15	language:C++
+NET_IO_SERVER_ECLOSE	include/i_net_io_server.h	24;"	kind:d	line:24	language:C++
+NET_IO_SERVER_EINIT	include/i_net_io_server.h	19;"	kind:d	line:19	language:C++
+NET_IO_SERVER_EIO	include/i_net_io_server.h	20;"	kind:d	line:20	language:C++
+NET_IO_SERVER_EQUERY	include/i_net_io_server.h	23;"	kind:d	line:23	language:C++
+NET_IO_SERVER_ERECV	include/i_net_io_server.h	22;"	kind:d	line:22	language:C++
+NET_IO_SERVER_ESEND	include/i_net_io_server.h	21;"	kind:d	line:21	language:C++
+NET_IO_SERVER_OK	include/i_net_io_server.h	18;"	kind:d	line:18	language:C++
+NOTI_LOG	include/log.h	79;"	kind:d	line:79	language:C++
+OBJS	Makefile	/^OBJS := $(patsubst $(SRC_DIR)\/%.cpp, $(OBJ_DIR)\/%.o, $(SRCS))$/;"	kind:m	line:11	language:Make
+OBJ_DIR	Makefile	/^OBJ_DIR = obj$/;"	kind:m	line:4	language:Make
+PROC_CONN	include/newbench.h	/^    PROC_CONN,$/;"	kind:e	line:36	language:C++	enum:__anon5
+PROC_MAIN	include/newbench.h	/^    PROC_MAIN = 0,$/;"	kind:e	line:35	language:C++	enum:__anon5
+PROC_WORK	include/newbench.h	/^    PROC_WORK,$/;"	kind:e	line:37	language:C++	enum:__anon5
+SIMPLY	include/log.h	71;"	kind:d	line:71	language:C++
+SRCS	Makefile	/^SRCS := $(wildcard $(SRC_DIR)\/*.cpp)$/;"	kind:m	line:10	language:Make
+SRC_DIR	Makefile	/^SRC_DIR = src$/;"	kind:m	line:3	language:Make
+TARGET	Makefile	/^TARGET = libstubserver.so$/;"	kind:m	line:6	language:Make
+TARGET_FILE	Makefile	/^TARGET_FILE = $(BIN_DIR)\/$(TARGET)$/;"	kind:m	line:12	language:Make
+TARGET_FLAGS	Makefile	/^TARGET_FLAGS = -shared -L.\/lib -lmysqlclient -lssl -lrt$/;"	kind:m	line:8	language:Make
+TEST_FILTER_CMD_ID	src/server.cpp	48;"	kind:d	line:48	language:C++	file:
+TRACE_LOG	include/log.h	100;"	kind:d	line:100	language:C++
+TRACE_LOG	include/log.h	98;"	kind:d	line:98	language:C++
+WARN_LOG	include/log.h	78;"	kind:d	line:78	language:C++
+_LOG_H	include/log.h	2;"	kind:d	line:2	language:C++
+_NEWBENCH_H_	include/newbench.h	20;"	kind:d	line:20	language:C++
+__DO_HANDLE_H__	include/do_handle.h	9;"	kind:d	line:9	language:C++
+__FUNCTIONS_H__	include/functions.h	21;"	kind:d	line:21	language:C++
+__IP_ALLOW_H__	include/c_ip_allow.h	10;"	kind:d	line:10	language:C++
+__I_IP_ALLOW_H__	include/i_ip_allow.h	10;"	kind:d	line:10	language:C++
+__I_MYSQL_IFACE_H__	include/i_mysql_iface.h	20;"	kind:d	line:20	language:C++
+__I_NET_IO_SERVER_H__	include/i_net_io_server.h	10;"	kind:d	line:10	language:C++
+__anon1::cmd_id	include/do_handle.h	/^	uint16_t cmd_id;$/;"	kind:m	line:28	language:C++	struct:__anon1	access:public
+__anon1::pkg_len	include/do_handle.h	/^	uint32_t pkg_len;$/;"	kind:m	line:26	language:C++	struct:__anon1	access:public
+__anon1::seq_num	include/do_handle.h	/^	uint32_t seq_num;$/;"	kind:m	line:27	language:C++	struct:__anon1	access:public
+__anon1::status_code	include/do_handle.h	/^	uint32_t status_code;$/;"	kind:m	line:29	language:C++	struct:__anon1	access:public
+__anon1::user_id	include/do_handle.h	/^	uint32_t user_id;$/;"	kind:m	line:30	language:C++	struct:__anon1	access:public
+__anon2::chnl_id	include/do_handle.h	/^	uint16_t chnl_id;$/;"	kind:m	line:35	language:C++	struct:__anon2	access:public
+__anon2::chnl_key	include/do_handle.h	/^	std::string chnl_key;$/;"	kind:m	line:36	language:C++	struct:__anon2	access:public
+__anon3::cmd_id	include/do_handle.h	/^	uint16_t cmd_id;$/;"	kind:m	line:43	language:C++	struct:__anon3	access:public
+__anon3::do_cmd	include/do_handle.h	/^	uint32_t (* do_cmd)(uint32_t user_id, const char *req_body_buf, int req_body_len, char *ack_body_buf, int *ack_len, skinfo_t *sk);$/;"	kind:m	line:55	language:C++	struct:__anon3	access:public
+__anon3::flag	include/do_handle.h	/^	uint8_t flag;$/;"	kind:m	line:59	language:C++	struct:__anon3	access:public
+__anon4::chnl_id	include/do_handle.h	/^	uint16_t chnl_id;$/;"	kind:m	line:121	language:C++	struct:__anon4	access:public
+__anon4::vfy_code	include/do_handle.h	/^	uint8_t vfy_code[32];$/;"	kind:m	line:122	language:C++	struct:__anon4	access:public
+__anon6::value	src/server.cpp	/^    char value[256];$/;"	kind:m	line:15	language:C++	struct:__anon6	file:	access:public
+__anon7::value	src/server.cpp	/^    char value[256];$/;"	kind:m	line:19	language:C++	struct:__anon7	file:	access:public
+__anon8::need_filter	src/server.cpp	/^    int need_filter;$/;"	kind:m	line:51	language:C++	struct:__anon8	file:	access:public
+__anon8::sleep_sec	src/server.cpp	/^    int sleep_sec;$/;"	kind:m	line:52	language:C++	struct:__anon8	file:	access:public
+__anon8::val	src/server.cpp	/^    char val[32];$/;"	kind:m	line:53	language:C++	struct:__anon8	file:	access:public
+__anon9::val	src/server.cpp	/^    char val[32];$/;"	kind:m	line:57	language:C++	struct:__anon9	file:	access:public
+__attr_cdecl__	include/log.h	7;"	kind:d	line:7	language:C++
+__attr_cdecl__	include/log.h	8;"	kind:d	line:8	language:C++
+asc2hex	include/functions.h	/^const uint8_t* asc2hex(const char *src, size_t len, uint8_t *dest);$/;"	kind:p	line:72	language:C++	signature:(const char *src, size_t len, uint8_t *dest)
+asc2hex	src/functions.cpp	/^const uint8_t* asc2hex(const char *src, size_t len, uint8_t *dest)$/;"	kind:f	line:125	language:C++	signature:(const char *src, size_t len, uint8_t *dest)
+atoi_safe	include/functions.h	/^int atoi_safe(const char *nptr);$/;"	kind:p	line:83	language:C++	signature:(const char *nptr)
+atoi_safe	src/functions.cpp	/^int atoi_safe(const char *nptr)$/;"	kind:f	line:172	language:C++	signature:(const char *nptr)
+atol_safe	include/functions.h	/^long atol_safe(const char *nptr);$/;"	kind:p	line:94	language:C++	signature:(const char *nptr)
+atol_safe	src/functions.cpp	/^long atol_safe(const char *nptr)$/;"	kind:f	line:190	language:C++	signature:(const char *nptr)
+atoll_safe	include/functions.h	/^long long atoll_safe(const char *nptr);$/;"	kind:p	line:105	language:C++	signature:(const char *nptr)
+atoll_safe	src/functions.cpp	/^long long atoll_safe(const char *nptr)$/;"	kind:f	line:208	language:C++	signature:(const char *nptr)
+boot_log	include/log.h	/^void boot_log (int OK, int dummy, const char* fmt, ...);$/;"	kind:p	line:55	language:C++	signature:(int OK, int dummy, const char* fmt, ...)
+broadcast	include/i_net_io_server.h	/^    virtual int broadcast(int id,$/;"	kind:p	line:210	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int date_len, int is_atomic)
+c_auto_ptr.cpp	src/c_auto_ptr.cpp	1;"	kind:F	line:1	language:C++
+c_auto_ptr.h	include/c_auto_ptr.h	1;"	kind:F	line:1	language:C++
+c_fd_auto_ptr	include/c_auto_ptr.h	/^	c_fd_auto_ptr(c_fd_auto_ptr &c_ptr) {}$/;"	kind:f	line:118	language:C++	class:c_fd_auto_ptr	access:private	signature:(c_fd_auto_ptr &c_ptr)
+c_fd_auto_ptr	include/c_auto_ptr.h	/^	c_fd_auto_ptr(int);$/;"	kind:p	line:88	language:C++	class:c_fd_auto_ptr	access:public	signature:(int)
+c_fd_auto_ptr	include/c_auto_ptr.h	/^class c_fd_auto_ptr$/;"	kind:c	line:80	language:C++
+c_fd_auto_ptr	src/c_auto_ptr.cpp	/^c_fd_auto_ptr::c_fd_auto_ptr(int fd)$/;"	kind:f	line:57	language:C++	class:c_fd_auto_ptr	signature:(int fd)
+c_fd_auto_ptr::c_fd_auto_ptr	include/c_auto_ptr.h	/^	c_fd_auto_ptr(c_fd_auto_ptr &c_ptr) {}$/;"	kind:f	line:118	language:C++	class:c_fd_auto_ptr	access:private	signature:(c_fd_auto_ptr &c_ptr)
+c_fd_auto_ptr::c_fd_auto_ptr	include/c_auto_ptr.h	/^	c_fd_auto_ptr(int);$/;"	kind:p	line:88	language:C++	class:c_fd_auto_ptr	access:public	signature:(int)
+c_fd_auto_ptr::c_fd_auto_ptr	src/c_auto_ptr.cpp	/^c_fd_auto_ptr::c_fd_auto_ptr(int fd)$/;"	kind:f	line:57	language:C++	class:c_fd_auto_ptr	signature:(int fd)
+c_fd_auto_ptr::detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:100	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+c_fd_auto_ptr::detach	src/c_auto_ptr.cpp	/^int c_fd_auto_ptr::detach()$/;"	kind:f	line:67	language:C++	class:c_fd_auto_ptr	signature:()
+c_fd_auto_ptr::free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:107	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+c_fd_auto_ptr::free	src/c_auto_ptr.cpp	/^int c_fd_auto_ptr::free()$/;"	kind:f	line:77	language:C++	class:c_fd_auto_ptr	signature:()
+c_fd_auto_ptr::get_fd	include/c_auto_ptr.h	/^	int get_fd();$/;"	kind:p	line:114	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+c_fd_auto_ptr::get_fd	src/c_auto_ptr.cpp	/^int c_fd_auto_ptr::get_fd()$/;"	kind:f	line:88	language:C++	class:c_fd_auto_ptr	signature:()
+c_fd_auto_ptr::m_fd	include/c_auto_ptr.h	/^	int m_fd;$/;"	kind:m	line:123	language:C++	class:c_fd_auto_ptr	access:private
+c_fd_auto_ptr::~c_fd_auto_ptr	include/c_auto_ptr.h	/^	~c_fd_auto_ptr();$/;"	kind:p	line:93	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+c_fd_auto_ptr::~c_fd_auto_ptr	src/c_auto_ptr.cpp	/^c_fd_auto_ptr::~c_fd_auto_ptr()$/;"	kind:f	line:62	language:C++	class:c_fd_auto_ptr	signature:()
+c_ip_allow	include/c_ip_allow.h	/^	c_ip_allow();$/;"	kind:p	line:40	language:C++	class:c_ip_allow	access:public	signature:()
+c_ip_allow	include/c_ip_allow.h	/^class c_ip_allow : public i_ip_allow$/;"	kind:c	line:36	language:C++	inherits:i_ip_allow
+c_ip_allow	src/c_ip_allow.cpp	/^c_ip_allow::c_ip_allow()$/;"	kind:f	line:16	language:C++	class:c_ip_allow	signature:()
+c_ip_allow.cpp	src/c_ip_allow.cpp	1;"	kind:F	line:1	language:C++
+c_ip_allow.h	include/c_ip_allow.h	1;"	kind:F	line:1	language:C++
+c_ip_allow::c_ip_allow	include/c_ip_allow.h	/^	c_ip_allow();$/;"	kind:p	line:40	language:C++	class:c_ip_allow	access:public	signature:()
+c_ip_allow::c_ip_allow	src/c_ip_allow.cpp	/^c_ip_allow::c_ip_allow()$/;"	kind:f	line:16	language:C++	class:c_ip_allow	signature:()
+c_ip_allow::init	include/c_ip_allow.h	/^	int init(const char *file_path);$/;"	kind:p	line:51	language:C++	class:c_ip_allow	access:public	signature:(const char *file_path)
+c_ip_allow::init	src/c_ip_allow.cpp	/^int c_ip_allow::init(const char *file_path) $/;"	kind:f	line:29	language:C++	class:c_ip_allow	signature:(const char *file_path)
+c_ip_allow::ip_desc_t	include/c_ip_allow.h	/^	typedef struct ip_desc_t {$/;"	kind:s	line:110	language:C++	class:c_ip_allow	access:private
+c_ip_allow::ip_desc_t	include/c_ip_allow.h	/^	} ip_desc_t;$/;"	kind:t	line:136	language:C++	class:c_ip_allow	typeref:struct:c_ip_allow::ip_desc_t	access:private
+c_ip_allow::ip_desc_t::ip_addr	include/c_ip_allow.h	/^		uint32_t ip_addr;$/;"	kind:m	line:114	language:C++	struct:c_ip_allow::ip_desc_t	access:public
+c_ip_allow::ip_desc_t::ip_pos	include/c_ip_allow.h	/^		uint32_t ip_pos;$/;"	kind:m	line:119	language:C++	struct:c_ip_allow::ip_desc_t	access:public
+c_ip_allow::ip_desc_t::operator <	include/c_ip_allow.h	/^		friend bool operator<(ip_desc_t a, ip_desc_t b) {$/;"	kind:f	line:129	language:C++	struct:c_ip_allow::ip_desc_t	access:friend	signature:(ip_desc_t a, ip_desc_t b)
+c_ip_allow::ip_range_t	include/c_ip_allow.h	/^	typedef struct ip_range_t {$/;"	kind:s	line:93	language:C++	class:c_ip_allow	access:private
+c_ip_allow::ip_range_t	include/c_ip_allow.h	/^	} ip_range_t;$/;"	kind:t	line:103	language:C++	class:c_ip_allow	typeref:struct:c_ip_allow::ip_range_t	access:private
+c_ip_allow::ip_range_t::ip_end	include/c_ip_allow.h	/^		uint32_t ip_end;$/;"	kind:m	line:102	language:C++	struct:c_ip_allow::ip_range_t	access:public
+c_ip_allow::ip_range_t::ip_start	include/c_ip_allow.h	/^		uint32_t ip_start;$/;"	kind:m	line:97	language:C++	struct:c_ip_allow::ip_range_t	access:public
+c_ip_allow::is_allowed	include/c_ip_allow.h	/^	int is_allowed(const char *ip_addr, bool check_modified);$/;"	kind:p	line:84	language:C++	class:c_ip_allow	access:public	signature:(const char *ip_addr, bool check_modified)
+c_ip_allow::is_allowed	include/c_ip_allow.h	/^	int is_allowed(uint32_t ip_addr, bool is_net_seq, bool check_modified);$/;"	kind:p	line:71	language:C++	class:c_ip_allow	access:public	signature:(uint32_t ip_addr, bool is_net_seq, bool check_modified)
+c_ip_allow::is_allowed	src/c_ip_allow.cpp	/^int c_ip_allow::is_allowed(const char *ip_addr, bool check_modified)$/;"	kind:f	line:242	language:C++	class:c_ip_allow	signature:(const char *ip_addr, bool check_modified)
+c_ip_allow::is_allowed	src/c_ip_allow.cpp	/^int c_ip_allow::is_allowed(uint32_t ip_addr, bool is_net_seq, bool check_modified)$/;"	kind:f	line:208	language:C++	class:c_ip_allow	signature:(uint32_t ip_addr, bool is_net_seq, bool check_modified)
+c_ip_allow::is_modified	include/c_ip_allow.h	/^	int is_modified();$/;"	kind:p	line:143	language:C++	class:c_ip_allow	access:private	signature:()
+c_ip_allow::is_modified	src/c_ip_allow.cpp	/^int c_ip_allow::is_modified() $/;"	kind:f	line:194	language:C++	class:c_ip_allow	signature:()
+c_ip_allow::m_config_file_path	include/c_ip_allow.h	/^	char m_config_file_path[MAX_CONFIG_FILE_PATH_LEN];$/;"	kind:m	line:167	language:C++	class:c_ip_allow	access:private
+c_ip_allow::m_ip_range_arr	include/c_ip_allow.h	/^	std::vector<ip_range_t> m_ip_range_arr;$/;"	kind:m	line:177	language:C++	class:c_ip_allow	access:private
+c_ip_allow::m_last_modify_time	include/c_ip_allow.h	/^	time_t m_last_modify_time;$/;"	kind:m	line:172	language:C++	class:c_ip_allow	access:private
+c_ip_allow::parse_ip_range	include/c_ip_allow.h	/^	int parse_ip_range(const char *str_buf, ip_range_t *ip_range);$/;"	kind:p	line:162	language:C++	class:c_ip_allow	access:private	signature:(const char *str_buf, ip_range_t *ip_range)
+c_ip_allow::parse_ip_range	src/c_ip_allow.cpp	/^int c_ip_allow::parse_ip_range(const char *str_buf, ip_range_t *ip_range)$/;"	kind:f	line:130	language:C++	class:c_ip_allow	signature:(const char *str_buf, ip_range_t *ip_range)
+c_ip_allow::trim_space	include/c_ip_allow.h	/^	int trim_space(char *str_buf);$/;"	kind:p	line:152	language:C++	class:c_ip_allow	access:private	signature:(char *str_buf)
+c_ip_allow::trim_space	src/c_ip_allow.cpp	/^int c_ip_allow::trim_space(char *str_buf) $/;"	kind:f	line:104	language:C++	class:c_ip_allow	signature:(char *str_buf)
+c_ip_allow::uninit	include/c_ip_allow.h	/^	int uninit();$/;"	kind:p	line:58	language:C++	class:c_ip_allow	access:public	signature:()
+c_ip_allow::uninit	src/c_ip_allow.cpp	/^int c_ip_allow::uninit() $/;"	kind:f	line:189	language:C++	class:c_ip_allow	signature:()
+c_ip_allow::~c_ip_allow	include/c_ip_allow.h	/^	~c_ip_allow();$/;"	kind:p	line:42	language:C++	class:c_ip_allow	access:public	signature:()
+c_ip_allow::~c_ip_allow	src/c_ip_allow.cpp	/^c_ip_allow::~c_ip_allow()$/;"	kind:f	line:24	language:C++	class:c_ip_allow	signature:()
+c_malloc_auto_ptr	include/c_auto_ptr.h	/^	c_malloc_auto_ptr(c_malloc_auto_ptr &c_ptr) {}$/;"	kind:f	line:243	language:C++	class:c_malloc_auto_ptr	access:private	signature:(c_malloc_auto_ptr &c_ptr)
+c_malloc_auto_ptr	include/c_auto_ptr.h	/^	c_malloc_auto_ptr(void* ptr);$/;"	kind:p	line:213	language:C++	class:c_malloc_auto_ptr	access:public	signature:(void* ptr)
+c_malloc_auto_ptr	include/c_auto_ptr.h	/^class c_malloc_auto_ptr$/;"	kind:c	line:205	language:C++
+c_malloc_auto_ptr	src/c_auto_ptr.cpp	/^c_malloc_auto_ptr::c_malloc_auto_ptr(void* ptr)$/;"	kind:f	line:93	language:C++	class:c_malloc_auto_ptr	signature:(void* ptr)
+c_malloc_auto_ptr::c_malloc_auto_ptr	include/c_auto_ptr.h	/^	c_malloc_auto_ptr(c_malloc_auto_ptr &c_ptr) {}$/;"	kind:f	line:243	language:C++	class:c_malloc_auto_ptr	access:private	signature:(c_malloc_auto_ptr &c_ptr)
+c_malloc_auto_ptr::c_malloc_auto_ptr	include/c_auto_ptr.h	/^	c_malloc_auto_ptr(void* ptr);$/;"	kind:p	line:213	language:C++	class:c_malloc_auto_ptr	access:public	signature:(void* ptr)
+c_malloc_auto_ptr::c_malloc_auto_ptr	src/c_auto_ptr.cpp	/^c_malloc_auto_ptr::c_malloc_auto_ptr(void* ptr)$/;"	kind:f	line:93	language:C++	class:c_malloc_auto_ptr	signature:(void* ptr)
+c_malloc_auto_ptr::detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:225	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+c_malloc_auto_ptr::detach	src/c_auto_ptr.cpp	/^int c_malloc_auto_ptr::detach()$/;"	kind:f	line:103	language:C++	class:c_malloc_auto_ptr	signature:()
+c_malloc_auto_ptr::free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:232	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+c_malloc_auto_ptr::free	src/c_auto_ptr.cpp	/^int c_malloc_auto_ptr::free()$/;"	kind:f	line:113	language:C++	class:c_malloc_auto_ptr	signature:()
+c_malloc_auto_ptr::get_ptr	include/c_auto_ptr.h	/^	void* get_ptr();$/;"	kind:p	line:239	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+c_malloc_auto_ptr::get_ptr	src/c_auto_ptr.cpp	/^void* c_malloc_auto_ptr::get_ptr()$/;"	kind:f	line:124	language:C++	class:c_malloc_auto_ptr	signature:()
+c_malloc_auto_ptr::m_ptr	include/c_auto_ptr.h	/^	void* m_ptr;$/;"	kind:m	line:248	language:C++	class:c_malloc_auto_ptr	access:private
+c_malloc_auto_ptr::~c_malloc_auto_ptr	include/c_auto_ptr.h	/^	~c_malloc_auto_ptr();$/;"	kind:p	line:218	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+c_malloc_auto_ptr::~c_malloc_auto_ptr	src/c_auto_ptr.cpp	/^c_malloc_auto_ptr::~c_malloc_auto_ptr()$/;"	kind:f	line:98	language:C++	class:c_malloc_auto_ptr	signature:()
+c_mmap_auto_ptr	include/c_auto_ptr.h	/^	c_mmap_auto_ptr(c_mmap_auto_ptr &c_ptr) {}$/;"	kind:f	line:294	language:C++	class:c_mmap_auto_ptr	access:private	signature:(c_mmap_auto_ptr &c_ptr)
+c_mmap_auto_ptr	include/c_auto_ptr.h	/^	c_mmap_auto_ptr(void* map, size_t sz);$/;"	kind:p	line:264	language:C++	class:c_mmap_auto_ptr	access:public	signature:(void* map, size_t sz)
+c_mmap_auto_ptr	include/c_auto_ptr.h	/^class c_mmap_auto_ptr$/;"	kind:c	line:254	language:C++
+c_mmap_auto_ptr	src/c_auto_ptr.cpp	/^c_mmap_auto_ptr::c_mmap_auto_ptr(void* map, size_t sz)$/;"	kind:f	line:129	language:C++	class:c_mmap_auto_ptr	signature:(void* map, size_t sz)
+c_mmap_auto_ptr::c_mmap_auto_ptr	include/c_auto_ptr.h	/^	c_mmap_auto_ptr(c_mmap_auto_ptr &c_ptr) {}$/;"	kind:f	line:294	language:C++	class:c_mmap_auto_ptr	access:private	signature:(c_mmap_auto_ptr &c_ptr)
+c_mmap_auto_ptr::c_mmap_auto_ptr	include/c_auto_ptr.h	/^	c_mmap_auto_ptr(void* map, size_t sz);$/;"	kind:p	line:264	language:C++	class:c_mmap_auto_ptr	access:public	signature:(void* map, size_t sz)
+c_mmap_auto_ptr::c_mmap_auto_ptr	src/c_auto_ptr.cpp	/^c_mmap_auto_ptr::c_mmap_auto_ptr(void* map, size_t sz)$/;"	kind:f	line:129	language:C++	class:c_mmap_auto_ptr	signature:(void* map, size_t sz)
+c_mmap_auto_ptr::detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:276	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+c_mmap_auto_ptr::detach	src/c_auto_ptr.cpp	/^int c_mmap_auto_ptr::detach()$/;"	kind:f	line:140	language:C++	class:c_mmap_auto_ptr	signature:()
+c_mmap_auto_ptr::free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:283	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+c_mmap_auto_ptr::free	src/c_auto_ptr.cpp	/^int c_mmap_auto_ptr::free()$/;"	kind:f	line:150	language:C++	class:c_mmap_auto_ptr	signature:()
+c_mmap_auto_ptr::get_ptr	include/c_auto_ptr.h	/^	void* get_ptr();$/;"	kind:p	line:290	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+c_mmap_auto_ptr::get_ptr	src/c_auto_ptr.cpp	/^void* c_mmap_auto_ptr::get_ptr()$/;"	kind:f	line:161	language:C++	class:c_mmap_auto_ptr	signature:()
+c_mmap_auto_ptr::m_map	include/c_auto_ptr.h	/^	void* m_map;$/;"	kind:m	line:299	language:C++	class:c_mmap_auto_ptr	access:private
+c_mmap_auto_ptr::m_sz	include/c_auto_ptr.h	/^	size_t m_sz;$/;"	kind:m	line:304	language:C++	class:c_mmap_auto_ptr	access:private
+c_mmap_auto_ptr::~c_mmap_auto_ptr	include/c_auto_ptr.h	/^	~c_mmap_auto_ptr();$/;"	kind:p	line:269	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+c_mmap_auto_ptr::~c_mmap_auto_ptr	src/c_auto_ptr.cpp	/^c_mmap_auto_ptr::~c_mmap_auto_ptr()$/;"	kind:f	line:135	language:C++	class:c_mmap_auto_ptr	signature:()
+c_mysql_res_auto_ptr	include/c_auto_ptr.h	/^	c_mysql_res_auto_ptr(MYSQL_RES* res);$/;"	kind:p	line:39	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:(MYSQL_RES* res)
+c_mysql_res_auto_ptr	include/c_auto_ptr.h	/^	c_mysql_res_auto_ptr(c_mysql_res_auto_ptr &c_ptr) {}$/;"	kind:f	line:69	language:C++	class:c_mysql_res_auto_ptr	access:private	signature:(c_mysql_res_auto_ptr &c_ptr)
+c_mysql_res_auto_ptr	include/c_auto_ptr.h	/^class c_mysql_res_auto_ptr$/;"	kind:c	line:31	language:C++
+c_mysql_res_auto_ptr	src/c_auto_ptr.cpp	/^c_mysql_res_auto_ptr::c_mysql_res_auto_ptr(MYSQL_RES* res)$/;"	kind:f	line:22	language:C++	class:c_mysql_res_auto_ptr	signature:(MYSQL_RES* res)
+c_mysql_res_auto_ptr::c_mysql_res_auto_ptr	include/c_auto_ptr.h	/^	c_mysql_res_auto_ptr(MYSQL_RES* res);$/;"	kind:p	line:39	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:(MYSQL_RES* res)
+c_mysql_res_auto_ptr::c_mysql_res_auto_ptr	include/c_auto_ptr.h	/^	c_mysql_res_auto_ptr(c_mysql_res_auto_ptr &c_ptr) {}$/;"	kind:f	line:69	language:C++	class:c_mysql_res_auto_ptr	access:private	signature:(c_mysql_res_auto_ptr &c_ptr)
+c_mysql_res_auto_ptr::c_mysql_res_auto_ptr	src/c_auto_ptr.cpp	/^c_mysql_res_auto_ptr::c_mysql_res_auto_ptr(MYSQL_RES* res)$/;"	kind:f	line:22	language:C++	class:c_mysql_res_auto_ptr	signature:(MYSQL_RES* res)
+c_mysql_res_auto_ptr::detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:51	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+c_mysql_res_auto_ptr::detach	src/c_auto_ptr.cpp	/^int c_mysql_res_auto_ptr::detach()$/;"	kind:f	line:33	language:C++	class:c_mysql_res_auto_ptr	signature:()
+c_mysql_res_auto_ptr::free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:58	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+c_mysql_res_auto_ptr::free	src/c_auto_ptr.cpp	/^int c_mysql_res_auto_ptr::free()$/;"	kind:f	line:42	language:C++	class:c_mysql_res_auto_ptr	signature:()
+c_mysql_res_auto_ptr::get_ptr	include/c_auto_ptr.h	/^	MYSQL_RES* get_ptr();$/;"	kind:p	line:65	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+c_mysql_res_auto_ptr::get_ptr	src/c_auto_ptr.cpp	/^MYSQL_RES* c_mysql_res_auto_ptr::get_ptr()$/;"	kind:f	line:52	language:C++	class:c_mysql_res_auto_ptr	signature:()
+c_mysql_res_auto_ptr::m_res	include/c_auto_ptr.h	/^	MYSQL_RES* m_res;$/;"	kind:m	line:74	language:C++	class:c_mysql_res_auto_ptr	access:private
+c_mysql_res_auto_ptr::~c_mysql_res_auto_ptr	include/c_auto_ptr.h	/^	~c_mysql_res_auto_ptr();$/;"	kind:p	line:44	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+c_mysql_res_auto_ptr::~c_mysql_res_auto_ptr	src/c_auto_ptr.cpp	/^c_mysql_res_auto_ptr::~c_mysql_res_auto_ptr()$/;"	kind:f	line:27	language:C++	class:c_mysql_res_auto_ptr	signature:()
+c_obj_auto_ptr	include/c_auto_ptr.h	/^	c_obj_auto_ptr(T* ptr)$/;"	kind:f	line:139	language:C++	class:c_obj_auto_ptr	access:public	signature:(T* ptr)
+c_obj_auto_ptr	include/c_auto_ptr.h	/^	c_obj_auto_ptr(c_obj_auto_ptr &c_ptr) {}$/;"	kind:f	line:194	language:C++	class:c_obj_auto_ptr	access:private	signature:(c_obj_auto_ptr &c_ptr)
+c_obj_auto_ptr	include/c_auto_ptr.h	/^class c_obj_auto_ptr$/;"	kind:c	line:130	language:C++
+c_obj_auto_ptr::c_obj_auto_ptr	include/c_auto_ptr.h	/^	c_obj_auto_ptr(T* ptr)$/;"	kind:f	line:139	language:C++	class:c_obj_auto_ptr	access:public	signature:(T* ptr)
+c_obj_auto_ptr::c_obj_auto_ptr	include/c_auto_ptr.h	/^	c_obj_auto_ptr(c_obj_auto_ptr &c_ptr) {}$/;"	kind:f	line:194	language:C++	class:c_obj_auto_ptr	access:private	signature:(c_obj_auto_ptr &c_ptr)
+c_obj_auto_ptr::detach	include/c_auto_ptr.h	/^	int detach()$/;"	kind:f	line:157	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+c_obj_auto_ptr::free	include/c_auto_ptr.h	/^	int free() $/;"	kind:f	line:171	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+c_obj_auto_ptr::get_ptr	include/c_auto_ptr.h	/^	T* get_ptr()$/;"	kind:f	line:187	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+c_obj_auto_ptr::m_ptr	include/c_auto_ptr.h	/^	T* m_ptr;$/;"	kind:m	line:199	language:C++	class:c_obj_auto_ptr	access:private
+c_obj_auto_ptr::~c_obj_auto_ptr	include/c_auto_ptr.h	/^	~c_obj_auto_ptr()$/;"	kind:f	line:147	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+c_pthread_mutex_auto_ptr	include/c_auto_ptr.h	/^	c_pthread_mutex_auto_ptr(c_pthread_mutex_auto_ptr &c_ptr) {}$/;"	kind:f	line:348	language:C++	class:c_pthread_mutex_auto_ptr	access:private	signature:(c_pthread_mutex_auto_ptr &c_ptr)
+c_pthread_mutex_auto_ptr	include/c_auto_ptr.h	/^	c_pthread_mutex_auto_ptr(pthread_mutex_t *mtx);$/;"	kind:p	line:318	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:(pthread_mutex_t *mtx)
+c_pthread_mutex_auto_ptr	include/c_auto_ptr.h	/^class c_pthread_mutex_auto_ptr$/;"	kind:c	line:310	language:C++
+c_pthread_mutex_auto_ptr	src/c_auto_ptr.cpp	/^c_pthread_mutex_auto_ptr::c_pthread_mutex_auto_ptr(pthread_mutex_t *mtx)$/;"	kind:f	line:166	language:C++	class:c_pthread_mutex_auto_ptr	signature:(pthread_mutex_t *mtx)
+c_pthread_mutex_auto_ptr::c_pthread_mutex_auto_ptr	include/c_auto_ptr.h	/^	c_pthread_mutex_auto_ptr(c_pthread_mutex_auto_ptr &c_ptr) {}$/;"	kind:f	line:348	language:C++	class:c_pthread_mutex_auto_ptr	access:private	signature:(c_pthread_mutex_auto_ptr &c_ptr)
+c_pthread_mutex_auto_ptr::c_pthread_mutex_auto_ptr	include/c_auto_ptr.h	/^	c_pthread_mutex_auto_ptr(pthread_mutex_t *mtx);$/;"	kind:p	line:318	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:(pthread_mutex_t *mtx)
+c_pthread_mutex_auto_ptr::c_pthread_mutex_auto_ptr	src/c_auto_ptr.cpp	/^c_pthread_mutex_auto_ptr::c_pthread_mutex_auto_ptr(pthread_mutex_t *mtx)$/;"	kind:f	line:166	language:C++	class:c_pthread_mutex_auto_ptr	signature:(pthread_mutex_t *mtx)
+c_pthread_mutex_auto_ptr::detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:330	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+c_pthread_mutex_auto_ptr::detach	src/c_auto_ptr.cpp	/^int c_pthread_mutex_auto_ptr::detach()$/;"	kind:f	line:176	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+c_pthread_mutex_auto_ptr::free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:337	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+c_pthread_mutex_auto_ptr::free	src/c_auto_ptr.cpp	/^int c_pthread_mutex_auto_ptr::free()$/;"	kind:f	line:185	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+c_pthread_mutex_auto_ptr::get_ptr	include/c_auto_ptr.h	/^	pthread_mutex_t *get_ptr();$/;"	kind:p	line:344	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+c_pthread_mutex_auto_ptr::get_ptr	src/c_auto_ptr.cpp	/^pthread_mutex_t* c_pthread_mutex_auto_ptr::get_ptr() $/;"	kind:f	line:194	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+c_pthread_mutex_auto_ptr::m_mtx	include/c_auto_ptr.h	/^	pthread_mutex_t *m_mtx;$/;"	kind:m	line:353	language:C++	class:c_pthread_mutex_auto_ptr	access:private
+c_pthread_mutex_auto_ptr::~c_pthread_mutex_auto_ptr	include/c_auto_ptr.h	/^	~c_pthread_mutex_auto_ptr();$/;"	kind:p	line:323	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+c_pthread_mutex_auto_ptr::~c_pthread_mutex_auto_ptr	src/c_auto_ptr.cpp	/^c_pthread_mutex_auto_ptr::~c_pthread_mutex_auto_ptr()$/;"	kind:f	line:171	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+c_semaphore_auto_ptr	include/c_auto_ptr.h	/^	c_semaphore_auto_ptr(c_semaphore_auto_ptr &c_ptr) {}$/;"	kind:f	line:397	language:C++	class:c_semaphore_auto_ptr	access:private	signature:(c_semaphore_auto_ptr &c_ptr)
+c_semaphore_auto_ptr	include/c_auto_ptr.h	/^	c_semaphore_auto_ptr(sem_t *sem);$/;"	kind:p	line:367	language:C++	class:c_semaphore_auto_ptr	access:public	signature:(sem_t *sem)
+c_semaphore_auto_ptr	include/c_auto_ptr.h	/^class c_semaphore_auto_ptr$/;"	kind:c	line:359	language:C++
+c_semaphore_auto_ptr	src/c_auto_ptr.cpp	/^c_semaphore_auto_ptr::c_semaphore_auto_ptr(sem_t *sem)$/;"	kind:f	line:199	language:C++	class:c_semaphore_auto_ptr	signature:(sem_t *sem)
+c_semaphore_auto_ptr::c_semaphore_auto_ptr	include/c_auto_ptr.h	/^	c_semaphore_auto_ptr(c_semaphore_auto_ptr &c_ptr) {}$/;"	kind:f	line:397	language:C++	class:c_semaphore_auto_ptr	access:private	signature:(c_semaphore_auto_ptr &c_ptr)
+c_semaphore_auto_ptr::c_semaphore_auto_ptr	include/c_auto_ptr.h	/^	c_semaphore_auto_ptr(sem_t *sem);$/;"	kind:p	line:367	language:C++	class:c_semaphore_auto_ptr	access:public	signature:(sem_t *sem)
+c_semaphore_auto_ptr::c_semaphore_auto_ptr	src/c_auto_ptr.cpp	/^c_semaphore_auto_ptr::c_semaphore_auto_ptr(sem_t *sem)$/;"	kind:f	line:199	language:C++	class:c_semaphore_auto_ptr	signature:(sem_t *sem)
+c_semaphore_auto_ptr::detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:379	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+c_semaphore_auto_ptr::detach	src/c_auto_ptr.cpp	/^int c_semaphore_auto_ptr::detach()$/;"	kind:f	line:209	language:C++	class:c_semaphore_auto_ptr	signature:()
+c_semaphore_auto_ptr::free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:386	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+c_semaphore_auto_ptr::free	src/c_auto_ptr.cpp	/^int c_semaphore_auto_ptr::free()$/;"	kind:f	line:218	language:C++	class:c_semaphore_auto_ptr	signature:()
+c_semaphore_auto_ptr::get_ptr	include/c_auto_ptr.h	/^	sem_t *get_ptr();$/;"	kind:p	line:393	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+c_semaphore_auto_ptr::get_ptr	src/c_auto_ptr.cpp	/^sem_t* c_semaphore_auto_ptr::get_ptr()$/;"	kind:f	line:227	language:C++	class:c_semaphore_auto_ptr	signature:()
+c_semaphore_auto_ptr::m_sem	include/c_auto_ptr.h	/^	sem_t *m_sem;$/;"	kind:m	line:402	language:C++	class:c_semaphore_auto_ptr	access:private
+c_semaphore_auto_ptr::~c_semaphore_auto_ptr	include/c_auto_ptr.h	/^	~c_semaphore_auto_ptr();$/;"	kind:p	line:372	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+c_semaphore_auto_ptr::~c_semaphore_auto_ptr	src/c_auto_ptr.cpp	/^c_semaphore_auto_ptr::~c_semaphore_auto_ptr()$/;"	kind:f	line:204	language:C++	class:c_semaphore_auto_ptr	signature:()
+check_command_entry	src/do_handle.cpp	/^int check_command_entry(command_entry_t *entry_arr, int entry_arr_size)$/;"	kind:f	line:59	language:C++	signature:(command_entry_t *entry_arr, int entry_arr_size)
+chnl_id	include/do_handle.h	/^	uint16_t chnl_id;$/;"	kind:m	line:121	language:C++	struct:__anon4	access:public
+chnl_id	include/do_handle.h	/^	uint16_t chnl_id;$/;"	kind:m	line:35	language:C++	struct:__anon2	access:public
+chnl_key	include/do_handle.h	/^	std::string chnl_key;$/;"	kind:m	line:36	language:C++	struct:__anon2	access:public
+chnlhash32_vfy_header_t	include/do_handle.h	/^} __attribute__((packed)) chnlhash32_vfy_header_t;$/;"	kind:t	line:123	language:C++	typeref:struct:__anon4
+close_connection	include/i_net_io_server.h	/^    virtual int close_connection(int id, bool need_ontify) = 0;$/;"	kind:p	line:269	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, bool need_ontify)
+cmd_id	include/do_handle.h	/^	uint16_t cmd_id;$/;"	kind:m	line:28	language:C++	struct:__anon1	access:public
+cmd_id	include/do_handle.h	/^	uint16_t cmd_id;$/;"	kind:m	line:43	language:C++	struct:__anon3	access:public
+command_entry_cmp	src/do_handle.cpp	/^int command_entry_cmp(const void *p, const void *q)$/;"	kind:f	line:51	language:C++	signature:(const void *p, const void *q)
+command_entry_t	include/do_handle.h	/^}command_entry_t;$/;"	kind:t	line:60	language:C++	typeref:struct:__anon3
+common_protocol_header_t	include/do_handle.h	/^}__attribute__((packed)) common_protocol_header_t;$/;"	kind:t	line:31	language:C++	typeref:struct:__anon1
+config_get_intval	include/newbench.h	/^int config_get_intval(const char* key, int def);$/;"	kind:p	line:65	language:C++	signature:(const char* key, int def)
+config_get_strval	include/newbench.h	/^char* config_get_strval(const char* key);$/;"	kind:p	line:64	language:C++	signature:(const char* key)
+connection_id	include/newbench.h	/^    int connection_id;$/;"	kind:m	line:59	language:C++	struct:skinfo_struct	access:public
+create_ip_allow_instance	include/i_ip_allow.h	/^int create_ip_allow_instance(i_ip_allow** pp_instance);$/;"	kind:p	line:100	language:C++	signature:(i_ip_allow** pp_instance)
+create_ip_allow_instance	src/c_ip_allow.cpp	/^int create_ip_allow_instance(i_ip_allow** pp_instance)$/;"	kind:f	line:253	language:C++	signature:(i_ip_allow** pp_instance)
+create_mysql_iface_instance	include/i_mysql_iface.h	/^int create_mysql_iface_instance(i_mysql_iface** pp_instance);$/;"	kind:p	line:120	language:C++	signature:(i_mysql_iface** pp_instance)
+detach	include/c_auto_ptr.h	/^	int detach()$/;"	kind:f	line:157	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:100	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:225	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:276	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:330	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:379	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+detach	include/c_auto_ptr.h	/^	int detach();$/;"	kind:p	line:51	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+detach	src/c_auto_ptr.cpp	/^int c_fd_auto_ptr::detach()$/;"	kind:f	line:67	language:C++	class:c_fd_auto_ptr	signature:()
+detach	src/c_auto_ptr.cpp	/^int c_malloc_auto_ptr::detach()$/;"	kind:f	line:103	language:C++	class:c_malloc_auto_ptr	signature:()
+detach	src/c_auto_ptr.cpp	/^int c_mmap_auto_ptr::detach()$/;"	kind:f	line:140	language:C++	class:c_mmap_auto_ptr	signature:()
+detach	src/c_auto_ptr.cpp	/^int c_mysql_res_auto_ptr::detach()$/;"	kind:f	line:33	language:C++	class:c_mysql_res_auto_ptr	signature:()
+detach	src/c_auto_ptr.cpp	/^int c_pthread_mutex_auto_ptr::detach()$/;"	kind:f	line:176	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+detach	src/c_auto_ptr.cpp	/^int c_semaphore_auto_ptr::detach()$/;"	kind:f	line:209	language:C++	class:c_semaphore_auto_ptr	signature:()
+do_broadcast	src/server.cpp	/^int do_broadcast()$/;"	kind:f	line:39	language:C++	signature:()
+do_cmd	include/do_handle.h	/^	uint32_t (* do_cmd)(uint32_t user_id, const char *req_body_buf, int req_body_len, char *ack_body_buf, int *ack_len, skinfo_t *sk);$/;"	kind:m	line:55	language:C++	struct:__anon3	access:public
+do_echo	src/server.cpp	/^uint32_t do_echo(uint32_t user_id, const char *recv_buf, int recv_len,$/;"	kind:f	line:23	language:C++	signature:(uint32_t user_id, const char *recv_buf, int recv_len, char *ack_buf, int *ack_len, skinfo_t *sk)
+do_handle.cpp	src/do_handle.cpp	1;"	kind:F	line:1	language:C++
+do_handle.h	include/do_handle.h	1;"	kind:F	line:1	language:C++
+do_handle_fini	include/do_handle.h	/^int do_handle_fini();$/;"	kind:p	line:117	language:C++	signature:()
+do_handle_fini	src/do_handle.cpp	/^int do_handle_fini()$/;"	kind:f	line:351	language:C++	signature:()
+do_handle_init	include/do_handle.h	/^int do_handle_init(int pid, int max_proto_buf_size, verify_chnl_info_t *chnl_list, int chnl_num,$/;"	kind:p	line:86	language:C++	signature:(int pid, int max_proto_buf_size, verify_chnl_info_t *chnl_list, int chnl_num, command_entry_t *entry_arr, int entry_arr_size, const char *ip_allow_conf_file)
+do_handle_init	src/do_handle.cpp	/^int do_handle_init(int pid, int max_proto_buf_size, verify_chnl_info_t *chnl_info_arr, int chnl_arr_size,$/;"	kind:f	line:84	language:C++	signature:(int pid, int max_proto_buf_size, verify_chnl_info_t *chnl_info_arr, int chnl_arr_size, command_entry_t *entry_arr, int entry_arr_size, const char *ip_allow_conf_file)
+do_handle_input	include/do_handle.h	/^int do_handle_input(const char *recv_buf, int recv_len);$/;"	kind:p	line:110	language:C++	signature:(const char *recv_buf, int recv_len)
+do_handle_input	src/do_handle.cpp	/^int do_handle_input(const char *recv_buf, int recv_len)$/;"	kind:f	line:319	language:C++	signature:(const char *recv_buf, int recv_len)
+do_handle_process	include/do_handle.h	/^int do_handle_process(const char *recv_buf, int recv_len, char **send_buf, int *send_len, skinfo_t *sk);$/;"	kind:p	line:100	language:C++	signature:(const char *recv_buf, int recv_len, char **send_buf, int *send_len, skinfo_t *sk)
+do_handle_process	src/do_handle.cpp	/^int do_handle_process(const char *recv_buf, int recv_len, char **send_buf, int *send_len, skinfo_t *sk)$/;"	kind:f	line:223	language:C++	signature:(const char *recv_buf, int recv_len, char **send_buf, int *send_len, skinfo_t *sk)
+do_io	include/i_net_io_server.h	/^    virtual int do_io(int timeout, int cmd) = 0;$/;"	kind:p	line:259	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int timeout, int cmd)
+do_test_filter	src/server.cpp	/^uint32_t do_test_filter(uint32_t user_id, const char *recv_buf, int recv_len, char *ack_buf, int *ack_len, skinfo_t *sk)$/;"	kind:f	line:87	language:C++	signature:(uint32_t user_id, const char *recv_buf, int recv_len, char *ack_buf, int *ack_len, skinfo_t *sk)
+dump_argv	src/server.cpp	/^void dump_argv(int argc, char **argv)$/;"	kind:f	line:116	language:C++	signature:(int argc, char **argv)
+dump_skinfo	src/server.cpp	/^void dump_skinfo(const skinfo_t* sk)$/;"	kind:f	line:124	language:C++	signature:(const skinfo_t* sk)
+enum_connections	include/i_net_io_server.h	/^    virtual int enum_connections(int *p_buffer,$/;"	kind:p	line:246	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int *p_buffer, int length, int *p_buffer_len)
+execsql	include/i_mysql_iface.h	/^    virtual int execsql(const char* sql_fmt, ...) = 0;$/;"	kind:p	line:97	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(const char* sql_fmt, ...)
+fill_chnlhash32	include/do_handle.h	/^int fill_chnlhash32(chnlhash32_vfy_header_t* vfh, uint16_t chnl_id, const char* key, const char* data, int data_len);$/;"	kind:p	line:136	language:C++	signature:(chnlhash32_vfy_header_t* vfh, uint16_t chnl_id, const char* key, const char* data, int data_len)
+fill_chnlhash32	src/do_handle.cpp	/^int fill_chnlhash32(chnlhash32_vfy_header_t* vfh, uint16_t chnl_id, const char* key, const char* data, int data_len)$/;"	kind:f	line:383	language:C++	signature:(chnlhash32_vfy_header_t* vfh, uint16_t chnl_id, const char* key, const char* data, int data_len)
+flag	include/do_handle.h	/^	uint8_t flag;$/;"	kind:m	line:59	language:C++	struct:__anon3	access:public
+free	include/c_auto_ptr.h	/^	int free() $/;"	kind:f	line:171	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:107	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:232	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:283	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:337	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:386	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+free	include/c_auto_ptr.h	/^	int free();$/;"	kind:p	line:58	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+free	src/c_auto_ptr.cpp	/^int c_fd_auto_ptr::free()$/;"	kind:f	line:77	language:C++	class:c_fd_auto_ptr	signature:()
+free	src/c_auto_ptr.cpp	/^int c_malloc_auto_ptr::free()$/;"	kind:f	line:113	language:C++	class:c_malloc_auto_ptr	signature:()
+free	src/c_auto_ptr.cpp	/^int c_mmap_auto_ptr::free()$/;"	kind:f	line:150	language:C++	class:c_mmap_auto_ptr	signature:()
+free	src/c_auto_ptr.cpp	/^int c_mysql_res_auto_ptr::free()$/;"	kind:f	line:42	language:C++	class:c_mysql_res_auto_ptr	signature:()
+free	src/c_auto_ptr.cpp	/^int c_pthread_mutex_auto_ptr::free()$/;"	kind:f	line:185	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+free	src/c_auto_ptr.cpp	/^int c_semaphore_auto_ptr::free()$/;"	kind:f	line:218	language:C++	class:c_semaphore_auto_ptr	signature:()
+functions.cpp	src/functions.cpp	1;"	kind:F	line:1	language:C++
+functions.h	include/functions.h	1;"	kind:F	line:1	language:C++
+g_ack_buf	src/do_handle.cpp	/^static char *g_ack_buf = NULL;$/;"	kind:v	line:20	language:C++	file:
+g_chnl_map	src/do_handle.cpp	/^std::map<uint16_t, std::string> g_chnl_map;$/;"	kind:v	line:34	language:C++
+g_cmd_entry_arr	src/do_handle.cpp	/^static command_entry_t *g_cmd_entry_arr = NULL;$/;"	kind:v	line:39	language:C++	file:
+g_cmd_entry_arr_size	src/do_handle.cpp	/^int g_cmd_entry_arr_size = 0;$/;"	kind:v	line:43	language:C++
+g_ip_allow_mgr	src/do_handle.cpp	/^i_ip_allow *g_ip_allow_mgr = NULL;$/;"	kind:v	line:29	language:C++
+g_max_proto_buf_size	src/do_handle.cpp	/^static int g_max_proto_buf_size = 0;$/;"	kind:v	line:24	language:C++	file:
+g_md5_hash_buf	src/do_handle.cpp	/^static char *g_md5_hash_buf = NULL;$/;"	kind:v	line:48	language:C++	file:
+get_conn	include/i_mysql_iface.h	/^    virtual MYSQL* get_conn() = 0;$/;"	kind:p	line:65	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:()
+get_connection_info	include/i_net_io_server.h	/^    virtual int get_connection_info($/;"	kind:p	line:228	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:( int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+get_eventfd	include/i_net_io_server.h	/^    virtual int get_eventfd() const = 0;$/;"	kind:p	line:71	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:() const
+get_fd	include/c_auto_ptr.h	/^	int get_fd();$/;"	kind:p	line:114	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+get_fd	src/c_auto_ptr.cpp	/^int c_fd_auto_ptr::get_fd()$/;"	kind:f	line:88	language:C++	class:c_fd_auto_ptr	signature:()
+get_hex	src/functions.cpp	/^uint32_t get_hex(char c)$/;"	kind:f	line:138	language:C++	signature:(char c)
+get_hex	src/functions.cpp	/^uint32_t get_hex(char c);$/;"	kind:p	line:31	language:C++	file:	signature:(char c)
+get_hex_asc_lower	src/functions.cpp	/^char get_hex_asc_lower(int i)$/;"	kind:f	line:151	language:C++	signature:(int i)
+get_hex_asc_lower	src/functions.cpp	/^char get_hex_asc_lower(int i);$/;"	kind:p	line:32	language:C++	file:	signature:(int i)
+get_last_errno	include/i_mysql_iface.h	/^    virtual int get_last_errno() const = 0;$/;"	kind:p	line:104	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:() const
+get_last_errno	include/i_net_io_server.h	/^    virtual int get_last_errno() = 0;$/;"	kind:p	line:276	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+get_last_errstr	include/i_mysql_iface.h	/^    virtual const char* get_last_errstr() const = 0;$/;"	kind:p	line:111	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:() const
+get_last_errstr	include/i_net_io_server.h	/^    virtual const char *get_last_errstr() = 0;$/;"	kind:p	line:283	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+get_ptr	include/c_auto_ptr.h	/^	MYSQL_RES* get_ptr();$/;"	kind:p	line:65	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+get_ptr	include/c_auto_ptr.h	/^	T* get_ptr()$/;"	kind:f	line:187	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+get_ptr	include/c_auto_ptr.h	/^	pthread_mutex_t *get_ptr();$/;"	kind:p	line:344	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+get_ptr	include/c_auto_ptr.h	/^	sem_t *get_ptr();$/;"	kind:p	line:393	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+get_ptr	include/c_auto_ptr.h	/^	void* get_ptr();$/;"	kind:p	line:239	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+get_ptr	include/c_auto_ptr.h	/^	void* get_ptr();$/;"	kind:p	line:290	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+get_ptr	src/c_auto_ptr.cpp	/^MYSQL_RES* c_mysql_res_auto_ptr::get_ptr()$/;"	kind:f	line:52	language:C++	class:c_mysql_res_auto_ptr	signature:()
+get_ptr	src/c_auto_ptr.cpp	/^pthread_mutex_t* c_pthread_mutex_auto_ptr::get_ptr() $/;"	kind:f	line:194	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+get_ptr	src/c_auto_ptr.cpp	/^sem_t* c_semaphore_auto_ptr::get_ptr()$/;"	kind:f	line:227	language:C++	class:c_semaphore_auto_ptr	signature:()
+get_ptr	src/c_auto_ptr.cpp	/^void* c_malloc_auto_ptr::get_ptr()$/;"	kind:f	line:124	language:C++	class:c_malloc_auto_ptr	signature:()
+get_ptr	src/c_auto_ptr.cpp	/^void* c_mmap_auto_ptr::get_ptr()$/;"	kind:f	line:161	language:C++	class:c_mmap_auto_ptr	signature:()
+got	include/i_net_io_server.h	/^    virtual int got() = 0;$/;"	kind:p	line:59	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+handle_close	src/server.cpp	/^extern "C" int handle_close(skinfo_t* sk)$/;"	kind:f	line:217	language:C++	signature:(skinfo_t* sk)
+handle_dispatch	src/server.cpp	/^extern "C" int handle_dispatch(const char *recv_buf, int recv_len, int proc_num, int* mimi_id)$/;"	kind:f	line:60	language:C++	signature:(const char *recv_buf, int recv_len, int proc_num, int* mimi_id)
+handle_fini	src/server.cpp	/^extern "C" int handle_fini(int pid)$/;"	kind:f	line:198	language:C++	signature:(int pid)
+handle_init	src/server.cpp	/^extern "C" int handle_init(int argc, char **argv, int pid)$/;"	kind:f	line:142	language:C++	signature:(int argc, char **argv, int pid)
+handle_input	src/server.cpp	/^extern "C" int handle_input(const char *recv_buf, int recv_len, skinfo_t*)$/;"	kind:f	line:171	language:C++	signature:(const char *recv_buf, int recv_len, skinfo_t*)
+handle_open	src/server.cpp	/^extern "C" int handle_open(char** sendptr, int* sendlen, skinfo_t* sk)$/;"	kind:f	line:224	language:C++	signature:(char** sendptr, int* sendlen, skinfo_t* sk)
+handle_process	src/server.cpp	/^extern "C" int handle_process(const char *recv_buf, int recv_len, char **send_buf, int *send_len, skinfo_t *sk)$/;"	kind:f	line:177	language:C++	signature:(const char *recv_buf, int recv_len, char **send_buf, int *send_len, skinfo_t *sk)
+handle_schedule	src/server.cpp	/^extern "C" int handle_schedule()$/;"	kind:f	line:191	language:C++	signature:()
+handle_timer	src/server.cpp	/^extern "C" int handle_timer(int* sec)$/;"	kind:f	line:232	language:C++	signature:(int* sec)
+hex2asc_lower	include/functions.h	/^const char* hex2asc_lower(const uint8_t *src, size_t len, char *dest);$/;"	kind:p	line:61	language:C++	signature:(const uint8_t *src, size_t len, char *dest)
+hex2asc_lower	src/functions.cpp	/^const char* hex2asc_lower(const uint8_t *src, size_t len, char *dest)$/;"	kind:f	line:101	language:C++	signature:(const uint8_t *src, size_t len, char *dest)
+hex_dump	include/functions.h	/^const char* hex_dump(const uint8_t* src, size_t len, char *dest);$/;"	kind:p	line:47	language:C++	signature:(const uint8_t* src, size_t len, char *dest)
+hex_dump	src/functions.cpp	/^const char* hex_dump(const uint8_t* src, size_t len, char *dest)$/;"	kind:f	line:70	language:C++	signature:(const uint8_t* src, size_t len, char *dest)
+i_ip_allow	include/i_ip_allow.h	/^class i_ip_allow$/;"	kind:c	line:44	language:C++
+i_ip_allow.h	include/i_ip_allow.h	1;"	kind:F	line:1	language:C++
+i_ip_allow::init	include/i_ip_allow.h	/^	virtual int init(const char *file_path) = 0;$/;"	kind:p	line:57	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:(const char *file_path)
+i_ip_allow::is_allowed	include/i_ip_allow.h	/^	virtual int is_allowed(const char *ip_addr, bool check_modified = false) = 0;$/;"	kind:p	line:88	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:(const char *ip_addr, bool check_modified = false)
+i_ip_allow::is_allowed	include/i_ip_allow.h	/^	virtual int is_allowed(uint32_t ip_addr, bool is_net_seq = false, bool check_modified = false) = 0;$/;"	kind:p	line:77	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:(uint32_t ip_addr, bool is_net_seq = false, bool check_modified = false)
+i_ip_allow::uninit	include/i_ip_allow.h	/^	virtual int uninit() = 0;$/;"	kind:p	line:64	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:()
+i_ip_allow::~i_ip_allow	include/i_ip_allow.h	/^	virtual ~i_ip_allow() {};$/;"	kind:f	line:48	language:C++	class:i_ip_allow	access:public	implementation:virtual	signature:()
+i_mysql_iface	include/i_mysql_iface.h	/^struct i_mysql_iface$/;"	kind:s	line:29	language:C++
+i_mysql_iface.h	include/i_mysql_iface.h	1;"	kind:F	line:1	language:C++
+i_mysql_iface::execsql	include/i_mysql_iface.h	/^    virtual int execsql(const char* sql_fmt, ...) = 0;$/;"	kind:p	line:97	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(const char* sql_fmt, ...)
+i_mysql_iface::get_conn	include/i_mysql_iface.h	/^    virtual MYSQL* get_conn() = 0;$/;"	kind:p	line:65	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:()
+i_mysql_iface::get_last_errno	include/i_mysql_iface.h	/^    virtual int get_last_errno() const = 0;$/;"	kind:p	line:104	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:() const
+i_mysql_iface::get_last_errstr	include/i_mysql_iface.h	/^    virtual const char* get_last_errstr() const = 0;$/;"	kind:p	line:111	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:() const
+i_mysql_iface::init	include/i_mysql_iface.h	/^    virtual int init(const char* host, unsigned short port, const char* db_name, const char* user, const char* passwd, const char* charset) = 0;$/;"	kind:p	line:44	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(const char* host, unsigned short port, const char* db_name, const char* user, const char* passwd, const char* charset)
+i_mysql_iface::release	include/i_mysql_iface.h	/^    virtual int release() = 0;$/;"	kind:p	line:58	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:()
+i_mysql_iface::select_first_row	include/i_mysql_iface.h	/^    virtual int select_first_row(MYSQL_ROW* row, const char* sql_fmt, ...) = 0;$/;"	kind:p	line:77	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(MYSQL_ROW* row, const char* sql_fmt, ...)
+i_mysql_iface::select_next_row	include/i_mysql_iface.h	/^    virtual MYSQL_ROW select_next_row(bool check_field) = 0;$/;"	kind:p	line:86	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(bool check_field)
+i_mysql_iface::uninit	include/i_mysql_iface.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:51	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:()
+i_net_io_event_handler	include/i_net_io_server.h	/^struct i_net_io_event_handler$/;"	kind:s	line:86	language:C++
+i_net_io_event_handler::on_connection_closed	include/i_net_io_server.h	/^    virtual int on_connection_closed(void *p_net_io_server,$/;"	kind:p	line:138	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+i_net_io_event_handler::on_new_connection	include/i_net_io_server.h	/^    virtual int on_new_connection(void *p_net_io_server,$/;"	kind:p	line:99	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+i_net_io_event_handler::on_recv_data	include/i_net_io_server.h	/^    virtual int on_recv_data(void *p_net_io_server,$/;"	kind:p	line:120	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+i_net_io_event_handler::on_wakeup	include/i_net_io_server.h	/^    virtual int on_wakeup(void *p_net_io_server) = 0;$/;"	kind:p	line:152	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server)
+i_net_io_notifier	include/i_net_io_server.h	/^struct i_net_io_notifier$/;"	kind:s	line:31	language:C++
+i_net_io_notifier::get_eventfd	include/i_net_io_server.h	/^    virtual int get_eventfd() const = 0;$/;"	kind:p	line:71	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:() const
+i_net_io_notifier::got	include/i_net_io_server.h	/^    virtual int got() = 0;$/;"	kind:p	line:59	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::init	include/i_net_io_server.h	/^    virtual int init() = 0;$/;"	kind:p	line:38	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::popup	include/i_net_io_server.h	/^    virtual int popup() = 0;$/;"	kind:p	line:52	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:64	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_notifier::uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:45	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+i_net_io_server	include/i_net_io_server.h	/^struct i_net_io_server$/;"	kind:s	line:158	language:C++
+i_net_io_server.h	include/i_net_io_server.h	1;"	kind:F	line:1	language:C++
+i_net_io_server::broadcast	include/i_net_io_server.h	/^    virtual int broadcast(int id,$/;"	kind:p	line:210	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int date_len, int is_atomic)
+i_net_io_server::close_connection	include/i_net_io_server.h	/^    virtual int close_connection(int id, bool need_ontify) = 0;$/;"	kind:p	line:269	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, bool need_ontify)
+i_net_io_server::do_io	include/i_net_io_server.h	/^    virtual int do_io(int timeout, int cmd) = 0;$/;"	kind:p	line:259	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int timeout, int cmd)
+i_net_io_server::enum_connections	include/i_net_io_server.h	/^    virtual int enum_connections(int *p_buffer,$/;"	kind:p	line:246	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int *p_buffer, int length, int *p_buffer_len)
+i_net_io_server::get_connection_info	include/i_net_io_server.h	/^    virtual int get_connection_info($/;"	kind:p	line:228	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:( int id, char *ip, int ip_buffer_len, int *p_port, int *p_time, int *p_fd, union net_io_storage **pp_storage)
+i_net_io_server::get_last_errno	include/i_net_io_server.h	/^    virtual int get_last_errno() = 0;$/;"	kind:p	line:276	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+i_net_io_server::get_last_errstr	include/i_net_io_server.h	/^    virtual const char *get_last_errstr() = 0;$/;"	kind:p	line:283	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+i_net_io_server::init	include/i_net_io_server.h	/^    virtual int init(const char *ip,$/;"	kind:p	line:172	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(const char *ip, int port, const i_net_io_event_handler *p_event_handler, const i_net_io_notifier *p_net_io_notifier, int id_base, int id_step)
+i_net_io_server::release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:295	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+i_net_io_server::send_data	include/i_net_io_server.h	/^    virtual int send_data(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:188	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+i_net_io_server::send_data_atomic	include/i_net_io_server.h	/^    virtual int send_data_atomic(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:199	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+i_net_io_server::uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:290	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+init	include/c_ip_allow.h	/^	int init(const char *file_path);$/;"	kind:p	line:51	language:C++	class:c_ip_allow	access:public	signature:(const char *file_path)
+init	include/i_ip_allow.h	/^	virtual int init(const char *file_path) = 0;$/;"	kind:p	line:57	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:(const char *file_path)
+init	include/i_mysql_iface.h	/^    virtual int init(const char* host, unsigned short port, const char* db_name, const char* user, const char* passwd, const char* charset) = 0;$/;"	kind:p	line:44	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(const char* host, unsigned short port, const char* db_name, const char* user, const char* passwd, const char* charset)
+init	include/i_net_io_server.h	/^    virtual int init() = 0;$/;"	kind:p	line:38	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+init	include/i_net_io_server.h	/^    virtual int init(const char *ip,$/;"	kind:p	line:172	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(const char *ip, int port, const i_net_io_event_handler *p_event_handler, const i_net_io_notifier *p_net_io_notifier, int id_base, int id_step)
+init	src/c_ip_allow.cpp	/^int c_ip_allow::init(const char *file_path) $/;"	kind:f	line:29	language:C++	class:c_ip_allow	signature:(const char *file_path)
+ip_addr	include/c_ip_allow.h	/^		uint32_t ip_addr;$/;"	kind:m	line:114	language:C++	struct:c_ip_allow::ip_desc_t	access:public
+ip_desc_t	include/c_ip_allow.h	/^	typedef struct ip_desc_t {$/;"	kind:s	line:110	language:C++	class:c_ip_allow	access:private
+ip_desc_t	include/c_ip_allow.h	/^	} ip_desc_t;$/;"	kind:t	line:136	language:C++	class:c_ip_allow	typeref:struct:c_ip_allow::ip_desc_t	access:private
+ip_end	include/c_ip_allow.h	/^		uint32_t ip_end;$/;"	kind:m	line:102	language:C++	struct:c_ip_allow::ip_range_t	access:public
+ip_pos	include/c_ip_allow.h	/^		uint32_t ip_pos;$/;"	kind:m	line:119	language:C++	struct:c_ip_allow::ip_desc_t	access:public
+ip_range_t	include/c_ip_allow.h	/^	typedef struct ip_range_t {$/;"	kind:s	line:93	language:C++	class:c_ip_allow	access:private
+ip_range_t	include/c_ip_allow.h	/^	} ip_range_t;$/;"	kind:t	line:103	language:C++	class:c_ip_allow	typeref:struct:c_ip_allow::ip_range_t	access:private
+ip_start	include/c_ip_allow.h	/^		uint32_t ip_start;$/;"	kind:m	line:97	language:C++	struct:c_ip_allow::ip_range_t	access:public
+is_allowed	include/c_ip_allow.h	/^	int is_allowed(const char *ip_addr, bool check_modified);$/;"	kind:p	line:84	language:C++	class:c_ip_allow	access:public	signature:(const char *ip_addr, bool check_modified)
+is_allowed	include/c_ip_allow.h	/^	int is_allowed(uint32_t ip_addr, bool is_net_seq, bool check_modified);$/;"	kind:p	line:71	language:C++	class:c_ip_allow	access:public	signature:(uint32_t ip_addr, bool is_net_seq, bool check_modified)
+is_allowed	include/i_ip_allow.h	/^	virtual int is_allowed(const char *ip_addr, bool check_modified = false) = 0;$/;"	kind:p	line:88	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:(const char *ip_addr, bool check_modified = false)
+is_allowed	include/i_ip_allow.h	/^	virtual int is_allowed(uint32_t ip_addr, bool is_net_seq = false, bool check_modified = false) = 0;$/;"	kind:p	line:77	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:(uint32_t ip_addr, bool is_net_seq = false, bool check_modified = false)
+is_allowed	src/c_ip_allow.cpp	/^int c_ip_allow::is_allowed(const char *ip_addr, bool check_modified)$/;"	kind:f	line:242	language:C++	class:c_ip_allow	signature:(const char *ip_addr, bool check_modified)
+is_allowed	src/c_ip_allow.cpp	/^int c_ip_allow::is_allowed(uint32_t ip_addr, bool is_net_seq, bool check_modified)$/;"	kind:f	line:208	language:C++	class:c_ip_allow	signature:(uint32_t ip_addr, bool is_net_seq, bool check_modified)
+is_modified	include/c_ip_allow.h	/^	int is_modified();$/;"	kind:p	line:143	language:C++	class:c_ip_allow	access:private	signature:()
+is_modified	src/c_ip_allow.cpp	/^int c_ip_allow::is_modified() $/;"	kind:f	line:194	language:C++	class:c_ip_allow	signature:()
+likely	include/log.h	11;"	kind:d	line:11	language:C++
+local_ip	include/newbench.h	/^    u_int local_ip;$/;"	kind:m	line:53	language:C++	struct:skinfo_struct	access:public
+local_port	include/newbench.h	/^    u_short local_port;$/;"	kind:m	line:54	language:C++	struct:skinfo_struct	access:public
+log.h	include/log.h	1;"	kind:F	line:1	language:C++
+log_init	include/log.h	/^int log_init (const char* dir, int level, u_int size, const char* fix_name);$/;"	kind:p	line:51	language:C++	signature:(const char* dir, int level, u_int size, const char* fix_name)
+log_lvl	include/log.h	/^typedef enum log_lvl {$/;"	kind:g	line:21	language:C++
+log_lvl_alert	include/log.h	/^    log_lvl_alert,$/;"	kind:e	line:25	language:C++	enum:log_lvl
+log_lvl_crit	include/log.h	/^    log_lvl_crit,$/;"	kind:e	line:27	language:C++	enum:log_lvl
+log_lvl_debug	include/log.h	/^    log_lvl_debug,$/;"	kind:e	line:37	language:C++	enum:log_lvl
+log_lvl_emerg	include/log.h	/^    log_lvl_emerg,$/;"	kind:e	line:23	language:C++	enum:log_lvl
+log_lvl_error	include/log.h	/^    log_lvl_error,$/;"	kind:e	line:29	language:C++	enum:log_lvl
+log_lvl_info	include/log.h	/^    log_lvl_info,$/;"	kind:e	line:35	language:C++	enum:log_lvl
+log_lvl_max	include/log.h	/^    log_lvl_max$/;"	kind:e	line:45	language:C++	enum:log_lvl
+log_lvl_notice	include/log.h	/^    log_lvl_notice,$/;"	kind:e	line:33	language:C++	enum:log_lvl
+log_lvl_t	include/log.h	/^} log_lvl_t;$/;"	kind:t	line:46	language:C++	typeref:enum:log_lvl
+log_lvl_trace	include/log.h	/^    log_lvl_trace,$/;"	kind:e	line:40	language:C++	enum:log_lvl
+log_lvl_warning	include/log.h	/^    log_lvl_warning,$/;"	kind:e	line:31	language:C++	enum:log_lvl
+m_config_file_path	include/c_ip_allow.h	/^	char m_config_file_path[MAX_CONFIG_FILE_PATH_LEN];$/;"	kind:m	line:167	language:C++	class:c_ip_allow	access:private
+m_fd	include/c_auto_ptr.h	/^	int m_fd;$/;"	kind:m	line:123	language:C++	class:c_fd_auto_ptr	access:private
+m_ip_range_arr	include/c_ip_allow.h	/^	std::vector<ip_range_t> m_ip_range_arr;$/;"	kind:m	line:177	language:C++	class:c_ip_allow	access:private
+m_last_modify_time	include/c_ip_allow.h	/^	time_t m_last_modify_time;$/;"	kind:m	line:172	language:C++	class:c_ip_allow	access:private
+m_map	include/c_auto_ptr.h	/^	void* m_map;$/;"	kind:m	line:299	language:C++	class:c_mmap_auto_ptr	access:private
+m_mtx	include/c_auto_ptr.h	/^	pthread_mutex_t *m_mtx;$/;"	kind:m	line:353	language:C++	class:c_pthread_mutex_auto_ptr	access:private
+m_ptr	include/c_auto_ptr.h	/^	T* m_ptr;$/;"	kind:m	line:199	language:C++	class:c_obj_auto_ptr	access:private
+m_ptr	include/c_auto_ptr.h	/^	void* m_ptr;$/;"	kind:m	line:248	language:C++	class:c_malloc_auto_ptr	access:private
+m_res	include/c_auto_ptr.h	/^	MYSQL_RES* m_res;$/;"	kind:m	line:74	language:C++	class:c_mysql_res_auto_ptr	access:private
+m_sem	include/c_auto_ptr.h	/^	sem_t *m_sem;$/;"	kind:m	line:402	language:C++	class:c_semaphore_auto_ptr	access:private
+m_sz	include/c_auto_ptr.h	/^	size_t m_sz;$/;"	kind:m	line:304	language:C++	class:c_mmap_auto_ptr	access:private
+mb_echo_ack_t	src/server.cpp	/^}__attribute__((packed)) mb_echo_ack_t;$/;"	kind:t	line:20	language:C++	typeref:struct:__anon7	file:
+mb_echo_req_t	src/server.cpp	/^}__attribute__((packed)) mb_echo_req_t;$/;"	kind:t	line:16	language:C++	typeref:struct:__anon6	file:
+mb_test_filter_ack_t	src/server.cpp	/^}__attribute__((packed)) mb_test_filter_ack_t;$/;"	kind:t	line:58	language:C++	typeref:struct:__anon9	file:
+mb_test_filter_req_t	src/server.cpp	/^}__attribute__((packed)) mb_test_filter_req_t;$/;"	kind:t	line:54	language:C++	typeref:struct:__anon8	file:
+millisleep	include/functions.h	/^int millisleep(int milli_seconds);$/;"	kind:p	line:118	language:C++	signature:(int milli_seconds)
+millisleep	src/functions.cpp	/^int millisleep(int milli_seconds)$/;"	kind:f	line:228	language:C++	signature:(int milli_seconds)
+need_filter	src/server.cpp	/^    int need_filter;$/;"	kind:m	line:51	language:C++	struct:__anon8	file:	access:public
+net_io_server_create	include/i_net_io_server.h	/^int net_io_server_create(i_net_io_server **pp_net_io_server);$/;"	kind:p	line:305	language:C++	signature:(i_net_io_server **pp_net_io_server)
+net_io_storage	include/i_net_io_server.h	/^union net_io_storage {$/;"	kind:u	line:77	language:C++
+net_io_storage::ptr	include/i_net_io_server.h	/^    void *ptr;$/;"	kind:m	line:80	language:C++	union:net_io_storage	access:public
+net_io_storage::u32	include/i_net_io_server.h	/^    uint32_t u32;$/;"	kind:m	line:78	language:C++	union:net_io_storage	access:public
+net_io_storage::u64	include/i_net_io_server.h	/^    uint64_t u64;$/;"	kind:m	line:79	language:C++	union:net_io_storage	access:public
+newbench.h	include/newbench.h	1;"	kind:F	line:1	language:C++
+old_server.sh	old_server.sh	1;"	kind:F	line:1	language:Sh
+on_connection_closed	include/i_net_io_server.h	/^    virtual int on_connection_closed(void *p_net_io_server,$/;"	kind:p	line:138	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_new_connection	include/i_net_io_server.h	/^    virtual int on_new_connection(void *p_net_io_server,$/;"	kind:p	line:99	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, union net_io_storage *p_storage)
+on_recv_data	include/i_net_io_server.h	/^    virtual int on_recv_data(void *p_net_io_server,$/;"	kind:p	line:120	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server, int id, int fd, const char *ip, int port, char *p_data, int data_len, union net_io_storage *p_storage)
+on_wakeup	include/i_net_io_server.h	/^    virtual int on_wakeup(void *p_net_io_server) = 0;$/;"	kind:p	line:152	language:C++	struct:i_net_io_event_handler	access:public	implementation:pure virtual	signature:(void *p_net_io_server)
+operator <	include/c_ip_allow.h	/^		friend bool operator<(ip_desc_t a, ip_desc_t b) {$/;"	kind:f	line:129	language:C++	struct:c_ip_allow::ip_desc_t	access:friend	signature:(ip_desc_t a, ip_desc_t b)
+parse_ip_range	include/c_ip_allow.h	/^	int parse_ip_range(const char *str_buf, ip_range_t *ip_range);$/;"	kind:p	line:162	language:C++	class:c_ip_allow	access:private	signature:(const char *str_buf, ip_range_t *ip_range)
+parse_ip_range	src/c_ip_allow.cpp	/^int c_ip_allow::parse_ip_range(const char *str_buf, ip_range_t *ip_range)$/;"	kind:f	line:130	language:C++	class:c_ip_allow	signature:(const char *str_buf, ip_range_t *ip_range)
+pkg_len	include/do_handle.h	/^	uint32_t pkg_len;$/;"	kind:m	line:26	language:C++	struct:__anon1	access:public
+popup	include/i_net_io_server.h	/^    virtual int popup() = 0;$/;"	kind:p	line:52	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+ptr	include/i_net_io_server.h	/^    void *ptr;$/;"	kind:m	line:80	language:C++	union:net_io_storage	access:public
+ptr_lookout	include/newbench.h	/^    void *ptr_lookout;$/;"	kind:m	line:60	language:C++	struct:skinfo_struct	access:public
+recvtm	include/newbench.h	/^    long long recvtm;$/;"	kind:m	line:50	language:C++	struct:skinfo_struct	access:public
+release	include/i_mysql_iface.h	/^    virtual int release() = 0;$/;"	kind:p	line:58	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:()
+release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:295	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+release	include/i_net_io_server.h	/^    virtual int release() = 0;$/;"	kind:p	line:64	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+remote_ip	include/newbench.h	/^    u_int remote_ip;$/;"	kind:m	line:55	language:C++	struct:skinfo_struct	access:public
+remote_port	include/newbench.h	/^    u_short remote_port;$/;"	kind:m	line:56	language:C++	struct:skinfo_struct	access:public
+select_first_row	include/i_mysql_iface.h	/^    virtual int select_first_row(MYSQL_ROW* row, const char* sql_fmt, ...) = 0;$/;"	kind:p	line:77	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(MYSQL_ROW* row, const char* sql_fmt, ...)
+select_next_row	include/i_mysql_iface.h	/^    virtual MYSQL_ROW select_next_row(bool check_field) = 0;$/;"	kind:p	line:86	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:(bool check_field)
+send_data	include/i_net_io_server.h	/^    virtual int send_data(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:188	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+send_data	include/newbench.h	/^extern int send_data(int connection_id, const char *p_data, int data_len, int is_atomic, int is_broadcast);$/;"	kind:p	line:68	language:C++	signature:(int connection_id, const char *p_data, int data_len, int is_atomic, int is_broadcast)
+send_data_atomic	include/i_net_io_server.h	/^    virtual int send_data_atomic(int id, const char *p_data, int data_len) = 0;$/;"	kind:p	line:199	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:(int id, const char *p_data, int data_len)
+sendtm	include/newbench.h	/^    long long sendtm;$/;"	kind:m	line:51	language:C++	struct:skinfo_struct	access:public
+seq_num	include/do_handle.h	/^	uint32_t seq_num;$/;"	kind:m	line:27	language:C++	struct:__anon1	access:public
+server.cpp	src/server.cpp	1;"	kind:F	line:1	language:C++
+server.sh	server.sh	1;"	kind:F	line:1	language:Sh
+set_common_protocol_header	src/do_handle.cpp	/^int set_common_protocol_header(common_protocol_header_t *h, uint32_t pkg_len, uint32_t seq_num,$/;"	kind:f	line:198	language:C++	signature:(common_protocol_header_t *h, uint32_t pkg_len, uint32_t seq_num, uint16_t cmd_id, uint32_t status_code, uint32_t user_id)
+skinfo_struct	include/newbench.h	/^typedef struct skinfo_struct {$/;"	kind:s	line:47	language:C++
+skinfo_struct::connection_id	include/newbench.h	/^    int connection_id;$/;"	kind:m	line:59	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::local_ip	include/newbench.h	/^    u_int local_ip;$/;"	kind:m	line:53	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::local_port	include/newbench.h	/^    u_short local_port;$/;"	kind:m	line:54	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::ptr_lookout	include/newbench.h	/^    void *ptr_lookout;$/;"	kind:m	line:60	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::recvtm	include/newbench.h	/^    long long recvtm;$/;"	kind:m	line:50	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::remote_ip	include/newbench.h	/^    u_int remote_ip;$/;"	kind:m	line:55	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::remote_port	include/newbench.h	/^    u_short remote_port;$/;"	kind:m	line:56	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::sendtm	include/newbench.h	/^    long long sendtm;$/;"	kind:m	line:51	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::sockfd	include/newbench.h	/^    int sockfd;$/;"	kind:m	line:48	language:C++	struct:skinfo_struct	access:public
+skinfo_struct::storage	include/newbench.h	/^    union net_io_storage storage;$/;"	kind:m	line:58	language:C++	struct:skinfo_struct	typeref:union:skinfo_struct::net_io_storage	access:public
+skinfo_struct::type	include/newbench.h	/^    int type;$/;"	kind:m	line:49	language:C++	struct:skinfo_struct	access:public
+skinfo_t	include/newbench.h	/^}skinfo_t;$/;"	kind:t	line:61	language:C++	typeref:struct:skinfo_struct
+sleep_sec	src/server.cpp	/^    int sleep_sec;$/;"	kind:m	line:52	language:C++	struct:__anon8	file:	access:public
+sockfd	include/newbench.h	/^    int sockfd;$/;"	kind:m	line:48	language:C++	struct:skinfo_struct	access:public
+status_code	include/do_handle.h	/^	uint32_t status_code;$/;"	kind:m	line:29	language:C++	struct:__anon1	access:public
+storage	include/newbench.h	/^    union net_io_storage storage;$/;"	kind:m	line:58	language:C++	struct:skinfo_struct	typeref:union:skinfo_struct::net_io_storage	access:public
+strip_space	include/functions.h	/^const char* strip_space(char* buf);$/;"	kind:p	line:131	language:C++	signature:(char* buf)
+strip_space	src/functions.cpp	/^const char* strip_space(char* buf)$/;"	kind:f	line:248	language:C++	signature:(char* buf)
+trim_space	include/c_ip_allow.h	/^	int trim_space(char *str_buf);$/;"	kind:p	line:152	language:C++	class:c_ip_allow	access:private	signature:(char *str_buf)
+trim_space	src/c_ip_allow.cpp	/^int c_ip_allow::trim_space(char *str_buf) $/;"	kind:f	line:104	language:C++	class:c_ip_allow	signature:(char *str_buf)
+type	include/newbench.h	/^    int type;$/;"	kind:m	line:49	language:C++	struct:skinfo_struct	access:public
+u32	include/i_net_io_server.h	/^    uint32_t u32;$/;"	kind:m	line:78	language:C++	union:net_io_storage	access:public
+u64	include/i_net_io_server.h	/^    uint64_t u64;$/;"	kind:m	line:79	language:C++	union:net_io_storage	access:public
+uninit	include/c_ip_allow.h	/^	int uninit();$/;"	kind:p	line:58	language:C++	class:c_ip_allow	access:public	signature:()
+uninit	include/i_ip_allow.h	/^	virtual int uninit() = 0;$/;"	kind:p	line:64	language:C++	class:i_ip_allow	access:public	implementation:pure virtual	signature:()
+uninit	include/i_mysql_iface.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:51	language:C++	struct:i_mysql_iface	access:public	implementation:pure virtual	signature:()
+uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:290	language:C++	struct:i_net_io_server	access:public	implementation:pure virtual	signature:()
+uninit	include/i_net_io_server.h	/^    virtual int uninit() = 0;$/;"	kind:p	line:45	language:C++	struct:i_net_io_notifier	access:public	implementation:pure virtual	signature:()
+uninit	src/c_ip_allow.cpp	/^int c_ip_allow::uninit() $/;"	kind:f	line:189	language:C++	class:c_ip_allow	signature:()
+unlikely	include/log.h	14;"	kind:d	line:14	language:C++
+user_id	include/do_handle.h	/^	uint32_t user_id;$/;"	kind:m	line:30	language:C++	struct:__anon1	access:public
+val	src/server.cpp	/^    char val[32];$/;"	kind:m	line:53	language:C++	struct:__anon8	file:	access:public
+val	src/server.cpp	/^    char val[32];$/;"	kind:m	line:57	language:C++	struct:__anon9	file:	access:public
+value	src/server.cpp	/^    char value[256];$/;"	kind:m	line:15	language:C++	struct:__anon6	file:	access:public
+value	src/server.cpp	/^    char value[256];$/;"	kind:m	line:19	language:C++	struct:__anon7	file:	access:public
+verify_chnl_info_t	include/do_handle.h	/^}verify_chnl_info_t;$/;"	kind:t	line:37	language:C++	typeref:struct:__anon2
+verify_chnlhash32	include/do_handle.h	/^int verify_chnlhash32(const chnlhash32_vfy_header_t* vfh, const char* key, const char* data, int data_len);$/;"	kind:p	line:148	language:C++	signature:(const chnlhash32_vfy_header_t* vfh, const char* key, const char* data, int data_len)
+verify_chnlhash32	src/do_handle.cpp	/^int verify_chnlhash32(const chnlhash32_vfy_header_t* vfh, const char* key, const char* data, int data_len)$/;"	kind:f	line:411	language:C++	signature:(const chnlhash32_vfy_header_t* vfh, const char* key, const char* data, int data_len)
+vfy_code	include/do_handle.h	/^	uint8_t vfy_code[32];$/;"	kind:m	line:122	language:C++	struct:__anon4	access:public
+write_log	include/log.h	/^void write_log (int lvl, char const* fmt, ...);$/;"	kind:p	line:53	language:C++	signature:(int lvl, char const* fmt, ...)
+~c_fd_auto_ptr	include/c_auto_ptr.h	/^	~c_fd_auto_ptr();$/;"	kind:p	line:93	language:C++	class:c_fd_auto_ptr	access:public	signature:()
+~c_fd_auto_ptr	src/c_auto_ptr.cpp	/^c_fd_auto_ptr::~c_fd_auto_ptr()$/;"	kind:f	line:62	language:C++	class:c_fd_auto_ptr	signature:()
+~c_ip_allow	include/c_ip_allow.h	/^	~c_ip_allow();$/;"	kind:p	line:42	language:C++	class:c_ip_allow	access:public	signature:()
+~c_ip_allow	src/c_ip_allow.cpp	/^c_ip_allow::~c_ip_allow()$/;"	kind:f	line:24	language:C++	class:c_ip_allow	signature:()
+~c_malloc_auto_ptr	include/c_auto_ptr.h	/^	~c_malloc_auto_ptr();$/;"	kind:p	line:218	language:C++	class:c_malloc_auto_ptr	access:public	signature:()
+~c_malloc_auto_ptr	src/c_auto_ptr.cpp	/^c_malloc_auto_ptr::~c_malloc_auto_ptr()$/;"	kind:f	line:98	language:C++	class:c_malloc_auto_ptr	signature:()
+~c_mmap_auto_ptr	include/c_auto_ptr.h	/^	~c_mmap_auto_ptr();$/;"	kind:p	line:269	language:C++	class:c_mmap_auto_ptr	access:public	signature:()
+~c_mmap_auto_ptr	src/c_auto_ptr.cpp	/^c_mmap_auto_ptr::~c_mmap_auto_ptr()$/;"	kind:f	line:135	language:C++	class:c_mmap_auto_ptr	signature:()
+~c_mysql_res_auto_ptr	include/c_auto_ptr.h	/^	~c_mysql_res_auto_ptr();$/;"	kind:p	line:44	language:C++	class:c_mysql_res_auto_ptr	access:public	signature:()
+~c_mysql_res_auto_ptr	src/c_auto_ptr.cpp	/^c_mysql_res_auto_ptr::~c_mysql_res_auto_ptr()$/;"	kind:f	line:27	language:C++	class:c_mysql_res_auto_ptr	signature:()
+~c_obj_auto_ptr	include/c_auto_ptr.h	/^	~c_obj_auto_ptr()$/;"	kind:f	line:147	language:C++	class:c_obj_auto_ptr	access:public	signature:()
+~c_pthread_mutex_auto_ptr	include/c_auto_ptr.h	/^	~c_pthread_mutex_auto_ptr();$/;"	kind:p	line:323	language:C++	class:c_pthread_mutex_auto_ptr	access:public	signature:()
+~c_pthread_mutex_auto_ptr	src/c_auto_ptr.cpp	/^c_pthread_mutex_auto_ptr::~c_pthread_mutex_auto_ptr()$/;"	kind:f	line:171	language:C++	class:c_pthread_mutex_auto_ptr	signature:()
+~c_semaphore_auto_ptr	include/c_auto_ptr.h	/^	~c_semaphore_auto_ptr();$/;"	kind:p	line:372	language:C++	class:c_semaphore_auto_ptr	access:public	signature:()
+~c_semaphore_auto_ptr	src/c_auto_ptr.cpp	/^c_semaphore_auto_ptr::~c_semaphore_auto_ptr()$/;"	kind:f	line:204	language:C++	class:c_semaphore_auto_ptr	signature:()
+~i_ip_allow	include/i_ip_allow.h	/^	virtual ~i_ip_allow() {};$/;"	kind:f	line:48	language:C++	class:i_ip_allow	access:public	implementation:virtual	signature:()

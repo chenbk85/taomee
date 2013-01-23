@@ -1,0 +1,383 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: i_mysql_iface结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>i_mysql_iface结构参考</h1><!-- doxytag: class="i_mysql_iface" -->mysql接口  
+<a href="#_details">更多...</a>
+<p>
+<div class="dynheader">
+继承图，类i_mysql_iface</div>
+<div class="dynsection">
+<p><center><img src="structi__mysql__iface__inherit__graph.png" border="0" usemap="#i__mysql__iface__inherit__map" alt="Inheritance graph"></center>
+<map name="i__mysql__iface__inherit__map">
+<area shape="rect" href="classc__mysql__iface.html" title="mysql接口的实现类" alt="" coords="5,261,141,629"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+
+<p>
+<a href="structi__mysql__iface-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#0654173ff27704d541814e754afa0933">execsql</a> (const char *sql_fmt,...)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">执行指定的 UPDATE 或 DELETE 等更新语句，并返回影响的行数  <a href="#0654173ff27704d541814e754afa0933"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual MYSQL *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#b4d8aa993a32f1cec0eef0f6ea7c09dd">get_conn</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取 Mysql 指针  <a href="#b4d8aa993a32f1cec0eef0f6ea7c09dd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#650c9ceb73b81645cf6a13584b87ef2e">get_last_errno</a> () const =0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取最后一次操作的错误码  <a href="#650c9ceb73b81645cf6a13584b87ef2e"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual const char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#56db96965b461ab0d59cb8de03a0f4ff">get_last_errstr</a> () const =0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获取最后一次操作的错误字符串  <a href="#56db96965b461ab0d59cb8de03a0f4ff"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#b9101cfc135925b1a7a93a548ae4101c">init</a> (const char *host, unsigned short port, const char *db_name, const char *user, const char *passwd, const char *charset)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化接口  <a href="#b9101cfc135925b1a7a93a548ae4101c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#14add87e9fc19da40c85a71b5c987f0f">release</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">清除资源  <a href="#14add87e9fc19da40c85a71b5c987f0f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#5067259870ce27e2cfad7e65a5b0bd7c">select_first_row</a> (MYSQL_ROW *row, const char *sql_fmt,...)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">执行指定的 SELECT 等查询语句，并返回第一行的结果  <a href="#5067259870ce27e2cfad7e65a5b0bd7c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual MYSQL_ROW&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#8e578d26aab86d409553beeff5f34bdb">select_next_row</a> (bool check_field)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">用于执行完 select_first_row 以后，获取下一行数据  <a href="#8e578d26aab86d409553beeff5f34bdb"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__mysql__iface.html#3f3a90b50ca5afaad5e2828f808811dc">uninit</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">反初始化接口  <a href="#3f3a90b50ca5afaad5e2828f808811dc"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+mysql接口 <hr><h2>成员函数文档</h2>
+<a class="anchor" name="0654173ff27704d541814e754afa0933"></a><!-- doxytag: member="i_mysql_iface::execsql" ref="0654173ff27704d541814e754afa0933" args="(const char *sql_fmt,...)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_mysql_iface::execsql           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>sql_fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+执行指定的 UPDATE 或 DELETE 等更新语句，并返回影响的行数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>sql_fmt</em>&nbsp;</td><td>SQL 语句的可变参格式字符串</td></tr>
+  </table>
+</dl>
+<dl class="note" compact><dt><b>注解:</b></dt><dd>这个函数用于执行UPDATE 及 DELETE 等更新语句，类似 SELECT 等需要获取数据的情况，请试用 select_first_row 函数</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>&gt;=0 更新语句影响的行数; &lt;0 失败 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#3447abe20261c1a8ebaf0c25dc96502f">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="b4d8aa993a32f1cec0eef0f6ea7c09dd"></a><!-- doxytag: member="i_mysql_iface::get_conn" ref="b4d8aa993a32f1cec0eef0f6ea7c09dd" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MYSQL* i_mysql_iface::get_conn           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取 Mysql 指针 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>!=NULL 成功; =NULL 失败 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#a9151834a42c9abf813680f6caec6cba">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="650c9ceb73b81645cf6a13584b87ef2e"></a><!-- doxytag: member="i_mysql_iface::get_last_errno" ref="650c9ceb73b81645cf6a13584b87ef2e" args="() const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_mysql_iface::get_last_errno           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取最后一次操作的错误码 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>最后一次操作的错误码 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#8a56e99b3bf8637c36c415833e7fb75c">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="56db96965b461ab0d59cb8de03a0f4ff"></a><!-- doxytag: member="i_mysql_iface::get_last_errstr" ref="56db96965b461ab0d59cb8de03a0f4ff" args="() const =0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const char* i_mysql_iface::get_last_errstr           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td> const<code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获取最后一次操作的错误字符串 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>最后一次操作的错误字符串 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#870c5eead9117150eb7d3a92619f615a">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="b9101cfc135925b1a7a93a548ae4101c"></a><!-- doxytag: member="i_mysql_iface::init" ref="b9101cfc135925b1a7a93a548ae4101c" args="(const char *host, unsigned short port, const char *db_name, const char *user, const char *passwd, const char *charset)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_mysql_iface::init           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>host</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned short&nbsp;</td>
+          <td class="paramname"> <em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>db_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>passwd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>charset</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化接口 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>host</em>&nbsp;</td><td>数据库主机名称 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>port</em>&nbsp;</td><td>数据库主机端口 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>db_name</em>&nbsp;</td><td>数据库名称 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>user</em>&nbsp;</td><td>数据库用户名 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>passwd</em>&nbsp;</td><td>数据库密码 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>charset</em>&nbsp;</td><td>连接数据库时试用的字符集</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0 成功; &lt;0 失败 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#150a6fe15d51b2ae8d9f42cc0de92b60">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="14add87e9fc19da40c85a71b5c987f0f"></a><!-- doxytag: member="i_mysql_iface::release" ref="14add87e9fc19da40c85a71b5c987f0f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_mysql_iface::release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+清除资源 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0 成功; &lt;0 失败 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#c99e8595a4f92eca49dcfea91238dd6b">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="5067259870ce27e2cfad7e65a5b0bd7c"></a><!-- doxytag: member="i_mysql_iface::select_first_row" ref="5067259870ce27e2cfad7e65a5b0bd7c" args="(MYSQL_ROW *row, const char *sql_fmt,...)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_mysql_iface::select_first_row           </td>
+          <td>(</td>
+          <td class="paramtype">MYSQL_ROW *&nbsp;</td>
+          <td class="paramname"> <em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>sql_fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+执行指定的 SELECT 等查询语句，并返回第一行的结果 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>row</em>&nbsp;</td><td>用于保存返回的第一行 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>sql_fmt</em>&nbsp;</td><td>SQL 语句的可变参格式字符串</td></tr>
+  </table>
+</dl>
+<dl class="note" compact><dt><b>注解:</b></dt><dd>这个函数用于执行需要获取数据的 SQL 语句，类似 UPDATE 及 DELETE 等更新语句请试用 execsql 函数</dd></dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>&gt;=0 满足 SQL 查询的记录条数; &lt;0 失败 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#3049736fb6e574e8f987f71a9c110dbf">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="8e578d26aab86d409553beeff5f34bdb"></a><!-- doxytag: member="i_mysql_iface::select_next_row" ref="8e578d26aab86d409553beeff5f34bdb" args="(bool check_field)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual MYSQL_ROW i_mysql_iface::select_next_row           </td>
+          <td>(</td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>check_field</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+用于执行完 select_first_row 以后，获取下一行数据 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>check_field</em>&nbsp;</td><td>是否检查各个字段是否为 NULL，若 = true，则只要发现一个字段为 NULL，就会返回 NULL</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>!=NULL 行数据; =NULL 没有可以获取的行 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#bbca56dd5077717a2bff9375fd119680">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="3f3a90b50ca5afaad5e2828f808811dc"></a><!-- doxytag: member="i_mysql_iface::uninit" ref="3f3a90b50ca5afaad5e2828f808811dc" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_mysql_iface::uninit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+反初始化接口 
+<p>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0 成功; &lt;0 失败 </dd></dl>
+
+<p>在<a class="el" href="classc__mysql__iface.html#ed5d142f814e05f62d1273216d1ae405">c_mysql_iface</a>内被实现。</p>
+
+</div>
+</div><p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/mysql-iface-1.0.0/<a class="el" href="i__mysql__iface_8h.html">i_mysql_iface.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:05 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

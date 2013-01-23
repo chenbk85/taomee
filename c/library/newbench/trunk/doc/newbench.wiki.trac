@@ -1,0 +1,155 @@
+== API DOCUMENT FOR NEWBENCH ==
+
+== INTRO ==
+newbench 是一套方便开发人员快速进行同步网络服务器开发的平台。
+== API ==
+使用newbnech开发网络服务器需要实现以下部分接口以完成功能
+
+1. 初始化接口，主进程，网络进程以及工作进程都会再各自进程初始化的时候进行调用，可以在代码中根据proc_type判断是哪类进程进行的调用。
+
+{{{
+#!cpp
+int handle_init(int argc, char **argv, int proc_type);
+}}}
+
+    参数:
+    * argc 参数个数
+    * argv 指向参数保存的地址
+    * proc_type 进程类型
+
+    返回:
+    * 0-成功 other-失败
+
+2. 进程终止时反初始化调用，同handle_init,编码时，可以根据proc_type判断，当前调用此接口的是在哪类进程内。
+
+{{{
+#!cpp
+void *handle_fini(int proc_type);
+}}}
+
+    参数:
+    * proc_type 进行类型
+
+    返回:
+    * 无
+
+3. 仅在网络进程中进行调用。当客户端和服务端建立连接后进行调用,用户根据客户端相关信息可以控制是否与客户端保持连接，或者关闭连接。
+
+{{{
+#!cpp
+int *handle_open(char **, int *, skinfo_t *p_skinfo);
+}}}
+
+    参数:
+    * 参数1 暂无意义
+    * 参数2 暂无意义
+    * p_skinfo 指向连接客户端的信息结构体
+
+    返回:
+    * 0-成功，建立连接 -1-失败，断开连接
+
+4. 仅在网络进程中调用。屏障起开启以后，分类方法回调函数。当判断数据包如果进行分发的时候，会调用此函数，根据返回值判断如何归类分发。
+
+{{{
+#!cpp
+int *handle_dispatch(const char *p_buf, int buf_len, int pnum, int *p_key);
+}}}
+
+    参数:
+    * p_buf 数据包缓冲区
+    * buf_len 数据包长度
+    * proc_num 进程数量(暂无意义)
+    * p_key 指向key地址
+
+    返回:
+    * 0-不屏蔽 <0-出错 >0-屏蔽
+
+5. 仅在网络进程中调用。收到数据后进行回调，用户在其中实现判断当前网络数据包是否异常、不完整、完整。
+
+{{{
+#!cpp
+int *handle_input(const char *p_recv, int recv_len,
+                  char **pp_send,
+                  int *p_send_len,
+                  skinfo_t *p_skinfo);
+}}}
+
+    参数:
+    * p_recv 指向收到的数据缓冲区
+    * recv_len 收到的数据长度
+    * pp_send 指向要发送的数据的缓冲区的头指针
+    * p_send_len 指向要发送数据的缓冲区长度
+    * p_skinfo 指向连接客户端的信息结构体
+
+    返回:
+    * -1-异常，并终止此次会话 0-需要继续接收 >0-数据包应有长度
+
+6. 仅在网络进程中调用。收到完整数据，并压入环形队列后进行回调。
+
+{{{
+#!cpp
+int (* handle_input_complete)(const char *p_recv,
+                              int recv_len,
+                              char **pp_send,
+                              int *p_send_len,
+                              skinfo_t *p_skinfo,
+                              int flag);
+}}}
+
+    参数:
+    * p_recv 指向收到的数据缓冲区
+    * recv_len 收到的数据长度
+    * pp_send 指向要发送的数据的缓冲区的头指针
+    * p_send_len 指向要发送数据的缓冲区长度
+    * p_skinfo 指向连接客户端的信息结构体
+    * flag 数据是否成功压入了环形队列 1-已压入 0-未压入
+
+    返回:
+    * 暂无意义
+
+7. 仅在网络进程中调用。当客户端与服务器断开连接后进行调用。
+
+{{{
+#!cpp
+int *handle_close(const skinfo_t *p_skinfo);
+}}}
+
+    参数:
+    * p_skinfo 指向连接客户端的信息结构体
+
+    返回:
+    * 0-成功 -1-失败
+
+8. 在工作进程中进行调用。当有完整数据包时，平台会调用此接口进行数据包处理。
+
+{{{
+#!cpp
+int *handle_process(char *p_recv,
+                    int recv_len,
+                    char **pp_send,
+                    int *p_send_len,
+                    skinfo_t *p_skinfo);
+}}}
+
+    参数:
+    * p_recv 收到的数据
+    * recv_len 收到的数据
+    * pp_send 指向要发送的数据的指针
+    * p_send_len 指向要发送的数据的长度
+    * p_skinfo 指向客户端连接信息结构
+
+    返回:
+    * 0-成功 other-关闭客户端
+
+9. 在工作进程中进行调用。每当平台工作进程醒来调用，可用来实现定期执行操作。
+
+{{{
+#!cpp
+int *handle_schedule();
+}}}
+
+    参数:
+    * 无
+
+    返回:
+    * 无

@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: i_net_client类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>i_net_client类参考</h1><!-- doxytag: class="i_net_client" -->本接口提供对网络客户端的封装, 其中do_io是进行的实际的网络接收于发送  
+<a href="#_details">更多...</a>
+<p>
+<div class="dynheader">
+继承图，类i_net_client</div>
+<div class="dynsection">
+<p><center><img src="structi__net__client__inherit__graph.png" border="0" usemap="#i__net__client__inherit__map" alt="Inheritance graph"></center>
+<map name="i__net__client__inherit__map">
+<area shape="rect" href="classc__net__client__impl.html" title="TCP网络封装的实现类" alt="" coords="5,245,224,725"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+
+<p>
+<a href="classi__net__client-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#10bf7e0191880b1ac4f735cec823eb1f">do_io</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">进行实际的网络发送于接收  <a href="#10bf7e0191880b1ac4f735cec823eb1f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#da665651c5d156f8572350742e3d316f">init</a> (int server_addr, int server_port, int timeout)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化接口  <a href="#da665651c5d156f8572350742e3d316f"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#28c326196274866fd2983b83382a4d58">ping</a> (int timeout=0)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">提供到服务器的重连功能  <a href="#28c326196274866fd2983b83382a4d58"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#ce6261d4c5f1c593f58ef98c7242277d">recv_data</a> (char *p_recv_buffer, int buffer_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接收数据，将底层缓冲中的数据拷贝到用户的缓存空间  <a href="#ce6261d4c5f1c593f58ef98c7242277d"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#f40cfddb24f9526a0704be8a33d95def">release</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放实例  <a href="#f40cfddb24f9526a0704be8a33d95def"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#1bc1f6e02e12e5bc04c49102f6ea3bbe">send_data</a> (char *p_data, int data_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发送数据接口，将数据放到底层缓冲，如果缓冲区为空，就直接发送到网路中去  <a href="#1bc1f6e02e12e5bc04c49102f6ea3bbe"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#38613529c78e908e6920a44373942703">send_data_atomic</a> (char *p_data, int data_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">接口功能同上，只是该接口是原子操作，上层传下来的数据要么全部发送成功，要么全部失败  <a href="#38613529c78e908e6920a44373942703"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__client.html#ab41786093c28bf1d01a93258f83b2de">uninit</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">反初始化  <a href="#ab41786093c28bf1d01a93258f83b2de"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+本接口提供对网络客户端的封装, 其中do_io是进行的实际的网络接收于发送 <hr><h2>成员函数文档</h2>
+<a class="anchor" name="10bf7e0191880b1ac4f735cec823eb1f"></a><!-- doxytag: member="i_net_client::do_io" ref="10bf7e0191880b1ac4f735cec823eb1f" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::do_io           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+进行实际的网络发送于接收 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@return</em>&nbsp;</td><td>0success -1failed </td></tr>
+  </table>
+</dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#b335ea651fa5f671d82be2299204fcfb">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="da665651c5d156f8572350742e3d316f"></a><!-- doxytag: member="i_net_client::init" ref="da665651c5d156f8572350742e3d316f" args="(int server_addr, int server_port, int timeout)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::init           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>server_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>server_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timeout</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化接口 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>server_addr</em>&nbsp;</td><td>要连接的服务端IP地址 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>server_port</em>&nbsp;</td><td>要连接的服务端的端口号 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>timeout</em>&nbsp;</td><td>连接超时时间，单位毫秒 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#8b5fcf41ec8718e33cea00fc05dc9cb9">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="28c326196274866fd2983b83382a4d58"></a><!-- doxytag: member="i_net_client::ping" ref="28c326196274866fd2983b83382a4d58" args="(int timeout=0)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::ping           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>timeout</em> = <code>0</code>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+提供到服务器的重连功能 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>timeout超时时间，默认值0表示取初始化时提供的超时时间</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#abc450cc1bfab8e67af489428f2883f2">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="ce6261d4c5f1c593f58ef98c7242277d"></a><!-- doxytag: member="i_net_client::recv_data" ref="ce6261d4c5f1c593f58ef98c7242277d" args="(char *p_recv_buffer, int buffer_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::recv_data           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_recv_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+接收数据，将底层缓冲中的数据拷贝到用户的缓存空间 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_recv_buffer</em>&nbsp;</td><td>用户提供的接收缓存 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>用户提供的接收缓存的长度 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>-1failed &gt;=0 返回的数据长度 </dd></dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#03df7c1e132110be5ffc0b0a4ddec9bb">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="f40cfddb24f9526a0704be8a33d95def"></a><!-- doxytag: member="i_net_client::release" ref="f40cfddb24f9526a0704be8a33d95def" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放实例 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@return</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#b588716abfaf71209be6770d9adf65bf">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="1bc1f6e02e12e5bc04c49102f6ea3bbe"></a><!-- doxytag: member="i_net_client::send_data" ref="1bc1f6e02e12e5bc04c49102f6ea3bbe" args="(char *p_data, int data_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::send_data           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+发送数据接口，将数据放到底层缓冲，如果缓冲区为空，就直接发送到网路中去 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_data</em>&nbsp;</td><td>指向要发送的数据 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_len</em>&nbsp;</td><td>要发送的数据的长度 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#bd11e3dad9cfd3fdc5214e696671c8a9">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="38613529c78e908e6920a44373942703"></a><!-- doxytag: member="i_net_client::send_data_atomic" ref="38613529c78e908e6920a44373942703" args="(char *p_data, int data_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::send_data_atomic           </td>
+          <td>(</td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+接口功能同上，只是该接口是原子操作，上层传下来的数据要么全部发送成功，要么全部失败 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参数通商</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#f822bbd25bf79cf79334fae9c581b244">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="ab41786093c28bf1d01a93258f83b2de"></a><!-- doxytag: member="i_net_client::uninit" ref="ab41786093c28bf1d01a93258f83b2de" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_client::uninit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+反初始化 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@return</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+<p>在<a class="el" href="classc__net__client__impl.html#59ce4662ec1b60e5474d4e061f7a5e4b">c_net_client_impl</a>内被实现。</p>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/net-client-1.0.0/<a class="el" href="i__net__client_8h.html">i_net_client.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:05 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

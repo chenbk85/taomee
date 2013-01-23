@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: i_net_io_server结构参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>i_net_io_server结构参考</h1><!-- doxytag: class="i_net_io_server" -->提供网络服务的实例  
+<a href="#_details">更多...</a>
+<p>
+<div class="dynheader">
+继承图，类i_net_io_server</div>
+<div class="dynsection">
+<p><center><img src="structi__net__io__server__inherit__graph.png" border="0" usemap="#i__net__io__server__inherit__map" alt="Inheritance graph"></center>
+<map name="i__net__io__server__inherit__map">
+<area shape="rect" href="classc__net__io__server.html" title="TCP网络服务端的封装实现类" alt="" coords="5,261,160,645"></map>
+<center><font size="2">[<a href="graph_legend.html">图例</a>]</font></center></div>
+
+<p>
+<a href="structi__net__io__server-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有成员</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#f6c143d2277d2b6b2760bea94d1210b8">close_connection</a> (const int connection_id, bool b_notify)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">关闭连接  <a href="#f6c143d2277d2b6b2760bea94d1210b8"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#c96c17ed1327463bdf70bb58b7bee9cd">do_io</a> (const int time_interval, const int flags)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">进行实际的网络IO操作  <a href="#c96c17ed1327463bdf70bb58b7bee9cd"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#ad68111e220e0ad92c366611508d1f20">enum_connections</a> (int *p_recv_buffer, int buffer_len, int *p_data_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">枚举所有的连接ID  <a href="#ad68111e220e0ad92c366611508d1f20"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#a1ef7b1cad5111829e93a3f2a23b302c">get_connection_info</a> (const int connection_id, char *server_ip, int ip_buffer_len, int *p_port, int *p_connected_time)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">获得连接信息  <a href="#a1ef7b1cad5111829e93a3f2a23b302c"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#e56f9099bcbc26c48adc786b361bf3ec">init</a> (const char *listen_ip, const int listen_port, const <a class="el" href="structi__net__io__server__events.html">i_net_io_server_events</a> *p_events)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">初始化函数  <a href="#e56f9099bcbc26c48adc786b361bf3ec"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#5f2ac3bb27db53bf47fc0bf2ef868547">release</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">释放实例  <a href="#5f2ac3bb27db53bf47fc0bf2ef868547"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#1416267d267b7793cac8a61948ca2d81">send_data</a> (const int connection_id, char *p_data, const int data_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发送数据，将数据拷贝到相应连接的缓冲区,并没有实际发送。拷贝数据的长度为min(data_len,缓冲区空闲长度)  <a href="#1416267d267b7793cac8a61948ca2d81"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#6dd9951945c22d42ea3494b9fca0bdd3">send_data_atomic</a> (const int connection_id, char *p_data, const int data_len)=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">发送数据，将数据拷贝到发送缓冲区，如果缓冲去无足够空间，就不拷贝  <a href="#6dd9951945c22d42ea3494b9fca0bdd3"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structi__net__io__server.html#a816b4501b92a61b1ad314e0a6a522e8">uninit</a> ()=0</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">反初始化  <a href="#a816b4501b92a61b1ad314e0a6a522e8"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+提供网络服务的实例 <hr><h2>成员函数文档</h2>
+<a class="anchor" name="f6c143d2277d2b6b2760bea94d1210b8"></a><!-- doxytag: member="i_net_io_server::close_connection" ref="f6c143d2277d2b6b2760bea94d1210b8" args="(const int connection_id, bool b_notify)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::close_connection           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&nbsp;</td>
+          <td class="paramname"> <em>b_notify</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+关闭连接 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>要关闭的连接ID </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>b_notify</em>&nbsp;</td><td>关闭连接后是否通知上层 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#1f6c47ba9b507c13eaa743325174c5f9">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="c96c17ed1327463bdf70bb58b7bee9cd"></a><!-- doxytag: member="i_net_io_server::do_io" ref="c96c17ed1327463bdf70bb58b7bee9cd" args="(const int time_interval, const int flags)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::do_io           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>time_interval</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>flags</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+进行实际的网络IO操作 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>time_inteval</em>&nbsp;</td><td>超时时间,单位毫秒 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>flags</em>&nbsp;</td><td>标志位，用于标示需要监听哪些事件 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#cb71405262cb0e79e2da560a1ef80416">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="ad68111e220e0ad92c366611508d1f20"></a><!-- doxytag: member="i_net_io_server::enum_connections" ref="ad68111e220e0ad92c366611508d1f20" args="(int *p_recv_buffer, int buffer_len, int *p_data_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::enum_connections           </td>
+          <td>(</td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_recv_buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+枚举所有的连接ID 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>p_recv_buffer</em>&nbsp;</td><td>存放所有的连接信息id </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>buffer_len</em>&nbsp;</td><td>存放连接缓冲区的长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_data_len</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#39e5d7df86ed6e224ef2d7d03cd1fa5a">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="a1ef7b1cad5111829e93a3f2a23b302c"></a><!-- doxytag: member="i_net_io_server::get_connection_info" ref="a1ef7b1cad5111829e93a3f2a23b302c" args="(const int connection_id, char *server_ip, int ip_buffer_len, int *p_port, int *p_connected_time)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::get_connection_info           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>server_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>ip_buffer_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&nbsp;</td>
+          <td class="paramname"> <em>p_connected_time</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+获得连接信息 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>连接ID </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>server_ip</em>&nbsp;</td><td>存放对端的IP </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>ip_buffer_len</em>&nbsp;</td><td>对端IP地址长度 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_port</em>&nbsp;</td><td>对端端口 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_connected_time</em>&nbsp;</td><td>此连接的时间 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#03fbfbdf28cf441f3564c17c1b678560">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="e56f9099bcbc26c48adc786b361bf3ec"></a><!-- doxytag: member="i_net_io_server::init" ref="e56f9099bcbc26c48adc786b361bf3ec" args="(const char *listen_ip, const int listen_port, const i_net_io_server_events *p_events)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::init           </td>
+          <td>(</td>
+          <td class="paramtype">const char *&nbsp;</td>
+          <td class="paramname"> <em>listen_ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>listen_port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structi__net__io__server__events.html">i_net_io_server_events</a> *&nbsp;</td>
+          <td class="paramname"> <em>p_events</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+初始化函数 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>listen_ip</em>&nbsp;</td><td>服务端IP地址 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>listen_port</em>&nbsp;</td><td>服务端端口号 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_events</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1 failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#f85696c90ecd2db9c576260d80a6e309">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="5f2ac3bb27db53bf47fc0bf2ef868547"></a><!-- doxytag: member="i_net_io_server::release" ref="5f2ac3bb27db53bf47fc0bf2ef868547" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::release           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+释放实例 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@return</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#3dd8f933902025718146c797d948fee7">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="1416267d267b7793cac8a61948ca2d81"></a><!-- doxytag: member="i_net_io_server::send_data" ref="1416267d267b7793cac8a61948ca2d81" args="(const int connection_id, char *p_data, const int data_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::send_data           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+发送数据，将数据拷贝到相应连接的缓冲区,并没有实际发送。拷贝数据的长度为min(data_len,缓冲区空闲长度) 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>connection_id</em>&nbsp;</td><td>代表连接的ID </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>p_data</em>&nbsp;</td><td>要发送的数据 </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data_len</em>&nbsp;</td><td>要发送的数据的长度 </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>&gt;=0 实际发送的字节数 -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#e7907307ceaaa742408bc7342dc378a6">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="6dd9951945c22d42ea3494b9fca0bdd3"></a><!-- doxytag: member="i_net_io_server::send_data_atomic" ref="6dd9951945c22d42ea3494b9fca0bdd3" args="(const int connection_id, char *p_data, const int data_len)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::send_data_atomic           </td>
+          <td>(</td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>connection_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>p_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&nbsp;</td>
+          <td class="paramname"> <em>data_len</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+发送数据，将数据拷贝到发送缓冲区，如果缓冲去无足够空间，就不拷贝 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>参数含义同上个函数</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>0success -1failed </dd></dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#99617304a3c16351896b045cd3c4a3b0">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<a class="anchor" name="a816b4501b92a61b1ad314e0a6a522e8"></a><!-- doxytag: member="i_net_io_server::uninit" ref="a816b4501b92a61b1ad314e0a6a522e8" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int i_net_io_server::uninit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+反初始化 
+<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>@return</em>&nbsp;</td><td></td></tr>
+  </table>
+</dl>
+
+<p>在<a class="el" href="classc__net__io__server.html#4f029fc2a35789c91bc7e1730e25f9c9">c_net_io_server</a>内被实现。</p>
+
+</div>
+</div><p>
+<hr>该结构的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/net-io-server-1.0.0/<a class="el" href="i__net__io__server_8h.html">i_net_io_server.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:06 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

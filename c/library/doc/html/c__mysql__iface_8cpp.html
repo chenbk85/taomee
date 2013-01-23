@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: E:/aw/svn/standard/c/library/mysql-iface-1.0.0/c_mysql_iface.cpp文件参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="classes.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>E:/aw/svn/standard/c/library/mysql-iface-1.0.0/c_mysql_iface.cpp文件参考</h1>Mysql 数据库接口 <a href="#_details">更多...</a>
+<p>
+
+<p>
+<div class="dynheader">
+c_mysql_iface.cpp包含/依赖关系图：</div>
+<div class="dynsection">
+<p><center><img src="c__mysql__iface_8cpp__incl.png" border="0" usemap="#E:/aw/svn/standard/c/library/mysql-iface-1.0.0/c_mysql_iface.cpp_map" alt=""></center>
+<map name="E:/aw/svn/standard/c/library/mysql-iface-1.0.0/c_mysql_iface.cpp_map">
+<area shape="rect" href="c__mysql__iface_8h.html" title="为了更方便地使用 mysql 而设立的封装类" alt="" coords="263,80,377,107"><area shape="rect" href="i__mysql__iface_8h.html" title="Mysql 数据库接口" alt="" coords="373,155,493,181"></map>
+</div>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>函数</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="c__mysql__iface_8cpp.html#c7243fa8f8b2f4ead8d4f877078c5fa3">create_mysql_iface_instance</a> (<a class="el" href="structi__mysql__iface.html">i_mysql_iface</a> **pp_instance)</td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">创建i_mysql_iface对象实例  <a href="#c7243fa8f8b2f4ead8d4f877078c5fa3"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+Mysql 数据库接口 
+<p>
+===================================================================================== <hr><h2>函数文档</h2>
+<a class="anchor" name="c7243fa8f8b2f4ead8d4f877078c5fa3"></a><!-- doxytag: member="c_mysql_iface.cpp::create_mysql_iface_instance" ref="c7243fa8f8b2f4ead8d4f877078c5fa3" args="(i_mysql_iface **pp_instance)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int create_mysql_iface_instance           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structi__mysql__iface.html">i_mysql_iface</a> **&nbsp;</td>
+          <td class="paramname"> <em>pp_instance</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+创建i_mysql_iface对象实例 
+<p>
+创建i_mysql_iface对象实例的函数<p>
+<dl compact><dt><b>参数:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>pp_instance</em>&nbsp;</td><td>二级指针，函数成功返回后，该指针指向创建的实例的地址</td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>返回:</b></dt><dd>成功返回0， 失败返回－1.</dd></dl>
+<dl class="note" compact><dt><b>注解:</b></dt><dd>注意该函数分配的内存由调用者维护； </dd></dl>
+<div class="fragment"><pre class="fragment"><a name="l00319"></a>00319 {
+<a name="l00320"></a>00320     <span class="keywordflow">if</span> (pp_instance == NULL) {
+<a name="l00321"></a>00321         <span class="keywordflow">return</span> -1;
+<a name="l00322"></a>00322     }
+<a name="l00323"></a>00323 
+<a name="l00324"></a>00324     <a class="code" href="classc__mysql__iface.html" title="mysql接口的实现类">c_mysql_iface</a> *p_instance = <span class="keyword">new</span>(nothrow) <a class="code" href="classc__mysql__iface.html" title="mysql接口的实现类">c_mysql_iface</a>;
+<a name="l00325"></a>00325     <span class="keywordflow">if</span> (p_instance == NULL) {
+<a name="l00326"></a>00326         <span class="keywordflow">return</span> -1;
+<a name="l00327"></a>00327     }
+<a name="l00328"></a>00328 
+<a name="l00329"></a>00329     *pp_instance = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="structi__mysql__iface.html" title="mysql接口">i_mysql_iface</a>*<span class="keyword">&gt;</span>(p_instance);
+<a name="l00330"></a>00330     <span class="keywordflow">return</span> 0;
+<a name="l00331"></a>00331 }
+</pre></div>
+<p>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:38:56 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

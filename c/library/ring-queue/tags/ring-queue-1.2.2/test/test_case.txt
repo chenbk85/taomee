@@ -1,0 +1,72 @@
+一、关于ring_queue的测试用例
+1、正确创建ring_queue的实例，正确释放ring_queue的实例
+	测试结果：
+2、初始化ring_queue的实例，buffer_len分别取大于0、等于0、小于0的值
+	测试结果：
+3、多次初始化ring_queue的实例
+	测试结果：
+4、原子地向ring_queue中压入数据
+	测试结果：
+5、从ring_queue中读数据
+	测试结果：
+6、从ring_queue中取数据
+	测试结果：
+
+二、关于fixed_queue的测试用例
+1、正确创建fixed_queue的实例，正确释放fixed_queue的实例
+	测试结果：
+2、初始化fixed_queue的实例，buffer_len分别取大于0、等于0、小于0的值
+	测试结果：
+3、多次初始化fixed_queue的实例
+	测试结果：
+4、原子地向fixed_queue中压入数据
+	测试结果：
+5、从fixed_queue中读数据
+	测试结果：
+6、从fixed_queue中取数据
+	测试结果：
+
+三、关于variable_queue的测试用例
+1、正确创建variable_queue的实例，正确释放variable_queue的实例
+	测试结果：
+2、初始化variable_queue的实例，buffer_len分别取大于0、等于0、小于0的值
+	测试结果：
+3、多次初始化variable_queue的实例
+	测试结果：
+4、原子地向variable_queue中压入数据
+	测试结果：
+5、从variable_queue中读数据
+	测试结果：
+6、从variable_queue中取数据
+	测试结果：
+
+四、关于waitable_queue的测试
+1、正确创建waitable_queue的实例，正确释放waitable_queue的实例
+	测试结果：
+2、初始化waitable_queue的实例，buffer_len分别取大于0、等于0、小于0的值
+	测试结果：
+3、多次初始化waitable_queue的实例
+	测试结果：
+4、原子地向waitable_queue中压入数据
+	测试结果：
+5、从waitable_queue中读数据
+	测试结果：
+6、从waitable_queue中取数据
+	测试结果：
+
+五、关于multipopable_queue的测试
+1、正确创建multipopable_queue的实例，正确释放multipopable_queue的实例
+	测试结果：
+2、初始化multipopable_queue的实例，buffer_len分别取大于0、等于0、小于0的值
+	测试结果：
+3、多次初始化multipopable_queue的实例
+	测试结果：
+4、原子地向multipopable_queue中压入数据
+	测试结果：
+5、从multipopable_queue中读数据
+	测试结果：
+6、从multipopable_queue中取数据
+	测试结果：
+
+六、综合测试
+1、创建可变长度的、可多个进程同时读取的、带通知机制的ring_queue，并压入、读取数据

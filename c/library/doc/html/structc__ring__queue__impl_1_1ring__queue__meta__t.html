@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>common-lib: c_ring_queue_impl::ring_queue_meta_t类参考</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- 制作者 Doxygen 1.5.6 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li class="current"><a href="classes.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div class="tabs">
+    <ul>
+      <li><a href="classes.html"><span>按字典顺序排序的列表</span></a></li>
+      <li><a href="annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="hierarchy.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+  <div class="navpath"><a class="el" href="classc__ring__queue__impl.html">c_ring_queue_impl</a>::<a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html">ring_queue_meta_t</a>
+  </div>
+</div>
+<div class="contents">
+<h1>c_ring_queue_impl::ring_queue_meta_t类参考</h1><!-- doxytag: class="c_ring_queue_impl::ring_queue_meta_t" -->维护环形缓冲区的物理内存结构  
+<a href="#_details">更多...</a>
+<p>
+
+<p>
+<a href="classc__ring__queue__impl_1_1ring__queue__meta__t-members.html">所有成员的列表。</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>公有属性</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1">buffer_len</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">length of whole buffer  <a href="#c52f402232d9f2fcf335a7b223dfb9a1"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#7e349b3bb04345e5dac42cd7cdcb1a55">last_error</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">last error code (not used yet)  <a href="#7e349b3bb04345e5dac42cd7cdcb1a55"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">char *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653">p_buffer</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">buffer to simulate ring queue  <a href="#b01d4eab277edb904cbfe8ed7c7fe653"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489">read_index</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">read index,start from zero  <a href="#11dae6d2e256235b6d00da8471666489"></a><br></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728">write_index</a></td></tr>
+
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">write index,start from zero  <a href="#05410f45c59b952fc0b8a6ef0be1f728"></a><br></td></tr>
+</table>
+<hr><a name="_details"></a><h2>详细描述</h2>
+维护环形缓冲区的物理内存结构 <hr><h2>成员数据文档</h2>
+<a class="anchor" name="c52f402232d9f2fcf335a7b223dfb9a1"></a><!-- doxytag: member="c_ring_queue_impl::ring_queue_meta_t::buffer_len" ref="c52f402232d9f2fcf335a7b223dfb9a1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#c52f402232d9f2fcf335a7b223dfb9a1">c_ring_queue_impl::ring_queue_meta_t::buffer_len</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+length of whole buffer 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="7e349b3bb04345e5dac42cd7cdcb1a55"></a><!-- doxytag: member="c_ring_queue_impl::ring_queue_meta_t::last_error" ref="7e349b3bb04345e5dac42cd7cdcb1a55" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#7e349b3bb04345e5dac42cd7cdcb1a55">c_ring_queue_impl::ring_queue_meta_t::last_error</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+last error code (not used yet) 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="b01d4eab277edb904cbfe8ed7c7fe653"></a><!-- doxytag: member="c_ring_queue_impl::ring_queue_meta_t::p_buffer" ref="b01d4eab277edb904cbfe8ed7c7fe653" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* <a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#b01d4eab277edb904cbfe8ed7c7fe653">c_ring_queue_impl::ring_queue_meta_t::p_buffer</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+buffer to simulate ring queue 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="11dae6d2e256235b6d00da8471666489"></a><!-- doxytag: member="c_ring_queue_impl::ring_queue_meta_t::read_index" ref="11dae6d2e256235b6d00da8471666489" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#11dae6d2e256235b6d00da8471666489">c_ring_queue_impl::ring_queue_meta_t::read_index</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+read index,start from zero 
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="05410f45c59b952fc0b8a6ef0be1f728"></a><!-- doxytag: member="c_ring_queue_impl::ring_queue_meta_t::write_index" ref="05410f45c59b952fc0b8a6ef0be1f728" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="structc__ring__queue__impl_1_1ring__queue__meta__t.html#05410f45c59b952fc0b8a6ef0be1f728">c_ring_queue_impl::ring_queue_meta_t::write_index</a>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+write index,start from zero 
+<p>
+
+</div>
+</div><p>
+<hr>该类的文档由以下文件生成：<ul>
+<li>E:/aw/svn/standard/c/library/ring-queue-1.0.0/<a class="el" href="ring__queue__impl_8h.html">ring_queue_impl.h</a></ul>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Generated at Mon Jul 5 10:39:04 2010 for common-lib by&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
+</body>
+</html>

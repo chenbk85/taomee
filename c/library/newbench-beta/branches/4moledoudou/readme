@@ -1,0 +1,2 @@
+1、int (*handle_open) (char **, int *, const skinfo_t*);
+    newbench前两个参数传的是NULL，与sever_bench之前的版本不兼容
