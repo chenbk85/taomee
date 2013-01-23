@@ -1,0 +1,457 @@
+<!--
+    type:
+        0:立即生效
+    bullet_times: n波攻击
+    bullet_count_per_time：每波攻击多少子弹
+    bullet_excursion_angle: 每波子弹间隔角度
+    buff_id: 附加的buffid
+    target: 1:自己，2:队友，3:目标敌人，4:全部敌人
+
+-->
+
+<root>
+	<skill id="1024" type="1" lv="1" res_id="1001" name="吸收1" desc="造成125%的伤害且将这部分伤害的50%吸收" cd="0" consume_strength="50" consume_anger="0" >
+		<bullet id="102401" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0" target="2" damage_percent="125" recove_hp="50" recove_hp_target="1" >
+		</bullet>
+	</skill>
+	<skill id="1024" type="1" lv="2" res_id="1001" name="吸收2" desc="造成155%的伤害且将这部分伤害的50%吸收" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102402" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1024" type="1" lv="3" res_id="1001" name="吸收3" desc="造成195%的伤害且将这部分伤害的50%吸收" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102403" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1025" type="2" lv="1" res_id="1001" name="千针飞羽1" desc="千片羽毛犹如飞针，直接造成150%伤害，且每回合减少敌人初始伤害25%的生命值，持续2回合" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102501" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1025" type="2" lv="2" res_id="1001" name="千针飞羽2" desc="千片羽毛犹如飞针，直接造成185%伤害，且每回合减少敌人初始伤害25%的生命值，持续2回合" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102502" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1025" type="2" lv="3" res_id="1001" name="千针飞羽3" desc="千片羽毛犹如飞针，直接造成200%伤害，且每回合减少敌人初始伤害25%的生命值，持续2回合" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102503" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1026" type="1" lv="1" res_id="1001" name="帕尔赛丝攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="102601" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1027" type="1" lv="1" res_id="1001" name="急速冰冻1" desc="连续发射3块寒冰冻结敌人，每块造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="102701" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1027" type="1" lv="2" res_id="1001" name="急速冰冻2" desc="连续发射3块寒冰冻结敌人，每块造成40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="102702" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1027" type="1" lv="3" res_id="1001" name="急速冰冻3" desc="连续发射3块寒冰冻结敌人，每块造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="102703" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1028" type="0" lv="1" res_id="1001" name="超低温1" desc="进入到超低温状态，提升35%伤害量" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102801" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1028" type="0" lv="2" res_id="1001" name="超低温2" desc="进入到超低温状态，提升40%伤害量" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102802" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1028" type="0" lv="3" res_id="1001" name="超低温3" desc="进入到超低温状态，提升45%伤害量" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102803" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1029" type="2" lv="1" res_id="1001" name="冰天雪地1" desc="以冰雪的力量攻击敌人造成185%伤害，或者保护友方，回复125%伤害量等量的生命值" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102901" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1029" type="2" lv="2" res_id="1001" name="冰天雪地2" desc="以冰雪的力量攻击敌人造成200%伤害，或者保护友方，回复150%伤害量等量的生命值" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102902" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1029" type="2" lv="3" res_id="1001" name="冰天雪地3" desc="以冰雪的力量攻击敌人造成225%伤害，或者保护友方，回复185%伤害量等量的生命值" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102903" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1030" type="1" lv="1" res_id="1001" name="皮鲁柏攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="103001" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1031" type="1" lv="1" res_id="1001" name="圣光散射1" desc="发射3道圣光，每道圣光造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="103101" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1031" type="1" lv="2" res_id="1001" name="圣光散射2" desc="发射3道圣光，每道圣光造成40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="103102" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1031" type="1" lv="3" res_id="1001" name="圣光散射3" desc="发射3道圣光，每道圣光造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="103103" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1032" type="0" lv="1" res_id="1001" name="神圣吟唱1" desc="轻声吟唱圣歌，让全身充满力量，提升20%暴击率" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="103201" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1032" type="0" lv="2" res_id="1001" name="神圣吟唱2" desc="轻声吟唱圣歌，让全身充满力量，提升25%暴击率" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="103202" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1032" type="0" lv="3" res_id="1001" name="神圣吟唱3" desc="轻声吟唱圣歌，让全身充满力量，提升30%暴击率" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="103203" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1033" type="2" lv="1" res_id="1001" name="光芒一击1" desc="神圣的光芒自动搜寻敌人，造成150%伤害" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="103301" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1033" type="2" lv="2" res_id="1001" name="光芒一击2" desc="神圣的光芒自动搜寻敌人，造成185%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="103302" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1033" type="2" lv="3" res_id="1001" name="光芒一击3" desc="神圣的光芒自动搜寻敌人，造成200%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="103303" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1034" type="1" lv="1" res_id="1001" name="保罗攻击" desc="" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="103401" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1035" type="1" lv="1" res_id="1001" name="全面包围1" desc="5股墨汁包围住敌人，每股造成25%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="103501" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1035" type="1" lv="2" res_id="1001" name="全面包围2" desc="5股墨汁包围住敌人，每股造成30%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="103502" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1035" type="1" lv="3" res_id="1001" name="全面包围3" desc="5股墨汁包围住敌人，每股造成35%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="103503" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1036" type="0" lv="1" res_id="1001" name="潜伏1" desc="保罗潜伏2回合，使敌人不易察觉，使用后3回合冷却" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="103601" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1036" type="0" lv="2" res_id="1001" name="潜伏2" desc="保罗潜伏2回合，使敌人不易察觉，使用后3回合冷却" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="103602" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1036" type="0" lv="3" res_id="1001" name="潜伏3" desc="保罗潜伏2回合，使敌人不易察觉，使用后3回合冷却" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="103603" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1037" type="2" lv="1" res_id="1001" name="毒性伤害1" desc="喷射一股含有毒性的墨汁，造成150%伤害，且每回合减少敌人初始伤害25%的生命值，持续2回合" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="103701" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1037" type="2" lv="2" res_id="1001" name="毒性伤害2" desc="喷射一股含有毒性的墨汁，造成185%伤害，且每回合减少敌人初始伤害25%的生命值，持续2回合" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="103702" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1037" type="2" lv="3" res_id="1001" name="毒性伤害3" desc="喷射一股含有毒性的墨汁，造成200%伤害，且每回合减少敌人初始伤害25%的生命值，持续2回合" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="103703" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1038" type="1" lv="1" res_id="1001" name="温巴姆攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="103801" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1039" type="1" lv="1" res_id="1001" name="各个击破1" desc="仍出3把飞刀攻击敌人，每把造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="103901" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1039" type="1" lv="2" res_id="1001" name="各个击破2" desc="仍出3把飞刀攻击敌人，每把造成40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="103902" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1039" type="1" lv="3" res_id="1001" name="各个击破3" desc="仍出3把飞刀攻击敌人，每把造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="103903" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1040" type="1" lv="1" res_id="1001" name="持续骚扰1" desc="连续仍出3把飞刀，每把造成35%伤害" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="104001" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1040" type="1" lv="2" res_id="1001" name="持续骚扰2" desc="连续仍出3把飞刀，每把造成40%伤害" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="104002" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1040" type="1" lv="3" res_id="1001" name="持续骚扰3" desc="连续仍出3把飞刀，每把造成45%伤害" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="104003" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1041" type="2" lv="1" res_id="1001" name="坚持不懈1" desc="扔出7把飞刀，每把造成30%伤害" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="104101" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1041" type="2" lv="2" res_id="1001" name="坚持不懈2" desc="扔出7把飞刀，每把造成35%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="104102" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1041" type="2" lv="3" res_id="1001" name="坚持不懈3" desc="扔出7把飞刀，每把造成40%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="104103" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1042" type="1" lv="1" res_id="1001" name="达克斯攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="104201" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1043" type="0" lv="1" res_id="1001" name="勇气1" desc="唤醒自己的勇气，提升35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="104301" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1043" type="0" lv="2" res_id="1001" name="勇气2" desc="唤醒自己的勇气，提升40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="104302" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1043" type="0" lv="3" res_id="1001" name="勇气3" desc="唤醒自己的勇气，提升45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="104303" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1044" type="1" lv="1" res_id="1001" name="博爱1" desc="攻击到敌方造成135%伤害，攻击到友方则回复普通伤害量的150%生命值" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="104401" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1044" type="1" lv="2" res_id="1001" name="博爱2" desc="攻击到敌方造成140%伤害，攻击到友方则回复普通伤害量的180%生命值" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="104402" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1044" type="1" lv="3" res_id="1001" name="博爱3" desc="攻击到敌方造成145%伤害，攻击到友方则回复普通伤害量的225%生命值" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="104403" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1045" type="2" lv="1" res_id="1001" name="分享1" desc="如自己生命值低于500则双方均摊彼此生命值，如高于500则双方互换生命值（BOSS无效）" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="104501" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1045" type="2" lv="2" res_id="1001" name="分享2" desc="如自己生命值低于500则双方均摊彼此生命值，如高于500则双方互换生命值（BOSS无效）" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="104502" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1045" type="2" lv="3" res_id="1001" name="分享3" desc="如自己生命值低于500则双方均摊彼此生命值，如高于500则双方互换生命值（BOSS无效）" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="104503" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1001" type="2" lv="1" res_id="1001" name="飞行" desc="飞行" cd="2" consume_strength="50" consume_anger="0" target="0"  >
+		<bullet id="100101" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1002" type="1" lv="1" res_id="1001" name="小八攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="100201" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1003" type="1" lv="1" res_id="1001" name="愤怒火焰1" desc="以三股火焰攻击敌人，每股火焰造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="100301" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1003" type="1" lv="2" res_id="1001" name="愤怒火焰2" desc="以三股火焰攻击敌人，每股火焰造成40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="100302" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1003" type="1" lv="3" res_id="1001" name="愤怒火焰3" desc="以三股火焰攻击敌人，每股火焰造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="100303" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1004" type="0" lv="1" res_id="1001" name="深呼吸1" desc="小八深吸一口气，伤害提升40%" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="100401" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1004" type="0" lv="2" res_id="1001" name="深呼吸2" desc="小八深吸一口气，伤害提升45%" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="100402" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1004" type="0" lv="3" res_id="1001" name="深呼吸3" desc="小八深吸一口气，伤害提升50%" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="100403" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1005" type="2" lv="1" res_id="1001" name="破釜沉舟1" desc="给予敌人致命一击，造成300%伤害，但是对方下次出手也将获得伤害加成100%，需要谨慎使用" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="100501" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1005" type="2" lv="2" res_id="1001" name="破釜沉舟2" desc="给予敌人致命一击，造成325%伤害，但是对方下次出手也将获得伤害加成125%，需要谨慎使用" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="100502" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1005" type="2" lv="3" res_id="1001" name="破釜沉舟3" desc="给予敌人致命一击，造成350%伤害，但是对方下次出手也将获得伤害加成150%，需要谨慎使用" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="100503" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1006" type="1" lv="1" res_id="1001" name="果巴攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="100601" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1007" type="1" lv="1" res_id="1001" name="持续打击1" desc="持续进行3次攻击，每次攻击造成35%的普通攻击伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="100701" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1007" type="1" lv="2" res_id="1001" name="持续打击2" desc="持续进行3次攻击，每次攻击造成40%的普通攻击伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="100702" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1007" type="1" lv="3" res_id="1001" name="持续打击3" desc="持续进行3次攻击，每次攻击造成45%的普通攻击伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="100703" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1008" type="1" lv="1" res_id="1001" name="精确打击1" desc="一次精确的打击，造成90%的普通攻击伤害" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="100801" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1008" type="1" lv="2" res_id="1001" name="精确打击2" desc="一次精确的打击，造成105%的普通攻击伤害" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="100802" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1008" type="1" lv="3" res_id="1001" name="精确打击3" desc="一次精确的打击，造成120%的普通攻击伤害" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="100803" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1009" type="2" lv="1" res_id="1001" name="尘土漫天1" desc="发动7颗沙石全面打击敌人，每颗造成25%伤害" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="100901" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1009" type="2" lv="2" res_id="1001" name="尘土漫天2" desc="发动7颗沙石全面打击敌人，每颗造成30%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="100902" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1009" type="2" lv="3" res_id="1001" name="尘土漫天3" desc="发动7颗沙石全面打击敌人，每颗造成40%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="100903" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1010" type="1" lv="1" res_id="1001" name="吉拉拉攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="101001" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1011" type="1" lv="1" res_id="1001" name="爱心放送1" desc="释放3颗爱心，每颗爱心造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="101101" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1011" type="1" lv="2" res_id="1001" name="爱心放送2" desc="释放3颗爱心，每颗爱心造成40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="101102" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1011" type="1" lv="3" res_id="1001" name="爱心放送3" desc="释放3颗爱心，每颗爱心造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="101103" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1012" type="1" lv="1" res_id="1001" name="换位置1" desc="造成50%伤害，且双方互换地图位置" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="101201" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1012" type="1" lv="2" res_id="1001" name="换位置2" desc="造成55%伤害，且双方互换地图位置" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="101202" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1012" type="1" lv="3" res_id="1001" name="换位置3" desc="造成60%伤害，且双方互换地图位置" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="101203" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1013" type="2" lv="1" res_id="1001" name="浪漫之心1" desc="一次性发动7颗爱心，每颗爱心造成30%伤害" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="101301" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1013" type="2" lv="2" res_id="1001" name="浪漫之心2" desc="一次性发动7颗爱心，每颗爱心造成35%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="101302" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1013" type="2" lv="3" res_id="1001" name="浪漫之心3" desc="一次性发动7颗爱心，每颗爱心造成45%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="101303" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1014" type="1" lv="1" res_id="1001" name="猫爱罗攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="101401" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1015" type="1" lv="1" res_id="1001" name="覆盖1" desc="以3颗小石子攻击敌人，每颗小石子造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="101501" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1015" type="1" lv="2" res_id="1001" name="覆盖2" desc="以3颗石块攻击敌人，每颗石块造成40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="101502" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1015" type="1" lv="3" res_id="1001" name="覆盖3" desc="以3股酒水混合的黄沙攻击敌人，每股造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="101503" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1016" type="1" lv="1" res_id="1001" name="恢复攻击1" desc="攻击到敌方造成135%伤害，攻击到友方则回复普通伤害量的150%生命值" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="101601" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1016" type="1" lv="2" res_id="1001" name="恢复攻击2" desc="攻击到敌方造成140%伤害，攻击到友方则回复普通伤害量的180%生命值" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="101602" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1016" type="1" lv="3" res_id="1001" name="恢复攻击3" desc="攻击到敌方造成145%伤害，攻击到友方则回复普通伤害量的225%生命值" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="101603" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1017" type="2" lv="1" res_id="1001" name="冲动1" desc="发动全力一击，提升115%伤害" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="101801" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1017" type="2" lv="2" res_id="1001" name="冲动2" desc="发动全力一击，提升140%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="101802" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1017" type="2" lv="3" res_id="1001" name="冲动3" desc="发动全力一击，提升185%伤害" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="101803" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1018" type="1" lv="1" res_id="1001" name="佩加斯攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="101801" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1019" type="1" lv="1" res_id="1001" name="龙卷风1" desc="连续发射3股旋风，每股旋风造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="101901" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1019" type="1" lv="2" res_id="1001" name="龙卷风2" desc="连续发射3股旋风，每股旋风造成40%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="101902" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1019" type="1" lv="3" res_id="1001" name="龙卷风3" desc="连续发射3股旋风，每股旋风造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="101903" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1020" type="0" lv="1" res_id="1001" name="鼓舞1" desc="对自己鼓舞，提升35%伤害" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102001" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1020" type="0" lv="2" res_id="1001" name="鼓舞2" desc="对自己鼓舞，提升40%伤害" cd="0" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102002" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1020" type="0" lv="3" res_id="1001" name="鼓舞3" desc="对自己鼓舞，提升45%伤害" cd="2" consume_strength="50" consume_anger="0" target="2"  >
+		<bullet id="102003" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1021" type="2" lv="1" res_id="1001" name="风之气息1" desc="制造一块充满风之气息的区域，在该区域内的友方角色每回合恢复(100%攻击力)点生命值，敌方角色每回合减少(75%攻击力)点生命值，持续2回合" cd="1" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102101" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1021" type="2" lv="2" res_id="1001" name="风之气息2" desc="制造一块充满风之气息的区域，在该区域内的友方角色每回合恢复(130%攻击力)点生命值，敌方角色每回合减少(100%攻击力)点生命值，持续2回合" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102102" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1021" type="2" lv="3" res_id="1001" name="风之气息3" desc="制造一块充满风之气息的区域，在该区域内的友方角色每回合恢复(185%攻击力)点生命值，敌方角色每回合减少(135%攻击力)点生命值，持续2回合" cd="0" consume_strength="0" consume_anger="100" target="2"  >
+		<bullet id="102103" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1022" type="1" lv="1" res_id="1001" name="咕波攻击" desc="普通攻击" cd="0" consume_strength="0" consume_anger="0" target="2"  >
+		<bullet id="102201" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="0"  >
+		</bullet>
+	</skill>
+	<skill id="1023" type="1" lv="1" res_id="1001" name="自由飞翔1" desc="放飞3股自由飞翔的魔法，每股造成35%伤害" cd="0" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="102301" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1023" type="1" lv="2" res_id="1001" name="自由飞翔2" desc="放飞3股自由飞翔的魔法，每股造成35%伤害" cd="2" consume_strength="20" consume_anger="0" target="2"  >
+		<bullet id="102302" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+	<skill id="1023" type="1" lv="3" res_id="1001" name="自由飞翔3" desc="放飞3股自由飞翔的魔法，每股造成45%伤害" cd="1" consume_strength="20" consume_anger="100" target="2"  >
+		<bullet id="102303" bullet_times="1" bullet_count_per_time="1" bullet_excursion_angle="10"  >
+		</bullet>
+	</skill>
+</root>

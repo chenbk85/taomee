@@ -1,0 +1,24 @@
+<root>
+	<stage map_id = "13">
+		<red x = "61" y = "270" dir = "0"/>
+		<red x = "150" y = "432" dir = "0"/>
+		<red x = "242" y = "305" dir = "0"/>
+		<red x = "341" y = "460" dir = "0"/>
+		<red x = "439" y = "328" dir = "0"/>
+		<red x= "606" y = "328" dir = "0"/>
+		<red x= "701" y = "461" dir = "0"/>
+		<red x= "802" y = "305" dir = "0"/>
+		<red x= "891" y = "433" dir = "0"/>
+		<red x= "981" y = "271" dir = "0"/>
+		<blue x = "61" y = "270" dir = "1"/>
+		<blue x = "150" y = "432" dir = "1"/>
+		<blue x = "242" y = "305" dir = "1"/>
+		<blue x = "341" y = "460" dir = "1"/>
+		<blue x = "439" y = "328" dir = "1"/>
+		<blue x= "606" y = "328" dir = "1"/>
+		<blue x= "701" y = "461" dir = "1"/>
+		<blue x= "802" y = "305" dir = "1"/>
+		<blue x= "891" y = "433" dir = "1"/>
+		<blue x= "981" y = "271" dir = "1"/>
+	</stage>
+</root>

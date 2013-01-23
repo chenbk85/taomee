@@ -1,0 +1,222 @@
+<root>
+	<bullet id="102401" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102402" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102403" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100101" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="104201" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101901" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101902" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101903" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103701" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103702" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103703" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101401" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103201" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="103202" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="103203" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="100901" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100902" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100903" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102701" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102702" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102703" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100401" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="100402" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="100403" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="104501" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104502" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104503" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102201" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104001" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104002" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104003" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103501" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103502" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103503" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101201" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101202" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101203" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103001" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100701" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100702" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100703" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102501" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102502" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102503" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100201" width="2" height="2" damage_radius="40" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104301" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="104302" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="104303" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="102001" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="102002" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="102003" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="103801" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101501" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101502" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101503" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103301" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103302" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103303" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101001" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102801" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="102802" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="102803" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="100501" width="2" height="2" damage_radius="50" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100502" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100503" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102301" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102302" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102303" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104101" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104102" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104103" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101801" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101802" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101803" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103601" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="103602" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="103603" width="2" height="2" damage_radius="0" max_damage="0" bullet_crater_id="0"  >
+	</bullet>
+	<bullet id="101301" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101302" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101303" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103101" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103102" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103103" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100801" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100802" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100803" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102601" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100301" width="2" height="2" damage_radius="30" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100302" width="2" height="2" damage_radius="30" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100303" width="2" height="2" damage_radius="30" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104401" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104402" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="104403" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102101" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102102" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102103" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103901" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103902" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103903" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101601" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101602" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101603" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="103401" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101101" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101102" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="101103" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102901" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102902" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="102903" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+	<bullet id="100601" width="2" height="2" damage_radius="10" max_damage="0" bullet_crater_id="1"  >
+	</bullet>
+</root>

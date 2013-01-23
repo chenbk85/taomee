@@ -1,0 +1,36 @@
+<root>
+	<item item_id="20001" res_id="20001" Detail="裸模1" name="裸模1" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="0" magic="1" agility="1" luck="1" strength="1" crit="1" crit_damage="1" physique="1" tenacity="1" hp="1" atk="1" def="1" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20002" res_id="20002" Detail="裸模2" name="裸模2" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="0" magic="2" agility="2" luck="2" strength="2" crit="2" crit_damage="2" physique="2" tenacity="2" hp="2" atk="2" def="2" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20003" res_id="20003" Detail="裸模3" name="裸模3" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="0" magic="3" agility="3" luck="3" strength="3" crit="3" crit_damage="3" physique="3" tenacity="3" hp="3" atk="3" def="3" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20004" res_id="20004" Detail="裸模4" name="裸模4" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="0" magic="4" agility="4" luck="4" strength="4" crit="4" crit_damage="4" physique="4" tenacity="4" hp="4" atk="4" def="4" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20005" res_id="20005" Detail="裸模5" name="裸模5" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="0" magic="5" agility="5" luck="5" strength="5" crit="5" crit_damage="5" physique="5" tenacity="5" hp="5" atk="5" def="5" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20006" res_id="20006" Detail="裸模6" name="裸模6" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="0" magic="6" agility="6" luck="6" strength="6" crit="6" crit_damage="6" physique="6" tenacity="6" hp="6" atk="6" def="6" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20007" res_id="20007" Detail="魔法林的头饰装备" name="魔法林头饰" category="2" sell_price="10" buy_price="10" max_num="999" trade_flag="3" discard_flag="1" max_heap_num="1" equip_pos="100000" magic="7" agility="7" luck="7" strength="7" crit="7" crit_damage="7" physique="7" tenacity="7" hp="7" atk="7" def="7" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20008" res_id="20008" Detail="魔法林的时装装备" name="魔法林时装" category="2" sell_price="99" buy_price="199" max_num="999" trade_flag="3" discard_flag="1" max_heap_num="1" equip_pos="100003" magic="8" agility="8" luck="8" strength="8" crit="8" crit_damage="8" physique="8" tenacity="8" hp="8" atk="8" def="8" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20009" res_id="20007" Detail="魔法林的背饰装备" name="魔法林背饰" category="2" sell_price="199" buy_price="1999" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="1" equip_pos="100004" magic="9" agility="9" luck="9" strength="9" crit="9" crit_damage="9" physique="9" tenacity="9" hp="9" atk="9" def="9" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20010" res_id="20010" Detail="魔法林的眼镜装备" name="魔法林眼镜" category="2" sell_price="1999" buy_price="19999" max_num="999" trade_flag="15" discard_flag="2" max_heap_num="1" equip_pos="100002" magic="10" agility="10" luck="10" strength="10" crit="10" crit_damage="10" physique="10" tenacity="10" hp="10" atk="10" def="10" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20011" res_id="20011" Detail="好粗的小新眉" name="浓眉大眼饰" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="1" magic="0" agility="0" luck="0" strength="0" crit="0" crit_damage="0" physique="0" tenacity="0" hp="0" atk="0" def="0" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20012" res_id="20012" Detail="小清新一个" name="小清新眼饰" category="0" sell_price="0" buy_price="0" max_num="0" trade_flag="0" discard_flag="0" max_heap_num="0" equip_pos="1" magic="0" agility="0" luck="0" strength="0" crit="0" crit_damage="0" physique="0" tenacity="0" hp="0" atk="0" def="0" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20013" res_id="20007" Detail="淘米网著名儿童游戏的形象" name="赛尔套装" category="3" sell_price="2" buy_price="99" max_num="1" trade_flag="3" discard_flag="1" max_heap_num="1" equip_pos="100005" magic="13" agility="13" luck="13" strength="13" crit="13" crit_damage="13" physique="13" tenacity="13" hp="13" atk="13" def="13" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20014" res_id="20014" Detail="产自于彩虹岛的乐章头饰" name="乐章头饰" category="2" sell_price="10" buy_price="10" max_num="999" trade_flag="3" discard_flag="1" max_heap_num="1" equip_pos="100000" magic="14" agility="14" luck="14" strength="14" crit="14" crit_damage="14" physique="14" tenacity="14" hp="14" atk="14" def="14" duration_time="0" end_time="201305091232"  >
+	</item>
+	<item item_id="20015" res_id="20015" Detail="魔法林的时装装备" name="乐章时装" category="2" sell_price="99" buy_price="199" max_num="999" trade_flag="3" discard_flag="1" max_heap_num="1" equip_pos="100003" magic="15" agility="15" luck="15" strength="15" crit="15" crit_damage="15" physique="15" tenacity="15" hp="15" atk="15" def="15" duration_time="30" end_time="0"  >
+	</item>
+	<item item_id="20016" res_id="20007" Detail="魔法林的背饰装备" name="乐章背饰" category="2" sell_price="199" buy_price="1999" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="1" equip_pos="100004" magic="16" agility="16" luck="16" strength="16" crit="16" crit_damage="16" physique="16" tenacity="16" hp="16" atk="16" def="16" duration_time="60" end_time="0"  >
+	</item>
+	<item item_id="20017" res_id="20017" Detail="魔法林的眼镜装备" name="乐章眼镜" category="2" sell_price="1999" buy_price="19999" max_num="999" trade_flag="15" discard_flag="2" max_heap_num="1" equip_pos="100002" magic="17" agility="17" luck="17" strength="17" crit="17" crit_damage="17" physique="17" tenacity="17" hp="17" atk="17" def="17" duration_time="120" end_time="0"  >
+	</item>
+</root>

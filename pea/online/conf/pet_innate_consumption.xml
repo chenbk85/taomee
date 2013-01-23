@@ -1,0 +1,33 @@
+<root>
+	<comprehend>
+		<quantity close_quantity="0" item_id="10031" name="女神之泪" item_quantity="10" ></quantity>
+		<quantity close_quantity="1" item_id="10031" name="女神之泪" item_quantity="20" ></quantity>
+		<quantity close_quantity="2" item_id="10031" name="女神之泪" item_quantity="30" ></quantity>
+		<quantity close_quantity="3" item_id="10031" name="女神之泪" item_quantity="40" ></quantity>
+		<quantity close_quantity="4" item_id="10031" name="女神之泪" item_quantity="50" ></quantity>
+		<quantity close_quantity="5" item_id="10031" name="女神之泪" item_quantity="60" ></quantity>
+	</comprehend>
+	<upgrade>
+		<level level="8" item_id="10031" name="女神之泪" item_quantity="1280" ></level>
+		<level level="5" item_id="10031" name="女神之泪" item_quantity="160" ></level>
+		<level level="1" item_id="10031" name="女神之泪" item_quantity="10" ></level>
+		<level level="3" item_id="10031" name="女神之泪" item_quantity="40" ></level>
+		<level level="6" item_id="10031" name="女神之泪" item_quantity="320" ></level>
+		<level level="9" item_id="10031" name="女神之泪" item_quantity="2560" ></level>
+		<level level="2" item_id="10031" name="女神之泪" item_quantity="20" ></level>
+		<level level="4" item_id="10031" name="女神之泪" item_quantity="80" ></level>
+		<level level="7" item_id="10031" name="女神之泪" item_quantity="640" ></level>
+	</upgrade>
+	<probability>
+		<rate level="1" probability="10" ></rate>
+		<rate level="2" probability="15" ></rate>
+		<rate level="3" probability="22" ></rate>
+		<rate level="4" probability="25" ></rate>
+		<rate level="5" probability="15" ></rate>
+		<rate level="7" probability="5" ></rate>
+		<rate level="9" probability="1" ></rate>
+		<rate level="10" probability="0" ></rate>
+		<rate level="6" probability="5" ></rate>
+		<rate level="8" probability="2" ></rate>
+	</probability>
+</root>

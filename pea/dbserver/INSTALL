@@ -1,0 +1,9 @@
+#cmake 
+#rm -rf build
+rm ./libdbser.so
+mkdir build
+cd build
+cmake ../
+make  #VERBOSE=t
+cd ../
+mv ./libser.so ./libdbser.so

@@ -1,0 +1,17 @@
+<!--
+	buff_id
+    effect id: 包含的效果ID，不能重复,详细见effect.xml
+    buff_type: 1:buff, 2:debuff
+    buff_category: 自定义种类，同类之间根据优先级别产生互斥
+    buff_priority: 优先级别，数字大的替换数字小的
+    buff_trigger_times: buff的最大触发次数限制
+    buff_turn_times: buff的最大存在回合数
+    buff_end_type: 结束类型1：触发次数用完结束，2：维持的回合次数到了结束 , 3：触发次数用完或者回合结束都结束 
+    icon: 客户端显示的图标id，一般有客户端提供
+-->
+<root>
+	<buff buff_id="1" buff_type="1" buff_end_type="3" buff_trigger_times="1" buff_turn_times="1" name="伤害加成(测试用)" buff_category="0" buff_priority="0" icon="0">
+		<effect effect_type="1" effect_id="1"/>
+		<effect effect_type="2" effect_id="1"/>
+	</buff>
+</root>

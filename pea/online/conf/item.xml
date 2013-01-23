@@ -1,0 +1,76 @@
+<root>
+	<item item_id="10001" name="绿色魔法药水" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10002" name="蓝色魔法药水" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10003" name="幻化丹.小" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10004" name="红魔法豆子" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10005" name="黄魔法豆子" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10006" name="绿魔法豆子" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10007" name="蓝魔法豆子" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10008" name="公会卷轴" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10009" name="年轻泉水" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10010" name="配方.魔法的翅膀" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10011" name="配方.音符的翅膀" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10012" name="配方.彩虹的翅膀" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10013" name="豌豆银色勋章" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10014" name="豌豆金色勋章" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="0" end_time="201305091232" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10015" name="红松木" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="30" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10016" name="豌豆种子" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="60" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10017" name="豌豆荚" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="120" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10018" name="金色酒杯" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="160" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10019" name="鱼骨" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="205" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10020" name="蘑菇" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="250" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10021" name="士兵的围巾" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="295" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10022" name="蓝色宝石" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="340" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10023" name="绿色宝石" details="绿色魔法药水" category="1" sell_price="100" buy_price="5" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="385" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10024" name="紫色宝石" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="430" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10025" name="火焰杯" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="475" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10026" name="小沙漏" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="3" max_heap_num="99" res_id="20007" duration_time="520" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10027" name="甜水袋子" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="565" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10028" name="小鼻烟壶" details="绿色魔法药水" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="610" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10029" name="聪明豆" details="影响精灵IQ的神奇豆子，精灵都喜欢吃它" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10030" name="水晶碎片" details="散落在米拉尔各地的神奇碎片，据说可以对精灵进行培养" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10031" name="女神之泪" details="传说中女神流下的眼泪，对精灵的天赋有意想不到的作用" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10032" name="幻石" details="精灵幻化必须的石头，是构筑米拉尔大陆的基础物质" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="0" fun_value="0"  >
+	</item>
+	<item item_id="10033" name="1级魔石" details="散发着神秘力量的魔石，提升精灵幻化成功率5%" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="10001" fun_value="5"  >
+	</item>
+	<item item_id="10034" name="2级魔石" details="散发着神秘力量的魔石，提升精灵幻化成功率8%" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="10001" fun_value="8"  >
+	</item>
+	<item item_id="10035" name="3级魔石" details="散发着神秘力量的魔石，提升精灵幻化成功率10%" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="10001" fun_value="10"  >
+	</item>
+	<item item_id="10036" name="4级魔石" details="散发着神秘力量的魔石，提升精灵幻化成功率12%" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="10001" fun_value="12"  >
+	</item>
+	<item item_id="10037" name="5级魔石" details="散发着神秘力量的魔石，提升精灵幻化成功率15%" category="1" sell_price="100" buy_price="400" max_num="999" trade_flag="12" discard_flag="1" max_heap_num="99" res_id="20007" duration_time="0" end_time="0" fun_id="10001" fun_value="15"  >
+	</item>
+</root>

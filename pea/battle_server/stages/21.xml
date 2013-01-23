@@ -1,0 +1,28 @@
+<root>
+	<stage map_id = "21">
+		<red x = "74" y = "117" dir = "0"/>
+		<red x = "177" y = "273" dir = "0"/>
+		<red x = "84" y = "453" dir = "0"/>
+		<red x = "242" y = "454" dir = "0"/>
+		<red x = "405" y = "454" dir = "0"/>
+		<red x= "532" y = "660" dir = "0"/>
+		<red x= "623" y = "660" dir = "0"/>
+		<red x= "793" y = "455" dir = "0"/>
+		<red x= "953" y = "455" dir = "0"/>
+		<red x= "1115" y = "455" dir = "0"/>
+		<red x= "1017" y = "274" dir = "0"/>
+		<red x= "1120" y = "117" dir = "0"/>
+		<blue x = "74" y = "117" dir = "1"/>
+		<blue x = "177" y = "273" dir = "1"/>
+		<blue x = "84" y = "453" dir = "1"/>
+		<blue x = "242" y = "454" dir = "1"/>
+		<blue x = "405" y = "454" dir = "1"/>
+		<blue x= "532" y = "660" dir = "1"/>
+		<blue x= "623" y = "660" dir = "1"/>
+		<blue x= "793" y = "455" dir = "1"/>
+		<blue x= "953" y = "455" dir = "1"/>
+		<blue x= "1115" y = "455" dir = "1"/>
+		<blue x= "1017" y = "274" dir = "1"/>
+		<blue x= "1120" y = "117" dir = "1"/>
+	</stage>
+</root>

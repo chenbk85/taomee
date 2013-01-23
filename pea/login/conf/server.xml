@@ -1,0 +1,5 @@
+<root>
+    <!--<server id="7" ip="10.1.1.131" port="6807" new_flag="1" />-->
+    <server id="8" ip="10.1.5.26" port="6808" new_flag="0" />
+    <!--<server id="9" ip="10.1.1.81" port="6803" new_flag="0" />-->
+</root>

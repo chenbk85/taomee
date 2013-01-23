@@ -1,0 +1,182 @@
+<root>
+	<attribute exp="0" level="1" hp="50" magic="12" agility="12" luck="12" physique="12" anger="100" atk="10" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="99713" level="24" hp="50" magic="35" agility="35" luck="35" physique="35" anger="100" atk="56" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1980290" level="61" hp="50" magic="72" agility="72" luck="72" physique="72" anger="100" atk="129" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="260" level="2" hp="50" magic="13" agility="13" luck="13" physique="13" anger="100" atk="12" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="21748" level="14" hp="50" magic="25" agility="25" luck="25" physique="25" anger="100" atk="36" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="3190" level="6" hp="50" magic="17" agility="17" luck="17" physique="17" anger="100" atk="20" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="126729" level="26" hp="50" magic="37" agility="37" luck="37" physique="37" anger="100" atk="60" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="17931" level="13" hp="50" magic="24" agility="24" luck="24" physique="24" anger="100" atk="34" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="112644" level="25" hp="50" magic="36" agility="36" luck="36" physique="36" anger="100" atk="58" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="343565" level="36" hp="50" magic="47" agility="47" luck="47" physique="47" anger="100" atk="80" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="9600910" level="85" hp="50" magic="96" agility="96" luck="96" physique="96" anger="100" atk="177" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="77072" level="22" hp="50" magic="33" agility="33" luck="33" physique="33" anger="100" atk="52" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="12038665" level="89" hp="50" magic="100" agility="100" luck="100" physique="100" anger="100" atk="185" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="3452690" level="69" hp="50" magic="80" agility="80" luck="80" physique="80" anger="100" atk="145" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="11796" level="11" hp="50" magic="22" agility="22" luck="22" physique="22" anger="100" atk="30" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="4238485" level="72" hp="50" magic="83" agility="83" luck="83" physique="83" anger="100" atk="151" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="2613125" level="65" hp="50" magic="76" agility="76" luck="76" physique="76" anger="100" atk="137" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="216471" level="31" hp="50" magic="42" agility="42" luck="42" physique="42" anger="100" atk="70" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="58384" level="20" hp="50" magic="31" agility="31" luck="31" physique="31" anger="100" atk="48" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="4533140" level="73" hp="50" magic="84" agility="84" luck="84" physique="84" anger="100" atk="153" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="158604" level="28" hp="50" magic="39" agility="39" luck="39" physique="39" anger="100" atk="64" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="642584" level="44" hp="50" magic="55" agility="55" luck="55" physique="55" anger="100" atk="96" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="739489" level="46" hp="50" magic="57" agility="57" luck="57" physique="57" anger="100" atk="100" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="440738" level="39" hp="50" magic="50" agility="50" luck="50" physique="50" anger="100" atk="86" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="26148" level="15" hp="50" magic="26" agility="26" luck="26" physique="26" anger="100" atk="38" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="262429" level="33" hp="50" magic="44" agility="44" luck="44" physique="44" anger="100" atk="74" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="287782" level="34" hp="50" magic="45" agility="45" luck="45" physique="45" anger="100" atk="76" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="8039840" level="82" hp="50" magic="93" agility="93" luck="93" physique="93" anger="100" atk="171" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1537569" level="57" hp="50" magic="68" agility="68" luck="68" physique="68" anger="100" atk="121" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="14634" level="12" hp="50" magic="23" agility="23" luck="23" physique="23" anger="100" atk="32" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="973604" level="50" hp="50" magic="61" agility="61" luck="61" physique="61" anger="100" atk="107" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="476957" level="40" hp="50" magic="51" agility="51" luck="51" physique="51" anger="100" atk="88" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="31151" level="16" hp="50" magic="27" agility="27" luck="27" physique="27" anger="100" atk="40" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="7566640" level="81" hp="50" magic="92" agility="92" luck="92" physique="92" anger="100" atk="169" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="314801" level="35" hp="50" magic="46" agility="46" luck="46" physique="46" anger="100" atk="78" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="849458" level="48" hp="50" magic="59" agility="59" luck="59" physique="59" anger="100" atk="103" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="2272930" level="63" hp="50" magic="74" agility="74" luck="74" physique="74" anger="100" atk="133" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="9396" level="10" hp="50" magic="21" agility="21" luck="21" physique="21" anger="100" atk="28" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="406454" level="38" hp="50" magic="49" agility="49" luck="49" physique="49" anger="100" atk="84" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="792759" level="47" hp="50" magic="58" agility="58" luck="58" physique="58" anger="100" atk="101" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="5688" level="8" hp="50" magic="19" agility="19" luck="19" physique="19" anger="100" atk="24" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1740978" level="59" hp="50" magic="70" agility="70" luck="70" physique="70" anger="100" atk="125" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="195771" level="30" hp="50" magic="41" agility="41" luck="41" physique="41" anger="100" atk="68" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1354044" level="55" hp="50" magic="66" agility="66" luck="66" physique="66" anger="100" atk="117" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1443389" level="56" hp="50" magic="67" agility="67" luck="67" physique="67" anger="100" atk="119" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="87862" level="23" hp="50" magic="34" agility="34" luck="34" physique="34" anger="100" atk="54" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="10766510" level="87" hp="50" magic="98" agility="98" luck="98" physique="98" anger="100" atk="181" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="5523640" level="76" hp="50" magic="87" agility="87" luck="87" physique="87" anger="100" atk="159" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="2120890" level="62" hp="50" magic="73" agility="73" luck="73" physique="73" anger="100" atk="131" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="9056315" level="84" hp="50" magic="95" agility="95" luck="95" physique="95" anger="100" atk="175" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="708" level="3" hp="50" magic="14" agility="14" luck="14" physique="14" anger="100" atk="14" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="2802365" level="66" hp="50" magic="77" agility="77" luck="77" physique="77" anger="100" atk="139" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="67270" level="21" hp="50" magic="32" agility="32" luck="32" physique="32" anger="100" atk="50" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="6278855" level="78" hp="50" magic="89" agility="89" luck="89" physique="89" anger="100" atk="163" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="238664" level="32" hp="50" magic="43" agility="43" luck="43" physique="43" anger="100" atk="72" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1113161" level="52" hp="50" magic="63" agility="63" luck="63" physique="63" anger="100" atk="111" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="374090" level="37" hp="50" magic="48" agility="48" luck="48" physique="48" anger="100" atk="82" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="597956" level="43" hp="50" magic="54" agility="54" luck="54" physique="54" anger="100" atk="94" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="6686780" level="79" hp="50" magic="90" agility="90" luck="90" physique="90" anger="100" atk="165" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="3004990" level="67" hp="50" magic="78" agility="78" luck="78" physique="78" anger="100" atk="141" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="8536145" level="83" hp="50" magic="94" agility="94" luck="94" physique="94" anger="100" atk="173" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="7378" level="9" hp="50" magic="20" agility="20" luck="20" physique="20" anger="100" atk="26" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="3221570" level="68" hp="50" magic="79" agility="79" luck="79" physique="79" anger="100" atk="143" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="4308" level="7" hp="50" magic="18" agility="18" luck="18" physique="18" anger="100" atk="22" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="36822" level="17" hp="50" magic="28" agility="28" luck="28" physique="28" anger="100" atk="42" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="3960535" level="71" hp="50" magic="82" agility="82" luck="82" physique="82" anger="100" atk="149" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1368" level="4" hp="50" magic="15" agility="15" luck="15" physique="15" anger="100" atk="16" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="50394" level="19" hp="50" magic="30" agility="30" luck="30" physique="30" anger="100" atk="46" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="142043" level="27" hp="50" magic="38" agility="38" luck="38" physique="38" anger="100" atk="62" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="4845140" level="74" hp="50" magic="85" agility="85" luck="85" physique="85" anger="100" atk="155" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="689484" level="45" hp="50" magic="56" agility="56" luck="56" physique="56" anger="100" atk="98" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="43230" level="18" hp="50" magic="29" agility="29" luck="29" physique="29" anger="100" atk="44" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1189080" level="53" hp="50" magic="64" agility="64" luck="64" physique="64" anger="100" atk="113" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1269338" level="54" hp="50" magic="65" agility="65" luck="65" physique="65" anger="100" atk="115" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="5175140" level="75" hp="50" magic="86" agility="86" luck="86" physique="86" anger="100" atk="157" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="7115800" level="80" hp="50" magic="91" agility="91" luck="91" physique="91" anger="100" atk="167" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="2436830" level="64" hp="50" magic="75" agility="75" luck="75" physique="75" anger="100" atk="135" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="10170710" level="86" hp="50" magic="97" agility="97" luck="97" physique="97" anger="100" atk="179" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="176488" level="29" hp="50" magic="40" agility="40" luck="40" physique="40" anger="100" atk="66" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1636698" level="58" hp="50" magic="69" agility="69" luck="69" physique="69" anger="100" atk="123" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="909683" level="49" hp="50" magic="60" agility="60" luck="60" physique="60" anger="100" atk="105" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1041396" level="51" hp="50" magic="62" agility="62" luck="62" physique="62" anger="100" atk="109" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="11388890" level="88" hp="50" magic="99" agility="99" luck="99" physique="99" anger="100" atk="183" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="515190" level="41" hp="50" magic="52" agility="52" luck="52" physique="52" anger="100" atk="90" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="1850615" level="60" hp="50" magic="71" agility="71" luck="71" physique="71" anger="100" atk="127" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="12716665" level="90" hp="50" magic="101" agility="101" luck="101" physique="101" anger="100" atk="187" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="3698810" level="70" hp="50" magic="81" agility="81" luck="81" physique="81" anger="100" atk="147" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="5891315" level="77" hp="50" magic="88" agility="88" luck="88" physique="88" anger="100" atk="161" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="2292" level="5" hp="50" magic="16" agility="16" luck="16" physique="16" anger="100" atk="18" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+	<attribute exp="555518" level="42" hp="50" magic="53" agility="53" luck="53" physique="53" anger="100" atk="92" def="0" strength="100" happy="100" soul="100" intensity="1" crit="0" double_hit="0" speed="3" crit_damage="2" tenacity="0"  >
+	</attribute>
+</root>

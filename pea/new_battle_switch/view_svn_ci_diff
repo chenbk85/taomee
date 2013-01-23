@@ -1,0 +1,3 @@
+chmod +x ./gen_svn_ci
+list=`./gen_svn_ci`
+[[ -n "$list" ]] && svn diff $list | view -

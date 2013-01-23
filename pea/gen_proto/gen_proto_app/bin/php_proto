@@ -1,0 +1,482 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import re
+import xml.sax.handler
+
+def xml2obj(src):
+	"""
+	A simple function to converts XML data into native Python object.
+	"""
+
+	non_id_char = re.compile('[^_0-9a-zA-Z]')
+	def _name_mangle(name):
+		return non_id_char.sub('_', name)
+
+	class DataNode(object):
+		def __init__(self):
+			self._attrs = {}	# XML attributes and child elements
+			self.data = None	# child text data
+		def __len__(self):
+			# treat single element as a list of 1
+			return 1
+		def __getitem__(self, key):
+			if isinstance(key, basestring):
+				return self._attrs.get(key,None)
+			else:
+				return [self][key]
+		def __contains__(self, name):
+			return self._attrs.has_key(name)
+		def __nonzero__(self):
+			return bool(self._attrs or self.data)
+		def __getattr__(self, name):
+			if name.startswith('__'):
+				# need to do this for Python special methods???
+				raise AttributeError(name)
+			return self._attrs.get(name,None)
+		def _add_xml_attr(self, name, value):
+			if name in self._attrs:
+				# multiple attribute of the same name are represented by a list
+				children = self._attrs[name]
+				if not isinstance(children, list):
+					children = [children]
+					self._attrs[name] = children
+				children.append(value)
+			else:
+				self._attrs[name] = value
+		def __str__(self):
+			return self.data or ''
+		def __repr__(self):
+			items = sorted(self._attrs.items())
+			if self.data:
+				items.append(('data', self.data))
+			return u'{%s}' % ', '.join([u'%s:%s' % (k,repr(v)) for k,v in items])
+
+	class TreeBuilder(xml.sax.handler.ContentHandler):
+		def __init__(self):
+			self.stack = []
+			self.root = DataNode()
+			self.current = self.root
+			self.text_parts = []
+		def startElement(self, name, attrs):
+			self.stack.append((self.current, self.text_parts))
+			self.current = DataNode()
+			self.text_parts = []
+			# xml attributes --> python attributes
+			for k, v in attrs.items():
+				self.current._add_xml_attr(_name_mangle(k), v)
+		def endElement(self, name):
+			text = ''.join(self.text_parts).strip()
+			if text:
+				self.current.data = text
+			if self.current._attrs:
+				obj = self.current
+			else:
+				# a text only node is simply represented by the string
+				obj = text or ''
+			self.current, self.text_parts = self.stack.pop()
+			self.current._add_xml_attr(_name_mangle(name), obj)
+		def characters(self, content):
+			self.text_parts.append(content)
+
+	builder = TreeBuilder()
+	if isinstance(src,basestring):
+		xml.sax.parseString(src, builder)
+	else:
+		xml.sax.parse(src, builder)
+	return builder.root._attrs.values()[0]
+
+#-----XML-END------------------------------------
+
+
+import sys 
+reload(sys)
+sys.setdefaultencoding('utf-8')
+from pprint import pprint
+#--------------------C++------------------
+g_type_conf={
+	"uint32":"uint32_t",
+	"uint16":"uint16_t",
+	"uint8":"uint8_t",
+	"int8":"int8_t",
+	"uint64":"uint64_t",
+	"int64":"int64_t",
+	"int32":"int32_t",
+	"int16":"int16_t",
+	"char":"char",
+	"double":"double",
+};
+def get_php_type( typestr):
+	global g_type_conf
+	if g_type_conf.has_key(typestr ) :  
+		return g_type_conf[typestr]  ;
+	else:
+		return typestr;
+
+def get_field_desc( field_name,field_desc="" ):
+	global g_desc_list;
+	if (field_desc=="" ):
+		if g_desc_map.has_key(field_name):
+			return g_desc_map[field_name];
+		else: 
+			return  ""
+	else:
+		return field_desc;
+#------------------------------------READ------------------------------------
+def get_read_field_str(field_name,field_type ):
+	if  g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tif (!$ba->read_%s($this->%s)) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\tif (!$this->%s->read_from_buf($ba)) return false;\n"%( field_name);
+
+def get_read_from_arr_field_str(field_name,field_type ):
+	if  g_type_conf.has_key(field_type):#是基本类型
+		return "\t\t$this->%s=$obj->%s;\n"%(
+				field_name, field_name
+				);
+	else:
+		return "\t\tif (!$this->%s->read_from_obj($obj->%s)) return false;\n"%( field_name,field_name);
+
+
+def get_read_from_arr_arr_field_str(field_name,field_type ):
+	if  g_type_conf.has_key(field_type):#是基本类型
+		return "\t\t\t $this->%s=$obj->%s;\n"%(
+				field_name, field_name
+				);
+	else:
+		return "\t\t\t$this->%s[$i]=new %s();\n\t\t\tif (!$this->%s[$i]->read_from_obj($obj->%s[$i] )) return false;\n"%( field_name,field_type,field_name, field_name);
+
+
+
+	
+def get_init_field_str(field_name,field_type ):
+	if  g_type_conf.has_key(field_type):#是基本类型
+		return "";
+	else:
+		return "\t\t$this->%s=new %s(); \n"%( field_name,field_type );
+
+
+def get_read_arr_field_str(field_name,field_type ):
+	if  g_type_conf.has_key(field_type):#是基本类型
+		return "\t\t\tif (!$ba->read_%s($this->%s[$i])) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\t\t$this->%s[$i]=new %s();\n\t\t\tif (!$this->%s[$i]->read_from_buf($ba)) return false;\n"%( field_name,field_type,field_name);
+
+
+
+
+def get_write_field_str(field_name,field_type ):
+	if  g_type_conf.has_key(field_type):#是基本类型
+		return "\t\tif (!$ba->write_%s($this->%s)) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\tif ( ! $this->%s instanceof %s ) return false; \n\t\tif (!$this->%s->write_to_buf($ba)) return false;\n"%(field_name,field_type,field_name);
+
+def get_write_arr_field_str(field_name,field_type ):
+	if  g_type_conf.has_key(field_type):#是基本类型
+		return "\t\t\tif (!$ba->write_%s($this->%s[$i])) return false;\n"%(
+				field_type,field_name
+				);
+	else:
+		return "\t\t\tif ( ! $this->%s[$i] instanceof %s ) return false; \n\t\t\tif (!$this->%s[$i]->write_to_buf($ba)) return false;\n"%( field_name,field_type, field_name);
+
+
+def frm_array_str(field_type):
+	if field_type == "char":
+		return ""
+	else:
+		return "=array()"
+
+def get_php_struct_field_str(field ):
+	mode=field.mode;
+	field_str="";
+	read_buf_str="";
+	read_arr_str="";
+	write_buf_str="";
+	init_str="";
+
+	if (mode=="single"):
+		#get_field_desc(field.name,field.desc ),  
+		field_str="\t/* %s */\n\t#类型:%s\n\tpublic $%s;\n\n"%(
+				get_field_desc(field.name,field.desc ),  
+				field.type ,
+				field.name 
+				)
+		read_buf_str=read_buf_str+get_read_field_str(field.name,field.type);
+		write_buf_str=write_buf_str+get_write_field_str(field.name,field.type);
+		init_str=init_str+get_init_field_str(field.name,field.type);
+		read_arr_str=read_arr_str+get_read_from_arr_field_str(field.name,field.type);
+
+	elif (mode=="array"):
+		field_str="\t/* %s */\n\t#定长数组,长度:%s, 类型:%s \n\tpublic $%s %s;\n\n"%(
+				get_field_desc(field.name,field.desc ),  
+				field.size,
+				get_php_type(field.type), 
+				field.name ,
+				frm_array_str(field.type)
+				)
+		if (field.type=="char"):
+			read_buf_str=read_buf_str+"\t\tif(!$ba->read_buf($this->%s,%s)) return false;\n"%(field.name, field.size  )
+			read_arr_str=read_arr_str+get_read_from_arr_field_str(field.name,field.type);
+			write_buf_str=write_buf_str+"\t\t$ba->write_buf($this->%s,%s);\n"%(field.name, field.size  )
+		else:
+			read_buf_str=read_buf_str+"""\t\t$this->%s=array();\n\t\t{for($i=0;$i<%s;$i++){\n%s\t\t}}\n"""%( field.name,field.size, get_read_arr_field_str(field.name,field.type ) )
+			read_arr_str=read_arr_str+"""\t\t$this->%s=array();\n\t\t{for($i=0;$i<%s;$i++){\n%s\t\t}}\n"""%( field.name,field.size, get_read_from_arr_arr_field_str(field.name,field.type ) )
+			write_buf_str=write_buf_str+"\t\tif(count($this->%s)!=%s) return false; \n\t\t{for($i=0; $i<%s;$i++){\n%s\t\t}}\n"%(field.name,field.size ,field.size, get_write_arr_field_str(field.name,field.type ) )
+
+	elif (mode=="varlist"):
+		field_str="\t/*%s*/\n\t#变长数组,最大长度:%s, 类型:%s\n\tpublic $%s %s;\n\n"%(
+				get_field_desc(field.name,field.desc ),  
+				field.max_size,
+				get_php_type(field.type), 
+				field.name,
+				frm_array_str(field.type)
+				);
+
+		read_buf_str=read_buf_str+"""
+		$%s_count=0 ;
+		if (!$ba->read_uint32( $%s_count )) return false;
+		if ($%s_count>%s) return false;\n"""%(field.name, field.name,field.name,field.max_size)
+		if (field.type=="char"):
+			read_buf_str=read_buf_str+"\t\tif(!$ba->read_buf($this->%s,$%s_count))return false;\n"%(field.name,field.name )
+			read_arr_str=read_arr_str+get_read_from_arr_field_str(field.name,field.type);
+			write_buf_str=write_buf_str+"""\t\t$%s_count=strlen($this->%s);
+		$ba->write_uint32($%s_count);
+		$ba->write_buf($this->%s,$%s_count);
+""" %(field.name,field.name, field.name,field.name,field.name  )
+					
+		else:
+			read_buf_str=read_buf_str+"\t\t$this->%s=array();\n\t\t{for($i=0; $i<$%s_count;$i++){\n%s\t\t}}\n"%( field.name ,field.name ,get_read_arr_field_str(field.name,field.type ) )
+			read_arr_str=read_arr_str+"""\t\t$this->%s=array();\n\t\t{for($i=0;$i<count($obj->%s);$i++){\n%s\t\t}}\n"""%( field.name,field.name, get_read_from_arr_arr_field_str(field.name,field.type ) )
+			write_buf_str=write_buf_str+"""\t\t$%s_count=count($this->%s);
+        $ba->write_uint32($%s_count);
+		{for($i=0; $i<$%s_count;$i++){\n%s\t\t}}\n"""%( field.name,field.name,
+			field.name,field.name ,
+			get_write_arr_field_str(field.name,field.type ) )
+	
+	else:
+	 	sys.stdout.write("error field type:%s"%(mode));
+		sys.exit(1);
+	return field_str,read_buf_str,write_buf_str,init_str,read_arr_str;
+
+#生成结构体代码
+def get_php_struct_src(struct):
+	field_str=""
+	read_buf_str=""
+	read_arr_str=""
+	write_buf_str=""
+	init_str=""
+	php_in_field_list=[]
+	for field in  struct.field:
+		php_in_field_list.append(field.name);
+		tmp_field_str,tmp_read_buf_str,tmp_write_buf_str,tmp_init_str,tmp_read_arr_str=get_php_struct_field_str(field)
+		field_str=field_str+tmp_field_str
+		read_buf_str=read_buf_str+tmp_read_buf_str
+		read_arr_str=read_arr_str+tmp_read_arr_str
+		write_buf_str=write_buf_str+tmp_write_buf_str
+		init_str=init_str+tmp_init_str
+	src_str="""
+class %s {
+%s
+	public function %s(){
+%s
+	}
+
+	public function read_from_obj($obj ){
+%s		return true;
+	}
+
+
+	public function read_from_buf($ba ){
+%s		return true;
+	}
+
+	public function write_to_buf($ba ){
+%s		return true;
+	}
+
+};
+
+	"""%( struct.name, field_str,struct.name ,init_str,read_arr_str,read_buf_str, write_buf_str );
+	return src_str,php_in_field_list
+
+#----------------------------------------
+def get_message_type(msg_type ):
+	if (msg_type=="" ) : return "Cmessage";
+	else: return msg_type;
+
+def get_func_in_field_list(struct_in_str):
+
+	global g_struct_map
+	if (not g_struct_map.has_key(struct_in_str) ):
+		return ""
+
+	item=g_struct_map[struct_in_str]
+	if (item[0]=="same_as"):#
+		return get_func_in_field_list(item[1] );
+	else:
+		ret_func_str="";
+		ret_eq_str="";
+		frist_field_name=item[1][0];
+		for field_name in item[1]:
+			ret_func_str=ret_func_str+", $%s=null"%field_name;
+			ret_eq_str=ret_eq_str+"\t\t\t$in->%s=$%s;\n"%(field_name,field_name);
+			
+		return frist_field_name,ret_func_str,ret_eq_str;
+
+
+#----------------------------------------
+
+import sys 
+import optparse
+
+#得到配置项
+p = optparse.OptionParser(
+		description='gen proto  code  ',
+		prog="php_proto",
+		version='%prog 0.1',
+		usage='%prog [ -o output_dir ] [-p project_name ]  proxy.xml' )
+p.add_option('-o', '--output_dir', default="./php/", help='文件输出位置'  );
+p.add_option('-p', '--project_name', default="", help='项目名,如果不写,由xml中得到'  );
+p.add_option('-b', '--gen_bind', default="0xFFFFFFFF", help='只产生需要bind的代码' );
+
+options, arguments = p.parse_args()	
+project_name=options.project_name;
+gen_bind_value=eval(options.gen_bind);
+
+
+if len(arguments) != 1 :
+	p.print_help();
+	sys.exit();
+config_xml=arguments[0];  
+
+
+
+
+fp=open( config_xml ,"r" )
+
+xml_str=fp.read();
+pro=xml2obj(xml_str)
+e_list=pro.error_list;
+s_list=pro.struct_list;
+p_list=pro.protocol_list;
+d_list=pro.desc_list;
+if project_name=="" :
+	project_name=pro.project_name;
+
+g_desc_map={ }
+for field in d_list.field_desc :
+	g_desc_map[field.key]=field.desc;
+
+g_struct_map={ }
+
+import sys 
+
+
+
+pro_file_name="%s/%s_proto.php"%( options.output_dir ,project_name)
+pro_fd=open(pro_file_name,"w" );
+
+pro_fd.write( "<?php\n");
+pro_fd.write( "require_once(\"proto_base.php\");\n");
+for struct in s_list.struct:
+	if struct.same_as_struct:
+		pro_fd.write("\nclass %s extends %s{};\n"%(struct.name ,struct.same_as_struct));
+		g_struct_map[struct.name]=["same_as",struct.same_as_struct]
+	else:	
+		struct_str,php_in_field_list=get_php_struct_src(struct);
+		pro_fd.write(struct_str);
+		g_struct_map[struct.name]=["field_list", php_in_field_list]
+	
+import pprint;
+cmd_str=""
+cmd_id_name_str=""
+for item in p_list.protocol:
+	if not (( int (item.bind_bitmap) & gen_bind_value) > 0 or gen_bind_value==0xFFFFFFFF ):
+		continue;
+
+	in_str="null"
+	func_in_str="";
+	in_eq_str_ex="";
+	in_commnet_str="";
+	if (item.struct_in):	
+		in_str="$in"
+		frist_field_name,func_in_str,in_eq_str= get_func_in_field_list(item.struct_in)
+		in_eq_str_ex="""
+		if ( $%s instanceof %s ){
+			$in=$%s;
+		}else{
+			$in=new %s();
+%s
+		}
+		"""%( frist_field_name, item.struct_in,frist_field_name,item.struct_in,in_eq_str );
+		in_commnet_str="""\t/* 调用方式还可以是： 
+		$in=new %s();
+		$in.xx1="xxxxx1";
+		$in.xx2="xxxxx2";
+		....
+		$in.xx3="xxxxx3";
+		$proto->%s($userid,$in );
+	*/\n"""%( item.struct_in ,item.name);
+
+
+	out_str="null"
+	if (item.struct_out):	
+		out_str="new %s()"% item.struct_out;
+
+	cmd_str=cmd_str+"""
+	/* %s */
+%s
+	function %s($userid %s){
+%s
+		return $this->send_cmd_new(%s,$userid, %s, %s, %s);
+	}
+	"""%(item.desc,in_commnet_str, item.name, func_in_str, in_eq_str_ex ,item.cmd ,in_str, out_str,item.md5_tag)
+
+	cmd_id_name_str=cmd_id_name_str+"\t\t$this->cmd_id_name_map[%s]=array('%s','%s','%s');\n"%(item.cmd,item.name,item.struct_in , item.struct_out )
+	
+
+pro_fd.write(  """
+class C%s_proto  extends Cproto_base {
+	var $cmd_id_name_map=array();
+    function __construct( $proxyip,$proxyport){
+        parent::__construct($proxyip,$proxyport) ;
+%s
+    }
+	
+	function send_obj_cmd($obj){
+		$cmdid=$obj["cmdid"];
+		$userid=$obj["userid"];
+
+		$cmd_item=$this->cmd_id_name_map[$cmdid];
+
+		if (!$cmd_item) {
+			return array("result"=>1004,"errmsg"=>"php no find cmdid ");
+		}
+
+		$cmd_name=$cmd_item[0];
+		$cmd_in=$cmd_item[1];
+		$cmd_out=$cmd_item[2];
+		$in=null;
+		if ($cmd_in){
+			eval("\\$in=new {$cmd_in}();");
+			$in->read_from_obj($obj["pri_in"]);
+			eval("\\$arr=\$this->$cmd_name(\\$userid,\\$in);" );
+			return $arr;
+		}else{
+			eval("\\$arr=\$this->$cmd_name(\\$userid);" );
+			return $arr;
+		}
+	}
+
+
+
+%s
+};
+"""%(project_name  ,cmd_id_name_str,cmd_str ));
+
+pro_fd.write( "?>\n");

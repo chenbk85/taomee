@@ -1,0 +1,5 @@
+#!/bin/bash
+
+filters="bench.lua\|dev.lua\|conf.*"
+list=`svn status | grep "^M" | grep -v "$filters" | awk '{print $2}' | xargs`
+echo "$list"

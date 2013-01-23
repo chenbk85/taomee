@@ -1,0 +1,71 @@
+<!--
+effect_id: 效果流水号，唯一，不得重复
+
+type:效果类型,由程序枚举出所有效果，唯一，每个效果也有固定的含义
+  type = 1 伤害上升
+  type = 2 伤害下降
+
+trigger_type: 效果触发方式
+  trigger_type = 1 正常触发，总是触发 
+  trigger_type = 2 按回合触发，每回合出手前触发
+  trigger_type = 3 按回合触发，每回合出手后触发
+  trigger_type = 4 攻击触发
+  trigger_type = 5 被攻击触发
+  trigger_type = 6 受伤触发
+
+trigger_rate:效果触发概率 
+trigger_value: 额外参数,触发值
+trigger_percent: 额外参数，触发百分比
+buff_id: 附加的buffid
+buff_target: 1:自己，2:队友，3:目标敌人，4:全部敌人
+-->
+<!--
+type 从10 - 100为基本属性buff和debuff，对应属性配置表里的各种类型
+type=10，11为hp
+type=12, 13为hp上线
+依次对应到点券
+-->
+ 
+ 
+<root>
+	<effect effect_type = "1" effect_name="免疫各种buff">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="0"/>
+	</effect>
+	<effect effect_type = "2" effect_name="免疫各种debuff">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="0"/>
+	</effect>
+    <effect effect_type = "3" effect_name="增加防御">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+    <effect effect_type = "4" effect_name="降低防御">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+    <effect effect_type = "5" effect_name="增加攻击">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+    <effect effect_type = "6" effect_name="降低攻击">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+    <effect effect_type = "7" effect_name="增加伤害">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+    <effect effect_type = "8" effect_name="降低伤害">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+   <effect effect_type = "10" effect_name="增加基本属性type=0 为hp的">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+   <effect effect_type = "11" effect_name="减少基本属性type=0 为hp的">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+
+
+    <effect effect_type = "101" effect_name="其它buff">
+		<trigger effect_id ="1" trigger_type = "1" trigger_rate="100" trigger_value ="0" trigger_percent="50"/>
+	</effect>
+    
+
+</root>
+
+
+

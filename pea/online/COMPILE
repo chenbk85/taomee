@@ -1,0 +1,16 @@
+#!/bin/bash
+
+DIR_INIT=`pwd`
+DIR_BUILD="$DIR_INIT/cmake_build"
+BIN="$DIR_BUILD/libonline.so"
+
+mkdir -p $DIR_BUILD
+cd $DIR_BUILD 
+cmake $DIR_INIT
+
+[[ $? != 0 ]] && rm -rf $DIR_BUILD && exit 1
+
+make $*
+mv $BIN $DIR_INIT
+
+exit 0

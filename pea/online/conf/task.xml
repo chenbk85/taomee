@@ -1,0 +1,79 @@
+<!--
+task:任务
+    id是task的唯一标示符
+    type标识主线支线日常等
+    pre 表示前置任务id有哪些 用空格隔开 最多四个
+    isAnd 表示前置任务是与(1)还是或(0) 表示前置任务都完成才能接该任务 还是只要完成其中一个就能接任务
+    need_level 表示接取任务的角色等级要求
+    bind_map_id 表示接取任务必须要在某个地图
+    prize_options 表示任务完成后给予的奖励ID，可在prize.xml中查到 最多写四个 玩家可选择一个，用空格隔开
+step:任务的步骤
+    type 表示步骤类型 目前有5种
+        1 表示完成某个动作 
+        2 表示收集某种物品多少个
+        3 表示级别达到多少 
+        4 表示经验达到多少 
+        4 表示钱达到多少
+    condition 表示完成该步骤的条件
+        对于类型 1 要么完成 要么没完成 所以完成步骤的条件为"1"
+        对于类型 2 表示收集某个物品多少件 用"id num"对表示比如condition="10001 100" 表示要收集10001物品100个
+        对于类型 3 condition="12345" 表示级别值必须达到12345
+        对于类型 4 condition="123456" 表示经验要达到123456
+        对于类型 5 condition="1234567" 表示钱要达到1234567
+    pre 表示完成该步骤必须完成哪些前置步骤
+        比如pre="1 3" 表示完成该步骤必须完成前置步骤1和3(1或3) 其中1和3的值按任务所有步骤从上往下顺序计算 从1开始
+    isAnd 表示步骤的前置步骤条件是与还是或 含义同任务的isAnd
+-->
+
+<tasks>
+    <!-- type 1主线 2支线 3日常-->
+    <task id="1001" type="1" pre="" isAnd="" need_level="" bind_map_id="10" prize_id="2001">
+        <step type="1" condition="1" pre="" isAnd=""/>
+    </task>
+    <task id="1002" type="1" pre="1001" isAnd="1" need_level="1" bind_map_id="10">
+        <step type="1" condition="1" />
+        <step type="1" condition="1" pre="1" isAnd="1"/>
+    </task>
+    <task id="1003" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1004" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1005" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1006" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1007" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1008" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1009" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1010" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1011" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1012" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1013" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1014" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1015" type="1">
+        <step type="1" condition="1" />
+    </task>
+    <task id="1016" type="1">
+        <step type="1" condition="1" />
+    </task>
+</tasks>

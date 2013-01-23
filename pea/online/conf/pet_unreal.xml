@@ -1,0 +1,169 @@
+<root>
+	<!--幻化精灵等级基础成功率   level 精灵等级  base_rate 成功率-->
+	<success>
+		<star level="390" base_rate="5" ></star>
+		<star level="330" base_rate="15" ></star>
+		<star level="270" base_rate="25" ></star>
+		<star level="210" base_rate="35" ></star>
+		<star level="150" base_rate="50" ></star>
+		<star level="90" base_rate="70" ></star>
+		<star level="30" base_rate="90" ></star>
+		<star level="420" base_rate="1" ></star>
+		<star level="360" base_rate="10" ></star>
+		<star level="300" base_rate="20" ></star>
+		<star level="240" base_rate="30" ></star>
+		<star level="180" base_rate="40" ></star>
+		<star level="120" base_rate="60" ></star>
+		<star level="60" base_rate="80" ></star>
+	</success>
+	<!--协助精灵成功率 lv_low lv_high 等级段 共享成功率 success_rate-->
+	<assist>
+		<rate lv_low="1" lv_high="29" success_rate="1" ></rate>
+		<rate lv_low="450" lv_high="450" success_rate="11" ></rate>
+		<rate lv_low="390" lv_high="419" success_rate="9" ></rate>
+		<rate lv_low="330" lv_high="359" success_rate="7" ></rate>
+		<rate lv_low="270" lv_high="299" success_rate="5.5" ></rate>
+		<rate lv_low="210" lv_high="239" success_rate="4.5" ></rate>
+		<rate lv_low="150" lv_high="179" success_rate="3.5" ></rate>
+		<rate lv_low="90" lv_high="119" success_rate="2.5" ></rate>
+		<rate lv_low="30" lv_high="59" success_rate="1.5" ></rate>
+		<rate lv_low="420" lv_high="449" success_rate="10" ></rate>
+		<rate lv_low="360" lv_high="389" success_rate="8" ></rate>
+		<rate lv_low="300" lv_high="329" success_rate="6" ></rate>
+		<rate lv_low="240" lv_high="269" success_rate="5" ></rate>
+		<rate lv_low="180" lv_high="209" success_rate="4" ></rate>
+		<rate lv_low="120" lv_high="149" success_rate="3" ></rate>
+		<rate lv_low="60" lv_high="89" success_rate="2" ></rate>
+	</assist>
+	<!--失败返利配表  rate_low rate_high 表示 4个辅助精灵增加的成功率      成功率共享 item_group_id 返利道具组 -->
+	<rebates>
+		<itemgroup item_group_id="1" rate_low="1" rate_high="4" >
+			<item item_id="10001" num="1" rate="20" ></item>
+			<item item_id="10002" num="1" rate="30" ></item>
+			<item item_id="10003" num="1" rate="30" ></item>
+			<item item_id="10004" num="1" rate="15" ></item>
+			<item item_id="10005" num="1" rate="4" ></item>
+			<item item_id="10006" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="3" rate_low="6.5" rate_high="8" >
+			<item item_id="10013" num="1" rate="20" ></item>
+			<item item_id="10014" num="1" rate="30" ></item>
+			<item item_id="10015" num="1" rate="30" ></item>
+			<item item_id="10016" num="1" rate="15" ></item>
+			<item item_id="10017" num="1" rate="4" ></item>
+			<item item_id="10018" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="4" rate_low="8.5" rate_high="10" >
+			<item item_id="10019" num="1" rate="20" ></item>
+			<item item_id="10020" num="1" rate="30" ></item>
+			<item item_id="10021" num="1" rate="30" ></item>
+			<item item_id="10022" num="1" rate="15" ></item>
+			<item item_id="10023" num="1" rate="4" ></item>
+			<item item_id="10024" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="5" rate_low="10.5" rate_high="12" >
+			<item item_id="10025" num="1" rate="20" ></item>
+			<item item_id="10026" num="1" rate="30" ></item>
+			<item item_id="10027" num="1" rate="30" ></item>
+			<item item_id="10028" num="1" rate="15" ></item>
+			<item item_id="10029" num="1" rate="4" ></item>
+			<item item_id="10030" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="7" rate_low="14.5" rate_high="16" >
+			<item item_id="20011" num="1" rate="20" ></item>
+			<item item_id="20012" num="1" rate="30" ></item>
+			<item item_id="20013" num="1" rate="30" ></item>
+			<item item_id="20014" num="1" rate="15" ></item>
+			<item item_id="20015" num="1" rate="4" ></item>
+			<item item_id="20016" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="8" rate_low="16.5" rate_high="18" >
+			<item item_id="10001" num="1" rate="20" ></item>
+			<item item_id="10002" num="1" rate="30" ></item>
+			<item item_id="10003" num="1" rate="30" ></item>
+			<item item_id="10004" num="1" rate="15" ></item>
+			<item item_id="10005" num="1" rate="4" ></item>
+			<item item_id="10006" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="9" rate_low="18.5" rate_high="20" >
+			<item item_id="10007" num="1" rate="20" ></item>
+			<item item_id="10008" num="1" rate="30" ></item>
+			<item item_id="10009" num="1" rate="30" ></item>
+			<item item_id="10010" num="1" rate="15" ></item>
+			<item item_id="10011" num="1" rate="4" ></item>
+			<item item_id="10012" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="11" rate_low="22.5" rate_high="24" >
+			<item item_id="10025" num="1" rate="20" ></item>
+			<item item_id="10026" num="1" rate="30" ></item>
+			<item item_id="10027" num="1" rate="30" ></item>
+			<item item_id="10028" num="1" rate="15" ></item>
+			<item item_id="10029" num="1" rate="4" ></item>
+			<item item_id="10030" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="12" rate_low="24.5" rate_high="28" >
+			<item item_id="20007" num="1" rate="20" ></item>
+			<item item_id="20008" num="1" rate="30" ></item>
+			<item item_id="20009" num="1" rate="30" ></item>
+			<item item_id="20010" num="1" rate="15" ></item>
+			<item item_id="20011" num="1" rate="4" ></item>
+			<item item_id="20012" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="13" rate_low="28.5" rate_high="32" >
+			<item item_id="20011" num="1" rate="20" ></item>
+			<item item_id="20012" num="1" rate="30" ></item>
+			<item item_id="20013" num="1" rate="30" ></item>
+			<item item_id="20014" num="1" rate="15" ></item>
+			<item item_id="20015" num="1" rate="4" ></item>
+			<item item_id="20016" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="15" rate_low="36.5" rate_high="40" >
+			<item item_id="10007" num="1" rate="20" ></item>
+			<item item_id="10008" num="1" rate="30" ></item>
+			<item item_id="10009" num="1" rate="30" ></item>
+			<item item_id="10010" num="1" rate="15" ></item>
+			<item item_id="10011" num="1" rate="4" ></item>
+			<item item_id="10012" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="16" rate_low="40.5" rate_high="44" >
+			<item item_id="20015" num="1" rate="20" ></item>
+			<item item_id="20016" num="1" rate="30" ></item>
+			<item item_id="20017" num="1" rate="30" ></item>
+			<item item_id="20017" num="1" rate="15" ></item>
+			<item item_id="20017" num="1" rate="4" ></item>
+			<item item_id="20017" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="2" rate_low="4.5" rate_high="6" >
+			<item item_id="10007" num="1" rate="20" ></item>
+			<item item_id="10008" num="1" rate="30" ></item>
+			<item item_id="10009" num="1" rate="30" ></item>
+			<item item_id="10010" num="1" rate="15" ></item>
+			<item item_id="10011" num="1" rate="4" ></item>
+			<item item_id="10012" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="6" rate_low="12.5" rate_high="14" >
+			<item item_id="20007" num="1" rate="20" ></item>
+			<item item_id="20008" num="1" rate="30" ></item>
+			<item item_id="20009" num="1" rate="30" ></item>
+			<item item_id="20010" num="1" rate="15" ></item>
+			<item item_id="20011" num="1" rate="4" ></item>
+			<item item_id="20012" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="10" rate_low="20.5" rate_high="22" >
+			<item item_id="20015" num="1" rate="20" ></item>
+			<item item_id="20016" num="1" rate="30" ></item>
+			<item item_id="20017" num="1" rate="30" ></item>
+			<item item_id="20017" num="1" rate="15" ></item>
+			<item item_id="20017" num="1" rate="4" ></item>
+			<item item_id="20017" num="1" rate="1" ></item>
+		</itemgroup>
+		<itemgroup item_group_id="14" rate_low="32.5" rate_high="36" >
+			<item item_id="10001" num="1" rate="20" ></item>
+			<item item_id="10002" num="1" rate="30" ></item>
+			<item item_id="10003" num="1" rate="30" ></item>
+			<item item_id="10004" num="1" rate="15" ></item>
+			<item item_id="10005" num="1" rate="4" ></item>
+			<item item_id="10006" num="1" rate="1" ></item>
+		</itemgroup>
+	</rebates>
+</root>

@@ -1,0 +1,202 @@
+<root>
+	<pet_iq iq="0" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="1" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="2" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="3" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="4" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="5" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="6" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="7" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="8" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="9" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="10" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="11" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="12" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="13" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="14" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="15" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="16" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="17" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="18" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="19" cost="1" success_rate="100"  >
+	</pet_iq>
+	<pet_iq iq="20" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="21" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="22" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="23" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="24" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="25" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="26" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="27" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="28" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="29" cost="2" success_rate="80"  >
+	</pet_iq>
+	<pet_iq iq="30" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="31" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="32" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="33" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="34" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="35" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="36" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="37" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="38" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="39" cost="4" success_rate="70"  >
+	</pet_iq>
+	<pet_iq iq="40" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="41" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="42" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="43" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="44" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="45" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="46" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="47" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="48" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="49" cost="6" success_rate="60"  >
+	</pet_iq>
+	<pet_iq iq="50" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="51" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="52" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="53" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="54" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="55" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="56" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="57" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="58" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="59" cost="8" success_rate="50"  >
+	</pet_iq>
+	<pet_iq iq="60" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="61" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="62" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="63" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="64" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="65" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="66" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="67" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="68" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="69" cost="10" success_rate="40"  >
+	</pet_iq>
+	<pet_iq iq="70" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="71" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="72" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="73" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="74" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="75" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="76" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="77" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="78" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="79" cost="12" success_rate="30"  >
+	</pet_iq>
+	<pet_iq iq="80" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="81" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="82" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="83" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="84" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="85" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="86" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="87" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="88" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="89" cost="15" success_rate="20"  >
+	</pet_iq>
+	<pet_iq iq="90" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="91" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="92" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="93" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="94" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="95" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="96" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="97" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="98" cost="20" success_rate="10"  >
+	</pet_iq>
+	<pet_iq iq="99" cost="20" success_rate="10"  >
+	</pet_iq>
+</root>
