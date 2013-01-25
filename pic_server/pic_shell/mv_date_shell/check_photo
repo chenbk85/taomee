@@ -1,0 +1,20 @@
+#!/bin/bash
+while read var1 var2 var3 var4; 
+do
+#echo var1=${var1} var2=${var2} var3=${var3} var4=${var4}
+BUS_FILE_PATH="/root/bus_pic/${var3}"
+#echo $FILE_PATH
+#type=`echo ${var3} | awk -F"." '{print $2}'`
+#echo $type
+
+if [ $var1 = "album_id" ]
+then
+	echo "album_id        uid     file_name       upload_time"
+	sleep 1
+else
+#	cmd="curl -v -H 'Expect:' -F 'file=@${FILE_PATH};type=image/${type}' -F 'userid=${var2}' -F 'key=${var1}' -F 'upload_time=${var4}' 'http://192.168.9.92/cgi_upload.cgi'"
+#	echo $cmd
+	./check_image -f <file_1 pwd> -F <file_2 pwd>
+fi
+done 
+exit 0

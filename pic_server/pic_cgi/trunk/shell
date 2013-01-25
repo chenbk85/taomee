@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cp cgi-bin/* /cgi/bin/
+/etc/init.d/lighttpd restart

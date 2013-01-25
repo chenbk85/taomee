@@ -1,0 +1,35 @@
+#!/bin/bash
+while read var1 var2 var3; 
+do
+	echo var1=${var1} var2=${var2} var3=${var3} 
+
+tbid=$((var1%100))
+dbid=$(((var1/100)%100))
+#echo ${dbid}
+#echo ${tbid}
+if [ $dbid -lt 10 ];then
+	dbid="0$dbid"
+else
+	dbid="$dbid"
+fi
+if [ $tbid -lt 10 ];then
+	tbid="0$tbid"
+else
+	tbid="$tbid"
+fi
+
+#echo ${dbid}
+#echo ${tbid}
+if [ $var1 = "album_id" ]
+then
+    echo "album_id        uid     file_name       upload_time"
+else
+	mysql -uroot -pta0mee <<- EOF
+	update sns_user_$dbid.user_album_$tbid set album_key=${var3} where album_id=${var2} and uid=${var1};
+	update sns_user_$dbid.user_photo_$tbid set album_key=${var3} where album_id=${var2} and uid=${var1};
+	EOF
+fi	
+	echo "update sns_user_$dbid.user_album_$tbid set album_key=${var3} where album_id=${var2} and uid=$var1;"
+	
+done
+exit 0

@@ -1,0 +1,4 @@
+[17:10:59] 0 [07496]load bind file:bind.conf
+[17:10:59] 0 [07496]dlsym no find: :handle_open 
+[17:10:59] 0 [07496]dlsym no find: :handle_timer 
+[17:10:59] 0 [07496]dlsym no find: :handle_filter_key 

@@ -1,0 +1,343 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ALERT_LOG	log.h	174;"	d
+ALERT_LOG	log.h	179;"	d
+BOOT_LOG	log.h	338;"	d
+BOOT_LOG2	log.h	349;"	d
+CGI_C	cgic.h	7;"	d
+CGI_DEBUG_LOG	log.h	302;"	d
+CGI_DEBUG_LOG	log.h	307;"	d
+CGI_ERROR_LOG	log.h	217;"	d
+CGI_ERROR_LOG	log.h	222;"	d
+CGI_PROTO_H	cgi_proto.h	2;"	d
+CNT_MAX	cgi_proto.h	10;"	d
+CRIT_LOG	log.h	196;"	d
+CRIT_LOG	log.h	201;"	d
+Ctcp	tcpip.h	/^		Ctcp(){ fd_=-1; };$/;"	f	class:Ctcp	access:public	signature:()
+Ctcp	tcpip.h	/^		Ctcp(const char *a_ipport  ,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10){$/;"	f	class:Ctcp	access:public	signature:(const char *a_ipport ,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10)
+Ctcp	tcpip.h	/^		Ctcp(const char *ip,short port,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10 ){$/;"	f	class:Ctcp	access:public	signature:(const char *ip,short port,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10 )
+Ctcp	tcpip.h	/^class Ctcp{$/;"	c
+Ctcp::Ctcp	tcpip.h	/^		Ctcp(){ fd_=-1; };$/;"	f	class:Ctcp	access:public	signature:()
+Ctcp::Ctcp	tcpip.h	/^		Ctcp(const char *a_ipport  ,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10){$/;"	f	class:Ctcp	access:public	signature:(const char *a_ipport ,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10)
+Ctcp::Ctcp	tcpip.h	/^		Ctcp(const char *ip,short port,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10 ){$/;"	f	class:Ctcp	access:public	signature:(const char *ip,short port,uint32_t send_recv_timeout=1, uint32_t reconnect_interval=10 )
+Ctcp::do_net_io	tcpip.h	/^		int do_net_io( const char *sndbuf, const int sndlen, char **rcvbuf, int  *rcvlen)$/;"	f	class:Ctcp	access:public	signature:( const char *sndbuf, const int sndlen, char **rcvbuf, int *rcvlen)
+Ctcp::fd_	tcpip.h	/^		int fd_;$/;"	m	class:Ctcp	access:private
+Ctcp::get_ip	tcpip.h	/^		inline const char * get_ip(){$/;"	f	class:Ctcp	access:public	signature:()
+Ctcp::get_port	tcpip.h	/^		inline 	uint16_t	get_port(){$/;"	f	class:Ctcp	access:public	signature:()
+Ctcp::init	tcpip.h	/^		void init(const char *ip ,short port,uint32_t send_recv_timeout,uint32_t reconnect_interval ){$/;"	f	class:Ctcp	access:public	signature:(const char *ip ,short port,uint32_t send_recv_timeout,uint32_t reconnect_interval )
+Ctcp::ip_	tcpip.h	/^		char ip_[16];$/;"	m	class:Ctcp	access:private
+Ctcp::last_fail_connect_time_	tcpip.h	/^		uint32_t last_fail_connect_time_;\/\/最后一次连接失败的时间$/;"	m	class:Ctcp	access:private
+Ctcp::port_	tcpip.h	/^		short port_;$/;"	m	class:Ctcp	access:private
+Ctcp::reconnect	tcpip.h	/^		int reconnect()$/;"	f	class:Ctcp	access:public	signature:()
+Ctcp::reconnect_interval_	tcpip.h	/^		uint32_t reconnect_interval_;\/\/重连时间间隔$/;"	m	class:Ctcp	access:private
+Ctcp::send_recv_timeout_	tcpip.h	/^		uint32_t send_recv_timeout_;\/\/发送接收超时$/;"	m	class:Ctcp	access:private
+Ctcp::~Ctcp	tcpip.h	/^		~Ctcp(){$/;"	f	class:Ctcp	access:public	signature:()
+Cudp_sender	tcpip.h	/^		Cudp_sender(){ fd=-1;memset (&addr,0,sizeof(addr)); };$/;"	f	class:Cudp_sender	access:public	signature:()
+Cudp_sender	tcpip.h	/^		Cudp_sender(char *a_ip,uint16_t a_port ){$/;"	f	class:Cudp_sender	access:public	signature:(char *a_ip,uint16_t a_port )
+Cudp_sender	tcpip.h	/^		Cudp_sender(const char *a_ipport ){$/;"	f	class:Cudp_sender	access:public	signature:(const char *a_ipport )
+Cudp_sender	tcpip.h	/^class Cudp_sender{$/;"	c
+Cudp_sender::Cudp_sender	tcpip.h	/^		Cudp_sender(){ fd=-1;memset (&addr,0,sizeof(addr)); };$/;"	f	class:Cudp_sender	access:public	signature:()
+Cudp_sender::Cudp_sender	tcpip.h	/^		Cudp_sender(char *a_ip,uint16_t a_port ){$/;"	f	class:Cudp_sender	access:public	signature:(char *a_ip,uint16_t a_port )
+Cudp_sender::Cudp_sender	tcpip.h	/^		Cudp_sender(const char *a_ipport ){$/;"	f	class:Cudp_sender	access:public	signature:(const char *a_ipport )
+Cudp_sender::addr	tcpip.h	/^		struct  sockaddr_in addr;	$/;"	m	class:Cudp_sender	typeref:struct:Cudp_sender::sockaddr_in	access:private
+Cudp_sender::fd	tcpip.h	/^		int fd;$/;"	m	class:Cudp_sender	access:private
+Cudp_sender::get_ip	tcpip.h	/^		inline const char * get_ip(){$/;"	f	class:Cudp_sender	access:public	signature:()
+Cudp_sender::get_port	tcpip.h	/^	inline 		uint16_t	 get_port(){$/;"	f	class:Cudp_sender	access:public	signature:()
+Cudp_sender::init	tcpip.h	/^inline		void init(char *a_ip , uint16_t a_port ){$/;"	f	class:Cudp_sender	access:public	signature:(char *a_ip , uint16_t a_port )
+Cudp_sender::ip	tcpip.h	/^		char ip[32];$/;"	m	class:Cudp_sender	access:private
+Cudp_sender::port	tcpip.h	/^		uint16_t port;$/;"	m	class:Cudp_sender	access:private
+Cudp_sender::send	tcpip.h	/^	inline	bool send(char *buf, int len  ){$/;"	f	class:Cudp_sender	access:public	signature:(char *buf, int len )
+DEBUG_RETURN	log.h	404;"	d
+DEBUG_RETURN_VOID	log.h	415;"	d
+DETAIL	log.h	127;"	d
+DETAIL	log.h	130;"	d
+EMERG_LOG	log.h	153;"	d
+EMERG_LOG	log.h	158;"	d
+ERROR_RETURN	log.h	360;"	d
+ERROR_RETURN_VOID	log.h	371;"	d
+FAIL	cgi_proto.h	12;"	d
+FILE_ROOT_PATH	cgi_proto.h	16;"	d
+H	cgi_proto.h	/^	uint32_t    H;$/;"	m	struct:_thumb_arg	access:public
+INFO_LOG	log.h	281;"	d
+INFO_LOG	log.h	286;"	d
+ImageType	cgi_proto.h	/^enum ImageType{$/;"	g
+KALERT_LOG	log.h	176;"	d
+KALERT_LOG	log.h	180;"	d
+KCGI_DEBUG_LOG	log.h	304;"	d
+KCGI_DEBUG_LOG	log.h	308;"	d
+KCGI_ERROR_LOG	log.h	219;"	d
+KCGI_ERROR_LOG	log.h	223;"	d
+KCRIT_LOG	log.h	198;"	d
+KCRIT_LOG	log.h	202;"	d
+KEMERG_LOG	log.h	155;"	d
+KEMERG_LOG	log.h	159;"	d
+KEY	cgi_proto.h	13;"	d
+KINFO_LOG	log.h	283;"	d
+KINFO_LOG	log.h	287;"	d
+KNOTI_LOG	log.h	262;"	d
+KNOTI_LOG	log.h	266;"	d
+KTRACE_LOG	log.h	326;"	d
+KTRACE_LOG	log.h	330;"	d
+KWARN_LOG	log.h	241;"	d
+KWARN_LOG	log.h	245;"	d
+LIBTAOMEE_LOG_H_	log.h	18;"	d
+MAXINTERFACES	tcpip.cpp	128;"	d	file:
+NET_ERR	tcpip.h	18;"	d
+NOTI_LOG	log.h	260;"	d
+NOTI_LOG	log.h	265;"	d
+PROTO_H_SIZE	cgi_proto.h	45;"	d
+SIMPLY	log.h	135;"	d
+SIMPLY	log.h	138;"	d
+SUCC	cgi_proto.h	11;"	d
+SUCC	tcpip.h	16;"	d
+SYS_ERR	tcpip.h	17;"	d
+TIME_LEN	cgi_proto.h	9;"	d
+TRACE_LOG	log.h	324;"	d
+TRACE_LOG	log.h	329;"	d
+Thumbcnt	cgi_proto.h	/^	uint32_t	Thumbcnt;$/;"	m	struct:_logo_recv_fileServ	access:public
+W	cgi_proto.h	/^	uint32_t    W;$/;"	m	struct:_thumb_arg	access:public
+WARN_LOG	log.h	239;"	d
+WARN_LOG	log.h	244;"	d
+WARN_RETURN	log.h	382;"	d
+WARN_RETURN_VOID	log.h	393;"	d
+_TCPIP_H_	tcpip.h	2;"	d
+_error_cgi	cgi_proto.h	/^enum _error_cgi{$/;"	g
+_logo_recv_fileServ	cgi_proto.h	/^typedef struct _logo_recv_fileServ{$/;"	s
+_logo_recv_fileServ::Thumbcnt	cgi_proto.h	/^	uint32_t	Thumbcnt;$/;"	m	struct:_logo_recv_fileServ	access:public
+_logo_recv_fileServ::hostid	cgi_proto.h	/^	uint32_t	hostid;$/;"	m	struct:_logo_recv_fileServ	access:public
+_logo_recv_fileServ::new_lloccodes	cgi_proto.h	/^	char	new_lloccodes[CNT_MAX*LLOCCODE_LEN+1];$/;"	m	struct:_logo_recv_fileServ	access:public
+_logo_recv_fileServ::old_lloccode	cgi_proto.h	/^	char	old_lloccode[LLOCCODE_LEN]; $/;"	m	struct:_logo_recv_fileServ	access:public
+_logo_recv_webclient	cgi_proto.h	/^typedef struct _logo_recv_webclient{$/;"	s
+_logo_recv_webclient::channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::cnt	cgi_proto.h	/^	uint32_t	cnt;$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::filepath	cgi_proto.h	/^	char    filepath[MAX_PATH_LEN+1];$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::ip	cgi_proto.h	/^	uint32_t    ip;$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::thumb_arg	cgi_proto.h	/^	thumb_arg_t	thumb_arg[CNT_MAX];$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::time	cgi_proto.h	/^	uint32_t    time;$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::userid	cgi_proto.h	/^	userid_t    userid;$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_recv_webclient::width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_logo_recv_webclient	access:public
+_logo_snd_fileserver	cgi_proto.h	/^typedef struct _logo_snd_fileserver{$/;"	s
+_logo_snd_fileserver::branchtype	cgi_proto.h	/^	uint32_t    branchtype;$/;"	m	struct:_logo_snd_fileserver	access:public
+_logo_snd_fileserver::channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_logo_snd_fileserver	access:public
+_logo_snd_fileserver::cnt	cgi_proto.h	/^	uint32_t    cnt;$/;"	m	struct:_logo_snd_fileserver	access:public
+_logo_snd_fileserver::filepath	cgi_proto.h	/^	char    filepath[MAX_PATH_LEN+1];$/;"	m	struct:_logo_snd_fileserver	access:public
+_logo_snd_fileserver::height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_logo_snd_fileserver	access:public
+_logo_snd_fileserver::thumb_arg	cgi_proto.h	/^	thumb_arg_t thumb_arg[CNT_MAX];$/;"	m	struct:_logo_snd_fileserver	access:public
+_logo_snd_fileserver::type	cgi_proto.h	/^	uint32_t    type;$/;"	m	struct:_logo_snd_fileserver	access:public
+_logo_snd_fileserver::width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_logo_snd_fileserver	access:public
+_recv_fileserver	cgi_proto.h	/^typedef struct _recv_fileserver{$/;"	s
+_recv_fileserver::hostid	cgi_proto.h	/^	uint32_t	hostid;		$/;"	m	struct:_recv_fileserver	access:public
+_recv_fileserver::lloccode	cgi_proto.h	/^	char    lloccode[LLOCCODE_LEN +1];	\/\/原图标识码$/;"	m	struct:_recv_fileserver	access:public
+_recv_webclient	cgi_proto.h	/^typedef struct _recv_webclient{$/;"	s
+_recv_webclient::channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_recv_webclient	access:public
+_recv_webclient::height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_recv_webclient	access:public
+_recv_webclient::ip	cgi_proto.h	/^	uint32_t    ip;$/;"	m	struct:_recv_webclient	access:public
+_recv_webclient::time	cgi_proto.h	/^	uint32_t    time;$/;"	m	struct:_recv_webclient	access:public
+_recv_webclient::userid	cgi_proto.h	/^	userid_t    userid;$/;"	m	struct:_recv_webclient	access:public
+_recv_webclient::width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_recv_webclient	access:public
+_snd_fileserer	cgi_proto.h	/^typedef struct _snd_fileserer{$/;"	s
+_snd_fileserer::branchtype	cgi_proto.h	/^	uint32_t    branchtype;$/;"	m	struct:_snd_fileserer	access:public
+_snd_fileserer::channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_snd_fileserer	access:public
+_snd_fileserer::filepath	cgi_proto.h	/^	char	filepath[MAX_PATH_LEN+1];$/;"	m	struct:_snd_fileserer	access:public
+_snd_fileserer::height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_snd_fileserer	access:public
+_snd_fileserer::type	cgi_proto.h	/^	uint32_t    type;$/;"	m	struct:_snd_fileserer	access:public
+_snd_fileserer::width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_snd_fileserer	access:public
+_thumb_arg	cgi_proto.h	/^typedef struct _thumb_arg{$/;"	s
+_thumb_arg::H	cgi_proto.h	/^	uint32_t    H;$/;"	m	struct:_thumb_arg	access:public
+_thumb_arg::W	cgi_proto.h	/^	uint32_t    W;$/;"	m	struct:_thumb_arg	access:public
+_thumb_arg::start_x	cgi_proto.h	/^	uint32_t    start_x;$/;"	m	struct:_thumb_arg	access:public
+_thumb_arg::start_y	cgi_proto.h	/^	uint32_t    start_y;$/;"	m	struct:_thumb_arg	access:public
+_thumb_arg::thumb_x	cgi_proto.h	/^	uint32_t    thumb_x;$/;"	m	struct:_thumb_arg	access:public
+_thumb_arg::thumb_y	cgi_proto.h	/^	uint32_t    thumb_y;$/;"	m	struct:_thumb_arg	access:public
+addr	tcpip.h	/^		struct  sockaddr_in addr;	$/;"	m	class:Cudp_sender	typeref:struct:Cudp_sender::sockaddr_in	access:private
+addr	tcpip.h	/^    char addr[128]; \/* ip or dns *\/$/;"	m	struct:stru_ip_port	access:public
+boot_log	log.h	/^void boot_log(int ok, int dummy, const char* fmt, ...);$/;"	p	signature:(int ok, int dummy, const char* fmt, ...)
+branchtype	cgi_proto.h	/^	uint32_t    branchtype;$/;"	m	struct:_logo_snd_fileserver	access:public
+branchtype	cgi_proto.h	/^	uint32_t    branchtype;$/;"	m	struct:_snd_fileserer	access:public
+cgiCookieInteger	cgic.h	/^extern cgiFormResultType cgiCookieInteger($/;"	p	signature:( char *name, int *result, int defaultV)
+cgiCookieString	cgic.h	/^extern cgiFormResultType cgiCookieString($/;"	p	signature:( char *name, char *result, int max)
+cgiCookies	cgic.h	/^cgiFormResultType cgiCookies($/;"	p	signature:( char ***ptrToStringArray)
+cgiEnvironmentIO	cgic.h	/^	cgiEnvironmentIO,$/;"	e	enum:__anon2
+cgiEnvironmentMemory	cgic.h	/^	cgiEnvironmentMemory,$/;"	e	enum:__anon2
+cgiEnvironmentResultType	cgic.h	/^} cgiEnvironmentResultType;$/;"	t	typeref:enum:__anon2
+cgiEnvironmentSuccess	cgic.h	/^	cgiEnvironmentSuccess,$/;"	e	enum:__anon2
+cgiEnvironmentWrongVersion	cgic.h	/^	cgiEnvironmentWrongVersion$/;"	e	enum:__anon2
+cgiFilePtr	cgic.h	/^typedef struct cgiFileStruct *cgiFilePtr;$/;"	t	typeref:struct:cgiFileStruct
+cgiFormBadType	cgic.h	/^	cgiFormBadType,$/;"	e	enum:__anon1
+cgiFormCheckboxMultiple	cgic.h	/^extern cgiFormResultType cgiFormCheckboxMultiple($/;"	p	signature:( char *name, char **valuesText, int valuesTotal, int *result, int *invalid)
+cgiFormCheckboxSingle	cgic.h	/^extern cgiFormResultType cgiFormCheckboxSingle($/;"	p	signature:( char *name)
+cgiFormConstrained	cgic.h	/^	cgiFormConstrained,$/;"	e	enum:__anon1
+cgiFormDouble	cgic.h	/^extern cgiFormResultType cgiFormDouble($/;"	p	signature:( char *name, double *result, double defaultV)
+cgiFormDoubleBounded	cgic.h	/^extern cgiFormResultType cgiFormDoubleBounded($/;"	p	signature:( char *name, double *result, double min, double max, double defaultV)
+cgiFormEOF	cgic.h	/^	cgiFormEOF$/;"	e	enum:__anon1
+cgiFormEmpty	cgic.h	/^	cgiFormEmpty,$/;"	e	enum:__anon1
+cgiFormEntries	cgic.h	/^extern cgiFormResultType cgiFormEntries($/;"	p	signature:( char ***ptrToStringArray)
+cgiFormFileClose	cgic.h	/^extern cgiFormResultType cgiFormFileClose($/;"	p	signature:( cgiFilePtr cfp)
+cgiFormFileContentType	cgic.h	/^extern cgiFormResultType cgiFormFileContentType($/;"	p	signature:( char *name, char *result, int max)
+cgiFormFileName	cgic.h	/^extern cgiFormResultType cgiFormFileName($/;"	p	signature:( char *name, char *result, int max)
+cgiFormFileOpen	cgic.h	/^extern cgiFormResultType cgiFormFileOpen($/;"	p	signature:( char *name, cgiFilePtr *cfpp)
+cgiFormFileRead	cgic.h	/^extern cgiFormResultType cgiFormFileRead($/;"	p	signature:( cgiFilePtr cfp, char *buffer, int bufferSize, int *gotP)
+cgiFormFileSize	cgic.h	/^extern cgiFormResultType cgiFormFileSize($/;"	p	signature:( char *name, int *sizeP)
+cgiFormIO	cgic.h	/^	cgiFormIO,$/;"	e	enum:__anon1
+cgiFormInteger	cgic.h	/^extern cgiFormResultType cgiFormInteger($/;"	p	signature:( char *name, int *result, int defaultV)
+cgiFormIntegerBounded	cgic.h	/^extern cgiFormResultType cgiFormIntegerBounded($/;"	p	signature:( char *name, int *result, int min, int max, int defaultV)
+cgiFormMemory	cgic.h	/^	cgiFormMemory,$/;"	e	enum:__anon1
+cgiFormNoContentType	cgic.h	/^	cgiFormNoContentType,$/;"	e	enum:__anon1
+cgiFormNoFileName	cgic.h	/^	cgiFormNoFileName,$/;"	e	enum:__anon1
+cgiFormNoSuchChoice	cgic.h	/^	cgiFormNoSuchChoice,$/;"	e	enum:__anon1
+cgiFormNotAFile	cgic.h	/^	cgiFormNotAFile,$/;"	e	enum:__anon1
+cgiFormNotFound	cgic.h	/^	cgiFormNotFound,$/;"	e	enum:__anon1
+cgiFormOpenFailed	cgic.h	/^	cgiFormOpenFailed,$/;"	e	enum:__anon1
+cgiFormRadio	cgic.h	/^extern cgiFormResultType cgiFormRadio($/;"	p	signature:( char *name, char **valuesText, int valuesTotal, int *result, int defaultV)
+cgiFormResultType	cgic.h	/^} cgiFormResultType;$/;"	t	typeref:enum:__anon1
+cgiFormSelectMultiple	cgic.h	/^extern cgiFormResultType cgiFormSelectMultiple($/;"	p	signature:( char *name, char **choicesText, int choicesTotal, int *result, int *invalid)
+cgiFormSelectSingle	cgic.h	/^extern cgiFormResultType cgiFormSelectSingle($/;"	p	signature:( char *name, char **choicesText, int choicesTotal, int *result, int defaultV)
+cgiFormString	cgic.h	/^extern cgiFormResultType cgiFormString($/;"	p	signature:( char *name, char *result, int max)
+cgiFormStringMultiple	cgic.h	/^extern cgiFormResultType cgiFormStringMultiple($/;"	p	signature:( char *name, char ***ptrToStringArray)
+cgiFormStringNoNewlines	cgic.h	/^extern cgiFormResultType cgiFormStringNoNewlines($/;"	p	signature:( char *name, char *result, int max)
+cgiFormStringSpaceNeeded	cgic.h	/^extern cgiFormResultType cgiFormStringSpaceNeeded($/;"	p	signature:( char *name, int *length)
+cgiFormSubmitClicked	cgic.h	131;"	d
+cgiFormSuccess	cgic.h	/^	cgiFormSuccess,$/;"	e	enum:__anon1
+cgiFormTruncated	cgic.h	/^	cgiFormTruncated,$/;"	e	enum:__anon1
+cgiGetFilePath	cgic.h	/^extern cgiFormResultType cgiGetFilePath(char *name,char *result,int resultSpace);$/;"	p	signature:(char *name,char *result,int resultSpace)
+cgiHeaderContentType	cgic.h	/^extern void cgiHeaderContentType(char *mimeType);$/;"	p	signature:(char *mimeType)
+cgiHeaderCookieSetInteger	cgic.h	/^extern void cgiHeaderCookieSetInteger(char *name, int value,$/;"	p	signature:(char *name, int value, int secondsToLive, char *path, char *domain)
+cgiHeaderCookieSetString	cgic.h	/^extern void cgiHeaderCookieSetString(char *name, char *value, $/;"	p	signature:(char *name, char *value, int secondsToLive, char *path, char *domain)
+cgiHeaderLocation	cgic.h	/^extern void cgiHeaderLocation(char *redirectUrl);$/;"	p	signature:(char *redirectUrl)
+cgiHeaderStatus	cgic.h	/^extern void cgiHeaderStatus(int status, char *statusMessage);$/;"	p	signature:(int status, char *statusMessage)
+cgiHtmlEscape	cgic.h	/^cgiFormResultType cgiHtmlEscape(char *s);$/;"	p	signature:(char *s)
+cgiHtmlEscapeData	cgic.h	/^cgiFormResultType cgiHtmlEscapeData(char *data, int len);$/;"	p	signature:(char *data, int len)
+cgiMain	cgic.h	/^extern int cgiMain();$/;"	p	signature:()
+cgiReadEnvironment	cgic.h	/^extern cgiEnvironmentResultType cgiReadEnvironment(char *filename);$/;"	p	signature:(char *filename)
+cgiReferer	cgic.h	48;"	d
+cgiStringArrayFree	cgic.h	/^extern void cgiStringArrayFree(char **stringArray);$/;"	p	signature:(char **stringArray)
+cgiValueEscape	cgic.h	/^cgiFormResultType cgiValueEscape(char *s);$/;"	p	signature:(char *s)
+cgiValueEscapeData	cgic.h	/^cgiFormResultType cgiValueEscapeData(char *data, int len);$/;"	p	signature:(char *data, int len)
+cgiWriteEnvironment	cgic.h	/^extern cgiEnvironmentResultType cgiWriteEnvironment(char *filename);$/;"	p	signature:(char *filename)
+channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_logo_recv_webclient	access:public
+channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_logo_snd_fileserver	access:public
+channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_recv_webclient	access:public
+channel	cgi_proto.h	/^	uint32_t	channel;$/;"	m	struct:_snd_fileserer	access:public
+cnt	cgi_proto.h	/^	uint32_t	cnt;$/;"	m	struct:_logo_recv_webclient	access:public
+cnt	cgi_proto.h	/^	uint32_t    cnt;$/;"	m	struct:_logo_snd_fileserver	access:public
+do_net_io	tcpip.h	/^		int do_net_io( const char *sndbuf, const int sndlen, char **rcvbuf, int  *rcvlen)$/;"	f	class:Ctcp	access:public	signature:( const char *sndbuf, const int sndlen, char **rcvbuf, int *rcvlen)
+enable_multi_thread	log.h	/^void enable_multi_thread();$/;"	p	signature:()
+fd	tcpip.h	/^		int fd;$/;"	m	class:Cudp_sender	access:private
+fd_	tcpip.h	/^		int fd_;$/;"	m	class:Ctcp	access:private
+filepath	cgi_proto.h	/^	char	filepath[MAX_PATH_LEN+1];$/;"	m	struct:_snd_fileserer	access:public
+filepath	cgi_proto.h	/^	char    filepath[MAX_PATH_LEN+1];$/;"	m	struct:_logo_recv_webclient	access:public
+filepath	cgi_proto.h	/^	char    filepath[MAX_PATH_LEN+1];$/;"	m	struct:_logo_snd_fileserver	access:public
+get_ip	tcpip.h	/^		inline const char * get_ip(){$/;"	f	class:Ctcp	access:public	signature:()
+get_ip	tcpip.h	/^		inline const char * get_ip(){$/;"	f	class:Cudp_sender	access:public	signature:()
+get_ip_ex	tcpip.cpp	/^const char * get_ip_ex(const int ip_type )$/;"	f	signature:(const int ip_type )
+get_ip_ex	tcpip.h	/^const char * get_ip_ex (const int ip_type );$/;"	p	signature:(const int ip_type )
+get_port	tcpip.h	/^		inline 	uint16_t	get_port(){$/;"	f	class:Ctcp	access:public	signature:()
+get_port	tcpip.h	/^	inline 		uint16_t	 get_port(){$/;"	f	class:Cudp_sender	access:public	signature:()
+gif	cgi_proto.h	/^	gif = 3,$/;"	e	enum:ImageType
+height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_logo_recv_webclient	access:public
+height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_logo_snd_fileserver	access:public
+height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_recv_webclient	access:public
+height_limit	cgi_proto.h	/^	uint32_t    height_limit;$/;"	m	struct:_snd_fileserer	access:public
+hostid	cgi_proto.h	/^	uint32_t	hostid;		$/;"	m	struct:_recv_fileserver	access:public
+hostid	cgi_proto.h	/^	uint32_t	hostid;$/;"	m	struct:_logo_recv_fileServ	access:public
+hostid_err	cgi_proto.h	/^	hostid_err = 4009,$/;"	e	enum:_error_cgi
+image_size_err	cgi_proto.h	/^	image_size_err = 4004,$/;"	e	enum:_error_cgi
+image_type_err	cgi_proto.h	/^	image_type_err = 4006,$/;"	e	enum:_error_cgi
+init	tcpip.h	/^		void init(const char *ip ,short port,uint32_t send_recv_timeout,uint32_t reconnect_interval ){$/;"	f	class:Ctcp	access:public	signature:(const char *ip ,short port,uint32_t send_recv_timeout,uint32_t reconnect_interval )
+init	tcpip.h	/^inline		void init(char *a_ip , uint16_t a_port ){$/;"	f	class:Cudp_sender	access:public	signature:(char *a_ip , uint16_t a_port )
+invalid_file	cgi_proto.h	/^	invalid_file = 4011,$/;"	e	enum:_error_cgi
+ip	cgi_proto.h	/^	uint32_t    ip;$/;"	m	struct:_logo_recv_webclient	access:public
+ip	cgi_proto.h	/^	uint32_t    ip;$/;"	m	struct:_recv_webclient	access:public
+ip	tcpip.h	/^		char ip[32];$/;"	m	class:Cudp_sender	access:private
+ip2long	tcpip.h	/^inline uint32_t ip2long(const char *ip) {$/;"	f	signature:(const char *ip)
+ip_	tcpip.h	/^		char ip_[16];$/;"	m	class:Ctcp	access:private
+jpg	cgi_proto.h	/^	jpg = 1,$/;"	e	enum:ImageType
+last_fail_connect_time_	tcpip.h	/^		uint32_t last_fail_connect_time_;\/\/最后一次连接失败的时间$/;"	m	class:Ctcp	access:private
+lloccode	cgi_proto.h	/^	char    lloccode[LLOCCODE_LEN +1];	\/\/原图标识码$/;"	m	struct:_recv_fileserver	access:public
+log_dest	log.h	/^typedef enum log_dest {$/;"	g
+log_dest_both	log.h	/^	log_dest_both		= 3$/;"	e	enum:log_dest
+log_dest_file	log.h	/^	log_dest_file		= 2,$/;"	e	enum:log_dest
+log_dest_t	log.h	/^} log_dest_t;$/;"	t	typeref:enum:log_dest
+log_dest_terminal	log.h	/^	log_dest_terminal	= 1,$/;"	e	enum:log_dest
+log_init	log.h	/^int  log_init(const char* dir, log_lvl_t lvl, uint32_t size, int maxfiles, const char* pre_name);$/;"	p	signature:(const char* dir, log_lvl_t lvl, uint32_t size, int maxfiles, const char* pre_name)
+log_init_t	log.h	/^int log_init_t(const char* dir, log_lvl_t lvl, const char* pre_name, int logtime);$/;"	p	signature:(const char* dir, log_lvl_t lvl, const char* pre_name, int logtime)
+log_lvl	log.h	/^typedef enum log_lvl {$/;"	g
+log_lvl_alert	log.h	/^	log_lvl_alert,$/;"	e	enum:log_lvl
+log_lvl_crit	log.h	/^	log_lvl_crit,$/;"	e	enum:log_lvl
+log_lvl_debug	log.h	/^	log_lvl_debug,$/;"	e	enum:log_lvl
+log_lvl_emerg	log.h	/^	log_lvl_emerg,$/;"	e	enum:log_lvl
+log_lvl_error	log.h	/^	log_lvl_error,$/;"	e	enum:log_lvl
+log_lvl_info	log.h	/^	log_lvl_info,$/;"	e	enum:log_lvl
+log_lvl_max	log.h	/^	log_lvl_max$/;"	e	enum:log_lvl
+log_lvl_notice	log.h	/^	log_lvl_notice,$/;"	e	enum:log_lvl
+log_lvl_t	log.h	/^} log_lvl_t;$/;"	t	typeref:enum:log_lvl
+log_lvl_trace	log.h	/^	log_lvl_trace,$/;"	e	enum:log_lvl
+log_lvl_warning	log.h	/^	log_lvl_warning,$/;"	e	enum:log_lvl
+log_size	cgi_proto.h	14;"	d
+logo_recv_fileServ_t	cgi_proto.h	/^}__attribute__((packed))logo_recv_fileServ_t;$/;"	t	typeref:struct:_logo_recv_fileServ
+logo_recv_webclient_t	cgi_proto.h	/^}__attribute__((packed))logo_recv_webclient_t;$/;"	t	typeref:struct:_logo_recv_webclient
+logo_snd_fileserver_t	cgi_proto.h	/^}__attribute__((packed))logo_snd_fileserver_t;$/;"	t	typeref:struct:_logo_snd_fileserver
+long2ip	tcpip.h	/^inline char * long2ip(uint32_t ip_int ) {$/;"	f	signature:(uint32_t ip_int )
+net_err	cgi_proto.h	/^	net_err	= 4007,$/;"	e	enum:_error_cgi
+net_io	tcpip.cpp	/^net_io(int sockfd, const char *sndbuf, int sndlen, char **rcvbuf,$/;"	f	signature:(int sockfd, const char *sndbuf, int sndlen, char **rcvbuf, int *rcvlen)
+net_io	tcpip.h	/^int net_io(int socketfd, const char *sndbuf, int sndlen, char** rcvbuf, int *rcvlen);$/;"	p	signature:(int socketfd, const char *sndbuf, int sndlen, char** rcvbuf, int *rcvlen)
+net_io_no_return	tcpip.cpp	/^int net_io_no_return(int sockfd, const char *sndbuf, int sndlen )$/;"	f	signature:(int sockfd, const char *sndbuf, int sndlen )
+net_io_no_return	tcpip.h	/^int net_io_no_return(int sockfd, const char *sndbuf, int sndlen );$/;"	p	signature:(int sockfd, const char *sndbuf, int sndlen )
+new_lloccodes	cgi_proto.h	/^	char	new_lloccodes[CNT_MAX*LLOCCODE_LEN+1];$/;"	m	struct:_logo_recv_fileServ	access:public
+old_lloccode	cgi_proto.h	/^	char	old_lloccode[LLOCCODE_LEN]; $/;"	m	struct:_logo_recv_fileServ	access:public
+open_file_err	cgi_proto.h	/^	open_file_err = 4005,$/;"	e	enum:_error_cgi
+open_socket	tcpip.cpp	/^open_socket(const char *ipaddr, u_short port,uint32_t timeout )$/;"	f	signature:(const char *ipaddr, u_short port,uint32_t timeout )
+open_socket	tcpip.h	/^int open_socket (const char *svrip, u_short svrport, uint32_t timeout=3 );$/;"	p	signature:(const char *svrip, u_short svrport, uint32_t timeout=3 )
+open_socket_udp	tcpip.cpp	/^int open_socket_udp (const char* svrip, u_short svrport,struct  sockaddr_in *servaddr)$/;"	f	signature:(const char* svrip, u_short svrport,struct sockaddr_in *servaddr)
+open_socket_udp	tcpip.h	/^int open_socket_udp (const char* svrip, u_short svrport,struct  sockaddr_in *servaddr);$/;"	p	signature:(const char* svrip, u_short svrport,struct sockaddr_in *servaddr)
+pic_max_len	cgi_proto.h	7;"	d
+png	cgi_proto.h	/^	png = 2,$/;"	e	enum:ImageType
+port	tcpip.h	/^		uint16_t port;$/;"	m	class:Cudp_sender	access:private
+port	tcpip.h	/^    uint32_t port;$/;"	m	struct:stru_ip_port	access:public
+port_	tcpip.h	/^		short port_;$/;"	m	class:Ctcp	access:private
+read_file_err	cgi_proto.h	/^	read_file_err = 4008,$/;"	e	enum:_error_cgi
+reconnect	tcpip.h	/^		int reconnect()$/;"	f	class:Ctcp	access:public	signature:()
+reconnect_interval_	tcpip.h	/^		uint32_t reconnect_interval_;\/\/重连时间间隔$/;"	m	class:Ctcp	access:private
+recv_fileserver_t	cgi_proto.h	/^}__attribute__((packed))recv_fileserver_t;$/;"	t	typeref:struct:_recv_fileserver
+recv_webclient_t	cgi_proto.h	/^}__attribute__((packed))recv_webclient_t;$/;"	t	typeref:struct:_recv_webclient
+retrieve_filename_err	cgi_proto.h	/^	retrieve_filename_err = 4003,$/;"	e	enum:_error_cgi
+send	tcpip.h	/^	inline	bool send(char *buf, int len  ){$/;"	f	class:Cudp_sender	access:public	signature:(char *buf, int len )
+send_recv_timeout_	tcpip.h	/^		uint32_t send_recv_timeout_;\/\/发送接收超时$/;"	m	class:Ctcp	access:private
+session_key_err	cgi_proto.h	/^	session_key_err = 4001,$/;"	e	enum:_error_cgi
+set_log_dest	log.h	/^void set_log_dest(log_dest_t dest);$/;"	p	signature:(log_dest_t dest)
+snd_fileserer_t	cgi_proto.h	/^}__attribute__((packed))snd_fileserer_t;$/;"	t	typeref:struct:_snd_fileserer
+start_x	cgi_proto.h	/^	uint32_t    start_x;$/;"	m	struct:_thumb_arg	access:public
+start_y	cgi_proto.h	/^	uint32_t    start_y;$/;"	m	struct:_thumb_arg	access:public
+stru_ip_port	tcpip.h	/^struct stru_ip_port {$/;"	s
+stru_ip_port::addr	tcpip.h	/^    char addr[128]; \/* ip or dns *\/$/;"	m	struct:stru_ip_port	access:public
+stru_ip_port::port	tcpip.h	/^    uint32_t port;$/;"	m	struct:stru_ip_port	access:public
+t_connect_to_svr	tcpip.h	/^inline int t_connect_to_svr(const char* ipaddr, uint16_t port)$/;"	f	signature:(const char* ipaddr, uint16_t port)
+thumb_arg	cgi_proto.h	/^	thumb_arg_t	thumb_arg[CNT_MAX];$/;"	m	struct:_logo_recv_webclient	access:public
+thumb_arg	cgi_proto.h	/^	thumb_arg_t thumb_arg[CNT_MAX];$/;"	m	struct:_logo_snd_fileserver	access:public
+thumb_arg_t	cgi_proto.h	/^}__attribute__((packed))thumb_arg_t;$/;"	t	typeref:struct:_thumb_arg
+thumb_cnt_err	cgi_proto.h	/^	thumb_cnt_err = 4002,$/;"	e	enum:_error_cgi
+thumb_max_len	cgi_proto.h	8;"	d
+thumb_x	cgi_proto.h	/^	uint32_t    thumb_x;$/;"	m	struct:_thumb_arg	access:public
+thumb_y	cgi_proto.h	/^	uint32_t    thumb_y;$/;"	m	struct:_thumb_arg	access:public
+time	cgi_proto.h	/^	uint32_t    time;$/;"	m	struct:_logo_recv_webclient	access:public
+time	cgi_proto.h	/^	uint32_t    time;$/;"	m	struct:_recv_webclient	access:public
+timeout_err	cgi_proto.h	/^	timeout_err = 4010,$/;"	e	enum:_error_cgi
+type	cgi_proto.h	/^	uint32_t    type;$/;"	m	struct:_logo_snd_fileserver	access:public
+type	cgi_proto.h	/^	uint32_t    type;$/;"	m	struct:_snd_fileserer	access:public
+unknown_err	cgi_proto.h	/^	unknown_err = 4000,$/;"	e	enum:_error_cgi
+unpack_addr	tcpip.h	/^inline int unpack_addr(const char * addr,  stru_ip_port *p_out  )$/;"	f	signature:(const char * addr, stru_ip_port *p_out )
+userid	cgi_proto.h	/^	userid_t    userid;$/;"	m	struct:_logo_recv_webclient	access:public
+userid	cgi_proto.h	/^	userid_t    userid;$/;"	m	struct:_recv_webclient	access:public
+userid_t	cgi_proto.h	/^typedef uint32_t userid_t;$/;"	t
+width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_logo_recv_webclient	access:public
+width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_logo_snd_fileserver	access:public
+width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_recv_webclient	access:public
+width_limit	cgi_proto.h	/^	uint32_t    width_limit;$/;"	m	struct:_snd_fileserer	access:public
+write_log	log.h	/^extern void write_log(int lvl,uint32_t key, const char* fmt, ...);$/;"	p	signature:(int lvl,uint32_t key, const char* fmt, ...)
+write_syslog	log.h	/^extern void write_syslog(int lvl, const char* fmt, ...);$/;"	p	signature:(int lvl, const char* fmt, ...)
+~Ctcp	tcpip.h	/^		~Ctcp(){$/;"	f	class:Ctcp	access:public	signature:()

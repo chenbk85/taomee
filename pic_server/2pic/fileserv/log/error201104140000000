@@ -1,0 +1,7 @@
+[15:18:36] 0 [02382][thumb.c][339]chk_upload_file: upload file error	[23 1 1 91001]
+[15:23:30] 0 [02382][thumb.c][339]chk_upload_file: upload file error	[23 1 1 91001]
+[15:32:22] 0 [02753][net.c][245]do_read_conn: connection [6] closed by peer
+[16:41:57] 0 [02753][net.c][245]do_read_conn: connection [6] closed by peer
+[17:06:19] 0 [07260][dll.c][35]register_plugin: dlopen error, ./fileserv.so: cannot open shared object file: No such file or directory
+[17:07:04] 0 [07293][dll.c][35]register_plugin: dlopen error, ./fileserv.so: cannot open shared object file: No such file or directory
+[17:07:17] 0 [07308][dll.c][35]register_plugin: dlopen error, ./fileserv.so: cannot open shared object file: No such file or directory

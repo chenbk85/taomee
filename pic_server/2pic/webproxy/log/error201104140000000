@@ -1,0 +1,2 @@
+[17:10:59] 0 [07496][main.cpp][67]daemon_start: INIT FD RESOURCE FAILED
+[17:10:59] 0 [07497][Lock.cpp][39]init: semget error, %m

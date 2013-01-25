@@ -1,0 +1,10 @@
+#!/bin/bash
+while read var1 var2; 
+do
+#echo var1=${var1} var2=${var2}
+if [ $var1 != "album_id" ]
+then
+#	curl -G  -d 'cmdid=1012' -d 'userid='${var2}'' -d 'albumid='${var1}'' 'http://192.168.9.92/fcgi_pic.fcgi'
+	./client -u $var2 -i 192.168.9.91 -p 6482 -k $var1  -m 1001
+fi
+done 

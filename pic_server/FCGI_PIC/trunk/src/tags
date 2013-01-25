@@ -1,0 +1,165 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+CGI_NET_ERR	proto.h	12;"	d
+CGI_SYS_ERR	proto.h	13;"	d
+CNT_MAX	proto.h	8;"	d
+COMM_H	comm.h	19;"	d
+FAIL	proto.h	15;"	d
+FCGI_CREATE_ALBUM_H	fcgi_create_album.h	3;"	d
+FCGI_CREATE_ALBUM_Main	fcgi_create_album.h	/^extern int FCGI_CREATE_ALBUM_Main(const char* user_id);$/;"	p	signature:(const char* user_id)
+FCGI_DELPIC_H	fcgi_delpic.h	2;"	d
+FCGI_DEL_PIC_Main	fcgi_delpic.h	/^extern int FCGI_DEL_PIC_Main(const char* lloccode , const char* albumid);$/;"	p	signature:(const char* lloccode , const char* albumid)
+FCGI_GET_IMAG_H	fcgi_get_imag.h	2;"	d
+FCGI_GET_IMAG_Main	fcgi_get_imag.h	/^extern int FCGI_GET_IMAG_Main(const char*lloccode );$/;"	p	signature:(const char*lloccode )
+FCGI_PIC_H	fcgi_pic.h	21;"	d
+FILE_ROOT_PATH	proto.h	24;"	d
+GET_HOST_BY_NAME_FAIL	proto.h	11;"	d
+GIF	proto.h	22;"	d
+H	proto.h	/^	uint32_t    H;$/;"	m	struct:thumb_arg	access:public
+HeaderContentType	comm.h	22;"	d
+JPG	proto.h	20;"	d
+KEY	proto.h	16;"	d
+Lloccode_Len	proto.h	6;"	d
+PATH_MAX_LEN	proto.h	7;"	d
+PIC_SIZE_ERR	proto.h	18;"	d
+PKG_H_UINT16	proto.h	184;"	d
+PKG_H_UINT32	proto.h	189;"	d
+PKG_H_UINT64	proto.h	194;"	d
+PKG_H_UINT8	proto.h	179;"	d
+PKG_STR	proto.h	199;"	d
+PKG_UINT	proto.h	150;"	d
+PKG_UINT16	proto.h	164;"	d
+PKG_UINT32	proto.h	169;"	d
+PKG_UINT64	proto.h	174;"	d
+PKG_UINT8	proto.h	159;"	d
+PNG	proto.h	21;"	d
+PROTO_H	proto.h	2;"	d
+PROTO_H_SIZE	proto.h	44;"	d
+RECV_FILESERVER	proto.h	/^typedef struct recv_fileserver RECV_FILESERVER;$/;"	t	typeref:struct:recv_fileserver
+SOCKET_FAIL	proto.h	9;"	d
+SOCKET_SUCC	proto.h	10;"	d
+SUCC	proto.h	14;"	d
+Thumbid	proto.h	/^	uint32_t    Thumbid[CNT_MAX]; $/;"	m	struct:del_ask_fileserver	access:public
+Thumbid	proto.h	/^    uint32_t    Thumbid[CNT_MAX];			\/\/缩略图id$/;"	m	struct:recv_fileserver	access:public
+UNPKG_H_UINT16	proto.h	143;"	d
+UNPKG_H_UINT32	proto.h	138;"	d
+UNPKG_H_UINT8	proto.h	148;"	d
+UNPKG_STR	proto.h	133;"	d
+UNPKG_UINT	proto.h	104;"	d
+UNPKG_UINT16	proto.h	118;"	d
+UNPKG_UINT32	proto.h	123;"	d
+UNPKG_UINT64	proto.h	128;"	d
+UNPKG_UINT8	proto.h	113;"	d
+W	proto.h	/^	uint32_t    W;$/;"	m	struct:thumb_arg	access:public
+_error_nbr	proto.h	/^enum _error_nbr{$/;"	g
+bin2hex	comm.h	/^inline char * bin2hex(char * dst, char * src,int len, int max_len)$/;"	f	signature:(char * dst, char * src,int len, int max_len)
+body	proto.h	/^	uint8_t		body[];$/;"	m	struct:protocol	access:public
+branchtype	proto.h	/^	uint32_t    branchtype;$/;"	m	struct:snd_fileserer	access:public
+cmd	proto.h	/^	uint16_t	cmd;$/;"	m	struct:protocol	access:public
+cnt	proto.h	/^	uint32_t	cnt;$/;"	m	struct:del_ask_fileserver	access:public
+cnt	proto.h	/^	uint32_t    cnt;				\/\/缩略图数量$/;"	m	struct:recv_fileserver	access:public
+cnt	proto.h	/^	uint32_t    cnt;$/;"	m	struct:recv_webclient	access:public
+cnt	proto.h	/^	uint32_t    cnt;$/;"	m	struct:snd_fileserer	access:public
+content	proto.h	/^	char    content[];$/;"	m	struct:snd_fileserer	access:public
+date	fcgi_pic.h	/^	char date[64];$/;"	m	struct:request_date	access:public
+del_ask_fileserver	proto.h	/^typedef struct del_ask_fileserver{$/;"	s
+del_ask_fileserver::Thumbid	proto.h	/^	uint32_t    Thumbid[CNT_MAX]; $/;"	m	struct:del_ask_fileserver	access:public
+del_ask_fileserver::cnt	proto.h	/^	uint32_t	cnt;$/;"	m	struct:del_ask_fileserver	access:public
+del_ask_fileserver::hostid	proto.h	/^	uint32_t	hostid;$/;"	m	struct:del_ask_fileserver	access:public
+del_ask_fileserver::key	proto.h	/^	uint32_t    key;$/;"	m	struct:del_ask_fileserver	access:public
+del_ask_fileserver::path	proto.h	/^	char	path[PATH_MAX_LEN];$/;"	m	struct:del_ask_fileserver	access:public
+del_file_para_err	proto.h	/^	del_file_para_err = 1,$/;"	e	enum:_error_nbr
+file_not_exist_err	proto.h	/^	file_not_exist_err = 3,$/;"	e	enum:_error_nbr
+height_limit	proto.h	/^	uint32_t	height_limit;$/;"	m	struct:recv_webclient	access:public
+height_limit	proto.h	/^	uint32_t	height_limit;$/;"	m	struct:snd_fileserer	access:public
+host_id_err	proto.h	/^	host_id_err = 2,$/;"	e	enum:_error_nbr
+hostid	proto.h	/^	uint32_t	hostid;$/;"	m	struct:del_ask_fileserver	access:public
+id	proto.h	/^	userid_t	id;$/;"	m	struct:protocol	access:public
+init_proto_head	proto.h	/^init_proto_head(void* buf, uint32_t id, int cmd, int len)$/;"	f	signature:(void* buf, uint32_t id, int cmd, int len)
+key	proto.h	/^	uint32_t	key;				\/\/自增的唯一值$/;"	m	struct:recv_fileserver	access:public
+key	proto.h	/^	uint32_t	key;$/;"	m	struct:snd_thumb_pkg	access:public
+key	proto.h	/^	uint32_t    key;$/;"	m	struct:del_ask_fileserver	access:public
+key	proto.h	/^	uint32_t    key;$/;"	m	struct:recv_webclient	access:public
+key	proto.h	/^	uint32_t    key;$/;"	m	struct:snd_fileserer	access:public
+len	proto.h	/^	uint32_t	len;$/;"	m	struct:protocol	access:public
+len	proto.h	/^	uint32_t    len;$/;"	m	struct:snd_fileserer	access:public
+lloccode	proto.h	/^	char    lloccode[Lloccode_Len];	\/\/原图标识码$/;"	m	struct:recv_fileserver	access:public
+name	fcgi_pic.h	/^	char name[16];$/;"	m	struct:request_date	access:public
+path	proto.h	/^	char	path[PATH_MAX_LEN];$/;"	m	struct:del_ask_fileserver	access:public
+pic_max_len	proto.h	4;"	d
+proto_cmd	fcgi_pic.h	/^enum proto_cmd {$/;"	g
+proto_create_album	fcgi_pic.h	/^	proto_create_album	= 1001,$/;"	e	enum:proto_cmd
+proto_del_image	fcgi_pic.h	/^	proto_del_image		= 1011,$/;"	e	enum:proto_cmd
+proto_get_image	fcgi_pic.h	/^	proto_get_image		= 1004,$/;"	e	enum:proto_cmd
+proto_get_thumb	fcgi_pic.h	/^	proto_get_thumb		= 1003,$/;"	e	enum:proto_cmd
+proto_max_len	proto.h	5;"	d
+proto_upload_pic	fcgi_pic.h	/^	proto_upload_pic	= 1002,$/;"	e	enum:proto_cmd
+protocol	proto.h	/^typedef struct protocol {$/;"	s
+protocol::body	proto.h	/^	uint8_t		body[];$/;"	m	struct:protocol	access:public
+protocol::cmd	proto.h	/^	uint16_t	cmd;$/;"	m	struct:protocol	access:public
+protocol::id	proto.h	/^	userid_t	id;$/;"	m	struct:protocol	access:public
+protocol::len	proto.h	/^	uint32_t	len;$/;"	m	struct:protocol	access:public
+protocol::ret	proto.h	/^	uint32_t	ret;$/;"	m	struct:protocol	access:public
+protocol::seq	proto.h	/^	uint32_t	seq;$/;"	m	struct:protocol	access:public
+protocol_t	proto.h	/^} __attribute__((packed)) protocol_t;$/;"	t	typeref:struct:protocol
+recv_fileserver	proto.h	/^struct recv_fileserver{$/;"	s
+recv_fileserver::Thumbid	proto.h	/^    uint32_t    Thumbid[CNT_MAX];			\/\/缩略图id$/;"	m	struct:recv_fileserver	access:public
+recv_fileserver::cnt	proto.h	/^	uint32_t    cnt;				\/\/缩略图数量$/;"	m	struct:recv_fileserver	access:public
+recv_fileserver::key	proto.h	/^	uint32_t	key;				\/\/自增的唯一值$/;"	m	struct:recv_fileserver	access:public
+recv_fileserver::lloccode	proto.h	/^	char    lloccode[Lloccode_Len];	\/\/原图标识码$/;"	m	struct:recv_fileserver	access:public
+recv_thumb_pkg	proto.h	/^struct recv_thumb_pkg{$/;"	s
+recv_thumb_pkg::thumb_data	proto.h	/^	char thumb_data[];$/;"	m	struct:recv_thumb_pkg	access:public
+recv_thumb_pkg::thumb_len	proto.h	/^	uint32_t thumb_len;$/;"	m	struct:recv_thumb_pkg	access:public
+recv_webclient	proto.h	/^struct recv_webclient{$/;"	s
+recv_webclient::cnt	proto.h	/^	uint32_t    cnt;$/;"	m	struct:recv_webclient	access:public
+recv_webclient::height_limit	proto.h	/^	uint32_t	height_limit;$/;"	m	struct:recv_webclient	access:public
+recv_webclient::key	proto.h	/^	uint32_t    key;$/;"	m	struct:recv_webclient	access:public
+recv_webclient::thumb_arg	proto.h	/^	struct thumb_arg thumb_arg[CNT_MAX];$/;"	m	struct:recv_webclient	typeref:struct:recv_webclient::thumb_arg	access:public
+recv_webclient::userid	proto.h	/^	userid_t    userid;$/;"	m	struct:recv_webclient	access:public
+recv_webclient::width_limit	proto.h	/^	uint32_t	width_limit;$/;"	m	struct:recv_webclient	access:public
+request_date	fcgi_pic.h	/^typedef struct request_date{$/;"	s
+request_date::date	fcgi_pic.h	/^	char date[64];$/;"	m	struct:request_date	access:public
+request_date::name	fcgi_pic.h	/^	char name[16];$/;"	m	struct:request_date	access:public
+ret	proto.h	/^	uint32_t	ret;$/;"	m	struct:protocol	access:public
+seq	proto.h	/^	uint32_t	seq;$/;"	m	struct:protocol	access:public
+snd_fileserer	proto.h	/^struct snd_fileserer{$/;"	s
+snd_fileserer::branchtype	proto.h	/^	uint32_t    branchtype;$/;"	m	struct:snd_fileserer	access:public
+snd_fileserer::cnt	proto.h	/^	uint32_t    cnt;$/;"	m	struct:snd_fileserer	access:public
+snd_fileserer::content	proto.h	/^	char    content[];$/;"	m	struct:snd_fileserer	access:public
+snd_fileserer::height_limit	proto.h	/^	uint32_t	height_limit;$/;"	m	struct:snd_fileserer	access:public
+snd_fileserer::key	proto.h	/^	uint32_t    key;$/;"	m	struct:snd_fileserer	access:public
+snd_fileserer::len	proto.h	/^	uint32_t    len;$/;"	m	struct:snd_fileserer	access:public
+snd_fileserer::thumb_arg	proto.h	/^	struct thumb_arg thumb_arg[CNT_MAX];$/;"	m	struct:snd_fileserer	typeref:struct:snd_fileserer::thumb_arg	access:public
+snd_fileserer::type	proto.h	/^	uint32_t    type;$/;"	m	struct:snd_fileserer	access:public
+snd_fileserer::width_limit	proto.h	/^	uint32_t	width_limit;$/;"	m	struct:snd_fileserer	access:public
+snd_thumb_pkg	proto.h	/^typedef struct snd_thumb_pkg{$/;"	s
+snd_thumb_pkg::key	proto.h	/^	uint32_t	key;$/;"	m	struct:snd_thumb_pkg	access:public
+snd_thumb_pkg::thumb_id	proto.h	/^	uint32_t	thumb_id;$/;"	m	struct:snd_thumb_pkg	access:public
+start_x	proto.h	/^	uint32_t    start_x;$/;"	m	struct:thumb_arg	access:public
+start_y	proto.h	/^	uint32_t    start_y;$/;"	m	struct:thumb_arg	access:public
+str_request_date	fcgi_pic.h	/^}str_request_date;$/;"	t	typeref:struct:request_date
+stru_del_ask	proto.h	/^}__attribute__((packed)) stru_del_ask;$/;"	t	typeref:struct:del_ask_fileserver
+stru_snd_thumb	proto.h	/^}__attribute__((packed)) stru_snd_thumb;$/;"	t	typeref:struct:snd_thumb_pkg
+thumb_arg	proto.h	/^	struct thumb_arg thumb_arg[CNT_MAX];$/;"	m	struct:recv_webclient	typeref:struct:recv_webclient::thumb_arg	access:public
+thumb_arg	proto.h	/^	struct thumb_arg thumb_arg[CNT_MAX];$/;"	m	struct:snd_fileserer	typeref:struct:snd_fileserer::thumb_arg	access:public
+thumb_arg	proto.h	/^struct thumb_arg{$/;"	s
+thumb_arg::H	proto.h	/^	uint32_t    H;$/;"	m	struct:thumb_arg	access:public
+thumb_arg::W	proto.h	/^	uint32_t    W;$/;"	m	struct:thumb_arg	access:public
+thumb_arg::start_x	proto.h	/^	uint32_t    start_x;$/;"	m	struct:thumb_arg	access:public
+thumb_arg::start_y	proto.h	/^	uint32_t    start_y;$/;"	m	struct:thumb_arg	access:public
+thumb_arg::thumb_x	proto.h	/^	uint32_t    thumb_x;$/;"	m	struct:thumb_arg	access:public
+thumb_arg::thumb_y	proto.h	/^	uint32_t    thumb_y;$/;"	m	struct:thumb_arg	access:public
+thumb_data	proto.h	/^	char thumb_data[];$/;"	m	struct:recv_thumb_pkg	access:public
+thumb_id	proto.h	/^	uint32_t	thumb_id;$/;"	m	struct:snd_thumb_pkg	access:public
+thumb_len	proto.h	/^	uint32_t thumb_len;$/;"	m	struct:recv_thumb_pkg	access:public
+thumb_x	proto.h	/^	uint32_t    thumb_x;$/;"	m	struct:thumb_arg	access:public
+thumb_y	proto.h	/^	uint32_t    thumb_y;$/;"	m	struct:thumb_arg	access:public
+type	proto.h	/^	uint32_t    type;$/;"	m	struct:snd_fileserer	access:public
+userid	proto.h	/^	userid_t    userid;$/;"	m	struct:recv_webclient	access:public
+userid_t	proto.h	/^typedef uint32_t userid_t;$/;"	t
+width_limit	proto.h	/^	uint32_t	width_limit;$/;"	m	struct:recv_webclient	access:public
+width_limit	proto.h	/^	uint32_t	width_limit;$/;"	m	struct:snd_fileserer	access:public

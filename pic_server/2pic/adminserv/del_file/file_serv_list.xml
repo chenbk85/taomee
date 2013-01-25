@@ -1,0 +1,11 @@
+
+
+<!-- 	
+ID 		logic server id
+Eip		external ip
+Iip   		internal ip
+Wgh 	server load weigh	
+-->
+<ServList>
+	 <Srv ID="1" Eip="10.1.1.58" Iip="10.1.1.58" Wgt="50"/>
+</ServList>
