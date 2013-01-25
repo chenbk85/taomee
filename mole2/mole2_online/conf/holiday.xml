@@ -1,0 +1,18 @@
+<!--
+	TimeType: 0 显示两个小时 1 显示五个小时
+	ExpRatio：2小时内的经验倍率
+	HalfExpRatio: 2-5小时之间的经验倍率
+-->
+<Holidays>
+	<Day ID="1" TimeType="0" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="50" />
+	<Day ID="2" TimeType="0" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="50" />
+	<Day ID="3" TimeType="0" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="50" />
+<!--<Day ID="1" TimeType="1" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="200" />-->
+<!--<Day ID="2" TimeType="1" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="200" />-->
+<!--<Day ID="3" TimeType="1" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="200" />-->
+	<Day ID="4" TimeType="0" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="50" />
+<!--<Day ID="4" TimeType="1" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="200" />-->
+	<Day ID="5" TimeType="1" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="200" />
+	<Day ID="6" TimeType="1" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="200" />
+	<Day ID="7" TimeType="1" HalfHourRatio="200" TwoHourRatio="100" FiveHourRatio="200" />
+</Holidays>

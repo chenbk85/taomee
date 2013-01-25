@@ -1,0 +1,37 @@
+<!--
+配置说明：	
+MapCopy： 一个副本的完整描述，分为多个Layer（副本中的各个场景）
+	Layer:
+		ParentLayer:只能从这些场景进入，可配置多个
+		Template：该场景的ID，对应maps.xml中的ID
+		NeedItem="ItemID Count":进入场景需要的物品
+		Beast：场景中的怪物
+			Order="1"表示打怪顺序，为1表示第一个打，为N表示=N-1的怪打完了才能打
+			GrpID：副本怪采用怪物组,为怪物组列表
+			ValidCnt:表示可以打的数量
+			NeedKillCnt：表示开启下一场景需要杀的怪物数量
+
+-->
+<MapCopys>
+	<MapCopy ID="1">
+		<Layer ID="1" Template="41211" >
+			<Beast Order="1" GrpID="2601 2602" ValidCnt="-1 -1" NeedKillCnt="0 0" />	
+		</Layer>
+		<Layer ID="2" ParentLayer="1" Template="41212" NeedItem="180062 20">
+			<Beast Order="1" GrpID="2601 2602" ValidCnt="-1 -1" NeedKillCnt="0 0" />	
+			<Beast Order="2" GrpID="2603" ValidCnt="1" NeedKillCnt="1" />	
+		</Layer>
+		<Layer ID="3" ParentLayer="2" Template="41213" NeedItem="180063 10">
+			<Beast Order="1" GrpID="2604" ValidCnt="1" NeedKillCnt="1" />	
+			<Beast Order="2" GrpID="2606" ValidCnt="1" NeedKillCnt="1" />
+			<Beast Order="3" GrpID="2605" ValidCnt="1" NeedKillCnt="1" />	
+		</Layer>
+		<Layer ID="4" Template="41214" >
+		</Layer>
+	</MapCopy>
+
+	<MapCopy ID="2">
+		<Layer ID="1" Template="41222" >
+		</Layer>
+	</MapCopy>
+</MapCopys>

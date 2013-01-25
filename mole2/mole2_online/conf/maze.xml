@@ -1,0 +1,296 @@
+<!--
+配置说明：	
+
+[约定]	
+◆迷宫最多4层（上限可调整）
+◆迷宫入口坐标点上限为8
+◆迷宫总地图上限为225
+
+◆迷宫总表配表MapID段号举例：
+“A层”MapListID：30101~30119
+“B层”MapListID：30120~30139
+“C层”MapListID：30140~30150
+
+◆随机迷宫随机出现点数量分布及地图ID如下：
+	随机出现点=4<Map ID="21206" Name="下水道四层" 
+	随机出现点=2<Map ID="21207" Name="下水道五层"
+	随机出现点=2<Map ID="21210" Name="下水道七层"
+	随机出现点=2<Map ID="21304" Name="格历尔平原3区"	 
+	随机出现点=2<Map ID="21304" Name="格历尔平原4区"
+	随机出现点=6<Map ID="21305" Name="格历尔平原5区" 
+	随机出现点=6<Map ID="21306" Name="格历尔平原6区" 
+	随机出现点=6<Map ID="21307" Name="格历尔平原7区" 
+	随机出现点=6<Map ID="21307" Name="格历尔平原10区" 	
+	随机出现点=6<Map ID="21307" Name="格历尔平原11区" 	
+	随机出现点=2<Map ID="21402" Name="海底洞穴二层" 
+	随机出现点=6<Map ID="21502" Name="风之洞穴二层" 
+	随机出现点=6<Map ID="21503" Name="风之洞穴三层" 
+	随机出现点=6<Map ID="11301" Name="皇宫花园"
+	
+	<Map ID="21102" Name="吉普1号地道" 
+	<Map ID="21103" Name="吉普2号地道" 	
+		
+	<Map ID="21208" Name="库噜王BOSS领域" 	
+    <Map ID="21212" Name="法尔王BOSS领域"
+MazeEntrance；迷宫入口 ☆迷宮入口
+
+MazeTemplate；迷宫模板
+Limits；极限
+StartTime；早6点，服务器开启时间。
+CloseTime；晚24点，服务器关闭时间。
+Refresh；刷新时间（单位秒）☆平日刷新间隔时间为1800秒即30分钟刷新一次。
+
+-->
+<MazeConfig>
+	<MapConfig MapID="11301">    <!--皇宫花园-->
+		<Point X="181" Y="485"/>		
+		<Point X="1454" Y="510"/>				
+	</MapConfig>												
+	<MapConfig MapID="11408">    <!--东时光井-->	
+		<Point X="211" Y="408"/>					
+	</MapConfig>	
+	<MapConfig MapID="11501">    <!--西时光井-->
+		<Point X="578" Y="391"/>					
+	</MapConfig>
+<!--4 5 7下水道-->				
+	<MapConfig MapID="21206">
+		<Point X="201" Y="173"/>
+		<Point X="1429" Y="497"/>			
+	</MapConfig>									
+	<MapConfig MapID="21207">
+		<Point X="74" Y="857"/>
+		<Point X="1483" Y="682"/>			
+	</MapConfig>
+	<MapConfig MapID="21208">  <!--库噜王领域-->
+		<Point X="208" Y="182"/>
+		<Point X="500" Y="120"/>			
+	</MapConfig>
+	
+	<MapConfig MapID="21210"><!--七层-->
+		<Point X="1414" Y="493"/>
+		<Point X="181" Y="501"/>			
+	</MapConfig>
+	<MapConfig MapID="21212"><!--法尔王BOSS领域-->
+		<Point X="137" Y="179"/>
+		<Point X="114" Y="329"/>			
+	</MapConfig>
+
+<!-- 213xx -->
+	<MapConfig MapID="21303">
+		<Point X="159" Y="853"/>	
+		<Point X="1032" Y="887"/>	
+		<Point X="1142" Y="256"/>								
+	</MapConfig>			
+	<MapConfig MapID="21304">
+		<Point X="200" Y="173"/>
+		<Point X="722" Y="294"/>			
+	</MapConfig>		
+	<MapConfig MapID="21305">
+		<Point X="265" Y="352"/>
+		<Point X="1230" Y="726"/>										
+	</MapConfig>	
+	<MapConfig MapID="21306">
+		<Point X="483" Y="343"/>
+		<Point X="290" Y="710"/>									
+	</MapConfig>					
+	<MapConfig MapID="21307">
+		<Point X="533" Y="436"/>	
+		<Point X="1243" Y="220"/>									
+	</MapConfig>	
+	<MapConfig MapID="21310">
+		<Point X="1280" Y="666"/>
+		<Point X="1400" Y="196"/>						
+	</MapConfig>
+	<MapConfig MapID="21311">
+		<Point X="231" Y="553"/>
+		<Point X="434" Y="129"/>						
+	</MapConfig>		
+	<MapConfig MapID="21312">      <!--风洞外狼牙山 -->
+		<Point X="320" Y="261"/>
+		<Point X="1496" Y="263"/>						
+	</MapConfig>	
+<!-- 214xx -->
+	<MapConfig MapID="21402"> <!--海底洞2-->	
+		<Point X="600" Y="411"/>
+		<Point X="162" Y="328"/>			
+	</MapConfig>				
+<!-- 215xx -->		
+	<MapConfig MapID="21502">
+		<Point X="940" Y="882"/>	
+		<Point X="182" Y="894"/>
+		<Point X="1275" Y="154"/>												
+	</MapConfig>			
+	<MapConfig MapID="21503">
+		<Point X="453" Y="223"/>
+		<Point X="636" Y="890"/>	
+		<Point X="1383" Y="656"/>															
+	</MapConfig>		
+<!-- 301xx -->
+	<MapConfig MapID="30101">
+		<Point X="1301" Y="242"/>
+		<Point X="204" Y="379"/>	
+		<Point X="-600" Y="-100" Shop="1" />
+		<Point X="-74" Y="-123" Shop="1" />								
+	</MapConfig>					
+	<MapConfig MapID="30102">
+		<Point X="1151" Y="215"/>
+		<Point X="405" Y="482"/>	
+		<Point X="-71" Y="-143" Shop="1" />
+		<Point X="386" Y="127" Shop="1" />							
+	</MapConfig>
+	<MapConfig MapID="30103">
+		<Point X="1180" Y="191"/>
+		<Point X="448" Y="191"/>	
+		<Point X="28" Y="40" Shop="1" />
+		<Point X="-550" Y="98" Shop="1" />							
+	</MapConfig>
+	<MapConfig MapID="30103">
+		<Point X="1180" Y="191"/>
+		<Point X="448" Y="191"/>	
+		<Point X="28" Y="40" Shop="1" />
+		<Point X="-550" Y="98" Shop="1" />							
+	</MapConfig>
+	<MapConfig MapID="30104">
+		<Point X="1106" Y="331"/>
+		<Point X="321" Y="830"/>		
+		<Point X="340" Y="320"/>
+		<Point X="1107" Y="830"/>	
+		<Point X="146" Y="-4" Shop="1" />									
+	</MapConfig>				
+	<MapConfig MapID="30121">
+		<Point X="336" Y="820"/>
+		<Point X="656" Y="856"/>	
+		<Point X="967" Y="856"/>	
+		<Point X="1267" Y="809"/>
+		<Point X="-585" Y="-166" Shop="1" />
+		<Point X="127" Y="-104" Shop="1" />												
+	</MapConfig>
+	<MapConfig MapID="30141">
+		<Point X="417" Y="430" Next="0" Back="1"/>		
+		<Point X="417" Y="180" Next="1" Back="0"/>				
+	</MapConfig>
+	<MapConfig MapID="30142"> 
+		<Point X="417" Y="430" Next="0" Back="1"/>		
+		<Point X="417" Y="180" Next="1" Back="0"/>						
+	</MapConfig>
+	<MapConfig MapID="30143"> 
+		<Point X="417" Y="430" Next="0" Back="1"/>		
+		<Point X="417" Y="180" Next="1" Back="0"/>							
+	</MapConfig>	
+	<MapConfig MapID="30144"> 
+		<Point X="417" Y="430" Next="0" Back="1"/>		
+		<Point X="417" Y="180" Next="1" Back="0"/>							
+	</MapConfig>
+	<MapConfig MapID="30145"> 
+		<Point X="417" Y="430" Next="0" Back="1"/>		
+		<Point X="417" Y="180" Next="1" Back="0"/>				
+	</MapConfig>
+
+	<MazeTemplate Limits="2" StartTime="21600" CloseTime="86400" Refresh="3800"><!--【1】平原四海底洞-->
+		<MazeEntrance>
+			<Map MapID="11408" Rate="500"/>
+			<Map MapID="21304" Rate="500"/>
+			<!--			<Map MapID="21402" Rate="333"/> -->
+		</MazeEntrance>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="300"/>
+			<Map MapID="30101" Rate="500"/>
+			<Map MapID="30102" Rate="500"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="600"/>
+			<Map MapID="30103" Rate="1000"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="1000"/>
+			<Map MapID="30101" Rate="500"/>
+			<Map MapID="30102" Rate="500"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Map MapID="30141" Rate="500"/>
+			<Map MapID="30145" Rate="500"/>
+		</MazeLayer>
+	</MazeTemplate>
+	<MazeTemplate Limits="4" StartTime="21600" CloseTime="86400" Refresh="3800"><!--【2】下水道-->	
+		<MazeEntrance>
+			<Map MapID="21206" Rate="200"/>
+			<Map MapID="21207" Rate="200"/>
+			<Map MapID="21208" Rate="200"/>
+			<Map MapID="21210" Rate="200"/>
+			<Map MapID="21212" Rate="200"/>
+		</MazeEntrance>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="100"/>
+			<Map MapID="30103" Rate="500"/>
+			<Map MapID="30104" Rate="500"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="200"/>
+			<Map MapID="30121" Rate="1000"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="1000"/>
+			<Map MapID="30101" Rate="500"/>
+			<Map MapID="30102" Rate="500"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Map MapID="30141" Rate="1000"/>
+		</MazeLayer>
+	</MazeTemplate>
+	<MazeTemplate Limits="4" StartTime="21600" CloseTime="86400" Refresh="3800"><!--【3】平原-->	
+		<MazeEntrance>
+			<Map MapID="21303" Rate="150"/>
+			<Map MapID="21305" Rate="150"/>
+			<Map MapID="21306" Rate="150"/>
+			<Map MapID="21307" Rate="150"/>
+			<Map MapID="21310" Rate="150"/>
+			<Map MapID="21311" Rate="150"/>
+			<Map MapID="11301" Rate="100"/>
+		</MazeEntrance>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="300"/>
+			<Map MapID="30101" Rate="334"/>
+			<Map MapID="30102" Rate="333"/>
+			<Map MapID="30103" Rate="333"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="1000"/>
+			<Map MapID="30101" Rate="334"/>
+			<Map MapID="30102" Rate="333"/>
+			<Map MapID="30104" Rate="333"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Map MapID="30141" Rate="334"/>
+			<Map MapID="30142" Rate="333"/>
+			<Map MapID="30143" Rate="333"/>
+		</MazeLayer>
+	</MazeTemplate>
+	<MazeTemplate Limits="3" StartTime="21600" CloseTime="86400" Refresh="3800"><!--【4】风之洞-->		
+		<MazeEntrance>
+			<Map MapID="21312" Rate="330"/>
+			<!--<Map MapID="11501" Rate="250"/>-->
+			<Map MapID="21502" Rate="330"/>
+			<Map MapID="21503" Rate="340"/>
+		</MazeEntrance>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="300"/>
+			<Map MapID="30102" Rate="334"/>
+			<Map MapID="30103" Rate="333"/>
+			<Map MapID="30121" Rate="333"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="500"/>
+			<Map MapID="30121" Rate="1000"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Shop ShopID="502" Rate="1000"/>
+			<Map MapID="30121" Rate="334"/>
+			<Map MapID="30103" Rate="333"/>
+			<Map MapID="30121" Rate="333"/>
+		</MazeLayer>
+		<MazeLayer>
+			<Map MapID="30144" Rate="500"/>
+			<Map MapID="30141" Rate="500"/>
+		</MazeLayer>
+	</MazeTemplate>
+</MazeConfig>

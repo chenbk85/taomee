@@ -1,0 +1,30 @@
+<!--
+	Suit：套装
+	Prof：装备职业。【-1全职业，2剑士，4弓箭手，8魔法师，16传教士，32忍者】
+	HpMax：生命上限增加，MpMax：魔力上限增加，Atk：攻击力，Matk：魔法攻击力，Def：防御力，Mdef：魔法防御力，Speed：速度，Spirit：精神，Resume：恢复，Hit：命中，Dodge：闪躲，Crit：必杀，FightBack：反击，ResistPoison：抗毒，ResistLithification：抗石化，ResistLethargy：抗昏睡，ResistCommination：抗诅咒，ResistConfusion：抗混乱，ResistOblivion：抗遗忘。【以上参数未配置的属性默认是0】
+-->
+
+<Suits>
+	<!-- 风龙套装 -->
+	<Suit ID="7" Prof="2" ItemID="110011 110012 110013 110014 110015 110016" Name="风之祝福·剑" HpMax="220"/>
+	<Suit ID="8" Prof="4" ItemID="110017 110019 110021 110022 110023" Name="风之祝福·物" HpMax="220"/>
+	<Suit ID="9" Prof="24" ItemID="110018 110020 110021 110022 110024" Name="风之祝福·魔" HpMax="220"/>
+	<Suit ID="13" Prof="32" ItemID="110021 110022 110025 110026 110027" Name="风之祝福·物" HpMax="220"/>
+	<!-- 黑银套装 -->
+	<Suit ID="17" Prof="-1" ItemID="147017 147018 147019 147020 147021" Name="黑银套装" Spirit="4" Resume="4" Hit="10" Crit="10" FightBack="10"/>
+	<!-- Lv15竞技场套装 -->
+	<Suit ID="4" Prof="2" ItemID="90015 90016 90017 90018 90019 90020" Name="白钢套装" Hit="8" FightBack="8"/>
+	<Suit ID="5" Prof="4" ItemID="90021 90023 90025 90026 90027" Name="圣特鲁套装·物" Crit="8" Dodge="8"/>
+	<Suit ID="6" Prof="24" ItemID="90022 90024 90025 90026 90028" Name="圣特鲁套装·魔" Spirit="2" Dodge="8"/>
+	<Suit ID="14" Prof="32" ItemID="90127 90128 90129 90025 90026" Name="圣特鲁套装·物" Crit="8" Dodge="8"/>
+	<!-- Lv25竞技场套装 -->
+	<Suit ID="1" Prof="2" ItemID="90001 90002 90003 90004 90005 90006" Name="星耀套装" Hit="13" FightBack="13"/>
+	<Suit ID="2" Prof="4" ItemID="90007 90009 90011 90012 90013" Name="星闪套装·物" Crit="13" Dodge="13"/>
+	<Suit ID="3" Prof="24" ItemID="90008 90010 90011 90012 90014" Name="星闪套装·魔" Spirit="3" Dodge="13"/>
+	<Suit ID="15" Prof="32" ItemID="90130 90131 90132 90011 90012" Name="星闪套装·物" Crit="13" Dodge="13"/>
+	<!-- Lv35竞技场套装 -->
+	<Suit ID="10" Prof="2" ItemID="90029 90030 90031 90032 90033 90034" Name="龙牙套装" HpMax="220" Mdef="100"/>
+	<Suit ID="11" Prof="4" ItemID="90035 90037 90039 90040 90041" Name="安德鲁套装·物" HpMax="220" Dodge="13"/>
+	<Suit ID="12" Prof="24" ItemID="90036 90038 90039 90040 90042" Name="安德鲁套装·魔" HpMax="220" Spirit="3"/>
+	<Suit ID="16" Prof="32" ItemID="90133 90134 90135 90039 90040" Name="安德鲁套装·物" HpMax="220" Dodge="13"/>
+</Suits>

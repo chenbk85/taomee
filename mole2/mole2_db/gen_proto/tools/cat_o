@@ -1,0 +1,4 @@
+#!/bin/bash
+cd `dirname $0` 
+
+../gen_proto_app/bin/cat_proto    -p ../python/mole2_db_proto.py   $* 

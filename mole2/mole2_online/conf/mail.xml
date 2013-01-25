@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Mail ID 从1开始，最高500
+		
+Operation type
+type: 	1 小米减少判断	ValueF		小米阈值 
+		2 登陆判断时间	ValueF=1	程序写死 
+		3 等级提升判断	ValueF	人物的等级
+		4 任务完成判断	ValueF	任务id
+		5 装备耐久判断 ValueF 装备当前耐久 ValueS 装备最大耐久
+		6 系统通知  只发一次  valuse定义在item.h中的ssid    
+Index：最多4个系数
+
+
+换行符：
+“【】”中内容后文字换行：旧【&#x000A;】 新【&lt;br/&gt;】
+
+装备名：           %EQUIP_NAME%
+自己名字：			%MY_NICK%
+
+-->
+<Info>
+	<Operations>
+	<!--
+			<Operation	Type="1" ValueF="100" Index="1"/> 
+			<Operation Type="3" ValueF="7" Index="14"/> 
+			<Operation Type="2" ValueF="1" Index="2"/> -->        
+			<Operation Type="3" ValueF="11" Index="6"/>
+			<Operation Type="5" ValueF="0" ValueS="1" Index="5"/> 
+			<Operation Type="3" ValueF="23" Index="7 11"/>   
+			<Operation Type="3" ValueF="10" Index="8 10"/>     
+			<!--
+			<Operation Type="3" ValueF="40" Index="9"/>                         
+			-->
+			<Operation Type="4" ValueF="10" Index="16"/>
+			<Operation Type="3" ValueF="15" Index="17"/>      
+			<Operation Type="3" ValueF="20" Index="18"/>        
+			<Operation Type="3" ValueF="25" Index="19"/>      
+			<Operation Type="3" ValueF="30" Index="20"/>                 
+			<Operation Type="3" ValueF="50" Index="28"/>                 
+			<!--<Operation Type="6" ValueF="61001" Index="29"/>                 -->
+	</Operations>
+	<Mails>
+		<!-- 
+		<Mail ID="1" SenderNick=""  Title="星豆回归计划" Message="哎呀！是不是" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="2" SenderNick="摩尔王国" ThemeID="10" Title="欢迎归来！" Message="好久没见，摩尔王国的居民都很想你呢。"/>
+
+		<Mail ID="3" SenderNick="莓可" ThemeID="2" Title="祝贺升级！" Message="祝贺你升级啦，如果方便的话可以来一次爱精灵协会吗？我有一些关于精灵伙伴的事情想告诉你。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="4" SenderNick="近卫士兵长·宾德" ThemeID="7" Title="下水道挑战许可通知" Message="祝贺你达到14级！&lt;br/&gt;【下水道挑战】正式向您开放！请向负责守卫下水道的【守卫士兵•H】了解情况！&lt;br/&gt;*古老下水道•城堡吊桥边地下入口。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>     		-->
+
+		<Mail ID="5" SenderNick="贝利" ThemeID="10" Title="损坏装备回收通知" Message="亲爱的【%MY_NICK%】，【%EQUIP_NAME%】已经损坏，我们贝塔商会已经代为回收。&lt;br/&gt;感谢你为格历尔大陆环保事业做出的贡献。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="6" SenderNick="皮皮克克" ThemeID="6" Title="柯特哥哥回来了！" Message="最近柯特哥哥回摩尔王国了！他去过很多地方，如果你有什么想知道的可以去找他！他就在格历尔平原1区。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+	
+		<Mail ID="7" SenderNick="勇士斗技场！" ThemeID="10" Title="呼唤勇者！" Message="祝贺你达到23级！&lt;br/&gt;【勇士斗技场】的试炼在等待着你！通过战斗获得的【积分】可以兑换强力的装备和神奇的道具！&lt;br/&gt;快报名吧！勇者斗技场最高指挥官【圣弗雷德】正在【王国西街】等着你。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="8" SenderNick="执行大臣•莱卡" ThemeID="10" Title="地下小屋开启通知" Message="冒险中的旅行者，欢迎你的到来！属于你的地下小屋已经准备好了！虽然比较简陋，希望可以为你洗去旅途辛劳。&lt;br/&gt;★点击右下角的小屋，可以快速抵达。&lt;br/&gt;请务必在摩尔王国生活愉快^_^" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<!--
+		<Mail ID="9" SenderNick="时之女神•贝尔丹蒂" ThemeID="8" Title="黑暗来袭！" Message="伊恩大魔王施加了魔咒！所有小摩尔等级达到40级以后，无法通过战斗获得经验。&lt;br/&gt;目前魔法师协会的彼兔老师正在设法解除魔王魔力的影响，请和彼兔老师一起努力吧！" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+		-->
+
+		<Mail ID="10" SenderNick="贝利•贝蒂•贝多罗" ThemeID="10" Title="贝塔商会摩尔王国店欢迎您！" Message="欢迎来到【摩尔王国】！&lt;br/&gt;让我们帮您把没用的星豆换成有用的东西！o(^——^)b&lt;br/&gt;我们的地址是：&lt;br/&gt;【装备店•道具店】——勇士广场&lt;br/&gt;【面包店】——王国南街" > 		
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="11" SenderNick="勇士斗技场！" ThemeID="10" Title="修炼之域开启" Message="接到摩尔王的命令，勇士斗技场【修炼之域】正式开启。赶快召集你的伙伴们一起到勇士斗技场找【修炼之域管理员】咚妮吧！闯过各种难关后会有意想不到的惊喜哦！" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+<!--
+		<Mail ID="12" SenderNick="圣弗雷德" ThemeID="10" Title="新技能修行" Message="坚持修行才能不断挖掘自己的潜力，祝贺你又向前迈进了一步！现在你有能力学习6个技能了，快去导师那看看有什么适合你的技能吧！" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="13" SenderNick="TB*麦田村" ThemeID="10" Title="未来摩尔收（紧急）" Message="有空的话，请麻烦来下麦田村！&lt;br/&gt;&lt;br/&gt;★陆行鸟乘坐费由TB负责。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="14" SenderNick="近卫士兵长·宾德" ThemeID="10" Title="7级摩尔请注意！" Message="【%MY_NICK%】，不管你能不能成为摩尔勇士，保护自己的实力是必须的！请组队前往【下水道】、【格历尔平原】协助净化黑化精灵。小屋中的【经验树】记得使用。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+
+		<Mail ID="15" SenderNick="近卫士兵长·宾德" ThemeID="10" Title="15级摩尔请注意！" Message="【%MY_NICK%】，祝你早日成为勇士协会正式成员，让自己变得更强！&lt;br/&gt;请组队前往【麦田村周边】、【格历尔平原外围】协助净化黑化精灵。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>
+-->     
+		<Mail ID="16" SenderNick="执行大臣•莱卡" ThemeID="10" Title="随身护士到来" Message="为了保护【%MY_NICK%】，勇士协会将特别派出一位【随身护士】一路陪伴你。我把她的“召唤标记”定在你的【左下角】。&lt;br/&gt;在野外如果需要恢复体力和魔力，请随时召唤她^_^！" >
+			<Item ID="50001" Count="50"/>
+		</Mail>    
+
+		<Mail ID="17" SenderNick="执行大臣•莱卡" ThemeID="10" Title="随身护士告别" Message="亲爱的【%MY_NICK%】，相信你已经具备了足够保护自己的实力。【随身护士】即将与你告别。&lt;br/&gt;以后如果需要恢复和治疗，请及时到【女神大圣堂】或【勇敢者旅馆1楼】^_^！ " >
+			<Item ID="50001" Count="50"/>
+		</Mail>  
+
+		<Mail ID="18" SenderNick="安德鲁" ThemeID="10" Title="20级装备图纸发售" Message="建议20级“未来勇士”们自制一套实用装备，这样修行更效率。&lt;br/&gt;如果需要【装备图纸】，可以来【弗雷基港】广场上找我。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>   
+    
+		<Mail ID="19" SenderNick="黑市商人·贝金塔" ThemeID="10" Title="25级装备图纸发售" Message="我们为追求高品质的25级摩尔特别准备了【装备图纸】，交易地点在【时间缝隙】。&lt;br/&gt;PS，时间缝隙可能出现在格历尔平原和下水道，请带上足够的星豆。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>   
+    
+		<Mail ID="20" SenderNick="黑市商人·贝金塔" ThemeID="10" Title="30级装备图纸发售" Message="我们为追求高品质的30级摩尔特别准备了【装备图纸】，交易地点在【风之矿洞】。&lt;br/&gt;PS，请带上足够的星豆。" >
+			<Item ID="50001" Count="50"/>
+		</Mail>   
+<!--     
+		<Mail ID="21" SenderNick="近卫士兵长·宾德" ThemeID="10" Title="鼬西逃跑通知" Message="感谢【%MY_NICK%】在上次B级任务中的协助，我们最终抓住了【鼬西】。&lt;br/&gt;但它骗过守卫士兵逃走了。勇士协会将准备下一次追捕行动。" >
+			<Item ID="50001" Count="100"/>
+		</Mail>  
+   
+		<Mail ID="22" SenderNick="莓可" ThemeID="10" Title="★摇铃兔孵化提醒（紧急！）" Message="请尽快来【爱精灵协会】孵化你的【摇铃兔】，一定要在【4月8日】前把它领回家！&lt;br/&gt;不然我们会为它寻找更适合的新主人^_^!" >
+			<Item ID="50001" Count="100"/>
+		</Mail>  
+--> 
+		<Mail ID="23" SenderNick="贝尔丹蒂•女神" ThemeID="10" Title="恭喜你成为超时空勇士" Message="亲爱的超时空勇士，&lt;br/&gt; 我已经为你注入超时空的能量，并为你召唤来超时空拉姆，希望能帮助你探索摩尔勇士的国度！" >
+			<Item ID="50001" Count="100"/>
+		</Mail>                      
+		<Mail ID="24" SenderNick="贝尔丹蒂•女神" ThemeID="10002" Title="即将失去超时空勇士资格" Message="data0:14" >
+			<Item ID="50001" Count="100"/>
+		</Mail>
+		<Mail ID="25" SenderNick="贝尔丹蒂•女神" ThemeID="10002" Title="即将失去超时空勇士资格" Message="data0:7" >
+			<Item ID="50001" Count="100"/>
+		</Mail> 
+		<Mail ID="26" SenderNick="贝尔丹蒂•女神" ThemeID="10" Title="超时空勇士资格已过期" Message="亲爱的超时空勇士，&lt;br/&gt; 你已经失去超时空勇士资格，超时空拉姆也已经离开你，并已失去所有的特权功能！请及时续费，开通超时空勇士。" >
+			<Item ID="50001" Count="100"/>
+		</Mail>
+		<Mail ID="27" SenderNick="贝尔丹蒂•女神" ThemeID="10006" Title="充超能勇士得【飞行扫帚】" Message="" >
+			<Item ID="50001" Count="100"/>
+		</Mail>
+		<Mail ID="28" SenderNick="贝尔丹蒂•女神" ThemeID="10" Title="恭喜你达到50级" Message="亲爱的未来勇士，&lt;br/&gt;你已经升级到Lv50，现在我授予你“50级达人”称号。暂时你的等级无法再次提升，当世界树封印打开时，你才能继续成长，期待你在未来的表现。" >
+			<Item ID="50001" Count="100"/>
+		</Mail>   
+		<Mail ID="29" SenderNick="系统" ThemeID="10008" Title="赛尔号大电影2  2012年6月28日全国影院震撼上映" Message="" />
+	</Mails>
+</Info>

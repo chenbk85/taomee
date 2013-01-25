@@ -1,0 +1,74 @@
+#!/bin/bash
+if [ "$1" == "items.xml"  ] ;  then
+	mv -f "$1" "$1".bak
+	cd ./update/1/ && svn up && cp itemInfo.xml ../../"$1"
+fi
+
+if [ "$1" == "npcSkills.xml"  ] ;  then
+	mv -f "$1" "$1".bak
+	cd ./update/1/ && svn up && cp "$1" ../../
+fi
+
+if [ "$1" == "npcShop.xml"  ] ;  then
+	mv -f "$1" "$1".bak
+	cd ./update/1/ && svn up && cp "$1" ../../
+fi
+
+if [ "$1" == "titles.xml"  ] ;  then
+	mv -f "$1" "$1".bak
+	cd ./update/1/ && svn up && cp "$1" ../../
+fi
+
+if [ "$1" == "tasks_new.xml"  ] ;  then
+	mv -f "$1" "$1".bak
+	mv summary*.xml tasks_new.xml
+fi
+
+if [ "$1" == "clothes.xml"  ] ;  then
+    mv "$1" "$1".bak
+	cd ./update/2/ && svn up && cp equips.xml ../../"$1"
+fi
+
+if [ "$1" == "handbook.xml"  ] ;  then
+    mv "$1" "$1".bak
+	cd ./update/2/ && svn up && cp synthesis.xml ../../"$1"
+fi
+if [ "$1" == "exchanges.xml"  ] ;  then
+    mv "$1" "$1".bak
+	cd ./update/2/ && svn up && cp Exchanges.xml ../../"$1"
+fi
+
+if [ "$1" == "suits.xml"  ] ;  then
+    mv "$1" "$1".bak
+	cd ./update/2/ && svn up && cp Suits.xml ../../"$1"
+fi
+
+if [ "$1" == "beasts.xml" -o "$1" ==  "maps.xml" -o "$1" ==  "skills_price.xml" -o "$1" ==  "beastgrp.xml" -o  "$1" == "box.xml" -o "$1" == "commodity.xml"  -o "$1" == "rand_item.xml" -o "$1" == "vip_item.xml" ] ; then
+	mv "$1" "$1".bak
+	cd ./update/2/ && svn up && cp "$1" ../../
+fi
+
+if [ "$1" == "all" ] ; then
+	mv items.xml items.xml.bak
+	mv clothes.xml clothes.xml.bak
+	mv handbook.xml handbook.xml.bak
+	mv beasts.xml  beasts.xml.bak
+	mv beastgpr.xml beastgpr.xml.bak
+	mv box.xml  box.xml.bak
+	mv titles.xml  titles.xml.bak
+	mv commodity.xml commdity.xml.bak
+	mv rand_item.xml rand_item.xml.bak
+	mv vip_item.xml vip_item.xml.bak
+	mv exchanges.xm exchanges.xml.bak
+	cd ./update/1/ && svn up && cp itemInfo.xml ../../items.xml
+	cp titles.xml ../../titles.xml
+	cd ../2/ && svn up && cp equips.xml ../../clothes.xml
+	cp synthesis.xml ../../handbook.xml
+	cp Exchanges.xml ../../exchanges.xml
+	cp Suits.xml  ../../suits.xml
+	cp beasts.xml  beastgpr.xml box.xml titles.xml commodity.xml rand_item.xml vip_item.xml ../../
+fi
+
+if [ "$1" == "bak" ] ; then
+	mv "$2".xml.bak "$2".xml
+fi

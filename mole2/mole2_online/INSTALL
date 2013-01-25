@@ -1,0 +1,42 @@
+#!/bin/bash
+cd `dirname $0`
+function cp_and_start_test {
+	rm  -f ../bin/libm2online.so
+	rm  -f ../bin/libm2data.so
+	cp libm2online.so ../bin/	
+	cp libm2data.so ../bin/	
+	if [ "$1"  == "startup" ]; then
+		../startup.sh
+	else 
+		../rso.sh
+	fi
+
+}
+if [ "$1" == "clean" ];then
+	rm -rf ./build/
+	exit
+fi
+
+touch ./version.cpp
+
+[ -d  ./build  ] ||  mkdir ./build
+cd ./build
+pwd
+cmake ../  
+
+if  [ "$?" != "0" ]   ;then
+    rm -rf ../build
+else
+	make -j 4
+
+	if [ "$1" == "1" ]; then
+		cp_and_start_test  
+	fi
+
+	if [ "$1" == "2" ]; then
+		cp_and_start_test  startup 
+	fi
+fi
+
+
+#make VERBOSE=true

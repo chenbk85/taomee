@@ -1,0 +1,36 @@
+1. 启动程序：cd bin;./daemon.sh stop;./daemon.sh start
+2. 结束程序：cd bin;./daemon.sh stop
+3. 主配置文件bench.conf的各项含义：
+log_dir                 ../log		#日志文件的目录
+log_level               7		#日志等级
+log_size                32000000	#日志文件大小
+
+bind_file               ../etc/bind.conf	#服务ip及端口绑定文件
+pkg_timeout             5			#超时时间
+worker_num              2			#子进程数量
+send_sem_key    97856				#发送信号的key，本机唯一
+recv_sem_key    97858				#接受信号的key，本机唯一
+max_log_files   0				#日志文件最大数量
+log_save_next_file_interval_min 15		#日志文件时间间隔
+
+DB_IP               localhost			#mysql服务器的IP
+DB_USER                 root			#mysql服务器的DB用户名
+DB_PASSWD               taomee			#mysql服务器对应DB用户的密码
+
+#====日志===begin=
+#sql
+IS_LOG_DEBUG_SQL        1			#是否打印DEBUG详细信息
+#16进制	
+LOG_HEX_DATA_FLAG       0			#是否答应binary的日志
+
+3. DB SERVER 目录树：
+        -- bin/          	#db Server辅助配置文件
+	   -- pubser		#db SERVER服务主程序		
+	   -- libpubser.so	#动态库
+	   -- daemon.sh		#启动，停止脚本
+        -- etc/              	#配置文件目录
+	   -- bind.conf		#服务ip及端口绑定文件
+	   -- bench.conf	#主配置文件
+        -- log/*               	#存放日志文件
+        -- readme              	#说明文件
+        -- changelog           	#程序更新说明

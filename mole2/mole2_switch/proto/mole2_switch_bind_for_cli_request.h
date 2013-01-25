@@ -1,0 +1,2 @@
+/*1-for_cli_request-*/
+	BIND_PROTO_CMD(62101,switch_add_luckystar_exchange_cnt,switch_add_luckystar_exchange_cnt_in,switch_add_luckystar_exchange_cnt_out,0x4104c2cc,3)

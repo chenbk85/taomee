@@ -1,0 +1,49 @@
+#!/bin/bash
+function cp_and_start_test {
+	rm  -f ../../bin/libbatrserv.so
+	rm  -f ../../bin/libbatrserv_data.so
+	cp libbatrserv.so ../../bin/	
+	cp libbatrserv_data.so ../../bin/	
+	if [ "$1"  == "startup" ]; then
+		../../bin/startup.sh
+	else 
+		../rso.sh
+	fi
+
+}
+touch ./batrserv.cpp
+
+
+[ -d  ./build  ] ||  mkdir ./build
+cd build
+cmake ../  
+
+if  [ "$1" == "clean" ]   ;then
+    rm -rf ../build
+else
+    make
+	if [ "$1" == "all" ]; then
+		cp_and_start_test  startup 
+	
+		rm  -f ~/bt/bin/libbatrserv.so
+		rm  -f ~/bt/bin/libbatrserv_data.so
+		cp libbatrserv.so ~/bt/bin/	
+		cp libbatrserv_data.so ~/bt/bin/	
+		../rso.sh
+		#~/bt/bin/startup.sh
+	fi
+
+	if [ "$1" == "1" ]; then
+		cp_and_start_test  
+	fi
+
+	if [ "$1" == "2" ]; then
+		cp_and_start_test  startup 
+	fi
+
+
+
+
+fi
+
+

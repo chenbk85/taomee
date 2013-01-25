@@ -1,0 +1,101 @@
+<!--
+	<RarityPet>
+		<Node TaskID="1" PetType="1" BeastType="44" Name="假面帕" Rarity="2" IsMixture="1" MixturePetID="43" MixtureNeeds="50003 50004" MixtureNeedNums="2 3" MixturePets="53 55" MixturePetLvs="20 30" MixturePetNums="2 3" Desc="【假面**帕】家族中的一员，身上的粉末可以让摩尔们其痒无比，常在【格历尔平原3区】出现。"/>
+		/*************************************************************************************************
+		ID	        G档案编号
+		PetType		精灵类型（0表示普通；1表示稀有；2表示改造, 3多精灵兑换）
+		TaskID		精灵对应任务ID
+		BeastType	精灵ID
+		Name		（策划用）
+		Rarity		稀有度
+		Lv		    开启等级
+		ItemID      完成收集时奖励的道具
+		ItemCnt		完成收集时奖励的道具的数量
+		Desc		G档案对精灵的描述
+		LightBefore 点亮前的tips
+		Lightafter  点亮后的tips
+		
+			
+		IsMixture	是否可以提升(0表示不可合成，1表示可合成）
+		MixturePetID	合成后的宠物ID
+		MixtureNeeds	合成需要的材料
+		MixtureNeedNums	合成需要的材料数目
+		Elvestips  	需要的精灵上显示的tips提示
+		
+		
+		MixturePets		合成需要的宠物ID   
+		MixturePetLvs 	合成需要的宠物ID需要的等级
+		MixturePetNums	合成需要的宠物个数
+		
+		ExchangeNeedPets 兑换需要的精灵ID列表 eg:"42,43,43";
+		**************************************************************************************************/
+	<RarityPet>
+	
+-->
+<RarityPet>	
+	<!--
+	<Node TaskID="1" PetType="1" BeastType="44" Name="假面帕" Rarity="2" IsMixture="1" MixturePetID="43" MixtureNeeds="50003 50004" MixtureNeedNums="2 3" MixturePets="53 55" MixturePetLvs="20 30" MixturePetNums="2 3" Desc="【假面**帕】家族中的一员，身上的粉末可以让摩尔们其痒无比，常在【格历尔平原3区】出现。"/>
+	-->
+	<Node ID="1" TaskID="30001" PetType="1" BeastType="42" Name="海德" Rarity="2" IsMixture="0" Desc="藏身于绿叶中的小精灵，栖息在【格历尔平原2区】的【智慧之树】中。" LightBefore="【格历尔平原2区】拯救【智慧之树】！~" Lightafter="点我有惊喜！"/>
+	<Node ID="2" TaskID="30002" PetType="1" BeastType="43" Name="假面奇奇帕" Rarity="2" IsMixture="0" Desc="【假面**帕】家族精灵，激动时会散播令人狂笑3小时的“奇奇帕粉”。曾在【格历尔平原3区】【红色土堆】中令发现者笑到肚子疼。据历史记录每天只出现一次。" LightBefore="【格历尔平原3区】来找我哦~" Lightafter="点我有惊喜！"/>
+	<Node ID="3" TaskID="30003" PetType="1" BeastType="35" Name="哒哒鸟" Rarity="3" IsMixture="0" Desc="鸟型宠物类小精灵。总是喜欢成群而伴，看似弱小，配合极为默契，多方位的攻击往往让对手防不胜防。" LightBefore="【勇士广场】快来帮帮我！" Lightafter="点我有惊喜！"/>	
+	<Node ID="4" TaskID="30004" PetType="1" BeastType="47" Name="忽悠喵" Rarity="4" IsMixture="0" Desc="小型猫科精灵。远古时代，猫咪一族曾经是让鼹鼠们闻风丧胆的天敌。和摩尔祖先长期的亲密接触，甚至使它们长出了相似的红鼻子！【勇敢者旅馆2楼】的神秘人对它有所了解。" LightBefore="【勇敢者旅馆2楼】周三19:00-21：00 周六12：00-13：00各种忽悠！" Lightafter="点我有惊喜！"/>	
+	<Node ID="5" BeastType="1" PetType="0" Name="吉普豆叶" Rarity="3" IsMixture="1" MixturePetID="1005" MixtureNeeds="250001 170006 150008" MixtureNeedNums="1 10 15" MixturePets="1" MixturePetLvs="35" MixturePetNums="1" Elvestips="需要达到35级的【吉普豆叶】。" Lightafter="点我有惊喜！"/>
+	<Node ID="6" BeastType="2" PetType="0" Name="吉普豆花" Rarity="3" IsMixture="1" MixturePetID="1006" MixtureNeeds="250002 170006 150008" MixtureNeedNums="1 10 15" MixturePets="2" MixturePetLvs="35" MixturePetNums="1" Elvestips="需要达到35级的【吉普豆花】。" Lightafter="点我有惊喜！"/>
+	<Node ID="7" BeastType="3" PetType="0" Name="小石怪" Rarity="1" IsMixture="1" MixturePetID="1007" MixtureNeeds="250003 170004 150006" MixtureNeedNums="1 5 15" MixturePets="3" MixturePetLvs="15" MixturePetNums="1" Elvestips="需要达到15级的【小石怪】。" Lightafter="点我有惊喜！"/>
+	<Node ID="8" BeastType="4" PetType="0" Name="法尔" Rarity="1" IsMixture="1" MixturePetID="1004" MixtureNeeds="250004 170004 150006" MixtureNeedNums="1 5 15" MixturePets="4" MixturePetLvs="15"	MixturePetNums="1" Elvestips="需要达到15级的【法尔】。" Lightafter="点我有惊喜！"/>
+	<Node ID="9" BeastType="5" PetType="0" Name="库噜战士" Rarity="1" IsMixture="1" MixturePetID="1002" MixtureNeeds="250005 170002 170003" MixtureNeedNums="1 15 10" MixturePets="5" MixturePetLvs="15" MixturePetNums="1" Elvestips="需要达到15级的【库噜战士】。" Lightafter="点我有惊喜！"/>
+	<Node ID="10" BeastType="6" PetType="0" Name="吉普豆泥" Rarity="1" IsMixture="1" MixturePetID="1001" MixtureNeeds="250006 170001 150002" MixtureNeedNums="1 10 5" MixturePets="6" MixturePetLvs="12" MixturePetNums="1" Elvestips="需要达到12级的【吉普豆泥】。" Lightafter="点我有惊喜！"/>
+	<Node ID="11" BeastType="7" PetType="0" Name="怪盗迪迪拉" Rarity="1" IsMixture="1" MixturePetID="1003" MixtureNeeds="250007 170002 150004" MixtureNeedNums="1 10 5" MixturePets="7" MixturePetLvs="12" MixturePetNums="1" Elvestips="需要达到12级的【怪盗迪迪拉】。" Lightafter="点我有惊喜！"/>
+	<Node ID="12" BeastType="8" PetType="0" Name="假面吉吉帕" Rarity="1" IsMixture="1" MixturePetID="1008" MixtureNeeds="250008 170004 150006" MixtureNeedNums="1 5 15" MixturePets="8" MixturePetLvs="15" MixturePetNums="1" Elvestips="需要达到15级的【假面吉吉帕】。" Lightafter="点我有惊喜！"/>
+	<Node ID="13" BeastType="9" PetType="0" Name="草莓蜂" Rarity="2" IsMixture="1" MixturePetID="1009" MixtureNeeds="250009 170008 170007" MixtureNeedNums="1 15 20" MixturePets="9" MixturePetLvs="25" MixturePetNums="1" Elvestips="需要达到25级的【草莓蜂】。" Lightafter="点我有惊喜！"/>
+	<Node ID="14" BeastType="10" PetType="0" Name="迷唇爱丝" Rarity="1" IsMixture="1" MixturePetID="1010" MixtureNeeds="250010 170008 170007" MixtureNeedNums="1 5 15" MixturePets="10" MixturePetLvs="20" MixturePetNums="1" Elvestips="需要达到20级的【迷唇爱丝】。" Lightafter="点我有惊喜！"/>
+	<Node ID="15" BeastType="11" PetType="0" Name="拉拉美" Rarity="1" IsMixture="1" MixturePetID="1011" MixtureNeeds="250011 170006 150008" MixtureNeedNums="1 5 15" MixturePets="11" MixturePetLvs="25" MixturePetNums="1" Elvestips="需要达到25级的【拉拉美】。" Lightafter="点我有惊喜！"/>
+	<Node ID="16" BeastType="12" PetType="0" Name="怪盗戈戈拉" Rarity="1" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="17" BeastType="13" PetType="0" Name="盯眼蝠" Rarity="2" IsMixture="1" MixturePetID="1012" MixtureNeeds="250013 170006 150008" MixtureNeedNums="1 15 25" MixturePets="13" MixturePetLvs="40" MixturePetNums="1" Elvestips="需要达到40级的【盯眼蝠】。" Lightafter="点我有惊喜！"/>
+	<Node ID="18" BeastType="14" PetType="0" Name="曼陀萝卜" Rarity="2" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="19" BeastType="15" PetType="0" Name="迷眼蝠" Rarity="1" IsMixture="1" MixturePetID="1013" MixtureNeeds="250015 170006 150008" MixtureNeedNums="1 5 15" MixturePets="15" MixturePetLvs="25" MixturePetNums="1" Elvestips="需要达到25级的【迷眼蝠】。" Lightafter="点我有惊喜！"/>
+	<Node ID="20" BeastType="16" PetType="0" Name="王冠卡西卡" Rarity="1" IsMixture="1" MixturePetID="1014" MixtureNeeds="250016 170002 170003" MixtureNeedNums="1 10 15" MixturePets="16" MixturePetLvs="25"  MixturePetNums="1" Elvestips="需要达到25级的【王冠卡西卡】。" Lightafter="点我有惊喜！"/>
+	<Node ID="21" BeastType="20" PetType="0" Name="弗雷基" Rarity="2" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="22" BeastType="21" PetType="0" Name="钢姆" Rarity="1" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="23" BeastType="22" PetType="0" Name="小宅罐" Rarity="2" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="24" BeastType="23" PetType="0" Name="小宅箱" Rarity="2" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="25" BeastType="24" PetType="0" Name="喵斯熊" Rarity="1" IsMixture="1" MixturePetID="1015" MixtureNeeds="250024 170002 170003" MixtureNeedNums="1 15 15" MixturePets="24" MixturePetLvs="40" MixturePetNums="1" Elvestips="需要达到40级的【喵斯熊】。" Lightafter="点我有惊喜！"/>
+	<Node ID="26" BeastType="25" PetType="0" Name="黑魅鬼脸箱" Rarity="4" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="27" BeastType="26" PetType="0" Name="白魅鬼脸箱" Rarity="4" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="28" BeastType="28" PetType="0" Name="地之鬼脸箱" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="29" BeastType="29" PetType="0" Name="水之鬼脸箱" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="30" BeastType="30" PetType="0" Name="火之鬼脸箱" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="31" BeastType="31" PetType="0" Name="风之鬼脸箱" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="32" BeastType="33" PetType="0" Name="沃特尔" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="33" BeastType="36" PetType="0" Name="巨石怪" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="34" BeastType="37" PetType="0" Name="撒旦蝠" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="35" TaskID="30005" PetType="1" BeastType="48" Name="海神马" Rarity="2" IsMixture="0" Desc="神秘现身于【海底洞穴一层】的精灵，据传说来自海洋星？！" LightBefore="周三12:00-13：00 周六19：00-21：00被发射到【海底洞穴一层】!" Lightafter="点我有惊喜！"/>	
+	<Node ID="36" TaskID="30006" PetType="1" BeastType="19" Name="咕噜蝶" Rarity="2" IsMixture="0" Desc="被黑水晶污染后经常在【皇宫花园】出现，问问那里的【守卫士兵】吧！" LightBefore="每天都会不定时来到【皇宫花园】！" Lightafter="点我有惊喜！"/>	
+	<Node ID="37" BeastType="51" PetType="0" Name="幽光战士" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="38" BeastType="52" PetType="0" Name="噬魂鬼" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="39" BeastType="53" PetType="0" Name="蜘蛛炸弹" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="40" BeastType="54" PetType="0" Name="石头人" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="41" BeastType="46" PetType="0" Name="马沙虾" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	<Node ID="42" BeastType="55" PetType="0" Name="沃勒格球" Rarity="3" IsMixture="0" MixturePetID="43" MixtureNeeds="50003 50004" MixturePets="53 55" MixturePetLvs="25 30" Lightafter="点我有惊喜！"/>
+	
+<!-- *************************************************************************************************************************************************************************** -->
+	<Node ID="10000" BeastType="1001" PetType="2" Name="普豆泥·改" Rarity="2" IsMixture="0"/>
+	<Node ID="10001" BeastType="1002" PetType="2" Name="库噜·改" Rarity="3" IsMixture="0"/>
+	<Node ID="10002" BeastType="1003" PetType="2" Name="迪迪拉·改" Rarity="2" IsMixture="0"/>
+	<Node ID="10003" BeastType="1004" PetType="2" Name="法尔·改" Rarity="2" IsMixture="0"/>
+	<Node ID="10004" BeastType="1005" PetType="2" Name="普豆叶·改" Rarity="3" IsMixture="0"/>
+	<Node ID="10005" BeastType="1006" PetType="2" Name="普豆花·改" Rarity="3" IsMixture="0"/>
+	<Node ID="10006" BeastType="1007" PetType="2" Name="小石怪·改" Rarity="2" IsMixture="0"/>
+	<Node ID="10007" BeastType="1008" PetType="2" Name="吉吉帕·改" Rarity="3" IsMixture="0"/>
+	<Node ID="10008" BeastType="1009" PetType="2" Name="草莓蜂·改" Rarity="4" IsMixture="0"/>
+	<Node ID="10009" BeastType="1010" PetType="2" Name="迷唇丝·改" Rarity="2" IsMixture="0"/>
+	<Node ID="100010" BeastType="1011" PetType="2" Name="拉拉美·改" Rarity="3" IsMixture="0"/>
+	<Node ID="100011" BeastType="1012" PetType="2" Name="盯眼蝠·改" Rarity="4" IsMixture="0"/>
+	<Node ID="100012" BeastType="1013" PetType="2" Name="迷眼蝠·改" Rarity="2" IsMixture="0"/>
+	<Node ID="100013" BeastType="1014" PetType="2" Name="卡西卡·改" Rarity="3" IsMixture="0"/>
+	<Node ID="100014" BeastType="1015" PetType="2" Name="喵斯熊·改" Rarity="3" IsMixture="0"/>
+
+<!-- *************************************************************************************************************************************************************************** -->
+	
+</RarityPet>

@@ -1,0 +1,71 @@
+<!--
+kind表示精灵兑换的产出的等级 
+Item 表示物品id
+Rate 概率每个类里相加要等于1000
+-->
+<PetExchangeEgg>
+	<Kind ID="1" Rate="440">
+		<Item ID="310002" Race="5" Rate="60" />
+		<Item ID="310003" Race="3" Rate="60" />
+		<Item ID="310004" Race="6" Rate="60" />
+		<Item ID="310005" Race="8" Rate="60" />
+		<Item ID="310006" Race="8" Rate="60" />
+		<Item ID="310007" Race="8" Rate="60" />
+		<Item ID="310008" Race="2" Rate="60" />
+		<Item ID="310009" Race="6" Rate="60" />
+		<Item ID="310010" Race="5" Rate="60" />
+		<Item ID="310011" Race="5" Rate="60" />
+		<Item ID="310012" Race="6" Rate="60" />
+		<Item ID="310013" Race="8" Rate="60" />
+		<Item ID="310014" Race="6" Rate="60" />
+		<Item ID="310015" Race="1" Rate="60" />
+		<Item ID="310016" Race="5" Rate="60" />
+		<Item ID="310017" Race="8" Rate="60" />
+		<Item ID="310018" Race="8" Rate="40" />
+	</Kind>
+	<Kind ID="2" Rate="470">
+        <Item ID="310019" Race="7" Rate="40" />
+		<Item ID="310020" Race="6" Rate="40" />
+		<Item ID="310022" Race="0" Rate="60" />
+		<Item ID="310023" Race="2" Rate="40" />
+		<Item ID="310024" Race="8" Rate="10" />
+		<Item ID="310025" Race="3" Rate="50" />
+		<Item ID="310026" Race="5" Rate="40" />
+		<Item ID="310028" Race="2" Rate="40" />
+		<Item ID="310029" Race="2" Rate="40" />
+		<Item ID="310030" Race="3" Rate="40" />
+		<Item ID="310031" Race="1" Rate="50" />
+		<Item ID="310032" Race="6" Rate="40" />
+		<Item ID="310041" Race="3" Rate="40" />
+		<Item ID="310042" Race="3" Rate="40" />
+		<Item ID="310043" Race="2" Rate="40" />
+		<Item ID="310044" Race="8" Rate="40" />
+		<Item ID="310045" Race="0" Rate="40" />
+		<Item ID="310046" Race="2" Rate="40" />
+		<Item ID="310047" Race="0" Rate="40" />
+		<Item ID="310048" Race="6" Rate="40" />
+		<Item ID="310049" Race="1" Rate="50" />
+		<Item ID="310050" Race="0" Rate="40" />
+		<Item ID="310051" Race="4" Rate="30" />
+		<Item ID="310052" Race="7" Rate="50" />
+		<Item ID="310053" Race="8" Rate="20" />
+	</Kind>
+	<Kind ID="3" Rate="75">
+        <Item ID="310054" Race="5" Rate="125" />
+		<Item ID="350012" Race="5" Rate="125" />
+		<Item ID="350015" Race="5" Rate="25" />
+		<Item ID="350026" Race="5" Rate="125" />
+		<Item ID="350030" Race="5" Rate="225" />
+		<Item ID="350032" Race="5" Rate="145" />
+		<Item ID="350033" Race="5" Rate="215" />
+		<Item ID="350042" Race="6" Rate="15" />
+	</Kind>
+	<Kind ID="4" Rate="15">
+	    <Item ID="350035" Race="4" Rate="350" />
+		<Item ID="350039" Race="5" Rate="100" />
+		<Item ID="350040" Race="1" Rate="150" />
+		<Item ID="350041" Race="6" Rate="250" />
+		<Item ID="350043" Race="1" Rate="75" />
+		<Item ID="350044" Race="5" Rate="75" />
+	</Kind>
+</PetExchangeEgg>

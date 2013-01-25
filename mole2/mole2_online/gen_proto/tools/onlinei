@@ -1,0 +1,3 @@
+#!/bin/bash
+cd $(dirname $0)
+../gen_proto_app/bin/cat_proto -i -c 4 -b -p   ~/online/trunk/gen_proto/python/mole2_online_proto.py   --header_fmt_list "userid,L,6,4|seqid,L,10,4|result,l,14,4"  $* 

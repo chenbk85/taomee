@@ -1,0 +1,137 @@
+<!--
+Type: 1 怪物被偷袭， 2 怪物偷袭，3 血量少于20%，11 物理攻击，12 Mp攻击，16 吸血魔法，17 魔法攻击，25 吸血攻击，26 逃跑
+从11开始跟BattleActionList.xml中的type对应(type + 10)
+-->
+
+<Talks>
+	<!-- 怪物被偷袭 -->
+	<Talk Type="1" ID="0" Probability="100" Desc="糟糕，被偷袭了！"/>
+	<Talk Type="1" ID="1" Probability="100" Desc="为什么受伤的总是我！"/>
+	<Talk Type="1" ID="2" Probability="100" Desc="早知道今天不出门了……！"/>
+	<Talk Type="1" ID="3" Probability="100" Desc="别打我……别打我……"/>
+	<Talk Type="1" ID="4" Probability="100" Desc="背后怎么凉嗖嗖的……"/>
+	<Talk Type="1" ID="5" Probability="100" Desc="有杀气…………"/>	
+	<Talk Type="1" ID="6" Probability="100" Desc="今天天气不错⊙▽⊙"/>	
+	<Talk Type="1" ID="7" Probability="100" Desc="不要碰我~~"/>
+	<Talk Type="1" ID="8" Probability="100" Desc="难道…………又被偷袭了T T"/>	
+	<Talk Type="1" ID="9" Probability="100" Desc="…………终于……轮到我了……"/>	
+	<Talk Type="1" ID="10" Probability="100" Desc="我有不祥的预感………………"/>			
+	<!-- 怪物偷袭 -->
+	<Talk Type="2" ID="0" Probability="100" Desc="看看是哪个倒霉鬼遇上了我……"/>
+	<Talk Type="2" ID="1" Probability="100" Desc="平日老被偷袭，今天时来运转了啊，哦耶！"/>
+	<Talk Type="2" ID="2" Probability="100" Desc="神呐，您终于开眼了！"/>
+	<Talk Type="2" ID="3" Probability="100" Desc="让我仔细看看，上次揍我的是哪个。"/>
+	<Talk Type="2" ID="4" Probability="100" Desc="打劫！星豆统统交出来！"/>	
+	<Talk Type="2" ID="5" Probability="100" Desc="打它们屁股！"/>
+	<Talk Type="2" ID="6" Probability="100" Desc="嘿嘿……我就不客气了"/>
+	<Talk Type="2" ID="7" Probability="100" Desc="站住！不许动！"/>
+	<Talk Type="2" ID="8" Probability="100" Desc="大家有仇报仇有冤报冤——（⌒▽⌒）！"/>	
+			
+	<!-- 怪物HP小于20% -->
+	<Talk Type="3" ID="0" Probability="50" Desc="别逼我变身！"/>
+	<Talk Type="3" ID="1" Probability="50" Desc="不行了，早知道出门多带点生命之息……"/>
+	<Talk Type="3" ID="2" Probability="50" Desc="女神您在召唤我么？"/>
+	<Talk Type="3" ID="3" Probability="50" Desc="对面的，你敢不还手嘛？"/>
+	<Talk Type="3" ID="4" Probability="50" Desc="有事好商量，别打我……"/>
+	<Talk Type="3" ID="5" Probability="50" Desc="不准打精灵的脸……！"/>	
+	<Talk Type="3" ID="6" Probability="100" Desc="不要逼我！！"/>
+	<Talk Type="3" ID="7" Probability="100" Desc="``⊙Δ⊙`谁有生命之息？？"/>	
+	<Talk Type="3" ID="8" Probability="100" Desc="拼啦！"/>	
+	<Talk Type="3" ID="9" Probability="100" Desc="这种感觉……难道我要被净化了……"/>
+	<Talk Type="3" ID="10" Probability="100" Desc="累死我了``呼哧哧"/>
+	<Talk Type="3" ID="11" Probability="100" Desc="挺厉害的嘛……"/>
+	<Talk Type="3" ID="12" Probability="100" Desc="我是女孩子！"/>
+	<Talk Type="3" ID="13" Probability="100" Desc="我身上没黑水晶碎片"/>
+	<Talk Type="3" ID="14" Probability="100" Desc="我没碎片————我冤——"/>
+	<Talk Type="3" ID="15" Probability="100" Desc="我也没碎片————"/>	
+	<Talk Type="3" ID="16" Probability="100" Desc="你们————下手太重了！"/>	
+	<Talk Type="3" ID="17" Probability="100" Desc="竟然没死！"/>	
+	<Talk Type="3" ID="18" Probability="100" Desc="求收养求契约————！"/>	
+	<Talk Type="3" ID="19" Probability="100" Desc="⊙Δ⊙没人给我“拍照”吗？"/>
+	<Talk Type="3" ID="20" Probability="100" Desc="我被鄙视了..."/>	
+	<Talk Type="3" ID="21" Probability="100" Desc="大家都有难处何必呢……"/>	
+	<Talk Type="3" ID="22" Probability="100" Desc="好纠结···"/>	
+	<Talk Type="3" ID="23" Probability="100" Desc="我不入地狱谁入地狱"/>									
+	<!-- 怪物发动物理攻击 -->
+	<Talk Type="11" ID="0" Probability="100" Desc="我打你应该，我打你悲哀！"/>
+	<Talk Type="11" ID="1" Probability="100" Desc="别怕，不疼的哦。"/>
+	<Talk Type="11" ID="2" Probability="100" Desc="看我的！"/>
+	<Talk Type="11" ID="3" Probability="100" Desc="打你打你！讨厌你！"/>	
+	<Talk Type="11" ID="4" Probability="100" Desc="我也讨厌你！"/>
+	<Talk Type="11" ID="5" Probability="100" Desc="终于轮到我了！"/>	
+	<Talk Type="11" ID="6" Probability="100" Desc="看我打多少！"/>
+	<Talk Type="11" ID="7" Probability="100" Desc="我打的比你多！"/>
+	<Talk Type="11" ID="8" Probability="100" Desc="看我体术"/>
+	<Talk Type="11" ID="9" Probability="100" Desc="轻轻碰一下^0^"/>
+	<Talk Type="11" ID="10" Probability="100" Desc="嘿咻嘿咻...跑 过 来"/>	
+	<Talk Type="11" ID="11" Probability="100" Desc="嘿咻嘿咻..."/>	
+	<Talk Type="11" ID="12" Probability="100" Desc="啦啦啦——~~"/>	
+	<Talk Type="11" ID="13" Probability="100" Desc="大家看我！"/>		
+	<Talk Type="11" ID="14" Probability="100" Desc="全看这里~~！"/>
+	<Talk Type="11" ID="15" Probability="100" Desc="你们全闪开看我的！"/>
+	<Talk Type="11" ID="16" Probability="100" Desc="大家猜猜我打多少？"/>		
+	<Talk Type="11" ID="17" Probability="100" Desc="物——理————攻——击击击击！"/>	
+	<Talk Type="11" ID="18" Probability="100" Desc="被谁碰到谁黑化！"/>	
+	<Talk Type="11" ID="19" Probability="100" Desc="全力以赴！——做到最好！"/>
+	<Talk Type="11" ID="20" Probability="100" Desc="看我的厉害"/>		
+	<Talk Type="11" ID="21" Probability="100" Desc="我来打黄油~"/>	
+	<Talk Type="11" ID="22" Probability="100" Desc="我打！"/>	
+	<Talk Type="11" ID="23" Probability="100" Desc="我的物理技能快升级了哈哈哈哈~~！"/>	
+	<Talk Type="11" ID="24" Probability="100" Desc="打你屁屁~！"/>
+	<Talk Type="11" ID="25" Probability="100" Desc="不打不相识"/>						
+	<!-- 怪物发动魔法攻击 -->
+	<Talk Type="17" ID="0" Probability="100" Desc="让你看看黑水晶的力量！"/>
+	<Talk Type="17" ID="1" Probability="100" Desc="元素精灵之舞！"/>
+	<Talk Type="17" ID="2" Probability="100" Desc="看招，魔力风暴！"/>
+	<Talk Type="17" ID="3" Probability="100" Desc="伊恩魔王的力量……阻挡在我面前的……全部……"/>
+	<Talk Type="17" ID="4" Probability="100" Desc="让大地颤抖吧——……"/>	
+	<Talk Type="17" ID="5" Probability="100" Desc="让天空颤抖吧——……"/>	
+	<Talk Type="17" ID="6" Probability="100" Desc="大家看我快看我~~！"/>	
+	<Talk Type="17" ID="7" Probability="100" Desc="看我黑化了你！"/>
+	<Talk Type="17" ID="8" Probability="100" Desc="魔——法————攻——击击击击！"/>
+	<Talk Type="17" ID="9" Probability="100" Desc="银河美少女变——身！"/>	
+	<Talk Type="17" ID="10" Probability="100" Desc="被谁打到谁黑化！"/>
+	<Talk Type="17" ID="11" Probability="100" Desc="看我黑化了你！"/>
+	<Talk Type="17" ID="12" Probability="100" Desc="黑魔法的力量——"/>
+	<Talk Type="17" ID="13" Probability="100" Desc="银河美少男变——身！"/>	
+	<Talk Type="17" ID="14" Probability="100" Desc="我发我发我发动魔法攻击！"/>	
+	<Talk Type="17" ID="15" Probability="100" Desc="囧——想不出台词了"/>
+	<Talk Type="17" ID="16" Probability="100" Desc="咦@@？轮到我了？"/>
+	<Talk Type="17" ID="17" Probability="100" Desc="菠萝菠萝蜜~——~~"/>	
+	<Talk Type="17" ID="18" Probability="100" Desc="看我的【精神】高"/>
+	<Talk Type="17" ID="19" Probability="100" Desc="我的【成长】高^0^！"/>	
+	<Talk Type="17" ID="20" Probability="100" Desc="全力以赴！——做到最好！"/>
+	<Talk Type="17" ID="21" Probability="100" Desc="咦@@？轮到我了？"/>
+	<Talk Type="17" ID="22" Probability="100" Desc="菠萝菠萝蜜~——~~"/>	
+	<Talk Type="17" ID="23" Probability="100" Desc="我的魔法技能快升级了嘻嘻嘻嘻~~！"/>		
+	<Talk Type="17" ID="24" Probability="100" Desc="念咒语念咒语……"/>								
+	<!-- 怪物逃跑 -->
+	<Talk Type="26" ID="0" Probability="50" Desc="神马都是浮云，我闪！"/>
+	<Talk Type="26" ID="1" Probability="50" Desc="来追我呀~~来追我呀~~（⌒▽⌒）"/>
+	<Talk Type="26" ID="2" Probability="50" Desc="我还会回来的！o(╯□╰)o"/>
+	<Talk Type="26" ID="3" Probability="50" Desc="等着，我去叫朋友！"/>
+	<Talk Type="26" ID="4" Probability="50" Desc="你看不见我…你看不见我…"/>	
+	<Talk Type="26" ID="5" Probability="50" Desc="逃啊~~~~！"/>		
+	<Talk Type="26" ID="6" Probability="50" Desc="先走一步！"/>	
+	<Talk Type="26" ID="7" Probability="50" Desc="(TΔT)/~~拜拜！"/>	
+	<Talk Type="26" ID="8" Probability="50" Desc="泪奔~~~~！"/>	
+	<Talk Type="26" ID="9" Probability="50" Desc="呜呜呜~呜呜`````"/>	
+	<Talk Type="26" ID="10" Probability="50" Desc="呜呜呜~呜呜呜呜呜呜呜呜呜呜呜`````"/>	
+	<Talk Type="26" ID="11" Probability="50" Desc="我悄悄的走了````"/>	
+	<Talk Type="26" ID="12" Probability="50" Desc="我还会回来的！"/>
+	<Talk Type="26" ID="13" Probability="50" Desc="你等着，我去叫我爸爸！"/>		
+	<Talk Type="26" ID="14" Probability="50" Desc="你等着，我去叫我哥哥！"/>	
+	<Talk Type="26" ID="15" Probability="50" Desc="我去吃饭了！"/>	
+	<Talk Type="26" ID="16" Probability="50" Desc="我去做作业了！"/>	
+	<Talk Type="26" ID="17" Probability="50" Desc="再打就输了~~~"/>	
+	<Talk Type="26" ID="18" Probability="50" Desc="留得青山在————"/>					
+	<Talk Type="26" ID="19" Probability="50" Desc="你们先打着！"/>	
+	<Talk Type="26" ID="20" Probability="50" Desc="我去W C！"/>
+	<Talk Type="26" ID="21" Probability="50" Desc="不好！我想起件重要的事！"/>	
+	<Talk Type="26" ID="22" Probability="50" Desc="啊呀《名侦探柯南》开始了！"/>
+	<Talk Type="26" ID="23" Probability="50" Desc="我去看攻略！"/>		
+	<Talk Type="26" ID="24" Probability="50" Desc="我妈妈不让我玩儿了T T！"/>	
+	<Talk Type="26" ID="25" Probability="50" Desc="我妈妈让我回家了~~T T"/>									
+	<Talk Type="26" ID="26" Probability="50" Desc="休息～休息一下~~"/>
+	<Talk Type="26" ID="27" Probability="50" Desc="啊朋友再见~"/>		
+</Talks>

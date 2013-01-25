@@ -1,0 +1,16 @@
+#cmake 
+#rm -rf build
+touch ./version.h
+
+if [ "$1" == "all" ] ; then
+	rm -rf ./build/
+fi
+mkdir build
+cd build
+cmake ../
+make  -j 4
+
+if [ "$1" == "1" ] ; then
+	cp ../libpubser.so ../../bin/
+	../../bin/daemon.sh restart
+fi

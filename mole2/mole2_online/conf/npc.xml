@@ -1,0 +1,12 @@
+<Npcs>
+    <Npc ID="4001" GrpID="2911 2919" Nick="娜蒂丝" TypeID="2013" LvType="0" HPCoefficient="5000" MPCoefficient="5000" AtkCoefficient="3000" SpiritCoefficient="3000" Rpoison="100" Rlithification="100" Rlethargy="100" Rcurse="100" Rconfusion="100" Roblivion="100">
+		<Skill ID="6201 7201 8801" Percent="400 300 300"/>
+	</Npc>
+	<Npc ID="4002" GrpID="2920" Nick="库洛喵" TypeID="74" LvType="0" HPCoefficient="5000" MPCoefficient="5000" AtkCoefficient="3000" SpiritCoefficient="3000" Rpoison="100" Rlithification="100" Rlethargy="100" Rcurse="100" Rconfusion="100" Roblivion="100">
+		<Skill ID="6202 7202 8802" Percent="300 300 400"/>
+	</Npc>
+	<Npc ID="4003" GrpID="33 34" Nick="妮娜" TypeID="3015" LvType="0" HPCoefficient="10000" MPCoefficient="10000" AtkCoefficient="1500" SpiritCoefficient="5000" Rpoison="100" Rlithification="100" Rlethargy="100" Rcurse="100" Rconfusion="100" Roblivion="100">
+		<Skill ID="5102 5104 8001 8501 8702 8703 8704 8705 8706 8707" Percent="100 100 100 100 100 100 100 100 100 100"/>
+	</Npc>
+</Npcs>
+

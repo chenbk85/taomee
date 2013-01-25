@@ -1,0 +1,137 @@
+<!--
+	Time：每日领取次数
+	RepeatType：重复领取周期【0不可重复，1每日，2每周，3每月，4按年】
+	StartDay：领取周期起始日
+	GrpID：怪物组
+	ItemID：耗费道具类型
+	ItemCnt：耗费道具数量
+-->
+<!--
+	EquipLv：装备等级
+	ShareRate：物品组分配概率【千分比，多项相加和为1000】
+	ItemCnt：获得道具数量
+	GetRate：单个物品获得概率【千分比】
+ -->
+<Rands>
+	
+	<!-- VIP礼包ID段：0~1000 -->
+	<!--<Rand ID="1" Name="超时空勇士每周礼包" Time="1" RepeatType="2" StartDay="5" VipLv="">-->
+	<!--<Item ID="300018" Name="时空能量袋" ShareRate="1000" ItemCnt="1" GetRate="1000"/>-->
+	<!--</Rand>-->
+	<!--<Rand ID="2" Name="超时空勇士每周礼包" Time="1" RepeatType="2" StartDay="5" VipLv="">-->
+	<!--<Item ID="230004" Name="吉普吐司" ShareRate="1000" ItemCnt="20" GetRate="1000"/>-->
+	<!--</Rand>-->
+	<!--<Rand ID="3" Name="超时空勇士每周礼包" Time="1" RepeatType="2" StartDay="5" VipLv="">-->
+	<!--<Item ID="210004" Name="生命之息III" ShareRate="1000" ItemCnt="20" GetRate="1000"/>-->
+	<!--</Rand>-->
+	<!--<Rand ID="4" Name="超时空勇士每周礼包" Time="1" RepeatType="2" StartDay="5" VipLv="">-->
+	<!--<Item ID="350004" Name="摩尔2倍经验丸" ShareRate="1000" ItemCnt="1" GetRate="1000"/>-->
+	<!--</Rand>-->
+	<!--<Rand ID="5" Name="超时空勇士每周礼包" Time="1" RepeatType="2" StartDay="5" VipLv="">-->
+	<!--<Item ID="350010" Name="精灵2倍经验丸" ShareRate="1000" ItemCnt="1" GetRate="1000"/>-->
+	<!--</Rand>-->
+	<!--
+	vipLevel：vip等级
+	randID：物品randid（对应rand_item.xml里面的randId）
+ 	-->
+	<Rand ID="11" Name="viplv1" Time="1" RepeatType="2" StartDay="5" VipLv="1">
+		<Item ID="350010" Name="精灵2倍经验丸" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="300018" Name="时空能量袋" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350022" Name="豆沙月饼" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350004" Name="摩尔2倍经验丸" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350028" Name="合成石(中级)" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+	</Rand>
+	<Rand ID="12" Name="viplv2" Time="1" RepeatType="2" StartDay="5" VipLv="2">
+		<Item ID="350010" Name="精灵2倍经验丸" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="300018" Name="时空能量袋" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350022" Name="豆沙月饼" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350004" Name="摩尔2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350028" Name="合成石(中级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+	<Rand ID="13" Name="viplv3" Time="1" RepeatType="2" StartDay="5" VipLv="3">
+		<Item ID="350010" Name="精灵2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="300018" Name="时空能量袋" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350022" Name="豆沙月饼" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350004" Name="摩尔2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350028" Name="合成石(中级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+	<Rand ID="14" Name="viplv4" Time="1" RepeatType="2" StartDay="5" VipLv="4">
+		<Item ID="350010" Name="精灵2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="300018" Name="时空能量袋" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350021" Name="红豆月饼" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350004" Name="摩尔2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350029" Name="合成石(高级)" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+	</Rand>
+	<Rand ID="15" Name="viplv5" Time="1" RepeatType="2" StartDay="5" VipLv="5">
+		<Item ID="350010" Name="精灵2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="300080" Name="超级星豆袋" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350021" Name="红豆月饼" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350014" Name="精灵初始重组丸" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350029" Name="合成石(高级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+	<Rand ID="16" Name="viplv6" Time="1" RepeatType="2" StartDay="5" VipLv="6">
+		<Item ID="350010" Name="精灵2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="300080" Name="超级星豆袋" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350021" Name="红豆月饼" ShareRate="200" ItemCnt="3" GetRate="1000"/>
+		<Item ID="350014" Name="精灵初始重组丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350029" Name="合成石(高级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+	<Rand ID="17" Name="viplv7" Time="1" RepeatType="2" StartDay="5" VipLv="7">
+		<Item ID="350010" Name="精灵2倍经验丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="300080" Name="超级星豆袋" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350021" Name="红豆月饼" ShareRate="200" ItemCnt="3" GetRate="1000"/>
+		<Item ID="350014" Name="精灵初始重组丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350029" Name="合成石(高级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+	<Rand ID="18" Name="viplv8" Time="1" RepeatType="2" StartDay="5" VipLv="8">
+		<Item ID="350023" Name="紫薯月饼" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="300080" Name="超级星豆袋" ShareRate="200" ItemCnt="1" GetRate="1000"/>
+		<Item ID="350021" Name="红豆月饼" ShareRate="200" ItemCnt="3" GetRate="1000"/>
+		<Item ID="350014" Name="精灵初始重组丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350029" Name="合成石(高级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+	<Rand ID="19" Name="viplv9" Time="1" RepeatType="2" StartDay="5" VipLv="9">
+		<Item ID="350023" Name="紫薯月饼" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="300080" Name="超级星豆袋" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350021" Name="红豆月饼" ShareRate="200" ItemCnt="3" GetRate="1000"/>
+		<Item ID="350014" Name="精灵初始重组丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350029" Name="合成石(高级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+	<Rand ID="20" Name="viplv10" Time="1" RepeatType="2" StartDay="5" VipLv="10">
+		<Item ID="350023" Name="紫薯月饼" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="300080" Name="超级星豆袋" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350021" Name="红豆月饼" ShareRate="200" ItemCnt="3" GetRate="1000"/>
+		<Item ID="350014" Name="精灵初始重组丸" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+		<Item ID="350029" Name="合成石(高级)" ShareRate="200" ItemCnt="2" GetRate="1000"/>
+	</Rand>
+
+	<!--
+	vipLevel：vip等级
+	randID：物品randid（对应vip_item.xml里面的rand）
+ 	-->
+<vipLevel Name="vip等级礼包" >
+	<Rand vipLevel="1" randID="11" />
+	<Rand viplevel="2" randID="12" /> 
+	<Rand viplevel="3" randID="13" /> 
+	<Rand viplevel="4" randID="14" /> 
+	<Rand viplevel="5" randID="15" /> 
+	<Rand viplevel="6" randID="16" /> 
+	<Rand viplevel="7" randID="17" /> 
+	<Rand viplevel="8" randID="18" /> 
+	<Rand viplevel="9" randID="19" /> 
+	<Rand viplevel="10" randID="20" />
+</vipLevel>
+	
+	<!--
+	roleLevel：人物等级
+	randID：物品randid（对应rand_item.xml里面的randId）
+ 	-->
+<roleLevel Name="人物等级礼包" >
+	<Rand roleLevel="10" randID="10001" />
+	<Rand roleLevel="20" randID="10002" />
+	<Rand roleLevel="30" randID="10003" />
+	<Rand roleLevel="40" randID="10004" />
+	
+</roleLevel>
+	
+</Rands>

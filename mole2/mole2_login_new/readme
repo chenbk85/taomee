@@ -1,0 +1,86 @@
+1. 开启程序：restart.sh
+2. 结束程序：stop.sh
+3. 主配置文件bench.conf的各项含义：
+log_dir        ./log            		#日志文件存放目录
+log_level      7                		#日志打印等级，7不打印trace日志
+log_size       32000000         		#每个日志文件的最大大小
+max_log_files  400	      		#日志文件数量
+log_save_next_file_interval_min 15  	#日志文件时间间隔分钟
+
+max_open_fd    50000		#使用的fd上限，默认20000
+shmq_length    16384000         	#共享内存大小，16M
+run_mode       background       	#background表示程序将后台运行
+bind_conf      ./bind.conf
+dll_file       ./bin/libmole2_login.so
+
+addr_mcast_incoming_if          eth0	#组播网卡接口
+addr_mcast_outgoing_if          10.1.1.63 #组播源IP
+addr_mcast_ip  		      239.0.0.3	#组播目标IP
+addr_mcast_port                 5602	#组播端口
+
+cli_socket_timeout	      30
+count_limited                   3
+passwd_fail_time_limited        60
+ban_time                        600
+
+# 报警服务器IP&Port
+warning_ip              10.1.1.24
+warning_port            1865
+
+project_name    mole2
+phone_numbers   15000391951, 15801966567
+
+dbproxy_name    mole2.dbproxy
+
+# 最大渠道号
+channel_total                           50
+# 主登录用于控制DBproxy超时
+svr_timeout                             10
+# 项目ID，老版本的主登录平台叫business_type
+project_id                              1
+# 统计信息日志文件地址
+statistic_file                          ./data/bin.log
+#0x02050000 is the origin number
+msglog_type_start  33882112  
+
+#server maintance
+weekday_maintance       4
+maintain_ip             61.151.238.226   
+inner_ip_start          10.1.1.0
+inner_ip_end            10.1.1.255
+
+multicast_interface     10.1.1.63
+multicast_ip            239.0.0.5
+multicast_port          8888
+
+mainlogin_dbproxy_ip    10.1.1.63
+mainlogin_dbproxy_port  21001 
+
+#---------------slave login conf----------------------
+mole2_dbproxy_ip        10.1.1.63
+mole2_dbproxy_port      21001 
+
+time_ip                 10.1.1.5
+time_port               4000
+
+master_ip               mole2.switch
+
+pub_dbproxy_ip  	10.1.1.5
+pub_dbproxy_port        23001
+#
+idc_zone                0	#登陆拉取对应的基础信息，0，电信；1，网通
+domain                  1	#swicth使用，电信或网通，1，电信，0，网通
+
+3. Login 目录树：
+      Login
+        -- fonts/*             #Game Server辅助配置文件
+        -- data/*              #脏词文件,统计日志
+        -- log/*               #存放日志文件
+        -- bin/*               #登陆服务的so文件
+        -- bind.conf           #服务名称IP及端口配置文件
+        -- bench.conf          #主配置文件
+        -- M2Login             #主程序
+        -- restart.sh          #启动脚本
+        -- stop.sh             #结束脚本
+        -- readme              #说明文件
+        -- changelog           #程序更新说明

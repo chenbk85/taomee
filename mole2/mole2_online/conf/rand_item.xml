@@ -1,0 +1,2717 @@
+<!--
+	Time：每日领取次数
+	RepeatType：重复领取周期【0不可重复，1每日，2每周，3每月，4按年】
+	StartDay：领取周期起始日
+	GrpID：怪物组
+	ItemID：耗费道具类型
+	ItemCnt：耗费道具数量
+-->
+<!--
+	EquipLv：装备等级
+	ShareRate：物品组分配概率【千分比，多项相加和为1000】
+	ItemCnt：获得道具数量
+	GetRate：单个物品获得概率【千分比】
+ -->
+
+
+<Rands>
+	<!-- 点石像ID段：1~500 -->
+	<Rand ID="1" Name="点石像" Time="-1" RepeatType="1" StartDay="5" MapID="21204">
+		<Item ID="280001" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<!--
+	<Rand ID="2" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280002" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	-->
+	<Rand ID="3" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280003" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<!--
+	<Rand ID="4" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280004" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="5" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280005" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="6" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280006" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="7" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280007" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="8" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280008" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="9" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280009" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="10" Name="点石像" Time="-1" RepeatType="1" StartDay="5">
+		<Item ID="280010" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	-->
+	<Rand ID="101" Name="领蛋" Time="1" RepeatType="0" MapID="11503" >
+		<Item ID="290015" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="102" Name="领蛋" Time="1" RepeatType="0" MapID="11503" >
+		<Item ID="180060" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<!-- 领钥匙ID段：501~600 -->
+	<Rand ID="501" Name="领钥匙" Time="3" RepeatType="1" StartDay="5" MapID="11220">
+		<Item ID="280001" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="502" Name="领钥匙" Time="3" RepeatType="1" StartDay="5" MapID="11220">
+		<Item ID="280002" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="503" Name="领钥匙" Time="3" RepeatType="1" StartDay="5" MapID="11220">
+		<Item ID="280003" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+
+	<!-- 旅馆摇奖ID段：601~650 -->
+	<Rand ID="601" Name="新手试胆奖" Time="3" RepeatType="1" StartDay="5" MapID="11207" MaxLv="15" SpecCnt="1">
+		<Item ID="230001" ShareRate="400" ItemCnt="1" GetRate="1000" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="230003" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210003" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210001" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="230022" ShareRate="100" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="602" Name="试胆奖" Time="-1" RepeatType="1" StartDay="5" MapID="11207" ItemID="290001" ItemCnt="-5" SpecCnt="1">
+		<Item ID="230001" ShareRate="400" ItemCnt="1" GetRate="1000" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="230003" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210003" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210001" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="230022" ShareRate="100" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="603" Name="挑战奖" Time="-1" RepeatType="1" StartDay="5" MapID="11207" ItemID="290001" ItemCnt="-10" SpecCnt="1">
+		<Item ID="270001" ShareRate="400" ItemCnt="1" GetRate="1000" />
+		<Item ID="270004" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270008" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270007" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270003" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270011" ShareRate="100" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="604" Name="勇气奖" Time="-1" RepeatType="1" StartDay="5" MapID="11207" ItemID="290001" ItemCnt="-30" SpecCnt="1">
+		<Item ID="270012" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270013" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270014" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270015" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270017" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270018" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270020" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="270022" ShareRate="300" ItemCnt="1" GetRate="1000" />		
+	</Rand>
+	<Rand ID="605" Time="1" RepeatType="1">
+		<Item ID="300001" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="606" Time="1" RepeatType="1">
+		<Item ID="300002" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="607" Time="1" RepeatType="1">
+		<Item ID="300003" ShareRate="1000"  ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="608" Time="1" RepeatType="1">
+		<Item ID="300001" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="609" Time="1" RepeatType="1">
+		<Item ID="300002" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="610" Time="1" RepeatType="1">
+		<Item ID="300003" ShareRate="1000"  ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="611" Time="1" RepeatType="1">
+		<Item ID="300001" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="612" Time="1" RepeatType="1">
+		<Item ID="300002" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="613" Time="1" RepeatType="1">
+		<Item ID="300003" ShareRate="1000"  ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="614" Time="1" RepeatType="1">
+		<Item ID="290014" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="615" Time="1" RepeatType="1">
+		<Item ID="290014" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="616" Time="1" RepeatType="1">
+		<Item ID="290014" ShareRate="1000"  ItemCnt="1" GetRate="1000" />
+	</Rand>
+
+
+	<!--
+	<Rand ID="651" Name="飞镖游戏" Time="15" RepeatType="1" StartDay="5" MapID="11202" SpecCnt="1">
+		<Item ID="300002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210004" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="300002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="230005" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="300002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="210005" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="300002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="190001" ShareRate="100" ItemCnt="1" GetRate="1000" />
+		<Item ID="190002" ShareRate="100" ItemCnt="1" GetRate="1000" />			
+	</Rand>
+	-->
+
+	<!-- 【游戏】牛奶瓶盖猜大小ID段：701~710 -->
+	<Rand ID="701" Name="牛奶瓶盖猜大小输出" Time="10" RepeatType="1" StartDay="5" MapID="11207" SpecCnt="1">
+		<Item ID="290001" ShareRate="1000" ItemCnt="32" GetRate="1000" />
+	</Rand>
+
+	<!-- 【临时奖励】神谕12期调查奖励：711~712
+	<Rand ID="711" Name="神谕12期调查奖励" Time="1" RepeatType="0" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="230007" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	 -->
+	<Rand ID="712" Name="首次打开神谕" Time="1" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300001" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="713" Name="PVP冠军奖励" Time="-1" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="350013" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="714" Name="PVP鼓励奖" Time="-1" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300045" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="715" Name="PVP皇家首席" Time="1" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300068" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="716" Name="PVP皇家精英" Time="1" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300069" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="717" Name="PVP皇家队员" Time="1" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300070" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="718" Name="PVP参与奖" Time="1" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300071" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="719" Name="答题" Time="10" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300067" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="720" Name="点亮南瓜" Time="10" RepeatType="2" StartDay="5" MapID="" SpecCnt="1">
+		<Item ID="300067" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	
+
+	<!-- 【PK斗技场】斗技场每日十字勋章1个ID段：801~810 -->
+	<Rand ID="801" Name="PK勇士斗技场每日十字勋章【个人比试】项目" Time="1" RepeatType="1" StartDay="5" MapID="11218">
+		<Item ID="290002" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="802" Name="PK勇士斗技场每日十字勋章【组队比试】项目" Time="1" RepeatType="1" StartDay="5" MapID="11218">
+		<Item ID="290002" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	
+	<!-- 【PK斗技场】勇士杯斗技场特殊奖励ID段：811~820 -->
+	<!--
+	<Rand ID="811" Name="勇士杯星豆袋" Time="10" RepeatType="1" StartDay="5" MapID="11221">
+		<Item ID="300001" ShareRate="1000" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="812" Name="勇士杯经验袋" Time="10" RepeatType="1" StartDay="5" MapID="11221">
+		<Item ID="300002" ShareRate="1000" ItemCnt="1" GetRate="300" />
+	</Rand>
+	<Rand ID="813" Name="射箭游戏奖牌" Time="3" RepeatType="1" StartDay="5" MapID="11221">
+		<Item ID="290006" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="814" Name="钓鱼游戏奖牌" Time="3" RepeatType="1" StartDay="5" MapID="11221">
+		<Item ID="290006" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="815" Name="勇士杯技能经验袋" Time="3" RepeatType="1" StartDay="5" MapID="11221">
+		<Item ID="300003" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	-->
+	
+	<!-- 【PK斗技场】竞技之塔奖牌奖励ID段：821~850 
+	<Rand ID="821" Name="竞技之塔1F" Time="1" RepeatType="1" StartDay="5" MapID="31201" GrpID="2401">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="822" Name="竞技之塔2F" Time="1" RepeatType="1" StartDay="5" MapID="31202" GrpID="2402">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="823" Name="竞技之塔3F" Time="1" RepeatType="1" StartDay="5" MapID="31203" GrpID="2403">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="824" Name="竞技之塔4F" Time="1" RepeatType="1" StartDay="5" MapID="31204" GrpID="2404">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="825" Name="竞技之塔5F" Time="1" RepeatType="1" StartDay="5" MapID="31205" GrpID="2405">
+		<Item ID="300003" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="826" Name="竞技之塔6F" Time="1" RepeatType="1" StartDay="5" MapID="31206" GrpID="2406">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="827" Name="竞技之塔7F" Time="1" RepeatType="1" StartDay="5" MapID="31207" GrpID="2407">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="828" Name="竞技之塔8F" Time="1" RepeatType="1" StartDay="5" MapID="31208" GrpID="2408">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="829" Name="竞技之塔9F" Time="1" RepeatType="1" StartDay="5" MapID="31209" GrpID="2409">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="830" Name="竞技之塔10F" Time="1" RepeatType="1" StartDay="5" MapID="31210" GrpID="2410">
+		<Item ID="300003" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="831" Name="竞技之塔11F" Time="1" RepeatType="1" StartDay="5" MapID="31211" GrpID="2411">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="832" Name="竞技之塔12F" Time="1" RepeatType="1" StartDay="5" MapID="31212" GrpID="2412">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="833" Name="竞技之塔13F" Time="1" RepeatType="1" StartDay="5" MapID="31213" GrpID="2413">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="834" Name="竞技之塔14F" Time="1" RepeatType="1" StartDay="5" MapID="31214" GrpID="2414">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="835" Name="竞技之塔15F" Time="1" RepeatType="1" StartDay="5" MapID="31215" GrpID="2415">
+		<Item ID="300003" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="836" Name="竞技之塔16F" Time="1" RepeatType="1" StartDay="5" MapID="31216" GrpID="2416">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="837" Name="竞技之塔17F" Time="1" RepeatType="1" StartDay="5" MapID="31217" GrpID="2417">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="838" Name="竞技之塔18F" Time="1" RepeatType="1" StartDay="5" MapID="31218" GrpID="2418">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="839" Name="竞技之塔19F" Time="1" RepeatType="1" StartDay="5" MapID="31219" GrpID="2419">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="840" Name="竞技之塔20F" Time="1" RepeatType="1" StartDay="5" MapID="31220" GrpID="2420">
+		<Item ID="300003" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="841" Name="竞技之塔21F" Time="1" RepeatType="1" StartDay="5" MapID="31221" GrpID="2421">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="842" Name="竞技之塔22F" Time="1" RepeatType="1" StartDay="5" MapID="31222" GrpID="2422">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="843" Name="竞技之塔23F" Time="1" RepeatType="1" StartDay="5" MapID="31223" GrpID="2423">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="844" Name="竞技之塔24F" Time="1" RepeatType="1" StartDay="5" MapID="31224" GrpID="2424">
+		<Item ID="290006" ShareRate="400" ItemCnt="3" GetRate="1000" />
+		<Item ID="290006" ShareRate="350" ItemCnt="4" GetRate="1000" />
+		<Item ID="290006" ShareRate="250" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="845" Name="竞技之塔25F" Time="1" RepeatType="1" StartDay="5" MapID="31225" GrpID="2425">
+		<Item ID="300003" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="846" Name="竞技之塔26F" Time="1" RepeatType="1" StartDay="5" MapID="31226" GrpID="2426">
+		<Item ID="300002" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="847" Name="竞技之塔27F" Time="1" RepeatType="1" StartDay="5" MapID="31227" GrpID="2427">
+		<Item ID="300003" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="848" Name="竞技之塔28F" Time="1" RepeatType="1" StartDay="5" MapID="31228" GrpID="2428">
+		<Item ID="300002" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="849" Name="竞技之塔29F" Time="1" RepeatType="1" StartDay="5" MapID="31229" GrpID="2429">
+		<Item ID="300003" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="850" Name="竞技之塔30F" Time="1" RepeatType="1" StartDay="5" MapID="31230" GrpID="2430">
+		<Item ID="300034" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	-->
+	
+	<!-- 【修炼之域】修炼之域产出ID段：901~1000 -->
+	<Rand ID="901" Name="修炼之域1域" Time="1" RepeatType="1" StartDay="5" MapID="21601" GrpID="3011">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="902" Name="修炼之域2域" Time="1" RepeatType="1" StartDay="5" MapID="21602" GrpID="3012">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="903" Name="修炼之域3域" Time="1" RepeatType="1" StartDay="5" MapID="21603" GrpID="3013">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="904" Name="修炼之域4域" Time="1" RepeatType="1" StartDay="5" MapID="21604" GrpID="3014">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="905" Name="修炼之域5域" Time="1" RepeatType="1" StartDay="5" MapID="21605" GrpID="3015">
+		<Item ID="300010" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="906" Name="修炼之域6域" Time="1" RepeatType="1" StartDay="5" MapID="21606" GrpID="3016">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="907" Name="修炼之域7域" Time="1" RepeatType="1" StartDay="5" MapID="21607" GrpID="3017">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="908" Name="修炼之域8域" Time="1" RepeatType="1" StartDay="5" MapID="21608" GrpID="3018">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="909" Name="修炼之域9域" Time="1" RepeatType="1" StartDay="5" MapID="21609" GrpID="3019">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="910" Name="修炼之域10域" Time="1" RepeatType="1" StartDay="5" MapID="21610" GrpID="3020">
+		<Item ID="300010" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="911" Name="修炼之域11域" Time="1" RepeatType="1" StartDay="5" MapID="21611" GrpID="3021">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="912" Name="修炼之域12域" Time="1" RepeatType="1" StartDay="5" MapID="21612" GrpID="3022">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="913" Name="修炼之域13域" Time="1" RepeatType="1" StartDay="5" MapID="21613" GrpID="3023">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="914" Name="修炼之域14域" Time="1" RepeatType="1" StartDay="5" MapID="21614" GrpID="3024">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="915" Name="修炼之域15域" Time="1" RepeatType="1" StartDay="5" MapID="21615" GrpID="3025">
+		<Item ID="300010" ShareRate="1000" ItemCnt="15" GetRate="1000" />
+	</Rand>
+	<Rand ID="916" Name="修炼之域16域" Time="1" RepeatType="1" StartDay="5" MapID="21616" GrpID="3026">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="917" Name="修炼之域17域" Time="1" RepeatType="1" StartDay="5" MapID="21617" GrpID="3027">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="918" Name="修炼之域18域" Time="1" RepeatType="1" StartDay="5" MapID="21618" GrpID="3028">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="919" Name="修炼之域19域" Time="1" RepeatType="1" StartDay="5" MapID="21619" GrpID="3029">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="920" Name="修炼之域20域" Time="1" RepeatType="1" StartDay="5" MapID="21620" GrpID="3030">
+		<Item ID="220009" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220010" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220011" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220012" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220013" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220014" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220015" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220016" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220017" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220018" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220019" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220020" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220021" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220022" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220023" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220024" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220025" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220026" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220027" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220028" ShareRate="50" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="921" Name="修炼之域21域" Time="1" RepeatType="1" StartDay="5" MapID="21621" GrpID="3031">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="922" Name="修炼之域22域" Time="1" RepeatType="1" StartDay="5" MapID="21622" GrpID="3032">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="923" Name="修炼之域23域" Time="1" RepeatType="1" StartDay="5" MapID="21623" GrpID="3033">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="924" Name="修炼之域24域" Time="1" RepeatType="1" StartDay="5" MapID="21624" GrpID="3034">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="925" Name="修炼之域25域" Time="1" RepeatType="1" StartDay="5" MapID="21625" GrpID="3035">
+		<Item ID="220009" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220010" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220011" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220012" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220013" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220014" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220015" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220016" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220017" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220018" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220019" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220020" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220021" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220022" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220023" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220024" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220025" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220026" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220027" ShareRate="50" ItemCnt="1" GetRate="1000" />
+		<Item ID="220028" ShareRate="50" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="926" Name="修炼之域26域" Time="1" RepeatType="1" StartDay="5" MapID="21626" GrpID="3036">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="927" Name="修炼之域27域" Time="1" RepeatType="1" StartDay="5" MapID="21627" GrpID="3037">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="928" Name="修炼之域28域" Time="1" RepeatType="1" StartDay="5" MapID="21628" GrpID="3038">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="929" Name="修炼之域29域" Time="1" RepeatType="1" StartDay="5" MapID="21629" GrpID="3039">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="930" Name="修炼之域30域" Time="1" RepeatType="1" StartDay="5" MapID="21630" GrpID="3040">
+		<Item ID="290002" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="931" Name="修炼之域31域" Time="1" RepeatType="1" StartDay="5" MapID="21631" GrpID="3041">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="932" Name="修炼之域32域" Time="1" RepeatType="1" StartDay="5" MapID="21632" GrpID="3042">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="933" Name="修炼之域33域" Time="1" RepeatType="1" StartDay="5" MapID="21633" GrpID="3043">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="934" Name="修炼之域34域" Time="1" RepeatType="1" StartDay="5" MapID="21634" GrpID="3044">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>		
+	<Rand ID="935" Name="修炼之域35域" Time="1" RepeatType="1" StartDay="5" MapID="21635" GrpID="3045">
+		<Item ID="300022" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="941" Name="修炼之域36域" Time="1" RepeatType="1" StartDay="5" MapID="21641" GrpID="3051">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="942" Name="修炼之域37域" Time="1" RepeatType="1" StartDay="5" MapID="21642" GrpID="3052">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="943" Name="修炼之域38域" Time="1" RepeatType="1" StartDay="5" MapID="21643" GrpID="3053">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="944" Name="修炼之域39域" Time="1" RepeatType="1" StartDay="5" MapID="21644" GrpID="3054">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="945" Name="修炼之域40域" Time="1" RepeatType="1" StartDay="5" MapID="21645" GrpID="3055">
+		<Item ID="300044" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="946" Name="修炼之域41域" Time="1" RepeatType="1" StartDay="5" MapID="21646" GrpID="3056">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="947" Name="修炼之域42域" Time="1" RepeatType="1" StartDay="5" MapID="21647" GrpID="3057">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="948" Name="修炼之域43域" Time="1" RepeatType="1" StartDay="5" MapID="21648" GrpID="3058">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="949" Name="修炼之域44域" Time="1" RepeatType="1" StartDay="5" MapID="21649" GrpID="3059">
+		<Item ID="290002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="950" Name="修炼之域45域" Time="1" RepeatType="1" StartDay="5" MapID="21650" GrpID="3060">
+		<Item ID="300044" ShareRate="1000" ItemCnt="3" GetRate="1000" />
+	</Rand>
+	<!--
+	<Rand ID="981" Name="修炼之域15域" Time="1" RepeatType="1" StartDay="5" MapID="21615" GrpID="3025">
+		<Item ID="180049" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="982" Name="修炼之域20域" Time="1" RepeatType="1" StartDay="5" MapID="21620" GrpID="3030">
+		<Item ID="180049" ShareRate="1000" ItemCnt="2" GetRate="1000" />
+	</Rand>
+	<Rand ID="983" Name="修炼之域25域" Time="1" RepeatType="1" StartDay="5" MapID="21625" GrpID="3035">
+		<Item ID="180049" ShareRate="1000" ItemCnt="3" GetRate="1000" />
+	</Rand>
+	<Rand ID="984" Name="修炼之域30域" Time="1" RepeatType="1" StartDay="5" MapID="21630" GrpID="3040">
+		<Item ID="180049" ShareRate="1000" ItemCnt="4" GetRate="1000" />
+	</Rand>
+	<Rand ID="985" Name="修炼之域35域" Time="1" RepeatType="1" StartDay="5" MapID="21635" GrpID="3045">
+		<Item ID="180049" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	<Rand ID="987" Name="修炼之域40域" Time="1" RepeatType="1" StartDay="5" MapID="21645" GrpID="3055">
+		<Item ID="180049" ShareRate="1000" ItemCnt="6" GetRate="1000" />
+	</Rand>
+	<Rand ID="988" Name="修炼之域45域" Time="1" RepeatType="1" StartDay="5" MapID="21650" GrpID="3060">
+		<Item ID="180049" ShareRate="1000" ItemCnt="7" GetRate="1000" />
+	</Rand>
+		
+	 【杂志礼包】ID段：1001~1100
+	<Rand ID="1001" Name="组合药箱Lv10" Time="1" RepeatType="0" StartDay="5" MapID="11210">
+		<Item ID="300008" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="1002" Name="组合便当Lv10" Time="1" RepeatType="0" StartDay="5" MapID="11213">
+		<Item ID="300009" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="1003" Name="星豆袋" Time="1" RepeatType="0" StartDay="5" MapID="11210">
+		<Item ID="300001" ShareRate="1000" ItemCnt="3" GetRate="1000" />
+	</Rand>
+	<Rand ID="1004" Name="信仰臂章" Time="1" RepeatType="0" StartDay="5" MapID="11209">
+		<Item ID="100005" EquipLv="0" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="1005" Name="材料箱Lv10" Time="1" RepeatType="0" StartDay="5" MapID="11308">
+		<Item ID="300017" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="1006" Name="闪灵胶卷Lv10" Time="1" RepeatType="0" StartDay="5" MapID="11308">
+		<Item ID="300021" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	<Rand ID="1007" Name="喵斯熊精灵蛋" Time="1" RepeatType="0" StartDay="5" MapID="11308">
+		<Item ID="310002" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	 -->
+	<Rand ID="1008" Name="魔鬼的泪晶Lv10" Time="1" RepeatType="0" StartDay="5" MapID="11308">
+		<Item ID="300023" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+
+	<!-- 砸罐子挖土堆ID段：5001~10000 -->
+	<!-- 地图ID：21102吉普1号地道 -->
+	<Rand ID="5001" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5002" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5003" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5004" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5005" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5006" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5007" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5008" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21102">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21103吉普2号地道-->
+	<Rand ID="5009" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5010" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5011" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5012" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5013" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5014" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5015" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5016" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21103">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：11102吉普豆村-->
+	<Rand ID="5017" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11102">
+		<Item ID="230021" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230021" ShareRate="700" ItemCnt="2" GetRate="500" />
+	</Rand>
+	<Rand ID="5018" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11102">
+		<Item ID="230021" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230021" ShareRate="700" ItemCnt="2" GetRate="500" />
+	</Rand>
+	<Rand ID="5019" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11102">
+		<Item ID="230021" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230021" ShareRate="700" ItemCnt="2" GetRate="500" />
+	</Rand>
+	<Rand ID="5020" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="11102">
+		<Item ID="230021" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230021" ShareRate="700" ItemCnt="2" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：11103奇普力爷爷家-->
+	<Rand ID="5021" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="11103">
+		<Item ID="230021" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="210001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+	</Rand>
+
+	<!-- 地图ID：11104皮克小屋-->
+	<Rand ID="5022" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="11104">
+		<Item ID="230021" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="210001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+	</Rand>
+
+	<!-- 地图ID：11201摩尔王国南街-->
+	<Rand ID="5023" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11201" Lv="8 100">
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="160002" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="300" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5024" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11201" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150002" ShareRate="300" ItemCnt="1" GetRate="300" />
+	</Rand>
+
+	<!-- 地图ID：11202摩尔王国广场-->
+	<Rand ID="5025" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11202" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="1000" />
+		<Item ID="150002" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150004" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5026" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11202"  Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="1000" />
+		<Item ID="150002" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150004" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5027" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11202" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="1000" />
+		<Item ID="150002" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150004" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5028" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11202" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150002" ShareRate="200" ItemCnt="1" GetRate="300" />
+		<Item ID="150006" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：11203摩尔王国西街-->
+	<Rand ID="5029" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11203" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150002" ShareRate="200" ItemCnt="1" GetRate="200" />
+		<Item ID="150004" ShareRate="100" ItemCnt="1" GetRate="200" />
+	</Rand>
+
+	<!-- 地图ID：11205摩尔王国东街-->
+	<Rand ID="5030" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11205" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150002" ShareRate="200" ItemCnt="1" GetRate="200" />
+		<Item ID="150004" ShareRate="100" ItemCnt="1" GetRate="200" />
+	</Rand>
+	<Rand ID="5031" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11205" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150002" ShareRate="200" ItemCnt="1" GetRate="200" />
+		<Item ID="150004" ShareRate="100" ItemCnt="1" GetRate="200" />
+	</Rand>
+
+	<!-- 地图ID：11206皮克司精灵研究所-->
+	<Rand ID="5032" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11206" Lv="8 100">
+		<Item ID="290001" ShareRate="500" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="270002" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="270003" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="270006" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="270011" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：11208勇敢者旅馆2楼-->
+	<Rand ID="5033" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11208" Lv="8 100">
+		<Item ID="290001" ShareRate="400" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="200" />
+		<Item ID="150004" ShareRate="100" ItemCnt="1" GetRate="200" />
+		<Item ID="230022" ShareRate="100" ItemCnt="1" GetRate="100" />
+	</Rand>
+
+	<!-- 地图ID：11209贝利装备店-->
+	<Rand ID="5034" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11209" Lv="8 100">
+		<Item ID="290001" ShareRate="400" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="200" />
+		<Item ID="170002" ShareRate="100" ItemCnt="1" GetRate="200" />
+		<Item ID="170004" ShareRate="100" ItemCnt="1" GetRate="100" />
+	</Rand>
+
+	<!-- 地图ID：11210贝蒂道具店-->
+	<Rand ID="5035" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11210" Lv="8 100">
+		<Item ID="290001" ShareRate="400" ItemCnt="1" GetRate="1000" />
+		<Item ID="290001" ShareRate="200" ItemCnt="1" GetRate="500" />
+		<Item ID="150004" ShareRate="200" ItemCnt="1" GetRate="200" />
+		<Item ID="150002" ShareRate="100" ItemCnt="1" GetRate="200" />
+		<Item ID="210001" ShareRate="100" ItemCnt="1" GetRate="100" />
+	</Rand>
+
+	<!-- 地图ID：11220下水道入口-->
+	<Rand ID="5036" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11220">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5037" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11220">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21202下水道一层-->
+	<Rand ID="5038" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21202">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5039" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21202">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5040" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21202">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />		
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21203下水道二层-->
+	<Rand ID="5041" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21203">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />	
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5042" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21203">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5043" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21203">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21204下水道三层-->
+	<Rand ID="5044" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21204">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />	
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5045" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21204">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21206下水道四层-->
+	<Rand ID="5046" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21206">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5047" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21206">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21207下水道五层-->
+	<Rand ID="5048" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21207">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5049" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21207">
+		<Item ID="290001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500"/>
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500"/>
+		<Item ID="180001" ShareRate="140" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="150" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="10" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21301平原1区-->
+	<Rand ID="5050" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21301">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5051" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21301">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5052" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21301">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21302平原2区-->
+	<Rand ID="5053" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21302">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5054" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21302">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5055" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21302">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21303平原3区-->
+	<Rand ID="5056" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21303">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5057" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21303">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5058" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21303">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21305平原5区-->
+	<Rand ID="5059" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21305">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5060" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21305">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5061" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21305">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5062" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21305">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21306平原6区-->
+	<Rand ID="5063" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21306">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5064" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21306">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5065" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21306">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21310平原10区-->
+	<Rand ID="5066" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21310">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5067" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21310">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5068" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21310">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5069" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21310">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!-- 地图ID：21311平原11区-->
+	<Rand ID="5070" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21311">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5071" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21311">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5072" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21311">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5073" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21311">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5074" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21311">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：21401          海底洞穴1F -->
+	<Rand ID="5101" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5102" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5103" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5104" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11401          麦田村广场 -->
+	<Rand ID="5075" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5076" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5077" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5078" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5079" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11401">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11402          麦田小道 -->
+	<Rand ID="5080" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11402">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5081" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11402">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11403          西田仓库 -->
+	<Rand ID="5082" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11403">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5083" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11403">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11404          卡农餐厅 -->
+	<Rand ID="5084" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11404">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11405          民宅A -->
+	<Rand ID="5085" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11405">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5086" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11405">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11406          瑞恩的家 -->
+	<Rand ID="5087" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11406">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11407          尼康康的家 -->
+	<Rand ID="5088" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11407">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5089" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11407">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11408          东之时光井底 -->
+	<Rand ID="5099" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11408">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：11501          西之时光井 -->
+	<Rand ID="5100" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="11501">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：21501          风之洞穴1F -->
+	<Rand ID="5090" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21501">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5091" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21501">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5092" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21501">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：21502          风之洞穴2F -->
+	<Rand ID="5093" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21502">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5094" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21502">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5095" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21502">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+
+	<!--地图ID：21503          风之洞穴3F -->
+	<Rand ID="5096" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21503">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5097" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21503">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5098" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21503">
+		<Item ID="150005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="160003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="160005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170001" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170003" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170005" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170002" ShareRate="90" ItemCnt="1" GetRate="500" />
+		<Item ID="170004" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="170006" ShareRate="60" ItemCnt="1" GetRate="500" />
+		<Item ID="180001" ShareRate="50" ItemCnt="1" GetRate="500" />
+		<Item ID="180002" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="180003" ShareRate="12" ItemCnt="1" GetRate="500" />
+		<Item ID="210001" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="210003" ShareRate="1" ItemCnt="1" GetRate="500" />
+		<Item ID="290001" ShareRate="230" ItemCnt="1" GetRate="500" />
+		<Item ID="300001" ShareRate="3" ItemCnt="1" GetRate="500" />
+	</Rand>
+	
+	<!-- 地图ID：21751吉普3号地道-->
+	<Rand ID="5105" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5106" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5107" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5108" Name="土堆" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5109" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5110" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5111" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	<Rand ID="5112" Name="砸罐子" Time="1" RepeatType="1" StartDay="5" MapID="21751">
+		<Item ID="180012" ShareRate="150" ItemCnt="2" GetRate="500" />
+		<Item ID="180017" ShareRate="50" ItemCnt="2" GetRate="300" />
+		<Item ID="210001" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230001" ShareRate="100" ItemCnt="1" GetRate="500" />
+		<Item ID="210002" ShareRate="300" ItemCnt="1" GetRate="500" />
+		<Item ID="230002" ShareRate="100" ItemCnt="1" GetRate="500" />
+	</Rand>
+	
+		
+	<!--
+	【采集】采集ID段：6001~9000 
+		收集6001~7000
+		伐木7001~8000
+		采矿8001~9000
+	-->
+	<!-- 【收集】地图ID：21301平原1区 -->
+	<Rand ID="6001" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="150003" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="6002" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="150003" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="6003" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="150003" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【收集】地图ID：21302平原2区 -->
+	<Rand ID="6005" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="150005" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【收集】地图ID：21303平原3区 -->
+	<Rand ID="6006" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="150005" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="6007" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="150005" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【收集】地图ID：21305平原5区 -->
+	<Rand ID="6008" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="150007" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="6009" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="150007" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【收集】地图ID：21306平原6区 -->
+	<Rand ID="6010" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="150007" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【收集】地图ID：21310平原10区 -->
+	<Rand ID="6011" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="150009" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="6012" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="150009" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【收集】地图ID：21311平原11区 -->
+	<Rand ID="6013" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="150009" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	
+	<Rand ID="6014" Name="月饼" Time="50" RepeatType="1" StartDay="5" >
+		<Item ID="180063" ShareRate="1000" ItemCnt="1" GetRate="1000" />
+	</Rand>
+	
+	<!-- 【收集】地图ID：11203摩尔王国西街 -->
+	<Rand ID="6015" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="1" ItemID="50006" ItemCnt="-2">
+		<Item ID="150001" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<!-- 【收集】地图ID：11502月光湖 -->
+	<Rand ID="6016" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="160007" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="6017" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="160008" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<!-- 【收集】地图ID：21801永恒林荫1 -->
+	<Rand ID="6018" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="160009" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="6019" Name="收集" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="160010" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【伐木】地图ID：21301平原1区 -->
+	<Rand ID="7001" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="1" ItemID="50006" ItemCnt="-2">
+		<Item ID="170001" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="7002" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="1" ItemID="50006" ItemCnt="-2">
+		<Item ID="170001" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【伐木】地图ID：21302平原2区 -->
+	<Rand ID="7003" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="170003" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="7004" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="170003" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【伐木】地图ID：21303平原3区 -->
+	<Rand ID="7005" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="170005" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="7006" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="170005" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="7007" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="170005" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【伐木】地图ID：21305平原5区 -->
+	<Rand ID="7008" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="170007" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="7009" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="170007" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="7010" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="170007" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【伐木】地图ID：21306平原6区 -->
+	<Rand ID="7011" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="170009" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【伐木】地图ID：21310平原10区 -->
+	<Rand ID="7012" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="50" ItemID="50006" ItemCnt="-12">
+		<Item ID="170011" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	
+	<!-- 【伐木】地图ID：21311平原11区 -->
+	<Rand ID="7013" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="60" ItemID="50006" ItemCnt="-14">
+		<Item ID="170013" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	
+	<!-- 【伐木】地图ID：21308平原8区 -->
+	<Rand ID="7014" Name="伐木" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="70" ItemID="50006" ItemCnt="-16">
+		<Item ID="170015" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【采矿】地图ID：21301平原1区 -->
+	<Rand ID="8001" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="1" ItemID="50006" ItemCnt="-2">
+		<Item ID="170002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【采矿】地图ID：21303平原3区 -->
+	<Rand ID="8002" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="170004" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【采矿】地图ID：21306平原6区 -->
+	<Rand ID="8003" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="170006" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【采矿】地图ID：21401海底洞穴1F -->
+	<Rand ID="8004" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="1" ItemID="50006" ItemCnt="-2">
+		<Item ID="170002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8005" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="1" ItemID="50006" ItemCnt="-2">
+		<Item ID="170002" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8006" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="170004" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8007" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="10" ItemID="50006" ItemCnt="-4">
+		<Item ID="170004" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【采矿】地图ID：21501风之洞1F -->
+	<Rand ID="8008" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="170006" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8009" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="170008" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8010" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="20" ItemID="50006" ItemCnt="-6">
+		<Item ID="170006" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8011" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="30" ItemID="50006" ItemCnt="-8">
+		<Item ID="170008" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【采矿】地图ID：21502风之洞2F -->
+	<Rand ID="8012" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="50" ItemID="50006" ItemCnt="-12">
+		<Item ID="170012" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8013" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="170010" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8014" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="50" ItemID="50006" ItemCnt="-12">
+		<Item ID="170012" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8015" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="40" ItemID="50006" ItemCnt="-10">
+		<Item ID="170010" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 【采矿】地图ID：21503风之洞3F -->
+	<Rand ID="8016" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="60" ItemID="50006" ItemCnt="-14">
+		<Item ID="170014" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8017" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="70" ItemID="50006" ItemCnt="-16">
+		<Item ID="170016" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8018" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="70" ItemID="50006" ItemCnt="-16">
+		<Item ID="170016" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="8019" Name="采矿" Time="-1" RepeatType="1" StartDay="5" MinRoleLv="60" ItemID="50006" ItemCnt="-14">
+		<Item ID="170014" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+
+	<!-- 斗技场十字轮盘：9001~10000 -->
+	<!--Title：十字轮盘奖励组序号
+		Rate：获得概率
+	-->
+	<Rand ID="9001" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="170" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="200" ItemCnt="5" GetRate="1000"/>
+		<Item ID="230002" ShareRate="200" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="173" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220009" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="140" ItemCnt="5" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9002" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="170" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="170" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="110" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="105" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="110" ItemCnt="5" GetRate="1000"/>
+		<Item ID="210002" ShareRate="110" ItemCnt="2" GetRate="1000"/>
+		<Item ID="290001" ShareRate="110" ItemCnt="5" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9003" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="170" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="170" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="110" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="119" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="110" ItemCnt="5" GetRate="1000"/>
+		<Item ID="210002" ShareRate="110" ItemCnt="5" GetRate="1000"/>
+		<Item ID="290001" ShareRate="110" ItemCnt="5" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9004" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="170" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="170" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="110" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="119" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220010" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="110" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="110" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="110" ItemCnt="1" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9005" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9006" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9007" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220011" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9008" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="148" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="11" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220012" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9009" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="5" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220013" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9010" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220014" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9011" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220015" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9012" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220016" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9013" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220017" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9014" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220018" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9015" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220019" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9016" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220020" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9017" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220021" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9018" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="144" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="15" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220022" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9019" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220023" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9020" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220024" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9021" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220025" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9022" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80058" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220026" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9023" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80059" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="158" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310005" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220027" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<Rand ID="9024" Name="轮盘" Time="-1" RepeatType="1" StartDay="5" MapID="11219 11218" ItemID="290002" ItemCnt="-5">
+		<Item ID="80060" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="80057" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="290001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230001" ShareRate="190" ItemCnt="3" GetRate="1000"/>
+		<Item ID="230002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="300001" ShareRate="148" ItemCnt="1" GetRate="1000"/>
+		<Item ID="310032" ShareRate="11" ItemCnt="1" GetRate="1000"/>
+		<Item ID="220028" ShareRate="1" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210001" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+		<Item ID="210002" ShareRate="120" ItemCnt="3" GetRate="1000"/>
+	</Rand>
+	<!-- 草木树海采草触发小游戏随机：9050 -->
+	<Rand ID="9050" Name="轮盘" Time="16" RepeatType="1" StartDay="0" MapID="">
+		<Item ID="300001" ShareRate="350" ItemCnt="1" GetRate="1000"/>
+		<Item ID="210006" ShareRate="100" ItemCnt="1" GetRate="1000"/>
+		<Item ID="230003" ShareRate="100" ItemCnt="1" GetRate="1000"/>
+		<Item ID="88005" ShareRate="50" ItemCnt="1" GetRate="1000"/>
+		<Item ID="180060" ShareRate="400" ItemCnt="1" GetRate="1000"/>
+	</Rand>
+	<!-- 活动产出：10001~11000 -->	
+	<!--
+	<Rand ID="10001" Name="庆典烟花" Time="1" RepeatType="1" StartDay="5">
+		<Item ID="320003" ShareRate="1000" ItemCnt="10" GetRate="1000" />
+	</Rand>
+	<Rand ID="10002" Name="怪盗战奖励" Time="1" RepeatType="1" StartDay="5">
+		<Item ID="300045" ShareRate="1000" ItemCnt="5" GetRate="1000" />
+	</Rand>
+	-->
+</Rands>

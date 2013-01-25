@@ -1,0 +1,263 @@
+<!--
+	PayItemID：交付物品ID
+	PayItemCnt：交付物品的数量
+	GetItemID：获得物品ID
+	GetItemCnt：获得物品的数量
+	RoleLv:兑换等级
+	JustOnce：仅可兑换1次，0代表：否，1代表：是
+	Prof：装备职业。【-1全职业，2剑士，4弓箭手，8魔法师，16传教士，32忍者】
+-->
+
+<Exchanges>
+	<!-- ID：1~10000为荣誉兑换类型 -->
+	<Exchange ID="1" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="2000" GetItemID="220029" GetItemName="绿色果实" GetItemCnt="1"/>
+	<Exchange ID="2" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="2000" GetItemID="220030" GetItemName="紫色果实" GetItemCnt="1"/>
+	<Exchange ID="3" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="2000" GetItemID="220031" GetItemName="棕色果实" GetItemCnt="1"/>
+	<Exchange ID="4" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="2000" GetItemID="220032" GetItemName="橙色果实" GetItemCnt="1"/>
+	<Exchange ID="5" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="2000" GetItemID="220033" GetItemName="粉色果实" GetItemCnt="1"/>
+	<Exchange ID="6" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="2000" GetItemID="220034" GetItemName="蓝色果实" GetItemCnt="1"/>
+	<!--
+	<Exchange ID="7" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270012" GetItemName="人形系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="8" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270013" GetItemName="昆虫系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="9" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270014" GetItemName="植物系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="10" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270015" GetItemName="特殊系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="11" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270016" GetItemName="龙系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="12" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270017" GetItemName="野兽系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="13" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270018" GetItemName="飞行系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="14" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270019" GetItemName="不死系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="15" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270020" GetItemName="金属系闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="16" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="30" GetItemID="270021" GetItemName="恶魔系闪灵胶片II" GetItemCnt="1"/>
+	-->
+	<Exchange ID="17" RoleLv="10" PayItemID="50007" PayItemName="荣誉" PayItemCnt="50" GetItemID="270022" GetItemName="万用闪灵胶片II" GetItemCnt="1"/>
+	<Exchange ID="18" RoleLv="10" PayItemID="50007" PayItemName="荣誉" PayItemCnt="10" GetItemID="290002" GetItemName="十字勋章" GetItemCnt="1"/>
+	<Exchange ID="19" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="90" GetItemID="90015" GetItemName="白钢重盔" GetItemCnt="1"/>
+	<Exchange ID="20" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="90016" GetItemName="白钢重铠" GetItemCnt="1"/>
+	<Exchange ID="21" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="80" GetItemID="90017" GetItemName="白钢手套" GetItemCnt="1"/>
+	<Exchange ID="22" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="80" GetItemID="90018" GetItemName="白钢重靴" GetItemCnt="1"/>
+	<Exchange ID="23" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="90019" GetItemName="白钢佩剑" GetItemCnt="1"/>
+	<Exchange ID="24" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="90" GetItemID="90020" GetItemName="白钢盾" GetItemCnt="1"/>
+	<Exchange ID="25" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="90021" GetItemName="圣特鲁扁帽" GetItemCnt="1"/>
+	<Exchange ID="26" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="90022" GetItemName="圣特鲁法帽" GetItemCnt="1"/>
+	<Exchange ID="27" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="120" GetItemID="90023" GetItemName="圣特鲁风衣" GetItemCnt="1"/>
+	<Exchange ID="28" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="120" GetItemID="90024" GetItemName="圣特鲁长袍" GetItemCnt="1"/>
+	<Exchange ID="29" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="80" GetItemID="90025" GetItemName="圣特鲁手套" GetItemCnt="1"/>
+	<Exchange ID="30" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="80" GetItemID="90026" GetItemName="圣特鲁板鞋" GetItemCnt="1"/>
+	<Exchange ID="31" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="120" GetItemID="90027" GetItemName="圣特鲁巨弓" GetItemCnt="1"/>
+	<Exchange ID="32" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="120" GetItemID="90028" GetItemName="圣特鲁杖" GetItemCnt="1"/>
+	<Exchange ID="33" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="900" GetItemID="90001" GetItemName="星耀重盔" GetItemCnt="1"/>
+	<Exchange ID="34" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1000" GetItemID="90002" GetItemName="星耀重铠" GetItemCnt="1"/>
+	<Exchange ID="35" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="800" GetItemID="90003" GetItemName="星耀手套" GetItemCnt="1"/>
+	<Exchange ID="36" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="800" GetItemID="90004" GetItemName="星耀重靴" GetItemCnt="1"/>
+	<Exchange ID="37" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1000" GetItemID="90005" GetItemName="星耀之剑" GetItemCnt="1"/>
+	<Exchange ID="38" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="900" GetItemID="90006" GetItemName="星耀之盾" GetItemCnt="1"/>
+	<Exchange ID="39" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1000" GetItemID="90007" GetItemName="星闪皮帽" GetItemCnt="1"/>
+	<Exchange ID="40" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1000" GetItemID="90008" GetItemName="星闪法帽" GetItemCnt="1"/>
+	<Exchange ID="41" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90009" GetItemName="星闪风衣" GetItemCnt="1"/>
+	<Exchange ID="42" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90010" GetItemName="星闪轻袍" GetItemCnt="1"/>
+	<Exchange ID="43" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="800" GetItemID="90011" GetItemName="星闪手套" GetItemCnt="1"/>
+	<Exchange ID="44" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="800" GetItemID="90012" GetItemName="星闪板鞋" GetItemCnt="1"/>
+	<Exchange ID="45" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90013" GetItemName="星闪之弓" GetItemCnt="1"/>
+	<Exchange ID="46" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90014" GetItemName="星闪法杖" GetItemCnt="1"/>
+	<Exchange ID="47" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="100001" GetItemName="男生项链" GetItemCnt="1"/>
+	<Exchange ID="48" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="100002" GetItemName="女生项链" GetItemCnt="1"/>
+	<Exchange ID="49" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="100003" GetItemName="守护臂章" GetItemCnt="1"/>
+	<Exchange ID="50" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="100004" GetItemName="斗士项链" GetItemCnt="1"/>
+	<Exchange ID="51" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="100005" GetItemName="信仰臂章" GetItemCnt="1"/>
+	<Exchange ID="52" RoleLv="8" PayItemID="50009" PayItemName="守护挑战次数" PayItemCnt="1" GetItemID="50001" GetItemName="星豆" GetItemCnt="800"/>
+	<Exchange ID="53" RoleLv="8" PayItemID="50008" PayItemName="守护战斗次数" PayItemCnt="1" GetItemID="50007" GetItemName="荣誉" GetItemCnt="5"/>
+	<Exchange ID="54" RoleLv="1" PayItemID="240001" PayItemName="风晶碎片" PayItemCnt="50" GetItemID="120001" GetItemName="风之水晶" GetItemCnt="1"/>	
+	<Exchange ID="55" RoleLv="1" PayItemID="240002" PayItemName="地晶碎片" PayItemCnt="50" GetItemID="120002" GetItemName="地之水晶" GetItemCnt="1"/>	
+	<Exchange ID="56" RoleLv="1" PayItemID="240003" PayItemName="水晶碎片" PayItemCnt="50" GetItemID="120003" GetItemName="水之水晶" GetItemCnt="1"/>	
+	<Exchange ID="57" RoleLv="1" PayItemID="240004" PayItemName="火晶碎片" PayItemCnt="50" GetItemID="120004" GetItemName="火之水晶" GetItemCnt="1"/>	
+	<Exchange ID="58" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90029" GetItemName="龙牙盔" GetItemCnt="1"/>
+	<Exchange ID="59" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1400" GetItemID="90030" GetItemName="龙牙铠" GetItemCnt="1"/>
+	<Exchange ID="60" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90031" GetItemName="龙牙护手" GetItemCnt="1"/>
+	<Exchange ID="61" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90032" GetItemName="龙牙战靴" GetItemCnt="1"/>
+	<Exchange ID="62" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1800" GetItemID="90033" GetItemName="龙牙利刃" GetItemCnt="1"/>
+	<Exchange ID="63" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90034" GetItemName="龙牙盾" GetItemCnt="1"/>
+	<Exchange ID="64" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90035" GetItemName="安德鲁轻帽" GetItemCnt="1"/>
+	<Exchange ID="65" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90036" GetItemName="安德鲁高帽" GetItemCnt="1"/>
+	<Exchange ID="66" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1400" GetItemID="90037" GetItemName="安德鲁塑身衣" GetItemCnt="1"/>
+	<Exchange ID="67" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1400" GetItemID="90038" GetItemName="安德鲁灵袍" GetItemCnt="1"/>
+	<Exchange ID="68" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90039" GetItemName="安德鲁手套" GetItemCnt="1"/>
+	<Exchange ID="69" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90040" GetItemName="安德鲁布靴" GetItemCnt="1"/>
+	<Exchange ID="70" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1800" GetItemID="90041" GetItemName="安德鲁狙击弓" GetItemCnt="1"/>
+	<Exchange ID="71" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1800" GetItemID="90042" GetItemName="安德鲁灵杖" GetItemCnt="1"/>
+	<Exchange ID="72" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="100" GetItemID="90127" GetItemName="圣特鲁忍帽" GetItemCnt="1"/>
+	<Exchange ID="73" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="120" GetItemID="90128" GetItemName="圣特鲁紧身衣" GetItemCnt="1"/>
+	<Exchange ID="74" RoleLv="15" PayItemID="50007" PayItemName="荣誉" PayItemCnt="120" GetItemID="90129" GetItemName="圣特鲁十字标" GetItemCnt="1"/>
+	<Exchange ID="75" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1000" GetItemID="90130" GetItemName="星闪忍带" GetItemCnt="1"/>
+	<Exchange ID="76" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90131" GetItemName="星闪塑身衣" GetItemCnt="1"/>
+	<Exchange ID="77" RoleLv="25" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90132" GetItemName="星闪十字标" GetItemCnt="1"/>
+	<Exchange ID="78" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1200" GetItemID="90133" GetItemName="安德鲁头套" GetItemCnt="1"/>
+	<Exchange ID="79" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1400" GetItemID="90134" GetItemName="安德鲁影衣" GetItemCnt="1"/>
+	<Exchange ID="80" RoleLv="35" PayItemID="50007" PayItemName="荣誉" PayItemCnt="1800" GetItemID="90135" GetItemName="安德鲁十字标" GetItemCnt="1"/>
+	   	
+   	<!-- ID：10001~20000为活动兑换类型 -->
+	<Exchange ID="10001" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="50" GetItemID="310007" GetItemName="石头人精灵蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10002" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="10" GetItemID="140031" Extent="2" GetItemName="钢制重盔" Prof="2" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10003" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="12" GetItemID="140032" Extent="2" GetItemName="钢制重铠" Prof="2" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10004" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="8" GetItemID="140033" Extent="2" GetItemName="钢制手套" Prof="2" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10005" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="8" GetItemID="140034" Extent="2" GetItemName="钢制重靴" Prof="2" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10006" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140035" Extent="2" GetItemName="钢折刀" Prof="2" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10007" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="12" GetItemID="140036" Extent="2" GetItemName="钢爪盾" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10008" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="10" GetItemID="140037" Extent="2" GetItemName="炽雪风帽" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10009" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="10" GetItemID="140038" Extent="2" GetItemName="炽雪法帽" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10010" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="10" GetItemID="140274" Extent="2" GetItemName="炽雪护额" Prof="32" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10011" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="12" GetItemID="140039" Extent="2" GetItemName="炽雪风衣" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10012" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="12" GetItemID="140040" Extent="2" GetItemName="炽雪法袍" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10013" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="12" GetItemID="140275" Extent="2" GetItemName="炽雪束衣" Prof="32" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10014" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="8" GetItemID="140041" Extent="2" GetItemName="炽雪轻手" Prof="60" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10015" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="8" GetItemID="140042" Extent="2" GetItemName="炽雪幻鞋" Prof="60" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10016" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140043" Extent="2" GetItemName="炽雪弓" Prof="4" GetItemCnt="1" JustOnce="0"/> 	
+ 	<Exchange ID="10017" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140044" Extent="2" GetItemName="炽雪杖" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10018" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140276" Extent="2" GetItemName="十字手里剑" Prof="32" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10019" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140059" Extent="2" GetItemName="陆行鸟轻盔" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10020" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="17" GetItemID="140060" Extent="2" GetItemName="陆行鸟轻甲" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10021" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="13" GetItemID="140061" Extent="2" GetItemName="陆行鸟护腕" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10022" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="13" GetItemID="140062" Extent="2" GetItemName="陆行鸟轻靴" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10023" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="20" GetItemID="140063" Extent="2" GetItemName="疾风剑" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10024" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="17" GetItemID="140064" Extent="2" GetItemName="磬石盾" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10025" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140065" Extent="2" GetItemName="狩猎皮帽" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10026" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140066" Extent="2" GetItemName="狩猎法帽" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10027" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="15" GetItemID="140280" Extent="2" GetItemName="狩猎护巾" Prof="32" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10028" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="17" GetItemID="140067" Extent="2" GetItemName="狩猎皮衣" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10029" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="17" GetItemID="140068" Extent="2" GetItemName="狩猎法袍" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10030" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="17" GetItemID="140281" Extent="2" GetItemName="狩猎夜行服" Prof="32" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10031" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="13" GetItemID="140069" Extent="2" GetItemName="狩猎手套" Prof="60" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10032" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="13" GetItemID="140070" Extent="2" GetItemName="狩猎皮鞋" Prof="60" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10033" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="20" GetItemID="140071" Extent="2" GetItemName="速射十字弓" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10034" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="20" GetItemID="140072" Extent="2" GetItemName="轻风杖" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10035" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="20" GetItemID="140282" Extent="2" GetItemName="流星十字镖" Prof="32" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10036" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="25" GetItemID="140087" Extent="3" GetItemName="红莲怒盔" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10037" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="27" GetItemID="140088" Extent="3" GetItemName="红莲狂甲" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10038" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="23" GetItemID="140089" Extent="3" GetItemName="红莲手甲" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10039" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="23" GetItemID="140090" Extent="3" GetItemName="红莲斗靴" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10040" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="30" GetItemID="140091" Extent="3" GetItemName="红莲剑" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10041" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="27" GetItemID="140092" Extent="3" GetItemName="赤焰盾" Prof="2" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10042" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="25" GetItemID="140093" Extent="3" GetItemName="复合凉帽" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10043" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="25" GetItemID="140094" Extent="3" GetItemName="复合法帽" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10044" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="25" GetItemID="140286" Extent="3" GetItemName="复合忍帽" Prof="32" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10045" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="27" GetItemID="140095" Extent="3" GetItemName="复合寒衣" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10046" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="27" GetItemID="140096" Extent="3" GetItemName="复合霜袍" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10047" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="27" GetItemID="140287" Extent="3" GetItemName="复合幽服" Prof="32" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10048" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="23" GetItemID="140097" Extent="3" GetItemName="复合手套" Prof="60" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10049" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="23" GetItemID="140098" Extent="3" GetItemName="复合凉鞋" Prof="60" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10050" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="30" GetItemID="140099" Extent="3" GetItemName="绞盘十字弓" Prof="4" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10051" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="30" GetItemID="140100" Extent="3" GetItemName="复合杖" Prof="24" GetItemCnt="1" JustOnce="0"/>
+ 	<Exchange ID="10052" RoleLv="5" PayItemID="290011" PayItemName="巨石碎片" PayItemCnt="30" GetItemID="140288" Extent="3" GetItemName="寒幽十字镖" Prof="32" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10053" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="50" GetItemID="310009" GetItemName="呆呆鸟精灵蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10054" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="1" GetItemID="210006" GetItemName="生命之息V" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10055" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="1" GetItemID="230006" GetItemName="龙角面包" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10056" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="1" GetItemID="270022" GetItemName="万用闪灵胶片II" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10057" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="50" GetItemID="310037" GetItemName="小石怪改造蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10058" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="50" GetItemID="310038" GetItemName="法尔改造蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10059" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="50" GetItemID="310039" GetItemName="普豆泥改造蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10060" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="40" GetItemID="147013" Extent="1" GetItemName="小丑帽" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10061" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="50" GetItemID="147014" Extent="1" GetItemName="小丑服" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10062" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="30" GetItemID="147015" Extent="1" GetItemName="小丑手套" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10063" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="30" GetItemID="147016" Extent="1" GetItemName="小丑靴" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	<!--
+	<Exchange ID="10064" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="40" GetItemID="147009" Extent="1" GetItemName="女仆花帽" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10065" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="50" GetItemID="147010" Extent="1" GetItemName="女仆制服" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10066" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="30" GetItemID="147011" Extent="1" GetItemName="女仆手套" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10067" RoleLv="5" PayItemID="290012" PayItemName="魔力水晶" PayItemCnt="30" GetItemID="147012" Extent="1" GetItemName="女仆短靴" Prof="-1" GetItemCnt="1" JustOnce="0"/>
+	-->
+	<Exchange ID="10068" RoleLv="5" PayItemID="180061" PayItemName="库噜骨头" PayItemCnt="15" GetItemID="300044" GetItemName="精灵经验笔记" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10069" RoleLv="5" PayItemID="180061" PayItemName="库噜骨头" PayItemCnt="15" GetItemID="300045" GetItemName="冒险经验笔记" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10070" RoleLv="5" PayItemID="180061" PayItemName="库噜骨头" PayItemCnt="15" GetItemID="300046" GetItemName="技能经验笔记" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10071" RoleLv="5" PayItemID="180061" PayItemName="库噜骨头" PayItemCnt="30" GetItemID="350016" GetItemName="种族技能灵药" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10072" RoleLv="5" PayItemID="180061" PayItemName="库噜骨头" PayItemCnt="60" GetItemID="350017" GetItemName="种族技能仙草" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10073" RoleLv="5" PayItemID="180061" PayItemName="库噜骨头" PayItemCnt="60" GetItemID="310035" GetItemName="普豆叶改造蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10074" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="30" GetItemID="350026" GetItemName="侍卫月饼精灵蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10075" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="8" GetItemID="350022" GetItemName="豆沙月饼" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10076" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="8" GetItemID="350021" GetItemName="红豆月饼" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10077" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="15" GetItemID="350023" GetItemName="紫薯月饼" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10078" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="20" GetItemID="350024" GetItemName="雪月饼" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10079" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="45" GetItemID="350025" GetItemName="莲蓉月饼" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10080" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="30" GetItemID="350020" GetItemName="鲜肉月饼" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10081" RoleLv="5" PayItemID="290016" PayItemName="月饼兑换卷" PayItemCnt="110" GetItemID="310041" GetItemName="宫女月饼精灵蛋" GetItemCnt="1" JustOnce="0"/>	
+
+	<Exchange ID="10082" RoleLv="5" PayItemID="290017" PayItemName="答题证明" PayItemCnt="5" GetItemID="51004" GetItemName="1次普通翻牌次数" GetItemCnt="1" JustOnce="0"/>	
+	<Exchange ID="10083" RoleLv="5" PayItemID="290017" PayItemName="答题证明" PayItemCnt="30" GetItemID="51004" GetItemName="8次普通翻牌次数" GetItemCnt="8" JustOnce="0"/>
+	
+	<Exchange ID="10084" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="225" GetItemID="100011" GetItemName="兔铃手环·改" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10085" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="160" GetItemID="310051" GetItemName="翡翠晶龙精灵蛋" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10086" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="40" GetItemID="147022" Extent="5" GetItemName="龙鳞轻盔" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10087" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="60" GetItemID="147023" Extent="5" GetItemName="龙鳞链铠" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10088" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="40" GetItemID="147024" Extent="5" GetItemName="龙麟手甲" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10089" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="60" GetItemID="147025" Extent="5" GetItemName="龙鳞短靴" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10090" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="10" GetItemID="320001" GetItemName="魔法烟花" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10091" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="30" GetItemID="220038" GetItemName="精灵的眼泪I" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10092" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="30" GetItemID="350029" GetItemName="合成石(高级)" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10093" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="10" GetItemID="300044" GetItemName="精灵经验笔记" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="10094" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="10" GetItemID="270022" GetItemName="万用闪灵胶片II" GetItemCnt="5" JustOnce="0"/>
+	<Exchange ID="10095" RoleLv="5" PayItemID="290023" PayItemName="龙鳞水晶碎片" PayItemCnt="50" GetItemID="147026" Extent="5" GetItemName="龙鳞护盾" GetItemCnt="1" JustOnce="0"/>
+   	<!-- ID：20001~20030为空无一物次数兑换类型 -->
+	<Exchange ID="20001" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="110" GetItemID="315001" GetItemName="喵斯熊精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20002" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="220" GetItemID="315002" GetItemName="撒旦蝠精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20003" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="220" GetItemID="315003" GetItemName="拉拉美精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20004" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="440" GetItemID="315004" GetItemName="吉普豆叶精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20005" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="440" GetItemID="315005" GetItemName="幽光战士精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20006" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="440" GetItemID="315006" GetItemName="摇铃兔精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20007" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="440" GetItemID="315007" GetItemName="咕噜蝶精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20008" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="880" GetItemID="315008" GetItemName="忽悠喵精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20009" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="880" GetItemID="315009" GetItemName="巨石怪精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20010" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="880" GetItemID="315010" GetItemName="库噜战士精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20011" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="990" GetItemID="315011" GetItemName="哒哒鸟精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20012" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="990" GetItemID="315012" GetItemName="草莓蜂精品蛋" GetItemCnt="1"/>
+	<Exchange ID="20013" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="990" GetItemID="315013" GetItemName="星锤兔精品蛋" GetItemCnt="1"/>
+ 	<Exchange ID="20014" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="990" GetItemID="315014" GetItemName="电波兔精品蛋" GetItemCnt="1"/>
+ 	<Exchange ID="20015" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="1100" GetItemID="315015" GetItemName="伊影精品蛋" GetItemCnt="1"/>
+ 	<Exchange ID="20016" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="1300" GetItemID="315016" GetItemName="18K钢姆精品蛋" GetItemCnt="1"/>
+  	<Exchange ID="20017" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="1500" GetItemID="315017" GetItemName="伊瑟拉精品蛋" GetItemCnt="1"/>
+    <Exchange ID="20018" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="110" GetItemID="220050" GetItemName="魔鬼的眼泪II" GetItemCnt="1"/>
+    <Exchange ID="20019" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="220" GetItemID="220051" GetItemName="魔鬼的眼泪III" GetItemCnt="1"/>
+    <Exchange ID="20020" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="440" GetItemID="220052" GetItemName="魔鬼的眼泪IV" GetItemCnt="1"/>
+    <Exchange ID="20021" RoleLv="5" PayItemID="51000" PayItemName="空无一物" PayItemCnt="440" GetItemID="220038" GetItemName="精灵的眼泪I" GetItemCnt="1"/>
+    <!-- ID：20031~30050为精灵挑战兑换类型 -->
+    <Exchange ID="20031" RoleLv="5" PayItemID="290013" PayItemName="精灵之露" PayItemCnt="100" GetItemID="300041" GetItemName="初级神秘箱I" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="20032" RoleLv="5" PayItemID="290013" PayItemName="精灵之露" PayItemCnt="300" GetItemID="300042" GetItemName="中级神秘箱I" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="20033" RoleLv="5" PayItemID="290013" PayItemName="精灵之露" PayItemCnt="500" GetItemID="300043" GetItemName="高级神秘箱I" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="20034" RoleLv="5" PayItemID="290013" PayItemName="精灵之露" PayItemCnt="200" GetItemID="300047" GetItemName="初级神秘箱I" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="20035" RoleLv="5" PayItemID="290013" PayItemName="精灵之露" PayItemCnt="400" GetItemID="300048" GetItemName="中级神秘箱I" GetItemCnt="1" JustOnce="0"/>
+	<Exchange ID="20036" RoleLv="5" PayItemID="290013" PayItemName="精灵之露" PayItemCnt="600" GetItemID="300049" GetItemName="高级神秘箱I" GetItemCnt="1" JustOnce="0"/>
+    <!-- 废墟王国遗迹碎片兑换 -->	
+    <Exchange ID="20037" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="120" GetItemID="310046" GetItemName="独眼树藤怪精灵蛋" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="50" StartHour="14" StartMinute="30"/>
+    <Exchange ID="20038" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="120" GetItemID="310044" GetItemName="24K蜘蛛炸弹精灵蛋" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="80" StartHour="14" StartMinute="30"/>
+	<Exchange ID="20039" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="80" GetItemID="310045" GetItemName="纳尼精灵蛋" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="120" StartHour="14" StartMinute="30"/>
+	<Exchange ID="20040" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="35" GetItemID="350010" GetItemName="精灵2倍经验丸" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="60" StartHour="14" StartMinute="30"/>	
+	<Exchange ID="20041" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="35" GetItemID="350006" GetItemName="技能2倍经验丸" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="40" StartHour="14" StartMinute="30"/>
+	<Exchange ID="20042" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="25" GetItemID="350019" GetItemName="修理模具(中级)" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="150" StartHour="14" StartMinute="30"/>
+	<Exchange ID="20043" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="30" GetItemID="350029" GetItemName="合成石（高级)" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="200" StartHour="14" StartMinute="30"/>
+	<Exchange ID="20044" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="20" GetItemID="350017" GetItemName="种族技能仙草" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="200" StartHour="14" StartMinute="30"/>
+	<Exchange ID="20045" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="5" GetItemID="300046" GetItemName="技能经验笔记" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="200" StartHour="14" StartMinute="30" />
+	<Exchange ID="20046" RoleLv="5" PayItemID="290018" PayItemName="遗迹的碎片" PayItemCnt="5" GetItemID="300044" GetItemName="精灵经验笔记" GetItemCnt="1" Day="62" JustOnce="0" MaxCount="250" StartHour="14" StartMinute="30" />
+    <!-- 万圣节南瓜装礼券兑换 -->
+ 	<Exchange ID="20047" RoleLv="5" PayItemID="290021" PayItemName="南瓜装兑换券" PayItemCnt="4" GetItemID="80062" GetItemName="万圣女巫毡帽" GetItemCnt="1"/>
+ 	<Exchange ID="20048" RoleLv="5" PayItemID="290021" PayItemName="南瓜装兑换券" PayItemCnt="4" GetItemID="80063" GetItemName="万圣女巫服饰" GetItemCnt="1"/>
+ 	<Exchange ID="20049" RoleLv="5" PayItemID="290021" PayItemName="南瓜装兑换券" PayItemCnt="2" GetItemID="80064" GetItemName="万圣女巫手套" GetItemCnt="1"/>
+ 	<Exchange ID="20050" RoleLv="5" PayItemID="290021" PayItemName="南瓜装兑换券" PayItemCnt="2" GetItemID="80065" GetItemName="万圣女巫鞋子" GetItemCnt="1"/>
+	 <!-- 元旦暴走的小宅精灵活动兑换 -->
+	<Exchange ID="20051" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="40" GetItemID="350004" GetItemName="摩尔2倍经验丸" GetItemCnt="1"/>
+ 	<Exchange ID="20052" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="40" GetItemID="350010" GetItemName="精灵2倍经验丸" GetItemCnt="1"/>
+ 	<Exchange ID="20053" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="100" GetItemID="350013" GetItemName="精灵成长重组丸" GetItemCnt="1"/>
+ 	<Exchange ID="20054" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="115" GetItemID="350014" GetItemName="精灵初始重组丸" GetItemCnt="1"/>  
+ 	<Exchange ID="20055" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="20" GetItemID="350016" GetItemName="种族技能灵药" GetItemCnt="1"/>
+ 	<Exchange ID="20056" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="30" GetItemID="350018" GetItemName="修理模具(初级)" GetItemCnt="1"/>
+ 	<Exchange ID="20057" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="20" GetItemID="350028" GetItemName="合成石(中级)" GetItemCnt="1"/>
+ 	<Exchange ID="20058" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="40" GetItemID="350034" GetItemName="自动战斗卷轴(试用)" GetItemCnt="1"/>
+ 	<Exchange ID="20059" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="20" GetItemID="300051" GetItemName="空无一物礼袋II" GetItemCnt="1"/>
+ 	<Exchange ID="20060" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="10" GetItemID="300045" GetItemName="冒险经验笔记" GetItemCnt="1"/>
+ 	<Exchange ID="20061" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="10" GetItemID="300044" GetItemName="精灵经验笔记" GetItemCnt="1"/>
+ 	<Exchange ID="20062" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="30" GetItemID="300046" GetItemName="技能经验笔记" GetItemCnt="1"/>
+ 	<Exchange ID="20063" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="5" GetItemID="270033" GetItemName="万用闪灵胶片III" GetItemCnt="1"/>
+ 	<Exchange ID="20064" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="120" GetItemID="310009" GetItemName="呆呆鸟精灵蛋" GetItemCnt="1"/>
+ 	<Exchange ID="20065" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="110" GetItemID="310006" GetItemName="白魅箱精灵蛋" GetItemCnt="1"/>
+ 	<Exchange ID="20066" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="110" GetItemID="310017" GetItemName="黑魅箱精灵蛋" GetItemCnt="1"/>
+ 	<Exchange ID="20067" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="115" GetItemID="310019" GetItemName="噬魂鬼精灵蛋" GetItemCnt="1"/>
+ 	<Exchange ID="20068" RoleLv="5" PayItemID="290022" PayItemName="被夺走的宝物" PayItemCnt="120" GetItemID="310020" GetItemName="夜月喵精灵蛋" GetItemCnt="1"/>
+</Exchanges>
+
+
+

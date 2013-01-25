@@ -1,0 +1,158 @@
+<!--
+	PayItemID：交付物品ID
+	PayItemCnt：交付物品的数量
+	GetItemID：获得物品ID
+	GetItemCnt：获得物品的数量
+	RoleLv:兑换等级
+	JustOnce：仅可兑换1次，0代表：否，1代表：是
+	type：1帽子，2衣服，3手套，4鞋子，5武器，6盾牌，7挂件，8属性水晶，9预留，10预留，11精灵类，12人物类, 13其它
+	MerchandiseID：商品对应的ID
+	count：物品数量
+-->
+<Malls>
+	<!-- ID：1~1000为推荐商品 -->
+	<Mall ID="1" type="11" ItemID="360011" MerchandiseID="400010"/>
+	<Mall ID="2" type="11" ItemID="360012" MerchandiseID="400011"/>
+	<Mall ID="3" type="12" ItemID="360001" MerchandiseID="400000"/>
+	<Mall ID="4" type="11" ItemID="360015" MerchandiseID="400014"/>
+	<Mall ID="5" type="12" ItemID="360004" MerchandiseID="400003"/>
+	<Mall ID="6" type="12" ItemID="360005" MerchandiseID="400004"/>
+	<Mall ID="7" type="12" ItemID="360006" MerchandiseID="400005"/>
+	<Mall ID="8" type="11" ItemID="360008" MerchandiseID="400007"/>
+	<Mall ID="9" type="11" ItemID="360014" MerchandiseID="400013"/>	
+	<Mall ID="10" type="12" ItemID="360018" MerchandiseID="400015"/>	
+	<Mall ID="11" type="12" ItemID="360019" MerchandiseID="400016"/>
+	<Mall ID="12" type="12" ItemID="360020" MerchandiseID="400017"/>
+	<Mall ID="13" type="12" ItemID="360021" MerchandiseID="400018"/>
+	<Mall ID="14" type="12" ItemID="360022" MerchandiseID="400019"/>
+	<Mall ID="15" type="12" ItemID="360023" MerchandiseID="400020"/>
+	<Mall ID="16" type="12" ItemID="360024" MerchandiseID="410074"/>
+	<Mall ID="17" type="13" ItemID="360025" MerchandiseID="410075"/>
+	<Mall ID="18" type="13" ItemID="360026" MerchandiseID="410076"/>
+	<Mall ID="19" type="13" ItemID="360027" MerchandiseID="410077"/>
+    <Mall ID="20" type="13" ItemID="360029" MerchandiseID="410078"/>
+		
+	<!-- ID：1001~2000为热卖商品 -->
+	<Mall ID="1001" type="1" ItemID="80045" MerchandiseID="410052"/>
+	<Mall ID="1002" type="2" ItemID="80046" MerchandiseID="410053"/>
+	<Mall ID="1003" type="3" ItemID="80047" MerchandiseID="410054"/>
+	<Mall ID="1004" type="4" ItemID="80048" MerchandiseID="410055"/>
+	<Mall ID="1005" type="1" ItemID="80049" MerchandiseID="410056"/>
+	<Mall ID="1006" type="2" ItemID="80050" MerchandiseID="410057"/>
+	<Mall ID="1007" type="3" ItemID="80051" MerchandiseID="410058"/>
+	<Mall ID="1008" type="4" ItemID="80052" MerchandiseID="410059"/>
+	<Mall ID="1009" type="12" ItemID="360003" MerchandiseID="400002"/>
+	<Mall ID="1010" type="12" ItemID="360007" MerchandiseID="400006"/>
+	<Mall ID="1011" type="11" ItemID="360009" MerchandiseID="400008"/>
+	<Mall ID="1012" type="1" ItemID="80053" MerchandiseID="410065"/>
+	<Mall ID="1013" type="2" ItemID="80054" MerchandiseID="410066"/>
+	<Mall ID="1014" type="3" ItemID="80055" MerchandiseID="410067"/>
+	<Mall ID="1015" type="4" ItemID="80056" MerchandiseID="410068"/>
+	<Mall ID="1016" type="5" ItemID="84036" MerchandiseID="410069"/>
+	<Mall ID="1017" type="5" ItemID="84037" MerchandiseID="410070"/>
+	<Mall ID="1018" type="5" ItemID="84038" MerchandiseID="410071"/>
+	<Mall ID="1019" type="5" ItemID="84039" MerchandiseID="410072"/>
+	<Mall ID="1020" type="6" ItemID="84040" MerchandiseID="410073"/>
+	
+	
+	<!-- ID：2001~3000为时装商品-->
+	<Mall ID="2001" type="5" ItemID="84001" MerchandiseID="410037"/>
+	<Mall ID="2002" type="5" ItemID="84002" MerchandiseID="410038"/>
+	<Mall ID="2003" type="5" ItemID="84003" MerchandiseID="410039"/>
+	<Mall ID="2004" type="5" ItemID="84004" MerchandiseID="410040"/>
+	<Mall ID="2005" type="6" ItemID="84005" MerchandiseID="410041"/>
+	<Mall ID="2006" type="5" ItemID="84015" MerchandiseID="410047"/>
+	<Mall ID="2007" type="5" ItemID="84016"	MerchandiseID="410048"/>
+	<Mall ID="2008" type="5" ItemID="84017" MerchandiseID="410049"/>
+	<Mall ID="2009" type="5" ItemID="84018" MerchandiseID="410050"/>
+	<Mall ID="2010" type="6" ItemID="84019" MerchandiseID="410051"/>
+	<Mall ID="2011" type="1" ItemID="80009" MerchandiseID="410009"/>
+	<Mall ID="2012" type="2" ItemID="80010" MerchandiseID="410010"/>
+	<Mall ID="2013" type="3" ItemID="80011" MerchandiseID="410011"/>
+	<Mall ID="2014" type="4" ItemID="80012" MerchandiseID="410012"/>
+	<Mall ID="2015" type="1" ItemID="80013" MerchandiseID="410013"/>
+	<Mall ID="2016" type="2" ItemID="80014" MerchandiseID="410014"/>
+	<Mall ID="2017" type="3" ItemID="80015" MerchandiseID="410015"/>
+	<Mall ID="2018" type="4" ItemID="80016" MerchandiseID="410016"/>
+	<Mall ID="2019" type="1" ItemID="80017" MerchandiseID="410017"/>
+	<Mall ID="2020" type="2" ItemID="80018" MerchandiseID="410018"/>
+	<Mall ID="2021" type="3" ItemID="80019" MerchandiseID="410019"/>
+	<Mall ID="2022" type="4" ItemID="80020" MerchandiseID="410020"/>
+	<Mall ID="2023" type="1" ItemID="80033" MerchandiseID="410025"/>
+	<Mall ID="2024" type="2" ItemID="80034" MerchandiseID="410026"/>
+	<Mall ID="2025" type="3" ItemID="80035" MerchandiseID="410027"/>
+	<Mall ID="2026" type="4" ItemID="80036" MerchandiseID="410028"/>
+	<Mall ID="2027" type="1" ItemID="80037" MerchandiseID="410029"/>
+	<Mall ID="2028" type="2" ItemID="80038" MerchandiseID="410030"/>
+	<Mall ID="2029" type="3" ItemID="80039" MerchandiseID="410031"/>
+	<Mall ID="2030" type="4" ItemID="80040" MerchandiseID="410032"/>
+	<Mall ID="2031" type="1" ItemID="80041" MerchandiseID="410033"/>
+	<Mall ID="2032" type="2" ItemID="80042" MerchandiseID="410034"/>
+	<Mall ID="2033" type="3" ItemID="80043" MerchandiseID="410035"/>
+	<Mall ID="2034" type="4" ItemID="80044" MerchandiseID="410036"/>
+	<Mall ID="2035" type="1" ItemID="80001" MerchandiseID="410001"/>
+	<Mall ID="2036" type="2" ItemID="80002" MerchandiseID="410002"/>
+	<Mall ID="2037" type="3" ItemID="80003" MerchandiseID="410003"/>
+	<Mall ID="2038" type="4" ItemID="80004" MerchandiseID="410004"/>
+	<Mall ID="2039" type="1" ItemID="80005" MerchandiseID="410005"/>
+	<Mall ID="2040" type="2" ItemID="80006" MerchandiseID="410006"/>
+	<Mall ID="2041" type="3" ItemID="80007" MerchandiseID="410007"/>
+	<Mall ID="2042" type="4" ItemID="80008" MerchandiseID="410008"/>
+	<Mall ID="2043" type="1" ItemID="80029" MerchandiseID="410021"/>
+	<Mall ID="2044" type="2" ItemID="80030" MerchandiseID="410022"/>
+	<Mall ID="2045" type="3" ItemID="80031" MerchandiseID="410023"/>
+	<Mall ID="2046" type="4" ItemID="80032" MerchandiseID="410024"/>
+	<Mall ID="2047" type="5" ItemID="84008" MerchandiseID="410042"/>
+	<Mall ID="2048" type="5" ItemID="84009" MerchandiseID="410043"/>
+	<Mall ID="2049" type="5" ItemID="84010" MerchandiseID="410044"/>
+	<Mall ID="2050" type="5" ItemID="84011" MerchandiseID="410045"/>
+	<Mall ID="2051" type="6" ItemID="84012" MerchandiseID="410046"/>
+	<Mall ID="2052" type="1" ItemID="80045" MerchandiseID="410052"/>
+	<Mall ID="2053" type="2" ItemID="80046" MerchandiseID="410053"/>
+	<Mall ID="2054" type="3" ItemID="80047" MerchandiseID="410054"/>
+	<Mall ID="2055" type="4" ItemID="80048" MerchandiseID="410055"/>
+	<Mall ID="2056" type="1" ItemID="80049" MerchandiseID="410056"/>
+	<Mall ID="2057" type="2" ItemID="80050" MerchandiseID="410057"/>
+	<Mall ID="2058" type="3" ItemID="80051" MerchandiseID="410058"/>
+	<Mall ID="2059" type="4" ItemID="80052" MerchandiseID="410059"/>
+	<Mall ID="2060" type="5" ItemID="84029" MerchandiseID="410060"/>
+	<Mall ID="2061" type="5" ItemID="84030" MerchandiseID="410061"/>
+	<Mall ID="2062" type="5" ItemID="84031" MerchandiseID="410062"/>
+	<Mall ID="2063" type="5" ItemID="84032" MerchandiseID="410063"/>
+	<Mall ID="2064" type="6" ItemID="84033" MerchandiseID="410064"/>
+	<Mall ID="2065" type="1" ItemID="80053" MerchandiseID="410065"/>
+	<Mall ID="2066" type="2" ItemID="80054" MerchandiseID="410066"/>
+	<Mall ID="2067" type="3" ItemID="80055" MerchandiseID="410067"/>
+	<Mall ID="2068" type="4" ItemID="80056" MerchandiseID="410068"/>
+	<Mall ID="2069" type="5" ItemID="84036" MerchandiseID="410069"/>
+	<Mall ID="2070" type="5" ItemID="84037" MerchandiseID="410070"/>
+	<Mall ID="2071" type="5" ItemID="84038" MerchandiseID="410071"/>
+	<Mall ID="2072" type="5" ItemID="84039" MerchandiseID="410072"/>
+	<Mall ID="2073" type="6" ItemID="84040" MerchandiseID="410073"/>
+		
+	<!-- ID：3001~4000为消耗品 -->
+	<Mall ID="3001" type="12" ItemID="360001" MerchandiseID="400000"/><!-- 精灵类 -->
+	<Mall ID="3002" type="11" ItemID="360015" MerchandiseID="400014"/>
+	<Mall ID="3003" type="12" ItemID="360003" MerchandiseID="400002"/>
+	<Mall ID="3004" type="13" ItemID="360004" MerchandiseID="400003"/>
+	<Mall ID="3005" type="13" ItemID="360005" MerchandiseID="400004"/>	
+	<Mall ID="3006" type="12" ItemID="360006" MerchandiseID="400005"/>
+	<Mall ID="3007" type="12" ItemID="360007" MerchandiseID="400006"/>
+	<Mall ID="3008" type="11" ItemID="360008" MerchandiseID="400007"/>
+	<Mall ID="3009" type="11" ItemID="360009" MerchandiseID="400008"/>
+	<Mall ID="3010" type="11" ItemID="360010" MerchandiseID="400009"/>
+	<Mall ID="3011" type="11" ItemID="360011" MerchandiseID="400010"/>
+	<Mall ID="3012" type="11" ItemID="360012" MerchandiseID="400011"/>
+	<Mall ID="3013" type="11" ItemID="360014" MerchandiseID="400013"/>
+ 	<Mall ID="3014" type="12" ItemID="360018" MerchandiseID="400015"/>
+	<Mall ID="3015" type="12" ItemID="360019" MerchandiseID="400016"/>
+	<Mall ID="3016" type="12" ItemID="360020" MerchandiseID="400017"/>
+	<Mall ID="3017" type="12" ItemID="360021" MerchandiseID="400018"/>
+	<Mall ID="3018" type="12" ItemID="360022" MerchandiseID="400019"/>
+	<Mall ID="3019" type="12" ItemID="360023" MerchandiseID="400020"/>
+	<Mall ID="3020" type="12" ItemID="360024" MerchandiseID="410074"/>
+	<Mall ID="3021" type="13" ItemID="360025" MerchandiseID="410075"/>
+	<Mall ID="3022" type="13" ItemID="360026" MerchandiseID="410076"/>
+	<Mall ID="3023" type="13" ItemID="360027" MerchandiseID="410077"/>
+	<Mall ID="3024" type="13" ItemID="360029" MerchandiseID="410078"/>
+ </Malls>

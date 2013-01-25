@@ -1,0 +1,17 @@
+<!--
+Probability出现概率
+Isend 是否结束游戏（0否、1是）
+-->
+<Root>
+	<title ID="1" ItemID="210001" Probability="150"/>
+	<title ID="2" ItemID="210002" Probability="150"/>
+	<title ID="3" ItemID="210003" Probability="150"/>
+	<title ID="4" ItemID="180001" Probability="200"/>
+	<title ID="5" ItemID="180011" Probability="130"/>
+	<title ID="6" ItemID="180020" Probability="60"/>
+	<title ID="7" petID="46" GrpID="16" Probability="110"/>
+	<title ID="8" petID="55" GrpID="17" Probability="50"/>
+	<title ID="9" petID="33" GrpID="18" Probability="10"/>
+	<title ID="10" petID=" " GrpID=" " Probability=" "/>
+	<title ID="11" petID=" " GrpID=" " Probability="10"	Isend="1"/>
+</Root>
