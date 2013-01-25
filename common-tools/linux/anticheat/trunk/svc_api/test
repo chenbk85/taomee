@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -ne 2 ] ; then
+	echo "Usage: $0 <loops> <interval (us)>"
+	exit 1
+fi
+
+./svc_ac_api $1 $2 "10.1.1.155" 6669
+
+exit 0

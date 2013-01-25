@@ -1,0 +1,47 @@
+#!/bin/bash
+
+function ERROR_LOG()
+{
+	echo -e "[`date +\"%F %T\"`]\t$1" >> $SYS_ERROR_LOG
+}
+
+function DEBUG_LOG()
+{
+	echo -e "[`date +\"%F %T\"`]\t$1" >> $SYS_DEBUG_LOG
+}
+
+function TRACE_LOG()
+{
+	echo -e "[`date +\"%F %T\"`]\t$1" >> $SYS_TRACE_LOG
+}
+
+if [ $# -ne 1 ] ; then
+	echo "Usage: $0 <clean_datetime>"
+	echo "like: $0 'yyyy-mm-dd HH:MM:SS'"
+	exit 1
+fi
+# 'yyyy-mm-dd HH:MM:SS'
+CLEAN_DATE="$1"
+me=`basename $0 .sh`
+
+. config
+
+SYS_ERROR_LOG="$DIR_LOG/${me}_error"
+SYS_DEBUG_LOG="$DIR_LOG/${me}_debug"
+SYS_TRACE_LOG="$DIR_LOG/${me}_trace"
+DEBUG_LOG "=== $0 $CLEAN_DATE START ==="
+
+
+# 严格检查 SVC 和 CLEAN_DATE;
+# 防止当他们中有空变量时, 不要把期望删除数据的上层目录删除掉;
+if [ -z "$SVC" -o -z "$CLEAN_DATE" ] ; then
+	DEBUG_LOG "Empty SERVICE or CLEAN_DATE, abort!"
+	exit 1
+fi
+
+sql_del="USE $DB; DELETE FROM $TAB_MAIN WHERE UNIX_TIMESTAMP(cmd_recv_sec) < UNIX_TIMESTAMP('$CLEAN_DATE');"
+echo "$sql_del" | $EXEC_MYSQL
+
+DEBUG_LOG "=== $0 $CLEAN_DATE END ==="
+
+exit 0

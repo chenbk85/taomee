@@ -1,0 +1,3 @@
+scp ./bin/{anticheat,interface} root@10.1.1.155:/root/anticheat/new_bin
+scp ./bin/ac_config root@10.1.1.155:/root/anticheat/renew_config/bin
+scp ./bin/{check_uid_node,shm_statd,show_ac_config} root@10.1.1.155:/root/anticheat/tools

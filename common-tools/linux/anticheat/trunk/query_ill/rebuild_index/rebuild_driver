@@ -1,0 +1,34 @@
+#!/bin/bash
+
+
+if [ $# -ne 1 -a $# -ne 2 ] ; then
+	echo "Usage: $0 <svc_name> [force]"
+	exit 1
+fi
+
+SVC="$1"
+FORCE=0
+if [ $# -eq 2 ] ; then
+	FORCE=1
+fi
+TODAY=`date +'%F 00:00:00'`
+
+./move_nontoday_records "$SVC" "$TODAY"
+(( ret = $? ))
+
+if (( $ret == 1 )) ; then
+	echo "Failed to exec move_nontoday_records, exit"
+	exit 1
+elif (( $ret == 2 )) ; then
+	if (( FORCE == 0 )) ; then
+		echo "Not any record before $TODAY, exit"
+		exit 1
+	else
+		echo "Force to rebuild index ..."
+	fi
+fi
+
+./build_main_index $SVC
+./build_today_index $SVC
+
+exit 0

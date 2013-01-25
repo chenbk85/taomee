@@ -1,0 +1,6 @@
+<POSTCARD>
+    <card begin = "2010-1-1" end = "2010-2-2" province = "20000" city = "0000"
+          flag = "1" type = "2" themeid = "3" senderid = "50000"
+          sendernick = "系统管理员" title = "系统测试" 
+          message = "系统消息测试测试" />
+</POSTCARD>

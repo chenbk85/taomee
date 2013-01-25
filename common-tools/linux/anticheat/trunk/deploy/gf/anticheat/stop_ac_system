@@ -1,0 +1,46 @@
+#!/bin/bash
+
+. config
+DIR_INIT=`pwd`
+
+read -p "Relly to stop ac_system for svc: $SVC ? (YES for continue): " reply
+if [ "x$reply" != "xYES" ] ; then
+	echo "Abort"
+	exit 0
+fi
+
+GREP_IF_PID=`ps -ef | grep -w $EXEC_IF_NAME | grep -w $SVC | grep -v grep | awk '{print $2}'`
+GREP_AC_PID=`ps -ef | grep -w $EXEC_AC_NAME | grep -w $SVC | grep -v grep | awk '{print $2}'`
+
+KILL_MOD_LIST=""
+KILL_PID_LIST=""
+if [ -n "$GREP_IF_PID" ] ; then
+	PSEF_IF=`ps -ef | grep -w $GREP_IF_PID | grep -v grep | awk '{print $9}'`
+	SVC_IF_COUNT=`echo "$PSEF_IF" | grep -wc $SVC`
+	if (( $SVC_IF_COUNT > 0 )) ; then
+		KILL_PID_LIST="$KILL_PID_LIST $GREP_IF_PID"
+		KILL_MOD_LIST="$KILL_MOD_LIST $PSEF_IF"
+	fi
+fi
+
+if [ -n "$GREP_AC_PID" ] ; then
+	PSEF_AC=`ps -ef | grep -w $GREP_AC_PID | grep -v grep | awk '{print $9}'`
+	SVC_AC_COUNT=`echo "$PSEF_AC" | grep -wc $SVC`
+	if (( $SVC_AC_COUNT > 0 )) ; then
+		KILL_PID_LIST="$KILL_PID_LIST $GREP_AC_PID"
+		KILL_MOD_LIST="$KILL_MOD_LIST $PSEF_AC"
+	fi
+fi
+
+if [ -n "$KILL_PID_LIST" ] ; then
+	kill -SIGINT $KILL_PID_LIST
+	sleep 1
+	kill -9 $KILL_PID_LIST 2>/dev/null
+
+	echo "killed: $KILL_MOD_LIST ($KILL_PID_LIST)"
+else
+
+	echo "No proc be killed"
+fi
+
+exit 0

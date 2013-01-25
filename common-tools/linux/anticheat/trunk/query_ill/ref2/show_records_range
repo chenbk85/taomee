@@ -1,0 +1,37 @@
+#!/bin/bash
+
+
+if [ $# -ne 1 ] ; then
+	echo "Usage: $0 <svc_name>"
+	exit 1
+fi
+
+SVC="$1"
+DB="anticheat"
+today=`date +'%F 00:00:00'`
+TAB_TODAY="${SVC}_today_anticheat"
+TAB_MAIN="${SVC}_main_anticheat"
+
+
+#EXEC_MYSQL="mysql -udb -pfsd23rg8@ --skip-column-names -A"
+EXEC_MYSQL="mysql -uroot -pta0mee --skip-column-names -A"
+sql_main_minid="USE '$DB'; SELECT id FROM $TAB_MAIN ORDER BY id LIMIT 1;"
+sql_main_maxid="USE '$DB'; SELECT id FROM $TAB_MAIN ORDER BY id DESC LIMIT 1;"
+sql_today_minid="USE '$DB'; SELECT id FROM $TAB_TODAY ORDER BY id LIMIT 1;"
+sql_today_maxid="USE '$DB'; SELECT id FROM $TAB_TODAY ORDER BY id DESC LIMIT 1;"
+
+main_minid=`echo "$sql_main_minid" | $EXEC_MYSQL`
+main_maxid=`echo "$sql_main_maxid" | $EXEC_MYSQL`
+today_minid=`echo "$sql_today_minid" | $EXEC_MYSQL`
+today_maxid=`echo "$sql_today_maxid" | $EXEC_MYSQL`
+
+[[ -z "$main_minid" ]] && main_minid="NA"
+[[ -z "$main_maxid" ]] && main_maxid="NA"
+[[ -z "$today_minid" ]] && today_minid="NA"
+[[ -z "$today_maxid" ]] && today_maxid="NA"
+
+
+echo -e "Main-id-range: \t\t[$main_minid, $main_maxid]"
+echo -e "Today-id-range: \t[$today_minid, $today_maxid]"
+
+exit 0

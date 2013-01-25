@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+if [ $# -ne 1 ] ; then
+	echo "Usage: $0 <svc_name>"
+	exit 1
+fi
+
+. config
+
+SVC="$1"
+
+FILE_CONF="$FILE_CONF_BASE/${SVC}_main_sph.conf"
+MAIN_IDX_NAME="${SVC}_${MAIN_IDX_BASE}"
+
+$INDEXER -c $FILE_CONF $MAIN_IDX_NAME --rotate
+
+exit 0

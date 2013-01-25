@@ -1,0 +1,16 @@
+1、程序基于Asyncsvr，基本配置参照Asyncsvr
+2、特殊配置如下（脏词数据库的配置）
+	DB_IP          	10.1.1.46
+	DB_USER         root
+	DB_PASSWD       taomee
+	DB_PORT         3306
+	DB_UNIX_SOCKET  /var/run/mysqld/mysqld.sock
+
+	db_name		DIRTY
+	table_name	dirty_cn
+3、如果没有数据库，启动时自动读取data目录下的基本脏词文件
+4、如果存在对应的数据库，则自动使用脏词数据库，建议预先load
+5、bin目录下的load将data目录下的脏词文件加载到数据库
+	使用方式 ./load dbuser dbpasswd (需要建库建表权限，默认加载../data/tm_dirty.dat)
+	如有需要，自行修改load脚本
+6、data目录下的脏词文件不会改变，建议不要去修改，作为基础脏词库

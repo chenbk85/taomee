@@ -1,0 +1,1 @@
+g++      CMakeFiles/mmseg_stat.dir/mmseg_stat/mmseg_stat.cpp.o CMakeFiles/mmseg_stat.dir/mmseg_stat/Cbayes.cpp.o CMakeFiles/mmseg_stat.dir/CChatString.cpp.o  -o mmseg_stat -rdynamic -ldbser -lmysqlclient -ltaomee++ -ltaomee -lmmseg 

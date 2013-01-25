@@ -1,0 +1,3 @@
+#!/bin/bash
+
+netstat -ulpn | grep "interface\|anticheat\|db_interface\|db_agent"

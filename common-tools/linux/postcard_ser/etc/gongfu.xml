@@ -1,0 +1,4 @@
+<POSTCARD>
+    <card begin = "2010-1-1" end = "2010-2-2" province = "20000" city = "0000" 
+          templet = "1" title = "我在测试" body = "测试测试测试."/>
+</POSTCARD>

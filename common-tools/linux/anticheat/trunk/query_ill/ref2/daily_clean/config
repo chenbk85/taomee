@@ -1,0 +1,32 @@
+# config for daily_clean
+
+SVC="test"
+
+# 该业务最多存储天数 (注意: 保留的天数是`不包含'今天的)
+# 其实`最老保留日期'的算法是: date -d "$RETAIN_DAY days ago" +"%Y%m%d"
+# `最老保留日期' 之前的数据会被清除;
+# 因此:
+# (1) 如果设置 RETAIN_DAY=0, 则一到当天的凌晨, 立刻清除昨天的数据;
+# (2) 如果设置 RETAIN_DAY=n (n>0), 则表示从昨天算起, 往前一共保留n天的数据;
+RETAIN_DAY=7
+
+# DB 名称要与 config_center 创建的名称相同;
+DB="anticheat"
+
+
+# MYSQL EXEC SHELL CMD
+#MYSQL_USER="db"
+#MYSQL_PASS="fsd23rg8@"
+MYSQL_USER="root"
+MYSQL_PASS="ta0mee"
+EXEC_MYSQL="mysql -u$MYSQL_USER -p$MYSQL_PASS --skip-column-names -A"
+
+TAB_MAIN="${SVC}_main_anticheat"
+
+DIR_LOG="./log"
+mkdir -p $DIR_LOG
+
+if [ -z "$SVC" ] ; then
+	echo "Empty service, abort!"
+	exit 1
+fi

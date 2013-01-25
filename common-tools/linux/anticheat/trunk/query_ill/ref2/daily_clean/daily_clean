@@ -1,0 +1,32 @@
+#!/bin/bash
+
+function ERROR_LOG()
+{
+	echo -e "[`date +\"%F %T\"`]\t$1" >> $SYS_ERROR_LOG
+}
+
+function DEBUG_LOG()
+{
+	echo -e "[`date +\"%F %T\"`]\t$1" >> $SYS_DEBUG_LOG
+}
+
+function TRACE_LOG()
+{
+	echo -e "[`date +\"%F %T\"`]\t$1" >> $SYS_TRACE_LOG
+}
+
+me=`basename $0 .sh`
+
+. config
+
+SYS_ERROR_LOG="$DIR_LOG/${me}_error"
+SYS_DEBUG_LOG="$DIR_LOG/${me}_debug"
+SYS_TRACE_LOG="$DIR_LOG/${me}_trace"
+DEBUG_LOG "=== $0 START ==="
+
+OLDEST_RETAIN_TIME=`date -d "$RETAIN_DAY days ago" +"%F 00:00:00"`
+./clean_datetime "$OLDEST_RETAIN_TIME"
+
+DEBUG_LOG "=== $0 END(the oldest records is from $OLDEST_RETAIN_TIME) ==="
+
+exit 0

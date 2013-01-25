@@ -1,0 +1,13 @@
+#cmake 
+
+DIR_INIT=`pwd`
+
+#rm -rf build
+mkdir -p build
+cd build
+cmake ../
+make clean all
+#sudo make install
+
+cd $DIR_INIT
+cp ./build/{interface,anticheat,db_interface,db_agent,ac_config,show_ac_config,shm_statd,check_uid_node} ./bin/

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp ../../bin/{check_uid_node,shm_statd,show_ac_config} ./anticheat

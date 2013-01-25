@@ -1,0 +1,610 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ADD_ONLINE_TIMER	timer_func.h	37;"	d
+BIND_PROTO_CMD	dbproxy.cpp	25;"	d	file:
+BIND_PROTO_CMD	dbproxy.cpp	26;"	d	file:
+BIND_PROTO_CMD	dbproxy.cpp	38;"	d	file:
+BIND_PROTO_CMD	dbproxy.cpp	39;"	d	file:
+BKDRHash	CChatString.h	/^static inline uint64_t BKDRHash(char *str)$/;"	f	signature:(char *str)
+CAbnormalUser	CChatTest.h	/^	CAbnormalUser()$/;"	f	class:CAbnormalUser	access:public	signature:()
+CAbnormalUser	CChatTest.h	/^class CAbnormalUser : public CTestUser {$/;"	c	inherits:CTestUser
+CAbnormalUser::CAbnormalUser	CChatTest.h	/^	CAbnormalUser()$/;"	f	class:CAbnormalUser	access:public	signature:()
+CAbnormalUser::cur_idx	CChatTest.h	/^	int cur_idx;$/;"	m	class:CAbnormalUser	access:private
+CAbnormalUser::str_idx	CChatTest.h	/^	int str_idx[10];$/;"	m	class:CAbnormalUser	access:private
+CAbnormalUser::talk	CChatTest.cpp	/^void CAbnormalUser::talk(char* buf, int& len)$/;"	f	class:CAbnormalUser	signature:(char* buf, int& len)
+CAbnormalUser::talk	CChatTest.h	/^	void talk(char* buf, int& len);$/;"	p	class:CAbnormalUser	access:public	signature:(char* buf, int& len)
+CBAYES_H_	bayes/Cbayes.h	2;"	d
+CCHATFORBID_H_	CChatForbid.h	6;"	d
+CCHAT_CHECK_H_	CChatCheck.h	20;"	d
+CCHAT_CHECK_V2_H_	CChatCheck_v2.h	20;"	d
+CCHAT_TEST_H_	CChatTest.h	19;"	d
+CChatCheck	CChatCheck.cpp	/^CChatCheck::CChatCheck() : msg_count(0)$/;"	f	class:CChatCheck	signature:()
+CChatCheck	CChatCheck.h	/^	CChatCheck();$/;"	p	class:CChatCheck	access:public	signature:()
+CChatCheck	CChatCheck.h	/^class CChatCheck {$/;"	c
+CChatCheck::CChatCheck	CChatCheck.cpp	/^CChatCheck::CChatCheck() : msg_count(0)$/;"	f	class:CChatCheck	signature:()
+CChatCheck::CChatCheck	CChatCheck.h	/^	CChatCheck();$/;"	p	class:CChatCheck	access:public	signature:()
+CChatCheck::add_msg_main	CChatCheck.cpp	/^message_t* CChatCheck::add_msg_main(uint32_t userid, uint64_t msgid, uint32_t timestamp)$/;"	f	class:CChatCheck	signature:(uint32_t userid, uint64_t msgid, uint32_t timestamp)
+CChatCheck::add_msg_main	CChatCheck.h	/^	message_t* add_msg_main(uint32_t userid, uint64_t msgid, uint32_t timestamp);$/;"	p	class:CChatCheck	access:public	signature:(uint32_t userid, uint64_t msgid, uint32_t timestamp)
+CChatCheck::chat_forbid	CChatCheck.h	/^	CChatForbid						chat_forbid;$/;"	m	class:CChatCheck	access:public
+CChatCheck::check_msg	CChatCheck.cpp	/^bool CChatCheck::check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len)$/;"	f	class:CChatCheck	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+CChatCheck::check_msg	CChatCheck.h	/^	bool check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len);	$/;"	p	class:CChatCheck	access:public	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+CChatCheck::do_after_forbid	CChatCheck.cpp	/^void CChatCheck::do_after_forbid(uint32_t userid)$/;"	f	class:CChatCheck	signature:(uint32_t userid)
+CChatCheck::do_after_forbid	CChatCheck.h	/^	void do_after_forbid(uint32_t userid);$/;"	p	class:CChatCheck	access:public	signature:(uint32_t userid)
+CChatCheck::msg_count	CChatCheck.h	/^	uint32_t						msg_count;$/;"	m	class:CChatCheck	access:private
+CChatCheck::msg_count_map	CChatCheck.h	/^	CMsgMetaMap*					msg_count_map;$/;"	m	class:CChatCheck	access:private
+CChatCheck::msg_list_head	CChatCheck.h	/^	list_head_t						msg_list_head;$/;"	m	class:CChatCheck	access:private
+CChatCheck::msg_user_map	CChatCheck.h	/^	CMsgUserMap*					msg_user_map;$/;"	m	class:CChatCheck	access:private
+CChatCheck::reload_valid_words	CChatCheck.cpp	/^void CChatCheck::reload_valid_words()$/;"	f	class:CChatCheck	signature:()
+CChatCheck::reload_valid_words	CChatCheck.h	/^	void reload_valid_words();$/;"	p	class:CChatCheck	access:public	signature:()
+CChatCheck::trim_mgr	CChatCheck.h	/^	CTrimAbnormal					trim_mgr;$/;"	m	class:CChatCheck	access:private
+CChatCheck::valid_words	CChatCheck.h	/^	std::set<uint64_t>				valid_words;$/;"	m	class:CChatCheck	access:private
+CChatCheck::~CChatCheck	CChatCheck.h	/^	~CChatCheck()$/;"	f	class:CChatCheck	access:public	signature:()
+CChatCheck_v2	CChatCheck_v2.h	/^	CChatCheck_v2()$/;"	f	class:CChatCheck_v2	access:public	signature:()
+CChatCheck_v2	CChatCheck_v2.h	/^class CChatCheck_v2 {$/;"	c
+CChatCheck_v2::CChatCheck_v2	CChatCheck_v2.h	/^	CChatCheck_v2()$/;"	f	class:CChatCheck_v2	access:public	signature:()
+CChatCheck_v2::check_msg	CChatCheck_v2.cpp	/^bool CChatCheck_v2::check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len)$/;"	f	class:CChatCheck_v2	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+CChatCheck_v2::check_msg	CChatCheck_v2.h	/^	bool check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len);	$/;"	p	class:CChatCheck_v2	access:public	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+CChatCheck_v2::get_or_alloc_meta	CChatCheck_v2.cpp	/^meta_msg_v2_t* CChatCheck_v2::get_or_alloc_meta(uint64_t msgid)$/;"	f	class:CChatCheck_v2	signature:(uint64_t msgid)
+CChatCheck_v2::get_or_alloc_meta	CChatCheck_v2.h	/^	meta_msg_v2_t* get_or_alloc_meta(uint64_t msgid);$/;"	p	class:CChatCheck_v2	access:private	signature:(uint64_t msgid)
+CChatCheck_v2::get_or_alloc_user	CChatCheck_v2.cpp	/^user_msg_v2_t* CChatCheck_v2::get_or_alloc_user(uint32_t userid)$/;"	f	class:CChatCheck_v2	signature:(uint32_t userid)
+CChatCheck_v2::get_or_alloc_user	CChatCheck_v2.h	/^	user_msg_v2_t* get_or_alloc_user(uint32_t userid);$/;"	p	class:CChatCheck_v2	access:private	signature:(uint32_t userid)
+CChatCheck_v2::meta_list_head	CChatCheck_v2.h	/^	list_head_t						meta_list_head;$/;"	m	class:CChatCheck_v2	access:private
+CChatCheck_v2::meta_map	CChatCheck_v2.h	/^	std::map<uint64_t, meta_msg_v2_t*>	meta_map;$/;"	m	class:CChatCheck_v2	access:private
+CChatCheck_v2::meta_push_msg_with_pop	CChatCheck_v2.cpp	/^void CChatCheck_v2::meta_push_msg_with_pop(meta_msg_v2_t* mmsg, uint32_t timestamp)$/;"	f	class:CChatCheck_v2	signature:(meta_msg_v2_t* mmsg, uint32_t timestamp)
+CChatCheck_v2::meta_push_msg_with_pop	CChatCheck_v2.h	/^	void meta_push_msg_with_pop(meta_msg_v2_t* mmsg, uint32_t timestamp);$/;"	p	class:CChatCheck_v2	access:private	signature:(meta_msg_v2_t* mmsg, uint32_t timestamp)
+CChatCheck_v2::user_list_head	CChatCheck_v2.h	/^	list_head_t						user_list_head;$/;"	m	class:CChatCheck_v2	access:private
+CChatCheck_v2::user_map	CChatCheck_v2.h	/^	std::map<uint32_t, user_msg_v2_t*>	user_map;$/;"	m	class:CChatCheck_v2	access:private
+CChatCheck_v2::user_push_msg_with_pop	CChatCheck_v2.cpp	/^bool CChatCheck_v2::user_push_msg_with_pop(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp)$/;"	f	class:CChatCheck_v2	signature:(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp)
+CChatCheck_v2::user_push_msg_with_pop	CChatCheck_v2.h	/^	bool user_push_msg_with_pop(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp);$/;"	p	class:CChatCheck_v2	access:private	signature:(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp)
+CChatForbid	CChatForbid.h	/^	CChatForbid() : switch_fd(-1), port(0) {}$/;"	f	class:CChatForbid	access:public	signature:()
+CChatForbid	CChatForbid.h	/^class CChatForbid {$/;"	c
+CChatForbid::CChatForbid	CChatForbid.h	/^	CChatForbid() : switch_fd(-1), port(0) {}$/;"	f	class:CChatForbid	access:public	signature:()
+CChatForbid::add_forbid_user	CChatForbid.cpp	/^uint32_t CChatForbid::add_forbid_user(uint32_t userid)$/;"	f	class:CChatForbid	signature:(uint32_t userid)
+CChatForbid::add_forbid_user	CChatForbid.h	/^	uint32_t add_forbid_user(uint32_t userid);$/;"	p	class:CChatForbid	access:public	signature:(uint32_t userid)
+CChatForbid::forbid_user_list	CChatForbid.h	/^	std::list<forbid_info_t>	forbid_user_list;$/;"	m	class:CChatForbid	access:private
+CChatForbid::forbid_user_set	CChatForbid.h	/^	std::set<uint32_t>			forbid_user_set;$/;"	m	class:CChatForbid	access:private
+CChatForbid::init	CChatForbid.cpp	/^bool CChatForbid::init(const char* ip, int port)$/;"	f	class:CChatForbid	signature:(const char* ip, int port)
+CChatForbid::init	CChatForbid.h	/^	bool init(const char* ip, int port);$/;"	p	class:CChatForbid	access:public	signature:(const char* ip, int port)
+CChatForbid::ip	CChatForbid.h	/^	char				ip[16];$/;"	m	class:CChatForbid	access:private
+CChatForbid::is_forbidden	CChatForbid.cpp	/^bool CChatForbid::is_forbidden(uint32_t userid)$/;"	f	class:CChatForbid	signature:(uint32_t userid)
+CChatForbid::is_forbidden	CChatForbid.h	/^	bool is_forbidden(uint32_t userid);$/;"	p	class:CChatForbid	access:public	signature:(uint32_t userid)
+CChatForbid::pop_forbid_user	CChatForbid.cpp	/^uint32_t CChatForbid::pop_forbid_user(std::vector<uint32_t>& userlist)$/;"	f	class:CChatForbid	signature:(std::vector<uint32_t>& userlist)
+CChatForbid::pop_forbid_user	CChatForbid.h	/^	uint32_t pop_forbid_user(std::vector<uint32_t>& userlist);$/;"	p	class:CChatForbid	access:public	signature:(std::vector<uint32_t>& userlist)
+CChatForbid::port	CChatForbid.h	/^	int 				port;$/;"	m	class:CChatForbid	access:private
+CChatForbid::send_pkg_forbid_user	CChatForbid.cpp	/^int CChatForbid::send_pkg_forbid_user(uint32_t userid)$/;"	f	class:CChatForbid	signature:(uint32_t userid)
+CChatForbid::send_pkg_forbid_user	CChatForbid.h	/^	int send_pkg_forbid_user(uint32_t userid);$/;"	p	class:CChatForbid	access:public	signature:(uint32_t userid)
+CChatForbid::switch_fd	CChatForbid.h	/^	int					switch_fd;$/;"	m	class:CChatForbid	access:private
+CChatForbid::try_reset_fd	CChatForbid.cpp	/^bool CChatForbid::try_reset_fd(int fd)$/;"	f	class:CChatForbid	signature:(int fd)
+CChatForbid::try_reset_fd	CChatForbid.h	/^	bool try_reset_fd(int fd);$/;"	p	class:CChatForbid	access:public	signature:(int fd)
+CChatTest	CChatTest.h	/^	CChatTest() : cur_nuser_idx(0) {}$/;"	f	class:CChatTest	access:public	signature:()
+CChatTest	CChatTest.h	/^class CChatTest {$/;"	c
+CChatTest::CChatTest	CChatTest.h	/^	CChatTest() : cur_nuser_idx(0) {}$/;"	f	class:CChatTest	access:public	signature:()
+CChatTest::cur_nuser_idx	CChatTest.h	/^	int cur_nuser_idx;$/;"	m	class:CChatTest	access:private
+CChatTest::nuser	CChatTest.h	/^	CAbnormalUser nuser[10];$/;"	m	class:CChatTest	access:private
+CChatTest::talk_test	CChatTest.cpp	/^void CChatTest::talk_test(CChatCheck* p_chat_check)$/;"	f	class:CChatTest	signature:(CChatCheck* p_chat_check)
+CChatTest::talk_test	CChatTest.h	/^	void talk_test(CChatCheck* p_chat_check);$/;"	p	class:CChatTest	access:public	signature:(CChatCheck* p_chat_check)
+CChatTest::user	CChatTest.h	/^	CNormalUser user[1000];$/;"	m	class:CChatTest	access:private
+CDIRTY_WORD_H_	dirty_word.h	21;"	d
+CHECK_VAL	utils.h	35;"	d
+CHECK_VAL_GE	utils.h	33;"	d
+CHECK_VAL_GE_VOID	utils.h	37;"	d
+CHECK_VAL_LE	utils.h	31;"	d
+CMsgMetaMap	CChatCheck.cpp	/^CMsgMetaMap::CMsgMetaMap()$/;"	f	class:CMsgMetaMap	signature:()
+CMsgMetaMap	CChatCheck.h	/^	CMsgMetaMap();$/;"	p	class:CMsgMetaMap	access:public	signature:()
+CMsgMetaMap	CChatCheck.h	/^class CMsgMetaMap {$/;"	c
+CMsgMetaMap::CMsgMetaMap	CChatCheck.cpp	/^CMsgMetaMap::CMsgMetaMap()$/;"	f	class:CMsgMetaMap	signature:()
+CMsgMetaMap::CMsgMetaMap	CChatCheck.h	/^	CMsgMetaMap();$/;"	p	class:CMsgMetaMap	access:public	signature:()
+CMsgMetaMap::addto_time_list	CChatCheck.cpp	/^void CMsgMetaMap::addto_time_list(meta_msg_t* mmsg)$/;"	f	class:CMsgMetaMap	signature:(meta_msg_t* mmsg)
+CMsgMetaMap::addto_time_list	CChatCheck.h	/^	void addto_time_list(meta_msg_t* mmsg);$/;"	p	class:CMsgMetaMap	access:public	signature:(meta_msg_t* mmsg)
+CMsgMetaMap::count_time_head	CChatCheck.h	/^	list_head_t						count_time_head[max_msglv];$/;"	m	class:CMsgMetaMap	access:private
+CMsgMetaMap::del_user_msg	CChatCheck.cpp	/^void CMsgMetaMap::del_user_msg(uint64_t msgid, uint32_t userid)$/;"	f	class:CMsgMetaMap	signature:(uint64_t msgid, uint32_t userid)
+CMsgMetaMap::del_user_msg	CChatCheck.h	/^	void del_user_msg(uint64_t msgid, uint32_t userid);$/;"	p	class:CMsgMetaMap	access:public	signature:(uint64_t msgid, uint32_t userid)
+CMsgMetaMap::get_meta	CChatCheck.cpp	/^meta_msg_ptr CMsgMetaMap::get_meta(message_t* msg)$/;"	f	class:CMsgMetaMap	signature:(message_t* msg)
+CMsgMetaMap::get_meta	CChatCheck.h	/^	meta_msg_ptr get_meta(message_t* msg);$/;"	p	class:CMsgMetaMap	access:public	signature:(message_t* msg)
+CMsgMetaMap::meta_map	CChatCheck.h	/^	std::map<uint64_t, meta_msg_t*>		meta_map[max_msglv];$/;"	m	class:CMsgMetaMap	access:private
+CMsgMetaMap::update	CChatCheck.cpp	/^void CMsgMetaMap::update(meta_msg_ptr it)$/;"	f	class:CMsgMetaMap	signature:(meta_msg_ptr it)
+CMsgMetaMap::update	CChatCheck.h	/^	void update(meta_msg_ptr mmsg_it);$/;"	p	class:CMsgMetaMap	access:public	signature:(meta_msg_ptr mmsg_it)
+CMsgUserMap	CChatCheck.h	/^class CMsgUserMap {$/;"	c
+CMsgUserMap::add_msg_to_user_list	CChatCheck.cpp	/^void CMsgUserMap::add_msg_to_user_list(uint32_t userid, int userlv, message_t* msg)$/;"	f	class:CMsgUserMap	signature:(uint32_t userid, int userlv, message_t* msg)
+CMsgUserMap::add_msg_to_user_list	CChatCheck.h	/^	void add_msg_to_user_list(uint32_t userid, int userlv, message_t* msg);$/;"	p	class:CMsgUserMap	access:public	signature:(uint32_t userid, int userlv, message_t* msg)
+CMsgUserMap::check_user_msg	CChatCheck.cpp	/^int CMsgUserMap::check_user_msg(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg)$/;"	f	class:CMsgUserMap	signature:(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg)
+CMsgUserMap::check_user_msg	CChatCheck.h	/^	int check_user_msg(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg);$/;"	p	class:CMsgUserMap	access:public	signature:(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg)
+CMsgUserMap::del_msg_from_list	CChatCheck.cpp	/^void CMsgUserMap::del_msg_from_list(message_t* msg)$/;"	f	class:CMsgUserMap	signature:(message_t* msg)
+CMsgUserMap::del_msg_from_list	CChatCheck.h	/^	void del_msg_from_list(message_t* msg);$/;"	p	class:CMsgUserMap	access:public	signature:(message_t* msg)
+CMsgUserMap::get_user_msg	CChatCheck.cpp	/^user_msg_t* CMsgUserMap::get_user_msg(uint32_t userid)$/;"	f	class:CMsgUserMap	signature:(uint32_t userid)
+CMsgUserMap::get_user_msg	CChatCheck.h	/^	user_msg_t* get_user_msg(uint32_t userid);$/;"	p	class:CMsgUserMap	access:public	signature:(uint32_t userid)
+CMsgUserMap::try_change_level	CChatCheck.cpp	/^bool CMsgUserMap::try_change_level(uint32_t userid, user_msg_t* umsg, int change_level)$/;"	f	class:CMsgUserMap	signature:(uint32_t userid, user_msg_t* umsg, int change_level)
+CMsgUserMap::try_change_level	CChatCheck.h	/^	bool try_change_level(uint32_t userid, user_msg_t* umsg, int change_level);$/;"	p	class:CMsgUserMap	access:public	signature:(uint32_t userid, user_msg_t* umsg, int change_level)
+CMsgUserMap::user_msg_map	CChatCheck.h	/^	std::map<uint32_t, user_msg_t*>	user_msg_map[max_msglv];$/;"	m	class:CMsgUserMap	access:private
+CNormalUser	CChatTest.h	/^class CNormalUser : public CTestUser {$/;"	c	inherits:CTestUser
+CNormalUser::talk	CChatTest.cpp	/^void CNormalUser::talk(char* buf, int& len)$/;"	f	class:CNormalUser	signature:(char* buf, int& len)
+CNormalUser::talk	CChatTest.h	/^	void talk(char* buf, int& len);$/;"	p	class:CNormalUser	access:public	signature:(char* buf, int& len)
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	16;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	22;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	28;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	31;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	34;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	40;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	48;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	68;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	12;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	18;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	30;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	36;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	39;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	47;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
+CTestUser	CChatTest.cpp	/^CTestUser::CTestUser() $/;"	f	class:CTestUser	signature:()
+CTestUser	CChatTest.h	/^	CTestUser();$/;"	p	class:CTestUser	access:public	signature:()
+CTestUser	CChatTest.h	/^class CTestUser {$/;"	c
+CTestUser::CTestUser	CChatTest.cpp	/^CTestUser::CTestUser() $/;"	f	class:CTestUser	signature:()
+CTestUser::CTestUser	CChatTest.h	/^	CTestUser();$/;"	p	class:CTestUser	access:public	signature:()
+CTestUser::userid	CChatTest.h	/^	uint32_t userid;$/;"	m	class:CTestUser	access:public
+CTrimAbnormal	CChatString.cpp	/^CTrimAbnormal::CTrimAbnormal()$/;"	f	class:CTrimAbnormal	signature:()
+CTrimAbnormal	CChatString.h	/^	CTrimAbnormal();$/;"	p	class:CTrimAbnormal	access:public	signature:()
+CTrimAbnormal	CChatString.h	/^class CTrimAbnormal {$/;"	c
+CTrimAbnormal::CTrimAbnormal	CChatString.cpp	/^CTrimAbnormal::CTrimAbnormal()$/;"	f	class:CTrimAbnormal	signature:()
+CTrimAbnormal::CTrimAbnormal	CChatString.h	/^	CTrimAbnormal();$/;"	p	class:CTrimAbnormal	access:public	signature:()
+CTrimAbnormal::abnormal_set_1	CChatString.h	/^	std::set<uint8_t> abnormal_set_1;$/;"	m	class:CTrimAbnormal	access:private
+CTrimAbnormal::abnormal_set_2	CChatString.h	/^	std::set<uint16_t> abnormal_set_2;$/;"	m	class:CTrimAbnormal	access:private
+CTrimAbnormal::abnormal_set_3	CChatString.h	/^	std::set<uint32_t> abnormal_set_3;$/;"	m	class:CTrimAbnormal	access:private
+CTrimAbnormal::add_abnormal	CChatString.cpp	/^void CTrimAbnormal::add_abnormal(const char c)$/;"	f	class:CTrimAbnormal	signature:(const char c)
+CTrimAbnormal::add_abnormal	CChatString.cpp	/^void CTrimAbnormal::add_abnormal(const char* s)$/;"	f	class:CTrimAbnormal	signature:(const char* s)
+CTrimAbnormal::add_abnormal	CChatString.h	/^	void add_abnormal(const char c);$/;"	p	class:CTrimAbnormal	access:private	signature:(const char c)
+CTrimAbnormal::add_abnormal	CChatString.h	/^	void add_abnormal(const char* s);$/;"	p	class:CTrimAbnormal	access:private	signature:(const char* s)
+CTrimAbnormal::show_abnormal	CChatString.cpp	/^void CTrimAbnormal::show_abnormal()$/;"	f	class:CTrimAbnormal	signature:()
+CTrimAbnormal::show_abnormal	CChatString.h	/^	void show_abnormal();$/;"	p	class:CTrimAbnormal	access:private	signature:()
+CTrimAbnormal::trim_abnormal_utf8	CChatString.cpp	/^void CTrimAbnormal::trim_abnormal_utf8(char* s)$/;"	f	class:CTrimAbnormal	signature:(char* s)
+CTrimAbnormal::trim_abnormal_utf8	CChatString.h	/^	void trim_abnormal_utf8(char* s);$/;"	p	class:CTrimAbnormal	access:public	signature:(char* s)
+Cbayes	bayes/Cbayes.h	/^class Cbayes {$/;"	c
+Cbayes::bayes_class_map	bayes/Cbayes.h	/^	std::map<int, uint32_t> bayes_class_map;$/;"	m	class:Cbayes	access:private
+Cbayes::bayes_trainer_map	bayes/Cbayes.h	/^	std::map<int, Cbayes_trainer*> bayes_trainer_map;$/;"	m	class:Cbayes	access:private
+Cbayes::class_probability	bayes/Cbayes.cpp	/^double Cbayes::class_probability(int class_id, uint32_t sample_count, map<int, int>& attr_list)$/;"	f	class:Cbayes	signature:(int class_id, uint32_t sample_count, map<int, int>& attr_list)
+Cbayes::class_probability	bayes/Cbayes.h	/^	double class_probability(int class_id, uint32_t sample_count, std::map<int, int>& attr_list);$/;"	p	class:Cbayes	access:private	signature:(int class_id, uint32_t sample_count, std::map<int, int>& attr_list)
+Cbayes::classify	bayes/Cbayes.cpp	/^int Cbayes::classify(std::map<int, int>& attr_list)$/;"	f	class:Cbayes	signature:(std::map<int, int>& attr_list)
+Cbayes::classify	bayes/Cbayes.h	/^	int classify(std::map<int, int>& attr_list);$/;"	p	class:Cbayes	access:public	signature:(std::map<int, int>& attr_list)
+Cbayes::init	bayes/Cbayes.cpp	/^void Cbayes::init()$/;"	f	class:Cbayes	signature:()
+Cbayes::init	bayes/Cbayes.h	/^	void init();$/;"	p	class:Cbayes	access:public	signature:()
+Cbayes::read_attribute	bayes/Cbayes.cpp	/^bool Cbayes::read_attribute(const char* attr_file)$/;"	f	class:Cbayes	signature:(const char* attr_file)
+Cbayes::read_attribute	bayes/Cbayes.h	/^	bool read_attribute(const char * attr_file);$/;"	p	class:Cbayes	access:public	signature:(const char * attr_file)
+Cbayes::train	bayes/Cbayes.cpp	/^void Cbayes::train()$/;"	f	class:Cbayes	signature:()
+Cbayes::train	bayes/Cbayes.h	/^	void train();$/;"	p	class:Cbayes	access:public	signature:()
+Cbayes::~Cbayes	bayes/Cbayes.cpp	/^Cbayes::~Cbayes()$/;"	f	class:Cbayes	signature:()
+Cbayes::~Cbayes	bayes/Cbayes.h	/^	~Cbayes();$/;"	p	class:Cbayes	access:public	signature:()
+Cbayes_stat	bayes/Cbayes.h	/^class Cbayes_stat {$/;"	c
+Cbayes_stat::stat_map	bayes/Cbayes.h	/^	std::map<int, uint32_t> stat_map;$/;"	m	class:Cbayes_stat	access:private
+Cbayes_stat::total_count	bayes/Cbayes.h	/^	uint32_t total_count;$/;"	m	class:Cbayes_stat	access:private
+Cbayes_stat::value_probability	bayes/Cbayes.cpp	/^double Cbayes_stat::value_probability(double sample_count, int value, bayes_attr_type attr_type)$/;"	f	class:Cbayes_stat	signature:(double sample_count, int value, bayes_attr_type attr_type)
+Cbayes_stat::value_probability	bayes/Cbayes.h	/^	double value_probability(double sample_count, int value, bayes_attr_type attr_type);$/;"	p	class:Cbayes_stat	access:public	signature:(double sample_count, int value, bayes_attr_type attr_type)
+Cbayes_trainer	bayes/Cbayes.h	/^class Cbayes_trainer {$/;"	c
+Cbayes_trainer::attr_type	bayes/Cbayes.h	/^	bayes_attr_type	attr_type;$/;"	m	class:Cbayes_trainer	access:public
+Cbayes_trainer::bayes_stat_map	bayes/Cbayes.h	/^	std::map<int, Cbayes_stat> bayes_stat_map;$/;"	m	class:Cbayes_trainer	access:private
+Cbayes_trainer::conditional_probability	bayes/Cbayes.cpp	/^double Cbayes_trainer::conditional_probability(int class_id, double sample_count, int value)$/;"	f	class:Cbayes_trainer	signature:(int class_id, double sample_count, int value)
+Cbayes_trainer::conditional_probability	bayes/Cbayes.h	/^	double conditional_probability(int class_id, double sample_count, int value);$/;"	p	class:Cbayes_trainer	access:public	signature:(int class_id, double sample_count, int value)
+Cbayes_trainer::train	bayes/Cbayes.h	/^	virtual void train() { }$/;"	f	class:Cbayes_trainer	access:public	signature:()
+Cdirty_word	dirty_word.cpp	/^Cdirty_word::Cdirty_word(int reload_time) : is_inited(false)$/;"	f	class:Cdirty_word	signature:(int reload_time)
+Cdirty_word	dirty_word.h	/^	Cdirty_word(int reload_time = 120);$/;"	p	class:Cdirty_word	access:public	signature:(int reload_time = 120)
+Cdirty_word	dirty_word.h	/^class Cdirty_word {$/;"	c
+Cdirty_word::Cdirty_word	dirty_word.cpp	/^Cdirty_word::Cdirty_word(int reload_time) : is_inited(false)$/;"	f	class:Cdirty_word	signature:(int reload_time)
+Cdirty_word::Cdirty_word	dirty_word.h	/^	Cdirty_word(int reload_time = 120);$/;"	p	class:Cdirty_word	access:public	signature:(int reload_time = 120)
+Cdirty_word::db	dirty_word.h	/^	mysql_interface* db;$/;"	m	class:Cdirty_word	access:private
+Cdirty_word::dirty_file_cache_size	dirty_word.h	/^		dirty_file_cache_size	= 1024 * 1024,$/;"	e	enum:Cdirty_word::__anon2
+Cdirty_word::dirty_file_md5_len	dirty_word.h	/^		dirty_file_md5_len		= 16,$/;"	e	enum:Cdirty_word::__anon2
+Cdirty_word::file_cache	dirty_word.h	/^	char file_cache[dirty_file_cache_size];$/;"	m	class:Cdirty_word	access:public
+Cdirty_word::file_md5	dirty_word.h	/^	unsigned char file_md5[dirty_file_md5_len];$/;"	m	class:Cdirty_word	access:public
+Cdirty_word::is_inited	dirty_word.h	/^	bool is_inited;$/;"	m	class:Cdirty_word	access:public
+Cdirty_word::load_bak_file	dirty_word.cpp	/^int Cdirty_word::load_bak_file()$/;"	f	class:Cdirty_word	signature:()
+Cdirty_word::load_bak_file	dirty_word.h	/^	int load_bak_file();$/;"	p	class:Cdirty_word	access:private	signature:()
+Cdirty_word::reload	dirty_word.cpp	/^int Cdirty_word::reload()$/;"	f	class:Cdirty_word	signature:()
+Cdirty_word::reload	dirty_word.h	/^	int reload();$/;"	p	class:Cdirty_word	access:public	signature:()
+Cdirty_word::reload_time	dirty_word.h	/^	int reload_time;$/;"	m	class:Cdirty_word	access:public
+Cdirty_word::save_bak_file	dirty_word.cpp	/^int Cdirty_word::save_bak_file()$/;"	f	class:Cdirty_word	signature:()
+Cdirty_word::save_bak_file	dirty_word.h	/^	int save_bak_file();$/;"	p	class:Cdirty_word	access:private	signature:()
+Cdirty_word::sqlstr	dirty_word.h	/^	char sqlstr[512];$/;"	m	class:Cdirty_word	access:private
+Cdirty_word::total_len	dirty_word.h	/^	uint32_t total_len;$/;"	m	class:Cdirty_word	access:public
+DECODE_XML_PROP	load_data.h	20;"	d
+DECODE_XML_PROP_DEFAULT	load_data.h	24;"	d
+DECODE_XML_PROP_INT	load_data.h	29;"	d
+DECODE_XML_PROP_INT_DEFAULT	load_data.h	37;"	d
+DESCRIPTION	mmseg_stat/mmseg_stat.cpp	17;"	d	file:
+GLOBAL_H_	global.h	20;"	d
+ID_VOID_MAIN	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	7;"	d	file:
+LOAD_DATA_H	load_data.h	17;"	d
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	107;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	113;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	116;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	128;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	134;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	140;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	143;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	86;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	92;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	95;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	107;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	113;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	116;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	128;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	134;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	140;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	143;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	77;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	86;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	92;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	95;"	d	file:
+PLATFORM_ID	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+POP_DBPROXY_H	dbproxy.h	15;"	d
+P_DEALFUN_T	dbproxy.cpp	/^typedef   void (*P_DEALFUN_T)( Csprite* p, uint32_t id,  Cmessage* c_out, uint32_t ret );$/;"	t	file:
+REGISTER_TIMER_TYPE	timer_func.cpp	25;"	d	file:
+STD_QUERY_ONE_BEGIN_CHAT	mmseg_stat/mmseg_stat.cpp	20;"	d	file:
+STD_QUERY_ONE_BEGIN_CHAT_EX	mmseg_stat/mmseg_stat.cpp	36;"	d	file:
+SWITCH_DISPATCH_HPP_	dispatcher.h	2;"	d
+SWITCH_PROTO_HPP_	proto.hpp	2;"	d
+SWITCH_UTILS_HPP_	utils.h	2;"	d
+VERSION	mmseg_stat/mmseg_stat.cpp	18;"	d	file:
+abnormal_set_1	CChatString.h	/^	std::set<uint8_t> abnormal_set_1;$/;"	m	class:CTrimAbnormal	access:private
+abnormal_set_2	CChatString.h	/^	std::set<uint16_t> abnormal_set_2;$/;"	m	class:CTrimAbnormal	access:private
+abnormal_set_3	CChatString.h	/^	std::set<uint32_t> abnormal_set_3;$/;"	m	class:CTrimAbnormal	access:private
+add_abnormal	CChatString.cpp	/^void CTrimAbnormal::add_abnormal(const char c)$/;"	f	class:CTrimAbnormal	signature:(const char c)
+add_abnormal	CChatString.cpp	/^void CTrimAbnormal::add_abnormal(const char* s)$/;"	f	class:CTrimAbnormal	signature:(const char* s)
+add_abnormal	CChatString.h	/^	void add_abnormal(const char c);$/;"	p	class:CTrimAbnormal	access:private	signature:(const char c)
+add_abnormal	CChatString.h	/^	void add_abnormal(const char* s);$/;"	p	class:CTrimAbnormal	access:private	signature:(const char* s)
+add_forbid_user	CChatForbid.cpp	/^uint32_t CChatForbid::add_forbid_user(uint32_t userid)$/;"	f	class:CChatForbid	signature:(uint32_t userid)
+add_forbid_user	CChatForbid.h	/^	uint32_t add_forbid_user(uint32_t userid);$/;"	p	class:CChatForbid	access:public	signature:(uint32_t userid)
+add_msg_main	CChatCheck.cpp	/^message_t* CChatCheck::add_msg_main(uint32_t userid, uint64_t msgid, uint32_t timestamp)$/;"	f	class:CChatCheck	signature:(uint32_t userid, uint64_t msgid, uint32_t timestamp)
+add_msg_main	CChatCheck.h	/^	message_t* add_msg_main(uint32_t userid, uint64_t msgid, uint32_t timestamp);$/;"	p	class:CChatCheck	access:public	signature:(uint32_t userid, uint64_t msgid, uint32_t timestamp)
+add_msg_to_user_list	CChatCheck.cpp	/^void CMsgUserMap::add_msg_to_user_list(uint32_t userid, int userlv, message_t* msg)$/;"	f	class:CMsgUserMap	signature:(uint32_t userid, int userlv, message_t* msg)
+add_msg_to_user_list	CChatCheck.h	/^	void add_msg_to_user_list(uint32_t userid, int userlv, message_t* msg);$/;"	p	class:CMsgUserMap	access:public	signature:(uint32_t userid, int userlv, message_t* msg)
+addto_time_list	CChatCheck.cpp	/^void CMsgMetaMap::addto_time_list(meta_msg_t* mmsg)$/;"	f	class:CMsgMetaMap	signature:(meta_msg_t* mmsg)
+addto_time_list	CChatCheck.h	/^	void addto_time_list(meta_msg_t* mmsg);$/;"	p	class:CMsgMetaMap	access:public	signature:(meta_msg_t* mmsg)
+adm_check_msg	proto.hpp	/^	adm_check_msg				= 0xF133, \/\/ 61747$/;"	e	enum:cmd_id_t
+adm_check_msg_common	proto.hpp	/^	adm_check_msg_common		= 65003,$/;"	e	enum:cmd_id_t
+adm_forbid_chat	proto.hpp	/^	adm_forbid_chat				= 62015,$/;"	e	enum:cmd_id_t
+adm_get_dirty_md5	proto.hpp	/^	adm_get_dirty_md5			= 65001,$/;"	e	enum:cmd_id_t
+adm_get_dirty_words	proto.hpp	/^	adm_get_dirty_words			= 65002,$/;"	e	enum:cmd_id_t
+all_count	CChatCheck.h	/^	uint32_t					all_count;		\/\/ 一段时间以来出现该消息的数量$/;"	m	struct:meta_msg	access:public
+attr_type	bayes/Cbayes.h	/^	bayes_attr_type	attr_type;$/;"	m	class:Cbayes_trainer	access:public
+battle_id_t	proto.hpp	/^typedef uint64_t battle_id_t;$/;"	t
+bayes_attr_type	bayes/Cbayes.h	/^enum bayes_attr_type {$/;"	g
+bayes_attr_type_bool	bayes/Cbayes.h	/^	bayes_attr_type_bool,	\/\/ 布尔型特征值（如关键字是否存在）$/;"	e	enum:bayes_attr_type
+bayes_attr_type_int	bayes/Cbayes.h	/^	bayes_attr_type_int,	\/\/ 整型特征值$/;"	e	enum:bayes_attr_type
+bayes_attr_type_range	bayes/Cbayes.h	/^	bayes_attr_type_range,	\/\/ 连续区间特征值$/;"	e	enum:bayes_attr_type
+bayes_class_map	bayes/Cbayes.h	/^	std::map<int, uint32_t> bayes_class_map;$/;"	m	class:Cbayes	access:private
+bayes_stat_map	bayes/Cbayes.h	/^	std::map<int, Cbayes_stat> bayes_stat_map;$/;"	m	class:Cbayes_trainer	access:private
+bayes_trainer_map	bayes/Cbayes.h	/^	std::map<int, Cbayes_trainer*> bayes_trainer_map;$/;"	m	class:Cbayes	access:private
+body	proto.hpp	/^        uint8_t		body[];$/;"	m	struct:svr_proto_t	access:public
+chat_const_val	CChatCheck.h	/^enum chat_const_val {$/;"	g
+chat_forbid	CChatCheck.h	/^	CChatForbid						chat_forbid;$/;"	m	class:CChatCheck	access:public
+chat_forbid_pop	timer_func.cpp	/^int chat_forbid_pop(void* owner, void* data)$/;"	f	signature:(void* owner, void* data)
+check_msg	CChatCheck.cpp	/^bool CChatCheck::check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len)$/;"	f	class:CChatCheck	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+check_msg	CChatCheck.h	/^	bool check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len);	$/;"	p	class:CChatCheck	access:public	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+check_msg	CChatCheck_v2.cpp	/^bool CChatCheck_v2::check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len)$/;"	f	class:CChatCheck_v2	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+check_msg	CChatCheck_v2.h	/^	bool check_msg(uint32_t userid, uint32_t timestamp, const char* msg, int len);	$/;"	p	class:CChatCheck_v2	access:public	signature:(uint32_t userid, uint32_t timestamp, const char* msg, int len)
+check_msg	dispatcher.cpp	/^int check_msg(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)$/;"	f	signature:(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)
+check_msg_common	dispatcher.cpp	/^int check_msg_common(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)$/;"	f	signature:(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)
+check_user_msg	CChatCheck.cpp	/^int CMsgUserMap::check_user_msg(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg)$/;"	f	class:CMsgUserMap	signature:(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg)
+check_user_msg	CChatCheck.h	/^	int check_user_msg(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg);$/;"	p	class:CMsgUserMap	access:public	signature:(uint64_t msgid, uint32_t userid, user_msg_t* umsg, meta_msg_t* mmsg)
+class_probability	bayes/Cbayes.cpp	/^double Cbayes::class_probability(int class_id, uint32_t sample_count, map<int, int>& attr_list)$/;"	f	class:Cbayes	signature:(int class_id, uint32_t sample_count, map<int, int>& attr_list)
+class_probability	bayes/Cbayes.h	/^	double class_probability(int class_id, uint32_t sample_count, std::map<int, int>& attr_list);$/;"	p	class:Cbayes	access:private	signature:(int class_id, uint32_t sample_count, std::map<int, int>& attr_list)
+classify	bayes/Cbayes.cpp	/^int Cbayes::classify(std::map<int, int>& attr_list)$/;"	f	class:Cbayes	signature:(std::map<int, int>& attr_list)
+classify	bayes/Cbayes.h	/^	int classify(std::map<int, int>& attr_list);$/;"	p	class:Cbayes	access:public	signature:(std::map<int, int>& attr_list)
+clear_msg_timely	timer_func.cpp	/^int clear_msg_timely(void* owner, void* data)$/;"	f	signature:(void* owner, void* data)
+cmd	proto.hpp	/^        uint16_t	cmd; \/\/ cmd id, >OxEA60$/;"	m	struct:svr_proto_t	access:public
+cmd_id_t	proto.hpp	/^enum cmd_id_t {$/;"	g
+conditional_probability	bayes/Cbayes.cpp	/^double Cbayes_trainer::conditional_probability(int class_id, double sample_count, int value)$/;"	f	class:Cbayes_trainer	signature:(int class_id, double sample_count, int value)
+conditional_probability	bayes/Cbayes.h	/^	double conditional_probability(int class_id, double sample_count, int value);$/;"	p	class:Cbayes_trainer	access:public	signature:(int class_id, double sample_count, int value)
+connect_to_switch	svr_proto.cpp	/^void connect_to_switch()$/;"	f	signature:()
+count_time_head	CChatCheck.h	/^	list_head_t						count_time_head[max_msglv];$/;"	m	class:CMsgMetaMap	access:private
+count_time_list	CChatCheck.h	/^	list_head_t					count_time_list;$/;"	m	struct:meta_msg	access:public
+cur_idx	CChatTest.h	/^	int cur_idx;$/;"	m	class:CAbnormalUser	access:private
+cur_nuser_idx	CChatTest.h	/^	int cur_nuser_idx;$/;"	m	class:CChatTest	access:private
+db	dirty_word.h	/^	mysql_interface* db;$/;"	m	class:Cdirty_word	access:private
+del_msg_from_list	CChatCheck.cpp	/^void CMsgUserMap::del_msg_from_list(message_t* msg)$/;"	f	class:CMsgUserMap	signature:(message_t* msg)
+del_msg_from_list	CChatCheck.h	/^	void del_msg_from_list(message_t* msg);$/;"	p	class:CMsgUserMap	access:public	signature:(message_t* msg)
+del_user_msg	CChatCheck.cpp	/^void CMsgMetaMap::del_user_msg(uint64_t msgid, uint32_t userid)$/;"	f	class:CMsgMetaMap	signature:(uint64_t msgid, uint32_t userid)
+del_user_msg	CChatCheck.h	/^	void del_user_msg(uint64_t msgid, uint32_t userid);$/;"	p	class:CMsgMetaMap	access:public	signature:(uint64_t msgid, uint32_t userid)
+dirty_file_cache_size	dirty_word.h	/^		dirty_file_cache_size	= 1024 * 1024,$/;"	e	enum:Cdirty_word::__anon2
+dirty_file_md5_len	dirty_word.h	/^		dirty_file_md5_len		= 16,$/;"	e	enum:Cdirty_word::__anon2
+dispatch	dispatcher.cpp	/^int dispatch(void* data, fdsession_t* fdsess)$/;"	f	signature:(void* data, fdsession_t* fdsess)
+dispatch	dispatcher.h	/^int  dispatch(void* data, fdsession_t* fdsess);$/;"	p	signature:(void* data, fdsession_t* fdsess)
+do_after_forbid	CChatCheck.cpp	/^void CChatCheck::do_after_forbid(uint32_t userid)$/;"	f	class:CChatCheck	signature:(uint32_t userid)
+do_after_forbid	CChatCheck.h	/^	void do_after_forbid(uint32_t userid);$/;"	p	class:CChatCheck	access:public	signature:(uint32_t userid)
+endable	dispatcher.cpp	/^	uint32_t	endable;$/;"	m	struct:file_stream	file:	access:public
+file_bit_stream	dispatcher.cpp	/^	char		file_bit_stream[];$/;"	m	struct:file_stream	file:	access:public
+file_cache	dirty_word.h	/^	char file_cache[dirty_file_cache_size];$/;"	m	class:Cdirty_word	access:public
+file_md5	dirty_word.h	/^	unsigned char file_md5[dirty_file_md5_len];$/;"	m	class:Cdirty_word	access:public
+file_stream	dispatcher.cpp	/^struct file_stream {$/;"	s	file:
+file_stream::endable	dispatcher.cpp	/^	uint32_t	endable;$/;"	m	struct:file_stream	file:	access:public
+file_stream::file_bit_stream	dispatcher.cpp	/^	char		file_bit_stream[];$/;"	m	struct:file_stream	file:	access:public
+file_stream::md5	dispatcher.cpp	/^	char		md5[Cdirty_word::dirty_file_md5_len];$/;"	m	struct:file_stream	file:	access:public
+file_stream::reserve	dispatcher.cpp	/^	char		reserve[32];$/;"	m	struct:file_stream	file:	access:public
+file_stream::sendlen	dispatcher.cpp	/^	uint32_t	sendlen;$/;"	m	struct:file_stream	file:	access:public
+file_stream::totallen	dispatcher.cpp	/^	uint32_t	totallen;$/;"	m	struct:file_stream	file:	access:public
+fini_service	chatcheck.cpp	/^extern "C" int  fini_service(int isparent)$/;"	f	signature:(int isparent)
+forbid_info	CChatForbid.h	/^typedef struct forbid_info {$/;"	s
+forbid_info::forbid_time	CChatForbid.h	/^	uint32_t		forbid_time;$/;"	m	struct:forbid_info	access:public
+forbid_info::userid	CChatForbid.h	/^	uint32_t		userid;$/;"	m	struct:forbid_info	access:public
+forbid_info_t	CChatForbid.h	/^}__attribute__((packed))forbid_info_t;$/;"	t	typeref:struct:forbid_info
+forbid_time	CChatForbid.h	/^	uint32_t		forbid_time;$/;"	m	struct:forbid_info	access:public
+forbid_user_list	CChatForbid.h	/^	std::list<forbid_info_t>	forbid_user_list;$/;"	m	class:CChatForbid	access:private
+forbid_user_set	CChatForbid.h	/^	std::set<uint32_t>			forbid_user_set;$/;"	m	class:CChatForbid	access:private
+func_t	dispatcher.cpp	/^typedef int (*func_t)(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess);$/;"	t	file:
+funcs	dispatcher.cpp	/^func_t funcs[50000];$/;"	v
+g_dirty_word	global.cpp	/^Cdirty_word* g_dirty_word;$/;"	v
+g_events	global.cpp	/^timer_head_t g_events;$/;"	v
+g_proxy_cmd_list	dbproxy.cpp	/^Ccmd< P_DEALFUN_T> g_proxy_cmd_list[]={$/;"	v
+g_proxy_cmd_map	dbproxy.cpp	/^Ccmd_map< Ccmd< P_DEALFUN_T> >  g_proxy_cmd_map;$/;"	v
+g_seg_mgr	global.cpp	/^SegmenterManager g_seg_mgr;$/;"	v
+g_userid	CChatTest.cpp	/^uint32_t g_userid = 50000;$/;"	v
+game_chat_check	global.cpp	/^std::map<uint32_t, CChatCheck*> game_chat_check;$/;"	v
+get_dirty_md5	dispatcher.cpp	/^int get_dirty_md5(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)$/;"	f	signature:(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)
+get_dirty_words	dispatcher.cpp	/^int get_dirty_words(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)$/;"	f	signature:(svr_proto_t* pkg, uint32_t bodylen, fdsession_t* fdsess)
+get_meta	CChatCheck.cpp	/^meta_msg_ptr CMsgMetaMap::get_meta(message_t* msg)$/;"	f	class:CMsgMetaMap	signature:(message_t* msg)
+get_meta	CChatCheck.h	/^	meta_msg_ptr get_meta(message_t* msg);$/;"	p	class:CMsgMetaMap	access:public	signature:(message_t* msg)
+get_or_alloc_meta	CChatCheck_v2.cpp	/^meta_msg_v2_t* CChatCheck_v2::get_or_alloc_meta(uint64_t msgid)$/;"	f	class:CChatCheck_v2	signature:(uint64_t msgid)
+get_or_alloc_meta	CChatCheck_v2.h	/^	meta_msg_v2_t* get_or_alloc_meta(uint64_t msgid);$/;"	p	class:CChatCheck_v2	access:private	signature:(uint64_t msgid)
+get_or_alloc_user	CChatCheck_v2.cpp	/^user_msg_v2_t* CChatCheck_v2::get_or_alloc_user(uint32_t userid)$/;"	f	class:CChatCheck_v2	signature:(uint32_t userid)
+get_or_alloc_user	CChatCheck_v2.h	/^	user_msg_v2_t* get_or_alloc_user(uint32_t userid);$/;"	p	class:CChatCheck_v2	access:private	signature:(uint32_t userid)
+get_pkg_len	chatcheck.cpp	/^extern "C" int  get_pkg_len(int fd, const void* avail_data, int avail_len, int isparent)$/;"	f	signature:(int fd, const void* avail_data, int avail_len, int isparent)
+get_user_msg	CChatCheck.cpp	/^user_msg_t* CMsgUserMap::get_user_msg(uint32_t userid)$/;"	f	class:CMsgUserMap	signature:(uint32_t userid)
+get_user_msg	CChatCheck.h	/^	user_msg_t* get_user_msg(uint32_t userid);$/;"	p	class:CMsgUserMap	access:public	signature:(uint32_t userid)
+handle_db_return	dbproxy.cpp	/^void handle_db_return(db_proto_t* dbpkg, uint32_t pkglen)$/;"	f	signature:(db_proto_t* dbpkg, uint32_t pkglen)
+handle_db_return	dbproxy.h	/^void handle_db_return(db_proto_t* dbpkg, uint32_t pkglen);$/;"	p	signature:(db_proto_t* dbpkg, uint32_t pkglen)
+id	proto.hpp	/^        userid_t	id; \/\/ Userid$/;"	m	struct:svr_proto_t	access:public
+info_compiler	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_platform	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+init	CChatForbid.cpp	/^bool CChatForbid::init(const char* ip, int port)$/;"	f	class:CChatForbid	signature:(const char* ip, int port)
+init	CChatForbid.h	/^	bool init(const char* ip, int port);$/;"	p	class:CChatForbid	access:public	signature:(const char* ip, int port)
+init	bayes/Cbayes.cpp	/^void Cbayes::init()$/;"	f	class:Cbayes	signature:()
+init	bayes/Cbayes.h	/^	void init();$/;"	p	class:Cbayes	access:public	signature:()
+init_all_timer_type	timer_func.cpp	/^int init_all_timer_type()$/;"	f	signature:()
+init_all_timer_type	timer_func.h	/^int init_all_timer_type();$/;"	p	signature:()
+init_db	mmseg_stat/mmseg_stat.cpp	/^mysql_interface* init_db()$/;"	f	signature:()
+init_db_handle_funs	dbproxy.cpp	/^void init_db_handle_funs()$/;"	f	signature:()
+init_db_handle_funs	dbproxy.h	/^void init_db_handle_funs();$/;"	p	signature:()
+init_funcs	dispatcher.cpp	/^void init_funcs()$/;"	f	signature:()
+init_funcs	dispatcher.h	/^void init_funcs();$/;"	p	signature:()
+init_proto_head	proto.hpp	/^init_proto_head(void* buf, userid_t uid, uint32_t len, uint32_t seq, uint16_t cmd, uint32_t ret)$/;"	f	signature:(void* buf, userid_t uid, uint32_t len, uint32_t seq, uint16_t cmd, uint32_t ret)
+init_service	chatcheck.cpp	/^extern "C" int  init_service(int isparent)$/;"	f	signature:(int isparent)
+ip	CChatForbid.h	/^	char				ip[16];$/;"	m	class:CChatForbid	access:private
+is_forbidden	CChatForbid.cpp	/^bool CChatForbid::is_forbidden(uint32_t userid)$/;"	f	class:CChatForbid	signature:(uint32_t userid)
+is_forbidden	CChatForbid.h	/^	bool is_forbidden(uint32_t userid);$/;"	p	class:CChatForbid	access:public	signature:(uint32_t userid)
+is_inited	dirty_word.h	/^	bool is_inited;$/;"	m	class:Cdirty_word	access:public
+last_arise	CChatCheck.h	/^	uint32_t					last_arise;		\/\/ 上次出现该消息的时间$/;"	m	struct:meta_msg	access:public
+len	proto.hpp	/^        uint32_t	len; \/\/ package length, no more than 4k bytes$/;"	m	struct:svr_proto_t	access:public
+load_bak_file	dirty_word.cpp	/^int Cdirty_word::load_bak_file()$/;"	f	class:Cdirty_word	signature:()
+load_bak_file	dirty_word.h	/^	int load_bak_file();$/;"	p	class:Cdirty_word	access:private	signature:()
+load_dirty_timely	timer_func.cpp	/^int load_dirty_timely(void* owner, void* data)$/;"	f	signature:(void* owner, void* data)
+load_game_svr_config	load_data.cpp	/^int load_game_svr_config(xmlNodePtr cur)$/;"	f	signature:(xmlNodePtr cur)
+load_game_svr_config	load_data.h	/^int load_game_svr_config(xmlNodePtr cur);$/;"	p	signature:(xmlNodePtr cur)
+load_valid_words	timer_func.cpp	/^int load_valid_words(void* owner, void* data)$/;"	f	signature:(void* owner, void* data)
+load_xmlconf	load_data.cpp	/^int load_xmlconf(const char* file, int (*parser)(xmlNodePtr cur_node))$/;"	f	signature:(const char* file, int (*parser)(xmlNodePtr cur_node))
+load_xmlconf	load_data.h	/^int load_xmlconf(const char* file, int (*parser)(xmlNodePtr cur_node));$/;"	p	signature:(const char* file, int (*parser)(xmlNodePtr cur_node))
+main	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^int main() { return 0; }$/;"	f
+main	build/CMakeFiles/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main() { return 0; }$/;"	f	signature:()
+main	mmseg_stat/mmseg_stat.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main_login_add_game_flag	svr_proto.cpp	/^void main_login_add_game_flag(Csprite * p, uint32_t  which_game)$/;"	f	signature:(Csprite * p, uint32_t which_game)
+main_login_add_session	svr_proto.cpp	/^void main_login_add_session(Csprite * p, uint32_t which_game, uint32_t ip)$/;"	f	signature:(Csprite * p, uint32_t which_game, uint32_t ip)
+max_game_id	global.h	/^const int max_game_id = 100;$/;"	v
+max_msg_count	chatcheck.cpp	/^uint32_t max_msg_count = 0;$/;"	v
+max_msg_list_len	CChatCheck.h	/^	max_msg_list_len		= 1024 * 300,		\/\/ 最大缓存消息数量，如果超过，尝试释放$/;"	e	enum:chat_const_val
+max_msglv	CChatCheck.h	/^	max_msglv				= 4,				\/\/ 消息以及用户队列优先级数量$/;"	e	enum:chat_const_val
+md5	dispatcher.cpp	/^	char		md5[Cdirty_word::dirty_file_md5_len];$/;"	m	struct:file_stream	file:	access:public
+message	CChatCheck.h	/^typedef struct message {$/;"	s
+message::msg_meta_list	CChatCheck.h	/^	list_head_t					msg_meta_list;$/;"	m	struct:message	access:public
+message::msg_time_list	CChatCheck.h	/^	list_head_t					msg_time_list;$/;"	m	struct:message	access:public
+message::msg_user_list	CChatCheck.h	/^	list_head_t					msg_user_list;$/;"	m	struct:message	access:public
+message::msgid	CChatCheck.h	/^	uint64_t					msgid;			\/\/ 消息字符串的hash$/;"	m	struct:message	access:public
+message::timestamp	CChatCheck.h	/^	uint32_t					timestamp;		\/\/ 消息时间戳$/;"	m	struct:message	access:public
+message::userid	CChatCheck.h	/^	uint32_t					userid;			\/\/ 米米号$/;"	m	struct:message	access:public
+message_t	CChatCheck.h	/^} __attribute__ ((packed)) message_t;$/;"	t	typeref:struct:message
+message_v2	CChatCheck_v2.h	/^typedef struct message_v2 {$/;"	s
+message_v2::msgid	CChatCheck_v2.h	/^	uint64_t				msgid;$/;"	m	struct:message_v2	access:public
+message_v2::timestamp	CChatCheck_v2.h	/^	uint32_t				timestamp;$/;"	m	struct:message_v2	access:public
+message_v2_t	CChatCheck_v2.h	/^}__attribute__((packed)) message_v2_t;$/;"	t	typeref:struct:message_v2
+meta_list_head	CChatCheck_v2.h	/^	list_head_t						meta_list_head;$/;"	m	class:CChatCheck_v2	access:private
+meta_map	CChatCheck.h	/^	std::map<uint64_t, meta_msg_t*>		meta_map[max_msglv];$/;"	m	class:CMsgMetaMap	access:private
+meta_map	CChatCheck_v2.h	/^	std::map<uint64_t, meta_msg_v2_t*>	meta_map;$/;"	m	class:CChatCheck_v2	access:private
+meta_msg	CChatCheck.h	/^typedef struct meta_msg {$/;"	s
+meta_msg::all_count	CChatCheck.h	/^	uint32_t					all_count;		\/\/ 一段时间以来出现该消息的数量$/;"	m	struct:meta_msg	access:public
+meta_msg::count_time_list	CChatCheck.h	/^	list_head_t					count_time_list;$/;"	m	struct:meta_msg	access:public
+meta_msg::last_arise	CChatCheck.h	/^	uint32_t					last_arise;		\/\/ 上次出现该消息的时间$/;"	m	struct:meta_msg	access:public
+meta_msg::meta_msg_head	CChatCheck.h	/^	list_head_t					meta_msg_head;$/;"	m	struct:meta_msg	access:public
+meta_msg::msglv	CChatCheck.h	/^	uint8_t						msglv;			\/\/ 消息等级，越高表示越有可能是不好的$/;"	m	struct:meta_msg	access:public
+meta_msg::negative_cnt	CChatCheck.h	/^	uint32_t					negative_cnt;	\/\/ 该消息被判定为负影响的次数$/;"	m	struct:meta_msg	access:public
+meta_msg::positive_cnt	CChatCheck.h	/^	uint32_t					positive_cnt;	\/\/ 该消息被判定为正影响的次数$/;"	m	struct:meta_msg	access:public
+meta_msg::user_cnt_map	CChatCheck.h	/^	std::map<uint32_t, uint32_t>*	user_cnt_map;	\/\/ 每个用户出现该消息的数量$/;"	m	struct:meta_msg	access:public
+meta_msg_head	CChatCheck.h	/^	list_head_t					meta_msg_head;$/;"	m	struct:meta_msg	access:public
+meta_msg_ptr	CChatCheck.h	/^typedef std::map<uint64_t, meta_msg_t*>::iterator meta_msg_ptr;$/;"	t
+meta_msg_t	CChatCheck.h	/^}__attribute__ ((packed)) meta_msg_t;$/;"	t	typeref:struct:meta_msg
+meta_msg_v2	CChatCheck_v2.h	/^typedef struct meta_msg_v2 {$/;"	s
+meta_msg_v2::msg_list	CChatCheck_v2.h	/^	std::list<uint32_t>		msg_list;$/;"	m	struct:meta_msg_v2	access:public
+meta_msg_v2::msgid	CChatCheck_v2.h	/^	uint64_t				msgid;$/;"	m	struct:meta_msg_v2	access:public
+meta_msg_v2::time_list	CChatCheck_v2.h	/^	list_head_t				time_list;$/;"	m	struct:meta_msg_v2	access:public
+meta_msg_v2_t	CChatCheck_v2.h	/^}__attribute__ ((packed)) meta_msg_v2_t;$/;"	t	typeref:struct:meta_msg_v2
+meta_push_msg_with_pop	CChatCheck_v2.cpp	/^void CChatCheck_v2::meta_push_msg_with_pop(meta_msg_v2_t* mmsg, uint32_t timestamp)$/;"	f	class:CChatCheck_v2	signature:(meta_msg_v2_t* mmsg, uint32_t timestamp)
+meta_push_msg_with_pop	CChatCheck_v2.h	/^	void meta_push_msg_with_pop(meta_msg_v2_t* mmsg, uint32_t timestamp);$/;"	p	class:CChatCheck_v2	access:private	signature:(meta_msg_v2_t* mmsg, uint32_t timestamp)
+mmseg_chat	mmseg_stat/mmseg_stat.cpp	/^int mmseg_chat(mysql_interface* db)$/;"	f	signature:(mysql_interface* db)
+msg_count	CChatCheck.h	/^	uint32_t						msg_count;$/;"	m	class:CChatCheck	access:private
+msg_count_map	CChatCheck.h	/^	CMsgMetaMap*					msg_count_map;$/;"	m	class:CChatCheck	access:private
+msg_list	CChatCheck_v2.h	/^	std::list<message_v2_t>	msg_list;$/;"	m	struct:user_msg_v2	access:public
+msg_list	CChatCheck_v2.h	/^	std::list<uint32_t>		msg_list;$/;"	m	struct:meta_msg_v2	access:public
+msg_list_head	CChatCheck.h	/^	list_head_t						msg_list_head;$/;"	m	class:CChatCheck	access:private
+msg_meta_list	CChatCheck.h	/^	list_head_t					msg_meta_list;$/;"	m	struct:message	access:public
+msg_time_list	CChatCheck.h	/^	list_head_t					msg_time_list;$/;"	m	struct:message	access:public
+msg_user_list	CChatCheck.h	/^	list_head_t					msg_user_list;$/;"	m	struct:message	access:public
+msg_user_map	CChatCheck.h	/^	CMsgUserMap*					msg_user_map;$/;"	m	class:CChatCheck	access:private
+msgid	CChatCheck.h	/^	uint64_t					msgid;			\/\/ 消息字符串的hash$/;"	m	struct:message	access:public
+msgid	CChatCheck_v2.h	/^	uint64_t				msgid;$/;"	m	struct:message_v2	access:public
+msgid	CChatCheck_v2.h	/^	uint64_t				msgid;$/;"	m	struct:meta_msg_v2	access:public
+msglv	CChatCheck.h	/^	uint8_t						msglv;			\/\/ 消息等级，越高表示越有可能是不好的$/;"	m	struct:meta_msg	access:public
+mutual_word	mmseg_stat/mmseg_stat.cpp	/^int mutual_word(mysql_interface* db)$/;"	f	signature:(mysql_interface* db)
+n_chat_forbid_pop	timer_func.h	/^	n_chat_forbid_pop	= 3,$/;"	e	enum:__anon3
+n_clear_msg_timely	timer_func.h	/^	n_clear_msg_timely	= 1,$/;"	e	enum:__anon3
+n_load_dirty_timely	timer_func.h	/^	n_load_dirty_timely	= 2,$/;"	e	enum:__anon3
+n_load_valid_words	timer_func.h	/^	n_load_valid_words	= 4,$/;"	e	enum:__anon3
+negative_cnt	CChatCheck.h	/^	uint32_t					negative_cnt;	\/\/ 该消息被判定为负影响的次数$/;"	m	struct:meta_msg	access:public
+nuser	CChatTest.h	/^	CAbnormalUser nuser[10];$/;"	m	class:CChatTest	access:private
+on_client_conn_closed	chatcheck.cpp	/^extern "C" void on_client_conn_closed(int fd)$/;"	f	signature:(int fd)
+on_fd_closed	chatcheck.cpp	/^extern "C" void on_fd_closed(int fd)$/;"	f	signature:(int fd)
+pkg_size	proto.hpp	/^	pkg_size	= 8192$/;"	e	enum:__anon1
+pop_forbid_user	CChatForbid.cpp	/^uint32_t CChatForbid::pop_forbid_user(std::vector<uint32_t>& userlist)$/;"	f	class:CChatForbid	signature:(std::vector<uint32_t>& userlist)
+pop_forbid_user	CChatForbid.h	/^	uint32_t pop_forbid_user(std::vector<uint32_t>& userlist);$/;"	p	class:CChatForbid	access:public	signature:(std::vector<uint32_t>& userlist)
+port	CChatForbid.h	/^	int 				port;$/;"	m	class:CChatForbid	access:private
+positive_cnt	CChatCheck.h	/^	uint32_t					positive_cnt;	\/\/ 该消息被判定为正影响的次数$/;"	m	struct:meta_msg	access:public
+proc_events	chatcheck.cpp	/^extern "C" void proc_events()$/;"	f	signature:()
+proc_pkg_from_client	chatcheck.cpp	/^extern "C" int  proc_pkg_from_client(void* data, int len, fdsession_t* fdsess)$/;"	f	signature:(void* data, int len, fdsession_t* fdsess)
+proc_pkg_from_serv	chatcheck.cpp	/^extern "C" void proc_pkg_from_serv(int fd, void* data, int len)$/;"	f	signature:(int fd, void* data, int len)
+proc_udp_pkg	chatcheck.cpp	/^extern "C" void proc_udp_pkg(int fd,void* data, int len)$/;"	f	signature:(int fd,void* data, int len)
+proto_test_alive	proto.hpp	/^	proto_test_alive            = 30000,$/;"	e	enum:cmd_id_t
+read_attribute	bayes/Cbayes.cpp	/^bool Cbayes::read_attribute(const char* attr_file)$/;"	f	class:Cbayes	signature:(const char* attr_file)
+read_attribute	bayes/Cbayes.h	/^	bool read_attribute(const char * attr_file);$/;"	p	class:Cbayes	access:public	signature:(const char * attr_file)
+regist_timers	timer_func.cpp	/^int regist_timers()$/;"	f	signature:()
+regist_timers	timer_func.h	/^int regist_timers();$/;"	p	signature:()
+reload	dirty_word.cpp	/^int Cdirty_word::reload()$/;"	f	class:Cdirty_word	signature:()
+reload	dirty_word.h	/^	int reload();$/;"	p	class:Cdirty_word	access:public	signature:()
+reload_time	dirty_word.h	/^	int reload_time;$/;"	m	class:Cdirty_word	access:public
+reload_valid_words	CChatCheck.cpp	/^void CChatCheck::reload_valid_words()$/;"	f	class:CChatCheck	signature:()
+reload_valid_words	CChatCheck.h	/^	void reload_valid_words();$/;"	p	class:CChatCheck	access:public	signature:()
+req_verify_md5	svr_proto.cpp	/^std::string req_verify_md5( char* req_body, int req_body_len )$/;"	f	signature:( char* req_body, int req_body_len )
+reserve	dispatcher.cpp	/^	char		reserve[32];$/;"	m	struct:file_stream	file:	access:public
+ret	proto.hpp	/^        uint32_t	ret; \/\/ Result, must be 0$/;"	m	struct:svr_proto_t	access:public
+save_bak_file	dirty_word.cpp	/^int Cdirty_word::save_bak_file()$/;"	f	class:Cdirty_word	signature:()
+save_bak_file	dirty_word.h	/^	int save_bak_file();$/;"	p	class:Cdirty_word	access:private	signature:()
+segment	dispatcher.cpp	/^int segment(char* buffer, int length)$/;"	f	signature:(char* buffer, int length)
+segment	mmseg_stat/mmseg_stat.cpp	/^int segment(char* buffer, int length, Segmenter* seg, map<string, int>& msg)$/;"	f	signature:(char* buffer, int length, Segmenter* seg, map<string, int>& msg)
+send_msg_to_db	svr_proto.cpp	/^int send_msg_to_db(Csprite* p, uint16_t cmd, Cmessage * c_in)$/;"	f	signature:(Csprite* p, uint16_t cmd, Cmessage * c_in)
+send_msg_to_db	svr_proto.h	/^int send_msg_to_db(userid_t id, uint16_t cmd,  Cmessage * c_in )$/;"	f	signature:(userid_t id, uint16_t cmd, Cmessage * c_in )
+send_msg_to_db_ex	svr_proto.cpp	/^int send_msg_to_db_ex(Csprite* p, userid_t id, uint16_t cmd,  Cmessage * c_in )$/;"	f	signature:(Csprite* p, userid_t id, uint16_t cmd, Cmessage * c_in )
+send_msg_to_switch	svr_proto.cpp	/^int send_msg_to_switch(Csprite* p, uint16_t cmd, userid_t sender_id ,Cmessage * c_in)$/;"	f	signature:(Csprite* p, uint16_t cmd, userid_t sender_id ,Cmessage * c_in)
+send_pkg_forbid_user	CChatForbid.cpp	/^int CChatForbid::send_pkg_forbid_user(uint32_t userid)$/;"	f	class:CChatForbid	signature:(uint32_t userid)
+send_pkg_forbid_user	CChatForbid.h	/^	int send_pkg_forbid_user(uint32_t userid);$/;"	p	class:CChatForbid	access:public	signature:(uint32_t userid)
+send_sw_report_user_onoff	svr_proto.cpp	/^void send_sw_report_user_onoff( Csprite* p, bool is_on_online )$/;"	f	signature:( Csprite* p, bool is_on_online )
+send_udp_post_msg_to_db	svr_proto.cpp	/^int send_udp_post_msg_to_db(userid_t id, uint16_t cmd, Cmessage* c_in)$/;"	f	signature:(userid_t id, uint16_t cmd, Cmessage* c_in)
+sendlen	dispatcher.cpp	/^	uint32_t	sendlen;$/;"	m	struct:file_stream	file:	access:public
+seq	proto.hpp	/^        uint32_t	seq; \/\/ must be 0$/;"	m	struct:svr_proto_t	access:public
+show_abnormal	CChatString.cpp	/^void CTrimAbnormal::show_abnormal()$/;"	f	class:CTrimAbnormal	signature:()
+show_abnormal	CChatString.h	/^	void show_abnormal();$/;"	p	class:CTrimAbnormal	access:private	signature:()
+sqlstr	dirty_word.h	/^	char sqlstr[512];$/;"	m	class:Cdirty_word	access:private
+stat_map	bayes/Cbayes.h	/^	std::map<int, uint32_t> stat_map;$/;"	m	class:Cbayes_stat	access:private
+str_idx	CChatTest.h	/^	int str_idx[10];$/;"	m	class:CAbnormalUser	access:private
+svr_proto_t	proto.hpp	/^struct svr_proto_t {$/;"	s
+svr_proto_t::body	proto.hpp	/^        uint8_t		body[];$/;"	m	struct:svr_proto_t	access:public
+svr_proto_t::cmd	proto.hpp	/^        uint16_t	cmd; \/\/ cmd id, >OxEA60$/;"	m	struct:svr_proto_t	access:public
+svr_proto_t::id	proto.hpp	/^        userid_t	id; \/\/ Userid$/;"	m	struct:svr_proto_t	access:public
+svr_proto_t::len	proto.hpp	/^        uint32_t	len; \/\/ package length, no more than 4k bytes$/;"	m	struct:svr_proto_t	access:public
+svr_proto_t::ret	proto.hpp	/^        uint32_t	ret; \/\/ Result, must be 0$/;"	m	struct:svr_proto_t	access:public
+svr_proto_t::seq	proto.hpp	/^        uint32_t	seq; \/\/ must be 0$/;"	m	struct:svr_proto_t	access:public
+switch_fd	CChatForbid.h	/^	int					switch_fd;$/;"	m	class:CChatForbid	access:private
+talk	CChatTest.cpp	/^void CAbnormalUser::talk(char* buf, int& len)$/;"	f	class:CAbnormalUser	signature:(char* buf, int& len)
+talk	CChatTest.cpp	/^void CNormalUser::talk(char* buf, int& len)$/;"	f	class:CNormalUser	signature:(char* buf, int& len)
+talk	CChatTest.h	/^	void talk(char* buf, int& len);$/;"	p	class:CAbnormalUser	access:public	signature:(char* buf, int& len)
+talk	CChatTest.h	/^	void talk(char* buf, int& len);$/;"	p	class:CNormalUser	access:public	signature:(char* buf, int& len)
+talk_test	CChatTest.cpp	/^void CChatTest::talk_test(CChatCheck* p_chat_check)$/;"	f	class:CChatTest	signature:(CChatCheck* p_chat_check)
+talk_test	CChatTest.h	/^	void talk_test(CChatCheck* p_chat_check);$/;"	p	class:CChatTest	access:public	signature:(CChatCheck* p_chat_check)
+time_list	CChatCheck_v2.h	/^	list_head_t				time_list;$/;"	m	struct:meta_msg_v2	access:public
+timelist	CChatCheck_v2.h	/^	list_head_t				timelist;$/;"	m	struct:user_msg_v2	access:public
+timer_head	global.h	/^typedef struct timer_head {$/;"	s
+timer_head::timer_list	global.h	/^    list_head_t timer_list;$/;"	m	struct:timer_head	access:public
+timer_head_t	global.h	/^}timer_head_t;$/;"	t	typeref:struct:timer_head
+timer_list	global.h	/^    list_head_t timer_list;$/;"	m	struct:timer_head	access:public
+timestamp	CChatCheck.h	/^	uint32_t					timestamp;		\/\/ 消息时间戳$/;"	m	struct:message	access:public
+timestamp	CChatCheck_v2.h	/^	uint32_t				timestamp;$/;"	m	struct:message_v2	access:public
+total_count	bayes/Cbayes.h	/^	uint32_t total_count;$/;"	m	class:Cbayes_stat	access:private
+total_len	dirty_word.h	/^	uint32_t total_len;$/;"	m	class:Cdirty_word	access:public
+totallen	dispatcher.cpp	/^	uint32_t	totallen;$/;"	m	struct:file_stream	file:	access:public
+train	bayes/Cbayes.cpp	/^void Cbayes::train()$/;"	f	class:Cbayes	signature:()
+train	bayes/Cbayes.h	/^	virtual void train() { }$/;"	f	class:Cbayes_trainer	access:public	signature:()
+train	bayes/Cbayes.h	/^	void train();$/;"	p	class:Cbayes	access:public	signature:()
+trim_abnormal_utf8	CChatString.cpp	/^void CTrimAbnormal::trim_abnormal_utf8(char* s)$/;"	f	class:CTrimAbnormal	signature:(char* s)
+trim_abnormal_utf8	CChatString.h	/^	void trim_abnormal_utf8(char* s);$/;"	p	class:CTrimAbnormal	access:public	signature:(char* s)
+trim_mgr	CChatCheck.h	/^	CTrimAbnormal					trim_mgr;$/;"	m	class:CChatCheck	access:private
+try_change_level	CChatCheck.cpp	/^bool CMsgUserMap::try_change_level(uint32_t userid, user_msg_t* umsg, int change_level)$/;"	f	class:CMsgUserMap	signature:(uint32_t userid, user_msg_t* umsg, int change_level)
+try_change_level	CChatCheck.h	/^	bool try_change_level(uint32_t userid, user_msg_t* umsg, int change_level);$/;"	p	class:CMsgUserMap	access:public	signature:(uint32_t userid, user_msg_t* umsg, int change_level)
+try_free_msg_timely	dispatcher.cpp	/^void try_free_msg_timely()$/;"	f	signature:()
+try_free_msg_timely	dispatcher.h	/^void try_free_msg_timely();$/;"	p	signature:()
+try_reset_fd	CChatForbid.cpp	/^bool CChatForbid::try_reset_fd(int fd)$/;"	f	class:CChatForbid	signature:(int fd)
+try_reset_fd	CChatForbid.h	/^	bool try_reset_fd(int fd);$/;"	p	class:CChatForbid	access:public	signature:(int fd)
+update	CChatCheck.cpp	/^void CMsgMetaMap::update(meta_msg_ptr it)$/;"	f	class:CMsgMetaMap	signature:(meta_msg_ptr it)
+update	CChatCheck.h	/^	void update(meta_msg_ptr mmsg_it);$/;"	p	class:CMsgMetaMap	access:public	signature:(meta_msg_ptr mmsg_it)
+user	CChatTest.h	/^	CNormalUser user[1000];$/;"	m	class:CChatTest	access:private
+user_cnt_map	CChatCheck.h	/^	std::map<uint32_t, uint32_t>*	user_cnt_map;	\/\/ 每个用户出现该消息的数量$/;"	m	struct:meta_msg	access:public
+user_list_head	CChatCheck_v2.h	/^	list_head_t						user_list_head;$/;"	m	class:CChatCheck_v2	access:private
+user_map	CChatCheck_v2.h	/^	std::map<uint32_t, user_msg_v2_t*>	user_map;$/;"	m	class:CChatCheck_v2	access:private
+user_msg	CChatCheck.h	/^typedef struct user_msg {$/;"	s
+user_msg::user_msg_head	CChatCheck.h	/^	list_head_t					user_msg_head;$/;"	m	struct:user_msg	access:public
+user_msg::userlv	CChatCheck.h	/^	uint8_t						userlv;$/;"	m	struct:user_msg	access:public
+user_msg_head	CChatCheck.h	/^	list_head_t					user_msg_head;$/;"	m	struct:user_msg	access:public
+user_msg_map	CChatCheck.h	/^	std::map<uint32_t, user_msg_t*>	user_msg_map[max_msglv];$/;"	m	class:CMsgUserMap	access:private
+user_msg_ptr	CChatCheck.h	/^typedef std::map<uint32_t, user_msg_t*>::iterator user_msg_ptr;$/;"	t
+user_msg_t	CChatCheck.h	/^}__attribute__((packed)) user_msg_t;$/;"	t	typeref:struct:user_msg
+user_msg_v2	CChatCheck_v2.h	/^typedef struct user_msg_v2 {$/;"	s
+user_msg_v2::msg_list	CChatCheck_v2.h	/^	std::list<message_v2_t>	msg_list;$/;"	m	struct:user_msg_v2	access:public
+user_msg_v2::timelist	CChatCheck_v2.h	/^	list_head_t				timelist;$/;"	m	struct:user_msg_v2	access:public
+user_msg_v2::userid	CChatCheck_v2.h	/^	uint32_t				userid;$/;"	m	struct:user_msg_v2	access:public
+user_msg_v2_t	CChatCheck_v2.h	/^}__attribute__((packed)) user_msg_v2_t;$/;"	t	typeref:struct:user_msg_v2
+user_push_msg_with_pop	CChatCheck_v2.cpp	/^bool CChatCheck_v2::user_push_msg_with_pop(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp)$/;"	f	class:CChatCheck_v2	signature:(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp)
+user_push_msg_with_pop	CChatCheck_v2.h	/^	bool user_push_msg_with_pop(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp);$/;"	p	class:CChatCheck_v2	access:private	signature:(user_msg_v2_t* umsg, uint64_t msgid, uint32_t timestamp)
+userid	CChatCheck.h	/^	uint32_t					userid;			\/\/ 米米号$/;"	m	struct:message	access:public
+userid	CChatCheck_v2.h	/^	uint32_t				userid;$/;"	m	struct:user_msg_v2	access:public
+userid	CChatForbid.h	/^	uint32_t		userid;$/;"	m	struct:forbid_info	access:public
+userid	CChatTest.h	/^	uint32_t userid;$/;"	m	class:CTestUser	access:public
+userid_t	proto.hpp	/^typedef uint32_t userid_t;$/;"	t
+userlv	CChatCheck.h	/^	uint8_t						userlv;$/;"	m	struct:user_msg	access:public
+valid_words	CChatCheck.h	/^	std::set<uint64_t>				valid_words;$/;"	m	class:CChatCheck	access:private
+value_probability	bayes/Cbayes.cpp	/^double Cbayes_stat::value_probability(double sample_count, int value, bayes_attr_type attr_type)$/;"	f	class:Cbayes_stat	signature:(double sample_count, int value, bayes_attr_type attr_type)
+value_probability	bayes/Cbayes.h	/^	double value_probability(double sample_count, int value, bayes_attr_type attr_type);$/;"	p	class:Cbayes_stat	access:public	signature:(double sample_count, int value, bayes_attr_type attr_type)
+~CChatCheck	CChatCheck.h	/^	~CChatCheck()$/;"	f	class:CChatCheck	access:public	signature:()
+~Cbayes	bayes/Cbayes.cpp	/^Cbayes::~Cbayes()$/;"	f	class:Cbayes	signature:()
+~Cbayes	bayes/Cbayes.h	/^	~Cbayes();$/;"	p	class:Cbayes	access:public	signature:()

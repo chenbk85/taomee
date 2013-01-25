@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ $# -ne 1 ] ; then
+	echo "Usage: $0 <svc_name>"
+	exit 1
+fi
+
+. config
+
+SVC="$1"
+
+FILE_CONF="$FILE_CONF_BASE/${SVC}/today.conf"
+TODAY_IDX_NAME="${SVC}_${TODAY_IDX_BASE}"
+
+$INDEXER -c $FILE_CONF $TODAY_IDX_NAME --rotate
+
+exit 0

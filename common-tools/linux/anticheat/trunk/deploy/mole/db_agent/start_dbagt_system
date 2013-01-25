@@ -1,0 +1,17 @@
+#!/bin/bash
+
+. config
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
+GREP_DBIF=`ps -ef | grep -w $EXEC_DBIF_NAME | grep -w $SVC | grep -v grep`
+GREP_DBAGT=`ps -ef | grep -w $EXEC_DBAGT_NAME | grep -w $SVC | grep -v grep`
+
+if [ -n "$GREP_DBIF" -o -n "$GREP_DBAGT" ] ; then
+	echo "Modules is still on, run './stop_dbagt_system' and try again"
+	exit 1
+fi
+
+$DIR_BIN/$EXEC_DBIF_NAME $DIR_CONF/${SVC}.dbif.conf
+$DIR_BIN/$EXEC_DBAGT_NAME $DIR_CONF/${SVC}.dbagt.conf
+
+exit 0

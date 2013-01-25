@@ -1,0 +1,25 @@
+# configs for gen_new_tw_config
+# bash-format
+
+# 业务名称
+SVC="seer"
+
+# 不区分命令号时的最短命令间隔 (单位: 微妙(10^-6))
+MIN_TW_INT="10"
+
+# 不区分命令号时的1秒内最大包量 (单位: 数量/s)
+MAX_TW_FREQ="1000.0"
+
+# 不区分命令号时的最长无违规时间, 无任何不区分命令号的违规时间超过这个值, 就更新时间窗口到now (单位: 秒)
+UPDATE_TW_ST_INT="10"
+
+# 数据库名
+DB="anticheat"
+# 不区分命令号时的配置表名
+TABLE="${SVC}_tw_config"
+
+# MYSQL 的相关配置
+MY_USER="db"
+MY_PASSWD="fsd23rg8@"
+MY_HOST="192.168.4.79"
+EXEC_MYSQL="mysql -u$MY_USER -p$MY_PASSWD --skip-column-names -A --host $MY_HOST"

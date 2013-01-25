@@ -1,0 +1,82 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+#SET(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+#FIND_PACKAGE(glib REQUIRED)
+
+SET(CMAKE_USE_RELATIVE_PATHS true)
+
+SET (COMM_HEADER_LIST
+	common.h
+	struct.h
+	channel.h
+	shm.h
+	util.h
+	)
+
+SET (IF_SRC_LIST interface.c)
+SET (IF_HEADER_LIST ${COMM_HEADER_LIST} interface.h)
+
+SET (AC_SRC_LIST anticheat.c svc_hash_table.c)
+SET (AC_HEADER_LIST ${COMM_HEADER_LIST} anticheat.h svc_hash_table.h)
+
+SET (DBIF_SRC_LIST db_interface.c)
+SET (DBIF_HEADER_LIST ${COMM_HEADER_LIST} db_interface.h)
+
+SET (DBAGT_SRC_LIST db_agent.c)
+SET (DBAGT_HEADER_LIST ${COMM_HEADER_LIST} db_agent.h)
+
+SET (ACCFGD_SRC_LIST ac_config.c)
+SET (ACCFGD_HEADER_LIST ${COMM_HEADER_LIST} ac_config.h)
+
+SET (SHOWCFG_SRC_LIST show_ac_config.c)
+
+SET (SHMSTATD_SRC_LIST shm_statd.c svc_hash_table.c)
+
+SET (CKUID_SRC_LIST check_uid_node.c svc_hash_table.c)
+
+
+
+ADD_DEFINITIONS("-g -Wall -MMD -funroll-loops -fhosted")
+
+SET (COMM_INCLUDE_DIR "${PROJECT_SOURCE_DIR}/comm")
+INCLUDE_DIRECTORIES (${COMM_INCLUDE_DIR})
+
+LINK_DIRECTORIES ("${PROJECT_SOURCE_DIR}/comm/build")
+SET (EXTRA_LIBS ${EXTRA_LIBS} comm confuse event_core event_extra glib-2.0 mysqlclient)
+
+ADD_EXECUTABLE (interface ${IF_SRC_LIST})
+TARGET_LINK_LIBRARIES (interface ${EXTRA_LIBS})
+
+ADD_EXECUTABLE (anticheat ${AC_SRC_LIST})
+TARGET_LINK_LIBRARIES (anticheat ${EXTRA_LIBS})
+
+ADD_EXECUTABLE (db_interface ${DBIF_SRC_LIST})
+TARGET_LINK_LIBRARIES (db_interface ${EXTRA_LIBS})
+
+ADD_EXECUTABLE (db_agent ${DBAGT_SRC_LIST})
+TARGET_LINK_LIBRARIES (db_agent ${EXTRA_LIBS})
+
+ADD_EXECUTABLE (ac_config ${ACCFGD_SRC_LIST})
+TARGET_LINK_LIBRARIES (ac_config ${EXTRA_LIBS})
+
+ADD_EXECUTABLE (show_ac_config ${SHOWCFG_SRC_LIST})
+TARGET_LINK_LIBRARIES (show_ac_config ${EXTRA_LIBS})
+
+ADD_EXECUTABLE (shm_statd ${SHMSTATD_SRC_LIST})
+TARGET_LINK_LIBRARIES (shm_statd ${EXTRA_LIBS})
+
+ADD_EXECUTABLE (check_uid_node ${CKUID_SRC_LIST})
+TARGET_LINK_LIBRARIES (check_uid_node ${EXTRA_LIBS})
+
+
+
+# for test
+#ADD_SUBDIRECTORY(test EXCLUDE_FROM_ALL)
+
+# for install
+#SET(CMAKE_INSTALL_PREFIX "./libcomm")
+#INSTALL (TARGETS lib DESTINATION lib)
+#FOREACH (HEADER_FILE ${HEADER_LIST})
+# 	STRING( REGEX REPLACE "\\.(.*)/.*\\.h$" "\\1" DIR_NAME ${HEADER_FILE} ) 
+#	INSTALL (FILES ${HEADER_FILE} DESTINATION  include/libtaomee/${DIR_NAME}	)	
+#ENDFOREACH(HEADER_FILE)

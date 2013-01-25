@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#php test.php -h 10.1.1.32 -p 9312 -i test1 -f uid -v 50001 -s 'cmd_recv_sec asc' -l 100
+#search -c /usr/local/etc/sphinx_test.conf -i test1 -f uid 50001 -s 'cmd_recv_sec asc' -l 100
+
+if [ $# -lt 1 -o $# -gt 3 ] ; then
+	echo "Usage: $0 <query_cmd> [uid] [cmd]"
+	exit 1
+fi
+
+query_cmd="$1"
+case $query_cmd in
+	1000 )
+		uid=0
+		cmd=0
+		;;
+	1001 | 1002 )
+		if [ $# -eq 2 ] ; then
+			uid="$2"
+			cmd=0
+		elif [ $# -eq 3 ] ; then
+			uid="$2"
+			cmd="$3"
+		else
+			echo "Usage $0 <query_cmd-1001/1002> <uid> [cmd]"
+			exit 1
+		fi
+		;;
+
+	1003 | 1004 )
+		if [ $# -eq 2 ] ; then
+			uid="$2"
+			cmd=0
+		else
+			echo "Usage $0 <query_cmd-1003/1004> <uid>"
+			exit 1
+		fi	
+		;;
+	* )
+		echo "Unsupported query_cmd: $query_cmd"
+		;;
+esac
+
+NOW=`date -d '1 days' +%F`
+
+wget -O ret.test "http://10.1.1.32/query_ill/query.php?svc=test&query_cmd=$query_cmd&start=2011-11-28&end=$NOW&uid=$uid&cmd=$cmd&page=1&page_size=500"

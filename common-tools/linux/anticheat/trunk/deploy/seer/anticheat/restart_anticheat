@@ -1,0 +1,78 @@
+#!/bin/bash
+
+. config
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+DIR_INIT=`pwd`
+
+# sanity check
+FILE_CONF="$DIR_CONF/$SVC.ac.conf"
+FILE_BIN="$DIR_BIN/$EXEC_AC_NAME"
+NEW_BIN="$DIR_NEW_BIN/$EXEC_AC_NAME"
+
+MD5_NEW_BIN=`md5sum $NEW_BIN 2>/dev/null | awk '{print $1}'`
+MD5_OLD_BIN=`md5sum $FILE_BIN 2>/dev/null | awk '{print $1}'`
+
+if [ -z "$MD5_NEW_BIN" ] ; then
+	echo "NEW_BIN: $NEW_BIN is not exist, exit without any operation!"
+	exit 1
+fi
+
+if [ "x$MD5_NEW_BIN" == "x$MD5_OLD_BIN" ] ; then
+	echo "The new_bin is the same as the old_bin, without any operation!"
+	exit 1
+fi
+
+if [ ! -r $FILE_CONF ] ; then
+	echo "config file is not exist for svc: $SVC, exit without any operation!"
+	exit 1
+fi
+
+# check and stop the old instance
+GREP_AC_PID=`ps -ef | grep -w $EXEC_AC_NAME | grep -w $SVC | grep -v grep | awk '{print $2}'`
+if [ -n "$GREP_AC_PID" ] ; then
+	PSEF_AC=`ps -ef | grep -w $GREP_AC_PID | grep -v grep | awk '{print $9}'`
+	SVC_AC_COUNT=`echo "$PSEF_AC" | grep -wc $SVC`
+	if (( $SVC_AC_COUNT > 0 )) ; then
+		KILL_PID_LIST="$KILL_PID_LIST $GREP_AC_PID"
+	fi
+fi
+
+echo "Try to stop prev instance: $EXEC_AC_NAME for $SVC ..."
+if [ -n "$KILL_PID_LIST" ] ; then
+	kill -SIGINT $KILL_PID_LIST
+	sleep 1
+	kill -9 $KILL_PID_LIST 2>/dev/null
+fi
+
+# check last killing is successful
+GREP_AC_PID2=`ps -ef | grep -w $EXEC_AC_NAME | grep -w $SVC | grep -v grep | awk '{print $2}'`
+if [ -n "$GREP_AC_PID2" ] ; then
+	PSEF_AC2=`ps -ef | grep -w $GREP_AC_PID2 | grep -v grep | awk '{print $9}'`
+	SVC_AC_COUNT2=`echo "$PSEF_AC2" | grep -wc $SVC`
+	if (( $SVC_AC_COUNT2 > 0 )) ; then
+		echo "Failed to stop prev instance: $EXEC_AC_NAME for $SVC, cannot start new instance"
+		exit 1
+	fi
+fi
+
+
+echo "Succ to stop prev instance, start new instance ..."
+# prepare to start new instance
+mkdir -p $DIR_BIN_BAK
+BAK_TIME=`date +%F-%H%M%S`
+mv $FILE_BIN $DIR_BIN_BAK/${EXEC_AC_NAME}-$SVC-$BAK_TIME
+cp $FILE_CONF $DIR_BIN_BAK/$SVC.ac.conf-$BAK_TIME
+mv $NEW_BIN $FILE_BIN
+chmod +x $FILE_BIN
+
+# renew ac_config
+cd $DIR_RENEW_AC_CONFIG
+$EXEC_RENEW_AC_CONFIG
+cd $DIR_INIT
+
+# start new instance
+$FILE_BIN $FILE_CONF
+
+echo "Succ to start prev instance: $EXEC_AC_NAME for $SVC ($FILE_BIN $FILE_CONF)" 
+
+exit 0

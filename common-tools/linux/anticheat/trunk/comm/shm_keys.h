@@ -1,0 +1,22 @@
+#ifndef __SHM_KEYS_H__
+#define __SHM_KEYS_H__
+
+
+/* channels [100000000, 100000099] */
+#define	SHM_KEY_ANTICHEAT_CHANNEL		(100000000) /* 0x05f5e100 */
+#define SHM_KEY_DB_INTERFACE_CHANNEL	(200000000) /* 0x0bebc200 */
+
+/* data [100000100, 100000499] */
+#define SHM_KEY_UID_NODE				(100000100) /* 0x05f5e164 */
+#define SHM_KEY_SINGLE_WATCH_LVL0		(100000110) /* 0x05f5e16e */
+#define SHM_KEY_SINGLE_WATCH_LVL1		(100000111) /* 0x05f5e16f */
+#define SHM_KEY_SINGLE_WATCH_LVL2		(100000112) /* 0x05f5e170 */
+#define SHM_KEY_SINGLE_WATCH_LVL3		(100000113) /* 0x05f5e171 */
+
+
+/* configs [100000500, 100000699] */
+#define SHM_KEY_AC_CONFIG				(100000500) /* 0x05f5e2f4 */
+
+
+
+#endif /* __SHM_KEYS_H__ */

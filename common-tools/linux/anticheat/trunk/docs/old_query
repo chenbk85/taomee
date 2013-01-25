@@ -1,0 +1,50 @@
+#
+1. 协议:
+(1) query_exception_mimi_cmd    (1000)
+SQL1="select count(*) from %s where unix_timestamp(occurtime) >= %u and unix_timestamp(occurtime) <= %u "
+SQL2="select usrid, times, unix_timestamp(occurtime) from  %s where unix_timestamp(occurtime) >= %u and unix_timestamp(occurtime) <= %u limit  %u, %u"
+功能: 查询 (start, end) 的 userid 及其 次数, 分页
+
+(2) query_certain_freq_cmd      (1001)
+if (query::cmd == 0) {
+SQL1="select count(*) from %s where usrid = %u and unix_timestamp(time) >=%u and unix_timestamp(time) <= %u"
+SQL2="select usrid, cmd, freq, unix_timestamp(time) from %s where usrid = %u and  unix_timestamp(time) >= %u and unix_timestamp(time) <= %u limit %u, %u"
+} else {
+SQL1="select count(*) from %s where usrid = %u and cmd =%u and  unix_timestamp(time) >=%u and unix_timestamp(time) <=  %u"
+SQL2="select usrid, cmd, freq, unix_timestamp(time) from %s where usrid = %u and cmd = %u and unix_timestamp(time) >= %u and unix_timestamp(time) <= %u limit %u, %u"
+}
+功能: (限定/不限定cmd)查询 在 (start, end) 之间的分cmd统计的频率(freq)违规的记录，分页
+
+(3) query_certain_interval_cmd  (1002)
+if (query::cmd == 0) {
+SQL1="select count(*) from %s where usrid = %u and unix_timestamp(time) >= %u and unix_timestamp(time) <= %u "
+SQL2="select usrid, cmd, interv, unix_timestamp(time) from %s where usrid = %u  and unix_timestamp(time) >= %u and unix_timestamp(time) <= %u limit %u, %u"
+} else {
+SQL1="select count(*) from %s where usrid = %u and cmd = %u and unix_timestamp(time) >= %u and unix_timestamp(time) <= %u"
+SQL2="select usrid, cmd, interv, unix_timestamp(time) from %s where usrid = %u and cmd = %u and unix_timestamp(time) >= %u and unix_timestamp(time) <= %u limit %u, %u"
+}
+功能: (限定/不限定cmd)查询 在 (start, end) 之间的分cmd统计的间隔(interval)违规的记录，分页
+
+(4) query_total_freq_cmd        (1003)
+SQL1="select count(*) from %s where usrid = %u and unix_timestamp(occurtime) >= %u and unix_timestamp(occurtime) <= %u"
+SQL2="select usrid, times,  unix_timestamp(occurtime) from %s where usrid = %u and unix_timestamp(occurtime) >= %u and unix_timestamp(occurtime) < %u limit %u, %u"
+功能: 查询 在 (start, end) 之间的total频率(freq)违规的记录，分页
+
+(5) query_total_interval_cmd    (1004)
+SQL1="select count(*) from %s where usrid = %u and unix_timestamp(time) >= %u and unix_timestamp(time) <= %u"
+SQL2="select usrid, freq, unix_timestamp(time) from %s where usrid = %u and unix_timestamp(time) >= %u and unix_timestamp(time) <= %u limit %u, %u"
+功能: 查询 在 (start, end) 之间的total间隔(interval)违规的记录，分页
+
+(6) update_user_opt_cmd         (1005)
+SQL1="insert into %s values(%u, %u, %u, '%s', %u)",  table_name, mimi, opt, cur_time, reason, opt_user   
+功能: 记录封号操作;
+
+(7) query_user_opt_cmd          (1006)
+if (query::uid == 0) {
+SQL1="select count(*) from %s where (opt_flag & %u) and opt_time >= %u and opt_time <=%u"
+SQL2="select * from %s where (opt_flag & %u) and opt_time >= %u and opt_time <=%u limit %u, %u"
+} else {
+SQL1="select count(*) from %s where (opt_flag & %u) and opt_time >= %u and opt_time <=%u and userid = %u"
+SQL2="select * from %s where (opt_flag & %u) and opt_time >= %u and opt_time <=%u and userid =%u limit %u, %u"
+}
+功能: 查询封号操作;

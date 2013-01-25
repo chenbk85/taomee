@@ -1,0 +1,1 @@
+gcc -o svc_ac_api -D__TEST_SVC_AC_API__ svc_ac_api.c

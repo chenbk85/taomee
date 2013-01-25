@@ -1,0 +1,45 @@
+#!/bin/bash
+
+. config
+DIR_INIT=`pwd`
+
+read -p "Relly to stop dbagt_system for $SVC ? (YES for continue): " reply
+if [ "x$reply" != "xYES" ] ; then
+	echo "Abort"
+	exit 0
+fi
+
+GREP_DBIF_PID=`ps -ef | grep -w $EXEC_DBIF_NAME | grep -w $SVC | grep -v grep | awk '{print $2}'`
+GREP_DBAGT_PID=`ps -ef | grep -w $EXEC_DBAGT_NAME | grep -w $SVC | grep -v grep | awk '{print $2}'`
+
+
+KILL_MOD_LIST=""
+KILL_PID_LIST=""
+if [ -n "$GREP_DBIF_PID" ] ; then
+	PSEF_DBIF=`ps -ef | grep -w $GREP_DBIF_PID | grep -v grep | awk '{print $9}'`
+	if [ -n "$PSEF_DBIF" ] ; then
+		KILL_PID_LIST="$KILL_PID_LIST $GREP_DBIF_PID"
+		KILL_MOD_LIST="$KILL_MOD_LIST $PSEF_DBIF"
+	fi
+fi
+
+if [ -n "$GREP_DBAGT_PID" ] ; then
+	PSEF_DBAGT=`ps -ef | grep -w $GREP_DBAGT_PID | grep -v grep | awk '{print $9}'`
+	if [ -n "$PSEF_DBAGT" ] ; then
+		KILL_PID_LIST="$KILL_PID_LIST $GREP_DBAGT_PID"
+		KILL_MOD_LIST="$KILL_MOD_LIST $PSEF_DBAGT"
+	fi
+fi
+
+if [ -n "$KILL_PID_LIST" ] ; then
+	kill -SIGINT $KILL_PID_LIST
+	sleep 1
+	kill -9 $KILL_PID_LIST 2>/dev/null
+
+	echo "killed: $KILL_MOD_LIST ($KILL_PID_LIST)"
+else
+
+	echo "No proc be killed"
+fi
+
+exit 0

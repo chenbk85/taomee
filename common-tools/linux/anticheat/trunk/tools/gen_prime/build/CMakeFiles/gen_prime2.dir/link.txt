@@ -1,0 +1,1 @@
+/usr/bin/gcc     CMakeFiles/gen_prime2.dir/gen_prime2.c.o  -o gen_prime2 -rdynamic -lm 

@@ -1,0 +1,34 @@
+#!/bin/bash
+
+if [ $# -ne 1 -a $# -ne 2 ] ; then
+	echo "Usage: $0 <svc_name> ['yyyy-mm-dd HH:MM:SS']"
+	exit 1
+fi
+
+. config
+
+SVC="$1"
+if [ $# -eq 1 ] ;then
+	move_upto_day=`date +'%F 00:00:00'`
+else
+	move_upto_day="$2"
+fi
+TAB_TODAY="${SVC}_today_anticheat"
+TAB_MAIN="${SVC}_main_anticheat"
+
+sql_select_last_move_id="USE '$DB'; SELECT id FROM $TAB_TODAY WHERE UNIX_TIMESTAMP(cmd_recv_sec) < UNIX_TIMESTAMP('$move_upto_day') ORDER BY id DESC LIMIT 1;"
+
+last_move_id=`echo "$sql_select_last_move_id" | $EXEC_MYSQL`
+if [ -z "$last_move_id" ] ; then
+	echo "Not any record before $move_upto_day"
+	exit 2
+fi
+
+sql_move_nontoday_rcd="USE '$DB'; INSERT INTO $TAB_MAIN SELECT * FROM $TAB_TODAY WHERE id <= '$last_move_id';"
+echo "$sql_move_nontoday_rcd" | $EXEC_MYSQL
+
+sql_del_today_rcd="USE '$DB'; DELETE FROM ${SVC}_today_anticheat WHERE id <= '$last_move_id';"
+echo "$sql_del_today_rcd" | $EXEC_MYSQL
+
+
+exit 0

@@ -1,0 +1,22 @@
+1. single_cmd_watch 的 cmd_list 现在还是线性管理, 在根据 cmd 搜索 cmd_list 时效率较低, 有待改进(但注意: cmd_list 是在shm的数组中, 不能使用指针, 只能使用下标);
+2. 统计:
+	(1) tot_ill_cnt, cmd1_ill_cnt, ...
+	(2) tot_recv, cmd1_recv, ...
+	(3) uid_htab_empty_cnt, uid_htab_using_cnt, uid_htab_closed_cnt, used_max_row (foreach-row-nodenum)
+	(4) single-watch-lvl0-empty/used, single-watch-lvl1-empty/used, single-watch-lvl2-empty/used, single-watch-lvl3-empty/used
+
+3. DB-app-interface
+
+4. total_cmd 的 start_tv/last_tv(每次都会update) 的 update; cmdn  的 start_tv/last_tv(每次都会update) 的 update; (而 total_cmd->count 清0)
+5. cmd_list 根据 now 和 cmd->last_tv 的间隔, 可以回收一些很久没有过来的cmd_node (注意, 这个判断一定要保证安全的超过允许的最大 cmdn-interval, 可以用个宏来保证);
+
+================================================================================
+1. 当异常速度太快时, 会导致db来不及更新, 从而丢失违规记录;
+	这里需要一个高速缓冲队列来平滑压力; 同时要把多条记录一起insert into; 同时要考虑多线程连接 mysql;
+
+
+OK 2. db_interface / db_agent 也需要按svc.conf 中的gameid分配 SHM_KEY (channel)
+
+3. freq 改成 double, 因为有些频率不足 1 秒 一个包;
+
+4. seer 20层 uid_hash 都不够...

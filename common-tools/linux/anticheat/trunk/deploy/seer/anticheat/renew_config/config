@@ -1,0 +1,18 @@
+# configs for svc renew ac_config
+
+SVC="seer"
+
+DB="anticheat"
+AC_CFGD="./bin/ac_config"
+AC_CFGD_CONF="./conf/cfgd.conf"
+
+DIR_DATA="./data"
+mkdir -p $DIR_DATA
+
+LAST_DB_DATA="${DIR_DATA}/db_config.last"
+CUR_DB_DATA="${DIR_DATA}/db_config.cur"
+
+MY_USER="db"
+MY_PASSWD="fsd23rg8@"
+MY_HOST="192.168.4.79"
+EXEC_MYSQL="mysql -u$MY_USER -p$MY_PASSWD --skip-column-names -A --host $MY_HOST"

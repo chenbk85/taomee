@@ -1,0 +1,8 @@
+<POSTCARD>
+    <card modify_timestamp = "2011-3-17" start_time = "2010-1-1" stop_time = "2011-12-1" 
+            sender_id = "50000"
+            nick = "系统管理员"
+            type_id = "8" 
+            title = "系统测试" 
+            msg = "系统消息测试测试" />            
+</POSTCARD>

@@ -1,0 +1,94 @@
+
+
+<html>
+	<head>
+		<title>Taomee-Anticheat</title>
+		<link rel="stylesheet" type="text/css" href="query.css" />
+
+		<link type="text/css" href="timepicker/css/ui-lightness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="timepicker/js/jquery-1.3.2.min.js"></script>
+		<script type="text/javascript" src="timepicker/js/jquery-ui-1.7.2.custom.min.js"></script>
+		<script type="text/javascript" src="timepicker/js/timepicker.js"></script>
+
+		<script type="text/javascript">
+		$(function() {
+			$('#start-time').datepicker({
+				duration: '',
+					showTime: true,           //日期控件是否显示时间
+					constrainInput: false,
+					stepMinutes: 1,
+					stepHours: 1,
+					altTimeField: '',
+					time24h: true //是否是24h制
+			});
+			$('#end-time').datepicker({
+				duration: '',
+					showTime: true,           //日期控件是否显示时间
+					constrainInput: false,
+					stepMinutes: 1,
+					stepHours: 1,
+					altTimeField: '',
+					time24h: true //是否是24h制
+			});
+		});
+		</script>
+	</head>
+
+	<body>
+<div id="bodyleft" >
+		<form action="?" method="get" id="search">
+
+			游戏名称:<br/><select id='service' name="svc" size="1" >
+				<option selected="selected" value="mole">mole
+			</select>
+
+			<br /> <br />
+
+			开始时间:<br /><input id="start-time" name="start" type="text" size="18" maxlength="27" value="2011-12-02" >
+			<br />
+			结束时间:<br /><input id="end-time" name="end" type="text" size="18" maxlength="27" value="2011-12-09" >
+
+			<br /> <br />
+
+			每页显示:<br/><select id='page_size' name="page_size" size="1" >
+				<option selected="selected" value="20">20
+				<option  value="50">50
+				<option  value="100">100
+			</select>
+
+			<hr style="border: 1px inset #A8A8A8; width: 90%" align="left" />
+</div>
+
+<div id="searchhead_left">
+			<img src="./images/search_logo.png" width="128" height="96" alt="Taomee Anticheat System" />
+</div>
+
+<div id="searchhead">
+			米米号(option): <input id="uid" name="uid" type="text" size="16" maxlength="32" value="0"/>
+			命令号(option): <input id="cmd" name="cmd" type="text" size="16" maxlength="32" value="0"/>
+
+			查找方式:<select id='query_cmd' name="query_cmd" >
+				<option  value="1000">概要 (按uid分组, 按违规次数从大到小排序)
+				<option  value="1001">单个命令号频率 (需填 uid + cmd)
+				<option  value="1002">单个命令号间隔 (需填 uid + cmd)
+				<option  value="1003">不分命令号频率 (需填uid, 可填cmd)
+				<option  value="1004">不分命令号间隔 (需填uid, 可填cmd)
+			</select>
+			<input type="submit" value="Query" id="submit" name="submit"/>
+
+		</form>
+</div>
+
+<div id="bodycenter" >
+
+
+Retrieved 20 of 8567380 matches in 2.479 sec.
+Query stats(From 2011-12-02 00:00:00 to 2011-12-08 14:49:52
+<pre>
+<ol class="results" start="1"><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=60791191, 命令号=317, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=257521949, 命令号=317, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=257521949, 命令号=6034, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=294438422, 命令号=303, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=70740495, 命令号=3104, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=292066906, 命令号=3106, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=128715290, 命令号=10011, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=128715290, 命令号=6026, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=51835614, 命令号=1408, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=291317461, 命令号=3106, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=163679872, 命令号=3106, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=270032987, 命令号=6034, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=179150537, 命令号=3106, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=218841060, 命令号=10011, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=218841060, 命令号=317, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=62149209, 命令号=10011, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=62149209, 命令号=6026, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=200375877, 命令号=8102, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=291881164, 命令号=10011, 命令收到时间=2011-12-02 18:49:00</li><li>不区分命令号违规类型=1, 区分命令号违规类型=0, 米米号=259351007, 命令号=317, 命令收到时间=2011-12-02 18:49:00</li></lo><p class='pages'>Page 1 of 50000. Result 1..20 of 8567380. <b>1</b> <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=2&amp;page_size=20">2</a> <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=3&amp;page_size=20">3</a> <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=4&amp;page_size=20">4</a> <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=5&amp;page_size=20">5</a> <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=6&amp;page_size=20">6</a> <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=7&amp;page_size=20">7</a> <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=8&amp;page_size=20">8</a> ... <a href="/query_server/query.php?svc=mole&amp;query_cmd=%5C%271000%5C%27&amp;start=2011-12-02&amp;end=2011-12-09&amp;uid=0&amp;cmd=0&amp;page=2&amp;page_size=20">next &gt;&gt;</a> </p><pre class="results">Retrieved 20 of 8567380 matches in 2.479 sec.
+</pre></pre>
+</div>
+
+</body>
+
+</html>

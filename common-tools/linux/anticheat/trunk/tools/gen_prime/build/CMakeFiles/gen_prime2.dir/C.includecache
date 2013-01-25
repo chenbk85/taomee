@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+/root/anticheater/anticheat/tools/gen_prime/gen_prime2.c
+stdlib.h
+-
+stddef.h
+-
+stdio.h
+-
+inttypes.h
+-
+stdint.h
+-
+string.h
+-
+math.h
+-
+

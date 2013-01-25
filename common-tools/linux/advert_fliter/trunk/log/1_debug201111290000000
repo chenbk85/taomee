@@ -1,0 +1,8 @@
+[18:57:08] 0 [30677]MYSQL_INTERFACE::MYSQL_INTERFACE  7
+[18:57:08] 0 [30677]DB conn msg [10.1.1.46][root][taomee][/var/run/mysqld/mysqld.sock]
+[18:57:08] 0 [30677]DB connect is ok [0]
+
+[18:57:08] 0 [30677]reload md5 is	[14194 AA 3F D1 B7 3D 34 FC 9C A1 9E 47 FA 30 10 42 F5 ]
+[18:57:08] 0 [30677]xxxxxx load_game_svr_config 
+[18:57:08] 0 [30677]CONNECTED TO	[10.1.1.145:4433 fd=11]
+[18:57:08] 0 [30677]CONNECTED TO	[10.1.1.101:4418 fd=12]

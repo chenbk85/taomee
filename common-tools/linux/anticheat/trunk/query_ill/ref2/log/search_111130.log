@@ -1,0 +1,4 @@
+[2011-11-30 18:13:16] Cli: 10.1.1.32, Svc: test, QueryTime: 2011-11-28 - 2011-11-30, query_cmd: 1000, uid: 0, cmd: 0
+[2011-11-30 18:34:03] Cli: 10.1.1.32, Svc: test, QueryTime: 2011-11-28 - 2011-11-30, query_cmd: 1000, uid: 0, cmd: 0
+[2011-11-30 18:38:04] Cli: 10.1.1.32, Svc: test, QueryTime: 2011-11-28 - 2011-12-01, query_cmd: 1000, uid: 0, cmd: 0
+[2011-11-30 18:44:09] Cli: 10.1.1.32, Svc: test, QueryTime: 2011-11-28 - 2011-12-01, query_cmd: 1000, uid: 0, cmd: 0

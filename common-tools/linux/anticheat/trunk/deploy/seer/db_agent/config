@@ -1,0 +1,13 @@
+# configs for svc manage
+
+SVC="seer"
+GAMEID=2
+CONFIG_CENTER="192.168.4.79"
+
+DIR_BIN="./bin"
+DIR_CONF="./conf"
+DIR_BIN_BAK="./backup"
+DIR_NEW_BIN="./new_bin"
+
+EXEC_DBIF_NAME="db_interface"
+EXEC_DBAGT_NAME="db_agent"

@@ -1,0 +1,12 @@
+# config's for daily_rebuild_index
+
+DB="anticheat"
+INDEXER="/usr/local/bin/indexer"
+FILE_CONF_BASE="./conf"
+MAIN_IDX_BASE="main_index"
+TODAY_IDX_BASE="today_index"
+
+MYSQL_USER="root"
+MYSQL_PASS="ta0mee"
+
+EXEC_MYSQL="mysql -u$MYSQL_USER -p$MYSQL_PASS --skip-column-names -A"

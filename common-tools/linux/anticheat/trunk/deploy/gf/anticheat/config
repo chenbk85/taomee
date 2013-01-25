@@ -1,0 +1,16 @@
+# configs for svc manage
+
+SVC="gf"
+GAMEID=6
+CONFIG_CENTER="192.168.4.79"
+
+DIR_BIN="./bin"
+DIR_CONF="./conf"
+DIR_BIN_BAK="./backup"
+DIR_NEW_BIN="./new_bin"
+
+DIR_RENEW_AC_CONFIG="./renew_config"
+EXEC_RENEW_AC_CONFIG="./renew_ac_config"
+
+EXEC_IF_NAME="interface"
+EXEC_AC_NAME="anticheat"

@@ -1,0 +1,39 @@
+#!/usr/bin/perl -w
+#
+# the shell invoke a http service which send the sms 
+# http://10.1.1.5/cgi-bin/gsms.pl
+# this shell is writed for nagios monitor
+#
+use LWP::UserAgent;
+my $request;
+my $tel = $ARGV[0] ;
+my $msg = $ARGV[1] ;
+my $verify = "add6b4bb1b0d2f3f6d859eeab7f1eb4b" ;
+
+if(!$tel or !$msg){
+	&useage ;
+	exit(1) ;
+}
+$request = "telephone=$tel&message=$msg&verify=$verify" ;
+my $my_request = HTTP::Request->new(GET=>"http://10.1.1.5:80/sendsms.php?$request",) ;
+
+my $self = new LWP::UserAgent;
+
+my $my_response = $self->request($my_request);
+
+
+if ($my_response->is_success) {
+    print $my_response->content;  # or whatever
+}
+else {
+    die $my_response->status_line;
+}
+
+
+sub useage{
+	print "Usage:\n",
+	"$0 telephonenum \"yourmessage\"\n" ;
+	print "Example:\n",
+	"sendsms 1381898xxxx \"hello,mystery gsm...\" \n" ,
+	"sendsms 1381898xxxx,1398888888 \"hello,mystery gsm...\" \n" ;
+}

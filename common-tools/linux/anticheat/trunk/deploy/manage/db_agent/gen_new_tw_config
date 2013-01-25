@@ -1,0 +1,34 @@
+#!/bin/bash
+
+if [ $# -ne 1 ] ; then
+	echo "Usage: $0 <config_file>"
+	exit 1
+fi
+
+FILE_SVC_CONF="$1"
+if [ ! -r $FILE_SVC_CONF ] ; then
+	echo "Config-file: $FILE_SVC_CONF is unaccessable!"
+	exit 1
+fi
+
+. $FILE_SVC_CONF
+
+[[ -z "$SVC" ]] && echo "Invalid config: SVC is empty" && exit 1
+[[ -z "$MIN_TW_INT" ]] && echo "Invalid config: MIN_TW_INT is empty" && exit 1
+[[ -z "$MAX_TW_FREQ" ]] && echo "Invalid config: MAX_TW_FREQis empty" && exit 1
+[[ -z "$UPDATE_TW_ST_INT" ]] && echo "Invalid config: UPDATE_TW_ST_INT is empty" && exit 1
+
+[[ -z "$DB" ]] && echo "Invalid config: DB is empty" && exit 1
+[[ -z "$TABLE" ]] && echo "Invalid config: TABLE is empty" && exit 1
+
+[[ -z "$MY_USER" ]] && echo "Invalid config: MY_USER is empty" && exit 1
+[[ -z "$MY_PASSWD" ]] && echo "Invalid config: MY_PASSWD is empty" && exit 1
+[[ -z "$MY_HOST" ]] && echo "Invalid config: MY_HOST is empty" && exit 1
+[[ -z "$EXEC_MYSQL" ]] && echo "Invalid config: EXEC_MYSQL is empty" && exit 1
+
+
+SQL="TRUNCATE TABLE $DB.$TABLE; INSERT INTO $DB.$TABLE (db_addr_ip, db_addr_port, min_tw_interval, max_tw_freq, update_tw_start_interval) VALUES('0.0.0.0', '0', '$MIN_TW_INT', '$MAX_TW_FREQ', '$UPDATE_TW_ST_INT');"
+
+echo "$SQL" | $EXEC_MYSQL
+
+exit 0

@@ -1,0 +1,46 @@
+#!/bin/bash
+
+pid_if=`pidof interface | sed 's/ /,/g'`
+pid_ac=`pidof anticheat | sed 's/ /,/g'`
+pid_dbif=`pidof db_interface | sed 's/ /,/g'`
+pid_dbagt=`pidof db_agent | sed 's/ /,/g'`
+
+is_first=1
+top_pids=""
+if [ -n "$pid_if" ] ; then
+	if (( is_first == 1 )) ; then
+		top_pids="$pid_if"
+		(( is_first = 0 ))
+	else
+		top_pids="$top_pids,$pid_if"
+	fi
+fi
+
+if [ -n "$pid_ac" ] ; then
+	if (( is_first == 1 )) ; then
+		top_pids="$pid_ac"
+		(( is_first = 0 ))
+	else
+		top_pids="$top_pids,$pid_ac"
+	fi
+fi
+
+if [ -n "$pid_dbif" ] ; then
+	if (( is_first == 1 )) ; then
+		top_pids="$pid_dbif"
+		(( is_first = 0 ))
+	else
+		top_pids="$top_pids,$pid_dbif"
+	fi
+fi
+
+if [ -n "$pid_dbagt" ] ; then
+	if (( is_first == 1 )) ; then
+		top_pids="$pid_dbagt"
+		(( is_first = 0 ))
+	else
+		top_pids="$top_pids,$pid_dbagt"
+	fi
+fi
+
+top -p $top_pids

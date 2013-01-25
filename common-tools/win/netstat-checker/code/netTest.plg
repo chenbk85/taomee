@@ -1,0 +1,155 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: netTest - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/netTest.res" /d "NDEBUG" /d "_AFXDLL" "D:\work\NetTest\code\netTest.rc"" 
+Creating temporary file "C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP128.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/netTest.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\work\NetTest\code\51Mole.cpp"
+"D:\work\NetTest\code\51Seer.cpp"
+"D:\work\NetTest\code\Base64.cpp"
+"D:\work\NetTest\code\Dustman.cpp"
+"D:\work\NetTest\code\Log.cpp"
+"D:\work\NetTest\code\md5.cpp"
+"D:\work\NetTest\code\Net.cpp"
+"D:\work\NetTest\code\NetSock.cpp"
+"D:\work\NetTest\code\netTest.cpp"
+"D:\work\NetTest\code\netTestDlg.cpp"
+"D:\work\NetTest\code\SendMailDlg.cpp"
+"D:\work\NetTest\code\SMTP.cpp"
+"D:\work\NetTest\code\TaoMee.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP128.tmp" 
+Creating temporary file "C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP129.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/netTest.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\work\NetTest\code\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP129.tmp" 
+Creating temporary file "C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/ÌÔÃ×ÍøÂç¼ì²â¹¤¾ß.pdb" /machine:I386 /out:"Release/ÌÔÃ×ÍøÂç¼ì²â¹¤¾ß.exe" 
+.\Release\51Mole.obj
+.\Release\51Seer.obj
+.\Release\Base64.obj
+.\Release\Dustman.obj
+.\Release\Log.obj
+.\Release\md5.obj
+.\Release\Net.obj
+.\Release\NetSock.obj
+.\Release\netTest.obj
+.\Release\netTestDlg.obj
+.\Release\SendMailDlg.obj
+.\Release\SMTP.obj
+.\Release\StdAfx.obj
+.\Release\TaoMee.obj
+.\Release\netTest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+51Mole.cpp
+51Seer.cpp
+Base64.cpp
+Dustman.cpp
+Log.cpp
+md5.cpp
+Net.cpp
+NetSock.cpp
+netTest.cpp
+netTestDlg.cpp
+SendMailDlg.cpp
+SMTP.cpp
+TaoMee.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+ÌÔÃ×ÍøÂç¼ì²â¹¤¾ß.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: netTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/netTest.res" /d "_DEBUG" /d "_AFXDLL" "D:\work\NetTest\code\netTest.rc"" 
+Creating temporary file "C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12C.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/netTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\work\NetTest\code\51Mole.cpp"
+"D:\work\NetTest\code\51Seer.cpp"
+"D:\work\NetTest\code\Base64.cpp"
+"D:\work\NetTest\code\Dustman.cpp"
+"D:\work\NetTest\code\Log.cpp"
+"D:\work\NetTest\code\md5.cpp"
+"D:\work\NetTest\code\Net.cpp"
+"D:\work\NetTest\code\NetSock.cpp"
+"D:\work\NetTest\code\netTest.cpp"
+"D:\work\NetTest\code\netTestDlg.cpp"
+"D:\work\NetTest\code\SendMailDlg.cpp"
+"D:\work\NetTest\code\SMTP.cpp"
+"D:\work\NetTest\code\TaoMee.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12C.tmp" 
+Creating temporary file "C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/netTest.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\work\NetTest\code\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12D.tmp" 
+Creating temporary file "C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/netTest.pdb" /debug /machine:I386 /out:"Debug/netTest.exe" /pdbtype:sept 
+.\Debug\51Mole.obj
+.\Debug\51Seer.obj
+.\Debug\Base64.obj
+.\Debug\Dustman.obj
+.\Debug\Log.obj
+.\Debug\md5.obj
+.\Debug\Net.obj
+.\Debug\NetSock.obj
+.\Debug\netTest.obj
+.\Debug\netTestDlg.obj
+.\Debug\SendMailDlg.obj
+.\Debug\SMTP.obj
+.\Debug\StdAfx.obj
+.\Debug\TaoMee.obj
+.\Debug\netTest.res
+]
+Creating command line "link.exe @C:\DOCUME~1\KEVINM~1\LOCALS~1\Temp\RSP12E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+51Mole.cpp
+51Seer.cpp
+Base64.cpp
+Dustman.cpp
+Log.cpp
+md5.cpp
+Net.cpp
+NetSock.cpp
+netTest.cpp
+netTestDlg.cpp
+SendMailDlg.cpp
+SMTP.cpp
+TaoMee.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+netTest.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+if [ $# -ne 1 ] ; then
+	echo "Usage: $0 <svc_name>"
+	exit 1
+fi
+
+SVC="$1"
+TODAY=`date +'%F 00:00:00'`
+
+./move_nontoday_records "$SVC" "$TODAY"
+(( ret = $? ))
+
+if (( $ret == 1 )) ; then
+	echo "Failed to exec move_nontoday_records, exit"
+	exit 1
+elif (( $ret == 2 )) ; then
+	echo "Not any record before $TODAY, exit"
+	exit 1
+fi
+
+./build_main_index $SVC
+./build_today_index $SVC
+
+exit 0

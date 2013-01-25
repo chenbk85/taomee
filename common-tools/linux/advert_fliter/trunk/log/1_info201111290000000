@@ -1,0 +1,3 @@
+[18:57:08] 0 [30677]ADD AN ADDR	[name=dirty.online id=1 ip=10.1.1.101 port=28000]
+[18:57:08] 0 [30677]ADD AN ADDR	[name=chat.online id=2 ip=10.1.1.46 port=28001]
+[18:57:08] 0 [30677]ADD AN ADDR	[name=chat.dbproxy id=1 ip=10.1.1.46 port=17002]

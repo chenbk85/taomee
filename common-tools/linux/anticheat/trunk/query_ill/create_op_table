@@ -1,0 +1,25 @@
+#!/bin/bash
+
+DB="anticheat"
+
+SQL_CT="CREATE TABLE IF NOT EXISTS ${DB}.svc_op (
+svc CHAR(16) NOT NULL,
+uid INT UNSIGNED NOT NULL,
+op_time TIMESTAMP NOT NULL,
+op INT UNSIGNED,
+oper INT,
+reason CHAR(255),
+KEY (svc),
+KEY (uid, op),
+KEY (op_time)
+);"
+
+# MYSQL configs
+MY_HOST="10.1.1.32"
+MY_USER="root"
+MY_PASSWD="ta0mee"
+EXEC_MYSQL="mysql -u$MY_USER -p$MY_PASSWD --skip-column-names -A --host $MY_HOST"
+
+echo "$SQL_CT" | $EXEC_MYSQL
+
+exit 0

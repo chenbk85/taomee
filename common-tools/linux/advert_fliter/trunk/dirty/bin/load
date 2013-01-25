@@ -1,0 +1,6 @@
+#!/bin/bash
+
+dir=`pwd`
+
+mysql -u$1 -p$2 -A -e "create database IF NOT EXISTS DIRTY;"
+mysql -u$1 -p$1 -A -e "use DIRTY;CREATE TABLE IF NOT EXISTS dirty_cn (id int(11) NOT NULL auto_increment, word varchar(100) NOT NULL, level int(11), PRIMARY KEY(id), UNIQUE KEY word(word) ) ENGINE=InnoDB DEFAULT CHARSET=utf8;load data infile '$dir/../data/tm_dirty.dat' into table dirty_cn(word,level)" 

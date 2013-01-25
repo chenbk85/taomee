@@ -1,0 +1,30 @@
+#!/bin/bash
+
+. config
+
+SQL_TW_CFG="SELECT * FROM ${DB}.${SVC}_tw_config LIMIT 1;"
+SQL_SW_CFG="SELECT * FROM ${DB}.${SVC}_sw_config ORDER BY cmd;"
+
+if [ ! -f $LAST_DB_DATA ] ; then
+	echo "$SQL_TW_CFG" | $EXEC_MYSQL > $LAST_DB_DATA
+	echo "$SQL_SW_CFG" | $EXEC_MYSQL >> $LAST_DB_DATA
+	if (( $? == 0 )) ; then
+		$AC_CFGD $AC_CFGD_CONF
+	fi
+else
+	echo "$SQL_TW_CFG" | $EXEC_MYSQL > $CUR_DB_DATA
+	echo "$SQL_SW_CFG" | $EXEC_MYSQL >> $CUR_DB_DATA
+	if (( $? == 0 )) ; then
+		LAST_MD5=`md5sum $LAST_DB_DATA | awk '{print $1}'`
+		CUR_MD5=`md5sum $CUR_DB_DATA | awk '{print $1}'`
+		if [ "x$LAST_MD5" != "x$CUR_MD5" ] ; then
+			echo "Diff tw(md5:$LAST_MD5) or sw(md5:$CUR_MD5) config, do renew!"
+			mv $CUR_DB_DATA $LAST_DB_DATA
+			$AC_CFGD $AC_CFGD_CONF
+		else
+			echo "The same tw and sw config"
+		fi
+	fi
+fi
+
+exit 0

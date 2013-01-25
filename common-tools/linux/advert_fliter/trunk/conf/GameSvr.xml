@@ -1,0 +1,8 @@
+<Games>
+	<Game ID="1" Name="摩尔" IP="10.1.1.145" Port="4433" ChatProtocol="62015" SendVal="1" WordFile="../data/valid_words" StatFile="../data/bayes_stat"/>
+	<Game ID="12" Name="卜克" IP="10.1.1.101" Port="4418" ChatProtocol="1" SendVal="1" WordFile=""  StatFile=""/>
+	<Game ID="10" Name="赛尔2" IP="10.1.1.142" Port="5555" ChatProtocol="63103" SendVal="2" WordFile="" StatFile="../data/seer2_stat" />
+	<!--
+	<Game ID="1" Name="摩尔" IP="192.168.0.90" Port="4431" />
+	-->
+</Games>

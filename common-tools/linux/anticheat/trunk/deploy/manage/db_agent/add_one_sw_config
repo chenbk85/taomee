@@ -1,0 +1,36 @@
+#!/bin/bash
+
+if [ $# -ne 1 ] ; then
+	echo "Usage: $0 <config_file>"
+	exit 1
+fi
+
+FILE_SVC_CONF="$1"
+if [ ! -r $FILE_SVC_CONF ] ; then
+	echo "Config-file: $FILE_SVC_CONF is unaccessable!"
+	exit 1
+fi
+
+. $FILE_SVC_CONF
+
+
+[[ -z "$SVC" ]] && echo "Invalid config: SVC is empty" && exit 1
+[[ -z "$CMD" ]] && echo "Invalid config: CMD is empty" && exit 1
+[[ -z "$MIN_SW_INT" ]] && echo "Invalid config: MIN_TW_INT is empty" && exit 1
+[[ -z "$MAX_SW_FREQ" ]] && echo "Invalid config: MAX_TW_FREQis empty" && exit 1
+[[ -z "$UPDATE_SW_ST_INT" ]] && echo "Invalid config: UPDATE_TW_ST_INT is empty" && exit 1
+
+[[ -z "$DB" ]] && echo "Invalid config: DB is empty" && exit 1
+[[ -z "$TABLE" ]] && echo "Invalid config: TABLE is empty" && exit 1
+
+[[ -z "$MY_USER" ]] && echo "Invalid config: MY_USER is empty" && exit 1
+[[ -z "$MY_PASSWD" ]] && echo "Invalid config: MY_PASSWD is empty" && exit 1
+[[ -z "$MY_HOST" ]] && echo "Invalid config: MY_HOST is empty" && exit 1
+[[ -z "$EXEC_MYSQL" ]] && echo "Invalid config: EXEC_MYSQL is empty" && exit 1
+
+
+SQL="INSERT INTO $DB.$TABLE (cmd, min_sw_interval, max_sw_freq, update_sw_start_interval, label) VALUES('$CMD', '$MIN_SW_INT', '$MAX_SW_FREQ', 'UPDATE_SW_ST_INT', '$CMD号协议');"
+
+echo "$SQL" | $EXEC_MYSQL
+
+exit 0

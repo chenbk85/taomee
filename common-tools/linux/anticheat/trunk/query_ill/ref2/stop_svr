@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/usr/local/bin/searchd -c /root/anticheater/anticheat/query_server/conf/test_dist_sph.conf --stop
+#/usr/local/bin/searchd -c /root/anticheater/anticheat/query_server/conf/test_main_sph.conf --stop
+#/usr/local/bin/searchd -c /root/anticheater/anticheat/query_server/conf/test_today_sph.conf --stop

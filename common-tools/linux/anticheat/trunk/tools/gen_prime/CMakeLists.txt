@@ -1,0 +1,13 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+
+SET(CMAKE_USE_RELATIVE_PATHS true)
+ADD_DEFINITIONS("-g -Wall -MMD -funroll-loops -fhosted")
+
+SET (LIBS ${LIBS} m)
+
+SET (GEN_PRIME_SRC gen_prime.c)
+ADD_EXECUTABLE (gen_prime ${GEN_PRIME_SRC})
+
+SET (GEN_PRIME2_SRC gen_prime2.c)
+ADD_EXECUTABLE (gen_prime2 ${GEN_PRIME2_SRC})
+TARGET_LINK_LIBRARIES (gen_prime2 ${LIBS})

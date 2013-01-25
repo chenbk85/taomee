@@ -1,0 +1,24 @@
+#!/bin/bash
+
+. config
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+DIR_INIT=`pwd`
+
+GREP_IF=`ps -ef | grep -w $EXEC_IF_NAME | grep -w $SVC | grep -v grep`
+GREP_AC=`ps -ef | grep -w $EXEC_AC_NAME | grep -w $SVC | grep -v grep`
+
+if [ -n "$GREP_IF" -o -n "$GREP_AC" ] ; then
+	echo "Modules for $SVC is still on, run './stop_ac_system' and try again"
+	exit 1
+fi
+
+# renew ac_config
+cd $DIR_RENEW_AC_CONFIG
+rm -rf data
+$EXEC_RENEW_AC_CONFIG
+cd $DIR_INIT
+
+$DIR_BIN/$EXEC_IF_NAME $DIR_CONF/$SVC.if.conf
+$DIR_BIN/$EXEC_AC_NAME $DIR_CONF/$SVC.ac.conf
+
+exit 0
