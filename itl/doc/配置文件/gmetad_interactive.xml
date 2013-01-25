@@ -1,0 +1,3745 @@
+Trying 192.168.0.21...
+Connected to 192.168.0.21.
+Escape character is '^]'.
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<!DOCTYPE GANGLIA_XML [
+   <!ELEMENT GANGLIA_XML (GRID|CLUSTER|HOST)*>
+      <!ATTLIST GANGLIA_XML VERSION CDATA #REQUIRED>
+      <!ATTLIST GANGLIA_XML SOURCE CDATA #REQUIRED>
+   <!ELEMENT GRID (CLUSTER | GRID | HOSTS | METRICS)*>
+      <!ATTLIST GRID NAME CDATA #REQUIRED>
+      <!ATTLIST GRID AUTHORITY CDATA #REQUIRED>
+      <!ATTLIST GRID LOCALTIME CDATA #IMPLIED>
+   <!ELEMENT CLUSTER (HOST | HOSTS | METRICS)*>
+      <!ATTLIST CLUSTER NAME CDATA #REQUIRED>
+      <!ATTLIST CLUSTER OWNER CDATA #IMPLIED>
+      <!ATTLIST CLUSTER LATLONG CDATA #IMPLIED>
+      <!ATTLIST CLUSTER URL CDATA #IMPLIED>
+      <!ATTLIST CLUSTER LOCALTIME CDATA #REQUIRED>
+   <!ELEMENT HOST (METRIC)*>
+      <!ATTLIST HOST NAME CDATA #REQUIRED>
+      <!ATTLIST HOST IP CDATA #REQUIRED>
+      <!ATTLIST HOST LOCATION CDATA #IMPLIED>
+      <!ATTLIST HOST REPORTED CDATA #REQUIRED>
+      <!ATTLIST HOST TN CDATA #IMPLIED>
+      <!ATTLIST HOST TMAX CDATA #IMPLIED>
+      <!ATTLIST HOST DMAX CDATA #IMPLIED>
+      <!ATTLIST HOST GMOND_STARTED CDATA #IMPLIED>
+   <!ELEMENT METRIC (EXTRA_DATA*)>
+      <!ATTLIST METRIC NAME CDATA #REQUIRED>
+      <!ATTLIST METRIC VAL CDATA #REQUIRED>
+      <!ATTLIST METRIC TYPE (string | int8 | uint8 | int16 | uint16 | int32 | uint32 | float | double | timestamp) #REQUIRED>
+      <!ATTLIST METRIC UNITS CDATA #IMPLIED>
+      <!ATTLIST METRIC TN CDATA #IMPLIED>
+      <!ATTLIST METRIC TMAX CDATA #IMPLIED>
+      <!ATTLIST METRIC DMAX CDATA #IMPLIED>
+      <!ATTLIST METRIC SLOPE (zero | positive | negative | both | unspecified) #IMPLIED>
+      <!ATTLIST METRIC SOURCE (gmond) 'gmond'>
+   <!ELEMENT EXTRA_DATA (EXTRA_ELEMENT*)>
+   <!ELEMENT EXTRA_ELEMENT EMPTY>
+      <!ATTLIST EXTRA_ELEMENT NAME CDATA #REQUIRED>
+      <!ATTLIST EXTRA_ELEMENT VAL CDATA #REQUIRED>
+   <!ELEMENT HOSTS EMPTY>
+      <!ATTLIST HOSTS UP CDATA #REQUIRED>
+      <!ATTLIST HOSTS DOWN CDATA #REQUIRED>
+      <!ATTLIST HOSTS SOURCE (gmond | gmetad) #REQUIRED>
+   <!ELEMENT METRICS (EXTRA_DATA*)>
+      <!ATTLIST METRICS NAME CDATA #REQUIRED>
+      <!ATTLIST METRICS SUM CDATA #REQUIRED>
+      <!ATTLIST METRICS NUM CDATA #REQUIRED>
+      <!ATTLIST METRICS TYPE (string | int8 | uint8 | int16 | uint16 | int32 | uint32 | float | double | timestamp) #REQUIRED>
+      <!ATTLIST METRICS UNITS CDATA #IMPLIED>
+      <!ATTLIST METRICS SLOPE (zero | positive | negative | both | unspecified) #IMPLIED>
+      <!ATTLIST METRICS SOURCE (gmond) 'gmond'>
+]>
+<GANGLIA_XML VERSION="3.1.2" SOURCE="gmetad">
+<GRID NAME="seer" AUTHORITY="http://192.168.0.21/seer" LOCALTIME="1284626247">
+<HOSTS UP="106" DOWN="0" SOURCE="gmetad"/>
+<METRICS NAME="mysql_innodb_transactions" SUM="142411468312" NUM="54" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_data_reads" SUM="9401402830" NUM="54" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="disk_free" SUM="8826.980" NUM="50" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total free disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Disk Space Available"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_normal_aio_reads" SUM="0" NUM="54" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_normal_aio_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_update" SUM="130094909835" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of UPDATE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_update"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_total" SUM="124359320681" NUM="53" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total space used by binary logs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_out" SUM="8159228.21" NUM="106" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_writes" SUM="27340819" NUM="54" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of physical writes of a key block to disk"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_total" SUM="11743" NUM="106" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_deleted" SUM="1101114256" NUM="54" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_deleted"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_created" SUM="27597" NUM="54" TYPE="double" UNITS="threads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads created to handle connections"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_created"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_flushed" SUM="108145075814" NUM="54" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_flushed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_range" SUM="499610" NUM="54" TYPE="double" UNITS="sorts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorts that were done using ranges"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_range"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_replace" SUM="0" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of REPLACE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_replace"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_log_writes" SUM="0" NUM="54" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_log_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_read_views" SUM="54" NUM="54" TYPE="double" UNITS="views" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_read_views"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_insert_select" SUM="0" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of INSERT ... SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_insert_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_inserts" SUM="24" NUM="54" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries added to the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_inserts"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slow_launch_threads" SUM="0" NUM="54" TYPE="double" UNITS="threads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads that have taken more than slow_launch_time seconds to create"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slow_launch_threads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_in" SUM="49473.05" NUM="106" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_nice" SUM="0.0" NUM="106" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level with nice priority"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Nice"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_speed" SUM="212268" NUM="106" TYPE="double" UNITS="MHz" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="CPU Speed in terms of MHz"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Speed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_not_cached" SUM="356324" NUM="54" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of non-cached queries (not cacheable, or not cached due to the query_cache_type setting)"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_not_cached"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_free_blocks" SUM="1" NUM="54" TYPE="double" UNITS="blocks" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of free memory blocks in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_free_blocks"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_replace_select" SUM="416" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of REPLACE ... SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_replace_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_written" SUM="10121493926" NUM="54" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_written"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="boottime" SUM="135021858334" NUM="106" TYPE="double" UNITS="s" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="system"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The last time that the system was started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Last Boot Time"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_bytes_received" SUM="139783841262" NUM="54" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of bytes received from all clients"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_bytes_received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_active_transactions" SUM="52" NUM="54" TYPE="double" UNITS="txns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Active InnoDB transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_active_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_rece" SUM="4791113.02" NUM="104" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_history_list" SUM="11883" NUM="54" TYPE="double" UNITS="length" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_history_list"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_load" SUM="0" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of LOAD statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_load"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_os_waits" SUM="1509142560" NUM="54" TYPE="double" UNITS="waits" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_os_waits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_normal_aio_writes" SUM="0" NUM="54" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_normal_aio_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_questions" SUM="116267564164" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of statements that clients have sent to the server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_questions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_range_check" SUM="0" NUM="54" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins without keys that check for key usage after each row"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_range_check"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slow_queries" SUM="3658483" NUM="54" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries that have taken more than long_query_time seconds"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slow_queries"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_wio" SUM="63.9" NUM="106" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU wio"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_data_fsyncs" SUM="287303984" NUM="54" TYPE="double" UNITS="fsyncs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_fsyncs"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_full_range_join" SUM="0" NUM="54" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that used a range search on a reference table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_full_range_join"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_data" SUM="41645651" NUM="54" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_data"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_free" SUM="178029" NUM="54" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_free"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_queries_queued" SUM="0" NUM="54" TYPE="double" UNITS="queries" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_queries_queued"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_range" SUM="25716161314" NUM="54" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that used ranges on the first table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_range"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_running" SUM="180" NUM="54" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads that are not sleeping"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_running"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_bytes_sent" SUM="120643948816" NUM="54" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL=" The number of bytes sent to all clients"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_bytes_sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_connections" SUM="28724795" NUM="54" TYPE="double" UNITS="conns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of connection attempts (successful or not) to the MySQL server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_connections"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_one" SUM="7.68" NUM="106" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="One minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="One Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_read" SUM="131048837922" NUM="54" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_read"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_files" SUM="270" NUM="54" TYPE="double" UNITS="files" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary files mysqld has created"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_files"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_rows" SUM="6588294" NUM="54" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorted rows"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_rows"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="disk_total" SUM="15352.084" NUM="50" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total available disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Disk Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_lowmem_prunes" SUM="0" NUM="54" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries that were deleted from the query cache because of low memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_lowmem_prunes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_idle" SUM="10421.7" NUM="106" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Idle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_user" SUM="44.8" NUM="106" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU User"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_delete" SUM="7357413916" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of DELETE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_delete"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_opened_tables" SUM="32329715" NUM="54" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of tables that have been opened"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_opened_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions_purged" SUM="161236954991" NUM="54" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions_purged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_free" SUM="837297680" NUM="106" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available swap memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Swap Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_disk_tables" SUM="6912657" NUM="54" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary tables on disk created automatically by the server while executing statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_disk_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_uptime" SUM="422158999" NUM="54" TYPE="double" UNITS="secs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of seconds that the server has been up"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_uptime"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_cached" SUM="485602828" NUM="106" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of cached memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Cached Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_out" SUM="40756.79" NUM="106" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_unflushed" SUM="522670" NUM="54" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_unflushed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_merged" SUM="2271491" NUM="54" TYPE="double" UNITS="recs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_merged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_aio_log_ios" SUM="0" NUM="54" TYPE="double" UNITS="ops" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_aio_log_ios"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_dirty" SUM="562173" NUM="54" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_dirty"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_buffer_pool_flushes" SUM="0" NUM="54" TYPE="double" UNITS="reqs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of pending buffer pool page-flush requests"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_buffer_pool_flushes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_max_used_connections" SUM="1773" NUM="54" TYPE="double" UNITS="conns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The maximum number of connections that have been in use simultaneously since the server started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_max_used_connections"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_select" SUM="28422789630" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_chkp_writes" SUM="0" NUM="54" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_chkp_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_five" SUM="11.30" NUM="106" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Five minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Five Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_rece" SUM="1402063.85" NUM="104" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_cache_disk_use" SUM="0" NUM="54" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of transactions that used the temporary binary log cache but that exceeded the value of binlog_cache_size and used a temporary file to store statements from the transaction"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_cache_disk_use"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_connected" SUM="927" NUM="54" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of currently open connections"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_connected"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_open_files" SUM="569" NUM="54" TYPE="double" UNITS="files" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of files that are open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_open_files"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_write_requests" SUM="27365269" NUM="54" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of requests to write a key block to the cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_write_requests"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_aborted_clients" SUM="66887" NUM="54" TYPE="double" UNITS="clients" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of connections that were aborted because the client died without closing the connection properly"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_aborted_clients"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_free_memory" SUM="67055064" NUM="54" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The amount of free memory for the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_free_memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_num" SUM="464" NUM="106" TYPE="double" UNITS="CPUs" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of CPUs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_merges" SUM="1885042" NUM="54" TYPE="double" UNITS="merges" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_merges"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_used" SUM="81160271148" NUM="53" TYPE="double" UNITS="percent" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Current binary log size / max_binlog_size"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_used"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_fifteen" SUM="9.06" NUM="106" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Fifteen minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Fifteen Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions_unpurged" SUM="465969052" NUM="54" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions_unpurged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_spin_rounds" SUM="42824854971" NUM="54" TYPE="double" UNITS="spins" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_spin_rounds"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_send" SUM="4453615.26" NUM="104" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_update_multi" SUM="0" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of multi-table UPDATE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_update_multi"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_scan" SUM="10589" NUM="54" TYPE="double" UNITS="sorts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorts that were done by scanning the table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_scan"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_read_requests" SUM="92095233" NUM="54" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of requests to read a key block from the cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_read_requests"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_current_transactions" SUM="928" NUM="54" TYPE="double" UNITS="txns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Current InnoDB transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_current_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slave_retried_transactions" SUM="0" NUM="54" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total number of times since startup that the replication slave SQL thread has retried transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slave_retried_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_free" SUM="111152560" NUM="106" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_open_tables" SUM="139550" NUM="54" TYPE="double" UNITS="tables" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of tables that are open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_open_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_aborted_connects" SUM="4979" NUM="54" TYPE="double" UNITS="conns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of failed attempts to connect to the MySQL server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_aborted_connects"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_table_locks_waited" SUM="258729" NUM="54" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of times that a request for a table lock could not be granted immediately and a wait was needed"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_table_locks_waited"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_aio_sync_ios" SUM="0" NUM="54" TYPE="double" UNITS="ops" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_aio_sync_ios"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_data_writes" SUM="12688842564" NUM="54" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slave_open_temp_tables" SUM="0" NUM="54" TYPE="double" UNITS="tables" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary tables that the slave SQL thread currently has open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slave_open_temp_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_total" SUM="42074112" NUM="54" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total size of buffer pool, in pages"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_cached" SUM="203" NUM="54" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads in the thread cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_cached"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_spin_waits" SUM="1105239029" NUM="54" TYPE="double" UNITS="spins" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_spin_waits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_system" SUM="69.0" NUM="106" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the system level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU System"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_read" SUM="12057838738" NUM="54" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_read"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_run" SUM="40" NUM="106" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of running processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Running Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_queries_in_cache" SUM="12" NUM="54" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries registered in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_queries_in_cache"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_cache_use" SUM="51992362955" NUM="54" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL=" The number of transactions that used the temporary binary log cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_cache_use"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_total" SUM="1572718092" NUM="106" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of memory displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_aidle" SUM="10169.7" NUM="106" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percent of time since boot idle CPU"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU aidle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_in" SUM="6740074.46" NUM="106" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_queries_inside" SUM="1" NUM="54" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_queries_inside"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_table_locks_immediate" SUM="106640782431" NUM="54" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of times that a request for a table lock could be granted immediately"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_table_locks_immediate"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_created" SUM="269702957" NUM="54" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_created"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_updated" SUM="92249898717" NUM="54" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_updated"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_tables" SUM="66576478" NUM="54" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of in-memory temporary tables created automatically by the server while executing statement"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_hits" SUM="6" NUM="54" TYPE="double" UNITS="hits" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of query cache hits"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_hits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_inserts" SUM="2271491" NUM="54" TYPE="double" UNITS="inserts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_inserts"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_writes" SUM="5128584431" NUM="54" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_buffers" SUM="19283300" NUM="106" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of buffered memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Buffers"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_total_blocks" SUM="33" NUM="54" TYPE="double" UNITS="blocks" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total number of blocks in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_total_blocks"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_written" SUM="108145320719" NUM="54" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_written"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_log_flushes" SUM="0" NUM="54" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_log_flushes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_shared" SUM="0" NUM="106" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of shared memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Shared Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_inserted" SUM="11348990971" NUM="54" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_inserted"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_reads" SUM="376371" NUM="54" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of physical reads of a key block from disk"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_total" SUM="853223668" NUM="106" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of swap space displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Swap Space Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_send" SUM="3136081.10" NUM="104" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_count" SUM="2543" NUM="53" TYPE="double" UNITS="logs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of binary logs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="part_max_used" SUM="2868.7" NUM="50" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Maximum percent used for all partitions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Maximum Disk Space Used"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_ibuf_aio_reads" SUM="0" NUM="54" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_ibuf_aio_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_scan" SUM="70160777" NUM="54" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that did a full scan of the first table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_scan"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_current" SUM="16801075665" NUM="53" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Size of current binary log"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_current"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_insert" SUM="5254883821" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of INSERT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_insert"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_full_join" SUM="0" NUM="54" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that perform table scans because they do not use indexes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_full_join"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_delete_multi" SUM="0" NUM="54" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of multi-table DELETE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_delete_multi"/>
+</EXTRA_DATA>
+</METRICS>
+<CLUSTER NAME="dbproxy" LOCALTIME="1284626246" OWNER="taomee" LATLONG="unspecified" URL="www.taomee.com">
+<HOSTS UP="5" DOWN="0" SOURCE="gmetad"/>
+<METRICS NAME="disk_free" SUM="1355.068" NUM="5" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total free disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Disk Space Available"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_out" SUM="1537615.20" NUM="5" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_total" SUM="294" NUM="5" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_nice" SUM="0.0" NUM="5" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level with nice priority"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Nice"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_in" SUM="8246.03" NUM="5" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_speed" SUM="10374" NUM="5" TYPE="double" UNITS="MHz" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="CPU Speed in terms of MHz"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Speed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="boottime" SUM="6412131826" NUM="5" TYPE="double" UNITS="s" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="system"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The last time that the system was started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Last Boot Time"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_rece" SUM="963775.60" NUM="3" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_wio" SUM="0.1" NUM="5" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU wio"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_one" SUM="0.27" NUM="5" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="One minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="One Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="disk_total" SUM="1437.006" NUM="5" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total available disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Disk Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_user" SUM="2.2" NUM="5" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU User"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_idle" SUM="493.0" NUM="5" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Idle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_free" SUM="39101996" NUM="5" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available swap memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Swap Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_out" SUM="8689.98" NUM="5" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_cached" SUM="2782052" NUM="5" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of cached memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Cached Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_rece" SUM="912.39" NUM="3" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_five" SUM="0.12" NUM="5" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Five minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Five Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_num" SUM="20" NUM="5" TYPE="double" UNITS="CPUs" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of CPUs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_fifteen" SUM="0.01" NUM="5" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Fifteen minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Fifteen Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_send" SUM="987248.50" NUM="3" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_free" SUM="35824444" NUM="5" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_system" SUM="4.7" NUM="5" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the system level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU System"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_run" SUM="1" NUM="5" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of running processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Running Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_total" SUM="40850776" NUM="5" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of memory displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_aidle" SUM="491.9" NUM="5" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percent of time since boot idle CPU"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU aidle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_in" SUM="1506783.70" NUM="5" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_buffers" SUM="1027956" NUM="5" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of buffered memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Buffers"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_shared" SUM="0" NUM="5" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of shared memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Shared Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_send" SUM="6.40" NUM="3" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_total" SUM="39101996" NUM="5" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of swap space displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Swap Space Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="part_max_used" SUM="47.1" NUM="5" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Maximum percent used for all partitions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Maximum Disk Space Used"/>
+</EXTRA_DATA>
+</METRICS>
+</CLUSTER>
+<CLUSTER NAME="online" LOCALTIME="1284626241" OWNER="taomee" LATLONG="unspecified" URL="www.taomee.com">
+<HOSTS UP="31" DOWN="0" SOURCE="gmetad"/>
+<METRICS NAME="disk_free" SUM="5521.732" NUM="31" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total free disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Disk Space Available"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_out" SUM="3558112.65" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_total" SUM="4472" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_nice" SUM="0.0" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level with nice priority"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Nice"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_in" SUM="20436.81" NUM="31" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_speed" SUM="61845" NUM="31" TYPE="double" UNITS="MHz" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="CPU Speed in terms of MHz"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Speed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="boottime" SUM="39404549933" NUM="31" TYPE="double" UNITS="s" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="system"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The last time that the system was started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Last Boot Time"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_rece" SUM="1119051.46" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_wio" SUM="25.3" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU wio"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_one" SUM="2.37" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="One minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="One Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="disk_total" SUM="9891.482" NUM="31" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total available disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Disk Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_user" SUM="14.1" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU User"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_idle" SUM="3035.9" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Idle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_free" SUM="242139612" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available swap memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Swap Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_out" SUM="18052.61" NUM="31" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_cached" SUM="122575596" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of cached memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Cached Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_rece" SUM="1124731.64" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_five" SUM="5.91" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Five minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Five Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_num" SUM="160" NUM="31" TYPE="double" UNITS="CPUs" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of CPUs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_fifteen" SUM="5.47" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Fifteen minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Fifteen Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_send" SUM="837504.24" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_free" SUM="44199836" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_system" SUM="24.7" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the system level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU System"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_run" SUM="6" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of running processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Running Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_total" SUM="294606600" NUM="31" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of memory displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_aidle" SUM="2966.4" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percent of time since boot idle CPU"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU aidle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_in" SUM="2257571.50" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_buffers" SUM="6546788" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of buffered memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Buffers"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_shared" SUM="0" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of shared memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Shared Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_total" SUM="242507876" NUM="31" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of swap space displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Swap Space Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_send" SUM="2694433.76" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="part_max_used" SUM="1863.2" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Maximum percent used for all partitions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Maximum Disk Space Used"/>
+</EXTRA_DATA>
+</METRICS>
+</CLUSTER>
+<CLUSTER NAME="SEER DataBase bak" LOCALTIME="1284626240" OWNER="root" LATLONG="unspecified" URL="unspecified">
+<HOSTS UP="25" DOWN="0" SOURCE="gmetad"/>
+<METRICS NAME="mysql_innodb_data_reads" SUM="5170658040" NUM="25" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions" SUM="54556841584" NUM="25" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_total" SUM="61532761872" NUM="25" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total space used by binary logs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_update" SUM="77376808671" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of UPDATE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_update"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_normal_aio_reads" SUM="0" NUM="25" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_normal_aio_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_out" SUM="156078.43" NUM="25" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_total" SUM="1878" NUM="25" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_writes" SUM="73" NUM="25" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of physical writes of a key block to disk"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_deleted" SUM="536851741" NUM="25" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_deleted"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_created" SUM="11786" NUM="25" TYPE="double" UNITS="threads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads created to handle connections"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_created"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_replace" SUM="0" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of REPLACE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_replace"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_range" SUM="0" NUM="25" TYPE="double" UNITS="sorts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorts that were done using ranges"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_range"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_flushed" SUM="55265202183" NUM="25" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_flushed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slow_launch_threads" SUM="0" NUM="25" TYPE="double" UNITS="threads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads that have taken more than slow_launch_time seconds to create"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slow_launch_threads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_inserts" SUM="0" NUM="25" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries added to the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_inserts"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_in" SUM="2898.70" NUM="25" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_insert_select" SUM="0" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of INSERT ... SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_insert_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_nice" SUM="0.0" NUM="25" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level with nice priority"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Nice"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_read_views" SUM="25" NUM="25" TYPE="double" UNITS="views" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_read_views"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_log_writes" SUM="0" NUM="25" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_log_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_speed" SUM="50008" NUM="25" TYPE="double" UNITS="MHz" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="CPU Speed in terms of MHz"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Speed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_written" SUM="6313730228" NUM="25" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_written"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_replace_select" SUM="0" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of REPLACE ... SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_replace_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_free_blocks" SUM="0" NUM="25" TYPE="double" UNITS="blocks" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of free memory blocks in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_free_blocks"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="boottime" SUM="31763338658" NUM="25" TYPE="double" UNITS="s" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="system"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The last time that the system was started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Last Boot Time"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_not_cached" SUM="0" NUM="25" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of non-cached queries (not cacheable, or not cached due to the query_cache_type setting)"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_not_cached"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_bytes_received" SUM="67504570071" NUM="25" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of bytes received from all clients"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_bytes_received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_active_transactions" SUM="3" NUM="25" TYPE="double" UNITS="txns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Active InnoDB transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_active_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_rece" SUM="733762.66" NUM="25" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_history_list" SUM="5839" NUM="25" TYPE="double" UNITS="length" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_history_list"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_normal_aio_writes" SUM="0" NUM="25" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_normal_aio_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_os_waits" SUM="246116619" NUM="25" TYPE="double" UNITS="waits" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_os_waits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_load" SUM="0" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of LOAD statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_load"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slow_queries" SUM="203739" NUM="25" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries that have taken more than long_query_time seconds"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slow_queries"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_range_check" SUM="0" NUM="25" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins without keys that check for key usage after each row"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_range_check"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_questions" SUM="57235542241" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of statements that clients have sent to the server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_questions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_wio" SUM="20.7" NUM="25" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU wio"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_full_range_join" SUM="0" NUM="25" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that used a range search on a reference table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_full_range_join"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_data_fsyncs" SUM="159481626" NUM="25" TYPE="double" UNITS="fsyncs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_fsyncs"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_free" SUM="6" NUM="25" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_free"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_data" SUM="9188840" NUM="25" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_data"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_queries_queued" SUM="0" NUM="25" TYPE="double" UNITS="queries" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_queries_queued"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_connections" SUM="15856663" NUM="25" TYPE="double" UNITS="conns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of connection attempts (successful or not) to the MySQL server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_connections"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_one" SUM="1.68" NUM="25" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="One minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="One Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_bytes_sent" SUM="65399971457" NUM="25" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL=" The number of bytes sent to all clients"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_bytes_sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_running" SUM="25" NUM="25" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads that are not sleeping"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_running"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_range" SUM="6" NUM="25" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that used ranges on the first table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_range"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_rows" SUM="321691" NUM="25" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorted rows"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_rows"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_files" SUM="125" NUM="25" TYPE="double" UNITS="files" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary files mysqld has created"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_files"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_read" SUM="70418951087" NUM="25" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_read"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_lowmem_prunes" SUM="0" NUM="25" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries that were deleted from the query cache because of low memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_lowmem_prunes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_user" SUM="10.4" NUM="25" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU User"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_idle" SUM="2456.0" NUM="25" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Idle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_delete" SUM="4325318270" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of DELETE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_delete"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions_purged" SUM="68957408762" NUM="25" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions_purged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_free" SUM="195555912" NUM="25" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available swap memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Swap Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_opened_tables" SUM="884962" NUM="25" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of tables that have been opened"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_opened_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_uptime" SUM="231283608" NUM="25" TYPE="double" UNITS="secs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of seconds that the server has been up"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_uptime"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_out" SUM="1572.68" NUM="25" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_cached" SUM="60539596" NUM="25" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of cached memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Cached Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_disk_tables" SUM="136195" NUM="25" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary tables on disk created automatically by the server while executing statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_disk_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_chkp_writes" SUM="0" NUM="25" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_chkp_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_select" SUM="31116521" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_rece" SUM="590.10" NUM="25" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_max_used_connections" SUM="766" NUM="25" TYPE="double" UNITS="conns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The maximum number of connections that have been in use simultaneously since the server started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_max_used_connections"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_five" SUM="1.35" NUM="25" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Five minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Five Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_buffer_pool_flushes" SUM="0" NUM="25" TYPE="double" UNITS="reqs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of pending buffer pool page-flush requests"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_buffer_pool_flushes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_dirty" SUM="401004" NUM="25" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_dirty"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_aio_log_ios" SUM="0" NUM="25" TYPE="double" UNITS="ops" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_aio_log_ios"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_merged" SUM="2237734" NUM="25" TYPE="double" UNITS="recs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_merged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_unflushed" SUM="261034" NUM="25" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_unflushed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_free_memory" SUM="0" NUM="25" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The amount of free memory for the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_free_memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_aborted_clients" SUM="29798" NUM="25" TYPE="double" UNITS="clients" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of connections that were aborted because the client died without closing the connection properly"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_aborted_clients"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_write_requests" SUM="73" NUM="25" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of requests to write a key block to the cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_write_requests"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_open_files" SUM="190" NUM="25" TYPE="double" UNITS="files" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of files that are open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_open_files"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_connected" SUM="25" NUM="25" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of currently open connections"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_connected"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_cache_disk_use" SUM="0" NUM="25" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of transactions that used the temporary binary log cache but that exceeded the value of binlog_cache_size and used a temporary file to store statements from the transaction"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_cache_disk_use"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_num" SUM="100" NUM="25" TYPE="double" UNITS="CPUs" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of CPUs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_fifteen" SUM="0.47" NUM="25" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Fifteen minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Fifteen Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_used" SUM="40586137269" NUM="25" TYPE="double" UNITS="percent" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Current binary log size / max_binlog_size"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_used"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_merges" SUM="1861206" NUM="25" TYPE="double" UNITS="merges" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_merges"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_spin_rounds" SUM="8793014213" NUM="25" TYPE="double" UNITS="spins" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_spin_rounds"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_send" SUM="156181.58" NUM="25" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions_unpurged" SUM="48972" NUM="25" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions_unpurged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slave_retried_transactions" SUM="0" NUM="25" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total number of times since startup that the replication slave SQL thread has retried transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slave_retried_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_current_transactions" SUM="49" NUM="25" TYPE="double" UNITS="txns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Current InnoDB transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_current_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_read_requests" SUM="210" NUM="25" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of requests to read a key block from the cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_read_requests"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_free" SUM="1355324" NUM="25" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_scan" SUM="9628" NUM="25" TYPE="double" UNITS="sorts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorts that were done by scanning the table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_scan"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_update_multi" SUM="0" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of multi-table UPDATE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_update_multi"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_table_locks_waited" SUM="0" NUM="25" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of times that a request for a table lock could not be granted immediately and a wait was needed"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_table_locks_waited"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_aborted_connects" SUM="3145" NUM="25" TYPE="double" UNITS="conns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of failed attempts to connect to the MySQL server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_aborted_connects"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_open_tables" SUM="43125" NUM="25" TYPE="double" UNITS="tables" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of tables that are open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_open_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_total" SUM="9240576" NUM="25" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total size of buffer pool, in pages"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slave_open_temp_tables" SUM="0" NUM="25" TYPE="double" UNITS="tables" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary tables that the slave SQL thread currently has open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slave_open_temp_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_data_writes" SUM="9931575578" NUM="25" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_aio_sync_ios" SUM="0" NUM="25" TYPE="double" UNITS="ops" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_aio_sync_ios"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_system" SUM="12.7" NUM="25" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the system level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU System"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_spin_waits" SUM="107241081" NUM="25" TYPE="double" UNITS="spins" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_spin_waits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_cached" SUM="169" NUM="25" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads in the thread cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_cached"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_read" SUM="5428505190" NUM="25" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_read"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_run" SUM="2" NUM="25" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of running processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Running Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_cache_use" SUM="53867" NUM="25" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL=" The number of transactions that used the temporary binary log cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_cache_use"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_queries_in_cache" SUM="0" NUM="25" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries registered in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_queries_in_cache"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_total" SUM="237299192" NUM="25" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of memory displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_aidle" SUM="2388.6" NUM="25" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percent of time since boot idle CPU"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU aidle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_in" SUM="733867.87" NUM="25" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_updated" SUM="54358343716" NUM="25" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_updated"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_created" SUM="172143524" NUM="25" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_created"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_table_locks_immediate" SUM="84384674170" NUM="25" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of times that a request for a table lock could be granted immediately"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_table_locks_immediate"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_queries_inside" SUM="0" NUM="25" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_queries_inside"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_tables" SUM="31060184" NUM="25" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of in-memory temporary tables created automatically by the server while executing statement"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_buffers" SUM="2139052" NUM="25" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of buffered memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Buffers"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_writes" SUM="4922469577" NUM="25" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_inserts" SUM="2237734" NUM="25" TYPE="double" UNITS="inserts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_inserts"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_hits" SUM="0" NUM="25" TYPE="double" UNITS="hits" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of query cache hits"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_hits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_log_flushes" SUM="0" NUM="25" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_log_flushes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_shared" SUM="0" NUM="25" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of shared memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Shared Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_written" SUM="55265463217" NUM="25" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_written"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_total_blocks" SUM="0" NUM="25" TYPE="double" UNITS="blocks" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total number of blocks in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_total_blocks"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_inserted" SUM="5183013253" NUM="25" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_inserted"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_total" SUM="195590300" NUM="25" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of swap space displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Swap Space Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_send" SUM="0.00" NUM="25" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_reads" SUM="118" NUM="25" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of physical reads of a key block from disk"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_count" SUM="1398" NUM="25" TYPE="double" UNITS="logs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of binary logs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_insert" SUM="2682209325" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of INSERT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_insert"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_current" SUM="638975679" NUM="25" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Size of current binary log"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_current"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_scan" SUM="31229593" NUM="25" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that did a full scan of the first table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_scan"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_ibuf_aio_reads" SUM="0" NUM="25" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_ibuf_aio_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_delete_multi" SUM="0" NUM="25" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of multi-table DELETE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_delete_multi"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_full_join" SUM="0" NUM="25" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that perform table scans because they do not use indexes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_full_join"/>
+</EXTRA_DATA>
+</METRICS>
+</CLUSTER>
+<CLUSTER NAME="SEER DataBase" LOCALTIME="1284626241" OWNER="root" LATLONG="unspecified" URL="unspecified">
+<HOSTS UP="31" DOWN="0" SOURCE="gmetad"/>
+<METRICS NAME="mysql_innodb_data_reads" SUM="4230752900" NUM="29" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions" SUM="74339682302" NUM="29" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_total" SUM="62845610175" NUM="28" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total space used by binary logs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_update" SUM="52718210735" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of UPDATE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_update"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_normal_aio_reads" SUM="0" NUM="29" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_normal_aio_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_out" SUM="1757387.97" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_total" SUM="4149" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_writes" SUM="27340912" NUM="29" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of physical writes of a key block to disk"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_deleted" SUM="564263572" NUM="29" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_deleted"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_created" SUM="15811" NUM="29" TYPE="double" UNITS="threads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads created to handle connections"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_created"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_replace" SUM="0" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of REPLACE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_replace"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_range" SUM="499630" NUM="29" TYPE="double" UNITS="sorts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorts that were done using ranges"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_range"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_flushed" SUM="52913547083" NUM="29" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_flushed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slow_launch_threads" SUM="0" NUM="29" TYPE="double" UNITS="threads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads that have taken more than slow_launch_time seconds to create"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slow_launch_threads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_inserts" SUM="24" NUM="29" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries added to the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_inserts"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_in" SUM="8849.48" NUM="31" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_insert_select" SUM="0" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of INSERT ... SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_insert_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_nice" SUM="0.0" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level with nice priority"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Nice"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_read_views" SUM="29" NUM="29" TYPE="double" UNITS="views" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_read_views"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_log_writes" SUM="0" NUM="29" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_log_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_speed" SUM="61978" NUM="31" TYPE="double" UNITS="MHz" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="CPU Speed in terms of MHz"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Speed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_written" SUM="3807783974" NUM="29" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_written"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_replace_select" SUM="417" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of REPLACE ... SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_replace_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_free_blocks" SUM="1" NUM="29" TYPE="double" UNITS="blocks" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of free memory blocks in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_free_blocks"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="boottime" SUM="39594390891" NUM="31" TYPE="double" UNITS="s" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="system"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The last time that the system was started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Last Boot Time"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_not_cached" SUM="356332" NUM="29" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of non-cached queries (not cacheable, or not cached due to the query_cache_type setting)"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_not_cached"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_bytes_received" SUM="72333435966" NUM="29" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of bytes received from all clients"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_bytes_received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_rece" SUM="772129.03" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_active_transactions" SUM="76" NUM="29" TYPE="double" UNITS="txns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Active InnoDB transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_active_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_history_list" SUM="4612" NUM="29" TYPE="double" UNITS="length" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_history_list"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_normal_aio_writes" SUM="0" NUM="29" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_normal_aio_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_os_waits" SUM="1263027551" NUM="29" TYPE="double" UNITS="waits" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_os_waits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_load" SUM="0" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of LOAD statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_load"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slow_queries" SUM="3454744" NUM="29" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries that have taken more than long_query_time seconds"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slow_queries"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_range_check" SUM="0" NUM="29" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins without keys that check for key usage after each row"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_range_check"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_questions" SUM="59032666525" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of statements that clients have sent to the server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_questions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_wio" SUM="16.9" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU wio"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_full_range_join" SUM="0" NUM="29" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that used a range search on a reference table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_full_range_join"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_data_fsyncs" SUM="140260997" NUM="29" TYPE="double" UNITS="fsyncs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_fsyncs"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_free" SUM="178027" NUM="29" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_free"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_data" SUM="32456788" NUM="29" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_data"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_queries_queued" SUM="0" NUM="29" TYPE="double" UNITS="queries" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_queries_queued"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_connections" SUM="12868258" NUM="29" TYPE="double" UNITS="conns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of connection attempts (successful or not) to the MySQL server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_connections"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_one" SUM="3.89" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="One minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="One Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_bytes_sent" SUM="55381371834" NUM="29" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL=" The number of bytes sent to all clients"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_bytes_sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_running" SUM="179" NUM="29" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads that are not sleeping"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_running"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_range" SUM="25716193192" NUM="29" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that used ranges on the first table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_range"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_rows" SUM="6266827" NUM="29" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorted rows"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_rows"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_files" SUM="145" NUM="29" TYPE="double" UNITS="files" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary files mysqld has created"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_files"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_read" SUM="56496091320" NUM="29" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_read"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_user" SUM="16.1" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU User"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_lowmem_prunes" SUM="0" NUM="29" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries that were deleted from the query cache because of low memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_lowmem_prunes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_idle" SUM="3048.4" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Idle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_delete" SUM="3032103064" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of DELETE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_delete"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions_purged" SUM="92279781116" NUM="29" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions_purged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_free" SUM="250991876" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available swap memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Swap Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_opened_tables" SUM="31444779" NUM="29" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of tables that have been opened"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_opened_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_uptime" SUM="190877272" NUM="29" TYPE="double" UNITS="secs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of seconds that the server has been up"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_uptime"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_out" SUM="5235.37" NUM="31" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_cached" SUM="227884928" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of cached memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Cached Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_disk_tables" SUM="6776462" NUM="29" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary tables on disk created automatically by the server while executing statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_disk_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_rece" SUM="4826.02" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_chkp_writes" SUM="0" NUM="29" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_chkp_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_select" SUM="28391815365" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of SELECT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_select"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_max_used_connections" SUM="1007" NUM="29" TYPE="double" UNITS="conns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The maximum number of connections that have been in use simultaneously since the server started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_max_used_connections"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_five" SUM="3.71" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Five minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Five Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_buffer_pool_flushes" SUM="0" NUM="29" TYPE="double" UNITS="reqs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of pending buffer pool page-flush requests"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_buffer_pool_flushes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_dirty" SUM="170879" NUM="29" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_dirty"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_aio_log_ios" SUM="0" NUM="29" TYPE="double" UNITS="ops" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_aio_log_ios"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_merged" SUM="30426" NUM="29" TYPE="double" UNITS="recs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_merged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_unflushed" SUM="261070" NUM="29" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_unflushed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_free_memory" SUM="67055064" NUM="29" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The amount of free memory for the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_free_memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_aborted_clients" SUM="37089" NUM="29" TYPE="double" UNITS="clients" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of connections that were aborted because the client died without closing the connection properly"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_aborted_clients"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_write_requests" SUM="27365362" NUM="29" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of requests to write a key block to the cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_write_requests"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_open_files" SUM="379" NUM="29" TYPE="double" UNITS="files" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of files that are open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_open_files"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_connected" SUM="902" NUM="29" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of currently open connections"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_connected"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_cache_disk_use" SUM="0" NUM="29" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of transactions that used the temporary binary log cache but that exceeded the value of binlog_cache_size and used a temporary file to store statements from the transaction"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_cache_disk_use"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_num" SUM="124" NUM="31" TYPE="double" UNITS="CPUs" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of CPUs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_fifteen" SUM="2.96" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Fifteen minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Fifteen Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_used" SUM="42391605353" NUM="28" TYPE="double" UNITS="percent" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Current binary log size / max_binlog_size"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_used"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_merges" SUM="23836" NUM="29" TYPE="double" UNITS="merges" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_merges"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_send" SUM="1757368.18" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_spin_rounds" SUM="32313802148" NUM="29" TYPE="double" UNITS="spins" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_spin_rounds"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_transactions_unpurged" SUM="465919656" NUM="29" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_transactions_unpurged"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slave_retried_transactions" SUM="0" NUM="29" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total number of times since startup that the replication slave SQL thread has retried transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slave_retried_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_current_transactions" SUM="879" NUM="29" TYPE="double" UNITS="txns" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Current InnoDB transactions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_current_transactions"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_read_requests" SUM="92095628" NUM="29" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of requests to read a key block from the cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_read_requests"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_free" SUM="4409768" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_sort_scan" SUM="961" NUM="29" TYPE="double" UNITS="sorts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of sorts that were done by scanning the table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_sort_scan"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_update_multi" SUM="0" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of multi-table UPDATE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_update_multi"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_table_locks_waited" SUM="258730" NUM="29" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of times that a request for a table lock could not be granted immediately and a wait was needed"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_table_locks_waited"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_aborted_connects" SUM="1834" NUM="29" TYPE="double" UNITS="conns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of failed attempts to connect to the MySQL server"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_aborted_connects"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_open_tables" SUM="96425" NUM="29" TYPE="double" UNITS="tables" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of tables that are open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_open_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_buffer_pool_pages_total" SUM="32833536" NUM="29" TYPE="double" UNITS="pages" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total size of buffer pool, in pages"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_buffer_pool_pages_total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_slave_open_temp_tables" SUM="0" NUM="29" TYPE="double" UNITS="tables" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of temporary tables that the slave SQL thread currently has open"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_slave_open_temp_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_data_writes" SUM="2757291468" NUM="29" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_data_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_aio_sync_ios" SUM="0" NUM="29" TYPE="double" UNITS="ops" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_aio_sync_ios"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_system" SUM="18.4" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the system level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU System"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_spin_waits" SUM="1001780647" NUM="29" TYPE="double" UNITS="spins" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_spin_waits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_threads_cached" SUM="34" NUM="29" TYPE="double" UNITS="threads" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of threads in the thread cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_threads_cached"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_read" SUM="6629341790" NUM="29" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_read"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_run" SUM="21" NUM="31" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of running processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Running Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_cache_use" SUM="51992368217" NUM="29" TYPE="double" UNITS="txns" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL=" The number of transactions that used the temporary binary log cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_cache_use"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_queries_in_cache" SUM="12" NUM="29" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of queries registered in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_queries_in_cache"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_total" SUM="885185144" NUM="31" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of memory displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_aidle" SUM="2963.1" NUM="31" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percent of time since boot idle CPU"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU aidle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_in" SUM="776955.05" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_updated" SUM="40528088259" NUM="29" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_updated"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pages_created" SUM="97559518" NUM="29" TYPE="double" UNITS="pages" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pages_created"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_table_locks_immediate" SUM="22256376977" NUM="29" TYPE="double" UNITS="count" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of times that a request for a table lock could be granted immediately"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_table_locks_immediate"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_queries_inside" SUM="0" NUM="29" TYPE="double" UNITS="queries" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_queries_inside"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_created_tmp_tables" SUM="35516544" NUM="29" TYPE="double" UNITS="tables" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of in-memory temporary tables created automatically by the server while executing statement"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_created_tmp_tables"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_buffers" SUM="6812776" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of buffered memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Buffers"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_writes" SUM="206119655" NUM="29" TYPE="double" UNITS="writes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_writes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_ibuf_inserts" SUM="33757" NUM="29" TYPE="double" UNITS="inserts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_ibuf_inserts"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_hits" SUM="6" NUM="29" TYPE="double" UNITS="hits" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of query cache hits"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_hits"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_log_flushes" SUM="0" NUM="29" TYPE="double" UNITS="reqs" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_log_flushes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_shared" SUM="0" NUM="31" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of shared memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Shared Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_log_bytes_written" SUM="52913550618" NUM="29" TYPE="double" UNITS="bytes" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_log_bytes_written"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_qcache_total_blocks" SUM="33" NUM="29" TYPE="double" UNITS="blocks" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The total number of blocks in the query cache"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_qcache_total_blocks"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_rows_inserted" SUM="6165987286" NUM="29" TYPE="double" UNITS="rows" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_rows_inserted"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_send" SUM="19.78" NUM="31" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_total" SUM="266517024" NUM="31" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of swap space displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Swap Space Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_key_reads" SUM="376255" NUM="29" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of physical reads of a key block from disk"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_key_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_count" SUM="1145" NUM="28" TYPE="double" UNITS="logs" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of binary logs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_insert" SUM="2572684220" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of INSERT statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_insert"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_binlog_space_current" SUM="16181151352" NUM="28" TYPE="double" UNITS="bytes" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Size of current binary log"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_binlog_space_current"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_scan" SUM="38931435" NUM="29" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that did a full scan of the first table"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_scan"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_innodb_pending_ibuf_aio_reads" SUM="0" NUM="29" TYPE="double" UNITS="reads" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="InnoDB"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_innodb_pending_ibuf_aio_reads"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_com_delete_multi" SUM="0" NUM="29" TYPE="double" UNITS="stmts" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of multi-table DELETE statements"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_com_delete_multi"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mysql_select_full_join" SUM="0" NUM="29" TYPE="double" UNITS="joins" SLOPE="positive" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="mysql"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The number of joins that perform table scans because they do not use indexes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="mysql_select_full_join"/>
+</EXTRA_DATA>
+</METRICS>
+</CLUSTER>
+<CLUSTER NAME="home" LOCALTIME="1284626239" OWNER="taomee" LATLONG="unspecified" URL="www.taomee.com">
+<HOSTS UP="4" DOWN="0" SOURCE="gmetad"/>
+<METRICS NAME="disk_free" SUM="691.286" NUM="4" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total free disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Disk Space Available"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_out" SUM="447613.73" NUM="4" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_total" SUM="246" NUM="4" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_nice" SUM="0.0" NUM="4" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level with nice priority"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Nice"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_in" SUM="3741.53" NUM="4" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_speed" SUM="7980" NUM="4" TYPE="double" UNITS="MHz" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="CPU Speed in terms of MHz"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Speed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="boottime" SUM="5084781716" NUM="4" TYPE="double" UNITS="s" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="system"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The last time that the system was started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Last Boot Time"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_rece" SUM="403668.56" NUM="4" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_wio" SUM="1.9" NUM="4" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU wio"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_one" SUM="0.22" NUM="4" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="One minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="One Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="disk_total" SUM="1149.592" NUM="4" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total available disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Disk Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_user" SUM="1.4" NUM="4" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU User"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_idle" SUM="393.8" NUM="4" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Idle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_free" SUM="31294112" NUM="4" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available swap memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Swap Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_out" SUM="3229.87" NUM="4" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_cached" SUM="25467852" NUM="4" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of cached memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Cached Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_rece" SUM="165762.72" NUM="4" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_five" SUM="0.09" NUM="4" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Five minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Five Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_num" SUM="16" NUM="4" TYPE="double" UNITS="CPUs" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of CPUs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_fifteen" SUM="0.01" NUM="4" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Fifteen minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Fifteen Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_send" SUM="140554.34" NUM="4" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_free" SUM="1080376" NUM="4" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_system" SUM="2.8" NUM="4" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the system level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU System"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_run" SUM="0" NUM="4" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of running processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Running Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_total" SUM="32680928" NUM="4" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of memory displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_aidle" SUM="383.0" NUM="4" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percent of time since boot idle CPU"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU aidle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_in" SUM="575887.38" NUM="4" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_buffers" SUM="798692" NUM="4" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of buffered memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Buffers"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_shared" SUM="0" NUM="4" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of shared memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Shared Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_total" SUM="31294448" NUM="4" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of swap space displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Swap Space Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_send" SUM="296905.11" NUM="4" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="part_max_used" SUM="209.7" NUM="4" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Maximum percent used for all partitions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Maximum Disk Space Used"/>
+</EXTRA_DATA>
+</METRICS>
+</CLUSTER>
+<CLUSTER NAME="login switch" LOCALTIME="1284626238" OWNER="taomee" LATLONG="unspecified" URL="www.taomee.com">
+<HOSTS UP="10" DOWN="0" SOURCE="gmetad"/>
+<METRICS NAME="disk_free" SUM="1258.875" NUM="10" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total free disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Disk Space Available"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_out" SUM="752216.79" NUM="10" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_total" SUM="693" NUM="10" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_nice" SUM="0.0" NUM="10" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level with nice priority"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Nice"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_in" SUM="5600.99" NUM="10" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_speed" SUM="20083" NUM="10" TYPE="double" UNITS="MHz" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="CPU Speed in terms of MHz"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Speed"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="boottime" SUM="12762665310" NUM="10" TYPE="double" UNITS="s" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="system"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="The last time that the system was started"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Last Boot Time"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_rece" SUM="837250.31" NUM="10" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_wio" SUM="2.5" NUM="10" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle during which the system had an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU wio"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_one" SUM="0.36" NUM="10" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="One minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="One Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="disk_total" SUM="2874.004" NUM="10" TYPE="double" UNITS="GB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total available disk space"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Disk Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_user" SUM="1.4" NUM="10" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the user level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU User"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_idle" SUM="992.7" NUM="10" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of time that the CPU or CPUs were idle and the system did not have an outstanding disk I/O request"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Idle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_free" SUM="78211532" NUM="10" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available swap memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Swap Space"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="pkts_out" SUM="4234.45" NUM="10" TYPE="double" UNITS="packets/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Packets out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Packets Sent"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_cached" SUM="46422612" NUM="10" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of cached memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Cached Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_rece" SUM="109270.93" NUM="10" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_five" SUM="0.40" NUM="10" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Five minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Five Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_num" SUM="44" NUM="10" TYPE="double" UNITS="CPUs" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of CPUs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU Count"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="load_fifteen" SUM="0.21" NUM="10" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="load"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Fifteen minute load average"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Fifteen Minute Load Average"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth1_send" SUM="601632.92" NUM="10" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth1 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_free" SUM="24236948" NUM="10" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of available memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Free Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_system" SUM="3.0" NUM="10" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percentage of CPU utilization that occurred while executing at the system level"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU System"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="proc_run" SUM="2" NUM="10" TYPE="double" UNITS=" " SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="process"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total number of running processes"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Total Running Processes"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_total" SUM="82095452" NUM="10" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of memory displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="cpu_aidle" SUM="976.7" NUM="10" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="cpu"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Percent of time since boot idle CPU"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="CPU aidle"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="bytes_in" SUM="940978.87" NUM="10" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes in per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Bytes Received"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_buffers" SUM="1944964" NUM="10" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of buffered memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Memory Buffers"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="mem_shared" SUM="0" NUM="10" TYPE="double" UNITS="KB" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Amount of shared memory"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Shared Memory"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="swap_total" SUM="78212024" NUM="10" TYPE="double" UNITS="KB" SLOPE="zero" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="memory"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Total amount of swap space displayed in KBs"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Swap Space Total"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="eth0_send" SUM="154503.86" NUM="10" TYPE="double" UNITS="bytes/sec" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="network"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Number of bytes out per second"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="eth0 Bytes Send"/>
+</EXTRA_DATA>
+</METRICS>
+<METRICS NAME="part_max_used" SUM="748.7" NUM="10" TYPE="double" UNITS="%" SLOPE="both" SOURCE="gmond">
+<EXTRA_DATA>
+<EXTRA_ELEMENT NAME="GROUP" VAL="disk"/>
+<EXTRA_ELEMENT NAME="DESC" VAL="Maximum percent used for all partitions"/>
+<EXTRA_ELEMENT NAME="TITLE" VAL="Maximum Disk Space Used"/>
+</EXTRA_DATA>
+</METRICS>
+</CLUSTER>
+</GRID>
+</GANGLIA_XML>

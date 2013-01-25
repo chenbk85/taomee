@@ -1,0 +1,11 @@
+# "$:"开头的行表示变量,变量的值由等号确定.如果是一个非法值,则使用程序内部的默认值
+[数据存储路径]
+$:data_store_path=/home/singku/velocity_platform/analyze_server/probe_ip_save
+
+[DES解密密码]
+$:des_pass_phrase=TAOMEEV5
+
+[服务器绑定ip]
+$:bind_ip=10.1.1.141
+[服务器监听端口]
+$:server_conn_port=7777

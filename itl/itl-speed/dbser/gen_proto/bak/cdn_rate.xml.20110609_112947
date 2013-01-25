@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="cdn_rate" cmdid_mode="db" create_time="2011年06月07日 星期2 10:25:50">
+  <struct_list>
+    <struct name="cdn_report_ip_in" struct_from="self">
+      <field mode="single" name="ip" type="uint32" desc="ip地址"/>
+      <field mode="single" name="logtime" type="uint32" desc="上报时间戳"/>
+      <field mode="single" name="value" type="uint32" desc="cdn下载速度和"/>
+      <field mode="single" name="count" type="uint32" desc="下载次数"/>
+    </struct>
+    <struct name="cdn_report_prov_in" struct_from="self">
+      <field mode="single" name="provid" type="uint32" desc="省编号"/>
+      <field mode="single" name="cityid" type="uint32" desc="城市编号"/>
+      <field mode="array" name="comp" type="char" size="64" desc="运营商编号"/>
+      <field mode="single" name="logtime" type="uint32" desc="下载时间"/>
+      <field mode="single" name="value" type="uint32" desc="下载速度和"/>
+      <field mode="single" name="count" type="uint32" desc="下载次数"/>
+    </struct>
+    <struct name="net_stat_report_all_idc_delay_in" struct_from="self">
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_all_idc_lost_in" struct_from="self">
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_all_idc_ttl_in" struct_from="self">
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_idc_delay_in" struct_from="self">
+      <field mode="single" name="idc" type="uint32" desc="idc编号"/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_idc_lost_in" struct_from="self">
+      <field mode="single" name="idc" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_idc_ttl_in" struct_from="self">
+      <field mode="single" name="idc" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_ip_delay_in" struct_from="self">
+      <field mode="single" name="ip" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc="探测时间"/>
+      <field mode="single" name="value" type="uint32" desc="时延和"/>
+      <field mode="single" name="count" type="uint32" desc="探测的次数"/>
+    </struct>
+    <struct name="net_stat_report_ip_lost_in" struct_from="self">
+      <field mode="single" name="ip" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc="一分钟内丢包率和"/>
+      <field mode="single" name="count" type="uint32" desc="探测次数"/>
+    </struct>
+    <struct name="net_stat_report_ip_ttl_in" struct_from="self">
+      <field mode="single" name="ip" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc="一分钟内ttl和"/>
+      <field mode="single" name="count" type="uint32" desc="一分钟内探测次数"/>
+    </struct>
+    <struct name="net_stat_report_link_delay_in" struct_from="self">
+      <field mode="single" name="link" type="uint32" desc="链路编号"/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_link_lost_in" struct_from="self">
+      <field mode="single" name="link" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_link_ttl_in" struct_from="self">
+      <field mode="single" name="link" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="net_stat_report_prov_delay_in" struct_from="self">
+      <field mode="single" name="provid" type="uint32" desc=""/>
+      <field mode="single" name="cityid" type="uint32" desc=""/>
+      <field mode="array" name="comp" type="char" size="64" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc="一分钟内时延和"/>
+      <field mode="single" name="count" type="uint32" desc="一分钟内探测次数"/>
+    </struct>
+    <struct name="net_stat_report_prov_lost_in" struct_from="self">
+      <field mode="single" name="provid" type="uint32" desc=""/>
+      <field mode="single" name="cityid" type="uint32" desc=""/>
+      <field mode="array" name="comp" type="char" size="64" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc="一分钟内丢包率和"/>
+      <field mode="single" name="count" type="uint32" desc="探测次数"/>
+    </struct>
+    <struct name="net_stat_report_prov_ttl_in" struct_from="self">
+      <field mode="single" name="provid" type="uint32" desc=""/>
+      <field mode="single" name="cityid" type="uint32" desc=""/>
+      <field mode="array" name="comp" type="char" size="64" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="0x1001" name="cdn_report_ip" struct_in="cdn_report_ip_in" struct_out="" desc="上报相同ip的分钟表数据" md5_tag="0x70da81de" bind_bitmap="0"/>
+    <protocol cmd="0x1002" name="cdn_report_prov" struct_in="cdn_report_prov_in" struct_out="" desc="按省市运营商上报cdn速度" md5_tag="0x58335c40" bind_bitmap="0"/>
+    <protocol cmd="0x1003" name="net_stat_report_ip_delay" struct_in="net_stat_report_ip_delay_in" struct_out="" desc="按ip上报全网测速的时延" md5_tag="0x959b4f6d" bind_bitmap="0"/>
+    <protocol cmd="0x1004" name="net_stat_report_prov_delay" struct_in="net_stat_report_prov_delay_in" struct_out="" desc="" md5_tag="0x8853f533" bind_bitmap="0"/>
+    <protocol cmd="0x1005" name="net_stat_report_ip_lost" struct_in="net_stat_report_ip_lost_in" struct_out="" desc="" md5_tag="0xc417d06c" bind_bitmap="0"/>
+    <protocol cmd="0x1006" name="net_stat_report_prov_lost" struct_in="net_stat_report_prov_lost_in" struct_out="" desc="" md5_tag="0x0e6887e7" bind_bitmap="0"/>
+    <protocol cmd="0x1007" name="net_stat_report_ip_ttl" struct_in="net_stat_report_ip_ttl_in" struct_out="" desc="" md5_tag="0xcac0daeb" bind_bitmap="0"/>
+    <protocol cmd="0x1008" name="net_stat_report_prov_ttl" struct_in="net_stat_report_prov_ttl_in" struct_out="" desc="" md5_tag="0x0cf45740" bind_bitmap="0"/>
+    <protocol cmd="0x1009" name="net_stat_report_link_delay" struct_in="net_stat_report_link_delay_in" struct_out="" desc="单条链路的时延" md5_tag="0xa11782a9" bind_bitmap="0"/>
+    <protocol cmd="0x1010" name="net_stat_report_link_lost" struct_in="net_stat_report_link_lost_in" struct_out="" desc="" md5_tag="0xac44711e" bind_bitmap="0"/>
+    <protocol cmd="0x1011" name="net_stat_report_link_ttl" struct_in="net_stat_report_link_ttl_in" struct_out="" desc="" md5_tag="0x27390bdb" bind_bitmap="0"/>
+    <protocol cmd="0x1012" name="net_stat_report_idc_delay" struct_in="net_stat_report_idc_delay_in" struct_out="" desc="" md5_tag="0x4a8f5029" bind_bitmap="0"/>
+    <protocol cmd="0x1013" name="net_stat_report_idc_lost" struct_in="net_stat_report_idc_lost_in" struct_out="" desc="" md5_tag="0x46353d7b" bind_bitmap="0"/>
+    <protocol cmd="0x1014" name="net_stat_report_idc_ttl" struct_in="net_stat_report_idc_ttl_in" struct_out="" desc="" md5_tag="0xe5acfd47" bind_bitmap="0"/>
+    <protocol cmd="0x1015" name="net_stat_report_all_idc_delay" struct_in="net_stat_report_all_idc_delay_in" struct_out="" desc="" md5_tag="0xedc0dda3" bind_bitmap="0"/>
+    <protocol cmd="0x1016" name="net_stat_report_all_idc_lost" struct_in="net_stat_report_all_idc_lost_in" struct_out="" desc="" md5_tag="0x96b2c1ba" bind_bitmap="0"/>
+    <protocol cmd="0x1017" name="net_stat_report_all_idc_ttl" struct_in="net_stat_report_all_idc_ttl_in" struct_out="" desc="" md5_tag="0x135e812a" bind_bitmap="0"/>
+  </protocol_list>
+  <error_list>
+    <error id="0" name="__SUCC__" desc="成功"/>
+  </error_list>
+  <desc_list>
+    <field_desc key="userid" desc="米米号"/>
+  </desc_list>
+  <bind_list/>
+</taomee_proto>

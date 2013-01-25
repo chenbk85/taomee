@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="pop_db" cmdid_mode="db" create_time="2011年05月16日 星期1 14:01:16">
+  <struct_list>
+    <struct name="item_exchange_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+      <field mode="single" name="max_count" type="uint32" desc=""/>
+    </struct>
+    <struct name="pop_exchange_in" struct_from="self">
+      <field mode="single" name="opt_flag" type="uint32" desc=""/>
+      <field mode="varlist" name="add_item_list" type="item_exchange_t" max_size="9999" desc=""/>
+      <field mode="varlist" name="del_item_list" type="item_exchange_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="task_t" struct_from="pub">
+      <field mode="single" name="taskid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="pop_login_out" struct_from="self">
+      <field mode="single" name="register_time" type="uint32" desc=""/>
+      <field mode="single" name="sex" type="uint32" desc=""/>
+      <field mode="single" name="age" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+      <field mode="varlist" name="task_list" type="task_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="pop_reg_in" struct_from="self">
+      <field mode="single" name="sex" type="uint32" desc=""/>
+      <field mode="single" name="age" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+    </struct>
+    <struct name="pop_task_complete_node_in" struct_from="self">
+      <field mode="single" name="taskid" type="uint32" desc=""/>
+      <field mode="single" name="task_nodeid" type="uint32" desc=""/>
+    </struct>
+    <struct name="pop_task_get_list_out" struct_from="self">
+      <field mode="varlist" name="task_list" type="task_t" max_size="9999" desc=""/>
+    </struct>
+    <struct name="item_t" struct_from="pub">
+      <field mode="single" name="itemid" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="0x7401" name="pop_login" struct_in="" struct_out="pop_login_out" desc="登入" md5_tag="0x45b4c3d2" bind_bitmap="1"/>
+    <protocol cmd="0x7402" name="pop_reg" struct_in="pop_reg_in" struct_out="" desc="注册" md5_tag="0x65deb191" bind_bitmap="0"/>
+    <protocol cmd="0x740A" name="pop_exchange" struct_in="pop_exchange_in" struct_out="" desc="交换物品" md5_tag="0x97036323" bind_bitmap="1"/>
+    <protocol cmd="0x7410" name="pop_task_complete_node" struct_in="pop_task_complete_node_in" struct_out="" desc="完成子节点任务" md5_tag="0x18cc6534" bind_bitmap="1"/>
+    <protocol cmd="0x7411" name="pop_task_get_list" struct_in="" struct_out="pop_task_get_list_out" desc="得到完成任务的进度列表" md5_tag="0x8029753a" bind_bitmap="1"/>
+  </protocol_list>
+  <error_list>
+    <error id="0" name="__SUCC__" desc="成功"/>
+  </error_list>
+  <desc_list>
+    <field_desc key="userid" desc="米米号"/>
+  </desc_list>
+  <bind_list>
+    <bind bindid="0" bind_name="for_online" bind_desc=""/>
+    <bind bindid="21" bind_name="for_kefu" bind_desc=""/>
+  </bind_list>
+</taomee_proto>

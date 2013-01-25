@@ -1,0 +1,60 @@
+#!/usr/bin/expect -f
+
+# 向指定的主机发送密码
+# @return 成功返回0，失败返回-1
+proc send_passwd {password} 
+{
+    expect
+    {
+        "(yes/no)"
+        { 
+            send "yes\r" 
+                exp_continue
+        }
+        "password:"
+        { 
+            send "$password\r"
+                expect
+                {
+                    "$*" 
+                    {
+                        return 0
+                    }  
+                }
+        }
+        "passwd:"
+        { 
+            send "$password\r"
+                expect 
+                {
+                    "$*"
+                    {
+                        return 0
+                    }  
+                }
+        }
+    }
+    # timed out
+    return -1
+}
+
+
+spawn rsh -p56000 oaadmin@192.168.9.102 wget -P/opt/taomee/oaadmin/oa-monitor/oa-node/ http://192.168.9.101/oa-update/bin/64/oa_node
+set result [send_passwd "OAadmin@tm"]
+if { $result != 0 } {
+	puts "\rError connecting to server: 192.168.9.102, user: oaadmin.\r"
+		exit -1
+}
+
+#send "cm172statsrv\r"
+#expect "$*"
+#send "ssh stat@192.168.0.86\r"
+#set result [send_passwd "stat@pwd"]
+#if { $result != 0 } {
+#	puts "\rError connecting to server: 192.168.0.86, user: statsrv.\r"
+#		exit -1
+#}
+#
+#send "cd task;clear;ls\r"
+#
+interact

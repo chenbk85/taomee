@@ -1,0 +1,137 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+ALARM_CMD_LIST_FILE	./config.php	/^define("ALARM_CMD_LIST_FILE", "alarm_cmd_list");     \/\/报警命令缓存文件$/;"	d
+ALARM_CONFIG_DIR	./config.php	/^define("ALARM_CONFIG_DIR", ".\/alarm-conf\/");$/;"	d
+DEFAULT_EMAIL	./config.php	/^define('DEFAULT_EMAIL', 'linus@taomee.com,troy@taomee.com,augusttan@taomee.com,mason@taomee.com,tonyliu@taomme.com,luis@taomee.com');                                     \/\/默认联系人邮件$/;"	d
+DEFAULT_PHONE	./config.php	/^define('DEFAULT_PHONE', '18621005534,13918298663,18602140363,18616816316,13636584249,18621531365');                                                    \/\/默认联系人电话$/;"	d
+DEFAULT_RTX	./config.php	/^define('DEFAULT_RTX', 'linus,troy,augusttan,mason,tonyliu,luis'); \/\/默认联系人rtx$/;"	d
+LOG_DIR	./config.php	/^define("LOG_DIR", ".\/log\/");$/;"	d
+LOG_PREFIX	./config.php	/^define("LOG_PREFIX", "oa_update_");$/;"	d
+SIGN_KEY	./config.php	/^define("SIGN_KEY", "monitor");$/;"	d
+UPDATE_FILE_NAME	./config.php	/^define("UPDATE_FILE_NAME", "update_cmd_list");       \/\/ 更新命令缓存文件$/;"	d
+WHITE_LIST	./config.php	/^define('WHITE_LIST', 'off');                           \/\/关闭更新白名单功能$/;"	d
+alarm_contact_mail	./alarm.php	/^    $alarm_contact_mail = 'tonyliu@taomee.com,luis@taomee.com,mason@taomee.com';$/;"	v
+alarm_contact_mail	./alarm.php	/^    $alarm_contact_mail = DEFAULT_EMAIL;$/;"	v
+alarm_contact_mail	./alarm.php	/^    $alarm_contact_mail = isset($alarm_metric_cfg[$metric_name]['email']) ? $/;"	v
+alarm_contact_msg	./alarm.php	/^    $alarm_contact_msg = '13636584249,18616816316,18621531365';$/;"	v
+alarm_contact_msg	./alarm.php	/^    $alarm_contact_msg = DEFAULT_PHONE;$/;"	v
+alarm_contact_msg	./alarm.php	/^    $alarm_contact_msg = isset($alarm_metric_cfg[$metric_name]['phone']) ? $/;"	v
+alarm_contact_rtx	./alarm.php	/^    $alarm_contact_rtx = 'luis,mason,tonyliu'; $/;"	v
+alarm_contact_rtx	./alarm.php	/^    $alarm_contact_rtx = DEFAULT_RTX;$/;"	v
+alarm_contact_rtx	./alarm.php	/^    $alarm_contact_rtx = isset($alarm_metric_cfg[$metric_name]['rtx']) ? $/;"	v
+alarm_ds_down_revoke	./alarm.php	/^function alarm_ds_down_revoke($ds_info)$/;"	f
+alarm_expr	./alarm.php	/^    $alarm_expr = "1-3:5,4-10:10,11-0:30";$/;"	v
+alarm_expr	./alarm.php	/^    $alarm_expr = '1-3:5,4-10:10,11-0:30'; $/;"	v
+alarm_expr	./alarm.php	/^    $alarm_expr = isset($alarm_metric_cfg[$metric_name]['expr']) ? $/;"	v
+alarm_expr	./alarm.php	/^    $alarm_expr = isset($alarm_metric_cfg[$metric_name]['expr']) ?$/;"	v
+alarm_host_down_revoke	./alarm.php	/^function alarm_host_down_revoke($host_info, $time)$/;"	f
+alarm_host_up_failed_report	./alarm.php	/^function alarm_host_up_failed_report($host_info, $time)$/;"	f
+alarm_host_up_failed_revoke	./alarm.php	/^function alarm_host_up_failed_revoke($host_info, $time)$/;"	f
+alarm_metric_cfg	./alarm.php	/^    $alarm_metric_cfg = "";$/;"	v
+alarm_metric_cfg	./alarm.php	/^    $alarm_metric_cfg = include(ALARM_CONFIG_DIR . $host_info . ".php");$/;"	v
+alarm_no_warning_range	./alarm.php	/^    $alarm_no_warning_range = isset($alarm_metric_cfg[$metric_name]['no_warning_range']) ? $/;"	v
+alarm_no_warning_range	./alarm.php	/^    $alarm_no_warning_range = isset($alarm_metric_cfg[$metric_name]['no_warning_way']) ? $/;"	v
+alarm_report	./alarm.php	/^function alarm_report($host_info, $metric_info, $alarm_info)$/;"	f
+alarm_report_ds_down	./alarm.php	/^function alarm_report_ds_down($ds_info)$/;"	f
+alarm_report_host_down	./alarm.php	/^function alarm_report_host_down($host_info, $time)$/;"	f
+alarm_revoke	./alarm.php	/^function alarm_revoke($host_info, $metric_info)$/;"	f
+alarm_way	./alarm.php	/^        $alarm_way = '7';$/;"	v
+alarm_way	./alarm.php	/^        $alarm_way = isset($alarm_metric_cfg[$metric_name]['crtcl_way']) ? $/;"	v
+alarm_way	./alarm.php	/^        $alarm_way = isset($alarm_metric_cfg[$metric_name]['wrn_way']) ? $/;"	v
+alarm_way	./alarm.php	/^    $alarm_way = "7";$/;"	v
+alarm_way	./alarm.php	/^    $alarm_way = '7'; $/;"	v
+alarm_way	./alarm.php	/^    $alarm_way = isset($alarm_metric_cfg[$metric_name]['down_way']) ? $/;"	v
+allow_machine_arr	./update.php	/^        $allow_machine_arr = explode(',', ALLOW_MACHINE);$/;"	v
+bin_md5	./update.php	/^    $bin_md5 = $data_arr[2];            \/\/ 程序的md5码$/;"	v
+bin_update	./update.php	/^    $bin_update = false;$/;"	v
+check_bin	./update.php	/^function check_bin($bin_md5, $machine_type, &$update)$/;"	f
+check_conf	./update.php	/^function check_conf($conf_md5, $host_ip, &$update)$/;"	f
+check_file	./alarm.php	/^    $check_file =  ALARM_CMD_LIST_FILE; $/;"	v
+check_file	./alarm.php	/^    $check_file = ALARM_CMD_LIST_FILE;  $/;"	v
+check_file	./alarm.php	/^    $check_file = ALARM_CMD_LIST_FILE; $/;"	v
+check_script	./update.php	/^function check_script($script_arr, $host_ip, $machine_type, &$script_update)$/;"	f
+check_so	./update.php	/^function check_so($so_arr, $host_ip, $machine_type, &$so_update)$/;"	f
+check_update	./update.php	/^function check_update($update_list)$/;"	f
+conf	./update.php	/^    $conf = file($conf_name); $/;"	v
+conf	./update.php	/^    $conf = file($conf_name);$/;"	v
+conf_md5	./update.php	/^    $conf_md5 = $data_arr[3];           \/\/ 配置文件的md5码$/;"	v
+conf_name	./update.php	/^    $conf_name = ".\/conf\/" . $host_ip;$/;"	v
+conf_update	./update.php	/^    $conf_update = false;$/;"	v
+data_arr	./update.php	/^    $data_arr = split(';', $update_list);$/;"	v
+do_log	./log.php	/^function do_log($str, $level, $line="", $func="")$/;"	f
+ds_info	./alarm.php	/^    if($ds_info == NULL || $ds_info == "")$/;"	v
+ds_name	./alarm.php	/^    $ds_name = $tmp_fields[1];$/;"	v
+fd	./update.php	/^            $fd = fopen($script_full_name, "r");$/;"	v
+fd	./update.php	/^            $fd = fopen($so_full_name, "r");$/;"	v
+fd	./update.php	/^    $fd = fopen($conf_name, "r");$/;"	v
+fd	./update.php	/^    $fd = fopen($file_name, "r");$/;"	v
+fd	./update.php	/^    $fd = fopen(UPDATE_FILE_NAME, "a");     $/;"	v
+file_name	./update.php	/^    $file_name = ".\/bin\/" . $machine_type . "\/oa_node";$/;"	v
+fp	./alarm.php	/^    $fp = fopen($check_file, 'a');$/;"	v
+fp	./log.php	/^    $fp = fopen($log_file, "a+b");$/;"	v
+func_str	./log.php	/^            $func_str = "[fn-{$func}()]";$/;"	v
+func_str	./log.php	/^        $func_str = "";$/;"	v
+grid_name	./alarm.php	/^    $grid_name = $tmp_fields[0];$/;"	v
+host_info	./alarm.php	/^        $host_info == "" || $metric_info == "" || $alarm_info == "")$/;"	v
+host_info	./alarm.php	/^        $host_info == "" || $metric_info == "")$/;"	v
+host_info	./alarm.php	/^    if($host_info == NULL || $host_info == "" || $time == NULL || $time == "")$/;"	v
+host_ip	./update.php	/^    $host_ip = $data_arr[1];            \/\/ 机器的内网ip$/;"	v
+host_list	./alarm.php	/^    $host_list = $tmp_fields[2];$/;"	v
+index	./update.php	/^    $index = 6;$/;"	v
+key	./update.php	/^        $key = md5(SIGN_KEY);$/;"	v
+kv	./update.php	/^            $kv = split('=', $line);  $/;"	v
+kv	./update.php	/^            $kv = split('=', $line);$/;"	v
+level_str	./log.php	/^            $level_str = "[{$level}]";$/;"	v
+level_str	./log.php	/^        $level_str = "";$/;"	v
+line	./log.php	/^function do_log($str, $level, $line="", $func="")$/;"	v
+line_num	./update.php	/^    foreach ($conf as $line_num => $line) {$/;"	v
+line_str	./log.php	/^            $line_str = "[ln-{$line}]";$/;"	v
+line_str	./log.php	/^        $line_str = "";$/;"	v
+local_script_arr	./update.php	/^    $local_script_arr = array();$/;"	v
+local_so_arr	./update.php	/^    $local_so_arr = array();$/;"	v
+log_file	./log.php	/^        $log_file = LOG_DIR.$log_name;$/;"	v
+log_file	./log.php	/^    $log_file = "";$/;"	v
+log_name	./log.php	/^        $log_name = LOG_PREFIX.date("Y_m_d").".log" ;$/;"	v
+log_str	./log.php	/^        $log_str = $time.$level_str.$time_str.$line_str.$func_str.$str."\\n";$/;"	v
+machine_type	./update.php	/^    $machine_type = $data_arr[0];       \/\/ 机器是32位还是64位$/;"	v
+metric_fields	./alarm.php	/^    $metric_fields = split(';', $metric_info);$/;"	v
+metric_info	./alarm.php	/^    if($host_info == NULL || $metric_info == NULL || $alarm_info == NULL ||$/;"	v
+metric_info	./alarm.php	/^    if($host_info == NULL || $metric_info == NULL ||$/;"	v
+metric_name	./alarm.php	/^    $metric_name = $host_info . "_down_metric";$/;"	v
+metric_name	./alarm.php	/^    $metric_name = $metric_fields[0];$/;"	v
+name	./update.php	/^    foreach ($local_script_arr as $name => $md5) {$/;"	v
+name	./update.php	/^    foreach ($local_so_arr as $name => $md5) {$/;"	v
+name	./update.php	/^    foreach ($script_arr as $name => $md5) {$/;"	v
+name	./update.php	/^    foreach ($script_up_info as $name => $up_cmd) {$/;"	v
+name	./update.php	/^    foreach ($so_arr as $name => $md5) {$/;"	v
+name	./update.php	/^    foreach ($so_up_info as $name => $up_cmd) {$/;"	v
+ret	./update.php	/^                $ret = true;$/;"	v
+ret	./update.php	/^    $ret = false;$/;"	v
+ret_list	./update.php	/^    $ret_list = "1;";$/;"	v
+script_arr	./update.php	/^    $script_arr = array();                  \/\/ 保存所有script的名字到md5的映射$/;"	v
+script_full_name	./update.php	/^            $script_full_name = ".\/script\/" . $machine_type . "\/" . $script_name;$/;"	v
+script_name	./update.php	/^            $script_name = trim($kv[1]);$/;"	v
+script_num	./update.php	/^    $script_num = $data_arr[5];         \/\/ 需要检查更新的script的个数$/;"	v
+script_up_info	./update.php	/^    $script_up_info = array();$/;"	v
+sign_str	./update.php	/^            $sign_str = "cmd=" . $post["cmd"] . "&bin_name=" . $post["bin_name"] . "&is_32bit=" . $post["is_32bit"] .$/;"	v
+sign_str	./update.php	/^            $sign_str = "cmd=" . $post["cmd"] . "&host_list=" . $post["host_list"] . "&key=" . $key;$/;"	v
+sign_str	./update.php	/^            $sign_str = "cmd=" . $post["cmd"] . "&ip_list=" . $post["ip_list"] . "&type=" . $post["type"] . "&key=" . $key;$/;"	v
+sign_str	./update.php	/^            $sign_str = "cmd=" . $post["cmd"] . "&so_name=" . $post["so_name"] . "&is_32bit=" . $post["is_32bit"] .$/;"	v
+so_arr	./update.php	/^    $so_arr = array();                  \/\/ 保存所有so的名字到md5的映射$/;"	v
+so_full_name	./update.php	/^            $so_full_name = ".\/so\/" . $machine_type . "\/" . $so_name;$/;"	v
+so_name	./update.php	/^            $so_name = trim($kv[1]);$/;"	v
+so_num	./update.php	/^    $so_num = $data_arr[4];             \/\/ 需要检查更新的so的个数$/;"	v
+so_up_info	./update.php	/^    $so_up_info = array();$/;"	v
+time	./log.php	/^    $time= date("[H:i:s]");$/;"	v
+tmp_fields	./alarm.php	/^    $tmp_fields = split(';', $ds_info);$/;"	v
+update	./update.php	/^            $update = false; $/;"	v
+update	./update.php	/^            $update = true;$/;"	v
+write_notice_to_file	./update.php	/^function write_notice_to_file($post) {$/;"	f
+write_str	./update.php	/^            $write_str = $post["cmd"] . ";" . $post["bin_name"] . ";" . $post["is_32bit"] . ";" . $/;"	v
+write_str	./update.php	/^            $write_str = $post["cmd"] . ";" . $post["host_list"] . "\\n";$/;"	v
+write_str	./update.php	/^            $write_str = $post["cmd"] . ";" . $post["ip_list"] . ";" . $post["type"] . "\\n";$/;"	v
+write_str	./update.php	/^            $write_str = $post["cmd"] . ";" . $post["so_name"] . ";" . $post["is_32bit"] . ";" . $/;"	v

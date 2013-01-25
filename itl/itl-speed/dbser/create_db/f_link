@@ -1,0 +1,55 @@
+drop database if exists link_stat ; 
+create database link_stat CHARACTER SET 'utf8' COLLATE 'utf8_general_ci'; 
+use link_stat; 
+create table link_stat_lv0(
+	link integer unsigned,
+	seq  integer unsigned,
+	delay_v  integer unsigned default 0,
+	delay_c  int unsigned default 0,
+	lost_v integer unsigned default 0,
+	lost_c int unsigned default 0,
+	hop_v integer unsigned default 0,
+	hop_c int unsigned default 0,
+	primary key ( seq,link )
+)default charset utf8;
+		
+ 
+create table link_stat_lv1(
+	link integer unsigned,
+	seq  integer unsigned,
+	delay_v  integer unsigned default 0,
+	delay_c  int unsigned default 0,
+	lost_v integer unsigned default 0,
+	lost_c int unsigned default 0,
+	hop_v integer unsigned default 0,
+	hop_c int unsigned default 0,
+	primary key ( seq,link )
+)default charset utf8;
+		
+ 
+create table link_stat_lv2(
+	link integer unsigned,
+	seq  integer unsigned,
+	delay_v  bigint unsigned default 0,
+	delay_c  int unsigned default 0,
+	lost_v bigint unsigned default 0,
+	lost_c int unsigned default 0,
+	hop_v bigint unsigned default 0,
+	hop_c int unsigned default 0,
+	primary key ( seq,link )
+)default charset utf8;
+		
+ 
+create table link_stat_lv3(
+	link integer unsigned,
+	seq  integer unsigned,
+	delay_v  bigint unsigned default 0,
+	delay_c  int unsigned default 0,
+	lost_v bigint unsigned default 0,
+	lost_c int unsigned default 0,
+	hop_v bigint unsigned default 0,
+	hop_c int unsigned default 0,
+	primary key ( seq,link )
+)default charset utf8;
+		
+ 

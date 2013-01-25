@@ -1,0 +1,13 @@
+[数据存储路径]
+$:data_store_path=/opt/taomee/analyze_server/probe_ip_save
+
+[数据转发目的地]
+$:accept_addr=10.1.1.141
+
+[数据转发目的地端口]
+$:accept_port=7777
+
+[DES加密密码：长度大于等于8且只取8个字节,若失败，则取默认值]
+#建立连接前先以TAOMEEV5密码加密TAOMEEV5 发送到服务器以获取可信认证
+#之后的数据全部采用TAOMEEV5加密传输 加密方式DES
+$:des_pass_phrase=TAOMEEV5

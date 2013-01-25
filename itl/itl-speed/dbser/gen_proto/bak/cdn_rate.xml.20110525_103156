@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="cdn_rate" cmdid_mode="db" create_time="2011年05月24日 星期2 14:26:20">
+  <struct_list>
+    <struct name="cdn_report_ip_in" struct_from="self">
+      <field mode="single" name="ip" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+    <struct name="cdn_report_prov_in" struct_from="self">
+      <field mode="single" name="provid" type="uint32" desc=""/>
+      <field mode="single" name="cityid" type="uint32" desc=""/>
+      <field mode="single" name="comid" type="uint32" desc=""/>
+      <field mode="single" name="logtime" type="uint32" desc=""/>
+      <field mode="single" name="value" type="uint32" desc=""/>
+      <field mode="single" name="count" type="uint32" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="0x1001" name="cdn_report_ip" struct_in="cdn_report_ip_in" struct_out="" desc="" md5_tag="0x70da81de" bind_bitmap="0"/>
+    <protocol cmd="0x1002" name="cdn_report_prov" struct_in="cdn_report_prov_in" struct_out="" desc="" md5_tag="0x0e0d9235" bind_bitmap="0"/>
+  </protocol_list>
+  <error_list>
+    <error id="0" name="__SUCC__" desc="成功"/>
+  </error_list>
+  <desc_list>
+    <field_desc key="userid" desc="米米号"/>
+  </desc_list>
+  <bind_list/>
+</taomee_proto>

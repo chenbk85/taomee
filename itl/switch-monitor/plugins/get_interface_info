@@ -1,0 +1,13 @@
+#! /bin/bash
+if [ $# -ne 3 ]
+then 
+exit 1
+fi
+
+if_index=`snmpwalk -r0 -t$1 -v2c -c$2 $3 .1.3.6.1.2.1.2.2.1.1 | cut -d ' ' -f4`
+for i in $if_index
+do
+##interface index desc type speed
+if_info=`snmpget -r0 -t$1 -v2c -c$2 $3 .1.3.6.1.2.1.2.2.1.2.$i 1.3.6.1.2.1.2.2.1.3.$i 1.3.6.1.2.1.2.2.1.5.$i | cut -d ' ' -f4` 
+echo $i $if_info 
+done

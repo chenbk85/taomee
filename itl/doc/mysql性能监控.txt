@@ -1,0 +1,24 @@
+connection        show status like 'connections';
+binlog_cache      show status like 'Binlog_cache_use';
+binlog_space      show status like 'Binlog_cache_disk_use';
+recv_send         show status like 'Bytes_%'; 
+create_tmp        show status like 'created_tmp_%';
+mysql_key         show status like 'key%';
+mysql_open        show status like 'open%';
+mysql_com         show status like 'com%';
+mysql_qcache      show status like 'qcache%';
+mysql_select      show status like 'select%';
+mysql_sort        show status like 'sort%';
+mysql_table_lock  show status like 'table_lock%';
+mysql_thread      show status like 'thread%';
+innodb_trans      show innodb status;
+innodb_bufer_page show status like 'innodb_buffer%';
+innodb_data       show status like 'innodb_data%';  
+innodb_ibuf       show innodb status;  
+innodb_log        show innodb status;  / show status like 'Innodb_log%'; + show status like 'Innodb_os_log%';
+innodb_pending    show status like 'Innodb_data_pending%';
+innodb_queries    show innodb status; 
+innodb_rows       show innodb status; / show status like 'Innodb_rows%';
+innodb_spin       
+mysql_slow        show status like 'slow%';
+

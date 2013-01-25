@@ -1,0 +1,10 @@
+#cmake 
+rm -rf build
+mkdir build
+cd build
+cmake ../
+make 
+if [ "$1" == "1" ] ; then
+	mv ./libdb.so ../../bin/
+#	../../bin/daemon.sh restart
+fi

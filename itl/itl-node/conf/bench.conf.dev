@@ -1,0 +1,20 @@
+log_dir         ./log
+log_level       8
+log_size        32000000
+log_maxfiles    100
+
+proc_name       itl_node
+pid_file        ./bin/daemon.pid
+plugin_file     ./bin/libnode.so
+
+shmq_size       8192000
+
+max_connect     20000
+max_pkg_len     8192000
+
+bind_ip         eth0
+bind_port       16100
+
+work_conf       ./conf/work.conf
+
+include         ./conf/node.conf

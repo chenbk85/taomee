@@ -1,0 +1,2 @@
+根据管理界面的通知，执行更新命令，并将更新程序写入相应的文件。本程序需要对/var/www/oa-update/bin/32/,/var/www/oa-update/bin/64/,/var/www/oa-update/so/32/,/var/www/oa-update/so/64/,/var/www/oa-update/conf/这几个目录有写权限。
+

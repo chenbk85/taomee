@@ -1,0 +1,10 @@
+#! /bin/bash
+if [ $# -ne 2 ] 
+then
+    exit 1 
+fi
+
+process_mempool_used=`snmpget -v2c -c $1 $2 .1.3.6.1.4.1.9.9.48.1.1.1.5.1 | cut -d ' ' -f 4`
+io_mempool_used=`snmpget -v2c -c $1 $2 .1.3.6.1.4.1.9.9.48.1.1.1.5.2 | cut -d ' ' -f 4`
+driver_mempool_used=`snmpget -v2c -c $1 $2 .1.3.6.1.4.1.9.9.48.1.1.1.5.16 | cut -d ' ' -f 4`
+echo $(($process_mempool_used+$io_mempool_used+$driver_mempool_used))

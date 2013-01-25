@@ -1,0 +1,6 @@
+本程序接受从node post过来的http更新查询命令
+1、bin目录: 存放框架async_server和框架需要加载的work_so
+2、so目录: 存放metric_so和commond_so
+3、conf目录: 存放async_server和work_so需要的基本配置
+4、script目录: 存放服务控制脚本
+

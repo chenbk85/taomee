@@ -1,0 +1,14 @@
+// table权限的定义
+DB_MGR_TABLE_PRIV(Select)
+DB_MGR_TABLE_PRIV(Insert)
+DB_MGR_TABLE_PRIV(Update)
+DB_MGR_TABLE_PRIV(Delete)
+DB_MGR_TABLE_PRIV(Create)
+DB_MGR_TABLE_PRIV(Drop)
+// 屏蔽grant权限
+// DB_MGR_TABLE_PRIV(Grant)
+DB_MGR_TABLE_PRIV(References)
+DB_MGR_TABLE_PRIV(Index)
+DB_MGR_TABLE_PRIV(Alter)
+DB_MGR_TABLE_PRIV(Create View)
+DB_MGR_TABLE_PRIV(Show view)

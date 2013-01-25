@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taomee_proto project_name="pop_db" cmdid_mode="db" create_time="2011年05月13日 星期5 18:02:58">
+  <struct_list>
+    <struct name="pop_login_out" struct_from="self">
+      <field mode="single" name="register_time" type="uint32" desc=""/>
+      <field mode="single" name="sex" type="uint32" desc=""/>
+      <field mode="single" name="age" type="uint32" desc=""/>
+      <field mode="array" name="nick" type="char" size="16" desc=""/>
+    </struct>
+  </struct_list>
+  <protocol_list>
+    <protocol cmd="0x7401" name="pop_login" struct_in="" struct_out="pop_login_out" desc="登入" md5_tag="0x557337d2" bind_bitmap="1"/>
+  </protocol_list>
+  <error_list>
+    <error id="0" name="__SUCC__" desc="成功"/>
+  </error_list>
+  <desc_list>
+    <field_desc key="userid" desc="米米号"/>
+  </desc_list>
+  <bind_list>
+    <bind bindid="0" bind_name="for_online" bind_desc=""/>
+  </bind_list>
+</taomee_proto>

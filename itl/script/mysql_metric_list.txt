@@ -1,0 +1,62 @@
+metric名称                               单位      值类型   描述
+binlog_cache_disk_use                    byte      增量     binlog缓存项统计
+binlog_cache_use                         byte      增量     binlog缓存项统计
+bytes_received                           byte      增量     数据库与外界交互流量统计
+bytes_sent                               byte      增量     数据库与外界交互流量统计
+com_call_procedure                 个/收集间隔     增量     数据库DML语句统计
+com_delete                         个/收集间隔     增量     数据库DML语句统计
+com_insert                         个/收集间隔     增量     数据库DML语句统计
+com_select                         个/收集间隔     增量     数据库DML语句统计
+com_update                         个/收集间隔     增量     数据库DML语句统计
+created_tmp_disk_tables            个/收集间隔     增量     临时表使用情况统计
+created_tmp_files                  个/收集间隔     增量     临时表使用情况统计
+created_tmp_tables                 个/收集间隔     增量     临时表使用情况统计
+error_log_access                            无     增量     错误日是否可访问，1表示可访问，2表示存在不可访问，3表示不存在
+error_log_size                            byte     增量     错误日志大小
+have_innodb_deadlock                        无     当前值   是否有innodb的死锁情况--开关值0表示没有1表示有
+have_locked_processlist                     无     当前值   是否有processlist 的死锁情况--开关值0表示没有1表示有
+have_query_cache                            无     当前值   数据库查询缓存--是否开过query cache,1=yes 0=no
+have_user_priv_host_wildcard                无     当前值   是否存在用户权限的主机是通配的
+have_user_priv_root_grant                   无     当前值   是否存在用户权限的用户是非root,且有grant权限
+innodb_buffer_pool_pages_data               个     当前值   innoDB缓存页统计
+innodb_buffer_pool_pages_dirty              个     当前值   innoDB缓存页统计
+innodb_buffer_pool_pages_free               个     当前值   innoDB缓存页统计
+innodb_buffer_pool_pages_total              个     当前值   innoDB缓存页统计
+innodb_data_fsyncs                 次/收集间隔     增量     innoDB数据刷新情况统计
+innodb_data_pending_fsyncs         次/收集间隔     增量     innoDB数据刷新情况统计
+innodb_data_reads                  次/收集间隔     增量     innoDB数据刷新情况统计
+innodb_data_writes                 次/收集间隔     增量     innoDB数据刷新情况统计
+innodb_deadlock_event                       无     增量     innodb 引擎的死锁事故 
+instance_alive                              无     增量     数据库实例是否可连1=可连2=不可连
+key_buffer_read_hit_rate                百分比     当前值   key_buffer读命中率 
+key_buffer_write_hit_rate               百分比     当前值   key_buffer写命中率 
+last_locked_processlist                     无     当前值   最后一次processlist死锁的信息
+last_log_error                              无     当前值   最后一次系统日志的错误信息
+log_slow_queries                            无     当前值   是否记录慢查询的开关1=on,0=off
+long_query_time                        seccond     当前值   慢查询记录阀值
+max_connections                             个     当前值   数据库允许的最大连接
+max_used_connections                        个     当前值   最大连接
+open_files                         个/收集间隔     增量     文件句柄相关
+open_tables                        个/收集间隔     增量     文件句柄相关
+opened_tables                      个/收集间隔     增量     文件句柄相关
+protocol_version                            无     当前值   数据库协议版本信息 
+qcache_hits                                 次     当前值   数据库查询缓存--query cache的命中计数
+query_cache_type                            无     当前值   数据库查询缓存-- 1=on,0=off
+questions                          次/收集间隔     增量     数据库DML语句统计
+slave_open_temp_tables             次/收集间隔     增量     文件句柄相关
+slow_launch_threads                         个     当前值   数据库活动状态信息
+slow_queries                       次/收集间隔     增量     慢查询数量统计
+socket                                      无     增量     socket文件
+sort_range                         次/收集间隔     增量     排序操作统计
+sort_rows                          次/收集间隔     增量     排序操作统计
+sort_scan                          次/收集间隔     增量     排序操作统计
+table_locks_immediate              次/收集间隔     增量     立即表锁统计
+table_locks_waited                 次/收集间隔     增量     等待表锁统计
+threads_cached                              个     当前值   数据库活动状态信息 
+threads_connected                           个     当前值   数据库活动状态信息 
+threads_created                             个     当前值   数据库活动状态信息 
+threads_running                             个     当前值   数据库活动状态信息 
+uptime                                  second     当前值   Up时间
+uptime_since_flush_status               second     当前值
+user_host_priv                              无     当前值   用户+主机+权限 信息
+ersion                                     无     当前值   数据库版本信息

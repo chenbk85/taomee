@@ -1,0 +1,29 @@
+log_dir         ./log
+log_level       8
+log_size        32000000
+log_maxfiles    100
+
+proc_name       itl_switch
+pid_file        ./bin/daemon.pid
+plugin_file     ./bin/libswitch.so
+
+shmq_size       8192000
+
+max_connect     20000
+max_pkg_len     8192000
+
+bind_ip         0.0.0.0
+bind_port       16900
+
+work_conf       ./conf/work.conf
+
+
+head_ip         0.0.0.0
+head_port       16200
+
+
+db_ip           0.0.0.0
+db_port         16000
+
+
+so_dir          ./so/

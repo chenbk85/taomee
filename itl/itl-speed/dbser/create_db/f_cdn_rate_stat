@@ -1,0 +1,32 @@
+create database if not exists cdn_rate_01 CHARACTER SET 'utf8' COLLATE 'utf8_general_ci'; 
+use cdn_rate_01; 
+create table if not exists t_stat(
+    seq  integer unsigned,
+    speed_tag  integer,
+    count  integer unsigned,
+    primary key (seq, speed_tag)
+    )default charset utf8;
+create database if not exists cdn_rate_02 CHARACTER SET 'utf8' COLLATE 'utf8_general_ci'; 
+use cdn_rate_02; 
+create table if not exists t_stat(
+    seq  integer unsigned,
+    speed_tag  integer,
+    count  integer unsigned,
+    primary key (seq, speed_tag)
+    )default charset utf8;
+create database if not exists cdn_rate_03 CHARACTER SET 'utf8' COLLATE 'utf8_general_ci'; 
+use cdn_rate_03; 
+create table if not exists t_stat(
+    seq  integer unsigned,
+    speed_tag  integer,
+    count  integer unsigned,
+    primary key (seq, speed_tag)
+    )default charset utf8;
+create database if not exists cdn_rate_04 CHARACTER SET 'utf8' COLLATE 'utf8_general_ci'; 
+use cdn_rate_04; 
+create table if not exists t_stat(
+    seq  integer unsigned,
+    speed_tag  integer,
+    count  integer unsigned,
+    primary key (seq, speed_tag)
+    )default charset utf8;
